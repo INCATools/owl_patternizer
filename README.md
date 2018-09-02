@@ -30,6 +30,16 @@ For 2, you will need to install [sparqlprog](http://www.swi-prolog.org/pack/list
 
 See [conf/disorder_conf.pl](blob/master/conf/disorder_conf.pl)
 
+With docker:
+
+First check out this repo, then:
+
+```
+docker run -v $PWD:/work -w /work --rm -ti cmungall/sparqlprog swipl -p library=/home/myuser/prolog:prolog /home/myuser/bin/pl2sparql  -e -c conf/disorder_conf.pl -i tests/data/neoplasm.owl doall,halt
+```
+
+(this is admittedly awkward - working on better wrapping script)
+
 ## Examples
 
 

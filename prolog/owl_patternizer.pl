@@ -1,3 +1,9 @@
+/**
+
+  generate patterns from an OWL Ontology
+  
+*/
+
 :- module(owl_patternizer,
           [ground_expression/1,
            generate_patterns/1]).
@@ -10,8 +16,10 @@
 :- use_module(library(tabling)).
 
 % ========================================
-% MAP RDF
+% MAP RDF TO PROLOG TERMS
 % ========================================
+
+% e.g. and(foo,some(part_of,bar))
 
 :- table ground_expression/2.
 ground_expression(X) :-
@@ -68,9 +76,11 @@ generalize_expression(and([X|L]), and([X|L2]),classExpression) :-
 generalize_expression(X, _GenVar, _T) :- atomic(X).
 
 % ========================================
-% ALL GENERALIZATIONS
+% WRITE GENERALIZATIONS AS YAML
 % ========================================
 
+% candidate generalized expression plus the 
+% ground terms it matches
 candidate(X, Matches) :-
         setof(GrX,ground_expression(GrX),GrXs),
         member(GrX,GrXs),
@@ -81,6 +91,7 @@ pattern_matches(X,GrXs,Matches) :-
         setof(X,member(X,GrXs),Matches).
 
 :- dynamic seen/1.
+% MAIN GOAL:
 generate_patterns(Opts) :-
         setof(GrX,ground_expression(GrX),GrXs),
         member(GrX,GrXs),
