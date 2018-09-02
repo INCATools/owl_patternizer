@@ -34,7 +34,7 @@ VERSION = v$(shell swipl -l pack.pl -g "version(V),writeln(V),halt.")
 show-version:
 	echo $(VERSION)
 
-IM = cmungall/rdf_matcher
+IM = cmungall/owl_patternizer
 
 docker-all: docker-clean docker-build docker-run
 
