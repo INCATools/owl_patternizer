@@ -20,16 +20,15 @@ There are two ways to do this
  1. via Docker
  2. direct via swipl
 
-For 1, no additional installation required
+For 1, no additional installation required. TODO: document this
 
 For 2, you will need to install [sparqlprog](http://www.swi-prolog.org/pack/list?p=sparqlprog)
 
 ## Command Line Usage
 
-
-
 `pl2sparql -e -c conf/disorder_conf.pl -i tests/data/neoplasm.owl doall`
 
+See [conf/disorder_conf.pl](blob/master/conf/disorder_conf.pl)
 
 ## Examples
 
