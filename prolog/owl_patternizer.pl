@@ -4,6 +4,7 @@
 
 :- use_module(library(sparqlprog/ontologies/owl), []).
 :- use_module(library(sparqlprog/owl_util)).
+:- use_module(library(sparqlprog/emulate_builtins)).
 :- use_module(library(semweb/rdf11)).
 :- use_module(library(semweb/rdfs)).
 :- use_module(library(tabling)).
@@ -85,10 +86,13 @@ generate_patterns(Opts) :-
         member(GrX,GrXs),
         generalize_expression(GrX,X),
         seed_from(X,1,GrXs,Opts).
+generate_patterns(_) :-
+        debug(patternizer,'Done!',[]).
 
 seed_from(X,ParentCount,GrXs,Opts) :-
         copy_term(X,X_Unground),
         \+ has_been_seen(X),
+        debug(patternizer,'Testing generalized expression: ~q',[X]),
         mark_seen(X),
         \+ exclude(X,Opts),
         pattern_matches(X_Unground,GrXs,Matches),
@@ -96,8 +100,10 @@ seed_from(X,ParentCount,GrXs,Opts) :-
         option(min(Min),Opts,8),
         Num >= Min,
         Num > ParentCount,
+        debug(patternizer,'Passed; writing',[]),
         write_candidate(X, Matches, Opts),
         generalize_expression(X_Unground,X2),
+        debug(patternizer,'  Generalized further ~q -> ~q',[X_Unground, X2]),
         seed_from(X2,Num,GrXs,Opts),
         fail.
 
@@ -121,6 +127,14 @@ mark_seen(X) :-
         numbervars(X,0,_),
         assert(seen(X)).
 
+setup_write(PId, Opts) :-
+        option(dir(Dir),Opts),
+        !,
+        concat_atom([Dir,/,PId,'.yaml'], Path),
+        tell(Path).
+setup_write(_, _).
+
+
 write_candidate(X, Matches, Opts) :-
         numbervars(X,0,_),
         expr_atom(X,PName,text/id,_),
@@ -132,9 +146,14 @@ write_candidate(X, Matches, Opts) :-
         expr_class_signature(X,CSig),
         expr_property_signature(X,PSig),
         expr_var_signature(X,VSig),
+        debug(patternizer,'Class sig: ~q',[CSig]),
+        debug(patternizer,'Prop sig: ~q',[PSig]),
+        debug(patternizer,'Var sig: ~q',[VSig]),
         maplist([C,obj(C,Id,N)]>>(label_or_frag(C,N),uri_curie(C,Id)),CSig,CSet),
         maplist([C,obj(C,Id,N)]>>(label_or_frag(C,N),uri_curie(C,Id)),PSig,PSet),
         maplist([V,v(VN,V,'owl:Thing')]>>(V='$VAR'(VN1),atom_concat(v,VN1,VN)),VSig,VSet),
+
+        setup_write(PId, Opts),
         
         format('pattern_name: ~w~n',[PName]),
         format('pattern_iri: ~w~n',[PUrl]),
@@ -169,7 +188,7 @@ write_candidate(X, Matches, Opts) :-
         format('equivalentTo:~n'),
         format('  text: "~w"~n',[XEquiv]),
         show_vars('  ', EquivVars, VSet),
-        nl,
+        told,
         mark_seen(X). % <-- NOT NEEDED NOW
 
 show_vars(Indent,OrderedVars,VSet) :-
@@ -210,7 +229,7 @@ expr_references_class(X,X) :- atom(X).
 expr_property_signature(X,L) :- setof(M,expr_references_property(X,M),L).
 expr_references_property('$VAR'(_),_) :- fail.
 expr_references_property(and(L),P) :- member(M,L),expr_references_property(M,P).
-expr_references_property(some(P,_),P).  % TODO: property expressions
+expr_references_property(some(P,_),P) :- atom(P),!. % TODO: property expressions
 expr_references_property(some(_,X),P) :- expr_references_property(X,P).
 
 expr_var_signature(X,L) :- setof(M,expr_references_var(X,M),L).
