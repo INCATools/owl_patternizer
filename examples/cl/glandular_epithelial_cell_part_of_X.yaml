@@ -1,0 +1,52 @@
+pattern_name: glandular epithelial cell part of X
+pattern_iri: http://purl.obolibrary.org/obo/cl/glandular_epithelial_cell_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [uterine cervix glandular cell](http://purl.obolibrary.org/obo/CL_1001587), [pancreas exocrine glandular cell](http://purl.obolibrary.org/obo/CL_1001599), [glandular cell of the large intestine](http://purl.obolibrary.org/obo/CL_0002658) (20 total)
+
+classes: 
+  glandular epithelial cell: "CL:0000150"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "owl:Thing"
+
+name:
+  # Induced, frequency=0.65, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s glandular cell"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.15, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A glandular epithelial cell of the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: luminal cell of %s
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: %s glandular cells
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'glandular epithelial cell' and ('part of' some %s)"
+  vars:
+    - v0

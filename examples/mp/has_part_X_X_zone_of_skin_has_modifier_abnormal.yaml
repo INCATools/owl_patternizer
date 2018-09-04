@@ -1,0 +1,38 @@
+pattern_name: has part X X zone of skin has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_X_X_zone_of_skin_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal skin morphology](http://purl.obolibrary.org/obo/MP_0002060), [cyanosis](http://purl.obolibrary.org/obo/MP_0001575), [reddish skin](http://purl.obolibrary.org/obo/MP_0001190) (30 total)
+
+classes: 
+  abnormal: "http://purl.obolibrary.org/obo/PATO_0000460"
+  zone of skin: "http://purl.obolibrary.org/obo/UBERON_0000014"
+
+
+relations: 
+  has part: "http://purl.obolibrary.org/obo/BFO_0000051"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+
+name:
+  text: "has part %s %s zone of skin has modifier abnormal"
+  vars:
+    - v0
+    - v1
+
+def:
+  text: "has part a Any %s that %s a zone of skin and has modifier a abnormal."
+  vars:
+    - v0
+    - v1
+
+equivalentTo:
+  text: "('has part' some %s and (%s some 'zone of skin') and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

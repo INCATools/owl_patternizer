@@ -1,0 +1,44 @@
+pattern_name: X determined by X
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_determined_by_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [soil environment](http://purl.obolibrary.org/obo/ENVO_01001044), [fecal environment](http://purl.obolibrary.org/obo/ENVO_01001029), [aquatic environment](http://purl.obolibrary.org/obo/ENVO_01000317) (43 total)
+
+classes: []
+
+relations: 
+  determined by: "RO:0002507"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+
+name:
+  # Induced, frequency=0.09302325581395349, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.046511627906976744, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An %s which has its properties and dynamics determined by %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('determined by' some %s)"
+  vars:
+    - v0
+    - v1

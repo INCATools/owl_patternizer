@@ -1,0 +1,37 @@
+pattern_name: has part X inheres in part of X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_X_inheres_in_part_of_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal cell cycle checkpoint function](http://purl.obolibrary.org/obo/MP_0004045), [abnormal mitotic cytokinesis](http://purl.obolibrary.org/obo/MP_0013289), [abnormal bone ossification](http://purl.obolibrary.org/obo/MP_0008271) (980 total)
+
+classes: 
+  abnormal: "http://purl.obolibrary.org/obo/PATO_0000460"
+
+
+relations: 
+  has part: "http://purl.obolibrary.org/obo/BFO_0000051"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+
+name:
+  text: "has part %s inheres in part of %s has modifier abnormal"
+  vars:
+    - v0
+    - v1
+
+def:
+  text: "has part a Any %s that inheres in part of a %s and has modifier a abnormal."
+  vars:
+    - v0
+    - v1
+
+equivalentTo:
+  text: "('has part' some %s and ('inheres in part of' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

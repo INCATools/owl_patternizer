@@ -1,0 +1,38 @@
+pattern_name: has part position X X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_position_X_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal eye distance/ position](http://purl.obolibrary.org/obo/MP_0001299), [abnormal dorsal root ganglion topology](http://purl.obolibrary.org/obo/MP_0013950), [abnormal ureter topology](http://purl.obolibrary.org/obo/MP_0013943) (42 total)
+
+classes: 
+  position: "http://purl.obolibrary.org/obo/PATO_0000140"
+  abnormal: "http://purl.obolibrary.org/obo/PATO_0000460"
+
+
+relations: 
+  has part: "http://purl.obolibrary.org/obo/BFO_0000051"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+
+name:
+  text: "has part position %s %s has modifier abnormal"
+  vars:
+    - v0
+    - v1
+
+def:
+  text: "has part a Any position that %s a %s and has modifier a abnormal."
+  vars:
+    - v0
+    - v1
+
+equivalentTo:
+  text: "('has part' some 'position' and (%s some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

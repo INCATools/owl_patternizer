@@ -1,0 +1,42 @@
+pattern_name: X size X X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/X_size_X_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal astrocyte size](http://purl.obolibrary.org/obo/MP_0020436), [abnormal skeletal muscle fiber size](http://purl.obolibrary.org/obo/MP_0009398), [anisopoikilocytosis](http://purl.obolibrary.org/obo/MP_0002641) (73 total)
+
+classes: 
+  size: "http://purl.obolibrary.org/obo/PATO_0000117"
+  abnormal: "http://purl.obolibrary.org/obo/PATO_0000460"
+
+
+relations: 
+  has modifier: "http://purl.obolibrary.org/obo/RO_0002573"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+  v2: "owl:Thing"
+
+name:
+  text: "%s size %s %s has modifier abnormal"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  text: "%s a Any size that %s a %s and has modifier a abnormal."
+  vars:
+    - v0
+    - v1
+    - v2
+
+equivalentTo:
+  text: "(%s some 'size' and (%s some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1
+    - v2

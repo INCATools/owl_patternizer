@@ -1,0 +1,47 @@
+pattern_name: transcript has_quality X
+pattern_iri: http://purl.obolibrary.org/obo/so/transcript_has_quality_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [edited_transcript](http://purl.obolibrary.org/obo/SO_0000873), [trans_spliced_transcript](http://purl.obolibrary.org/obo/SO_0000479), [transcript_bound_by_protein](http://purl.obolibrary.org/obo/SO_0000279) (10 total)
+
+classes: 
+  transcript: "http://purl.obolibrary.org/obo/SO_0000673"
+
+
+relations: 
+  has_quality: "http://purl.obolibrary.org/obo/so#has_quality"
+
+
+vars:
+  v0: "owl:Thing"
+
+name:
+  # Induced, frequency=0.6, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s_transcript"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.6, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A transcript that is %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: %s transcript
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'transcript' and ('has_quality' some %s)"
+  vars:
+    - v0

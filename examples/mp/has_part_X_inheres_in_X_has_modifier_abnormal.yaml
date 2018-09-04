@@ -1,0 +1,37 @@
+pattern_name: has part X inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_X_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal behavior](http://purl.obolibrary.org/obo/MP_0004924), [abnormal nursing](http://purl.obolibrary.org/obo/MP_0001382), [corneal vascularization](http://purl.obolibrary.org/obo/MP_0005542) (7782 total)
+
+classes: 
+  abnormal: "http://purl.obolibrary.org/obo/PATO_0000460"
+
+
+relations: 
+  has part: "http://purl.obolibrary.org/obo/BFO_0000051"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+
+name:
+  text: "has part %s inheres in %s has modifier abnormal"
+  vars:
+    - v0
+    - v1
+
+def:
+  text: "has part a Any %s that inheres in a %s and has modifier a abnormal."
+  vars:
+    - v0
+    - v1
+
+equivalentTo:
+  text: "('has part' some %s and ('inheres in' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

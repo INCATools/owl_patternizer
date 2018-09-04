@@ -1,0 +1,44 @@
+pattern_name: X hasTopping X
+pattern_iri: http://purl.obolibrary.org/obo/pizza//X_hasTopping_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [CheesyPizza](http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza), [MeatyPizza](http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatyPizza), [PizzaTemperada](http://www.co-ode.org/ontologies/pizza/pizza.owl#SpicyPizza) (4 total)
+
+classes: []
+
+relations: 
+  hasTopping: "pizza:hasTopping"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+
+name:
+  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s%s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that hasTopping a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('hasTopping' some %s)"
+  vars:
+    - v0
+    - v1

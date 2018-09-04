@@ -1,0 +1,48 @@
+pattern_name: X part of X part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_X_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [insect adult head](http://purl.obolibrary.org/obo/UBERON_6003007), [hepatopancreatic ampulla](http://purl.obolibrary.org/obo/UBERON_0004913), [epidermis of feather follicle](http://purl.obolibrary.org/obo/UBERON_0011807) (99 total)
+
+classes: []
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+  v2: "owl:Thing"
+
+name:
+  # Induced, frequency=0.020202020202020204, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s %s"
+  vars:
+    - v1
+    - v2
+    - v0
+
+def:
+  # Induced, frequency=0.050505050505050504, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a %s and is part of a %s."
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('part of' some %s) and ('part of' some %s)"
+  vars:
+    - v0
+    - v1
+    - v2

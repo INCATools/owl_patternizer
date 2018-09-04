@@ -1,0 +1,44 @@
+pattern_name: X has_part X
+pattern_iri: http://purl.obolibrary.org/obo/so/X_has_part_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [gene_with_stop_codon_read_through](http://purl.obolibrary.org/obo/SO_0000697), [gene_with_stop_codon_redefined_as_pyrrolysine](http://purl.obolibrary.org/obo/SO_0000698), [gene_with_stop_codon_redefined_as_selenocysteine](http://purl.obolibrary.org/obo/SO_0000710) (12 total)
+
+classes: []
+
+relations: 
+  has_part: "http://purl.obolibrary.org/obo/so#has_part"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+
+name:
+  # Could not induce name, using default
+  text: "%s has_part %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.08333333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A regulatory region where %ss clustered to regulate various aspects of transcription activities. (CRMs can be located a few kb to hundred kb upstream of the basal promoter, in the coding %s, within introns, or in the downstream 3'UTR sequences, as well as on different chromosome). A single gene can be regulated by multiple CRMs to give precise control of its spatial and temporal expression. CRMs function as nodes in large, intertwined regulatory network."
+  vars:
+    - v1
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('has_part' some %s)"
+  vars:
+    - v0
+    - v1

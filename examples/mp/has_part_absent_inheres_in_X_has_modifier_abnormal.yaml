@@ -1,0 +1,34 @@
+pattern_name: has part absent inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_absent_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [anoxia](http://purl.obolibrary.org/obo/MP_0002316), [azoospermia](http://purl.obolibrary.org/obo/MP_0005159), [absent hematopoietic stem cells](http://purl.obolibrary.org/obo/MP_0011695) (787 total)
+
+classes: 
+  abnormal: "http://purl.obolibrary.org/obo/PATO_0000460"
+  absent: "http://purl.obolibrary.org/obo/PATO_0000462"
+
+
+relations: 
+  has part: "http://purl.obolibrary.org/obo/BFO_0000051"
+
+
+vars:
+  v0: "owl:Thing"
+
+name:
+  text: "has part absent inheres in %s has modifier abnormal"
+  vars:
+    - v0
+
+def:
+  text: "has part a Any absent that inheres in a %s and has modifier a abnormal."
+  vars:
+    - v0
+
+equivalentTo:
+  text: "('has part' some 'absent' and ('inheres in' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0

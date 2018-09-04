@@ -1,0 +1,38 @@
+pattern_name: has part quality inheres in part of X occurs in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_quality_inheres_in_part_of_X_occurs_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal spermatogonia proliferation](http://purl.obolibrary.org/obo/MP_0002685), [abnormal erythrocyte ion transport](http://purl.obolibrary.org/obo/MP_0012384), [abnormal male germ cell apoptosis](http://purl.obolibrary.org/obo/MP_0008280) (74 total)
+
+classes: 
+  quality: "http://purl.obolibrary.org/obo/PATO_0000001"
+  abnormal: "http://purl.obolibrary.org/obo/PATO_0000460"
+
+
+relations: 
+  has part: "http://purl.obolibrary.org/obo/BFO_0000051"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+
+name:
+  text: "has part quality inheres in part of %s occurs in %s has modifier abnormal"
+  vars:
+    - v0
+    - v1
+
+def:
+  text: "has part a Any quality that inheres in part of a Any %s that occurs in a %s and has modifier a abnormal."
+  vars:
+    - v0
+    - v1
+
+equivalentTo:
+  text: "('has part' some 'quality' and ('inheres in part of' some %s and ('occurs in' some %s)) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

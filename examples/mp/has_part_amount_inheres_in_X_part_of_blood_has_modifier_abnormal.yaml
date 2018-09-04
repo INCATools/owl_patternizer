@@ -1,0 +1,35 @@
+pattern_name: has part amount inheres in X part of blood has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_amount_inheres_in_X_part_of_blood_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal circulating glycine level](http://purl.obolibrary.org/obo/MP_0030654), [abnormal circulating taurine level](http://purl.obolibrary.org/obo/MP_0030637), [abnormal circulating cholesterol level](http://purl.obolibrary.org/obo/MP_0000180) (120 total)
+
+classes: 
+  amount: "http://purl.obolibrary.org/obo/PATO_0000070"
+  abnormal: "http://purl.obolibrary.org/obo/PATO_0000460"
+  blood: "http://purl.obolibrary.org/obo/UBERON_0000178"
+
+
+relations: 
+  has part: "http://purl.obolibrary.org/obo/BFO_0000051"
+
+
+vars:
+  v0: "owl:Thing"
+
+name:
+  text: "has part amount inheres in %s part of blood has modifier abnormal"
+  vars:
+    - v0
+
+def:
+  text: "has part a Any amount that inheres in a Any %s that part of a blood and has modifier a abnormal."
+  vars:
+    - v0
+
+equivalentTo:
+  text: "('has part' some 'amount' and ('inheres in' some %s and ('part of' some 'blood')) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0

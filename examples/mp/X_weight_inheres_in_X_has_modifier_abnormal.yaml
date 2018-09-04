@@ -1,0 +1,39 @@
+pattern_name: X weight inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/X_weight_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal pituitary gland weight](http://purl.obolibrary.org/obo/MP_0008937), [abnormal body weight](http://purl.obolibrary.org/obo/MP_0001259), [abnormal testis weight](http://purl.obolibrary.org/obo/MP_0004850) (32 total)
+
+classes: 
+  weight: "http://purl.obolibrary.org/obo/PATO_0000128"
+  abnormal: "http://purl.obolibrary.org/obo/PATO_0000460"
+
+
+relations: 
+  inheres in: "http://purl.obolibrary.org/obo/RO_0000052"
+  has modifier: "http://purl.obolibrary.org/obo/RO_0002573"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+
+name:
+  text: "%s weight inheres in %s has modifier abnormal"
+  vars:
+    - v0
+    - v1
+
+def:
+  text: "%s a Any weight that inheres in a %s and has modifier a abnormal."
+  vars:
+    - v0
+    - v1
+
+equivalentTo:
+  text: "(%s some 'weight' and ('inheres in' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

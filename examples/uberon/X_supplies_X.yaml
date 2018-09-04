@@ -1,0 +1,50 @@
+pattern_name: X supplies X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_supplies_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [phrenic nerve](http://purl.obolibrary.org/obo/UBERON_0001884), [left renal artery](http://purl.obolibrary.org/obo/UBERON_0001186), [right renal artery](http://purl.obolibrary.org/obo/UBERON_0001185) (51 total)
+
+classes: []
+
+relations: 
+  supplies: "RO:0002178"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+
+name:
+  # Induced, frequency=0.43137254901960786, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.0784313725490196, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An %s that supplies the %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: %s %s
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('supplies' some %s)"
+  vars:
+    - v0
+    - v1

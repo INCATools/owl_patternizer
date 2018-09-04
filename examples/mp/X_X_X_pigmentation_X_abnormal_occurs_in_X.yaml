@@ -1,0 +1,50 @@
+pattern_name: X X X pigmentation X abnormal occurs in X
+pattern_iri: http://purl.obolibrary.org/obo/mp/X_X_X_pigmentation_X_abnormal_occurs_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal epidermal pigmentation](http://purl.obolibrary.org/obo/MP_0009387), [abnormal ear pigmentation](http://purl.obolibrary.org/obo/MP_0000015), [abnormal foot pigmentation](http://purl.obolibrary.org/obo/MP_0009379) (25 total)
+
+classes: 
+  pigmentation: "http://purl.obolibrary.org/obo/GO_0043473"
+  abnormal: "http://purl.obolibrary.org/obo/PATO_0000460"
+
+
+relations: 
+  occurs in: "http://purl.obolibrary.org/obo/mp/mp-equivalent-axioms-subq#occurs_in"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+  v2: "owl:Thing"
+  v3: "owl:Thing"
+  v4: "owl:Thing"
+
+name:
+  text: "%s %s %s pigmentation %s abnormal occurs in %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+    - v4
+
+def:
+  text: "%s a Any %s that %s a pigmentation and %s a abnormal and occurs in a %s."
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+    - v4
+
+equivalentTo:
+  text: "(%s some %s and (%s some 'pigmentation') and (%s some 'abnormal') and ('occurs in' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+    - v4

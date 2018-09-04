@@ -1,0 +1,43 @@
+pattern_name: X X inheres in part of apoptotic process occurs in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/X_X_inheres_in_part_of_apoptotic_process_occurs_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal fibroblast apoptosis](http://purl.obolibrary.org/obo/MP_0013500), [abnormal astrocyte apoptosis](http://purl.obolibrary.org/obo/MP_0010204), [abnormal chondrocyte apoptosis](http://purl.obolibrary.org/obo/MP_0014102) (103 total)
+
+classes: 
+  apoptotic process: "http://purl.obolibrary.org/obo/GO_0006915"
+  abnormal: "http://purl.obolibrary.org/obo/PATO_0000460"
+
+
+relations: 
+  inheres in part of: "http://purl.obolibrary.org/obo/RO_0002314"
+  has modifier: "http://purl.obolibrary.org/obo/RO_0002573"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+  v2: "owl:Thing"
+
+name:
+  text: "%s %s inheres in part of apoptotic process occurs in %s has modifier abnormal"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  text: "%s a Any %s that inheres in part of a Any apoptotic process that occurs in a %s and has modifier a abnormal."
+  vars:
+    - v0
+    - v1
+    - v2
+
+equivalentTo:
+  text: "(%s some %s and ('inheres in part of' some 'apoptotic process' and ('occurs in' some %s)) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1
+    - v2

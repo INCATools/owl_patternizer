@@ -1,0 +1,42 @@
+pattern_name: fibroblast part of X
+pattern_iri: http://purl.obolibrary.org/obo/cl/fibroblast_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [embryonic fibroblast](http://purl.obolibrary.org/obo/CL_2000042), [fibroblast of cardiac tissue](http://purl.obolibrary.org/obo/CL_0002548), [ovarian fibroblast](http://purl.obolibrary.org/obo/CL_2000063) (26 total)
+
+classes: 
+  fibroblast: "CL:0000057"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "owl:Thing"
+
+name:
+  # Induced, frequency=0.34615384615384615, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "fibroblast of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.38461538461538464, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any fibroblast that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'fibroblast' and ('part of' some %s)"
+  vars:
+    - v0

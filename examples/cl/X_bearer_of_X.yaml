@@ -1,0 +1,50 @@
+pattern_name: X bearer of X
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_bearer_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [haploid cell](http://purl.obolibrary.org/obo/CL_0000413), [anucleate cell](http://purl.obolibrary.org/obo/CL_0000225), [binucleate cell](http://purl.obolibrary.org/obo/CL_0000227) (25 total)
+
+classes: []
+
+relations: 
+  bearer of: "RO:0000053"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+
+name:
+  # Induced, frequency=0.44, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.04, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is developmentally %s and expresses natural killer cell receptors (NKR)."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: %sd %s
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('bearer of' some %s)"
+  vars:
+    - v0
+    - v1

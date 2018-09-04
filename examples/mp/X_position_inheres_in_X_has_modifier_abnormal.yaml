@@ -1,0 +1,39 @@
+pattern_name: X position inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/X_position_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal eye distance/ position](http://purl.obolibrary.org/obo/MP_0001299), [abnormal dorsal root ganglion topology](http://purl.obolibrary.org/obo/MP_0013950), [abnormal ureter topology](http://purl.obolibrary.org/obo/MP_0013943) (42 total)
+
+classes: 
+  position: "http://purl.obolibrary.org/obo/PATO_0000140"
+  abnormal: "http://purl.obolibrary.org/obo/PATO_0000460"
+
+
+relations: 
+  inheres in: "http://purl.obolibrary.org/obo/RO_0000052"
+  has modifier: "http://purl.obolibrary.org/obo/RO_0002573"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+
+name:
+  text: "%s position inheres in %s has modifier abnormal"
+  vars:
+    - v0
+    - v1
+
+def:
+  text: "%s a Any position that inheres in a %s and has modifier a abnormal."
+  vars:
+    - v0
+    - v1
+
+equivalentTo:
+  text: "(%s some 'position' and ('inheres in' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,38 @@
+pattern_name: has part morphology X X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_morphology_X_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal cranial neural crest cell morphology](http://purl.obolibrary.org/obo/MP_0012754), [abnormal trunk neural crest cell morphology](http://purl.obolibrary.org/obo/MP_0013013), [abnormal male germ cell morphology](http://purl.obolibrary.org/obo/MP_0006362) (2079 total)
+
+classes: 
+  morphology: "http://purl.obolibrary.org/obo/PATO_0000051"
+  abnormal: "http://purl.obolibrary.org/obo/PATO_0000460"
+
+
+relations: 
+  has part: "http://purl.obolibrary.org/obo/BFO_0000051"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+
+name:
+  text: "has part morphology %s %s has modifier abnormal"
+  vars:
+    - v0
+    - v1
+
+def:
+  text: "has part a Any morphology that %s a %s and has modifier a abnormal."
+  vars:
+    - v0
+    - v1
+
+equivalentTo:
+  text: "('has part' some 'morphology' and (%s some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

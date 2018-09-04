@@ -1,0 +1,39 @@
+pattern_name: X X inheres in multicellular organism has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/X_X_inheres_in_multicellular_organism_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal body composition](http://purl.obolibrary.org/obo/MP_0005451), [abnormal body size](http://purl.obolibrary.org/obo/MP_0003956), [abnormal body height](http://purl.obolibrary.org/obo/MP_0001253) (28 total)
+
+classes: 
+  abnormal: "http://purl.obolibrary.org/obo/PATO_0000460"
+  multicellular organism: "http://purl.obolibrary.org/obo/UBERON_0000468"
+
+
+relations: 
+  inheres in: "http://purl.obolibrary.org/obo/RO_0000052"
+  has modifier: "http://purl.obolibrary.org/obo/RO_0002573"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+
+name:
+  text: "%s %s inheres in multicellular organism has modifier abnormal"
+  vars:
+    - v0
+    - v1
+
+def:
+  text: "%s a Any %s that inheres in a multicellular organism and has modifier a abnormal."
+  vars:
+    - v0
+    - v1
+
+equivalentTo:
+  text: "(%s some %s and ('inheres in' some 'multicellular organism') and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

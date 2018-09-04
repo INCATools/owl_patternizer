@@ -1,0 +1,43 @@
+pattern_name: has part X X X has modifier X
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_X_X_X_has_modifier_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal behavior](http://purl.obolibrary.org/obo/MP_0004924), [abnormal nursing](http://purl.obolibrary.org/obo/MP_0001382), [corneal vascularization](http://purl.obolibrary.org/obo/MP_0005542) (8839 total)
+
+classes: []
+
+relations: 
+  has part: "http://purl.obolibrary.org/obo/BFO_0000051"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+  v2: "owl:Thing"
+  v3: "owl:Thing"
+
+name:
+  text: "has part %s %s %s has modifier %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+def:
+  text: "has part a Any %s that %s a %s and has modifier a %s."
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+equivalentTo:
+  text: "('has part' some %s and (%s some %s) and ('has modifier' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3

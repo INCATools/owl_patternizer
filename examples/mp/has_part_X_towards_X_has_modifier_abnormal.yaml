@@ -1,0 +1,37 @@
+pattern_name: has part X towards X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_X_towards_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal pancreatic alpha cell number](http://purl.obolibrary.org/obo/MP_0020577), [altered response to myocardial infarction](http://purl.obolibrary.org/obo/MP_0000343), [increased cerebellar granule cell number](http://purl.obolibrary.org/obo/MP_0008925) (74 total)
+
+classes: 
+  abnormal: "http://purl.obolibrary.org/obo/PATO_0000460"
+
+
+relations: 
+  has part: "http://purl.obolibrary.org/obo/BFO_0000051"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+
+name:
+  text: "has part %s towards %s has modifier abnormal"
+  vars:
+    - v0
+    - v1
+
+def:
+  text: "has part a Any %s that towards a %s and has modifier a abnormal."
+  vars:
+    - v0
+    - v1
+
+equivalentTo:
+  text: "('has part' some %s and ('towards' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

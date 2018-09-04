@@ -1,0 +1,48 @@
+pattern_name: X connects X connects X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_connects_X_connects_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [internal naris](http://purl.obolibrary.org/obo/UBERON_0010425), [external naris](http://purl.obolibrary.org/obo/UBERON_0005928), [sternoclavicular joint](http://purl.obolibrary.org/obo/UBERON_0001469) (152 total)
+
+classes: []
+
+relations: 
+  connects: "RO:0002176"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+  v2: "owl:Thing"
+
+name:
+  # Induced, frequency=0.1513157894736842, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s-%s %s"
+  vars:
+    - v1
+    - v2
+    - v0
+
+def:
+  # Induced, frequency=0.16447368421052633, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that connects a %s and connects a %s."
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('connects' some %s) and ('connects' some %s)"
+  vars:
+    - v0
+    - v1
+    - v2

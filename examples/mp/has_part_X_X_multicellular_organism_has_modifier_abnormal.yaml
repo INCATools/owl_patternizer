@@ -1,0 +1,38 @@
+pattern_name: has part X X multicellular organism has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_X_X_multicellular_organism_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal body composition](http://purl.obolibrary.org/obo/MP_0005451), [abnormal body size](http://purl.obolibrary.org/obo/MP_0003956), [abnormal body height](http://purl.obolibrary.org/obo/MP_0001253) (30 total)
+
+classes: 
+  abnormal: "http://purl.obolibrary.org/obo/PATO_0000460"
+  multicellular organism: "http://purl.obolibrary.org/obo/UBERON_0000468"
+
+
+relations: 
+  has part: "http://purl.obolibrary.org/obo/BFO_0000051"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+
+name:
+  text: "has part %s %s multicellular organism has modifier abnormal"
+  vars:
+    - v0
+    - v1
+
+def:
+  text: "has part a Any %s that %s a multicellular organism and has modifier a abnormal."
+  vars:
+    - v0
+    - v1
+
+equivalentTo:
+  text: "('has part' some %s and (%s some 'multicellular organism') and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

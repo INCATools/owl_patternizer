@@ -1,0 +1,44 @@
+pattern_name: X morphology inheres in X inheres in part of X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/X_morphology_inheres_in_X_inheres_in_part_of_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal brain interneuron morphology](http://purl.obolibrary.org/obo/MP_0004101), [abnormal spinal cord interneuron morphology](http://purl.obolibrary.org/obo/MP_0004100), [abnormal olfactory bulb interneuron morphology](http://purl.obolibrary.org/obo/MP_0009941) (63 total)
+
+classes: 
+  morphology: "http://purl.obolibrary.org/obo/PATO_0000051"
+  abnormal: "http://purl.obolibrary.org/obo/PATO_0000460"
+
+
+relations: 
+  inheres in: "http://purl.obolibrary.org/obo/RO_0000052"
+  inheres in part of: "http://purl.obolibrary.org/obo/RO_0002314"
+  has modifier: "http://purl.obolibrary.org/obo/RO_0002573"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+  v2: "owl:Thing"
+
+name:
+  text: "%s morphology inheres in %s inheres in part of %s has modifier abnormal"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  text: "%s a Any morphology that inheres in a %s and inheres in part of a %s and has modifier a abnormal."
+  vars:
+    - v0
+    - v1
+    - v2
+
+equivalentTo:
+  text: "(%s some 'morphology' and ('inheres in' some %s) and ('inheres in part of' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1
+    - v2

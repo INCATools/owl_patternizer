@@ -1,0 +1,36 @@
+pattern_name: X X pre-cartilage condensation
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_X_pre-cartilage_condensation
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [otic capsule pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0010349), [vertebra pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0011095), [radius-ulna pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0006287) (67 total)
+
+classes: 
+  pre-cartilage condensation: "UBERON:0005866"
+
+
+relations: []
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s pre-cartilage condensation"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.5522388059701493, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is %s a pre-cartilage condensation."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+

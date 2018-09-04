@@ -1,0 +1,51 @@
+pattern_name: has part X X X X X results_in_change_to X
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_X_X_X_X_X_results_in_change_to_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal pancreas regeneration](http://purl.obolibrary.org/obo/MP_0005518), [abnormal blood pH regulation](http://purl.obolibrary.org/obo/MP_0003027), [abnormal coronary circulation](http://purl.obolibrary.org/obo/MP_0006111) (40 total)
+
+classes: []
+
+relations: 
+  has part: "http://purl.obolibrary.org/obo/BFO_0000051"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+  v2: "owl:Thing"
+  v3: "owl:Thing"
+  v4: "owl:Thing"
+  v5: "owl:Thing"
+
+name:
+  text: "has part %s %s %s %s %s results_in_change_to %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+    - v4
+    - v5
+
+def:
+  text: "has part a Any %s that %s a %s and %s a %s and results_in_change_to a %s."
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+    - v4
+    - v5
+
+equivalentTo:
+  text: "('has part' some %s and (%s some %s) and (%s some %s) and ('results_in_change_to' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+    - v4
+    - v5

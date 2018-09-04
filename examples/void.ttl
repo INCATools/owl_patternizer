@@ -1,0 +1,88 @@
+@prefix    void: <http://rdfs.org/ns/void#> .
+@prefix	    lib: <http://www.swi-prolog.org/rdf/library/> .
+@prefix     owl: <http://www.w3.org/2002/07/owl#> .
+@prefix     rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix    rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix	dcterms: <http://purl.org/dc/terms/> .
+@prefix	   foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix        : <http://purl.obolibrary.org/obo/uberon/> .
+
+<pizza>
+    a void:Dataset ;
+    void:dataDump <../tests/data/pizza.owl> ;
+    lib:source <https://protege.stanford.edu/ontologies/pizza/pizza.owl> .
+    
+<wine>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <https://www.w3.org/TR/owl-guide/wine.rdf> .
+
+<efo>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://www.ebi.ac.uk/efo/efo.owl> .
+
+<pato>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/pato.owl> .
+    
+<uberon>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/uberon/ext.owl> .
+<cl>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/cl.owl> .
+    
+<go>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/go/extensions/go-plus.owl> .
+    
+<obi>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/obi.owl> .
+    
+<envo>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/envo.owl> .
+    
+<to>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/to.owl> .
+
+<mp>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/mp.owl> .
+
+<hp>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/hp.owl> .
+
+<doid>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/doid.owl> .
+
+<so>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/so.owl> .
+
+<ncit>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/ncit.owl> .
+
+<foodon>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/foodon.owl> .
+

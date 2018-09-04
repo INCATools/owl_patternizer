@@ -1,0 +1,46 @@
+pattern_name: has part X X X X kidney has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_X_X_X_X_kidney_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal kidney apoptosis](http://purl.obolibrary.org/obo/MP_0011367), [abnormal kidney cell proliferation](http://purl.obolibrary.org/obo/MP_0011439), [abnormal kidney iron level](http://purl.obolibrary.org/obo/MP_0008742) (29 total)
+
+classes: 
+  abnormal: "http://purl.obolibrary.org/obo/PATO_0000460"
+  kidney: "http://purl.obolibrary.org/obo/UBERON_0002113"
+
+
+relations: 
+  has part: "http://purl.obolibrary.org/obo/BFO_0000051"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+  v2: "owl:Thing"
+  v3: "owl:Thing"
+
+name:
+  text: "has part %s %s %s %s kidney has modifier abnormal"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+def:
+  text: "has part a Any %s that %s a Any %s that %s a kidney and has modifier a abnormal."
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+equivalentTo:
+  text: "('has part' some %s and (%s some %s and (%s some 'kidney')) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3

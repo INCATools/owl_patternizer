@@ -1,0 +1,50 @@
+pattern_name: X quality X X X X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/X_quality_X_X_X_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [retinal neovascularization](http://purl.obolibrary.org/obo/MP_0008852), [choroidal neovascularization](http://purl.obolibrary.org/obo/MP_0005546), [abnormal erythrocyte sodium:potassium-exchanging ATPase activity](http://purl.obolibrary.org/obo/MP_0012391) (87 total)
+
+classes: 
+  quality: "http://purl.obolibrary.org/obo/PATO_0000001"
+  abnormal: "http://purl.obolibrary.org/obo/PATO_0000460"
+
+
+relations: 
+  has modifier: "http://purl.obolibrary.org/obo/RO_0002573"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+  v2: "owl:Thing"
+  v3: "owl:Thing"
+  v4: "owl:Thing"
+
+name:
+  text: "%s quality %s %s %s %s has modifier abnormal"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+    - v4
+
+def:
+  text: "%s a Any quality that %s a Any %s that %s a %s and has modifier a abnormal."
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+    - v4
+
+equivalentTo:
+  text: "(%s some 'quality' and (%s some %s and (%s some %s)) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+    - v4

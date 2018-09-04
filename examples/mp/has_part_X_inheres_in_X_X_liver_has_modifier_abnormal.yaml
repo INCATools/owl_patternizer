@@ -1,0 +1,42 @@
+pattern_name: has part X inheres in X X liver has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_X_inheres_in_X_X_liver_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal liver cholesterol level](http://purl.obolibrary.org/obo/MP_0012776), [abnormal liver triglyceride level](http://purl.obolibrary.org/obo/MP_0012778), [abnormal liver iron level](http://purl.obolibrary.org/obo/MP_0008738) (25 total)
+
+classes: 
+  abnormal: "http://purl.obolibrary.org/obo/PATO_0000460"
+  liver: "http://purl.obolibrary.org/obo/UBERON_0002107"
+
+
+relations: 
+  has part: "http://purl.obolibrary.org/obo/BFO_0000051"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+  v2: "owl:Thing"
+
+name:
+  text: "has part %s inheres in %s %s liver has modifier abnormal"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  text: "has part a Any %s that inheres in a Any %s that %s a liver and has modifier a abnormal."
+  vars:
+    - v0
+    - v1
+    - v2
+
+equivalentTo:
+  text: "('has part' some %s and ('inheres in' some %s and (%s some 'liver')) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1
+    - v2

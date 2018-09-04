@@ -1,0 +1,46 @@
+pattern_name: has part morphology X X X X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_morphology_X_X_X_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal brain interneuron morphology](http://purl.obolibrary.org/obo/MP_0004101), [abnormal spinal cord interneuron morphology](http://purl.obolibrary.org/obo/MP_0004100), [abnormal olfactory bulb interneuron morphology](http://purl.obolibrary.org/obo/MP_0009941) (64 total)
+
+classes: 
+  morphology: "http://purl.obolibrary.org/obo/PATO_0000051"
+  abnormal: "http://purl.obolibrary.org/obo/PATO_0000460"
+
+
+relations: 
+  has part: "http://purl.obolibrary.org/obo/BFO_0000051"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+  v2: "owl:Thing"
+  v3: "owl:Thing"
+
+name:
+  text: "has part morphology %s %s %s %s has modifier abnormal"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+def:
+  text: "has part a Any morphology that %s a %s and %s a %s and has modifier a abnormal."
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+equivalentTo:
+  text: "('has part' some 'morphology' and (%s some %s) and (%s some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3

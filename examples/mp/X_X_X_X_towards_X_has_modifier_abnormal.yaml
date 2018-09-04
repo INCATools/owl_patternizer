@@ -1,0 +1,50 @@
+pattern_name: X X X X towards X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/X_X_X_X_towards_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal hemoglobin](http://purl.obolibrary.org/obo/MP_0001588), [abnormal tumor necrosis factor secretion](http://purl.obolibrary.org/obo/MP_0008556), [abnormal bone healing](http://purl.obolibrary.org/obo/MP_0002999) (126 total)
+
+classes: 
+  abnormal: "http://purl.obolibrary.org/obo/PATO_0000460"
+
+
+relations: 
+  towards: "http://purl.obolibrary.org/obo/RO_0002503"
+  has modifier: "http://purl.obolibrary.org/obo/RO_0002573"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+  v2: "owl:Thing"
+  v3: "owl:Thing"
+  v4: "owl:Thing"
+
+name:
+  text: "%s %s %s %s towards %s has modifier abnormal"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+    - v4
+
+def:
+  text: "%s a Any %s that %s a %s and towards a %s and has modifier a abnormal."
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+    - v4
+
+equivalentTo:
+  text: "(%s some %s and (%s some %s) and ('towards' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+    - v4

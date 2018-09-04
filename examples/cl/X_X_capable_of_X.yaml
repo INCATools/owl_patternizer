@@ -1,0 +1,48 @@
+pattern_name: X X capable of X
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_X_capable_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [single fate stem cell](http://purl.obolibrary.org/obo/CL_0000035), [male gamete](http://purl.obolibrary.org/obo/CL_0000408), [secondary spermatocyte](http://purl.obolibrary.org/obo/CL_0000657) (47 total)
+
+classes: []
+
+relations: 
+  capable of: "RO:0002215"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+  v2: "owl:Thing"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s capable of %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s and capable of a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and %s and ('capable of' some %s)"
+  vars:
+    - v0
+    - v1
+    - v2

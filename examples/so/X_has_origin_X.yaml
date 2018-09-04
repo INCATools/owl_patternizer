@@ -1,0 +1,50 @@
+pattern_name: X has_origin X
+pattern_iri: http://purl.obolibrary.org/obo/so/X_has_origin_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [kinetoplast_gene](http://purl.obolibrary.org/obo/SO_0000089), [apicoplast_gene](http://purl.obolibrary.org/obo/SO_0000091), [chromoplast_gene](http://purl.obolibrary.org/obo/SO_0000093) (29 total)
+
+classes: []
+
+relations: 
+  has_origin: "http://purl.obolibrary.org/obo/so#has_origin"
+
+
+vars:
+  v0: "owl:Thing"
+  v1: "owl:Thing"
+
+name:
+  # Induced, frequency=0.06896551724137931, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s_%s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.10344827586206896, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s from %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: %s %s
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('has_origin' some %s)"
+  vars:
+    - v0
+    - v1
