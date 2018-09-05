@@ -29,13 +29,14 @@ description: >-
   Examples: [increased quality](http://purl.obolibrary.org/obo/PATO_0002300), [increased speed](http://purl.obolibrary.org/obo/PATO_0000303), [increased age](http://purl.obolibrary.org/obo/PATO_0001764) (105 total)
 
 classes: 
+  quality: "PATO:0000001"
   normal: "PATO:0000461"
 
 relations: 
   increased_in_magnitude_relative_to: "http://purl.obolibrary.org/obo/pato#increased_in_magnitude_relative_to"
 
 vars:
-  v0: "owl:Thing"
+  v0: "'quality'"
 
 name:
   # Induced, frequency=0.5619047619047619, p=http://www.w3.org/2000/01/rdf-schema#label 
