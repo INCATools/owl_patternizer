@@ -1,3 +1,4 @@
+# options: [min(50),dir(uberon),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X extends_fibers_into X
 pattern_iri: http://purl.obolibrary.org/obo/uberon/X_extends_fibers_into_X
 
@@ -6,15 +7,17 @@ description: >-
 
   Examples: [thoracic dorsal root ganglion](http://purl.obolibrary.org/obo/UBERON_0002835), [lumbar dorsal root ganglion](http://purl.obolibrary.org/obo/UBERON_0002836), [cervical dorsal root ganglion](http://purl.obolibrary.org/obo/UBERON_0002834) (50 total)
 
-classes: []
+classes: 
+  anatomical entity: "UBERON:0001062"
+
 
 relations: 
   extends_fibers_into: "http://purl.obolibrary.org/obo/uberon/core#extends_fibers_into"
 
 
 vars:
-  v0: "owl:Thing"
-  v1: "owl:Thing"
+  v0: "'anatomical entity'"
+  v1: "'anatomical entity'"
 
 name:
   # Induced, frequency=0.04, p=http://www.w3.org/2000/01/rdf-schema#label 
@@ -37,7 +40,7 @@ annotationProperties:
 annotations:
   - annotationProperty: exact_synonym
     # Induced p=exact_synonym 
-    text: %s %s
+    text: "%s %s"
     vars:
       - v1
       - v0

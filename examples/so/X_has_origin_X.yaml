@@ -1,3 +1,4 @@
+# options: [min(8),dir(so),trim(true),base('http://purl.obolibrary.org/obo/so'),generalize_properties(true),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has_origin X
 pattern_iri: http://purl.obolibrary.org/obo/so/X_has_origin_X
 
@@ -6,15 +7,32 @@ description: >-
 
   Examples: [kinetoplast_gene](http://purl.obolibrary.org/obo/SO_0000089), [apicoplast_gene](http://purl.obolibrary.org/obo/SO_0000091), [chromoplast_gene](http://purl.obolibrary.org/obo/SO_0000093) (29 total)
 
-classes: []
+classes: 
+  macronuclear_sequence: "http://purl.obolibrary.org/obo/SO_0000083"
+  micronuclear_sequence: "http://purl.obolibrary.org/obo/SO_0000084"
+  BAC: "http://purl.obolibrary.org/obo/SO_0000153"
+  nuclear_sequence: "http://purl.obolibrary.org/obo/SO_0000738"
+  nucleomorphic_sequence: "http://purl.obolibrary.org/obo/SO_0000739"
+  kinetoplast: "http://purl.obolibrary.org/obo/SO_0000741"
+  apicoplast_sequence: "http://purl.obolibrary.org/obo/SO_0000743"
+  chromoplast_sequence: "http://purl.obolibrary.org/obo/SO_0000744"
+  cyanelle_sequence: "http://purl.obolibrary.org/obo/SO_0000746"
+  leucoplast_sequence: "http://purl.obolibrary.org/obo/SO_0000747"
+  proplastid_sequence: "http://purl.obolibrary.org/obo/SO_0000748"
+  plasmid_location: "http://purl.obolibrary.org/obo/SO_0000749"
+  endogenous_retroviral_sequence: "http://purl.obolibrary.org/obo/SO_0000903"
+  orphan: "http://purl.obolibrary.org/obo/SO_0000910"
+  mitochondrial_DNA: "http://purl.obolibrary.org/obo/SO_0001032"
+  chloroplast_DNA: "http://purl.obolibrary.org/obo/SO_0001033"
+
 
 relations: 
   has_origin: "http://purl.obolibrary.org/obo/so#has_origin"
 
 
 vars:
-  v0: "owl:Thing"
-  v1: "owl:Thing"
+  v0: "'region'"
+  v1: "'macronuclear_sequence' or 'micronuclear_sequence' or 'BAC' or 'nuclear_sequence' or 'nucleomorphic_sequence' or 'kinetoplast' or 'apicoplast_sequence' or 'chromoplast_sequence' or 'cyanelle_sequence' or 'leucoplast_sequence' or 'proplastid_sequence' or 'plasmid_location' or 'endogenous_retroviral_sequence' or 'orphan' or 'mitochondrial_DNA' or 'chloroplast_DNA'"
 
 name:
   # Induced, frequency=0.06896551724137931, p=http://www.w3.org/2000/01/rdf-schema#label 
@@ -37,7 +55,7 @@ annotationProperties:
 annotations:
   - annotationProperty: exact_synonym
     # Induced p=exact_synonym 
-    text: %s %s
+    text: "%s %s"
     vars:
       - v1
       - v0

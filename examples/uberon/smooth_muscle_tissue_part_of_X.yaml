@@ -1,3 +1,4 @@
+# options: [min(50),dir(uberon),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: smooth muscle tissue part of X
 pattern_iri: http://purl.obolibrary.org/obo/uberon/smooth_muscle_tissue_part_of_X
 
@@ -7,6 +8,7 @@ description: >-
   Examples: [smooth muscle of eye](http://purl.obolibrary.org/obo/UBERON_0003386), [ureter smooth muscle](http://purl.obolibrary.org/obo/UBERON_0009919), [urethra smooth muscle layer](http://purl.obolibrary.org/obo/UBERON_0004219) (55 total)
 
 classes: 
+  material anatomical entity: "UBERON:0000465"
   smooth muscle tissue: "UBERON:0001135"
 
 
@@ -15,7 +17,7 @@ relations:
 
 
 vars:
-  v0: "owl:Thing"
+  v0: "'material anatomical entity'"
 
 name:
   # Induced, frequency=0.6181818181818182, p=http://www.w3.org/2000/01/rdf-schema#label 
@@ -36,12 +38,12 @@ annotationProperties:
 annotations:
   - annotationProperty: exact_synonym
     # Induced p=exact_synonym 
-    text: smooth muscle tissue of %s
+    text: "smooth muscle tissue of %s"
     vars:
       - v0
   - annotationProperty: related_synonym
     # Induced p=related_synonym 
-    text: %s smooth muscle
+    text: "%s smooth muscle"
     vars:
       - v0
 

@@ -1,3 +1,4 @@
+# options: [min(8),dir(so),trim(true),base('http://purl.obolibrary.org/obo/so'),generalize_properties(true),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has_quality X
 pattern_iri: http://purl.obolibrary.org/obo/so/X_has_quality_X
 
@@ -6,15 +7,53 @@ description: >-
 
   Examples: [engineered_region](http://purl.obolibrary.org/obo/SO_0000804), [consensus_region](http://purl.obolibrary.org/obo/SO_0000994), [low_complexity_region](http://purl.obolibrary.org/obo/SO_0001005) (145 total)
 
-classes: []
+classes: 
+  transposable_element: "http://purl.obolibrary.org/obo/SO_0000101"
+  mRNA_with_frameshift: "http://purl.obolibrary.org/obo/SO_0000108"
+  primer: "http://purl.obolibrary.org/obo/SO_0000112"
+  gene_silenced_by_DNA_modification: "http://purl.obolibrary.org/obo/SO_0000128"
+  enhancer: "http://purl.obolibrary.org/obo/SO_0000165"
+  primary_transcript: "http://purl.obolibrary.org/obo/SO_0000185"
+  intron: "http://purl.obolibrary.org/obo/SO_0000188"
+  fusion_gene: "http://purl.obolibrary.org/obo/SO_0000287"
+  tag: "http://purl.obolibrary.org/obo/SO_0000324"
+  enzymatic_RNA: "http://purl.obolibrary.org/obo/SO_0000372"
+  rescue_region: "http://purl.obolibrary.org/obo/SO_0000411"
+  recombinationally_rearranged_gene: "http://purl.obolibrary.org/obo/SO_0000456"
+  maxicircle_gene: "http://purl.obolibrary.org/obo/SO_0000654"
+  insertion: "http://purl.obolibrary.org/obo/SO_0000667"
+  gene_with_recoded_mRNA: "http://purl.obolibrary.org/obo/SO_0000693"
+  RNA_motif: "http://purl.obolibrary.org/obo/SO_0000715"
+  mitochondrial_sequence: "http://purl.obolibrary.org/obo/SO_0000737"
+  chloroplast_sequence: "http://purl.obolibrary.org/obo/SO_0000745"
+  clone_insert: "http://purl.obolibrary.org/obo/SO_0000753"
+  episome: "http://purl.obolibrary.org/obo/SO_0000768"
+  invalidated_cDNA_clone: "http://purl.obolibrary.org/obo/SO_0000809"
+  mini_gene: "http://purl.obolibrary.org/obo/SO_0000815"
+  gene_component_region: "http://purl.obolibrary.org/obo/SO_0000842"
+  homologous_region: "http://purl.obolibrary.org/obo/SO_0000853"
+  epigenetically_modified_gene: "http://purl.obolibrary.org/obo/SO_0000898"
+  transgene: "http://purl.obolibrary.org/obo/SO_0000902"
+  double_stranded_DNA_chromosome: "http://purl.obolibrary.org/obo/SO_0000955"
+  single_stranded_DNA_chromosome: "http://purl.obolibrary.org/obo/SO_0000956"
+  single_stranded_RNA_chromosome: "http://purl.obolibrary.org/obo/SO_0000962"
+  double_stranded_RNA_chromosome: "http://purl.obolibrary.org/obo/SO_0000965"
+  post_translationally_modified_region: "http://purl.obolibrary.org/obo/SO_0001089"
+  GNA_oligo: "http://purl.obolibrary.org/obo/SO_0001193"
+  gene_silenced_by_histone_modification: "http://purl.obolibrary.org/obo/SO_0001225"
+  ncRNA_gene: "http://purl.obolibrary.org/obo/SO_0001263"
+  chromosomal_inversion: "http://purl.obolibrary.org/obo/SO_1000030"
+  ring_chromosome: "http://purl.obolibrary.org/obo/SO_1000045"
+  CDS_supported_by_sequence_similarity_data: "http://purl.obolibrary.org/obo/SO_1001251"
+
 
 relations: 
   has_quality: "http://purl.obolibrary.org/obo/so#has_quality"
 
 
 vars:
-  v0: "owl:Thing"
-  v1: "owl:Thing"
+  v0: "'transposable_element' or 'mRNA_with_frameshift' or 'primer' or 'gene_silenced_by_DNA_modification' or 'enhancer' or 'primary_transcript' or 'intron' or 'fusion_gene' or 'tag' or 'enzymatic_RNA' or 'rescue_region' or 'recombinationally_rearranged_gene' or 'maxicircle_gene' or 'insertion' or 'gene_with_recoded_mRNA' or 'RNA_motif' or 'mitochondrial_sequence' or 'chloroplast_sequence' or 'clone_insert' or 'episome' or 'invalidated_cDNA_clone' or 'mini_gene' or 'gene_component_region' or 'homologous_region' or 'epigenetically_modified_gene' or 'transgene' or 'double_stranded_DNA_chromosome' or 'single_stranded_DNA_chromosome' or 'single_stranded_RNA_chromosome' or 'double_stranded_RNA_chromosome' or 'post_translationally_modified_region' or 'GNA_oligo' or 'gene_silenced_by_histone_modification' or 'ncRNA_gene' or 'chromosomal_inversion' or 'ring_chromosome' or 'CDS_supported_by_sequence_similarity_data'"
+  v1: "'protein_coding' or 'edited' or 'post_translationally_regulated' or 'translationally_regulated' or 'maternally_imprinted' or 'paternally_imprinted' or 'allelically_excluded' or 'RNA' or 'floxed' or 'invalidated_by_chimeric_cDNA' or 'invalidated_by_genomic_contamination' or 'invalidated_by_genomic_polyA_primed_cDNA' or 'invalidated_by_partial_processing' or 'negatively_autoregulated' or 'positively_autoregulated' or 'retrotransposed' or 'scRNA_encoding' or 'snoRNA_encoding' or 'SRP_RNA_encoding' or 'tmRNA_encoding' or 'tRNA_encoding' or 'fragmentary' or 'cDNA' or 'transgenic' or 'natural' or 'engineered' or 'foreign' or 'validated' or 'fusion' or 'rescue' or 'wild_type' or 'orthologous' or 'paralogous' or 'syntenic' or 'exemplar' or 'minus_1_frameshift' or 'minus_2_frameshift' or 'plus_1_frameshift' or 'plus_2_framshift' or 'trans_spliced' or 'bound_by_protein' or 'bound_by_nucleic_acid' or 'alternatively_spliced' or 'monocistronic' or 'dicistronic' or 'codon_redefined' or 'recoded_by_translational_bypass' or 'translationally_frameshifted' or 'silenced_by_DNA_methylation' or 'rearranged_at_DNA_level' or 'independently_known' or 'supported_by_domain_match' or 'supported_by_EST_or_cDNA' or 'recombinationally_rearranged' or 'cryptic' or 'gRNA_encoding' or 'single' or 'double' or 'linear' or 'circular' or 'genomic_DNA' or 'consensus' or 'low_complexity' or 'forward' or 'reverse' or 'morpholino_backbone' or 'PNA' or 'ribozymic' or 'LNA' or 'TNA' or 'R_GNA' or 'S_GNA' or 'silenced_by_RNA_interference' or 'silenced_by_histone_methylation' or 'silenced_by_histone_deacetylation' or 'mobile' or 'intrachromosomal' or 'interchromosomal' or 'free' or 'pericentric' or 'paracentric' or 'inversion'"
 
 name:
   # Induced, frequency=0.43448275862068964, p=http://www.w3.org/2000/01/rdf-schema#label 
@@ -37,7 +76,7 @@ annotationProperties:
 annotations:
   - annotationProperty: exact_synonym
     # Induced p=exact_synonym 
-    text: %s %s
+    text: "%s %s"
     vars:
       - v1
       - v0

@@ -22,14 +22,43 @@ load_test_file :-
         rdf_load('tests/data/neoplasm.owl'),
         load_import_closure.
 
+test(exclude) :-
+        V1='$VAR'(1),
+        V2='$VAR'(2),
+        X1 = and([V1, some(V2, v)]),
+        assertion( owl_patternizer:exclude(X1, [generalize_properties(false)]) ),
+        assertion( \+ owl_patternizer:exclude(X1, []) ),
+
+        X1b = and([V1, some(p, V2)]),
+        assertion( \+ owl_patternizer:exclude(X1b, [generalize_properties(false)]) ),
+
+        X2 = and([a,b,c,d,e,f,g]),
+        assertion( owl_patternizer:exclude(X2, [max_class_signature(6), max_and_cardinality(6)]) ),
+        assertion( \+ owl_patternizer:exclude(X2, [max_class_signature(8), max_and_cardinality(8)]) ),
+        
+        X3 = and([a,some(V1,V2)]),
+        assertion( owl_patternizer:exclude(X3, [trim(true)]) ),
+        assertion( \+owl_patternizer:exclude(X3, [trim(false)]) ),
+        nl.
+        
+test(infer_range) :-
+        V1='$VAR'(1),
+        V2='$VAR'(2),
+        X = and([V1, some(LProp, V2)]),
+        
+        forall((rdf(LProp,rdf:type,owl:'ObjectProperty'),
+                infer_pattern_var_range(X,V,Range)),
+               format('RANGE: ~w ~w ~w~n',[X,V,Range])),
+
+        % 'subdivision of skeleton' should be inferred range for V1 when P=skeleton-of
+        assertion( (LProp='http://purl.obolibrary.org/obo/RO_0002576',
+                    infer_pattern_var_range(X,1,['http://purl.obolibrary.org/obo/UBERON_0010912']))),
+        nl.
+
 test(induce) :-
-        LProp='http://purl.obolibrary.org/obo/RO_0004026',
         rdf_global_id(rdfs:label, RdfsLabel),
-        %RdfsLabel='http://www.w3.org/2000/01/rdf-schema#label',
+        LProp='http://purl.obolibrary.org/obo/RO_0004026',
         X = and(['$VAR'(1), some(LProp, '$VAR'(2))]),
-        %findall(AProp-Fmt,induce_annotation_pattern(X, _, AProp, Fmt),Pairs),
-        %forall(member(AProp-Fmt,Pairs),
-        %       format('~w => ~w',[AProp,Fmt])),
         nl,
         forall(induce_annotation_pattern_with_freq(X, _, AProp, Fmt, Count),
                format('  ~w => ~w [~w]~n',[AProp,Fmt,Count])),
@@ -53,6 +82,7 @@ test(induce) :-
 
 test(write_pseudotest) :-
         % TODO: make this an actual test with assertions
+        debug(patternizer),
         generate_patterns([min(5),
                            dir(target),
                            trim(true),

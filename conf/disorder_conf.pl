@@ -5,7 +5,8 @@
 :- rdf_register_prefix('RO','http://purl.obolibrary.org/obo/RO_').
 
 doall :-
-        generate_patterns([min(5),
+        generate_patterns([min(2),
+                           generalize_properties(true),
                            dir(tmp),
                            trim(true),
                            base('http://purl.obolibrary.org/obo/myest'),

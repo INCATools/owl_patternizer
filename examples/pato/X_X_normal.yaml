@@ -1,3 +1,4 @@
+# options: [min(5),dir(pato),trim(true),base('http://purl.obolibrary.org/obo/pato'),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X X normal
 pattern_iri: http://purl.obolibrary.org/obo/pato/X_X_normal
 
@@ -8,13 +9,16 @@ description: >-
 
 classes: 
   normal: "PATO:0000461"
+  decreased_in_magnitude_relative_to: "http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to"
+  has_relative_magnitude: "http://purl.obolibrary.org/obo/pato#has_relative_magnitude"
+  increased_in_magnitude_relative_to: "http://purl.obolibrary.org/obo/pato#increased_in_magnitude_relative_to"
 
 
 relations: []
 
 vars:
-  v0: "owl:Thing"
-  v1: "owl:Thing"
+  v0: "'quality'"
+  v1: "'decreased_in_magnitude_relative_to' or 'has_relative_magnitude' or 'increased_in_magnitude_relative_to'"
 
 name:
   # Could not induce name, using default

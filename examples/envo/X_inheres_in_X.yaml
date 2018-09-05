@@ -1,3 +1,4 @@
+# options: [min(40),dir(envo),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(true),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X inheres in X
 pattern_iri: http://purl.obolibrary.org/obo/envo/X_inheres_in_X
 
@@ -6,15 +7,17 @@ description: >-
 
   Examples: [composition of soil](http://purl.obolibrary.org/obo/ENVO_09200008), [concentration of oxygen in water](http://purl.obolibrary.org/obo/ENVO_09200021), [concentration of nitrate in soil](http://purl.obolibrary.org/obo/ENVO_09200007) (46 total)
 
-classes: []
+classes: 
+  quality: "PATO:0000001"
+
 
 relations: 
   inheres in: "RO:0000052"
 
 
 vars:
-  v0: "owl:Thing"
-  v1: "owl:Thing"
+  v0: "'quality'"
+  v1: "'entity'"
 
 name:
   # Induced, frequency=0.2608695652173913, p=http://www.w3.org/2000/01/rdf-schema#label 
@@ -37,7 +40,7 @@ annotationProperties:
 annotations:
   - annotationProperty: exact_synonym
     # Induced p=exact_synonym 
-    text: %s %s
+    text: "%s %s"
     vars:
       - v1
       - v0

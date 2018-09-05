@@ -1,3 +1,4 @@
+# options: [min(50),dir(uberon),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X part of X
 pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_X
 
@@ -6,15 +7,17 @@ description: >-
 
   Examples: [submucosa of large intestine](http://purl.obolibrary.org/obo/UBERON_0001208), [submucosa of anal canal](http://purl.obolibrary.org/obo/UBERON_0003329), [intestinal submucosa](http://purl.obolibrary.org/obo/UBERON_0009566) (3557 total)
 
-classes: []
+classes: 
+  anatomical entity: "UBERON:0001062"
+
 
 relations: 
   part of: "BFO:0000050"
 
 
 vars:
-  v0: "owl:Thing"
-  v1: "owl:Thing"
+  v0: "'anatomical entity'"
+  v1: "'BFO_0000004'"
 
 name:
   # Induced, frequency=0.29659825695811076, p=http://www.w3.org/2000/01/rdf-schema#label 
@@ -37,7 +40,7 @@ annotationProperties:
 annotations:
   - annotationProperty: exact_synonym
     # Induced p=exact_synonym 
-    text: %s %s
+    text: "%s %s"
     vars:
       - v1
       - v0

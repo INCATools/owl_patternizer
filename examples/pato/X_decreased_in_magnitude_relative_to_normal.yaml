@@ -1,3 +1,4 @@
+# options: [min(5),dir(pato),trim(true),base('http://purl.obolibrary.org/obo/pato'),generalize_properties(false),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X decreased_in_magnitude_relative_to normal
 pattern_iri: http://purl.obolibrary.org/obo/pato/X_decreased_in_magnitude_relative_to_normal
 
@@ -7,6 +8,7 @@ description: >-
   Examples: [decreased quality](http://purl.obolibrary.org/obo/PATO_0002301), [decreased speed](http://purl.obolibrary.org/obo/PATO_0000304), [decreased age](http://purl.obolibrary.org/obo/PATO_0001765) (104 total)
 
 classes: 
+  quality: "PATO:0000001"
   normal: "PATO:0000461"
 
 
@@ -15,7 +17,7 @@ relations:
 
 
 vars:
-  v0: "owl:Thing"
+  v0: "'quality'"
 
 name:
   # Induced, frequency=0.5673076923076923, p=http://www.w3.org/2000/01/rdf-schema#label 
@@ -36,7 +38,7 @@ annotationProperties:
 annotations:
   - annotationProperty: exact_synonym
     # Induced p=exact_synonym 
-    text: low %s
+    text: "low %s"
     vars:
       - v0
 

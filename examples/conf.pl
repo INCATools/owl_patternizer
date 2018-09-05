@@ -32,22 +32,24 @@
 
 
 ontology_config(pizza,    [min(2), base('http://purl.obolibrary.org/obo/pizza/')]).
-ontology_config(pato,     [min(5)]).
+ontology_config(pato,     [min(5), generalize_properties(false)]).
 
 ontology_config(wine,     [min(2)]).
 
 ontology_config(so,       [min(8)]).
 ontology_config(uberon,   [min(50), max_and_cardinality(3)]).
 ontology_config(cl,       [min(20)]).
+ontology_config(fbbt,     [min(50)]).
+ontology_config(mondo,    []).
 ontology_config(to,       [min(50)]).
 ontology_config(envo,     [max_and_cardinality(3)]).
-ontology_config(go,       [min(25)]).
 ontology_config(efo,      [min(50)]).
 ontology_config(doid,     [min(25)]).
-ontology_config(mp,       [min(25)]).
-ontology_config(hp,       [min(25)]).
-ontology_config(ncit,     [min(50), max_and_cardinality(3)]).
+ontology_config(mp,       [min(50), max_class_signature(4), generalize_properties(false)]).
+ontology_config(hp,       [min(50), generalize_properties(false)]).
+ontology_config(ncit,     [min(50), generalize_properties(false), max_and_cardinality(3)]).
 ontology_config(foodon,   []).
+ontology_config(go,       [min(25)]).
 
 % ----------------------------------------
 % top-level
@@ -64,10 +66,14 @@ do_for(Ont) :-
         ontology_config(Ont,Options),
         option(min(Min),Options,40),
         option(base(Base),Options,DefaultBase),
+        option(generalize_properties(GP),Options,true),
+        option(max_and_cardinality(MAC),Options,4),
         generate_patterns([min(Min),
                            dir(Ont),
                            trim(true),
                            base(Base),
+                           generalize_properties(GP),
+                           max_and_cardinality(MAC),
                            annotations([
                                         ann(exact_synonym, oio:hasExactSynonym, 0.05),
                                         ann(related_synonym, oio:hasRelatedSynonym, 0.05)

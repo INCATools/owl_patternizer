@@ -35,6 +35,14 @@
     a lib:Ontology ;
     a lib:Virtual ;
     owl:imports <http://purl.obolibrary.org/obo/cl.owl> .
+<fbbt>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/fbbt.owl> .
+<mondo>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/mondo.owl> .
     
 <go>
     a lib:Ontology ;
@@ -77,9 +85,9 @@
     owl:imports <http://purl.obolibrary.org/obo/so.owl> .
 
 <ncit>
-    a lib:Ontology ;
-    a lib:Virtual ;
-    owl:imports <http://purl.obolibrary.org/obo/ncit.owl> .
+    a void:Dataset ;
+    void:dataDump <./ncit.owl> ;
+    lib:source <http://purl.obolibrary.org/obo/ncit.owl> .
 
 <foodon>
     a lib:Ontology ;

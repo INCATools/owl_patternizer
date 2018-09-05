@@ -1,3 +1,4 @@
+# options: [min(40),dir(envo),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(true),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X part of X
 pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_X
 
@@ -6,15 +7,17 @@ description: >-
 
   Examples: [arrugado](http://purl.obolibrary.org/obo/ENVO_00000538), [continental island](http://purl.obolibrary.org/obo/ENVO_00000221), [ice cap ridge](http://purl.obolibrary.org/obo/ENVO_00000528) (49 total)
 
-classes: []
+classes: 
+  entity: "BFO:0000001"
+
 
 relations: 
   part of: "BFO:0000050"
 
 
 vars:
-  v0: "owl:Thing"
-  v1: "owl:Thing"
+  v0: "'entity'"
+  v1: "'entity'"
 
 name:
   # Induced, frequency=0.20408163265306123, p=http://www.w3.org/2000/01/rdf-schema#label 
@@ -37,7 +40,7 @@ annotationProperties:
 annotations:
   - annotationProperty: exact_synonym
     # Induced p=exact_synonym 
-    text: %s %s
+    text: "%s %s"
     vars:
       - v1
       - v0

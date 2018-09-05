@@ -1,3 +1,4 @@
+# options: [min(8),dir(so),trim(true),base('http://purl.obolibrary.org/obo/so'),generalize_properties(true),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has_part X
 pattern_iri: http://purl.obolibrary.org/obo/so/X_has_part_X
 
@@ -6,15 +7,20 @@ description: >-
 
   Examples: [gene_with_stop_codon_read_through](http://purl.obolibrary.org/obo/SO_0000697), [gene_with_stop_codon_redefined_as_pyrrolysine](http://purl.obolibrary.org/obo/SO_0000698), [gene_with_stop_codon_redefined_as_selenocysteine](http://purl.obolibrary.org/obo/SO_0000710) (12 total)
 
-classes: []
+classes: 
+  gene_with_stop_codon_read_through: "http://purl.obolibrary.org/obo/SO_0000697"
+  transcriptional_cis_regulatory_region: "http://purl.obolibrary.org/obo/SO_0001055"
+  sequence_conflict: "http://purl.obolibrary.org/obo/SO_0001085"
+  intrachromosomal_transposition: "http://purl.obolibrary.org/obo/SO_1000041"
+
 
 relations: 
   has_part: "http://purl.obolibrary.org/obo/so#has_part"
 
 
 vars:
-  v0: "owl:Thing"
-  v1: "owl:Thing"
+  v0: "'gene_with_stop_codon_read_through' or 'transcriptional_cis_regulatory_region' or 'sequence_conflict' or 'intrachromosomal_transposition'"
+  v1: "'polypeptide' or 'contig' or 'deletion' or 'TF_binding_site' or 'stop_codon_redefined_as_pyrrolysine' or 'stop_codon_redefined_as_selenocysteine' or 'replicon' or 'direct' or 'duplication' or 'inversion'"
 
 name:
   # Could not induce name, using default

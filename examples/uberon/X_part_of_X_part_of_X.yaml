@@ -1,3 +1,4 @@
+# options: [min(50),dir(uberon),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X part of X part of X
 pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_X_part_of_X
 
@@ -6,16 +7,18 @@ description: >-
 
   Examples: [insect adult head](http://purl.obolibrary.org/obo/UBERON_6003007), [hepatopancreatic ampulla](http://purl.obolibrary.org/obo/UBERON_0004913), [epidermis of feather follicle](http://purl.obolibrary.org/obo/UBERON_0011807) (99 total)
 
-classes: []
+classes: 
+  anatomical entity: "UBERON:0001062"
+
 
 relations: 
   part of: "BFO:0000050"
 
 
 vars:
-  v0: "owl:Thing"
-  v1: "owl:Thing"
-  v2: "owl:Thing"
+  v0: "'anatomical entity'"
+  v1: "'Insecta' or 'external ectoderm' or 'renal medulla' or 'abdomen' or 'embryo' or 'skin epidermis' or 'respiratory system' or 'chordate pharynx' or 'neural tube' or 'incisor tooth' or 'common bile duct' or 'cortex of kidney' or 'collecting duct of renal tubule' or 'external acoustic meatus' or 'upper jaw region' or 'lower jaw region' or 'pinna' or 'cartilage of external ear' or 'midbrain' or 'telencephalon' or 'diencephalon' or 'metencephalon' or 'medulla oblongata' or 'neocortex' or 'dermis' or 'hypodermis' or 'trunk' or 'anterior lobe of cerebellum' or 'habenulo-interpeduncular tract' or 'right lung' or 'upper lobe of right lung' or 'middle lobe of right lung' or 'integument' or 'spinal cord' or 'cerebellar hemisphere' or 'hippocampus pyramidal layer' or 'flocculonodular lobe' or 'roof plate' or 'floor plate' or 'lobar bronchus of right lung' or 'molar tooth' or 'CA3 field of hippocampus' or 'posterior lobe of cerebellum' or 'right lung accessory lobe' or 'duodenal papilla' or 'hippocampus stratum oriens' or 'hippocampus stratum radiatum' or 'lymphatic part of lymphoid system' or 'quadrate bone' or 'adult organism' or 'primary dentition' or 'hippocampus stratum lucidum' or 'hippocampus stratum lacunosum moleculare' or 'secondary dentition' or 'joint connecting upper and lower jaws' or 'feather follicle' or 'pilosebaceous unit' or 'perianal skin' or 'lobe of cerebral hemisphere' or 'uncal CA1' or 'uncal CA2' or 'uncal CA3' or 'rostral CA1' or 'rostral CA2' or 'rostral CA3' or 'caudal CA1' or 'caudal CA2' or 'caudal CA3'"
+  v2: "'Insecta' or 'external ectoderm' or 'renal medulla' or 'abdomen' or 'embryo' or 'skin epidermis' or 'respiratory system' or 'chordate pharynx' or 'neural tube' or 'incisor tooth' or 'common bile duct' or 'cortex of kidney' or 'collecting duct of renal tubule' or 'external acoustic meatus' or 'upper jaw region' or 'lower jaw region' or 'pinna' or 'cartilage of external ear' or 'midbrain' or 'telencephalon' or 'diencephalon' or 'metencephalon' or 'medulla oblongata' or 'neocortex' or 'dermis' or 'hypodermis' or 'trunk' or 'anterior lobe of cerebellum' or 'habenulo-interpeduncular tract' or 'right lung' or 'upper lobe of right lung' or 'middle lobe of right lung' or 'integument' or 'spinal cord' or 'cerebellar hemisphere' or 'hippocampus pyramidal layer' or 'flocculonodular lobe' or 'roof plate' or 'floor plate' or 'lobar bronchus of right lung' or 'molar tooth' or 'CA3 field of hippocampus' or 'posterior lobe of cerebellum' or 'right lung accessory lobe' or 'duodenal papilla' or 'hippocampus stratum oriens' or 'hippocampus stratum radiatum' or 'lymphatic part of lymphoid system' or 'quadrate bone' or 'adult organism' or 'primary dentition' or 'hippocampus stratum lucidum' or 'hippocampus stratum lacunosum moleculare' or 'secondary dentition' or 'joint connecting upper and lower jaws' or 'feather follicle' or 'pilosebaceous unit' or 'perianal skin' or 'lobe of cerebral hemisphere' or 'uncal CA1' or 'uncal CA2' or 'uncal CA3' or 'rostral CA1' or 'rostral CA2' or 'rostral CA3' or 'caudal CA1' or 'caudal CA2' or 'caudal CA3'"
 
 name:
   # Induced, frequency=0.020202020202020204, p=http://www.w3.org/2000/01/rdf-schema#label 

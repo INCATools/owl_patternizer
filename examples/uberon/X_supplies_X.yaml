@@ -1,3 +1,4 @@
+# options: [min(50),dir(uberon),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X supplies X
 pattern_iri: http://purl.obolibrary.org/obo/uberon/X_supplies_X
 
@@ -6,15 +7,17 @@ description: >-
 
   Examples: [phrenic nerve](http://purl.obolibrary.org/obo/UBERON_0001884), [left renal artery](http://purl.obolibrary.org/obo/UBERON_0001186), [right renal artery](http://purl.obolibrary.org/obo/UBERON_0001185) (51 total)
 
-classes: []
+classes: 
+  anatomical entity: "UBERON:0001062"
+
 
 relations: 
   supplies: "RO:0002178"
 
 
 vars:
-  v0: "owl:Thing"
-  v1: "owl:Thing"
+  v0: "'anatomical entity'"
+  v1: "'anatomical structure'"
 
 name:
   # Induced, frequency=0.43137254901960786, p=http://www.w3.org/2000/01/rdf-schema#label 
@@ -37,7 +40,7 @@ annotationProperties:
 annotations:
   - annotationProperty: exact_synonym
     # Induced p=exact_synonym 
-    text: %s %s
+    text: "%s %s"
     vars:
       - v1
       - v0

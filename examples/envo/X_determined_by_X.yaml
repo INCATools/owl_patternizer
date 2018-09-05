@@ -1,3 +1,4 @@
+# options: [min(40),dir(envo),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(true),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X determined by X
 pattern_iri: http://purl.obolibrary.org/obo/envo/X_determined_by_X
 
@@ -6,15 +7,17 @@ description: >-
 
   Examples: [soil environment](http://purl.obolibrary.org/obo/ENVO_01001044), [fecal environment](http://purl.obolibrary.org/obo/ENVO_01001029), [aquatic environment](http://purl.obolibrary.org/obo/ENVO_01000317) (43 total)
 
-classes: []
+classes: 
+  environmental system: "http://purl.obolibrary.org/obo/ENVO_01000254"
+
 
 relations: 
   determined by: "RO:0002507"
 
 
 vars:
-  v0: "owl:Thing"
-  v1: "owl:Thing"
+  v0: "'environmental system'"
+  v1: "'material entity'"
 
 name:
   # Induced, frequency=0.09302325581395349, p=http://www.w3.org/2000/01/rdf-schema#label 

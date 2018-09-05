@@ -1,3 +1,4 @@
+# options: [min(8),dir(so),trim(true),base('http://purl.obolibrary.org/obo/so'),generalize_properties(true),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: transcript has_quality X
 pattern_iri: http://purl.obolibrary.org/obo/so/transcript_has_quality_X
 
@@ -8,6 +9,7 @@ description: >-
 
 classes: 
   transcript: "http://purl.obolibrary.org/obo/SO_0000673"
+  feature_attribute: "http://purl.obolibrary.org/obo/SO_0000733"
 
 
 relations: 
@@ -15,7 +17,7 @@ relations:
 
 
 vars:
-  v0: "owl:Thing"
+  v0: "'feature_attribute'"
 
 name:
   # Induced, frequency=0.6, p=http://www.w3.org/2000/01/rdf-schema#label 
@@ -36,7 +38,7 @@ annotationProperties:
 annotations:
   - annotationProperty: exact_synonym
     # Induced p=exact_synonym 
-    text: %s transcript
+    text: "%s transcript"
     vars:
       - v0
 

@@ -1,3 +1,4 @@
+# options: [min(2),dir(pizza),trim(true),base('http://purl.obolibrary.org/obo/pizza/'),generalize_properties(true),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X hasTopping X
 pattern_iri: http://purl.obolibrary.org/obo/pizza//X_hasTopping_X
 
@@ -6,15 +7,17 @@ description: >-
 
   Examples: [CheesyPizza](http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza), [MeatyPizza](http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatyPizza), [PizzaTemperada](http://www.co-ode.org/ontologies/pizza/pizza.owl#SpicyPizza) (4 total)
 
-classes: []
+classes: 
+  Pizza: "pizza:Pizza"
+
 
 relations: 
   hasTopping: "pizza:hasTopping"
 
 
 vars:
-  v0: "owl:Thing"
-  v1: "owl:Thing"
+  v0: "'Pizza'"
+  v1: "'CheeseTopping' or 'CoberturaDeCarne' or 'CoberturaTemperada'"
 
 name:
   # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 

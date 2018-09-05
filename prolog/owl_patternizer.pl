@@ -13,6 +13,8 @@
            induce_annotation_pattern_with_freq/5,
            induce_best_annotation_pattern/5,
            unify/3,
+           infer_pattern_var_range/3,
+           infer_pattern_var_range/4,
 
            load_import_closure/0]).
 
@@ -162,6 +164,14 @@ generate_patterns_from_seed(X,ParentCount,GrXs,Opts) :-
 %   true if Pattern should be excluded 
 %
 exclude(X,Opts) :-
+        expr_class_signature(X,CSig),
+        length(CSig,Len),
+        option(max_class_signature(Max),Opts,4),
+        Len > Max.
+exclude(X,Opts) :-
+        option(generalize_properties(false),Opts,true),
+        has_var_prop(X).
+exclude(X,Opts) :-
         option(exclude_prefixes(Prefixes),Opts),
         Prefixes\=[],
         expr_class_signature(X,CSig),
@@ -177,9 +187,23 @@ exclude(X,Opts) :-
         % some ontologies (e.g. CL) have long intersection lists
         % our current strategy does not allow effective generalization over
         % these so we skip
-        option(max_and_cardinality(Limit),Opts,5),
+        option(max_and_cardinality(Limit),Opts,4),
         exceeds_max_and_cardinality(X,Limit),
         !.
+
+% rules to categorize some expressions as non-"trim"
+non_trim(and(L)) :- \+ member(some(_,_), L).  % ANDs must have at least one SVF (obo-esque hardcoding)
+non_trim(and(L)) :- member(X,L), non_trim(X). % descend
+non_trim(some(P,V)) :- is_nvar(P),is_nvar(V). % SVF must have one instantiated position
+non_trim(some(_,X)) :- non_trim(X).
+
+% test if pattern contains a variable in property position
+has_var_prop(and(L)) :- member(X,L), has_var_prop(X). % descend
+has_var_prop(some(P,_)) :- is_nvar(P).
+has_var_prop(some(_,X)) :- has_var_prop(X).
+
+is_nvar('$VAR'(_)).
+
 
 exceeds_max_and_cardinality(and(L),Limit) :- length(L,Len), Len > Limit, !.
 exceeds_max_and_cardinality(and(L),Limit) :- member(X,L), exceeds_max_and_cardinality(X,Limit).
@@ -230,14 +254,20 @@ write_candidate(X, Matches, Opts) :-
         expr_class_signature(X,CSig),
         expr_property_signature(X,PSig),
         expr_var_signature(X,VSig),
-        debug(patternizer,'Class sig: ~q',[CSig]),
+        setof(RangeCls,V^RangeCls^(infer_pattern_var_range(X,Matches,V,RangeClsSet),member(RangeCls,RangeClsSet)),RangeSig),
+        ord_union(CSig, RangeSig, AllCls),
+        debug(patternizer,'Class sig: ~q + ~w',[CSig, RangeSig]),
         debug(patternizer,'Prop sig: ~q',[PSig]),
         debug(patternizer,'Var sig: ~q',[VSig]),
 
         % mapping of short labels to URIs for all signatures
-        maplist([C,obj(C,Id,N)]>>(label_or_frag(C,N),uri_curie(C,Id)),CSig,CSet),
+        maplist([C,obj(C,Id,N)]>>(label_or_frag(C,N),uri_curie(C,Id)),AllCls,CSet),
         maplist([C,obj(C,Id,N)]>>(label_or_frag(C,N),uri_curie(C,Id)),PSig,PSet),
-        maplist([V,v(VN,V,'owl:Thing')]>>(V='$VAR'(VN1),atom_concat(v,VN1,VN)),VSig,VSet),
+        maplist({X,Matches}/[V,v(VN,V,VRangeAtom)]>>(V='$VAR'(VN1),
+                                     infer_pattern_var_range(X,Matches,VN1,VRangeDisj),
+                                     uris_as_disjunction_expr(VRangeDisj, VRangeAtom),
+                                     atom_concat(v,VN1,VN)),
+                VSig,VSet),
         
         % assume OBO definition prop by default
         option(def_prop(DefAP),Opts,'http://purl.obolibrary.org/obo/IAO_0000115'),
@@ -248,6 +278,7 @@ write_candidate(X, Matches, Opts) :-
         setup_write(PId, Opts),
 
         % hacky write to YAML
+        format('# options: ~q~n',[Opts]),
         format('pattern_name: ~w~n',[PName]),
         format('pattern_iri: ~w~n',[PUrl]),
         nl,
@@ -274,6 +305,15 @@ write_candidate(X, Matches, Opts) :-
         format('  text: "~w"~n',[XEquiv]),
         show_vars('  ', EquivVars, VSet),
         told.
+
+uris_as_disjunction_expr(Cs, A) :-
+        findall(CA,
+                (   member(C,Cs),
+                    label_or_frag(C,N),
+                    sformat(CA,'\'~w\'',[N])),
+                CAs),
+        concat_atom(CAs,' or ', A).
+
 
 %! show_induced_textobj(+Tag, +X, +Matches:list, +AProp, +VSet:list) is det.
 %
@@ -323,7 +363,7 @@ show_ann_textobjs([Pair|Pairs], VSet, Done) :-
         FmtObj=fmt(FmtAtom,Vars),
         format('  - annotationProperty: ~w~n',[P]),
         format('    # Induced p=~w ~n',[P]),
-        format('    text: ~w~n',[FmtAtom]),
+        format('    text: "~w"~n',[FmtAtom]),
         show_vars('    ', Vars, VSet),
         show_ann_textobjs(Pairs, VSet, [FmtObj|Done]).
 
@@ -357,12 +397,6 @@ select_class_from_match_expr(E,Matches,Matches2) :-
         !,
         class_equiv_expression(E,X).
 
-% rules to categorize some expressions as non-"trim"
-non_trim(and(L)) :- \+ member(some(_,_), L).  % ANDs must have at least one SVF (obo-esque hardcoding)
-non_trim(and(L)) :- member(X,L), non_trim(X). % descend
-non_trim(some(P,V)) :- is_nvar(P),is_nvar(V). % SVF must have one instantiated position
-
-is_nvar('$VAR'(_)).
 
 % ========================================
 % OWL UTILS
@@ -487,6 +521,61 @@ unify1(and([Q|QL]), and(TL), Bindings) :-
         unify1(Q,T,Bindings1),
         unify1(and(QL), and(TL2), Bindings2),
         append(Bindings1, Bindings2, Bindings).
+
+% ========================================
+% INFER VAR RANGE
+% ========================================
+
+expression_var_value(X, Matches, V, Obj) :-
+        expression_var_value(X, Matches, _, V, Obj).
+
+expression_var_value(X, Matches, M, V, Obj) :-
+        member(M,Matches),
+        unify(M,X,Bindings),
+        member(V=Obj, Bindings).
+
+infer_pattern_var_range(X, V, Range) :-
+        pattern_matching_ground_expressions(X, Matches),
+        infer_pattern_var_range(X, Matches, V, Range).
+
+infer_pattern_var_range(X, Matches, V, Range) :-
+        setof(Obj,expression_var_value(X, Matches, V, Obj), Objs),
+        setwise_mrca(Objs, Range).
+
+        
+
+% reflecive ancestors excluding owl:Thing
+anc(Obj,Anc) :-      rdfs_subclass_of(Obj,Anc), \+rdf_global_id(owl:'Thing', Anc).
+anc(Obj,Obj).
+ancs(Obj,Ancs) :- setof(A,anc(Obj,A),Ancs).
+
+setwise_mrca([Obj|Objs], Range) :-
+        ancs(Obj,Ancs),
+        setwise_mrca(Objs, Ancs, Range),
+        !.
+setwise_mrca(Objs, Range) :-
+        setof(A,Obj^(member(Obj,Objs),anc(Obj,A)),Ancs),
+        nr_subset(Ancs,Range),
+        !.
+
+
+
+setwise_mrca([], Ancs, Range) :-
+        nr_subset(Ancs, Range).
+setwise_mrca([Obj|Objs], AncsIn, Range) :-
+        ancs(Obj,Ancs),
+        ord_intersection(Ancs, AncsIn, AncsOut),
+        setwise_mrca(Objs, AncsOut, Range).
+
+nr_subset(Objs, NrSet) :-
+        setof(Obj,(member(Obj,Objs),\+ redundant_with(Obj, Objs)), NrSet).
+
+redundant_with(Obj, Objs) :-
+        member(Obj2, Objs),
+        Obj \= Obj2,
+        anc(Obj2, Obj).
+        
+
 
 % ========================================
 % LEXICAL INDUCTION

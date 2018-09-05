@@ -1,3 +1,4 @@
+# options: [min(50),dir(uberon),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: zone of skin part of X
 pattern_iri: http://purl.obolibrary.org/obo/uberon/zone_of_skin_part_of_X
 
@@ -8,6 +9,7 @@ description: >-
 
 classes: 
   zone of skin: "UBERON:0000014"
+  anatomical structure: "UBERON:0000061"
 
 
 relations: 
@@ -15,7 +17,7 @@ relations:
 
 
 vars:
-  v0: "owl:Thing"
+  v0: "'anatomical structure'"
 
 name:
   # Induced, frequency=0.603448275862069, p=http://www.w3.org/2000/01/rdf-schema#label 
@@ -36,7 +38,7 @@ annotationProperties:
 annotations:
   - annotationProperty: exact_synonym
     # Induced p=exact_synonym 
-    text: %s skin
+    text: "%s skin"
     vars:
       - v0
 
