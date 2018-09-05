@@ -1,0 +1,98 @@
+# options: [min(50),dir(mp),trim(true),base('http://purl.obolibrary.org/obo/mp'),generalize_properties(false),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part X inheres in X occurs in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_X_inheres_in_X_occurs_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [corneal vascularization](http://purl.obolibrary.org/obo/MP_0005542), [abnormal erythrocyte calcium-activated potassium channel activity](http://purl.obolibrary.org/obo/MP_0012394), [retinal neovascularization](http://purl.obolibrary.org/obo/MP_0008852) (157 total)
+
+classes: 
+  melanocyte: "CL:0000148"
+  goblet cell: "CL:0000160"
+  carcinoma: "http://purl.obolibrary.org/obo/DOID_305"
+  adenoma: "http://purl.obolibrary.org/obo/DOID_657"
+  blood vessel remodeling: "GO:0001974"
+  sodium:potassium-exchanging ATPase activity: "GO:0005391"
+  melanin metabolic process: "GO:0006582"
+  apoptotic process: "GO:0006915"
+  inflammatory response: "GO:0006954"
+  axonal fasciculation: "GO:0007413"
+  blood circulation: "GO:0008015"
+  cell proliferation: "GO:0008283"
+  biosynthetic process: "GO:0009058"
+  intestine smooth muscle contraction: "GO:0014827"
+  calcium-activated potassium channel activity: "GO:0015269"
+  potassium:chloride symporter activity: "GO:0015379"
+  sodium:proton antiporter activity: "GO:0015385"
+  peristalsis: "GO:0030432"
+  GO_0031512: "GO:0031512"
+  GO_0031513: "GO:0031513"
+  pigmentation: "GO:0043473"
+  epinephrine secretion: "GO:0048242"
+  cell development: "GO:0048468"
+  system development: "GO:0048731"
+  heart contraction: "GO:0060047"
+  cardiac muscle contraction: "GO:0060048"
+  sclerosis: "http://purl.obolibrary.org/obo/MPATH_184"
+  hemangioblastoma: "http://purl.obolibrary.org/obo/MPATH_238"
+  hemangioma: "http://purl.obolibrary.org/obo/MPATH_240"
+  astrocytoma: "http://purl.obolibrary.org/obo/MPATH_244"
+  adenocarcinoma: "http://purl.obolibrary.org/obo/MPATH_268"
+  cystadenoma: "http://purl.obolibrary.org/obo/MPATH_277"
+  teratoma: "http://purl.obolibrary.org/obo/MPATH_322"
+  melanoma: "http://purl.obolibrary.org/obo/MPATH_359"
+  ganglioneuroma: "http://purl.obolibrary.org/obo/MPATH_375"
+  fibroma: "http://purl.obolibrary.org/obo/MPATH_407"
+  lipoma: "http://purl.obolibrary.org/obo/MPATH_417"
+  leiomyoma: "http://purl.obolibrary.org/obo/MPATH_425"
+  myxoma: "http://purl.obolibrary.org/obo/MPATH_431"
+  neurofibrosarcoma: "http://purl.obolibrary.org/obo/MPATH_437"
+  papilloma: "http://purl.obolibrary.org/obo/MPATH_445"
+  rhabdomyoma: "http://purl.obolibrary.org/obo/MPATH_722"
+  hamartoma: "http://purl.obolibrary.org/obo/MPATH_74"
+  neoplasm: "http://purl.obolibrary.org/obo/MP_0002006"
+  abnormal: "PATO:0000460"
+  adipose tissue: "UBERON:0001013"
+  cerebrospinal fluid: "UBERON:0001359"
+  vagus nerve: "UBERON:0001759"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'specifically dependent continuant'"
+  v1: "'melanocyte' or 'goblet cell' or 'carcinoma' or 'adenoma' or 'blood vessel remodeling' or 'sodium:potassium-exchanging ATPase activity' or 'melanin metabolic process' or 'apoptotic process' or 'inflammatory response' or 'axonal fasciculation' or 'blood circulation' or 'cell proliferation' or 'biosynthetic process' or 'intestine smooth muscle contraction' or 'calcium-activated potassium channel activity' or 'potassium:chloride symporter activity' or 'sodium:proton antiporter activity' or 'peristalsis' or 'GO_0031512' or 'GO_0031513' or 'pigmentation' or 'epinephrine secretion' or 'cell development' or 'system development' or 'heart contraction' or 'cardiac muscle contraction' or 'sclerosis' or 'hemangioblastoma' or 'hemangioma' or 'astrocytoma' or 'adenocarcinoma' or 'cystadenoma' or 'teratoma' or 'melanoma' or 'ganglioneuroma' or 'fibroma' or 'lipoma' or 'leiomyoma' or 'myxoma' or 'neurofibrosarcoma' or 'papilloma' or 'rhabdomyoma' or 'hamartoma' or 'neoplasm' or 'adipose tissue' or 'cerebrospinal fluid' or 'vagus nerve'"
+  v2: "'independent continuant'"
+
+name:
+  # Induced, frequency=0.006369426751592357, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "abnormal %s %s %s"
+  vars:
+    - v2
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "has part a Any %s that inheres in a Any %s that occurs in a %s and has modifier a abnormal"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some %s and ('inheres in' some %s and ('occurs in' some %s)) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1
+    - v2

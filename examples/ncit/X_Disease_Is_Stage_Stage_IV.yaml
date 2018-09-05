@@ -1,0 +1,50 @@
+# options: [min(50),dir(ncit),trim(true),base('http://purl.obolibrary.org/obo/ncit'),generalize_properties(false),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Disease_Is_Stage Stage IV
+pattern_iri: http://purl.obolibrary.org/obo/ncit/X_Disease_Is_Stage_Stage_IV
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ENSAT Stage IV Adrenal Cortex Carcinoma](http://purl.obolibrary.org/obo/NCIT_C104034), [Masaoka-Koga Stage IV](http://purl.obolibrary.org/obo/NCIT_C115034), [Stage IV Lip and Oral Cavity Cancer AJCC v8](http://purl.obolibrary.org/obo/NCIT_C132732) (133 total)
+
+classes: 
+  Disorder by Site: "NCIT:C27551"
+  Stage IV: "NCIT:C27971"
+  Neoplasm: "NCIT:C3262"
+
+
+relations: 
+  Disease_Is_Stage: "NCIT:R88"
+
+
+vars:
+  v0: "'Disorder by Site' or 'Neoplasm'"
+
+name:
+  # Induced, frequency=0.05263157894736842, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Stage IV %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Disease_Is_Stage a Stage IV"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "Stage IV %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('Disease_Is_Stage' some 'Stage IV')"
+  vars:
+    - v0

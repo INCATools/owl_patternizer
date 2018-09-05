@@ -1,0 +1,52 @@
+# options: [min(50),dir(ncit),trim(true),base('http://purl.obolibrary.org/obo/ncit'),generalize_properties(false),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Gene_Has_Physical_Location X Gene_In_Chromosomal_Location X
+pattern_iri: http://purl.obolibrary.org/obo/ncit/X_Gene_Has_Physical_Location_X_Gene_In_Chromosomal_Location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [CFC1 wt Allele](http://purl.obolibrary.org/obo/NCIT_C51419), [CBFB wt Allele](http://purl.obolibrary.org/obo/NCIT_C52523), [SMARCD2 wt Allele](http://purl.obolibrary.org/obo/NCIT_C52114) (69 total)
+
+classes: 
+  Gene: "NCIT:C16612"
+
+
+relations: 
+  Gene_Has_Physical_Location: "NCIT:R145"
+  Gene_In_Chromosomal_Location: "NCIT:R40"
+
+
+vars:
+  v0: "'Gene'"
+  v1: "'Anatomic Structure, System, or Substance'"
+  v2: "'Anatomic Structure, System, or Substance'"
+
+name:
+  # Could not induce name, using default
+  text: "%s Gene_Has_Physical_Location %s Gene_In_Chromosomal_Location %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Gene_Has_Physical_Location a %s and Gene_In_Chromosomal_Location a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Gene_Has_Physical_Location' some %s) and ('Gene_In_Chromosomal_Location' some %s)"
+  vars:
+    - v0
+    - v1
+    - v2

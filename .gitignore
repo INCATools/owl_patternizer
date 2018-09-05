@@ -2,6 +2,7 @@
 RDF-Cache/
 examples/load-data
 tmp/
+target/
 .plhistory
 examples/gen-*
 examples/init-*

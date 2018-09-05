@@ -1,0 +1,49 @@
+# options: [min(50),dir(ncit),trim(true),base('http://purl.obolibrary.org/obo/ncit'),generalize_properties(false),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Gene_In_Chromosomal_Location X Gene_Found_In_Organism Human
+pattern_iri: http://purl.obolibrary.org/obo/ncit/X_Gene_In_Chromosomal_Location_X_Gene_Found_In_Organism_Human
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [MCC wt Allele](http://purl.obolibrary.org/obo/NCIT_C54309), [TACSTD2 wt Allele](http://purl.obolibrary.org/obo/NCIT_C52232), [ST7 wt Allele](http://purl.obolibrary.org/obo/NCIT_C54448) (113 total)
+
+classes: 
+  Human: "NCIT:C14225"
+  Gene: "NCIT:C16612"
+
+
+relations: 
+  Gene_In_Chromosomal_Location: "NCIT:R40"
+  Gene_Found_In_Organism: "NCIT:R41"
+
+
+vars:
+  v0: "'Gene'"
+  v1: "'Chromosome Band'"
+
+name:
+  # Could not induce name, using default
+  text: "%s Gene_In_Chromosomal_Location %s Gene_Found_In_Organism Human"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.008849557522123894, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Human %s wild type allele is located in the vicinity of %s and is approximately 18 kb in length. This allele, which encodes phosducin protein, may be involved in the regulation of both photoreceptor metabolism and light-stimulated visual signaling pathways."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Gene_In_Chromosomal_Location' some %s) and ('Gene_Found_In_Organism' some 'Human')"
+  vars:
+    - v0
+    - v1

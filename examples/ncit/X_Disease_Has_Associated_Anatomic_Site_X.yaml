@@ -1,0 +1,53 @@
+# options: [min(50),dir(ncit),trim(true),base('http://purl.obolibrary.org/obo/ncit'),generalize_properties(false),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Disease_Has_Associated_Anatomic_Site X
+pattern_iri: http://purl.obolibrary.org/obo/ncit/X_Disease_Has_Associated_Anatomic_Site_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Infratentorial and Spinal Cord Ependymal Tumor](http://purl.obolibrary.org/obo/NCIT_C131613), [Extrahepatic Bile Duct Neoplasm](http://purl.obolibrary.org/obo/NCIT_C4441), [Intraventricular Brain Neoplasm](http://purl.obolibrary.org/obo/NCIT_C2937) (111 total)
+
+classes: 
+  Disorder by Site: "NCIT:C27551"
+
+
+relations: 
+  Disease_Has_Associated_Anatomic_Site: "NCIT:R100"
+
+
+vars:
+  v0: "'Disorder by Site'"
+  v1: "'Anatomic Structure, System, or Substance'"
+
+name:
+  # Induced, frequency=0.0990990990990991, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s Neoplasm"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Disease_Has_Associated_Anatomic_Site a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s Neoplasm of %s"
+    vars:
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "%s and ('Disease_Has_Associated_Anatomic_Site' some %s)"
+  vars:
+    - v0
+    - v1

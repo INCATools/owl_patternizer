@@ -1,0 +1,51 @@
+# options: [min(50),dir(ncit),trim(true),base('http://purl.obolibrary.org/obo/ncit'),generalize_properties(false),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X Disease_Has_Primary_Anatomic_Site X
+pattern_iri: http://purl.obolibrary.org/obo/ncit/X_X_Disease_Has_Primary_Anatomic_Site_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Appendix Leiomyosarcoma](http://purl.obolibrary.org/obo/NCIT_C96435), [Uterine Angiosarcoma](http://purl.obolibrary.org/obo/NCIT_C5385), [Broad Ligament Serous Cystadenoma](http://purl.obolibrary.org/obo/NCIT_C126476) (419 total)
+
+classes: 
+  Disease or Disorder: "NCIT:C2991"
+
+
+relations: 
+  Disease_Has_Primary_Anatomic_Site: "NCIT:R101"
+
+
+vars:
+  v0: "'Disease or Disorder'"
+  v1: "'Disease or Disorder'"
+  v2: "'Anatomic Structure, System, or Substance'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s Disease_Has_Primary_Anatomic_Site %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s and Disease_Has_Primary_Anatomic_Site a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and %s and ('Disease_Has_Primary_Anatomic_Site' some %s)"
+  vars:
+    - v0
+    - v1
+    - v2

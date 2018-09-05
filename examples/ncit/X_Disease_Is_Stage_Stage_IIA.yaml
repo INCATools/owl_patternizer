@@ -1,0 +1,45 @@
+# options: [min(50),dir(ncit),trim(true),base('http://purl.obolibrary.org/obo/ncit'),generalize_properties(false),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Disease_Is_Stage Stage IIA
+pattern_iri: http://purl.obolibrary.org/obo/ncit/X_Disease_Is_Stage_Stage_IIA
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Masaoka-Koga Stage IIa](http://purl.obolibrary.org/obo/NCIT_C112008), [Clinical Stage IIA Esophageal Adenocarcinoma AJCC v8](http://purl.obolibrary.org/obo/NCIT_C133405), [Pathologic Stage IIA Esophageal Adenocarcinoma AJCC v8](http://purl.obolibrary.org/obo/NCIT_C133419) (61 total)
+
+classes: 
+  Disorder by Site: "NCIT:C27551"
+  Stage IIA: "NCIT:C27967"
+  Neoplasm: "NCIT:C3262"
+
+
+relations: 
+  Disease_Is_Stage: "NCIT:R88"
+
+
+vars:
+  v0: "'Disorder by Site' or 'Neoplasm'"
+
+name:
+  # Induced, frequency=0.01639344262295082, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%sa"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Disease_Is_Stage a Stage IIA"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Disease_Is_Stage' some 'Stage IIA')"
+  vars:
+    - v0

@@ -1,0 +1,47 @@
+# options: [min(50),dir(ncit),trim(true),base('http://purl.obolibrary.org/obo/ncit'),generalize_properties(false),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Disease_Has_Primary_Anatomic_Site X
+pattern_iri: http://purl.obolibrary.org/obo/ncit/X_Disease_Has_Primary_Anatomic_Site_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Mucosal Melanoma of the Head and Neck](http://purl.obolibrary.org/obo/NCIT_C133187), [Aortic Angiosarcoma](http://purl.obolibrary.org/obo/NCIT_C5376), [Peripheral Intraneural Angiosarcoma](http://purl.obolibrary.org/obo/NCIT_C5320) (145 total)
+
+classes: 
+  Disease or Disorder: "NCIT:C2991"
+
+
+relations: 
+  Disease_Has_Primary_Anatomic_Site: "NCIT:R101"
+
+
+vars:
+  v0: "'Disease or Disorder'"
+  v1: "'Anatomic Structure, System, or Substance'"
+
+name:
+  # Induced, frequency=0.027586206896551724, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.013793103448275862, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s involving the organs and structures in the %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Disease_Has_Primary_Anatomic_Site' some %s)"
+  vars:
+    - v0
+    - v1

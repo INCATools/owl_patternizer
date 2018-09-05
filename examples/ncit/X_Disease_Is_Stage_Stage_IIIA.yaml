@@ -1,0 +1,45 @@
+# options: [min(50),dir(ncit),trim(true),base('http://purl.obolibrary.org/obo/ncit'),generalize_properties(false),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Disease_Is_Stage Stage IIIA
+pattern_iri: http://purl.obolibrary.org/obo/ncit/X_Disease_Is_Stage_Stage_IIIA
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Stage IIIA Primary Peritoneal Cancer AJCC v7](http://purl.obolibrary.org/obo/NCIT_C115095), [Pathologic Stage IIIA Esophageal Adenocarcinoma AJCC v8](http://purl.obolibrary.org/obo/NCIT_C133422), [Postneoadjuvant Therapy Stage IIIA Esophageal Adenocarcinoma AJCC v8](http://purl.obolibrary.org/obo/NCIT_C133436) (75 total)
+
+classes: 
+  Disorder by Site: "NCIT:C27551"
+  Stage IIIA: "NCIT:C27977"
+  Neoplasm: "NCIT:C3262"
+
+
+relations: 
+  Disease_Is_Stage: "NCIT:R88"
+
+
+vars:
+  v0: "'Disorder by Site' or 'Neoplasm'"
+
+name:
+  # Induced, frequency=0.02666666666666667, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Stage IIIA %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Disease_Is_Stage a Stage IIIA"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Disease_Is_Stage' some 'Stage IIIA')"
+  vars:
+    - v0

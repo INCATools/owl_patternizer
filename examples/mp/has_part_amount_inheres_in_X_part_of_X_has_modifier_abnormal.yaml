@@ -1,0 +1,49 @@
+# options: [min(50),dir(mp),trim(true),base('http://purl.obolibrary.org/obo/mp'),generalize_properties(false),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part amount inheres in X part of X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_amount_inheres_in_X_part_of_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal body water content](http://purl.obolibrary.org/obo/MP_0000676), [abnormal platelet ATP level](http://purl.obolibrary.org/obo/MP_0009447), [abnormal circulating glycine level](http://purl.obolibrary.org/obo/MP_0030654) (186 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  amount: "PATO:0000070"
+  abnormal: "PATO:0000460"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'continuant'"
+  v1: "'material entity'"
+
+name:
+  # Induced, frequency=0.15591397849462366, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "abnormal %s %s level"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.026881720430107527, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "any change in the amount of %s in the %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some 'amount' and ('inheres in' some %s and ('part of' some %s)) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

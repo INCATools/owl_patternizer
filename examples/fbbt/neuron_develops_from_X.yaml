@@ -1,0 +1,44 @@
+# options: [min(50),dir(fbbt),trim(true),base('http://purl.obolibrary.org/obo/fbbt'),generalize_properties(true),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: neuron develops_from X
+pattern_iri: http://purl.obolibrary.org/obo/fbbt/neuron_develops_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [BAla3 lineage neuron](http://purl.obolibrary.org/obo/FBbt_00100658), [DALv2 lineage neuron](http://purl.obolibrary.org/obo/FBbt_00100643), [BAmv1 lineage neuron](http://purl.obolibrary.org/obo/FBbt_00100652) (92 total)
+
+classes: 
+  procephalic neuroblast: "http://purl.obolibrary.org/obo/FBbt_00001333"
+  neuron: "http://purl.obolibrary.org/obo/FBbt_00005106"
+
+
+relations: 
+  develops_from: "RO:0002202"
+
+
+vars:
+  v0: "'procephalic neuroblast'"
+
+name:
+  # Induced, frequency=0.010869565217391304, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "DPMpl3 lineage neuron%s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.010869565217391304, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Neuron developing from the %s (BAlc1 and BAlc2) neuroblast."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'neuron' and ('develops_from' some %s)"
+  vars:
+    - v0

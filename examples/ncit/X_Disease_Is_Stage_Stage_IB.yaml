@@ -1,0 +1,50 @@
+# options: [min(50),dir(ncit),trim(true),base('http://purl.obolibrary.org/obo/ncit'),generalize_properties(false),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Disease_Is_Stage Stage IB
+pattern_iri: http://purl.obolibrary.org/obo/ncit/X_Disease_Is_Stage_Stage_IB
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Pathologic Stage IB Esophageal Adenocarcinoma AJCC v8](http://purl.obolibrary.org/obo/NCIT_C133416), [Pathologic Stage IB Esophageal Squamous Cell Carcinoma AJCC v8](http://purl.obolibrary.org/obo/NCIT_C133530), [Pathologic Stage IB Gastroesophageal Junction Adenocarcinoma AJCC v8](http://purl.obolibrary.org/obo/NCIT_C133567) (54 total)
+
+classes: 
+  Disorder by Site: "NCIT:C27551"
+  Stage IB: "NCIT:C27976"
+  Neoplasm by Site: "NCIT:C3263"
+
+
+relations: 
+  Disease_Is_Stage: "NCIT:R88"
+
+
+vars:
+  v0: "'Disorder by Site' or 'Neoplasm by Site'"
+
+name:
+  # Induced, frequency=0.018518518518518517, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Stage IB %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Disease_Is_Stage a Stage IB"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%sB"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('Disease_Is_Stage' some 'Stage IB')"
+  vars:
+    - v0

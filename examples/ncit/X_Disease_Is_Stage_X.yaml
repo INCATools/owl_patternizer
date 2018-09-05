@@ -1,0 +1,53 @@
+# options: [min(50),dir(ncit),trim(true),base('http://purl.obolibrary.org/obo/ncit'),generalize_properties(false),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Disease_Is_Stage X
+pattern_iri: http://purl.obolibrary.org/obo/ncit/X_Disease_Is_Stage_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ENSAT Stage I Adrenal Cortex Carcinoma](http://purl.obolibrary.org/obo/NCIT_C104031), [ENSAT Stage III Adrenal Cortex Carcinoma](http://purl.obolibrary.org/obo/NCIT_C104033), [ENSAT Stage IV Adrenal Cortex Carcinoma](http://purl.obolibrary.org/obo/NCIT_C104034) (1341 total)
+
+classes: 
+  Neoplasm: "NCIT:C3262"
+
+
+relations: 
+  Disease_Is_Stage: "NCIT:R88"
+
+
+vars:
+  v0: "'Neoplasm'"
+  v1: "'Disease Stage Qualifier'"
+
+name:
+  # Induced, frequency=0.09023117076808351, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s by %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Disease_Is_Stage a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s by %s"
+    vars:
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "%s and ('Disease_Is_Stage' some %s)"
+  vars:
+    - v0
+    - v1

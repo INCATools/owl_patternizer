@@ -1,0 +1,52 @@
+# options: [min(50),dir(fbbt),trim(true),base('http://purl.obolibrary.org/obo/fbbt'),generalize_properties(true),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of X expresses X
+pattern_iri: http://purl.obolibrary.org/obo/fbbt/X_part_of_X_expresses_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [larval NPF neuron](http://purl.obolibrary.org/obo/FBbt_00047250), [larval TrpA1 neuron](http://purl.obolibrary.org/obo/FBbt_00047254), [adult doublesex neuron](http://purl.obolibrary.org/obo/FBbt_00047347) (89 total)
+
+classes: 
+  SO_0000704: "http://purl.obolibrary.org/obo/SO_0000704"
+
+
+relations: 
+  part of: "BFO:0000050"
+  expresses: "RO:0002292"
+
+
+vars:
+  v0: "'anatomical structure'"
+  v1: "'multicellular structure'"
+  v2: "'SO_0000704'"
+
+name:
+  # Induced, frequency=0.011235955056179775, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s %s"
+  vars:
+    - v1
+    - v2
+    - v0
+
+def:
+  # Induced, frequency=0.011235955056179775, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any %s (FBbt:00005106) that is part of some adult %s Lo lineage clone (%s)."
+  vars:
+    - v0
+    - v2
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('part of' some %s) and ('expresses' some %s)"
+  vars:
+    - v0
+    - v1
+    - v2

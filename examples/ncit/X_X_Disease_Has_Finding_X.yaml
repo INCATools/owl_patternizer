@@ -1,0 +1,51 @@
+# options: [min(50),dir(ncit),trim(true),base('http://purl.obolibrary.org/obo/ncit'),generalize_properties(false),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X Disease_Has_Finding X
+pattern_iri: http://purl.obolibrary.org/obo/ncit/X_X_Disease_Has_Finding_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Class 1a Uveal Melanoma](http://purl.obolibrary.org/obo/NCIT_C111022), [Childhood Carcinoid Tumor](http://purl.obolibrary.org/obo/NCIT_C118810), [Childhood Non-Small Cell Lung Carcinoma](http://purl.obolibrary.org/obo/NCIT_C118814) (268 total)
+
+classes: 
+  Disease, Disorder or Finding: "NCIT:C7057"
+
+
+relations: 
+  Disease_Has_Finding: "NCIT:R108"
+
+
+vars:
+  v0: "'Disease or Disorder'"
+  v1: "'Disease or Disorder'"
+  v2: "'Disease, Disorder or Finding'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s Disease_Has_Finding %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s and Disease_Has_Finding a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and %s and ('Disease_Has_Finding' some %s)"
+  vars:
+    - v0
+    - v1
+    - v2

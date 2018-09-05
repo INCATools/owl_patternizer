@@ -1,0 +1,47 @@
+# options: [min(50),dir(ncit),trim(true),base('http://purl.obolibrary.org/obo/ncit'),generalize_properties(false),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Gene_In_Chromosomal_Location X
+pattern_iri: http://purl.obolibrary.org/obo/ncit/X_Gene_In_Chromosomal_Location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [MEN1 wt Allele](http://purl.obolibrary.org/obo/NCIT_C53065), [MCM10 wt Allele](http://purl.obolibrary.org/obo/NCIT_C52309), [PPP2R5A wt Allele](http://purl.obolibrary.org/obo/NCIT_C49441) (123 total)
+
+classes: 
+  Gene: "NCIT:C16612"
+
+
+relations: 
+  Gene_In_Chromosomal_Location: "NCIT:R40"
+
+
+vars:
+  v0: "'Gene'"
+  v1: "'Chromosome Band'"
+
+name:
+  # Could not induce name, using default
+  text: "%s Gene_In_Chromosomal_Location %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.008130081300813009, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Human %s is located in the vicinity of %s and is approximately 108 kb in length. This allele, which encodes histone-lysine N-methyltransferase SETD2 protein, may play a role in transcriptional activation and epigenetic modification of chromatin."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Gene_In_Chromosomal_Location' some %s)"
+  vars:
+    - v0
+    - v1

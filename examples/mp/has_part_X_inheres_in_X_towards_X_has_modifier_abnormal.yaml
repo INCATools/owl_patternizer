@@ -1,0 +1,52 @@
+# options: [min(50),dir(mp),trim(true),base('http://purl.obolibrary.org/obo/mp'),generalize_properties(false),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part X inheres in X towards X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_X_inheres_in_X_towards_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal hemoglobin](http://purl.obolibrary.org/obo/MP_0001588), [abnormal tumor necrosis factor secretion](http://purl.obolibrary.org/obo/MP_0008556), [abnormal bone healing](http://purl.obolibrary.org/obo/MP_0002999) (125 total)
+
+classes: 
+  quality: "PATO:0000001"
+  abnormal: "PATO:0000460"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'quality'"
+  v1: "'erythrocyte' or 'cell' or 'plasma membrane' or 'secretion by cell' or 'wound healing' or 'podocyte foot' or 'peripheral nervous system' or 'camera-type eye' or 'lymph node' or 'dorsal root ganglion' or 'tetrapod parietal bone' or 'multicellular organism' or 'testis' or 'aorta' or 'cornea' or 'retina' or 'skeletal joint' or 'rectum' or 'bony vertebral centrum' or 'vertebral bone 1' or 'sacral vertebra' or 'caudal vertebra' or 'clavicle bone' or 'intestinal villus' or 'pancreas' or 'radius bone' or 'chest' or 'tarsal bone' or 'metatarsal bone' or 'muscle organ' or 'artery' or 'glossopharyngeal nerve' or 'incus bone' or 'basioccipital bone' or 'jaw skeleton' or 'upper jaw region' or 'tongue' or 'arytenoid cartilage' or 'cementum' or 'optic choroid' or 'palpebral conjunctiva' or 'lip' or 'saccule of membranous labyrinth' or 'rhombomere' or 'cartilage of bronchus' or 'stratum corneum of epidermis' or 'hindlimb' or 'spleen' or 'liver' or 'kidney' or 'sternebra' or 'rib' or 'tectorial membrane of cochlea' or 'vestibular membrane of cochlear duct' or 'somite' or 'thoracic vertebra' or 'thymus' or 'metacarpal bone' or 'cricoid cartilage' or 'immune system' or 'cervical vertebra' or 'lumbar vertebra' or 'pharyngeal arch' or 'digit' or 'phalanx' or 'upper jaw incisor' or 'lower jaw incisor' or 'lung blood vessel' or 'kidney blood vessel' or 'trachea cartilage' or 'molar tooth' or 'neural arch' or 'alveolar ridge' or 'periodontal ligament' or 'set of upper jaw teeth' or 'bone of upper jaw'"
+  v2: "'hydrogen peroxide' or 'alkylating agent' or 'methyl methanesulfonate' or 'sphingolipid' or 'hemoglobin' or 'surfactant' or 'mineral' or 'glial cell (sensu Vertebrata)' or 'type III hypersensitivity' or 'type IV hypersensitivity' or 'blood vessel remodeling' or 'type II hypersensitivity' or 'cell' or 'response to oxidative stress' or 'blood circulation' or 'type I hypersensitivity' or 'animal organ development' or 'sensory perception of bitter taste' or 'sensory perception of salty taste' or 'sensory perception of sour taste' or 'sensory perception of sweet taste' or 'sensory perception of umami taste' or 'podocyte foot' or 'atrophy' or 'parakeratosis' or 'arthritis' or 'atherosclerosis' or 'hyperlipidemia' or 'hepatic steatosis' or 'tumor necrosis factor alpha' or 'insulin' or 'camera-type eye' or 'dorsal root ganglion' or 'urethra' or 'tetrapod parietal bone' or 'heart' or 'lens of camera-type eye' or 'skeletal joint' or 'vagina' or 'bony vertebral centrum' or 'sacral vertebra' or 'caudal vertebra' or 'intestinal villus' or 'ulna' or 'tarsal bone' or 'metatarsal bone' or 'arch of aorta' or 'occipital bone' or 'malleus bone' or 'lower jaw region' or 'cementum' or 'vagus nerve' or 'lip' or 'utricle of membranous labyrinth' or 'scala vestibuli' or 'rhombomere' or 'cartilage of bronchus' or 'hindlimb' or 'kidney' or 'sternebra' or 'rib' or 'lamina of spiral limbus' or 'somite' or 'thoracic vertebra' or 'metacarpal bone' or 'cricoid cartilage' or 'cervical vertebra' or 'lumbar vertebra' or 'epiphyseal plate' or 'pharyngeal arch' or 'digit' or 'upper jaw incisor' or 'lower jaw incisor' or 'trachea cartilage' or 'molar tooth' or 'mouth floor' or 'neural arch' or 'odontoid process of cervical vertebra 2' or 'alveolar ridge' or 'distal phalanx' or 'interventricular septum membranous part' or 'bone of lower jaw' or 'bodily fluid' or 'basisphenoid bone' or 'set of lower jaw teeth' or 'bulbar conjunctiva'"
+
+name:
+  # Could not induce name, using default
+  text: "has part %s inheres in %s towards %s has modifier abnormal"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "has part a Any %s that inheres in a %s and towards a %s and has modifier a abnormal"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some %s and ('inheres in' some %s) and ('towards' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1
+    - v2

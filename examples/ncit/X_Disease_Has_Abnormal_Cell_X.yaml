@@ -1,0 +1,47 @@
+# options: [min(50),dir(ncit),trim(true),base('http://purl.obolibrary.org/obo/ncit'),generalize_properties(false),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Disease_Has_Abnormal_Cell X
+pattern_iri: http://purl.obolibrary.org/obo/ncit/X_Disease_Has_Abnormal_Cell_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Undifferentiated Epithelioid Sarcoma](http://purl.obolibrary.org/obo/NCIT_C121802), [Giant Cell Tumor of Bone](http://purl.obolibrary.org/obo/NCIT_C121932), [Mucinous Lung Adenocarcinoma In Situ](http://purl.obolibrary.org/obo/NCIT_C136717) (102 total)
+
+classes: 
+  Disease or Disorder: "NCIT:C2991"
+
+
+relations: 
+  Disease_Has_Abnormal_Cell: "NCIT:R105"
+
+
+vars:
+  v0: "'Disease or Disorder'"
+  v1: "'Abnormal Cell'"
+
+name:
+  # Induced, frequency=0.0392156862745098, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Clear %s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Disease_Has_Abnormal_Cell a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Disease_Has_Abnormal_Cell' some %s)"
+  vars:
+    - v0
+    - v1

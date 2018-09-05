@@ -1,0 +1,51 @@
+# options: [min(50),dir(ncit),trim(true),base('http://purl.obolibrary.org/obo/ncit'),generalize_properties(false),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Disease_Has_Finding X Disease_Has_Finding X
+pattern_iri: http://purl.obolibrary.org/obo/ncit/X_Disease_Has_Finding_X_Disease_Has_Finding_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Refractory Malignant Neoplasm of Multiple Primary Sites](http://purl.obolibrary.org/obo/NCIT_C150529), [Classical Poroma](http://purl.obolibrary.org/obo/NCIT_C43353), [Amyloidoma](http://purl.obolibrary.org/obo/NCIT_C41137) (64 total)
+
+classes: 
+  Finding: "NCIT:C3367"
+
+
+relations: 
+  Disease_Has_Finding: "NCIT:R108"
+
+
+vars:
+  v0: "'Disease or Disorder'"
+  v1: "'Finding'"
+  v2: "'Finding'"
+
+name:
+  # Could not induce name, using default
+  text: "%s Disease_Has_Finding %s Disease_Has_Finding %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Disease_Has_Finding a %s and Disease_Has_Finding a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Disease_Has_Finding' some %s) and ('Disease_Has_Finding' some %s)"
+  vars:
+    - v0
+    - v1
+    - v2

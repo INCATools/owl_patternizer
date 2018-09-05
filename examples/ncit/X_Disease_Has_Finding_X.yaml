@@ -1,0 +1,47 @@
+# options: [min(50),dir(ncit),trim(true),base('http://purl.obolibrary.org/obo/ncit'),generalize_properties(false),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Disease_Has_Finding X
+pattern_iri: http://purl.obolibrary.org/obo/ncit/X_Disease_Has_Finding_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Childhood Langerhans Cell Histiocytosis with Risk Organ Involvement](http://purl.obolibrary.org/obo/NCIT_C123395), [Localized Childhood Undifferentiated High Grade Pleomorphic Sarcoma of Bone](http://purl.obolibrary.org/obo/NCIT_C115998), [Recurrent Childhood Undifferentiated High Grade Pleomorphic Sarcoma of Bone](http://purl.obolibrary.org/obo/NCIT_C115368) (472 total)
+
+classes: 
+  Disease, Disorder or Finding: "NCIT:C7057"
+
+
+relations: 
+  Disease_Has_Finding: "NCIT:R108"
+
+
+vars:
+  v0: "'Disease or Disorder'"
+  v1: "'Disease, Disorder or Finding'"
+
+name:
+  # Induced, frequency=0.019067796610169493, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s with %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.00211864406779661, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A skin lesion characterized by the disappearance of the %s cells from the primary melanoma site. The disappearance of the malignant cells is associated with fibroplasia of the papillary dermis. According to some authors, complete %s of the primary melanoma may occur in 4-8% of patients."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Disease_Has_Finding' some %s)"
+  vars:
+    - v0
+    - v1

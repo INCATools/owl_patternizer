@@ -1,0 +1,51 @@
+# options: [min(50),dir(ncit),trim(true),base('http://purl.obolibrary.org/obo/ncit'),generalize_properties(false),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X Disease_Excludes_Finding X
+pattern_iri: http://purl.obolibrary.org/obo/ncit/X_X_Disease_Excludes_Finding_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Neural Glioblastoma](http://purl.obolibrary.org/obo/NCIT_C111693), [Central Nervous System B-Cell Non-Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C147948), [Central Nervous System T-Cell Non-Hodgkin Lymphoma](http://purl.obolibrary.org/obo/NCIT_C5409) (92 total)
+
+classes: 
+  Finding: "NCIT:C3367"
+
+
+relations: 
+  Disease_Excludes_Finding: "NCIT:R142"
+
+
+vars:
+  v0: "'Neoplasm'"
+  v1: "'Neoplasm'"
+  v2: "'Finding'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s Disease_Excludes_Finding %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s and Disease_Excludes_Finding a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and %s and ('Disease_Excludes_Finding' some %s)"
+  vars:
+    - v0
+    - v1
+    - v2

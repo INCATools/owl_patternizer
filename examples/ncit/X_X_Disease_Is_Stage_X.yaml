@@ -1,0 +1,51 @@
+# options: [min(50),dir(ncit),trim(true),base('http://purl.obolibrary.org/obo/ncit'),generalize_properties(false),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X Disease_Is_Stage X
+pattern_iri: http://purl.obolibrary.org/obo/ncit/X_X_Disease_Is_Stage_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [BCLC Stage 0 Hepatocellular Carcinoma](http://purl.obolibrary.org/obo/NCIT_C115133), [BCLC Stage A Hepatocellular Carcinoma](http://purl.obolibrary.org/obo/NCIT_C115135), [BCLC Stage B Hepatocellular Carcinoma](http://purl.obolibrary.org/obo/NCIT_C115136) (132 total)
+
+classes: 
+  Neoplasm by Morphology: "NCIT:C4741"
+
+
+relations: 
+  Disease_Is_Stage: "NCIT:R88"
+
+
+vars:
+  v0: "'Neoplasm by Morphology'"
+  v1: "'Neoplasm by Morphology'"
+  v2: "'Disease Stage Qualifier'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s Disease_Is_Stage %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s and Disease_Is_Stage a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and %s and ('Disease_Is_Stage' some %s)"
+  vars:
+    - v0
+    - v1
+    - v2

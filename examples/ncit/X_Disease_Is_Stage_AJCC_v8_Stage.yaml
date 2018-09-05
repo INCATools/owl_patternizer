@@ -1,0 +1,50 @@
+# options: [min(50),dir(ncit),trim(true),base('http://purl.obolibrary.org/obo/ncit'),generalize_properties(false),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Disease_Is_Stage AJCC v8 Stage
+pattern_iri: http://purl.obolibrary.org/obo/ncit/X_Disease_Is_Stage_AJCC_v8_Stage
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Cutaneous Squamous Cell Carcinoma of the Head and Neck by AJCC v8 Stage](http://purl.obolibrary.org/obo/NCIT_C133253), [Duodenal Neuroendocrine Tumor by AJCC v8 Stage](http://purl.obolibrary.org/obo/NCIT_C135075), [Jejunal Neuroendocrine Tumor by AJCC v8 Stage](http://purl.obolibrary.org/obo/NCIT_C135119) (57 total)
+
+classes: 
+  AJCC v8 Stage: "NCIT:C132248"
+  Disorder by Site: "NCIT:C27551"
+  Neoplasm: "NCIT:C3262"
+
+
+relations: 
+  Disease_Is_Stage: "NCIT:R88"
+
+
+vars:
+  v0: "'Disorder by Site' or 'Neoplasm'"
+
+name:
+  # Induced, frequency=0.9122807017543859, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s by AJCC v8 Stage"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.03508771929824561, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A term that refers to the staging of %s according to the American Joint Committee on Cancer, 8th edition."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s by AJCC v8 Stage"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('Disease_Is_Stage' some 'AJCC v8 Stage')"
+  vars:
+    - v0

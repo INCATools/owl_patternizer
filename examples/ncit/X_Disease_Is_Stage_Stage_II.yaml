@@ -1,0 +1,50 @@
+# options: [min(50),dir(ncit),trim(true),base('http://purl.obolibrary.org/obo/ncit'),generalize_properties(false),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Disease_Is_Stage Stage II
+pattern_iri: http://purl.obolibrary.org/obo/ncit/X_Disease_Is_Stage_Stage_II
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ENSAT Stage II Adrenal Cortex Carcinoma](http://purl.obolibrary.org/obo/NCIT_C104032), [Masaoka-Koga Stage II](http://purl.obolibrary.org/obo/NCIT_C115033), [Stage II Lip and Oral Cavity Cancer AJCC v8](http://purl.obolibrary.org/obo/NCIT_C132730) (131 total)
+
+classes: 
+  Disorder by Site: "NCIT:C27551"
+  Stage II: "NCIT:C28054"
+  Neoplasm: "NCIT:C3262"
+
+
+relations: 
+  Disease_Is_Stage: "NCIT:R88"
+
+
+vars:
+  v0: "'Disorder by Site' or 'Neoplasm'"
+
+name:
+  # Induced, frequency=0.05343511450381679, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Stage II %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Disease_Is_Stage a Stage II"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "Stage II %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('Disease_Is_Stage' some 'Stage II')"
+  vars:
+    - v0

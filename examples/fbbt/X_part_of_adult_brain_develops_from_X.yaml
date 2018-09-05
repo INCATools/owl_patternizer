@@ -1,0 +1,49 @@
+# options: [min(50),dir(fbbt),trim(true),base('http://purl.obolibrary.org/obo/fbbt'),generalize_properties(true),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of adult brain develops_from X
+pattern_iri: http://purl.obolibrary.org/obo/fbbt/X_part_of_adult_brain_develops_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [adult MBp lineage neuron](http://purl.obolibrary.org/obo/FBbt_00110577), [adult LHa2 lineage neuron](http://purl.obolibrary.org/obo/FBbt_00050002), [adult SLPa&l1 lineage neuron](http://purl.obolibrary.org/obo/FBbt_00050005) (127 total)
+
+classes: 
+  adult brain: "http://purl.obolibrary.org/obo/FBbt_00003624"
+  neuroblast: "http://purl.obolibrary.org/obo/FBbt_00005146"
+
+
+relations: 
+  part of: "BFO:0000050"
+  develops_from: "RO:0002202"
+
+
+vars:
+  v0: "'neuron'"
+  v1: "'neuroblast'"
+
+name:
+  # Induced, frequency=0.023622047244094488, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "adult %s lineage %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.007874015748031496, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Adult, %s descended from the ventral antennal lobe (AL) neuroblast%s All neurons in this class fasciculate with the mediolateral antennal lobe tract (mlALT) (Lai et al., 2008; Jefferis et al., 2007) and innervates the lateral horn (Jefferis et al., 2007)."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'adult brain') and ('develops_from' some %s)"
+  vars:
+    - v0
+    - v1

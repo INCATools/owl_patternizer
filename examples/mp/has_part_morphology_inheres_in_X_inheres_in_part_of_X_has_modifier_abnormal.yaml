@@ -1,0 +1,49 @@
+# options: [min(50),dir(mp),trim(true),base('http://purl.obolibrary.org/obo/mp'),generalize_properties(false),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part morphology inheres in X inheres in part of X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_morphology_inheres_in_X_inheres_in_part_of_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal brain interneuron morphology](http://purl.obolibrary.org/obo/MP_0004101), [abnormal spinal cord interneuron morphology](http://purl.obolibrary.org/obo/MP_0004100), [abnormal olfactory bulb interneuron morphology](http://purl.obolibrary.org/obo/MP_0009941) (63 total)
+
+classes: 
+  independent continuant: "BFO:0000004"
+  morphology: "PATO:0000051"
+  abnormal: "PATO:0000460"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'independent continuant'"
+  v1: "'independent continuant'"
+
+name:
+  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "abnormal %s %s morphology"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.015873015873015872, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "any structural anomaly in the four types of %ss (types I, II , III and IV) that constitute the %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some 'morphology' and ('inheres in' some %s) and ('inheres in part of' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

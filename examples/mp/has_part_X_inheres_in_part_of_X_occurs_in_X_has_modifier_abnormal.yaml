@@ -1,0 +1,81 @@
+# options: [min(50),dir(mp),trim(true),base('http://purl.obolibrary.org/obo/mp'),generalize_properties(false),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part X inheres in part of X occurs in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_X_inheres_in_part_of_X_occurs_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal tumor vascularization](http://purl.obolibrary.org/obo/MP_0010144), [abnormal fibroblast apoptosis](http://purl.obolibrary.org/obo/MP_0013500), [abnormal astrocyte apoptosis](http://purl.obolibrary.org/obo/MP_0010204) (349 total)
+
+classes: 
+  angiogenesis: "GO:0001525"
+  male germ cell proliferation: "GO:0002176"
+  acute inflammatory response: "GO:0002526"
+  chronic inflammatory response: "GO:0002544"
+  phagocytosis: "GO:0006909"
+  apoptotic process: "GO:0006915"
+  cell adhesion: "GO:0007155"
+  chemical synaptic transmission: "GO:0007268"
+  muscle organ development: "GO:0007517"
+  glutamate secretion: "GO:0014047"
+  acetylcholine secretion, neurotransmission: "GO:0014055"
+  cell migration: "GO:0016477"
+  insulin secretion: "GO:0030073"
+  cell differentiation: "GO:0030154"
+  secretion by tissue: "GO:0032941"
+  sodium ion transmembrane transport: "GO:0035725"
+  aorta development: "GO:0035904"
+  tissue regeneration: "GO:0042246"
+  melanin biosynthetic process: "GO:0042438"
+  homeostatic process: "GO:0042592"
+  defense response to bacterium: "GO:0042742"
+  pigmentation: "GO:0043473"
+  glucose import: "GO:0046323"
+  epinephrine secretion: "GO:0048242"
+  norepinephrine secretion: "GO:0048243"
+  cardiac muscle contraction: "GO:0060048"
+  morphogenesis of a branching epithelium: "GO:0061138"
+  necrotic cell death: "GO:0070265"
+  chloride transmembrane transport: "GO:1902476"
+  hemorrhage and non-specified extravasation: "http://purl.obolibrary.org/obo/MPATH_119"
+  abnormal: "PATO:0000460"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'specifically dependent continuant'"
+  v1: "'angiogenesis' or 'male germ cell proliferation' or 'acute inflammatory response' or 'chronic inflammatory response' or 'phagocytosis' or 'apoptotic process' or 'cell adhesion' or 'chemical synaptic transmission' or 'muscle organ development' or 'glutamate secretion' or 'acetylcholine secretion, neurotransmission' or 'cell migration' or 'insulin secretion' or 'cell differentiation' or 'secretion by tissue' or 'sodium ion transmembrane transport' or 'aorta development' or 'tissue regeneration' or 'melanin biosynthetic process' or 'homeostatic process' or 'defense response to bacterium' or 'pigmentation' or 'glucose import' or 'epinephrine secretion' or 'norepinephrine secretion' or 'cardiac muscle contraction' or 'morphogenesis of a branching epithelium' or 'necrotic cell death' or 'chloride transmembrane transport' or 'hemorrhage and non-specified extravasation'"
+  v2: "'migratory cranial neural crest cell' or 'migratory trunk neural crest cell' or 'spermatogonium' or 'osteoblast' or 'blood vessel endothelial cell' or 'Purkinje cell' or 'astrocyte' or 'fat cell' or 'osteocyte' or 'chondrocyte' or 'type B pancreatic cell' or 'pancreatic A cell' or 'luteal cell' or 'hepatocyte' or 'cell of skeletal muscle' or 'erythrocyte' or 'macrophage' or 'keratinocyte' or 'melanocyte stimulating hormone secreting cell' or 'granulosa cell' or 'melanoblast' or 'megakaryocyte progenitor cell' or 'enterocyte' or 'mesangial cell' or 'glomerular visceral epithelial cell' or 'primordial germ cell' or 'muscle precursor cell' or 'radial glial cell' or 'neutrophil' or 'CD8-positive, alpha-beta cytotoxic T cell' or 'regulatory T cell' or 'CD8-positive, alpha-beta memory T cell' or 'corticotroph' or 'progenitor cell of endocrine pancreas' or 'trophoblast giant cell' or 'fetal cardiomyocyte' or 'fibroblast of dermis' or 'fibroblast of lung' or 'migratory enteric neural crest cell' or 'pillar cell' or 'stem cell of epidermis' or 'lung endothelial cell' or 'splenocyte' or 'synapse' or 'neoplasm' or 'uterine cervix' or 'nose' or 'pituitary gland' or 'peripheral nervous system' or 'zone of skin' or 'camera-type eye' or 'lymph node' or 'ureter' or 'urethra' or 'large intestine' or 'renal glomerulus' or 'inner cell mass' or 'lung epithelium' or 'intestine' or 'mouth' or 'blood' or 'amnion' or 'leptomeninx' or 'multicellular organism' or 'testis' or 'endoderm' or 'stomach' or 'aorta' or 'heart' or 'brain' or 'retina' or 'skeletal joint' or 'penis' or 'reproductive system' or 'ovary' or 'uterus' or 'vagina' or 'seminal vesicle' or 'skin epidermis' or 'respiratory system' or 'digestive system' or 'central nervous system' or 'esophagus' or 'neural tube' or 'myocardium of ventricle' or 'urine' or 'diaphragm' or 'skeletal muscle tissue' or 'caecum' or 'colon' or 'renal pelvis' or 'nephron tubule' or 'crypt of Lieberkuhn of small intestine' or 'urinary bladder' or 'pancreas' or 'intestinal epithelium' or 'nephron' or 'endometrium' or 'epididymis' or 'lymphatic vessel' or 'bone element' or 'arch of aorta' or 'extra-ocular muscle' or 'artery' or 'vein' or 'ear' or 'external ear' or 'eyelid' or 'secondary palate' or 'tongue' or 'submandibular gland' or 'dental pulp' or 'middle ear' or 'periodontium' or 'maxillary sinus' or 'uvea' or 'iris' or 'sclera' or 'ciliary body' or 'optic choroid' or 'vitreous body' or 'posterior segment of eyeball' or 'epithelium of lens' or 'conjunctiva' or 'lacrimal gland' or 'sebaceous gland' or 'nasal cavity mucosa' or 'gingiva' or 'parotid gland' or 'sublingual gland' or 'lip' or 'internal ear' or 'forebrain' or 'midbrain' or 'mammary gland' or 'placenta' or 'hindbrain' or 'thyroid gland' or 'lung' or 'hair follicle' or 'cardiac atrium' or 'liver' or 'small intestine' or 'gall bladder' or 'kidney' or 'ileum' or 'subcutaneous adipose tissue' or 'spinal cord' or 'peritoneum' or 'prostate gland' or 'adrenal gland' or 'thymus' or 'bile duct' or 'pericardium' or 'tail' or 'lens fiber' or 'bone tissue' or 'post-anal tail bud' or 'trachea' or 'alveolus' or 'metanephric mesenchyme' or 'mucosa of rectum' or 'placenta junctional zone' or 'periocular mesenchyme' or 'germinal neuroepithelium' or 'Harderian gland' or 'allantois' or 'trophectoderm' or 'cardiac muscle tissue of myocardium' or 'kidney interstitium' or 'head mesenchyme' or 'interdigital region' or 'corneo-scleral junction' or 'horn' or 'periodontal ligament' or 'inner cell mass derived epiblast' or 'coat of hair' or 'submucosal gland' or 'intra-ocular muscle' or 'pinna hair' or 'tail hair'"
+
+name:
+  # Could not induce name, using default
+  text: "has part %s inheres in part of %s occurs in %s has modifier abnormal"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "has part a Any %s that inheres in part of a Any %s that occurs in a %s and has modifier a abnormal"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some %s and ('inheres in part of' some %s and ('occurs in' some %s)) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1
+    - v2
