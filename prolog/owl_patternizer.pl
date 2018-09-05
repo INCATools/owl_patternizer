@@ -166,7 +166,7 @@ generate_patterns_from_seed(X,ParentCount,GrXs,Opts) :-
 exclude(X,Opts) :-
         expr_class_signature(X,CSig),
         length(CSig,Len),
-        option(max_class_signature(Max),Opts,4),
+        option(max_class_signature(Max),Opts,5),
         Len > Max.
 exclude(X,Opts) :-
         option(generalize_properties(false),Opts,true),
