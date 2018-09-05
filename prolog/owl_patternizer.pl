@@ -306,6 +306,7 @@ write_candidate(X, Matches, Opts) :-
         show_vars('  ', EquivVars, VSet),
         told.
 
+% TODO: escape quotes
 uris_as_disjunction_expr(Cs, A) :-
         findall(CA,
                 (   member(C,Cs),
@@ -349,6 +350,9 @@ induced_ann_textobj(Anns, X, Matches, N, FmtObj) :-
         member(ann(N,PId,MinFreq), Anns),
         rdf_global_id(PId, PURI),
         induce_best_annotation_pattern(X, Matches, PURI, FmtObj, Freq),
+        len(Matches,Total),
+        Num is Freq * Total,
+        Num >= 2,
         Freq >= MinFreq.
 
 show_ann_textobjs([], _, _).
@@ -556,7 +560,10 @@ setwise_mrca([Obj|Objs], Range) :-
 setwise_mrca(Objs, Range) :-
         setof(A,Obj^(member(Obj,Objs),anc(Obj,A)),Ancs),
         nr_subset(Ancs,Range),
+        length(Range,Len),
+        Len < 20,
         !.
+setwise_mrca(_, ['owl:Thing']).
 
 
 
