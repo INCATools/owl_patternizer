@@ -1,0 +1,48 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X Laterality (attribute) Right (qualifier value)
+pattern_iri: http://purl.obolibrary.org/obo/sctid/X_X_Laterality__attribute__Right__qualifier_value_
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Structure of base of right lung (body structure)](http://snomed.info/id/51785002), [Right main bronchus structure (body structure)](http://snomed.info/id/70074004), [Entire right upper lobe bronchial lumen (body structure)](http://snomed.info/id/181905003) (301 total)
+
+classes: 
+  Right (qualifier value): "http://snomed.info/id/24028007"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  Laterality (attribute): "http://snomed.info/id/272741003"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s Laterality (attribute) Right (qualifier value)"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s and Laterality (attribute) a Right (qualifier value)"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and %s and ('Laterality (attribute)' some 'Right (qualifier value)')"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,65 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X X Method (attribute) X Direct substance (attribute) X Procedure site - Indirect (attribute) X
+pattern_iri: http://purl.obolibrary.org/obo/sctid/X_X_X_Method__attribute__X_Direct_substance__attribute__X_Procedure_site___Indirect__attribute__X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Manual expression of sebaceous gland (procedure)](http://snomed.info/id/38077002), [Expression of breast milk (procedure)](http://snomed.info/id/172118003), [Ureterotomy with drainage (procedure)](http://snomed.info/id/49372007) (175 total)
+
+classes: 
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  Method (attribute): "http://snomed.info/id/260686004"
+  Direct substance (attribute): "http://snomed.info/id/363701004"
+  Procedure site - Indirect (attribute): "http://snomed.info/id/405814001"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
+  v2: "'Role group (attribute)'"
+  v3: "'Action (qualifier value)'"
+  v4: "'owl:Thing'"
+  v5: "'Anatomical structure (body structure)'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s %s Method (attribute) %s Direct substance (attribute) %s Procedure site - Indirect (attribute) %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+    - v4
+    - v5
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s and %s a Any Method (attribute) a %s that Direct substance (attribute) a %s and Procedure site - Indirect (attribute) a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+    - v4
+    - v5
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and %s and (%s some ('Method (attribute)' some %s) and ('Direct substance (attribute)' some %s) and ('Procedure site - Indirect (attribute)' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+    - v4
+    - v5

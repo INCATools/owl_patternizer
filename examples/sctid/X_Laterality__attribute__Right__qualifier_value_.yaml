@@ -1,0 +1,44 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Laterality (attribute) Right (qualifier value)
+pattern_iri: http://purl.obolibrary.org/obo/sctid/X_Laterality__attribute__Right__qualifier_value_
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Structure of lateral meniscus of right knee joint (body structure)](http://snomed.info/id/722730007), [Skeletal muscle structure of right lower limb (body structure)](http://snomed.info/id/744848003), [Structure of right iliac artery (body structure)](http://snomed.info/id/721035009) (658 total)
+
+classes: 
+  Right (qualifier value): "http://snomed.info/id/24028007"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  Laterality (attribute): "http://snomed.info/id/272741003"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.030395136778115502, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of right hand (body structure)"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Laterality (attribute) a Right (qualifier value)"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Laterality (attribute)' some 'Right (qualifier value)')"
+  vars:
+    - v0

@@ -1,0 +1,56 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Role group (attribute) X Surgical action (qualifier value) Procedure site (attribute) X Procedure morphology (attribute) X
+pattern_iri: http://purl.obolibrary.org/obo/sctid/X_Role_group__attribute__X_Surgical_action__qualifier_value__Procedure_site__attribute__X_Procedure_morphology__attribute__X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Operation on lesion of ganglion (procedure)](http://snomed.info/id/239223002), [Operation on aneurysm of brachial artery (procedure)](http://snomed.info/id/175449007), [Operation on aneurysm of renal artery (procedure)](http://snomed.info/id/175485007) (52 total)
+
+classes: 
+  Surgical action (qualifier value): "http://snomed.info/id/129284003"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  Role group (attribute): "http://snomed.info/id/609096000"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'Method (attribute)'"
+  v2: "'Anatomical structure (body structure)'"
+  v3: "'Lymphocyst (morphologic abnormality)' or 'Uneven venous ectasia (morphologic abnormality)' or 'Arteriovenous fistula (morphologic abnormality)' or 'Wound (morphologic abnormality)' or 'Arteriovenous malformation (morphologic abnormality)' or 'Mastectomy scar site (morphologic abnormality)' or 'Branchial cleft (morphologic abnormality)' or 'Obstruction (morphologic abnormality)' or 'Gastrostomy (morphologic abnormality)' or 'Duodenostomy - stoma (morphologic abnormality)' or 'Cystic lymphangioma (morphologic abnormality)' or 'Sinus (morphologic abnormality)' or 'Burn injury (morphologic abnormality)' or 'Fracture, multiple (morphologic abnormality)' or 'Embolus (morphologic abnormality)' or 'Ulcer (morphologic abnormality)' or 'Aneurysm (morphologic abnormality)' or 'Malignant neoplasm, primary (morphologic abnormality)'"
+
+name:
+  # Could not induce name, using default
+  text: "%s Role group (attribute) %s Surgical action (qualifier value) Procedure site (attribute) %s Procedure morphology (attribute) %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Role group (attribute) a Any %s a Surgical action (qualifier value) that Procedure site (attribute) a %s and Procedure morphology (attribute) a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Role group (attribute)' some (%s some 'Surgical action (qualifier value)') and ('Procedure site (attribute)' some %s) and ('Procedure morphology (attribute)' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3

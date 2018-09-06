@@ -1,0 +1,47 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Laterality (attribute) X
+pattern_iri: http://purl.obolibrary.org/obo/sctid/X_Laterality__attribute__X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Structure of lateral meniscus of right knee joint (body structure)](http://snomed.info/id/722730007), [Structure of lateral meniscus of left knee joint (body structure)](http://snomed.info/id/722729002), [Skeletal muscle structure of right lower limb (body structure)](http://snomed.info/id/744848003) (1319 total)
+
+classes: 
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  Laterality (attribute): "http://snomed.info/id/272741003"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'Side (qualifier value)'"
+
+name:
+  # Could not induce name, using default
+  text: "%s Laterality (attribute) %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Laterality (attribute) a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Laterality (attribute)' some %s)"
+  vars:
+    - v0
+    - v1

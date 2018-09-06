@@ -1,0 +1,51 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X Causative agent (attribute) X
+pattern_iri: http://purl.obolibrary.org/obo/sctid/X_X_Causative_agent__attribute__X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Septicemia caused by Chromobacterium (disorder)](http://snomed.info/id/18700001), [Septicemia caused by enterococcus (disorder)](http://snomed.info/id/310669007), [Poisoning caused by diiodohydroxyquin (disorder)](http://snomed.info/id/51862005) (4738 total)
+
+classes: 
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  Causative agent (attribute): "http://snomed.info/id/246075003"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'Role group (attribute)'"
+  v2: "'owl:Thing'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s Causative agent (attribute) %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s a Causative agent (attribute) a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and (%s some ('Causative agent (attribute)' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2
