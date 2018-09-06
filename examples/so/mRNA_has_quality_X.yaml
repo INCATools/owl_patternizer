@@ -26,8 +26,8 @@ name:
     - v0
 
 def:
-  # Could not induce def, using default
-  text: "Any mRNA that has_quality a %s"
+  # Induced, frequency=0.1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An %s is a representative cDNA sequence for each gene. The exemplar approach is a method that usually involves some initial clustering into gene groups and the subsequent selection of a representative from each gene group."
   vars:
     - v0
 

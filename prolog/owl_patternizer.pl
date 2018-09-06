@@ -336,9 +336,17 @@ show_induced_textobj(Tag, X, Matches, AProp, VSet) :-
         format('~w:~n', [Tag]),
         rdf_global_id(AProp, APropURI),
         (   induce_best_annotation_pattern(X, Matches, APropURI, fmt(FmtAtom,Vars), Freq),
+            % TODO: this is completely ad-hoc
+            % re-calculate exact count from frequency
+            % frequency must be above set threshold
+            % AND there must be >1 to prevent massive overfitting
+            % UNLESS there is so few examples, in which case we
+            % pick an exemplar (this is a hack to work for the pizza ontology)
             length(Matches,Total),
             Num is Freq * Total,
-            Num >= 2
+            (   Total > 10
+            ->  Num >= 2
+            ;   Num >= 1)
         ->  format('  # Induced, frequency=~w, p=~w ~n',[Freq, APropURI])
         ;   expr_atom(X,FmtAtom,text/Tag,Vars),
             format('  # Could not induce ~w, using default~n',[Tag])),
@@ -666,22 +674,24 @@ induce_best_annotation_pattern(XV, Matches, Prop, Fmt, Freq) :-
         aggregate(max(Freq,Fmt), induce_annotation_pattern_with_freq(XV, Matches, Prop, Fmt, Freq), max(Freq, Fmt)).
 
 
+% find spans matching labels for each variable
 tokenize_by_bindings(Input, [Var=Entity|Bindings], [span(Start,Len,Prop,Var)|Tokens]) :-
         rdf(Entity, Prop, LitVal),
         ensure_atom(LitVal,AtomVal),
-        sub_atom(Input, Start, Len, _, AtomVal),
+        sub_atom_ci(Input, Start, Len, _, AtomVal),
         tokenize_by_bindings(Input, Bindings, Tokens).
 tokenize_by_bindings(_, [], []).
 
+% create textual 'introns'
 slice_atom_by_spans(Atom, [span(Start, Len, _Prop, Var) | Spans], Offset, [Var|Vars], [Tok|Toks]) :-
         IntronLen is Start-Offset,
         % disallow overlapping spans
         IntronLen >= 0,
-        sub_atom(Atom, Offset, IntronLen, _, Tok),
+        sub_atom_ci(Atom, Offset, IntronLen, _, Tok),
         Offset2 is Start+Len,
         slice_atom_by_spans(Atom, Spans, Offset2, Vars, Toks).
 slice_atom_by_spans(Atom, [], Offset, [], [Tok]) :-
-        sub_atom(Atom, Offset, _, 0, Tok).
+        sub_atom_ci(Atom, Offset, _, 0, Tok).
 
 % convenience util; get matching ground expressions if not set already
 pattern_matching_ground_expressions(_, Matches) :-
@@ -709,8 +719,15 @@ make_id(N,Id) :-
         maplist([In,Out]>>safe_char(In,Out),Chars,Chars2),
         atom_chars(Id,Chars2).
 
+sub_atom_ci(A,S,L,R,Sub) :-
+        nonvar(Sub),
+        downcase_atom(A,A2),
+        downcase_atom(Sub,Sub2),
+        sub_atom(A2,S,L,R,Sub2).
 
-        
+sub_atom_ci(A,S,L,R,Sub) :-
+        sub_atom(A,S,L,R,Sub).
+
           
 :- dynamic core_ontology/1.
 :- dynamic ont_import_loaded/1.
@@ -734,5 +751,4 @@ safe_char(X,X) :- X @>= 'a', X @=< 'z',!.
 safe_char(X,X) :- X @>= 'A', X @=< 'Z',!.
 safe_char(X,X) :- X @>= '0', X @=< '9',!.
 safe_char(_,'_').
-
 
