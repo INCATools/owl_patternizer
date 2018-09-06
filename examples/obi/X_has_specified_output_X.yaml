@@ -1,0 +1,47 @@
+# options: [min(40),dir(obi),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has_specified_output X
+pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_specified_output_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [3D structure determination assay](http://purl.obolibrary.org/obo/OBI_0600045), [assay detecting IFN-gamma production](http://purl.obolibrary.org/obo/OBI_1110207), [single-nucleotide-resolution nucleic acid structure mapping assay](http://purl.obolibrary.org/obo/OBI_0000870) (88 total)
+
+classes: 
+  planned process: "http://purl.obolibrary.org/obo/OBI_0000011"
+
+
+relations: 
+  has_specified_output: "http://purl.obolibrary.org/obo/OBI_0000299"
+
+
+vars:
+  v0: "'planned process'"
+  v1: "'continuant'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has_specified_output %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has_specified_output a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('has_specified_output' some %s)"
+  vars:
+    - v0
+    - v1

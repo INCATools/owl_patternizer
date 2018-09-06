@@ -65,6 +65,13 @@ node_expression(Node,some(P,V)) :-
         node_expression(PNode,P),
         node_expression(VNode,V).
 
+node_expression(Node,only(P,V)) :-
+        rdf(Node,owl:onProperty,PNode),
+        rdf(Node,owl:allValuesFrom,VNode),
+        !,
+        node_expression(PNode,P),
+        node_expression(VNode,V).
+
 rdflist_member_expression(L,X) :-
         rdflist_member(L,M),
         node_expression(M,X).
@@ -124,8 +131,8 @@ generate_patterns(Opts) :-
         retractall(seen/1),
         retractall(core_ontology/1),
         retractall(ont_import_loaded/1),
-        option(load_import_closure(LIC),Opts,true),
-        (   LIC -> load_import_closure ; true),
+        option(load_import_closure(IsLoadIC),Opts,true),
+        load_import_closure(IsLoadIC),
         % start with all ground expressions;
         % these will be generalized one 'hop'
         setof(GrX,ground_expression(GrX),GrXs),
@@ -410,11 +417,14 @@ select_class_from_match_expr(E,Matches,Matches2) :-
 % OWL UTILS
 % ========================================
 
+% TODO: use generic visitor pattern
+
 % get class signature of an expression
 expr_class_signature(X,L) :- solutions(M,expr_references_class(X,M),L).
 expr_references_class('$VAR'(_),_) :- fail.
 expr_references_class(and(L),C) :- member(M,L),expr_references_class(M,C).
 expr_references_class(some(_,A),C) :- expr_references_class(A,C).
+expr_references_class(only(_,A),C) :- expr_references_class(A,C).
 expr_references_class(X,X) :- atom(X).
 
 % get property signature of an expression
@@ -422,14 +432,18 @@ expr_property_signature(X,L) :- solutions(M,expr_references_property(X,M),L).
 expr_references_property('$VAR'(_),_) :- fail.
 expr_references_property(and(L),P) :- member(M,L),expr_references_property(M,P).
 expr_references_property(some(P,_),P) :- atom(P),!. % TODO: property expressions
+expr_references_property(only(P,_),P) :- atom(P),!. % TODO: property expressions
 expr_references_property(some(_,X),P) :- expr_references_property(X,P).
+expr_references_property(only(_,X),P) :- expr_references_property(X,P).
 
 % get variable signature of an expression
 expr_var_signature(X,L) :- setof(M,expr_references_var(X,M),L).
 expr_references_var(V,V) :- V='$VAR'(_).
 expr_references_var(and(L),P) :- member(M,L),expr_references_var(M,P).
 expr_references_var(some(P,_),V) :- expr_references_var(P,V).
+expr_references_var(only(P,_),V) :- expr_references_var(P,V).
 expr_references_var(some(_,Y),V) :- expr_references_var(Y,V).
+expr_references_var(only(_,Y),V) :- expr_references_var(Y,V).
 
 % ========================================
 % SERIALIZATION OF OWL EXPRESSIONS TO TEXT
@@ -458,6 +472,12 @@ expr_atom(some(P, V), N, Context, Vars):-
         expr_atom(V, VN, Context, Vars2),
         append(Vars1, Vars2, Vars),
         serialize_some(PN, VN, N, Context).
+expr_atom(only(P, V), N, Context, Vars):-
+        !, 
+        expr_atom(P, PN, Context, Vars1), 
+        expr_atom(V, VN, Context, Vars2),
+        append(Vars1, Vars2, Vars),
+        serialize_only(PN, VN, N, Context).
 
 expr_atom(X, N, _, []) :- sformat(N, '??~q', [X]).
 
@@ -496,6 +516,19 @@ serialize_some(PN, VN, N, _) :-
         sformat(N,'(~w some ~w)',[PN, VN]).
         %concat_atom([PN, VN], ' some ', N).
 
+serialize_only(PN, VN, N, _/name) :-
+        !, 
+        concat_atom([PN, VN], ' ', N).
+serialize_only(PN, VN, N, _/id) :-
+        !, 
+        concat_atom([PN, VN], ' ', N).
+serialize_only(PN, VN, N, _/def) :-
+        !, 
+        concat_atom([PN, VN], ' a ', N).
+serialize_only(PN, VN, N, _) :-
+        sformat(N,'(~w only ~w)',[PN, VN]).
+        %concat_atom([PN, VN], ' some ', N).
+
 solutions(T,G,L) :- setof(T,G,L),!.
 solutions(_,_,[]).
 
@@ -520,6 +553,10 @@ unify(Q, T, Bs) :-
 unify1(X, X, []).
 unify1(Query, '$VAR'(N), [N=Query]) :- atomic(Query).
 unify1(some(QP,QV), some(TP,TV), Bindings) :-
+        unify1(QP,TP,Bindings1),
+        unify1(QV,TV,Bindings2),
+        append(Bindings1, Bindings2, Bindings).
+unify1(only(QP,QV), only(TP,TV), Bindings) :-
         unify1(QP,TP,Bindings1),
         unify1(QV,TV,Bindings2),
         append(Bindings1, Bindings2, Bindings).
@@ -668,19 +705,34 @@ uri_curie(C,Id) :-
 uri_curie(C,C).
 
 make_id(N,Id) :-
-        concat_atom(L,' ',N),
-        concat_atom(L,'_',Id).
+        atom_chars(N,Chars),
+        maplist([In,Out]>>safe_char(In,Out),Chars,Chars2),
+        atom_chars(Id,Chars2).
 
+
+        
+          
 :- dynamic core_ontology/1.
 :- dynamic ont_import_loaded/1.
 load_import_closure :-
+        load_import_closure(true).
+load_import_closure(IsLoadIC) :-
+        % TODO: move this section elsewhere
         setof(G,S^P^O^rdf(S,P,O,G),Graphs),
         forall(member(G,Graphs),
                assert(core_ontology(G))),
+        IsLoadIC,
         rdf(_,owl:imports,Ont),
         \+ ont_import_loaded(Ont),
         debug(patternizer,'Loading: ~w',[Ont]),
         rdf_load(Ont),
         assert(ont_import_loaded(Ont)),
         fail.
-load_import_closure.
+load_import_closure(_).
+
+safe_char(X,X) :- X @>= 'a', X @=< 'z',!.
+safe_char(X,X) :- X @>= 'A', X @=< 'Z',!.
+safe_char(X,X) :- X @>= '0', X @=< '9',!.
+safe_char(_,'_').
+
+

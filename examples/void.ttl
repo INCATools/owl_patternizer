@@ -89,6 +89,11 @@
     void:dataDump <./ncit.owl> ;
     lib:source <http://purl.obolibrary.org/obo/ncit.owl> .
 
+<sctid>
+    a void:Dataset ;
+    void:dataDump <./sctid.ttl> ;
+    lib:source <http://snomed.info/> .
+
 <foodon>
     a lib:Ontology ;
     a lib:Virtual ;

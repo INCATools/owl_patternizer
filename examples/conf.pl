@@ -41,6 +41,8 @@ ontology_config(uberon,   [min(50), max_and_cardinality(3)]).
 ontology_config(cl,       [min(20)]).
 ontology_config(fbbt,     [min(50)]).
 ontology_config(mondo,    []).
+ontology_config(obi,      []).
+ontology_config(sctid,    []).
 ontology_config(to,       [min(50)]).
 ontology_config(envo,     [max_and_cardinality(3)]).
 ontology_config(efo,      [min(50)]).

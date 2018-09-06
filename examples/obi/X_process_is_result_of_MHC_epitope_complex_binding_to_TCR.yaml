@@ -1,0 +1,44 @@
+# options: [min(40),dir(obi),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X process is result of MHC:epitope complex binding to TCR
+pattern_iri: http://purl.obolibrary.org/obo/obi/X_process_is_result_of_MHC_epitope_complex_binding_to_TCR
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [epitope specific type IV hypersensitivity by T cells](http://purl.obolibrary.org/obo/OBI_0001212), [epitope specific cytokine production by T cells](http://purl.obolibrary.org/obo/OBI_0001193), [epitope specific killing by T cells](http://purl.obolibrary.org/obo/OBI_1110204) (60 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  MHC:epitope complex binding to TCR: "http://purl.obolibrary.org/obo/OBI_1110057"
+
+
+relations: 
+  process is result of: "http://purl.obolibrary.org/obo/OBI_1110060"
+
+
+vars:
+  v0: "'biological_process'"
+
+name:
+  # Induced, frequency=0.6166666666666667, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "epitope specific %s by T cells"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.6166666666666667, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A process of %s by T cells resulting from the recognition of a T cell epitope."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('process is result of' some 'MHC:epitope complex binding to TCR')"
+  vars:
+    - v0

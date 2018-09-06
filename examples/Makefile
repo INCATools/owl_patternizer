@@ -2,6 +2,7 @@
 # in theory should work for other ontologies
 
 ONTS = pizza so envo pato obi uberon mp hp doid foodon efo cl ncit  go
+OPTS=
 
 all: $(patsubst %, gen-%, $(ONTS))
 #	pl2sparql -e -c conf.pl -A void.ttl doall
@@ -13,4 +14,4 @@ realclean: clean
 	rm */*.yaml
 
 gen-%:
-	touch init-$* && pl2sparql -e -c conf.pl -A void.ttl  "do_for('$*')" && touch $@
+	touch init-$* && pl2sparql $(OPTS) -e -c conf.pl -A void.ttl  "do_for('$*')" && touch $@

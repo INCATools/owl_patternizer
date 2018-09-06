@@ -1,0 +1,45 @@
+# options: [min(50),dir(hp),trim(true),base('http://purl.obolibrary.org/obo/hp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part conical inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/hp/has_part_conical_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Conical incisor](http://purl.obolibrary.org/obo/HP_0011065), [Cone-shaped epiphysis](http://purl.obolibrary.org/obo/HP_0010579), [Conical maxillary incisor](http://purl.obolibrary.org/obo/HP_0011083) (54 total)
+
+classes: 
+  abnormal: "PATO:0000460"
+  conical: "PATO:0002021"
+  material anatomical entity: "UBERON:0000465"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'material anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "has part conical inheres in %s has modifier abnormal"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "has part a Any conical that inheres in a %s and has modifier a abnormal"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some 'conical' and ('inheres in' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0

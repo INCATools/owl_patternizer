@@ -1,0 +1,45 @@
+# options: [min(50),dir(hp),trim(true),base('http://purl.obolibrary.org/obo/hp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part curved inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/hp/has_part_curved_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Curved phalanges of the hand](http://purl.obolibrary.org/obo/HP_0009770), [Fibular bowing](http://purl.obolibrary.org/obo/HP_0010502), [Curved toe phalanx](http://purl.obolibrary.org/obo/HP_0010176) (55 total)
+
+classes: 
+  curved: "PATO:0000406"
+  abnormal: "PATO:0000460"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Could not induce name, using default
+  text: "has part curved inheres in %s has modifier abnormal"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "has part a Any curved that inheres in a %s and has modifier a abnormal"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some 'curved' and ('inheres in' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0

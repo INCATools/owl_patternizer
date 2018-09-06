@@ -1,0 +1,45 @@
+# options: [min(50),dir(hp),trim(true),base('http://purl.obolibrary.org/obo/hp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part triangular inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/hp/has_part_triangular_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Trigonocephaly](http://purl.obolibrary.org/obo/HP_0000243), [Triangular mouth](http://purl.obolibrary.org/obo/HP_0000207), [Triangular humerus](http://purl.obolibrary.org/obo/HP_0003884) (85 total)
+
+classes: 
+  abnormal: "PATO:0000460"
+  triangular: "PATO:0001875"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.023529411764705882, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Triangular %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "has part a Any triangular that inheres in a %s and has modifier a abnormal"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some 'triangular' and ('inheres in' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0

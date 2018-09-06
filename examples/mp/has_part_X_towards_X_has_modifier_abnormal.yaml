@@ -1,4 +1,4 @@
-# options: [min(50),dir(mp),trim(true),base('http://purl.obolibrary.org/obo/mp'),generalize_properties(false),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(50),dir(mp),trim(true),base('http://purl.obolibrary.org/obo/mp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: has part X towards X has modifier abnormal
 pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_X_towards_X_has_modifier_abnormal
 
@@ -8,8 +8,8 @@ description: >-
   Examples: [abnormal pancreatic alpha cell number](http://purl.obolibrary.org/obo/MP_0020577), [altered response to myocardial infarction](http://purl.obolibrary.org/obo/MP_0000343), [increased cerebellar granule cell number](http://purl.obolibrary.org/obo/MP_0008925) (74 total)
 
 classes: 
-  quality: "PATO:0000001"
   abnormal: "PATO:0000460"
+  owl:Thing: "owl:Thing"
 
 
 relations: 
@@ -18,11 +18,11 @@ relations:
 
 vars:
   v0: "'quality'"
-  v1: "'xenobiotic' or 'growth hormone' or 'insulin (human)' or 'migratory cranial neural crest cell' or 'granule cell' or 'oligodendrocyte' or 'pancreatic A cell' or 'pancreatic D cell' or 'cell of skeletal muscle' or 'prolactin secreting cell' or 'follicular dendritic cell' or 'white fat cell' or 'brown fat cell' or 'T-helper 1 cell' or 'T-helper 2 cell' or 'Cajal-Retzius cell' or 'CD4-positive, CD25-positive, alpha-beta regulatory T cell' or 'DN2 thymocyte' or 'DN3 thymocyte' or 'DN4 thymocyte' or 'B-1a B cell' or 'B-1b B cell' or 'pro-B cell' or 'DN1 thymic pro-T cell' or 'T-helper 17 cell' or 'T follicular helper cell' or 'Tc17 cell' or 'organ of Corti supporting cell' or 'response to wounding' or 'erythrocyte clearance' or 'myelination' or 'defense response to bacterium' or 'myelin sheath' or 'glucose import' or 'defense response to fungus' or 'defense response to virus' or 'somite development' or 'platelet aggregation' or 'infarct' or 'drug induced seizure' or 'electrical stimulation induced seizure' or 'electrical kindling induced seizure' or 'parathyroid hormone' or 'islet of Langerhans' or 'zone of skin' or 'adipose tissue' or 'inguinal lymph node' or 'otolith' or 'otolithic part of statoconial membrane' or 'muscle spindle'"
+  v1: "'owl:Thing'"
 
 name:
-  # Induced, frequency=0.013513513513513514, p=http://www.w3.org/2000/01/rdf-schema#label 
-  text: "altered %s myocardial %sion"
+  # Could not induce name, using default
+  text: "has part %s towards %s has modifier abnormal"
   vars:
     - v0
     - v1

@@ -1,0 +1,44 @@
+# options: [min(40),dir(obi),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has part flow cytometry assay
+pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_part_flow_cytometry_assay
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [intracellular cytokine staining assay measuring epitope specific interleukin-27 production by T cells](http://purl.obolibrary.org/obo/OBI_0001806), [intracellular cytokine staining assay measuring epitope specific interleukin-10 production by T cells](http://purl.obolibrary.org/obo/OBI_1110177), [intracellular cytokine staining assay measuring epitope specific interleukin-22 production by T cells](http://purl.obolibrary.org/obo/OBI_0001496) (47 total)
+
+classes: 
+  flow cytometry assay: "http://purl.obolibrary.org/obo/OBI_0000916"
+  immune epitope assay: "http://purl.obolibrary.org/obo/OBI_1110128"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'immune epitope assay'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has part flow cytometry assay"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has part a flow cytometry assay"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('has part' some 'flow cytometry assay')"
+  vars:
+    - v0

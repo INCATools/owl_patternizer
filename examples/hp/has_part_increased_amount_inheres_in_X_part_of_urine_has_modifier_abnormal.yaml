@@ -1,0 +1,51 @@
+# options: [min(50),dir(hp),trim(true),base('http://purl.obolibrary.org/obo/hp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part increased amount inheres in X part of urine has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/hp/has_part_increased_amount_inheres_in_X_part_of_urine_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Hyperoxaluria](http://purl.obolibrary.org/obo/HP_0003159), [Xanthinuria](http://purl.obolibrary.org/obo/HP_0010934), [Hyperglycinuria](http://purl.obolibrary.org/obo/HP_0003108) (93 total)
+
+classes: 
+  abnormal: "PATO:0000460"
+  increased amount: "PATO:0000470"
+  urine: "UBERON:0001088"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.0967741935483871, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Increased level of %s in urine"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3333333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An increased concentration of %s in the urine."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "High urine %s levels"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('has part' some 'increased amount' and ('inheres in' some %s and ('part of' some 'urine')) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0

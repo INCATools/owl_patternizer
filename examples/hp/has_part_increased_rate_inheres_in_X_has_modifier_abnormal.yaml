@@ -1,0 +1,53 @@
+# options: [min(50),dir(hp),trim(true),base('http://purl.obolibrary.org/obo/hp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part increased rate inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/hp/has_part_increased_rate_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Increased activity of mitochondrial respiratory chain](http://purl.obolibrary.org/obo/HP_0040015), [Immunologic hypersensitivity](http://purl.obolibrary.org/obo/HP_0100326), [Growth hormone excess](http://purl.obolibrary.org/obo/HP_0000845) (60 total)
+
+classes: 
+  mitochondrial respiratory chain: "GO:0005746"
+  immune response: "GO:0006955"
+  growth hormone secretion: "GO:0030252"
+  ketone body biosynthetic process: "GO:0046951"
+  reflex: "GO:0060004"
+  micturition: "GO:0060073"
+  lymphocyte apoptotic process: "GO:0070227"
+  glomerulonephritis: "http://purl.obolibrary.org/obo/MPATH_197"
+  frustration behavior: "http://purl.obolibrary.org/obo/NBO_0000620"
+  abnormal: "PATO:0000460"
+  increased rate: "PATO:0000912"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'mitochondrial respiratory chain' or 'immune response' or 'growth hormone secretion' or 'ketone body biosynthetic process' or 'reflex' or 'micturition' or 'lymphocyte apoptotic process' or 'glomerulonephritis' or 'frustration behavior'"
+
+name:
+  # Could not induce name, using default
+  text: "has part increased rate inheres in %s has modifier abnormal"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "has part a Any increased rate that inheres in a %s and has modifier a abnormal"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some 'increased rate' and ('inheres in' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0

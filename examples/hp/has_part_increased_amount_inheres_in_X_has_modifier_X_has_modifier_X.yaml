@@ -1,0 +1,52 @@
+# options: [min(50),dir(hp),trim(true),base('http://purl.obolibrary.org/obo/hp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part increased amount inheres in X has modifier X has modifier X
+pattern_iri: http://purl.obolibrary.org/obo/hp/has_part_increased_amount_inheres_in_X_has_modifier_X_has_modifier_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Generalized tonic-clonic seizures](http://purl.obolibrary.org/obo/HP_0002069), [Generalized tonic seizures](http://purl.obolibrary.org/obo/HP_0010818), [Unilateral renal agenesis](http://purl.obolibrary.org/obo/HP_0000122) (51 total)
+
+classes: 
+  quality: "PATO:0000001"
+  increased amount: "PATO:0000470"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'tonic clonic seizure' or 'tonic seizure' or 'kidney'"
+  v1: "'quality'"
+  v2: "'quality'"
+
+name:
+  # Could not induce name, using default
+  text: "has part increased amount inheres in %s has modifier %s has modifier %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "has part a Any increased amount that inheres in a %s and has modifier a %s and has modifier a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some 'increased amount' and ('inheres in' some %s) and ('has modifier' some %s) and ('has modifier' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

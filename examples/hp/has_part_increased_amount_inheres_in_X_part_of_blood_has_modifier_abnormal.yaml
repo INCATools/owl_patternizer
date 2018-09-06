@@ -1,0 +1,51 @@
+# options: [min(50),dir(hp),trim(true),base('http://purl.obolibrary.org/obo/hp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part increased amount inheres in X part of blood has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/hp/has_part_increased_amount_inheres_in_X_part_of_blood_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Hyperglycinemia](http://purl.obolibrary.org/obo/HP_0002154), [Increased serum prostaglandin E2](http://purl.obolibrary.org/obo/HP_0003566), [Hypersarcosinemia](http://purl.obolibrary.org/obo/HP_0010896) (83 total)
+
+classes: 
+  abnormal: "PATO:0000460"
+  increased amount: "PATO:0000470"
+  blood: "UBERON:0000178"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.2289156626506024, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Hyper%smia"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.24096385542168675, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An increased concentration of %s in the blood."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "High blood %s levels"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('has part' some 'increased amount' and ('inheres in' some %s and ('part of' some 'blood')) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0

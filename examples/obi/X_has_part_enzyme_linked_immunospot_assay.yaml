@@ -1,0 +1,44 @@
+# options: [min(40),dir(obi),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has part enzyme-linked immunospot assay
+pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_part_enzyme_linked_immunospot_assay
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ELISPOT assay measuring epitope specific interleukin-27 production by T cells](http://purl.obolibrary.org/obo/OBI_0001813), [ELISPOT assay measuring epitope specific interleukin-10 production by T cells](http://purl.obolibrary.org/obo/OBI_1110170), [ELISPOT assay measuring epitope specific interleukin-22 production by T cells](http://purl.obolibrary.org/obo/OBI_0001821) (43 total)
+
+classes: 
+  enzyme-linked immunospot assay: "http://purl.obolibrary.org/obo/OBI_0600031"
+  immune epitope assay: "http://purl.obolibrary.org/obo/OBI_1110128"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'immune epitope assay'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has part enzyme-linked immunospot assay"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has part a enzyme-linked immunospot assay"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('has part' some 'enzyme-linked immunospot assay')"
+  vars:
+    - v0

@@ -1,0 +1,51 @@
+# options: [min(50),dir(hp),trim(true),base('http://purl.obolibrary.org/obo/hp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part decreased amount inheres in X part of blood has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/hp/has_part_decreased_amount_inheres_in_X_part_of_blood_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Hypoglycinemia](http://purl.obolibrary.org/obo/HP_0012277), [Hypocholesterolemia](http://purl.obolibrary.org/obo/HP_0003146), [Hypoammonemia](http://purl.obolibrary.org/obo/HP_0100493) (52 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  abnormal: "PATO:0000460"
+  decreased amount: "PATO:0001997"
+  blood: "UBERON:0000178"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'material entity'"
+
+name:
+  # Induced, frequency=0.11538461538461539, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Hypo%smia"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1346153846153846, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A decreased concentration of %s in the blood."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "Low blood %s levels"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('has part' some 'decreased amount' and ('inheres in' some %s and ('part of' some 'blood')) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0

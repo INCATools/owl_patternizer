@@ -1,0 +1,49 @@
+# options: [min(50),dir(hp),trim(true),base('http://purl.obolibrary.org/obo/hp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part amount inheres in X part of X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/hp/has_part_amount_inheres_in_X_part_of_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Hypersarcosinuria](http://purl.obolibrary.org/obo/HP_0010897), [Abnormal urinary acylglycine profile](http://purl.obolibrary.org/obo/HP_0012073), [Abnormal urinary sulfate concentration](http://purl.obolibrary.org/obo/HP_0012612) (64 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  amount: "PATO:0000070"
+  abnormal: "PATO:0000460"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'continuant'"
+  v1: "'material entity'"
+
+name:
+  # Induced, frequency=0.046875, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Abnormality of %s %s concentration"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.078125, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An abnormal concentration of %s in the %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some 'amount' and ('inheres in' some %s and ('part of' some %s)) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

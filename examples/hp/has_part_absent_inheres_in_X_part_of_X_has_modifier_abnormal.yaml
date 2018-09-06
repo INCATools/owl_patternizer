@@ -1,0 +1,49 @@
+# options: [min(50),dir(hp),trim(true),base('http://purl.obolibrary.org/obo/hp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part absent inheres in X part of X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/hp/has_part_absent_inheres_in_X_part_of_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Abetalipoproteinemia](http://purl.obolibrary.org/obo/HP_0008181), [Azoospermia](http://purl.obolibrary.org/obo/HP_0000027), [Total immunoglobulin A deficiency](http://purl.obolibrary.org/obo/HP_0003460) (55 total)
+
+classes: 
+  abnormal: "PATO:0000460"
+  absent: "PATO:0000462"
+  material anatomical entity: "UBERON:0000465"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'independent continuant'"
+  v1: "'material anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "has part absent inheres in %s part of %s has modifier abnormal"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "has part a Any absent that inheres in a Any %s that part of a %s and has modifier a abnormal"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some 'absent' and ('inheres in' some %s and ('part of' some %s)) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

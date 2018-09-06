@@ -98,7 +98,7 @@ docker run -v $PWD:/work -w /work --rm -ti cmungall/sparqlprog swipl -p library=
 
 For purely auto-generated examples, see:
 
- * [examples/](blob/master/examples/)
+ * [examples/](https://github.com/cmungall/owl_patternizer/tree/master/examples)
 
 ## TODO
 

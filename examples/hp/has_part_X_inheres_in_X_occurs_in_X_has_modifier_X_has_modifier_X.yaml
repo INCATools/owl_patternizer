@@ -1,0 +1,59 @@
+# options: [min(50),dir(hp),trim(true),base('http://purl.obolibrary.org/obo/hp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part X inheres in X occurs in X has modifier X has modifier X
+pattern_iri: http://purl.obolibrary.org/obo/hp/has_part_X_inheres_in_X_occurs_in_X_has_modifier_X_has_modifier_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Patchy sclerosis of finger phalanx](http://purl.obolibrary.org/obo/HP_0009772), [Patchy sclerosis of hand bones](http://purl.obolibrary.org/obo/HP_0004286), [Patchy sclerosis of proximal phalanx of finger](http://purl.obolibrary.org/obo/HP_0009856) (51 total)
+
+classes: 
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'quality'"
+  v1: "'ossification' or 'pigmentation' or 'sclerosis'"
+  v2: "'multicellular anatomical structure'"
+  v3: "'quality'"
+  v4: "'quality'"
+
+name:
+  # Could not induce name, using default
+  text: "has part %s inheres in %s occurs in %s has modifier %s has modifier %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+    - v4
+
+def:
+  # Could not induce def, using default
+  text: "has part a Any %s that inheres in a Any %s that occurs in a %s and has modifier a %s and has modifier a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+    - v4
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some %s and ('inheres in' some %s and ('occurs in' some %s)) and ('has modifier' some %s) and ('has modifier' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+    - v4

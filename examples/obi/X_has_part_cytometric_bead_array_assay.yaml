@@ -1,0 +1,44 @@
+# options: [min(40),dir(obi),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has part cytometric bead array assay
+pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_part_cytometric_bead_array_assay
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cytometric bead array assay measuring epitope specific interleukin-27 production by T cells](http://purl.obolibrary.org/obo/OBI_0001811), [cytometric bead array assay measuring epitope specific interleukin-10 production by T cells](http://purl.obolibrary.org/obo/OBI_0001297), [cytometric bead array assay measuring epitope specific intracellular cytokine staining (ICS) IL-22 production by T cells](http://purl.obolibrary.org/obo/OBI_0001577) (43 total)
+
+classes: 
+  cytometric bead array assay: "http://purl.obolibrary.org/obo/OBI_0000920"
+  assay measuring T cell epitope specific biological activity: "http://purl.obolibrary.org/obo/OBI_0002055"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'assay measuring T cell epitope specific biological activity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has part cytometric bead array assay"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has part a cytometric bead array assay"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('has part' some 'cytometric bead array assay')"
+  vars:
+    - v0

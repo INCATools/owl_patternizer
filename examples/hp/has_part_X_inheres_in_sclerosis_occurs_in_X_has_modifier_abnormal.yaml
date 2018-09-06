@@ -1,0 +1,49 @@
+# options: [min(50),dir(hp),trim(true),base('http://purl.obolibrary.org/obo/hp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part X inheres in sclerosis occurs in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/hp/has_part_X_inheres_in_sclerosis_occurs_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Glomerulosclerosis](http://purl.obolibrary.org/obo/HP_0000096), [Humeral sclerosis](http://purl.obolibrary.org/obo/HP_0003881), [Patchy sclerosis of radial diaphysis](http://purl.obolibrary.org/obo/HP_0004030) (71 total)
+
+classes: 
+  sclerosis: "http://purl.obolibrary.org/obo/MPATH_184"
+  abnormal: "PATO:0000460"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'quality'"
+  v1: "'multicellular anatomical structure'"
+
+name:
+  # Could not induce name, using default
+  text: "has part %s inheres in sclerosis occurs in %s has modifier abnormal"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "has part a Any %s that inheres in a Any sclerosis that occurs in a %s and has modifier a abnormal"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some %s and ('inheres in' some 'sclerosis' and ('occurs in' some %s)) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

@@ -1,4 +1,4 @@
-# options: [min(50),dir(mp),trim(true),base('http://purl.obolibrary.org/obo/mp'),generalize_properties(false),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(50),dir(mp),trim(true),base('http://purl.obolibrary.org/obo/mp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: has part X inheres in X inheres in part of X has modifier abnormal
 pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_X_inheres_in_X_inheres_in_part_of_X_has_modifier_abnormal
 
@@ -8,8 +8,8 @@ description: >-
   Examples: [abnormal CNS glial cell morphology](http://purl.obolibrary.org/obo/MP_0000952), [abnormal strial basal cell morphology](http://purl.obolibrary.org/obo/MP_0004365), [abnormal branching involved in lung morphogenesis](http://purl.obolibrary.org/obo/MP_0011024) (144 total)
 
 classes: 
-  quality: "PATO:0000001"
   abnormal: "PATO:0000460"
+  owl:Thing: "owl:Thing"
 
 
 relations: 
@@ -18,8 +18,8 @@ relations:
 
 vars:
   v0: "'quality'"
-  v1: "'interneuron' or 'endothelial cell' or 'granule cell' or 'fibrocyte' or 'melanocyte' or 'goblet cell' or 'chromaffin cell' or 'mechanoreceptor cell' or 'macrophage' or 'glial cell (sensu Vertebrata)' or 'connective tissue type mast cell' or 'pyramidal neuron' or 'sheath cell' or 'acinar cell' or 'basal cell' or 'morphogenesis of a branching structure' or 'collagen type II trimer' or 'cell' or 'nucleus' or 'lysosome' or 'lipid droplet' or 'microvillus' or 'biosynthetic process' or 'dendrite' or 'stereocilium' or 'stereocilium bundle' or 'lamellar body' or 'anagen' or 'elastic fiber' or 'ribbon synapse' or 'aspartate aminotransferase, cytoplasmic' or 'alanine aminotransferase 1' or 'dorsal root ganglion' or 'blood' or 'eccrine sweat gland' or 'neck' or 'bone element' or 'nail' or 'blood plasma' or 'capillary' or 'myocardium' or 'arachnoid mater' or 'zeugopod' or 'epiphyseal plate' or 'brain blood vessel' or 'fat pad' or 'outflow tract' or 'left atrium auricular region' or 'right atrium auricular region' or 'cranial blood vasculature' or 'mechanoreceptor'"
-  v2: "'retinal' or 'sperm' or 'motor neuron' or 'Purkinje cell' or 'somatotropin secreting cell' or 'epidermal cell' or 'white fat cell' or 'brown fat cell' or 'cochlear inner hair cell' or 'outer hair cell' or 'vestibular hair cell' or 'retinal ganglion cell' or 'hippocampal pyramidal neuron' or 'hair cycle' or 'lung morphogenesis' or 'bronchus morphogenesis' or 'trachea morphogenesis' or 'camera-type eye' or 'intestine' or 'blood' or 'trabecula' or 'aorta' or 'heart' or 'brain' or 'cerebral cortex' or 'femur' or 'uterus' or 'skin epidermis' or 'musculature' or 'central nervous system' or 'marginal zone of spleen' or 'pancreas' or 'lymphatic vessel' or 'skin of manus' or 'secondary palate' or 'larynx' or 'optic choroid' or 'layer of retina' or 'conjunctiva' or 'cerebral hemisphere' or 'dentate gyrus of hippocampal formation' or 'dorsal plus ventral thalamus' or 'mammary gland' or 'Ammon's horn' or 'white pulp of spleen' or 'placenta' or 'pulmonary artery' or 'lung' or 'dermis' or 'cardiac ventricle' or 'forelimb' or 'spleen' or 'liver' or 'small intestine' or 'kidney' or 'bronchus' or 'spiral organ of cochlea' or 'spinal cord' or 'olfactory bulb' or 'stria vascularis of cochlear duct' or 'somite' or 'adrenal gland' or 'pes' or 'immune system' or 'dermis connective tissue' or 'sympathetic nerve trunk' or 'lumbar vertebra 3' or 'respiratory system epithelium' or 'gastrointestinal system mesentery' or 'hair inner root sheath' or 'hair outer root sheath' or 'hair root sheath matrix' or 'spiral ligament' or 'strand of guard hair' or 'interscapular fat pad'"
+  v1: "'owl:Thing'"
+  v2: "'owl:Thing'"
 
 name:
   # Induced, frequency=0.16666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
@@ -30,8 +30,8 @@ name:
     - v0
 
 def:
-  # Induced, frequency=0.006944444444444444, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "anomaly in the %s of the single large %s or vacuole of %ss"
+  # Could not induce def, using default
+  text: "has part a Any %s that inheres in a %s and inheres in part of a %s and has modifier a abnormal"
   vars:
     - v0
     - v1
