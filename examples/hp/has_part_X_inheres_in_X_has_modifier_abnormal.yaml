@@ -1,0 +1,48 @@
+# options: [min(50),dir(hp),trim(true),base('http://purl.obolibrary.org/obo/hp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part X inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/hp/has_part_X_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Abnormal eating behavior](http://purl.obolibrary.org/obo/HP_0100738), [Abnormal drinking behavior](http://purl.obolibrary.org/obo/HP_0030082), [Abnormal consumption behavior](http://purl.obolibrary.org/obo/HP_0040202) (4773 total)
+
+classes: 
+  abnormal: "PATO:0000460"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.011942174732872407, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Abnormal %s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.0008380473496752566, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s affecting the %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some %s and ('inheres in' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

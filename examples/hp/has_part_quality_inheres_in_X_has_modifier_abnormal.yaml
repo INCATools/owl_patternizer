@@ -1,0 +1,45 @@
+# options: [min(50),dir(hp),trim(true),base('http://purl.obolibrary.org/obo/hp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part quality inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/hp/has_part_quality_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Abnormal T cell morphology](http://purl.obolibrary.org/obo/HP_0002843), [Abnormality of the glial cells](http://purl.obolibrary.org/obo/HP_0100705), [Abnormality of the astrocytes](http://purl.obolibrary.org/obo/HP_0100707) (571 total)
+
+classes: 
+  quality: "PATO:0000001"
+  abnormal: "PATO:0000460"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.1295971978984238, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Abnormality of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.08581436077057793, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An abnormality of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some 'quality' and ('inheres in' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0

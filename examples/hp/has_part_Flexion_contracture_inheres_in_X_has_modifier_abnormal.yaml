@@ -1,0 +1,45 @@
+# options: [min(50),dir(hp),trim(true),base('http://purl.obolibrary.org/obo/hp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part Flexion contracture inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/hp/has_part_Flexion_contracture_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Elbow flexion contracture](http://purl.obolibrary.org/obo/HP_0002987), [Hip contracture](http://purl.obolibrary.org/obo/HP_0003273), [Knee flexion contracture](http://purl.obolibrary.org/obo/HP_0006380) (54 total)
+
+classes: 
+  Flexion contracture: "http://purl.obolibrary.org/obo/HP_0001371"
+  abnormal: "PATO:0000460"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Could not induce name, using default
+  text: "has part Flexion contracture inheres in %s has modifier abnormal"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "has part a Any Flexion contracture that inheres in a %s and has modifier a abnormal"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some 'Flexion contracture' and ('inheres in' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0

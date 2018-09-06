@@ -1,0 +1,50 @@
+# options: [min(50),dir(hp),trim(true),base('http://purl.obolibrary.org/obo/hp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part quality inheres in part of X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/hp/has_part_quality_inheres_in_part_of_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Abnormal hemoglobin](http://purl.obolibrary.org/obo/HP_0011902), [Abnormality of muscle fibers](http://purl.obolibrary.org/obo/HP_0004303), [Abnormal eosinophil morphology](http://purl.obolibrary.org/obo/HP_0001879) (270 total)
+
+classes: 
+  quality: "PATO:0000001"
+  abnormal: "PATO:0000460"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.37777777777777777, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Abnormality of the %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1962962962962963, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An abnormality of the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "Abnormality of the %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('has part' some 'quality' and ('inheres in part of' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0

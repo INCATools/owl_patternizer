@@ -144,6 +144,7 @@ generate_patterns_from_seed(X,ParentCount,GrXs,Opts) :-
         \+ has_been_seen(X),
         debug(patternizer,'Testing generalized expression: ~k',[X]),
         mark_seen(X),
+        debug(patternizer,'Exclusion test: ~k // ~q',[X,Opts]),
         \+ exclude(X,Opts),
         setof(X_Unground,member(X_Unground,GrXs),Matches),
         length(Matches,Num),
@@ -155,7 +156,7 @@ generate_patterns_from_seed(X,ParentCount,GrXs,Opts) :-
             write_candidate(X, Matches, Opts)
         ;   debug(patternizer,'Failed; skipping',[])),
         generalize_expression(X_Unground,X2),
-        debug(patternizer,'  Generalized further ~k -> ~k',[X_Unground, X2]),
+        debug(patternizer,'  Generalized further ~k ====> ~k',[X_Unground, X2]),
         generate_patterns_from_seed(X2,Num,GrXs,Opts),
         fail.
 
@@ -327,7 +328,10 @@ uris_as_disjunction_expr(Cs, A) :-
 show_induced_textobj(Tag, X, Matches, AProp, VSet) :-
         format('~w:~n', [Tag]),
         rdf_global_id(AProp, APropURI),
-        (   induce_best_annotation_pattern(X, Matches, APropURI, fmt(FmtAtom,Vars), Freq)
+        (   induce_best_annotation_pattern(X, Matches, APropURI, fmt(FmtAtom,Vars), Freq),
+            length(Matches,Total),
+            Num is Freq * Total,
+            Num >= 2
         ->  format('  # Induced, frequency=~w, p=~w ~n',[Freq, APropURI])
         ;   expr_atom(X,FmtAtom,text/Tag,Vars),
             format('  # Could not induce ~w, using default~n',[Tag])),
@@ -350,7 +354,7 @@ induced_ann_textobj(Anns, X, Matches, N, FmtObj) :-
         member(ann(N,PId,MinFreq), Anns),
         rdf_global_id(PId, PURI),
         induce_best_annotation_pattern(X, Matches, PURI, FmtObj, Freq),
-        len(Matches,Total),
+        length(Matches,Total),
         Num is Freq * Total,
         Num >= 2,
         Freq >= MinFreq.

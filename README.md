@@ -99,3 +99,7 @@ docker run -v $PWD:/work -w /work --rm -ti cmungall/sparqlprog swipl -p library=
 For purely auto-generated examples, see:
 
  * [examples/](blob/master/examples/)
+
+## TODO
+
+ * range validation gets thrown off if there are dangling classes

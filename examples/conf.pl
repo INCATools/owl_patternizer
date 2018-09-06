@@ -46,7 +46,7 @@ ontology_config(envo,     [max_and_cardinality(3)]).
 ontology_config(efo,      [min(50)]).
 ontology_config(doid,     [min(25)]).
 ontology_config(mp,       [min(50), max_class_signature(4), generalize_properties(false)]).
-ontology_config(hp,       [min(50), generalize_properties(false)]).
+ontology_config(hp,       [min(50), max_class_signature(4), generalize_properties(false)]).
 ontology_config(ncit,     [min(50), generalize_properties(false), max_and_cardinality(3)]).
 ontology_config(foodon,   []).
 ontology_config(go,       [min(25)]).
@@ -64,16 +64,19 @@ do_for(Ont) :-
         % assume OBO unless overridden in conf
         atom_concat('http://purl.obolibrary.org/obo/',Ont,DefaultBase),
         ontology_config(Ont,Options),
+        % TODO: merge options
         option(min(Min),Options,40),
         option(base(Base),Options,DefaultBase),
         option(generalize_properties(GP),Options,true),
         option(max_and_cardinality(MAC),Options,4),
+        option(max_class_signature(MCS),Options,5),
         generate_patterns([min(Min),
                            dir(Ont),
                            trim(true),
                            base(Base),
                            generalize_properties(GP),
                            max_and_cardinality(MAC),
+                           max_class_signature(MCS),
                            annotations([
                                         ann(exact_synonym, oio:hasExactSynonym, 0.05),
                                         ann(related_synonym, oio:hasRelatedSynonym, 0.05)

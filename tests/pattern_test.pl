@@ -39,6 +39,16 @@ test(exclude) :-
         X3 = and([a,some(V1,V2)]),
         assertion( owl_patternizer:exclude(X3, [trim(true)]) ),
         assertion( \+owl_patternizer:exclude(X3, [trim(false)]) ),
+
+        X4 = and([some('http://purl.obolibrary.org/obo/BFO_0000051',
+                       and([V1,some('http://purl.obolibrary.org/obo/RO_0000052',
+                                   and(['http://purl.obolibrary.org/obo/GO_0043473',some('http://purl.obolibrary.org/obo/BFO_0000066','http://purl.obolibrary.org/obo/UBERON_0000966')])),
+                            some('http://purl.obolibrary.org/obo/RO_0002573','http://purl.obolibrary.org/obo/PATO_0000460')])), 
+                  some('http://purl.obolibrary.org/obo/BFO_0000051',
+                       and(['http://purl.obolibrary.org/obo/HP_0000589',some('http://purl.obolibrary.org/obo/RO_0000052',
+                                                                                                                          and(['http://purl.obolibrary.org/obo/GO_0043473',some('http://purl.obolibrary.org/obo/BFO_0000066','http://purl.obolibrary.org/obo/UBERON_0001776')])),
+                            some('http://purl.obolibrary.org/obo/RO_0002573','http://purl.obolibrary.org/obo/PATO_0000460')]))]),
+        assertion( owl_patternizer:exclude(X4, [min(50), max_class_signature(4), generalize_properties(false)]) ),
         nl.
         
 test(infer_range) :-

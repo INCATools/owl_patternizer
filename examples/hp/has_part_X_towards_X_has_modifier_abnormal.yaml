@@ -1,0 +1,48 @@
+# options: [min(50),dir(hp),trim(true),base('http://purl.obolibrary.org/obo/hp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part X towards X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/hp/has_part_X_towards_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Abnormal glucose tolerance](http://purl.obolibrary.org/obo/HP_0001952), [Calcium nephrolithiasis](http://purl.obolibrary.org/obo/HP_0004724), [Autoamputation of digits](http://purl.obolibrary.org/obo/HP_0007460) (65 total)
+
+classes: 
+  abnormal: "PATO:0000460"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'Nephrolithiasis' or 'Autoamputation' or 'fused with' or 'decreased rate' or 'resistance to' or 'duplicated' or 'prominent' or 'decreased sensitivity toward' or 'decreased sensitivity of a process' or 'increased susceptibility toward' or 'irregular rhythm'"
+  v1: "'owl:Thing'"
+
+name:
+  # Could not induce name, using default
+  text: "has part %s towards %s has modifier abnormal"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "has part a Any %s that towards a %s and has modifier a abnormal"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some %s and ('towards' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

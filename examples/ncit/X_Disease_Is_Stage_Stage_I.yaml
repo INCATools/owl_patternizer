@@ -36,15 +36,3 @@ annotationProperties:
   exact_synonym: "oio:hasExactSynonym"
   related_synonym: "oio:hasRelatedSynonym"
 
-annotations:
-  - annotationProperty: exact_synonym
-    # Induced p=exact_synonym 
-    text: "Stage I %s"
-    vars:
-      - v0
-
-
-equivalentTo:
-  text: "%s and ('Disease_Is_Stage' some 'Stage I')"
-  vars:
-    - v0

@@ -1,0 +1,48 @@
+# options: [min(50),dir(hp),trim(true),base('http://purl.obolibrary.org/obo/hp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part X inheres in part of X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/hp/has_part_X_inheres_in_part_of_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Abnormal heart morphology](http://purl.obolibrary.org/obo/HP_0001627), [Abnormality of the ear](http://purl.obolibrary.org/obo/HP_0000598), [Abnormality of axial muscles](http://purl.obolibrary.org/obo/HP_0040286) (628 total)
+
+classes: 
+  abnormal: "PATO:0000460"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.07961783439490445, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Abnormal %s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.0031847133757961785, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An abnormal %s of the %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some %s and ('inheres in part of' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1
