@@ -1,3 +1,4 @@
+# options: [min(20),dir(cl),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: epithelial cell part of X
 pattern_iri: http://purl.obolibrary.org/obo/cl/epithelial_cell_part_of_X
 
@@ -8,6 +9,7 @@ description: >-
 
 classes: 
   epithelial cell: "CL:0000066"
+  multicellular anatomical structure: "UBERON:0010000"
 
 
 relations: 
@@ -15,7 +17,7 @@ relations:
 
 
 vars:
-  v0: "owl:Thing"
+  v0: "'multicellular anatomical structure'"
 
 name:
   # Induced, frequency=0.5102040816326531, p=http://www.w3.org/2000/01/rdf-schema#label 
@@ -36,7 +38,7 @@ annotationProperties:
 annotations:
   - annotationProperty: exact_synonym
     # Induced p=exact_synonym 
-    text: %s epithelial cell
+    text: "%s epithelial cell"
     vars:
       - v0
 

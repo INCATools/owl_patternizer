@@ -1,3 +1,4 @@
+# options: [min(20),dir(cl),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: smooth muscle cell part of X
 pattern_iri: http://purl.obolibrary.org/obo/cl/smooth_muscle_cell_part_of_X
 
@@ -8,6 +9,7 @@ description: >-
 
 classes: 
   smooth muscle cell: "CL:0000192"
+  anatomical entity: "UBERON:0001062"
 
 
 relations: 
@@ -15,7 +17,7 @@ relations:
 
 
 vars:
-  v0: "owl:Thing"
+  v0: "'anatomical entity'"
 
 name:
   # Induced, frequency=0.22727272727272727, p=http://www.w3.org/2000/01/rdf-schema#label 
@@ -36,7 +38,7 @@ annotationProperties:
 annotations:
   - annotationProperty: exact_synonym
     # Induced p=exact_synonym 
-    text: smooth muscle fiber of %s
+    text: "smooth muscle fiber of %s"
     vars:
       - v0
 

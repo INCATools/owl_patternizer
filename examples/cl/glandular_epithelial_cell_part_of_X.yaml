@@ -1,3 +1,4 @@
+# options: [min(20),dir(cl),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: glandular epithelial cell part of X
 pattern_iri: http://purl.obolibrary.org/obo/cl/glandular_epithelial_cell_part_of_X
 
@@ -8,6 +9,7 @@ description: >-
 
 classes: 
   glandular epithelial cell: "CL:0000150"
+  multicellular anatomical structure: "UBERON:0010000"
 
 
 relations: 
@@ -15,7 +17,7 @@ relations:
 
 
 vars:
-  v0: "owl:Thing"
+  v0: "'multicellular anatomical structure'"
 
 name:
   # Induced, frequency=0.65, p=http://www.w3.org/2000/01/rdf-schema#label 
@@ -34,14 +36,9 @@ annotationProperties:
   related_synonym: "oio:hasRelatedSynonym"
 
 annotations:
-  - annotationProperty: exact_synonym
-    # Induced p=exact_synonym 
-    text: luminal cell of %s
-    vars:
-      - v0
   - annotationProperty: related_synonym
     # Induced p=related_synonym 
-    text: %s glandular cells
+    text: "%s glandular cells"
     vars:
       - v0
 
