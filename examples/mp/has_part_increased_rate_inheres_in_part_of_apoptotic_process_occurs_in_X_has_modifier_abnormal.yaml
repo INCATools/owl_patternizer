@@ -1,0 +1,46 @@
+# options: [min(50),dir(mp),trim(true),base('http://purl.obolibrary.org/obo/mp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part increased rate inheres in part of apoptotic process occurs in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_increased_rate_inheres_in_part_of_apoptotic_process_occurs_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased cranial neural crest cell apoptosis](http://purl.obolibrary.org/obo/MP_0012761), [increased trunk neural crest cell apoptosis](http://purl.obolibrary.org/obo/MP_0013014), [increased male germ cell apoptosis](http://purl.obolibrary.org/obo/MP_0014052) (52 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  apoptotic process: "GO:0006915"
+  abnormal: "PATO:0000460"
+  increased rate: "PATO:0000912"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'material entity'"
+
+name:
+  # Induced, frequency=0.6730769230769231, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "increased %s apoptosis"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "increase in the number of cells of the %s undergoing programmed cell death"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some 'increased rate' and ('inheres in part of' some 'apoptotic process' and ('occurs in' some %s)) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0

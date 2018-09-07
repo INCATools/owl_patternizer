@@ -1,0 +1,54 @@
+# options: [min(50),dir(mp),trim(true),base('http://purl.obolibrary.org/obo/mp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part increased amount inheres in part of X occurs in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_increased_amount_inheres_in_part_of_X_occurs_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [acute joint inflammation](http://purl.obolibrary.org/obo/MP_0002934), [acute pancreas inflammation](http://purl.obolibrary.org/obo/MP_0003340), [chronic inflammation](http://purl.obolibrary.org/obo/MP_0002499) (120 total)
+
+classes: 
+  acute inflammatory response: "GO:0002526"
+  chronic inflammatory response: "GO:0002544"
+  cell adhesion: "GO:0007155"
+  glucose import: "GO:0046323"
+  necrotic cell death: "GO:0070265"
+  hemorrhage and non-specified extravasation: "http://purl.obolibrary.org/obo/MPATH_119"
+  abnormal: "PATO:0000460"
+  increased amount: "PATO:0000470"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'acute inflammatory response' or 'chronic inflammatory response' or 'cell adhesion' or 'glucose import' or 'necrotic cell death' or 'hemorrhage and non-specified extravasation'"
+  v1: "'independent continuant'"
+
+name:
+  # Could not induce name, using default
+  text: "has part increased amount inheres in part of %s occurs in %s has modifier abnormal"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "has part a Any increased amount that inheres in part of a Any %s that occurs in a %s and has modifier a abnormal"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some 'increased amount' and ('inheres in part of' some %s and ('occurs in' some %s)) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

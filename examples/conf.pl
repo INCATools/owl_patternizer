@@ -42,9 +42,9 @@ ontology_config(cl,       [min(20)]).
 ontology_config(fbbt,     [min(50)]).
 ontology_config(mondo,    []).
 ontology_config(obi,      []).
-ontology_config(sctid,    []).
+ontology_config(sctid,    [max_class_signature(4), generalize_properties(false)]).
 ontology_config(to,       [min(50)]).
-%ontology_config(envo,     [min(20, max_and_cardinality(3)]).
+ontology_config(envo,     [min(20)]).
 ontology_config(efo,      [min(50)]).
 ontology_config(doid,     [min(25)]).
 ontology_config(mp,       [min(50), max_class_signature(4), generalize_properties(false)]).

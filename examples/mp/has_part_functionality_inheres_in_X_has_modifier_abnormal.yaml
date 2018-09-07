@@ -1,0 +1,50 @@
+# options: [min(50),dir(mp),trim(true),base('http://purl.obolibrary.org/obo/mp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part functionality inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_functionality_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal histamine physiology](http://purl.obolibrary.org/obo/MP_0002503), [abnormal surfactant physiology](http://purl.obolibrary.org/obo/MP_0004782), [abnormal cell physiology](http://purl.obolibrary.org/obo/MP_0005621) (207 total)
+
+classes: 
+  abnormal: "PATO:0000460"
+  functionality: "PATO:0001509"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.7342995169082126, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "abnormal %s physiology"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "has part a Any functionality that inheres in a %s and has modifier a abnormal"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "abnormal %s function"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('has part' some 'functionality' and ('inheres in' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0

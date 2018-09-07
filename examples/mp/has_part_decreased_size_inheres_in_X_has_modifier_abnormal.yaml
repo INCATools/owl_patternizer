@@ -1,0 +1,50 @@
+# options: [min(50),dir(mp),trim(true),base('http://purl.obolibrary.org/obo/mp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part decreased size inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_decreased_size_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [decreased astrocyte size](http://purl.obolibrary.org/obo/MP_0020435), [decreased fat cell size](http://purl.obolibrary.org/obo/MP_0009269), [microcytosis](http://purl.obolibrary.org/obo/MP_0002813) (298 total)
+
+classes: 
+  abnormal: "PATO:0000460"
+  decreased size: "PATO:0000587"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.3288590604026846, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "small %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.016778523489932886, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "reduced size of the %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "reduced %s size"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('has part' some 'decreased size' and ('inheres in' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0

@@ -1,0 +1,50 @@
+# options: [min(50),dir(mp),trim(true),base('http://purl.obolibrary.org/obo/mp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part decreased amount inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_decreased_amount_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [decreased glycine level](http://purl.obolibrary.org/obo/MP_0030659), [decreased sterol level](http://purl.obolibrary.org/obo/MP_0012225), [decreased taurine level](http://purl.obolibrary.org/obo/MP_0030636) (450 total)
+
+classes: 
+  abnormal: "PATO:0000460"
+  decreased amount: "PATO:0001997"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.2222222222222222, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "decreased %s number"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.0044444444444444444, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "fewer than normal %s numbers"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "reduced %s number"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('has part' some 'decreased amount' and ('inheres in' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0

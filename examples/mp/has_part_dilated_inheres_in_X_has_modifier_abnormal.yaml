@@ -1,0 +1,50 @@
+# options: [min(50),dir(mp),trim(true),base('http://purl.obolibrary.org/obo/mp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part dilated inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_dilated_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [dilated mitochondria](http://purl.obolibrary.org/obo/MP_0011632), [dilated sarcoplasmic reticulum](http://purl.obolibrary.org/obo/MP_0004089), [dilated uterine cervix](http://purl.obolibrary.org/obo/MP_0001136) (70 total)
+
+classes: 
+  independent continuant: "BFO:0000004"
+  abnormal: "PATO:0000460"
+  dilated: "PATO:0001571"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'independent continuant'"
+
+name:
+  # Induced, frequency=0.44285714285714284, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "dilated %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.05714285714285714, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "stretched or widened aperture of the luminal space of the %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s dilation"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('has part' some 'dilated' and ('inheres in' some %s) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0

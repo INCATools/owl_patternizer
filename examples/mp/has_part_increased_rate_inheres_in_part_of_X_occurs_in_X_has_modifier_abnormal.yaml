@@ -1,0 +1,49 @@
+# options: [min(50),dir(mp),trim(true),base('http://purl.obolibrary.org/obo/mp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part increased rate inheres in part of X occurs in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_increased_rate_inheres_in_part_of_X_occurs_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased cranial neural crest cell apoptosis](http://purl.obolibrary.org/obo/MP_0012761), [increased trunk neural crest cell apoptosis](http://purl.obolibrary.org/obo/MP_0013014), [increased male germ cell apoptosis](http://purl.obolibrary.org/obo/MP_0014052) (73 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  abnormal: "PATO:0000460"
+  increased rate: "PATO:0000912"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'material entity'"
+
+name:
+  # Could not induce name, using default
+  text: "has part increased rate inheres in part of %s occurs in %s has modifier abnormal"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "has part a Any increased rate that inheres in part of a Any %s that occurs in a %s and has modifier a abnormal"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some 'increased rate' and ('inheres in part of' some %s and ('occurs in' some %s)) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

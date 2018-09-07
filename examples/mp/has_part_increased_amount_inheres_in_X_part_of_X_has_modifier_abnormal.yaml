@@ -1,0 +1,49 @@
+# options: [min(50),dir(mp),trim(true),base('http://purl.obolibrary.org/obo/mp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part increased amount inheres in X part of X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/mp/has_part_increased_amount_inheres_in_X_part_of_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [hyperoxaluria](http://purl.obolibrary.org/obo/MP_0011517), [increased platelet ATP level](http://purl.obolibrary.org/obo/MP_0009449), [increased circulating glycine level](http://purl.obolibrary.org/obo/MP_0030655) (370 total)
+
+classes: 
+  abnormal: "PATO:0000460"
+  increased amount: "PATO:0000470"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'independent continuant'"
+
+name:
+  # Induced, frequency=0.08108108108108109, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.02972972972972973, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "excretion of excessive amounts of %s in the %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some 'increased amount' and ('inheres in' some %s and ('part of' some %s)) and ('has modifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1
