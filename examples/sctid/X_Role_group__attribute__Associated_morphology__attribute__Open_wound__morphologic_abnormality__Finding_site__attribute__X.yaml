@@ -1,0 +1,48 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Role group (attribute) Associated morphology (attribute) Open wound (morphologic abnormality) Finding site (attribute) X
+pattern_iri: http://purl.obolibrary.org/obo/sctid/X_Role_group__attribute__Associated_morphology__attribute__Open_wound__morphologic_abnormality__Finding_site__attribute__X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Open wound of pelvic region (disorder)](http://snomed.info/id/210483004), [Open wound of upper limb (disorder)](http://snomed.info/id/81405006), [Open wound of lower limb (disorder)](http://snomed.info/id/26947005) (138 total)
+
+classes: 
+  Open wound (morphologic abnormality): "http://snomed.info/id/59091005"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  Role group (attribute): "http://snomed.info/id/609096000"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.057971014492753624, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Open wound of %s (%s)"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Role group (attribute) a Any Associated morphology (attribute) a Open wound (morphologic abnormality) that Finding site (attribute) a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Role group (attribute)' some ('Associated morphology (attribute)' some 'Open wound (morphologic abnormality)') and ('Finding site (attribute)' some %s))"
+  vars:
+    - v0
+    - v1

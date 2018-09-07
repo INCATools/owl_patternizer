@@ -1,0 +1,48 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Role group (attribute) Method (attribute) Administration - action (qualifier value) Direct substance (attribute) X
+pattern_iri: http://purl.obolibrary.org/obo/sctid/X_Role_group__attribute__Method__attribute__Administration___action__qualifier_value__Direct_substance__attribute__X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Diagnostic dye introduction (procedure)](http://snomed.info/id/165160008), [Low molecular weight heparin therapy (procedure)](http://snomed.info/id/443464003), [Administration of substance (procedure)](http://snomed.info/id/432102000) (106 total)
+
+classes: 
+  Administration - action (qualifier value): "http://snomed.info/id/129445006"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  Role group (attribute): "http://snomed.info/id/609096000"
+
+
+vars:
+  v0: "'Diagnostic procedure (procedure)' or 'Heparin therapy (procedure)' or 'Introduction (procedure)' or 'Administration of blood product (procedure)' or 'Hormone therapy (procedure)' or 'Drug prophylaxis (procedure)' or 'Administration of drug or medicament (procedure)' or 'Administration of antitoxin (procedure)' or 'Administration of vaccine to produce active immunity (procedure)' or 'Chemotherapy (procedure)' or 'Immunization for encephalitis virus (procedure)' or 'Administration of anesthesia (procedure)' or 'Administration of botulism antitoxin (procedure)' or 'Administration of anesthesia AND/OR sedation (procedure)' or 'Drug therapy (procedure)' or 'Administration of substance (procedure)' or 'Passive immunization (procedure)' or 'Haemophilus influenzae immunization (procedure)'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.08490566037735849, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Administration of %s (%s)"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Role group (attribute) a Any Method (attribute) a Administration - action (qualifier value) that Direct substance (attribute) a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Role group (attribute)' some ('Method (attribute)' some 'Administration - action (qualifier value)') and ('Direct substance (attribute)' some %s))"
+  vars:
+    - v0
+    - v1

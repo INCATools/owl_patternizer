@@ -1,0 +1,47 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Role group (attribute) Using substance (attribute) X
+pattern_iri: http://purl.obolibrary.org/obo/sctid/X_Role_group__attribute__Using_substance__attribute__X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Modified trichrome stain method (procedure)](http://snomed.info/id/117020009), [May-Grunwald giemsa stain method (procedure)](http://snomed.info/id/117235004), [Thioflavine S stain method (procedure)](http://snomed.info/id/117025004) (204 total)
+
+classes: 
+  Substance (substance): "http://snomed.info/id/105590001"
+
+
+relations: 
+  Role group (attribute): "http://snomed.info/id/609096000"
+
+
+vars:
+  v0: "'Trichrome stain method (procedure)' or 'Giemsa stain method (procedure)' or 'Vital stain method (procedure)' or 'Hematology staining procedure (procedure)' or 'Fungus stain method (procedure)' or 'Carbohydrate modified diet (regime/therapy)' or 'Vitamin and mineral supplement therapy (regime/therapy)' or 'Cholesterol modified diet (regime/therapy)' or 'Protein modified diet (regime/therapy)' or 'Texture modified diet (regime/therapy)' or 'Monounsaturated fat modified diet (regime/therapy)' or 'Polyunsaturated fat modified diet (regime/therapy)' or 'Saturated fat modified diet (regime/therapy)' or 'Trans fat modified diet (regime/therapy)' or 'Soluble fiber modified diet (regime/therapy)' or 'Insoluble fiber modified diet (regime/therapy)' or 'Iron modified diet (regime/therapy)' or 'Potassium modified diet (regime/therapy)' or 'Sodium modified diet (regime/therapy)'"
+  v1: "'Substance (substance)'"
+
+name:
+  # Could not induce name, using default
+  text: "%s Role group (attribute) Using substance (attribute) %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Role group (attribute) a Using substance (attribute) a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Role group (attribute)' some ('Using substance (attribute)' some %s))"
+  vars:
+    - v0
+    - v1

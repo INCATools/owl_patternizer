@@ -1,0 +1,44 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Role group (attribute) Clinical course (attribute) Sudden onset AND/OR short duration (qualifier value)
+pattern_iri: http://purl.obolibrary.org/obo/sctid/X_Role_group__attribute__Clinical_course__attribute__Sudden_onset_AND_OR_short_duration__qualifier_value_
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Drug-induced dyskinesia, acute onset (disorder)](http://snomed.info/id/93433003), [Acute respiratory acidosis (disorder)](http://snomed.info/id/70644008), [Acute deep venous thrombosis (disorder)](http://snomed.info/id/132281000119108) (59 total)
+
+classes: 
+  Sudden onset AND/OR short duration (qualifier value): "http://snomed.info/id/424124008"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  Role group (attribute): "http://snomed.info/id/609096000"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.8135593220338984, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Acute %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Role group (attribute) a Clinical course (attribute) a Sudden onset AND/OR short duration (qualifier value)"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Role group (attribute)' some ('Clinical course (attribute)' some 'Sudden onset AND/OR short duration (qualifier value)'))"
+  vars:
+    - v0

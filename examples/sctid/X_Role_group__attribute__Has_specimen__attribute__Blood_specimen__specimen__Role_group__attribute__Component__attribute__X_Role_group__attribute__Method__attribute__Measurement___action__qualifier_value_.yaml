@@ -1,0 +1,49 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Role group (attribute) Has specimen (attribute) Blood specimen (specimen) Role group (attribute) Component (attribute) X Role group (attribute) Method (attribute) Measurement - action (qualifier value)
+pattern_iri: http://purl.obolibrary.org/obo/sctid/X_Role_group__attribute__Has_specimen__attribute__Blood_specimen__specimen__Role_group__attribute__Component__attribute__X_Role_group__attribute__Method__attribute__Measurement___action__qualifier_value_
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Blood porphyrin measurement (procedure)](http://snomed.info/id/313584005), [Measurement of heavy metal in blood specimen (procedure)](http://snomed.info/id/441691003), [Thallium measurement, blood (procedure)](http://snomed.info/id/68940001) (54 total)
+
+classes: 
+  Blood specimen (specimen): "http://snomed.info/id/119297000"
+  Measurement - action (qualifier value): "http://snomed.info/id/129266000"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  Role group (attribute): "http://snomed.info/id/609096000"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'SNOMED CT Concept (SNOMED RT+CTV3)'"
+
+name:
+  # Induced, frequency=0.037037037037037035, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s blood measurement (%s)"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Role group (attribute) a Has specimen (attribute) a Blood specimen (specimen) and Role group (attribute) a Component (attribute) a %s and Role group (attribute) a Method (attribute) a Measurement - action (qualifier value)"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Role group (attribute)' some ('Has specimen (attribute)' some 'Blood specimen (specimen)')) and ('Role group (attribute)' some ('Component (attribute)' some %s)) and ('Role group (attribute)' some ('Method (attribute)' some 'Measurement - action (qualifier value)'))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,48 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Role group (attribute) Associated morphology (attribute) Strain - lesion (morphologic abnormality) Finding site (attribute) X
+pattern_iri: http://purl.obolibrary.org/obo/sctid/X_Role_group__attribute__Associated_morphology__attribute__Strain___lesion__morphologic_abnormality__Finding_site__attribute__X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Strain of infraspinatus muscle AND/OR tendon (disorder)](http://snomed.info/id/24928009), [Strain of supraspinatus muscle AND/OR tendon (disorder)](http://snomed.info/id/18888002), [Strain of supraspinatus muscle (disorder)](http://snomed.info/id/446199003) (77 total)
+
+classes: 
+  Strain - lesion (morphologic abnormality): "http://snomed.info/id/308497004"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  Role group (attribute): "http://snomed.info/id/609096000"
+
+
+vars:
+  v0: "'Injury of musculoskeletal system (disorder)' or 'Strain of supraspinatus muscle AND/OR tendon (disorder)' or 'Tendon injury (disorder)' or 'Strain of infraspinatus muscle AND/OR tendon (disorder)' or 'Strain of back muscle (disorder)' or 'Tendon strain (disorder)' or 'Strain of tendon of trunk (disorder)' or 'Strain of tendon of upper arm (disorder)' or 'Strain of tendon of forearm, wrist, hand (disorder)' or 'Strain of tendon of medial thigh muscle (disorder)' or 'Strain of tendon of foot and ankle (disorder)' or 'Strain of muscle of lower limb (disorder)' or 'Strain of muscle of upper limb (disorder)' or 'Strain of muscle of trunk (disorder)' or 'Repetitive strain injury (disorder)' or 'Muscle strain (disorder)' or 'Strain of rotator cuff capsule (disorder)' or 'Injury of muscle (disorder)'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.18181818181818182, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Strain of %s (%s)"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Role group (attribute) a Any Associated morphology (attribute) a Strain - lesion (morphologic abnormality) that Finding site (attribute) a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Role group (attribute)' some ('Associated morphology (attribute)' some 'Strain - lesion (morphologic abnormality)') and ('Finding site (attribute)' some %s))"
+  vars:
+    - v0
+    - v1

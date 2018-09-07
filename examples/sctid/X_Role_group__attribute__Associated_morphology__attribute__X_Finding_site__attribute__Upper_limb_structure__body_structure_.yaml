@@ -1,0 +1,48 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Role group (attribute) Associated morphology (attribute) X Finding site (attribute) Upper limb structure (body structure)
+pattern_iri: http://purl.obolibrary.org/obo/sctid/X_Role_group__attribute__Associated_morphology__attribute__X_Finding_site__attribute__Upper_limb_structure__body_structure_
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Open wound of upper limb (disorder)](http://snomed.info/id/81405006), [Absence of upper limb (finding)](http://snomed.info/id/449669007), [Hypertrophy of upper limb (finding)](http://snomed.info/id/298745009) (44 total)
+
+classes: 
+  Upper limb structure (body structure): "http://snomed.info/id/53120007"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  Role group (attribute): "http://snomed.info/id/609096000"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
+
+name:
+  # Could not induce name, using default
+  text: "%s Role group (attribute) Associated morphology (attribute) %s Finding site (attribute) Upper limb structure (body structure)"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Role group (attribute) a Any Associated morphology (attribute) a %s that Finding site (attribute) a Upper limb structure (body structure)"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Role group (attribute)' some ('Associated morphology (attribute)' some %s) and ('Finding site (attribute)' some 'Upper limb structure (body structure)'))"
+  vars:
+    - v0
+    - v1

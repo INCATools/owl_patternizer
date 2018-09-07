@@ -1,0 +1,48 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Role group (attribute) Has specimen (attribute) Urine specimen (specimen) Role group (attribute) Component (attribute) X
+pattern_iri: http://purl.obolibrary.org/obo/sctid/X_Role_group__attribute__Has_specimen__attribute__Urine_specimen__specimen__Role_group__attribute__Component__attribute__X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Urine 1-methylhistidine measurement (procedure)](http://snomed.info/id/412947008), [Urine 3-methylhistidine measurement (procedure)](http://snomed.info/id/412945000), [Urine alpha-aminoadipate measurement (procedure)](http://snomed.info/id/412968009) (73 total)
+
+classes: 
+  Urine specimen (specimen): "http://snomed.info/id/122575003"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  Role group (attribute): "http://snomed.info/id/609096000"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'SNOMED CT Concept (SNOMED RT+CTV3)'"
+
+name:
+  # Could not induce name, using default
+  text: "%s Role group (attribute) Has specimen (attribute) Urine specimen (specimen) Role group (attribute) Component (attribute) %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Role group (attribute) a Has specimen (attribute) a Urine specimen (specimen) and Role group (attribute) a Component (attribute) a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Role group (attribute)' some ('Has specimen (attribute)' some 'Urine specimen (specimen)')) and ('Role group (attribute)' some ('Component (attribute)' some %s))"
+  vars:
+    - v0
+    - v1

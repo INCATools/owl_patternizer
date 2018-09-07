@@ -1,4 +1,4 @@
-# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X Laterality (attribute) X
 pattern_iri: http://purl.obolibrary.org/obo/sctid/X_Laterality__attribute__X
 
@@ -20,11 +20,11 @@ vars:
   v1: "'Side (qualifier value)'"
 
 name:
-  # Could not induce name, using default
-  text: "%s Laterality (attribute) %s"
+  # Induced, frequency=0.22820318423047764, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Structure of %s %s (body structure)"
   vars:
-    - v0
     - v1
+    - v0
 
 def:
   # Could not induce def, using default

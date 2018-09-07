@@ -1,4 +1,4 @@
-# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X Laterality (attribute) Right (qualifier value)
 pattern_iri: http://purl.obolibrary.org/obo/sctid/X_Laterality__attribute__Right__qualifier_value_
 
@@ -20,8 +20,8 @@ vars:
   v0: "'owl:Thing'"
 
 name:
-  # Induced, frequency=0.030395136778115502, p=http://www.w3.org/2000/01/rdf-schema#label 
-  text: "%s of right hand (body structure)"
+  # Induced, frequency=0.22644376899696048, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Structure of right %s (body structure)"
   vars:
     - v0
 

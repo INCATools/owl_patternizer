@@ -1,0 +1,47 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Role group (attribute) Has specimen (attribute) X
+pattern_iri: http://purl.obolibrary.org/obo/sctid/X_Role_group__attribute__Has_specimen__attribute__X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Stool culture (procedure)](http://snomed.info/id/117028002), [Culture of semen (procedure)](http://snomed.info/id/80731003), [Plasma alanine measurement (procedure)](http://snomed.info/id/313621008) (59 total)
+
+classes: 
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  Role group (attribute): "http://snomed.info/id/609096000"
+
+
+vars:
+  v0: "'Source specific culture (procedure)' or 'Alanine measurement (procedure)' or 'Microscopy (procedure)' or 'Triglycerides measurement (procedure)' or 'Paraprotein measurement (procedure)' or 'Globulin measurement (procedure)' or 'Osmolality measurement (procedure)' or 'Magnesium measurement (procedure)' or 'Examination of fluid specimen (procedure)' or 'Arachidonic acid measurement (procedure)' or 'Ethanol measurement (procedure)' or 'Progesterone measurement (procedure)' or 'Chromatography measurement (procedure)'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.3728813559322034, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of %s (procedure)"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Role group (attribute) a Has specimen (attribute) a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Role group (attribute)' some ('Has specimen (attribute)' some %s))"
+  vars:
+    - v0
+    - v1

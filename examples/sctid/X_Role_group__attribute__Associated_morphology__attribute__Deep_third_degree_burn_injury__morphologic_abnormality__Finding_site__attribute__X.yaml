@@ -1,0 +1,48 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Role group (attribute) Associated morphology (attribute) Deep third degree burn injury (morphologic abnormality) Finding site (attribute) X
+pattern_iri: http://purl.obolibrary.org/obo/sctid/X_Role_group__attribute__Associated_morphology__attribute__Deep_third_degree_burn_injury__morphologic_abnormality__Finding_site__attribute__X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Deep third degree burn of lower leg (disorder)](http://snomed.info/id/32294004), [Deep third degree burn of axilla (disorder)](http://snomed.info/id/36121005), [Deep third degree burn of ear (disorder)](http://snomed.info/id/17562007) (40 total)
+
+classes: 
+  Deep third degree burn injury (morphologic abnormality): "http://snomed.info/id/40477005"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  Role group (attribute): "http://snomed.info/id/609096000"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
+
+name:
+  # Could not induce name, using default
+  text: "%s Role group (attribute) Associated morphology (attribute) Deep third degree burn injury (morphologic abnormality) Finding site (attribute) %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Role group (attribute) a Any Associated morphology (attribute) a Deep third degree burn injury (morphologic abnormality) that Finding site (attribute) a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Role group (attribute)' some ('Associated morphology (attribute)' some 'Deep third degree burn injury (morphologic abnormality)') and ('Finding site (attribute)' some %s))"
+  vars:
+    - v0
+    - v1

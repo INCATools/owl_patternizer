@@ -1,0 +1,49 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Procedure to identify antibody (procedure) Role group (attribute) Component (attribute) X Role group (attribute) Method (attribute) Measurement - action (qualifier value)
+pattern_iri: http://purl.obolibrary.org/obo/sctid/X_Procedure_to_identify_antibody__procedure__Role_group__attribute__Component__attribute__X_Role_group__attribute__Method__attribute__Measurement___action__qualifier_value_
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Measurement of Bordetella pertussis antibody (procedure)](http://snomed.info/id/121942004), [Measurement of Bordetella parapertussis antibody (procedure)](http://snomed.info/id/121941006), [Meaurement of Bordetella avium antibody (procedure)](http://snomed.info/id/117771004) (46 total)
+
+classes: 
+  Antimicrobial antibody (substance): "http://snomed.info/id/116642004"
+  Procedure to identify antibody (procedure): "http://snomed.info/id/121258006"
+  Measurement - action (qualifier value): "http://snomed.info/id/129266000"
+
+
+relations: 
+  Role group (attribute): "http://snomed.info/id/609096000"
+
+
+vars:
+  v0: "'Measurement of Bordetella species antibody (procedure)' or 'Measurement of Borrelia species antibody (procedure)' or 'Measurement of Borrelia burgdorferi antibody (procedure)' or 'Measurement of Brucella species antibody (procedure)' or 'Measurement of Campylobacter species antibody (procedure)' or 'Measurement of Chlamydia antibody (procedure)' or 'Measurement of Leptospira species antibody (procedure)' or 'Measurement of Salmonella species antibody (procedure)' or 'Measurement of Shigella species antibody (procedure)' or 'Measurement of Yersinia species antibody (procedure)' or 'Measurement of Cryptococcus species antibody (procedure)' or 'Measurement of Histoplasma species antibody (procedure)'"
+  v1: "'Antimicrobial antibody (substance)'"
+
+name:
+  # Could not induce name, using default
+  text: "%s Procedure to identify antibody (procedure) Role group (attribute) Component (attribute) %s Role group (attribute) Method (attribute) Measurement - action (qualifier value)"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Procedure to identify antibody (procedure) and Role group (attribute) a Component (attribute) a %s and Role group (attribute) a Method (attribute) a Measurement - action (qualifier value)"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and 'Procedure to identify antibody (procedure)' and ('Role group (attribute)' some ('Component (attribute)' some %s)) and ('Role group (attribute)' some ('Method (attribute)' some 'Measurement - action (qualifier value)'))"
+  vars:
+    - v0
+    - v1

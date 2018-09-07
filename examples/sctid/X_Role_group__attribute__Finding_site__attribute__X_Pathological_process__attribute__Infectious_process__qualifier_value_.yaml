@@ -1,0 +1,48 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Role group (attribute) Finding site (attribute) X Pathological process (attribute) Infectious process (qualifier value)
+pattern_iri: http://purl.obolibrary.org/obo/sctid/X_Role_group__attribute__Finding_site__attribute__X_Pathological_process__attribute__Infectious_process__qualifier_value_
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Localized infection of skin AND/OR subcutaneous tissue (disorder)](http://snomed.info/id/430348006), [Localized infection of subcutaneous tissue (disorder)](http://snomed.info/id/735400004), [Infection of gastrostomy site (disorder)](http://snomed.info/id/442858008) (105 total)
+
+classes: 
+  Infectious process (qualifier value): "http://snomed.info/id/441862004"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  Role group (attribute): "http://snomed.info/id/609096000"
+
+
+vars:
+  v0: "'Localized infection (disorder)' or 'Leukoencephalopathy (disorder)' or 'Oral infection (disorder)' or 'Arteriovenous disorder (disorder)' or 'Malabsorption syndrome (disorder)' or 'Parkinsonism (disorder)' or 'Ingrowing nail (disorder)' or 'Dermatosis of lip (disorder)' or 'Secondary tic disorder (disorder)' or 'Disorder of amniotic cavity AND/OR membrane (disorder)' or 'Ill-defined infectious disease (disorder)'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Infection of %s (%s)"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Role group (attribute) a Any Finding site (attribute) a %s that Pathological process (attribute) a Infectious process (qualifier value)"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Role group (attribute)' some ('Finding site (attribute)' some %s) and ('Pathological process (attribute)' some 'Infectious process (qualifier value)'))"
+  vars:
+    - v0
+    - v1

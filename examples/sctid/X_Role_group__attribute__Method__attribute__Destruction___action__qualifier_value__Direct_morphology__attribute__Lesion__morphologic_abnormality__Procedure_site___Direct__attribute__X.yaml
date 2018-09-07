@@ -1,0 +1,49 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Role group (attribute) Method (attribute) Destruction - action (qualifier value) Direct morphology (attribute) Lesion (morphologic abnormality) Procedure site - Direct (attribute) X
+pattern_iri: http://purl.obolibrary.org/obo/sctid/X_Role_group__attribute__Method__attribute__Destruction___action__qualifier_value__Direct_morphology__attribute__Lesion__morphologic_abnormality__Procedure_site___Direct__attribute__X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Destruction of lesion of omentum (procedure)](http://snomed.info/id/177960006), [Destruction of lesion of minor salivary gland (procedure)](http://snomed.info/id/234944005), [Destruction of lesion of skin (procedure)](http://snomed.info/id/87031008) (67 total)
+
+classes: 
+  Destruction - action (qualifier value): "http://snomed.info/id/129382001"
+  Lesion (morphologic abnormality): "http://snomed.info/id/52988006"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  Role group (attribute): "http://snomed.info/id/609096000"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.029850746268656716, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of lesion of %s (procedure)"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Role group (attribute) a Any Method (attribute) a Destruction - action (qualifier value) that Direct morphology (attribute) a Lesion (morphologic abnormality) and Procedure site - Direct (attribute) a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Role group (attribute)' some ('Method (attribute)' some 'Destruction - action (qualifier value)') and ('Direct morphology (attribute)' some 'Lesion (morphologic abnormality)') and ('Procedure site - Direct (attribute)' some %s))"
+  vars:
+    - v0
+    - v1

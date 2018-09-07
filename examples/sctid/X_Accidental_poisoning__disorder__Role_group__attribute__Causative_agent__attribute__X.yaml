@@ -1,0 +1,48 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Accidental poisoning (disorder) Role group (attribute) Causative agent (attribute) X
+pattern_iri: http://purl.obolibrary.org/obo/sctid/X_Accidental_poisoning__disorder__Role_group__attribute__Causative_agent__attribute__X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Accidental poisoning caused by medazepam (disorder)](http://snomed.info/id/216535006), [Accidental poisoning caused by local anesthetic (disorder)](http://snomed.info/id/216582004), [Accidental poisoning caused by prochlorperazine (disorder)](http://snomed.info/id/216522002) (94 total)
+
+classes: 
+  Accidental poisoning (disorder): "http://snomed.info/id/72431002"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  Role group (attribute): "http://snomed.info/id/609096000"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
+
+name:
+  # Could not induce name, using default
+  text: "%s Accidental poisoning (disorder) Role group (attribute) Causative agent (attribute) %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Accidental poisoning (disorder) and Role group (attribute) a Causative agent (attribute) a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and 'Accidental poisoning (disorder)' and ('Role group (attribute)' some ('Causative agent (attribute)' some %s))"
+  vars:
+    - v0
+    - v1

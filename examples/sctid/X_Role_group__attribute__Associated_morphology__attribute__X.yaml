@@ -1,11 +1,11 @@
 # options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
-pattern_name: X Role group (attribute) Causative agent (attribute) X
-pattern_iri: http://purl.obolibrary.org/obo/sctid/X_Role_group__attribute__Causative_agent__attribute__X
+pattern_name: X Role group (attribute) Associated morphology (attribute) X
+pattern_iri: http://purl.obolibrary.org/obo/sctid/X_Role_group__attribute__Associated_morphology__attribute__X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [Septicemia caused by Chromobacterium (disorder)](http://snomed.info/id/18700001), [Septicemia caused by enterococcus (disorder)](http://snomed.info/id/310669007), [Poisoning caused by diiodohydroxyquin (disorder)](http://snomed.info/id/51862005) (4738 total)
+  Examples: [Deep third degree burns of multiple sites (disorder)](http://snomed.info/id/81327003), [Second degree burns of multiple sites (disorder)](http://snomed.info/id/13212004), [Burn erythema of multiple sites (disorder)](http://snomed.info/id/77830003) (407 total)
 
 classes: 
   owl:Thing: "owl:Thing"
@@ -20,15 +20,15 @@ vars:
   v1: "'owl:Thing'"
 
 name:
-  # Induced, frequency=0.06184043900379907, p=http://www.w3.org/2000/01/rdf-schema#label 
-  text: "%s caused by %s (disorder)"
+  # Induced, frequency=0.16707616707616707, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s (%s)"
   vars:
-    - v0
     - v1
+    - v0
 
 def:
   # Could not induce def, using default
-  text: "Any %s that Role group (attribute) a Causative agent (attribute) a %s"
+  text: "Any %s that Role group (attribute) a Associated morphology (attribute) a %s"
   vars:
     - v0
     - v1
@@ -41,7 +41,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('Role group (attribute)' some ('Causative agent (attribute)' some %s))"
+  text: "%s and ('Role group (attribute)' some ('Associated morphology (attribute)' some %s))"
   vars:
     - v0
     - v1

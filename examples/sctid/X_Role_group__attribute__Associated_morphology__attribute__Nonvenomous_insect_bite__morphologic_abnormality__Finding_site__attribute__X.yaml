@@ -1,0 +1,48 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X Role group (attribute) Associated morphology (attribute) Nonvenomous insect bite (morphologic abnormality) Finding site (attribute) X
+pattern_iri: http://purl.obolibrary.org/obo/sctid/X_Role_group__attribute__Associated_morphology__attribute__Nonvenomous_insect_bite__morphologic_abnormality__Finding_site__attribute__X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Nonvenomous insect bite of interscapular region with infection (disorder)](http://snomed.info/id/51882009), [Nonvenomous insect bite of hand with infection (disorder)](http://snomed.info/id/44352004), [Nonvenomous insect bite of flank with infection (disorder)](http://snomed.info/id/33155001) (55 total)
+
+classes: 
+  Nonvenomous insect bite (morphologic abnormality): "http://snomed.info/id/78319006"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  Role group (attribute): "http://snomed.info/id/609096000"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'Anatomical structure (body structure)'"
+
+name:
+  # Could not induce name, using default
+  text: "%s Role group (attribute) Associated morphology (attribute) Nonvenomous insect bite (morphologic abnormality) Finding site (attribute) %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that Role group (attribute) a Any Associated morphology (attribute) a Nonvenomous insect bite (morphologic abnormality) that Finding site (attribute) a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('Role group (attribute)' some ('Associated morphology (attribute)' some 'Nonvenomous insect bite (morphologic abnormality)') and ('Finding site (attribute)' some %s))"
+  vars:
+    - v0
+    - v1

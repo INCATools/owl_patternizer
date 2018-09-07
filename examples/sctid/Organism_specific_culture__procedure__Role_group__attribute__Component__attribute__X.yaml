@@ -1,0 +1,44 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: Organism specific culture (procedure) Role group (attribute) Component (attribute) X
+pattern_iri: http://purl.obolibrary.org/obo/sctid/Organism_specific_culture__procedure__Role_group__attribute__Component__attribute__X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Chlamydia pneumoniae culture (procedure)](http://snomed.info/id/122398007), [Borrelia species culture (procedure)](http://snomed.info/id/122252009), [Mycobacterium paratuberculosis culture (procedure)](http://snomed.info/id/122404002) (62 total)
+
+classes: 
+  Organism specific culture (procedure): "http://snomed.info/id/104172004"
+  Microorganism (organism): "http://snomed.info/id/264395009"
+
+
+relations: 
+  Role group (attribute): "http://snomed.info/id/609096000"
+
+
+vars:
+  v0: "'Microorganism (organism)'"
+
+name:
+  # Induced, frequency=0.8709677419354839, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s culture (procedure)"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any Organism specific culture (procedure) that Role group (attribute) a Component (attribute) a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'Organism specific culture (procedure)' and ('Role group (attribute)' some ('Component (attribute)' some %s))"
+  vars:
+    - v0

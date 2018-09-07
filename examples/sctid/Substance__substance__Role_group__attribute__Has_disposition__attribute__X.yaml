@@ -1,0 +1,44 @@
+# options: [min(40),dir(sctid),trim(true),base('http://purl.obolibrary.org/obo/sctid'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: Substance (substance) Role group (attribute) Has disposition (attribute) X
+pattern_iri: http://purl.obolibrary.org/obo/sctid/Substance__substance__Role_group__attribute__Has_disposition__attribute__X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Substance categorized by disposition (substance)](http://snomed.info/id/766739005), [Substance with immunomodulator mechanism of action (substance)](http://snomed.info/id/372558009), [Surfactant (substance)](http://snomed.info/id/422248006) (130 total)
+
+classes: 
+  Substance (substance): "http://snomed.info/id/105590001"
+  Disposition (disposition): "http://snomed.info/id/726711005"
+
+
+relations: 
+  Role group (attribute): "http://snomed.info/id/609096000"
+
+
+vars:
+  v0: "'Disposition (disposition)'"
+
+name:
+  # Induced, frequency=0.8692307692307693, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Substance with %s mechanism of action (substance)"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any Substance (substance) that Role group (attribute) a Has disposition (attribute) a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'Substance (substance)' and ('Role group (attribute)' some ('Has disposition (attribute)' some %s))"
+  vars:
+    - v0
