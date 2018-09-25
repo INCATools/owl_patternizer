@@ -1,0 +1,49 @@
+# options: [min(3),dir(chebi),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has part hydroxy group
+pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_part_hydroxy_group
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [hydroxylipid](http://purl.obolibrary.org/obo/CHEBI_131727), [inorganic hydroxy compound](http://purl.obolibrary.org/obo/CHEBI_52625), [hydroxy monocarboxylic acid](http://purl.obolibrary.org/obo/CHEBI_35868) (11 total)
+
+classes: 
+  molecular entity: "http://purl.obolibrary.org/obo/CHEBI_23367"
+  hydroxy group: "http://purl.obolibrary.org/obo/CHEBI_43176"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'molecular entity'"
+
+name:
+  # Induced, frequency=0.6363636363636364, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "hydroxy %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2727272727272727, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any %s carrying one or more hydroxy substituents."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "hydroxy %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('has part' some 'hydroxy group')"
+  vars:
+    - v0

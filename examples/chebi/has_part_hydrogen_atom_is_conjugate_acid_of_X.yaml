@@ -1,0 +1,55 @@
+# options: [min(3),dir(chebi),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part hydrogen atom is conjugate acid of X
+pattern_iri: http://purl.obolibrary.org/obo/chebi/has_part_hydrogen_atom_is_conjugate_acid_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [pyrocatechol sulfate](http://purl.obolibrary.org/obo/CHEBI_68505), [quinol sulfate](http://purl.obolibrary.org/obo/CHEBI_71062), [(3alpha,5alpha,17beta)-3-hydroxyandrostan-17-yl sulfate](http://purl.obolibrary.org/obo/CHEBI_133103) (33 total)
+
+classes: 
+  anion: "http://purl.obolibrary.org/obo/CHEBI_22563"
+  hydrogen atom: "http://purl.obolibrary.org/obo/CHEBI_49637"
+
+
+relations: 
+  has part: "BFO:0000051"
+  is conjugate acid of: "http://purl.obolibrary.org/obo/chebi#is_conjugate_acid_of"
+
+
+vars:
+  v0: "'anion'"
+
+name:
+  # Induced, frequency=0.30303030303030304, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any has part a hydrogen atom that is conjugate acid of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "hydrogen %s"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('has part' some 'hydrogen atom') and ('is conjugate acid of' some %s)"
+  vars:
+    - v0

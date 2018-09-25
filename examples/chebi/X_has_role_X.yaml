@@ -1,0 +1,53 @@
+# options: [min(3),dir(chebi),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has role X
+pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_role_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [peptide hormone](http://purl.obolibrary.org/obo/CHEBI_25905), [peptide pheromone](http://purl.obolibrary.org/obo/CHEBI_38579), [peptide antibiotic](http://purl.obolibrary.org/obo/CHEBI_25903) (50 total)
+
+classes: 
+  role: "http://purl.obolibrary.org/obo/CHEBI_50906"
+
+
+relations: 
+  has role: "RO:0000087"
+
+
+vars:
+  v0: "'chemical entity'"
+  v1: "'role'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has role a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s %s"
+    vars:
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "%s and ('has role' some %s)"
+  vars:
+    - v0
+    - v1

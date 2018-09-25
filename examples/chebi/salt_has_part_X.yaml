@@ -1,0 +1,54 @@
+# options: [min(3),dir(chebi),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: salt has part X
+pattern_iri: http://purl.obolibrary.org/obo/chebi/salt_has_part_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [oxalate salt](http://purl.obolibrary.org/obo/CHEBI_64148), [Na2[beta-D-GlcA3S-(1->3)-beta-D-Gal-OC6H4-4-OMe]](http://purl.obolibrary.org/obo/CHEBI_137070), [Na2[beta-D-GlcA3S-(1->3)-beta-D-Gal-OMe]](http://purl.obolibrary.org/obo/CHEBI_137090) (51 total)
+
+classes: 
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+  salt: "http://purl.obolibrary.org/obo/CHEBI_24866"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'chemical entity'"
+
+name:
+  # Induced, frequency=0.49019607843137253, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s salt"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.058823529411764705, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An organic sodium salt that is the disodium salt of %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "disodium %s"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s salts"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'salt' and ('has part' some %s)"
+  vars:
+    - v0

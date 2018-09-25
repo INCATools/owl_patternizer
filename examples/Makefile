@@ -15,3 +15,7 @@ realclean: clean
 
 gen-%:
 	touch init-$* && pl2sparql $(OPTS) -e -c conf.pl -A void.ttl  "do_for('$*')" && touch $@
+
+
+prep-chebi:
+	owltools ../tests/data/chebi.owl ../target/chebi.ttl --merge-support-ontologies -o -f ttl ../tests/data/chebi-with-logdefs.ttl

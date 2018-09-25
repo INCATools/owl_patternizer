@@ -11,16 +11,16 @@
     a void:Dataset ;
     void:dataDump <../tests/data/pizza.owl> ;
     lib:source <https://protege.stanford.edu/ontologies/pizza/pizza.owl> .
-    
+
+<chebi>
+    a void:Dataset ;
+    void:dataDump <../tests/data/chebi-with-logdefs.ttl> ;
+    lib:source <http://purl.obolibrary.org/obo/chebi.owl> .
+
 <wine>
     a lib:Ontology ;
     a lib:Virtual ;
     owl:imports <https://www.w3.org/TR/owl-guide/wine.rdf> .
-
-<efo>
-    a lib:Ontology ;
-    a lib:Virtual ;
-    owl:imports <http://www.ebi.ac.uk/efo/efo.owl> .
 
 <pato>
     a lib:Ontology ;
@@ -89,13 +89,23 @@
     void:dataDump <./ncit.owl> ;
     lib:source <http://purl.obolibrary.org/obo/ncit.owl> .
 
+<efo>
+    a void:Dataset ;
+    void:dataDump <./efo.owl> ;
+    lib:source <http://www.ebi.ac.uk/efo/efo.owl> .
+
+<mondo>
+    a void:Dataset ;
+    void:dataDump <./mondo.owl> ;
+    lib:source <http://purl.obolibrary.org/obo/mondo> .
+
 <sctid>
     a void:Dataset ;
     void:dataDump <./sctid.ttl> ;
     lib:source <http://snomed.info/> .
 
 <foodon>
-    a lib:Ontology ;
-    a lib:Virtual ;
-    owl:imports <http://purl.obolibrary.org/obo/foodon.owl> .
+    a void:Dataset ;
+    void:dataDump <./foodon.owl> ;
+    lib:source <http://purl.obolibrary.org/obo/foodon.owl> .
 

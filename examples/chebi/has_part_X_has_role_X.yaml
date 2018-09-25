@@ -1,0 +1,48 @@
+# options: [min(3),dir(chebi),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part X has role X
+pattern_iri: http://purl.obolibrary.org/obo/chebi/has_part_X_has_role_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [fluorine insecticide](http://purl.obolibrary.org/obo/CHEBI_39463), [1-(3'-{1-[2-(morpholin-4-yl)ethyl]pyrazol-3-yl}[1,1'-biphenyl]-3-yl)ethan-1-one](http://purl.obolibrary.org/obo/CHEBI_134272), [aliphatic nitrogen antifungal agent](http://purl.obolibrary.org/obo/CHEBI_86417) (6 total)
+
+classes: 
+  role: "http://purl.obolibrary.org/obo/CHEBI_50906"
+
+
+relations: 
+  has part: "BFO:0000051"
+  has role: "RO:0000087"
+
+
+vars:
+  v0: "'chemical entity'"
+  v1: "'role'"
+
+name:
+  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %slybdopterin %s in which the coordinated metal is a mononuclear molybdenum or molybdate species."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some %s) and ('has role' some %s)"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,49 @@
+# options: [min(3),dir(chebi),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: zwitterion is tautomer of X
+pattern_iri: http://purl.obolibrary.org/obo/chebi/zwitterion_is_tautomer_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [3,3',5'-triiodo-L-thyronine zwitterion](http://purl.obolibrary.org/obo/CHEBI_57261), [4-fluoro-L-threonine zwitterion](http://purl.obolibrary.org/obo/CHEBI_57264), [2-hexadecanoyl-sn-glycero-3-phosphoethanolamine zwitterion](http://purl.obolibrary.org/obo/CHEBI_132926) (449 total)
+
+classes: 
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+  zwitterion: "http://purl.obolibrary.org/obo/CHEBI_27369"
+
+
+relations: 
+  is tautomer of: "http://purl.obolibrary.org/obo/chebi#is_tautomer_of"
+
+
+vars:
+  v0: "'chemical entity'"
+
+name:
+  # Induced, frequency=0.955456570155902, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s zwitterion"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.08908685968819599, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Zwitterionic form of %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'zwitterion' and ('is tautomer of' some %s)"
+  vars:
+    - v0

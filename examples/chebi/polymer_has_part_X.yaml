@@ -1,0 +1,49 @@
+# options: [min(3),dir(chebi),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: polymer has part X
+pattern_iri: http://purl.obolibrary.org/obo/chebi/polymer_has_part_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [poly(vinyl alcohol) polymer](http://purl.obolibrary.org/obo/CHEBI_60030), [polyester polymer](http://purl.obolibrary.org/obo/CHEBI_60160), [O-alpha-D-glucosyl poly(glycerol phosphate) polymer](http://purl.obolibrary.org/obo/CHEBI_61421) (204 total)
+
+classes: 
+  polyatomic entity: "http://purl.obolibrary.org/obo/CHEBI_36357"
+  polymer: "http://purl.obolibrary.org/obo/CHEBI_60027"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'polyatomic entity'"
+
+name:
+  # Induced, frequency=0.9803921568627451, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s polymer"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.13725490196078433, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An acrylic polymer, composed of %ss."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'polymer' and ('has part' some %s)"
+  vars:
+    - v0

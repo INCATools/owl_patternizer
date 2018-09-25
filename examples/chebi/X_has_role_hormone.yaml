@@ -1,0 +1,49 @@
+# options: [min(3),dir(chebi),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has role hormone
+pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_role_hormone
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [peptide hormone](http://purl.obolibrary.org/obo/CHEBI_25905), [steroid hormone](http://purl.obolibrary.org/obo/CHEBI_26764), [corticosteroid hormone](http://purl.obolibrary.org/obo/CHEBI_36699) (4 total)
+
+classes: 
+  hormone: "http://purl.obolibrary.org/obo/CHEBI_24621"
+  organic molecular entity: "http://purl.obolibrary.org/obo/CHEBI_50860"
+
+
+relations: 
+  has role: "RO:0000087"
+
+
+vars:
+  v0: "'organic molecular entity'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s hormone"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any %s that acts as hormone."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s hormones"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('has role' some 'hormone')"
+  vars:
+    - v0

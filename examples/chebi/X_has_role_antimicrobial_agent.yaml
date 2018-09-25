@@ -1,0 +1,49 @@
+# options: [min(3),dir(chebi),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has role antimicrobial agent
+pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_role_antimicrobial_agent
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [peptide antibiotic](http://purl.obolibrary.org/obo/CHEBI_25903), [C-glycoside antibiotic](http://purl.obolibrary.org/obo/CHEBI_20856), [alkaloid antibiotic](http://purl.obolibrary.org/obo/CHEBI_86322) (16 total)
+
+classes: 
+  antimicrobial agent: "http://purl.obolibrary.org/obo/CHEBI_33281"
+  main group molecular entity: "http://purl.obolibrary.org/obo/CHEBI_33579"
+
+
+relations: 
+  has role: "RO:0000087"
+
+
+vars:
+  v0: "'main group molecular entity'"
+
+name:
+  # Induced, frequency=0.8125, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s antibiotic"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has role a antimicrobial agent"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s antibiotics"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('has role' some 'antimicrobial agent')"
+  vars:
+    - v0

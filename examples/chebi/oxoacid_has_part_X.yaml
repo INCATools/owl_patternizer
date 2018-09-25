@@ -1,0 +1,54 @@
+# options: [min(3),dir(chebi),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: oxoacid has part X
+pattern_iri: http://purl.obolibrary.org/obo/chebi/oxoacid_has_part_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [bromine oxoacid](http://purl.obolibrary.org/obo/CHEBI_33427), [chlorine oxoacid](http://purl.obolibrary.org/obo/CHEBI_33426), [fluorine oxoacid](http://purl.obolibrary.org/obo/CHEBI_47863) (17 total)
+
+classes: 
+  oxoacid: "http://purl.obolibrary.org/obo/CHEBI_24833"
+  p-block element atom: "http://purl.obolibrary.org/obo/CHEBI_33560"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'p-block element atom'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s oxoacid"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any oxoacid that has part a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s oxoacid"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s oxoacids"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'oxoacid' and ('has part' some %s)"
+  vars:
+    - v0
