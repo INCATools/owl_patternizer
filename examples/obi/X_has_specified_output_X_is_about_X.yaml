@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_specified_output_X_is_abou
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [assay detecting IFN-gamma production](http://purl.obolibrary.org/obo/OBI_1110207), [biological activity assay measuring epitope specific granzyme A release by T cells](http://purl.obolibrary.org/obo/OBI_0001809), [biological activity assay measuring epitope specific perforin release by T cells](http://purl.obolibrary.org/obo/OBI_0001497) (70 total)
+  Examples: [assay detecting IFN-gamma production](http://purl.obolibrary.org/obo/OBI_1110207), [biological activity assay measuring epitope specific granzyme A release by T cells](http://purl.obolibrary.org/obo/OBI_0001809), [biological activity assay measuring epitope specific perforin release by T cells](http://purl.obolibrary.org/obo/OBI_0001497) (72 total)
 
 classes: 
   assay: "http://purl.obolibrary.org/obo/OBI_0000070"

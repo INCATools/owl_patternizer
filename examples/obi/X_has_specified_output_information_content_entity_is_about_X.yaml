@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_specified_output_informati
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [biological activity assay measuring epitope specific granzyme A release by T cells](http://purl.obolibrary.org/obo/OBI_0001809), [biological activity assay measuring epitope specific perforin release by T cells](http://purl.obolibrary.org/obo/OBI_0001497), [biological activity assay measuring epitope specific granulysin release by T cells](http://purl.obolibrary.org/obo/OBI_0001810) (69 total)
+  Examples: [biological activity assay measuring epitope specific granzyme A release by T cells](http://purl.obolibrary.org/obo/OBI_0001809), [biological activity assay measuring epitope specific perforin release by T cells](http://purl.obolibrary.org/obo/OBI_0001497), [biological activity assay measuring epitope specific granulysin release by T cells](http://purl.obolibrary.org/obo/OBI_0001810) (71 total)
 
 classes: 
   information content entity: "http://purl.obolibrary.org/obo/IAO_0000030"

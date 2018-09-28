@@ -62,6 +62,11 @@ node_expression(Node,or(Xs)) :-
         !,
         setof(X,rdflist_member_expression(L,X),Xs).
 
+node_expression(Node,not(V)) :-
+        rdf(Node,owl:complementOf,VNode),
+        !,
+        node_expression(VNode,V).
+
 node_expression(Node,some(P,V)) :-
         rdf(Node,owl:onProperty,PNode),
         rdf(Node,owl:someValuesFrom,VNode),
@@ -102,10 +107,20 @@ generalize_expression(X,X2) :- generalize_expression(X,X2, classExpression).
 
 generalize_expression(V, _, _) :- var(V),!,fail.
 
-% SVF
+% SOME
 generalize_expression(some(P,Y), some(PV,Y),classExpression) :-
         generalize_expression(P,PV,propertyExpression).
 generalize_expression(some(P,Y), some(P,YV),classExpression) :-
+        generalize_expression(Y,YV,classExpression).
+
+% ONLY
+generalize_expression(only(P,Y), only(PV,Y),classExpression) :-
+        generalize_expression(P,PV,propertyExpression).
+generalize_expression(only(P,Y), only(P,YV),classExpression) :-
+        generalize_expression(Y,YV,classExpression).
+
+% NOT
+generalize_expression(not(Y), not(YV),classExpression) :-
         generalize_expression(Y,YV,classExpression).
 
 % AND
@@ -220,6 +235,7 @@ non_trim(some(_,X)) :- non_trim(X).
 % test if pattern contains a variable in property position
 has_var_prop(and(L)) :- member(X,L), has_var_prop(X). % descend
 has_var_prop(or(L))  :- member(X,L), has_var_prop(X). % descend
+has_var_prop(not(X))  :- has_var_prop(X). % descend
 has_var_prop(some(P,_)) :- is_nvar(P).
 has_var_prop(some(_,X)) :- has_var_prop(X).
 
@@ -231,6 +247,7 @@ exceeds_max_and_cardinality(and(L),Limit) :- member(X,L), exceeds_max_and_cardin
 exceeds_max_and_cardinality(or(L),Limit) :- length(L,Len), Len > Limit, !.
 exceeds_max_and_cardinality(or(L),Limit) :- member(X,L), exceeds_max_and_cardinality(X,Limit).
 exceeds_max_and_cardinality(some(_,X),Limit) :- exceeds_max_and_cardinality(X,Limit).
+exceeds_max_and_cardinality(not(X),Limit) :- exceeds_max_and_cardinality(X,Limit).
 
 has_been_seen(X) :-
         numbervars(X,0,_),
@@ -425,16 +442,23 @@ show_vars(Indent,OrderedVars,VSet) :-
 % sample first 3 classes that instantiate a pattern as exemplars
 % TODO: this has the effect of selecting "samey" classes, vary this somehow
 extract_examples(Matches, ExamplesA) :-
-        select_class_from_match_expr(E1,Matches,Matches2),
-        select_class_from_match_expr(E2,Matches2,Matches3),
-        select_class_from_match_expr(E3,Matches3,_),
-        maplist([In,Out]>>(label_or_frag(In,N),sformat(Out,'[~w](~w)',[N,In])),[E1,E2,E3],Examples),
+        select_first_n(Matches, 3, Sample),
+        maplist([Match,Out]>>(class_equiv_expression(Id,Match),label_or_frag(Id,N),sformat(Out,'[~w](~w)',[N,Id])),Sample,Examples),
         concat_atom(Examples, ', ', ExamplesA).
-select_class_from_match_expr(E,Matches,Matches2) :-
-        select(X,Matches,Matches2),
-        !,
-        class_equiv_expression(E,X).
 
+%select_class_from_match_expr(E,Matches,Matches2) :-
+%        select(X,Matches,Matches2),
+%        !,
+%        class_equiv_expression(E,X).
+
+select_first_n(_,0,[]) :- !.
+select_first_n([],_,[]) :- !.
+select_first_n([H|List],N,[H|Sublist]) :-
+        Nminus1 is N-1,
+        select_first_n(List,Nminus1,Sublist).
+
+
+        
 
 % ========================================
 % OWL UTILS
@@ -447,6 +471,7 @@ expr_class_signature(X,L) :- solutions(M,expr_references_class(X,M),L).
 expr_references_class('$VAR'(_),_) :- fail.
 expr_references_class(and(L),C) :- member(M,L),expr_references_class(M,C).
 expr_references_class(or(L),C) :-  member(M,L),expr_references_class(M,C).
+expr_references_class(not(A),C) :- expr_references_class(A,C).
 expr_references_class(some(_,A),C) :- expr_references_class(A,C).
 expr_references_class(only(_,A),C) :- expr_references_class(A,C).
 expr_references_class(X,X) :- atom(X).
@@ -460,6 +485,7 @@ expr_references_property(some(P,_),P) :- atom(P),!. % TODO: property expressions
 expr_references_property(only(P,_),P) :- atom(P),!. % TODO: property expressions
 expr_references_property(some(_,X),P) :- expr_references_property(X,P).
 expr_references_property(only(_,X),P) :- expr_references_property(X,P).
+expr_references_property(not(X),P) :- expr_references_property(X,P).
 
 % get variable signature of an expression
 expr_var_signature(X,L) :- setof(M,expr_references_var(X,M),L).
@@ -470,6 +496,7 @@ expr_references_var(some(P,_),V) :- expr_references_var(P,V).
 expr_references_var(only(P,_),V) :- expr_references_var(P,V).
 expr_references_var(some(_,Y),V) :- expr_references_var(Y,V).
 expr_references_var(only(_,Y),V) :- expr_references_var(Y,V).
+expr_references_var(not(Y),V) :- expr_references_var(Y,V).
 
 % ========================================
 % SERIALIZATION OF OWL EXPRESSIONS TO TEXT
@@ -508,6 +535,10 @@ expr_atom(only(P, V), N, Context, Vars):-
         expr_atom(V, VN, Context, Vars2),
         append(Vars1, Vars2, Vars),
         serialize_only(PN, VN, N, Context).
+expr_atom(not(V), N, Context, Vars):-
+        !, 
+        expr_atom(V, VN, Context, Vars),
+        serialize_not(VN, N, Context).
 
 expr_atom(X, N, _, []) :- sformat(N, '??~q', [X]).
 
@@ -542,7 +573,7 @@ serialize_disj(L, N, _/name) :-
         concat_atom(L, '/', N).
 serialize_disj(L, N, _/id) :-
         !, 
-        concat_atom(L, '/', N).
+        concat_atom(L, '-or-', N).
 serialize_disj(L2, N, _) :-
         concat_atom(L2, ' or ', N).
 
@@ -557,7 +588,8 @@ serialize_some(PN, VN, N, _/def) :-
         concat_atom([PN, VN], ' a ', N).
 serialize_some(PN, VN, N, _) :-
         sformat(N,'(~w some ~w)',[PN, VN]).
-        %concat_atom([PN, VN], ' some ', N).
+serialize_not(VN, N, _) :-
+        sformat(N,'(not ~w)',[VN]).
 
 serialize_only(PN, VN, N, _/name) :-
         !, 
@@ -595,6 +627,8 @@ unify(Q, T, Bs) :-
         sort(Bs1, Bs).
 unify1(X, X, []).
 unify1(Query, '$VAR'(N), [N=Query]) :- atomic(Query).
+unify1(not(QV), not(TV), Bindings) :-
+        unify1(QV,TV,Bindings).
 unify1(some(QP,QV), some(TP,TV), Bindings) :-
         unify1(QP,TP,Bindings1),
         unify1(QV,TV,Bindings2),

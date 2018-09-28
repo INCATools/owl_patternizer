@@ -40,7 +40,7 @@ ontology_config(pato,     [min(5), generalize_properties(false)]).
 ontology_config(wine,     [min(2)]).
 
 ontology_config(so,       [min(8)]).
-ontology_config(mso,      [min(4), generalize_properties(false)]).
+ontology_config(mso,      [min(5), max_class_signature(6), generalize_properties(false)]).
 ontology_config(chebi,    [min(3), generalize_properties(false)]).
 ontology_config(uberon,   [min(50), max_and_cardinality(3)]).
 ontology_config(cl,       [min(20)]).
