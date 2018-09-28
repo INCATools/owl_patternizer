@@ -1,0 +1,48 @@
+# options: [min(2),dir('target/agrovoc'),trim(true)]
+pattern_name: X makeUseOf X
+pattern_iri: http://purl.obolibrary.org/obo/foo/X_makeUseOf_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [DNA cloning](http://aims.fao.org/aos/agrovoc/c_27695), [DNA transcription](http://aims.fao.org/aos/agrovoc/c_35127), [wastewater irrigation](http://aims.fao.org/aos/agrovoc/c_25323) (12 total)
+
+classes: 
+  DNA: "http://aims.fao.org/aos/agrovoc/c_2347"
+  drugs: "http://aims.fao.org/aos/agrovoc/c_2395"
+  gross margins: "http://aims.fao.org/aos/agrovoc/c_24851"
+  lasers: "http://aims.fao.org/aos/agrovoc/c_26026"
+  fruits: "http://aims.fao.org/aos/agrovoc/c_3131"
+  communication: "http://aims.fao.org/aos/agrovoc/c_37866"
+  pressure: "http://aims.fao.org/aos/agrovoc/c_6174"
+  wastewater: "http://aims.fao.org/aos/agrovoc/c_8308"
+
+
+relations: 
+  makeUseOf: "agrovoc:makeUseOf"
+
+
+vars:
+  v0: "'cloning' or 'transcription' or 'irrigation' or 'analysis' or 'radiation' or 'technology' or 'therapy' or 'vegetables'"
+  v1: "'DNA' or 'drugs' or 'gross margins' or 'lasers' or 'fruits' or 'communication' or 'pressure' or 'wastewater'"
+
+name:
+  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that makeUseOf a %s"
+  vars:
+    - v0
+    - v1
+
+
+equivalentTo:
+  text: "%s and ('makeUseOf' some %s)"
+  vars:
+    - v0
+    - v1

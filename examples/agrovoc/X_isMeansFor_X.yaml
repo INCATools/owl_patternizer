@@ -1,0 +1,41 @@
+# options: [min(2),dir('target/agrovoc'),trim(true)]
+pattern_name: X isMeansFor X
+pattern_iri: http://purl.obolibrary.org/obo/foo/X_isMeansFor_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [weight reduction diet](http://aims.fao.org/aos/agrovoc/c_17057), [cooking methods](http://aims.fao.org/aos/agrovoc/c_331045), [tanning agents](http://aims.fao.org/aos/agrovoc/c_28162) (3 total)
+
+classes: 
+  activities: "http://aims.fao.org/aos/agrovoc/c_330834"
+
+
+relations: 
+  isMeansFor: "agrovoc:isMeansFor"
+
+
+vars:
+  v0: "'diet' or 'methods' or 'agents'"
+  v1: "'activities'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that isMeansFor a %s"
+  vars:
+    - v0
+    - v1
+
+
+equivalentTo:
+  text: "%s and ('isMeansFor' some %s)"
+  vars:
+    - v0
+    - v1

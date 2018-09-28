@@ -1,0 +1,38 @@
+# options: [min(2),dir('target/agrovoc'),trim(true)]
+pattern_name: management hasObjectOfActivity X
+pattern_iri: http://purl.obolibrary.org/obo/foo/management_hasObjectOfActivity_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [forest genetic resources management](http://aims.fao.org/aos/agrovoc/c_1374841888067), [human resources management](http://aims.fao.org/aos/agrovoc/c_1331026477819), [natural resources management](http://aims.fao.org/aos/agrovoc/c_9000115) (4 total)
+
+classes: 
+  management: "http://aims.fao.org/aos/agrovoc/c_16086"
+  resources: "http://aims.fao.org/aos/agrovoc/c_9001017"
+
+
+relations: 
+  hasObjectOfActivity: "agrovoc:hasObjectOfActivity"
+
+
+vars:
+  v0: "'resources'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s management"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any management that hasObjectOfActivity a %s"
+  vars:
+    - v0
+
+
+equivalentTo:
+  text: "'management' and ('hasObjectOfActivity' some %s)"
+  vars:
+    - v0

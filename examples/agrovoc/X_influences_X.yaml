@@ -1,0 +1,41 @@
+# options: [min(2),dir('target/agrovoc'),trim(true)]
+pattern_name: X influences X
+pattern_iri: http://purl.obolibrary.org/obo/foo/X_influences_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [household food security](http://aims.fao.org/aos/agrovoc/c_9000078), [management techniques](http://aims.fao.org/aos/agrovoc/c_28011), [marketing techniques](http://aims.fao.org/aos/agrovoc/c_4625) (38 total)
+
+classes: 
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  influences: "agrovoc:influences"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.5789473684210527, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that influences a %s"
+  vars:
+    - v0
+    - v1
+
+
+equivalentTo:
+  text: "%s and ('influences' some %s)"
+  vars:
+    - v0
+    - v1

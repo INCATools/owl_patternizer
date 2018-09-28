@@ -1,0 +1,41 @@
+# options: [min(2),dir('target/agrovoc'),trim(true)]
+pattern_name: X isDerivedFrom X
+pattern_iri: http://purl.obolibrary.org/obo/foo/X_isDerivedFrom_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [fish extracts](http://aims.fao.org/aos/agrovoc/c_2921), [flower extracts](http://aims.fao.org/aos/agrovoc/c_35305), [fruit extracts](http://aims.fao.org/aos/agrovoc/c_29024) (26 total)
+
+classes: 
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  isDerivedFrom: "agrovoc:isDerivedFrom"
+
+
+vars:
+  v0: "'extracts' or 'flours' or 'meat' or 'milk' or 'oils' or 'protein concentrates'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.23076923076923078, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that isDerivedFrom a %s"
+  vars:
+    - v0
+    - v1
+
+
+equivalentTo:
+  text: "%s and ('isDerivedFrom' some %s)"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,45 @@
+# options: [min(2),dir('target/agrovoc'),trim(true)]
+pattern_name: X isMadeFrom X
+pattern_iri: http://purl.obolibrary.org/obo/foo/X_isMadeFrom_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [wood extracts](http://aims.fao.org/aos/agrovoc/c_8424), [aluminium foil](http://aims.fao.org/aos/agrovoc/c_35853), [rye flour](http://aims.fao.org/aos/agrovoc/c_25501) (7 total)
+
+classes: 
+  extracts: "http://aims.fao.org/aos/agrovoc/c_2767"
+  foils: "http://aims.fao.org/aos/agrovoc/c_28374"
+  flours: "http://aims.fao.org/aos/agrovoc/c_2988"
+  foods: "http://aims.fao.org/aos/agrovoc/c_3032"
+  genetically modified organisms: "http://aims.fao.org/aos/agrovoc/c_34285"
+
+
+relations: 
+  isMadeFrom: "agrovoc:isMadeFrom"
+
+
+vars:
+  v0: "'extracts' or 'foils' or 'flours' or 'foods' or 'genetically modified organisms'"
+  v1: "'rye' or 'aluminium' or 'genetically modified organisms' or 'microorganisms' or 'wood'"
+
+name:
+  # Induced, frequency=0.2857142857142857, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that isMadeFrom a %s"
+  vars:
+    - v0
+    - v1
+
+
+equivalentTo:
+  text: "%s and ('isMadeFrom' some %s)"
+  vars:
+    - v0
+    - v1

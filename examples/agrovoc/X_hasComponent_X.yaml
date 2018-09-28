@@ -1,0 +1,52 @@
+# options: [min(2),dir('target/agrovoc'),trim(true)]
+pattern_name: X hasComponent X
+pattern_iri: http://purl.obolibrary.org/obo/foo/X_hasComponent_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [nitrogen dioxide](http://aims.fao.org/aos/agrovoc/c_5194), [sugar confectionery](http://aims.fao.org/aos/agrovoc/c_7502), [grain crops](http://aims.fao.org/aos/agrovoc/c_3348) (18 total)
+
+classes: 
+  costs: "http://aims.fao.org/aos/agrovoc/c_1922"
+  Alaska: "http://aims.fao.org/aos/agrovoc/c_240"
+  foods: "http://aims.fao.org/aos/agrovoc/c_3032"
+  grain: "http://aims.fao.org/aos/agrovoc/c_3346"
+  health: "http://aims.fao.org/aos/agrovoc/c_3511"
+  inorganic acids: "http://aims.fao.org/aos/agrovoc/c_3880"
+  meat: "http://aims.fao.org/aos/agrovoc/c_4669"
+  milk: "http://aims.fao.org/aos/agrovoc/c_4826"
+  nitrogen: "http://aims.fao.org/aos/agrovoc/c_5192"
+  plants: "http://aims.fao.org/aos/agrovoc/c_5993"
+  soil: "http://aims.fao.org/aos/agrovoc/c_7156"
+  sugar: "http://aims.fao.org/aos/agrovoc/c_7498"
+
+
+relations: 
+  hasComponent: "agrovoc:hasComponent"
+
+
+vars:
+  v0: "'dioxides' or 'confectionery' or 'crops' or 'extracts' or 'solutions' or 'fertilizers' or 'population' or 'salts' or 'sciences' or 'legumes' or 'analysis' or 'gulfs' or 'accounting' or 'services'"
+  v1: "'costs' or 'Alaska' or 'foods' or 'grain' or 'health' or 'inorganic acids' or 'meat' or 'milk' or 'nitrogen' or 'plants' or 'soil' or 'sugar'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that hasComponent a %s"
+  vars:
+    - v0
+    - v1
+
+
+equivalentTo:
+  text: "%s and ('hasComponent' some %s)"
+  vars:
+    - v0
+    - v1

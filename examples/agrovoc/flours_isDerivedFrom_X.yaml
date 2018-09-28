@@ -1,0 +1,38 @@
+# options: [min(2),dir('target/agrovoc'),trim(true)]
+pattern_name: flours isDerivedFrom X
+pattern_iri: http://purl.obolibrary.org/obo/foo/flours_isDerivedFrom_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [pea flour](http://aims.fao.org/aos/agrovoc/c_35686), [potato flour](http://aims.fao.org/aos/agrovoc/c_35681), [sweet potato flour](http://aims.fao.org/aos/agrovoc/c_35682) (8 total)
+
+classes: 
+  flours: "http://aims.fao.org/aos/agrovoc/c_2988"
+  products: "http://aims.fao.org/aos/agrovoc/c_6211"
+
+
+relations: 
+  isDerivedFrom: "agrovoc:isDerivedFrom"
+
+
+vars:
+  v0: "'products'"
+
+name:
+  # Induced, frequency=0.375, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s flour"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any flours that isDerivedFrom a %s"
+  vars:
+    - v0
+
+
+equivalentTo:
+  text: "'flours' and ('isDerivedFrom' some %s)"
+  vars:
+    - v0

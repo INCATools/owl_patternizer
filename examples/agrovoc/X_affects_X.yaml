@@ -1,0 +1,46 @@
+# options: [min(2),dir('target/agrovoc'),trim(true)]
+pattern_name: X affects X
+pattern_iri: http://purl.obolibrary.org/obo/foo/X_affects_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [sex differentiation disorders](http://aims.fao.org/aos/agrovoc/c_7012), [growth disorders](http://aims.fao.org/aos/agrovoc/c_3396), [protein metabolism disorders](http://aims.fao.org/aos/agrovoc/c_6255) (11 total)
+
+classes: 
+  disorders: "http://aims.fao.org/aos/agrovoc/c_15584"
+  contamination: "http://aims.fao.org/aos/agrovoc/c_28317"
+  inhibition: "http://aims.fao.org/aos/agrovoc/c_28427"
+  hazards: "http://aims.fao.org/aos/agrovoc/c_330736"
+  diseases: "http://aims.fao.org/aos/agrovoc/c_49879"
+  pests: "http://aims.fao.org/aos/agrovoc/c_5741"
+
+
+relations: 
+  affects: "agrovoc:affects"
+
+
+vars:
+  v0: "'disorders' or 'contamination' or 'inhibition' or 'hazards' or 'diseases' or 'pests'"
+  v1: "'adrenal glands' or 'sex differentiation' or 'foods' or 'stored products' or 'growth' or 'health' or 'metabolism' or 'salivary glands' or 'tongue' or 'vision'"
+
+name:
+  # Induced, frequency=0.6363636363636364, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that affects a %s"
+  vars:
+    - v0
+    - v1
+
+
+equivalentTo:
+  text: "%s and ('affects' some %s)"
+  vars:
+    - v0
+    - v1

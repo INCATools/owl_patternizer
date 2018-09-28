@@ -1,0 +1,46 @@
+# options: [min(2),dir('target/agrovoc'),trim(true)]
+pattern_name: X usesProcess X
+pattern_iri: http://purl.obolibrary.org/obo/foo/X_usesProcess_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [isolation techniques](http://aims.fao.org/aos/agrovoc/c_3965), [fluidized bed drying](http://aims.fao.org/aos/agrovoc/c_37302), [canning industry](http://aims.fao.org/aos/agrovoc/c_1261) (11 total)
+
+classes: 
+  techniques: "http://aims.fao.org/aos/agrovoc/c_14816"
+  fluidized bed processing: "http://aims.fao.org/aos/agrovoc/c_28599"
+  industry: "http://aims.fao.org/aos/agrovoc/c_3848"
+  plants: "http://aims.fao.org/aos/agrovoc/c_5993"
+  storage: "http://aims.fao.org/aos/agrovoc/c_7427"
+  water: "http://aims.fao.org/aos/agrovoc/c_8309"
+
+
+relations: 
+  usesProcess: "agrovoc:usesProcess"
+
+
+vars:
+  v0: "'techniques' or 'fluidized bed processing' or 'industry' or 'plants' or 'storage' or 'water'"
+  v1: "'canning' or 'centralization' or 'drying' or 'infiltration' or 'pulping' or 'isolation' or 'milling' or 'reclamation' or 'shading'"
+
+name:
+  # Induced, frequency=0.45454545454545453, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that usesProcess a %s"
+  vars:
+    - v0
+    - v1
+
+
+equivalentTo:
+  text: "%s and ('usesProcess' some %s)"
+  vars:
+    - v0
+    - v1

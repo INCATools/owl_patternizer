@@ -1,0 +1,46 @@
+# options: [min(2),dir('target/agrovoc'),trim(true)]
+pattern_name: X includes X
+pattern_iri: http://purl.obolibrary.org/obo/foo/X_includes_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [housing cooperatives](http://aims.fao.org/aos/agrovoc/c_11630), [forest management planning](http://aims.fao.org/aos/agrovoc/c_1374839730376), [women farmers](http://aims.fao.org/aos/agrovoc/c_9001030) (11 total)
+
+classes: 
+  cereals: "http://aims.fao.org/aos/agrovoc/c_1474"
+  housing: "http://aims.fao.org/aos/agrovoc/c_3678"
+  associations: "http://aims.fao.org/aos/agrovoc/c_37955"
+  planning: "http://aims.fao.org/aos/agrovoc/c_5951"
+  rock: "http://aims.fao.org/aos/agrovoc/c_6628"
+  women: "http://aims.fao.org/aos/agrovoc/c_8420"
+
+
+relations: 
+  includes: "agrovoc:includes"
+
+
+vars:
+  v0: "'cooperatives' or 'forest management' or 'farmers' or 'mechanics' or 'water user groups' or 'Secale'"
+  v1: "'cereals' or 'housing' or 'associations' or 'planning' or 'rock' or 'women'"
+
+name:
+  # Induced, frequency=0.2727272727272727, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that includes a %s"
+  vars:
+    - v0
+    - v1
+
+
+equivalentTo:
+  text: "%s and ('includes' some %s)"
+  vars:
+    - v0
+    - v1

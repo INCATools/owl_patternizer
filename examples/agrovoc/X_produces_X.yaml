@@ -1,0 +1,52 @@
+# options: [min(2),dir('target/agrovoc'),trim(true)]
+pattern_name: X produces X
+pattern_iri: http://purl.obolibrary.org/obo/foo/X_produces_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Carica papaya](http://aims.fao.org/aos/agrovoc/c_1323), [Carya pecan](http://aims.fao.org/aos/agrovoc/c_1349), [Chenopodium quinoa](http://aims.fao.org/aos/agrovoc/c_1531) (20 total)
+
+classes: 
+  Carica: "http://aims.fao.org/aos/agrovoc/c_1322"
+  Carya: "http://aims.fao.org/aos/agrovoc/c_1348"
+  Chenopodium: "http://aims.fao.org/aos/agrovoc/c_1528"
+  crops: "http://aims.fao.org/aos/agrovoc/c_1972"
+  Diospyros: "http://aims.fao.org/aos/agrovoc/c_2302"
+  Dimocarpus: "http://aims.fao.org/aos/agrovoc/c_37372"
+  industry: "http://aims.fao.org/aos/agrovoc/c_3848"
+  animals: "http://aims.fao.org/aos/agrovoc/c_444"
+  Pouteria: "http://aims.fao.org/aos/agrovoc/c_6150"
+  Averrhoa: "http://aims.fao.org/aos/agrovoc/c_732"
+  Bacteria: "http://aims.fao.org/aos/agrovoc/c_765"
+  trees: "http://aims.fao.org/aos/agrovoc/c_7887"
+
+
+relations: 
+  produces: "agrovoc:produces"
+
+
+vars:
+  v0: "'Carica' or 'Carya' or 'Chenopodium' or 'crops' or 'Diospyros' or 'Dimocarpus' or 'industry' or 'animals' or 'Pouteria' or 'Averrhoa' or 'Bacteria' or 'trees'"
+  v1: "'kaki' or 'papayas' or 'pecans' or 'quinoa' or 'essential oils' or 'forest products' or 'longans' or 'lactic acid' or 'leather' or 'lucuma' or 'meat' or 'propionic acid' or 'sugar' or 'tobacco' or 'waxes' or 'wool' or 'carambola'"
+
+name:
+  # Induced, frequency=0.35, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that produces a %s"
+  vars:
+    - v0
+    - v1
+
+
+equivalentTo:
+  text: "%s and ('produces' some %s)"
+  vars:
+    - v0
+    - v1

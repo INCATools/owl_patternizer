@@ -1,0 +1,46 @@
+# options: [min(2),dir('target/agrovoc'),trim(true)]
+pattern_name: X causes X
+pattern_iri: http://purl.obolibrary.org/obo/foo/X_causes_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [toxic substances](http://aims.fao.org/aos/agrovoc/c_7825), [toxic minerals](http://aims.fao.org/aos/agrovoc/c_35674), [Scrapie agent](http://aims.fao.org/aos/agrovoc/c_6882) (18 total)
+
+classes: 
+  minerals: "http://aims.fao.org/aos/agrovoc/c_4857"
+  agents: "http://aims.fao.org/aos/agrovoc/c_49873"
+  Mycobacterium: "http://aims.fao.org/aos/agrovoc/c_5018"
+  Vibrio: "http://aims.fao.org/aos/agrovoc/c_8212"
+  viruses: "http://aims.fao.org/aos/agrovoc/c_8262"
+  Yersinia: "http://aims.fao.org/aos/agrovoc/c_8485"
+
+
+relations: 
+  causes: "agrovoc:causes"
+
+
+vars:
+  v0: "'minerals' or 'agents' or 'Mycobacterium' or 'Vibrio' or 'viruses' or 'Yersinia'"
+  v1: "'paratuberculosis' or 'pseudotuberculosis' or 'Borna disease' or 'duck viral hepatitis' or 'pest of small ruminants' or 'vesicular stomatitis' or 'scrapie' or 'distemper' or 'cholera' or 'african horse sickness' or 'Marek's disease' or 'newcastle disease' or 'rabies' or 'rinderpest' or 'toxicity' or 'tuberculosis' or 'bluetongue'"
+
+name:
+  # Induced, frequency=0.1111111111111111, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that causes a %s"
+  vars:
+    - v0
+    - v1
+
+
+equivalentTo:
+  text: "%s and ('causes' some %s)"
+  vars:
+    - v0
+    - v1

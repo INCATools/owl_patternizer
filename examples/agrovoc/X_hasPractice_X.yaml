@@ -1,0 +1,43 @@
+# options: [min(2),dir('target/agrovoc'),trim(true)]
+pattern_name: X hasPractice X
+pattern_iri: http://purl.obolibrary.org/obo/foo/X_hasPractice_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [viticulture cooperatives](http://aims.fao.org/aos/agrovoc/c_37730), [pollard systems](http://aims.fao.org/aos/agrovoc/c_6068), [broadcast sowing](http://aims.fao.org/aos/agrovoc/c_14115) (3 total)
+
+classes: 
+  broadcasting: "http://aims.fao.org/aos/agrovoc/c_1101"
+  pollarding: "http://aims.fao.org/aos/agrovoc/c_6069"
+  viticulture: "http://aims.fao.org/aos/agrovoc/c_8277"
+
+
+relations: 
+  hasPractice: "agrovoc:hasPractice"
+
+
+vars:
+  v0: "'cooperatives' or 'systems' or 'sowing'"
+  v1: "'broadcasting' or 'pollarding' or 'viticulture'"
+
+name:
+  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that hasPractice a %s"
+  vars:
+    - v0
+    - v1
+
+
+equivalentTo:
+  text: "%s and ('hasPractice' some %s)"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,38 @@
+# options: [min(2),dir('target/agrovoc'),trim(true)]
+pattern_name: diseases affects X
+pattern_iri: http://purl.obolibrary.org/obo/foo/diseases_affects_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [adrenal gland diseases](http://aims.fao.org/aos/agrovoc/c_8625), [salivary gland diseases](http://aims.fao.org/aos/agrovoc/c_14036), [tongue diseases](http://aims.fao.org/aos/agrovoc/c_14921) (3 total)
+
+classes: 
+  diseases: "http://aims.fao.org/aos/agrovoc/c_49879"
+  body parts: "http://aims.fao.org/aos/agrovoc/c_981"
+
+
+relations: 
+  affects: "agrovoc:affects"
+
+
+vars:
+  v0: "'body parts'"
+
+name:
+  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s diseases"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any diseases that affects a %s"
+  vars:
+    - v0
+
+
+equivalentTo:
+  text: "'diseases' and ('affects' some %s)"
+  vars:
+    - v0

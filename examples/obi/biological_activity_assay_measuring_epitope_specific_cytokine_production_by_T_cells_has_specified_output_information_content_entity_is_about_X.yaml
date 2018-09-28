@@ -21,13 +21,13 @@ vars:
   v0: "'cytokine production'"
 
 name:
-  # Induced, frequency=0.8478260869565217, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.8695652173913043, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "biological activity assay measuring epitope specific %s by T cells"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.8260869565217391, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.8478260869565217, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "A T cell epitope specific cytokine production assay that detects %s by T cells."
   vars:
     - v0

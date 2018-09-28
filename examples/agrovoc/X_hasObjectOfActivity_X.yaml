@@ -1,0 +1,41 @@
+# options: [min(2),dir('target/agrovoc'),trim(true)]
+pattern_name: X hasObjectOfActivity X
+pattern_iri: http://purl.obolibrary.org/obo/foo/X_hasObjectOfActivity_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [livestock censuses](http://aims.fao.org/aos/agrovoc/c_28904), [gene cloning](http://aims.fao.org/aos/agrovoc/c_27694), [forest genetic resources management](http://aims.fao.org/aos/agrovoc/c_1374841888067) (59 total)
+
+classes: 
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  hasObjectOfActivity: "agrovoc:hasObjectOfActivity"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.5932203389830508, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that hasObjectOfActivity a %s"
+  vars:
+    - v0
+    - v1
+
+
+equivalentTo:
+  text: "%s and ('hasObjectOfActivity' some %s)"
+  vars:
+    - v0
+    - v1

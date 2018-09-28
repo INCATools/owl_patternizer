@@ -1,0 +1,38 @@
+# options: [min(2),dir('target/agrovoc'),trim(true)]
+pattern_name: policies influences X
+pattern_iri: http://purl.obolibrary.org/obo/foo/policies_influences_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [forestry policies](http://aims.fao.org/aos/agrovoc/c_3060), [production policies](http://aims.fao.org/aos/agrovoc/c_6206), [research policies](http://aims.fao.org/aos/agrovoc/c_6515) (3 total)
+
+classes: 
+  activities: "http://aims.fao.org/aos/agrovoc/c_330834"
+  policies: "http://aims.fao.org/aos/agrovoc/c_6062"
+
+
+relations: 
+  influences: "agrovoc:influences"
+
+
+vars:
+  v0: "'activities'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s policies"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any policies that influences a %s"
+  vars:
+    - v0
+
+
+equivalentTo:
+  text: "'policies' and ('influences' some %s)"
+  vars:
+    - v0

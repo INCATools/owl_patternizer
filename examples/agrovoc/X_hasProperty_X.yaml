@@ -1,0 +1,43 @@
+# options: [min(2),dir('target/agrovoc'),trim(true)]
+pattern_name: X hasProperty X
+pattern_iri: http://purl.obolibrary.org/obo/foo/X_hasProperty_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [liquid assets](http://aims.fao.org/aos/agrovoc/c_4370), [mycobacterium tuberculosis infections](http://aims.fao.org/aos/agrovoc/c_35451), [seedless varieties](http://aims.fao.org/aos/agrovoc/c_33543) (3 total)
+
+classes: 
+  assets: "http://aims.fao.org/aos/agrovoc/c_677"
+  tuberculosis: "http://aims.fao.org/aos/agrovoc/c_7997"
+  varieties: "http://aims.fao.org/aos/agrovoc/c_8157"
+
+
+relations: 
+  hasProperty: "agrovoc:hasProperty"
+
+
+vars:
+  v0: "'assets' or 'tuberculosis' or 'varieties'"
+  v1: "'liquidity' or 'seedlessness' or 'infection'"
+
+name:
+  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "mycobacterium %s %ss"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that hasProperty a %s"
+  vars:
+    - v0
+    - v1
+
+
+equivalentTo:
+  text: "%s and ('hasProperty' some %s)"
+  vars:
+    - v0
+    - v1

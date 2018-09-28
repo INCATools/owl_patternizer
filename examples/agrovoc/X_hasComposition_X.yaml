@@ -1,0 +1,41 @@
+# options: [min(2),dir('target/agrovoc'),trim(true)]
+pattern_name: X hasComposition X
+pattern_iri: http://purl.obolibrary.org/obo/foo/X_hasComposition_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [titanium dioxide](http://aims.fao.org/aos/agrovoc/c_331330), [organic acid salts](http://aims.fao.org/aos/agrovoc/c_5382), [organic halogen compounds](http://aims.fao.org/aos/agrovoc/c_5386) (4 total)
+
+classes: 
+  chemical compounds: "http://aims.fao.org/aos/agrovoc/c_49870"
+
+
+relations: 
+  hasComposition: "agrovoc:hasComposition"
+
+
+vars:
+  v0: "'chemical compounds'"
+  v1: "'substances'"
+
+name:
+  # Could not induce name, using default
+  text: "%s hasComposition %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that hasComposition a %s"
+  vars:
+    - v0
+    - v1
+
+
+equivalentTo:
+  text: "%s and ('hasComposition' some %s)"
+  vars:
+    - v0
+    - v1

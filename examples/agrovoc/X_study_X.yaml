@@ -1,0 +1,44 @@
+# options: [min(2),dir('target/agrovoc'),trim(true)]
+pattern_name: X study X
+pattern_iri: http://purl.obolibrary.org/obo/foo/X_study_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [land economics](http://aims.fao.org/aos/agrovoc/c_25195), [fluid mechanics](http://aims.fao.org/aos/agrovoc/c_25344), [wood anatomy](http://aims.fao.org/aos/agrovoc/c_8422) (4 total)
+
+classes: 
+  fluids: "http://aims.fao.org/aos/agrovoc/c_2994"
+  gender: "http://aims.fao.org/aos/agrovoc/c_34835"
+  land: "http://aims.fao.org/aos/agrovoc/c_4172"
+  wood: "http://aims.fao.org/aos/agrovoc/c_8421"
+
+
+relations: 
+  study: "agrovoc:study"
+
+
+vars:
+  v0: "'economics' or 'mechanics' or 'anatomy' or 'analysis'"
+  v1: "'fluids' or 'gender' or 'land' or 'wood'"
+
+name:
+  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that study a %s"
+  vars:
+    - v0
+    - v1
+
+
+equivalentTo:
+  text: "%s and ('study' some %s)"
+  vars:
+    - v0
+    - v1

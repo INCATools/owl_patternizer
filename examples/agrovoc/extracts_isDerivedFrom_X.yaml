@@ -1,0 +1,43 @@
+# options: [min(2),dir('target/agrovoc'),trim(true)]
+pattern_name: extracts isDerivedFrom X
+pattern_iri: http://purl.obolibrary.org/obo/foo/extracts_isDerivedFrom_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [fish extracts](http://aims.fao.org/aos/agrovoc/c_2921), [flower extracts](http://aims.fao.org/aos/agrovoc/c_35305), [fruit extracts](http://aims.fao.org/aos/agrovoc/c_29024) (6 total)
+
+classes: 
+  fish: "http://aims.fao.org/aos/agrovoc/c_15903"
+  extracts: "http://aims.fao.org/aos/agrovoc/c_2767"
+  flowers: "http://aims.fao.org/aos/agrovoc/c_2993"
+  fruit: "http://aims.fao.org/aos/agrovoc/c_3119"
+  roots: "http://aims.fao.org/aos/agrovoc/c_6651"
+  seeds: "http://aims.fao.org/aos/agrovoc/c_6946"
+  bark: "http://aims.fao.org/aos/agrovoc/c_820"
+
+
+relations: 
+  isDerivedFrom: "agrovoc:isDerivedFrom"
+
+
+vars:
+  v0: "'fish' or 'flowers' or 'fruit' or 'roots' or 'seeds' or 'bark'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s extracts"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any extracts that isDerivedFrom a %s"
+  vars:
+    - v0
+
+
+equivalentTo:
+  text: "'extracts' and ('isDerivedFrom' some %s)"
+  vars:
+    - v0

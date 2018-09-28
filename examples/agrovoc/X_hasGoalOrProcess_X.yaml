@@ -1,0 +1,44 @@
+# options: [min(2),dir('target/agrovoc'),trim(true)]
+pattern_name: X hasGoalOrProcess X
+pattern_iri: http://purl.obolibrary.org/obo/foo/X_hasGoalOrProcess_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [trituration equipment](http://aims.fao.org/aos/agrovoc/c_26042), [maintenance equipment](http://aims.fao.org/aos/agrovoc/c_25749), [refrigeration equipment](http://aims.fao.org/aos/agrovoc/c_25722) (6 total)
+
+classes: 
+  equipment: "http://aims.fao.org/aos/agrovoc/c_2631"
+  trade organizations: "http://aims.fao.org/aos/agrovoc/c_50317"
+  plants: "http://aims.fao.org/aos/agrovoc/c_5993"
+  pollination: "http://aims.fao.org/aos/agrovoc/c_6073"
+
+
+relations: 
+  hasGoalOrProcess: "agrovoc:hasGoalOrProcess"
+
+
+vars:
+  v0: "'equipment' or 'trade organizations' or 'plants' or 'pollination'"
+  v1: "'trituration' or 'revegetation' or 'maintenance' or 'international trade promotion' or 'refrigeration' or 'selfing'"
+
+name:
+  # Induced, frequency=0.6666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that hasGoalOrProcess a %s"
+  vars:
+    - v0
+    - v1
+
+
+equivalentTo:
+  text: "%s and ('hasGoalOrProcess' some %s)"
+  vars:
+    - v0
+    - v1
