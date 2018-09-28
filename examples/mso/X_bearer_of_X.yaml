@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/mso/X_bearer_of_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [syntenic region](http://purl.obolibrary.org/obo/MSO_0005858), [transcribable processed pseudogene](http://purl.obolibrary.org/obo/MSO_0002109), [translatable processed pseudogene](http://purl.obolibrary.org/obo/MSO_0002105) (90 total)
+  Examples: [syntenic region](http://purl.obolibrary.org/obo/MSO_0005858), [transcribable processed pseudogene](http://purl.obolibrary.org/obo/MSO_0002109), [translatable processed pseudogene](http://purl.obolibrary.org/obo/MSO_0002105) (91 total)
 
 classes: 
   owl:Thing: "owl:Thing"
@@ -20,7 +20,7 @@ vars:
   v1: "'owl:Thing'"
 
 name:
-  # Induced, frequency=0.3, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.2967032967032967, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1

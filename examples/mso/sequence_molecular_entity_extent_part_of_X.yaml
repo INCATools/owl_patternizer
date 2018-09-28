@@ -1,0 +1,45 @@
+# options: [min(4),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: sequence molecular entity extent part of X
+pattern_iri: http://purl.obolibrary.org/obo/mso/sequence_molecular_entity_extent_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cDNA region](http://purl.obolibrary.org/obo/MSO_3000117), [sequence molecular entity region](http://purl.obolibrary.org/obo/MSO_0000001), [nucleotide region](http://purl.obolibrary.org/obo/MSO_3100210) (4 total)
+
+classes: 
+  cDNA: "MSO:0000756"
+  sequence molecular entity: "MSO:3100003"
+  sequence molecular entity extent: "MSO:3100183"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'cDNA' or 'sequence molecular entity'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s region"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A region of a %s, i.e., a DNA that has been synthesized by a reverse transcriptase using an RNA as a template."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'sequence molecular entity extent' and ('part of' some %s)"
+  vars:
+    - v0

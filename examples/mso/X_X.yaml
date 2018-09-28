@@ -1,0 +1,59 @@
+# options: [min(4),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X/X
+pattern_iri: http://purl.obolibrary.org/obo/mso/X_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [gene product](http://purl.obolibrary.org/obo/MSO_3000205), [frameness](http://purl.obolibrary.org/obo/MSO_3000340), [macromolecular motif](http://purl.obolibrary.org/obo/MSO_3000056) (8 total)
+
+classes: 
+  transcript: "MSO:0000673"
+  frameshiftedness: "MSO:0000865"
+  macromolecular sequence motif: "MSO:0001683"
+  in-framedness: "MSO:0001817"
+  macromolecular structural motif: "MSO:3000058"
+  translational product: "MSO:3000263"
+  corresponding senseness: "MSO:3000282"
+  direct senseness: "MSO:3000283"
+  corresponding antisenseness: "MSO:3000284"
+  direct antisenseness: "MSO:3000285"
+  single-stranded RNA: "MSO:3100017"
+  multi-stranded DNA: "MSO:3100043"
+  multi-stranded RNA: "MSO:3100044"
+  single-stranded nucleic acid: "MSO:3100161"
+  single-stranded DNA: "MSO:3100252"
+
+
+relations: []
+
+vars:
+  v0: "'transcript' or 'frameshiftedness' or 'macromolecular sequence motif' or 'in-framedness' or 'macromolecular structural motif' or 'translational product' or 'corresponding senseness' or 'direct senseness' or 'corresponding antisenseness' or 'direct antisenseness' or 'single-stranded RNA' or 'multi-stranded DNA' or 'multi-stranded RNA' or 'single-stranded nucleic acid' or 'single-stranded DNA'"
+  v1: "'transcript' or 'frameshiftedness' or 'macromolecular sequence motif' or 'in-framedness' or 'macromolecular structural motif' or 'translational product' or 'corresponding senseness' or 'direct senseness' or 'corresponding antisenseness' or 'direct antisenseness' or 'single-stranded RNA' or 'multi-stranded DNA' or 'multi-stranded RNA' or 'single-stranded nucleic acid' or 'single-stranded DNA'"
+
+name:
+  # Could not induce name, using default
+  text: "%s/%s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.125, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A sequence that matches a sequence pattern defined in terms of either primary structure, i.e., its sequence of residues (a %s) or supersecondary structure of its elements (a %s)."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s or %s"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,45 @@
+# options: [min(4),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: macromolecular motif part of X
+pattern_iri: http://purl.obolibrary.org/obo/mso/macromolecular_motif_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [peptide motif](http://purl.obolibrary.org/obo/MSO_0001067), [mating-type region motif](http://purl.obolibrary.org/obo/MSO_0001999), [nucleic acid motif](http://purl.obolibrary.org/obo/MSO_0000714) (5 total)
+
+classes: 
+  peptide: "MSO:0000104"
+  mating-type region: "MSO:0001789"
+  macromolecular motif: "MSO:3000056"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'peptide' or 'mating-type region'"
+
+name:
+  # Induced, frequency=0.4, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s motif"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: ""A motif that is a component of a %s." [SO:ke]"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'macromolecular motif' and ('part of' some %s)"
+  vars:
+    - v0

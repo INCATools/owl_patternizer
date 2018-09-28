@@ -1,0 +1,56 @@
+# options: [min(4),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of X/X
+pattern_iri: http://purl.obolibrary.org/obo/mso/X_part_of_X_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [protein- or protein-complex-binding site of nucleic acid](http://purl.obolibrary.org/obo/MSO_0001654), [nucleic acid motif](http://purl.obolibrary.org/obo/MSO_0000714), [DNA motif](http://purl.obolibrary.org/obo/MSO_0000713) (7 total)
+
+classes: 
+  nucleotide strand: "MSO:3100174"
+  deoxyribonucleotide strand: "MSO:3100175"
+  ribonucleotide strand: "MSO:3100176"
+  nucleic acid: "MSO:3100248"
+  deoxyribonucleic acid: "MSO:3100249"
+  ribonucleic acid: "MSO:3100250"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'protein- or protein-complex-binding site' or 'macromolecular motif' or 'sequence molecular entity extent' or 'RNA extent'"
+  v1: "'nucleotide strand' or 'deoxyribonucleotide strand' or 'ribonucleotide strand' or 'nucleic acid' or 'deoxyribonucleic acid' or 'ribonucleic acid'"
+  v2: "'nucleotide strand' or 'deoxyribonucleotide strand' or 'ribonucleotide strand' or 'nucleic acid' or 'deoxyribonucleic acid' or 'ribonucleic acid'"
+
+name:
+  # Could not induce name, using default
+  text: "%s part of %s/%s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Induced, frequency=0.2857142857142857, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s of a %s or %s."
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('part of' some %s or %s)"
+  vars:
+    - v0
+    - v1
+    - v2

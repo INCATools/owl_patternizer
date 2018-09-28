@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/mso/X_has_part_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [protein-coding transcript with retained intron](http://purl.obolibrary.org/obo/MSO_0002112), [capped primary transcript](http://purl.obolibrary.org/obo/MSO_0000861), [capped mRNA](http://purl.obolibrary.org/obo/MSO_0000862) (18 total)
+  Examples: [protein-coding transcript with retained intron](http://purl.obolibrary.org/obo/MSO_0002112), [coding exon](http://purl.obolibrary.org/obo/MSO_0000195), [capped primary transcript](http://purl.obolibrary.org/obo/MSO_0000861) (19 total)
 
 classes: 
   intron: "MSO:0000188"
@@ -29,7 +29,7 @@ vars:
   v1: "'intron' or 'centromere' or 'cap' or 'poly(A) tail' or 'stop codon redefined as pyrrolysine' or 'stop codon redefined as selenocysteine' or 'CTG/CUG start codon' or 'deoxyribonucleotide base pair' or 'ribonucleotide base pair' or 'base-paired nucleotide residue'"
 
 name:
-  # Induced, frequency=0.2222222222222222, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.21052631578947367, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s with %s"
   vars:
     - v0

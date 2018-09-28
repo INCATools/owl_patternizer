@@ -57,6 +57,10 @@ node_expression(Node,and(Xs)) :-
         rdf(Node,owl:intersectionOf,L),
         !,
         setof(X,rdflist_member_expression(L,X),Xs).
+node_expression(Node,or(Xs)) :-
+        rdf(Node,owl:unionOf,L),
+        !,
+        setof(X,rdflist_member_expression(L,X),Xs).
 
 node_expression(Node,some(P,V)) :-
         rdf(Node,owl:onProperty,PNode),
@@ -111,6 +115,14 @@ generalize_expression(and([X]), and([X2]),classExpression) :-
         generalize_expression(X,X2,classExpression).
 generalize_expression(and([X|L]), and([X|L2]),classExpression) :-
         generalize_expression(and(L), and(L2),classExpression).
+
+% OR
+generalize_expression(or([X|L]), or([X2|L]),classExpression) :-
+        generalize_expression(X,X2,classExpression).
+generalize_expression(or([X]), or([X2]),classExpression) :-
+        generalize_expression(X,X2,classExpression).
+generalize_expression(or([X|L]), or([X|L2]),classExpression) :-
+        generalize_expression(or(L), or(L2),classExpression).
 
 % VAR
 generalize_expression(X, _GenVar, _T) :- atomic(X).
@@ -207,6 +219,7 @@ non_trim(some(_,X)) :- non_trim(X).
 
 % test if pattern contains a variable in property position
 has_var_prop(and(L)) :- member(X,L), has_var_prop(X). % descend
+has_var_prop(or(L))  :- member(X,L), has_var_prop(X). % descend
 has_var_prop(some(P,_)) :- is_nvar(P).
 has_var_prop(some(_,X)) :- has_var_prop(X).
 
@@ -215,6 +228,8 @@ is_nvar('$VAR'(_)).
 
 exceeds_max_and_cardinality(and(L),Limit) :- length(L,Len), Len > Limit, !.
 exceeds_max_and_cardinality(and(L),Limit) :- member(X,L), exceeds_max_and_cardinality(X,Limit).
+exceeds_max_and_cardinality(or(L),Limit) :- length(L,Len), Len > Limit, !.
+exceeds_max_and_cardinality(or(L),Limit) :- member(X,L), exceeds_max_and_cardinality(X,Limit).
 exceeds_max_and_cardinality(some(_,X),Limit) :- exceeds_max_and_cardinality(X,Limit).
 
 has_been_seen(X) :-
@@ -431,6 +446,7 @@ select_class_from_match_expr(E,Matches,Matches2) :-
 expr_class_signature(X,L) :- solutions(M,expr_references_class(X,M),L).
 expr_references_class('$VAR'(_),_) :- fail.
 expr_references_class(and(L),C) :- member(M,L),expr_references_class(M,C).
+expr_references_class(or(L),C) :-  member(M,L),expr_references_class(M,C).
 expr_references_class(some(_,A),C) :- expr_references_class(A,C).
 expr_references_class(only(_,A),C) :- expr_references_class(A,C).
 expr_references_class(X,X) :- atom(X).
@@ -439,6 +455,7 @@ expr_references_class(X,X) :- atom(X).
 expr_property_signature(X,L) :- solutions(M,expr_references_property(X,M),L).
 expr_references_property('$VAR'(_),_) :- fail.
 expr_references_property(and(L),P) :- member(M,L),expr_references_property(M,P).
+expr_references_property(or(L),P) :-  member(M,L),expr_references_property(M,P).
 expr_references_property(some(P,_),P) :- atom(P),!. % TODO: property expressions
 expr_references_property(only(P,_),P) :- atom(P),!. % TODO: property expressions
 expr_references_property(some(_,X),P) :- expr_references_property(X,P).
@@ -448,6 +465,7 @@ expr_references_property(only(_,X),P) :- expr_references_property(X,P).
 expr_var_signature(X,L) :- setof(M,expr_references_var(X,M),L).
 expr_references_var(V,V) :- V='$VAR'(_).
 expr_references_var(and(L),P) :- member(M,L),expr_references_var(M,P).
+expr_references_var(or(L),P) :- member(M,L),expr_references_var(M,P).
 expr_references_var(some(P,_),V) :- expr_references_var(P,V).
 expr_references_var(only(P,_),V) :- expr_references_var(P,V).
 expr_references_var(some(_,Y),V) :- expr_references_var(Y,V).
@@ -474,6 +492,10 @@ expr_atom(and(L), N, Context, Vars):-
         !,
         exprs_atoms(L, L2, Context, Vars),
         serialize_conj(L2, N, Context).
+expr_atom(or(L), N, Context, Vars):-
+        !,
+        exprs_atoms(L, L2, Context, Vars),
+        serialize_disj(L2, N, Context).
 expr_atom(some(P, V), N, Context, Vars):-
         !, 
         expr_atom(P, PN, Context, Vars1), 
@@ -510,6 +532,19 @@ serialize_conj(L, N, _/id) :-
         concat_atom(L, ' ', N).
 serialize_conj(L2, N, _) :-
         concat_atom(L2, ' and ', N).
+
+serialize_disj([X1|L], N, _/def) :-
+        !, 
+        concat_atom(L, ' or ', LA), 
+        sformat(N, 'Any ~w that ~w', [X1, LA]).
+serialize_disj(L, N, _/name) :-
+        !, 
+        concat_atom(L, '/', N).
+serialize_disj(L, N, _/id) :-
+        !, 
+        concat_atom(L, '/', N).
+serialize_disj(L2, N, _) :-
+        concat_atom(L2, ' or ', N).
 
 serialize_some(PN, VN, N, _/name) :-
         !, 
@@ -573,6 +608,12 @@ unify1(and([Q|QL]), and(TL), Bindings) :-
         select(T,TL,TL2),
         unify1(Q,T,Bindings1),
         unify1(and(QL), and(TL2), Bindings2),
+        append(Bindings1, Bindings2, Bindings).
+unify1(or([Q|QL]), or(TL), Bindings) :-
+        % use select/3 in order to maintain order-independence
+        select(T,TL,TL2),
+        unify1(Q,T,Bindings1),
+        unify1(or(QL), or(TL2), Bindings2),
         append(Bindings1, Bindings2, Bindings).
 
 % ========================================

@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/mso/X_part_of_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [exon region](http://purl.obolibrary.org/obo/MSO_0000852), [primary transcript region](http://purl.obolibrary.org/obo/MSO_0000835), [intron region](http://purl.obolibrary.org/obo/MSO_0001014) (79 total)
+  Examples: [exon region](http://purl.obolibrary.org/obo/MSO_0000852), [primary transcript region](http://purl.obolibrary.org/obo/MSO_0000835), [intron region](http://purl.obolibrary.org/obo/MSO_0001014) (86 total)
 
 classes: 
   owl:Thing: "owl:Thing"
@@ -20,14 +20,14 @@ vars:
   v1: "'owl:Thing'"
 
 name:
-  # Induced, frequency=0.11392405063291139, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.10465116279069768, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
     - v0
 
 def:
-  # Induced, frequency=0.02531645569620253, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.023255813953488372, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "An %s within an %s."
   vars:
     - v0
