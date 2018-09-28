@@ -1,0 +1,58 @@
+# options: [min(10),dir(envo),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X inheres in X part of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_inheres_in_X_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [concentration of oxygen in water](http://purl.obolibrary.org/obo/ENVO_09200021), [concentration of nitrate in soil](http://purl.obolibrary.org/obo/ENVO_09200007), [concentration of nitrate in groundwater](http://purl.obolibrary.org/obo/ENVO_09200020) (29 total)
+
+classes: 
+  quality: "PATO:0000001"
+
+
+relations: 
+  inheres in: "RO:0000052"
+
+
+vars:
+  v0: "'quality'"
+  v1: "'chemical entity'"
+  v2: "'environmental material'"
+
+name:
+  # Induced, frequency=0.7586206896551724, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of %s in %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Induced, frequency=0.7586206896551724, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The %s of a %s when measured in %s."
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s %s"
+    vars:
+      - v2
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('inheres in' some %s and ('part of' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

@@ -1,0 +1,47 @@
+# options: [min(10),dir(envo),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X located in X
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_located_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [meteor](http://purl.obolibrary.org/obo/ENVO_01001008), [crater lake](http://purl.obolibrary.org/obo/ENVO_01001062), [impact crater lake](http://purl.obolibrary.org/obo/ENVO_01001070) (30 total)
+
+classes: 
+  material entity: "BFO:0000040"
+
+
+relations: 
+  located in: "RO:0001025"
+
+
+vars:
+  v0: "'material entity'"
+  v1: "'independent continuant'"
+
+name:
+  # Induced, frequency=0.43333333333333335, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.06666666666666667, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A portion of %s which is found in a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('located in' some %s)"
+  vars:
+    - v0
+    - v1

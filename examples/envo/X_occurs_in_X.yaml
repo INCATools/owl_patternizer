@@ -1,0 +1,47 @@
+# options: [min(10),dir(envo),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X occurs in X
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_occurs_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [industrial fire](http://purl.obolibrary.org/obo/ENVO_01001287), [bush fire](http://purl.obolibrary.org/obo/ENVO_01001290), [forest fire](http://purl.obolibrary.org/obo/ENVO_01000791) (11 total)
+
+classes: 
+  environmental system process: "http://purl.obolibrary.org/obo/ENVO_02500000"
+
+
+relations: 
+  occurs in: "BFO:0000066"
+
+
+vars:
+  v0: "'environmental system process'"
+  v1: "'independent continuant'"
+
+name:
+  # Induced, frequency=0.18181818181818182, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that occurs in a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('occurs in' some %s)"
+  vars:
+    - v0
+    - v1

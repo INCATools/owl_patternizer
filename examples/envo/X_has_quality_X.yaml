@@ -1,34 +1,34 @@
 # options: [min(10),dir(envo),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
-pattern_name: X part of X
-pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_X
+pattern_name: X has quality X
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_has_quality_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [arrugado](http://purl.obolibrary.org/obo/ENVO_00000538), [continental island](http://purl.obolibrary.org/obo/ENVO_00000221), [ice cap ridge](http://purl.obolibrary.org/obo/ENVO_00000528) (52 total)
+  Examples: [alkaline salt lake](http://purl.obolibrary.org/obo/ENVO_00002121), [acid hot spring](http://purl.obolibrary.org/obo/ENVO_00002120), [alkaline hot spring](http://purl.obolibrary.org/obo/ENVO_00002119) (39 total)
 
 classes: 
-  entity: "BFO:0000001"
+  quality: "PATO:0000001"
 
 
 relations: 
-  part of: "BFO:0000050"
+  has quality: "RO:0000086"
 
 
 vars:
   v0: "'entity'"
-  v1: "'entity'"
+  v1: "'quality'"
 
 name:
-  # Induced, frequency=0.19230769230769232, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.5384615384615384, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
     - v0
 
 def:
-  # Could not induce def, using default
-  text: "Any %s that part of a %s"
+  # Induced, frequency=0.05128205128205128, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s whose water has an %s pH."
   vars:
     - v0
     - v1
@@ -47,7 +47,7 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('part of' some %s)"
+  text: "%s and ('has quality' some %s)"
   vars:
     - v0
     - v1
