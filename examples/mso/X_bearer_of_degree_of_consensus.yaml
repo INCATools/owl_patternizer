@@ -1,0 +1,47 @@
+# options: [min(4),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X bearer of degree of consensus
+pattern_iri: http://purl.obolibrary.org/obo/mso/X_bearer_of_degree_of_consensus
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [consensus mRNA](http://purl.obolibrary.org/obo/MSO_0000995), [consensus gDNA](http://purl.obolibrary.org/obo/MSO_0001931), [consensus sequence motif](http://purl.obolibrary.org/obo/MSO_3000110) (4 total)
+
+classes: 
+  mRNA: "MSO:0000234"
+  genomic DNA extent: "MSO:0000991"
+  degree of consensus: "MSO:0000993"
+  macromolecular sequence motif: "MSO:0001683"
+  sequence molecular entity extent: "MSO:3100183"
+
+
+relations: 
+  bearer of: "RO:0000053"
+
+
+vars:
+  v0: "'mRNA' or 'genomic DNA extent' or 'macromolecular sequence motif' or 'sequence molecular entity extent'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "consensus %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: ""A %s sequence produced from a base calling or alignment algorithm that uses aligned or assembled multiple gDNA sequences as input." [GMOD:ea]"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('bearer of' some 'degree of consensus')"
+  vars:
+    - v0

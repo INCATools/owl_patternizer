@@ -1,0 +1,47 @@
+# options: [min(4),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X bearer of translatability
+pattern_iri: http://purl.obolibrary.org/obo/mso/X_bearer_of_translatability
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [translatable processed pseudogene](http://purl.obolibrary.org/obo/MSO_0002105), [protein-coding primary transcript](http://purl.obolibrary.org/obo/MSO_0000120), [protein-coding transcript](http://purl.obolibrary.org/obo/MSO_3000130) (5 total)
+
+classes: 
+  processed pseudogene: "MSO:0000043"
+  primary transcript: "MSO:0000185"
+  gene: "MSO:0000704"
+  unprocessed pseudogene: "MSO:0001760"
+  translatability: "MSO:3100241"
+
+
+relations: 
+  bearer of: "RO:0000053"
+
+
+vars:
+  v0: "'processed pseudogene' or 'primary transcript' or 'gene' or 'unprocessed pseudogene'"
+
+name:
+  # Induced, frequency=0.6, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "protein-coding %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.4, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that encodes one or more proteins."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('bearer of' some 'translatability')"
+  vars:
+    - v0

@@ -1,0 +1,53 @@
+# options: [min(4),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X bearer of X
+pattern_iri: http://purl.obolibrary.org/obo/mso/X_bearer_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [syntenic region](http://purl.obolibrary.org/obo/MSO_0005858), [transcribable processed pseudogene](http://purl.obolibrary.org/obo/MSO_0002109), [translatable processed pseudogene](http://purl.obolibrary.org/obo/MSO_0002105) (90 total)
+
+classes: 
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  bearer of: "RO:0000053"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.3, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that bearer of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('bearer of' some %s)"
+  vars:
+    - v0
+    - v1

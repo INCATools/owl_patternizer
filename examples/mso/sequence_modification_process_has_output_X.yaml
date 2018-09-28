@@ -1,0 +1,44 @@
+# options: [min(4),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: sequence modification process has output X
+pattern_iri: http://purl.obolibrary.org/obo/mso/sequence_modification_process_has_output_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [sequence deletion process](http://purl.obolibrary.org/obo/MSO_0000045), [sequence translocation process](http://purl.obolibrary.org/obo/MSO_0000049), [sequence transposition process](http://purl.obolibrary.org/obo/MSO_3000269) (10 total)
+
+classes: 
+  biological sequence entity: "MSO:3000265"
+  sequence modification process: "MSO:3000268"
+
+
+relations: 
+  has output: "RO:0002234"
+
+
+vars:
+  v0: "'biological sequence entity'"
+
+name:
+  # Induced, frequency=0.8, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "sequence %s process"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A process that results in a %s of a sequence molecular entity region."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'sequence modification process' and ('has output' some %s)"
+  vars:
+    - v0

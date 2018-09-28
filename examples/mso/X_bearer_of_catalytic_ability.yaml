@@ -1,0 +1,47 @@
+# options: [min(4),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X bearer of catalytic ability
+pattern_iri: http://purl.obolibrary.org/obo/mso/X_bearer_of_catalytic_ability
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ribozyme](http://purl.obolibrary.org/obo/MSO_0000374), [catalytic amino-acid residue](http://purl.obolibrary.org/obo/MSO_0001104), [deoxyribozyme](http://purl.obolibrary.org/obo/MSO_0001012) (4 total)
+
+classes: 
+  transcript: "MSO:0000673"
+  amino acid residue: "MSO:0001237"
+  catalytic ability: "MSO:3000276"
+  deoxyribonucleic acid: "MSO:3100249"
+  ribonucleic acid: "MSO:3100250"
+
+
+relations: 
+  bearer of: "RO:0000053"
+
+
+vars:
+  v0: "'transcript' or 'amino acid residue' or 'deoxyribonucleic acid' or 'ribonucleic acid'"
+
+name:
+  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "enzymatic %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s involved in the activity of an enzyme."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('bearer of' some 'catalytic ability')"
+  vars:
+    - v0

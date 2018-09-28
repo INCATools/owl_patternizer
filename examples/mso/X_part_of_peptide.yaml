@@ -1,0 +1,49 @@
+# options: [min(4),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of peptide
+pattern_iri: http://purl.obolibrary.org/obo/mso/X_part_of_peptide
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [conserved peptide region](http://purl.obolibrary.org/obo/MSO_0100021), [protein- or protein-complex-binding site of peptide](http://purl.obolibrary.org/obo/MSO_0001093), [unit of peptide repeat](http://purl.obolibrary.org/obo/MSO_0001068) (7 total)
+
+classes: 
+  peptide: "MSO:0000104"
+  protein- or protein-complex-binding site: "MSO:0000410"
+  repeat unit: "MSO:0000726"
+  DNA-binding site: "MSO:0001429"
+  metal-ion-binding site: "MSO:0001656"
+  small-molecule-binding site: "MSO:0001657"
+  macromolecular motif: "MSO:3000056"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'protein- or protein-complex-binding site' or 'repeat unit' or 'DNA-binding site' or 'metal-ion-binding site' or 'small-molecule-binding site' or 'macromolecular motif'"
+
+name:
+  # Induced, frequency=0.5714285714285714, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of peptide"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.14285714285714285, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s of a peptide."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'peptide')"
+  vars:
+    - v0

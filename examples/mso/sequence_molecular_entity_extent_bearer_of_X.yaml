@@ -1,0 +1,44 @@
+# options: [min(4),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: sequence molecular entity extent bearer of X
+pattern_iri: http://purl.obolibrary.org/obo/mso/sequence_molecular_entity_extent_bearer_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [rescue sequence extent](http://purl.obolibrary.org/obo/MSO_0000411), [wild-type sequence extent](http://purl.obolibrary.org/obo/MSO_3000318), [conserved extent](http://purl.obolibrary.org/obo/MSO_0000330) (8 total)
+
+classes: 
+  specifically dependent continuant: "BFO:0000020"
+  sequence molecular entity extent: "MSO:3100183"
+
+
+relations: 
+  bearer of: "RO:0000053"
+
+
+vars:
+  v0: "'specifically dependent continuant'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s sequence extent"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.125, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A biological sequence unit extent in a form that is %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'sequence molecular entity extent' and ('bearer of' some %s)"
+  vars:
+    - v0

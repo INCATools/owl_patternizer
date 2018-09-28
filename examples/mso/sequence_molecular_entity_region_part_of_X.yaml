@@ -1,0 +1,60 @@
+# options: [min(4),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: sequence molecular entity region part of X
+pattern_iri: http://purl.obolibrary.org/obo/mso/sequence_molecular_entity_region_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [exon region](http://purl.obolibrary.org/obo/MSO_0000852), [primary transcript region](http://purl.obolibrary.org/obo/MSO_0000835), [intron region](http://purl.obolibrary.org/obo/MSO_0001014) (24 total)
+
+classes: 
+  sequence molecular entity region: "MSO:0000001"
+  exon: "MSO:0000147"
+  UTR: "MSO:0000203"
+  rRNA primary transcript: "MSO:0000209"
+  mRNA: "MSO:0000234"
+  tRNA: "MSO:0000253"
+  chromosomal nucleic acid: "MSO:0000340"
+  5-prime long terminal repeat: "MSO:0000425"
+  3-prime long terminal repeat: "MSO:0000426"
+  tmRNA: "MSO:0000584"
+  guide RNA: "MSO:0000602"
+  miRNA primary transcript: "MSO:0000647"
+  spliceosomal intron: "MSO:0000662"
+  gene: "MSO:0000704"
+  clone insert: "MSO:0000753"
+  edited transcript: "MSO:0000873"
+  CDS: "MSO:3000229"
+  sequence molecular entity chain: "MSO:3100245"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'exon' or 'UTR' or 'rRNA primary transcript' or 'mRNA' or 'tRNA' or 'chromosomal nucleic acid' or '5-prime long terminal repeat' or '3-prime long terminal repeat' or 'tmRNA' or 'guide RNA' or 'miRNA primary transcript' or 'spliceosomal intron' or 'gene' or 'clone insert' or 'edited transcript' or 'CDS' or 'sequence molecular entity chain'"
+
+name:
+  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s region"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.375, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A region of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'sequence molecular entity region' and ('part of' some %s)"
+  vars:
+    - v0

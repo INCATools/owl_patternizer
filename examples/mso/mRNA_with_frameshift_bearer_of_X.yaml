@@ -1,0 +1,44 @@
+# options: [min(4),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: mRNA with frameshift bearer of X
+pattern_iri: http://purl.obolibrary.org/obo/mso/mRNA_with_frameshift_bearer_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mRNA with minus 1 frameshift](http://purl.obolibrary.org/obo/MSO_0000282), [mRNA with minus 2 frameshift](http://purl.obolibrary.org/obo/MSO_0000335), [mRNA with plus 1 frameshift](http://purl.obolibrary.org/obo/MSO_0000321) (4 total)
+
+classes: 
+  mRNA with frameshift: "MSO:0000108"
+  frameshiftedness: "MSO:0000865"
+
+
+relations: 
+  bearer of: "RO:0000053"
+
+
+vars:
+  v0: "'frameshiftedness'"
+
+name:
+  # Could not induce name, using default
+  text: "mRNA with frameshift bearer of %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any mRNA with frameshift that bearer of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'mRNA with frameshift' and ('bearer of' some %s)"
+  vars:
+    - v0

@@ -21,6 +21,8 @@
 :- rdf_register_prefix('CL','http://purl.obolibrary.org/obo/CL_').
 :- rdf_register_prefix('PATO','http://purl.obolibrary.org/obo/PATO_').
 :- rdf_register_prefix('GO','http://purl.obolibrary.org/obo/GO_').
+:- rdf_register_prefix('SO','http://purl.obolibrary.org/obo/SO_').
+:- rdf_register_prefix('MSO','http://purl.obolibrary.org/obo/MSO_').
 :- rdf_register_prefix('EFO','http://www.ebi.ac.uk/efo/EFO_').
 :- rdf_register_prefix('CHEBI','http://www.ebi.ac.uk/efo/CHEBI_').
 :- rdf_register_prefix('pizza','http://www.co-ode.org/ontologies/pizza/pizza.owl#').
@@ -38,6 +40,7 @@ ontology_config(pato,     [min(5), generalize_properties(false)]).
 ontology_config(wine,     [min(2)]).
 
 ontology_config(so,       [min(8)]).
+ontology_config(mso,      [min(4), generalize_properties(false)]).
 ontology_config(chebi,    [min(3), generalize_properties(false)]).
 ontology_config(uberon,   [min(50), max_and_cardinality(3)]).
 ontology_config(cl,       [min(20)]).

@@ -1,0 +1,50 @@
+# options: [min(4),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X output of X
+pattern_iri: http://purl.obolibrary.org/obo/mso/X_output_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [engineered transposable element](http://purl.obolibrary.org/obo/MSO_0000798), [engineered plasmid](http://purl.obolibrary.org/obo/MSO_0000637), [mobile element deletion](http://purl.obolibrary.org/obo/MSO_0002066) (18 total)
+
+classes: 
+  engineering process: "MSO:3000278"
+  codon redefinition process: "MSO:3000291"
+  translational bypass: "MSO:3000292"
+  molecular cloning process: "MSO:3100244"
+
+
+relations: 
+  output of: "RO:0002353"
+
+
+vars:
+  v0: "'transposable element' or 'mRNA' or 'fusion gene' or 'oligonucleotide sequence tag' or 'codon' or 'rescue sequence extent' or 'clone insert' or 'cDNA' or 'episome' or 'peptide variation' or 'sequence molecular entity extent' or 'DNA extent'"
+  v1: "'engineering process' or 'codon redefinition process' or 'translational bypass' or 'molecular cloning process'"
+
+name:
+  # Could not induce name, using default
+  text: "%s output of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that output of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('output of' some %s)"
+  vars:
+    - v0
+    - v1

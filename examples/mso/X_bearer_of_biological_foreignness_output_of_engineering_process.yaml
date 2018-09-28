@@ -1,0 +1,50 @@
+# options: [min(4),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X bearer of biological foreignness output of engineering process
+pattern_iri: http://purl.obolibrary.org/obo/mso/X_bearer_of_biological_foreignness_output_of_engineering_process
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [engineered foreign transposable element](http://purl.obolibrary.org/obo/MSO_0000799), [engineered foreign transposable element gene](http://purl.obolibrary.org/obo/MSO_0000283), [engineered foreign repeat](http://purl.obolibrary.org/obo/MSO_0000293) (5 total)
+
+classes: 
+  transposable element: "MSO:0000101"
+  transposable element gene: "MSO:0000111"
+  repeat: "MSO:0000657"
+  gene: "MSO:0000704"
+  biological foreignness: "MSO:0000784"
+  engineering process: "MSO:3000278"
+  sequence molecular entity extent: "MSO:3100183"
+
+
+relations: 
+  bearer of: "RO:0000053"
+  output of: "RO:0002353"
+
+
+vars:
+  v0: "'transposable element' or 'transposable element gene' or 'repeat' or 'gene' or 'sequence molecular entity extent'"
+
+name:
+  # Induced, frequency=0.8, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "engineered foreign %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.4, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is engineered (i.e., created and/or processed partly or wholly using scientific and/or laboratory (in vitro) methods) and foreign (i.e., originating from a source different from an entity's current (typically noncanonical, abnormal and/or pathological) context)."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('bearer of' some 'biological foreignness') and ('output of' some 'engineering process')"
+  vars:
+    - v0

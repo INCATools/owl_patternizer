@@ -1,0 +1,47 @@
+# options: [min(4),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of 5-prime long terminal repeat
+pattern_iri: http://purl.obolibrary.org/obo/mso/X_part_of_5_prime_long_terminal_repeat
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [region of 5-prime LTR](http://purl.obolibrary.org/obo/MSO_0000850), [U5 region of 5-prime LTR](http://purl.obolibrary.org/obo/MSO_0000428), [R region of 5-prime LTR](http://purl.obolibrary.org/obo/MSO_0000427) (4 total)
+
+classes: 
+  sequence molecular entity region: "MSO:0000001"
+  U5 region of LTR: "MSO:0000422"
+  R region of LTR: "MSO:0000423"
+  U3 region of LTR: "MSO:0000424"
+  5-prime long terminal repeat: "MSO:0000425"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'sequence molecular entity region' or 'U5 region of LTR' or 'R region of LTR' or 'U3 region of LTR'"
+
+name:
+  # Could not induce name, using default
+  text: "%s part of 5-prime long terminal repeat"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that part of a 5-prime long terminal repeat"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('part of' some '5-prime long terminal repeat')"
+  vars:
+    - v0

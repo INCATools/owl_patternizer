@@ -1,0 +1,53 @@
+# options: [min(4),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X derives from X
+pattern_iri: http://purl.obolibrary.org/obo/mso/X_derives_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [immunoglobulin pseudogene](http://purl.obolibrary.org/obo/MSO_0002098), [macronuclear chromosomal nucleic acid](http://purl.obolibrary.org/obo/MSO_0000824), [micronuclear chromosomal nucleic acid](http://purl.obolibrary.org/obo/MSO_0000825) (17 total)
+
+classes: 
+  pseudogene: "MSO:0000336"
+  chromosomal nucleic acid: "MSO:0000340"
+  vector replicon: "MSO:0000440"
+  insertion: "MSO:0000667"
+  clone insert: "MSO:0000753"
+  genomic DNA clone insert: "MSO:0000914"
+  integrated mobile genetic element region: "MSO:0001039"
+
+
+relations: 
+  derives from: "RO:0001000"
+
+
+vars:
+  v0: "'pseudogene' or 'chromosomal nucleic acid' or 'vector replicon' or 'insertion' or 'clone insert' or 'genomic DNA clone insert' or 'integrated mobile genetic element region'"
+  v1: "'macronuclear sequence extent' or 'micronuclear sequence extent' or 'BAC' or 'plasmid' or 'mitochondrial sequence extent' or 'nucleomorphic sequence extent' or 'apicoplast sequence extent' or 'chromoplast sequence extent' or 'chloroplast sequence extent' or 'cyanelle sequence extent' or 'leucoplast sequence extent' or 'genomic DNA extent' or 'mobile genetic element' or 'immunoglobulin gene'"
+
+name:
+  # Induced, frequency=0.11764705882352941, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that derives from a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('derives from' some %s)"
+  vars:
+    - v0
+    - v1

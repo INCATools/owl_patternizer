@@ -1,0 +1,56 @@
+# options: [min(4),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has part X
+pattern_iri: http://purl.obolibrary.org/obo/mso/X_has_part_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [protein-coding transcript with retained intron](http://purl.obolibrary.org/obo/MSO_0002112), [capped primary transcript](http://purl.obolibrary.org/obo/MSO_0000861), [capped mRNA](http://purl.obolibrary.org/obo/MSO_0000862) (18 total)
+
+classes: 
+  intron: "MSO:0000188"
+  centromere: "MSO:0000577"
+  cap: "MSO:0000581"
+  poly(A) tail: "MSO:0000610"
+  stop codon redefined as pyrrolysine: "MSO:0000884"
+  stop codon redefined as selenocysteine: "MSO:0000885"
+  CTG/CUG start codon: "MSO:1001273"
+  deoxyribonucleotide base pair: "MSO:3100068"
+  ribonucleotide base pair: "MSO:3100086"
+  base-paired nucleotide residue: "MSO:3100213"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'protein-coding primary transcript' or 'primary transcript' or 'mRNA' or 'pseudogenic transcript' or 'gene' or 'chromosomal inversion' or 'DNA region' or 'RNA region' or 'nucleotide strand region'"
+  v1: "'intron' or 'centromere' or 'cap' or 'poly(A) tail' or 'stop codon redefined as pyrrolysine' or 'stop codon redefined as selenocysteine' or 'CTG/CUG start codon' or 'deoxyribonucleotide base pair' or 'ribonucleotide base pair' or 'base-paired nucleotide residue'"
+
+name:
+  # Induced, frequency=0.2222222222222222, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s with %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has part a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('has part' some %s)"
+  vars:
+    - v0
+    - v1

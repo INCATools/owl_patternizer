@@ -1,0 +1,46 @@
+# options: [min(4),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: gene has part X
+pattern_iri: http://purl.obolibrary.org/obo/mso/gene_has_part_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [gene with noncanonical start codon](http://purl.obolibrary.org/obo/MSO_0001739), [gene with readthrough stop codon](http://purl.obolibrary.org/obo/MSO_0000697), [gene with stop codon redefined as pyrrolysine](http://purl.obolibrary.org/obo/MSO_0000698) (5 total)
+
+classes: 
+  gene: "MSO:0000704"
+  stop codon redefined as pyrrolysine: "MSO:0000884"
+  stop codon redefined as selenocysteine: "MSO:0000885"
+  CTG/CUG start codon: "MSO:1001273"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'stop codon redefined as pyrrolysine' or 'stop codon redefined as selenocysteine' or 'CTG/CUG start codon'"
+
+name:
+  # Induced, frequency=0.8, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "gene with %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A gene with one or more %ss."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'gene' and ('has part' some %s)"
+  vars:
+    - v0

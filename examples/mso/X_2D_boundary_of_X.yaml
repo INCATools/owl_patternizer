@@ -1,0 +1,47 @@
+# options: [min(4),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X 2D boundary of X
+pattern_iri: http://purl.obolibrary.org/obo/mso/X_2D_boundary_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [deficiency](http://purl.obolibrary.org/obo/MSO_1000029), [restriction enzyme cleavage site](http://purl.obolibrary.org/obo/MSO_0001688), [blunt-end restriction enzyme cleavage site](http://purl.obolibrary.org/obo/MSO_0001693) (4 total)
+
+classes: 
+  biological sequence boundary: "MSO:3100194"
+
+
+relations: 
+  2D boundary of: "RO:0002000"
+
+
+vars:
+  v0: "'biological sequence boundary'"
+  v1: "'nucleotide residue' or 'blunt-end restriction enzyme cleavage site'"
+
+name:
+  # Could not induce name, using default
+  text: "%s 2D boundary of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that 2D boundary of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('2D boundary of' some %s)"
+  vars:
+    - v0
+    - v1

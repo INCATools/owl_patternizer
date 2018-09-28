@@ -1,0 +1,44 @@
+# options: [min(4),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: gene bearer of X
+pattern_iri: http://purl.obolibrary.org/obo/mso/gene_bearer_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [predicted gene](http://purl.obolibrary.org/obo/MSO_0000996), [foreign gene](http://purl.obolibrary.org/obo/MSO_0000285), [rescue gene](http://purl.obolibrary.org/obo/MSO_0000816) (5 total)
+
+classes: 
+  specifically dependent continuant: "BFO:0000020"
+  gene: "MSO:0000704"
+
+
+relations: 
+  bearer of: "RO:0000053"
+
+
+vars:
+  v0: "'specifically dependent continuant'"
+
+name:
+  # Induced, frequency=0.8, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s gene"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A gene that is %s, i.e., originating from a source different from an entity's current (typically noncanonical, abnormal and/or pathological) context."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'gene' and ('bearer of' some %s)"
+  vars:
+    - v0

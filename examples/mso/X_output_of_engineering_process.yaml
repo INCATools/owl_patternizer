@@ -1,0 +1,51 @@
+# options: [min(4),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X output of engineering process
+pattern_iri: http://purl.obolibrary.org/obo/mso/X_output_of_engineering_process
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [engineered transposable element](http://purl.obolibrary.org/obo/MSO_0000798), [engineered plasmid](http://purl.obolibrary.org/obo/MSO_0000637), [engineered fusion gene](http://purl.obolibrary.org/obo/MSO_0000288) (10 total)
+
+classes: 
+  transposable element: "MSO:0000101"
+  fusion gene: "MSO:0000287"
+  oligonucleotide sequence tag: "MSO:0000324"
+  rescue sequence extent: "MSO:0000411"
+  clone insert: "MSO:0000753"
+  episome: "MSO:0000768"
+  peptide variation: "MSO:0001146"
+  engineering process: "MSO:3000278"
+  sequence molecular entity extent: "MSO:3100183"
+
+
+relations: 
+  output of: "RO:0002353"
+
+
+vars:
+  v0: "'transposable element' or 'fusion gene' or 'oligonucleotide sequence tag' or 'rescue sequence extent' or 'clone insert' or 'episome' or 'peptide variation' or 'sequence molecular entity extent'"
+
+name:
+  # Induced, frequency=0.7, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "engineered %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is engineered, i.e., created and/or processed partly or wholly using scientific and/or laboratory (in vitro) methods."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('output of' some 'engineering process')"
+  vars:
+    - v0
