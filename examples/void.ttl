@@ -20,6 +20,10 @@
     a void:Dataset ;
     void:dataDump <../tests/data/MSO_unreasoned.owl> ;
     lib:source <http://purl.obolibrary.org/obo/mso.owl> .
+<sweet>
+    a void:Dataset ;
+    void:dataDump <../tests/data/sweet.owl> ;
+    lib:source <http://sweetontology.net/> .
 
 <wine>
     a lib:Ontology ;
@@ -30,7 +34,34 @@
     a lib:Ontology ;
     a lib:Virtual ;
     owl:imports <http://purl.obolibrary.org/obo/pato.owl> .
-    
+
+<ma>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/ma.owl> .
+
+<emapa>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/emapa.owl> .
+
+<zfa>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/zfa.owl> .
+<wbbt>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/wbbt.owl> .
+<xao>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/xao.owl> .
+<ceph>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/ceph.owl> .
+
 <uberon>
     a lib:Ontology ;
     a lib:Virtual ;
@@ -43,10 +74,31 @@
     a lib:Ontology ;
     a lib:Virtual ;
     owl:imports <http://purl.obolibrary.org/obo/fbbt.owl> .
+<ehdaa2>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/ehdaa2.owl> .
+<flopo>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/flopo.owl> .
+<fypo>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/fypo.owl> .
+<micro>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/micro.owl> .
+
 <mondo>
     a lib:Ontology ;
     a lib:Virtual ;
     owl:imports <http://purl.obolibrary.org/obo/mondo.owl> .
+<po>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/po.owl> .
     
 <go>
     a lib:Ontology ;
@@ -57,16 +109,29 @@
     a lib:Ontology ;
     a lib:Virtual ;
     owl:imports <http://purl.obolibrary.org/obo/obi.owl> .
+<vo>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/vo.owl> .
     
 <envo>
     a lib:Ontology ;
     a lib:Virtual ;
     owl:imports <http://purl.obolibrary.org/obo/envo.owl> .
+
+<agro>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/agro.owl> .
     
 <to>
     a lib:Ontology ;
     a lib:Virtual ;
     owl:imports <http://purl.obolibrary.org/obo/to.owl> .
+<peco>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/peco.owl> .
 
 <mp>
     a lib:Ontology ;
