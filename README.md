@@ -4,16 +4,24 @@ Automatically extract common patterns from an OWL Ontology
 
 Currently this only looks for equivalence axioms between a named class
 and a class expression (aka logical definitions), where the class
-expression uses the following constructs:
+expression uses the following constructs (arbitrarily nested):
 
  - some
+ - only
  - and
+ - or
  - named classes
  - named object properties
 
 It will generate out descriptions of the pattern in YAML following [DOSDP Schema](https://github.com/INCATools/dead_simple_owl_design_patterns/)
 
 The approach is intended to be knowledge-free. Minimal underlying assumptions about the ontology. As such, the generated yaml will be more generic than hand-crafted. The intent is that it is used to bootstrap and analyze an ontology.
+
+Additionally, if your starting point is a thesaurus-like ontology (no logical defs), there is a step for generating candidates.
+
+## Draft paper
+
+ * [google doc](https://docs.google.com/document/d/177cASJWn8QnxCSu05cw3HoJiweBGJgPmpHeua3ORKh0/edit#)
 
 ## Example
 
@@ -80,25 +88,15 @@ For 2, you will need to install [sparqlprog](http://www.swi-prolog.org/pack/list
 
 ## Command Line Usage
 
-`pl2sparql -e -c conf/disorder_conf.pl -i tests/data/neoplasm.owl doall`
-
-See [conf/disorder_conf.pl](blob/master/conf/disorder_conf.pl)
-
-With docker:
-
-First check out this repo, then:
-
-```
-docker run -v $PWD:/work -w /work --rm -ti cmungall/sparqlprog swipl -p library=/home/myuser/prolog:prolog /home/myuser/bin/pl2sparql  -e -c conf/disorder_conf.pl -i tests/data/neoplasm.owl doall,halt
-```
-
-(this is admittedly awkward - working on better wrapping script)
+TODO
 
 ## Examples
 
 For purely auto-generated examples, see:
 
  * [examples/](https://github.com/cmungall/owl_patternizer/tree/master/examples)
+
+(may be moved to other repo)
 
 ## TODO
 
