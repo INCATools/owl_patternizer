@@ -1,0 +1,57 @@
+# options: [min(2),dir(sweet),trim(true),base('http://purl.obolibrary.org/obo/sweet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X hasPhenomena X
+pattern_iri: http://purl.obolibrary.org/obo/sweet/X_hasPhenomena_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [wave phenomena](http://sweetontology.net/phenWave#WavePhenomena), [mixing cloud](http://sweetontology.net/phenAtmoCloud#MixingCloud), [mixing fog](http://sweetontology.net/phenAtmoFog#MixingFog) (13 total)
+
+classes: 
+  air pollution: "http://sweetontology.net/phenEnvirImpact#AirPollution"
+  eddy: "http://sweetontology.net/phenFluidDynamics#Eddy"
+  inversion: "http://sweetontology.net/phenFluidInstability#Inversion"
+  karst: "http://sweetontology.net/phenGeolGeomorphology#Karst"
+  snow cover: "http://sweetontology.net/phenHydro#SnowCover"
+  mixing: "http://sweetontology.net/phenMixing#Mixing"
+  wave: "http://sweetontology.net/phenWave#Wave"
+  i t c z: "http://sweetontology.net/realmClimateZone#ITCZ"
+  orographic: "http://sweetontology.net/realmLandOrographic#Orographic"
+  coldest month: "http://sweetontology.net/reprTimeSeason#ColdestMonth"
+  warmest month: "http://sweetontology.net/reprTimeSeason#WarmestMonth"
+
+
+relations: 
+  hasPhenomena: "ns9:hasPhenomena"
+
+
+vars:
+  v0: "'fog' or 'lifting' or 'transport' or 'diffusivity' or 'average' or 'temperature' or 'duration' or 'landform' or 'layer'"
+  v1: "'air pollution' or 'eddy' or 'inversion' or 'karst' or 'snow cover' or 'mixing' or 'wave' or 'i t c z' or 'orographic' or 'coldest month' or 'warmest month'"
+
+name:
+  # Induced, frequency=0.7692307692307693, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that hasPhenomena a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('hasPhenomena' some %s)"
+  vars:
+    - v0
+    - v1

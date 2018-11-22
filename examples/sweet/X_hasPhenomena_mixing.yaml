@@ -1,0 +1,44 @@
+# options: [min(2),dir(sweet),trim(true),base('http://purl.obolibrary.org/obo/sweet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X hasPhenomena mixing
+pattern_iri: http://purl.obolibrary.org/obo/sweet/X_hasPhenomena_mixing
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mixing cloud](http://sweetontology.net/phenAtmoCloud#MixingCloud), [mixing fog](http://sweetontology.net/phenAtmoFog#MixingFog) (2 total)
+
+classes: 
+  cloud: "http://sweetontology.net/phenAtmoCloud#Cloud"
+  mixing: "http://sweetontology.net/phenMixing#Mixing"
+
+
+relations: 
+  hasPhenomena: "ns9:hasPhenomena"
+
+
+vars:
+  v0: "'cloud'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "mixing %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that hasPhenomena a mixing"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('hasPhenomena' some 'mixing')"
+  vars:
+    - v0

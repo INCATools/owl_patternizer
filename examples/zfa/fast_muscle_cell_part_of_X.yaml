@@ -1,0 +1,44 @@
+# options: [min(20),dir(zfa),trim(true),base('http://purl.obolibrary.org/obo/zfa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: fast muscle cell part of X
+pattern_iri: http://purl.obolibrary.org/obo/zfa/fast_muscle_cell_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [fast muscle cell somite 14](http://purl.obolibrary.org/obo/ZFA_0000877), [fast muscle cell somite 11](http://purl.obolibrary.org/obo/ZFA_0000876), [fast muscle cell somite 15](http://purl.obolibrary.org/obo/ZFA_0000784) (30 total)
+
+classes: 
+  myotome: "http://purl.obolibrary.org/obo/ZFA_0001056"
+  fast muscle cell: "http://purl.obolibrary.org/obo/ZFA_0009117"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'myotome'"
+
+name:
+  # Could not induce name, using default
+  text: "fast muscle cell part of %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any fast muscle cell that part of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'fast muscle cell' and ('part of' some %s)"
+  vars:
+    - v0

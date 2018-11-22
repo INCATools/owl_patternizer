@@ -1,0 +1,44 @@
+# options: [min(2),dir(sweet),trim(true),base('http://purl.obolibrary.org/obo/sweet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: temperature hasPhenomena X
+pattern_iri: http://purl.obolibrary.org/obo/sweet/temperature_hasPhenomena_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [coldest month temperature](http://sweetontology.net/propTemperature#ColdestMonthTemperature), [warmest month temperature](http://sweetontology.net/propTemperature#WarmestMonthTemperature) (2 total)
+
+classes: 
+  temperature: "http://sweetontology.net/propTemperature#Temperature"
+  time: "http://sweetontology.net/propTime#Time"
+
+
+relations: 
+  hasPhenomena: "ns9:hasPhenomena"
+
+
+vars:
+  v0: "'time'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s temperature"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any temperature that hasPhenomena a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'temperature' and ('hasPhenomena' some %s)"
+  vars:
+    - v0

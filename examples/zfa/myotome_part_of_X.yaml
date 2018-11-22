@@ -1,0 +1,44 @@
+# options: [min(20),dir(zfa),trim(true),base('http://purl.obolibrary.org/obo/zfa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: myotome part of X
+pattern_iri: http://purl.obolibrary.org/obo/zfa/myotome_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [myotome somite 20](http://purl.obolibrary.org/obo/ZFA_0000804), [myotome somite 30](http://purl.obolibrary.org/obo/ZFA_0001020), [myotome somite 11](http://purl.obolibrary.org/obo/ZFA_0000801) (27 total)
+
+classes: 
+  somite: "http://purl.obolibrary.org/obo/ZFA_0000155"
+  myotome: "http://purl.obolibrary.org/obo/ZFA_0001056"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'somite'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "myotome %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any myotome that part of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'myotome' and ('part of' some %s)"
+  vars:
+    - v0

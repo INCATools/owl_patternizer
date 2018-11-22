@@ -1,0 +1,44 @@
+# options: [min(20),dir(zfa),trim(true),base('http://purl.obolibrary.org/obo/zfa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: epaxial myotome region part of X
+pattern_iri: http://purl.obolibrary.org/obo/zfa/epaxial_myotome_region_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [epaxial region somite 14](http://purl.obolibrary.org/obo/ZFA_0000741), [epaxial region somite 11](http://purl.obolibrary.org/obo/ZFA_0000739), [epaxial region somite 15](http://purl.obolibrary.org/obo/ZFA_0000866) (30 total)
+
+classes: 
+  myotome: "http://purl.obolibrary.org/obo/ZFA_0001056"
+  epaxial myotome region: "http://purl.obolibrary.org/obo/ZFA_0001084"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'myotome'"
+
+name:
+  # Could not induce name, using default
+  text: "epaxial myotome region part of %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any epaxial myotome region that part of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'epaxial myotome region' and ('part of' some %s)"
+  vars:
+    - v0

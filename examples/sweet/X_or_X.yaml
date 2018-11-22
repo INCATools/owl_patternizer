@@ -1,0 +1,48 @@
+# options: [min(2),dir(sweet),trim(true),base('http://purl.obolibrary.org/obo/sweet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X-or-X
+pattern_iri: http://purl.obolibrary.org/obo/sweet/X_or_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [nucleon](http://sweetontology.net/matrParticle#Nucleon), [sorption](http://sweetontology.net/procChemical#Sorption) (2 total)
+
+classes: 
+  neutron: "http://sweetontology.net/matrParticle#Neutron"
+  proton: "http://sweetontology.net/matrParticle#Proton"
+  absorption: "http://sweetontology.net/procChemical#Absorption"
+  adsorption: "http://sweetontology.net/procChemical#Adsorption"
+
+
+relations: []
+
+vars:
+  v0: "'neutron' or 'proton' or 'absorption' or 'adsorption'"
+  v1: "'neutron' or 'proton' or 'absorption' or 'adsorption'"
+
+name:
+  # Could not induce name, using default
+  text: "%s/%s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s or %s"
+  vars:
+    - v0
+    - v1

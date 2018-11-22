@@ -11,7 +11,7 @@
            % TODO: move
            save_axiom/1,
            save_axiom/2,
-           
+           assert_inferred_equiv_axioms/0,           
            assert_inferred_equiv_axioms/2]).
 
 :- use_module(library(owl_patternizer)).
@@ -211,7 +211,10 @@ save_axiom_with_anns(Axiom,T,G,Anns) :-
         rdf_assert(AxiomNode,owl:annotatedTarget,Ox,G),
         rdf_assert(AxiomNode,rdf:type,owl:'Axiom',G),
         forall(member(annotation(AP,V),Anns),
-               rdf_assert(AxiomNode,AP,V,G)).
+               rdf_assert(AxiomNode,AP,V,G)),
+        !.
+save_axiom_with_anns(Axiom,T,G,Anns) :-
+        throw(error(could_not_save(Axiom,T,G,Anns))).
 
 
 
@@ -246,9 +249,13 @@ save_expression(Node,Node,_) :-
         atomic(Node),
         !.
 
-        
+
+assert_inferred_equiv_axioms :-
+        assert_inferred_equiv_axioms(_,gen).
+
 assert_inferred_equiv_axioms(C,G) :-
-        forall((best_parse_class(C, _P, Ms, Score),
+        forall((owl:class(C),
+                best_parse_class(C, _P, Ms, Score),
                 matches_to_class_expression(Ms, Expr),
                 rdf_canonical_literal(Score,ScoreLiteral)),
                save_axiom_with_anns(equivalentTo(C,Expr),G,

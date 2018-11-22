@@ -1,0 +1,47 @@
+# options: [min(8),dir(obi),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has role X
+pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_role_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [reagent](http://purl.obolibrary.org/obo/OBI_0001879), [specimen](http://purl.obolibrary.org/obo/OBI_0100051), [cloning vector](http://purl.obolibrary.org/obo/OBI_0000737) (18 total)
+
+classes: 
+  material entity: "BFO:0000040"
+
+
+relations: 
+  has role: "RO:0000087"
+
+
+vars:
+  v0: "'material entity'"
+  v1: "'role'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has role %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has role a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('has role' some %s)"
+  vars:
+    - v0
+    - v1

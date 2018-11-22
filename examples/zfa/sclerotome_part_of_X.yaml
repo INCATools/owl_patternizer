@@ -1,0 +1,44 @@
+# options: [min(20),dir(zfa),trim(true),base('http://purl.obolibrary.org/obo/zfa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: sclerotome part of X
+pattern_iri: http://purl.obolibrary.org/obo/zfa/sclerotome_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [sclerotome somite 20](http://purl.obolibrary.org/obo/ZFA_0000956), [sclerotome somite 30](http://purl.obolibrary.org/obo/ZFA_0000836), [sclerotome somite 11](http://purl.obolibrary.org/obo/ZFA_0000829) (27 total)
+
+classes: 
+  somite: "http://purl.obolibrary.org/obo/ZFA_0000155"
+  sclerotome: "http://purl.obolibrary.org/obo/ZFA_0001080"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'somite'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "sclerotome %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any sclerotome that part of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'sclerotome' and ('part of' some %s)"
+  vars:
+    - v0

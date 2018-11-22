@@ -1,0 +1,45 @@
+# options: [min(2),dir(sweet),trim(true),base('http://purl.obolibrary.org/obo/sweet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X hasRealm land
+pattern_iri: http://purl.obolibrary.org/obo/sweet/X_hasRealm_land
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [land management](http://sweetontology.net/humanEnvirConservation#LandManagement), [land ice](http://sweetontology.net/realmCryo#LandIce) (2 total)
+
+classes: 
+  management: "http://sweetontology.net/humanCommerce#Management"
+  ice: "http://sweetontology.net/matrWater#Ice"
+  land: "http://sweetontology.net/realm#Land"
+
+
+relations: 
+  hasRealm: "ns9:hasRealm"
+
+
+vars:
+  v0: "'management' or 'ice'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "land %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that hasRealm a land"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('hasRealm' some 'land')"
+  vars:
+    - v0

@@ -1,0 +1,44 @@
+# options: [min(2),dir(sweet),trim(true),base('http://purl.obolibrary.org/obo/sweet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: environmental impact hasImpactOn X
+pattern_iri: http://purl.obolibrary.org/obo/sweet/environmental_impact_hasImpactOn_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [land environmental impact](http://sweetontology.net/phenEnvirImpact#LandEnvironmentalImpact), [ocean environmental impact](http://sweetontology.net/phenEnvirImpact#OceanEnvironmentalImpact) (2 total)
+
+classes: 
+  environmental impact: "http://sweetontology.net/phenEnvirImpact#EnvironmentalImpact"
+  planetary realm: "http://sweetontology.net/realm#PlanetaryRealm"
+
+
+relations: 
+  hasImpactOn: "ns6:hasImpactOn"
+
+
+vars:
+  v0: "'planetary realm'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s environmental impact"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any environmental impact that hasImpactOn a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'environmental impact' and ('hasImpactOn' some %s)"
+  vars:
+    - v0
