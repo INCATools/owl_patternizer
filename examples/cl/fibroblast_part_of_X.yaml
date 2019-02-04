@@ -3,7 +3,7 @@ pattern_name: fibroblast part of X
 pattern_iri: http://purl.obolibrary.org/obo/cl/fibroblast_part_of_X
 
 description: >-
-  This is auto-generated. Add your description here
+  A fibroblast that is derived from an anatomical entity.
 
   Examples: [embryonic fibroblast](http://purl.obolibrary.org/obo/CL_2000042), [fibroblast of cardiac tissue](http://purl.obolibrary.org/obo/CL_0002548), [ovarian fibroblast](http://purl.obolibrary.org/obo/CL_2000063) (26 total)
 
