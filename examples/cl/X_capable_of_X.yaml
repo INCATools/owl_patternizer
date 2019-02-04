@@ -3,7 +3,7 @@ pattern_name: X capable of X
 pattern_iri: http://purl.obolibrary.org/obo/cl/X_capable_of_X
 
 description: >-
-  This is auto-generated. Add your description here
+  A cell that performs a biological process, like phagocytosis.
 
   Examples: [phagocyte](http://purl.obolibrary.org/obo/CL_0000234), [nitrogen fixing cell](http://purl.obolibrary.org/obo/CL_0000725), [oxygen accumulating cell](http://purl.obolibrary.org/obo/CL_0000329) (104 total)
 
