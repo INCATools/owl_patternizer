@@ -3,7 +3,7 @@ pattern_name: X part of X
 pattern_iri: http://purl.obolibrary.org/obo/cl/X_part_of_X
 
 description: >-
-  This is auto-generated. Add your description here
+  A cell that is part of an anatomical entity.
 
   Examples: [neural cell](http://purl.obolibrary.org/obo/CL_0002319), [compound eye retinal cell](http://purl.obolibrary.org/obo/CL_0009001), [pituitary gland cell](http://purl.obolibrary.org/obo/CL_2000004) (654 total)
 
