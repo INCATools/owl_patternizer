@@ -3,10 +3,9 @@ pattern_name: X X capable of X
 pattern_iri: http://purl.obolibrary.org/obo/cl/X_X_capable_of_X
 
 description: >-
-  This is auto-generated. Add your description here
+  A cell type that is capable of detecting a stimulus that is involved in sensory pereception (eg a receptor cell).
 
-  Examples: [single fate stem cell](http://purl.obolibrary.org/obo/CL_0000035), [male gamete](http://purl.obolibrary.org/obo/CL_0000408), [secondary spermatocyte](http://purl.obolibrary.org/obo/CL_0000657) (47 total)
-
+  Examples: [neuronal receptor cell](http://purl.obolibrary.org/obo/CL_0000006)
 classes: 
   detection of stimulus involved in sensory perception: "GO:0050906"
 
