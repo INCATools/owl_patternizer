@@ -3,7 +3,7 @@ pattern_name: smooth muscle cell part of X
 pattern_iri: http://purl.obolibrary.org/obo/cl/smooth_muscle_cell_part_of_X
 
 description: >-
-  This is auto-generated. Add your description here
+  A smooth muscle cell that is part of an anatomical entity, like the uterus.
 
   Examples: [enteric smooth muscle cell](http://purl.obolibrary.org/obo/CL_0002504), [uterine smooth muscle cell](http://purl.obolibrary.org/obo/CL_0002601), [smooth muscle cell of the esophagus](http://purl.obolibrary.org/obo/CL_0002599) (22 total)
 
