@@ -3,7 +3,7 @@ pattern_name: glandular epithelial cell part of X
 pattern_iri: http://purl.obolibrary.org/obo/cl/glandular_epithelial_cell_part_of_X
 
 description: >-
-  This is auto-generated. Add your description here
+  A glandular epipthelial cell that is part of an anatomical entity.
 
   Examples: [uterine cervix glandular cell](http://purl.obolibrary.org/obo/CL_1001587), [pancreas exocrine glandular cell](http://purl.obolibrary.org/obo/CL_1001599), [glandular cell of the large intestine](http://purl.obolibrary.org/obo/CL_0002658) (20 total)
 
