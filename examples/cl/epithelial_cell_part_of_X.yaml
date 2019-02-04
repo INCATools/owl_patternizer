@@ -3,7 +3,7 @@ pattern_name: epithelial cell part of X
 pattern_iri: http://purl.obolibrary.org/obo/cl/epithelial_cell_part_of_X
 
 description: >-
-  This is auto-generated. Add your description here
+  An epithelial cell that is part of an anatomical entity. 
 
   Examples: [epithelial cell of cervix](http://purl.obolibrary.org/obo/CL_0002535), [epithelial cell of exocrine pancreas](http://purl.obolibrary.org/obo/CL_1001433), [epithelial cell of urethra](http://purl.obolibrary.org/obo/CL_1000296) (49 total)
 
