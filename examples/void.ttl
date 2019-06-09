@@ -91,10 +91,6 @@
     a lib:Virtual ;
     owl:imports <http://purl.obolibrary.org/obo/micro.owl> .
 
-<mondo>
-    a lib:Ontology ;
-    a lib:Virtual ;
-    owl:imports <http://purl.obolibrary.org/obo/mondo.owl> .
 <po>
     a lib:Ontology ;
     a lib:Virtual ;
@@ -115,6 +111,19 @@
     owl:imports <http://purl.obolibrary.org/obo/vo.owl> .
     
 <envo>
+    a void:Dataset ;
+    void:dataDump <./envo.owl> ;
+    lib:source <http://purl.obolibrary.org/obo/envo.owl> .
+
+<gemet>
+    a void:Dataset ;
+    void:dataDump <./gemet-all.ttl> .
+
+<agrovoc>
+    a void:Dataset ;
+    void:dataDump <../tests/data/agrovoc_owl.ttl> .
+    
+<envoX>
     a lib:Ontology ;
     a lib:Virtual ;
     owl:imports <http://purl.obolibrary.org/obo/envo.owl> .
@@ -123,6 +132,7 @@
     a lib:Ontology ;
     a lib:Virtual ;
     owl:imports <http://purl.obolibrary.org/obo/agro.owl> .
+
     
 <to>
     a lib:Ontology ;

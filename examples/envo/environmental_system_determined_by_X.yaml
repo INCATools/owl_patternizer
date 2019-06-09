@@ -1,15 +1,15 @@
-# options: [min(10),dir(envo),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: environmental system determined by X
 pattern_iri: http://purl.obolibrary.org/obo/envo/environmental_system_determined_by_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [soil environment](http://purl.obolibrary.org/obo/ENVO_01001044), [fecal environment](http://purl.obolibrary.org/obo/ENVO_01001029), [aquatic environment](http://purl.obolibrary.org/obo/ENVO_01000317) (16 total)
+  Examples: [environment associated with an animal part or small animal](http://purl.obolibrary.org/obo/ENVO_01001055), [soil environment](http://purl.obolibrary.org/obo/ENVO_01001044), [marine environment](http://purl.obolibrary.org/obo/ENVO_01000320) (31 total)
 
 classes: 
   material entity: "BFO:0000040"
-  environmental system: "http://purl.obolibrary.org/obo/ENVO_01000254"
+  environmental system: "ENVO:01000254"
 
 
 relations: 
@@ -20,13 +20,13 @@ vars:
   v0: "'material entity'"
 
 name:
-  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.5161290322580645, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s environment"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.125, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.12903225806451613, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "An environmental system which has its properties and dynamics determined by %s."
   vars:
     - v0
@@ -35,7 +35,12 @@ annotationProperties:
   exact_synonym: "oio:hasExactSynonym"
   related_synonym: "oio:hasRelatedSynonym"
 
-# could not infer annotations
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s environment"
+    vars:
+      - v0
 
 
 equivalentTo:

@@ -1,11 +1,11 @@
-# options: [min(10),dir(envo),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X adjacent to X
 pattern_iri: http://purl.obolibrary.org/obo/envo/X_adjacent_to_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [sea cliff](http://purl.obolibrary.org/obo/ENVO_00000088), [sea beach](http://purl.obolibrary.org/obo/ENVO_00000092), [lacustrine beach](http://purl.obolibrary.org/obo/ENVO_00000093) (11 total)
+  Examples: [landslide lake](http://purl.obolibrary.org/obo/ENVO_01001106), [sea cliff](http://purl.obolibrary.org/obo/ENVO_00000088), [sea beach](http://purl.obolibrary.org/obo/ENVO_00000092) (24 total)
 
 classes: 
   material entity: "BFO:0000040"
@@ -16,19 +16,19 @@ relations:
 
 
 vars:
-  v0: "'fiat object part'"
-  v1: "'material entity'"
+  v0: "'material entity'"
+  v1: "'independent continuant'"
 
 name:
-  # Induced, frequency=0.36363636363636365, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.4583333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
     - v0
 
 def:
-  # Could not induce def, using default
-  text: "Any %s that adjacent to a %s"
+  # Induced, frequency=0.08333333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The channel %s of a %s; the physical confine of the normal water flow."
   vars:
     - v0
     - v1
@@ -37,7 +37,13 @@ annotationProperties:
   exact_synonym: "oio:hasExactSynonym"
   related_synonym: "oio:hasRelatedSynonym"
 
-# could not infer annotations
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
 
 
 equivalentTo:

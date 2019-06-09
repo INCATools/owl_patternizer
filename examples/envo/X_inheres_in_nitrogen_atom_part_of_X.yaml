@@ -1,4 +1,4 @@
-# options: [min(10),dir(envo),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X inheres in nitrogen atom part of X
 pattern_iri: http://purl.obolibrary.org/obo/envo/X_inheres_in_nitrogen_atom_part_of_X
 
@@ -8,7 +8,7 @@ description: >-
   Examples: [concentration of nitrogen atom in soil](http://purl.obolibrary.org/obo/ENVO_09000017), [concentration of nitrogen atom in water](http://purl.obolibrary.org/obo/ENVO_09000018), [concentration of nitrogen atom in environmental material](http://purl.obolibrary.org/obo/ENVO_09000016) (12 total)
 
 classes: 
-  nitrogen atom: "http://purl.obolibrary.org/obo/CHEBI_25555"
+  nitrogen atom: "ns2:CHEBI_25555"
   quality: "PATO:0000001"
 
 

@@ -1,0 +1,51 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: environmental impact related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/environmental_impact_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [environmental impact of agriculture](http://www.eionet.europa.eu/gemet/concept/2831), [environmental impact of energy](http://www.eionet.europa.eu/gemet/concept/2833), [environmental impact of fishing](http://www.eionet.europa.eu/gemet/concept/2834) (9 total)
+
+classes: 
+  agriculture: "http://www.eionet.europa.eu/gemet/concept/232"
+  energy: "http://www.eionet.europa.eu/gemet/concept/2712"
+  environmental impact: "http://www.eionet.europa.eu/gemet/concept/2829"
+  fishing: "http://www.eionet.europa.eu/gemet/concept/3256"
+  forestry: "http://www.eionet.europa.eu/gemet/concept/3439"
+  household: "http://www.eionet.europa.eu/gemet/concept/4015"
+  industry: "http://www.eionet.europa.eu/gemet/concept/4279"
+  aquaculture: "http://www.eionet.europa.eu/gemet/concept/501"
+  tourism: "http://www.eionet.europa.eu/gemet/concept/8522"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'agriculture' or 'energy' or 'fishing' or 'forestry' or 'household' or 'industry' or 'aquaculture' or 'tourism'"
+
+name:
+  # Induced, frequency=0.8888888888888888, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "environmental impact of %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any environmental impact that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'environmental impact' and ('related' some %s)"
+  vars:
+    - v0

@@ -1,26 +1,26 @@
-# options: [min(10),dir(envo),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: enriched soil has_increased_levels_of X
 pattern_iri: http://purl.obolibrary.org/obo/envo/enriched_soil_has_increased_levels_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [sarcosine enriched soil](http://purl.obolibrary.org/obo/ENVO_00003083), [urea enriched soil](http://purl.obolibrary.org/obo/ENVO_00005753), [pantothenate enriched soil](http://purl.obolibrary.org/obo/ENVO_00003088) (13 total)
+  Examples: [sarcosine enriched soil](http://purl.obolibrary.org/obo/ENVO_00003083), [urea enriched soil](http://purl.obolibrary.org/obo/ENVO_00005753), [ethanol enriched soil](http://purl.obolibrary.org/obo/ENVO_00003086) (15 total)
 
 classes: 
-  organic molecular entity: "http://purl.obolibrary.org/obo/CHEBI_50860"
-  enriched soil: "http://purl.obolibrary.org/obo/ENVO_00003082"
+  organic molecular entity: "ns2:CHEBI_50860"
+  enriched soil: "ENVO:00003082"
 
 
 relations: 
-  has_increased_levels_of: "http://purl.obolibrary.org/obo/envo#has_increased_levels_of"
+  has_increased_levels_of: "ns5:has_increased_levels_of"
 
 
 vars:
   v0: "'organic molecular entity'"
 
 name:
-  # Induced, frequency=0.9230769230769231, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.9333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s enriched soil"
   vars:
     - v0

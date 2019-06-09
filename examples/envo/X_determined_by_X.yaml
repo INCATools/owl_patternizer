@@ -1,14 +1,14 @@
-# options: [min(10),dir(envo),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X determined by X
 pattern_iri: http://purl.obolibrary.org/obo/envo/X_determined_by_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [soil environment](http://purl.obolibrary.org/obo/ENVO_01001044), [fecal environment](http://purl.obolibrary.org/obo/ENVO_01001029), [aquatic environment](http://purl.obolibrary.org/obo/ENVO_01000317) (45 total)
+  Examples: [environment associated with an animal part or small animal](http://purl.obolibrary.org/obo/ENVO_01001055), [soil environment](http://purl.obolibrary.org/obo/ENVO_01001044), [marine environment](http://purl.obolibrary.org/obo/ENVO_01000320) (62 total)
 
 classes: 
-  environmental system: "http://purl.obolibrary.org/obo/ENVO_01000254"
+  system: "RO:0002577"
 
 
 relations: 
@@ -16,18 +16,18 @@ relations:
 
 
 vars:
-  v0: "'environmental system'"
+  v0: "'system'"
   v1: "'material entity'"
 
 name:
-  # Induced, frequency=0.08888888888888889, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.25806451612903225, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
     - v0
 
 def:
-  # Induced, frequency=0.044444444444444446, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.06451612903225806, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "An %s which has its properties and dynamics determined by %s."
   vars:
     - v0

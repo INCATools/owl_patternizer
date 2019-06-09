@@ -1,4 +1,4 @@
-# options: [min(10),dir(envo),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X inheres in X part of soil
 pattern_iri: http://purl.obolibrary.org/obo/envo/X_inheres_in_X_part_of_soil
 
@@ -8,7 +8,7 @@ description: >-
   Examples: [concentration of nitrate in soil](http://purl.obolibrary.org/obo/ENVO_09200007), [concentration of nitrogen atom in soil](http://purl.obolibrary.org/obo/ENVO_09000017), [concentration of carbon atom in soil](http://purl.obolibrary.org/obo/ENVO_09000008) (10 total)
 
 classes: 
-  soil: "http://purl.obolibrary.org/obo/ENVO_00001998"
+  soil: "ENVO:00001998"
   quality: "PATO:0000001"
 
 

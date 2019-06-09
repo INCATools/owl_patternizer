@@ -1,11 +1,11 @@
-# options: [min(10),dir(envo),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has quality X
 pattern_iri: http://purl.obolibrary.org/obo/envo/X_has_quality_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [alkaline salt lake](http://purl.obolibrary.org/obo/ENVO_00002121), [acid hot spring](http://purl.obolibrary.org/obo/ENVO_00002120), [alkaline hot spring](http://purl.obolibrary.org/obo/ENVO_00002119) (39 total)
+  Examples: [dioxygen dissolved in marine water](http://purl.obolibrary.org/obo/ENVO_01001495), [alkaline salt lake](http://purl.obolibrary.org/obo/ENVO_00002121), [acid hot spring](http://purl.obolibrary.org/obo/ENVO_00002120) (114 total)
 
 classes: 
   quality: "PATO:0000001"
@@ -20,15 +20,15 @@ vars:
   v1: "'quality'"
 
 name:
-  # Induced, frequency=0.5384615384615384, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.6491228070175439, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
     - v0
 
 def:
-  # Induced, frequency=0.05128205128205128, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "A %s whose water has an %s pH."
+  # Induced, frequency=0.12280701754385964, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s which is subject to %s climate patterns."
   vars:
     - v0
     - v1
@@ -37,13 +37,7 @@ annotationProperties:
   exact_synonym: "oio:hasExactSynonym"
   related_synonym: "oio:hasRelatedSynonym"
 
-annotations:
-  - annotationProperty: exact_synonym
-    # Induced p=exact_synonym 
-    text: "%s %s"
-    vars:
-      - v1
-      - v0
+# could not infer annotations
 
 
 equivalentTo:

@@ -1,4 +1,4 @@
-# options: [min(10),dir(envo),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has part X composed primarily of X
 pattern_iri: http://purl.obolibrary.org/obo/envo/X_has_part_X_composed_primarily_of_X
 
@@ -8,7 +8,7 @@ description: >-
   Examples: [lake with an anoxic hypolimnion](http://purl.obolibrary.org/obo/ENVO_01001073), [lake with an oxic hypolimnion](http://purl.obolibrary.org/obo/ENVO_01001077), [lake with a hypoxic hypolimnion](http://purl.obolibrary.org/obo/ENVO_01001074) (12 total)
 
 classes: 
-  layer: "http://purl.obolibrary.org/obo/ENVO_01000281"
+  layer: "ENVO:01000281"
 
 
 relations: 

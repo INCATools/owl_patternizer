@@ -1,0 +1,59 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: related X related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/related_X_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [building planning](http://www.eionet.europa.eu/gemet/concept/1046), [cultivation method](http://www.eionet.europa.eu/gemet/concept/1902), [air quality management](http://www.eionet.europa.eu/gemet/concept/274) (11 total)
+
+classes: 
+  building: "http://www.eionet.europa.eu/gemet/concept/1029"
+  method: "http://www.eionet.europa.eu/gemet/concept/13088"
+  cultivation: "http://www.eionet.europa.eu/gemet/concept/1899"
+  air quality: "http://www.eionet.europa.eu/gemet/concept/270"
+  analysis: "http://www.eionet.europa.eu/gemet/concept/397"
+  landscape: "http://www.eionet.europa.eu/gemet/concept/4648"
+  land use: "http://www.eionet.europa.eu/gemet/concept/4678"
+  management: "http://www.eionet.europa.eu/gemet/concept/4985"
+  mountain: "http://www.eionet.europa.eu/gemet/concept/5401"
+  planning: "http://www.eionet.europa.eu/gemet/concept/6287"
+  resource: "http://www.eionet.europa.eu/gemet/concept/7168"
+  risk: "http://www.eionet.europa.eu/gemet/concept/7233"
+  transportation: "http://www.eionet.europa.eu/gemet/concept/8641"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'building' or 'method' or 'cultivation' or 'air quality' or 'analysis' or 'landscape' or 'land use' or 'management' or 'mountain' or 'planning' or 'resource' or 'risk' or 'transportation'"
+  v1: "'building' or 'method' or 'cultivation' or 'air quality' or 'analysis' or 'landscape' or 'land use' or 'management' or 'mountain' or 'planning' or 'resource' or 'risk' or 'transportation'"
+
+name:
+  # Induced, frequency=0.7272727272727273, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any related a %s that related a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('related' some %s) and ('related' some %s)"
+  vars:
+    - v0
+    - v1
