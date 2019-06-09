@@ -14,7 +14,8 @@ check:
 install:
 clean:
 
-test:
+test: coretest t-def t-envo_mkdef
+coretest: t-def t-envo_mkdef
 	$(SWIPL) -l tests/tests.pl -g run_tests,halt
 
 coverage:
@@ -23,6 +24,12 @@ coverage:
 t-%:
 	$(SWIPL) -l tests/$*_test.pl -g run_tests,halt
 
+# E.g. do-envo
+do-%:
+	swipl -l examples/conf.pl -g "do_for($*),halt"
+
+doall:
+	swipl -l examples/conf.pl -g do_all,halt
 
 # --------------------
 # Docker

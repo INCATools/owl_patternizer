@@ -7,7 +7,8 @@
 */
 
 :- module(owl_patternizer,
-          [ground_expression/1,
+          [class_equiv_expression/2,
+           ground_expression/1,
            generate_patterns/1,
            induce_annotation_pattern/4,
            induce_annotation_pattern_with_freq/5,
@@ -20,24 +21,43 @@
 
 :- use_module(library(sparqlprog/owl_util)).
 :- use_module(library(sparqlprog/emulate_builtins)).
+:- use_module(library(semweb/rdf_http_plugin)).
 :- use_module(library(semweb/rdf11)).
 :- use_module(library(semweb/rdfs)).
 :- use_module(library(tabling)).
 
 % ========================================
+% UTIL
+% ========================================
+solutions(T,G,L) :- setof(T,G,L),!.
+solutions(_,_,[]).
+
+% ========================================
 % MAP RDF TO PROLOG TERMS
 % ========================================
 
-% note: this could be moved to more general-purpose library
+%! ground_expression(?Expr) is nondet.
 %
-% currently only a simple EL-subset is supported, but this
-% would be trivial to extend
+%    unifies X with a class expression used in
+%    an equivalence axiom.
 %
-% type:
-% Expression = NamedObject | and(ExpressionList) | some(Property, Expression)
+%    the expression is ground, i.e. no variables
+%
+:- table ground_expression/1.
+ground_expression(X) :-
+        class_equiv_expression(_, X).
+
+%! class_equiv_expression(?Cls:iri, ?Expr:classExpr) is nondet.
+%
+%    note: this could be moved to more general-purpose library
+%
+%    currently only a simple EL-subset is supported, but this would be
+%    trivial to extend
+%
+%    type:
+%     Expression = NamedObject | and(ExpressionList) | some(Property, Expression)
 %
 % e.g. and(foo,some(part_of,bar))
-
 :- table class_equiv_expression/2.
 class_equiv_expression(C,X) :-
         rdf(C,owl:equivalentClass,Node,G),
@@ -46,10 +66,7 @@ class_equiv_expression(C,X) :-
         rdf_is_bnode(Node),
         node_expression(Node,X).
 
-:- table ground_expression/1.
-ground_expression(X) :-
-        class_equiv_expression(_, X).
-
+% maps a blank node to a class expression
 node_expression(Node,Node) :-
         \+ rdf_is_bnode(Node).
 
@@ -93,9 +110,9 @@ rdflist_member_expression(L,X) :-
 %
 %    given any ground or partially ground class expression, find a
 %    generalization in which any atomic object (currently class or
-%    property) is replaced by a prolog var
+%    property) is replaced by a prolog variable
 %
-%    The core data structure here is the same as above, but
+%    The core data structure here is the same as class_equiv_expression/2, but
 %    allows for vars
 % 
 %    E.g 
@@ -150,6 +167,12 @@ generalize_expression(X, _GenVar, _T) :- atomic(X).
 %
 %   generate candidate patterns and write these to disk.
 %
+%   steps:
+%     1. load import closure
+%     2. generate all ground expressions via ground_expression/2
+%     3. for each expression, findall all generalizations via ground_expression/2
+%     4. generate a pattern for valid generalizations using generate_patterns_from_seed/3
+%
 %   TODO: generate a structure and write later rather than coupling
 %   generation and I/O
 generate_patterns(Opts) :-
@@ -162,17 +185,33 @@ generate_patterns(Opts) :-
         load_import_closure(IsLoadIC),
         % start with all ground expressions;
         % these will be generalized one 'hop'
+        debug(patternizier,'Fetching ground expressions',[]),
         setof(GrX,ground_expression(GrX),GrXs),
+        debug(patternizier,'Ground expressions: ~w',[GrXs]),
         member(GrX,GrXs),
         generalize_expression(GrX,X),
         % start with one level of generatization
+        % NOTE: this next step fails, we use a failure-driven-loop
         generate_patterns_from_seed(X,1,GrXs,Opts).
 generate_patterns(_) :-
         debug(patternizer,'Done!',[]).
 
-:- dynamic seen/1.
-% generate and write patterns, start from seed pattern X
-% recursively generalize and write.
+
+%! generate_patterns_from_seed(+NonGroundExpression, +ParentCount, +AllGroundExpressions:list, +Opts:list) is fail
+% 
+%     generate and write patterns, start from seed pattern X
+%     recursively generalize and write.
+% 
+%     note this always fails, designed to be used in a failure-driven loop
+% 
+%     Steps:
+%      1. test if Expr is not yet been processed, mark as processed then
+%        2. test if Expr should be excluded, OR if there are not enough matches, OR not more than parent
+%          if not, then:
+%            3. write_candidate/3
+%        4. generalize Expr further to Expr'
+%        5. recurse on Expr'
+% 
 generate_patterns_from_seed(X,ParentCount,GrXs,Opts) :-
         copy_term(X,X_Unground),
         \+ has_been_seen(X),
@@ -190,13 +229,31 @@ generate_patterns_from_seed(X,ParentCount,GrXs,Opts) :-
             write_candidate(X, Matches, Opts)
         ;   debug(patternizer,'Failed; skipping',[])),
         generalize_expression(X_Unground,X2),
-        debug(patternizer,'  Generalized further ~k ====> ~k',[X_Unground, X2]),
+        debug(patternizer,'  Generalizing further ~k ====> ~k',[X_Unground, X2]),
         generate_patterns_from_seed(X2,Num,GrXs,Opts),
         fail.
+
+% true if expression X has been encountered.
+% note X may contain prolog variables so we use numbervars/3 to
+% make a canonical form
+:- dynamic seen/1.
+has_been_seen(X) :-
+        numbervars(X,0,_),
+        seen(X).
+mark_seen(X) :-
+        numbervars(X,0,_),
+        assert(seen(X)).
 
 %! exclude(+Pattern, +Opts:list) is semidet
 %
 %   true if Pattern should be excluded 
+%
+%   Options:
+%     - max_class_signature(Max):    exclude if |signature(Expr)} > Max
+%     - generalize_properties(Bool): exclude if this is false and Expr has a var in property position
+%     - exclude_prefixes(Prefixes):  exclude if C in signature(Expr) and prefix(C) in Prefixes
+%     - trim(Bool):                  exclude if this is true and Expr is non_trim/1
+%     - max_and_cardinality(Max):    exclude if number of operands in any AND or OR exceeds Max
 %
 exclude(X,Opts) :-
         expr_class_signature(X,CSig),
@@ -232,7 +289,7 @@ non_trim(and(L)) :- member(X,L), non_trim(X). % descend
 non_trim(some(P,V)) :- is_nvar(P),is_nvar(V). % SVF must have one instantiated position
 non_trim(some(_,X)) :- non_trim(X).
 
-% test if pattern contains a variable in property position
+% recursively test if pattern contains a variable in property position
 has_var_prop(and(L)) :- member(X,L), has_var_prop(X). % descend
 has_var_prop(or(L))  :- member(X,L), has_var_prop(X). % descend
 has_var_prop(not(X))  :- has_var_prop(X). % descend
@@ -241,7 +298,8 @@ has_var_prop(some(_,X)) :- has_var_prop(X).
 
 is_nvar('$VAR'(_)).
 
-
+% recursively test expression to check if too many operands in conjunctive/disjunctive expression
+% note: this applies to both AND and OR expressions
 exceeds_max_and_cardinality(and(L),Limit) :- length(L,Len), Len > Limit, !.
 exceeds_max_and_cardinality(and(L),Limit) :- member(X,L), exceeds_max_and_cardinality(X,Limit).
 exceeds_max_and_cardinality(or(L),Limit) :- length(L,Len), Len > Limit, !.
@@ -249,22 +307,8 @@ exceeds_max_and_cardinality(or(L),Limit) :- member(X,L), exceeds_max_and_cardina
 exceeds_max_and_cardinality(some(_,X),Limit) :- exceeds_max_and_cardinality(X,Limit).
 exceeds_max_and_cardinality(not(X),Limit) :- exceeds_max_and_cardinality(X,Limit).
 
-has_been_seen(X) :-
-        numbervars(X,0,_),
-        seen(X).
-mark_seen(X) :-
-        numbervars(X,0,_),
-        assert(seen(X)).
 
-setup_write(PId, Opts) :-
-        option(dir(Dir),Opts),
-        !,
-        make_directory_path(Dir),
-        concat_atom([Dir,/,PId,'.yaml'], Path),
-        tell(Path).
-setup_write(_, _).
-
-%! write_candidate(+X, +Matches:list, +Opts:list) is det
+%! write_candidate(+X:UngroundClassExpression, +Matches:list, +Opts:list) is det
 %
 %    writes a candidate pattern expression X to disk
 %
@@ -273,9 +317,21 @@ setup_write(_, _).
 %    the pattern expression X is any class expression as defined above, but allowing for
 %    variables are represented as ground prolog terms of the form '$VAR'(N)
 %
+%    Steps:
+%     1. generate an ID/Name for X, e.g. "X_part_of_X"
+%     2. calculate signatures of X (classes, props) and write to YAML
+%     3. infer ranges using infer_pattern_var_range/4
+%     4. Induce lexical pattern for name, syns, text def, and write stanzas
+%     5. write equivalent_to stanza
+%
+%    Side effects:
+%     -  X is partially unified using numbervars/3
+%     -  writes a YAML file to disk
+%
+%
 %    TODO: seperate out pattern structure generation from I/O
 write_candidate(X, Matches, Opts) :-
-        debug(patternizer,'Writing ~w',[X]),
+        debug(patternizer,'Writing ~q',[X]),
         % translate prolog vars into terms of the form $VAR(N)
         numbervars(X,0,_),
         
@@ -284,11 +340,11 @@ write_candidate(X, Matches, Opts) :-
         make_id(PName, PId),
         debug(patternizer,'ID = ~w',[PId]),
         option(base(Base),Opts,'http://purl.obolibrary.org/obo/foo'),
-        concat_atom([Base,PId],/,PUrl),
+        concat_atom([Base,PId],/,Purl),
 
         % setup
         length(Matches,Num),
-        extract_examples(Matches, Examples),
+        extract_examples(Matches, Examples, Opts),
 
         % get signatures
         expr_class_signature(X,CSig),
@@ -320,7 +376,7 @@ write_candidate(X, Matches, Opts) :-
         % hacky write to YAML
         format('# options: ~q~n',[Opts]),
         format('pattern_name: ~w~n',[PName]),
-        format('pattern_iri: ~w~n',[PUrl]),
+        format('pattern_iri: ~w~n',[Purl]),
         nl,
         format('description: >-~n'),
         format('  This is auto-generated. Add your description here~n~n'),
@@ -346,6 +402,25 @@ write_candidate(X, Matches, Opts) :-
         show_vars('  ', EquivVars, VSet),
         told.
 
+% prepare a file to write pattern PId in
+% E.g. target/X_part_of_X.yaml
+% Uses tell/1
+% Should probably be re-written to use streams...
+setup_write(PId, Opts) :-
+        option(dir(Dir),Opts),
+        !,
+        make_directory_path(Dir),
+        concat_atom([Dir,/,PId,'.yaml'], Path),
+        tell(Path).
+setup_write(_, _).
+
+
+% ensures a name N is safe to use as an ID/filename using safe_char/2
+make_id(N,Id) :-
+        atom_chars(N,Chars),
+        maplist([In,Out]>>safe_char(In,Out),Chars,Chars2),
+        atom_chars(Id,Chars2).
+
 % TODO: escape quotes
 uris_as_disjunction_expr(Cs, A) :-
         findall(CA,
@@ -358,12 +433,24 @@ uris_as_disjunction_expr(Cs, A) :-
 
 %! show_induced_textobj(+Tag, +X, +Matches:list, +AProp, +VSet:list) is det.
 %
-%   writes text objects
+%   writes text objects as YAML
 %
 %   in dosdp, text objects describe how
 %   literal text is to be generated for template values
 %
 %   here we induce from lexical patterns in existing ontology
+%
+%   For example:
+%     if Tag=name
+%     and X is [G and part_of some D]
+%     and the majority of matching existing classes have a label 'G of D'
+%     then write:
+%         text: "% of %"
+%           - var(G)
+%           - var(D)
+%   
+%   For cases where there are multiple potential generative patterns, we select the most frequent
+%
 show_induced_textobj(Tag, X, Matches, AProp, VSet) :-
         format('~w:~n', [Tag]),
         rdf_global_id(AProp, APropURI),
@@ -433,23 +520,21 @@ show_obj_list(Indent, CSet) :-
                format('~w~w: "~w"~n',[Indent,N,Id])),
         nl.
 
+% show a `vars` block in YAML
 show_vars(Indent,OrderedVars,VSet) :-
         write(Indent),
         format('vars:~n'),
         forall((member(V,OrderedVars),member(v(VN,'$VAR'(V),_),VSet)),
                format('~w  - ~w~n',[Indent,VN])).
 
+% It is useful to show a list of examples of a pattern. See https://github.com/INCATools/dead_simple_owl_design_patterns/issues/49
 % sample first 3 classes that instantiate a pattern as exemplars
 % TODO: this has the effect of selecting "samey" classes, vary this somehow
-extract_examples(Matches, ExamplesA) :-
-        select_first_n(Matches, 3, Sample),
+extract_examples(Matches, ExamplesA, Opts) :-
+        option(max_examples(Max),Opts,3),
+        select_first_n(Matches, Max, Sample),
         maplist([Match,Out]>>(class_equiv_expression(Id,Match),label_or_frag(Id,N),sformat(Out,'[~w](~w)',[N,Id])),Sample,Examples),
         concat_atom(Examples, ', ', ExamplesA).
-
-%select_class_from_match_expr(E,Matches,Matches2) :-
-%        select(X,Matches,Matches2),
-%        !,
-%        class_equiv_expression(E,X).
 
 select_first_n(_,0,[]) :- !.
 select_first_n([],_,[]) :- !.
@@ -464,9 +549,11 @@ select_first_n([H|List],N,[H|Sublist]) :-
 % OWL UTILS
 % ========================================
 
+% Extracting the signature of a class expression
 % TODO: use generic visitor pattern
 
 % get class signature of an expression
+% i.e. all named classes in an expression, obtained by recursive traversal
 expr_class_signature(X,L) :- solutions(M,expr_references_class(X,M),L).
 expr_references_class('$VAR'(_),_) :- fail.
 expr_references_class(and(L),C) :- member(M,L),expr_references_class(M,C).
@@ -477,6 +564,7 @@ expr_references_class(only(_,A),C) :- expr_references_class(A,C).
 expr_references_class(X,X) :- atom(X).
 
 % get property signature of an expression
+% i.e. all object properties in an expression, obtained by recursive traversal
 expr_property_signature(X,L) :- solutions(M,expr_references_property(X,M),L).
 expr_references_property('$VAR'(_),_) :- fail.
 expr_references_property(and(L),P) :- member(M,L),expr_references_property(M,P).
@@ -488,6 +576,8 @@ expr_references_property(only(_,X),P) :- expr_references_property(X,P).
 expr_references_property(not(X),P) :- expr_references_property(X,P).
 
 % get variable signature of an expression
+% i.e. all variables in an expression, obtained by recursive traversal
+% assumes vars are of form '$VAR'(_)
 expr_var_signature(X,L) :- setof(M,expr_references_var(X,M),L).
 expr_references_var(V,V) :- V='$VAR'(_).
 expr_references_var(and(L),P) :- member(M,L),expr_references_var(M,P).
@@ -502,12 +592,19 @@ expr_references_var(not(Y),V) :- expr_references_var(Y,V).
 % SERIALIZATION OF OWL EXPRESSIONS TO TEXT
 % ========================================
 
-%! expr_atom(+Expr, ?Atom, +Context, ?Vars)
+%! expr_atom(+Expr:UngroundExpression, ?SerializedAtom, +Context, ?Vars:list)
 %
-%   generate an atom from an expression, collecting vars used in order
+%   generate an atom from an expression, collecting vars used in sequential order
 %
-%   Context = Type/Tag
+%   E.g. and(G,some(part_of,Y)) ==> Atom=% and 'part of' some %, Vars=[G,D]
 %
+%   Context = Type/Tag; e.g. text/owl
+%
+%   If the Tag is id then it will generate a skolemized ID, e.g. X-part-of-X
+%
+%   If the Tag is text then it will make a dosdp/python style format string, e.g. '% of %' (for names)
+%   If the Type is owl then the dosdp/python style format string will be Manchester, e.g '% and part-of some %'
+
 expr_atom('$VAR'(V), 'X', _/id, [V]) :- !.
 expr_atom('$VAR'(V), '%s', text/_, [V]) :- !.
 expr_atom('$VAR'(V), N, _, V) :- !, sformat(N, 'v~w', [V]).
@@ -604,8 +701,6 @@ serialize_only(PN, VN, N, _) :-
         sformat(N,'(~w only ~w)',[PN, VN]).
         %concat_atom([PN, VN], ' some ', N).
 
-solutions(T,G,L) :- setof(T,G,L),!.
-solutions(_,_,[]).
 
 % deterministically map a URI to a single label, or the URI frag
 label_or_frag(X,N) :- rdfs_label(X,S),!,ensure_atom(S,N).
@@ -615,12 +710,14 @@ label_or_frag(X,X).
 % UNIFICATION
 % ========================================
 
-% note: prolog has built-in unification
-% however, this is order-sensitive for lists
-% so we roll our own here;
-% we also use the numervalsified term
-
-%! unify(+Query, +Target, ?Bindings) is nondet.
+%! unify(+Query:ungroundTerm, +Target:groundTerm, ?Bindings:list) is nondet.
+% 
+%    unifies Query with Bindings to make Target
+% 
+%    note: prolog has built-in unification
+%    however, this is order-sensitive for lists so we roll our own here;
+%    
+%    we also use the numervalsified term (e.g. prolog vars replaced by $VAR(N) )
 
 unify(Q, T, Bs) :-
         unify1(Q, T, Bs1),
@@ -654,6 +751,19 @@ unify1(or([Q|QL]), or(TL), Bindings) :-
 % INFER VAR RANGE
 % ========================================
 
+%! infer_pattern_var_range(+Expr, +Matches:list, ?V, ?RangeClasses:list) is det
+%
+%    given a definitional pattern and a set of matching classes that are defined using this,
+%    find 
+infer_pattern_var_range(X, Matches, V, Range) :-
+        setof(Obj,expression_var_value(X, Matches, V, Obj), Objs),
+        setwise_mrca(Objs, Range).
+
+% @Deprecated
+infer_pattern_var_range(X, V, Range) :-
+        pattern_matching_ground_expressions(X, Matches),
+        infer_pattern_var_range(X, Matches, V, Range).
+
 expression_var_value(X, Matches, V, Obj) :-
         expression_var_value(X, Matches, _, V, Obj).
 
@@ -662,34 +772,36 @@ expression_var_value(X, Matches, M, V, Obj) :-
         unify(M,X,Bindings),
         member(V=Obj, Bindings).
 
-infer_pattern_var_range(X, V, Range) :-
-        pattern_matching_ground_expressions(X, Matches),
-        infer_pattern_var_range(X, Matches, V, Range).
 
-infer_pattern_var_range(X, Matches, V, Range) :-
-        setof(Obj,expression_var_value(X, Matches, V, Obj), Objs),
-        setwise_mrca(Objs, Range).
-
-        
-
-% reflecive ancestors excluding owl:Thing
+% reflexive ancestors excluding owl:Thing
 anc(Obj,Anc) :-      rdfs_subclass_of(Obj,Anc), \+rdf_global_id(owl:'Thing', Anc).
 anc(Obj,Obj).
 ancs(Obj,Ancs) :- setof(A,anc(Obj,A),Ancs).
 
+
+%! setwise_mrca(+Objs:list, ?MRCAClasses:list) is det
+%
+%    find MRCA of all Objs
+%
+%    This will preferentially find a *named class* MRCA ( |MRCAClasses| = 1)
+%    If named MRCA cannot be found, will yield a disjunctive list, to be treated
+%    as an OR expression.
+%
 setwise_mrca([Obj|Objs], Range) :-
+        % case 1: Objs have MRCA
         ancs(Obj,Ancs),
         setwise_mrca(Objs, Ancs, Range),
         !.
 setwise_mrca(Objs, Range) :-
+        % case 2: Objs do not have MRCA; instead get disjunctive list of NR ancestors
+        % all ancestors of all objects
         setof(A,Obj^(member(Obj,Objs),anc(Obj,A)),Ancs),
+        % exclude redundant members
         nr_subset(Ancs,Range),
         length(Range,Len),
         Len < 20,
         !.
 setwise_mrca(_, ['owl:Thing']).
-
-
 
 setwise_mrca([], Ancs, Range) :-
         nr_subset(Ancs, Range).
@@ -711,15 +823,18 @@ redundant_with(Obj, Objs) :-
 % ========================================
 % LEXICAL INDUCTION
 % ========================================
-% given existing annotation assertions in ontology (label, def, etc)
-% infer the text object in a dosdp, assuming the class has a logical def
 
-%! induce_annotation_pattern(+ExprPattern, +Matches:list, ?Prop, ?Cls, ?FmtObj) is nondet
+%! induce_annotation_pattern(+ExprPattern, +Matches:list, ?Prop, ?FmtObj) is nondet
 %! induce_annotation_pattern(+ExprPattern, ?Matches:list, ?Prop, ?Cls, ?FmtObj) is nondet
 %
-% e.g. and($1 some(part_of $2)) => fmt('%s of %s',[$1, $2])
+%     given existing annotation assertions in ontology (label, def,
+%     etc) infer the text object in a dosdp, assuming the class has a
+%     logical def
 %
-% FmtObj = fmt(Fmt, Vars)
+%     FmtObj = fmt(Fmt, Vars) : represents a dosdp format object
+%     
+%     e.g. and($1 some(part_of $2)) => fmt('%s of %s',[$1, $2])
+%
 %
 induce_annotation_pattern(XV, Matches, Prop, fmt(Fmt,Vars)) :-
         induce_annotation_pattern(XV, Matches, Prop, _, fmt(Fmt,Vars)).
@@ -789,10 +904,6 @@ uri_curie(C,Id) :-
         !.
 uri_curie(C,C).
 
-make_id(N,Id) :-
-        atom_chars(N,Chars),
-        maplist([In,Out]>>safe_char(In,Out),Chars,Chars2),
-        atom_chars(Id,Chars2).
 
 sub_atom_ci(A,S,L,R,Sub) :-
         nonvar(Sub),

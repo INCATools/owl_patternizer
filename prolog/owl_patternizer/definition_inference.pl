@@ -1,5 +1,13 @@
 /** <module> definition_inference
 
+  induces logical definitions of form: C EquivalentTo <ClassExpression>
+  from lexical and logical (subClassOf) axioms
+
+  First all ancestor and ancestor expressions are found;
+  e.g. for 'foo catabolism' this could include 'catabolism' and 'has_output(foo)'
+
+  then it will test to see if the names for foo and catabolism are substrings of 'foo catabolism'
+  
 */
 :- module(definition_inference,
           [atom_class_token/4,
@@ -11,25 +19,41 @@
            % TODO: move
            save_axiom/1,
            save_axiom/2,
+           infer_links/1,
+           make_class_subterm_link/4,
+           matches_to_class_expression/2,
            assert_inferred_equiv_axioms/0,           
-           assert_inferred_equiv_axioms/2]).
+           assert_inferred_equiv_axioms/1,           
+           assert_inferred_equiv_axioms/2,           
+           assert_inferred_equiv_axioms/3]).
 
 :- use_module(library(owl_patternizer)).
 :- use_module(library(rdf_matcher)).
+:- use_module(library(sparqlprog/emulate_builtins)).
 :- use_module(library(sparqlprog/owl_util)).
 :- use_module(library(semweb/rdfs)).
+:- use_module(library(semweb/rdf11)).
 :- use_module(library(tabling)).
 
 :- table class_prop_tokens/4.
 
+%! class_prop_tokens(?Cls, ?AnnProp, ?OpenToks:list, ?Rest:list) is nondet
+%
+%    e.g. if a class has label 'foo of bar', then Toks = [foo,of,bar]
+%    OpenToks = [foo,of,bar|Rest]
+%
+%  
 class_prop_tokens(C,P,OpenToks,Rest) :-
         tr_annot(C,P,V,_,_,_),
         concat_atom(Toks,' ',V),
         append(Toks,Rest,OpenToks).
 
-%! atom_class_token(+Atom, ?Cls, ?PreList, ?Rest) is nondet
+%! atom_class_token(+Atom, ?Cls, ?PreList:list, ?Rest:list) is nondet
 %
-%   true if Atom can be parsed as [PreList, Cls, Rest]
+%   named entity recognition on tokenization of Atom
+%
+%   true if Atom can be parsed as [PreList, labelOf(Cls), Rest];
+%
 atom_class_token(A,C,PreList,Rest) :-
         mutate(_,_,A,A2),
         concat_atom(Toks,' ',A2),
@@ -37,29 +61,33 @@ atom_class_token(A,C,PreList,Rest) :-
         class_prop_tokens(C,_P,SubList,Rest),
         \+ ((PreList=[], Rest=[])).
 
-%! parse_atom(+Cls, +Atom, ?Ms:list) is nondet
-%! parse_atom(+Cls, +Atom, ?Ms:list, ?Score) is nondet
+%! parse_atom(+Cls, +Atom, ?Matches:list) is nondet
+%! parse_atom(+Cls, +Atom, ?Matches:list, ?Score) is nondet
 %
 %   parse Atom, ensure that matched entities are
 %   (inferred or asserted) superclasses of Cls
+% 
+%   Matches = list of either class spans or tokens
 %
+%   Score is somewhat ad-hoc metric that rewards genus-differentia
+%   style definitions (exactly 1 genus, 1 or more differentia)
 parse_atom(C, A, Ms) :-
         mutate(_,_,A,A2),
         concat_atom(Toks,' ',A2),
+        % if no score required, bulk of work done by parse_tokens/3
         parse_tokens(C, Toks, Ms),
         Ms=[_,_|_],
         \+ \+ member(span(_,_,_),Ms).
 
-old___parse_atom(C, A, Ms, Score) :-
-        parse_atom(C, A, Ms),
-        score_spans(Ms, Score),
-        debug(def,'Parse ~w -> ~q // Score: ~w' ,[A, Ms, Score]).
-
 parse_atom(C, A, Ms, Score) :-
+        debug(xdef,'Looking up BM for ~w ~w',[C, A]),
         atom_bm(A, BM, _),
-        recursive_parse_bm(C, BM, Ms),
+        debug(xdef,'Parsing ~w atom = ~w',[C, A]),
+                                % if score required, use this strategy
+        recursive_parse_bm(C, BM, Ms, []),
         score_spans(Ms, Score).
 
+% score a set of matches
 score_spans(Ms, Score) :-
         findall(C,member(span(C,_,_),Ms), Cs),
         Cs=[_|_],
@@ -71,55 +99,60 @@ score_spans(Ms, Score) :-
         length(Ws,NumWs),
         Score is BaseScore-NumWs.
 
+% score based on total number of classes in signature and number of Genuses
 nc_ng_score(0,_,0) :- !.
 nc_ng_score(1,_,1) :- !.
 nc_ng_score(_,0,4) :- !.
 nc_ng_score(_,1,8) :- !.
 nc_ng_score(_,_,6) :- !.
 
-
-% greedy
-recursive_parse_bm(MainCls, BM, [Span|Ms]) :-
+%! recursive_parse_bm(+MainCls, +BM:bitmap, ?Matches:list, +Visited:list) is nondet.
+%
+% BM is a bitmap representation of a name or syn of MainCls
+% 
+% will iteratively parse the string representation, subtracting out the matched portions
+%
+recursive_parse_bm(MainCls, BM, [Span|Ms], Vs) :-
         Match=match(_Score,ParentCls,Expr,P,IxnBM),
         setof(Match,
-              bm_class_match(MainCls, BM, Match),
+              bm_class_match(MainCls, BM, Match, Vs),
               Pairs),
         !,
+        BMSize is popcount(BM),
+        length(Pairs,NumPairs),
+        debug(xdef,'|Pairs for ~w| = ~w // visited = ~w  // |BM|=~w',[MainCls,NumPairs,Vs,BMSize]),
+        % take best match
         reverse(Pairs,[Match|_]),
         BM2 is BM - IxnBM,
         Span = span(Expr, ParentCls, P),
-        recursive_parse_bm(MainCls, BM2, Ms).
-recursive_parse_bm(_MainCls, BM, Words) :-
+        debug(xdef,'  Span = ~w',[Span]),
+        recursive_parse_bm(MainCls, BM2, Ms, [ParentCls|Vs]).
+recursive_parse_bm(_MainCls, BM, Words, _) :-
+        % no more matches from remaining BM
         bm_tokens(BM, Toks),
         findall(word(Tok),member(Tok,Toks),Words).
         
-bm_class_match(MainCls, BM, Match) :-
+bm_class_match(MainCls, BM, Match, Vs) :-
         BM > 0,
         Match=match(Score,ParentCls,Expr,P,IxnBM),
+        % get ancestor or ancestor expression
+        % e.g if MainCls='foo biosynthesis', ParentCls=foo, Expr=some(has_output,foo)
         class_references(MainCls, ParentCls, Expr),
+        \+ member(ParentCls, Vs),
+        % bitmap of parentCls
         class_prop_bm(ParentCls,P,_V,ParentBM),
         P\=id,
         P\=uri,
+        % intuitively, the parent name should be subsumed by the main class name
         ParentCls \= MainCls,
         IxnBM is BM /\ ParentBM,
         IxnBM > 0,
         LenIxn is popcount(IxnBM),
         LenPBM is popcount(ParentBM),
+        % | MainCls /\ Parent| / | Parent |
         Score is LenIxn / LenPBM,
         %debug(def,' POSSIBLEMATCH(~w <=> ~w) = Score: ~w // p=~w // ~w' ,[MainCls, ParentCls, Score, P, _V]),
         Score > 0.66.
-
-        % prioritize anon-expressions
-        %(   ParentCls=Expr
-        %->  Score = Score1
-        %;   Score = Score1),
-        %bm_resnik(BM,ParentBM,0,Score),
-
-%%        debug(def,' MATCH(~w <=> ~w) = Score: ~w // p=~w // ~w' ,[MainCls, ParentCls, Score, P, _V]).
-
-
-
-
         
         
         
@@ -129,6 +162,7 @@ bm_class_match(MainCls, BM, Match) :-
 %   (inferred or asserted) superclasses of Cls
 %
 best_parse_atom(C, A, Ms, Score) :-
+        debug(def,'Looking for best parse for ~w ~w',[C]),        
         aggregate(max(Score1,Ms1),parse_atom(C, A, Ms1, Score1),max(Score,Ms)).
 
 
@@ -137,9 +171,9 @@ best_parse_atom(C, A, Ms, Score) :-
 %
 %   parse a list of word tokens to a match list
 %
-%   all matched entities must be a superclass of MainClass
+%   all matched entities must be a superclass or superclass-expression of MainClass
 %
-%     Match = word(Token) | span(ClassExpression, Class, Prop)
+%     Match = word(Token) | span(ClassExpression, Class, AnnotationProp)
 %
 :- table parse_tokens/3.
 
@@ -153,20 +187,40 @@ parse_tokens(MainClass, Tokens, [span(Expr,C,P)|Matches]) :-
 parse_tokens(MainClass, [T|Tokens], [word(T)|Matches]) :-
         parse_tokens(MainClass, Tokens, Matches).
 
+:- table class_anylabel/3.
+class_anylabel(C,P,V) :-
+        tr_annot(C,P,V,_,_,_),
+        P\=id,
+        P\=uri.
+
 %! parse_class(+Cls, ?Prop, ?Ms:list, ?Score) is nondet
 %
 %   parse the label or other annotations for Cls
 %
 parse_class(C, P, Ms, Score) :-
-        tr_annot(C,P,V,_,_,_),
-        P\=id,
-        P\=uri,
+        debug(xdef,'parse_class: Looking for best parse for ~w',[C]),        
+        %tr_annot(C,P,V,_,_,_),
+        %P\=id,
+                                %P\=uri,
+        class_anylabel(C,P,V),
+        debug(xdef,'  parse atom ~w ~w',[C, V]),        
         parse_atom(C,V,Ms,Score).
 
+%! best_parse_class(+Cls, ?Prop, ?Ms:list, ?Score) is semidet
+%
+%    find best parse for Cls over parse_class/4
+%
 best_parse_class(C, P, Ms, Score) :-
+        debug(def,'Looking for best parse for ~w ~w',[C, P]),        
         aggregate(max(Score1,P-Ms1),parse_class(C, P, Ms1, Score1),max(Score,P-Ms)).
 
 
+%! matches_to_class_expression(+Matches:list, ?Expr:classExpression) is semidet
+%
+%    takes Matches (output of best_parse_class/4) and converts to an OWL class expression
+%
+%    this will be the conjunction (AND) of all expression spans
+%
 matches_to_class_expression(Ms, and(Xs)) :-
         setof(X,C1^P1^member(span(X,C1,P1),Ms),Xs),
         % at least two members
@@ -222,10 +276,10 @@ save_axiom_with_anns(Axiom,T,G,Anns) :-
 save_expression(and(Xs),Node,G) :-
         !,
         rdf_create_bnode(Node),
-        debug(def,'Made IXN bnode: ~w',[Node]),
+        debug(xdef,'Made IXN bnode: ~w',[Node]),
         rdf_assert(Node,rdf:type,owl:'Class',G),
         maplist({G}/[In,Out]>>save_expression(In,Out,G),Xs,IxnNodesPL),
-        debug(def, 'AND list = ~w',[IxnNodesPL]),
+        debug(xdef, 'AND list = ~w',[IxnNodesPL]),
         rdf_assert_list(IxnNodesPL,IxnNode,G),
         rdf_assert(Node,owl:intersectionOf,IxnNode,G).
 save_expression(some(P,V),Node,G) :-
@@ -251,28 +305,91 @@ save_expression(Node,Node,_) :-
 
 
 assert_inferred_equiv_axioms :-
-        assert_inferred_equiv_axioms(_,gen).
+        assert_inferred_equiv_axioms(_,gen,[]).
+assert_inferred_equiv_axioms( Opts) :-
+        assert_inferred_equiv_axioms(_,gen,Opts).
 
 assert_inferred_equiv_axioms(C,G) :-
+        assert_inferred_equiv_axioms(C,G,[]).
+
+
+%! assert_inferred_equiv_axioms(+Class:owlClass, +Graph) is det
+assert_inferred_equiv_axioms(C,G,Opts) :-
         forall((owl:class(C),
-                best_parse_class(C, _P, Ms, Score),
+                \+ exclude_class(C,Opts),
+                best_parse_class(C, P, Ms, Score),
                 matches_to_class_expression(Ms, Expr),
-                rdf_canonical_literal(Score,ScoreLiteral)),
+                rdf_canonical_literal(Score,ScoreLiteral),
+                rdf_canonical_literal(P, PLit)),
                save_axiom_with_anns(equivalentTo(C,Expr),G,
                                     [annotation(rdfs:score,ScoreLiteral),
+                                     annotation(rdfs:annotationPropertyUsed,PLit),
                                      annotation(rdfs:comment, "Autogenerated")])).
         
 
-
-
+exclude_class(C,Opts) :- option(new_only(true),Opts), class_equiv_expression(C,_).
+exclude_class(C,Opts) :-
+        option(ontology_prefix(Prefix),Opts),
+        \+ rdf_global_id(Prefix:_,C),
+        \+ atom_concat(Prefix,_,C).
         
 :- table class_references/3.
+% e.g if MainCls='foo biosynthesis'
+%   solution:  ParentCls=foo, Expr=some(has_output,foo)
+%   solution:  ParentCls=metabolism, Expr=metabolism
 class_references(C,P,X) :- rdfs_subclass_of(C,D), class_directly_references(D,P,X).
 class_references(C,P,X) :- class_directly_references(C,P,X).
 
 class_directly_references(C,C,C).
 class_directly_references(C,P,some(Rel,P)) :- owl_some(C,Rel,P).
 
+class_references_nt(C,P,X) :- rdfs_subclass_of(C,D), class_directly_references(D,P,X).
+class_references_nt(C,P,X) :- class_directly_references(C,P,X).
 
+%! class_subterm(?Cls, ?AnnProp, ?SubTerm:atom) is nondet
+class_subterm(C,P,T) :-
+        tr_annot(C,P,V,_,_,_),
+        P=label, % TODO
+        P\=id,
+        P\=uri,
+        concat_atom(Toks,' ',V),
+        Toks=[_,_|_],
+        append(_Pre,Rest,Toks),
+        Rest\=[],
+        append(Sub,_Post,Rest),
+        Sub\=[],
+        concat_atom(Sub,' ',T).
+
+infer_links(Opts) :-
+        make_class_subterm_link(_,_,sc,Opts),
+        fail.
+infer_links(_).
+
+%! make_class_subterm_link(?Cls, ?RelCls, +Graph, +Opts:list) is det
+make_class_subterm_link(C,C2,G,Opts) :-
+        class_subterm(C,_,T),
+        debug(def,'subterm of ~w = ~w',[C,T]),
+        subterm_equiv(T,C2,G,Opts),
+        \+ class_references_nt(C,C2,_),
+        \+ class_references_nt(C2,C,_),
+        save_axiom(subClassOf(C,some(skos:related,C2)),G).
+
+subterm_equiv(T,C,_,Opts) :-
+        tr_annot(C,label,T,_,_,_),
+        !.
+subterm_equiv(T,C,_,Opts) :-
+        tr_annot(C,_,T,_,_,_),
+        !.
+subterm_equiv(T,C,G,Opts) :-
+        member(new_class_prefix(Prefix),Opts),
+        !,
+        concat_atom([Prefix,T],C),
+        rdf_assert(C,rdf:type,owl:'Class',G),
+        rdf_canonical_literal(T,Lit),
+        rdf_assert(C,rdfs:label,Lit,G).
+
+
+
+        
 
         

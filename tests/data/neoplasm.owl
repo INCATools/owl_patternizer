@@ -8402,6 +8402,8 @@
     <!-- http://purl.obolibrary.org/obo/MONDO_0005138 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005138">
+
+      <!-- WE WILL INFER THIS:
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -8413,6 +8415,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+      -->
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004993"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0008903"/>
         <rdfs:subClassOf>

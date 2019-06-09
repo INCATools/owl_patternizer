@@ -1,5 +1,6 @@
 /** <module> skos2owl
 
+  converts skos into owl
   
   
 */
@@ -7,11 +8,13 @@
           [inject_owl_axioms/1]).
 
 :- use_module(library(semweb/rdf11)).
+:- use_module(library(semweb/rdfs)).
 :- use_module(library(owl_patternizer/definition_inference)).
 
 :- rdf_register_prefix(skos,'http://www.w3.org/2004/02/skos/core#').
 :- rdf_register_prefix(skosxl,'http://www.w3.org/2008/05/skos-xl#').
 
+%! inject_owl_axioms(+Graph) is det.
 inject_owl_axioms(G2) :-
         T=rdf(S,P,O,_G),
         findall(T,(T,transform(S,P,O,G2)),TrTriples),
@@ -34,7 +37,13 @@ transform(S,P,O,G) :-
 transform(S,skos:broader,O,G) :-
         !,
         save_axiom(subClassOf(S,O),G).
+transform(S,skos:related,O,G) :-
+        !,
+        save_axiom(subClassOf(S,some(skos:related,O)),G).
 
+transform(S,skos:prefLabel,O,G) :-
+        \+ rdf_is_iri(O),
+        rdf_assert(S,rdfs:label,O,G).
 transform(S,skosxl:prefLabel,O,G) :-
         rdf_is_iri(O),
         rdf(O,skosxl:literalForm,Lit),
