@@ -1,0 +1,5458 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix  owl: <http://www.w3.org/2002/07/owl#> .
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix   RO: <http://purl.obolibrary.org/obo/RO#> .
+@prefix  obo: <http://purl.obolibrary.org/obo/> .
+
+# Named toplevel resources (191)
+
+obo:ARO_3000036
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000557
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_0000051
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3000187
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_3000001
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_3000007
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3000267
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000072
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3000271
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_0000025
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3000342
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000557
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_0000025
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3000472
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_0000051
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3000494
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000081
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3000529
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000554
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3000576
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000557
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_3000169
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3000751
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000053
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3000863
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003421
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_3000693
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3001218
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003425
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000188
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3002876
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003422
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000497
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003024
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000759
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003025
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000557
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000759
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003073
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000035
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003080
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003420
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000068
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003090
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000068
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_derives_from ;
+						     owl:someValuesFrom obo:ARO_3003278
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003091
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003421
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000068
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003223
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_3000119
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003236
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000049
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003237
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000052
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003238
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000005
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003239
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000013
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003240
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000014
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003265
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003264
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_targeted_by_drug ;
+						     owl:someValuesFrom obo:ARO_0000013
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003275
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_targeted_by_drug ;
+						     owl:someValuesFrom obo:ARO_0000068
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_3003272
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003278
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003277
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_targeted_by_drug ;
+						     owl:someValuesFrom obo:ARO_0000068
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003290
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003289
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000068
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003319
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000068
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003325
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000497
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003326
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000497
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003361
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003360
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_derives_from ;
+						     owl:someValuesFrom obo:ARO_3000731
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003368
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003358
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_derives_from ;
+						     owl:someValuesFrom obo:ARO_3000731
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_3001234
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003369
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003358
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000586
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_derives_from ;
+						     owl:someValuesFrom obo:ARO_3000731
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003370
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003358
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3001242
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_derives_from ;
+						     owl:someValuesFrom obo:ARO_3000731
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003372
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000039
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003373
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000702
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003374
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000702
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003376
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000039
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003377
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000039
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003378
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000718
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003381
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000836
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003382
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000836
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003383
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000837
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003388
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000226
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_3003412
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003389
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_3003412
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003396
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000014
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003397
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000653
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003399
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000049
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003402
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000005
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003403
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000657
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003405
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000040
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003406
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000040
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003408
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000052
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003410
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_0000051
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003411
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_0000051
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003416
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3004266
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000520
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003418
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3004267
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3003413
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003432
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000520
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003433
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3003413
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003436
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000049
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003437
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000018
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003438
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003875
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3001237
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_derives_from ;
+						     owl:someValuesFrom obo:ARO_3000731
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003447
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003446
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000497
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003450
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003449
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000497
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003457
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003456
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3003474
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003458
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3003474
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003461
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000520
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003465
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000169
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003470
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000040
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003480
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000040
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003481
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000013
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003485
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000039
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003493
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000039
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003495
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000039
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003497
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000039
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003499
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_0000051
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003502
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000039
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003503
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000049
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003504
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000014
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003510
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_0000051
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003511
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000837
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003512
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000039
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003514
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000013
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003515
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000049
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003516
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000052
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003517
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000014
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003518
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000005
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003532
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000527
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003539
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000214
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003540
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000214
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003541
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000040
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003542
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000049
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003543
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000049
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003544
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000005
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003545
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000005
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003546
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000018
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003547
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000018
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003585
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000834
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000067
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003666
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_0000016
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003667
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000053
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003668
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000527
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003669
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_0000051
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003696
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000870
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003702
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003684
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_derives_from ;
+						     owl:someValuesFrom obo:ARO_3000735
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003729
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000554
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_derives_from ;
+						     owl:someValuesFrom obo:ARO_3000732
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003730
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000554
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_derives_from ;
+						     owl:someValuesFrom obo:ARO_3000732
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003735
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000759
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003737
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000759
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003753
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_3001317
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003756
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000075
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003760
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000068
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003775
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_0000025
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003776
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_0000025
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003777
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_0000025
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003778
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000520
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003779
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000520
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003788
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000068
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003794
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000068
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003797
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000068
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003800
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000068
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003803
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000068
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003805
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_0000068
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003807
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000702
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003813
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000068
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003815
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000068
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003889
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3004247
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000025
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003890
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3004248
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000025
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003893
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3004249
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000025
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003895
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000834
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_0000067
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003896
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000835
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000067
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003899
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000025
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003901
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3004247
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000025
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003902
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3004248
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000025
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003917
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_3003919
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003976
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3003975
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003977
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003976
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3003975
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003978
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000040
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003985
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_0000041
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_3003251
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004027
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000034
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004045
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000520
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000870
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004048
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000386
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000036
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000073
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004049
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3004284
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000870
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004051
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000386
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000550
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004053
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000386
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000550
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004057
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000072
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004058
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000072
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004066
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000798
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000188
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004068
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000798
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000188
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004070
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000798
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000385
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000662
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004071
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3003474
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004078
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000384
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000060
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004079
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000384
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000036
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000051
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004081
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3004082
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000052
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004083
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000503
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000036
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004097
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000068
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004125
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_0000000
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004131
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000006
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000057
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004132
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000006
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004133
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000145
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004134
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000065
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004135
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000497
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004136
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3004137
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000497
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004149
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000066
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004150
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000385
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004153
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3004019
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004157
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3004019
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004159
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3004178
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_3001317
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004160
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000065
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004163
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000065
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004164
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000065
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004165
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000065
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004166
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000065
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004167
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000158
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004168
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000065
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004169
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000065
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004172
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000079
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004178
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_3001317
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004179
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000006
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004180
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_3000385
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004187
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_0000017
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004188
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000387
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004281
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3004277
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000244
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004282
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3004277
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000244
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004334
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000870
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004335
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000870
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004423
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3004417
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_3004522
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004546
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to_drug ;
+						     owl:someValuesFrom obo:ARO_0000006
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004561
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_0000028
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004563
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( [ a owl:Restriction ;
+						     owl:onProperty RO:_participates_in ;
+						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_3000169
+						   ]
+						 )
+			    ] .
+
+# Toplevel blank-nodes (191)
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003539 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000214
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003540 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000214
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003541 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000040
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003542 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000049
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003543 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000049
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003544 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000005
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000271 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_0000025
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003545 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000005
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003546 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000018
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003547 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000018
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003585 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000834
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000067
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 7 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003666 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_0000016
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 7 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003667 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000053
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 7 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003668 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000527
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 6 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003669 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_0000051
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003696 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000870
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 7 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003702 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003684
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_derives_from ;
+					       owl:someValuesFrom obo:ARO_3000735
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000342 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000557
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_0000025
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 0 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003729 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000554
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_derives_from ;
+					       owl:someValuesFrom obo:ARO_3000732
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 0 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003730 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000554
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_derives_from ;
+					       owl:someValuesFrom obo:ARO_3000732
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003735 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000759
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003737 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000759
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003753 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_3001317
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003756 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000075
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003760 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000068
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003775 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_0000025
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000472 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_0000051
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003776 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_0000025
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003777 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_0000025
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003778 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000520
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003779 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000520
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003788 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000068
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003794 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000068
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 0 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003797 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000068
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 0 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003800 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000068
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 7 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000494 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000081
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003803 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000068
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 0 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003805 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_0000068
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 4 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003807 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000702
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 0 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003813 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000068
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 0 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003815 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000068
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 4 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003889 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3004247
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000025
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 4 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003890 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3004248
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000025
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 4 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003893 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3004249
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000025
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000529 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000554
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 3 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003895 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000834
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_0000067
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 3 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003896 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000835
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000067
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003899 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000025
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 4 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003901 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3004247
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000025
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 4 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003902 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3004248
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000025
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003917 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_3003919
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 7 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003976 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3003975
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 6 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003977 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003976
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3003975
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000576 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000557
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_3000169
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003978 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000040
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003985 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_0000041
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_3003251
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 7 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004027 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000034
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -4 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004045 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000520
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000870
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 0 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004048 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000386
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000036
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000073
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 3 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004049 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3004284
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000870
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004051 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000386
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000550
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004053 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000386
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000550
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 6 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004057 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000072
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 7 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000751 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000053
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004058 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000072
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004066 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000798
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000188
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004068 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000798
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000188
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004070 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000798
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000385
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000662
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004071 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3003474
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -3 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004078 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000384
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000060
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004079 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000384
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000036
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000051
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004081 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3004082
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000052
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004083 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000503
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000036
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000863 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003421
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_3000693
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 0 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004097 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000068
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 7 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004125 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_0000000
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 4 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004131 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000006
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000057
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004132 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000006
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004133 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000145
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004134 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000065
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004135 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000497
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004136 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3004137
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000497
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004149 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000066
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 7 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3001218 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003425
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000188
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004150 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000385
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004153 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3004019
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004157 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3004019
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 6 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004159 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3004178
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_3001317
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004160 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000065
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004163 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000065
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004164 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000065
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004165 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000065
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004166 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000065
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004167 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000158
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3002876 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003422
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000497
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004168 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000065
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004169 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000065
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 7 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004172 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000079
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 6 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004178 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_3001317
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004179 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000006
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004180 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000385
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 7 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004187 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_0000017
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 7 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004188 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000387
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 6 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004281 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3004277
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000244
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003024 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000759
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 6 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004282 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3004277
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000244
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004334 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000870
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004335 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000870
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 7 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004423 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3004417
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_3004522
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004546 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000006
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004561 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_0000028
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004563 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_3000169
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003025 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000557
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000759
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 7 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003073 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000035
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003080 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003420
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000068
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 3 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003090 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000068
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_derives_from ;
+					       owl:someValuesFrom obo:ARO_3003278
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003091 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003421
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000068
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003223 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_3000119
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003236 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000049
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003237 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000052
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003238 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000005
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003239 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000013
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003240 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000014
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 7 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003265 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003264
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_targeted_by_drug ;
+					       owl:someValuesFrom obo:ARO_0000013
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 3 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003275 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_targeted_by_drug ;
+					       owl:someValuesFrom obo:ARO_0000068
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_3003272
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003278 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003277
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_targeted_by_drug ;
+					       owl:someValuesFrom obo:ARO_0000068
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 3 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003290 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003289
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000068
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003319 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000068
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003325 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000497
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003326 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000497
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 6 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003361 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003360
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_derives_from ;
+					       owl:someValuesFrom obo:ARO_3000731
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003368 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003358
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_derives_from ;
+					       owl:someValuesFrom obo:ARO_3000731
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_3001234
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003369 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003358
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000586
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_derives_from ;
+					       owl:someValuesFrom obo:ARO_3000731
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003370 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003358
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3001242
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_derives_from ;
+					       owl:someValuesFrom obo:ARO_3000731
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003372 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000039
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 4 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003373 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000702
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 4 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003374 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000702
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003376 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000039
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003377 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000039
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003378 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000718
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003381 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000836
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003382 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000836
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003383 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000837
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 6 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003388 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000226
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_3003412
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003389 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_3003412
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003396 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000014
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003397 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000653
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003399 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000049
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003402 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000005
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003403 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000657
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003405 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000040
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003406 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000040
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003408 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000052
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003410 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_0000051
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003411 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_0000051
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003416 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3004266
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000520
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003418 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3004267
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3003413
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003432 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000520
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003433 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3003413
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003436 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000049
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003437 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000018
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003438 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003875
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3001237
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_derives_from ;
+					       owl:someValuesFrom obo:ARO_3000731
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003447 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003446
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000497
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003450 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003449
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000497
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003457 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003456
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3003474
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003458 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3003474
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003461 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000520
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003465 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000169
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000036 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000557
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_0000051
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 0 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003470 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000040
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003480 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000040
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003481 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000013
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003485 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000039
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003493 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000039
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003495 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000039
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003497 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000039
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003499 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_0000051
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003502 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000039
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003503 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000049
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 0 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000187 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_3000001
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_3000007
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003504 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000014
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003510 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_0000051
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003511 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000837
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003512 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000039
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003514 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000013
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003515 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000049
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003516 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000052
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003517 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000014
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000267 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000072
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003518 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000005
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_participates_in ;
+					       owl:someValuesFrom obo:ARO_3000212
+					     ]
+					   )
+		      ]
+] .
+[ a owl:Axiom ;
+  rdfs:annotationPropertyUsed <label> ;
+  rdfs:comment "Autogenerated" ;
+  rdfs:score 7 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003532 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000527
+					     ]
+					   )
+		      ]
+] .
