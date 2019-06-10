@@ -34,6 +34,7 @@
 :- use_module(library(semweb/rdfs)).
 :- use_module(library(semweb/rdf11)).
 :- use_module(library(tabling)).
+:- use_module(library(index_util)).
 
 :- table class_prop_tokens/4.
 
@@ -343,12 +344,13 @@ class_references(C,P,X) :- class_directly_references(C,P,X).
 class_directly_references(C,C,C).
 class_directly_references(C,P,some(Rel,P)) :- owl_some(C,Rel,P).
 
+% non-tabled version
 class_references_nt(C,P,X) :- rdfs_subclass_of(C,D), class_directly_references(D,P,X).
 class_references_nt(C,P,X) :- class_directly_references(C,P,X).
 
 %! class_subterm(?Cls, ?AnnProp, ?SubTerm:atom) is nondet
 class_subterm(C,P,T) :-
-        tr_annot(C,P,V,_,_,_),
+        basic_annot(C,P,V,_),
         P=label, % TODO
         P\=id,
         P\=uri,
@@ -361,6 +363,9 @@ class_subterm(C,P,T) :-
         concat_atom(Sub,' ',T).
 
 infer_links(Opts) :-
+        % TODO: re-calc indexes
+        materialize_index(basic_annot(+,+,-,-)),
+        materialize_index(tr_annot(+,+,-,-,+,+)),
         make_class_subterm_link(_,_,sc,Opts),
         fail.
 infer_links(_).
@@ -372,16 +377,18 @@ make_class_subterm_link(C,C2,G,Opts) :-
         subterm_equiv(T,C2,G,Opts),
         \+ class_references_nt(C,C2,_),
         \+ class_references_nt(C2,C,_),
+        debug(def,'making new link ~w REL ~w',[C,C2]),
         save_axiom(subClassOf(C,some(skos:related,C2)),G).
 
-subterm_equiv(T,C,_,Opts) :-
+subterm_equiv(T,C,_,_Opts) :-
         tr_annot(C,label,T,_,_,_),
         !.
-subterm_equiv(T,C,_,Opts) :-
+subterm_equiv(T,C,_,_Opts) :-
         tr_annot(C,_,T,_,_,_),
         !.
 subterm_equiv(T,C,G,Opts) :-
         member(new_class_prefix(Prefix),Opts),
+        debug(def,'making new class ~w~w',[Prefix,T]),
         !,
         concat_atom([Prefix,T],C),
         rdf_assert(C,rdf:type,owl:'Class',G),
