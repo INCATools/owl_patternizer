@@ -1,0 +1,53 @@
+# options: [min(25),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has participant X microbial population phenotype in host X located in oral cavity part of Homo sapiens has disease X
+pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_microbial_population_phenotype_in_host_X_located_in_oral_cavity_part_of_Homo_sapiens_has_disease_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [depletion of Capnocytophaga gingivalis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000237), [expansion of Leptotrichia sp. in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000179), [depletion of Streptococcus sanguinis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000238) (37 total)
+
+classes: 
+  Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+  microbe: "http://purl.obolibrary.org/obo/OHMI_0000460"
+  oral cavity: "UBERON:0000167"
+
+
+relations: 
+  has participant: "RO:0000057"
+
+
+vars:
+  v0: "'microbe'"
+  v1: "'quality'"
+  v2: "'rheumatic disease'"
+
+name:
+  # Could not induce name, using default
+  text: "has participant %s microbial population phenotype in host %s located in oral cavity part of Homo sapiens has disease %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "has participant a Any %s that microbial population phenotype in host a %s and located in a Any oral cavity that part of a Any Homo sapiens that has disease a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has participant' some %s and ('microbial population phenotype in host' some %s) and ('located in' some 'oral cavity' and ('part of' some 'Homo sapiens' and ('has disease' some %s))))"
+  vars:
+    - v0
+    - v1
+    - v2

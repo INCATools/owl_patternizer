@@ -1,0 +1,51 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related X related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_X_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [calibration of measuring equipment](http://www.eionet.europa.eu/gemet/concept/1115), [air traffic regulation](http://www.eionet.europa.eu/gemet/concept/286), [rock salt mining](http://www.eionet.europa.eu/gemet/concept/6541) (29 total)
+
+classes: 
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'calibration' or 'regulation' or 'mining' or 'effect' or 'emission' or 'fibre' or 'industry' or 'lagoon' or 'programme' or 'standard' or 'vehicle'"
+  v1: "'owl:Thing'"
+  v2: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.3793103448275862, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s %s"
+  vars:
+    - v1
+    - v2
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a %s and related a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some %s) and ('related' some %s)"
+  vars:
+    - v0
+    - v1
+    - v2

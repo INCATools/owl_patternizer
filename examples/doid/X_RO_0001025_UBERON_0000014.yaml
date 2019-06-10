@@ -1,0 +1,48 @@
+pattern_name: X RO_0001025 UBERON_0000014
+pattern_iri: http://purl.obolibrary.org/obo/doid/X_RO_0001025_UBERON_0000014
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [skin angiosarcoma](http://purl.obolibrary.org/obo/DOID_4517), [Ritter's disease](http://purl.obolibrary.org/obo/DOID_9063), [congenital ichthyosiform erythroderma](http://purl.obolibrary.org/obo/DOID_1699) (32 total)
+
+classes: 
+  disease: "http://purl.obolibrary.org/obo/DOID_4"
+  UBERON_0000014: "UBERON:0000014"
+
+
+relations: 
+  RO_0001025: "RO:0001025"
+
+
+vars:
+  v0: "'disease'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "skin %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.0625, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is located_in the skin."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of skin"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('RO_0001025' some 'UBERON_0000014')"
+  vars:
+    - v0

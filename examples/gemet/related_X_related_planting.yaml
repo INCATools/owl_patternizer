@@ -1,0 +1,51 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: related X related planting
+pattern_iri: http://purl.obolibrary.org/obo/gemet/related_X_related_planting
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [chemical plant](http://www.eionet.europa.eu/gemet/concept/1316), [desalination plant](http://www.eionet.europa.eu/gemet/concept/2099), [plant ecology](http://www.eionet.europa.eu/gemet/concept/8910) (8 total)
+
+classes: 
+  chemical: "http://www.eionet.europa.eu/gemet/concept/1327"
+  desalination: "http://www.eionet.europa.eu/gemet/concept/2098"
+  ecology: "http://www.eionet.europa.eu/gemet/concept/2470"
+  electric power: "http://www.eionet.europa.eu/gemet/concept/2601"
+  fodder: "http://www.eionet.europa.eu/gemet/concept/3345"
+  gas: "http://www.eionet.europa.eu/gemet/concept/3566"
+  heating: "http://www.eionet.europa.eu/gemet/concept/3894"
+  nuclear power plant: "http://www.eionet.europa.eu/gemet/concept/5736"
+  planting: "http://www.eionet.europa.eu/gemet/concept/6313"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'chemical' or 'desalination' or 'ecology' or 'electric power' or 'fodder' or 'gas' or 'heating' or 'nuclear power plant'"
+
+name:
+  # Induced, frequency=1.125, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s plant"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any related a %s that related a planting"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('related' some %s) and ('related' some 'planting')"
+  vars:
+    - v0

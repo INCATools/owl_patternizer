@@ -1,0 +1,54 @@
+# options: [min(10),dir('examples/oae'),trim(true),base('http://purl.obolibrary.org/obo/oae'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: subdivision of skeleton skeleton of X
+pattern_iri: http://purl.obolibrary.org/obo/oae/subdivision_of_skeleton_skeleton_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [skeleton of lower jaw](http://purl.obolibrary.org/obo/UBERON_0003278), [skeleton of limb](http://purl.obolibrary.org/obo/UBERON_0004381), [hindlimb skeleton](http://purl.obolibrary.org/obo/UBERON_0001441) (19 total)
+
+classes: 
+  organism subdivision: "UBERON:0000475"
+  subdivision of skeleton: "UBERON:0010912"
+
+
+relations: 
+  skeleton of: "RO:0002576"
+
+
+vars:
+  v0: "'organism subdivision'"
+
+name:
+  # Induced, frequency=0.42105263157894735, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s skeleton"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.10526315789473684, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The collection of all skeletal elements in an individual %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s skeleton"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'subdivision of skeleton' and ('skeleton of' some %s)"
+  vars:
+    - v0

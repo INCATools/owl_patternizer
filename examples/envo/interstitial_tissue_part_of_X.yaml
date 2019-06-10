@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: interstitial tissue part of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/interstitial_tissue_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [renal medulla interstitium](http://purl.obolibrary.org/obo/UBERON_0005211), [renal cortex interstitium](http://purl.obolibrary.org/obo/UBERON_0005270), [outer renal medulla interstitium](http://purl.obolibrary.org/obo/UBERON_0005213) (5 total)
+
+classes: 
+  interstitial tissue: "UBERON:0005169"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s interstitium"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.4, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A portion of interstitial tissue that is part of a %s [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s interstitium"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'interstitial tissue' and ('part of' some %s)"
+  vars:
+    - v0

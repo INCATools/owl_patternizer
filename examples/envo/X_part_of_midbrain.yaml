@@ -1,0 +1,50 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of midbrain
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_midbrain
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [gray matter of midbrain](http://purl.obolibrary.org/obo/UBERON_0019267), [midbrain nucleus](http://purl.obolibrary.org/obo/UBERON_0009661), [white matter of midbrain](http://purl.obolibrary.org/obo/UBERON_0016554) (5 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "UBERON:0001062"
+  midbrain: "UBERON:0001891"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.6, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of midbrain"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.4, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a midbrain [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "midbrain %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'midbrain')"
+  vars:
+    - v0

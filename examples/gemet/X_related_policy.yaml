@@ -1,0 +1,48 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related policy
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_policy
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [budget policy](http://www.eionet.europa.eu/gemet/concept/13137), [business policy](http://www.eionet.europa.eu/gemet/concept/13262), [credit policy](http://www.eionet.europa.eu/gemet/concept/13248) (7 total)
+
+classes: 
+  budget: "http://www.eionet.europa.eu/gemet/concept/1025"
+  business: "http://www.eionet.europa.eu/gemet/concept/1084"
+  credit: "http://www.eionet.europa.eu/gemet/concept/13177"
+  planning: "http://www.eionet.europa.eu/gemet/concept/6287"
+  policy: "http://www.eionet.europa.eu/gemet/concept/6370"
+  taxation: "http://www.eionet.europa.eu/gemet/concept/8308"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'budget' or 'business' or 'credit' or 'planning' or 'taxation'"
+
+name:
+  # Induced, frequency=0.5714285714285714, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s policy"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a policy"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'policy')"
+  vars:
+    - v0

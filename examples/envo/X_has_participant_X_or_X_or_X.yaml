@@ -1,0 +1,55 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has participant X-or-X-or-X
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_has_participant_X_or_X_or_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [environmental system process](http://purl.obolibrary.org/obo/ENVO_02500000), [land use process](http://purl.obolibrary.org/obo/ENVO_01001431), [terrestrial mining](http://purl.obolibrary.org/obo/ENVO_01001433) (4 total)
+
+classes: 
+  material entity: "BFO:0000040"
+
+
+relations: 
+  has participant: "RO:0000057"
+
+
+vars:
+  v0: "'process'"
+  v1: "'material entity'"
+  v2: "'material entity'"
+  v3: "'material entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has participant %s/%s/%s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has participant a Any %s that %s or %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('has participant' some %s or %s or %s)"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3

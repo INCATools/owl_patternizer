@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: soil part of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/soil_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [dune soil](http://purl.obolibrary.org/obo/ENVO_00002260), [upland soil](http://purl.obolibrary.org/obo/ENVO_00005786), [volcanic soil](http://purl.obolibrary.org/obo/ENVO_00005785) (4 total)
+
+classes: 
+  soil: "ENVO:00001998"
+  astronomical body part: "ENVO:01000813"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'astronomical body part'"
+
+name:
+  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s soil"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Soil which is part of an %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'soil' and ('part of' some %s)"
+  vars:
+    - v0

@@ -1,0 +1,44 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: industry related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/industry_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [building materials industry](http://www.eionet.europa.eu/gemet/concept/1044), [electrical goods industry](http://www.eionet.europa.eu/gemet/concept/14959), [cellulose industry](http://www.eionet.europa.eu/gemet/concept/1245) (33 total)
+
+classes: 
+  industry: "http://www.eionet.europa.eu/gemet/concept/4279"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.8484848484848485, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s industry"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any industry that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'industry' and ('related' some %s)"
+  vars:
+    - v0

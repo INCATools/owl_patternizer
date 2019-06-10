@@ -1,0 +1,47 @@
+# options: [min(20),dir(ehdaa2),trim(true),base('http://purl.obolibrary.org/obo/ehdaa2'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X develops_from X
+pattern_iri: http://purl.obolibrary.org/obo/ehdaa2/X_develops_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [facial VII nerve](http://purl.obolibrary.org/obo/EHDAA2_0000489), [glossopharyngeal IX nerve](http://purl.obolibrary.org/obo/EHDAA2_0000709), [trigeminal V nerve](http://purl.obolibrary.org/obo/EHDAA2_0002084) (67 total)
+
+classes: 
+  simple tissue: "ns1:CARO_0000043"
+
+
+relations: 
+  develops_from: "RO:0002202"
+
+
+vars:
+  v0: "'simple tissue'"
+  v1: "'anatomical structure'"
+
+name:
+  # Could not induce name, using default
+  text: "%s develops_from %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that develops_from a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('develops_from' some %s)"
+  vars:
+    - v0
+    - v1

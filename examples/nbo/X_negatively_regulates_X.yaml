@@ -1,0 +1,47 @@
+# options: [min(8),dir('examples/nbo'),trim(true),base('http://purl.obolibrary.org/obo/nbo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X negatively regulates X
+pattern_iri: http://purl.obolibrary.org/obo/nbo/X_negatively_regulates_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [negative regulation of molecular function](http://purl.obolibrary.org/obo/GO_0044092), [negative regulation of catalytic activity](http://purl.obolibrary.org/obo/GO_0043086), [negative regulation of receptor binding](http://purl.obolibrary.org/obo/GO_1900121) (40 total)
+
+classes: 
+  biological_process: "GO:0008150"
+
+
+relations: 
+  negatively regulates: "RO:0002212"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'process'"
+
+name:
+  # Could not induce name, using default
+  text: "%s negatively regulates %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that negatively regulates a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('negatively regulates' some %s)"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,51 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related planting
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_planting
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [plant disease](http://www.eionet.europa.eu/gemet/concept/6304), [plant equipment](http://www.eionet.europa.eu/gemet/concept/6305), [plant genetics](http://www.eionet.europa.eu/gemet/concept/6307) (16 total)
+
+classes: 
+  disease: "http://www.eionet.europa.eu/gemet/concept/2232"
+  equipment: "http://www.eionet.europa.eu/gemet/concept/2956"
+  genetics: "http://www.eionet.europa.eu/gemet/concept/3633"
+  health care: "http://www.eionet.europa.eu/gemet/concept/3866"
+  physiology: "http://www.eionet.europa.eu/gemet/concept/6240"
+  planting: "http://www.eionet.europa.eu/gemet/concept/6313"
+  resource: "http://www.eionet.europa.eu/gemet/concept/7168"
+  species: "http://www.eionet.europa.eu/gemet/concept/7982"
+  species reintroduction: "http://www.eionet.europa.eu/gemet/concept/7986"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'disease' or 'equipment' or 'genetics' or 'health care' or 'physiology' or 'resource' or 'species' or 'species reintroduction'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "plant %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a planting"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'planting')"
+  vars:
+    - v0

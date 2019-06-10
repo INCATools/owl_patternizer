@@ -1,0 +1,56 @@
+# options: [min(25),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has participant X part of X has disposition X located in lower digestive tract has quality X
+pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_part_of_X_has_disposition_X_located_in_lower_digestive_tract_has_quality_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [expansion of Propionibacterium acnes 17B in arthritis  rat gut](http://purl.obolibrary.org/obo/OHMI_0000185), [expansion of Streptococcaceae in SLE  mouse gut](http://purl.obolibrary.org/obo/OHMI_0000201), [expansion of Streptococcus pyogenes in arthritis  rat gut](http://purl.obolibrary.org/obo/OHMI_0000202) (29 total)
+
+classes: 
+  Murinae: "http://purl.obolibrary.org/obo/NCBITaxon_39107"
+  lower digestive tract: "UBERON:0004907"
+
+
+relations: 
+  has participant: "RO:0000057"
+
+
+vars:
+  v0: "'Bacteria'"
+  v1: "'Murinae'"
+  v2: "'rheumatic disease'"
+  v3: "'quality'"
+
+name:
+  # Could not induce name, using default
+  text: "has participant %s part of %s has disposition %s located in lower digestive tract has quality %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+def:
+  # Could not induce def, using default
+  text: "has participant a Any %s that Any part of a Any %s that has disposition a %s that located in a lower digestive tract and has quality a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has participant' some %s and ('part of' some %s and ('has disposition' some %s)) and ('located in' some 'lower digestive tract') and ('has quality' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3

@@ -1,0 +1,46 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related management
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_management
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [management accounting](http://www.eionet.europa.eu/gemet/concept/13261), [economic management instrument](http://www.eionet.europa.eu/gemet/concept/2494), [indicator of environmental management](http://www.eionet.europa.eu/gemet/concept/4200) (9 total)
+
+classes: 
+  accounting: "http://www.eionet.europa.eu/gemet/concept/10002"
+  economic instrument: "http://www.eionet.europa.eu/gemet/concept/2493"
+  indicator: "http://www.eionet.europa.eu/gemet/concept/4196"
+  management: "http://www.eionet.europa.eu/gemet/concept/4985"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'accounting' or 'economic instrument' or 'indicator'"
+
+name:
+  # Induced, frequency=0.1111111111111111, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of environmental management"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a management"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'management')"
+  vars:
+    - v0

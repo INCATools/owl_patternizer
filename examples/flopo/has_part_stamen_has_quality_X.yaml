@@ -1,0 +1,44 @@
+# options: [min(50),dir(flopo),trim(true),base('http://purl.obolibrary.org/obo/flopo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has_part stamen has quality X
+pattern_iri: http://purl.obolibrary.org/obo/flopo/has_part_stamen_has_quality_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [stamen age](http://purl.obolibrary.org/obo/FLOPO_0013990), [stamen color](http://purl.obolibrary.org/obo/FLOPO_0001684), [stamen color pattern](http://purl.obolibrary.org/obo/FLOPO_0006155) (201 total)
+
+classes: 
+  quality: "PATO:0000001"
+  stamen: "http://purl.obolibrary.org/obo/PO_0009029"
+
+
+relations: 
+  has_part: "BFO:0000051"
+
+
+vars:
+  v0: "'quality'"
+
+name:
+  # Induced, frequency=0.9950248756218906, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "stamen %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "has_part a Any stamen that has quality a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has_part' some 'stamen' and ('has quality' some %s))"
+  vars:
+    - v0

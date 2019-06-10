@@ -1,0 +1,48 @@
+# options: [min(8),dir('examples/nbo'),trim(true),base('http://purl.obolibrary.org/obo/nbo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X extends_fibers_into X
+pattern_iri: http://purl.obolibrary.org/obo/nbo/X_extends_fibers_into_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [sensory ganglion](http://purl.obolibrary.org/obo/UBERON_0001800), [vagus X ganglion](http://purl.obolibrary.org/obo/UBERON_0005362), [cranial ganglion](http://purl.obolibrary.org/obo/UBERON_0001714) (10 total)
+
+classes: 
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  extends_fibers_into: "http://purl.obolibrary.org/obo/uberon/core#extends_fibers_into"
+
+
+vars:
+  v0: "'anatomical entity' or 'anatomical entity'"
+  v1: "'anatomical entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s X %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is associated with a %s nerve."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('extends_fibers_into' some %s)"
+  vars:
+    - v0
+    - v1

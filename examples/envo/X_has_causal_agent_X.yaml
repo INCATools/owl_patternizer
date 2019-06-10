@@ -1,0 +1,47 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has causal agent X
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_has_causal_agent_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [radiation from a manufactured product](http://purl.obolibrary.org/obo/ENVO_01001501), [radiation from a manufactured product](http://purl.obolibrary.org/obo/ENVO_01001501), [stellar radiation](http://purl.obolibrary.org/obo/ENVO_01001211) (11 total)
+
+classes: 
+  radiation: "ENVO:01001023"
+
+
+relations: 
+  has causal agent: "RO:0002608"
+
+
+vars:
+  v0: "'radiation'"
+  v1: "'object' or 'environmental feature'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has causal agent %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.18181818181818182, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An %s process during which electromagnetic waves or their quanta are emitted from a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('has causal agent' some %s)"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,51 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: transportation related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/transportation_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [public transport](http://www.eionet.europa.eu/gemet/concept/6818), [air transportation](http://www.eionet.europa.eu/gemet/concept/289), [food transport](http://www.eionet.europa.eu/gemet/concept/3392) (8 total)
+
+classes: 
+  public: "http://www.eionet.europa.eu/gemet/concept/10904"
+  air: "http://www.eionet.europa.eu/gemet/concept/245"
+  food: "http://www.eionet.europa.eu/gemet/concept/3354"
+  land: "http://www.eionet.europa.eu/gemet/concept/4599"
+  pipeline: "http://www.eionet.europa.eu/gemet/concept/6270"
+  river: "http://www.eionet.europa.eu/gemet/concept/7244"
+  road: "http://www.eionet.europa.eu/gemet/concept/7272"
+  transportation: "http://www.eionet.europa.eu/gemet/concept/8641"
+  waste: "http://www.eionet.europa.eu/gemet/concept/9041"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'public' or 'air' or 'food' or 'land' or 'pipeline' or 'river' or 'road' or 'waste'"
+
+name:
+  # Induced, frequency=0.625, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s transport"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any transportation that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'transportation' and ('related' some %s)"
+  vars:
+    - v0

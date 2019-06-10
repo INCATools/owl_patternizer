@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: submerged bed adjacent to X
+pattern_iri: http://purl.obolibrary.org/obo/envo/submerged_bed_adjacent_to_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [sea floor](http://purl.obolibrary.org/obo/ENVO_00000482), [lake bed](http://purl.obolibrary.org/obo/ENVO_00000268), [river bed](http://purl.obolibrary.org/obo/ENVO_00000384) (6 total)
+
+classes: 
+  water body: "ENVO:00000063"
+  submerged bed: "ENVO:00000501"
+
+
+relations: 
+  adjacent to: "RO:0002220"
+
+
+vars:
+  v0: "'water body'"
+
+name:
+  # Induced, frequency=0.8333333333333334, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s bed"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.6666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The ground surface that lies beneath a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s bottom"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'submerged bed' and ('adjacent to' some %s)"
+  vars:
+    - v0

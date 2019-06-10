@@ -1,0 +1,47 @@
+# options: [min(12),dir('examples/hao'),trim(true),base('http://purl.obolibrary.org/obo/hao'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part_of X
+pattern_iri: http://purl.obolibrary.org/obo/hao/X_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [spiculum](http://purl.obolibrary.org/obo/HAO_0000946), [dorsomedian apodeme of the aedeagus](http://purl.obolibrary.org/obo/HAO_0002039), [proximolateral apodeme of cupula](http://purl.obolibrary.org/obo/HAO_0000878) (224 total)
+
+classes: 
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  part_of: "BFO:0000050"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.03571428571428571, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of the %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.11607142857142858, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The %s that is located on %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('part_of' some %s)"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,50 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of kidney
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_kidney
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [renal duct](http://purl.obolibrary.org/obo/UBERON_0006553), [renal parenchyma](http://purl.obolibrary.org/obo/UBERON_0008987), [kidney epithelium](http://purl.obolibrary.org/obo/UBERON_0004819) (13 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "UBERON:0001062"
+  kidney: "UBERON:0002113"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.46153846153846156, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "kidney %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.15384615384615385, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a kidney [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of kidney"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'kidney')"
+  vars:
+    - v0

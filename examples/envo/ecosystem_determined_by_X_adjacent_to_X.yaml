@@ -1,0 +1,48 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: ecosystem determined by X adjacent to X
+pattern_iri: http://purl.obolibrary.org/obo/envo/ecosystem_determined_by_X_adjacent_to_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [environment determined by a biofilm on an animal surface](http://purl.obolibrary.org/obo/ENVO_01001034), [environment determined by a biofilm on a non-saline surface](http://purl.obolibrary.org/obo/ENVO_01001051), [environment determined by a biofilm on a fungal surface](http://purl.obolibrary.org/obo/ENVO_01001035) (5 total)
+
+classes: 
+  ecosystem: "ENVO:01001110"
+  anatomical surface region: "UBERON:0036215"
+
+
+relations: 
+  determined by: "RO:0002507"
+
+
+vars:
+  v0: "'biofilm material'"
+  v1: "'anatomical surface region'"
+
+name:
+  # Could not induce name, using default
+  text: "ecosystem determined by %s adjacent to %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any ecosystem that determined by a Any %s that adjacent to a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'ecosystem' and ('determined by' some %s and ('adjacent to' some %s))"
+  vars:
+    - v0
+    - v1

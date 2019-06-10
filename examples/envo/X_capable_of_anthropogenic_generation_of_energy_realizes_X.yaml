@@ -1,0 +1,48 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X capable of anthropogenic generation of energy realizes X
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_capable_of_anthropogenic_generation_of_energy_realizes_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [nuclear power plant](http://purl.obolibrary.org/obo/ENVO_00002271), [geothermal power plant](http://purl.obolibrary.org/obo/ENVO_00002215), [solar power station](http://purl.obolibrary.org/obo/ENVO_2000041) (4 total)
+
+classes: 
+  anthropogenic generation of energy: "ENVO:2000012"
+  energy: "ENVO:2000015"
+
+
+relations: 
+  capable of: "RO:0002215"
+
+
+vars:
+  v0: "'industrial building'"
+  v1: "'energy'"
+
+name:
+  # Could not induce name, using default
+  text: "%s capable of anthropogenic generation of energy realizes %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that capable of a Any anthropogenic generation of energy that realizes a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('capable of' some 'anthropogenic generation of energy' and ('realizes' some %s))"
+  vars:
+    - v0
+    - v1

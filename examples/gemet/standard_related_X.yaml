@@ -1,0 +1,48 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: standard related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/standard_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [emission standard](http://www.eionet.europa.eu/gemet/concept/2677), [environmental quality standard](http://www.eionet.europa.eu/gemet/concept/2915), [housing quality standard](http://www.eionet.europa.eu/gemet/concept/4039) (6 total)
+
+classes: 
+  emission: "http://www.eionet.europa.eu/gemet/concept/2663"
+  environmental quality: "http://www.eionet.europa.eu/gemet/concept/2912"
+  housing: "http://www.eionet.europa.eu/gemet/concept/4022"
+  pesticide: "http://www.eionet.europa.eu/gemet/concept/6140"
+  safety: "http://www.eionet.europa.eu/gemet/concept/7362"
+  standard: "http://www.eionet.europa.eu/gemet/concept/8047"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'emission' or 'environmental quality' or 'housing' or 'pesticide' or 'safety'"
+
+name:
+  # Induced, frequency=0.6666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s standard"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any standard that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'standard' and ('related' some %s)"
+  vars:
+    - v0

@@ -1,0 +1,53 @@
+# options: [min(10),dir('examples/oae'),trim(true),base('http://purl.obolibrary.org/obo/oae'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X develops_from X
+pattern_iri: http://purl.obolibrary.org/obo/oae/X_develops_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ectoderm-derived structure](http://purl.obolibrary.org/obo/UBERON_0004121), [endoderm-derived structure](http://purl.obolibrary.org/obo/UBERON_0004119), [mesoderm-derived structure](http://purl.obolibrary.org/obo/UBERON_0004120) (13 total)
+
+classes: 
+  anatomical structure: "UBERON:0000061"
+
+
+relations: 
+  develops_from: "RO:0002202"
+
+
+vars:
+  v0: "'anatomical structure'"
+  v1: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.15384615384615385, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s derived from %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.23076923076923078, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An %s that develops (entirely or partially) from the %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s-derived %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('develops_from' some %s)"
+  vars:
+    - v0
+    - v1

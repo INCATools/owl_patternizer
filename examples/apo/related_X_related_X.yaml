@@ -1,0 +1,52 @@
+# options: [min(4),dir('examples/apo'),trim(true),base('http://purl.obolibrary.org/obo/apo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: related X related X
+pattern_iri: http://purl.obolibrary.org/obo/apo/related_X_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [null heterozygous diploid](http://purl.obolibrary.org/obo/APO_0000151), [null homozygous diploid](http://purl.obolibrary.org/obo/APO_0000150), [cell cycle arrest in telophase](http://purl.obolibrary.org/obo/APO_0000139) (4 total)
+
+classes: 
+  null: "http://purl.obolibrary.org/obo/APO_0000011"
+  cell cycle arrest: "http://purl.obolibrary.org/obo/APO_0000070"
+  pheromone-induced cell cycle arrest: "http://purl.obolibrary.org/obo/APO_0000124"
+  heterozygous diploid: "http://purl.obolibrary.org/obo/APO_0000206"
+  homozygous diploid: "http://purl.obolibrary.org/obo/APO_0000207"
+  arrested: "http://purl.obolibrary.org/obo/APO_0000250"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'null' or 'cell cycle arrest' or 'pheromone-induced cell cycle arrest' or 'heterozygous diploid' or 'homozygous diploid' or 'arrested'"
+  v1: "'null' or 'cell cycle arrest' or 'pheromone-induced cell cycle arrest' or 'heterozygous diploid' or 'homozygous diploid' or 'arrested'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any related a %s that related a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('related' some %s) and ('related' some %s)"
+  vars:
+    - v0
+    - v1

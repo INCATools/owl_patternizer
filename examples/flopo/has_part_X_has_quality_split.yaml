@@ -1,0 +1,44 @@
+# options: [min(50),dir(flopo),trim(true),base('http://purl.obolibrary.org/obo/flopo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has_part X has quality split
+pattern_iri: http://purl.obolibrary.org/obo/flopo/has_part_X_has_quality_split
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [whole plant split](http://purl.obolibrary.org/obo/FLOPO_0004567), [ovule primordium split](http://purl.obolibrary.org/obo/FLOPO_0003425), [septum split](http://purl.obolibrary.org/obo/FLOPO_0013456) (71 total)
+
+classes: 
+  split: "PATO:0001786"
+  plant anatomical entity: "http://purl.obolibrary.org/obo/PO_0025131"
+
+
+relations: 
+  has_part: "BFO:0000051"
+
+
+vars:
+  v0: "'plant anatomical entity'"
+
+name:
+  # Induced, frequency=0.9577464788732394, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s split"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "has_part a Any %s that has quality a split"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has_part' some %s and ('has quality' some 'split'))"
+  vars:
+    - v0

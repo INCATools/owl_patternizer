@@ -1,0 +1,53 @@
+# options: [min(10),dir('examples/agro'),trim(true),base('http://purl.obolibrary.org/obo/agro'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X inheres in X
+pattern_iri: http://purl.obolibrary.org/obo/agro/X_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [investigation agent role](http://purl.obolibrary.org/obo/OBI_0000202), [composition of soil](http://purl.obolibrary.org/obo/ENVO_09200008), [concentration of nitrate in soil](http://purl.obolibrary.org/obo/ENVO_09200007) (43 total)
+
+classes: 
+  quality: "PATO:0000001"
+
+
+relations: 
+  inheres in: "RO:0000052"
+
+
+vars:
+  v0: "'quality'"
+  v1: "'plant reproductive material' or 'mulch' or 'row' or 'agricultural experimental plot' or 'block' or 'pot' or 'replication' or 'treatment' or 'crop' or 'experimental site' or 'well' or 'farm' or 'agricultural field' or 'soil' or 'slope' or 'air' or 'water' or 'atmospheric wind'"
+
+name:
+  # Induced, frequency=0.2558139534883721, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.23255813953488372, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The %s of some %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('inheres in' some %s)"
+  vars:
+    - v0
+    - v1

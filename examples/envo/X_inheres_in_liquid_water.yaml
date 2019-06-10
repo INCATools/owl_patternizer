@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X inheres in liquid water
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_inheres_in_liquid_water
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [fluorescence of water](http://purl.obolibrary.org/obo/ENVO_3100032), [composition of water](http://purl.obolibrary.org/obo/ENVO_09200017), [temperature of water](http://purl.obolibrary.org/obo/ENVO_09200014) (8 total)
+
+classes: 
+  liquid water: "ENVO:00002006"
+  physical object quality: "PATO:0001241"
+
+
+relations: 
+  inheres in: "RO:0000052"
+
+
+vars:
+  v0: "'physical object quality'"
+
+name:
+  # Induced, frequency=0.875, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of water"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.875, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The %s of some water."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "water %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('inheres in' some 'liquid water')"
+  vars:
+    - v0

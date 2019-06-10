@@ -1,0 +1,55 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: pollution related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/pollution_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [chemical pollution](http://www.eionet.europa.eu/gemet/concept/1319), [air pollution](http://www.eionet.europa.eu/gemet/concept/265), [estuary pollution](http://www.eionet.europa.eu/gemet/concept/12183) (13 total)
+
+classes: 
+  chemical: "http://www.eionet.europa.eu/gemet/concept/1327"
+  air: "http://www.eionet.europa.eu/gemet/concept/245"
+  estuary: "http://www.eionet.europa.eu/gemet/concept/2974"
+  freshwater: "http://www.eionet.europa.eu/gemet/concept/3485"
+  groundwater: "http://www.eionet.europa.eu/gemet/concept/3780"
+  lake: "http://www.eionet.europa.eu/gemet/concept/4594"
+  land: "http://www.eionet.europa.eu/gemet/concept/4599"
+  mineral: "http://www.eionet.europa.eu/gemet/concept/5277"
+  noise: "http://www.eionet.europa.eu/gemet/concept/5624"
+  pollution: "http://www.eionet.europa.eu/gemet/concept/6445"
+  soil: "http://www.eionet.europa.eu/gemet/concept/7843"
+  toxicity: "http://www.eionet.europa.eu/gemet/concept/8538"
+  vehicle: "http://www.eionet.europa.eu/gemet/concept/8926"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'chemical' or 'air' or 'estuary' or 'freshwater' or 'groundwater' or 'lake' or 'land' or 'mineral' or 'noise' or 'soil' or 'toxicity' or 'vehicle'"
+
+name:
+  # Induced, frequency=0.8461538461538461, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s pollution"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any pollution that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'pollution' and ('related' some %s)"
+  vars:
+    - v0

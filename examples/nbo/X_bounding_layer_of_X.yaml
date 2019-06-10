@@ -1,0 +1,47 @@
+# options: [min(8),dir('examples/nbo'),trim(true),base('http://purl.obolibrary.org/obo/nbo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X bounding layer of X
+pattern_iri: http://purl.obolibrary.org/obo/nbo/X_bounding_layer_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [acellular membrane](http://purl.obolibrary.org/obo/UBERON_0005764), [capsule of lens](http://purl.obolibrary.org/obo/UBERON_0001804), [corneal epithelium](http://purl.obolibrary.org/obo/UBERON_0001772) (11 total)
+
+classes: 
+  anatomical structure: "UBERON:0000061"
+
+
+relations: 
+  bounding layer of: "RO:0002007"
+
+
+vars:
+  v0: "'continuant' or 'material anatomical entity'"
+  v1: "'anatomical structure'"
+
+name:
+  # Could not induce name, using default
+  text: "%s bounding layer of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.18181818181818182, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An %s that surrounds a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('bounding layer of' some %s)"
+  vars:
+    - v0
+    - v1

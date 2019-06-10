@@ -1,0 +1,47 @@
+# options: [min(8),dir('examples/nbo'),trim(true),base('http://purl.obolibrary.org/obo/nbo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X surrounds X
+pattern_iri: http://purl.obolibrary.org/obo/nbo/X_surrounds_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [space surrounding organism](http://purl.obolibrary.org/obo/UBERON_0013514), [periurethral tissue](http://purl.obolibrary.org/obo/UBERON_0009010), [lens cortex](http://purl.obolibrary.org/obo/UBERON_0000389) (8 total)
+
+classes: 
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  surrounds: "RO:0002221"
+
+
+vars:
+  v0: "'anatomical entity'"
+  v1: "'continuant' or 'material anatomical entity'"
+
+name:
+  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.125, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s that surrounds %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('surrounds' some %s)"
+  vars:
+    - v0
+    - v1

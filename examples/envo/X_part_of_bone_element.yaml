@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of bone element
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_bone_element
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [neck of bone element](http://purl.obolibrary.org/obo/UBERON_0018664), [cavity of bone organ](http://purl.obolibrary.org/obo/UBERON_0010527), [bone foramen](http://purl.obolibrary.org/obo/UBERON_0005744) (5 total)
+
+classes: 
+  anatomical entity: "UBERON:0001062"
+  bone element: "UBERON:0001474"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.2, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "bone %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An %s that is part of a bone"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'bone element')"
+  vars:
+    - v0

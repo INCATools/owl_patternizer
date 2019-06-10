@@ -1,0 +1,48 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: related X related resource
+pattern_iri: http://purl.obolibrary.org/obo/gemet/related_X_related_resource
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [resource reserve](http://www.eionet.europa.eu/gemet/concept/7173), [resource appraisal](http://www.eionet.europa.eu/gemet/concept/7169), [resource conservation](http://www.eionet.europa.eu/gemet/concept/7170) (5 total)
+
+classes: 
+  reserve: "http://www.eionet.europa.eu/gemet/concept/10201"
+  appraisal: "http://www.eionet.europa.eu/gemet/concept/12900"
+  conservation: "http://www.eionet.europa.eu/gemet/concept/1700"
+  forest: "http://www.eionet.europa.eu/gemet/concept/3406"
+  management: "http://www.eionet.europa.eu/gemet/concept/4985"
+  resource: "http://www.eionet.europa.eu/gemet/concept/7168"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'reserve' or 'appraisal' or 'conservation' or 'forest' or 'management'"
+
+name:
+  # Induced, frequency=0.6, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "resource %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any related a %s that related a resource"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('related' some %s) and ('related' some 'resource')"
+  vars:
+    - v0

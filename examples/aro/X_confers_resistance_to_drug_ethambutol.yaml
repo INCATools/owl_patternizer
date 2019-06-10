@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/aro'),trim(true),base('http://purl.obolibrary.org/obo/aro'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X confers_resistance_to_drug ethambutol
+pattern_iri: http://purl.obolibrary.org/obo/aro/X_confers_resistance_to_drug_ethambutol
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ethambutol resistant arabinosyltransferase](http://purl.obolibrary.org/obo/ARO_3002876), [Ethambutol resistant iniA](http://purl.obolibrary.org/obo/ARO_3003447), [Ethambutol resistant iniC](http://purl.obolibrary.org/obo/ARO_3003450) (4 total)
+
+classes: 
+  antibiotic resistant gene variant or mutant: "http://purl.obolibrary.org/obo/ARO_0000031"
+  ethambutol: "http://purl.obolibrary.org/obo/ARO_3000497"
+
+
+relations: 
+  confers_resistance_to_drug: "http://purl.obolibrary.org/obo/RO#_confers_resistance_to_drug"
+
+
+vars:
+  v0: "'antibiotic resistant gene variant or mutant'"
+
+name:
+  # Could not induce name, using default
+  text: "%s confers_resistance_to_drug ethambutol"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that confers_resistance_to_drug a ethambutol"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('confers_resistance_to_drug' some 'ethambutol')"
+  vars:
+    - v0

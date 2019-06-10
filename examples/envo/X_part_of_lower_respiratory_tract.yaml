@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of lower respiratory tract
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_lower_respiratory_tract
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [lower respiratory tract epithelium](http://purl.obolibrary.org/obo/UBERON_0004815), [lower respiratory tract smooth muscle](http://purl.obolibrary.org/obo/UBERON_0004233), [lower respiratory tract connective tissue](http://purl.obolibrary.org/obo/UBERON_0003580) (4 total)
+
+classes: 
+  lower respiratory tract: "UBERON:0001558"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "lower respiratory tract %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a lower respiratory tract [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of lower respiratory tract"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'lower respiratory tract')"
+  vars:
+    - v0

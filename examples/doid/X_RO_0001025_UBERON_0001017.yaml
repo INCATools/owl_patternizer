@@ -1,0 +1,48 @@
+pattern_name: X RO_0001025 UBERON_0001017
+pattern_iri: http://purl.obolibrary.org/obo/doid/X_RO_0001025_UBERON_0001017
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [central nervous system angiosarcoma](http://purl.obolibrary.org/obo/DOID_4504), [central nervous system lymphoma](http://purl.obolibrary.org/obo/DOID_3234), [central nervous system organ benign neoplasm](http://purl.obolibrary.org/obo/DOID_0060090) (27 total)
+
+classes: 
+  disease: "http://purl.obolibrary.org/obo/DOID_4"
+  UBERON_0001017: "UBERON:0001017"
+
+
+relations: 
+  RO_0001025: "RO:0001025"
+
+
+vars:
+  v0: "'disease'"
+
+name:
+  # Induced, frequency=0.7407407407407407, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "central nervous system %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2222222222222222, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is located_in the central nervous system."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of CNS"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('RO_0001025' some 'UBERON_0001017')"
+  vars:
+    - v0

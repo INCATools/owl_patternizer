@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/vo'),trim(true),base('http://purl.obolibrary.org/obo/vo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: viral vaccine vaccine immunization against microbe X
+pattern_iri: http://purl.obolibrary.org/obo/vo/viral_vaccine_vaccine_immunization_against_microbe_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [fowl pox vaccine](http://purl.obolibrary.org/obo/VO_0000985), [bovine herpesvirus 1 vaccine](http://purl.obolibrary.org/obo/VO_0001482), [Equid herpesvirus 1 vaccine](http://purl.obolibrary.org/obo/VO_0001486) (24 total)
+
+classes: 
+  Viruses: "http://purl.obolibrary.org/obo/NCBITaxon_10239"
+  viral vaccine: "http://purl.obolibrary.org/obo/VO_0000609"
+
+
+relations: 
+  vaccine immunization against microbe: "http://purl.obolibrary.org/obo/VO_0003355"
+
+
+vars:
+  v0: "'Viruses'"
+
+name:
+  # Induced, frequency=0.9166666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s vaccine"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2916666666666667, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "viral vaccine that is used to protect against %s infection"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'viral vaccine' and ('vaccine immunization against microbe' some %s)"
+  vars:
+    - v0

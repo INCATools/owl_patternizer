@@ -1,0 +1,48 @@
+# options: [min(4),dir('examples/aro'),trim(true),base('http://purl.obolibrary.org/obo/aro'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: participates_in X related X
+pattern_iri: http://purl.obolibrary.org/obo/aro/participates_in_X_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Escherichia coli 16S rRNA (rrsB) mutation conferring resistance to tetracycline](http://purl.obolibrary.org/obo/ARO_3003410), [Enterococcus faecalis gshF with mutation conferring daptomycin resistance](http://purl.obolibrary.org/obo/ARO_3003805), [Escherichia coli 16S rRNA mutation conferring resistance to edeine](http://purl.obolibrary.org/obo/ARO_3003223) (6 total)
+
+classes: 
+  mutation conferring antibiotic resistance: "http://purl.obolibrary.org/obo/ARO_3000212"
+
+
+relations: 
+  participates_in: "http://purl.obolibrary.org/obo/RO#_participates_in"
+  related: "skos:related"
+
+
+vars:
+  v0: "'mutation conferring antibiotic resistance'"
+  v1: "'antibiotic molecule'"
+
+name:
+  # Could not induce name, using default
+  text: "participates_in %s related %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any participates_in a %s that related a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('participates_in' some %s) and ('related' some %s)"
+  vars:
+    - v0
+    - v1

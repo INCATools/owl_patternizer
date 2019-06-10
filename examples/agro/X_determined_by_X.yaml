@@ -1,0 +1,53 @@
+# options: [min(10),dir('examples/agro'),trim(true),base('http://purl.obolibrary.org/obo/agro'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X determined by X
+pattern_iri: http://purl.obolibrary.org/obo/agro/X_determined_by_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [environment associated with an animal part or small animal](http://purl.obolibrary.org/obo/ENVO_01001055), [soil environment](http://purl.obolibrary.org/obo/ENVO_01001044), [aquatic environment](http://purl.obolibrary.org/obo/ENVO_01000317) (20 total)
+
+classes: 
+  system: "RO:0002577"
+
+
+relations: 
+  determined by: "RO:0002507"
+
+
+vars:
+  v0: "'system'"
+  v1: "'material entity'"
+
+name:
+  # Induced, frequency=0.2, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that determined by a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('determined by' some %s)"
+  vars:
+    - v0
+    - v1

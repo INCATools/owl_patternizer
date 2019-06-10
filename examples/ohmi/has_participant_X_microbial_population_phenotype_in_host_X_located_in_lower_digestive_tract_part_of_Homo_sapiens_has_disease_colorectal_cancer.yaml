@@ -1,0 +1,51 @@
+# options: [min(25),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has participant X microbial population phenotype in host X located in lower digestive tract part of Homo sapiens has disease colorectal cancer
+pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_microbial_population_phenotype_in_host_X_located_in_lower_digestive_tract_part_of_Homo_sapiens_has_disease_colorectal_cancer
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [expansion of Beggiatoa in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000290), [expansion of Collinsella in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000300), [expansion of S. moorei in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000283) (153 total)
+
+classes: 
+  organism or virus or viroid: "http://purl.obolibrary.org/obo/CARO_0001010"
+  colorectal cancer: "http://purl.obolibrary.org/obo/DOID_9256"
+  Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+  organism: "http://purl.obolibrary.org/obo/OBI_0100026"
+  lower digestive tract: "UBERON:0004907"
+
+
+relations: 
+  has participant: "RO:0000057"
+
+
+vars:
+  v0: "'organism or virus or viroid' or 'organism'"
+  v1: "'quality'"
+
+name:
+  # Could not induce name, using default
+  text: "has participant %s microbial population phenotype in host %s located in lower digestive tract part of Homo sapiens has disease colorectal cancer"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "has participant a Any %s that microbial population phenotype in host a %s and located in a Any lower digestive tract that part of a Any Homo sapiens that has disease a colorectal cancer"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has participant' some %s and ('microbial population phenotype in host' some %s) and ('located in' some 'lower digestive tract' and ('part of' some 'Homo sapiens' and ('has disease' some 'colorectal cancer'))))"
+  vars:
+    - v0
+    - v1

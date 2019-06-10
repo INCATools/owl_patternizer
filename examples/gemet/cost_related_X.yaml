@@ -1,0 +1,49 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: cost related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/cost_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [electricity generation cost](http://www.eionet.europa.eu/gemet/concept/2596), [environmental protection cost](http://www.eionet.europa.eu/gemet/concept/2903), [pollution cost](http://www.eionet.europa.eu/gemet/concept/1825) (6 total)
+
+classes: 
+  cost: "http://www.eionet.europa.eu/gemet/concept/1824"
+  electricity generation: "http://www.eionet.europa.eu/gemet/concept/2595"
+  environmental protection: "http://www.eionet.europa.eu/gemet/concept/2900"
+  pollution: "http://www.eionet.europa.eu/gemet/concept/6445"
+  replacement: "http://www.eionet.europa.eu/gemet/concept/7114"
+  travel: "http://www.eionet.europa.eu/gemet/concept/8658"
+  waste disposal: "http://www.eionet.europa.eu/gemet/concept/9062"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'electricity generation' or 'environmental protection' or 'pollution' or 'replacement' or 'travel' or 'waste disposal'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s cost"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any cost that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'cost' and ('related' some %s)"
+  vars:
+    - v0

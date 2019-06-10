@@ -1,0 +1,44 @@
+# options: [min(50),dir(flopo),trim(true),base('http://purl.obolibrary.org/obo/flopo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has_part X has quality concave
+pattern_iri: http://purl.obolibrary.org/obo/flopo/has_part_X_has_quality_concave
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [whole plant concave](http://purl.obolibrary.org/obo/FLOPO_0006483), [apical hook concave](http://purl.obolibrary.org/obo/FLOPO_0007884), [root tip concave](http://purl.obolibrary.org/obo/FLOPO_0005842) (99 total)
+
+classes: 
+  concave: "PATO:0001857"
+  plant anatomical entity: "http://purl.obolibrary.org/obo/PO_0025131"
+
+
+relations: 
+  has_part: "BFO:0000051"
+
+
+vars:
+  v0: "'plant anatomical entity'"
+
+name:
+  # Induced, frequency=0.9595959595959596, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s concave"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "has_part a Any %s that has quality a concave"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has_part' some %s and ('has quality' some 'concave'))"
+  vars:
+    - v0

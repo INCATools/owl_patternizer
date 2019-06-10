@@ -1,0 +1,54 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: regulation related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/regulation_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [building regulation](http://www.eionet.europa.eu/gemet/concept/1049), [mining regulation](http://www.eionet.europa.eu/gemet/concept/5293), [dangerous goods regulation](http://www.eionet.europa.eu/gemet/concept/1971) (11 total)
+
+classes: 
+  building: "http://www.eionet.europa.eu/gemet/concept/1029"
+  regulation: "http://www.eionet.europa.eu/gemet/concept/11514"
+  mining: "http://www.eionet.europa.eu/gemet/concept/14837"
+  dangerous goods: "http://www.eionet.europa.eu/gemet/concept/1969"
+  agricultural production: "http://www.eionet.europa.eu/gemet/concept/219"
+  electronic scrap: "http://www.eionet.europa.eu/gemet/concept/2625"
+  environmental protection: "http://www.eionet.europa.eu/gemet/concept/2900"
+  health: "http://www.eionet.europa.eu/gemet/concept/3865"
+  pollution control: "http://www.eionet.europa.eu/gemet/concept/6451"
+  safety: "http://www.eionet.europa.eu/gemet/concept/7362"
+  traffic: "http://www.eionet.europa.eu/gemet/concept/8582"
+  transportation: "http://www.eionet.europa.eu/gemet/concept/8641"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'building' or 'mining' or 'dangerous goods' or 'agricultural production' or 'electronic scrap' or 'environmental protection' or 'health' or 'pollution control' or 'safety' or 'traffic' or 'transportation'"
+
+name:
+  # Induced, frequency=0.7272727272727273, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s regulation"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any regulation that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'regulation' and ('related' some %s)"
+  vars:
+    - v0

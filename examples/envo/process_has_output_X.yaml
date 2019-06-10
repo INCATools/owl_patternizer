@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: process has output X
+pattern_iri: http://purl.obolibrary.org/obo/envo/process_has_output_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [construction process](http://purl.obolibrary.org/obo/ENVO_01000996), [island formation process](http://purl.obolibrary.org/obo/ENVO_1000748), [primary aerosol formation process](http://purl.obolibrary.org/obo/ENVO_01001367) (15 total)
+
+classes: 
+  entity: "BFO:0000001"
+  process: "BFO:0000015"
+
+
+relations: 
+  has output: "RO:0002234"
+
+
+vars:
+  v0: "'entity'"
+
+name:
+  # Induced, frequency=0.7333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s formation process"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any process that has output a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'process' and ('has output' some %s)"
+  vars:
+    - v0

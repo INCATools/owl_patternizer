@@ -1,0 +1,50 @@
+# options: [min(8),dir('examples/nbo'),trim(true),base('http://purl.obolibrary.org/obo/nbo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: anatomical wall part of X
+pattern_iri: http://purl.obolibrary.org/obo/nbo/anatomical_wall_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [wall of ureter](http://purl.obolibrary.org/obo/UBERON_0009916), [wall of large intestine](http://purl.obolibrary.org/obo/UBERON_0001169), [wall of intestine](http://purl.obolibrary.org/obo/UBERON_0001262) (9 total)
+
+classes: 
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  anatomical wall: "UBERON:0000060"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity' or 'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.5555555555555556, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "wall of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2222222222222222, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An anatomical wall that is part of a %s [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s wall"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'anatomical wall' and ('part of' some %s)"
+  vars:
+    - v0

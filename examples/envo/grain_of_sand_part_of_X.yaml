@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: grain of sand part of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/grain_of_sand_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [grain of sea sand](http://purl.obolibrary.org/obo/ENVO_00000347), [grain of beach sand](http://purl.obolibrary.org/obo/ENVO_00000345), [grain of acid dune sand](http://purl.obolibrary.org/obo/ENVO_00000346) (5 total)
+
+classes: 
+  grain of sand: "ENVO:00000340"
+  sand: "ENVO:01000017"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'sand'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "grain of %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any grain of sand that part of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'grain of sand' and ('part of' some %s)"
+  vars:
+    - v0

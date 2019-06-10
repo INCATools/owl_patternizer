@@ -1,0 +1,48 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: related degradation related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/related_degradation_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ecosystem degradation](http://www.eionet.europa.eu/gemet/concept/2522), [degradation of the environment](http://www.eionet.europa.eu/gemet/concept/13236), [freshwater degradation](http://www.eionet.europa.eu/gemet/concept/3488) (5 total)
+
+classes: 
+  degradation: "http://www.eionet.europa.eu/gemet/concept/2040"
+  ecosystem: "http://www.eionet.europa.eu/gemet/concept/2519"
+  environmentalism: "http://www.eionet.europa.eu/gemet/concept/2857"
+  freshwater: "http://www.eionet.europa.eu/gemet/concept/3485"
+  product: "http://www.eionet.europa.eu/gemet/concept/6660"
+  soil: "http://www.eionet.europa.eu/gemet/concept/7843"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'ecosystem' or 'environmentalism' or 'freshwater' or 'product' or 'soil'"
+
+name:
+  # Induced, frequency=0.6, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s degradation"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any related a degradation that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('related' some 'degradation') and ('related' some %s)"
+  vars:
+    - v0

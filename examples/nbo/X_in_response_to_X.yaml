@@ -1,0 +1,47 @@
+# options: [min(8),dir('examples/nbo'),trim(true),base('http://purl.obolibrary.org/obo/nbo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X in_response_to X
+pattern_iri: http://purl.obolibrary.org/obo/nbo/X_in_response_to_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [conditioned emotional response](http://purl.obolibrary.org/obo/NBO_0000221), [visual behavior](http://purl.obolibrary.org/obo/NBO_0000314), [auditory behavior](http://purl.obolibrary.org/obo/NBO_0000316) (19 total)
+
+classes: 
+  cognitive behavior: "http://purl.obolibrary.org/obo/NBO_0000607"
+
+
+relations: 
+  in_response_to: "http://purl.obolibrary.org/obo/nbo#in_response_to"
+
+
+vars:
+  v0: "'cognitive behavior'"
+  v1: "'visual perception' or 'sensory perception of sound' or 'sensory perception of smell' or 'sensory perception of pain' or 'sensory perception of taste' or 'thermoception' or 'detection of temperature stimulus involved in sensory perception of pain' or 'detection of mechanical stimulus involved in sensory perception of pain' or 'detection of electrical stimulus involved in sensory perception of pain' or 'detection of chemical stimulus involved in sensory perception of pain' or 'sensory perception of touch' or 'alcohol consumption' or 'emotional conditioning' or 'cocaine consumption' or 'morphine consumption' or 'nicotine consumption' or 'increased temperature' or 'decreased temperature'"
+
+name:
+  # Could not induce name, using default
+  text: "%s in_response_to %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that in_response_to a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('in_response_to' some %s)"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,47 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: related X related animal
+pattern_iri: http://purl.obolibrary.org/obo/gemet/related_X_related_animal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [animal shelter](http://www.eionet.europa.eu/gemet/concept/449), [animal corridor](http://www.eionet.europa.eu/gemet/concept/10510), [animal damage](http://www.eionet.europa.eu/gemet/concept/10511) (5 total)
+
+classes: 
+  shelter: "http://www.eionet.europa.eu/gemet/concept/10495"
+  corridor: "http://www.eionet.europa.eu/gemet/concept/1807"
+  damage: "http://www.eionet.europa.eu/gemet/concept/1956"
+  housing: "http://www.eionet.europa.eu/gemet/concept/4022"
+  animal: "http://www.eionet.europa.eu/gemet/concept/450"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'shelter' or 'corridor' or 'damage' or 'housing'"
+
+name:
+  # Induced, frequency=1.6, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "animal %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any related a %s that related a animal"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('related' some %s) and ('related' some 'animal')"
+  vars:
+    - v0

@@ -1,0 +1,50 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: effect related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/effect_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [effect on the environment](http://www.eionet.europa.eu/gemet/concept/2566), [effect on health](http://www.eionet.europa.eu/gemet/concept/2564), [microclimate effect](http://www.eionet.europa.eu/gemet/concept/5220) (7 total)
+
+classes: 
+  effect: "http://www.eionet.europa.eu/gemet/concept/2562"
+  environmentalism: "http://www.eionet.europa.eu/gemet/concept/2857"
+  health: "http://www.eionet.europa.eu/gemet/concept/3865"
+  microclimate: "http://www.eionet.europa.eu/gemet/concept/5219"
+  noise: "http://www.eionet.europa.eu/gemet/concept/5624"
+  pollution: "http://www.eionet.europa.eu/gemet/concept/6445"
+  radiation: "http://www.eionet.europa.eu/gemet/concept/6884"
+  toxicity: "http://www.eionet.europa.eu/gemet/concept/8538"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'environmentalism' or 'health' or 'microclimate' or 'noise' or 'pollution' or 'radiation' or 'toxicity'"
+
+name:
+  # Induced, frequency=0.5714285714285714, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s effect"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any effect that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'effect' and ('related' some %s)"
+  vars:
+    - v0

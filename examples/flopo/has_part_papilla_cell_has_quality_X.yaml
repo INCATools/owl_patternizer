@@ -1,0 +1,44 @@
+# options: [min(50),dir(flopo),trim(true),base('http://purl.obolibrary.org/obo/flopo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has_part papilla cell has quality X
+pattern_iri: http://purl.obolibrary.org/obo/flopo/has_part_papilla_cell_has_quality_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [papilla cell color](http://purl.obolibrary.org/obo/FLOPO_0003509), [papilla cell composition](http://purl.obolibrary.org/obo/FLOPO_0006214), [papilla cell morphology](http://purl.obolibrary.org/obo/FLOPO_0005989) (108 total)
+
+classes: 
+  physical object quality: "PATO:0001241"
+  papilla cell: "http://purl.obolibrary.org/obo/PO_0025166"
+
+
+relations: 
+  has_part: "BFO:0000051"
+
+
+vars:
+  v0: "'physical object quality'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "papilla cell %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "has_part a Any papilla cell that has quality a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has_part' some 'papilla cell' and ('has quality' some %s))"
+  vars:
+    - v0

@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of outer medulla of kidney
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_outer_medulla_of_kidney
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [outer medullary collecting duct](http://purl.obolibrary.org/obo/UBERON_0004204), [outer renal medulla loop of Henle](http://purl.obolibrary.org/obo/UBERON_0034996), [outer renal medulla vasa recta](http://purl.obolibrary.org/obo/UBERON_0004775) (5 total)
+
+classes: 
+  outer medulla of kidney: "UBERON:0001293"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.8, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "outer renal medulla %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a outer medulla of kidney [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "kidney outer medulla %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'outer medulla of kidney')"
+  vars:
+    - v0

@@ -1,0 +1,46 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related vehicle
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_vehicle
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [motor vehicle emission](http://www.eionet.europa.eu/gemet/concept/5391), [vehicle manufacturing industry](http://www.eionet.europa.eu/gemet/concept/8934), [vehicle inspection](http://www.eionet.europa.eu/gemet/concept/8931) (5 total)
+
+classes: 
+  emission: "http://www.eionet.europa.eu/gemet/concept/2663"
+  industry: "http://www.eionet.europa.eu/gemet/concept/4279"
+  inspection: "http://www.eionet.europa.eu/gemet/concept/4360"
+  vehicle: "http://www.eionet.europa.eu/gemet/concept/8926"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'emission' or 'industry' or 'inspection'"
+
+name:
+  # Induced, frequency=0.6, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "motor vehicle %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a vehicle"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'vehicle')"
+  vars:
+    - v0

@@ -1,0 +1,53 @@
+# options: [min(25),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has participant X microbial population phenotype in host decreased organism quantity compared with healthy controls located in X part of Homo sapiens has disease X
+pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_microbial_population_phenotype_in_host_decreased_organism_quantity_compared_with_healthy_controls_located_in_X_part_of_Homo_sapiens_has_disease_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [depletion of Coprobacillus in PsA human gut](http://purl.obolibrary.org/obo/OHMI_0000158), [depletion of Capnocytophaga gingivalis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000237), [depletion of Anaerovorax in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000312) (113 total)
+
+classes: 
+  Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+  decreased organism quantity compared with healthy controls: "http://purl.obolibrary.org/obo/OHMI_0000035"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  has participant: "RO:0000057"
+
+
+vars:
+  v0: "'microbe'"
+  v1: "'anatomical entity'"
+  v2: "'disease of anatomical entity'"
+
+name:
+  # Induced, frequency=0.40707964601769914, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "depletion of %s in %s human %s"
+  vars:
+    - v0
+    - v2
+    - v1
+
+def:
+  # Induced, frequency=0.4424778761061947, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s human-%s microbiome interaction where %s is decreased."
+  vars:
+    - v2
+    - v1
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has participant' some %s and ('microbial population phenotype in host' some 'decreased organism quantity compared with healthy controls') and ('located in' some %s and ('part of' some 'Homo sapiens' and ('has disease' some %s))))"
+  vars:
+    - v0
+    - v1
+    - v2

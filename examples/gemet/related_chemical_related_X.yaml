@@ -1,0 +1,50 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: related chemical related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/related_chemical_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [chemical corrosivity](http://www.eionet.europa.eu/gemet/concept/11795), [chemical in the environment](http://www.eionet.europa.eu/gemet/concept/1330), [chemical fertiliser](http://www.eionet.europa.eu/gemet/concept/1307) (7 total)
+
+classes: 
+  chemical: "http://www.eionet.europa.eu/gemet/concept/1327"
+  corrosion: "http://www.eionet.europa.eu/gemet/concept/1808"
+  environmentalism: "http://www.eionet.europa.eu/gemet/concept/2857"
+  fertiliser: "http://www.eionet.europa.eu/gemet/concept/3169"
+  household: "http://www.eionet.europa.eu/gemet/concept/4015"
+  planting: "http://www.eionet.europa.eu/gemet/concept/6313"
+  pollution: "http://www.eionet.europa.eu/gemet/concept/6445"
+  processing: "http://www.eionet.europa.eu/gemet/concept/6650"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'corrosion' or 'environmentalism' or 'fertiliser' or 'household' or 'planting' or 'pollution' or 'processing'"
+
+name:
+  # Induced, frequency=0.14285714285714285, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s chemical"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any related a chemical that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('related' some 'chemical') and ('related' some %s)"
+  vars:
+    - v0

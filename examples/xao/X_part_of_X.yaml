@@ -1,0 +1,59 @@
+# options: [min(12),dir(xao),trim(true),base('http://purl.obolibrary.org/obo/xao'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of X
+pattern_iri: http://purl.obolibrary.org/obo/xao/X_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [tail fin](http://purl.obolibrary.org/obo/XAO_0004062), [trunk somite 2](http://purl.obolibrary.org/obo/XAO_0000407), [tail somite](http://purl.obolibrary.org/obo/XAO_0003143) (46 total)
+
+classes: 
+  anatomical structure: "ns1:XAO_0003000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical structure'"
+  v1: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.391304347826087, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.043478260869565216, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s that is part of the %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of %s"
+    vars:
+      - v0
+      - v1
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('part of' some %s)"
+  vars:
+    - v0
+    - v1

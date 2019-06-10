@@ -1,0 +1,44 @@
+# options: [min(50),dir(flopo),trim(true),base('http://purl.obolibrary.org/obo/flopo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has_part X has quality fertility
+pattern_iri: http://purl.obolibrary.org/obo/flopo/has_part_X_has_quality_fertility
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [whole plant fertility](http://purl.obolibrary.org/obo/FLOPO_0006359), [apical hook fertility](http://purl.obolibrary.org/obo/FLOPO_0006973), [ovule primordium fertility](http://purl.obolibrary.org/obo/FLOPO_0020891) (102 total)
+
+classes: 
+  fertility: "PATO:0000274"
+  plant anatomical entity: "http://purl.obolibrary.org/obo/PO_0025131"
+
+
+relations: 
+  has_part: "BFO:0000051"
+
+
+vars:
+  v0: "'plant anatomical entity'"
+
+name:
+  # Induced, frequency=0.9509803921568627, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s fertility"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "has_part a Any %s that has quality a fertility"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has_part' some %s and ('has quality' some 'fertility'))"
+  vars:
+    - v0

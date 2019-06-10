@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of femur
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_femur
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [epiphysis of femur](http://purl.obolibrary.org/obo/UBERON_0004384), [metaphysis of femur](http://purl.obolibrary.org/obo/UBERON_0006865), [neck of femur](http://purl.obolibrary.org/obo/UBERON_0007119) (6 total)
+
+classes: 
+  femur: "UBERON:0000981"
+  zone of organ: "UBERON:0034944"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'zone of organ'"
+
+name:
+  # Induced, frequency=0.8333333333333334, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of femur"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3333333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a femur."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "femoral %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'femur')"
+  vars:
+    - v0

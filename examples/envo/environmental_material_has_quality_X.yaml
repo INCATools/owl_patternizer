@@ -1,0 +1,45 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: environmental material has quality X
+pattern_iri: http://purl.obolibrary.org/obo/envo/environmental_material_has_quality_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [solid environmental material](http://purl.obolibrary.org/obo/ENVO_01000814), [gaseous environmental material](http://purl.obolibrary.org/obo/ENVO_01000797), [liquid environmental material](http://purl.obolibrary.org/obo/ENVO_01000815) (4 total)
+
+classes: 
+  environmental material: "ENVO:00010483"
+  quality of a single physical entity: "PATO:0001237"
+  quality of a substance: "PATO:0002198"
+
+
+relations: 
+  has quality: "RO:0000086"
+
+
+vars:
+  v0: "'quality of a single physical entity' or 'quality of a substance'"
+
+name:
+  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s environmental material"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any environmental material that has quality a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'environmental material' and ('has quality' some %s)"
+  vars:
+    - v0

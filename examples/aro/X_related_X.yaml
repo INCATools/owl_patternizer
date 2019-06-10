@@ -1,0 +1,47 @@
+# options: [min(4),dir('examples/aro'),trim(true),base('http://purl.obolibrary.org/obo/aro'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related X
+pattern_iri: http://purl.obolibrary.org/obo/aro/X_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [determinant of tetracycline resistance](http://purl.obolibrary.org/obo/ARO_3000472), [determinant of pleuromutilin resistance](http://purl.obolibrary.org/obo/ARO_3003753), [dapsone resistant dihydropteroate synthase folP](http://purl.obolibrary.org/obo/ARO_3003388) (20 total)
+
+classes: 
+  process or component of antibiotic biology or chemistry: "http://purl.obolibrary.org/obo/ARO_1000001"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'process or component of antibiotic biology or chemistry'"
+  v1: "'process or component of antibiotic biology or chemistry'"
+
+name:
+  # Could not induce name, using default
+  text: "%s related %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some %s)"
+  vars:
+    - v0
+    - v1

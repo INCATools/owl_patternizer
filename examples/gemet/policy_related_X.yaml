@@ -1,0 +1,55 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: policy related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/policy_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [local government policy](http://www.eionet.europa.eu/gemet/concept/4885), [chemical policy](http://www.eionet.europa.eu/gemet/concept/1317), [communications policy](http://www.eionet.europa.eu/gemet/concept/13298) (12 total)
+
+classes: 
+  local government: "http://www.eionet.europa.eu/gemet/concept/10992"
+  chemical: "http://www.eionet.europa.eu/gemet/concept/1327"
+  communications: "http://www.eionet.europa.eu/gemet/concept/1605"
+  co-operation: "http://www.eionet.europa.eu/gemet/concept/1787"
+  AIDS: "http://www.eionet.europa.eu/gemet/concept/243"
+  education: "http://www.eionet.europa.eu/gemet/concept/2547"
+  energy: "http://www.eionet.europa.eu/gemet/concept/2712"
+  fishery: "http://www.eionet.europa.eu/gemet/concept/3237"
+  forest: "http://www.eionet.europa.eu/gemet/concept/3406"
+  policy: "http://www.eionet.europa.eu/gemet/concept/6370"
+  research: "http://www.eionet.europa.eu/gemet/concept/7127"
+  tariff: "http://www.eionet.europa.eu/gemet/concept/8301"
+  transportation: "http://www.eionet.europa.eu/gemet/concept/8641"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'local government' or 'chemical' or 'communications' or 'co-operation' or 'AIDS' or 'education' or 'energy' or 'fishery' or 'forest' or 'research' or 'tariff' or 'transportation'"
+
+name:
+  # Induced, frequency=0.8333333333333334, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s policy"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any policy that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'policy' and ('related' some %s)"
+  vars:
+    - v0

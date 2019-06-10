@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: sphincter muscle part of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/sphincter_muscle_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [urethral sphincter](http://purl.obolibrary.org/obo/UBERON_0004917), [cloacal sphincter](http://purl.obolibrary.org/obo/UBERON_0013501), [vaginal sphincter](http://purl.obolibrary.org/obo/UBERON_0012487) (9 total)
+
+classes: 
+  anatomical structure: "UBERON:0000061"
+  sphincter muscle: "UBERON:0004590"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%sl sphincter"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3333333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A sphincter muscle that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "sphincter %se"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'sphincter muscle' and ('part of' some %s)"
+  vars:
+    - v0

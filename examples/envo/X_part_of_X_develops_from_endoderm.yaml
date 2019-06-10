@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of X develops from endoderm
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_X_develops_from_endoderm
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [endoderm of foregut](http://purl.obolibrary.org/obo/UBERON_0003258), [endoderm of midgut](http://purl.obolibrary.org/obo/UBERON_0003259), [endoderm of hindgut](http://purl.obolibrary.org/obo/UBERON_0003260) (5 total)
+
+classes: 
+  endoderm: "UBERON:0000925"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+  develops from: "RO:0002202"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+  v1: "'multicellular anatomical structure'"
+
+name:
+  # Could not induce name, using default
+  text: "%s part of %s develops from endoderm"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that part of a %s and develops from a endoderm"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('part of' some %s) and ('develops from' some 'endoderm')"
+  vars:
+    - v0
+    - v1

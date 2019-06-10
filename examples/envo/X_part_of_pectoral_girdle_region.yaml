@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of pectoral girdle region
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_pectoral_girdle_region
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [musculature of pectoral girdle](http://purl.obolibrary.org/obo/UBERON_0004471), [pectoral lymphatic vessel](http://purl.obolibrary.org/obo/UBERON_0001425), [pectoral girdle bone](http://purl.obolibrary.org/obo/UBERON_0007829) (5 total)
+
+classes: 
+  pectoral girdle region: "UBERON:0001421"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.4, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of pectoral girdle"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.4, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a pectoral girdle region."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of pectoral girdle"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'pectoral girdle region')"
+  vars:
+    - v0

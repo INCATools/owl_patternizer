@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/aro'),trim(true),base('http://purl.obolibrary.org/obo/aro'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: 16S rRNA with mutation conferring antibiotic resistance confers_resistance_to X
+pattern_iri: http://purl.obolibrary.org/obo/aro/16S_rRNA_with_mutation_conferring_antibiotic_resistance_confers_resistance_to_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [16s rRNA with mutation conferring resistance to aminoglycoside antibiotics](http://purl.obolibrary.org/obo/ARO_3003666), [16s rRNA with mutation conferring resistance to peptide antibiotics](http://purl.obolibrary.org/obo/ARO_3003667), [16s rRNA with mutation conferring resistance to polyamine antibiotics](http://purl.obolibrary.org/obo/ARO_3003668) (4 total)
+
+classes: 
+  antibiotic molecule: "http://purl.obolibrary.org/obo/ARO_1000003"
+  16S rRNA with mutation conferring antibiotic resistance: "http://purl.obolibrary.org/obo/ARO_3003211"
+
+
+relations: 
+  confers_resistance_to: "http://purl.obolibrary.org/obo/RO#_confers_resistance_to"
+
+
+vars:
+  v0: "'antibiotic molecule'"
+
+name:
+  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "16s rRNA with mutation conferring resistance to %ss"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Point mutations in the 16S rRNA of bacteria can confer resistance to %ss."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'16S rRNA with mutation conferring antibiotic resistance' and ('confers_resistance_to' some %s)"
+  vars:
+    - v0

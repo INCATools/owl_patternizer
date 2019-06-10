@@ -1,0 +1,55 @@
+# options: [min(8),dir('examples/nbo'),trim(true),base('http://purl.obolibrary.org/obo/nbo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: nerve part of X
+pattern_iri: http://purl.obolibrary.org/obo/nbo/nerve_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [sympathetic nerve](http://purl.obolibrary.org/obo/UBERON_0034729), [nerve of head region](http://purl.obolibrary.org/obo/UBERON_0011779), [nerve of thoracic segment](http://purl.obolibrary.org/obo/UBERON_0003824) (12 total)
+
+classes: 
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  nerve: "UBERON:0001021"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity' or 'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.5833333333333334, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s nerve"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5833333333333334, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A nerve that is part of a %s [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "nerve of %s"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s nerve"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'nerve' and ('part of' some %s)"
+  vars:
+    - v0

@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: lymph node part of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/lymph_node_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [lymph node of head](http://purl.obolibrary.org/obo/UBERON_0015870), [thoracic lymph node](http://purl.obolibrary.org/obo/UBERON_0007644), [abdominal lymph node](http://purl.obolibrary.org/obo/UBERON_0002507) (11 total)
+
+classes: 
+  lymph node: "UBERON:0000029"
+  anatomical structure: "UBERON:0000061"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.2727272727272727, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "lymph node of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.45454545454545453, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A lymph node that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "lymph node of %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'lymph node' and ('part of' some %s)"
+  vars:
+    - v0

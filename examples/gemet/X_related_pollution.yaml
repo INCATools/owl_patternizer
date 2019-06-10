@@ -1,0 +1,51 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related pollution
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_pollution
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [pollution cost](http://www.eionet.europa.eu/gemet/concept/1825), [pollution effect](http://www.eionet.europa.eu/gemet/concept/6459), [pollution indicator](http://www.eionet.europa.eu/gemet/concept/6462) (12 total)
+
+classes: 
+  cost: "http://www.eionet.europa.eu/gemet/concept/1824"
+  indicator: "http://www.eionet.europa.eu/gemet/concept/4196"
+  insurance: "http://www.eionet.europa.eu/gemet/concept/4374"
+  liability: "http://www.eionet.europa.eu/gemet/concept/4787"
+  measuring: "http://www.eionet.europa.eu/gemet/concept/5119"
+  norm: "http://www.eionet.europa.eu/gemet/concept/5690"
+  pollution: "http://www.eionet.europa.eu/gemet/concept/6445"
+  risk: "http://www.eionet.europa.eu/gemet/concept/7233"
+  biological effect: "http://www.eionet.europa.eu/gemet/concept/849"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'cost' or 'indicator' or 'insurance' or 'liability' or 'measuring' or 'norm' or 'risk' or 'biological effect'"
+
+name:
+  # Induced, frequency=0.6666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "pollution %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a pollution"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'pollution')"
+  vars:
+    - v0

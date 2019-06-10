@@ -1,0 +1,48 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: related X related species
+pattern_iri: http://purl.obolibrary.org/obo/gemet/related_X_related_species
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [conservation of species](http://www.eionet.europa.eu/gemet/concept/7983), [species impoverishment](http://www.eionet.europa.eu/gemet/concept/7985), [endangered animal species](http://www.eionet.europa.eu/gemet/concept/2697) (5 total)
+
+classes: 
+  conservation: "http://www.eionet.europa.eu/gemet/concept/1700"
+  impoverishment: "http://www.eionet.europa.eu/gemet/concept/4171"
+  animal: "http://www.eionet.europa.eu/gemet/concept/450"
+  planting: "http://www.eionet.europa.eu/gemet/concept/6313"
+  risk: "http://www.eionet.europa.eu/gemet/concept/7233"
+  species: "http://www.eionet.europa.eu/gemet/concept/7982"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'conservation' or 'impoverishment' or 'animal' or 'planting' or 'risk'"
+
+name:
+  # Induced, frequency=0.2, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of species"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any related a %s that related a species"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('related' some %s) and ('related' some 'species')"
+  vars:
+    - v0

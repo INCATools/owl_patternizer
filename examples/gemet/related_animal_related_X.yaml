@@ -1,0 +1,48 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: related animal related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/related_animal_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [animal noise](http://www.eionet.europa.eu/gemet/concept/434), [animal product](http://www.eionet.europa.eu/gemet/concept/442), [endangered animal species](http://www.eionet.europa.eu/gemet/concept/2697) (5 total)
+
+classes: 
+  animal: "http://www.eionet.europa.eu/gemet/concept/450"
+  noise: "http://www.eionet.europa.eu/gemet/concept/5624"
+  product: "http://www.eionet.europa.eu/gemet/concept/6660"
+  species: "http://www.eionet.europa.eu/gemet/concept/7982"
+  test: "http://www.eionet.europa.eu/gemet/concept/8405"
+  biology: "http://www.eionet.europa.eu/gemet/concept/881"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'noise' or 'product' or 'species' or 'test' or 'biology'"
+
+name:
+  # Induced, frequency=1.6, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "animal %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any related a animal that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('related' some 'animal') and ('related' some %s)"
+  vars:
+    - v0

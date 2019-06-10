@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/vo'),trim(true),base('http://purl.obolibrary.org/obo/vo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: vaccine component has role X
+pattern_iri: http://purl.obolibrary.org/obo/vo/vaccine_component_has_role_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [vaccine antigen](http://purl.obolibrary.org/obo/VO_0000919), [recombinant vaccine vector](http://purl.obolibrary.org/obo/VO_0000599), [vaccine adjuvant](http://purl.obolibrary.org/obo/VO_0000580) (8 total)
+
+classes: 
+  role: "BFO:0000023"
+  vaccine component: "http://purl.obolibrary.org/obo/VO_0000179"
+
+
+relations: 
+  has role: "RO:0000087"
+
+
+vars:
+  v0: "'role'"
+
+name:
+  # Could not induce name, using default
+  text: "vaccine component has role %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any vaccine component that has role a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'vaccine component' and ('has role' some %s)"
+  vars:
+    - v0

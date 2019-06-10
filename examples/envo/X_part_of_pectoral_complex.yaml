@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of pectoral complex
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_pectoral_complex
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [musculature of pectoral complex](http://purl.obolibrary.org/obo/UBERON_0014793), [bone of pectoral complex](http://purl.obolibrary.org/obo/UBERON_0010741), [forelimb](http://purl.obolibrary.org/obo/UBERON_0002102) (6 total)
+
+classes: 
+  multicellular anatomical structure: "UBERON:0010000"
+  pectoral complex: "UBERON:0010708"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of pectoral complex"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s that consists of the anterior appendicular skeleton and associated soft and hard tissues, but excludes the pectoral girdle and its associated soft and hard tissues."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "pectoral %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'pectoral complex')"
+  vars:
+    - v0

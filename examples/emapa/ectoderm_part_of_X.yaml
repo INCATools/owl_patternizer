@@ -1,0 +1,49 @@
+# options: [min(20),dir(emapa),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: ectoderm part_of X
+pattern_iri: http://purl.obolibrary.org/obo/emapa/ectoderm_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [embryo ectoderm](http://purl.obolibrary.org/obo/EMAPA_16069), [amniotic fold ectoderm](http://purl.obolibrary.org/obo/EMAPA_16077), [amnion ectoderm](http://purl.obolibrary.org/obo/EMAPA_16110) (26 total)
+
+classes: 
+  ectoderm: "http://purl.obolibrary.org/obo/EMAPA_35985"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  part_of: "http://purl.obolibrary.org/obo/emapa#part_of"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.8461538461538461, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s ectoderm"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any ectoderm that part_of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%sic ectoderm"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'ectoderm' and ('part_of' some %s)"
+  vars:
+    - v0

@@ -1,5 +1,7 @@
 # Auto-generated examples
 
+All YAML in this folder was generated automatically from owl_patternizer. See [conf.pl](conf.pl) for configurations
+
 Highlighted:
 
  * Pizza

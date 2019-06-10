@@ -1,0 +1,52 @@
+# options: [min(8),dir('examples/nbo'),trim(true),base('http://purl.obolibrary.org/obo/nbo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X is_about X
+pattern_iri: http://purl.obolibrary.org/obo/nbo/X_is_about_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [circadian behavior](http://purl.obolibrary.org/obo/NBO_0000084), [language learning behavior](http://purl.obolibrary.org/obo/NBO_0000216), [rapid eye movement sleep](http://purl.obolibrary.org/obo/NBO_0000159) (19 total)
+
+classes: 
+  rhythmic behavior: "GO:0007622"
+  sleeping behavior: "http://purl.obolibrary.org/obo/NBO_0000024"
+  behavioral control of excretion: "http://purl.obolibrary.org/obo/NBO_0000038"
+  classical conditioning: "http://purl.obolibrary.org/obo/NBO_0000208"
+  perceptual constancy behavior: "http://purl.obolibrary.org/obo/NBO_0000225"
+  spatial perception: "http://purl.obolibrary.org/obo/NBO_0000746"
+
+
+relations: 
+  is_about: "http://purl.obolibrary.org/obo/nbo#is_about"
+
+
+vars:
+  v0: "'rhythmic behavior' or 'sleeping behavior' or 'behavioral control of excretion' or 'classical conditioning' or 'perceptual constancy behavior' or 'spatial perception'"
+  v1: "'body fluid secretion' or 'defecation' or 'circadian sleep/wake cycle, REM sleep' or 'vocalization behavior' or 'fear-related behavior' or 'motor coordination' or 'language communication behavior' or 'jaw movement' or 'blinking' or 'color' or 'distance' or 'shape' or 'depth'"
+
+name:
+  # Could not induce name, using default
+  text: "%s is_about %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that is_about a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('is_about' some %s)"
+  vars:
+    - v0
+    - v1

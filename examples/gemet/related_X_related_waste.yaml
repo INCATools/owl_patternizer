@@ -1,0 +1,50 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: related X related waste
+pattern_iri: http://purl.obolibrary.org/obo/gemet/related_X_related_waste
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [waste air](http://www.eionet.europa.eu/gemet/concept/9042), [waste heat](http://www.eionet.europa.eu/gemet/concept/9085), [incineration of waste](http://www.eionet.europa.eu/gemet/concept/4183) (7 total)
+
+classes: 
+  air: "http://www.eionet.europa.eu/gemet/concept/245"
+  heating: "http://www.eionet.europa.eu/gemet/concept/3894"
+  incineration: "http://www.eionet.europa.eu/gemet/concept/4182"
+  income: "http://www.eionet.europa.eu/gemet/concept/4187"
+  legislation: "http://www.eionet.europa.eu/gemet/concept/4749"
+  management: "http://www.eionet.europa.eu/gemet/concept/4985"
+  assimilation: "http://www.eionet.europa.eu/gemet/concept/605"
+  waste: "http://www.eionet.europa.eu/gemet/concept/9041"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'air' or 'heating' or 'incineration' or 'income' or 'legislation' or 'management' or 'assimilation'"
+
+name:
+  # Induced, frequency=1.1428571428571428, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "waste %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any related a %s that related a waste"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('related' some %s) and ('related' some 'waste')"
+  vars:
+    - v0

@@ -1,0 +1,45 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: nervous system cell part layer part of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/nervous_system_cell_part_layer_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [layer of neocortex](http://purl.obolibrary.org/obo/UBERON_0002301), [olfactory bulb layer](http://purl.obolibrary.org/obo/UBERON_0004001), [lamina of gray matter of spinal cord](http://purl.obolibrary.org/obo/UBERON_0016570) (4 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "UBERON:0001062"
+  nervous system cell part layer: "UBERON:0022303"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s lamina of neuraxis"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "One of the layers of the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'nervous system cell part layer' and ('part of' some %s)"
+  vars:
+    - v0

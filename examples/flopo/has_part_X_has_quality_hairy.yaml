@@ -1,0 +1,44 @@
+# options: [min(50),dir(flopo),trim(true),base('http://purl.obolibrary.org/obo/flopo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has_part X has quality hairy
+pattern_iri: http://purl.obolibrary.org/obo/flopo/has_part_X_has_quality_hairy
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [whole plant hairy](http://purl.obolibrary.org/obo/FLOPO_0005944), [apical hook hairy](http://purl.obolibrary.org/obo/FLOPO_0010731), [ovule primordium hairy](http://purl.obolibrary.org/obo/FLOPO_0002731) (140 total)
+
+classes: 
+  hairy: "PATO:0000454"
+  plant anatomical entity: "http://purl.obolibrary.org/obo/PO_0025131"
+
+
+relations: 
+  has_part: "BFO:0000051"
+
+
+vars:
+  v0: "'plant anatomical entity'"
+
+name:
+  # Induced, frequency=0.9571428571428572, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s hairy"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "has_part a Any %s that has quality a hairy"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has_part' some %s and ('has quality' some 'hairy'))"
+  vars:
+    - v0

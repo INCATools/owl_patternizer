@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/aro'),trim(true),base('http://purl.obolibrary.org/obo/aro'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X confers_resistance_to_drug X participates_in mutation conferring antibiotic resistance
+pattern_iri: http://purl.obolibrary.org/obo/aro/X_confers_resistance_to_drug_X_participates_in_mutation_conferring_antibiotic_resistance
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Klebsiella mutant PhoP conferring antibiotic resistance to colistin](http://purl.obolibrary.org/obo/ARO_3003585), [Staphylococcus aureus GlpT with mutation conferring resistance to fosfomycin](http://purl.obolibrary.org/obo/ARO_3003901), [Escherichia coli UhpT with mutation conferring resistance to fosfomycin](http://purl.obolibrary.org/obo/ARO_3003890) (4 total)
+
+classes: 
+  determinant of antibiotic resistance: "http://purl.obolibrary.org/obo/ARO_3000000"
+  mutation conferring antibiotic resistance: "http://purl.obolibrary.org/obo/ARO_3000212"
+
+
+relations: 
+  confers_resistance_to_drug: "http://purl.obolibrary.org/obo/RO#_confers_resistance_to_drug"
+  participates_in: "http://purl.obolibrary.org/obo/RO#_participates_in"
+
+
+vars:
+  v0: "'determinant of antibiotic resistance'"
+  v1: "'antibiotic molecule'"
+
+name:
+  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Escherichia coli %s with mutation conferring resistance to %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.75, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Mutations to the active importer %s, which is involved with the uptake of many phosphorylated sugars, confer resistance to %s by reducing import of the drug into the bacteria."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('confers_resistance_to_drug' some %s) and ('participates_in' some 'mutation conferring antibiotic resistance')"
+  vars:
+    - v0
+    - v1

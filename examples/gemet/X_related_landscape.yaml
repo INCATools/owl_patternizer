@@ -1,0 +1,45 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related landscape
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_landscape
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [landscape architecture](http://www.eionet.europa.eu/gemet/concept/4651), [landscape conservation policy](http://www.eionet.europa.eu/gemet/concept/4654), [landscape conservation](http://www.eionet.europa.eu/gemet/concept/4653) (5 total)
+
+classes: 
+  landscape: "http://www.eionet.europa.eu/gemet/concept/4648"
+  architecture: "http://www.eionet.europa.eu/gemet/concept/538"
+  conservation policy: "http://www.eionet.europa.eu/gemet/concept/6376"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'architecture' or 'conservation policy'"
+
+name:
+  # Induced, frequency=0.4, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "landscape %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a landscape"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'landscape')"
+  vars:
+    - v0

@@ -1,0 +1,52 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related waste
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_waste
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [waste classification](http://www.eionet.europa.eu/gemet/concept/9053), [waste dumping](http://www.eionet.europa.eu/gemet/concept/9071), [export of hazardous wastes](http://www.eionet.europa.eu/gemet/concept/3065) (16 total)
+
+classes: 
+  classification: "http://www.eionet.europa.eu/gemet/concept/1447"
+  dumping: "http://www.eionet.europa.eu/gemet/concept/2367"
+  export: "http://www.eionet.europa.eu/gemet/concept/3063"
+  analysis: "http://www.eionet.europa.eu/gemet/concept/397"
+  incinerator: "http://www.eionet.europa.eu/gemet/concept/4184"
+  landfill: "http://www.eionet.europa.eu/gemet/concept/4621"
+  statistics: "http://www.eionet.europa.eu/gemet/concept/8076"
+  transportation: "http://www.eionet.europa.eu/gemet/concept/8641"
+  waste: "http://www.eionet.europa.eu/gemet/concept/9041"
+  water quality: "http://www.eionet.europa.eu/gemet/concept/9214"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'classification' or 'dumping' or 'export' or 'analysis' or 'incinerator' or 'landfill' or 'statistics' or 'transportation' or 'water quality'"
+
+name:
+  # Induced, frequency=0.4375, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "waste %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a waste"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'waste')"
+  vars:
+    - v0

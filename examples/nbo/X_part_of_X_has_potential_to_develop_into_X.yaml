@@ -1,0 +1,52 @@
+# options: [min(8),dir('examples/nbo'),trim(true),base('http://purl.obolibrary.org/obo/nbo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of X has potential to develop into X
+pattern_iri: http://purl.obolibrary.org/obo/nbo/X_part_of_X_has_potential_to_develop_into_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [hindlimb bud](http://purl.obolibrary.org/obo/UBERON_0005418), [pelvic appendage bud](http://purl.obolibrary.org/obo/UBERON_0005420), [presumptive structure](http://purl.obolibrary.org/obo/UBERON_0006598) (8 total)
+
+classes: 
+  developing anatomical structure: "UBERON:0005423"
+
+
+relations: 
+  part of: "BFO:0000050"
+  has potential to develop into: "RO:0002387"
+
+
+vars:
+  v0: "'developing anatomical structure'"
+  v1: "'continuant' or 'material anatomical entity'"
+  v2: "'continuant' or 'material anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s part of %s has potential to develop into %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Induced, frequency=0.375, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s of the %s that will develop into %s."
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('part of' some %s) and ('has potential to develop into' some %s)"
+  vars:
+    - v0
+    - v1
+    - v2

@@ -1,0 +1,59 @@
+# options: [min(8),dir('examples/ero'),trim(true),base('http://purl.obolibrary.org/obo/ero'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has_part X
+pattern_iri: http://purl.obolibrary.org/obo/ero/X_has_part_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Observational study](http://purl.org/net/OCRe/research.owl#Observational_study), [nucleic acid oligonucleotide library](http://purl.obolibrary.org/obo/ERO_0001143), [BAC library](http://purl.obolibrary.org/obo/ERO_0000429) (14 total)
+
+classes: 
+  BAC: "http://purl.obolibrary.org/obo/ERO_0000286"
+  YAC: "http://purl.obolibrary.org/obo/ERO_0000287"
+  PAC: "http://purl.obolibrary.org/obo/ERO_0000288"
+  cosmid: "http://purl.obolibrary.org/obo/ERO_0000289"
+  fosmid: "http://purl.obolibrary.org/obo/ERO_0000290"
+  yeast two-hybrid construct: "http://purl.obolibrary.org/obo/ERO_0000295"
+  transgenic lambda phage: "http://purl.obolibrary.org/obo/ERO_0000296"
+  intervention: "http://purl.obolibrary.org/obo/ERO_0000347"
+  primer: "http://purl.obolibrary.org/obo/ERO_0000631"
+  shRNA plasmid: "http://purl.obolibrary.org/obo/ERO_0001137"
+  dsRNA plasmid: "http://purl.obolibrary.org/obo/ERO_0001138"
+  miRNA plasmid: "http://purl.obolibrary.org/obo/ERO_0001139"
+  observational method: "http://purl.obolibrary.org/obo/ERO_0001317"
+
+
+relations: 
+  has_part: "BFO:0000051"
+
+
+vars:
+  v0: "'genomic library' or 'expression library' or 'nucleic acid oligonucleotide library' or 'RNA interference construct library' or 'organism library' or 'Quantitative human study'"
+  v1: "'BAC' or 'YAC' or 'PAC' or 'cosmid' or 'fosmid' or 'yeast two-hybrid construct' or 'transgenic lambda phage' or 'intervention' or 'primer' or 'shRNA plasmid' or 'dsRNA plasmid' or 'miRNA plasmid' or 'observational method'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has_part %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.14285714285714285, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that contains discrete collections of %s constructs carrying DNA inserts from a source organism, such that the collection of DNA inserts  represents the entire genome of the source organism.  "
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('has_part' some %s)"
+  vars:
+    - v0
+    - v1

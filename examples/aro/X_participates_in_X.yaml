@@ -1,0 +1,47 @@
+# options: [min(4),dir('examples/aro'),trim(true),base('http://purl.obolibrary.org/obo/aro'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X participates_in X
+pattern_iri: http://purl.obolibrary.org/obo/aro/X_participates_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Escherichia coli acrR with mutation conferring multidrug antibiotic resistance](http://purl.obolibrary.org/obo/ARO_3003807), [Escherichia coli marR mutant conferring antibiotic resistance](http://purl.obolibrary.org/obo/ARO_3003378), [Escherichia coli soxR with mutation conferring antibiotic resistance](http://purl.obolibrary.org/obo/ARO_3003381) (30 total)
+
+classes: 
+  determinant of antibiotic resistance: "http://purl.obolibrary.org/obo/ARO_3000000"
+
+
+relations: 
+  participates_in: "http://purl.obolibrary.org/obo/RO#_participates_in"
+
+
+vars:
+  v0: "'determinant of antibiotic resistance'"
+  v1: "'mechanism of antibiotic resistance'"
+
+name:
+  # Induced, frequency=0.06666666666666667, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Escherichia coli %s with %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that participates_in a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('participates_in' some %s)"
+  vars:
+    - v0
+    - v1

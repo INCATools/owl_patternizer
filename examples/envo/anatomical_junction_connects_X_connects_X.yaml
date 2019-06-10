@@ -1,0 +1,48 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: anatomical junction connects X connects X
+pattern_iri: http://purl.obolibrary.org/obo/envo/anatomical_junction_connects_X_connects_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ureteropelvic junction](http://purl.obolibrary.org/obo/UBERON_0009972), [ureterovesical junction](http://purl.obolibrary.org/obo/UBERON_0009973), [ileocecal junction](http://purl.obolibrary.org/obo/UBERON_0001073) (7 total)
+
+classes: 
+  anatomical junction: "UBERON:0007651"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  connects: "RO:0002176"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+  v1: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.14285714285714285, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%so%sl junction"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.14285714285714285, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A anatomical junction that connects a %s and connects a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'anatomical junction' and ('connects' some %s) and ('connects' some %s)"
+  vars:
+    - v0
+    - v1

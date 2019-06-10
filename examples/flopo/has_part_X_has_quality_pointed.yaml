@@ -1,0 +1,44 @@
+# options: [min(50),dir(flopo),trim(true),base('http://purl.obolibrary.org/obo/flopo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has_part X has quality pointed
+pattern_iri: http://purl.obolibrary.org/obo/flopo/has_part_X_has_quality_pointed
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [whole plant pointed](http://purl.obolibrary.org/obo/FLOPO_0015553), [root tip pointed](http://purl.obolibrary.org/obo/FLOPO_0014084), [lenticel pointed](http://purl.obolibrary.org/obo/FLOPO_0014326) (78 total)
+
+classes: 
+  pointed: "PATO:0002258"
+  plant anatomical entity: "http://purl.obolibrary.org/obo/PO_0025131"
+
+
+relations: 
+  has_part: "BFO:0000051"
+
+
+vars:
+  v0: "'plant anatomical entity'"
+
+name:
+  # Induced, frequency=0.9487179487179487, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s pointed"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "has_part a Any %s that has quality a pointed"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has_part' some %s and ('has quality' some 'pointed'))"
+  vars:
+    - v0

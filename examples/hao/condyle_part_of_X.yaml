@@ -1,0 +1,44 @@
+# options: [min(12),dir('examples/hao'),trim(true),base('http://purl.obolibrary.org/obo/hao'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: condyle part_of X
+pattern_iri: http://purl.obolibrary.org/obo/hao/condyle_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cranial condyle of cardo](http://purl.obolibrary.org/obo/HAO_0002439), [cranial condyle of the propleuron](http://purl.obolibrary.org/obo/HAO_0001284), [cardinal articular condyle of the cranium](http://purl.obolibrary.org/obo/HAO_0002074) (25 total)
+
+classes: 
+  anatomical structure: "http://purl.obolibrary.org/obo/HAO_0000003"
+  condyle: "http://purl.obolibrary.org/obo/HAO_0000220"
+
+
+relations: 
+  part_of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.12, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "femoral condyle of the %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.08, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The condyle that is located on the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'condyle' and ('part_of' some %s)"
+  vars:
+    - v0

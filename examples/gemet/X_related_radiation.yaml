@@ -1,0 +1,47 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related radiation
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_radiation
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [radiation dose](http://www.eionet.europa.eu/gemet/concept/6888), [radiation effect](http://www.eionet.europa.eu/gemet/concept/6889), [radiation monitoring](http://www.eionet.europa.eu/gemet/concept/6892) (6 total)
+
+classes: 
+  dose: "http://www.eionet.europa.eu/gemet/concept/2308"
+  effect: "http://www.eionet.europa.eu/gemet/concept/2562"
+  monitoring: "http://www.eionet.europa.eu/gemet/concept/5346"
+  physics: "http://www.eionet.europa.eu/gemet/concept/6235"
+  radiation: "http://www.eionet.europa.eu/gemet/concept/6884"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'dose' or 'effect' or 'monitoring' or 'physics'"
+
+name:
+  # Induced, frequency=0.6666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "radiation %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a radiation"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'radiation')"
+  vars:
+    - v0

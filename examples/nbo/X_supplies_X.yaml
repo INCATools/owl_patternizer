@@ -1,0 +1,53 @@
+# options: [min(8),dir('examples/nbo'),trim(true),base('http://purl.obolibrary.org/obo/nbo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X supplies X
+pattern_iri: http://purl.obolibrary.org/obo/nbo/X_supplies_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [left renal artery](http://purl.obolibrary.org/obo/UBERON_0001186), [right renal artery](http://purl.obolibrary.org/obo/UBERON_0001185), [ureteric segment of renal artery](http://purl.obolibrary.org/obo/UBERON_0003468) (16 total)
+
+classes: 
+  artery: "UBERON:0001637"
+
+
+relations: 
+  supplies: "RO:0002178"
+
+
+vars:
+  v0: "'artery'"
+  v1: "'anatomical entity' or 'anatomical structure'"
+
+name:
+  # Induced, frequency=0.1875, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.125, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s that supplies the %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('supplies' some %s)"
+  vars:
+    - v0
+    - v1

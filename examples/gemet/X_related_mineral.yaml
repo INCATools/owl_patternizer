@@ -1,0 +1,48 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related mineral
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_mineral
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mineral extraction](http://www.eionet.europa.eu/gemet/concept/5265), [mineral industry](http://www.eionet.europa.eu/gemet/concept/5268), [mineral pollution](http://www.eionet.europa.eu/gemet/concept/11643) (7 total)
+
+classes: 
+  extraction: "http://www.eionet.europa.eu/gemet/concept/3087"
+  industry: "http://www.eionet.europa.eu/gemet/concept/4279"
+  mineral: "http://www.eionet.europa.eu/gemet/concept/5277"
+  pollution: "http://www.eionet.europa.eu/gemet/concept/6445"
+  resource: "http://www.eionet.europa.eu/gemet/concept/7168"
+  waste: "http://www.eionet.europa.eu/gemet/concept/9041"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'extraction' or 'industry' or 'pollution' or 'resource' or 'waste'"
+
+name:
+  # Induced, frequency=0.7142857142857143, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "mineral %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a mineral"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'mineral')"
+  vars:
+    - v0

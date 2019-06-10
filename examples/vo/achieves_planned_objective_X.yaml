@@ -1,0 +1,43 @@
+# options: [min(4),dir('examples/vo'),trim(true),base('http://purl.obolibrary.org/obo/vo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: achieves_planned_objective X
+pattern_iri: http://purl.obolibrary.org/obo/vo/achieves_planned_objective_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [adding a material entity into a target](http://purl.obolibrary.org/obo/OBI_0000274), [assay](http://purl.obolibrary.org/obo/OBI_0000070), [material processing](http://purl.obolibrary.org/obo/OBI_0000094) (6 total)
+
+classes: 
+  objective specification: "http://purl.obolibrary.org/obo/IAO_0000005"
+
+
+relations: 
+  achieves_planned_objective: "http://purl.obolibrary.org/obo/OBI_0000417"
+
+
+vars:
+  v0: "'objective specification'"
+
+name:
+  # Could not induce name, using default
+  text: "achieves_planned_objective %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "achieves_planned_objective a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('achieves_planned_objective' some %s)"
+  vars:
+    - v0

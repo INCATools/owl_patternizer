@@ -1,0 +1,50 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related noise
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_noise
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [noise effect](http://www.eionet.europa.eu/gemet/concept/13839), [noise emission](http://www.eionet.europa.eu/gemet/concept/5635), [noise analysis](http://www.eionet.europa.eu/gemet/concept/5629) (11 total)
+
+classes: 
+  effect: "http://www.eionet.europa.eu/gemet/concept/2562"
+  emission: "http://www.eionet.europa.eu/gemet/concept/2663"
+  analysis: "http://www.eionet.europa.eu/gemet/concept/397"
+  immission: "http://www.eionet.europa.eu/gemet/concept/4146"
+  measuring: "http://www.eionet.europa.eu/gemet/concept/5119"
+  monitoring: "http://www.eionet.europa.eu/gemet/concept/5346"
+  noise: "http://www.eionet.europa.eu/gemet/concept/5624"
+  pollutant: "http://www.eionet.europa.eu/gemet/concept/6395"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'effect' or 'emission' or 'analysis' or 'immission' or 'measuring' or 'monitoring' or 'pollutant'"
+
+name:
+  # Induced, frequency=0.6363636363636364, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "noise %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a noise"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'noise')"
+  vars:
+    - v0

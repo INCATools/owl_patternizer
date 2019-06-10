@@ -1,0 +1,44 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related planning
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_planning
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [planning permission](http://www.eionet.europa.eu/gemet/concept/6292), [building planning](http://www.eionet.europa.eu/gemet/concept/1046), [disaster contingency plan](http://www.eionet.europa.eu/gemet/concept/2218) (12 total)
+
+classes: 
+  permission: "http://www.eionet.europa.eu/gemet/concept/6124"
+  planning: "http://www.eionet.europa.eu/gemet/concept/6287"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'permission'"
+
+name:
+  # Could not induce name, using default
+  text: "%s related planning"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a planning"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'planning')"
+  vars:
+    - v0

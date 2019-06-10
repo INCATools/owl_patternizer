@@ -1,0 +1,47 @@
+# options: [min(25),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has participant X microbial population phenotype in host increased organism quantity compared with healthy control located in lower digestive tract part of Homo sapiens has disease gout
+pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_microbial_population_phenotype_in_host_increased_organism_quantity_compared_with_healthy_control_located_in_lower_digestive_tract_part_of_Homo_sapiens_has_disease_gout
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [expansion of Parasporobacterium in gout human gut](http://purl.obolibrary.org/obo/OHMI_0000133), [expansion of Erysipelatoclostridium in gout human gut](http://purl.obolibrary.org/obo/OHMI_0000129), [expansion of Bacteroidales in gout human gut](http://purl.obolibrary.org/obo/OHMI_0000117) (27 total)
+
+classes: 
+  gout: "http://purl.obolibrary.org/obo/DOID_13189"
+  Bacteria: "http://purl.obolibrary.org/obo/NCBITaxon_2"
+  Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+  increased organism quantity compared with healthy control: "http://purl.obolibrary.org/obo/OHMI_0000032"
+  lower digestive tract: "UBERON:0004907"
+
+
+relations: 
+  has participant: "RO:0000057"
+
+
+vars:
+  v0: "'Bacteria'"
+
+name:
+  # Induced, frequency=0.9259259259259259, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "expansion of %s in gout human gut"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.8518518518518519, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "a Gout human-gut microbiome interaction that shows an expansion of %s in patients with gout compared with healthy controls."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has participant' some %s and ('microbial population phenotype in host' some 'increased organism quantity compared with healthy control') and ('located in' some 'lower digestive tract' and ('part of' some 'Homo sapiens' and ('has disease' some 'gout'))))"
+  vars:
+    - v0

@@ -1,0 +1,50 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of arm
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_arm
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [arm skin](http://purl.obolibrary.org/obo/UBERON_0002427), [musculature of arm](http://purl.obolibrary.org/obo/UBERON_0004474), [arm nerve](http://purl.obolibrary.org/obo/UBERON_0003433) (7 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "UBERON:0001062"
+  arm: "UBERON:0001460"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.7142857142857143, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "arm %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5714285714285714, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of an arm [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of arm"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'arm')"
+  vars:
+    - v0

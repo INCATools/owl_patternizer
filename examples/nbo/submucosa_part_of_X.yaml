@@ -1,0 +1,54 @@
+# options: [min(8),dir('examples/nbo'),trim(true),base('http://purl.obolibrary.org/obo/nbo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: submucosa part of X
+pattern_iri: http://purl.obolibrary.org/obo/nbo/submucosa_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [submucosa of large intestine](http://purl.obolibrary.org/obo/UBERON_0001208), [submucosa of anal canal](http://purl.obolibrary.org/obo/UBERON_0003329), [intestinal submucosa](http://purl.obolibrary.org/obo/UBERON_0009566) (14 total)
+
+classes: 
+  submucosa: "UBERON:0000009"
+  anatomical structure: "UBERON:0000061"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.7857142857142857, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "submucosa of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A submucosa that is part of a %s [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s submucosa"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "submucous layer of %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'submucosa' and ('part of' some %s)"
+  vars:
+    - v0

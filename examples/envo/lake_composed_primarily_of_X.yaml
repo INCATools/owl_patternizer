@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: lake composed primarily of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/lake_composed_primarily_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [saline lake](http://purl.obolibrary.org/obo/ENVO_00000019), [freshwater lake](http://purl.obolibrary.org/obo/ENVO_00000021), [polluted lake](http://purl.obolibrary.org/obo/ENVO_01000680) (7 total)
+
+classes: 
+  lake: "ENVO:00000020"
+  liquid water: "ENVO:00002006"
+
+
+relations: 
+  composed primarily of: "RO:0002473"
+
+
+vars:
+  v0: "'liquid water'"
+
+name:
+  # Induced, frequency=0.14285714285714285, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s lake"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2857142857142857, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A lake which is primarily composed of %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'lake' and ('composed primarily of' some %s)"
+  vars:
+    - v0

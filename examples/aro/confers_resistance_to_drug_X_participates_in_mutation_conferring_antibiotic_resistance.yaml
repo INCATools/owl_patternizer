@@ -1,0 +1,45 @@
+# options: [min(4),dir('examples/aro'),trim(true),base('http://purl.obolibrary.org/obo/aro'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: confers_resistance_to_drug X participates_in mutation conferring antibiotic resistance
+pattern_iri: http://purl.obolibrary.org/obo/aro/confers_resistance_to_drug_X_participates_in_mutation_conferring_antibiotic_resistance
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Mycobacterium chelonae 16S rRNA mutation conferring resistance to neomycin](http://purl.obolibrary.org/obo/ARO_3003518), [Mycoplasma pneumoniae 23S rRNA mutation conferring resistance to erythromycin](http://purl.obolibrary.org/obo/ARO_3004179), [Mycobacterium tuberculosis 16S rRNA mutation conferring resistance to amikacin](http://purl.obolibrary.org/obo/ARO_3003481) (21 total)
+
+classes: 
+  antibiotic molecule: "http://purl.obolibrary.org/obo/ARO_1000003"
+  mutation conferring antibiotic resistance: "http://purl.obolibrary.org/obo/ARO_3000212"
+
+
+relations: 
+  confers_resistance_to_drug: "http://purl.obolibrary.org/obo/RO#_confers_resistance_to_drug"
+  participates_in: "http://purl.obolibrary.org/obo/RO#_participates_in"
+
+
+vars:
+  v0: "'antibiotic molecule'"
+
+name:
+  # Induced, frequency=0.38095238095238093, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Escherichia coli 16S rRNA (rrsB) mutation conferring resistance to %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.23809523809523808, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Point mutations in the 3' minor domain of helix 44, in the rrsB 16S rRNA gene of Escherichia coli can confer resistance to %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('confers_resistance_to_drug' some %s) and ('participates_in' some 'mutation conferring antibiotic resistance')"
+  vars:
+    - v0

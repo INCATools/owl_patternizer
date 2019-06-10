@@ -1,0 +1,54 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of fourth ventricle
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_fourth_ventricle
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [fourth ventricle aperture](http://purl.obolibrary.org/obo/UBERON_0004668), [choroid plexus of fourth ventricle](http://purl.obolibrary.org/obo/UBERON_0002290), [fourth ventricle choroid plexus epithelium](http://purl.obolibrary.org/obo/UBERON_0004276) (6 total)
+
+classes: 
+  fourth ventricle: "UBERON:0002422"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "fourth ventricle %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s of the fourth ventricle"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of fourth ventricle"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "4th ventricle %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'fourth ventricle')"
+  vars:
+    - v0

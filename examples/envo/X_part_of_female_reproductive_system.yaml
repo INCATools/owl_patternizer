@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of female reproductive system
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_female_reproductive_system
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [female gonad](http://purl.obolibrary.org/obo/UBERON_0000992), [female reproductive gland](http://purl.obolibrary.org/obo/UBERON_0005398), [internal female genitalia](http://purl.obolibrary.org/obo/UBERON_0003975) (5 total)
+
+classes: 
+  material anatomical entity: "UBERON:0000465"
+  female reproductive system: "UBERON:0000474"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material anatomical entity'"
+
+name:
+  # Induced, frequency=0.4, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "female %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.4, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a female reproductive system."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of female reproductive system"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'female reproductive system')"
+  vars:
+    - v0

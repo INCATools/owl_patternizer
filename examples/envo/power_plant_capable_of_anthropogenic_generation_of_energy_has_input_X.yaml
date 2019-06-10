@@ -1,0 +1,45 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: power plant capable of anthropogenic generation of energy has input X
+pattern_iri: http://purl.obolibrary.org/obo/envo/power_plant_capable_of_anthropogenic_generation_of_energy_has_input_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [gas power station](http://purl.obolibrary.org/obo/ENVO_2000039), [coal power plant](http://purl.obolibrary.org/obo/ENVO_2000038), [lignite power plant](http://purl.obolibrary.org/obo/ENVO_2000040) (4 total)
+
+classes: 
+  power plant: "ENVO:00002214"
+  environmental material: "ENVO:00010483"
+  anthropogenic generation of energy: "ENVO:2000012"
+
+
+relations: 
+  capable of: "RO:0002215"
+
+
+vars:
+  v0: "'environmental material'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s power plant"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any power plant that capable of a Any anthropogenic generation of energy that has input a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'power plant' and ('capable of' some 'anthropogenic generation of energy' and ('has input' some %s))"
+  vars:
+    - v0

@@ -1,0 +1,53 @@
+# options: [min(25),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has participant X microbial population phenotype in host increased organism quantity compared with healthy control located in lower digestive tract part of X has disease X
+pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_microbial_population_phenotype_in_host_increased_organism_quantity_compared_with_healthy_control_located_in_lower_digestive_tract_part_of_X_has_disease_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [expansion of Beggiatoa in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000290), [expansion of Collinsella in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000300), [expansion of S. moorei in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000283) (185 total)
+
+classes: 
+  Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+  increased organism quantity compared with healthy control: "http://purl.obolibrary.org/obo/OHMI_0000032"
+  lower digestive tract: "UBERON:0004907"
+
+
+relations: 
+  has participant: "RO:0000057"
+
+
+vars:
+  v0: "'organism or virus or viroid' or 'organism'"
+  v1: "'Homo sapiens'"
+  v2: "'disease of anatomical entity'"
+
+name:
+  # Induced, frequency=0.5297297297297298, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "expansion of %s in %s %s gut"
+  vars:
+    - v0
+    - v2
+    - v1
+
+def:
+  # Induced, frequency=0.5351351351351351, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s %s-gut microbiome interaction where %s is increased."
+  vars:
+    - v2
+    - v1
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has participant' some %s and ('microbial population phenotype in host' some 'increased organism quantity compared with healthy control') and ('located in' some 'lower digestive tract' and ('part of' some %s and ('has disease' some %s))))"
+  vars:
+    - v0
+    - v1
+    - v2

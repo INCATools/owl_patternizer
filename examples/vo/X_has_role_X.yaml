@@ -1,0 +1,52 @@
+# options: [min(4),dir('examples/vo'),trim(true),base('http://purl.obolibrary.org/obo/vo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has role X
+pattern_iri: http://purl.obolibrary.org/obo/vo/X_has_role_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [antigen](http://purl.obolibrary.org/obo/OBI_1110034), [regulatory agency](http://purl.obolibrary.org/obo/OBI_0000450), [vaccine organism](http://purl.obolibrary.org/obo/VO_0000506) (15 total)
+
+classes: 
+  organization: "http://purl.obolibrary.org/obo/OBI_0000245"
+  organism: "http://purl.obolibrary.org/obo/OBI_0100026"
+  antigen: "http://purl.obolibrary.org/obo/OBI_1110034"
+  Escherichia coli vaccine: "http://purl.obolibrary.org/obo/VO_0000041"
+  Influenza virus vaccine: "http://purl.obolibrary.org/obo/VO_0000642"
+  vaccine antigen: "http://purl.obolibrary.org/obo/VO_0000919"
+
+
+relations: 
+  has role: "RO:0000087"
+
+
+vars:
+  v0: "'organization' or 'organism' or 'antigen' or 'Escherichia coli vaccine' or 'Influenza virus vaccine' or 'vaccine antigen'"
+  v1: "'role'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has role %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has role a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('has role' some %s)"
+  vars:
+    - v0
+    - v1

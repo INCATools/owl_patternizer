@@ -1,0 +1,47 @@
+# options: [min(8),dir('examples/nbo'),trim(true),base('http://purl.obolibrary.org/obo/nbo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has_participant X
+pattern_iri: http://purl.obolibrary.org/obo/nbo/X_has_participant_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [food consumption](http://purl.obolibrary.org/obo/NBO_0000134), [water consumption](http://purl.obolibrary.org/obo/NBO_0000132), [alcohol consumption](http://purl.obolibrary.org/obo/NBO_0000131) (11 total)
+
+classes: 
+  behavior process: "http://purl.obolibrary.org/obo/NBO_0000313"
+
+
+relations: 
+  has_participant: "http://purl.obolibrary.org/obo/nbo#has_participant"
+
+
+vars:
+  v0: "'behavior process'"
+  v1: "'water' or 'ethanol' or 'morphine' or 'nicotine' or 'cocaine' or 'saccharin' or 'food' or 'body wall' or 'limb'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has_participant %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has_participant a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('has_participant' some %s)"
+  vars:
+    - v0
+    - v1

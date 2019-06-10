@@ -1,0 +1,45 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X-or-X
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_or_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [organismal entity](http://purl.obolibrary.org/obo/PCO_0000031), [Hom dong](http://purl.obolibrary.org/obo/FOODON_00001306), [coffee or tea plant (food source)](http://purl.obolibrary.org/obo/FOODON_03412126) (18 total)
+
+classes: 
+  material entity: "BFO:0000040"
+
+
+relations: []
+
+vars:
+  v0: "'material entity'"
+  v1: "'material entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s/%s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s or %s"
+  vars:
+    - v0
+    - v1

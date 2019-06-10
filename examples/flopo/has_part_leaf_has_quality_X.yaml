@@ -1,0 +1,44 @@
+# options: [min(50),dir(flopo),trim(true),base('http://purl.obolibrary.org/obo/flopo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has_part leaf has quality X
+pattern_iri: http://purl.obolibrary.org/obo/flopo/has_part_leaf_has_quality_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [leaf age](http://purl.obolibrary.org/obo/FLOPO_0001560), [leaf color](http://purl.obolibrary.org/obo/FLOPO_0001534), [leaf color pattern](http://purl.obolibrary.org/obo/FLOPO_0011071) (378 total)
+
+classes: 
+  quality: "PATO:0000001"
+  leaf: "http://purl.obolibrary.org/obo/PO_0025034"
+
+
+relations: 
+  has_part: "BFO:0000051"
+
+
+vars:
+  v0: "'quality'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "leaf %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "has_part a Any leaf that has quality a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has_part' some 'leaf' and ('has quality' some %s))"
+  vars:
+    - v0

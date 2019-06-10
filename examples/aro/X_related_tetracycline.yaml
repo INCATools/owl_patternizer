@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/aro'),trim(true),base('http://purl.obolibrary.org/obo/aro'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related tetracycline
+pattern_iri: http://purl.obolibrary.org/obo/aro/X_related_tetracycline
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [determinant of tetracycline resistance](http://purl.obolibrary.org/obo/ARO_3000472), [tetracycline inactivation enzyme](http://purl.obolibrary.org/obo/ARO_3000036), [16S rRNA with mutation conferring resistance to tetracycline derivatives](http://purl.obolibrary.org/obo/ARO_3003669) (4 total)
+
+classes: 
+  tetracycline: "http://purl.obolibrary.org/obo/ARO_0000051"
+  determinant of antibiotic resistance: "http://purl.obolibrary.org/obo/ARO_3000000"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'determinant of antibiotic resistance'"
+
+name:
+  # Could not induce name, using default
+  text: "%s related tetracycline"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a tetracycline"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'tetracycline')"
+  vars:
+    - v0

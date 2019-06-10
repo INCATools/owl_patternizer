@@ -1,0 +1,52 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has input X has output X
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_has_input_X_has_output_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [water ice sublimation process](http://purl.obolibrary.org/obo/ENVO_01000920), [formation of a solid aerosol from gaseous material in an atmosphere](http://purl.obolibrary.org/obo/ENVO_01001090), [formation of a liquid aerosol from gaseous material in an atmosphere](http://purl.obolibrary.org/obo/ENVO_01001091) (9 total)
+
+classes: 
+  environmental system process: "ENVO:02500000"
+
+
+relations: 
+  has input: "RO:0002233"
+  has output: "RO:0002234"
+
+
+vars:
+  v0: "'environmental system process'"
+  v1: "'material entity'"
+  v2: "'material entity'"
+
+name:
+  # Induced, frequency=0.1111111111111111, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of %s into %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Induced, frequency=0.1111111111111111, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s process during which %s is transformed into %s."
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('has input' some %s) and ('has output' some %s)"
+  vars:
+    - v0
+    - v1
+    - v2

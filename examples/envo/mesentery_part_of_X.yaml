@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: mesentery part of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/mesentery_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mesentery of stomach](http://purl.obolibrary.org/obo/UBERON_0003281), [mesentery of heart](http://purl.obolibrary.org/obo/UBERON_0003282), [mesometrium](http://purl.obolibrary.org/obo/UBERON_0003885) (17 total)
+
+classes: 
+  anatomical structure: "UBERON:0000061"
+  mesentery: "UBERON:0002095"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.7647058823529411, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "mesentery of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5294117647058824, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A mesentery that is part of a %s [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s mesentery"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'mesentery' and ('part of' some %s)"
+  vars:
+    - v0

@@ -1,0 +1,46 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related toxicity
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_toxicity
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [synergistic effect of toxic substances](http://www.eionet.europa.eu/gemet/concept/8265), [toxic pollution](http://www.eionet.europa.eu/gemet/concept/11647), [toxic waste](http://www.eionet.europa.eu/gemet/concept/8547) (6 total)
+
+classes: 
+  effect: "http://www.eionet.europa.eu/gemet/concept/2562"
+  pollution: "http://www.eionet.europa.eu/gemet/concept/6445"
+  toxicity: "http://www.eionet.europa.eu/gemet/concept/8538"
+  waste: "http://www.eionet.europa.eu/gemet/concept/9041"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'effect' or 'pollution' or 'waste'"
+
+name:
+  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "toxic %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a toxicity"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'toxicity')"
+  vars:
+    - v0

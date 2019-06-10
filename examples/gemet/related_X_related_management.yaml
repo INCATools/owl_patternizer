@@ -1,0 +1,49 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: related X related management
+pattern_iri: http://purl.obolibrary.org/obo/gemet/related_X_related_management
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [good management](http://www.eionet.europa.eu/gemet/concept/3705), [air quality management](http://www.eionet.europa.eu/gemet/concept/274), [energy management](http://www.eionet.europa.eu/gemet/concept/2730) (6 total)
+
+classes: 
+  goods: "http://www.eionet.europa.eu/gemet/concept/10930"
+  air quality: "http://www.eionet.europa.eu/gemet/concept/270"
+  energy: "http://www.eionet.europa.eu/gemet/concept/2712"
+  forest: "http://www.eionet.europa.eu/gemet/concept/3406"
+  stocking: "http://www.eionet.europa.eu/gemet/concept/4548"
+  landscape: "http://www.eionet.europa.eu/gemet/concept/4648"
+  management: "http://www.eionet.europa.eu/gemet/concept/4985"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'goods' or 'air quality' or 'energy' or 'forest' or 'stocking' or 'landscape'"
+
+name:
+  # Induced, frequency=1.6666666666666667, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s management"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any related a %s that related a management"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('related' some %s) and ('related' some 'management')"
+  vars:
+    - v0

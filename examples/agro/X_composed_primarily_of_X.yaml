@@ -1,0 +1,47 @@
+# options: [min(10),dir('examples/agro'),trim(true),base('http://purl.obolibrary.org/obo/agro'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X composed primarily of X
+pattern_iri: http://purl.obolibrary.org/obo/agro/X_composed_primarily_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cryoform](http://purl.obolibrary.org/obo/ENVO_03000110), [saline lake](http://purl.obolibrary.org/obo/ENVO_00000019), [glacial feature](http://purl.obolibrary.org/obo/ENVO_00000131) (12 total)
+
+classes: 
+  material entity: "BFO:0000040"
+
+
+relations: 
+  composed primarily of: "RO:0002473"
+
+
+vars:
+  v0: "'material entity'"
+  v1: "'material entity'"
+
+name:
+  # Induced, frequency=0.16666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s which is primarily composed of %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('composed primarily of' some %s)"
+  vars:
+    - v0
+    - v1

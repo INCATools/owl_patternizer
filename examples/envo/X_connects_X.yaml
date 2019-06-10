@@ -1,0 +1,47 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X connects X
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_connects_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [intervertebral joint](http://purl.obolibrary.org/obo/UBERON_0001468), [interphalangeal joint](http://purl.obolibrary.org/obo/UBERON_0006658), [communicating artery](http://purl.obolibrary.org/obo/UBERON_0006347) (6 total)
+
+classes: 
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  connects: "RO:0002176"
+
+
+vars:
+  v0: "'anatomical structure'"
+  v1: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.16666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "inter%sal %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that connects one %s to another along a proximodistal axis."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('connects' some %s)"
+  vars:
+    - v0
+    - v1

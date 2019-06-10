@@ -1,0 +1,44 @@
+# options: [min(12),dir('examples/hao'),trim(true),base('http://purl.obolibrary.org/obo/hao'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: process part_of X
+pattern_iri: http://purl.obolibrary.org/obo/hao/process_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [anterior process of the pronotum](http://purl.obolibrary.org/obo/HAO_0000122), [basitarsal articular process of the protibia](http://purl.obolibrary.org/obo/HAO_0001477), [apical process of the labrum](http://purl.obolibrary.org/obo/HAO_0000139) (26 total)
+
+classes: 
+  anatomical structure: "http://purl.obolibrary.org/obo/HAO_0000003"
+  process: "http://purl.obolibrary.org/obo/HAO_0000822"
+
+
+relations: 
+  part_of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.11538461538461539, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "anterior proximal process of the %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.07692307692307693, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The articular process that is located distodorsally on the %s and bears the basitarsal fossa of the protiba."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'process' and ('part_of' some %s)"
+  vars:
+    - v0

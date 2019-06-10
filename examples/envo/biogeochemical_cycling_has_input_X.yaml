@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: biogeochemical cycling has input X
+pattern_iri: http://purl.obolibrary.org/obo/envo/biogeochemical_cycling_has_input_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [nitrogen cycling](http://purl.obolibrary.org/obo/ENVO_01001330), [oxygen cycling](http://purl.obolibrary.org/obo/ENVO_2000046), [sulfur cycling](http://purl.obolibrary.org/obo/ENVO_01001331) (5 total)
+
+classes: 
+  chemical entity: "ns2:CHEBI_24431"
+  biogeochemical cycling: "ENVO:02500009"
+
+
+relations: 
+  has input: "RO:0002233"
+
+
+vars:
+  v0: "'chemical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "biogeochemical cycling has input %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any biogeochemical cycling that has input a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'biogeochemical cycling' and ('has input' some %s)"
+  vars:
+    - v0

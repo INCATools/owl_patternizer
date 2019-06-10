@@ -1,0 +1,50 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: services related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/services_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [building service](http://www.eionet.europa.eu/gemet/concept/13232), [public service](http://www.eionet.europa.eu/gemet/concept/6817), [internet search service](http://www.eionet.europa.eu/gemet/concept/14891) (7 total)
+
+classes: 
+  building: "http://www.eionet.europa.eu/gemet/concept/1029"
+  public: "http://www.eionet.europa.eu/gemet/concept/10904"
+  Internet: "http://www.eionet.europa.eu/gemet/concept/14862"
+  fire: "http://www.eionet.europa.eu/gemet/concept/3212"
+  health: "http://www.eionet.europa.eu/gemet/concept/3865"
+  inspection: "http://www.eionet.europa.eu/gemet/concept/4360"
+  library: "http://www.eionet.europa.eu/gemet/concept/4793"
+  services: "http://www.eionet.europa.eu/gemet/concept/7621"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'building' or 'public' or 'Internet' or 'fire' or 'health' or 'inspection' or 'library'"
+
+name:
+  # Induced, frequency=0.8571428571428571, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s service"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any services that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'services' and ('related' some %s)"
+  vars:
+    - v0

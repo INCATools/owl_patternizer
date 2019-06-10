@@ -1,0 +1,58 @@
+# options: [min(4),dir('examples/vo'),trim(true),base('http://purl.obolibrary.org/obo/vo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X vaccine immunization against microbe X
+pattern_iri: http://purl.obolibrary.org/obo/vo/X_vaccine_immunization_against_microbe_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Brucella abortus vaccine](http://purl.obolibrary.org/obo/VO_0000108), [Brucella melitensis vaccine](http://purl.obolibrary.org/obo/VO_0000709), [Brucella suis vaccine](http://purl.obolibrary.org/obo/VO_0000721) (49 total)
+
+classes: 
+  Brucella vaccine: "http://purl.obolibrary.org/obo/VO_0000025"
+  Parainfluenza 3 virus vaccine: "http://purl.obolibrary.org/obo/VO_0000451"
+  Vibrio vaccine: "http://purl.obolibrary.org/obo/VO_0000566"
+  Bordetella vaccine: "http://purl.obolibrary.org/obo/VO_0000587"
+  Influenza virus vaccine: "http://purl.obolibrary.org/obo/VO_0000642"
+  Hepatitis B virus vaccine: "http://purl.obolibrary.org/obo/VO_0000644"
+  malaria vaccine: "http://purl.obolibrary.org/obo/VO_0000761"
+  Leishmania vaccine: "http://purl.obolibrary.org/obo/VO_0000762"
+  Eimeria vaccine: "http://purl.obolibrary.org/obo/VO_0000906"
+  bovine rhinotracheitis vaccine: "http://purl.obolibrary.org/obo/VO_0000987"
+  equine EEV and WEV encephalomyelitis vaccine-tetanus toxoid: "http://purl.obolibrary.org/obo/VO_0002420"
+  Haemophilus influenzae vaccine: "http://purl.obolibrary.org/obo/VO_0012185"
+
+
+relations: 
+  vaccine immunization against microbe: "http://purl.obolibrary.org/obo/VO_0003355"
+
+
+vars:
+  v0: "'Brucella vaccine' or 'Parainfluenza 3 virus vaccine' or 'Vibrio vaccine' or 'Bordetella vaccine' or 'Influenza virus vaccine' or 'Hepatitis B virus vaccine' or 'malaria vaccine' or 'Leishmania vaccine' or 'Eimeria vaccine' or 'bovine rhinotracheitis vaccine' or 'equine EEV and WEV encephalomyelitis vaccine-tetanus toxoid' or 'Haemophilus influenzae vaccine'"
+  v1: "'organism'"
+
+name:
+  # Could not induce name, using default
+  text: "%s vaccine immunization against microbe %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.14285714285714285, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s that is used to protect against %s infection"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('vaccine immunization against microbe' some %s)"
+  vars:
+    - v0
+    - v1

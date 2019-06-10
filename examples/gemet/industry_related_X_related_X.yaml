@@ -1,0 +1,58 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: industry related X related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/industry_related_X_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [agriculture and cattle industry](http://www.eionet.europa.eu/gemet/concept/233), [food processing industry](http://www.eionet.europa.eu/gemet/concept/3376), [information technology industry](http://www.eionet.europa.eu/gemet/concept/13215) (7 total)
+
+classes: 
+  cattle: "http://www.eionet.europa.eu/gemet/concept/1225"
+  agriculture: "http://www.eionet.europa.eu/gemet/concept/232"
+  food: "http://www.eionet.europa.eu/gemet/concept/3354"
+  industry: "http://www.eionet.europa.eu/gemet/concept/4279"
+  information: "http://www.eionet.europa.eu/gemet/concept/4303"
+  iron: "http://www.eionet.europa.eu/gemet/concept/4498"
+  processing: "http://www.eionet.europa.eu/gemet/concept/6650"
+  removal: "http://www.eionet.europa.eu/gemet/concept/7103"
+  rubber: "http://www.eionet.europa.eu/gemet/concept/7324"
+  steel: "http://www.eionet.europa.eu/gemet/concept/8088"
+  technology: "http://www.eionet.europa.eu/gemet/concept/8339"
+  waste: "http://www.eionet.europa.eu/gemet/concept/9041"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'cattle' or 'agriculture' or 'food' or 'information' or 'iron' or 'processing' or 'removal' or 'rubber' or 'steel' or 'technology' or 'waste'"
+  v1: "'cattle' or 'agriculture' or 'food' or 'information' or 'iron' or 'processing' or 'removal' or 'rubber' or 'steel' or 'technology' or 'waste'"
+
+name:
+  # Induced, frequency=0.7142857142857143, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s industry"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any industry that related a %s and related a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'industry' and ('related' some %s) and ('related' some %s)"
+  vars:
+    - v0
+    - v1

@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/gemet/environmental_impact_related_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [environmental impact of agriculture](http://www.eionet.europa.eu/gemet/concept/2831), [environmental impact of energy](http://www.eionet.europa.eu/gemet/concept/2833), [environmental impact of fishing](http://www.eionet.europa.eu/gemet/concept/2834) (9 total)
+  Examples: [environmental impact of agriculture](http://www.eionet.europa.eu/gemet/concept/2831), [environmental impact of energy](http://www.eionet.europa.eu/gemet/concept/2833), [environmental impact of fishing](http://www.eionet.europa.eu/gemet/concept/2834) (10 total)
 
 classes: 
   agriculture: "http://www.eionet.europa.eu/gemet/concept/232"
@@ -17,6 +17,7 @@ classes:
   industry: "http://www.eionet.europa.eu/gemet/concept/4279"
   aquaculture: "http://www.eionet.europa.eu/gemet/concept/501"
   tourism: "http://www.eionet.europa.eu/gemet/concept/8522"
+  transportation: "http://www.eionet.europa.eu/gemet/concept/8641"
 
 
 relations: 
@@ -24,10 +25,10 @@ relations:
 
 
 vars:
-  v0: "'agriculture' or 'energy' or 'fishing' or 'forestry' or 'household' or 'industry' or 'aquaculture' or 'tourism'"
+  v0: "'agriculture' or 'energy' or 'fishing' or 'forestry' or 'household' or 'industry' or 'aquaculture' or 'tourism' or 'transportation'"
 
 name:
-  # Induced, frequency=0.8888888888888888, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.8, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "environmental impact of %s"
   vars:
     - v0

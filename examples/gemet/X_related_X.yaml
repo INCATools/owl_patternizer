@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [dangerous goods regulation](http://www.eionet.europa.eu/gemet/concept/1971), [air traffic regulation](http://www.eionet.europa.eu/gemet/concept/286), [transport regulation](http://www.eionet.europa.eu/gemet/concept/13280) (70 total)
+  Examples: [management accounting](http://www.eionet.europa.eu/gemet/concept/13261), [satellite account](http://www.eionet.europa.eu/gemet/concept/11035), [forest reserve](http://www.eionet.europa.eu/gemet/concept/3435) (761 total)
 
 classes: 
   owl:Thing: "owl:Thing"
@@ -20,7 +20,7 @@ vars:
   v1: "'owl:Thing'"
 
 name:
-  # Induced, frequency=0.4714285714285714, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.43101182654402104, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1

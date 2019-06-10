@@ -1,0 +1,47 @@
+# options: [min(25),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has participant X microbial population phenotype in host decreased organism quantity compared with healthy controls located in lower digestive tract part of Homo sapiens has disease colorectal cancer
+pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_microbial_population_phenotype_in_host_decreased_organism_quantity_compared_with_healthy_controls_located_in_lower_digestive_tract_part_of_Homo_sapiens_has_disease_colorectal_cancer
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [depletion of Anaerovorax in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000312), [depletion of Firmicutes in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000356), [depletion of Ruminococcus in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000392) (50 total)
+
+classes: 
+  colorectal cancer: "http://purl.obolibrary.org/obo/DOID_9256"
+  Bacteria: "http://purl.obolibrary.org/obo/NCBITaxon_2"
+  Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+  decreased organism quantity compared with healthy controls: "http://purl.obolibrary.org/obo/OHMI_0000035"
+  lower digestive tract: "UBERON:0004907"
+
+
+relations: 
+  has participant: "RO:0000057"
+
+
+vars:
+  v0: "'Bacteria'"
+
+name:
+  # Induced, frequency=0.54, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "depletion of %s in colorectal cancer human gut"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A colorectal cancer human-gut microbiome interaction where %s is decreased."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has participant' some %s and ('microbial population phenotype in host' some 'decreased organism quantity compared with healthy controls') and ('located in' some 'lower digestive tract' and ('part of' some 'Homo sapiens' and ('has disease' some 'colorectal cancer'))))"
+  vars:
+    - v0

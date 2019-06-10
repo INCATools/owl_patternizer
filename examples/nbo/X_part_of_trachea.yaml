@@ -1,0 +1,49 @@
+# options: [min(8),dir('examples/nbo'),trim(true),base('http://purl.obolibrary.org/obo/nbo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of trachea
+pattern_iri: http://purl.obolibrary.org/obo/nbo/X_part_of_trachea
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [submucosa of trachea](http://purl.obolibrary.org/obo/UBERON_0002202), [epithelium of trachea](http://purl.obolibrary.org/obo/UBERON_0001901), [smooth muscle of trachea](http://purl.obolibrary.org/obo/UBERON_0003387) (11 total)
+
+classes: 
+  anatomical structure: "UBERON:0000061"
+  trachea: "UBERON:0003126"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.45454545454545453, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of trachea"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.45454545454545453, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a trachea."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of windpipe"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'trachea')"
+  vars:
+    - v0

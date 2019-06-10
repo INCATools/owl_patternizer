@@ -1,0 +1,53 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: resource related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/resource_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [climate resource](http://www.eionet.europa.eu/gemet/concept/1467), [non-renewable energy resource](http://www.eionet.europa.eu/gemet/concept/5684), [fishery resource](http://www.eionet.europa.eu/gemet/concept/3241) (11 total)
+
+classes: 
+  climate: "http://www.eionet.europa.eu/gemet/concept/1462"
+  energy: "http://www.eionet.europa.eu/gemet/concept/2712"
+  fishery: "http://www.eionet.europa.eu/gemet/concept/3237"
+  freshwater: "http://www.eionet.europa.eu/gemet/concept/3485"
+  animal: "http://www.eionet.europa.eu/gemet/concept/450"
+  mineral: "http://www.eionet.europa.eu/gemet/concept/5277"
+  planting: "http://www.eionet.europa.eu/gemet/concept/6313"
+  resource: "http://www.eionet.europa.eu/gemet/concept/7168"
+  sea: "http://www.eionet.europa.eu/gemet/concept/7495"
+  soil: "http://www.eionet.europa.eu/gemet/concept/7843"
+  wood: "http://www.eionet.europa.eu/gemet/concept/9349"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'climate' or 'energy' or 'fishery' or 'freshwater' or 'animal' or 'mineral' or 'planting' or 'sea' or 'soil' or 'wood'"
+
+name:
+  # Induced, frequency=0.9090909090909091, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s resource"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any resource that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'resource' and ('related' some %s)"
+  vars:
+    - v0

@@ -1,0 +1,43 @@
+# options: [min(10),dir('examples/agro'),trim(true),base('http://purl.obolibrary.org/obo/agro'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: measurement method of X
+pattern_iri: http://purl.obolibrary.org/obo/agro/measurement_method_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [irrigation water quantity recording protocol](http://purl.obolibrary.org/obo/AGRO_00000284), [implement lenght measurement protocol](http://purl.obolibrary.org/obo/AGRO_00000257), [mulch thickness measurement protocol](http://purl.obolibrary.org/obo/AGRO_00000247) (11 total)
+
+classes: 
+  physical object quality: "PATO:0001241"
+
+
+relations: 
+  measurement method of: "http://purl.obolibrary.org/obo/AGRO_00000253"
+
+
+vars:
+  v0: "'physical object quality'"
+
+name:
+  # Induced, frequency=0.45454545454545453, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s measurement protocol"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "measurement method of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('measurement method of' some %s)"
+  vars:
+    - v0

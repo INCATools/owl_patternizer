@@ -1,0 +1,44 @@
+# options: [min(50),dir(flopo),trim(true),base('http://purl.obolibrary.org/obo/flopo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has_part banner petal has quality X
+pattern_iri: http://purl.obolibrary.org/obo/flopo/has_part_banner_petal_has_quality_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [banner petal color](http://purl.obolibrary.org/obo/FLOPO_0017567), [banner petal color pattern](http://purl.obolibrary.org/obo/FLOPO_0019311), [banner petal composition](http://purl.obolibrary.org/obo/FLOPO_0001411) (94 total)
+
+classes: 
+  quality: "PATO:0000001"
+  banner petal: "http://purl.obolibrary.org/obo/PO_0025324"
+
+
+relations: 
+  has_part: "BFO:0000051"
+
+
+vars:
+  v0: "'quality'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "banner petal %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "has_part a Any banner petal that has quality a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has_part' some 'banner petal' and ('has quality' some %s))"
+  vars:
+    - v0

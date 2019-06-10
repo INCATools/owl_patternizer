@@ -1,0 +1,50 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: related legislation related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/related_legislation_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [nature conservation legislation](http://www.eionet.europa.eu/gemet/concept/5538), [noise legislation](http://www.eionet.europa.eu/gemet/concept/5643), [nuclear energy legislation](http://www.eionet.europa.eu/gemet/concept/5713) (8 total)
+
+classes: 
+  legislation: "http://www.eionet.europa.eu/gemet/concept/4749"
+  nature conservation: "http://www.eionet.europa.eu/gemet/concept/5537"
+  noise: "http://www.eionet.europa.eu/gemet/concept/5624"
+  nuclear energy: "http://www.eionet.europa.eu/gemet/concept/5712"
+  pollution: "http://www.eionet.europa.eu/gemet/concept/6445"
+  soil conservation: "http://www.eionet.europa.eu/gemet/concept/7852"
+  waste water: "http://www.eionet.europa.eu/gemet/concept/9127"
+  water protection: "http://www.eionet.europa.eu/gemet/concept/9206"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'nature conservation' or 'noise' or 'nuclear energy' or 'pollution' or 'soil conservation' or 'waste water' or 'water protection'"
+
+name:
+  # Induced, frequency=1.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s legislation"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any related a legislation that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('related' some 'legislation') and ('related' some %s)"
+  vars:
+    - v0

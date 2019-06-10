@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: lymphatic vessel part of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/lymphatic_vessel_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [respiratory system lymphatic vessel](http://purl.obolibrary.org/obo/UBERON_0003456), [pectoral lymphatic vessel](http://purl.obolibrary.org/obo/UBERON_0001425), [facial lymphatic vessel](http://purl.obolibrary.org/obo/UBERON_0001422) (7 total)
+
+classes: 
+  anatomical structure: "UBERON:0000061"
+  lymphatic vessel: "UBERON:0001473"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.2857142857142857, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s lymph vessel"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5714285714285714, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A lymphatic vessel that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "lymphatic vessel of %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'lymphatic vessel' and ('part of' some %s)"
+  vars:
+    - v0

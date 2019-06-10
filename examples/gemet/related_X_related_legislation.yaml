@@ -1,0 +1,49 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: related X related legislation
+pattern_iri: http://purl.obolibrary.org/obo/gemet/related_X_related_legislation
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [environmental legislation on agriculture](http://www.eionet.europa.eu/gemet/concept/2863), [energy legislation](http://www.eionet.europa.eu/gemet/concept/2729), [forestry legislation](http://www.eionet.europa.eu/gemet/concept/3442) (6 total)
+
+classes: 
+  agriculture: "http://www.eionet.europa.eu/gemet/concept/232"
+  energy: "http://www.eionet.europa.eu/gemet/concept/2712"
+  forestry: "http://www.eionet.europa.eu/gemet/concept/3439"
+  genetic engineering: "http://www.eionet.europa.eu/gemet/concept/3624"
+  health: "http://www.eionet.europa.eu/gemet/concept/3865"
+  housing: "http://www.eionet.europa.eu/gemet/concept/4022"
+  legislation: "http://www.eionet.europa.eu/gemet/concept/4749"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'agriculture' or 'energy' or 'forestry' or 'genetic engineering' or 'health' or 'housing'"
+
+name:
+  # Induced, frequency=2, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s legislation"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any related a %s that related a legislation"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('related' some %s) and ('related' some 'legislation')"
+  vars:
+    - v0

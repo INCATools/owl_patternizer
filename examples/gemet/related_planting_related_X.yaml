@@ -1,0 +1,49 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: related planting related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/related_planting_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [purification plant](http://www.eionet.europa.eu/gemet/concept/6842), [introduction of plant species](http://www.eionet.europa.eu/gemet/concept/10661), [textile plant](http://www.eionet.europa.eu/gemet/concept/13190) (7 total)
+
+classes: 
+  planting: "http://www.eionet.europa.eu/gemet/concept/6313"
+  purification: "http://www.eionet.europa.eu/gemet/concept/6838"
+  species: "http://www.eionet.europa.eu/gemet/concept/7982"
+  textile: "http://www.eionet.europa.eu/gemet/concept/8422"
+  biology: "http://www.eionet.europa.eu/gemet/concept/881"
+  water purification: "http://www.eionet.europa.eu/gemet/concept/9210"
+  breeding: "http://www.eionet.europa.eu/gemet/concept/994"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'purification' or 'species' or 'textile' or 'biology' or 'water purification' or 'breeding'"
+
+name:
+  # Induced, frequency=1.2857142857142858, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s plant"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any related a planting that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('related' some 'planting') and ('related' some %s)"
+  vars:
+    - v0

@@ -1,0 +1,43 @@
+# options: [min(8),dir('examples/ero'),trim(true),base('http://purl.obolibrary.org/obo/ero'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: objective_achieved_by_operation X
+pattern_iri: http://purl.obolibrary.org/obo/ero/objective_achieved_by_operation_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [data analysis objective](http://purl.obolibrary.org/obo/ERO_0100036), [classification objective](http://purl.obolibrary.org/obo/ERO_0100037), [comparison objective](http://purl.obolibrary.org/obo/ERO_0100086) (14 total)
+
+classes: 
+  data processing operation: "http://purl.obolibrary.org/obo/ERO_0100287"
+
+
+relations: 
+  objective_achieved_by_operation: "http://purl.obolibrary.org/obo/ERO_0001908"
+
+
+vars:
+  v0: "'data processing operation'"
+
+name:
+  # Could not induce name, using default
+  text: "objective_achieved_by_operation %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "objective_achieved_by_operation a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('objective_achieved_by_operation' some %s)"
+  vars:
+    - v0

@@ -1,0 +1,53 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: related conservation related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/related_conservation_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [energy conservation](http://www.eionet.europa.eu/gemet/concept/2714), [forest conservation](http://www.eionet.europa.eu/gemet/concept/3410), [freshwater conservation](http://www.eionet.europa.eu/gemet/concept/1704) (11 total)
+
+classes: 
+  conservation: "http://www.eionet.europa.eu/gemet/concept/1700"
+  energy: "http://www.eionet.europa.eu/gemet/concept/2712"
+  forest: "http://www.eionet.europa.eu/gemet/concept/3406"
+  freshwater: "http://www.eionet.europa.eu/gemet/concept/3485"
+  landscape: "http://www.eionet.europa.eu/gemet/concept/4648"
+  policy: "http://www.eionet.europa.eu/gemet/concept/6370"
+  resource: "http://www.eionet.europa.eu/gemet/concept/7168"
+  bee: "http://www.eionet.europa.eu/gemet/concept/762"
+  soil: "http://www.eionet.europa.eu/gemet/concept/7843"
+  species: "http://www.eionet.europa.eu/gemet/concept/7982"
+  wildlife: "http://www.eionet.europa.eu/gemet/concept/9313"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'energy' or 'forest' or 'freshwater' or 'landscape' or 'policy' or 'resource' or 'bee' or 'soil' or 'species' or 'wildlife'"
+
+name:
+  # Induced, frequency=0.8181818181818182, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s conservation"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any related a conservation that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('related' some 'conservation') and ('related' some %s)"
+  vars:
+    - v0

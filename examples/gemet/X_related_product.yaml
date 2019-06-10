@@ -1,0 +1,46 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related product
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_product
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [product advertising](http://www.eionet.europa.eu/gemet/concept/129), [product information](http://www.eionet.europa.eu/gemet/concept/6664), [product liability](http://www.eionet.europa.eu/gemet/concept/6675) (10 total)
+
+classes: 
+  advertisement: "http://www.eionet.europa.eu/gemet/concept/126"
+  liability: "http://www.eionet.europa.eu/gemet/concept/4787"
+  product: "http://www.eionet.europa.eu/gemet/concept/6660"
+  standard: "http://www.eionet.europa.eu/gemet/concept/8047"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'advertisement' or 'liability' or 'standard'"
+
+name:
+  # Induced, frequency=0.3, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "product %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a product"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'product')"
+  vars:
+    - v0

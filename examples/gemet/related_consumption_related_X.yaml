@@ -1,0 +1,47 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: related consumption related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/related_consumption_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [electricity consumption](http://www.eionet.europa.eu/gemet/concept/2594), [fuel consumption](http://www.eionet.europa.eu/gemet/concept/3510), [landscape consumption](http://www.eionet.europa.eu/gemet/concept/4662) (5 total)
+
+classes: 
+  consumption: "http://www.eionet.europa.eu/gemet/concept/1743"
+  electricity: "http://www.eionet.europa.eu/gemet/concept/2592"
+  fuel: "http://www.eionet.europa.eu/gemet/concept/3505"
+  landscape: "http://www.eionet.europa.eu/gemet/concept/4648"
+  petroleum: "http://www.eionet.europa.eu/gemet/concept/6161"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'electricity' or 'fuel' or 'landscape' or 'petroleum'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s consumption"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any related a consumption that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('related' some 'consumption') and ('related' some %s)"
+  vars:
+    - v0

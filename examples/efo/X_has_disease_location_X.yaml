@@ -1,0 +1,47 @@
+# options: [min(50),dir(efo),trim(true),base('http://purl.obolibrary.org/obo/efo'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has_disease_location X
+pattern_iri: http://purl.obolibrary.org/obo/efo/X_has_disease_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [tumour of cranial and spinal nerves](http://www.ebi.ac.uk/efo/EFO_0002431), [eccrine sweat gland cancer](http://www.ebi.ac.uk/efo/EFO_0005553), [central nervous system cancer](http://www.ebi.ac.uk/efo/EFO_0000326) (56 total)
+
+classes: 
+  material entity: "http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"
+
+
+relations: 
+  has_disease_location: "EFO:0000784"
+
+
+vars:
+  v0: "'disease'"
+  v1: "'material entity'"
+
+name:
+  # Induced, frequency=0.32142857142857145, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.07142857142857142, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s or cancer of the %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('has_disease_location' some %s)"
+  vars:
+    - v0
+    - v1

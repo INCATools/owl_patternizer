@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: desert biome has quality X
+pattern_iri: http://purl.obolibrary.org/obo/envo/desert_biome_has_quality_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [tropical desert biome](http://purl.obolibrary.org/obo/ENVO_01000183), [subtropical desert biome](http://purl.obolibrary.org/obo/ENVO_01000184), [temperate desert biome](http://purl.obolibrary.org/obo/ENVO_01000182) (4 total)
+
+classes: 
+  desert biome: "ENVO:01000179"
+  environmental condition: "ENVO:01000203"
+
+
+relations: 
+  has quality: "RO:0000086"
+
+
+vars:
+  v0: "'environmental condition'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s desert biome"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s desert biome is a desert biome which has communities adapted to intermediate insolation, low rainfall, and large temperature variations between winter and summer. Winter temperatures may fall below 0 degrees Celsius. Some precipitation in this biome may fall as snow."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'desert biome' and ('has quality' some %s)"
+  vars:
+    - v0

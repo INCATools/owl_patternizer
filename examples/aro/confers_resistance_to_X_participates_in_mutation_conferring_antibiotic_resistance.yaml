@@ -1,0 +1,45 @@
+# options: [min(4),dir('examples/aro'),trim(true),base('http://purl.obolibrary.org/obo/aro'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: confers_resistance_to X participates_in mutation conferring antibiotic resistance
+pattern_iri: http://purl.obolibrary.org/obo/aro/confers_resistance_to_X_participates_in_mutation_conferring_antibiotic_resistance
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Staphylococcus aureus murA with mutation conferring resistance to fosfomycin](http://purl.obolibrary.org/obo/ARO_3003776), [Clostridium difficile murG with mutation conferring resistance to vancomycin](http://purl.obolibrary.org/obo/ARO_3004561), [Staphylococcus aureus fusE with mutation conferring resistance to fusidic acid](http://purl.obolibrary.org/obo/ARO_3003737) (4 total)
+
+classes: 
+  antibiotic molecule: "http://purl.obolibrary.org/obo/ARO_1000003"
+  mutation conferring antibiotic resistance: "http://purl.obolibrary.org/obo/ARO_3000212"
+
+
+relations: 
+  confers_resistance_to: "http://purl.obolibrary.org/obo/RO#_confers_resistance_to"
+  participates_in: "http://purl.obolibrary.org/obo/RO#_participates_in"
+
+
+vars:
+  v0: "'antibiotic molecule'"
+
+name:
+  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Borrelia burgdorferi murA with mutation conferring resistance to %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Mutations in murG which confer resistance to %s in Clostridium difficile"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('confers_resistance_to' some %s) and ('participates_in' some 'mutation conferring antibiotic resistance')"
+  vars:
+    - v0

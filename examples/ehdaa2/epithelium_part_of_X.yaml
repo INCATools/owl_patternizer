@@ -1,0 +1,44 @@
+# options: [min(20),dir(ehdaa2),trim(true),base('http://purl.obolibrary.org/obo/ehdaa2'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: epithelium part_of X
+pattern_iri: http://purl.obolibrary.org/obo/ehdaa2/epithelium_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [auditory hillocks surface epithelium](http://purl.obolibrary.org/obo/EHDAA2_0000157), [bladder epithelium](http://purl.obolibrary.org/obo/EHDAA2_0000582), [caecum epithelium](http://purl.obolibrary.org/obo/EHDAA2_0000209) (99 total)
+
+classes: 
+  anatomical entity: "ns1:CARO_0000000"
+  epithelium: "ns1:CARO_0000066"
+
+
+relations: 
+  part_of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.9292929292929293, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s epithelium"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any epithelium that part_of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'epithelium' and ('part_of' some %s)"
+  vars:
+    - v0

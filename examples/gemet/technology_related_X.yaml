@@ -1,0 +1,51 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: technology related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/technology_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [building technology](http://www.eionet.europa.eu/gemet/concept/1058), [coal technology](http://www.eionet.europa.eu/gemet/concept/1511), [energy technology](http://www.eionet.europa.eu/gemet/concept/2747) (9 total)
+
+classes: 
+  building: "http://www.eionet.europa.eu/gemet/concept/1029"
+  coal: "http://www.eionet.europa.eu/gemet/concept/1500"
+  environmental protection: "http://www.eionet.europa.eu/gemet/concept/2900"
+  food: "http://www.eionet.europa.eu/gemet/concept/3354"
+  information: "http://www.eionet.europa.eu/gemet/concept/4303"
+  pollution control: "http://www.eionet.europa.eu/gemet/concept/6451"
+  processing: "http://www.eionet.europa.eu/gemet/concept/6650"
+  solar energy: "http://www.eionet.europa.eu/gemet/concept/7906"
+  technology: "http://www.eionet.europa.eu/gemet/concept/8339"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'building' or 'coal' or 'environmental protection' or 'food' or 'information' or 'pollution control' or 'processing' or 'solar energy'"
+
+name:
+  # Induced, frequency=0.8888888888888888, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s technology"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any technology that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'technology' and ('related' some %s)"
+  vars:
+    - v0

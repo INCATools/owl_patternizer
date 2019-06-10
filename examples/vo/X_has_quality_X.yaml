@@ -1,0 +1,47 @@
+# options: [min(4),dir('examples/vo'),trim(true),base('http://purl.obolibrary.org/obo/vo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has quality X
+pattern_iri: http://purl.obolibrary.org/obo/vo/X_has_quality_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [edible vaccine](http://purl.obolibrary.org/obo/VO_0000755), [live attenuated Brucella vaccine](http://purl.obolibrary.org/obo/VO_0001127), [live attenuated Brucella abortus vaccine](http://purl.obolibrary.org/obo/VO_0001134) (15 total)
+
+classes: 
+  vaccine: "http://purl.obolibrary.org/obo/VO_0000001"
+
+
+relations: 
+  has quality: "RO:0000086"
+
+
+vars:
+  v0: "'vaccine'"
+  v1: "'quality of a single physical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has quality %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has quality a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('has quality' some %s)"
+  vars:
+    - v0
+    - v1

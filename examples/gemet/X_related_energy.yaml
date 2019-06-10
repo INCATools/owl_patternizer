@@ -1,0 +1,49 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related energy
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_energy
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [environmental impact of energy](http://www.eionet.europa.eu/gemet/concept/2833), [energy industry](http://www.eionet.europa.eu/gemet/concept/13213), [energy market](http://www.eionet.europa.eu/gemet/concept/2731) (10 total)
+
+classes: 
+  energy: "http://www.eionet.europa.eu/gemet/concept/2712"
+  environmental impact: "http://www.eionet.europa.eu/gemet/concept/2829"
+  industry: "http://www.eionet.europa.eu/gemet/concept/4279"
+  market: "http://www.eionet.europa.eu/gemet/concept/5058"
+  policy: "http://www.eionet.europa.eu/gemet/concept/6370"
+  resource: "http://www.eionet.europa.eu/gemet/concept/7168"
+  technology: "http://www.eionet.europa.eu/gemet/concept/8339"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'environmental impact' or 'industry' or 'market' or 'policy' or 'resource' or 'technology'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "energy %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a energy"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'energy')"
+  vars:
+    - v0

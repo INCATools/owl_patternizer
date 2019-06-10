@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of eyelid
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_eyelid
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [skin of eyelid](http://purl.obolibrary.org/obo/UBERON_0001457), [sweat gland of eyelid](http://purl.obolibrary.org/obo/UBERON_0013228), [eyelid epithelium](http://purl.obolibrary.org/obo/UBERON_0035034) (8 total)
+
+classes: 
+  eyelid: "UBERON:0001711"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.625, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "eyelid %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.375, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a eyelid [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of eyelid"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'eyelid')"
+  vars:
+    - v0

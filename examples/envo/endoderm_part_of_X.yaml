@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: endoderm part of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/endoderm_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [2nd arch endoderm](http://purl.obolibrary.org/obo/UBERON_0005664), [thyroid primordium endoderm](http://purl.obolibrary.org/obo/UBERON_0003261), [thymus primordium endoderm](http://purl.obolibrary.org/obo/UBERON_0008817) (5 total)
+
+classes: 
+  anatomical structure: "UBERON:0000061"
+  endoderm: "UBERON:0000925"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.6, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s endoderm"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An endoderm that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'endoderm' and ('part of' some %s)"
+  vars:
+    - v0

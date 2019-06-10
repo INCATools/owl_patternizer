@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X occurs in atmosphere
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_occurs_in_atmosphere
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [atmospheric secondary aerosol formation process](http://purl.obolibrary.org/obo/ENVO_01001365), [atmospheric aerosolised particle formation event](http://purl.obolibrary.org/obo/ENVO_01001359), [atmospheric process](http://purl.obolibrary.org/obo/ENVO_02500003) (4 total)
+
+classes: 
+  atmosphere: "ENVO:01000267"
+  environmental system process: "ENVO:02500000"
+
+
+relations: 
+  occurs in: "BFO:0000066"
+
+
+vars:
+  v0: "'environmental system process'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "atmospheric %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that occurs in a atmosphere"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('occurs in' some 'atmosphere')"
+  vars:
+    - v0

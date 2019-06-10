@@ -1,0 +1,49 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: extraction related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/extraction_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [gravel extraction](http://www.eionet.europa.eu/gemet/concept/3739), [groundwater extraction](http://www.eionet.europa.eu/gemet/concept/3781), [mineral extraction](http://www.eionet.europa.eu/gemet/concept/5265) (6 total)
+
+classes: 
+  extraction: "http://www.eionet.europa.eu/gemet/concept/3087"
+  gravel: "http://www.eionet.europa.eu/gemet/concept/3738"
+  groundwater: "http://www.eionet.europa.eu/gemet/concept/3780"
+  mineral: "http://www.eionet.europa.eu/gemet/concept/5277"
+  natural gas: "http://www.eionet.europa.eu/gemet/concept/5503"
+  peat: "http://www.eionet.europa.eu/gemet/concept/6081"
+  sand: "http://www.eionet.europa.eu/gemet/concept/7413"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'gravel' or 'groundwater' or 'mineral' or 'natural gas' or 'peat' or 'sand'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s extraction"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any extraction that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'extraction' and ('related' some %s)"
+  vars:
+    - v0

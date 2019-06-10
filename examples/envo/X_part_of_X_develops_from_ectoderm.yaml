@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of X develops from ectoderm
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_X_develops_from_ectoderm
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [chorionic ectoderm](http://purl.obolibrary.org/obo/UBERON_0003374), [oral epithelium from ectoderm](http://purl.obolibrary.org/obo/UBERON_0011642), [anal membrane ectodermal component](http://purl.obolibrary.org/obo/UBERON_0014703) (4 total)
+
+classes: 
+  ectoderm: "UBERON:0000924"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+  develops from: "RO:0002202"
+
+
+vars:
+  v0: "'material anatomical entity'"
+  v1: "'multicellular anatomical structure'"
+
+name:
+  # Could not induce name, using default
+  text: "%s part of %s develops from ectoderm"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.5, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that develops_from a ectoderm and is part of a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('part of' some %s) and ('develops from' some 'ectoderm')"
+  vars:
+    - v0
+    - v1

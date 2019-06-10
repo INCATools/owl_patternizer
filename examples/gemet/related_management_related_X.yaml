@@ -1,0 +1,51 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: related management related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/related_management_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mountain management](http://www.eionet.europa.eu/gemet/concept/11237), [management plan](http://www.eionet.europa.eu/gemet/concept/4990), [management of natural resources](http://www.eionet.europa.eu/gemet/concept/4988) (8 total)
+
+classes: 
+  management: "http://www.eionet.europa.eu/gemet/concept/4985"
+  mountain: "http://www.eionet.europa.eu/gemet/concept/5401"
+  planning: "http://www.eionet.europa.eu/gemet/concept/6287"
+  resource: "http://www.eionet.europa.eu/gemet/concept/7168"
+  risk: "http://www.eionet.europa.eu/gemet/concept/7233"
+  river: "http://www.eionet.europa.eu/gemet/concept/7244"
+  waste: "http://www.eionet.europa.eu/gemet/concept/9041"
+  water quality: "http://www.eionet.europa.eu/gemet/concept/9214"
+  watershed: "http://www.eionet.europa.eu/gemet/concept/9235"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'mountain' or 'planning' or 'resource' or 'risk' or 'river' or 'waste' or 'water quality' or 'watershed'"
+
+name:
+  # Induced, frequency=1.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s management"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any related a management that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('related' some 'management') and ('related' some %s)"
+  vars:
+    - v0

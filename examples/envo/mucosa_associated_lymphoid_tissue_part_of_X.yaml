@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: mucosa-associated lymphoid tissue part of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/mucosa_associated_lymphoid_tissue_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cecal tonsil](http://purl.obolibrary.org/obo/UBERON_0013478), [gut-associated lymphoid tissue](http://purl.obolibrary.org/obo/UBERON_0001962), [nasal-associated lymphoid tissue](http://purl.obolibrary.org/obo/UBERON_0012330) (4 total)
+
+classes: 
+  mucosa-associated lymphoid tissue: "UBERON:0001961"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s-associated lymphoid tissue"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A thickened round patch of lymphoid tissue located at the ileo%sl junction adjacent to the sacculus rotundus."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s associated lymphoid tissue"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'mucosa-associated lymphoid tissue' and ('part of' some %s)"
+  vars:
+    - v0

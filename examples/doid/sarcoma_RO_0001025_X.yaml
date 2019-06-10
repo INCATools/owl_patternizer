@@ -1,0 +1,72 @@
+pattern_name: sarcoma RO_0001025 X
+pattern_iri: http://purl.obolibrary.org/obo/doid/sarcoma_RO_0001025_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [follicular dendritic cell sarcoma](http://purl.obolibrary.org/obo/DOID_6262), [dendritic cell sarcoma](http://purl.obolibrary.org/obo/DOID_7849), [Langerhans cell sarcoma](http://purl.obolibrary.org/obo/DOID_7146) (30 total)
+
+classes: 
+  CL_0000442: "CL:0000442"
+  CL_0000451: "CL:0000451"
+  CL_0000453: "CL:0000453"
+  sarcoma: "http://purl.obolibrary.org/obo/DOID_1115"
+  UBERON_0000014: "UBERON:0000014"
+  UBERON_0000391: "UBERON:0000391"
+  UBERON_0000473: "UBERON:0000473"
+  UBERON_0000989: "UBERON:0000989"
+  UBERON_0000992: "UBERON:0000992"
+  UBERON_0000996: "UBERON:0000996"
+  UBERON_0001017: "UBERON:0001017"
+  UBERON_0001052: "UBERON:0001052"
+  UBERON_0001155: "UBERON:0001155"
+  UBERON_0001245: "UBERON:0001245"
+  UBERON_0001255: "UBERON:0001255"
+  UBERON_0001264: "UBERON:0001264"
+  UBERON_0001737: "UBERON:0001737"
+  UBERON_0001825: "UBERON:0001825"
+  UBERON_0002046: "UBERON:0002046"
+  UBERON_0002048: "UBERON:0002048"
+  UBERON_0002107: "UBERON:0002107"
+  UBERON_0002110: "UBERON:0002110"
+  UBERON_0002240: "UBERON:0002240"
+  UBERON_0002367: "UBERON:0002367"
+  UBERON_0002391: "UBERON:0002391"
+  UBERON_0002394: "UBERON:0002394"
+  UBERON_0003126: "UBERON:0003126"
+  UBERON_0003728: "UBERON:0003728"
+  UBERON_0008883: "UBERON:0008883"
+  UBERON_0009853: "UBERON:0009853"
+  UBERON_0010743: "UBERON:0010743"
+
+
+relations: 
+  RO_0001025: "RO:0001025"
+
+
+vars:
+  v0: "'CL_0000442' or 'CL_0000451' or 'CL_0000453' or 'UBERON_0000014' or 'UBERON_0000391' or 'UBERON_0000473' or 'UBERON_0000989' or 'UBERON_0000992' or 'UBERON_0000996' or 'UBERON_0001017' or 'UBERON_0001052' or 'UBERON_0001155' or 'UBERON_0001245' or 'UBERON_0001255' or 'UBERON_0001264' or 'UBERON_0001737' or 'UBERON_0001825' or 'UBERON_0002046' or 'UBERON_0002048' or 'UBERON_0002107' or 'UBERON_0002110' or 'UBERON_0002240' or 'UBERON_0002367' or 'UBERON_0002391' or 'UBERON_0002394' or 'UBERON_0003126' or 'UBERON_0003728' or 'UBERON_0008883' or 'UBERON_0009853' or 'UBERON_0010743'"
+
+name:
+  # Could not induce name, using default
+  text: "sarcoma RO_0001025 %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any sarcoma that RO_0001025 a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'sarcoma' and ('RO_0001025' some %s)"
+  vars:
+    - v0

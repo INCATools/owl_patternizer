@@ -1,0 +1,47 @@
+# options: [min(20),dir('examples/omp'),trim(true),base('http://purl.obolibrary.org/obo/omp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has_quality X
+pattern_iri: http://purl.obolibrary.org/obo/omp/X_has_quality_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [altered microbial phenotype](http://purl.obolibrary.org/obo/OMP_0007085), [altered motility](http://purl.obolibrary.org/obo/OMP_0007001), [absence of motility](http://purl.obolibrary.org/obo/OMP_0000133) (60 total)
+
+classes: 
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  has_quality: "http://purl.obolibrary.org/obo/omp#has_quality"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'quality'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has_quality %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.03333333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s where the trait in question is the %s of a cell."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('has_quality' some %s)"
+  vars:
+    - v0
+    - v1

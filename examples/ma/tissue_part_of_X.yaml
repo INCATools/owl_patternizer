@@ -1,0 +1,44 @@
+# options: [min(20),dir(ma),trim(true),base('http://purl.obolibrary.org/obo/ma'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: tissue part of X
+pattern_iri: http://purl.obolibrary.org/obo/ma/tissue_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [trunk connective tissue](http://purl.obolibrary.org/obo/MA_0000513), [head or neck connective tissue](http://purl.obolibrary.org/obo/MA_0000570), [limb connective tissue](http://purl.obolibrary.org/obo/MA_0000689) (38 total)
+
+classes: 
+  tissue: "http://purl.obolibrary.org/obo/MA_0003002"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  part of: "http://purl.obolibrary.org/obo/ma#part_of"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.7105263157894737, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s connective tissue"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any tissue that part of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'tissue' and ('part of' some %s)"
+  vars:
+    - v0

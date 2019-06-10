@@ -1,0 +1,50 @@
+# options: [min(8),dir('examples/nbo'),trim(true),base('http://purl.obolibrary.org/obo/nbo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of limb
+pattern_iri: http://purl.obolibrary.org/obo/nbo/X_part_of_limb
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [skin of limb](http://purl.obolibrary.org/obo/UBERON_0001419), [limb joint](http://purl.obolibrary.org/obo/UBERON_0003657), [limb epidermis](http://purl.obolibrary.org/obo/UBERON_0009200) (14 total)
+
+classes: 
+  continuant: "BFO:0000002"
+  anatomical entity: "UBERON:0001062"
+  limb: "UBERON:0002101"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'continuant' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.6428571428571429, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "limb %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.35714285714285715, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a limb [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of limb"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'limb')"
+  vars:
+    - v0

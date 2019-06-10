@@ -1,0 +1,50 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: related damage related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/related_damage_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [field damage](http://www.eionet.europa.eu/gemet/concept/3177), [forest damage](http://www.eionet.europa.eu/gemet/concept/3414), [immission damage](http://www.eionet.europa.eu/gemet/concept/4149) (7 total)
+
+classes: 
+  damage: "http://www.eionet.europa.eu/gemet/concept/1956"
+  field: "http://www.eionet.europa.eu/gemet/concept/3176"
+  forest: "http://www.eionet.europa.eu/gemet/concept/3406"
+  immission: "http://www.eionet.europa.eu/gemet/concept/4146"
+  animal: "http://www.eionet.europa.eu/gemet/concept/450"
+  radiation: "http://www.eionet.europa.eu/gemet/concept/6884"
+  soil: "http://www.eionet.europa.eu/gemet/concept/7843"
+  storm: "http://www.eionet.europa.eu/gemet/concept/8115"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'field' or 'forest' or 'immission' or 'animal' or 'radiation' or 'soil' or 'storm'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s damage"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any related a damage that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('related' some 'damage') and ('related' some %s)"
+  vars:
+    - v0

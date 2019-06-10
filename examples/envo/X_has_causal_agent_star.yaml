@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has causal agent star
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_has_causal_agent_star
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [stellar radiation](http://purl.obolibrary.org/obo/ENVO_01001211), [microwave stellar radiation](http://purl.obolibrary.org/obo/ENVO_01001212), [radio wave stellar radiation](http://purl.obolibrary.org/obo/ENVO_01001213) (9 total)
+
+classes: 
+  star: "ENVO:01000801"
+  electromagnetic radiation: "ENVO:01001026"
+
+
+relations: 
+  has causal agent: "RO:0002608"
+
+
+vars:
+  v0: "'electromagnetic radiation'"
+
+name:
+  # Induced, frequency=0.1111111111111111, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s stellar radiation"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1111111111111111, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An %s process during which electromagnetic waves or their quanta are emitted from a star."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('has causal agent' some 'star')"
+  vars:
+    - v0

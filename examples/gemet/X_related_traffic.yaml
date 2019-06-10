@@ -1,0 +1,50 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related traffic
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_traffic
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [traffic regulation](http://www.eionet.europa.eu/gemet/concept/13272), [traffic engineering](http://www.eionet.europa.eu/gemet/concept/8589), [traffic accident](http://www.eionet.europa.eu/gemet/concept/8583) (10 total)
+
+classes: 
+  regulation: "http://www.eionet.europa.eu/gemet/concept/11514"
+  engineering: "http://www.eionet.europa.eu/gemet/concept/12586"
+  accident: "http://www.eionet.europa.eu/gemet/concept/25"
+  emission: "http://www.eionet.europa.eu/gemet/concept/2663"
+  infrastructure: "http://www.eionet.europa.eu/gemet/concept/4321"
+  monitoring: "http://www.eionet.europa.eu/gemet/concept/5346"
+  residential area: "http://www.eionet.europa.eu/gemet/concept/7143"
+  traffic: "http://www.eionet.europa.eu/gemet/concept/8582"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'regulation' or 'engineering' or 'accident' or 'emission' or 'infrastructure' or 'monitoring' or 'residential area'"
+
+name:
+  # Induced, frequency=0.6, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "traffic %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a traffic"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'traffic')"
+  vars:
+    - v0

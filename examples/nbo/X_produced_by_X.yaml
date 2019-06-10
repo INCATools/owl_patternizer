@@ -1,0 +1,53 @@
+# options: [min(8),dir('examples/nbo'),trim(true),base('http://purl.obolibrary.org/obo/nbo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X produced by X
+pattern_iri: http://purl.obolibrary.org/obo/nbo/X_produced_by_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [urine](http://purl.obolibrary.org/obo/UBERON_0001088), [intestine secretion](http://purl.obolibrary.org/obo/UBERON_0002466), [secretion of lacrimal gland](http://purl.obolibrary.org/obo/UBERON_0001827) (11 total)
+
+classes: 
+  organism substance: "UBERON:0000463"
+
+
+relations: 
+  produced by: "RO:0003001"
+
+
+vars:
+  v0: "'organism substance'"
+  v1: "'anatomical structure'"
+
+name:
+  # Could not induce name, using default
+  text: "%s produced by %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.18181818181818182, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that secreted_by a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('produced by' some %s)"
+  vars:
+    - v0
+    - v1

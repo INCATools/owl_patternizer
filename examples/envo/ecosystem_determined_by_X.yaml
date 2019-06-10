@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: ecosystem determined by X
+pattern_iri: http://purl.obolibrary.org/obo/envo/ecosystem_determined_by_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [environment associated with an animal part or small animal](http://purl.obolibrary.org/obo/ENVO_01001055), [environment associated with a fungal tissue](http://purl.obolibrary.org/obo/ENVO_01001058), [environment determined by a biofilm on an animal surface](http://purl.obolibrary.org/obo/ENVO_01001034) (9 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  ecosystem: "ENVO:01001110"
+
+
+relations: 
+  determined by: "RO:0002507"
+
+
+vars:
+  v0: "'material entity'"
+
+name:
+  # Could not induce name, using default
+  text: "ecosystem determined by %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any ecosystem that determined by a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'ecosystem' and ('determined by' some %s)"
+  vars:
+    - v0

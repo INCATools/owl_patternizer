@@ -1,0 +1,47 @@
+# options: [min(10),dir('examples/agro'),trim(true),base('http://purl.obolibrary.org/obo/agro'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X participates in X
+pattern_iri: http://purl.obolibrary.org/obo/agro/X_participates_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [tillage implement](http://purl.obolibrary.org/obo/AGRO_00000223), [land levelling implement](http://purl.obolibrary.org/obo/AGRO_00000224), [residue management implement](http://purl.obolibrary.org/obo/AGRO_00000225) (10 total)
+
+classes: 
+  planned process: "http://purl.obolibrary.org/obo/OBI_0000011"
+
+
+relations: 
+  participates in: "RO:0000056"
+
+
+vars:
+  v0: "'agricultural implement'"
+  v1: "'planned process'"
+
+name:
+  # Could not induce name, using default
+  text: "%s participates in %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that participates in a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('participates in' some %s)"
+  vars:
+    - v0
+    - v1

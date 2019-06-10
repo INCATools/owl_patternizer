@@ -1,0 +1,47 @@
+# options: [min(4),dir('examples/apo'),trim(true),base('http://purl.obolibrary.org/obo/apo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related X
+pattern_iri: http://purl.obolibrary.org/obo/apo/X_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [bud morphology](http://purl.obolibrary.org/obo/APO_0000212), [null heterozygous diploid](http://purl.obolibrary.org/obo/APO_0000151), [null homozygous diploid](http://purl.obolibrary.org/obo/APO_0000150) (5 total)
+
+classes: 
+  morphology: "http://purl.obolibrary.org/obo/APO_0000049"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'morphology'"
+  v1: "'budding'"
+
+name:
+  # Could not induce name, using default
+  text: "%s related %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some %s)"
+  vars:
+    - v0
+    - v1

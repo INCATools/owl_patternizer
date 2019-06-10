@@ -1,0 +1,50 @@
+# options: [min(8),dir('examples/nbo'),trim(true),base('http://purl.obolibrary.org/obo/nbo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of forelimb
+pattern_iri: http://purl.obolibrary.org/obo/nbo/X_part_of_forelimb
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [forelimb skin](http://purl.obolibrary.org/obo/UBERON_0003531), [forelimb joint](http://purl.obolibrary.org/obo/UBERON_0003839), [musculature of upper limb](http://purl.obolibrary.org/obo/UBERON_0004481) (9 total)
+
+classes: 
+  continuant: "BFO:0000002"
+  anatomical entity: "UBERON:0001062"
+  forelimb: "UBERON:0002102"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'continuant' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.7777777777777778, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "forelimb %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.4444444444444444, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a forelimb [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of fore limb"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'forelimb')"
+  vars:
+    - v0

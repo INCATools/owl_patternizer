@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of foregut-midgut junction
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_foregut_midgut_junction
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [epithelium of foregut-midgut junction](http://purl.obolibrary.org/obo/UBERON_0009497), [endoderm of foregut-midgut junction](http://purl.obolibrary.org/obo/UBERON_0009550), [mesentery of foregut-midgut junction](http://purl.obolibrary.org/obo/UBERON_0009483) (5 total)
+
+classes: 
+  foregut-midgut junction: "UBERON:0006235"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.6, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of foregut-midgut junction"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.4, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a foregut-midgut junction."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'foregut-midgut junction')"
+  vars:
+    - v0

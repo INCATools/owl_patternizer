@@ -1,0 +1,49 @@
+# options: [min(8),dir('examples/mop'),trim(true),base('http://purl.obolibrary.org/obo/mop'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: copolymerisation has participant beginning to exist X
+pattern_iri: http://purl.obolibrary.org/obo/mop/copolymerisation_has_participant_beginning_to_exist_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [block copolymerisation](http://purl.obolibrary.org/obo/MOP_0000699), [diblock copolymerisation](http://purl.obolibrary.org/obo/MOP_0000700), [triblock copolymerisation](http://purl.obolibrary.org/obo/MOP_0000701) (9 total)
+
+classes: 
+  macromolecule: "http://purl.obolibrary.org/obo/CHEBI_33839"
+  copolymerisation: "http://purl.obolibrary.org/obo/MOP_0000631"
+
+
+relations: 
+  has participant beginning to exist: "BFO:0000077"
+
+
+vars:
+  v0: "'macromolecule'"
+
+name:
+  # Induced, frequency=0.8888888888888888, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%sisation"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.7777777777777778, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A copolymerisation in which a %s is formed."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%sization"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'copolymerisation' and ('has participant beginning to exist' some %s)"
+  vars:
+    - v0

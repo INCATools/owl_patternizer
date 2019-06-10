@@ -1,0 +1,56 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: related X related soil
+pattern_iri: http://purl.obolibrary.org/obo/gemet/related_X_related_soil
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [soil chemistry](http://www.eionet.europa.eu/gemet/concept/7849), [soil compaction](http://www.eionet.europa.eu/gemet/concept/7850), [soil conservation](http://www.eionet.europa.eu/gemet/concept/7852) (13 total)
+
+classes: 
+  chemistry: "http://www.eionet.europa.eu/gemet/concept/1348"
+  compaction: "http://www.eionet.europa.eu/gemet/concept/1625"
+  conservation: "http://www.eionet.europa.eu/gemet/concept/1700"
+  damage: "http://www.eionet.europa.eu/gemet/concept/1956"
+  degradation: "http://www.eionet.europa.eu/gemet/concept/2040"
+  erosion: "http://www.eionet.europa.eu/gemet/concept/2963"
+  fertiliser: "http://www.eionet.europa.eu/gemet/concept/3169"
+  acidification: "http://www.eionet.europa.eu/gemet/concept/44"
+  leaching: "http://www.eionet.europa.eu/gemet/concept/4722"
+  mineralogy: "http://www.eionet.europa.eu/gemet/concept/5270"
+  processing: "http://www.eionet.europa.eu/gemet/concept/6650"
+  purification: "http://www.eionet.europa.eu/gemet/concept/6838"
+  sealing: "http://www.eionet.europa.eu/gemet/concept/7516"
+  soil: "http://www.eionet.europa.eu/gemet/concept/7843"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'chemistry' or 'compaction' or 'conservation' or 'damage' or 'degradation' or 'erosion' or 'fertiliser' or 'acidification' or 'leaching' or 'mineralogy' or 'processing' or 'purification' or 'sealing'"
+
+name:
+  # Induced, frequency=0.8461538461538461, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "soil %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any related a %s that related a soil"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('related' some %s) and ('related' some 'soil')"
+  vars:
+    - v0

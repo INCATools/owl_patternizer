@@ -1,0 +1,50 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: neural nucleus part of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/neural_nucleus_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [nucleus of brain](http://purl.obolibrary.org/obo/UBERON_0002308), [nucleus of medulla oblongata](http://purl.obolibrary.org/obo/UBERON_0007635), [nucleus of spinal cord](http://purl.obolibrary.org/obo/UBERON_0011777) (4 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  neural nucleus: "UBERON:0000125"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "nucleus of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A neural nucleus that is part of the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s nucleus"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'neural nucleus' and ('part of' some %s)"
+  vars:
+    - v0

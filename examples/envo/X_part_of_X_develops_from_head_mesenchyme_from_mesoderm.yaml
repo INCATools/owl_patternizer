@@ -1,0 +1,57 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of X develops from head mesenchyme from mesoderm
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_X_develops_from_head_mesenchyme_from_mesoderm
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [2nd arch mesenchyme from head mesenchyme](http://purl.obolibrary.org/obo/UBERON_0010343), [mandibular process mesenchyme from head mesenchyme](http://purl.obolibrary.org/obo/UBERON_0010337), [1st arch mandibular mesenchyme from head mesenchyme](http://purl.obolibrary.org/obo/UBERON_0010339) (7 total)
+
+classes: 
+  mesenchyme: "UBERON:0003104"
+  embryonic tissue: "UBERON:0005291"
+  head mesenchyme from mesoderm: "UBERON:0006904"
+  structure with developmental contribution from neural crest: "UBERON:0010314"
+
+
+relations: 
+  part of: "BFO:0000050"
+  develops from: "RO:0002202"
+
+
+vars:
+  v0: "'mesenchyme'"
+  v1: "'mesenchyme' or 'embryonic tissue' or 'structure with developmental contribution from neural crest'"
+
+name:
+  # Induced, frequency=0.8571428571428571, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s from head %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s that develops_from a head mesenchyme from mesoderm and is part of a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s from head %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('part of' some %s) and ('develops from' some 'head mesenchyme from mesoderm')"
+  vars:
+    - v0
+    - v1

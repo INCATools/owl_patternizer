@@ -1,0 +1,47 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X formed as result of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_formed_as_result_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [frost heave](http://purl.obolibrary.org/obo/ENVO_01001568), [volcanic rock](http://purl.obolibrary.org/obo/ENVO_00002015), [volcanic feature](http://purl.obolibrary.org/obo/ENVO_00000094) (6 total)
+
+classes: 
+  environmental system process: "ENVO:02500000"
+
+
+relations: 
+  formed as result of: "RO:0002354"
+
+
+vars:
+  v0: "'material entity'"
+  v1: "'environmental system process'"
+
+name:
+  # Could not induce name, using default
+  text: "%s formed as result of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that formed as result of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('formed as result of' some %s)"
+  vars:
+    - v0
+    - v1

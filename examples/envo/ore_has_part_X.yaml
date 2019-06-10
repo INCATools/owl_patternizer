@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: ore has part X
+pattern_iri: http://purl.obolibrary.org/obo/envo/ore_has_part_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [copper ore](http://purl.obolibrary.org/obo/ENVO_02000111), [iron ore](http://purl.obolibrary.org/obo/ENVO_02000096), [uranium ore](http://purl.obolibrary.org/obo/ENVO_02000095) (5 total)
+
+classes: 
+  transition element molecular entity: "ns2:CHEBI_33497"
+  ore: "ENVO:02000094"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'transition element molecular entity'"
+
+name:
+  # Could not induce name, using default
+  text: "ore has part %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any ore that has part a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'ore' and ('has part' some %s)"
+  vars:
+    - v0

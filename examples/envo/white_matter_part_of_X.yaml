@@ -1,0 +1,55 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: white matter part of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/white_matter_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [brain white matter](http://purl.obolibrary.org/obo/UBERON_0003544), [cerebral hemisphere white matter](http://purl.obolibrary.org/obo/UBERON_0002437), [white matter of forebrain](http://purl.obolibrary.org/obo/UBERON_0019261) (13 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "UBERON:0001062"
+  white matter: "UBERON:0002316"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.6153846153846154, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "white matter of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3076923076923077, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A white matter that is part of the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "white matter of %s"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s white matter"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'white matter' and ('part of' some %s)"
+  vars:
+    - v0

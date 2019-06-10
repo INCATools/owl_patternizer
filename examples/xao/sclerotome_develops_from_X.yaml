@@ -1,0 +1,49 @@
+# options: [min(12),dir(xao),trim(true),base('http://purl.obolibrary.org/obo/xao'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: sclerotome develops from X
+pattern_iri: http://purl.obolibrary.org/obo/xao/sclerotome_develops_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [sclerotome of head somite 4](http://purl.obolibrary.org/obo/XAO_0003112), [sclerotome of trunk somite 1](http://purl.obolibrary.org/obo/XAO_0003113), [sclerotome of trunk somite 2](http://purl.obolibrary.org/obo/XAO_0003114) (19 total)
+
+classes: 
+  somite: "ns1:XAO_0000058"
+  sclerotome: "ns1:XAO_0000397"
+
+
+relations: 
+  develops from: "RO:0002202"
+
+
+vars:
+  v0: "'somite'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "sclerotome of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Compartment of %s that is a precursor of the axial skeleton."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "sclerotome of %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'sclerotome' and ('develops from' some %s)"
+  vars:
+    - v0

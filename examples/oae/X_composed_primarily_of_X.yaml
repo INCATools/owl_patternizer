@@ -1,0 +1,47 @@
+# options: [min(10),dir('examples/oae'),trim(true),base('http://purl.obolibrary.org/obo/oae'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X composed primarily of X
+pattern_iri: http://purl.obolibrary.org/obo/oae/X_composed_primarily_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [muscle organ](http://purl.obolibrary.org/obo/UBERON_0001630), [blood vasculature](http://purl.obolibrary.org/obo/UBERON_0004537), [dense connective tissue](http://purl.obolibrary.org/obo/UBERON_0011823) (18 total)
+
+classes: 
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  composed primarily of: "RO:0002473"
+
+
+vars:
+  v0: "'anatomical entity'"
+  v1: "'anatomical structure'"
+
+name:
+  # Could not induce name, using default
+  text: "%s composed primarily of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that composed primarily of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('composed primarily of' some %s)"
+  vars:
+    - v0
+    - v1

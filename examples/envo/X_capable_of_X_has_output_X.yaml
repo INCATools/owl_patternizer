@@ -1,0 +1,51 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X capable of X has output X
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_capable_of_X_has_output_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [coal mine](http://purl.obolibrary.org/obo/ENVO_00002169), [uranium mine](http://purl.obolibrary.org/obo/ENVO_02000093), [iron mine](http://purl.obolibrary.org/obo/ENVO_02000092) (8 total)
+
+classes: 
+  material extraction process: "ENVO:01000785"
+
+
+relations: 
+  capable of: "RO:0002215"
+
+
+vars:
+  v0: "'mine'"
+  v1: "'material extraction process'"
+  v2: "'environmental material'"
+
+name:
+  # Could not induce name, using default
+  text: "%s capable of %s has output %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that capable of a Any %s that has output a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('capable of' some %s and ('has output' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

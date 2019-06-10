@@ -1,0 +1,53 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: related X related planning
+pattern_iri: http://purl.obolibrary.org/obo/gemet/related_X_related_planning
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [building planning](http://www.eionet.europa.eu/gemet/concept/1046), [disaster contingency plan](http://www.eionet.europa.eu/gemet/concept/2218), [agriculture framework plan](http://www.eionet.europa.eu/gemet/concept/235) (11 total)
+
+classes: 
+  building: "http://www.eionet.europa.eu/gemet/concept/1029"
+  disaster: "http://www.eionet.europa.eu/gemet/concept/2215"
+  agriculture: "http://www.eionet.europa.eu/gemet/concept/232"
+  environmentalism: "http://www.eionet.europa.eu/gemet/concept/2857"
+  equipment: "http://www.eionet.europa.eu/gemet/concept/2956"
+  family: "http://www.eionet.europa.eu/gemet/concept/3117"
+  allocation: "http://www.eionet.europa.eu/gemet/concept/335"
+  landscape: "http://www.eionet.europa.eu/gemet/concept/4648"
+  land use: "http://www.eionet.europa.eu/gemet/concept/4678"
+  management: "http://www.eionet.europa.eu/gemet/concept/4985"
+  planning: "http://www.eionet.europa.eu/gemet/concept/6287"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'building' or 'disaster' or 'agriculture' or 'environmentalism' or 'equipment' or 'family' or 'allocation' or 'landscape' or 'land use' or 'management'"
+
+name:
+  # Induced, frequency=0.5454545454545454, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s planning"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any related a %s that related a planning"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('related' some %s) and ('related' some 'planning')"
+  vars:
+    - v0

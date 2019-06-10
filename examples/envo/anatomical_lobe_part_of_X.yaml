@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: anatomical lobe part of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/anatomical_lobe_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [lobe of thyroid gland](http://purl.obolibrary.org/obo/UBERON_0001118), [renal lobe](http://purl.obolibrary.org/obo/UBERON_0009913), [lobe of prostate](http://purl.obolibrary.org/obo/UBERON_0001328) (4 total)
+
+classes: 
+  organ: "UBERON:0000062"
+  anatomical lobe: "UBERON:0009912"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'organ'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "lobe of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A lobe of tissue that is part of a %s gland."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s lobe"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'anatomical lobe' and ('part of' some %s)"
+  vars:
+    - v0

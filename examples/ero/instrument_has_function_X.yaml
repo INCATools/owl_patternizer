@@ -1,0 +1,44 @@
+# options: [min(8),dir('examples/ero'),trim(true),base('http://purl.obolibrary.org/obo/ero'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: instrument has_function X
+pattern_iri: http://purl.obolibrary.org/obo/ero/instrument_has_function_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [material separation instrument](http://purl.obolibrary.org/obo/ERO_0000624), [mechanical instrument](http://purl.obolibrary.org/obo/ERO_0000626), [material transfer instrument](http://purl.obolibrary.org/obo/ERO_0000629) (8 total)
+
+classes: 
+  function: "BFO:0000034"
+  instrument: "http://purl.obolibrary.org/obo/ERO_0000004"
+
+
+relations: 
+  has_function: "http://purl.obolibrary.org/obo/OBI_0000306"
+
+
+vars:
+  v0: "'function'"
+
+name:
+  # Could not induce name, using default
+  text: "instrument has_function %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.125, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An instrument that has %s. A material separation function is a function that increases the resolution between two or more material entities. The distinction between the entities is usually based on some associated physical quality."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'instrument' and ('has_function' some %s)"
+  vars:
+    - v0

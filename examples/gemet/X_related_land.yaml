@@ -1,0 +1,47 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related land
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_land
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [land mammal](http://www.eionet.europa.eu/gemet/concept/4632), [digital land model](http://www.eionet.europa.eu/gemet/concept/2195), [land pollution](http://www.eionet.europa.eu/gemet/concept/4636) (11 total)
+
+classes: 
+  land: "http://www.eionet.europa.eu/gemet/concept/4599"
+  mammal: "http://www.eionet.europa.eu/gemet/concept/4982"
+  modelling: "http://www.eionet.europa.eu/gemet/concept/5327"
+  pollution: "http://www.eionet.europa.eu/gemet/concept/6445"
+  transportation: "http://www.eionet.europa.eu/gemet/concept/8641"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'mammal' or 'modelling' or 'pollution' or 'transportation'"
+
+name:
+  # Induced, frequency=0.2727272727272727, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "land %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a land"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'land')"
+  vars:
+    - v0

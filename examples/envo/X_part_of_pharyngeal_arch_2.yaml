@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of pharyngeal arch 2
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_pharyngeal_arch_2
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [2nd arch ectoderm](http://purl.obolibrary.org/obo/UBERON_0005660), [2nd arch endoderm](http://purl.obolibrary.org/obo/UBERON_0005664), [2nd arch mesenchyme](http://purl.obolibrary.org/obo/UBERON_0005689) (4 total)
+
+classes: 
+  pharyngeal arch 2: "UBERON:0003066"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "2nd arch %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An %s that is part of a pharyngeal arch 2."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "2nd pharyngeal arch %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'pharyngeal arch 2')"
+  vars:
+    - v0

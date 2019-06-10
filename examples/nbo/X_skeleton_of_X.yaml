@@ -1,0 +1,47 @@
+# options: [min(8),dir('examples/nbo'),trim(true),base('http://purl.obolibrary.org/obo/nbo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X skeleton of X
+pattern_iri: http://purl.obolibrary.org/obo/nbo/X_skeleton_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [skeleton of lower jaw](http://purl.obolibrary.org/obo/UBERON_0003278), [skeleton of limb](http://purl.obolibrary.org/obo/UBERON_0004381), [forelimb skeleton](http://purl.obolibrary.org/obo/UBERON_0001440) (11 total)
+
+classes: 
+  subdivision of skeleton: "UBERON:0010912"
+
+
+relations: 
+  skeleton of: "RO:0002576"
+
+
+vars:
+  v0: "'subdivision of skeleton'"
+  v1: "'connected anatomical structure' or 'organism subdivision'"
+
+name:
+  # Could not induce name, using default
+  text: "%s skeleton of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that skeleton of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('skeleton of' some %s)"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of embryonic footplate
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_embryonic_footplate
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [epithelium of footplate](http://purl.obolibrary.org/obo/UBERON_0003248), [ectoderm of footplate](http://purl.obolibrary.org/obo/UBERON_0003373), [mesenchyme of footplate](http://purl.obolibrary.org/obo/UBERON_0003328) (4 total)
+
+classes: 
+  material anatomical entity: "UBERON:0000465"
+  embryonic footplate: "UBERON:0006871"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material anatomical entity'"
+
+name:
+  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of footplate"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.75, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An %s that is part of a footplate."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "foot plate %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'embryonic footplate')"
+  vars:
+    - v0

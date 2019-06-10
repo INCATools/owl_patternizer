@@ -1,0 +1,49 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: analysis related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/analysis_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [chemical analysis](http://www.eionet.europa.eu/gemet/concept/1298), [ecosystem analysis](http://www.eionet.europa.eu/gemet/concept/2520), [noise analysis](http://www.eionet.europa.eu/gemet/concept/5629) (6 total)
+
+classes: 
+  chemical: "http://www.eionet.europa.eu/gemet/concept/1327"
+  ecosystem: "http://www.eionet.europa.eu/gemet/concept/2519"
+  analysis: "http://www.eionet.europa.eu/gemet/concept/397"
+  noise: "http://www.eionet.europa.eu/gemet/concept/5624"
+  pollutant: "http://www.eionet.europa.eu/gemet/concept/6395"
+  soil: "http://www.eionet.europa.eu/gemet/concept/7843"
+  waste: "http://www.eionet.europa.eu/gemet/concept/9041"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'chemical' or 'ecosystem' or 'noise' or 'pollutant' or 'soil' or 'waste'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s analysis"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any analysis that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'analysis' and ('related' some %s)"
+  vars:
+    - v0

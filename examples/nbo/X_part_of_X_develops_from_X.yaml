@@ -1,0 +1,59 @@
+# options: [min(8),dir('examples/nbo'),trim(true),base('http://purl.obolibrary.org/obo/nbo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of X develops from X
+pattern_iri: http://purl.obolibrary.org/obo/nbo/X_part_of_X_develops_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [oral epithelium from ectoderm](http://purl.obolibrary.org/obo/UBERON_0011642), [mesothelium](http://purl.obolibrary.org/obo/UBERON_0001136), [endoderm of foregut](http://purl.obolibrary.org/obo/UBERON_0003258) (23 total)
+
+classes: 
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+  develops from: "RO:0002202"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+  v1: "'multicellular anatomical structure'"
+  v2: "'anatomical entity' or 'material anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s part of %s develops from %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Induced, frequency=0.5217391304347826, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s that develops_from a %s and is part of a %s."
+  vars:
+    - v0
+    - v2
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s derived from %s of %s"
+    vars:
+      - v0
+      - v2
+      - v1
+
+
+equivalentTo:
+  text: "%s and ('part of' some %s) and ('develops from' some %s)"
+  vars:
+    - v0
+    - v1
+    - v2

@@ -1,0 +1,47 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: related ecology related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/related_ecology_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [forest ecology](http://www.eionet.europa.eu/gemet/concept/10128), [animal ecology](http://www.eionet.europa.eu/gemet/concept/420), [land ecology](http://www.eionet.europa.eu/gemet/concept/4615) (5 total)
+
+classes: 
+  ecology: "http://www.eionet.europa.eu/gemet/concept/2470"
+  forest: "http://www.eionet.europa.eu/gemet/concept/3406"
+  animal: "http://www.eionet.europa.eu/gemet/concept/450"
+  landscape: "http://www.eionet.europa.eu/gemet/concept/4648"
+  planting: "http://www.eionet.europa.eu/gemet/concept/6313"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'forest' or 'animal' or 'landscape' or 'planting'"
+
+name:
+  # Induced, frequency=0.8, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s ecology"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any related a ecology that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('related' some 'ecology') and ('related' some %s)"
+  vars:
+    - v0

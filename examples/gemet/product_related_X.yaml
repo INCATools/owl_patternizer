@@ -1,0 +1,48 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: product related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/product_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [chemical product](http://www.eionet.europa.eu/gemet/concept/11813), [cleansing product](http://www.eionet.europa.eu/gemet/concept/1458), [mining product](http://www.eionet.europa.eu/gemet/concept/13202) (6 total)
+
+classes: 
+  cleansing: "http://www.eionet.europa.eu/gemet/concept/13722"
+  mining: "http://www.eionet.europa.eu/gemet/concept/14837"
+  metal: "http://www.eionet.europa.eu/gemet/concept/5184"
+  plant protection: "http://www.eionet.europa.eu/gemet/concept/6318"
+  product: "http://www.eionet.europa.eu/gemet/concept/6660"
+  protein: "http://www.eionet.europa.eu/gemet/concept/6755"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'cleansing' or 'mining' or 'metal' or 'plant protection' or 'protein'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s product"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any product that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'product' and ('related' some %s)"
+  vars:
+    - v0

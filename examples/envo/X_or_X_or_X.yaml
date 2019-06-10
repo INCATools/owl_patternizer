@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X-or-X-or-X
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_or_X_or_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [peel, core or seed](http://purl.obolibrary.org/obo/FOODON_03420110), [can, bottle or jar](http://purl.obolibrary.org/obo/FOODON_03490194), [bottle or jar](http://purl.obolibrary.org/obo/FOODON_03490203) (12 total)
+
+classes: 
+  material entity: "BFO:0000040"
+
+
+relations: []
+
+vars:
+  v0: "'material entity'"
+  v1: "'material entity'"
+  v2: "'material entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s/%s/%s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s or %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s or %s or %s"
+  vars:
+    - v0
+    - v1
+    - v2

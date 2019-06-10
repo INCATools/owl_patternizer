@@ -1,0 +1,49 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related mining
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_mining
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mining regulation](http://www.eionet.europa.eu/gemet/concept/5293), [mining engineering](http://www.eionet.europa.eu/gemet/concept/5287), [mining geology](http://www.eionet.europa.eu/gemet/concept/5288) (6 total)
+
+classes: 
+  regulation: "http://www.eionet.europa.eu/gemet/concept/11514"
+  engineering: "http://www.eionet.europa.eu/gemet/concept/12586"
+  mining: "http://www.eionet.europa.eu/gemet/concept/14837"
+  geology: "http://www.eionet.europa.eu/gemet/concept/3650"
+  landscape: "http://www.eionet.europa.eu/gemet/concept/4648"
+  product: "http://www.eionet.europa.eu/gemet/concept/6660"
+  waste: "http://www.eionet.europa.eu/gemet/concept/9041"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'regulation' or 'engineering' or 'geology' or 'landscape' or 'product' or 'waste'"
+
+name:
+  # Induced, frequency=0.8333333333333334, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "mining %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a mining"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'mining')"
+  vars:
+    - v0

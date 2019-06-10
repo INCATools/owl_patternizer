@@ -1,0 +1,49 @@
+# options: [min(8),dir('examples/nbo'),trim(true),base('http://purl.obolibrary.org/obo/nbo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of aorta
+pattern_iri: http://purl.obolibrary.org/obo/nbo/X_part_of_aorta
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [aorta wall](http://purl.obolibrary.org/obo/UBERON_0004663), [aorta smooth muscle tissue](http://purl.obolibrary.org/obo/UBERON_0004178), [aorta endothelium](http://purl.obolibrary.org/obo/UBERON_0004851) (8 total)
+
+classes: 
+  aorta: "UBERON:0000947"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.875, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "aorta %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.125, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An %s that is part of a aorta."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of aorta"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'aorta')"
+  vars:
+    - v0

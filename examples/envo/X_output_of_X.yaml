@@ -1,0 +1,47 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X output of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_output_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [manufactured product](http://purl.obolibrary.org/obo/ENVO_00003074), [construction](http://purl.obolibrary.org/obo/ENVO_00000070), [construction](http://purl.obolibrary.org/obo/ENVO_00000070) (9 total)
+
+classes: 
+  environmental system process: "ENVO:02500000"
+
+
+relations: 
+  output of: "RO:0002353"
+
+
+vars:
+  v0: "'material entity'"
+  v1: "'environmental system process'"
+
+name:
+  # Could not induce name, using default
+  text: "%s output of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that output of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('output of' some %s)"
+  vars:
+    - v0
+    - v1

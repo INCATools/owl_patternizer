@@ -1,0 +1,49 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related food
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_food
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [food hygiene](http://www.eionet.europa.eu/gemet/concept/3367), [food industry](http://www.eionet.europa.eu/gemet/concept/3368), [food pollutant](http://www.eionet.europa.eu/gemet/concept/3372) (8 total)
+
+classes: 
+  food: "http://www.eionet.europa.eu/gemet/concept/3354"
+  hygiene: "http://www.eionet.europa.eu/gemet/concept/4126"
+  industry: "http://www.eionet.europa.eu/gemet/concept/4279"
+  pollutant: "http://www.eionet.europa.eu/gemet/concept/6395"
+  science: "http://www.eionet.europa.eu/gemet/concept/7472"
+  technology: "http://www.eionet.europa.eu/gemet/concept/8339"
+  transportation: "http://www.eionet.europa.eu/gemet/concept/8641"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'hygiene' or 'industry' or 'pollutant' or 'science' or 'technology' or 'transportation'"
+
+name:
+  # Induced, frequency=0.625, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "food %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a food"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'food')"
+  vars:
+    - v0

@@ -1,0 +1,43 @@
+# options: [min(10),dir('examples/oae'),trim(true),base('http://purl.obolibrary.org/obo/oae'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: AE occurs in X
+pattern_iri: http://purl.obolibrary.org/obo/oae/AE_occurs_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [incision site AE](http://purl.obolibrary.org/obo/OAE_0002808), [peripheral neuropathy AE](http://purl.obolibrary.org/obo/OAE_0000337), [tendon disorder AE](http://purl.obolibrary.org/obo/OAE_0000522) (31 total)
+
+classes: 
+  independent continuant: "BFO:0000004"
+
+
+relations: 
+  AE occurs in: "http://purl.obolibrary.org/obo/OAE_0002081"
+
+
+vars:
+  v0: "'independent continuant'"
+
+name:
+  # Induced, frequency=0.6129032258064516, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s AE"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.16129032258064516, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "an AE that occurs in %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('AE occurs in' some %s)"
+  vars:
+    - v0

@@ -1,0 +1,55 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related public
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_public
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [public building](http://www.eionet.europa.eu/gemet/concept/6788), [public contract](http://www.eionet.europa.eu/gemet/concept/13269), [public debt](http://www.eionet.europa.eu/gemet/concept/13249) (12 total)
+
+classes: 
+  building: "http://www.eionet.europa.eu/gemet/concept/1029"
+  public: "http://www.eionet.europa.eu/gemet/concept/10904"
+  contract: "http://www.eionet.europa.eu/gemet/concept/1762"
+  debt: "http://www.eionet.europa.eu/gemet/concept/2000"
+  expenditure: "http://www.eionet.europa.eu/gemet/concept/3049"
+  financing: "http://www.eionet.europa.eu/gemet/concept/3205"
+  health: "http://www.eionet.europa.eu/gemet/concept/3865"
+  information: "http://www.eionet.europa.eu/gemet/concept/4303"
+  international law: "http://www.eionet.europa.eu/gemet/concept/4430"
+  land access: "http://www.eionet.europa.eu/gemet/concept/4600"
+  opinion: "http://www.eionet.europa.eu/gemet/concept/5880"
+  services: "http://www.eionet.europa.eu/gemet/concept/7621"
+  transportation: "http://www.eionet.europa.eu/gemet/concept/8641"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'building' or 'contract' or 'debt' or 'expenditure' or 'financing' or 'health' or 'information' or 'international law' or 'land access' or 'opinion' or 'services' or 'transportation'"
+
+name:
+  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "public %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a public"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'public')"
+  vars:
+    - v0

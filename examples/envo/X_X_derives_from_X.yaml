@@ -1,0 +1,51 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X derives from X
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_X_derives_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [pea vine silage](http://purl.obolibrary.org/obo/FOODON_03306644), [scree](http://purl.obolibrary.org/obo/ENVO_00000194), [shellfish food product](http://purl.obolibrary.org/obo/FOODON_00001293) (13 total)
+
+classes: 
+  material entity: "BFO:0000040"
+
+
+relations: 
+  derives from: "RO:0001000"
+
+
+vars:
+  v0: "'material entity'"
+  v1: "'material entity'"
+  v2: "'material entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s derives from %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s and derives from a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and %s and ('derives from' some %s)"
+  vars:
+    - v0
+    - v1
+    - v2

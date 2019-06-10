@@ -1,0 +1,45 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related state
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_state
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [state biological reserve](http://www.eionet.europa.eu/gemet/concept/10202), [state of waste](http://www.eionet.europa.eu/gemet/concept/8070), [data on the state of the environment](http://www.eionet.europa.eu/gemet/concept/8068) (5 total)
+
+classes: 
+  biological reserve: "http://www.eionet.europa.eu/gemet/concept/7137"
+  state: "http://www.eionet.europa.eu/gemet/concept/8062"
+  waste: "http://www.eionet.europa.eu/gemet/concept/9041"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'biological reserve' or 'waste'"
+
+name:
+  # Induced, frequency=0.2, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "state %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a state"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'state')"
+  vars:
+    - v0

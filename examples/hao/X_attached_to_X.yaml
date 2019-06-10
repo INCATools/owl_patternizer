@@ -1,0 +1,47 @@
+# options: [min(12),dir('examples/hao'),trim(true),base('http://purl.obolibrary.org/obo/hao'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X attached_to X
+pattern_iri: http://purl.obolibrary.org/obo/hao/X_attached_to_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [first valvifer-second valvifer muscle](http://purl.obolibrary.org/obo/HAO_0002189), [intrinsic muscle of the gonostipes](http://purl.obolibrary.org/obo/HAO_0000443), [intrinsic muscle of the harpe](http://purl.obolibrary.org/obo/HAO_0001556) (26 total)
+
+classes: 
+  muscle: "http://purl.obolibrary.org/obo/HAO_0000641"
+
+
+relations: 
+  attached_to: "http://purl.obolibrary.org/obo/HAO#_attached_to"
+
+
+vars:
+  v0: "'muscle'"
+  v1: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.2692307692307692, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "dilator %s of the %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that attached_to a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('attached_to' some %s)"
+  vars:
+    - v0
+    - v1

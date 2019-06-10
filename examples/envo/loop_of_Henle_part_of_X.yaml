@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: loop of Henle part of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/loop_of_Henle_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [metanephric loop of Henle](http://purl.obolibrary.org/obo/UBERON_0005130), [renal medulla loop of Henle](http://purl.obolibrary.org/obo/UBERON_0034997), [outer renal medulla loop of Henle](http://purl.obolibrary.org/obo/UBERON_0034996) (6 total)
+
+classes: 
+  loop of Henle: "UBERON:0001288"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.8333333333333334, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s loop of Henle"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3333333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A loop of Henle that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'loop of Henle' and ('part of' some %s)"
+  vars:
+    - v0

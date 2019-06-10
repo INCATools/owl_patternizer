@@ -1,0 +1,49 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related environmental protection
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_environmental_protection
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [environmental protection order](http://www.eionet.europa.eu/gemet/concept/2907), [environmental protection regulation](http://www.eionet.europa.eu/gemet/concept/2909), [environmental protection advice](http://www.eionet.europa.eu/gemet/concept/2769) (7 total)
+
+classes: 
+  order: "http://www.eionet.europa.eu/gemet/concept/11494"
+  regulation: "http://www.eionet.europa.eu/gemet/concept/11514"
+  advice: "http://www.eionet.europa.eu/gemet/concept/130"
+  cost: "http://www.eionet.europa.eu/gemet/concept/1824"
+  environmental protection: "http://www.eionet.europa.eu/gemet/concept/2900"
+  association: "http://www.eionet.europa.eu/gemet/concept/607"
+  technology: "http://www.eionet.europa.eu/gemet/concept/8339"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'order' or 'regulation' or 'advice' or 'cost' or 'association' or 'technology'"
+
+name:
+  # Induced, frequency=0.8571428571428571, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "environmental protection %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a environmental protection"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'environmental protection')"
+  vars:
+    - v0

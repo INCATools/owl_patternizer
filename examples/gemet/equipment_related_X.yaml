@@ -1,0 +1,47 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: equipment related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/equipment_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [monitoring equipment](http://www.eionet.europa.eu/gemet/concept/5349), [plant equipment](http://www.eionet.europa.eu/gemet/concept/6305), [pollution abatement equipment](http://www.eionet.europa.eu/gemet/concept/6447) (5 total)
+
+classes: 
+  equipment: "http://www.eionet.europa.eu/gemet/concept/2956"
+  planting: "http://www.eionet.europa.eu/gemet/concept/6313"
+  pollution abatement: "http://www.eionet.europa.eu/gemet/concept/6446"
+  pollution control: "http://www.eionet.europa.eu/gemet/concept/6451"
+  pressure: "http://www.eionet.europa.eu/gemet/concept/6593"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'planting' or 'pollution abatement' or 'pollution control' or 'pressure'"
+
+name:
+  # Induced, frequency=0.8, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s equipment"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any equipment that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'equipment' and ('related' some %s)"
+  vars:
+    - v0

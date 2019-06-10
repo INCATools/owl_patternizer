@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: ectoderm part of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/ectoderm_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [2nd arch ectoderm](http://purl.obolibrary.org/obo/UBERON_0005660), [medial-nasal process ectoderm](http://purl.obolibrary.org/obo/UBERON_0005233), [optic eminence ectoderm](http://purl.obolibrary.org/obo/UBERON_0005234) (5 total)
+
+classes: 
+  material anatomical entity: "UBERON:0000465"
+  ectoderm: "UBERON:0000924"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material anatomical entity'"
+
+name:
+  # Induced, frequency=0.6, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s ectoderm"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.6, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An ectoderm that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'ectoderm' and ('part of' some %s)"
+  vars:
+    - v0

@@ -1,0 +1,60 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related animal
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_animal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [animal rights](http://www.eionet.europa.eu/gemet/concept/11477), [animal disease](http://www.eionet.europa.eu/gemet/concept/417), [animal experiment](http://www.eionet.europa.eu/gemet/concept/421) (22 total)
+
+classes: 
+  rights: "http://www.eionet.europa.eu/gemet/concept/13147"
+  disease: "http://www.eionet.europa.eu/gemet/concept/2232"
+  experiment: "http://www.eionet.europa.eu/gemet/concept/3050"
+  foodstuff: "http://www.eionet.europa.eu/gemet/concept/3388"
+  fuel: "http://www.eionet.europa.eu/gemet/concept/3505"
+  genetics: "http://www.eionet.europa.eu/gemet/concept/3633"
+  habitat: "http://www.eionet.europa.eu/gemet/concept/3808"
+  health: "http://www.eionet.europa.eu/gemet/concept/3865"
+  animal: "http://www.eionet.europa.eu/gemet/concept/450"
+  manure: "http://www.eionet.europa.eu/gemet/concept/5007"
+  nutrition: "http://www.eionet.europa.eu/gemet/concept/5765"
+  physiology: "http://www.eionet.europa.eu/gemet/concept/6240"
+  resource: "http://www.eionet.europa.eu/gemet/concept/7168"
+  behaviour: "http://www.eionet.europa.eu/gemet/concept/765"
+  species: "http://www.eionet.europa.eu/gemet/concept/7982"
+  species reintroduction: "http://www.eionet.europa.eu/gemet/concept/7986"
+  waste: "http://www.eionet.europa.eu/gemet/concept/9041"
+  breeding: "http://www.eionet.europa.eu/gemet/concept/994"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'rights' or 'disease' or 'experiment' or 'foodstuff' or 'fuel' or 'genetics' or 'habitat' or 'health' or 'manure' or 'nutrition' or 'physiology' or 'resource' or 'behaviour' or 'species' or 'species reintroduction' or 'waste' or 'breeding'"
+
+name:
+  # Induced, frequency=0.6818181818181818, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "animal %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a animal"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'animal')"
+  vars:
+    - v0

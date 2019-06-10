@@ -1,0 +1,49 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related forest
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_forest
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [forest reserve](http://www.eionet.europa.eu/gemet/concept/3435), [forest fire](http://www.eionet.europa.eu/gemet/concept/3419), [forest industry](http://www.eionet.europa.eu/gemet/concept/3423) (11 total)
+
+classes: 
+  reserve: "http://www.eionet.europa.eu/gemet/concept/10201"
+  fire: "http://www.eionet.europa.eu/gemet/concept/3212"
+  forest: "http://www.eionet.europa.eu/gemet/concept/3406"
+  industry: "http://www.eionet.europa.eu/gemet/concept/4279"
+  pest: "http://www.eionet.europa.eu/gemet/concept/6138"
+  policy: "http://www.eionet.europa.eu/gemet/concept/6370"
+  resource: "http://www.eionet.europa.eu/gemet/concept/7168"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'reserve' or 'fire' or 'industry' or 'pest' or 'policy' or 'resource'"
+
+name:
+  # Induced, frequency=0.5454545454545454, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "forest %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a forest"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'forest')"
+  vars:
+    - v0

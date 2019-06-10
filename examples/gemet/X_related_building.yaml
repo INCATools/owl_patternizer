@@ -1,0 +1,49 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related building
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_building
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [building regulation](http://www.eionet.europa.eu/gemet/concept/1049), [building materials industry](http://www.eionet.europa.eu/gemet/concept/1044), [local building material](http://www.eionet.europa.eu/gemet/concept/4888) (6 total)
+
+classes: 
+  building: "http://www.eionet.europa.eu/gemet/concept/1029"
+  regulation: "http://www.eionet.europa.eu/gemet/concept/11514"
+  industry: "http://www.eionet.europa.eu/gemet/concept/4279"
+  material: "http://www.eionet.europa.eu/gemet/concept/5086"
+  services: "http://www.eionet.europa.eu/gemet/concept/7621"
+  technology: "http://www.eionet.europa.eu/gemet/concept/8339"
+  waste: "http://www.eionet.europa.eu/gemet/concept/9041"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'regulation' or 'industry' or 'material' or 'services' or 'technology' or 'waste'"
+
+name:
+  # Induced, frequency=0.8333333333333334, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "building %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a building"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'building')"
+  vars:
+    - v0

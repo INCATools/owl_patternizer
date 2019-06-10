@@ -1,0 +1,51 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: mesenchyme develops from X
+pattern_iri: http://purl.obolibrary.org/obo/envo/mesenchyme_develops_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mesenchyme derived from neural crest](http://purl.obolibrary.org/obo/UBERON_0014387), [mesenchyme derived from trunk neural crest](http://purl.obolibrary.org/obo/UBERON_0007214), [mesenchyme derived from head neural crest](http://purl.obolibrary.org/obo/UBERON_0007213) (4 total)
+
+classes: 
+  mesenchyme: "UBERON:0003104"
+  ectoderm-derived structure: "UBERON:0004121"
+  embryonic tissue: "UBERON:0005291"
+  structure with developmental contribution from neural crest: "UBERON:0010314"
+
+
+relations: 
+  develops from: "RO:0002202"
+
+
+vars:
+  v0: "'ectoderm-derived structure' or 'embryonic tissue' or 'structure with developmental contribution from neural crest'"
+
+name:
+  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "mesenchyme derived from %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.75, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Mesenchyme that develops_from a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s derived mesenchyme"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'mesenchyme' and ('develops from' some %s)"
+  vars:
+    - v0

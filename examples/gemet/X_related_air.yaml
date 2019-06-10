@@ -1,0 +1,50 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X related air
+pattern_iri: http://purl.obolibrary.org/obo/gemet/X_related_air
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [clean air car](http://www.eionet.europa.eu/gemet/concept/12027), [emission to air](http://www.eionet.europa.eu/gemet/concept/15030), [gaseous air pollutant](http://www.eionet.europa.eu/gemet/concept/3572) (8 total)
+
+classes: 
+  car: "http://www.eionet.europa.eu/gemet/concept/1148"
+  air: "http://www.eionet.europa.eu/gemet/concept/245"
+  emission: "http://www.eionet.europa.eu/gemet/concept/2663"
+  pollutant: "http://www.eionet.europa.eu/gemet/concept/6395"
+  safety: "http://www.eionet.europa.eu/gemet/concept/7362"
+  soil: "http://www.eionet.europa.eu/gemet/concept/7843"
+  traffic: "http://www.eionet.europa.eu/gemet/concept/8582"
+  transportation: "http://www.eionet.europa.eu/gemet/concept/8641"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'car' or 'emission' or 'pollutant' or 'safety' or 'soil' or 'traffic' or 'transportation'"
+
+name:
+  # Induced, frequency=0.625, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "air %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that related a air"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('related' some 'air')"
+  vars:
+    - v0

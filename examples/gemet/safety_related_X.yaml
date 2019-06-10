@@ -1,0 +1,49 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: safety related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/safety_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [safety rule](http://www.eionet.europa.eu/gemet/concept/7366), [air safety](http://www.eionet.europa.eu/gemet/concept/277), [fire safety requirement](http://www.eionet.europa.eu/gemet/concept/3225) (6 total)
+
+classes: 
+  ruling: "http://www.eionet.europa.eu/gemet/concept/13283"
+  air: "http://www.eionet.europa.eu/gemet/concept/245"
+  fire: "http://www.eionet.europa.eu/gemet/concept/3212"
+  analysis: "http://www.eionet.europa.eu/gemet/concept/397"
+  reactor: "http://www.eionet.europa.eu/gemet/concept/6977"
+  road: "http://www.eionet.europa.eu/gemet/concept/7272"
+  safety: "http://www.eionet.europa.eu/gemet/concept/7362"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'ruling' or 'air' or 'fire' or 'analysis' or 'reactor' or 'road'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s safety"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any safety that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'safety' and ('related' some %s)"
+  vars:
+    - v0

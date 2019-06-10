@@ -1,0 +1,43 @@
+# options: [min(4),dir('examples/vo'),trim(true),base('http://purl.obolibrary.org/obo/vo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: vaccine immunization against microbe X
+pattern_iri: http://purl.obolibrary.org/obo/vo/vaccine_immunization_against_microbe_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [viral vaccine](http://purl.obolibrary.org/obo/VO_0000609), [Orthopoxvirus vaccine](http://purl.obolibrary.org/obo/VO_0003539), [Monkeypox virus vaccine](http://purl.obolibrary.org/obo/VO_0003060) (109 total)
+
+classes: 
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  vaccine immunization against microbe: "http://purl.obolibrary.org/obo/VO_0003355"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.8623853211009175, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s vaccine"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1559633027522936, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A vaccine that is used against an infection by a pathogen under %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('vaccine immunization against microbe' some %s)"
+  vars:
+    - v0

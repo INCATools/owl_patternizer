@@ -1,0 +1,54 @@
+# options: [min(5),dir('examples/gemet'),trim(true),base('http://purl.obolibrary.org/obo/gemet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: pollutant related X
+pattern_iri: http://purl.obolibrary.org/obo/gemet/pollutant_related_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [chemical pollutant](http://www.eionet.europa.eu/gemet/concept/1318), [pollutant degradation](http://www.eionet.europa.eu/gemet/concept/6405), [pollutant dispersion](http://www.eionet.europa.eu/gemet/concept/6407) (11 total)
+
+classes: 
+  chemical: "http://www.eionet.europa.eu/gemet/concept/1327"
+  degradation: "http://www.eionet.europa.eu/gemet/concept/2040"
+  dispersion: "http://www.eionet.europa.eu/gemet/concept/2245"
+  distribution: "http://www.eionet.europa.eu/gemet/concept/2264"
+  air: "http://www.eionet.europa.eu/gemet/concept/245"
+  evolution: "http://www.eionet.europa.eu/gemet/concept/3026"
+  flow: "http://www.eionet.europa.eu/gemet/concept/3311"
+  food: "http://www.eionet.europa.eu/gemet/concept/3354"
+  noise: "http://www.eionet.europa.eu/gemet/concept/5624"
+  pollutant: "http://www.eionet.europa.eu/gemet/concept/6395"
+  behaviour: "http://www.eionet.europa.eu/gemet/concept/765"
+  soil: "http://www.eionet.europa.eu/gemet/concept/7843"
+
+
+relations: 
+  related: "skos:related"
+
+
+vars:
+  v0: "'chemical' or 'degradation' or 'dispersion' or 'distribution' or 'air' or 'evolution' or 'flow' or 'food' or 'noise' or 'behaviour' or 'soil'"
+
+name:
+  # Induced, frequency=0.5454545454545454, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "pollutant %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any pollutant that related a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'pollutant' and ('related' some %s)"
+  vars:
+    - v0

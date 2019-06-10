@@ -1,0 +1,49 @@
+# options: [min(8),dir('examples/nbo'),trim(true),base('http://purl.obolibrary.org/obo/nbo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X decreased_in_magnitude_relative_to normal
+pattern_iri: http://purl.obolibrary.org/obo/nbo/X_decreased_in_magnitude_relative_to_normal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [decreased quality](http://purl.obolibrary.org/obo/PATO_0002301), [decreased distance](http://purl.obolibrary.org/obo/PATO_0000375), [decreased frequency](http://purl.obolibrary.org/obo/PATO_0000381) (13 total)
+
+classes: 
+  quality: "PATO:0000001"
+  normal: "PATO:0000461"
+
+
+relations: 
+  decreased_in_magnitude_relative_to: "http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to"
+
+
+vars:
+  v0: "'quality'"
+
+name:
+  # Induced, frequency=0.8461538461538461, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "decreased %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.38461538461538464, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s which is relatively low."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "low %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('decreased_in_magnitude_relative_to' some 'normal')"
+  vars:
+    - v0
