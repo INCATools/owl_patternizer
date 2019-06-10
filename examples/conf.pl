@@ -39,6 +39,7 @@
 :- rdf_register_prefix('ENVO','http://purl.obolibrary.org/obo/ENVO_').
 :- rdf_register_prefix('EFO','http://www.ebi.ac.uk/efo/EFO_').
 :- rdf_register_prefix('CHEBI','http://www.ebi.ac.uk/efo/CHEBI_').
+:- rdf_register_prefix('NBO','http://www.ebi.ac.uk/efo/NBO_').
 :- rdf_register_prefix('pizza','http://www.co-ode.org/ontologies/pizza/pizza.owl#').
 :- rdf_register_prefix('NCIT','http://purl.obolibrary.org/obo/NCIT_').
 :- rdf_register_prefix('oio','http://www.geneontology.org/formats/oboInOwl#').
@@ -60,12 +61,18 @@ ontology_config(wine,     [min(2)]).
 
 ontology_config(so,       [min(8)]).
 ontology_config(mso,      [min(5), max_class_signature(6), generalize_properties(false)]).
-ontology_config(chebi,    [min(3), generalize_properties(false)]).
+ontology_config(chebi,    [min(3), infer_axioms(true), generalize_properties(false)]).
 ontology_config(uberon,   [min(50), max_and_cardinality(3)]).
 ontology_config(cl,       [min(20), ontology_prefix(cl)]).
+ontology_config(clo,      [min(20), ontology_prefix(clo)]).
+ontology_config(eco,      [min(10), ontology_prefix(eco)]).
 ontology_config(fbbt,     [min(50)]).
+ontology_config(fbcv,     [infer_axioms(true), min(5), generalize_properties(false)]).
 ontology_config(mondo,    []).
+ontology_config(geo,      []).
+ontology_config(fao,      [infer_axioms(true), min(5), generalize_properties(false)]).
 ontology_config(ma,       [infer_axioms(true), min(12), generalize_properties(false)]).
+ontology_config(hao,      [infer_axioms(true), min(12), generalize_properties(false)]).
 ontology_config(emapa,    [infer_axioms(true), min(12), generalize_properties(false)]).
 ontology_config(zfa,      [infer_axioms(true), min(12), generalize_properties(false)]).
 ontology_config(ehdaa2,   [infer_axioms(true), min(12), generalize_properties(false)]).
@@ -73,26 +80,41 @@ ontology_config(xao,      [infer_axioms(true), min(12), generalize_properties(fa
 ontology_config(wbbt,     [infer_axioms(true), min(12), generalize_properties(false)]).
 ontology_config(sweet,    [autolabels(true), infer_axioms(true), min(2), generalize_properties(false)]).
 ontology_config(obi,      [min(8), generalize_properties(false)]).
+ontology_config(ero,      [min(8), generalize_properties(false)]).
 ontology_config(vo,       [min(4), generalize_properties(false)]).
 ontology_config(sctid,    [max_class_signature(4), generalize_properties(false)]).
-ontology_config(to,       [min(50)]).
+ontology_config(to,       [min(20)]).
 ontology_config(envo,     [infer_axioms(true), min(4), generalize_properties(false), ontology_prefix('ENVO')]).
-ontology_config(agro,     [min(10), generalize_properties(false)]).
+ontology_config(agro,     [min(10), infer_axioms(true), generalize_properties(false)]).
 ontology_config(efo,      [min(50)]).
 ontology_config(doid,     [min(25)]).
+ontology_config(idomal,   [min(5), infer_axioms(true)]).
 ontology_config(mp,       [min(50), max_class_signature(4), generalize_properties(false)]).
 ontology_config(hp,       [min(50), max_class_signature(4), generalize_properties(false)]).
+ontology_config(oae,      [min(10), generalize_properties(false)]).
 ontology_config(fypo,     [min(20), generalize_properties(false)]).
+ontology_config(omp,      [min(20), generalize_properties(false)]).
+ontology_config(apo,      [min(4), infer_links(true), infer_axioms(true), imports([go]), max_class_signature(4), generalize_properties(false)]).
+ontology_config(aro,      [min(4), infer_links(true), infer_axioms(true), imports([chebi]), max_class_signature(4), generalize_properties(false)]).
+ontology_config(mco,      [min(4), infer_links(true), infer_axioms(true), imports([chebi]), max_class_signature(4), generalize_properties(false)]).
+ontology_config(bto,      [min(8), infer_axioms(true), max_class_signature(4), generalize_properties(false)]).
+ontology_config(mmo,      [min(8), infer_links(true), infer_axioms(true), max_class_signature(4), generalize_properties(false)]).
+ontology_config(mop,      [min(8), infer_links(true), infer_axioms(true), max_class_signature(4), generalize_properties(false)]).
 ontology_config(micro,    [min(20), generalize_properties(false)]).
-ontology_config(ncit,     [min(50), generalize_properties(false), max_and_cardinality(3)]).
+ontology_config(ncit,     [min(50), infer_axioms(true), generalize_properties(false), max_and_cardinality(3)]).
 ontology_config(foodon,   []).
 ontology_config(go,       [min(25)]).
 ontology_config(peco,     [min(8), generalize_properties(false)]).
+ontology_config(ohmi,     [min(25), generalize_properties(false)]).
+ontology_config(vo,       [min(8), generalize_properties(false)]).
+ontology_config(nbo,      [min(8), generalize_properties(false), ontology_prefix('NBO')]).
 ontology_config(po,       [infer_axioms(true), min(8), generalize_properties(false)]).
+ontology_config(tgma,     [infer_axioms(true), min(8), generalize_properties(false)]).
+ontology_config(tads,     [infer_axioms(true), min(8), generalize_properties(false)]).
 ontology_config(ceph,     [min(8), generalize_properties(false)]).
 ontology_config(flopo,    [min(50), generalize_properties(false)]).
 ontology_config(agrovoc,  [infer_axioms(true), min(10), generalize_properties(false)]).
-ontology_config(gemet,    [is_skos(true), infer_links(true),infer_axioms(true), min(5), generalize_properties(false)]).
+ontology_config(gemet,    [is_skos(true), infer_links(true),new_class_prefix('http://x.org/'), infer_axioms(true), min(5), generalize_properties(false)]).
 
 autolabels :-
         forall(owl:class(C),
@@ -159,7 +181,7 @@ do_for(Ont) :-
         
         option(infer_links(IsInferLinks),Options,false),
         (   IsInferLinks
-        ->  infer_links(Opts),
+        ->  infer_links(Options),
             concat_atom([Dir,'_links.ttl'], '/', LinksFile),
             rdf_turtle:rdf_save_turtle(LinksFile,[graph(sc)])
         ;   true),
@@ -169,10 +191,12 @@ do_for(Ont) :-
         ->  create_bitmap_index,
             assert_inferred_equiv_axioms(_,gen,[ new_only(true)|Options ]),
             concat_atom([Dir,'_induced_axioms.ttl'], '/', AxFile),
-            rdf_turtle:rdf_save_turtle(AxFile,[graph(gen)]),
-            rdf_save('_intermediate.ttl')
+            rdf_turtle:rdf_save_turtle(AxFile,[graph(gen)])
         ;   true),
 
+        concat_atom([Dir,'_input.ttl'], '/', OwlFile),
+        rdf_turtle:rdf_save_turtle(OwlFile,[]),
+            
         % TODO: merge options
         option(min(Min),Options,40),
         option(base(Base),Options,DefaultBase),
