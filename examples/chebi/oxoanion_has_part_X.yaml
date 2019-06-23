@@ -1,11 +1,11 @@
-# options: [min(3),dir(chebi),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(3),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: oxoanion has part X
 pattern_iri: http://purl.obolibrary.org/obo/chebi/oxoanion_has_part_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [manganese oxoanion](http://purl.obolibrary.org/obo/CHEBI_35118), [bromine oxoanion](http://purl.obolibrary.org/obo/CHEBI_33444), [chlorine oxoanion](http://purl.obolibrary.org/obo/CHEBI_33437) (24 total)
+  Examples: [halogen oxoanion](http://purl.obolibrary.org/obo/CHEBI_33443), [transition element oxoanion](http://purl.obolibrary.org/obo/CHEBI_35405), [tungsten oxoanion](http://purl.obolibrary.org/obo/CHEBI_36270) (5 total)
 
 classes: 
   atom: "http://purl.obolibrary.org/obo/CHEBI_33250"
@@ -20,7 +20,7 @@ vars:
   v0: "'atom'"
 
 name:
-  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.8, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s oxoanion"
   vars:
     - v0
@@ -35,17 +35,7 @@ annotationProperties:
   exact_synonym: "oio:hasExactSynonym"
   related_synonym: "oio:hasRelatedSynonym"
 
-annotations:
-  - annotationProperty: exact_synonym
-    # Induced p=exact_synonym 
-    text: "%s oxoanion"
-    vars:
-      - v0
-  - annotationProperty: related_synonym
-    # Induced p=related_synonym 
-    text: "%s oxoanions"
-    vars:
-      - v0
+# could not infer annotations
 
 
 equivalentTo:

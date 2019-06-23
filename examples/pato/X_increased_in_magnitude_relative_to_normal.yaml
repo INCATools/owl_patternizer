@@ -13,7 +13,7 @@ classes:
 
 
 relations: 
-  increased_in_magnitude_relative_to: "ns1:pato#increased_in_magnitude_relative_to"
+  increased_in_magnitude_relative_to: "http://purl.obolibrary.org/obo/pato#increased_in_magnitude_relative_to"
 
 
 vars:

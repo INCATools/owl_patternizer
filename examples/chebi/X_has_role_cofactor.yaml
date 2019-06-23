@@ -1,16 +1,15 @@
-# options: [min(3),dir(chebi),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(3),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has role cofactor
 pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_role_cofactor
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [molybdopterin cofactor](http://purl.obolibrary.org/obo/CHEBI_25372), [pyrroloquinoline cofactor](http://purl.obolibrary.org/obo/CHEBI_26461), [Mo-molybdopterin cofactor](http://purl.obolibrary.org/obo/CHEBI_21437) (3 total)
+  Examples: [substance with cofactor role](http://purl.obolibrary.org/obo/GOCHE_23357), [molybdopterin cofactor](http://purl.obolibrary.org/obo/CHEBI_25372), [pyrroloquinoline cofactor](http://purl.obolibrary.org/obo/CHEBI_26461) (3 total)
 
 classes: 
   cofactor: "http://purl.obolibrary.org/obo/CHEBI_23357"
-  organic heterotricyclic compound: "http://purl.obolibrary.org/obo/CHEBI_26979"
-  organonitrogen heterocyclic compound: "http://purl.obolibrary.org/obo/CHEBI_38101"
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
 
 
 relations: 
@@ -18,7 +17,7 @@ relations:
 
 
 vars:
-  v0: "'organic heterotricyclic compound' or 'organonitrogen heterocyclic compound'"
+  v0: "'chemical entity'"
 
 name:
   # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 

@@ -14,7 +14,8 @@
 
 <chebi>
     a void:Dataset ;
-    void:dataDump <../tests/data/chebi-with-logdefs.ttl> ;
+###    void:dataDump <../tests/data/chebi-with-logdefs.ttl> ;
+    void:dataDump <go_chebi_import.owl> ;
     lib:source <http://purl.obolibrary.org/obo/chebi.owl> .
 <mso>
     a void:Dataset ;

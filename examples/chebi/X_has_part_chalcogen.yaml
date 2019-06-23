@@ -1,4 +1,4 @@
-# options: [min(3),dir(chebi),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(3),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has part chalcogen
 pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_part_chalcogen
 
@@ -26,8 +26,8 @@ name:
     - v0
 
 def:
-  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "Any p-block %s containing a chalcogen."
+  # Could not induce def, using default
+  text: "Any %s that has part a chalcogen"
   vars:
     - v0
 
@@ -35,12 +35,7 @@ annotationProperties:
   exact_synonym: "oio:hasExactSynonym"
   related_synonym: "oio:hasRelatedSynonym"
 
-annotations:
-  - annotationProperty: exact_synonym
-    # Induced p=exact_synonym 
-    text: "chalcogen %s"
-    vars:
-      - v0
+# could not infer annotations
 
 
 equivalentTo:

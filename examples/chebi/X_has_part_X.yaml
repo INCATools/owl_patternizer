@@ -1,11 +1,11 @@
-# options: [min(3),dir(chebi),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(3),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has part X
 pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_part_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [tensyuic acid C](http://purl.obolibrary.org/obo/CHEBI_133829), [artemoin C](http://purl.obolibrary.org/obo/CHEBI_134012), [cohibin C](http://purl.obolibrary.org/obo/CHEBI_134015) (1369 total)
+  Examples: [alkali metal molecular entity](http://purl.obolibrary.org/obo/CHEBI_33296), [halogen molecular entity](http://purl.obolibrary.org/obo/CHEBI_24471), [transition element molecular entity](http://purl.obolibrary.org/obo/CHEBI_33497) (26 total)
 
 classes: 
   chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
@@ -20,15 +20,15 @@ vars:
   v1: "'chemical entity'"
 
 name:
-  # Induced, frequency=0.4835646457268079, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.6538461538461539, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
     - v0
 
 def:
-  # Induced, frequency=0.020452885317750184, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "An acrylic %s, composed of %ss."
+  # Could not induce def, using default
+  text: "Any %s that has part a %s"
   vars:
     - v0
     - v1
@@ -37,13 +37,7 @@ annotationProperties:
   exact_synonym: "oio:hasExactSynonym"
   related_synonym: "oio:hasRelatedSynonym"
 
-annotations:
-  - annotationProperty: exact_synonym
-    # Induced p=exact_synonym 
-    text: "%s %s"
-    vars:
-      - v1
-      - v0
+# could not infer annotations
 
 
 equivalentTo:

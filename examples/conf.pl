@@ -61,7 +61,7 @@ ontology_config(wine,     [min(2)]).
 
 ontology_config(so,       [min(8)]).
 ontology_config(mso,      [min(5), max_class_signature(6), generalize_properties(false)]).
-ontology_config(chebi,    [min(3), infer_axioms(true), generalize_properties(false)]).
+ontology_config(chebi,    [min(3), remove_inexact_synonyms(true), infer_axioms(true), generalize_properties(false)]).
 ontology_config(uberon,   [min(50), max_and_cardinality(3)]).
 ontology_config(cl,       [min(20), ontology_prefix(cl)]).
 ontology_config(clo,      [min(20), ontology_prefix(clo)]).
@@ -167,7 +167,12 @@ do_for(Ont) :-
         (   option(autolabels(true),Options,false)
         ->  autolabels
         ;   true),
+        
+        (   option(remove_inexact_synonyms(true),Options,false)
+        ->  remove_inexact_synonyms
+        ;   true),
 
+        
         concat_atom([examples,Ont],'/',DefaultDir),
         option(dir(Dir),Options,DefaultDir),
         make_directory_path(Dir),
@@ -191,7 +196,9 @@ do_for(Ont) :-
         ->  create_bitmap_index,
             assert_inferred_equiv_axioms(_,gen,[ new_only(true)|Options ]),
             concat_atom([Dir,'_induced_axioms.ttl'], '/', AxFile),
-            rdf_turtle:rdf_save_turtle(AxFile,[graph(gen)])
+            rdf_turtle:rdf_save_turtle(AxFile,[graph(gen)]),
+            concat_atom([Dir,'_induced_axioms_merged.ttl'], '/', AxFile),
+            rdf_turtle:rdf_save_turtle(AxFile,[])
         ;   true),
 
         concat_atom([Dir,'_input.ttl'], '/', OwlFile),

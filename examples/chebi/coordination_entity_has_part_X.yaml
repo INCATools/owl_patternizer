@@ -1,14 +1,14 @@
-# options: [min(3),dir(chebi),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(3),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: coordination entity has part X
 pattern_iri: http://purl.obolibrary.org/obo/chebi/coordination_entity_has_part_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [iron coordination entity](http://purl.obolibrary.org/obo/CHEBI_33892), [manganese coordination entity](http://purl.obolibrary.org/obo/CHEBI_35117), [alkali metal coordination entity](http://purl.obolibrary.org/obo/CHEBI_35837) (33 total)
+  Examples: [transition element coordination entity](http://purl.obolibrary.org/obo/CHEBI_33861), [tungsten coordination entity](http://purl.obolibrary.org/obo/CHEBI_35233), [platinum coordination entity](http://purl.obolibrary.org/obo/CHEBI_33862) (3 total)
 
 classes: 
-  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+  transition element atom: "http://purl.obolibrary.org/obo/CHEBI_27081"
   coordination entity: "http://purl.obolibrary.org/obo/CHEBI_33240"
 
 
@@ -17,10 +17,10 @@ relations:
 
 
 vars:
-  v0: "'chemical entity'"
+  v0: "'transition element atom'"
 
 name:
-  # Induced, frequency=0.9696969696969697, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.6666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s coordination entity"
   vars:
     - v0
@@ -35,17 +35,7 @@ annotationProperties:
   exact_synonym: "oio:hasExactSynonym"
   related_synonym: "oio:hasRelatedSynonym"
 
-annotations:
-  - annotationProperty: exact_synonym
-    # Induced p=exact_synonym 
-    text: "%s coordination entity"
-    vars:
-      - v0
-  - annotationProperty: related_synonym
-    # Induced p=related_synonym 
-    text: "%s coordination compounds"
-    vars:
-      - v0
+# could not infer annotations
 
 
 equivalentTo:
