@@ -1,6 +1,6 @@
-# options: [min(2),dir('target/agrovoc'),trim(true)]
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X causes X
-pattern_iri: http://purl.obolibrary.org/obo/foo/X_causes_X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_causes_X
 
 description: >-
   This is auto-generated. Add your description here
@@ -8,16 +8,33 @@ description: >-
   Examples: [toxic substances](http://aims.fao.org/aos/agrovoc/c_7825), [toxic minerals](http://aims.fao.org/aos/agrovoc/c_35674), [Scrapie agent](http://aims.fao.org/aos/agrovoc/c_6882) (18 total)
 
 classes: 
+  paratuberculosis: "http://aims.fao.org/aos/agrovoc/c_16452"
+  pseudotuberculosis: "http://aims.fao.org/aos/agrovoc/c_16457"
+  Borna disease: "http://aims.fao.org/aos/agrovoc/c_16693"
+  duck viral hepatitis: "http://aims.fao.org/aos/agrovoc/c_16717"
+  pest of small ruminants: "http://aims.fao.org/aos/agrovoc/c_16789"
+  vesicular stomatitis: "http://aims.fao.org/aos/agrovoc/c_16826"
+  scrapie: "http://aims.fao.org/aos/agrovoc/c_24311"
+  distemper: "http://aims.fao.org/aos/agrovoc/c_27088"
+  cholera: "http://aims.fao.org/aos/agrovoc/c_34154"
+  african horse sickness: "http://aims.fao.org/aos/agrovoc/c_34202"
+  Marek's disease: "http://aims.fao.org/aos/agrovoc/c_4599"
   minerals: "http://aims.fao.org/aos/agrovoc/c_4857"
   agents: "http://aims.fao.org/aos/agrovoc/c_49873"
   Mycobacterium: "http://aims.fao.org/aos/agrovoc/c_5018"
+  newcastle disease: "http://aims.fao.org/aos/agrovoc/c_5165"
+  rabies: "http://aims.fao.org/aos/agrovoc/c_6416"
+  rinderpest: "http://aims.fao.org/aos/agrovoc/c_6605"
+  toxicity: "http://aims.fao.org/aos/agrovoc/c_7826"
+  tuberculosis: "http://aims.fao.org/aos/agrovoc/c_7997"
   Vibrio: "http://aims.fao.org/aos/agrovoc/c_8212"
   viruses: "http://aims.fao.org/aos/agrovoc/c_8262"
   Yersinia: "http://aims.fao.org/aos/agrovoc/c_8485"
+  bluetongue: "http://aims.fao.org/aos/agrovoc/c_976"
 
 
 relations: 
-  causes: "agrovoc:causes"
+  causes: "http://aims.fao.org/aos/agrontology#causes"
 
 
 vars:
@@ -37,6 +54,12 @@ def:
   vars:
     - v0
     - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
 
 
 equivalentTo:

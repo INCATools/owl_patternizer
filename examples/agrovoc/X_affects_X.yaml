@@ -1,6 +1,6 @@
-# options: [min(2),dir('target/agrovoc'),trim(true)]
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X affects X
-pattern_iri: http://purl.obolibrary.org/obo/foo/X_affects_X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_affects_X
 
 description: >-
   This is auto-generated. Add your description here
@@ -8,16 +8,26 @@ description: >-
   Examples: [sex differentiation disorders](http://aims.fao.org/aos/agrovoc/c_7012), [growth disorders](http://aims.fao.org/aos/agrovoc/c_3396), [protein metabolism disorders](http://aims.fao.org/aos/agrovoc/c_6255) (11 total)
 
 classes: 
+  adrenal glands: "http://aims.fao.org/aos/agrovoc/c_135"
   disorders: "http://aims.fao.org/aos/agrovoc/c_15584"
+  sex differentiation: "http://aims.fao.org/aos/agrovoc/c_26822"
   contamination: "http://aims.fao.org/aos/agrovoc/c_28317"
   inhibition: "http://aims.fao.org/aos/agrovoc/c_28427"
+  foods: "http://aims.fao.org/aos/agrovoc/c_3032"
   hazards: "http://aims.fao.org/aos/agrovoc/c_330736"
+  stored products: "http://aims.fao.org/aos/agrovoc/c_33118"
+  growth: "http://aims.fao.org/aos/agrovoc/c_3394"
+  health: "http://aims.fao.org/aos/agrovoc/c_3511"
+  metabolism: "http://aims.fao.org/aos/agrovoc/c_4769"
   diseases: "http://aims.fao.org/aos/agrovoc/c_49879"
   pests: "http://aims.fao.org/aos/agrovoc/c_5741"
+  salivary glands: "http://aims.fao.org/aos/agrovoc/c_6753"
+  tongue: "http://aims.fao.org/aos/agrovoc/c_7809"
+  vision: "http://aims.fao.org/aos/agrovoc/c_8266"
 
 
 relations: 
-  affects: "agrovoc:affects"
+  affects: "http://aims.fao.org/aos/agrontology#affects"
 
 
 vars:
@@ -37,6 +47,12 @@ def:
   vars:
     - v0
     - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
 
 
 equivalentTo:

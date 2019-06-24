@@ -1,6 +1,6 @@
-# options: [min(2),dir('target/agrovoc'),trim(true)]
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X influences X
-pattern_iri: http://purl.obolibrary.org/obo/foo/X_influences_X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_influences_X
 
 description: >-
   This is auto-generated. Add your description here
@@ -12,7 +12,7 @@ classes:
 
 
 relations: 
-  influences: "agrovoc:influences"
+  influences: "http://aims.fao.org/aos/agrontology#influences"
 
 
 vars:
@@ -32,6 +32,12 @@ def:
   vars:
     - v0
     - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
 
 
 equivalentTo:

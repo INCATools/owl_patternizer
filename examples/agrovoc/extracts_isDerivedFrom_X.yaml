@@ -1,6 +1,6 @@
-# options: [min(2),dir('target/agrovoc'),trim(true)]
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: extracts isDerivedFrom X
-pattern_iri: http://purl.obolibrary.org/obo/foo/extracts_isDerivedFrom_X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/extracts_isDerivedFrom_X
 
 description: >-
   This is auto-generated. Add your description here
@@ -18,7 +18,7 @@ classes:
 
 
 relations: 
-  isDerivedFrom: "agrovoc:isDerivedFrom"
+  isDerivedFrom: "http://aims.fao.org/aos/agrontology#isDerivedFrom"
 
 
 vars:
@@ -35,6 +35,12 @@ def:
   text: "Any extracts that isDerivedFrom a %s"
   vars:
     - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
 
 
 equivalentTo:

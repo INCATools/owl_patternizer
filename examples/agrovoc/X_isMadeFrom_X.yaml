@@ -1,6 +1,6 @@
-# options: [min(2),dir('target/agrovoc'),trim(true)]
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X isMadeFrom X
-pattern_iri: http://purl.obolibrary.org/obo/foo/X_isMadeFrom_X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_isMadeFrom_X
 
 description: >-
   This is auto-generated. Add your description here
@@ -8,15 +8,19 @@ description: >-
   Examples: [wood extracts](http://aims.fao.org/aos/agrovoc/c_8424), [aluminium foil](http://aims.fao.org/aos/agrovoc/c_35853), [rye flour](http://aims.fao.org/aos/agrovoc/c_25501) (7 total)
 
 classes: 
+  rye: "http://aims.fao.org/aos/agrovoc/c_14010"
   extracts: "http://aims.fao.org/aos/agrovoc/c_2767"
   foils: "http://aims.fao.org/aos/agrovoc/c_28374"
   flours: "http://aims.fao.org/aos/agrovoc/c_2988"
   foods: "http://aims.fao.org/aos/agrovoc/c_3032"
+  aluminium: "http://aims.fao.org/aos/agrovoc/c_317"
   genetically modified organisms: "http://aims.fao.org/aos/agrovoc/c_34285"
+  microorganisms: "http://aims.fao.org/aos/agrovoc/c_4807"
+  wood: "http://aims.fao.org/aos/agrovoc/c_8421"
 
 
 relations: 
-  isMadeFrom: "agrovoc:isMadeFrom"
+  isMadeFrom: "http://aims.fao.org/aos/agrontology#isMadeFrom"
 
 
 vars:
@@ -36,6 +40,12 @@ def:
   vars:
     - v0
     - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
 
 
 equivalentTo:

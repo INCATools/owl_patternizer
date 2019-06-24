@@ -1,6 +1,6 @@
-# options: [min(2),dir('target/agrovoc'),trim(true)]
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X makeUseOf X
-pattern_iri: http://purl.obolibrary.org/obo/foo/X_makeUseOf_X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_makeUseOf_X
 
 description: >-
   This is auto-generated. Add your description here
@@ -8,18 +8,26 @@ description: >-
   Examples: [DNA cloning](http://aims.fao.org/aos/agrovoc/c_27695), [DNA transcription](http://aims.fao.org/aos/agrovoc/c_35127), [wastewater irrigation](http://aims.fao.org/aos/agrovoc/c_25323) (12 total)
 
 classes: 
+  cloning: "http://aims.fao.org/aos/agrovoc/c_15952"
   DNA: "http://aims.fao.org/aos/agrovoc/c_2347"
   drugs: "http://aims.fao.org/aos/agrovoc/c_2395"
   gross margins: "http://aims.fao.org/aos/agrovoc/c_24851"
   lasers: "http://aims.fao.org/aos/agrovoc/c_26026"
   fruits: "http://aims.fao.org/aos/agrovoc/c_3131"
+  transcription: "http://aims.fao.org/aos/agrovoc/c_35126"
   communication: "http://aims.fao.org/aos/agrovoc/c_37866"
+  irrigation: "http://aims.fao.org/aos/agrovoc/c_3954"
+  analysis: "http://aims.fao.org/aos/agrovoc/c_49928"
   pressure: "http://aims.fao.org/aos/agrovoc/c_6174"
+  radiation: "http://aims.fao.org/aos/agrovoc/c_6422"
+  technology: "http://aims.fao.org/aos/agrovoc/c_7644"
+  therapy: "http://aims.fao.org/aos/agrovoc/c_7715"
+  vegetables: "http://aims.fao.org/aos/agrovoc/c_8174"
   wastewater: "http://aims.fao.org/aos/agrovoc/c_8308"
 
 
 relations: 
-  makeUseOf: "agrovoc:makeUseOf"
+  makeUseOf: "http://aims.fao.org/aos/agrontology#makeUseOf"
 
 
 vars:
@@ -39,6 +47,12 @@ def:
   vars:
     - v0
     - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
 
 
 equivalentTo:

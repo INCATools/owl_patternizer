@@ -1,6 +1,6 @@
-# options: [min(2),dir('target/agrovoc'),trim(true)]
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X produces X
-pattern_iri: http://purl.obolibrary.org/obo/foo/X_produces_X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_produces_X
 
 description: >-
   This is auto-generated. Add your description here
@@ -8,22 +8,39 @@ description: >-
   Examples: [Carica papaya](http://aims.fao.org/aos/agrovoc/c_1323), [Carya pecan](http://aims.fao.org/aos/agrovoc/c_1349), [Chenopodium quinoa](http://aims.fao.org/aos/agrovoc/c_1531) (20 total)
 
 classes: 
+  kaki: "http://aims.fao.org/aos/agrovoc/c_11934"
+  papayas: "http://aims.fao.org/aos/agrovoc/c_13087"
+  pecans: "http://aims.fao.org/aos/agrovoc/c_13178"
   Carica: "http://aims.fao.org/aos/agrovoc/c_1322"
   Carya: "http://aims.fao.org/aos/agrovoc/c_1348"
+  quinoa: "http://aims.fao.org/aos/agrovoc/c_13716"
   Chenopodium: "http://aims.fao.org/aos/agrovoc/c_1528"
   crops: "http://aims.fao.org/aos/agrovoc/c_1972"
   Diospyros: "http://aims.fao.org/aos/agrovoc/c_2302"
+  essential oils: "http://aims.fao.org/aos/agrovoc/c_2669"
+  forest products: "http://aims.fao.org/aos/agrovoc/c_3049"
+  longans: "http://aims.fao.org/aos/agrovoc/c_331528"
   Dimocarpus: "http://aims.fao.org/aos/agrovoc/c_37372"
   industry: "http://aims.fao.org/aos/agrovoc/c_3848"
+  lactic acid: "http://aims.fao.org/aos/agrovoc/c_4142"
+  leather: "http://aims.fao.org/aos/agrovoc/c_4241"
   animals: "http://aims.fao.org/aos/agrovoc/c_444"
+  lucuma: "http://aims.fao.org/aos/agrovoc/c_4456"
+  meat: "http://aims.fao.org/aos/agrovoc/c_4669"
   Pouteria: "http://aims.fao.org/aos/agrovoc/c_6150"
+  propionic acid: "http://aims.fao.org/aos/agrovoc/c_6227"
   Averrhoa: "http://aims.fao.org/aos/agrovoc/c_732"
+  sugar: "http://aims.fao.org/aos/agrovoc/c_7498"
   Bacteria: "http://aims.fao.org/aos/agrovoc/c_765"
+  tobacco: "http://aims.fao.org/aos/agrovoc/c_7796"
   trees: "http://aims.fao.org/aos/agrovoc/c_7887"
+  waxes: "http://aims.fao.org/aos/agrovoc/c_8336"
+  wool: "http://aims.fao.org/aos/agrovoc/c_8436"
+  carambola: "http://aims.fao.org/aos/agrovoc/c_9605"
 
 
 relations: 
-  produces: "agrovoc:produces"
+  produces: "http://aims.fao.org/aos/agrontology#produces"
 
 
 vars:
@@ -43,6 +60,12 @@ def:
   vars:
     - v0
     - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
 
 
 equivalentTo:

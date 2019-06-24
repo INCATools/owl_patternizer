@@ -1,6 +1,6 @@
-# options: [min(2),dir('target/agrovoc'),trim(true)]
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X isDerivedFrom X
-pattern_iri: http://purl.obolibrary.org/obo/foo/X_isDerivedFrom_X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_isDerivedFrom_X
 
 description: >-
   This is auto-generated. Add your description here
@@ -8,11 +8,17 @@ description: >-
   Examples: [fish extracts](http://aims.fao.org/aos/agrovoc/c_2921), [flower extracts](http://aims.fao.org/aos/agrovoc/c_35305), [fruit extracts](http://aims.fao.org/aos/agrovoc/c_29024) (26 total)
 
 classes: 
+  extracts: "http://aims.fao.org/aos/agrovoc/c_2767"
+  flours: "http://aims.fao.org/aos/agrovoc/c_2988"
+  meat: "http://aims.fao.org/aos/agrovoc/c_4669"
+  milk: "http://aims.fao.org/aos/agrovoc/c_4826"
+  oils: "http://aims.fao.org/aos/agrovoc/c_5334"
+  protein concentrates: "http://aims.fao.org/aos/agrovoc/c_6250"
   owl:Thing: "owl:Thing"
 
 
 relations: 
-  isDerivedFrom: "agrovoc:isDerivedFrom"
+  isDerivedFrom: "http://aims.fao.org/aos/agrontology#isDerivedFrom"
 
 
 vars:
@@ -32,6 +38,12 @@ def:
   vars:
     - v0
     - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
 
 
 equivalentTo:
