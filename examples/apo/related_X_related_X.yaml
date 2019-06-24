@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/apo/related_X_related_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [null homozygous diploid](http://purl.obolibrary.org/obo/APO_0000150), [null heterozygous diploid](http://purl.obolibrary.org/obo/APO_0000151), [cell cycle arrest in metaphase](http://purl.obolibrary.org/obo/APO_0000133) (4 total)
+  Examples: [null homozygous diploid](http://purl.obolibrary.org/obo/APO_0000150), [null heterozygous diploid](http://purl.obolibrary.org/obo/APO_0000151), [cell cycle arrest in G1 phase](http://purl.obolibrary.org/obo/APO_0000067) (4 total)
 
 classes: 
   null: "http://purl.obolibrary.org/obo/APO_0000011"

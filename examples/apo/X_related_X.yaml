@@ -5,9 +5,10 @@ pattern_iri: http://purl.obolibrary.org/obo/apo/X_related_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [bud morphology](http://purl.obolibrary.org/obo/APO_0000212), [null homozygous diploid](http://purl.obolibrary.org/obo/APO_0000150), [null heterozygous diploid](http://purl.obolibrary.org/obo/APO_0000151) (5 total)
+  Examples: [bud neck morphology](http://purl.obolibrary.org/obo/APO_0000056), [null homozygous diploid](http://purl.obolibrary.org/obo/APO_0000150), [null heterozygous diploid](http://purl.obolibrary.org/obo/APO_0000151) (5 total)
 
 classes: 
+  budding: "http://purl.obolibrary.org/obo/APO_0000024"
   morphology: "http://purl.obolibrary.org/obo/APO_0000049"
 
 
