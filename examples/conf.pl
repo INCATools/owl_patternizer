@@ -119,7 +119,7 @@ ontology_config(tgma,     [infer_axioms(true), min(8), generalize_properties(fal
 ontology_config(tads,     [infer_axioms(true), min(8), generalize_properties(false)]).
 ontology_config(ceph,     [min(8), generalize_properties(false)]).
 ontology_config(flopo,    [min(50), generalize_properties(false)]).
-ontology_config(agrovoc,  [infer_axioms(true), min(10), generalize_properties(false)]).
+ontology_config(agrovoc,  [infer_axioms(true), min(6), generalize_properties(false)]).
 ontology_config(gemet,    [is_skos(true), infer_links(true),new_class_prefix('http://x.org/'), infer_axioms(true), min(5), generalize_properties(false)]).
 
 autolabels :-

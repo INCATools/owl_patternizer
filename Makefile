@@ -58,6 +58,9 @@ examples/%.tsv:
 	dosdp-tools query --obo-prefixes --template=examples/$*.yaml --ontology=examples/$(dir $*)_input.ttl --outfile=$@
 #	dosdp-tools query --obo-prefixes --template=examples/$*/X_has_part_X.yaml --ontology=examples/chebi/_input.ttl --outfile=examples/$*/X_has_part_X.tsv
 
+examples/%/pattern.owl:
+	dosdp-tools prototype --obo-prefixes --template=examples/$* --outfile=$@
+
 # --------------------
 # Docker
 # --------------------
