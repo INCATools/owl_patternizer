@@ -8,7 +8,9 @@ description: >-
   Examples: [pharyngeal ectoderm](http://purl.obolibrary.org/obo/UBERON_0016545), [subcutaneous abdominal adipose tissue](http://purl.obolibrary.org/obo/UBERON_0014455), [perianal sebaceous gland](http://purl.obolibrary.org/obo/UBERON_0012281) (11 total)
 
 classes: 
+  material entity: "BFO:0000040"
   anatomical structure: "UBERON:0000061"
+  anatomical entity: "UBERON:0001062"
 
 
 relations: 

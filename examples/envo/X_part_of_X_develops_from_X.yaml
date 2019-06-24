@@ -8,7 +8,9 @@ description: >-
   Examples: [auditory hillocks, pharyngeal arch 2 derived](http://purl.obolibrary.org/obo/UBERON_0016612), [auditory hillocks, pharyngeal arch 1 derived](http://purl.obolibrary.org/obo/UBERON_0016611), [chorionic ectoderm](http://purl.obolibrary.org/obo/UBERON_0003374) (31 total)
 
 classes: 
+  material entity: "BFO:0000040"
   material anatomical entity: "UBERON:0000465"
+  anatomical entity: "UBERON:0001062"
 
 
 relations: 

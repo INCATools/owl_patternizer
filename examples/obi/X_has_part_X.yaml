@@ -1,4 +1,4 @@
-# options: [min(8),dir(obi),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has part X
 pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_part_X
 
@@ -20,15 +20,15 @@ vars:
   v1: "'entity'"
 
 name:
-  # Could not induce name, using default
-  text: "%s has part %s"
+  # Induced, frequency=0.020066889632107024, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s measuring epitope specific %s by T cells"
   vars:
-    - v0
     - v1
+    - v0
 
 def:
-  # Could not induce def, using default
-  text: "Any %s that has part a %s"
+  # Induced, frequency=0.026755852842809364, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A B cell epitope %s to antibody assay that uses an %s."
   vars:
     - v0
     - v1

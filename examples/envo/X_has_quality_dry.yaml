@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/X_has_quality_dry
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [dead cave](http://purl.obolibrary.org/obo/ENVO_00000030), [dry stream valley](http://purl.obolibrary.org/obo/ENVO_0010162), [dry soil](http://purl.obolibrary.org/obo/ENVO_00005748) (4 total)
+  Examples: [dead cave](http://purl.obolibrary.org/obo/ENVO_00000030), [dry river valley](http://purl.obolibrary.org/obo/ENVO_0010163), [dry soil](http://purl.obolibrary.org/obo/ENVO_00005748) (4 total)
 
 classes: 
   fiat object: "BFO:0000024"

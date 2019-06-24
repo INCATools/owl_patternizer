@@ -8,6 +8,7 @@ description: >-
   Examples: [frost heave](http://purl.obolibrary.org/obo/ENVO_01001568), [volcanic rock](http://purl.obolibrary.org/obo/ENVO_00002015), [volcanic feature](http://purl.obolibrary.org/obo/ENVO_00000094) (6 total)
 
 classes: 
+  material entity: "BFO:0000040"
   environmental system process: "ENVO:02500000"
 
 

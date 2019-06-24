@@ -8,6 +8,7 @@ description: >-
   Examples: [environment determined by a biofilm on an animal surface](http://purl.obolibrary.org/obo/ENVO_01001034), [environment determined by a biofilm on a non-saline surface](http://purl.obolibrary.org/obo/ENVO_01001051), [environment determined by a biofilm on a fungal surface](http://purl.obolibrary.org/obo/ENVO_01001035) (5 total)
 
 classes: 
+  biofilm material: "ENVO:01000156"
   ecosystem: "ENVO:01001110"
   anatomical surface region: "UBERON:0036215"
 

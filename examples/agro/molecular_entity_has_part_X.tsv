@@ -1,0 +1,18 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/CHEBI_33296	alkali metal molecular entity	http://purl.obolibrary.org/obo/CHEBI_22314	alkali metal atom
+http://purl.obolibrary.org/obo/CHEBI_33299	alkaline earth molecular entity	http://purl.obolibrary.org/obo/CHEBI_22313	alkaline earth metal atom
+http://purl.obolibrary.org/obo/CHEBI_33581	boron group molecular entity	http://purl.obolibrary.org/obo/CHEBI_33317	boron group element atom
+http://purl.obolibrary.org/obo/CHEBI_22916	boron molecular entity	http://purl.obolibrary.org/obo/CHEBI_27560	boron atom
+http://purl.obolibrary.org/obo/CHEBI_22985	calcium molecular entity	http://purl.obolibrary.org/obo/CHEBI_22984	calcium atom
+http://purl.obolibrary.org/obo/CHEBI_33582	carbon group molecular entity	http://purl.obolibrary.org/obo/CHEBI_33306	carbon group element atom
+http://purl.obolibrary.org/obo/CHEBI_33304	chalcogen molecular entity	http://purl.obolibrary.org/obo/CHEBI_33303	chalcogen
+http://purl.obolibrary.org/obo/CHEBI_23117	chlorine molecular entity	http://purl.obolibrary.org/obo/CHEBI_23116	chlorine atom
+http://purl.obolibrary.org/obo/CHEBI_24471	halogen molecular entity	http://purl.obolibrary.org/obo/CHEBI_24473	halogen
+http://purl.obolibrary.org/obo/CHEBI_33608	hydrogen molecular entity	http://purl.obolibrary.org/obo/CHEBI_49637	hydrogen atom
+http://purl.obolibrary.org/obo/CHEBI_33579	main group molecular entity	http://purl.obolibrary.org/obo/CHEBI_33318	main group element atom
+http://purl.obolibrary.org/obo/CHEBI_51143	nitrogen molecular entity	http://purl.obolibrary.org/obo/CHEBI_25555	nitrogen atom
+http://purl.obolibrary.org/obo/CHEBI_25806	oxygen molecular entity	http://purl.obolibrary.org/obo/CHEBI_25805	oxygen atom
+http://purl.obolibrary.org/obo/CHEBI_26082	phosphorus molecular entity	http://purl.obolibrary.org/obo/CHEBI_28659	phosphorus atom
+http://purl.obolibrary.org/obo/CHEBI_33302	pnictogen molecular entity	http://purl.obolibrary.org/obo/CHEBI_33300	pnictogen
+http://purl.obolibrary.org/obo/CHEBI_26217	potassium molecular entity	http://purl.obolibrary.org/obo/CHEBI_26216	potassium atom
+http://purl.obolibrary.org/obo/CHEBI_26835	sulfur molecular entity	http://purl.obolibrary.org/obo/CHEBI_26833	sulfur atom

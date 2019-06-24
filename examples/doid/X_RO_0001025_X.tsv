@@ -1,0 +1,623 @@
+defined_class	defined_class_label	v0	v0_label	v1	v1_label
+http://purl.obolibrary.org/obo/DOID_0050710	3-Methylcrotonyl-CoA carboxylase deficiency	http://purl.obolibrary.org/obo/DOID_9252	amino acid metabolic disorder	http://purl.obolibrary.org/obo/UBERON_0002385	muscle tissue
+http://purl.obolibrary.org/obo/DOID_707	B-cell lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/CL_0000236	B cell
+http://purl.obolibrary.org/obo/DOID_60003	Bartholin's gland cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000460	major vestibular gland
+http://purl.obolibrary.org/obo/DOID_60002	Bartholin's gland disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000460	major vestibular gland
+http://purl.obolibrary.org/obo/DOID_0050692	Brody myopathy	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001134	skeletal muscle tissue
+http://purl.obolibrary.org/obo/DOID_11577	Cauda equina syndrome	http://purl.obolibrary.org/obo/DOID_225	syndrome	http://purl.obolibrary.org/obo/UBERON_0012337	cauda equina
+http://purl.obolibrary.org/obo/DOID_1925	Coffin-Siris syndrome	http://purl.obolibrary.org/obo/DOID_225	syndrome	http://purl.obolibrary.org/obo/UBERON_0006052	digit 5
+http://purl.obolibrary.org/obo/DOID_7635	Gasserian ganglion meningioma	http://purl.obolibrary.org/obo/DOID_3565	meningioma	http://purl.obolibrary.org/obo/UBERON_3011045	gasserian ganglion
+http://purl.obolibrary.org/obo/DOID_10426	Klippel-Feil syndrome	http://purl.obolibrary.org/obo/DOID_0080015	physical disorder	http://purl.obolibrary.org/obo/UBERON_0001130	vertebral column
+http://purl.obolibrary.org/obo/DOID_4558	Ludwig's angina	http://purl.obolibrary.org/obo/DOID_3488	cellulitis	http://purl.obolibrary.org/obo/UBERON_0003679	mouth floor
+http://purl.obolibrary.org/obo/DOID_9063	Ritter's disease	http://purl.obolibrary.org/obo/DOID_0050339	commensal bacterial infectious disease	http://purl.obolibrary.org/obo/UBERON_0000014	zone of skin
+http://purl.obolibrary.org/obo/DOID_5602	T-cell adult acute lymphocytic leukemia	http://purl.obolibrary.org/obo/DOID_5604	adult acute lymphocytic leukemia	http://purl.obolibrary.org/obo/CL_0000084	T cell
+http://purl.obolibrary.org/obo/DOID_715	T-cell leukemia	http://purl.obolibrary.org/obo/DOID_1240	leukemia	http://purl.obolibrary.org/obo/CL_0000084	T cell
+http://purl.obolibrary.org/obo/DOID_2508	Takayasu's arteritis	http://purl.obolibrary.org/obo/DOID_225	syndrome	http://purl.obolibrary.org/obo/UBERON_0004363	pharyngeal arch artery
+http://purl.obolibrary.org/obo/DOID_14021	Tietze's syndrome	http://purl.obolibrary.org/obo/DOID_225	syndrome	http://purl.obolibrary.org/obo/UBERON_0002293	costochondral joint
+http://purl.obolibrary.org/obo/DOID_12491	Vagus nerve disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001759	vagus nerve
+http://purl.obolibrary.org/obo/DOID_8937	Waldeyer's ring cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001735	tonsillar ring
+http://purl.obolibrary.org/obo/DOID_10865	abducens nerve disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001646	abducens nerve
+http://purl.obolibrary.org/obo/DOID_5743	acinic cell breast carcinoma	http://purl.obolibrary.org/obo/DOID_3459	breast carcinoma	http://purl.obolibrary.org/obo/CL_0000622	acinar cell
+http://purl.obolibrary.org/obo/DOID_656	adrenal adenoma	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0002369	adrenal gland
+http://purl.obolibrary.org/obo/DOID_660	adrenal cortex cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001235	adrenal cortex
+http://purl.obolibrary.org/obo/DOID_3952	adrenal cortex disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001235	adrenal cortex
+http://purl.obolibrary.org/obo/DOID_3953	adrenal gland cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002369	adrenal gland
+http://purl.obolibrary.org/obo/DOID_9553	adrenal gland disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002369	adrenal gland
+http://purl.obolibrary.org/obo/DOID_5719	adrenal medulla cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001236	adrenal medulla
+http://purl.obolibrary.org/obo/DOID_6634	adult central nervous system choriocarcinoma	http://purl.obolibrary.org/obo/DOID_3594	choriocarcinoma	http://purl.obolibrary.org/obo/UBERON_0001017	central nervous system
+http://purl.obolibrary.org/obo/DOID_1895	allergic contact dermatitis of eyelid	http://purl.obolibrary.org/obo/DOID_3042	allergic contact dermatitis	http://purl.obolibrary.org/obo/UBERON_0001711	eyelid
+http://purl.obolibrary.org/obo/DOID_11450	allergic cutaneous vasculitis	http://purl.obolibrary.org/obo/DOID_1557	hypersensitivity reaction type III disease	http://purl.obolibrary.org/obo/UBERON_0000014	zone of skin
+http://purl.obolibrary.org/obo/DOID_10020	ampulla of Vater cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0004913	hepatopancreatic ampulla
+http://purl.obolibrary.org/obo/DOID_0050688	anal canal cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000159	anal canal
+http://purl.obolibrary.org/obo/DOID_10846	angiodysplasia of intestine	http://purl.obolibrary.org/obo/DOID_2494	angiodysplasia	http://purl.obolibrary.org/obo/UBERON_0000160	intestine
+http://purl.obolibrary.org/obo/DOID_979	angioid streaks of choroid	http://purl.obolibrary.org/obo/DOID_13401	angioid streaks	http://purl.obolibrary.org/obo/UBERON_0001776	optic choroid
+http://purl.obolibrary.org/obo/DOID_4436	anterior cranial fossa meningioma	http://purl.obolibrary.org/obo/DOID_3565	meningioma	http://purl.obolibrary.org/obo/UBERON_0003720	anterior cranial fossa
+http://purl.obolibrary.org/obo/DOID_6712	anterior spinal artery syndrome	http://purl.obolibrary.org/obo/DOID_225	syndrome	http://purl.obolibrary.org/obo/UBERON_0005431	anterior spinal artery
+http://purl.obolibrary.org/obo/DOID_4551	anus benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001245	anus
+http://purl.obolibrary.org/obo/DOID_14110	anus cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001245	anus
+http://purl.obolibrary.org/obo/DOID_3128	anus disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001245	anus
+http://purl.obolibrary.org/obo/DOID_14139	anus lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/UBERON_0001245	anus
+http://purl.obolibrary.org/obo/DOID_520	aortic disease	http://purl.obolibrary.org/obo/DOID_0050828	artery disease	http://purl.obolibrary.org/obo/UBERON_0000947	aorta
+http://purl.obolibrary.org/obo/DOID_62	aortic valve disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002137	aortic valve
+http://purl.obolibrary.org/obo/DOID_4934	apocrine sweat gland cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000382	apocrine sweat gland
+http://purl.obolibrary.org/obo/DOID_11239	appendix cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001154	vermiform appendix
+http://purl.obolibrary.org/obo/DOID_60000	appendix disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001154	vermiform appendix
+http://purl.obolibrary.org/obo/DOID_11241	appendix lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/UBERON_0001154	vermiform appendix
+http://purl.obolibrary.org/obo/DOID_0050828	artery disease	http://purl.obolibrary.org/obo/DOID_178	vascular disease	http://purl.obolibrary.org/obo/UBERON_0001637	artery
+http://purl.obolibrary.org/obo/DOID_6227	articular cartilage disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0010996	articular cartilage of joint
+http://purl.obolibrary.org/obo/DOID_8663	aryepiglottic fold cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0014385	aryepiglottic fold
+http://purl.obolibrary.org/obo/DOID_218	ascending colon cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001156	ascending colon
+http://purl.obolibrary.org/obo/DOID_1882	atrial heart septal defect	http://purl.obolibrary.org/obo/DOID_114	heart disease	http://purl.obolibrary.org/obo/UBERON_0002085	interatrial septum
+http://purl.obolibrary.org/obo/DOID_0050651	atrioventricular septal defect	http://purl.obolibrary.org/obo/DOID_114	heart disease	http://purl.obolibrary.org/obo/UBERON_0005989	atrioventricular septum
+http://purl.obolibrary.org/obo/DOID_913	atrophic muscular disease	http://purl.obolibrary.org/obo/DOID_440	neuromuscular disease	http://purl.obolibrary.org/obo/UBERON_0002385	muscle tissue
+http://purl.obolibrary.org/obo/DOID_833	auditory system cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0016490	auditory system
+http://purl.obolibrary.org/obo/DOID_2742	auditory system disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0016490	auditory system
+http://purl.obolibrary.org/obo/DOID_0060050	autoimmune disease of blood	http://purl.obolibrary.org/obo/DOID_417	autoimmune hypersensitivity disease	http://purl.obolibrary.org/obo/UBERON_0000178	blood
+http://purl.obolibrary.org/obo/DOID_0060051	autoimmune disease of cardiovascular system	http://purl.obolibrary.org/obo/DOID_417	autoimmune hypersensitivity disease	http://purl.obolibrary.org/obo/UBERON_0004535	cardiovascular system
+http://purl.obolibrary.org/obo/DOID_0060004	autoimmune disease of central nervous system	http://purl.obolibrary.org/obo/DOID_417	autoimmune hypersensitivity disease	http://purl.obolibrary.org/obo/UBERON_0001017	central nervous system
+http://purl.obolibrary.org/obo/DOID_0060005	autoimmune disease of endocrine system	http://purl.obolibrary.org/obo/DOID_417	autoimmune hypersensitivity disease	http://purl.obolibrary.org/obo/UBERON_0000949	endocrine system
+http://purl.obolibrary.org/obo/DOID_0060029	autoimmune disease of exocrine system	http://purl.obolibrary.org/obo/DOID_417	autoimmune hypersensitivity disease	http://purl.obolibrary.org/obo/UBERON_0002330	exocrine system
+http://purl.obolibrary.org/obo/DOID_0060030	autoimmune disease of eyes, ear, nose and throat	http://purl.obolibrary.org/obo/DOID_417	autoimmune hypersensitivity disease	http://purl.obolibrary.org/obo/UBERON_0001032	sensory system
+http://purl.obolibrary.org/obo/DOID_0060032	autoimmune disease of musculoskeletal system	http://purl.obolibrary.org/obo/DOID_417	autoimmune hypersensitivity disease	http://purl.obolibrary.org/obo/UBERON_0002204	musculoskeletal system
+http://purl.obolibrary.org/obo/DOID_0060033	autoimmune disease of peripheral nervous system	http://purl.obolibrary.org/obo/DOID_417	autoimmune hypersensitivity disease	http://purl.obolibrary.org/obo/UBERON_0000010	peripheral nervous system
+http://purl.obolibrary.org/obo/DOID_438	autoimmune disease of the nervous system	http://purl.obolibrary.org/obo/DOID_417	autoimmune hypersensitivity disease	http://purl.obolibrary.org/obo/UBERON_0001016	nervous system
+http://purl.obolibrary.org/obo/DOID_0060049	autoimmune disease of urogenital tract	http://purl.obolibrary.org/obo/DOID_417	autoimmune hypersensitivity disease	http://purl.obolibrary.org/obo/UBERON_0004122	genitourinary system
+http://purl.obolibrary.org/obo/DOID_11465	autonomic nervous system disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002410	autonomic nervous system
+http://purl.obolibrary.org/obo/DOID_10991	basal ganglia cerebrovascular disease	http://purl.obolibrary.org/obo/DOID_6713	cerebrovascular disease	http://purl.obolibrary.org/obo/UBERON_0010011	collection of basal ganglia
+http://purl.obolibrary.org/obo/DOID_223	basilar artery insufficiency	http://purl.obolibrary.org/obo/DOID_225	syndrome	http://purl.obolibrary.org/obo/UBERON_0001633	basilar artery
+http://purl.obolibrary.org/obo/DOID_13446	basilar artery occlusion	http://purl.obolibrary.org/obo/DOID_5976	occlusion precerebral artery	http://purl.obolibrary.org/obo/UBERON_0001633	basilar artery
+http://purl.obolibrary.org/obo/DOID_13145	benign renovascular hypertension	http://purl.obolibrary.org/obo/DOID_13143	benign secondary hypertension	http://purl.obolibrary.org/obo/UBERON_0002113	kidney
+http://purl.obolibrary.org/obo/DOID_4606	bile duct cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002394	bile duct
+http://purl.obolibrary.org/obo/DOID_4138	bile duct disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002394	bile duct
+http://purl.obolibrary.org/obo/DOID_0050625	biliary tract benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001173	biliary tree
+http://purl.obolibrary.org/obo/DOID_9741	biliary tract disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001173	biliary tree
+http://purl.obolibrary.org/obo/DOID_0050623	bladder benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001255	urinary bladder
+http://purl.obolibrary.org/obo/DOID_9053	bladder carcinoma in situ	http://purl.obolibrary.org/obo/DOID_8719	in situ carcinoma	http://purl.obolibrary.org/obo/UBERON_0001255	urinary bladder
+http://purl.obolibrary.org/obo/DOID_365	bladder disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001255	urinary bladder
+http://purl.obolibrary.org/obo/DOID_11821	bladder lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/UBERON_0001255	urinary bladder
+http://purl.obolibrary.org/obo/DOID_11809	bladder neck cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001258	neck of urinary bladder
+http://purl.obolibrary.org/obo/DOID_11813	bladder trigone cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001257	trigone of urinary bladder
+http://purl.obolibrary.org/obo/DOID_2218	blood platelet disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/CL_0000233	platelet
+http://purl.obolibrary.org/obo/DOID_0060094	bone benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001474	bone element
+http://purl.obolibrary.org/obo/DOID_184	bone cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001474	bone element
+http://purl.obolibrary.org/obo/DOID_0080001	bone disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001474	bone element
+http://purl.obolibrary.org/obo/DOID_4960	bone marrow cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002371	bone marrow
+http://purl.obolibrary.org/obo/DOID_4961	bone marrow disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002371	bone marrow
+http://purl.obolibrary.org/obo/DOID_3689	brachial plexus neuritis	http://purl.obolibrary.org/obo/DOID_1803	neuritis	http://purl.obolibrary.org/obo/UBERON_0001814	brachial nerve plexus
+http://purl.obolibrary.org/obo/DOID_3690	brachial plexus neuropathy	http://purl.obolibrary.org/obo/DOID_870	neuropathy	http://purl.obolibrary.org/obo/UBERON_0001814	brachial nerve plexus
+http://purl.obolibrary.org/obo/DOID_1319	brain cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000955	brain
+http://purl.obolibrary.org/obo/DOID_936	brain disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000955	brain
+http://purl.obolibrary.org/obo/DOID_4203	brain stem cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002298	brainstem
+http://purl.obolibrary.org/obo/DOID_0050899	brain stem medulloblastoma	http://purl.obolibrary.org/obo/DOID_0050902	medulloblastoma	http://purl.obolibrary.org/obo/UBERON_0002298	brainstem
+http://purl.obolibrary.org/obo/DOID_1637	breast angiomatosis	http://purl.obolibrary.org/obo/DOID_1271	capillary disease	http://purl.obolibrary.org/obo/UBERON_0000310	breast
+http://purl.obolibrary.org/obo/DOID_0060082	breast benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000310	breast
+http://purl.obolibrary.org/obo/DOID_1612	breast cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000310	breast
+http://purl.obolibrary.org/obo/DOID_3463	breast disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000310	breast
+http://purl.obolibrary.org/obo/DOID_14775	brittle cornea syndrome	http://purl.obolibrary.org/obo/DOID_13359	Ehlers-Danlos syndrome	http://purl.obolibrary.org/obo/UBERON_0000970	eye
+http://purl.obolibrary.org/obo/DOID_10744	broad ligament malignant neoplasm	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0012332	broad ligament of uterus
+http://purl.obolibrary.org/obo/DOID_1271	capillary disease	http://purl.obolibrary.org/obo/DOID_178	vascular disease	http://purl.obolibrary.org/obo/UBERON_0001982	capillary
+http://purl.obolibrary.org/obo/DOID_2286	capillary lymphangioma	http://purl.obolibrary.org/obo/DOID_1475	lymphangioma	http://purl.obolibrary.org/obo/UBERON_0001982	capillary
+http://purl.obolibrary.org/obo/DOID_10548	cardia cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001162	cardia of stomach
+http://purl.obolibrary.org/obo/DOID_0060570	cardiac tuberculosis	http://purl.obolibrary.org/obo/DOID_399	tuberculosis	http://purl.obolibrary.org/obo/UBERON_0000948	heart
+http://purl.obolibrary.org/obo/DOID_176	cardiovascular cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0004535	cardiovascular system
+http://purl.obolibrary.org/obo/DOID_0060091	cardiovascular organ benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0004535	cardiovascular system
+http://purl.obolibrary.org/obo/DOID_3407	carotid artery disease	http://purl.obolibrary.org/obo/DOID_178	vascular disease	http://purl.obolibrary.org/obo/UBERON_0005396	carotid artery segment
+http://purl.obolibrary.org/obo/DOID_807	carotid artery occlusion	http://purl.obolibrary.org/obo/DOID_5976	occlusion precerebral artery	http://purl.obolibrary.org/obo/UBERON_0005396	carotid artery segment
+http://purl.obolibrary.org/obo/DOID_3410	carotid artery thrombosis	http://purl.obolibrary.org/obo/DOID_0060903	thrombosis	http://purl.obolibrary.org/obo/UBERON_0005396	carotid artery segment
+http://purl.obolibrary.org/obo/DOID_8731	carotid body cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001629	carotid body
+http://purl.obolibrary.org/obo/DOID_0060102	cartilage cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002418	cartilage tissue
+http://purl.obolibrary.org/obo/DOID_5775	cavernous hemangioma of colon	http://purl.obolibrary.org/obo/DOID_483	cavernous hemangioma	http://purl.obolibrary.org/obo/UBERON_0001155	colon
+http://purl.obolibrary.org/obo/DOID_5776	cavernous hemangioma of face	http://purl.obolibrary.org/obo/DOID_483	cavernous hemangioma	http://purl.obolibrary.org/obo/UBERON_0001456	face
+http://purl.obolibrary.org/obo/DOID_4435	cavernous sinus meningioma	http://purl.obolibrary.org/obo/DOID_3565	meningioma	http://purl.obolibrary.org/obo/UBERON_0003712	cavernous sinus
+http://purl.obolibrary.org/obo/DOID_1517	cecal benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001153	caecum
+http://purl.obolibrary.org/obo/DOID_1521	cecum cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001153	caecum
+http://purl.obolibrary.org/obo/DOID_1522	cecum lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/UBERON_0001153	caecum
+http://purl.obolibrary.org/obo/DOID_3488	cellulitis	http://purl.obolibrary.org/obo/DOID_37	skin disease	http://purl.obolibrary.org/obo/UBERON_0002384	connective tissue
+http://purl.obolibrary.org/obo/DOID_0060090	central nervous system benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001017	central nervous system
+http://purl.obolibrary.org/obo/DOID_3620	central nervous system cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001017	central nervous system
+http://purl.obolibrary.org/obo/DOID_331	central nervous system disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001017	central nervous system
+http://purl.obolibrary.org/obo/DOID_5772	central nervous system hematologic cancer	http://purl.obolibrary.org/obo/DOID_2531	hematologic cancer	http://purl.obolibrary.org/obo/UBERON_0001017	central nervous system
+http://purl.obolibrary.org/obo/DOID_5254	central nervous system leiomyosarcoma	http://purl.obolibrary.org/obo/DOID_1967	leiomyosarcoma	http://purl.obolibrary.org/obo/UBERON_0001017	central nervous system
+http://purl.obolibrary.org/obo/DOID_12969	central nervous system leukemia	http://purl.obolibrary.org/obo/DOID_1240	leukemia	http://purl.obolibrary.org/obo/UBERON_0001017	central nervous system
+http://purl.obolibrary.org/obo/DOID_3234	central nervous system lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/UBERON_0001017	central nervous system
+http://purl.obolibrary.org/obo/DOID_0060103	central nervous system primitive neuroectodermal neoplasm	http://purl.obolibrary.org/obo/DOID_171	neuroectodermal tumor	http://purl.obolibrary.org/obo/UBERON_0001017	central nervous system
+http://purl.obolibrary.org/obo/DOID_525	central nervous system vasculitis	http://purl.obolibrary.org/obo/DOID_865	vasculitis	http://purl.obolibrary.org/obo/UBERON_0001017	central nervous system
+http://purl.obolibrary.org/obo/DOID_2786	cerebellar disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002037	cerebellum
+http://purl.obolibrary.org/obo/DOID_3860	cerebellar vermis medulloblastoma	http://purl.obolibrary.org/obo/DOID_0050902	medulloblastoma	http://purl.obolibrary.org/obo/UBERON_0004720	cerebellar vermis
+http://purl.obolibrary.org/obo/DOID_6337	cerebellopontine angle meningioma	http://purl.obolibrary.org/obo/DOID_3565	meningioma	http://purl.obolibrary.org/obo/UBERON_0014908	cerebellopontine angle
+http://purl.obolibrary.org/obo/DOID_4205	cerebellum cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002037	cerebellum
+http://purl.obolibrary.org/obo/DOID_3527	cerebral arterial disease	http://purl.obolibrary.org/obo/DOID_6713	cerebrovascular disease	http://purl.obolibrary.org/obo/UBERON_0004449	cerebral artery
+http://purl.obolibrary.org/obo/DOID_7986	cerebral falx meningioma	http://purl.obolibrary.org/obo/DOID_3565	meningioma	http://purl.obolibrary.org/obo/UBERON_0006059	falx cerebri
+http://purl.obolibrary.org/obo/DOID_3541	cerebral ventricle cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0004086	brain ventricle
+http://purl.obolibrary.org/obo/DOID_6713	cerebrovascular disease	http://purl.obolibrary.org/obo/DOID_178	vascular disease	http://purl.obolibrary.org/obo/UBERON_0000955	brain
+http://purl.obolibrary.org/obo/DOID_368	cerebrum cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001893	telencephalon
+http://purl.obolibrary.org/obo/DOID_0060110	cervical benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000002	uterine cervix
+http://purl.obolibrary.org/obo/DOID_4362	cervical cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000002	uterine cervix
+http://purl.obolibrary.org/obo/DOID_2253	cervix disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000002	uterine cervix
+http://purl.obolibrary.org/obo/DOID_8991	cervix uteri carcinoma in situ	http://purl.obolibrary.org/obo/DOID_8719	in situ carcinoma	http://purl.obolibrary.org/obo/UBERON_0000002	uterine cervix
+http://purl.obolibrary.org/obo/DOID_8702	cheek mucosa cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0006956	buccal mucosa
+http://purl.obolibrary.org/obo/DOID_6579	chest wall bone cancer	http://purl.obolibrary.org/obo/DOID_184	bone cancer	http://purl.obolibrary.org/obo/UBERON_0016435	chest wall
+http://purl.obolibrary.org/obo/DOID_6758	chest wall lymphoma	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0016435	chest wall
+http://purl.obolibrary.org/obo/DOID_5655	chiasmal syndrome	http://purl.obolibrary.org/obo/DOID_1891	optic nerve disease	http://purl.obolibrary.org/obo/UBERON_0000959	optic chiasma
+http://purl.obolibrary.org/obo/DOID_9462	cholesteatoma of external ear	http://purl.obolibrary.org/obo/DOID_869	cholesteatoma	http://purl.obolibrary.org/obo/UBERON_0001691	external ear
+http://purl.obolibrary.org/obo/DOID_10964	cholesteatoma of middle ear	http://purl.obolibrary.org/obo/DOID_869	cholesteatoma	http://purl.obolibrary.org/obo/UBERON_0001756	middle ear
+http://purl.obolibrary.org/obo/DOID_13357	chondromalacia patellae	http://purl.obolibrary.org/obo/DOID_2557	chondromalacia	http://purl.obolibrary.org/obo/UBERON_0002446	patella
+http://purl.obolibrary.org/obo/DOID_5550	choriocarcinoma of ovary	http://purl.obolibrary.org/obo/DOID_3594	choriocarcinoma	http://purl.obolibrary.org/obo/UBERON_0000992	ovary
+http://purl.obolibrary.org/obo/DOID_12759	choroid cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001776	optic choroid
+http://purl.obolibrary.org/obo/DOID_1417	choroid disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001776	optic choroid
+http://purl.obolibrary.org/obo/DOID_3540	choroid plexus cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001886	choroid plexus
+http://purl.obolibrary.org/obo/DOID_4584	choroid plexus meningioma	http://purl.obolibrary.org/obo/DOID_3565	meningioma	http://purl.obolibrary.org/obo/UBERON_0001886	choroid plexus
+http://purl.obolibrary.org/obo/DOID_4352	ciliary body cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001775	ciliary body
+http://purl.obolibrary.org/obo/DOID_4353	ciliary body disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001775	ciliary body
+http://purl.obolibrary.org/obo/DOID_2401	clitoris cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002411	clitoris
+http://purl.obolibrary.org/obo/DOID_6517	clivus meningioma	http://purl.obolibrary.org/obo/DOID_3565	meningioma	http://purl.obolibrary.org/obo/UBERON_0004108	clivus of occipital bone
+http://purl.obolibrary.org/obo/DOID_219	colon cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001155	colon
+http://purl.obolibrary.org/obo/DOID_8826	colon carcinoma in situ	http://purl.obolibrary.org/obo/DOID_8719	in situ carcinoma	http://purl.obolibrary.org/obo/UBERON_0001155	colon
+http://purl.obolibrary.org/obo/DOID_1523	colon lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/UBERON_0001155	colon
+http://purl.obolibrary.org/obo/DOID_235	colonic benign neoplasm	http://purl.obolibrary.org/obo/DOID_1475	lymphangioma	http://purl.obolibrary.org/obo/UBERON_0001155	colon
+http://purl.obolibrary.org/obo/DOID_5353	colonic disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001155	colon
+http://purl.obolibrary.org/obo/DOID_4137	common bile duct disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001174	common bile duct
+http://purl.obolibrary.org/obo/DOID_5467	conjunctival cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001811	conjunctiva
+http://purl.obolibrary.org/obo/DOID_4251	conjunctival disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001811	conjunctiva
+http://purl.obolibrary.org/obo/DOID_5465	conjunctival intraepithelial neoplasm	http://purl.obolibrary.org/obo/DOID_0060071	pre-malignant neoplasm	http://purl.obolibrary.org/obo/UBERON_0001811	conjunctiva
+http://purl.obolibrary.org/obo/DOID_0060123	connective tissue benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0002384	connective tissue
+http://purl.obolibrary.org/obo/DOID_201	connective tissue cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002384	connective tissue
+http://purl.obolibrary.org/obo/DOID_65	connective tissue disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002384	connective tissue
+http://purl.obolibrary.org/obo/DOID_6199	cornea cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000964	cornea
+http://purl.obolibrary.org/obo/DOID_10124	corneal disease	http://purl.obolibrary.org/obo/DOID_5614	eye disease	http://purl.obolibrary.org/obo/UBERON_0000964	cornea
+http://purl.obolibrary.org/obo/DOID_6198	corneal intraepithelial neoplasm	http://purl.obolibrary.org/obo/DOID_0060071	pre-malignant neoplasm	http://purl.obolibrary.org/obo/UBERON_0000964	cornea
+http://purl.obolibrary.org/obo/DOID_3393	coronary artery disease	http://purl.obolibrary.org/obo/DOID_0050828	artery disease	http://purl.obolibrary.org/obo/UBERON_0001621	coronary artery
+http://purl.obolibrary.org/obo/DOID_11847	coronary thrombosis	http://purl.obolibrary.org/obo/DOID_0060903	thrombosis	http://purl.obolibrary.org/obo/UBERON_0001621	coronary artery
+http://purl.obolibrary.org/obo/DOID_6530	cortical thymoma	http://purl.obolibrary.org/obo/DOID_3275	thymoma	http://purl.obolibrary.org/obo/CL_0000398	polygonal cell
+http://purl.obolibrary.org/obo/DOID_338	cranial nerve neoplasm	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001785	cranial nerve
+http://purl.obolibrary.org/obo/DOID_7426	cutaneous anthrax	http://purl.obolibrary.org/obo/DOID_7427	anthrax disease	http://purl.obolibrary.org/obo/UBERON_0000014	zone of skin
+http://purl.obolibrary.org/obo/DOID_0050169	cutaneous lupus erythematosus	http://purl.obolibrary.org/obo/DOID_8857	lupus erythematosus	http://purl.obolibrary.org/obo/UBERON_0000014	zone of skin
+http://purl.obolibrary.org/obo/DOID_3663	cutaneous mastocytosis	http://purl.obolibrary.org/obo/DOID_350	mastocytosis	http://purl.obolibrary.org/obo/UBERON_0000014	zone of skin
+http://purl.obolibrary.org/obo/DOID_13271	cutaneous porphyria	http://purl.obolibrary.org/obo/DOID_13268	porphyria	http://purl.obolibrary.org/obo/UBERON_0000014	zone of skin
+http://purl.obolibrary.org/obo/DOID_3282	dendritic cell thymoma	http://purl.obolibrary.org/obo/DOID_3275	thymoma	http://purl.obolibrary.org/obo/CL_0000451	dendritic cell
+http://purl.obolibrary.org/obo/DOID_5330	dental pulp disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001754	dental pulp
+http://purl.obolibrary.org/obo/DOID_12190	descending colon cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001158	descending colon
+http://purl.obolibrary.org/obo/DOID_10481	diaphragm disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001103	diaphragm
+http://purl.obolibrary.org/obo/DOID_13254	diverticulitis of colon	http://purl.obolibrary.org/obo/DOID_7475	diverticulitis	http://purl.obolibrary.org/obo/UBERON_0001155	colon
+http://purl.obolibrary.org/obo/DOID_7959	duodenal gastrinoma	http://purl.obolibrary.org/obo/DOID_5577	gastrinoma	http://purl.obolibrary.org/obo/UBERON_0002114	duodenum
+http://purl.obolibrary.org/obo/DOID_10021	duodenum cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002114	duodenum
+http://purl.obolibrary.org/obo/DOID_4072	duodenum disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002114	duodenum
+http://purl.obolibrary.org/obo/DOID_4921	eccrine sweat gland cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000423	eccrine sweat gland
+http://purl.obolibrary.org/obo/DOID_5877	endocardium cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002165	endocardium
+http://purl.obolibrary.org/obo/DOID_0050825	endocardium disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002165	endocardium
+http://purl.obolibrary.org/obo/DOID_170	endocrine gland cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002368	endocrine gland
+http://purl.obolibrary.org/obo/DOID_0060089	endocrine organ benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0002368	endocrine gland
+http://purl.obolibrary.org/obo/DOID_28	endocrine system disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002368	endocrine gland
+http://purl.obolibrary.org/obo/DOID_1380	endometrial cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001295	endometrium
+http://purl.obolibrary.org/obo/DOID_289	endometriosis	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001295	endometrium
+http://purl.obolibrary.org/obo/DOID_11428	endometriosis of intestine	http://purl.obolibrary.org/obo/DOID_289	endometriosis	http://purl.obolibrary.org/obo/UBERON_0000160	intestine
+http://purl.obolibrary.org/obo/DOID_11432	endometriosis of ovary	http://purl.obolibrary.org/obo/DOID_289	endometriosis	http://purl.obolibrary.org/obo/UBERON_0000992	ovary
+http://purl.obolibrary.org/obo/DOID_288	endometriosis of uterus	http://purl.obolibrary.org/obo/DOID_289	endometriosis	http://purl.obolibrary.org/obo/UBERON_0001296	myometrium
+http://purl.obolibrary.org/obo/DOID_5172	endometrium carcinoma in situ	http://purl.obolibrary.org/obo/DOID_8719	in situ carcinoma	http://purl.obolibrary.org/obo/UBERON_0001295	endometrium
+http://purl.obolibrary.org/obo/DOID_0050332	enlarged vestibular aqueduct	http://purl.obolibrary.org/obo/DOID_3426	vestibular disease	http://purl.obolibrary.org/obo/UBERON_0002279	vestibular aqueduct
+http://purl.obolibrary.org/obo/DOID_4699	epicardium cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002348	epicardium
+http://purl.obolibrary.org/obo/DOID_10366	epididymis cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001301	epididymis
+http://purl.obolibrary.org/obo/DOID_0080373	epididymis disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001301	epididymis
+http://purl.obolibrary.org/obo/DOID_11387	epidural abscess	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0003691	epidural space
+http://purl.obolibrary.org/obo/DOID_8133	epiglottis cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000388	epiglottis
+http://purl.obolibrary.org/obo/DOID_5041	esophageal cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001043	esophagus
+http://purl.obolibrary.org/obo/DOID_6050	esophageal disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001043	esophagus
+http://purl.obolibrary.org/obo/DOID_112	esophageal varix	http://purl.obolibrary.org/obo/DOID_866	vein disease	http://purl.obolibrary.org/obo/UBERON_0001043	esophagus
+http://purl.obolibrary.org/obo/DOID_9095	esophagus carcinoma in situ	http://purl.obolibrary.org/obo/DOID_0060071	pre-malignant neoplasm	http://purl.obolibrary.org/obo/UBERON_0001043	esophagus
+http://purl.obolibrary.org/obo/DOID_1363	ethmoid sinus cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002453	ethmoid sinus
+http://purl.obolibrary.org/obo/DOID_1364	ethmoidal sinus neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0002453	ethmoid sinus
+http://purl.obolibrary.org/obo/DOID_5665	external ear cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001691	external ear
+http://purl.obolibrary.org/obo/DOID_379	external ear disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001691	external ear
+http://purl.obolibrary.org/obo/DOID_4682	extrahepatic bile duct carcinoma	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0003703	extrahepatic bile duct
+http://purl.obolibrary.org/obo/DOID_5614	eye disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000970	eye
+http://purl.obolibrary.org/obo/DOID_10120	eyelid degenerative disease	http://purl.obolibrary.org/obo/DOID_1289	neurodegenerative disease	http://purl.obolibrary.org/obo/UBERON_0001711	eyelid
+http://purl.obolibrary.org/obo/DOID_530	eyelid disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001711	eyelid
+http://purl.obolibrary.org/obo/DOID_1756	facial nerve disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001647	facial nerve
+http://purl.obolibrary.org/obo/DOID_0060111	fallopian tube benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0003889	fallopian tube
+http://purl.obolibrary.org/obo/DOID_1964	fallopian tube cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0003889	fallopian tube
+http://purl.obolibrary.org/obo/DOID_1962	fallopian tube disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0003889	fallopian tube
+http://purl.obolibrary.org/obo/DOID_11424	fallopian tube endometriosis	http://purl.obolibrary.org/obo/DOID_289	endometriosis	http://purl.obolibrary.org/obo/UBERON_0003889	fallopian tube
+http://purl.obolibrary.org/obo/DOID_1965	fallopian tube leiomyosarcoma	http://purl.obolibrary.org/obo/DOID_1967	leiomyosarcoma	http://purl.obolibrary.org/obo/UBERON_0003889	fallopian tube
+http://purl.obolibrary.org/obo/DOID_0060086	female reproductive organ benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000474	female reproductive system
+http://purl.obolibrary.org/obo/DOID_120	female reproductive organ cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000474	female reproductive system
+http://purl.obolibrary.org/obo/DOID_229	female reproductive system disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000474	female reproductive system
+http://purl.obolibrary.org/obo/DOID_4196	femoral neuropathy	http://purl.obolibrary.org/obo/DOID_1188	mononeuropathy	http://purl.obolibrary.org/obo/UBERON_0001267	femoral nerve
+http://purl.obolibrary.org/obo/DOID_12282	femoral vein thrombophlebitis	http://purl.obolibrary.org/obo/DOID_3875	thrombophlebitis	http://purl.obolibrary.org/obo/UBERON_0001361	femoral vein
+http://purl.obolibrary.org/obo/DOID_0050836	focal dystonia	http://purl.obolibrary.org/obo/DOID_543	dystonia	http://purl.obolibrary.org/obo/UBERON_0001630	muscle organ
+http://purl.obolibrary.org/obo/DOID_4708	foramen magnum meningioma	http://purl.obolibrary.org/obo/DOID_3565	meningioma	http://purl.obolibrary.org/obo/UBERON_0003687	foramen magnum
+http://purl.obolibrary.org/obo/DOID_3331	frontal lobe epilepsy	http://purl.obolibrary.org/obo/DOID_1826	epilepsy	http://purl.obolibrary.org/obo/UBERON_0016525	frontal lobe
+http://purl.obolibrary.org/obo/DOID_12016	frontal lobe neoplasm	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0016525	frontal lobe
+http://purl.obolibrary.org/obo/DOID_1360	frontal sinus cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001760	frontal sinus
+http://purl.obolibrary.org/obo/DOID_1361	frontal sinus neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001760	frontal sinus
+http://purl.obolibrary.org/obo/DOID_0050612	gall bladder carcinoma in situ	http://purl.obolibrary.org/obo/DOID_8719	in situ carcinoma	http://purl.obolibrary.org/obo/UBERON_0002110	gall bladder
+http://purl.obolibrary.org/obo/DOID_3121	gallbladder cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002110	gall bladder
+http://purl.obolibrary.org/obo/DOID_0060262	gallbladder disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002110	gall bladder
+http://purl.obolibrary.org/obo/DOID_8135	gallbladder lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/UBERON_0002110	gall bladder
+http://purl.obolibrary.org/obo/DOID_9159	gas gangrene	http://purl.obolibrary.org/obo/DOID_0050339	commensal bacterial infectious disease	http://purl.obolibrary.org/obo/UBERON_0002385	muscle tissue
+http://purl.obolibrary.org/obo/DOID_10538	gastric fundus cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001160	fundus of stomach
+http://purl.obolibrary.org/obo/DOID_13386	gastrointestinal anthrax	http://purl.obolibrary.org/obo/DOID_7427	anthrax disease	http://purl.obolibrary.org/obo/UBERON_0001007	digestive system
+http://purl.obolibrary.org/obo/DOID_0050624	gastrointestinal system benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001007	digestive system
+http://purl.obolibrary.org/obo/DOID_3119	gastrointestinal system cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001007	digestive system
+http://purl.obolibrary.org/obo/DOID_77	gastrointestinal system disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001007	digestive system
+http://purl.obolibrary.org/obo/DOID_14239	gastrointestinal tularemia	http://purl.obolibrary.org/obo/DOID_2123	tularemia	http://purl.obolibrary.org/obo/UBERON_0001007	digestive system
+http://purl.obolibrary.org/obo/DOID_11839	glans penis cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001299	glans penis
+http://purl.obolibrary.org/obo/DOID_1242	globe disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0010230	eyeball of camera-type eye
+http://purl.obolibrary.org/obo/DOID_3418	glossopharyngeal nerve disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001649	glossopharyngeal nerve
+http://purl.obolibrary.org/obo/DOID_2595	glottis cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002486	glottis
+http://purl.obolibrary.org/obo/DOID_2277	gonadal disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000991	gonad
+http://purl.obolibrary.org/obo/DOID_10400	gonococcal seminal vesiculitis	http://purl.obolibrary.org/obo/DOID_7551	gonorrhea	http://purl.obolibrary.org/obo/UBERON_0000998	seminal vesicle
+http://purl.obolibrary.org/obo/DOID_8602	gum cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001828	gingiva
+http://purl.obolibrary.org/obo/DOID_421	hair disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001037	strand of hair
+http://purl.obolibrary.org/obo/DOID_9149	hard palate cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0003216	hard palate
+http://purl.obolibrary.org/obo/DOID_117	heart cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000948	heart
+http://purl.obolibrary.org/obo/DOID_114	heart disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000948	heart
+http://purl.obolibrary.org/obo/DOID_6285	heart lipoma	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000948	heart
+http://purl.obolibrary.org/obo/DOID_1681	heart septal defect	http://purl.obolibrary.org/obo/DOID_114	heart disease	http://purl.obolibrary.org/obo/UBERON_0002099	cardiac septum
+http://purl.obolibrary.org/obo/DOID_4079	heart valve disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000946	cardial valve
+http://purl.obolibrary.org/obo/DOID_2531	hematologic cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002390	hematopoietic system
+http://purl.obolibrary.org/obo/DOID_74	hematopoietic system disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002390	hematopoietic system
+http://purl.obolibrary.org/obo/DOID_11266	hemorrhagic fever with renal syndrome	http://purl.obolibrary.org/obo/DOID_934	viral infectious disease	http://purl.obolibrary.org/obo/UBERON_0002113	kidney
+http://purl.obolibrary.org/obo/DOID_260	hepatic flexure cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0022277	hepatic flexure of colon
+http://purl.obolibrary.org/obo/DOID_272	hepatic vascular disease	http://purl.obolibrary.org/obo/DOID_178	vascular disease	http://purl.obolibrary.org/obo/UBERON_0002107	liver
+http://purl.obolibrary.org/obo/DOID_3117	hepatobiliary benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0002423	hepatobiliary system
+http://purl.obolibrary.org/obo/DOID_10883	herpangina	http://purl.obolibrary.org/obo/DOID_934	viral infectious disease	http://purl.obolibrary.org/obo/UBERON_0000167	oral cavity
+http://purl.obolibrary.org/obo/DOID_13814	hypoglossal nerve disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001650	hypoglossal nerve
+http://purl.obolibrary.org/obo/DOID_8533	hypopharynx cancer	http://purl.obolibrary.org/obo/DOID_0060119	pharynx cancer	http://purl.obolibrary.org/obo/UBERON_0001051	hypopharynx
+http://purl.obolibrary.org/obo/DOID_1931	hypothalamic disease	http://purl.obolibrary.org/obo/DOID_4662	thalamic disease	http://purl.obolibrary.org/obo/UBERON_0001898	hypothalamus
+http://purl.obolibrary.org/obo/DOID_3644	hypothalamic neoplasm	http://purl.obolibrary.org/obo/DOID_6098	thalamic neoplasm	http://purl.obolibrary.org/obo/UBERON_0000955	brain
+http://purl.obolibrary.org/obo/DOID_10153	ileum cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002116	ileum
+http://purl.obolibrary.org/obo/DOID_10880	iliac vein thrombophlebitis	http://purl.obolibrary.org/obo/DOID_3875	thrombophlebitis	http://purl.obolibrary.org/obo/UBERON_0005610	iliac vein
+http://purl.obolibrary.org/obo/DOID_2914	immune system disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002405	immune system
+http://purl.obolibrary.org/obo/DOID_0060092	immune system organ benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0005057	immune organ
+http://purl.obolibrary.org/obo/DOID_10488	imperforate anus	http://purl.obolibrary.org/obo/DOID_0080015	physical disorder	http://purl.obolibrary.org/obo/UBERON_0001245	anus
+http://purl.obolibrary.org/obo/DOID_5102	inner ear cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001846	internal ear
+http://purl.obolibrary.org/obo/DOID_2952	inner ear disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001846	internal ear
+http://purl.obolibrary.org/obo/DOID_0060121	integumentary system benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0002416	integumental system
+http://purl.obolibrary.org/obo/DOID_0060122	integumentary system cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002416	integumental system
+http://purl.obolibrary.org/obo/DOID_16	integumentary system disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002416	integumental system
+http://purl.obolibrary.org/obo/DOID_3082	interstitial lung disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000114	lung connective tissue
+http://purl.obolibrary.org/obo/DOID_4610	intestinal benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000160	intestine
+http://purl.obolibrary.org/obo/DOID_10155	intestinal cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000160	intestine
+http://purl.obolibrary.org/obo/DOID_5295	intestinal disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000160	intestine
+http://purl.obolibrary.org/obo/DOID_9024	intestine carcinoma in situ	http://purl.obolibrary.org/obo/DOID_8719	in situ carcinoma	http://purl.obolibrary.org/obo/UBERON_0000160	intestine
+http://purl.obolibrary.org/obo/DOID_3572	intracranial sinus thrombosis	http://purl.obolibrary.org/obo/DOID_0060903	thrombosis	http://purl.obolibrary.org/obo/UBERON_0013411	cranial cavity
+http://purl.obolibrary.org/obo/DOID_4193	intracranial thrombosis	http://purl.obolibrary.org/obo/DOID_0060903	thrombosis	http://purl.obolibrary.org/obo/UBERON_0000955	brain
+http://purl.obolibrary.org/obo/DOID_3478	iris cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001769	iris
+http://purl.obolibrary.org/obo/DOID_240	iris disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001769	iris
+http://purl.obolibrary.org/obo/DOID_1799	islet cell tumor	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000006	islet of Langerhans
+http://purl.obolibrary.org/obo/DOID_1862	jaw cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001708	jaw skeleton
+http://purl.obolibrary.org/obo/DOID_13499	jejunal cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002115	jejunum
+http://purl.obolibrary.org/obo/DOID_6110	jugular foramen meningioma	http://purl.obolibrary.org/obo/DOID_3565	meningioma	http://purl.obolibrary.org/obo/UBERON_0005456	jugular foramen
+http://purl.obolibrary.org/obo/DOID_3116	kidney benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0002113	kidney
+http://purl.obolibrary.org/obo/DOID_263	kidney cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002113	kidney
+http://purl.obolibrary.org/obo/DOID_557	kidney disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002113	kidney
+http://purl.obolibrary.org/obo/DOID_1243	labia minora cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0004014	labium minora
+http://purl.obolibrary.org/obo/DOID_1400	lacrimal apparatus disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001750	lacrimal apparatus
+http://purl.obolibrary.org/obo/DOID_294	lacrimal gland cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001817	lacrimal gland
+http://purl.obolibrary.org/obo/DOID_292	lacrimal system cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001750	lacrimal apparatus
+http://purl.obolibrary.org/obo/DOID_5672	large intestine cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000059	large intestine
+http://purl.obolibrary.org/obo/DOID_2598	laryngeal benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001737	larynx
+http://purl.obolibrary.org/obo/DOID_13348	laryngeal cartilage cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001739	laryngeal cartilage
+http://purl.obolibrary.org/obo/DOID_786	laryngeal disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001737	larynx
+http://purl.obolibrary.org/obo/DOID_2596	larynx cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001737	larynx
+http://purl.obolibrary.org/obo/DOID_9011	larynx carcinoma in situ	http://purl.obolibrary.org/obo/DOID_8719	in situ carcinoma	http://purl.obolibrary.org/obo/UBERON_0001737	larynx
+http://purl.obolibrary.org/obo/DOID_6115	lateral ventricle meningioma	http://purl.obolibrary.org/obo/DOID_3565	meningioma	http://purl.obolibrary.org/obo/UBERON_0002285	telencephalic ventricle
+http://purl.obolibrary.org/obo/DOID_110	lens disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000965	lens of camera-type eye
+http://purl.obolibrary.org/obo/DOID_12528	lesion of sciatic nerve	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001322	sciatic nerve
+http://purl.obolibrary.org/obo/DOID_9500	leukocyte disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/CL_0000738	leukocyte
+http://purl.obolibrary.org/obo/DOID_8564	lip cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001833	lip
+http://purl.obolibrary.org/obo/DOID_8661	lip carcinoma in situ	http://purl.obolibrary.org/obo/DOID_8719	in situ carcinoma	http://purl.obolibrary.org/obo/UBERON_0001833	lip
+http://purl.obolibrary.org/obo/DOID_9297	lip disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001833	lip
+http://purl.obolibrary.org/obo/DOID_916	liver benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0002107	liver
+http://purl.obolibrary.org/obo/DOID_3571	liver cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002107	liver
+http://purl.obolibrary.org/obo/DOID_9132	liver carcinoma in situ	http://purl.obolibrary.org/obo/DOID_8719	in situ carcinoma	http://purl.obolibrary.org/obo/UBERON_0002107	liver
+http://purl.obolibrary.org/obo/DOID_409	liver disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002107	liver
+http://purl.obolibrary.org/obo/DOID_2775	long bone adamantinoma	http://purl.obolibrary.org/obo/DOID_2776	adamantinoma	http://purl.obolibrary.org/obo/UBERON_0002495	long bone
+http://purl.obolibrary.org/obo/DOID_8883	lower lip cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001835	lower lip
+http://purl.obolibrary.org/obo/DOID_0050161	lower respiratory tract disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001558	lower respiratory tract
+http://purl.obolibrary.org/obo/DOID_3683	lung benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0002048	lung
+http://purl.obolibrary.org/obo/DOID_1324	lung cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002048	lung
+http://purl.obolibrary.org/obo/DOID_8800	lung carcinoma in situ	http://purl.obolibrary.org/obo/DOID_8719	in situ carcinoma	http://purl.obolibrary.org/obo/UBERON_0002048	lung
+http://purl.obolibrary.org/obo/DOID_850	lung disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002048	lung
+http://purl.obolibrary.org/obo/DOID_7696	lung hilum cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0004886	lung hilus
+http://purl.obolibrary.org/obo/DOID_6760	lung lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/UBERON_0002048	lung
+http://purl.obolibrary.org/obo/DOID_5764	lung meningioma	http://purl.obolibrary.org/obo/DOID_3565	meningioma	http://purl.obolibrary.org/obo/UBERON_0002048	lung
+http://purl.obolibrary.org/obo/DOID_10619	lymph node cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000029	lymph node
+http://purl.obolibrary.org/obo/DOID_9942	lymph node disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000029	lymph node
+http://purl.obolibrary.org/obo/DOID_75	lymphatic system disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0006558	lymphatic part of lymphoid system
+http://purl.obolibrary.org/obo/DOID_13819	lymphogranuloma venereum	http://purl.obolibrary.org/obo/DOID_9113	granuloma inguinale	http://purl.obolibrary.org/obo/UBERON_0002391	lymph
+http://purl.obolibrary.org/obo/DOID_3924	main bronchus cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002182	main bronchus
+http://purl.obolibrary.org/obo/DOID_1614	male breast cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0016410	male breast
+http://purl.obolibrary.org/obo/DOID_0060087	male reproductive organ benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000079	male reproductive system
+http://purl.obolibrary.org/obo/DOID_3856	male reproductive organ cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000079	male reproductive system
+http://purl.obolibrary.org/obo/DOID_48	male reproductive system disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000079	male reproductive system
+http://purl.obolibrary.org/obo/DOID_5274	malignant dermis tumor	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002067	dermis
+http://purl.obolibrary.org/obo/DOID_2814	malignant neoplasm of acoustic nerve	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001648	vestibulocochlear nerve
+http://purl.obolibrary.org/obo/DOID_13730	malignant renovascular hypertension	http://purl.obolibrary.org/obo/DOID_13731	malignant secondary hypertension	http://purl.obolibrary.org/obo/UBERON_0002113	kidney
+http://purl.obolibrary.org/obo/DOID_2338	mandibular cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001684	mandible
+http://purl.obolibrary.org/obo/DOID_0050748	marginal zone B-cell lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/CL_0000845	marginal zone B cell
+http://purl.obolibrary.org/obo/DOID_1357	maxillary sinus cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001764	maxillary sinus
+http://purl.obolibrary.org/obo/DOID_867	maxillary sinus cholesteatoma	http://purl.obolibrary.org/obo/DOID_869	cholesteatoma	http://purl.obolibrary.org/obo/UBERON_0001764	maxillary sinus
+http://purl.obolibrary.org/obo/DOID_1358	maxillary sinus neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001764	maxillary sinus
+http://purl.obolibrary.org/obo/DOID_9892	median arcuate ligament syndrome	http://purl.obolibrary.org/obo/DOID_225	syndrome	http://purl.obolibrary.org/obo/UBERON_0015215	median arcuate ligament
+http://purl.obolibrary.org/obo/DOID_5559	mediastinal cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0003728	mediastinum
+http://purl.obolibrary.org/obo/DOID_6868	mediastinal malignant lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/UBERON_0003728	mediastinum
+http://purl.obolibrary.org/obo/DOID_6175	mediastinal neurilemmoma	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0003728	mediastinum
+http://purl.obolibrary.org/obo/DOID_12064	mediastinum neurofibroma	http://purl.obolibrary.org/obo/DOID_962	neurofibroma	http://purl.obolibrary.org/obo/UBERON_0003728	mediastinum
+http://purl.obolibrary.org/obo/DOID_4957	meninges hemangiopericytoma	http://purl.obolibrary.org/obo/DOID_264	hemangiopericytoma	http://purl.obolibrary.org/obo/UBERON_0010743	meningeal cluster
+http://purl.obolibrary.org/obo/DOID_4749	middle cranial fossa meningioma	http://purl.obolibrary.org/obo/DOID_3565	meningioma	http://purl.obolibrary.org/obo/UBERON_0003722	middle cranial fossa
+http://purl.obolibrary.org/obo/DOID_5099	middle ear cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001756	middle ear
+http://purl.obolibrary.org/obo/DOID_5100	middle ear disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001756	middle ear
+http://purl.obolibrary.org/obo/DOID_61	mitral valve disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002135	mitral valve
+http://purl.obolibrary.org/obo/DOID_9473	mononeuritis of lower limb	http://purl.obolibrary.org/obo/DOID_1802	mononeuritis	http://purl.obolibrary.org/obo/UBERON_0002101	limb
+http://purl.obolibrary.org/obo/DOID_231	motor neuron disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/CL_0000100	motor neuron
+http://purl.obolibrary.org/obo/DOID_403	mouth disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000167	oral cavity
+http://purl.obolibrary.org/obo/DOID_9538	multiple myeloma	http://purl.obolibrary.org/obo/DOID_0070004	myeloid neoplasm	http://purl.obolibrary.org/obo/CL_0000786	plasma cell
+http://purl.obolibrary.org/obo/DOID_10264	mumps	http://purl.obolibrary.org/obo/DOID_934	viral infectious disease	http://purl.obolibrary.org/obo/UBERON_0001044	saliva-secreting gland
+http://purl.obolibrary.org/obo/DOID_461	muscle benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0002385	muscle tissue
+http://purl.obolibrary.org/obo/DOID_4045	muscle cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002385	muscle tissue
+http://purl.obolibrary.org/obo/DOID_0080000	muscular disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002385	muscle tissue
+http://purl.obolibrary.org/obo/DOID_0060099	musculoskeletal system benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0002204	musculoskeletal system
+http://purl.obolibrary.org/obo/DOID_0060100	musculoskeletal system cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002204	musculoskeletal system
+http://purl.obolibrary.org/obo/DOID_17	musculoskeletal system disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002204	musculoskeletal system
+http://purl.obolibrary.org/obo/DOID_9299	myocardium cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002349	myocardium
+http://purl.obolibrary.org/obo/DOID_929	myopathy of extraocular muscle	http://purl.obolibrary.org/obo/DOID_423	myopathy	http://purl.obolibrary.org/obo/UBERON_0001601	extra-ocular muscle
+http://purl.obolibrary.org/obo/DOID_4123	nail disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001705	nail
+http://purl.obolibrary.org/obo/DOID_10811	nasal cavity cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001707	nasal cavity
+http://purl.obolibrary.org/obo/DOID_6148	nasal cavity carcinoma in situ	http://purl.obolibrary.org/obo/DOID_8719	in situ carcinoma	http://purl.obolibrary.org/obo/UBERON_0001707	nasal cavity
+http://purl.obolibrary.org/obo/DOID_2163	nasal cavity disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001707	nasal cavity
+http://purl.obolibrary.org/obo/DOID_10813	nasal cavity lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/UBERON_0001707	nasal cavity
+http://purl.obolibrary.org/obo/DOID_9310	nasal cavity neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001707	nasal cavity
+http://purl.obolibrary.org/obo/DOID_10812	nasal cavity olfactory neuroblastoma	http://purl.obolibrary.org/obo/DOID_369	olfactory neuroblastoma	http://purl.obolibrary.org/obo/UBERON_0001707	nasal cavity
+http://purl.obolibrary.org/obo/DOID_9561	nasopharyngeal disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001728	nasopharynx
+http://purl.obolibrary.org/obo/DOID_9261	nasopharynx carcinoma	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001728	nasopharynx
+http://purl.obolibrary.org/obo/DOID_1035	natural killer cell leukemia	http://purl.obolibrary.org/obo/DOID_1240	leukemia	http://purl.obolibrary.org/obo/CL_0000623	natural killer cell
+http://purl.obolibrary.org/obo/DOID_8109	nephrogenic adenoma of the urethra	http://purl.obolibrary.org/obo/DOID_7334	nephrogenic adenoma	http://purl.obolibrary.org/obo/UBERON_0000057	urethra
+http://purl.obolibrary.org/obo/DOID_0060115	nervous system benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001016	nervous system
+http://purl.obolibrary.org/obo/DOID_3093	nervous system cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001016	nervous system
+http://purl.obolibrary.org/obo/DOID_863	nervous system disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001016	nervous system
+http://purl.obolibrary.org/obo/DOID_6564	neurilemmoma of the pleura	http://purl.obolibrary.org/obo/DOID_3192	neurilemmoma	http://purl.obolibrary.org/obo/UBERON_0000977	pleura
+http://purl.obolibrary.org/obo/DOID_5150	neurofibroma of gallbladder	http://purl.obolibrary.org/obo/DOID_962	neurofibroma	http://purl.obolibrary.org/obo/UBERON_0002110	gall bladder
+http://purl.obolibrary.org/obo/DOID_13742	neurofibroma of spinal cord	http://purl.obolibrary.org/obo/DOID_962	neurofibroma	http://purl.obolibrary.org/obo/UBERON_0002240	spinal cord
+http://purl.obolibrary.org/obo/DOID_961	neurofibroma of the esophagus	http://purl.obolibrary.org/obo/DOID_962	neurofibroma	http://purl.obolibrary.org/obo/UBERON_0001043	esophagus
+http://purl.obolibrary.org/obo/DOID_440	neuromuscular disease	http://purl.obolibrary.org/obo/DOID_870	neuropathy	http://purl.obolibrary.org/obo/UBERON_0002204	musculoskeletal system
+http://purl.obolibrary.org/obo/DOID_2825	nose disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000004	nose
+http://purl.obolibrary.org/obo/DOID_910	occipital lobe neoplasm	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002021	occipital lobe
+http://purl.obolibrary.org/obo/DOID_2174	ocular cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000970	eye
+http://purl.obolibrary.org/obo/DOID_1279	ocular motility disease	http://purl.obolibrary.org/obo/DOID_5656	cranial nerve disease	http://purl.obolibrary.org/obo/UBERON_0000970	eye
+http://purl.obolibrary.org/obo/DOID_12581	olecranon bursitis	http://purl.obolibrary.org/obo/DOID_2965	bursitis	http://purl.obolibrary.org/obo/UBERON_0006810	olecranon
+http://purl.obolibrary.org/obo/DOID_8057	olfactory groove meningioma	http://purl.obolibrary.org/obo/DOID_3565	meningioma	http://purl.obolibrary.org/obo/UBERON_0002772	olfactory sulcus
+http://purl.obolibrary.org/obo/DOID_367	olfactory nerve disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001579	olfactory nerve
+http://purl.obolibrary.org/obo/DOID_1891	optic nerve disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000941	cranial nerve II
+http://purl.obolibrary.org/obo/DOID_8618	oral cavity cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000167	oral cavity
+http://purl.obolibrary.org/obo/DOID_0050610	oral cavity carcinoma in situ	http://purl.obolibrary.org/obo/DOID_8719	in situ carcinoma	http://purl.obolibrary.org/obo/UBERON_0000167	oral cavity
+http://purl.obolibrary.org/obo/DOID_930	orbital disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0004088	orbital region
+http://purl.obolibrary.org/obo/DOID_8557	oropharynx cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001729	oropharynx
+http://purl.obolibrary.org/obo/DOID_0060112	ovarian benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000992	ovary
+http://purl.obolibrary.org/obo/DOID_2394	ovarian cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000992	ovary
+http://purl.obolibrary.org/obo/DOID_1100	ovarian disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000992	ovary
+http://purl.obolibrary.org/obo/DOID_6212	ovarian endometrial cancer	http://purl.obolibrary.org/obo/DOID_3001	female reproductive endometrioid cancer	http://purl.obolibrary.org/obo/UBERON_0000992	ovary
+http://purl.obolibrary.org/obo/DOID_3002	ovary neuroendocrine neoplasm	http://purl.obolibrary.org/obo/DOID_169	neuroendocrine tumor	http://purl.obolibrary.org/obo/UBERON_0000992	ovary
+http://purl.obolibrary.org/obo/DOID_26	pancreas disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001264	pancreas
+http://purl.obolibrary.org/obo/DOID_1792	pancreas lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/UBERON_0001264	pancreas
+http://purl.obolibrary.org/obo/DOID_1793	pancreatic cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001264	pancreas
+http://purl.obolibrary.org/obo/DOID_3918	pancreatic cystadenoma	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001264	pancreas
+http://purl.obolibrary.org/obo/DOID_5057	papillary meningioma of the cerebellum	http://purl.obolibrary.org/obo/DOID_5058	rhabdoid meningioma	http://purl.obolibrary.org/obo/UBERON_0002037	cerebellum
+http://purl.obolibrary.org/obo/DOID_11746	parametrium malignant neoplasm	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0010391	parametrium
+http://purl.obolibrary.org/obo/DOID_0050619	paranasal sinus cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001825	paranasal sinus
+http://purl.obolibrary.org/obo/DOID_1352	paranasal sinus disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001825	paranasal sinus
+http://purl.obolibrary.org/obo/DOID_1355	paranasal sinus lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/UBERON_0001825	paranasal sinus
+http://purl.obolibrary.org/obo/DOID_1350	paranasal sinus neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001825	paranasal sinus
+http://purl.obolibrary.org/obo/DOID_11201	parathyroid gland disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001132	parathyroid gland
+http://purl.obolibrary.org/obo/DOID_14059	paraurethral gland cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0010145	paraurethral gland
+http://purl.obolibrary.org/obo/DOID_14384	parietal lobe neoplasm	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001872	parietal lobe
+http://purl.obolibrary.org/obo/DOID_10302	parotid disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001831	parotid gland
+http://purl.obolibrary.org/obo/DOID_9036	parotid gland cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001831	parotid gland
+http://purl.obolibrary.org/obo/DOID_4378	peanut allergy	http://purl.obolibrary.org/obo/DOID_4379	nut allergy	http://purl.obolibrary.org/obo/CL_0002303	pigmented ciliary epithelial cell
+http://purl.obolibrary.org/obo/DOID_11615	penile cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000989	penis
+http://purl.obolibrary.org/obo/DOID_1529	penile disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000989	penis
+http://purl.obolibrary.org/obo/DOID_11624	penile neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000989	penis
+http://purl.obolibrary.org/obo/DOID_8872	penis carcinoma in situ	http://purl.obolibrary.org/obo/DOID_8719	in situ carcinoma	http://purl.obolibrary.org/obo/UBERON_0000989	penis
+http://purl.obolibrary.org/obo/DOID_116	pericardium cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002407	pericardium
+http://purl.obolibrary.org/obo/DOID_0050829	pericardium disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002407	pericardium
+http://purl.obolibrary.org/obo/DOID_222	perichondritis of auricle	http://purl.obolibrary.org/obo/DOID_9463	otitis externa	http://purl.obolibrary.org/obo/UBERON_0001757	pinna
+http://purl.obolibrary.org/obo/DOID_574	peripheral nervous system disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000010	peripheral nervous system
+http://purl.obolibrary.org/obo/DOID_0060117	peritoneal benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0002358	peritoneum
+http://purl.obolibrary.org/obo/DOID_1725	peritoneum cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002358	peritoneum
+http://purl.obolibrary.org/obo/DOID_0060119	pharynx cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0006562	pharynx
+http://purl.obolibrary.org/obo/DOID_0050611	pharynx carcinoma in situ	http://purl.obolibrary.org/obo/DOID_8719	in situ carcinoma	http://purl.obolibrary.org/obo/UBERON_0006562	pharynx
+http://purl.obolibrary.org/obo/DOID_5032	pineal gland cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001905	pineal body
+http://purl.obolibrary.org/obo/DOID_1785	pituitary cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000007	pituitary gland
+http://purl.obolibrary.org/obo/DOID_60009	pituitary gland benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000007	pituitary gland
+http://purl.obolibrary.org/obo/DOID_53	pituitary gland disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000007	pituitary gland
+http://purl.obolibrary.org/obo/DOID_8058	pituitary stalk meningioma	http://purl.obolibrary.org/obo/DOID_3565	meningioma	http://purl.obolibrary.org/obo/UBERON_0002434	pituitary stalk
+http://purl.obolibrary.org/obo/DOID_2021	placenta cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001987	placenta
+http://purl.obolibrary.org/obo/DOID_780	placenta disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001987	placenta
+http://purl.obolibrary.org/obo/DOID_1532	pleural disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000977	pleura
+http://purl.obolibrary.org/obo/DOID_4953	poliomyelitis	http://purl.obolibrary.org/obo/DOID_934	viral infectious disease	http://purl.obolibrary.org/obo/UBERON_0000010	peripheral nervous system
+http://purl.obolibrary.org/obo/DOID_11695	portal vein thrombosis	http://purl.obolibrary.org/obo/DOID_0060903	thrombosis	http://purl.obolibrary.org/obo/UBERON_0002017	portal vein
+http://purl.obolibrary.org/obo/DOID_4211	posterior cranial fossa meningioma	http://purl.obolibrary.org/obo/DOID_3565	meningioma	http://purl.obolibrary.org/obo/UBERON_0008788	posterior cranial fossa
+http://purl.obolibrary.org/obo/DOID_436	posterior mediastinum cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0008822	posterior mediastinum
+http://purl.obolibrary.org/obo/DOID_13168	prepuce cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0011374	prepuce
+http://purl.obolibrary.org/obo/DOID_0050242	primary amebic meningoencephalitis	http://purl.obolibrary.org/obo/DOID_2789	parasitic protozoa infectious disease	http://purl.obolibrary.org/obo/UBERON_0001017	central nervous system
+http://purl.obolibrary.org/obo/DOID_0050639	primary cutaneous amyloidosis	http://purl.obolibrary.org/obo/DOID_9120	amyloidosis	http://purl.obolibrary.org/obo/UBERON_0000014	zone of skin
+http://purl.obolibrary.org/obo/DOID_10283	prostate cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002367	prostate gland
+http://purl.obolibrary.org/obo/DOID_8634	prostate carcinoma in situ	http://purl.obolibrary.org/obo/DOID_8719	in situ carcinoma	http://purl.obolibrary.org/obo/UBERON_0002367	prostate gland
+http://purl.obolibrary.org/obo/DOID_47	prostate disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002367	prostate gland
+http://purl.obolibrary.org/obo/DOID_10290	prostate lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/UBERON_0002367	prostate gland
+http://purl.obolibrary.org/obo/DOID_2992	prostate neuroendocrine neoplasm	http://purl.obolibrary.org/obo/DOID_169	neuroendocrine tumor	http://purl.obolibrary.org/obo/UBERON_0002367	prostate gland
+http://purl.obolibrary.org/obo/DOID_5547	pulmonary artery choriocarcinoma	http://purl.obolibrary.org/obo/DOID_3594	choriocarcinoma	http://purl.obolibrary.org/obo/UBERON_0002012	pulmonary artery
+http://purl.obolibrary.org/obo/DOID_60001	pulmonary artery disease	http://purl.obolibrary.org/obo/DOID_0050828	artery disease	http://purl.obolibrary.org/obo/UBERON_0002048	lung
+http://purl.obolibrary.org/obo/DOID_7389	pulmonary artery leiomyosarcoma	http://purl.obolibrary.org/obo/DOID_1967	leiomyosarcoma	http://purl.obolibrary.org/obo/UBERON_0002012	pulmonary artery
+http://purl.obolibrary.org/obo/DOID_5749	pulmonary valve disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002146	pulmonary valve
+http://purl.obolibrary.org/obo/DOID_7388	pulmonary vein leiomyosarcoma	http://purl.obolibrary.org/obo/DOID_1967	leiomyosarcoma	http://purl.obolibrary.org/obo/UBERON_0002016	pulmonary vein
+http://purl.obolibrary.org/obo/DOID_238	pupil disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001771	pupil
+http://purl.obolibrary.org/obo/DOID_10547	pyloric antrum cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001165	pyloric antrum
+http://purl.obolibrary.org/obo/DOID_10544	pylorus cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001166	pylorus
+http://purl.obolibrary.org/obo/DOID_1993	rectum cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001052	rectum
+http://purl.obolibrary.org/obo/DOID_9174	rectum carcinoma in situ	http://purl.obolibrary.org/obo/DOID_8719	in situ carcinoma	http://purl.obolibrary.org/obo/UBERON_0001052	rectum
+http://purl.obolibrary.org/obo/DOID_1988	rectum lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/UBERON_0001052	rectum
+http://purl.obolibrary.org/obo/DOID_5777	rectum neuroendocrine neoplasm	http://purl.obolibrary.org/obo/DOID_169	neuroendocrine tumor	http://purl.obolibrary.org/obo/UBERON_0001052	rectum
+http://purl.obolibrary.org/obo/DOID_14092	renal artery atheroma	http://purl.obolibrary.org/obo/DOID_1936	atherosclerosis	http://purl.obolibrary.org/obo/UBERON_0001184	renal artery
+http://purl.obolibrary.org/obo/DOID_2388	renal artery disease	http://purl.obolibrary.org/obo/DOID_178	vascular disease	http://purl.obolibrary.org/obo/UBERON_0001184	renal artery
+http://purl.obolibrary.org/obo/DOID_1073	renal hypertension	http://purl.obolibrary.org/obo/DOID_10763	hypertension	http://purl.obolibrary.org/obo/UBERON_0002113	kidney
+http://purl.obolibrary.org/obo/DOID_4919	renal pelvis carcinoma	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001224	renal pelvis
+http://purl.obolibrary.org/obo/DOID_5977	renal pelvis neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001224	renal pelvis
+http://purl.obolibrary.org/obo/DOID_0050622	reproductive organ benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000990	reproductive system
+http://purl.obolibrary.org/obo/DOID_193	reproductive organ cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000990	reproductive system
+http://purl.obolibrary.org/obo/DOID_15	reproductive system disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000990	reproductive system
+http://purl.obolibrary.org/obo/DOID_0060496	respiratory allergy	http://purl.obolibrary.org/obo/DOID_1205	allergic hypersensitivity disease	http://purl.obolibrary.org/obo/UBERON_0000065	respiratory tract
+http://purl.obolibrary.org/obo/DOID_0050621	respiratory system benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001004	respiratory system
+http://purl.obolibrary.org/obo/DOID_0050615	respiratory system cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001004	respiratory system
+http://purl.obolibrary.org/obo/DOID_1579	respiratory system disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001004	respiratory system
+http://purl.obolibrary.org/obo/DOID_4895	rete ovarii neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0010185	rete ovarii
+http://purl.obolibrary.org/obo/DOID_8483	retinal artery occlusion	http://purl.obolibrary.org/obo/DOID_8483	retinal artery occlusion	http://purl.obolibrary.org/obo/UBERON_0001620	central retinal artery
+http://purl.obolibrary.org/obo/DOID_4645	retinal cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000966	retina
+http://purl.obolibrary.org/obo/DOID_771	retinal cell cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/CL_0009004	retinal cell
+http://purl.obolibrary.org/obo/DOID_5679	retinal disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000966	retina
+http://purl.obolibrary.org/obo/DOID_2462	retinal vascular disease	http://purl.obolibrary.org/obo/DOID_178	vascular disease	http://purl.obolibrary.org/obo/UBERON_0000966	retina
+http://purl.obolibrary.org/obo/DOID_11563	retinal vasculitis	http://purl.obolibrary.org/obo/DOID_865	vasculitis	http://purl.obolibrary.org/obo/UBERON_0000966	retina
+http://purl.obolibrary.org/obo/DOID_1727	retinal vein occlusion	http://purl.obolibrary.org/obo/DOID_8483	retinal artery occlusion	http://purl.obolibrary.org/obo/UBERON_0001673	central retinal vein
+http://purl.obolibrary.org/obo/DOID_5875	retroperitoneal cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0003693	retroperitoneal space
+http://purl.obolibrary.org/obo/DOID_1575	rheumatic disease	http://purl.obolibrary.org/obo/DOID_417	autoimmune hypersensitivity disease	http://purl.obolibrary.org/obo/UBERON_0002384	connective tissue
+http://purl.obolibrary.org/obo/DOID_5748	rheumatic pulmonary valve disease	http://purl.obolibrary.org/obo/DOID_1575	rheumatic disease	http://purl.obolibrary.org/obo/UBERON_0002146	pulmonary valve
+http://purl.obolibrary.org/obo/DOID_11748	round ligament malignant neoplasm	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0006589	round ligament of uterus
+http://purl.obolibrary.org/obo/DOID_8850	salivary gland cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001044	saliva-secreting gland
+http://purl.obolibrary.org/obo/DOID_10854	salivary gland disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001044	saliva-secreting gland
+http://purl.obolibrary.org/obo/DOID_6735	schwannoma of jugular foramen	http://purl.obolibrary.org/obo/DOID_3192	neurilemmoma	http://purl.obolibrary.org/obo/UBERON_0005456	jugular foramen
+http://purl.obolibrary.org/obo/DOID_3197	schwannoma of twelfth cranial nerve	http://purl.obolibrary.org/obo/DOID_3192	neurilemmoma	http://purl.obolibrary.org/obo/UBERON_0001650	hypoglossal nerve
+http://purl.obolibrary.org/obo/DOID_11888	schwannoma of ureter	http://purl.obolibrary.org/obo/DOID_3192	neurilemmoma	http://purl.obolibrary.org/obo/UBERON_0000056	ureter
+http://purl.obolibrary.org/obo/DOID_518	scrotum neoplasm	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001300	scrotum
+http://purl.obolibrary.org/obo/DOID_4840	sebaceous carcinoma	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001821	sebaceous gland
+http://purl.obolibrary.org/obo/DOID_9098	sebaceous gland disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001821	sebaceous gland
+http://purl.obolibrary.org/obo/DOID_8941	seborrheic infantile dermatitis	http://purl.obolibrary.org/obo/DOID_8741	seborrheic dermatitis	http://purl.obolibrary.org/obo/UBERON_0000403	scalp
+http://purl.obolibrary.org/obo/DOID_0060096	sensory organ benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001032	sensory system
+http://purl.obolibrary.org/obo/DOID_0060116	sensory system cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001032	sensory system
+http://purl.obolibrary.org/obo/DOID_0050155	sensory system disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001032	sensory system
+http://purl.obolibrary.org/obo/DOID_12385	shigellosis	http://purl.obolibrary.org/obo/DOID_104	bacterial infectious disease	http://purl.obolibrary.org/obo/UBERON_0001155	colon
+http://purl.obolibrary.org/obo/DOID_10303	sialadenitis	http://purl.obolibrary.org/obo/DOID_1602	lymphadenitis	http://purl.obolibrary.org/obo/UBERON_2005036	supraintestinal artery
+http://purl.obolibrary.org/obo/DOID_12192	sigmoid colon cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001159	sigmoid colon
+http://purl.obolibrary.org/obo/DOID_0050824	sinoatrial node disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002351	sinoatrial node
+http://purl.obolibrary.org/obo/DOID_4043	skeletal muscle cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002036	striated muscle tissue
+http://purl.obolibrary.org/obo/DOID_3165	skin benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000014	zone of skin
+http://purl.obolibrary.org/obo/DOID_4159	skin cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000014	zone of skin
+http://purl.obolibrary.org/obo/DOID_8687	skin carcinoma in situ	http://purl.obolibrary.org/obo/DOID_8719	in situ carcinoma	http://purl.obolibrary.org/obo/UBERON_0000014	zone of skin
+http://purl.obolibrary.org/obo/DOID_37	skin disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000014	zone of skin
+http://purl.obolibrary.org/obo/DOID_2435	skin glomangioma	http://purl.obolibrary.org/obo/DOID_2436	glomangioma	http://purl.obolibrary.org/obo/UBERON_0000014	zone of skin
+http://purl.obolibrary.org/obo/DOID_2430	skin glomus tumor	http://purl.obolibrary.org/obo/DOID_2431	glomus tumor	http://purl.obolibrary.org/obo/UBERON_0000014	zone of skin
+http://purl.obolibrary.org/obo/DOID_13402	skin sarcoidosis	http://purl.obolibrary.org/obo/DOID_11335	sarcoidosis	http://purl.obolibrary.org/obo/UBERON_0000014	zone of skin
+http://purl.obolibrary.org/obo/DOID_1863	skull cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0003129	skull
+http://purl.obolibrary.org/obo/DOID_6880	small bowel fibrosarcoma	http://purl.obolibrary.org/obo/DOID_3355	fibrosarcoma	http://purl.obolibrary.org/obo/UBERON_0002108	small intestine
+http://purl.obolibrary.org/obo/DOID_10154	small intestine cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002108	small intestine
+http://purl.obolibrary.org/obo/DOID_11223	small intestine diverticulitis	http://purl.obolibrary.org/obo/DOID_7475	diverticulitis	http://purl.obolibrary.org/obo/UBERON_0002108	small intestine
+http://purl.obolibrary.org/obo/DOID_5271	small intestine leiomyosarcoma	http://purl.obolibrary.org/obo/DOID_1967	leiomyosarcoma	http://purl.obolibrary.org/obo/UBERON_0002108	small intestine
+http://purl.obolibrary.org/obo/DOID_13996	small intestine lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/UBERON_0002108	small intestine
+http://purl.obolibrary.org/obo/DOID_4230	smooth muscle cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001135	smooth muscle tissue
+http://purl.obolibrary.org/obo/DOID_8578	soft palate cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001733	soft palate
+http://purl.obolibrary.org/obo/DOID_3723	solitary plasmacytoma of chest wall	http://purl.obolibrary.org/obo/DOID_3721	plasmacytoma	http://purl.obolibrary.org/obo/UBERON_0016435	chest wall
+http://purl.obolibrary.org/obo/DOID_13169	spermatic cord cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0005352	spermatic cord
+http://purl.obolibrary.org/obo/DOID_14546	sphenoidal sinus cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001724	sphenoidal sinus
+http://purl.obolibrary.org/obo/DOID_6947	sphenoidal sinus neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001724	sphenoidal sinus
+http://purl.obolibrary.org/obo/DOID_5612	spinal cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002240	spinal cord
+http://purl.obolibrary.org/obo/DOID_319	spinal cord disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002240	spinal cord
+http://purl.obolibrary.org/obo/DOID_14150	spinal cord lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/UBERON_0002240	spinal cord
+http://purl.obolibrary.org/obo/DOID_6872	spinal cord primitive neuroectodermal neoplasm	http://purl.obolibrary.org/obo/DOID_171	neuroectodermal tumor	http://purl.obolibrary.org/obo/UBERON_0002240	spinal cord
+http://purl.obolibrary.org/obo/DOID_0060564	spinal disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001130	vertebral column
+http://purl.obolibrary.org/obo/DOID_7224	spinal meninges cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0003292	meninx of spinal cord
+http://purl.obolibrary.org/obo/DOID_1138	spinal meningioma	http://purl.obolibrary.org/obo/DOID_3565	meningioma	http://purl.obolibrary.org/obo/UBERON_0002240	spinal cord
+http://purl.obolibrary.org/obo/DOID_672	spleen cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002106	spleen
+http://purl.obolibrary.org/obo/DOID_14006	splenic artery aneurysm	http://purl.obolibrary.org/obo/DOID_178	vascular disease	http://purl.obolibrary.org/obo/UBERON_0001194	splenic artery
+http://purl.obolibrary.org/obo/DOID_2529	splenic disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002106	spleen
+http://purl.obolibrary.org/obo/DOID_12191	splenic flexure cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0022276	splenic flexure of colon
+http://purl.obolibrary.org/obo/DOID_5090	sternum cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000975	sternum
+http://purl.obolibrary.org/obo/DOID_6762	sternum lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/UBERON_0000975	sternum
+http://purl.obolibrary.org/obo/DOID_10534	stomach cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000945	stomach
+http://purl.obolibrary.org/obo/DOID_9138	stomach carcinoma in situ	http://purl.obolibrary.org/obo/DOID_8719	in situ carcinoma	http://purl.obolibrary.org/obo/UBERON_0000945	stomach
+http://purl.obolibrary.org/obo/DOID_76	stomach disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000945	stomach
+http://purl.obolibrary.org/obo/DOID_342	subclavian artery aneurysm	http://purl.obolibrary.org/obo/DOID_178	vascular disease	http://purl.obolibrary.org/obo/UBERON_0001533	subclavian artery
+http://purl.obolibrary.org/obo/DOID_11472	subglottis cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0036068	subglottis
+http://purl.obolibrary.org/obo/DOID_8849	sublingual gland cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001832	sublingual gland
+http://purl.obolibrary.org/obo/DOID_9173	submandibular gland cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001736	submandibular gland
+http://purl.obolibrary.org/obo/DOID_12897	submandibular gland disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001736	submandibular gland
+http://purl.obolibrary.org/obo/DOID_3557	superior mesenteric artery syndrome	http://purl.obolibrary.org/obo/DOID_225	syndrome	http://purl.obolibrary.org/obo/UBERON_0001182	superior mesenteric artery
+http://purl.obolibrary.org/obo/DOID_13476	supraglottis cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0036263	supraglottic part of larynx
+http://purl.obolibrary.org/obo/DOID_2095	sweat gland cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001820	sweat gland
+http://purl.obolibrary.org/obo/DOID_1383	sweat gland disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001820	sweat gland
+http://purl.obolibrary.org/obo/DOID_2664	sweat gland neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001820	sweat gland
+http://purl.obolibrary.org/obo/DOID_2706	synovium cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0007616	layer of synovial tissue
+http://purl.obolibrary.org/obo/DOID_3328	temporal lobe epilepsy	http://purl.obolibrary.org/obo/DOID_1826	epilepsy	http://purl.obolibrary.org/obo/UBERON_0001871	temporal lobe
+http://purl.obolibrary.org/obo/DOID_2135	temporal lobe neoplasm	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001871	temporal lobe
+http://purl.obolibrary.org/obo/DOID_314	tenosynovial giant cell tumor	http://purl.obolibrary.org/obo/DOID_200	giant cell tumor	http://purl.obolibrary.org/obo/UBERON_0000304	tendon sheath
+http://purl.obolibrary.org/obo/DOID_2998	testicular cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000473	testis
+http://purl.obolibrary.org/obo/DOID_2519	testicular disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000473	testis
+http://purl.obolibrary.org/obo/DOID_4757	testicular sex cord-stromal neoplasm	http://purl.obolibrary.org/obo/DOID_192	sex cord-gonadal stromal tumor	http://purl.obolibrary.org/obo/UBERON_0000473	testis
+http://purl.obolibrary.org/obo/DOID_562	third cranial nerve disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001643	oculomotor nerve
+http://purl.obolibrary.org/obo/DOID_0060097	thoracic benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000915	thoracic segment of trunk
+http://purl.obolibrary.org/obo/DOID_5093	thoracic cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000915	thoracic segment of trunk
+http://purl.obolibrary.org/obo/DOID_0060118	thoracic disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000915	thoracic segment of trunk
+http://purl.obolibrary.org/obo/DOID_3277	thymus cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002370	thymus
+http://purl.obolibrary.org/obo/DOID_533	thymus gland disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002370	thymus
+http://purl.obolibrary.org/obo/DOID_10146	thymus lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/UBERON_0002370	thymus
+http://purl.obolibrary.org/obo/DOID_1781	thyroid cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002046	thyroid gland
+http://purl.obolibrary.org/obo/DOID_50	thyroid gland disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002046	thyroid gland
+http://purl.obolibrary.org/obo/DOID_10011	thyroid lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/UBERON_0002046	thyroid gland
+http://purl.obolibrary.org/obo/DOID_12529	tibial nerve palsy	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001323	tibial nerve
+http://purl.obolibrary.org/obo/DOID_10810	tibialis tendinitis	http://purl.obolibrary.org/obo/DOID_971	tendinitis	http://purl.obolibrary.org/obo/UBERON_0008230	tibialis
+http://purl.obolibrary.org/obo/DOID_8649	tongue cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001723	tongue
+http://purl.obolibrary.org/obo/DOID_10944	tongue disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001723	tongue
+http://purl.obolibrary.org/obo/DOID_8858	tonsil cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002372	tonsil
+http://purl.obolibrary.org/obo/DOID_12661	tooth ankylosis	http://purl.obolibrary.org/obo/DOID_227	ankylosis	http://purl.obolibrary.org/obo/UBERON_0001091	calcareous tooth
+http://purl.obolibrary.org/obo/DOID_1091	tooth disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001091	calcareous tooth
+http://purl.obolibrary.org/obo/DOID_8802	trachea carcinoma in situ	http://purl.obolibrary.org/obo/DOID_8719	in situ carcinoma	http://purl.obolibrary.org/obo/UBERON_0003126	trachea
+http://purl.obolibrary.org/obo/DOID_11920	tracheal cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0003126	trachea
+http://purl.obolibrary.org/obo/DOID_3225	tracheal disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0003126	trachea
+http://purl.obolibrary.org/obo/DOID_12001	tracheal lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/UBERON_0003126	trachea
+http://purl.obolibrary.org/obo/DOID_261	transverse colon cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001157	transverse colon
+http://purl.obolibrary.org/obo/DOID_0050826	tricuspid valve disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002134	tricuspid valve
+http://purl.obolibrary.org/obo/DOID_561	trigeminal nerve disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001645	trigeminal nerve
+http://purl.obolibrary.org/obo/DOID_13864	trochlear nerve disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001644	trochlear nerve
+http://purl.obolibrary.org/obo/DOID_5782	tympanic membrane disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0002364	tympanic membrane
+http://purl.obolibrary.org/obo/DOID_8630	upper lip cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001834	upper lip
+http://purl.obolibrary.org/obo/DOID_974	upper respiratory tract disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001557	upper respiratory tract
+http://purl.obolibrary.org/obo/DOID_11817	urachus cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0002068	urachus
+http://purl.obolibrary.org/obo/DOID_11819	ureter cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000056	ureter
+http://purl.obolibrary.org/obo/DOID_11885	ureteral benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000056	ureter
+http://purl.obolibrary.org/obo/DOID_1426	ureteral disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000056	ureter
+http://purl.obolibrary.org/obo/DOID_14489	ureteral lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma	http://purl.obolibrary.org/obo/UBERON_0000056	ureter
+http://purl.obolibrary.org/obo/DOID_11818	ureteric orifice cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0012303	ureteral orifice
+http://purl.obolibrary.org/obo/DOID_734	urethra cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000057	urethra
+http://purl.obolibrary.org/obo/DOID_730	urethral benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000057	urethra
+http://purl.obolibrary.org/obo/DOID_732	urethral disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000057	urethra
+http://purl.obolibrary.org/obo/DOID_11054	urinary bladder cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001255	urinary bladder
+http://purl.obolibrary.org/obo/DOID_731	urinary system benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001008	renal system
+http://purl.obolibrary.org/obo/DOID_3996	urinary system cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001008	renal system
+http://purl.obolibrary.org/obo/DOID_18	urinary system disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001008	renal system
+http://purl.obolibrary.org/obo/DOID_0060095	uterine benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000995	uterus
+http://purl.obolibrary.org/obo/DOID_363	uterine cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000995	uterus
+http://purl.obolibrary.org/obo/DOID_9460	uterine corpus cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0009853	body of uterus
+http://purl.obolibrary.org/obo/DOID_8188	uterine corpus choriocarcinoma	http://purl.obolibrary.org/obo/DOID_3594	choriocarcinoma	http://purl.obolibrary.org/obo/UBERON_0009853	body of uterus
+http://purl.obolibrary.org/obo/DOID_345	uterine disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000995	uterus
+http://purl.obolibrary.org/obo/DOID_9108	uterus carcinoma in situ	http://purl.obolibrary.org/obo/DOID_8719	in situ carcinoma	http://purl.obolibrary.org/obo/UBERON_0000995	uterus
+http://purl.obolibrary.org/obo/DOID_7437	uterus perivascular epithelioid cell tumor	http://purl.obolibrary.org/obo/DOID_2643	perivascular epithelioid cell tumor	http://purl.obolibrary.org/obo/UBERON_0009853	body of uterus
+http://purl.obolibrary.org/obo/DOID_3479	uveal cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001768	uvea
+http://purl.obolibrary.org/obo/DOID_3480	uveal disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001768	uvea
+http://purl.obolibrary.org/obo/DOID_8635	uvula cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0001734	palatine uvula
+http://purl.obolibrary.org/obo/DOID_6788	vagina botryoid rhabdomyosarcoma	http://purl.obolibrary.org/obo/DOID_3255	botryoid rhabdomyosarcoma	http://purl.obolibrary.org/obo/UBERON_0000996	vagina
+http://purl.obolibrary.org/obo/DOID_0060114	vaginal benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000996	vagina
+http://purl.obolibrary.org/obo/DOID_119	vaginal cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000996	vagina
+http://purl.obolibrary.org/obo/DOID_121	vaginal disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000996	vagina
+http://purl.obolibrary.org/obo/DOID_175	vascular cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0007798	vascular system
+http://purl.obolibrary.org/obo/DOID_866	vein disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001638	vein
+http://purl.obolibrary.org/obo/DOID_1657	ventricular septal defect	http://purl.obolibrary.org/obo/DOID_114	heart disease	http://purl.obolibrary.org/obo/UBERON_0002094	interventricular septum
+http://purl.obolibrary.org/obo/DOID_5769	verruciform xanthoma of skin	http://purl.obolibrary.org/obo/DOID_3345	xanthomatosis	http://purl.obolibrary.org/obo/UBERON_0000014	zone of skin
+http://purl.obolibrary.org/obo/DOID_13095	vertebral artery insufficiency	http://purl.obolibrary.org/obo/DOID_225	syndrome	http://purl.obolibrary.org/obo/UBERON_0001535	vertebral artery
+http://purl.obolibrary.org/obo/DOID_11299	vertebral artery occlusion	http://purl.obolibrary.org/obo/DOID_5976	occlusion precerebral artery	http://purl.obolibrary.org/obo/UBERON_0001535	vertebral artery
+http://purl.obolibrary.org/obo/DOID_3426	vestibular disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0004681	vestibular system
+http://purl.obolibrary.org/obo/DOID_0060088	vestibular gland benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0011826	vestibular gland
+http://purl.obolibrary.org/obo/DOID_12657	vestibulocochlear nerve disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001648	vestibulocochlear nerve
+http://purl.obolibrary.org/obo/DOID_5691	visual cortex disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000411	visual cortex
+http://purl.obolibrary.org/obo/DOID_1393	visual pathway disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001908	optic tract
+http://purl.obolibrary.org/obo/DOID_9720	vitreous disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0001797	vitreous humor
+http://purl.obolibrary.org/obo/DOID_1245	vulva cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/UBERON_0000997	mammalian vulva
+http://purl.obolibrary.org/obo/DOID_0060109	vulvar benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000997	mammalian vulva
+http://purl.obolibrary.org/obo/DOID_2059	vulvar disease	http://purl.obolibrary.org/obo/DOID_4	disease	http://purl.obolibrary.org/obo/UBERON_0000997	mammalian vulva

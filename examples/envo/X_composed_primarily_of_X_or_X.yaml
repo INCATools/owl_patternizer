@@ -8,6 +8,7 @@ description: >-
   Examples: [glacial feature](http://purl.obolibrary.org/obo/ENVO_00000131), [terrestrial planet](http://purl.obolibrary.org/obo/ENVO_01000958), [fluid astronomical body part](http://purl.obolibrary.org/obo/ENVO_01001479) (4 total)
 
 classes: 
+  material entity: "BFO:0000040"
   environmental material: "ENVO:00010483"
 
 

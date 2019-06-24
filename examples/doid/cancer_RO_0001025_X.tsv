@@ -1,0 +1,186 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/DOID_60003	Bartholin's gland cancer	http://purl.obolibrary.org/obo/UBERON_0000460	major vestibular gland
+http://purl.obolibrary.org/obo/DOID_8937	Waldeyer's ring cancer	http://purl.obolibrary.org/obo/UBERON_0001735	tonsillar ring
+http://purl.obolibrary.org/obo/DOID_660	adrenal cortex cancer	http://purl.obolibrary.org/obo/UBERON_0001235	adrenal cortex
+http://purl.obolibrary.org/obo/DOID_3953	adrenal gland cancer	http://purl.obolibrary.org/obo/UBERON_0002369	adrenal gland
+http://purl.obolibrary.org/obo/DOID_5719	adrenal medulla cancer	http://purl.obolibrary.org/obo/UBERON_0001236	adrenal medulla
+http://purl.obolibrary.org/obo/DOID_10020	ampulla of Vater cancer	http://purl.obolibrary.org/obo/UBERON_0004913	hepatopancreatic ampulla
+http://purl.obolibrary.org/obo/DOID_0050688	anal canal cancer	http://purl.obolibrary.org/obo/UBERON_0000159	anal canal
+http://purl.obolibrary.org/obo/DOID_14110	anus cancer	http://purl.obolibrary.org/obo/UBERON_0001245	anus
+http://purl.obolibrary.org/obo/DOID_4934	apocrine sweat gland cancer	http://purl.obolibrary.org/obo/UBERON_0000382	apocrine sweat gland
+http://purl.obolibrary.org/obo/DOID_11239	appendix cancer	http://purl.obolibrary.org/obo/UBERON_0001154	vermiform appendix
+http://purl.obolibrary.org/obo/DOID_8663	aryepiglottic fold cancer	http://purl.obolibrary.org/obo/UBERON_0014385	aryepiglottic fold
+http://purl.obolibrary.org/obo/DOID_218	ascending colon cancer	http://purl.obolibrary.org/obo/UBERON_0001156	ascending colon
+http://purl.obolibrary.org/obo/DOID_833	auditory system cancer	http://purl.obolibrary.org/obo/UBERON_0016490	auditory system
+http://purl.obolibrary.org/obo/DOID_4606	bile duct cancer	http://purl.obolibrary.org/obo/UBERON_0002394	bile duct
+http://purl.obolibrary.org/obo/DOID_11809	bladder neck cancer	http://purl.obolibrary.org/obo/UBERON_0001258	neck of urinary bladder
+http://purl.obolibrary.org/obo/DOID_11813	bladder trigone cancer	http://purl.obolibrary.org/obo/UBERON_0001257	trigone of urinary bladder
+http://purl.obolibrary.org/obo/DOID_184	bone cancer	http://purl.obolibrary.org/obo/UBERON_0001474	bone element
+http://purl.obolibrary.org/obo/DOID_4960	bone marrow cancer	http://purl.obolibrary.org/obo/UBERON_0002371	bone marrow
+http://purl.obolibrary.org/obo/DOID_1319	brain cancer	http://purl.obolibrary.org/obo/UBERON_0000955	brain
+http://purl.obolibrary.org/obo/DOID_4203	brain stem cancer	http://purl.obolibrary.org/obo/UBERON_0002298	brainstem
+http://purl.obolibrary.org/obo/DOID_1612	breast cancer	http://purl.obolibrary.org/obo/UBERON_0000310	breast
+http://purl.obolibrary.org/obo/DOID_10744	broad ligament malignant neoplasm	http://purl.obolibrary.org/obo/UBERON_0012332	broad ligament of uterus
+http://purl.obolibrary.org/obo/DOID_10548	cardia cancer	http://purl.obolibrary.org/obo/UBERON_0001162	cardia of stomach
+http://purl.obolibrary.org/obo/DOID_176	cardiovascular cancer	http://purl.obolibrary.org/obo/UBERON_0004535	cardiovascular system
+http://purl.obolibrary.org/obo/DOID_8731	carotid body cancer	http://purl.obolibrary.org/obo/UBERON_0001629	carotid body
+http://purl.obolibrary.org/obo/DOID_0060102	cartilage cancer	http://purl.obolibrary.org/obo/UBERON_0002418	cartilage tissue
+http://purl.obolibrary.org/obo/DOID_1521	cecum cancer	http://purl.obolibrary.org/obo/UBERON_0001153	caecum
+http://purl.obolibrary.org/obo/DOID_3620	central nervous system cancer	http://purl.obolibrary.org/obo/UBERON_0001017	central nervous system
+http://purl.obolibrary.org/obo/DOID_4205	cerebellum cancer	http://purl.obolibrary.org/obo/UBERON_0002037	cerebellum
+http://purl.obolibrary.org/obo/DOID_3541	cerebral ventricle cancer	http://purl.obolibrary.org/obo/UBERON_0004086	brain ventricle
+http://purl.obolibrary.org/obo/DOID_368	cerebrum cancer	http://purl.obolibrary.org/obo/UBERON_0001893	telencephalon
+http://purl.obolibrary.org/obo/DOID_4362	cervical cancer	http://purl.obolibrary.org/obo/UBERON_0000002	uterine cervix
+http://purl.obolibrary.org/obo/DOID_8702	cheek mucosa cancer	http://purl.obolibrary.org/obo/UBERON_0006956	buccal mucosa
+http://purl.obolibrary.org/obo/DOID_6758	chest wall lymphoma	http://purl.obolibrary.org/obo/UBERON_0016435	chest wall
+http://purl.obolibrary.org/obo/DOID_12759	choroid cancer	http://purl.obolibrary.org/obo/UBERON_0001776	optic choroid
+http://purl.obolibrary.org/obo/DOID_3540	choroid plexus cancer	http://purl.obolibrary.org/obo/UBERON_0001886	choroid plexus
+http://purl.obolibrary.org/obo/DOID_4352	ciliary body cancer	http://purl.obolibrary.org/obo/UBERON_0001775	ciliary body
+http://purl.obolibrary.org/obo/DOID_2401	clitoris cancer	http://purl.obolibrary.org/obo/UBERON_0002411	clitoris
+http://purl.obolibrary.org/obo/DOID_219	colon cancer	http://purl.obolibrary.org/obo/UBERON_0001155	colon
+http://purl.obolibrary.org/obo/DOID_5467	conjunctival cancer	http://purl.obolibrary.org/obo/UBERON_0001811	conjunctiva
+http://purl.obolibrary.org/obo/DOID_201	connective tissue cancer	http://purl.obolibrary.org/obo/UBERON_0002384	connective tissue
+http://purl.obolibrary.org/obo/DOID_6199	cornea cancer	http://purl.obolibrary.org/obo/UBERON_0000964	cornea
+http://purl.obolibrary.org/obo/DOID_338	cranial nerve neoplasm	http://purl.obolibrary.org/obo/UBERON_0001785	cranial nerve
+http://purl.obolibrary.org/obo/DOID_12190	descending colon cancer	http://purl.obolibrary.org/obo/UBERON_0001158	descending colon
+http://purl.obolibrary.org/obo/DOID_10021	duodenum cancer	http://purl.obolibrary.org/obo/UBERON_0002114	duodenum
+http://purl.obolibrary.org/obo/DOID_4921	eccrine sweat gland cancer	http://purl.obolibrary.org/obo/UBERON_0000423	eccrine sweat gland
+http://purl.obolibrary.org/obo/DOID_5877	endocardium cancer	http://purl.obolibrary.org/obo/UBERON_0002165	endocardium
+http://purl.obolibrary.org/obo/DOID_170	endocrine gland cancer	http://purl.obolibrary.org/obo/UBERON_0002368	endocrine gland
+http://purl.obolibrary.org/obo/DOID_1380	endometrial cancer	http://purl.obolibrary.org/obo/UBERON_0001295	endometrium
+http://purl.obolibrary.org/obo/DOID_4699	epicardium cancer	http://purl.obolibrary.org/obo/UBERON_0002348	epicardium
+http://purl.obolibrary.org/obo/DOID_10366	epididymis cancer	http://purl.obolibrary.org/obo/UBERON_0001301	epididymis
+http://purl.obolibrary.org/obo/DOID_8133	epiglottis cancer	http://purl.obolibrary.org/obo/UBERON_0000388	epiglottis
+http://purl.obolibrary.org/obo/DOID_5041	esophageal cancer	http://purl.obolibrary.org/obo/UBERON_0001043	esophagus
+http://purl.obolibrary.org/obo/DOID_1363	ethmoid sinus cancer	http://purl.obolibrary.org/obo/UBERON_0002453	ethmoid sinus
+http://purl.obolibrary.org/obo/DOID_5665	external ear cancer	http://purl.obolibrary.org/obo/UBERON_0001691	external ear
+http://purl.obolibrary.org/obo/DOID_4682	extrahepatic bile duct carcinoma	http://purl.obolibrary.org/obo/UBERON_0003703	extrahepatic bile duct
+http://purl.obolibrary.org/obo/DOID_1964	fallopian tube cancer	http://purl.obolibrary.org/obo/UBERON_0003889	fallopian tube
+http://purl.obolibrary.org/obo/DOID_120	female reproductive organ cancer	http://purl.obolibrary.org/obo/UBERON_0000474	female reproductive system
+http://purl.obolibrary.org/obo/DOID_12016	frontal lobe neoplasm	http://purl.obolibrary.org/obo/UBERON_0016525	frontal lobe
+http://purl.obolibrary.org/obo/DOID_1360	frontal sinus cancer	http://purl.obolibrary.org/obo/UBERON_0001760	frontal sinus
+http://purl.obolibrary.org/obo/DOID_3121	gallbladder cancer	http://purl.obolibrary.org/obo/UBERON_0002110	gall bladder
+http://purl.obolibrary.org/obo/DOID_10538	gastric fundus cancer	http://purl.obolibrary.org/obo/UBERON_0001160	fundus of stomach
+http://purl.obolibrary.org/obo/DOID_3119	gastrointestinal system cancer	http://purl.obolibrary.org/obo/UBERON_0001007	digestive system
+http://purl.obolibrary.org/obo/DOID_11839	glans penis cancer	http://purl.obolibrary.org/obo/UBERON_0001299	glans penis
+http://purl.obolibrary.org/obo/DOID_2595	glottis cancer	http://purl.obolibrary.org/obo/UBERON_0002486	glottis
+http://purl.obolibrary.org/obo/DOID_8602	gum cancer	http://purl.obolibrary.org/obo/UBERON_0001828	gingiva
+http://purl.obolibrary.org/obo/DOID_9149	hard palate cancer	http://purl.obolibrary.org/obo/UBERON_0003216	hard palate
+http://purl.obolibrary.org/obo/DOID_117	heart cancer	http://purl.obolibrary.org/obo/UBERON_0000948	heart
+http://purl.obolibrary.org/obo/DOID_2531	hematologic cancer	http://purl.obolibrary.org/obo/UBERON_0002390	hematopoietic system
+http://purl.obolibrary.org/obo/DOID_260	hepatic flexure cancer	http://purl.obolibrary.org/obo/UBERON_0022277	hepatic flexure of colon
+http://purl.obolibrary.org/obo/DOID_10153	ileum cancer	http://purl.obolibrary.org/obo/UBERON_0002116	ileum
+http://purl.obolibrary.org/obo/DOID_5102	inner ear cancer	http://purl.obolibrary.org/obo/UBERON_0001846	internal ear
+http://purl.obolibrary.org/obo/DOID_0060122	integumentary system cancer	http://purl.obolibrary.org/obo/UBERON_0002416	integumental system
+http://purl.obolibrary.org/obo/DOID_10155	intestinal cancer	http://purl.obolibrary.org/obo/UBERON_0000160	intestine
+http://purl.obolibrary.org/obo/DOID_3478	iris cancer	http://purl.obolibrary.org/obo/UBERON_0001769	iris
+http://purl.obolibrary.org/obo/DOID_1799	islet cell tumor	http://purl.obolibrary.org/obo/UBERON_0000006	islet of Langerhans
+http://purl.obolibrary.org/obo/DOID_1862	jaw cancer	http://purl.obolibrary.org/obo/UBERON_0001708	jaw skeleton
+http://purl.obolibrary.org/obo/DOID_13499	jejunal cancer	http://purl.obolibrary.org/obo/UBERON_0002115	jejunum
+http://purl.obolibrary.org/obo/DOID_263	kidney cancer	http://purl.obolibrary.org/obo/UBERON_0002113	kidney
+http://purl.obolibrary.org/obo/DOID_1243	labia minora cancer	http://purl.obolibrary.org/obo/UBERON_0004014	labium minora
+http://purl.obolibrary.org/obo/DOID_294	lacrimal gland cancer	http://purl.obolibrary.org/obo/UBERON_0001817	lacrimal gland
+http://purl.obolibrary.org/obo/DOID_292	lacrimal system cancer	http://purl.obolibrary.org/obo/UBERON_0001750	lacrimal apparatus
+http://purl.obolibrary.org/obo/DOID_5672	large intestine cancer	http://purl.obolibrary.org/obo/UBERON_0000059	large intestine
+http://purl.obolibrary.org/obo/DOID_13348	laryngeal cartilage cancer	http://purl.obolibrary.org/obo/UBERON_0001739	laryngeal cartilage
+http://purl.obolibrary.org/obo/DOID_2596	larynx cancer	http://purl.obolibrary.org/obo/UBERON_0001737	larynx
+http://purl.obolibrary.org/obo/DOID_8564	lip cancer	http://purl.obolibrary.org/obo/UBERON_0001833	lip
+http://purl.obolibrary.org/obo/DOID_3571	liver cancer	http://purl.obolibrary.org/obo/UBERON_0002107	liver
+http://purl.obolibrary.org/obo/DOID_8883	lower lip cancer	http://purl.obolibrary.org/obo/UBERON_0001835	lower lip
+http://purl.obolibrary.org/obo/DOID_1324	lung cancer	http://purl.obolibrary.org/obo/UBERON_0002048	lung
+http://purl.obolibrary.org/obo/DOID_7696	lung hilum cancer	http://purl.obolibrary.org/obo/UBERON_0004886	lung hilus
+http://purl.obolibrary.org/obo/DOID_10619	lymph node cancer	http://purl.obolibrary.org/obo/UBERON_0000029	lymph node
+http://purl.obolibrary.org/obo/DOID_3924	main bronchus cancer	http://purl.obolibrary.org/obo/UBERON_0002182	main bronchus
+http://purl.obolibrary.org/obo/DOID_1614	male breast cancer	http://purl.obolibrary.org/obo/UBERON_0016410	male breast
+http://purl.obolibrary.org/obo/DOID_3856	male reproductive organ cancer	http://purl.obolibrary.org/obo/UBERON_0000079	male reproductive system
+http://purl.obolibrary.org/obo/DOID_5274	malignant dermis tumor	http://purl.obolibrary.org/obo/UBERON_0002067	dermis
+http://purl.obolibrary.org/obo/DOID_2814	malignant neoplasm of acoustic nerve	http://purl.obolibrary.org/obo/UBERON_0001648	vestibulocochlear nerve
+http://purl.obolibrary.org/obo/DOID_2338	mandibular cancer	http://purl.obolibrary.org/obo/UBERON_0001684	mandible
+http://purl.obolibrary.org/obo/DOID_1357	maxillary sinus cancer	http://purl.obolibrary.org/obo/UBERON_0001764	maxillary sinus
+http://purl.obolibrary.org/obo/DOID_5559	mediastinal cancer	http://purl.obolibrary.org/obo/UBERON_0003728	mediastinum
+http://purl.obolibrary.org/obo/DOID_5099	middle ear cancer	http://purl.obolibrary.org/obo/UBERON_0001756	middle ear
+http://purl.obolibrary.org/obo/DOID_4045	muscle cancer	http://purl.obolibrary.org/obo/UBERON_0002385	muscle tissue
+http://purl.obolibrary.org/obo/DOID_0060100	musculoskeletal system cancer	http://purl.obolibrary.org/obo/UBERON_0002204	musculoskeletal system
+http://purl.obolibrary.org/obo/DOID_9299	myocardium cancer	http://purl.obolibrary.org/obo/UBERON_0002349	myocardium
+http://purl.obolibrary.org/obo/DOID_10811	nasal cavity cancer	http://purl.obolibrary.org/obo/UBERON_0001707	nasal cavity
+http://purl.obolibrary.org/obo/DOID_9261	nasopharynx carcinoma	http://purl.obolibrary.org/obo/UBERON_0001728	nasopharynx
+http://purl.obolibrary.org/obo/DOID_3093	nervous system cancer	http://purl.obolibrary.org/obo/UBERON_0001016	nervous system
+http://purl.obolibrary.org/obo/DOID_910	occipital lobe neoplasm	http://purl.obolibrary.org/obo/UBERON_0002021	occipital lobe
+http://purl.obolibrary.org/obo/DOID_2174	ocular cancer	http://purl.obolibrary.org/obo/UBERON_0000970	eye
+http://purl.obolibrary.org/obo/DOID_8618	oral cavity cancer	http://purl.obolibrary.org/obo/UBERON_0000167	oral cavity
+http://purl.obolibrary.org/obo/DOID_8557	oropharynx cancer	http://purl.obolibrary.org/obo/UBERON_0001729	oropharynx
+http://purl.obolibrary.org/obo/DOID_2394	ovarian cancer	http://purl.obolibrary.org/obo/UBERON_0000992	ovary
+http://purl.obolibrary.org/obo/DOID_1793	pancreatic cancer	http://purl.obolibrary.org/obo/UBERON_0001264	pancreas
+http://purl.obolibrary.org/obo/DOID_11746	parametrium malignant neoplasm	http://purl.obolibrary.org/obo/UBERON_0010391	parametrium
+http://purl.obolibrary.org/obo/DOID_0050619	paranasal sinus cancer	http://purl.obolibrary.org/obo/UBERON_0001825	paranasal sinus
+http://purl.obolibrary.org/obo/DOID_14059	paraurethral gland cancer	http://purl.obolibrary.org/obo/UBERON_0010145	paraurethral gland
+http://purl.obolibrary.org/obo/DOID_14384	parietal lobe neoplasm	http://purl.obolibrary.org/obo/UBERON_0001872	parietal lobe
+http://purl.obolibrary.org/obo/DOID_9036	parotid gland cancer	http://purl.obolibrary.org/obo/UBERON_0001831	parotid gland
+http://purl.obolibrary.org/obo/DOID_11615	penile cancer	http://purl.obolibrary.org/obo/UBERON_0000989	penis
+http://purl.obolibrary.org/obo/DOID_116	pericardium cancer	http://purl.obolibrary.org/obo/UBERON_0002407	pericardium
+http://purl.obolibrary.org/obo/DOID_1725	peritoneum cancer	http://purl.obolibrary.org/obo/UBERON_0002358	peritoneum
+http://purl.obolibrary.org/obo/DOID_0060119	pharynx cancer	http://purl.obolibrary.org/obo/UBERON_0006562	pharynx
+http://purl.obolibrary.org/obo/DOID_5032	pineal gland cancer	http://purl.obolibrary.org/obo/UBERON_0001905	pineal body
+http://purl.obolibrary.org/obo/DOID_1785	pituitary cancer	http://purl.obolibrary.org/obo/UBERON_0000007	pituitary gland
+http://purl.obolibrary.org/obo/DOID_2021	placenta cancer	http://purl.obolibrary.org/obo/UBERON_0001987	placenta
+http://purl.obolibrary.org/obo/DOID_436	posterior mediastinum cancer	http://purl.obolibrary.org/obo/UBERON_0008822	posterior mediastinum
+http://purl.obolibrary.org/obo/DOID_13168	prepuce cancer	http://purl.obolibrary.org/obo/UBERON_0011374	prepuce
+http://purl.obolibrary.org/obo/DOID_10283	prostate cancer	http://purl.obolibrary.org/obo/UBERON_0002367	prostate gland
+http://purl.obolibrary.org/obo/DOID_10547	pyloric antrum cancer	http://purl.obolibrary.org/obo/UBERON_0001165	pyloric antrum
+http://purl.obolibrary.org/obo/DOID_10544	pylorus cancer	http://purl.obolibrary.org/obo/UBERON_0001166	pylorus
+http://purl.obolibrary.org/obo/DOID_1993	rectum cancer	http://purl.obolibrary.org/obo/UBERON_0001052	rectum
+http://purl.obolibrary.org/obo/DOID_4919	renal pelvis carcinoma	http://purl.obolibrary.org/obo/UBERON_0001224	renal pelvis
+http://purl.obolibrary.org/obo/DOID_193	reproductive organ cancer	http://purl.obolibrary.org/obo/UBERON_0000990	reproductive system
+http://purl.obolibrary.org/obo/DOID_0050615	respiratory system cancer	http://purl.obolibrary.org/obo/UBERON_0001004	respiratory system
+http://purl.obolibrary.org/obo/DOID_4645	retinal cancer	http://purl.obolibrary.org/obo/UBERON_0000966	retina
+http://purl.obolibrary.org/obo/DOID_771	retinal cell cancer	http://purl.obolibrary.org/obo/CL_0009004	retinal cell
+http://purl.obolibrary.org/obo/DOID_5875	retroperitoneal cancer	http://purl.obolibrary.org/obo/UBERON_0003693	retroperitoneal space
+http://purl.obolibrary.org/obo/DOID_11748	round ligament malignant neoplasm	http://purl.obolibrary.org/obo/UBERON_0006589	round ligament of uterus
+http://purl.obolibrary.org/obo/DOID_8850	salivary gland cancer	http://purl.obolibrary.org/obo/UBERON_0001044	saliva-secreting gland
+http://purl.obolibrary.org/obo/DOID_518	scrotum neoplasm	http://purl.obolibrary.org/obo/UBERON_0001300	scrotum
+http://purl.obolibrary.org/obo/DOID_4840	sebaceous carcinoma	http://purl.obolibrary.org/obo/UBERON_0001821	sebaceous gland
+http://purl.obolibrary.org/obo/DOID_0060116	sensory system cancer	http://purl.obolibrary.org/obo/UBERON_0001032	sensory system
+http://purl.obolibrary.org/obo/DOID_12192	sigmoid colon cancer	http://purl.obolibrary.org/obo/UBERON_0001159	sigmoid colon
+http://purl.obolibrary.org/obo/DOID_4043	skeletal muscle cancer	http://purl.obolibrary.org/obo/UBERON_0002036	striated muscle tissue
+http://purl.obolibrary.org/obo/DOID_4159	skin cancer	http://purl.obolibrary.org/obo/UBERON_0000014	zone of skin
+http://purl.obolibrary.org/obo/DOID_1863	skull cancer	http://purl.obolibrary.org/obo/UBERON_0003129	skull
+http://purl.obolibrary.org/obo/DOID_10154	small intestine cancer	http://purl.obolibrary.org/obo/UBERON_0002108	small intestine
+http://purl.obolibrary.org/obo/DOID_4230	smooth muscle cancer	http://purl.obolibrary.org/obo/UBERON_0001135	smooth muscle tissue
+http://purl.obolibrary.org/obo/DOID_8578	soft palate cancer	http://purl.obolibrary.org/obo/UBERON_0001733	soft palate
+http://purl.obolibrary.org/obo/DOID_13169	spermatic cord cancer	http://purl.obolibrary.org/obo/UBERON_0005352	spermatic cord
+http://purl.obolibrary.org/obo/DOID_14546	sphenoidal sinus cancer	http://purl.obolibrary.org/obo/UBERON_0001724	sphenoidal sinus
+http://purl.obolibrary.org/obo/DOID_5612	spinal cancer	http://purl.obolibrary.org/obo/UBERON_0002240	spinal cord
+http://purl.obolibrary.org/obo/DOID_7224	spinal meninges cancer	http://purl.obolibrary.org/obo/UBERON_0003292	meninx of spinal cord
+http://purl.obolibrary.org/obo/DOID_672	spleen cancer	http://purl.obolibrary.org/obo/UBERON_0002106	spleen
+http://purl.obolibrary.org/obo/DOID_12191	splenic flexure cancer	http://purl.obolibrary.org/obo/UBERON_0022276	splenic flexure of colon
+http://purl.obolibrary.org/obo/DOID_5090	sternum cancer	http://purl.obolibrary.org/obo/UBERON_0000975	sternum
+http://purl.obolibrary.org/obo/DOID_10534	stomach cancer	http://purl.obolibrary.org/obo/UBERON_0000945	stomach
+http://purl.obolibrary.org/obo/DOID_11472	subglottis cancer	http://purl.obolibrary.org/obo/UBERON_0036068	subglottis
+http://purl.obolibrary.org/obo/DOID_8849	sublingual gland cancer	http://purl.obolibrary.org/obo/UBERON_0001832	sublingual gland
+http://purl.obolibrary.org/obo/DOID_9173	submandibular gland cancer	http://purl.obolibrary.org/obo/UBERON_0001736	submandibular gland
+http://purl.obolibrary.org/obo/DOID_13476	supraglottis cancer	http://purl.obolibrary.org/obo/UBERON_0036263	supraglottic part of larynx
+http://purl.obolibrary.org/obo/DOID_2095	sweat gland cancer	http://purl.obolibrary.org/obo/UBERON_0001820	sweat gland
+http://purl.obolibrary.org/obo/DOID_2706	synovium cancer	http://purl.obolibrary.org/obo/UBERON_0007616	layer of synovial tissue
+http://purl.obolibrary.org/obo/DOID_2135	temporal lobe neoplasm	http://purl.obolibrary.org/obo/UBERON_0001871	temporal lobe
+http://purl.obolibrary.org/obo/DOID_2998	testicular cancer	http://purl.obolibrary.org/obo/UBERON_0000473	testis
+http://purl.obolibrary.org/obo/DOID_5093	thoracic cancer	http://purl.obolibrary.org/obo/UBERON_0000915	thoracic segment of trunk
+http://purl.obolibrary.org/obo/DOID_3277	thymus cancer	http://purl.obolibrary.org/obo/UBERON_0002370	thymus
+http://purl.obolibrary.org/obo/DOID_1781	thyroid cancer	http://purl.obolibrary.org/obo/UBERON_0002046	thyroid gland
+http://purl.obolibrary.org/obo/DOID_8649	tongue cancer	http://purl.obolibrary.org/obo/UBERON_0001723	tongue
+http://purl.obolibrary.org/obo/DOID_8858	tonsil cancer	http://purl.obolibrary.org/obo/UBERON_0002372	tonsil
+http://purl.obolibrary.org/obo/DOID_11920	tracheal cancer	http://purl.obolibrary.org/obo/UBERON_0003126	trachea
+http://purl.obolibrary.org/obo/DOID_261	transverse colon cancer	http://purl.obolibrary.org/obo/UBERON_0001157	transverse colon
+http://purl.obolibrary.org/obo/DOID_8630	upper lip cancer	http://purl.obolibrary.org/obo/UBERON_0001834	upper lip
+http://purl.obolibrary.org/obo/DOID_11817	urachus cancer	http://purl.obolibrary.org/obo/UBERON_0002068	urachus
+http://purl.obolibrary.org/obo/DOID_11819	ureter cancer	http://purl.obolibrary.org/obo/UBERON_0000056	ureter
+http://purl.obolibrary.org/obo/DOID_11818	ureteric orifice cancer	http://purl.obolibrary.org/obo/UBERON_0012303	ureteral orifice
+http://purl.obolibrary.org/obo/DOID_734	urethra cancer	http://purl.obolibrary.org/obo/UBERON_0000057	urethra
+http://purl.obolibrary.org/obo/DOID_11054	urinary bladder cancer	http://purl.obolibrary.org/obo/UBERON_0001255	urinary bladder
+http://purl.obolibrary.org/obo/DOID_3996	urinary system cancer	http://purl.obolibrary.org/obo/UBERON_0001008	renal system
+http://purl.obolibrary.org/obo/DOID_363	uterine cancer	http://purl.obolibrary.org/obo/UBERON_0000995	uterus
+http://purl.obolibrary.org/obo/DOID_9460	uterine corpus cancer	http://purl.obolibrary.org/obo/UBERON_0009853	body of uterus
+http://purl.obolibrary.org/obo/DOID_3479	uveal cancer	http://purl.obolibrary.org/obo/UBERON_0001768	uvea
+http://purl.obolibrary.org/obo/DOID_8635	uvula cancer	http://purl.obolibrary.org/obo/UBERON_0001734	palatine uvula
+http://purl.obolibrary.org/obo/DOID_119	vaginal cancer	http://purl.obolibrary.org/obo/UBERON_0000996	vagina
+http://purl.obolibrary.org/obo/DOID_175	vascular cancer	http://purl.obolibrary.org/obo/UBERON_0007798	vascular system
+http://purl.obolibrary.org/obo/DOID_1245	vulva cancer	http://purl.obolibrary.org/obo/UBERON_0000997	mammalian vulva

@@ -8,6 +8,7 @@ description: >-
   Examples: [ocean planet](http://purl.obolibrary.org/obo/ENVO_01001136), [lava planet](http://purl.obolibrary.org/obo/ENVO_01001143), [ice planet](http://purl.obolibrary.org/obo/ENVO_01001137) (4 total)
 
 classes: 
+  environmental material: "ENVO:00010483"
   planetary surface: "ENVO:01000324"
   planet: "ENVO:01000800"
 

@@ -8,6 +8,7 @@ description: >-
   Examples: [environmental system process](http://purl.obolibrary.org/obo/ENVO_02500000), [land use process](http://purl.obolibrary.org/obo/ENVO_01001431), [terrestrial mining](http://purl.obolibrary.org/obo/ENVO_01001433) (4 total)
 
 classes: 
+  process: "BFO:0000015"
   material entity: "BFO:0000040"
 
 

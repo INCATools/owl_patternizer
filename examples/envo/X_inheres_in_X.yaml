@@ -8,6 +8,7 @@ description: >-
   Examples: [space weather](http://purl.obolibrary.org/obo/ENVO_01001080), [fluorescence of water](http://purl.obolibrary.org/obo/ENVO_3100032), [composition of soil](http://purl.obolibrary.org/obo/ENVO_09200008) (86 total)
 
 classes: 
+  entity: "BFO:0000001"
   quality: "PATO:0000001"
 
 

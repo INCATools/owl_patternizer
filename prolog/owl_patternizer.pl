@@ -350,11 +350,12 @@ write_candidate(X, Matches, Opts) :-
         expr_class_signature(X,CSig),
         expr_property_signature(X,PSig),
         expr_var_signature(X,VSig),
-        setof(RangeCls,V^RangeCls^(infer_pattern_var_range(X,Matches,V,RangeClsSet),member(RangeCls,RangeClsSet)),RangeSig),
+        setof(RangeCls,V^RangeClsSet^(infer_pattern_var_range(X,Matches,V,RangeClsSet),member(RangeCls,RangeClsSet)),RangeSig),
         ord_union(CSig, RangeSig, AllCls),
         debug(patternizer,'Class sig: ~q + ~w',[CSig, RangeSig]),
         debug(patternizer,'Prop sig: ~q',[PSig]),
         debug(patternizer,'Var sig: ~q',[VSig]),
+        debug(patternizer,'All Cls: ~q',[AllCls]),
 
         % mapping of short labels to URIs for all signatures
         maplist([C,obj(C,Id,N)]>>(label_or_frag(C,N),uri_curie(C,Id)),AllCls,CSet),
@@ -382,6 +383,7 @@ write_candidate(X, Matches, Opts) :-
         format('  This is auto-generated. Add your description here~n~n'),
         format('  Examples: ~w (~w total)~n',[Examples, Num]),
         nl,
+        debug(patternizer,'Writing class sig: ~q',[CSet]),
         format('classes: '),show_obj_list('  ',CSet),
         nl,
         format('relations: '),show_obj_list('  ',PSet),

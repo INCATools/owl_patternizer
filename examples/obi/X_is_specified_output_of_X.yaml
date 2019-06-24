@@ -1,4 +1,4 @@
-# options: [min(8),dir(obi),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X is_specified_output_of X
 pattern_iri: http://purl.obolibrary.org/obo/obi/X_is_specified_output_of_X
 
@@ -8,6 +8,7 @@ description: >-
   Examples: [processed material](http://purl.obolibrary.org/obo/OBI_0000047), [purified material](http://purl.obolibrary.org/obo/OBI_0001633), [decapitated organism](http://purl.obolibrary.org/obo/OBI_0302837) (20 total)
 
 classes: 
+  continuant: "BFO:0000002"
   planned process: "http://purl.obolibrary.org/obo/OBI_0000011"
 
 

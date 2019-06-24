@@ -8,7 +8,7 @@ description: >-
   Examples: [concentration of carbon atom in water](http://purl.obolibrary.org/obo/ENVO_09000009), [amount of carbon atom in water](http://purl.obolibrary.org/obo/ENVO_09000006), [solubility of carbon atom in water](http://purl.obolibrary.org/obo/ENVO_09000003) (4 total)
 
 classes: 
-  carbon atom: "ns2:CHEBI_27594"
+  carbon atom: "http://purl.obolibrary.org/obo/CHEBI_27594"
   liquid water: "ENVO:00002006"
   quality: "PATO:0000001"
 

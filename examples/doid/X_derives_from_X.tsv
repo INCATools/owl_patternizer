@@ -1,0 +1,26 @@
+defined_class	defined_class_label	v0	v0_label	v1	v1_label
+http://purl.obolibrary.org/obo/DOID_3314	angiomyolipoma	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/CL_0002150	epithelioid macrophage
+http://purl.obolibrary.org/obo/DOID_4658	benign mastocytoma	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/CL_0000097	mast cell
+http://purl.obolibrary.org/obo/DOID_0070003	blastoma	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/CL_0000055	non-terminally differentiated cell
+http://purl.obolibrary.org/obo/DOID_305	carcinoma	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/CL_0000066	epithelial cell
+http://purl.obolibrary.org/obo/DOID_0060084	cell type benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/CL_0000000	cell
+http://purl.obolibrary.org/obo/DOID_0050687	cell type cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/CL_0000000	cell
+http://purl.obolibrary.org/obo/DOID_2602	chondroma	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/CL_0000138	chondrocyte
+http://purl.obolibrary.org/obo/DOID_3308	embryonal carcinoma	http://purl.obolibrary.org/obo/DOID_2994	germ cell cancer	http://purl.obolibrary.org/obo/CL_0000066	epithelial cell
+http://purl.obolibrary.org/obo/DOID_4360	epithelioid cell melanoma	http://purl.obolibrary.org/obo/DOID_1909	melanoma	http://purl.obolibrary.org/obo/CL_0002150	epithelioid macrophage
+http://purl.obolibrary.org/obo/DOID_3962	follicular thyroid carcinoma	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/CL_0000500	follicular epithelial cell
+http://purl.obolibrary.org/obo/DOID_2994	germ cell cancer	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/CL_0000586	germ cell
+http://purl.obolibrary.org/obo/DOID_3301	gonadoblastoma	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/CL_0000586	germ cell
+http://purl.obolibrary.org/obo/DOID_255	hemangioma	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/CL_0000115	endothelial cell
+http://purl.obolibrary.org/obo/DOID_8719	in situ carcinoma	http://purl.obolibrary.org/obo/DOID_0060071	pre-malignant neoplasm	http://purl.obolibrary.org/obo/CL_0000066	epithelial cell
+http://purl.obolibrary.org/obo/DOID_127	leiomyoma	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/CL_0000192	smooth muscle cell
+http://purl.obolibrary.org/obo/DOID_3315	lipoma	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm	http://purl.obolibrary.org/obo/CL_0000136	fat cell
+http://purl.obolibrary.org/obo/DOID_5074	malignant ependymoma	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/CL_0000065	ependymal cell
+http://purl.obolibrary.org/obo/DOID_3070	malignant glioma	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/CL_0000125	glial cell
+http://purl.obolibrary.org/obo/DOID_0080189	malignant hemangioma	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/CL_0002418	hemangioblast
+http://purl.obolibrary.org/obo/DOID_1909	melanoma	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/CL_0000148	melanocyte
+http://purl.obolibrary.org/obo/DOID_3350	mesenchymal cell neoplasm	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/CL_0008019	mesenchymal cell
+http://purl.obolibrary.org/obo/DOID_1115	sarcoma	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/CL_0002321	embryonic cell
+http://purl.obolibrary.org/obo/DOID_1749	squamous cell carcinoma	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/CL_0000076	squamous epithelial cell
+http://purl.obolibrary.org/obo/DOID_3973	thyroid medullary carcinoma	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/CL_0000570	parafollicular cell
+http://purl.obolibrary.org/obo/DOID_2671	transitional cell carcinoma	http://purl.obolibrary.org/obo/DOID_162	cancer	http://purl.obolibrary.org/obo/CL_0000244	transitional epithelial cell

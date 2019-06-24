@@ -8,6 +8,8 @@ description: >-
   Examples: [concentration of nitrogen atom in environmental material](http://purl.obolibrary.org/obo/ENVO_09000016), [concentration of carbon atom in environmental material](http://purl.obolibrary.org/obo/ENVO_09000007), [amount of nitrogen atom in environmental material](http://purl.obolibrary.org/obo/ENVO_09000013) (8 total)
 
 classes: 
+  nonmetal atom: "http://purl.obolibrary.org/obo/CHEBI_25585"
+  p-block element atom: "http://purl.obolibrary.org/obo/CHEBI_33560"
   environmental material: "ENVO:00010483"
   quality: "PATO:0000001"
 

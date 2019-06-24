@@ -5,9 +5,10 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/X_participates_in_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [public infrastructure](http://purl.obolibrary.org/obo/ENVO_01000779), [residential building](http://purl.obolibrary.org/obo/ENVO_01000933), [industrial building](http://purl.obolibrary.org/obo/ENVO_00003861) (5 total)
+  Examples: [public infrastructure](http://purl.obolibrary.org/obo/ENVO_01000779), [domestic building](http://purl.obolibrary.org/obo/ENVO_01001480), [industrial building](http://purl.obolibrary.org/obo/ENVO_00003861) (5 total)
 
 classes: 
+  environmental feature: "ENVO:00002297"
   environmental system process: "ENVO:02500000"
 
 

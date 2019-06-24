@@ -1,4 +1,4 @@
-# options: [min(8),dir(obi),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has part X has_specified_input X has role competitive binding reference ligand role has_specified_input X has part MHC protein complex
 pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_part_X_has_specified_input_X_has_role_competitive_binding_reference_ligand_role_has_specified_input_X_has_part_MHC_protein_complex
 
@@ -8,7 +8,9 @@ description: >-
   Examples: [cell bound MHC competitive binding assay measuring equilibrium dissociation constant [KD] of a MHC:ligand complex using radioactivity detection](http://purl.obolibrary.org/obo/OBI_0001549), [purified MHC competitive binding assay measuring equilibrium dissociation constant [KD] of a MHC:ligand complex using radioactivity detection](http://purl.obolibrary.org/obo/OBI_0001989), [cell lysate MHC competitive binding assay measuring equilibrium dissociation constant [KD] of a MHC:ligand complex using radioactivity detection](http://purl.obolibrary.org/obo/OBI_0001544) (10 total)
 
 classes: 
+  material entity: "BFO:0000040"
   MHC protein complex: "GO:0042611"
+  assay: "http://purl.obolibrary.org/obo/OBI_0000070"
   assay measuring a binding constant of a MHC:ligand complex: "http://purl.obolibrary.org/obo/OBI_0001553"
   competitive binding reference ligand role: "http://purl.obolibrary.org/obo/OBI_0001955"
 

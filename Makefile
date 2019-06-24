@@ -40,6 +40,24 @@ examples/%/inf.obo:
 examples/%/merged.owl:
 	robot merge -i examples/$*/_induced_axioms.ttl -i examples/$*/_src.ttl -a true -o $@
 
+xlist: examples/chebi/*
+	for file in $^ ; do \
+		echo "Hello" $(basename($${file})) ; \
+	done
+
+z:
+	echo $(notdir $(basename a/b/c.foo))
+
+#list: $(foreach file, $(wildcard examples/chebi/*), foo-$(filename $(file));)
+list: $(foreach file, $(wildcard examples/chebi/*.yaml), $(basename $(file)).tsv)
+
+# e.g. make tsv ONT=pato
+tsv: $(foreach file, $(wildcard examples/$(ONT)/*.yaml), $(basename $(file)).tsv)
+
+examples/%.tsv:
+	dosdp-tools query --obo-prefixes --template=examples/$*.yaml --ontology=examples/$(dir $*)_input.ttl --outfile=$@
+#	dosdp-tools query --obo-prefixes --template=examples/$*/X_has_part_X.yaml --ontology=examples/chebi/_input.ttl --outfile=examples/$*/X_has_part_X.tsv
+
 # --------------------
 # Docker
 # --------------------

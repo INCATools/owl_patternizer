@@ -8,6 +8,7 @@ description: >-
   Examples: [frozen compost soil](http://purl.obolibrary.org/obo/ENVO_00005765), [solid environmental material](http://purl.obolibrary.org/obo/ENVO_01000814), [gaseous environmental material](http://purl.obolibrary.org/obo/ENVO_01000797) (11 total)
 
 classes: 
+  material entity: "BFO:0000040"
   physical object quality: "PATO:0001241"
 
 

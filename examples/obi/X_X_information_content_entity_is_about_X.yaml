@@ -8,7 +8,7 @@ description: >-
   Examples: [biological activity assay measuring epitope specific granzyme A release by T cells](http://purl.obolibrary.org/obo/OBI_0001809), [biological activity assay measuring epitope specific perforin release by T cells](http://purl.obolibrary.org/obo/OBI_0001497), [biological activity assay measuring epitope specific granulysin release by T cells](http://purl.obolibrary.org/obo/OBI_0001810) (71 total)
 
 classes: 
-  information content entity: "http://purl.obolibrary.org/obo/IAO_0000030"
+  information content entity: "IAO:0000030"
   immune epitope assay: "http://purl.obolibrary.org/obo/OBI_1110128"
 
 

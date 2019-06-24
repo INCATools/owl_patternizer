@@ -8,7 +8,7 @@ description: >-
   Examples: [nitrogen cycling](http://purl.obolibrary.org/obo/ENVO_01001330), [oxygen cycling](http://purl.obolibrary.org/obo/ENVO_2000046), [sulfur cycling](http://purl.obolibrary.org/obo/ENVO_01001331) (5 total)
 
 classes: 
-  chemical entity: "ns2:CHEBI_24431"
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
   biogeochemical cycling: "ENVO:02500009"
 
 

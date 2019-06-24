@@ -8,6 +8,7 @@ description: >-
   Examples: [intervertebral joint](http://purl.obolibrary.org/obo/UBERON_0001468), [interphalangeal joint](http://purl.obolibrary.org/obo/UBERON_0006658), [communicating artery](http://purl.obolibrary.org/obo/UBERON_0006347) (6 total)
 
 classes: 
+  anatomical structure: "UBERON:0000061"
   multicellular anatomical structure: "UBERON:0010000"
 
 

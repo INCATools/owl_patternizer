@@ -8,6 +8,7 @@ description: >-
   Examples: [dioxygen dissolved in marine water](http://purl.obolibrary.org/obo/ENVO_01001495), [alkaline salt lake](http://purl.obolibrary.org/obo/ENVO_00002121), [acid hot spring](http://purl.obolibrary.org/obo/ENVO_00002120) (114 total)
 
 classes: 
+  entity: "BFO:0000001"
   quality: "PATO:0000001"
 
 

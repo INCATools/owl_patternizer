@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/body_of_liquid_composed_primari
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [water body](http://purl.obolibrary.org/obo/ENVO_00000063), [saline water body](http://purl.obolibrary.org/obo/ENVO_01001319), [fresh water body](http://purl.obolibrary.org/obo/ENVO_01001320) (4 total)
+  Examples: [marine water body](http://purl.obolibrary.org/obo/ENVO_00001999), [saline water body](http://purl.obolibrary.org/obo/ENVO_01001319), [fresh water body](http://purl.obolibrary.org/obo/ENVO_01001320) (4 total)
 
 classes: 
   liquid water: "ENVO:00002006"

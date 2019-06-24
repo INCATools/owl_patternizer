@@ -8,6 +8,7 @@ description: >-
   Examples: [forest process](http://purl.obolibrary.org/obo/ENVO_02500014), [water flow process](http://purl.obolibrary.org/obo/ENVO_01000982), [lava flow process](http://purl.obolibrary.org/obo/ENVO_01000730) (23 total)
 
 classes: 
+  independent continuant: "BFO:0000004"
   process: "BFO:0000015"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [mammary gland alveolus](http://purl.obolibrary.org/obo/UBERON_0003214), [alveolus of lung](http://purl.obolibrary.org/obo/UBERON_0002299), [right lung alveolus](http://purl.obolibrary.org/obo/UBERON_0004861) (4 total)
 
 classes: 
-  animal body or body part: "ns2:FOODON_03420127"
+  animal body or body part: "FOODON:03420127"
   organ: "UBERON:0000062"
   alveolus: "UBERON:0003215"
 

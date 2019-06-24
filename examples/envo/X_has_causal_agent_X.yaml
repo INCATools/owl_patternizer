@@ -8,6 +8,8 @@ description: >-
   Examples: [radiation from a manufactured product](http://purl.obolibrary.org/obo/ENVO_01001501), [radiation from a manufactured product](http://purl.obolibrary.org/obo/ENVO_01001501), [stellar radiation](http://purl.obolibrary.org/obo/ENVO_01001211) (11 total)
 
 classes: 
+  object: "BFO:0000030"
+  environmental feature: "ENVO:00002297"
   radiation: "ENVO:01001023"
 
 

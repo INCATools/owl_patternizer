@@ -8,6 +8,7 @@ description: >-
   Examples: [meteor](http://purl.obolibrary.org/obo/ENVO_01001008), [fjord lake](http://purl.obolibrary.org/obo/ENVO_00000201), [crater lake](http://purl.obolibrary.org/obo/ENVO_01001062) (36 total)
 
 classes: 
+  independent continuant: "BFO:0000004"
   material entity: "BFO:0000040"
 
 

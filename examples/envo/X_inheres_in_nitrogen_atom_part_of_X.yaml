@@ -8,7 +8,8 @@ description: >-
   Examples: [concentration of nitrogen atom in soil](http://purl.obolibrary.org/obo/ENVO_09000017), [concentration of nitrogen atom in water](http://purl.obolibrary.org/obo/ENVO_09000018), [concentration of nitrogen atom in environmental material](http://purl.obolibrary.org/obo/ENVO_09000016) (12 total)
 
 classes: 
-  nitrogen atom: "ns2:CHEBI_25555"
+  nitrogen atom: "http://purl.obolibrary.org/obo/CHEBI_25555"
+  environmental material: "ENVO:00010483"
   quality: "PATO:0000001"
 
 

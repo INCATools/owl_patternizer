@@ -12,6 +12,11 @@
     void:dataDump <../tests/data/pizza.owl> ;
     lib:source <https://protege.stanford.edu/ontologies/pizza/pizza.owl> .
 
+<nif>
+    a void:Dataset ;
+    void:dataDump <nif.owl> ;
+    lib:source <http://ontology.neuinfo.org/NIF/ttl/nif.ttl> .
+
 <chebi>
     a void:Dataset ;
 ###    void:dataDump <../tests/data/chebi-with-logdefs.ttl> ;
@@ -71,6 +76,10 @@
     a lib:Ontology ;
     a lib:Virtual ;
     owl:imports <http://purl.obolibrary.org/obo/cl.owl> .
+<nif_cell>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://ontology.neuinfo.org/NIF/ttl/NIF-Cell.ttl> .
 <fbbt>
     a lib:Ontology ;
     a lib:Virtual ;

@@ -8,7 +8,7 @@ description: >-
   Examples: [kaolin dust](http://purl.obolibrary.org/obo/ENVO_01001288), [talc dust](http://purl.obolibrary.org/obo/ENVO_01001285), [aluminium dust](http://purl.obolibrary.org/obo/ENVO_01001283) (4 total)
 
 classes: 
-  chemical entity: "ns2:CHEBI_24431"
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
   dust: "ENVO:00002008"
 
 

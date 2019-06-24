@@ -8,6 +8,7 @@ description: >-
   Examples: [tillage implement](http://purl.obolibrary.org/obo/AGRO_00000223), [land levelling implement](http://purl.obolibrary.org/obo/AGRO_00000224), [residue management implement](http://purl.obolibrary.org/obo/AGRO_00000225) (10 total)
 
 classes: 
+  agricultural implement: "http://purl.obolibrary.org/obo/AGRO_00000416"
   planned process: "http://purl.obolibrary.org/obo/OBI_0000011"
 
 

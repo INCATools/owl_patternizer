@@ -37,11 +37,13 @@
 :- rdf_register_prefix('SO','http://purl.obolibrary.org/obo/SO_').
 :- rdf_register_prefix('MSO','http://purl.obolibrary.org/obo/MSO_').
 :- rdf_register_prefix('ENVO','http://purl.obolibrary.org/obo/ENVO_').
+:- rdf_register_prefix('FOODON','http://purl.obolibrary.org/obo/FOODON_').
 :- rdf_register_prefix('EFO','http://www.ebi.ac.uk/efo/EFO_').
 :- rdf_register_prefix('CHEBI','http://www.ebi.ac.uk/efo/CHEBI_').
 :- rdf_register_prefix('NBO','http://www.ebi.ac.uk/efo/NBO_').
 :- rdf_register_prefix('pizza','http://www.co-ode.org/ontologies/pizza/pizza.owl#').
 :- rdf_register_prefix('NCIT','http://purl.obolibrary.org/obo/NCIT_').
+:- rdf_register_prefix('NIFEXT','http://uri.neuinfo.org/nif/nifstd/nifext_').
 :- rdf_register_prefix('oio','http://www.geneontology.org/formats/oboInOwl#').
 
 :- debug(index).
@@ -66,6 +68,8 @@ ontology_config(mso,      [min(5), max_class_signature(6), generalize_properties
 ontology_config(chebi,    [min(3), remove_inexact_synonyms(true), infer_axioms(true), generalize_properties(false)]).
 ontology_config(uberon,   [min(50), max_and_cardinality(3)]).
 ontology_config(cl,       [min(20), ontology_prefix(cl)]).
+ontology_config(nif_cell, [min(20), imports([uberon]), infer_axioms(true), base('http://ontology.neuinfo.org/NIF/ttl/NIF-Cell.ttl'), ontology_prefix(nifext)]).
+ontology_config(nif,      [min(20), base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'), ontology_prefix(nifext)]).
 ontology_config(clo,      [min(20), ontology_prefix(clo)]).
 ontology_config(eco,      [min(10), ontology_prefix(eco)]).
 ontology_config(fbbt,     [min(50)]).
@@ -86,7 +90,7 @@ ontology_config(ero,      [min(8), generalize_properties(false)]).
 ontology_config(vo,       [min(4), generalize_properties(false)]).
 ontology_config(sctid,    [max_class_signature(4), generalize_properties(false)]).
 ontology_config(to,       [min(20)]).
-ontology_config(envo,     [infer_axioms(true), min(4), generalize_properties(false), ontology_prefix('ENVO')]).
+ontology_config(envo,     [infer_axioms(true), min(4), generalize_properties(false), ontology_prefix('ENVO'), exclude_prefixes(['FOODON'])]).
 ontology_config(agro,     [min(10), infer_axioms(true), generalize_properties(false)]).
 ontology_config(efo,      [min(50)]).
 ontology_config(doid,     [min(25)]).

@@ -1,0 +1,143 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/DOID_60002	Bartholin's gland disease	http://purl.obolibrary.org/obo/UBERON_0000460	major vestibular gland
+http://purl.obolibrary.org/obo/DOID_0050692	Brody myopathy	http://purl.obolibrary.org/obo/UBERON_0001134	skeletal muscle tissue
+http://purl.obolibrary.org/obo/DOID_12491	Vagus nerve disease	http://purl.obolibrary.org/obo/UBERON_0001759	vagus nerve
+http://purl.obolibrary.org/obo/DOID_10865	abducens nerve disease	http://purl.obolibrary.org/obo/UBERON_0001646	abducens nerve
+http://purl.obolibrary.org/obo/DOID_3952	adrenal cortex disease	http://purl.obolibrary.org/obo/UBERON_0001235	adrenal cortex
+http://purl.obolibrary.org/obo/DOID_9553	adrenal gland disease	http://purl.obolibrary.org/obo/UBERON_0002369	adrenal gland
+http://purl.obolibrary.org/obo/DOID_3128	anus disease	http://purl.obolibrary.org/obo/UBERON_0001245	anus
+http://purl.obolibrary.org/obo/DOID_62	aortic valve disease	http://purl.obolibrary.org/obo/UBERON_0002137	aortic valve
+http://purl.obolibrary.org/obo/DOID_60000	appendix disease	http://purl.obolibrary.org/obo/UBERON_0001154	vermiform appendix
+http://purl.obolibrary.org/obo/DOID_6227	articular cartilage disease	http://purl.obolibrary.org/obo/UBERON_0010996	articular cartilage of joint
+http://purl.obolibrary.org/obo/DOID_2742	auditory system disease	http://purl.obolibrary.org/obo/UBERON_0016490	auditory system
+http://purl.obolibrary.org/obo/DOID_11465	autonomic nervous system disease	http://purl.obolibrary.org/obo/UBERON_0002410	autonomic nervous system
+http://purl.obolibrary.org/obo/DOID_4138	bile duct disease	http://purl.obolibrary.org/obo/UBERON_0002394	bile duct
+http://purl.obolibrary.org/obo/DOID_9741	biliary tract disease	http://purl.obolibrary.org/obo/UBERON_0001173	biliary tree
+http://purl.obolibrary.org/obo/DOID_365	bladder disease	http://purl.obolibrary.org/obo/UBERON_0001255	urinary bladder
+http://purl.obolibrary.org/obo/DOID_2218	blood platelet disease	http://purl.obolibrary.org/obo/CL_0000233	platelet
+http://purl.obolibrary.org/obo/DOID_0080001	bone disease	http://purl.obolibrary.org/obo/UBERON_0001474	bone element
+http://purl.obolibrary.org/obo/DOID_4961	bone marrow disease	http://purl.obolibrary.org/obo/UBERON_0002371	bone marrow
+http://purl.obolibrary.org/obo/DOID_936	brain disease	http://purl.obolibrary.org/obo/UBERON_0000955	brain
+http://purl.obolibrary.org/obo/DOID_3463	breast disease	http://purl.obolibrary.org/obo/UBERON_0000310	breast
+http://purl.obolibrary.org/obo/DOID_331	central nervous system disease	http://purl.obolibrary.org/obo/UBERON_0001017	central nervous system
+http://purl.obolibrary.org/obo/DOID_2786	cerebellar disease	http://purl.obolibrary.org/obo/UBERON_0002037	cerebellum
+http://purl.obolibrary.org/obo/DOID_2253	cervix disease	http://purl.obolibrary.org/obo/UBERON_0000002	uterine cervix
+http://purl.obolibrary.org/obo/DOID_1417	choroid disease	http://purl.obolibrary.org/obo/UBERON_0001776	optic choroid
+http://purl.obolibrary.org/obo/DOID_4353	ciliary body disease	http://purl.obolibrary.org/obo/UBERON_0001775	ciliary body
+http://purl.obolibrary.org/obo/DOID_5353	colonic disease	http://purl.obolibrary.org/obo/UBERON_0001155	colon
+http://purl.obolibrary.org/obo/DOID_4137	common bile duct disease	http://purl.obolibrary.org/obo/UBERON_0001174	common bile duct
+http://purl.obolibrary.org/obo/DOID_4251	conjunctival disease	http://purl.obolibrary.org/obo/UBERON_0001811	conjunctiva
+http://purl.obolibrary.org/obo/DOID_65	connective tissue disease	http://purl.obolibrary.org/obo/UBERON_0002384	connective tissue
+http://purl.obolibrary.org/obo/DOID_5330	dental pulp disease	http://purl.obolibrary.org/obo/UBERON_0001754	dental pulp
+http://purl.obolibrary.org/obo/DOID_10481	diaphragm disease	http://purl.obolibrary.org/obo/UBERON_0001103	diaphragm
+http://purl.obolibrary.org/obo/DOID_4072	duodenum disease	http://purl.obolibrary.org/obo/UBERON_0002114	duodenum
+http://purl.obolibrary.org/obo/DOID_0050825	endocardium disease	http://purl.obolibrary.org/obo/UBERON_0002165	endocardium
+http://purl.obolibrary.org/obo/DOID_28	endocrine system disease	http://purl.obolibrary.org/obo/UBERON_0002368	endocrine gland
+http://purl.obolibrary.org/obo/DOID_289	endometriosis	http://purl.obolibrary.org/obo/UBERON_0001295	endometrium
+http://purl.obolibrary.org/obo/DOID_0080373	epididymis disease	http://purl.obolibrary.org/obo/UBERON_0001301	epididymis
+http://purl.obolibrary.org/obo/DOID_11387	epidural abscess	http://purl.obolibrary.org/obo/UBERON_0003691	epidural space
+http://purl.obolibrary.org/obo/DOID_6050	esophageal disease	http://purl.obolibrary.org/obo/UBERON_0001043	esophagus
+http://purl.obolibrary.org/obo/DOID_379	external ear disease	http://purl.obolibrary.org/obo/UBERON_0001691	external ear
+http://purl.obolibrary.org/obo/DOID_5614	eye disease	http://purl.obolibrary.org/obo/UBERON_0000970	eye
+http://purl.obolibrary.org/obo/DOID_530	eyelid disease	http://purl.obolibrary.org/obo/UBERON_0001711	eyelid
+http://purl.obolibrary.org/obo/DOID_1756	facial nerve disease	http://purl.obolibrary.org/obo/UBERON_0001647	facial nerve
+http://purl.obolibrary.org/obo/DOID_1962	fallopian tube disease	http://purl.obolibrary.org/obo/UBERON_0003889	fallopian tube
+http://purl.obolibrary.org/obo/DOID_229	female reproductive system disease	http://purl.obolibrary.org/obo/UBERON_0000474	female reproductive system
+http://purl.obolibrary.org/obo/DOID_0060262	gallbladder disease	http://purl.obolibrary.org/obo/UBERON_0002110	gall bladder
+http://purl.obolibrary.org/obo/DOID_77	gastrointestinal system disease	http://purl.obolibrary.org/obo/UBERON_0001007	digestive system
+http://purl.obolibrary.org/obo/DOID_1242	globe disease	http://purl.obolibrary.org/obo/UBERON_0010230	eyeball of camera-type eye
+http://purl.obolibrary.org/obo/DOID_3418	glossopharyngeal nerve disease	http://purl.obolibrary.org/obo/UBERON_0001649	glossopharyngeal nerve
+http://purl.obolibrary.org/obo/DOID_2277	gonadal disease	http://purl.obolibrary.org/obo/UBERON_0000991	gonad
+http://purl.obolibrary.org/obo/DOID_421	hair disease	http://purl.obolibrary.org/obo/UBERON_0001037	strand of hair
+http://purl.obolibrary.org/obo/DOID_114	heart disease	http://purl.obolibrary.org/obo/UBERON_0000948	heart
+http://purl.obolibrary.org/obo/DOID_4079	heart valve disease	http://purl.obolibrary.org/obo/UBERON_0000946	cardial valve
+http://purl.obolibrary.org/obo/DOID_74	hematopoietic system disease	http://purl.obolibrary.org/obo/UBERON_0002390	hematopoietic system
+http://purl.obolibrary.org/obo/DOID_13814	hypoglossal nerve disease	http://purl.obolibrary.org/obo/UBERON_0001650	hypoglossal nerve
+http://purl.obolibrary.org/obo/DOID_2914	immune system disease	http://purl.obolibrary.org/obo/UBERON_0002405	immune system
+http://purl.obolibrary.org/obo/DOID_2952	inner ear disease	http://purl.obolibrary.org/obo/UBERON_0001846	internal ear
+http://purl.obolibrary.org/obo/DOID_16	integumentary system disease	http://purl.obolibrary.org/obo/UBERON_0002416	integumental system
+http://purl.obolibrary.org/obo/DOID_3082	interstitial lung disease	http://purl.obolibrary.org/obo/UBERON_0000114	lung connective tissue
+http://purl.obolibrary.org/obo/DOID_5295	intestinal disease	http://purl.obolibrary.org/obo/UBERON_0000160	intestine
+http://purl.obolibrary.org/obo/DOID_240	iris disease	http://purl.obolibrary.org/obo/UBERON_0001769	iris
+http://purl.obolibrary.org/obo/DOID_557	kidney disease	http://purl.obolibrary.org/obo/UBERON_0002113	kidney
+http://purl.obolibrary.org/obo/DOID_1400	lacrimal apparatus disease	http://purl.obolibrary.org/obo/UBERON_0001750	lacrimal apparatus
+http://purl.obolibrary.org/obo/DOID_786	laryngeal disease	http://purl.obolibrary.org/obo/UBERON_0001737	larynx
+http://purl.obolibrary.org/obo/DOID_110	lens disease	http://purl.obolibrary.org/obo/UBERON_0000965	lens of camera-type eye
+http://purl.obolibrary.org/obo/DOID_12528	lesion of sciatic nerve	http://purl.obolibrary.org/obo/UBERON_0001322	sciatic nerve
+http://purl.obolibrary.org/obo/DOID_9500	leukocyte disease	http://purl.obolibrary.org/obo/CL_0000738	leukocyte
+http://purl.obolibrary.org/obo/DOID_9297	lip disease	http://purl.obolibrary.org/obo/UBERON_0001833	lip
+http://purl.obolibrary.org/obo/DOID_409	liver disease	http://purl.obolibrary.org/obo/UBERON_0002107	liver
+http://purl.obolibrary.org/obo/DOID_0050161	lower respiratory tract disease	http://purl.obolibrary.org/obo/UBERON_0001558	lower respiratory tract
+http://purl.obolibrary.org/obo/DOID_850	lung disease	http://purl.obolibrary.org/obo/UBERON_0002048	lung
+http://purl.obolibrary.org/obo/DOID_9942	lymph node disease	http://purl.obolibrary.org/obo/UBERON_0000029	lymph node
+http://purl.obolibrary.org/obo/DOID_75	lymphatic system disease	http://purl.obolibrary.org/obo/UBERON_0006558	lymphatic part of lymphoid system
+http://purl.obolibrary.org/obo/DOID_48	male reproductive system disease	http://purl.obolibrary.org/obo/UBERON_0000079	male reproductive system
+http://purl.obolibrary.org/obo/DOID_5100	middle ear disease	http://purl.obolibrary.org/obo/UBERON_0001756	middle ear
+http://purl.obolibrary.org/obo/DOID_61	mitral valve disease	http://purl.obolibrary.org/obo/UBERON_0002135	mitral valve
+http://purl.obolibrary.org/obo/DOID_231	motor neuron disease	http://purl.obolibrary.org/obo/CL_0000100	motor neuron
+http://purl.obolibrary.org/obo/DOID_403	mouth disease	http://purl.obolibrary.org/obo/UBERON_0000167	oral cavity
+http://purl.obolibrary.org/obo/DOID_0080000	muscular disease	http://purl.obolibrary.org/obo/UBERON_0002385	muscle tissue
+http://purl.obolibrary.org/obo/DOID_17	musculoskeletal system disease	http://purl.obolibrary.org/obo/UBERON_0002204	musculoskeletal system
+http://purl.obolibrary.org/obo/DOID_4123	nail disease	http://purl.obolibrary.org/obo/UBERON_0001705	nail
+http://purl.obolibrary.org/obo/DOID_2163	nasal cavity disease	http://purl.obolibrary.org/obo/UBERON_0001707	nasal cavity
+http://purl.obolibrary.org/obo/DOID_9561	nasopharyngeal disease	http://purl.obolibrary.org/obo/UBERON_0001728	nasopharynx
+http://purl.obolibrary.org/obo/DOID_863	nervous system disease	http://purl.obolibrary.org/obo/UBERON_0001016	nervous system
+http://purl.obolibrary.org/obo/DOID_2825	nose disease	http://purl.obolibrary.org/obo/UBERON_0000004	nose
+http://purl.obolibrary.org/obo/DOID_367	olfactory nerve disease	http://purl.obolibrary.org/obo/UBERON_0001579	olfactory nerve
+http://purl.obolibrary.org/obo/DOID_1891	optic nerve disease	http://purl.obolibrary.org/obo/UBERON_0000941	cranial nerve II
+http://purl.obolibrary.org/obo/DOID_930	orbital disease	http://purl.obolibrary.org/obo/UBERON_0004088	orbital region
+http://purl.obolibrary.org/obo/DOID_1100	ovarian disease	http://purl.obolibrary.org/obo/UBERON_0000992	ovary
+http://purl.obolibrary.org/obo/DOID_26	pancreas disease	http://purl.obolibrary.org/obo/UBERON_0001264	pancreas
+http://purl.obolibrary.org/obo/DOID_1352	paranasal sinus disease	http://purl.obolibrary.org/obo/UBERON_0001825	paranasal sinus
+http://purl.obolibrary.org/obo/DOID_11201	parathyroid gland disease	http://purl.obolibrary.org/obo/UBERON_0001132	parathyroid gland
+http://purl.obolibrary.org/obo/DOID_10302	parotid disease	http://purl.obolibrary.org/obo/UBERON_0001831	parotid gland
+http://purl.obolibrary.org/obo/DOID_1529	penile disease	http://purl.obolibrary.org/obo/UBERON_0000989	penis
+http://purl.obolibrary.org/obo/DOID_0050829	pericardium disease	http://purl.obolibrary.org/obo/UBERON_0002407	pericardium
+http://purl.obolibrary.org/obo/DOID_574	peripheral nervous system disease	http://purl.obolibrary.org/obo/UBERON_0000010	peripheral nervous system
+http://purl.obolibrary.org/obo/DOID_53	pituitary gland disease	http://purl.obolibrary.org/obo/UBERON_0000007	pituitary gland
+http://purl.obolibrary.org/obo/DOID_780	placenta disease	http://purl.obolibrary.org/obo/UBERON_0001987	placenta
+http://purl.obolibrary.org/obo/DOID_1532	pleural disease	http://purl.obolibrary.org/obo/UBERON_0000977	pleura
+http://purl.obolibrary.org/obo/DOID_47	prostate disease	http://purl.obolibrary.org/obo/UBERON_0002367	prostate gland
+http://purl.obolibrary.org/obo/DOID_5749	pulmonary valve disease	http://purl.obolibrary.org/obo/UBERON_0002146	pulmonary valve
+http://purl.obolibrary.org/obo/DOID_238	pupil disease	http://purl.obolibrary.org/obo/UBERON_0001771	pupil
+http://purl.obolibrary.org/obo/DOID_15	reproductive system disease	http://purl.obolibrary.org/obo/UBERON_0000990	reproductive system
+http://purl.obolibrary.org/obo/DOID_1579	respiratory system disease	http://purl.obolibrary.org/obo/UBERON_0001004	respiratory system
+http://purl.obolibrary.org/obo/DOID_5679	retinal disease	http://purl.obolibrary.org/obo/UBERON_0000966	retina
+http://purl.obolibrary.org/obo/DOID_10854	salivary gland disease	http://purl.obolibrary.org/obo/UBERON_0001044	saliva-secreting gland
+http://purl.obolibrary.org/obo/DOID_9098	sebaceous gland disease	http://purl.obolibrary.org/obo/UBERON_0001821	sebaceous gland
+http://purl.obolibrary.org/obo/DOID_0050155	sensory system disease	http://purl.obolibrary.org/obo/UBERON_0001032	sensory system
+http://purl.obolibrary.org/obo/DOID_0050824	sinoatrial node disease	http://purl.obolibrary.org/obo/UBERON_0002351	sinoatrial node
+http://purl.obolibrary.org/obo/DOID_37	skin disease	http://purl.obolibrary.org/obo/UBERON_0000014	zone of skin
+http://purl.obolibrary.org/obo/DOID_319	spinal cord disease	http://purl.obolibrary.org/obo/UBERON_0002240	spinal cord
+http://purl.obolibrary.org/obo/DOID_0060564	spinal disease	http://purl.obolibrary.org/obo/UBERON_0001130	vertebral column
+http://purl.obolibrary.org/obo/DOID_2529	splenic disease	http://purl.obolibrary.org/obo/UBERON_0002106	spleen
+http://purl.obolibrary.org/obo/DOID_76	stomach disease	http://purl.obolibrary.org/obo/UBERON_0000945	stomach
+http://purl.obolibrary.org/obo/DOID_12897	submandibular gland disease	http://purl.obolibrary.org/obo/UBERON_0001736	submandibular gland
+http://purl.obolibrary.org/obo/DOID_1383	sweat gland disease	http://purl.obolibrary.org/obo/UBERON_0001820	sweat gland
+http://purl.obolibrary.org/obo/DOID_2519	testicular disease	http://purl.obolibrary.org/obo/UBERON_0000473	testis
+http://purl.obolibrary.org/obo/DOID_562	third cranial nerve disease	http://purl.obolibrary.org/obo/UBERON_0001643	oculomotor nerve
+http://purl.obolibrary.org/obo/DOID_0060118	thoracic disease	http://purl.obolibrary.org/obo/UBERON_0000915	thoracic segment of trunk
+http://purl.obolibrary.org/obo/DOID_533	thymus gland disease	http://purl.obolibrary.org/obo/UBERON_0002370	thymus
+http://purl.obolibrary.org/obo/DOID_50	thyroid gland disease	http://purl.obolibrary.org/obo/UBERON_0002046	thyroid gland
+http://purl.obolibrary.org/obo/DOID_12529	tibial nerve palsy	http://purl.obolibrary.org/obo/UBERON_0001323	tibial nerve
+http://purl.obolibrary.org/obo/DOID_10944	tongue disease	http://purl.obolibrary.org/obo/UBERON_0001723	tongue
+http://purl.obolibrary.org/obo/DOID_1091	tooth disease	http://purl.obolibrary.org/obo/UBERON_0001091	calcareous tooth
+http://purl.obolibrary.org/obo/DOID_3225	tracheal disease	http://purl.obolibrary.org/obo/UBERON_0003126	trachea
+http://purl.obolibrary.org/obo/DOID_0050826	tricuspid valve disease	http://purl.obolibrary.org/obo/UBERON_0002134	tricuspid valve
+http://purl.obolibrary.org/obo/DOID_561	trigeminal nerve disease	http://purl.obolibrary.org/obo/UBERON_0001645	trigeminal nerve
+http://purl.obolibrary.org/obo/DOID_13864	trochlear nerve disease	http://purl.obolibrary.org/obo/UBERON_0001644	trochlear nerve
+http://purl.obolibrary.org/obo/DOID_5782	tympanic membrane disease	http://purl.obolibrary.org/obo/UBERON_0002364	tympanic membrane
+http://purl.obolibrary.org/obo/DOID_974	upper respiratory tract disease	http://purl.obolibrary.org/obo/UBERON_0001557	upper respiratory tract
+http://purl.obolibrary.org/obo/DOID_1426	ureteral disease	http://purl.obolibrary.org/obo/UBERON_0000056	ureter
+http://purl.obolibrary.org/obo/DOID_732	urethral disease	http://purl.obolibrary.org/obo/UBERON_0000057	urethra
+http://purl.obolibrary.org/obo/DOID_18	urinary system disease	http://purl.obolibrary.org/obo/UBERON_0001008	renal system
+http://purl.obolibrary.org/obo/DOID_345	uterine disease	http://purl.obolibrary.org/obo/UBERON_0000995	uterus
+http://purl.obolibrary.org/obo/DOID_3480	uveal disease	http://purl.obolibrary.org/obo/UBERON_0001768	uvea
+http://purl.obolibrary.org/obo/DOID_121	vaginal disease	http://purl.obolibrary.org/obo/UBERON_0000996	vagina
+http://purl.obolibrary.org/obo/DOID_866	vein disease	http://purl.obolibrary.org/obo/UBERON_0001638	vein
+http://purl.obolibrary.org/obo/DOID_3426	vestibular disease	http://purl.obolibrary.org/obo/UBERON_0004681	vestibular system
+http://purl.obolibrary.org/obo/DOID_12657	vestibulocochlear nerve disease	http://purl.obolibrary.org/obo/UBERON_0001648	vestibulocochlear nerve
+http://purl.obolibrary.org/obo/DOID_5691	visual cortex disease	http://purl.obolibrary.org/obo/UBERON_0000411	visual cortex
+http://purl.obolibrary.org/obo/DOID_1393	visual pathway disease	http://purl.obolibrary.org/obo/UBERON_0001908	optic tract
+http://purl.obolibrary.org/obo/DOID_9720	vitreous disease	http://purl.obolibrary.org/obo/UBERON_0001797	vitreous humor
+http://purl.obolibrary.org/obo/DOID_2059	vulvar disease	http://purl.obolibrary.org/obo/UBERON_0000997	mammalian vulva

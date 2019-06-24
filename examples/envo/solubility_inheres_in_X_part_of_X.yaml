@@ -8,6 +8,8 @@ description: >-
   Examples: [solubility of nitrogen atom in soil](http://purl.obolibrary.org/obo/ENVO_09000011), [solubility of nitrogen atom in water](http://purl.obolibrary.org/obo/ENVO_09000012), [solubility of nitrogen atom in environmental material](http://purl.obolibrary.org/obo/ENVO_09000010) (6 total)
 
 classes: 
+  nonmetal atom: "http://purl.obolibrary.org/obo/CHEBI_25585"
+  p-block element atom: "http://purl.obolibrary.org/obo/CHEBI_33560"
   environmental material: "ENVO:00010483"
   solubility: "PATO:0001536"
 

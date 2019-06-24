@@ -1,11 +1,11 @@
-# options: [min(8),dir(obi),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: achieves_planned_objective X
 pattern_iri: http://purl.obolibrary.org/obo/obi/achieves_planned_objective_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [adding a material entity into a target](http://purl.obolibrary.org/obo/OBI_0000274), [assay](http://purl.obolibrary.org/obo/OBI_0000070), [material processing](http://purl.obolibrary.org/obo/OBI_0000094) (22 total)
+  Examples: [adding a material entity into a target](http://purl.obolibrary.org/obo/OBI_0000274), [assay](http://purl.obolibrary.org/obo/OBI_0000070), [material processing](http://purl.obolibrary.org/obo/OBI_0000094) (21 total)
 
 classes: 
   objective specification: "http://purl.obolibrary.org/obo/IAO_0000005"

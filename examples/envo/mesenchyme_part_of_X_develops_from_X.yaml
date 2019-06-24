@@ -8,6 +8,7 @@ description: >-
   Examples: [mesenchyme from splanchnopleure](http://purl.obolibrary.org/obo/UBERON_0010378), [mesenchyme from somatopleure](http://purl.obolibrary.org/obo/UBERON_0010377), [2nd arch mesenchyme from neural crest](http://purl.obolibrary.org/obo/UBERON_0010254) (16 total)
 
 classes: 
+  material anatomical entity: "UBERON:0000465"
   mesenchyme: "UBERON:0003104"
   multicellular anatomical structure: "UBERON:0010000"
 

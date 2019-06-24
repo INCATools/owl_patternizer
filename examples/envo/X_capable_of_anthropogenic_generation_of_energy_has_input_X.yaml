@@ -8,6 +8,7 @@ description: >-
   Examples: [gas power station](http://purl.obolibrary.org/obo/ENVO_2000039), [coal power plant](http://purl.obolibrary.org/obo/ENVO_2000038), [lignite power plant](http://purl.obolibrary.org/obo/ENVO_2000040) (4 total)
 
 classes: 
+  power plant: "ENVO:00002214"
   environmental material: "ENVO:00010483"
   anthropogenic generation of energy: "ENVO:2000012"
 

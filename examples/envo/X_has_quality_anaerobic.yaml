@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/X_has_quality_anaerobic
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [anaerobic sediment](http://purl.obolibrary.org/obo/ENVO_00002045), [anaerobic sludge](http://purl.obolibrary.org/obo/ENVO_00002129), [anaerobic dechlorinating bioreactor](http://purl.obolibrary.org/obo/ENVO_00002125) (5 total)
+  Examples: [anaerobic sediment](http://purl.obolibrary.org/obo/ENVO_00002045), [anaerobic sludge](http://purl.obolibrary.org/obo/ENVO_00002129), [anaerobic bioreactor](http://purl.obolibrary.org/obo/ENVO_00002124) (5 total)
 
 classes: 
   material entity: "BFO:0000040"

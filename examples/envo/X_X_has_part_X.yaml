@@ -8,7 +8,8 @@ description: >-
   Examples: [pockmark field](http://purl.obolibrary.org/obo/ENVO_02000003), [iron planet](http://purl.obolibrary.org/obo/ENVO_01001142), [mixed potential and kinetic energy](http://purl.obolibrary.org/obo/ENVO_2000018) (13 total)
 
 classes: 
-  skeletal meat part, without bone or shell: "ns2:FOODON_03420125"
+  foodon product type: "FOODON:00001002"
+  skeletal meat part, without bone or shell: "FOODON:03420125"
 
 
 relations: 

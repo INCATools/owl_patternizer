@@ -8,6 +8,7 @@ description: >-
   Examples: [manufactured product](http://purl.obolibrary.org/obo/ENVO_00003074), [construction](http://purl.obolibrary.org/obo/ENVO_00000070), [construction](http://purl.obolibrary.org/obo/ENVO_00000070) (9 total)
 
 classes: 
+  material entity: "BFO:0000040"
   environmental system process: "ENVO:02500000"
 
 

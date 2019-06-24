@@ -8,6 +8,8 @@ description: >-
   Examples: [dissolved nitrogen atom in soil](http://purl.obolibrary.org/obo/ENVO_09100005), [dissolved nitrogen atom in water](http://purl.obolibrary.org/obo/ENVO_09100006), [dissolved nitrogen atom in environmental material](http://purl.obolibrary.org/obo/ENVO_09100004) (6 total)
 
 classes: 
+  nonmetal atom: "http://purl.obolibrary.org/obo/CHEBI_25585"
+  p-block element atom: "http://purl.obolibrary.org/obo/CHEBI_33560"
   environmental material: "ENVO:00010483"
   dissolved: "PATO:0001986"
 

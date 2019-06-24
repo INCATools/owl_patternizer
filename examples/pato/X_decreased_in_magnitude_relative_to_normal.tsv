@@ -1,0 +1,105 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/PATO_0001843	decreased acidity	http://purl.obolibrary.org/obo/PATO_0001842	acidity
+http://purl.obolibrary.org/obo/PATO_0002334	decreased adhesivity	http://purl.obolibrary.org/obo/PATO_0002331	adhesive
+http://purl.obolibrary.org/obo/PATO_0002072	decreased affinity	http://purl.obolibrary.org/obo/PATO_0002070	affinity
+http://purl.obolibrary.org/obo/PATO_0001765	decreased age	http://purl.obolibrary.org/obo/PATO_0000011	age
+http://purl.obolibrary.org/obo/PATO_0001997	decreased amount	http://purl.obolibrary.org/obo/PATO_0000070	amount
+http://purl.obolibrary.org/obo/PATO_0002328	decreased angle to	http://purl.obolibrary.org/obo/PATO_0002326	angle
+http://purl.obolibrary.org/obo/PATO_0002042	decreased anterior-posterior diameter	http://purl.obolibrary.org/obo/PATO_0002041	anterior-posterior diameter
+http://purl.obolibrary.org/obo/PATO_0002058	decreased area	http://purl.obolibrary.org/obo/PATO_0001323	area
+http://purl.obolibrary.org/obo/PATO_0002075	decreased avidity	http://purl.obolibrary.org/obo/PATO_0002073	avidity
+http://purl.obolibrary.org/obo/PATO_0000761	decreased behavioural activity	http://purl.obolibrary.org/obo/PATO_0001707	behavioural active
+http://purl.obolibrary.org/obo/PATO_0002297	decreased cellular motility	http://purl.obolibrary.org/obo/PATO_0001488	cellular motility
+http://purl.obolibrary.org/obo/PATO_0001899	decreased circumference	http://purl.obolibrary.org/obo/PATO_0001648	circumference
+http://purl.obolibrary.org/obo/PATO_0001796	decreased coiling	http://purl.obolibrary.org/obo/PATO_0000404	coiled
+http://purl.obolibrary.org/obo/PATO_0015023	decreased combustibility	http://purl.obolibrary.org/obo/PATO_0015021	combustibility
+http://purl.obolibrary.org/obo/PATO_0001163	decreased concentration	http://purl.obolibrary.org/obo/PATO_0001159	concentrated
+http://purl.obolibrary.org/obo/PATO_0001581	decreased contractility	http://purl.obolibrary.org/obo/PATO_0001690	contractile
+http://purl.obolibrary.org/obo/PATO_0001860	decreased coordination	http://purl.obolibrary.org/obo/PATO_0000769	coordinated
+http://purl.obolibrary.org/obo/PATO_0001593	decreased curvature	http://purl.obolibrary.org/obo/PATO_0000406	curved
+http://purl.obolibrary.org/obo/PATO_0015015	decreased degree of illumination	http://purl.obolibrary.org/obo/PATO_0015013	degree of illumination
+http://purl.obolibrary.org/obo/PATO_0001472	decreased depth	http://purl.obolibrary.org/obo/PATO_0001595	depth
+http://purl.obolibrary.org/obo/PATO_0001715	decreased diameter	http://purl.obolibrary.org/obo/PATO_0001334	diameter
+http://purl.obolibrary.org/obo/PATO_0000375	decreased distance	http://purl.obolibrary.org/obo/PATO_0000040	distance
+http://purl.obolibrary.org/obo/PATO_0001672	decreased distribution	http://purl.obolibrary.org/obo/PATO_0001566	distributed
+http://purl.obolibrary.org/obo/PATO_0000499	decreased duration	http://purl.obolibrary.org/obo/PATO_0001309	duration
+http://purl.obolibrary.org/obo/PATO_0001311	decreased duration of temperature	http://purl.obolibrary.org/obo/PATO_0001310	duration of temperature
+http://purl.obolibrary.org/obo/PATO_0015003	decreased efficacy	http://purl.obolibrary.org/obo/PATO_0015002	process efficacy
+http://purl.obolibrary.org/obo/PATO_0001675	decreased efficiency	http://purl.obolibrary.org/obo/PATO_0001678	efficient
+http://purl.obolibrary.org/obo/PATO_0002288	decreased elasticity	http://purl.obolibrary.org/obo/PATO_0001171	elastic
+http://purl.obolibrary.org/obo/PATO_0001689	decreased elevation	http://purl.obolibrary.org/obo/PATO_0001687	elevation
+http://purl.obolibrary.org/obo/PATO_0001696	decreased fecundity	http://purl.obolibrary.org/obo/PATO_0000273	fecundity
+http://purl.obolibrary.org/obo/PATO_0001830	decreased female fertility	http://purl.obolibrary.org/obo/PATO_0000888	female fertile
+http://purl.obolibrary.org/obo/PATO_0001724	decreased female receptivity	http://purl.obolibrary.org/obo/PATO_0001720	female receptivity
+http://purl.obolibrary.org/obo/PATO_0001834	decreased fertility	http://purl.obolibrary.org/obo/PATO_0000955	fertile
+http://purl.obolibrary.org/obo/PATO_0001777	decreased flexibility	http://purl.obolibrary.org/obo/PATO_0001544	flexible
+http://purl.obolibrary.org/obo/PATO_0001838	decreased fluid flow	http://purl.obolibrary.org/obo/PATO_0002243	fluid flow rate
+http://purl.obolibrary.org/obo/PATO_0001927	decreased fluorescence	http://purl.obolibrary.org/obo/PATO_0001290	fluorescent
+http://purl.obolibrary.org/obo/PATO_0002246	decreased force	http://purl.obolibrary.org/obo/PATO_0001035	force
+http://purl.obolibrary.org/obo/PATO_0002056	decreased fragility	http://purl.obolibrary.org/obo/PATO_0001362	fragile
+http://purl.obolibrary.org/obo/PATO_0000381	decreased frequency	http://purl.obolibrary.org/obo/PATO_0000044	frequency
+http://purl.obolibrary.org/obo/PATO_0001624	decreased functionality	http://purl.obolibrary.org/obo/PATO_0001510	functional
+http://purl.obolibrary.org/obo/PATO_0000569	decreased height	http://purl.obolibrary.org/obo/PATO_0000119	height
+http://purl.obolibrary.org/obo/PATO_0015011	decreased humidity	http://purl.obolibrary.org/obo/PATO_0015009	humidity
+http://purl.obolibrary.org/obo/PATO_0001783	decreased intensity	http://purl.obolibrary.org/obo/PATO_0000049	intensity
+http://purl.obolibrary.org/obo/PATO_0000574	decreased length	http://purl.obolibrary.org/obo/PATO_0000122	length
+http://purl.obolibrary.org/obo/PATO_0001604	decreased life span	http://purl.obolibrary.org/obo/PATO_0000050	life span
+http://purl.obolibrary.org/obo/PATO_0001684	decreased magnetism	http://purl.obolibrary.org/obo/PATO_0001685	magnetic
+http://purl.obolibrary.org/obo/PATO_0001833	decreased male fertility	http://purl.obolibrary.org/obo/PATO_0000891	male fertile
+http://purl.obolibrary.org/obo/PATO_0001726	decreased male receptivity	http://purl.obolibrary.org/obo/PATO_0001721	male receptivity
+http://purl.obolibrary.org/obo/PATO_0001562	decreased mass	http://purl.obolibrary.org/obo/PATO_0000125	mass
+http://purl.obolibrary.org/obo/PATO_0001790	decreased mass density	http://purl.obolibrary.org/obo/PATO_0001164	dense
+http://purl.obolibrary.org/obo/PATO_0002283	decreased mobility	http://purl.obolibrary.org/obo/PATO_0000299	mobile
+http://purl.obolibrary.org/obo/PATO_0002303	decreased object quality	http://purl.obolibrary.org/obo/PATO_0001241	physical object quality
+http://purl.obolibrary.org/obo/PATO_0002052	decreased occurrence	http://purl.obolibrary.org/obo/PATO_0000057	occurrence
+http://purl.obolibrary.org/obo/PATO_0001892	decreased odor	http://purl.obolibrary.org/obo/PATO_0001331	odorous
+http://purl.obolibrary.org/obo/PATO_0002028	decreased osmolality	http://purl.obolibrary.org/obo/PATO_0002027	osmolality
+http://purl.obolibrary.org/obo/PATO_0001656	decreased osmolarity	http://purl.obolibrary.org/obo/PATO_0001655	osmolarity
+http://purl.obolibrary.org/obo/PATO_0001713	decreased perimeter	http://purl.obolibrary.org/obo/PATO_0001711	perimeter
+http://purl.obolibrary.org/obo/PATO_0001578	decreased permeability	http://purl.obolibrary.org/obo/PATO_0000982	permeable
+http://purl.obolibrary.org/obo/PATO_0002222	decreased phosphorylation	http://purl.obolibrary.org/obo/PATO_0002220	phosphorylated
+http://purl.obolibrary.org/obo/PATO_0001697	decreased photosensitivity	http://purl.obolibrary.org/obo/PATO_0000547	photosensitive
+http://purl.obolibrary.org/obo/PATO_0002251	decreased pigmentation	http://purl.obolibrary.org/obo/PATO_0002248	pigmented
+http://purl.obolibrary.org/obo/PATO_0015025	decreased porosity	http://purl.obolibrary.org/obo/PATO_0000973	porosity
+http://purl.obolibrary.org/obo/PATO_0001476	decreased position	http://purl.obolibrary.org/obo/PATO_0000140	position
+http://purl.obolibrary.org/obo/PATO_0001575	decreased pressure	http://purl.obolibrary.org/obo/PATO_0001025	pressure
+http://purl.obolibrary.org/obo/PATO_0002302	decreased process quality	http://purl.obolibrary.org/obo/PATO_0001236	process quality
+http://purl.obolibrary.org/obo/PATO_0002301	decreased quality	http://purl.obolibrary.org/obo/PATO_0000001	quality
+http://purl.obolibrary.org/obo/PATO_0001743	decreased radioactivity	http://purl.obolibrary.org/obo/PATO_0001741	radioactive
+http://purl.obolibrary.org/obo/PATO_0002145	decreased radiopacity	http://purl.obolibrary.org/obo/PATO_0002136	radiopacity
+http://purl.obolibrary.org/obo/PATO_0000911	decreased rate	http://purl.obolibrary.org/obo/PATO_0000161	rate
+http://purl.obolibrary.org/obo/PATO_0001651	decreased resistance to	http://purl.obolibrary.org/obo/PATO_0001178	resistant to
+http://purl.obolibrary.org/obo/PATO_0001552	decreased sensitivity of a process	http://purl.obolibrary.org/obo/PATO_0001457	sensitivity of a process
+http://purl.obolibrary.org/obo/PATO_0001554	decreased sensitivity of a process to oxygen	http://purl.obolibrary.org/obo/PATO_0001459	aerobic (for occurrence)
+http://purl.obolibrary.org/obo/PATO_0001807	decreased sensitivity to irradiation	http://purl.obolibrary.org/obo/PATO_0001806	sensitivity to irradiation
+http://purl.obolibrary.org/obo/PATO_0001550	decreased sensitivity toward	http://purl.obolibrary.org/obo/PATO_0000516	sensitive toward
+http://purl.obolibrary.org/obo/PATO_0000587	decreased size	http://purl.obolibrary.org/obo/PATO_0000117	size
+http://purl.obolibrary.org/obo/PATO_0001664	decreased solubility	http://purl.obolibrary.org/obo/PATO_0001537	soluble in
+http://purl.obolibrary.org/obo/PATO_0000304	decreased speed	http://purl.obolibrary.org/obo/PATO_0000008	speed
+http://purl.obolibrary.org/obo/PATO_0015028	decreased stability	http://purl.obolibrary.org/obo/PATO_0015026	stability
+http://purl.obolibrary.org/obo/PATO_0001779	decreased strength	http://purl.obolibrary.org/obo/PATO_0001230	strength
+http://purl.obolibrary.org/obo/PATO_0001670	decreased susceptibility toward	http://purl.obolibrary.org/obo/PATO_0001152	susceptible toward
+http://purl.obolibrary.org/obo/PATO_0001306	decreased temperature	http://purl.obolibrary.org/obo/PATO_0000146	temperature
+http://purl.obolibrary.org/obo/PATO_0002362	decreased tendency	http://purl.obolibrary.org/obo/PATO_0002360	tendency
+http://purl.obolibrary.org/obo/PATO_0000592	decreased thickness	http://purl.obolibrary.org/obo/PATO_0000915	thickness
+http://purl.obolibrary.org/obo/PATO_0000708	decreased threshold	http://purl.obolibrary.org/obo/PATO_0000152	threshold
+http://purl.obolibrary.org/obo/PATO_0002394	decreased tolerance to	http://purl.obolibrary.org/obo/PATO_0000515	tolerant to
+http://purl.obolibrary.org/obo/PATO_0001619	decreased tonicity	http://purl.obolibrary.org/obo/PATO_0001439	tonicity
+http://purl.obolibrary.org/obo/PATO_0001621	decreased turgor	http://purl.obolibrary.org/obo/PATO_0001620	turgor
+http://purl.obolibrary.org/obo/PATO_0001583	decreased variability	http://purl.obolibrary.org/obo/PATO_0001227	variant
+http://purl.obolibrary.org/obo/PATO_0001613	decreased variability of color	http://purl.obolibrary.org/obo/PATO_0001615	variant color
+http://purl.obolibrary.org/obo/PATO_0001588	decreased variability of rate	http://purl.obolibrary.org/obo/PATO_0001586	variability of rate
+http://purl.obolibrary.org/obo/PATO_0001957	decreased variability of size	http://purl.obolibrary.org/obo/PATO_0001956	variability of size
+http://purl.obolibrary.org/obo/PATO_0001307	decreased variability of temperature	http://purl.obolibrary.org/obo/PATO_0001314	variant temperature
+http://purl.obolibrary.org/obo/PATO_0002472	decreased velocity	http://purl.obolibrary.org/obo/PATO_0002242	velocity
+http://purl.obolibrary.org/obo/PATO_0001694	decreased viscosity	http://purl.obolibrary.org/obo/PATO_0000998	viscous
+http://purl.obolibrary.org/obo/PATO_0000596	decreased volume	http://purl.obolibrary.org/obo/PATO_0000918	volume
+http://purl.obolibrary.org/obo/PATO_0001801	decreased water composition	http://purl.obolibrary.org/obo/PATO_0001800	water composition
+http://purl.obolibrary.org/obo/PATO_0002383	decreased waxiness	http://purl.obolibrary.org/obo/PATO_0002381	waxiness
+http://purl.obolibrary.org/obo/PATO_0000583	decreased weight	http://purl.obolibrary.org/obo/PATO_0000128	weight
+http://purl.obolibrary.org/obo/PATO_0001826	decreased wetness	http://purl.obolibrary.org/obo/PATO_0001823	wet
+http://purl.obolibrary.org/obo/PATO_0000599	decreased width	http://purl.obolibrary.org/obo/PATO_0000921	width
+http://purl.obolibrary.org/obo/PATO_0002001	has fewer parts of type	http://purl.obolibrary.org/obo/PATO_0001999	lacks parts or has fewer parts of type
+http://purl.obolibrary.org/obo/PATO_0001194	hyporesponsive to	http://purl.obolibrary.org/obo/PATO_0000487	responsive to
+http://purl.obolibrary.org/obo/PATO_0002147	reduced virulence	http://purl.obolibrary.org/obo/PATO_0002146	virulence
+http://purl.obolibrary.org/obo/PATO_0000387	soft	http://purl.obolibrary.org/obo/PATO_0000048	hardness

@@ -8,6 +8,7 @@ description: >-
   Examples: [water ice sublimation process](http://purl.obolibrary.org/obo/ENVO_01000920), [formation of a solid aerosol from gaseous material in an atmosphere](http://purl.obolibrary.org/obo/ENVO_01001090), [formation of a liquid aerosol from gaseous material in an atmosphere](http://purl.obolibrary.org/obo/ENVO_01001091) (9 total)
 
 classes: 
+  material entity: "BFO:0000040"
   environmental system process: "ENVO:02500000"
 
 

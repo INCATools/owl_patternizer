@@ -8,6 +8,7 @@ description: >-
   Examples: [chorionic ectoderm](http://purl.obolibrary.org/obo/UBERON_0003374), [oral epithelium from ectoderm](http://purl.obolibrary.org/obo/UBERON_0011642), [anal membrane ectodermal component](http://purl.obolibrary.org/obo/UBERON_0014703) (4 total)
 
 classes: 
+  material anatomical entity: "UBERON:0000465"
   ectoderm: "UBERON:0000924"
   multicellular anatomical structure: "UBERON:0010000"
 

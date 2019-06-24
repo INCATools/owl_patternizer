@@ -8,7 +8,7 @@ description: >-
   Examples: [concentration of oxygen in water](http://purl.obolibrary.org/obo/ENVO_09200021), [concentration of Adenosine 5-triphosphate in water](http://purl.obolibrary.org/obo/ENVO_3100001), [concentration of Guanosine 5-triphosphate in water](http://purl.obolibrary.org/obo/ENVO_3100015) (33 total)
 
 classes: 
-  chemical entity: "ns2:CHEBI_24431"
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
   liquid water: "ENVO:00002006"
   concentration of: "PATO:0000033"
 

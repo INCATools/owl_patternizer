@@ -1,0 +1,15 @@
+defined_class	defined_class_label	v0	v0_label	v1	v1_label
+http://purl.obolibrary.org/obo/ENVO_01001052	aerosol environment	http://purl.obolibrary.org/obo/ENVO_01000254	environmental system	http://purl.obolibrary.org/obo/ENVO_00010505	aerosol
+http://purl.obolibrary.org/obo/ENVO_01001002	animal-associated environment	http://purl.obolibrary.org/obo/ENVO_01000254	environmental system	http://purl.obolibrary.org/obo/NCBITaxon_33208	Metazoa
+http://purl.obolibrary.org/obo/ENVO_01000317	aquatic environment	http://purl.obolibrary.org/obo/ENVO_01000254	environmental system	http://purl.obolibrary.org/obo/ENVO_00002006	water
+http://purl.obolibrary.org/obo/ENVO_01001055	environment associated with an animal part or small animal	http://purl.obolibrary.org/obo/ENVO_01000254	environmental system	http://purl.obolibrary.org/obo/CARO_0000006	material anatomical entity
+http://purl.obolibrary.org/obo/ENVO_01000998	environmental system determined by a material	http://purl.obolibrary.org/obo/ENVO_01000254	environmental system	http://purl.obolibrary.org/obo/ENVO_00010483	environmental material
+http://purl.obolibrary.org/obo/ENVO_01000998	environmental system determined by a material	http://purl.obolibrary.org/obo/RO_0002577	system	http://purl.obolibrary.org/obo/ENVO_00010483	environmental material
+http://purl.obolibrary.org/obo/ENVO_01001000	environmental system determined by an organism	http://purl.obolibrary.org/obo/ENVO_01000254	environmental system	http://purl.obolibrary.org/obo/NCBITaxon_131567	cellular organisms
+http://purl.obolibrary.org/obo/ENVO_01000306	freshwater environment	http://purl.obolibrary.org/obo/ENVO_01000254	environmental system	http://purl.obolibrary.org/obo/ENVO_00002011	fresh water
+http://purl.obolibrary.org/obo/ENVO_01000306	freshwater environment	http://purl.obolibrary.org/obo/ENVO_01000317	aquatic environment	http://purl.obolibrary.org/obo/ENVO_00002011	fresh water
+http://purl.obolibrary.org/obo/ENVO_01000307	saline water environment	http://purl.obolibrary.org/obo/ENVO_01000317	aquatic environment	http://purl.obolibrary.org/obo/ENVO_00002010	saline water
+http://purl.obolibrary.org/obo/ENVO_01000307	saline water environment	http://purl.obolibrary.org/obo/ENVO_01001040	saline environment	http://purl.obolibrary.org/obo/ENVO_00002006	water
+http://purl.obolibrary.org/obo/ENVO_01000321	sea water environment	http://purl.obolibrary.org/obo/ENVO_01000254	environmental system	http://purl.obolibrary.org/obo/ENVO_00002149	sea water
+http://purl.obolibrary.org/obo/ENVO_01000321	sea water environment	http://purl.obolibrary.org/obo/ENVO_01000307	saline water environment	http://purl.obolibrary.org/obo/ENVO_00002149	sea water
+http://purl.obolibrary.org/obo/ENVO_01001044	soil environment	http://purl.obolibrary.org/obo/ENVO_01000254	environmental system	http://purl.obolibrary.org/obo/ENVO_00001998	soil

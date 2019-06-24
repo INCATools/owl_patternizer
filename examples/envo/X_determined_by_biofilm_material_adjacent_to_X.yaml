@@ -9,6 +9,7 @@ description: >-
 
 classes: 
   biofilm material: "ENVO:01000156"
+  ecosystem: "ENVO:01001110"
   anatomical surface region: "UBERON:0036215"
 
 

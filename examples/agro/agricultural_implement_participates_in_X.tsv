@@ -1,0 +1,11 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/AGRO_00000227	fertilization implement	http://purl.obolibrary.org/obo/AGRO_01000000	agronomic fertilization process
+http://purl.obolibrary.org/obo/AGRO_00000234	harvest implement	http://purl.obolibrary.org/obo/AGRO_00000025	harvesting process
+http://purl.obolibrary.org/obo/AGRO_00000241	irrigation equipment	http://purl.obolibrary.org/obo/AGRO_00000006	irrigation process
+http://purl.obolibrary.org/obo/AGRO_00000224	land levelling implement	http://purl.obolibrary.org/obo/AGRO_00000004	land levelling process
+http://purl.obolibrary.org/obo/AGRO_00000236	mulch implement	http://purl.obolibrary.org/obo/AGRO_00000111	mulching process
+http://purl.obolibrary.org/obo/AGRO_00000230	planting implement	http://purl.obolibrary.org/obo/AGRO_00000231	planting process
+http://purl.obolibrary.org/obo/AGRO_00000235	puddling implement	http://purl.obolibrary.org/obo/AGRO_00000028	puddling process
+http://purl.obolibrary.org/obo/AGRO_00000225	residue management implement	http://purl.obolibrary.org/obo/AGRO_00000005	crop residue management process
+http://purl.obolibrary.org/obo/AGRO_00000232	sowing implement	http://purl.obolibrary.org/obo/AGRO_00000142	seeding process
+http://purl.obolibrary.org/obo/AGRO_00000223	tillage implement	http://purl.obolibrary.org/obo/AGRO_00000002	tillage process

@@ -1,0 +1,106 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/PATO_0000386	hard	http://purl.obolibrary.org/obo/PATO_0000048	hardness
+http://purl.obolibrary.org/obo/PATO_0002002	has extra parts of type	http://purl.obolibrary.org/obo/PATO_0002083	altered number of
+http://purl.obolibrary.org/obo/PATO_0001559	having extra function	http://purl.obolibrary.org/obo/PATO_0001509	functionality
+http://purl.obolibrary.org/obo/PATO_0002162	high-arched	http://purl.obolibrary.org/obo/PATO_0001594	arched
+http://purl.obolibrary.org/obo/PATO_0001192	hyperresponsive to	http://purl.obolibrary.org/obo/PATO_0000487	responsive to
+http://purl.obolibrary.org/obo/PATO_0001844	increased acidity	http://purl.obolibrary.org/obo/PATO_0001842	acidity
+http://purl.obolibrary.org/obo/PATO_0002333	increased adhesivity	http://purl.obolibrary.org/obo/PATO_0002331	adhesive
+http://purl.obolibrary.org/obo/PATO_0002071	increased affinity	http://purl.obolibrary.org/obo/PATO_0002070	affinity
+http://purl.obolibrary.org/obo/PATO_0001764	increased age	http://purl.obolibrary.org/obo/PATO_0000011	age
+http://purl.obolibrary.org/obo/PATO_0000470	increased amount	http://purl.obolibrary.org/obo/PATO_0000070	amount
+http://purl.obolibrary.org/obo/PATO_0002327	increased angle to	http://purl.obolibrary.org/obo/PATO_0002326	angle
+http://purl.obolibrary.org/obo/PATO_0002043	increased anterior-posterior diameter	http://purl.obolibrary.org/obo/PATO_0002041	anterior-posterior diameter
+http://purl.obolibrary.org/obo/PATO_0002057	increased area	http://purl.obolibrary.org/obo/PATO_0001323	area
+http://purl.obolibrary.org/obo/PATO_0002074	increased avidity	http://purl.obolibrary.org/obo/PATO_0002073	avidity
+http://purl.obolibrary.org/obo/PATO_0000760	increased behavioural activity	http://purl.obolibrary.org/obo/PATO_0001707	behavioural active
+http://purl.obolibrary.org/obo/PATO_0002298	increased cellular motility	http://purl.obolibrary.org/obo/PATO_0001488	cellular motility
+http://purl.obolibrary.org/obo/PATO_0001898	increased circumference	http://purl.obolibrary.org/obo/PATO_0001648	circumference
+http://purl.obolibrary.org/obo/PATO_0001795	increased coiling	http://purl.obolibrary.org/obo/PATO_0000404	coiled
+http://purl.obolibrary.org/obo/PATO_0015022	increased combustibility	http://purl.obolibrary.org/obo/PATO_0015021	combustibility
+http://purl.obolibrary.org/obo/PATO_0001162	increased concentration	http://purl.obolibrary.org/obo/PATO_0001159	concentrated
+http://purl.obolibrary.org/obo/PATO_0001580	increased contractility	http://purl.obolibrary.org/obo/PATO_0001690	contractile
+http://purl.obolibrary.org/obo/PATO_0001859	increased coordination	http://purl.obolibrary.org/obo/PATO_0000769	coordinated
+http://purl.obolibrary.org/obo/PATO_0001592	increased curvature	http://purl.obolibrary.org/obo/PATO_0000406	curved
+http://purl.obolibrary.org/obo/PATO_0015014	increased degree of illumination	http://purl.obolibrary.org/obo/PATO_0015013	degree of illumination
+http://purl.obolibrary.org/obo/PATO_0001596	increased depth	http://purl.obolibrary.org/obo/PATO_0001595	depth
+http://purl.obolibrary.org/obo/PATO_0001714	increased diameter	http://purl.obolibrary.org/obo/PATO_0001334	diameter
+http://purl.obolibrary.org/obo/PATO_0000374	increased distance	http://purl.obolibrary.org/obo/PATO_0000040	distance
+http://purl.obolibrary.org/obo/PATO_0001671	increased distribution	http://purl.obolibrary.org/obo/PATO_0001566	distributed
+http://purl.obolibrary.org/obo/PATO_0000498	increased duration	http://purl.obolibrary.org/obo/PATO_0001309	duration
+http://purl.obolibrary.org/obo/PATO_0001312	increased duration of temperature	http://purl.obolibrary.org/obo/PATO_0001310	duration of temperature
+http://purl.obolibrary.org/obo/PATO_0015004	increased efficacy	http://purl.obolibrary.org/obo/PATO_0015002	process efficacy
+http://purl.obolibrary.org/obo/PATO_0001676	increased efficiency	http://purl.obolibrary.org/obo/PATO_0001678	efficient
+http://purl.obolibrary.org/obo/PATO_0002287	increased elasticity	http://purl.obolibrary.org/obo/PATO_0001171	elastic
+http://purl.obolibrary.org/obo/PATO_0001688	increased elevation	http://purl.obolibrary.org/obo/PATO_0001687	elevation
+http://purl.obolibrary.org/obo/PATO_0001695	increased fecundity	http://purl.obolibrary.org/obo/PATO_0000273	fecundity
+http://purl.obolibrary.org/obo/PATO_0001831	increased female fertility	http://purl.obolibrary.org/obo/PATO_0000888	female fertile
+http://purl.obolibrary.org/obo/PATO_0001723	increased female receptivity	http://purl.obolibrary.org/obo/PATO_0001720	female receptivity
+http://purl.obolibrary.org/obo/PATO_0001835	increased fertility	http://purl.obolibrary.org/obo/PATO_0000955	fertile
+http://purl.obolibrary.org/obo/PATO_0001776	increased flexibility	http://purl.obolibrary.org/obo/PATO_0001544	flexible
+http://purl.obolibrary.org/obo/PATO_0001839	increased fluid flow	http://purl.obolibrary.org/obo/PATO_0002243	fluid flow rate
+http://purl.obolibrary.org/obo/PATO_0001926	increased fluorescence	http://purl.obolibrary.org/obo/PATO_0001290	fluorescent
+http://purl.obolibrary.org/obo/PATO_0002245	increased force	http://purl.obolibrary.org/obo/PATO_0001035	force
+http://purl.obolibrary.org/obo/PATO_0002055	increased fragility	http://purl.obolibrary.org/obo/PATO_0001362	fragile
+http://purl.obolibrary.org/obo/PATO_0000380	increased frequency	http://purl.obolibrary.org/obo/PATO_0000044	frequency
+http://purl.obolibrary.org/obo/PATO_0001625	increased functionality	http://purl.obolibrary.org/obo/PATO_0001510	functional
+http://purl.obolibrary.org/obo/PATO_0000570	increased height	http://purl.obolibrary.org/obo/PATO_0000119	height
+http://purl.obolibrary.org/obo/PATO_0015010	increased humidity	http://purl.obolibrary.org/obo/PATO_0015009	humidity
+http://purl.obolibrary.org/obo/PATO_0001782	increased intensity	http://purl.obolibrary.org/obo/PATO_0000049	intensity
+http://purl.obolibrary.org/obo/PATO_0000573	increased length	http://purl.obolibrary.org/obo/PATO_0000122	length
+http://purl.obolibrary.org/obo/PATO_0001603	increased life span	http://purl.obolibrary.org/obo/PATO_0000050	life span
+http://purl.obolibrary.org/obo/PATO_0001683	increased magnetism	http://purl.obolibrary.org/obo/PATO_0001685	magnetic
+http://purl.obolibrary.org/obo/PATO_0001832	increased male fertility	http://purl.obolibrary.org/obo/PATO_0000891	male fertile
+http://purl.obolibrary.org/obo/PATO_0001725	increased male receptivity	http://purl.obolibrary.org/obo/PATO_0001721	male receptivity
+http://purl.obolibrary.org/obo/PATO_0001563	increased mass	http://purl.obolibrary.org/obo/PATO_0000125	mass
+http://purl.obolibrary.org/obo/PATO_0001788	increased mass density	http://purl.obolibrary.org/obo/PATO_0001164	dense
+http://purl.obolibrary.org/obo/PATO_0002282	increased mobility	http://purl.obolibrary.org/obo/PATO_0000299	mobile
+http://purl.obolibrary.org/obo/PATO_0002305	increased object quality	http://purl.obolibrary.org/obo/PATO_0001241	physical object quality
+http://purl.obolibrary.org/obo/PATO_0002051	increased occurrence	http://purl.obolibrary.org/obo/PATO_0000057	occurrence
+http://purl.obolibrary.org/obo/PATO_0001893	increased odor	http://purl.obolibrary.org/obo/PATO_0001331	odorous
+http://purl.obolibrary.org/obo/PATO_0002029	increased osmolality	http://purl.obolibrary.org/obo/PATO_0002027	osmolality
+http://purl.obolibrary.org/obo/PATO_0001657	increased osmolarity	http://purl.obolibrary.org/obo/PATO_0001655	osmolarity
+http://purl.obolibrary.org/obo/PATO_0001712	increased perimeter	http://purl.obolibrary.org/obo/PATO_0001711	perimeter
+http://purl.obolibrary.org/obo/PATO_0001577	increased permeability	http://purl.obolibrary.org/obo/PATO_0000982	permeable
+http://purl.obolibrary.org/obo/PATO_0002221	increased phosphorylation	http://purl.obolibrary.org/obo/PATO_0002220	phosphorylated
+http://purl.obolibrary.org/obo/PATO_0001698	increased photosensitivity	http://purl.obolibrary.org/obo/PATO_0000547	photosensitive
+http://purl.obolibrary.org/obo/PATO_0002250	increased pigmentation	http://purl.obolibrary.org/obo/PATO_0002248	pigmented
+http://purl.obolibrary.org/obo/PATO_0015024	increased porosity	http://purl.obolibrary.org/obo/PATO_0000973	porosity
+http://purl.obolibrary.org/obo/PATO_0001475	increased position	http://purl.obolibrary.org/obo/PATO_0000140	position
+http://purl.obolibrary.org/obo/PATO_0001576	increased pressure	http://purl.obolibrary.org/obo/PATO_0001025	pressure
+http://purl.obolibrary.org/obo/PATO_0002304	increased process quality	http://purl.obolibrary.org/obo/PATO_0001236	process quality
+http://purl.obolibrary.org/obo/PATO_0002300	increased quality	http://purl.obolibrary.org/obo/PATO_0000001	quality
+http://purl.obolibrary.org/obo/PATO_0001742	increased radioactivity	http://purl.obolibrary.org/obo/PATO_0001741	radioactive
+http://purl.obolibrary.org/obo/PATO_0002144	increased radiopacity	http://purl.obolibrary.org/obo/PATO_0002136	radiopacity
+http://purl.obolibrary.org/obo/PATO_0000912	increased rate	http://purl.obolibrary.org/obo/PATO_0000161	rate
+http://purl.obolibrary.org/obo/PATO_0001650	increased resistance to	http://purl.obolibrary.org/obo/PATO_0001178	resistant to
+http://purl.obolibrary.org/obo/PATO_0001551	increased sensitivity of a process	http://purl.obolibrary.org/obo/PATO_0001457	sensitivity of a process
+http://purl.obolibrary.org/obo/PATO_0001553	increased sensitivity of a process to oxygen	http://purl.obolibrary.org/obo/PATO_0001459	aerobic (for occurrence)
+http://purl.obolibrary.org/obo/PATO_0001808	increased sensitivity to irradiation	http://purl.obolibrary.org/obo/PATO_0001806	sensitivity to irradiation
+http://purl.obolibrary.org/obo/PATO_0001549	increased sensitivity toward	http://purl.obolibrary.org/obo/PATO_0000516	sensitive toward
+http://purl.obolibrary.org/obo/PATO_0000586	increased size	http://purl.obolibrary.org/obo/PATO_0000117	size
+http://purl.obolibrary.org/obo/PATO_0001663	increased solubility	http://purl.obolibrary.org/obo/PATO_0001537	soluble in
+http://purl.obolibrary.org/obo/PATO_0000303	increased speed	http://purl.obolibrary.org/obo/PATO_0000008	speed
+http://purl.obolibrary.org/obo/PATO_0015027	increased stability	http://purl.obolibrary.org/obo/PATO_0015026	stability
+http://purl.obolibrary.org/obo/PATO_0001778	increased strength	http://purl.obolibrary.org/obo/PATO_0001230	strength
+http://purl.obolibrary.org/obo/PATO_0001669	increased susceptibility toward	http://purl.obolibrary.org/obo/PATO_0001152	susceptible toward
+http://purl.obolibrary.org/obo/PATO_0001305	increased temperature	http://purl.obolibrary.org/obo/PATO_0000146	temperature
+http://purl.obolibrary.org/obo/PATO_0002361	increased tendency	http://purl.obolibrary.org/obo/PATO_0002360	tendency
+http://purl.obolibrary.org/obo/PATO_0000591	increased thickness	http://purl.obolibrary.org/obo/PATO_0000915	thickness
+http://purl.obolibrary.org/obo/PATO_0000706	increased threshold	http://purl.obolibrary.org/obo/PATO_0000152	threshold
+http://purl.obolibrary.org/obo/PATO_0002393	increased tolerance to	http://purl.obolibrary.org/obo/PATO_0000515	tolerant to
+http://purl.obolibrary.org/obo/PATO_0001618	increased tonicity	http://purl.obolibrary.org/obo/PATO_0001439	tonicity
+http://purl.obolibrary.org/obo/PATO_0001622	increased turgor	http://purl.obolibrary.org/obo/PATO_0001620	turgor
+http://purl.obolibrary.org/obo/PATO_0001584	increased variability	http://purl.obolibrary.org/obo/PATO_0001227	variant
+http://purl.obolibrary.org/obo/PATO_0001612	increased variability of color	http://purl.obolibrary.org/obo/PATO_0001615	variant color
+http://purl.obolibrary.org/obo/PATO_0001587	increased variability of rate	http://purl.obolibrary.org/obo/PATO_0001586	variability of rate
+http://purl.obolibrary.org/obo/PATO_0001958	increased variability of size	http://purl.obolibrary.org/obo/PATO_0001956	variability of size
+http://purl.obolibrary.org/obo/PATO_0001308	increased variability of temperature	http://purl.obolibrary.org/obo/PATO_0001314	variant temperature
+http://purl.obolibrary.org/obo/PATO_0002471	increased velocity	http://purl.obolibrary.org/obo/PATO_0002242	velocity
+http://purl.obolibrary.org/obo/PATO_0002148	increased virulence	http://purl.obolibrary.org/obo/PATO_0002146	virulence
+http://purl.obolibrary.org/obo/PATO_0001693	increased viscosity	http://purl.obolibrary.org/obo/PATO_0000998	viscous
+http://purl.obolibrary.org/obo/PATO_0000595	increased volume	http://purl.obolibrary.org/obo/PATO_0000918	volume
+http://purl.obolibrary.org/obo/PATO_0002382	increased waxiness	http://purl.obolibrary.org/obo/PATO_0002381	waxiness
+http://purl.obolibrary.org/obo/PATO_0000582	increased weight	http://purl.obolibrary.org/obo/PATO_0000128	weight
+http://purl.obolibrary.org/obo/PATO_0001825	increased wetness	http://purl.obolibrary.org/obo/PATO_0001823	wet
+http://purl.obolibrary.org/obo/PATO_0000600	increased width	http://purl.obolibrary.org/obo/PATO_0000921	width

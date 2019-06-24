@@ -8,8 +8,9 @@ description: >-
   Examples: [chickpea food product](http://purl.obolibrary.org/obo/FOODON_00001199), [cowpea food product](http://purl.obolibrary.org/obo/FOODON_00001200), [lentil food product](http://purl.obolibrary.org/obo/FOODON_00001195) (15 total)
 
 classes: 
-  food product by organism: "ns2:FOODON_00002381"
-  food material: "ns2:FOODON_00002403"
+  material entity: "BFO:0000040"
+  food product by organism: "FOODON:00002381"
+  food material: "FOODON:00002403"
 
 
 relations: 

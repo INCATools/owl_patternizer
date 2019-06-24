@@ -1,0 +1,11 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/OBI_0000274	adding a material entity into a target	http://purl.obolibrary.org/obo/OBI_0000434	adding material objective
+http://purl.obolibrary.org/obo/OBI_0000070	assay	http://purl.obolibrary.org/obo/OBI_0000441	assay objective
+http://purl.obolibrary.org/obo/OBI_0200000	data transformation	http://purl.obolibrary.org/obo/OBI_0200166	data transformation objective
+http://purl.obolibrary.org/obo/OBI_0000707	decision tree building data transformation	http://purl.obolibrary.org/obo/OBI_0000704	decision tree induction objective
+http://purl.obolibrary.org/obo/OBI_0000457	manufacturing	http://purl.obolibrary.org/obo/OBI_0000458	manufacturing objective
+http://purl.obolibrary.org/obo/OBI_0000652	material combination	http://purl.obolibrary.org/obo/OBI_0000686	material combination objective
+http://purl.obolibrary.org/obo/OBI_0000094	material processing	http://purl.obolibrary.org/obo/OBI_0000456	material transformation objective
+http://purl.obolibrary.org/obo/OBI_0200171	partitioning data transformation	http://purl.obolibrary.org/obo/OBI_0200172	partitioning objective
+http://purl.obolibrary.org/obo/OBI_0000792	statistical model validation	http://purl.obolibrary.org/obo/OBI_0200188	cross validation objective
+http://purl.obolibrary.org/obo/OBI_0000939	training process	http://purl.obolibrary.org/obo/OBI_0000962	training objective

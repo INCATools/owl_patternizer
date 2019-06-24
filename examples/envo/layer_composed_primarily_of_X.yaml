@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/layer_composed_primarily_of_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [glaze ice layer](http://purl.obolibrary.org/obo/ENVO_01000547), [solid layer](http://purl.obolibrary.org/obo/ENVO_01001275), [liquid layer](http://purl.obolibrary.org/obo/ENVO_01001273) (5 total)
+  Examples: [grease ice layer](http://purl.obolibrary.org/obo/ENVO_03000074), [solid layer](http://purl.obolibrary.org/obo/ENVO_01001275), [liquid layer](http://purl.obolibrary.org/obo/ENVO_01001273) (5 total)
 
 classes: 
   material entity: "BFO:0000040"

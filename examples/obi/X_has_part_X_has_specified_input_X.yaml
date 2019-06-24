@@ -1,4 +1,4 @@
-# options: [min(8),dir(obi),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has part X has_specified_input X
 pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_part_X_has_specified_input_X
 
@@ -8,6 +8,8 @@ description: >-
   Examples: [biological activity assay measuring B cell epitope specific in vivo activity](http://purl.obolibrary.org/obo/OBI_0001698), [cell bound MHC direct binding assay measuring equilibrium association constant [KA] of a MHC:ligand complex using fluorescence detection](http://purl.obolibrary.org/obo/OBI_0001524), [cell bound MHC direct binding assay measuring half life of a MHC:ligand complex using radioactivity detection](http://purl.obolibrary.org/obo/OBI_0001558) (18 total)
 
 classes: 
+  material entity: "BFO:0000040"
+  in vivo intervention experiment: "http://purl.obolibrary.org/obo/OBI_0001980"
   immune epitope assay: "http://purl.obolibrary.org/obo/OBI_1110128"
 
 

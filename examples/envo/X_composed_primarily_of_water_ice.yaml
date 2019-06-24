@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/X_composed_primarily_of_water_i
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [ice mass](http://purl.obolibrary.org/obo/ENVO_01000293), [glaze ice layer](http://purl.obolibrary.org/obo/ENVO_01000547), [glacier ice field](http://purl.obolibrary.org/obo/ENVO_01001532) (4 total)
+  Examples: [ice mass](http://purl.obolibrary.org/obo/ENVO_01000293), [grease ice layer](http://purl.obolibrary.org/obo/ENVO_03000074), [glacier ice field](http://purl.obolibrary.org/obo/ENVO_01001532) (4 total)
 
 classes: 
   material entity: "BFO:0000040"

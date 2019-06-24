@@ -8,7 +8,7 @@ description: >-
   Examples: [concentration of nitrate in soil](http://purl.obolibrary.org/obo/ENVO_09200007), [concentration of nitrogen atom in soil](http://purl.obolibrary.org/obo/ENVO_09000017), [concentration of carbon atom in soil](http://purl.obolibrary.org/obo/ENVO_09000008) (4 total)
 
 classes: 
-  chemical entity: "ns2:CHEBI_24431"
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
   soil: "ENVO:00001998"
   concentration of: "PATO:0000033"
 

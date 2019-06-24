@@ -8,6 +8,7 @@ description: >-
   Examples: [iceberg calving process](http://purl.obolibrary.org/obo/ENVO_03000031), [water ice sublimation process](http://purl.obolibrary.org/obo/ENVO_01000920), [formation of a solid aerosol from gaseous material in an atmosphere](http://purl.obolibrary.org/obo/ENVO_01001090) (10 total)
 
 classes: 
+  process: "BFO:0000015"
   marine iceberg: "ENVO:00000298"
 
 

@@ -1,0 +1,16 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/DOID_9063	Ritter's disease	http://purl.obolibrary.org/obo/DOID_0050339	commensal bacterial infectious disease
+http://purl.obolibrary.org/obo/DOID_11450	allergic cutaneous vasculitis	http://purl.obolibrary.org/obo/DOID_1557	hypersensitivity reaction type III disease
+http://purl.obolibrary.org/obo/DOID_7426	cutaneous anthrax	http://purl.obolibrary.org/obo/DOID_7427	anthrax disease
+http://purl.obolibrary.org/obo/DOID_0050169	cutaneous lupus erythematosus	http://purl.obolibrary.org/obo/DOID_8857	lupus erythematosus
+http://purl.obolibrary.org/obo/DOID_3663	cutaneous mastocytosis	http://purl.obolibrary.org/obo/DOID_350	mastocytosis
+http://purl.obolibrary.org/obo/DOID_13271	cutaneous porphyria	http://purl.obolibrary.org/obo/DOID_13268	porphyria
+http://purl.obolibrary.org/obo/DOID_0050639	primary cutaneous amyloidosis	http://purl.obolibrary.org/obo/DOID_9120	amyloidosis
+http://purl.obolibrary.org/obo/DOID_3165	skin benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm
+http://purl.obolibrary.org/obo/DOID_4159	skin cancer	http://purl.obolibrary.org/obo/DOID_162	cancer
+http://purl.obolibrary.org/obo/DOID_8687	skin carcinoma in situ	http://purl.obolibrary.org/obo/DOID_8719	in situ carcinoma
+http://purl.obolibrary.org/obo/DOID_37	skin disease	http://purl.obolibrary.org/obo/DOID_4	disease
+http://purl.obolibrary.org/obo/DOID_2435	skin glomangioma	http://purl.obolibrary.org/obo/DOID_2436	glomangioma
+http://purl.obolibrary.org/obo/DOID_2430	skin glomus tumor	http://purl.obolibrary.org/obo/DOID_2431	glomus tumor
+http://purl.obolibrary.org/obo/DOID_13402	skin sarcoidosis	http://purl.obolibrary.org/obo/DOID_11335	sarcoidosis
+http://purl.obolibrary.org/obo/DOID_5769	verruciform xanthoma of skin	http://purl.obolibrary.org/obo/DOID_3345	xanthomatosis

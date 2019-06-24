@@ -1,4 +1,4 @@
-# options: [min(8),dir(obi),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has part enzyme-linked immunospot assay
 pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_part_enzyme_linked_immunospot_assay
 
@@ -20,14 +20,14 @@ vars:
   v0: "'immune epitope assay'"
 
 name:
-  # Could not induce name, using default
-  text: "%s has part enzyme-linked immunospot assay"
+  # Induced, frequency=0.046511627906976744, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "ELISPOT assay measuring epitope specific %s by T cells"
   vars:
     - v0
 
 def:
-  # Could not induce def, using default
-  text: "Any %s that has part a enzyme-linked immunospot assay"
+  # Induced, frequency=0.046511627906976744, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A T cell epitope specific %s assay that uses an ELISPOT assay."
   vars:
     - v0
 

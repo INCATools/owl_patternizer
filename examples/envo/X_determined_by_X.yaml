@@ -8,6 +8,7 @@ description: >-
   Examples: [environment associated with an animal part or small animal](http://purl.obolibrary.org/obo/ENVO_01001055), [soil environment](http://purl.obolibrary.org/obo/ENVO_01001044), [marine environment](http://purl.obolibrary.org/obo/ENVO_01000320) (62 total)
 
 classes: 
+  material entity: "BFO:0000040"
   system: "RO:0002577"
 
 

@@ -1,0 +1,21 @@
+defined_class	defined_class_label	v0	v0_label	v1	v1_label
+http://purl.obolibrary.org/obo/ENVO_01000268	atmospheric water vapour	http://purl.obolibrary.org/obo/ENVO_01000266	water vapour	http://purl.obolibrary.org/obo/ENVO_01000267	atmosphere
+http://purl.obolibrary.org/obo/ENVO_00002138	beach sand	http://purl.obolibrary.org/obo/ENVO_01000017	sand	http://purl.obolibrary.org/obo/ENVO_00002199	sandy beach
+http://purl.obolibrary.org/obo/ENVO_00000230	coastal wetland	http://purl.obolibrary.org/obo/ENVO_00000043	wetland	http://purl.obolibrary.org/obo/ENVO_00000303	sea coast
+http://purl.obolibrary.org/obo/ENVO_00000156	desert oasis	http://purl.obolibrary.org/obo/ENVO_01001304	oasis	http://purl.obolibrary.org/obo/ENVO_00000097	desert
+http://purl.obolibrary.org/obo/ENVO_00005800	desert sand	http://purl.obolibrary.org/obo/ENVO_01000017	sand	http://purl.obolibrary.org/obo/ENVO_00000097	desert
+http://purl.obolibrary.org/obo/PO_0025028	embryo plant cell	http://purl.obolibrary.org/obo/PO_0025606	native plant cell	http://purl.obolibrary.org/obo/PO_0009009	plant embryo
+http://purl.obolibrary.org/obo/PO_0025099	embryo plant structure	http://purl.obolibrary.org/obo/PO_0009011	plant structure	http://purl.obolibrary.org/obo/PO_0009009	plant embryo
+http://purl.obolibrary.org/obo/ENVO_00005749	farm soil	http://purl.obolibrary.org/obo/ENVO_00001998	soil	http://purl.obolibrary.org/obo/ENVO_00000078	farm
+http://purl.obolibrary.org/obo/ENVO_00005755	field soil	http://purl.obolibrary.org/obo/ENVO_00001998	soil	http://purl.obolibrary.org/obo/ENVO_00000114	agricultural field
+http://purl.obolibrary.org/obo/PO_0025395	floral organ	http://purl.obolibrary.org/obo/PO_0009008	plant organ	http://purl.obolibrary.org/obo/PO_0009046	flower
+http://purl.obolibrary.org/obo/ENVO_00002261	forest soil	http://purl.obolibrary.org/obo/ENVO_00001998	soil	http://purl.obolibrary.org/obo/ENVO_00000111	forest
+http://purl.obolibrary.org/obo/ENVO_00005750	grassland soil	http://purl.obolibrary.org/obo/ENVO_00001998	soil	http://purl.obolibrary.org/obo/ENVO_00000106	grassland
+http://purl.obolibrary.org/obo/ENVO_01000333	hillside	http://purl.obolibrary.org/obo/ENVO_00002000	slope	http://purl.obolibrary.org/obo/ENVO_00000083	hill
+http://purl.obolibrary.org/obo/ENVO_00000476	lake inlet	http://purl.obolibrary.org/obo/ENVO_00000475	inlet	http://purl.obolibrary.org/obo/ENVO_00000020	lake
+http://purl.obolibrary.org/obo/PO_0025233	portion of embryo plant tissue	http://purl.obolibrary.org/obo/PO_0009007	portion of plant tissue	http://purl.obolibrary.org/obo/PO_0009009	plant embryo
+http://purl.obolibrary.org/obo/ENVO_00005746	savanna soil	http://purl.obolibrary.org/obo/ENVO_00001998	soil	http://purl.obolibrary.org/obo/ENVO_00000261	savanna
+http://purl.obolibrary.org/obo/ENVO_00000485	sea shore	http://purl.obolibrary.org/obo/ENVO_00000304	shore	http://purl.obolibrary.org/obo/ENVO_00000303	sea coast
+http://purl.obolibrary.org/obo/ENVO_00005777	steppe soil	http://purl.obolibrary.org/obo/ENVO_00001998	soil	http://purl.obolibrary.org/obo/ENVO_00000262	steppe
+http://purl.obolibrary.org/obo/ENVO_00005786	upland soil	http://purl.obolibrary.org/obo/ENVO_00001998	soil	http://purl.obolibrary.org/obo/ENVO_00000182	plateau
+http://purl.obolibrary.org/obo/ENVO_00005785	volcanic soil	http://purl.obolibrary.org/obo/ENVO_00001998	soil	http://purl.obolibrary.org/obo/ENVO_00000247	volcano

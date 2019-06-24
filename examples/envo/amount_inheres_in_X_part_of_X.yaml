@@ -8,6 +8,8 @@ description: >-
   Examples: [amount of nitrogen atom in soil](http://purl.obolibrary.org/obo/ENVO_09000014), [amount of nitrogen atom in water](http://purl.obolibrary.org/obo/ENVO_09000015), [amount of nitrogen atom in environmental material](http://purl.obolibrary.org/obo/ENVO_09000013) (6 total)
 
 classes: 
+  nonmetal atom: "http://purl.obolibrary.org/obo/CHEBI_25585"
+  p-block element atom: "http://purl.obolibrary.org/obo/CHEBI_33560"
   environmental material: "ENVO:00010483"
   amount: "PATO:0000070"
 

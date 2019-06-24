@@ -8,6 +8,24 @@ description: >-
   Examples: [investigation agent role](http://purl.obolibrary.org/obo/OBI_0000202), [composition of soil](http://purl.obolibrary.org/obo/ENVO_09200008), [concentration of nitrate in soil](http://purl.obolibrary.org/obo/ENVO_09200007) (43 total)
 
 classes: 
+  plant reproductive material: "http://purl.obolibrary.org/obo/AGRO_00000032"
+  mulch: "http://purl.obolibrary.org/obo/AGRO_00000092"
+  row: "http://purl.obolibrary.org/obo/AGRO_00000155"
+  agricultural experimental plot: "http://purl.obolibrary.org/obo/AGRO_00000301"
+  block: "http://purl.obolibrary.org/obo/AGRO_00000303"
+  pot: "http://purl.obolibrary.org/obo/AGRO_00000309"
+  replication: "http://purl.obolibrary.org/obo/AGRO_00000321"
+  treatment: "http://purl.obolibrary.org/obo/AGRO_00000322"
+  crop: "http://purl.obolibrary.org/obo/AGRO_00000325"
+  experimental site: "http://purl.obolibrary.org/obo/AGRO_00000360"
+  well: "ENVO:00000026"
+  farm: "ENVO:00000078"
+  agricultural field: "ENVO:00000114"
+  soil: "ENVO:00001998"
+  slope: "ENVO:00002000"
+  air: "ENVO:00002005"
+  water: "ENVO:00002006"
+  atmospheric wind: "ENVO:01000793"
   quality: "PATO:0000001"
 
 

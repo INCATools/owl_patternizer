@@ -8,6 +8,7 @@ description: >-
   Examples: [sediment permeated by saline water](http://purl.obolibrary.org/obo/ENVO_01001036), [sediment permeated by freshwater](http://purl.obolibrary.org/obo/ENVO_01001028), [endolithic environment](http://purl.obolibrary.org/obo/ENVO_01000303) (4 total)
 
 classes: 
+  material entity: "BFO:0000040"
   environmental material: "ENVO:00010483"
 
 

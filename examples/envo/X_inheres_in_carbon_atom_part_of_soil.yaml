@@ -8,7 +8,7 @@ description: >-
   Examples: [concentration of carbon atom in soil](http://purl.obolibrary.org/obo/ENVO_09000008), [amount of carbon atom in soil](http://purl.obolibrary.org/obo/ENVO_09000005), [solubility of carbon atom in soil](http://purl.obolibrary.org/obo/ENVO_09000002) (4 total)
 
 classes: 
-  carbon atom: "ns2:CHEBI_27594"
+  carbon atom: "http://purl.obolibrary.org/obo/CHEBI_27594"
   soil: "ENVO:00001998"
   quality: "PATO:0000001"
 

@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/X_has_quality_mediterranean
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [chaparral area](http://purl.obolibrary.org/obo/ENVO_00000301), [temperate mediterranean sea biome](http://purl.obolibrary.org/obo/ENVO_01000857), [mediterranean forest biome](http://purl.obolibrary.org/obo/ENVO_01000199) (7 total)
+  Examples: [chaparral area](http://purl.obolibrary.org/obo/ENVO_00000301), [dilution basin mediterranean sea biome](http://purl.obolibrary.org/obo/ENVO_01000128), [mediterranean forest biome](http://purl.obolibrary.org/obo/ENVO_01000199) (7 total)
 
 classes: 
   independent continuant: "BFO:0000004"

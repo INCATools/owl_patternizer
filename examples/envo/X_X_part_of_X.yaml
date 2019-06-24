@@ -8,6 +8,7 @@ description: >-
   Examples: [surface layer of a water body](http://purl.obolibrary.org/obo/ENVO_01001554), [pharyngeal ectoderm](http://purl.obolibrary.org/obo/UBERON_0016545), [subcutaneous abdominal adipose tissue](http://purl.obolibrary.org/obo/UBERON_0014455) (12 total)
 
 classes: 
+  water body: "ENVO:00000063"
   layer: "ENVO:01000281"
 
 

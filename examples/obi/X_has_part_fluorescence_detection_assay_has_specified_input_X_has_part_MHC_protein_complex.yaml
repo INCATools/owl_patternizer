@@ -1,4 +1,4 @@
-# options: [min(8),dir(obi),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has part fluorescence detection assay has_specified_input X has part MHC protein complex
 pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_part_fluorescence_detection_assay_has_specified_input_X_has_part_MHC_protein_complex
 
@@ -8,6 +8,7 @@ description: >-
   Examples: [cell bound MHC direct binding assay measuring equilibrium association constant [KA] of a MHC:ligand complex using fluorescence detection](http://purl.obolibrary.org/obo/OBI_0001524), [cell bound MHC direct binding assay measuring half life of a MHC:ligand complex using fluorescence detection](http://purl.obolibrary.org/obo/OBI_0001559), [purified MHC direct binding assay measuring half life of a MHC:ligand complex using fluorescence detection](http://purl.obolibrary.org/obo/OBI_0001531) (9 total)
 
 classes: 
+  material entity: "BFO:0000040"
   MHC protein complex: "GO:0042611"
   fluorescence detection assay: "http://purl.obolibrary.org/obo/OBI_0001501"
   assay measuring a binding constant of a MHC:ligand complex: "http://purl.obolibrary.org/obo/OBI_0001553"
@@ -23,18 +24,18 @@ vars:
   v1: "'material entity'"
 
 name:
-  # Could not induce name, using default
-  text: "%s has part fluorescence detection assay has_specified_input %s has part MHC protein complex"
+  # Induced, frequency=0.1111111111111111, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s bound MHC direct %s measuring binding on rate [kon] of a MHC:ligand complex using fluorescence detection"
   vars:
-    - v0
     - v1
+    - v0
 
 def:
-  # Could not induce def, using default
-  text: "Any %s that has part a fluorescence detection assay and has_specified_input a Any %s that has part a MHC protein complex"
+  # Induced, frequency=0.1111111111111111, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s bound MHC ligand %s of binding determination assay that uses fluorescence detection to measure direct ligand binding."
   vars:
-    - v0
     - v1
+    - v0
 
 annotationProperties:
   exact_synonym: "oio:hasExactSynonym"

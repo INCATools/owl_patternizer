@@ -8,6 +8,8 @@ description: >-
   Examples: [nuclear power plant](http://purl.obolibrary.org/obo/ENVO_00002271), [geothermal power plant](http://purl.obolibrary.org/obo/ENVO_00002215), [solar power station](http://purl.obolibrary.org/obo/ENVO_2000041) (4 total)
 
 classes: 
+  industrial building: "ENVO:00003861"
+  anthropogenic generation of energy: "ENVO:2000012"
   energy: "ENVO:2000015"
 
 

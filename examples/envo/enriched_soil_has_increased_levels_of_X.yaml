@@ -8,12 +8,12 @@ description: >-
   Examples: [sarcosine enriched soil](http://purl.obolibrary.org/obo/ENVO_00003083), [urea enriched soil](http://purl.obolibrary.org/obo/ENVO_00005753), [ethanol enriched soil](http://purl.obolibrary.org/obo/ENVO_00003086) (15 total)
 
 classes: 
-  organic molecular entity: "ns2:CHEBI_50860"
+  organic molecular entity: "http://purl.obolibrary.org/obo/CHEBI_50860"
   enriched soil: "ENVO:00003082"
 
 
 relations: 
-  has_increased_levels_of: "ns5:has_increased_levels_of"
+  has_increased_levels_of: "http://purl.obolibrary.org/obo/envo#has_increased_levels_of"
 
 
 vars:

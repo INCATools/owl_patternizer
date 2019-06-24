@@ -1,0 +1,56 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/DOID_656	adrenal adenoma	http://purl.obolibrary.org/obo/UBERON_0002369	adrenal gland
+http://purl.obolibrary.org/obo/DOID_4551	anus benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001245	anus
+http://purl.obolibrary.org/obo/DOID_0050625	biliary tract benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001173	biliary tree
+http://purl.obolibrary.org/obo/DOID_0050623	bladder benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001255	urinary bladder
+http://purl.obolibrary.org/obo/DOID_0060094	bone benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001474	bone element
+http://purl.obolibrary.org/obo/DOID_0060082	breast benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000310	breast
+http://purl.obolibrary.org/obo/DOID_0060091	cardiovascular organ benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0004535	cardiovascular system
+http://purl.obolibrary.org/obo/DOID_1517	cecal benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001153	caecum
+http://purl.obolibrary.org/obo/DOID_0060090	central nervous system benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001017	central nervous system
+http://purl.obolibrary.org/obo/DOID_0060110	cervical benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000002	uterine cervix
+http://purl.obolibrary.org/obo/DOID_0060123	connective tissue benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0002384	connective tissue
+http://purl.obolibrary.org/obo/DOID_0060089	endocrine organ benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0002368	endocrine gland
+http://purl.obolibrary.org/obo/DOID_1364	ethmoidal sinus neoplasm	http://purl.obolibrary.org/obo/UBERON_0002453	ethmoid sinus
+http://purl.obolibrary.org/obo/DOID_0060111	fallopian tube benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0003889	fallopian tube
+http://purl.obolibrary.org/obo/DOID_0060086	female reproductive organ benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000474	female reproductive system
+http://purl.obolibrary.org/obo/DOID_1361	frontal sinus neoplasm	http://purl.obolibrary.org/obo/UBERON_0001760	frontal sinus
+http://purl.obolibrary.org/obo/DOID_0050624	gastrointestinal system benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001007	digestive system
+http://purl.obolibrary.org/obo/DOID_6285	heart lipoma	http://purl.obolibrary.org/obo/UBERON_0000948	heart
+http://purl.obolibrary.org/obo/DOID_3117	hepatobiliary benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0002423	hepatobiliary system
+http://purl.obolibrary.org/obo/DOID_0060092	immune system organ benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0005057	immune organ
+http://purl.obolibrary.org/obo/DOID_0060121	integumentary system benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0002416	integumental system
+http://purl.obolibrary.org/obo/DOID_4610	intestinal benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000160	intestine
+http://purl.obolibrary.org/obo/DOID_3116	kidney benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0002113	kidney
+http://purl.obolibrary.org/obo/DOID_2598	laryngeal benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001737	larynx
+http://purl.obolibrary.org/obo/DOID_916	liver benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0002107	liver
+http://purl.obolibrary.org/obo/DOID_3683	lung benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0002048	lung
+http://purl.obolibrary.org/obo/DOID_0060087	male reproductive organ benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000079	male reproductive system
+http://purl.obolibrary.org/obo/DOID_1358	maxillary sinus neoplasm	http://purl.obolibrary.org/obo/UBERON_0001764	maxillary sinus
+http://purl.obolibrary.org/obo/DOID_6175	mediastinal neurilemmoma	http://purl.obolibrary.org/obo/UBERON_0003728	mediastinum
+http://purl.obolibrary.org/obo/DOID_461	muscle benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0002385	muscle tissue
+http://purl.obolibrary.org/obo/DOID_0060099	musculoskeletal system benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0002204	musculoskeletal system
+http://purl.obolibrary.org/obo/DOID_9310	nasal cavity neoplasm	http://purl.obolibrary.org/obo/UBERON_0001707	nasal cavity
+http://purl.obolibrary.org/obo/DOID_0060115	nervous system benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001016	nervous system
+http://purl.obolibrary.org/obo/DOID_0060112	ovarian benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000992	ovary
+http://purl.obolibrary.org/obo/DOID_3918	pancreatic cystadenoma	http://purl.obolibrary.org/obo/UBERON_0001264	pancreas
+http://purl.obolibrary.org/obo/DOID_1350	paranasal sinus neoplasm	http://purl.obolibrary.org/obo/UBERON_0001825	paranasal sinus
+http://purl.obolibrary.org/obo/DOID_11624	penile neoplasm	http://purl.obolibrary.org/obo/UBERON_0000989	penis
+http://purl.obolibrary.org/obo/DOID_0060117	peritoneal benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0002358	peritoneum
+http://purl.obolibrary.org/obo/DOID_60009	pituitary gland benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000007	pituitary gland
+http://purl.obolibrary.org/obo/DOID_5977	renal pelvis neoplasm	http://purl.obolibrary.org/obo/UBERON_0001224	renal pelvis
+http://purl.obolibrary.org/obo/DOID_0050622	reproductive organ benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000990	reproductive system
+http://purl.obolibrary.org/obo/DOID_0050621	respiratory system benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001004	respiratory system
+http://purl.obolibrary.org/obo/DOID_4895	rete ovarii neoplasm	http://purl.obolibrary.org/obo/UBERON_0010185	rete ovarii
+http://purl.obolibrary.org/obo/DOID_0060096	sensory organ benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001032	sensory system
+http://purl.obolibrary.org/obo/DOID_3165	skin benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000014	zone of skin
+http://purl.obolibrary.org/obo/DOID_6947	sphenoidal sinus neoplasm	http://purl.obolibrary.org/obo/UBERON_0001724	sphenoidal sinus
+http://purl.obolibrary.org/obo/DOID_2664	sweat gland neoplasm	http://purl.obolibrary.org/obo/UBERON_0001820	sweat gland
+http://purl.obolibrary.org/obo/DOID_0060097	thoracic benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000915	thoracic segment of trunk
+http://purl.obolibrary.org/obo/DOID_11885	ureteral benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000056	ureter
+http://purl.obolibrary.org/obo/DOID_730	urethral benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000057	urethra
+http://purl.obolibrary.org/obo/DOID_731	urinary system benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0001008	renal system
+http://purl.obolibrary.org/obo/DOID_0060095	uterine benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000995	uterus
+http://purl.obolibrary.org/obo/DOID_0060114	vaginal benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000996	vagina
+http://purl.obolibrary.org/obo/DOID_0060088	vestibular gland benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0011826	vestibular gland
+http://purl.obolibrary.org/obo/DOID_0060109	vulvar benign neoplasm	http://purl.obolibrary.org/obo/UBERON_0000997	mammalian vulva

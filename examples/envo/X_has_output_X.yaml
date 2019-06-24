@@ -8,6 +8,7 @@ description: >-
   Examples: [construction process](http://purl.obolibrary.org/obo/ENVO_01000996), [island formation process](http://purl.obolibrary.org/obo/ENVO_1000748), [primary aerosol formation process](http://purl.obolibrary.org/obo/ENVO_01001367) (25 total)
 
 classes: 
+  entity: "BFO:0000001"
   process: "BFO:0000015"
 
 

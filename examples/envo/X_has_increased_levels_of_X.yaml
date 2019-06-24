@@ -8,11 +8,12 @@ description: >-
   Examples: [enriched soil](http://purl.obolibrary.org/obo/ENVO_00003082), [chalk soil](http://purl.obolibrary.org/obo/ENVO_00003914), [water vapour saturated air](http://purl.obolibrary.org/obo/ENVO_01000829) (35 total)
 
 classes: 
+  fiat object: "BFO:0000024"
   material entity: "BFO:0000040"
 
 
 relations: 
-  has_increased_levels_of: "ns5:has_increased_levels_of"
+  has_increased_levels_of: "http://purl.obolibrary.org/obo/envo#has_increased_levels_of"
 
 
 vars:

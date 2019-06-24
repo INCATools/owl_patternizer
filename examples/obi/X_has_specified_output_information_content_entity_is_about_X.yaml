@@ -1,4 +1,4 @@
-# options: [min(8),dir(obi),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has_specified_output information content entity is about X
 pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_specified_output_information_content_entity_is_about_X
 
@@ -8,6 +8,7 @@ description: >-
   Examples: [biological activity assay measuring epitope specific granzyme A release by T cells](http://purl.obolibrary.org/obo/OBI_0001809), [biological activity assay measuring epitope specific perforin release by T cells](http://purl.obolibrary.org/obo/OBI_0001497), [biological activity assay measuring epitope specific granulysin release by T cells](http://purl.obolibrary.org/obo/OBI_0001810) (71 total)
 
 classes: 
+  biological_process: "GO:0008150"
   information content entity: "http://purl.obolibrary.org/obo/IAO_0000030"
   immune epitope assay: "http://purl.obolibrary.org/obo/OBI_1110128"
 
@@ -21,8 +22,8 @@ vars:
   v1: "'biological_process'"
 
 name:
-  # Could not induce name, using default
-  text: "%s has_specified_output information content entity is about %s"
+  # Induced, frequency=0.6338028169014085, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s assay measuring epitope specific %s by T cells"
   vars:
     - v0
     - v1

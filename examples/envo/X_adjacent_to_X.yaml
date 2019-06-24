@@ -8,6 +8,7 @@ description: >-
   Examples: [landslide lake](http://purl.obolibrary.org/obo/ENVO_01001106), [sea cliff](http://purl.obolibrary.org/obo/ENVO_00000088), [sea beach](http://purl.obolibrary.org/obo/ENVO_00000092) (24 total)
 
 classes: 
+  independent continuant: "BFO:0000004"
   material entity: "BFO:0000040"
 
 

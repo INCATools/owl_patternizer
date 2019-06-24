@@ -8,6 +8,7 @@ description: >-
   Examples: [internal naris](http://purl.obolibrary.org/obo/UBERON_0010425), [external naris](http://purl.obolibrary.org/obo/UBERON_0005928), [elbow joint](http://purl.obolibrary.org/obo/UBERON_0001490) (15 total)
 
 classes: 
+  anatomical structure: "UBERON:0000061"
   anatomical entity: "UBERON:0001062"
 
 

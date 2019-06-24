@@ -9,6 +9,7 @@ description: >-
 
 classes: 
   power plant: "ENVO:00002214"
+  environmental material: "ENVO:00010483"
   anthropogenic generation of energy: "ENVO:2000012"
 
 

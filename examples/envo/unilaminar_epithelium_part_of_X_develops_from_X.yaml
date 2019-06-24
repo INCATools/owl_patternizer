@@ -9,6 +9,7 @@ description: >-
 
 classes: 
   unilaminar epithelium: "UBERON:0000490"
+  germ layer: "UBERON:0000923"
   multicellular anatomical structure: "UBERON:0010000"
 
 

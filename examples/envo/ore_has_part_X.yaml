@@ -8,7 +8,7 @@ description: >-
   Examples: [copper ore](http://purl.obolibrary.org/obo/ENVO_02000111), [iron ore](http://purl.obolibrary.org/obo/ENVO_02000096), [uranium ore](http://purl.obolibrary.org/obo/ENVO_02000095) (5 total)
 
 classes: 
-  transition element molecular entity: "ns2:CHEBI_33497"
+  transition element molecular entity: "http://purl.obolibrary.org/obo/CHEBI_33497"
   ore: "ENVO:02000094"
 
 

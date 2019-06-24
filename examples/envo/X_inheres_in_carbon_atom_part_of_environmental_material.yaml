@@ -8,7 +8,7 @@ description: >-
   Examples: [concentration of carbon atom in environmental material](http://purl.obolibrary.org/obo/ENVO_09000007), [amount of carbon atom in environmental material](http://purl.obolibrary.org/obo/ENVO_09000004), [solubility of carbon atom in environmental material](http://purl.obolibrary.org/obo/ENVO_09000001) (4 total)
 
 classes: 
-  carbon atom: "ns2:CHEBI_27594"
+  carbon atom: "http://purl.obolibrary.org/obo/CHEBI_27594"
   environmental material: "ENVO:00010483"
   quality: "PATO:0000001"
 

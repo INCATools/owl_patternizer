@@ -8,6 +8,7 @@ description: >-
   Examples: [ground deformation process](http://purl.obolibrary.org/obo/ENVO_01000870), [ecosystem fragmentation process](http://purl.obolibrary.org/obo/ENVO_01001168), [icemelt](http://purl.obolibrary.org/obo/ENVO_01000721) (16 total)
 
 classes: 
+  entity: "BFO:0000001"
   process: "BFO:0000015"
 
 

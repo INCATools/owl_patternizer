@@ -1,0 +1,13 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/DOID_6634	adult central nervous system choriocarcinoma	http://purl.obolibrary.org/obo/DOID_3594	choriocarcinoma
+http://purl.obolibrary.org/obo/DOID_0060004	autoimmune disease of central nervous system	http://purl.obolibrary.org/obo/DOID_417	autoimmune hypersensitivity disease
+http://purl.obolibrary.org/obo/DOID_0060090	central nervous system benign neoplasm	http://purl.obolibrary.org/obo/DOID_0060072	benign neoplasm
+http://purl.obolibrary.org/obo/DOID_3620	central nervous system cancer	http://purl.obolibrary.org/obo/DOID_162	cancer
+http://purl.obolibrary.org/obo/DOID_331	central nervous system disease	http://purl.obolibrary.org/obo/DOID_4	disease
+http://purl.obolibrary.org/obo/DOID_5772	central nervous system hematologic cancer	http://purl.obolibrary.org/obo/DOID_2531	hematologic cancer
+http://purl.obolibrary.org/obo/DOID_5254	central nervous system leiomyosarcoma	http://purl.obolibrary.org/obo/DOID_1967	leiomyosarcoma
+http://purl.obolibrary.org/obo/DOID_12969	central nervous system leukemia	http://purl.obolibrary.org/obo/DOID_1240	leukemia
+http://purl.obolibrary.org/obo/DOID_3234	central nervous system lymphoma	http://purl.obolibrary.org/obo/DOID_0060058	lymphoma
+http://purl.obolibrary.org/obo/DOID_0060103	central nervous system primitive neuroectodermal neoplasm	http://purl.obolibrary.org/obo/DOID_171	neuroectodermal tumor
+http://purl.obolibrary.org/obo/DOID_525	central nervous system vasculitis	http://purl.obolibrary.org/obo/DOID_865	vasculitis
+http://purl.obolibrary.org/obo/DOID_0050242	primary amebic meningoencephalitis	http://purl.obolibrary.org/obo/DOID_2789	parasitic protozoa infectious disease

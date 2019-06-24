@@ -1,0 +1,11 @@
+defined_class	defined_class_label	v0	v0_label	v1	v1_label
+http://purl.obolibrary.org/obo/ENVO_00005765	frozen compost soil	http://purl.obolibrary.org/obo/ENVO_00005747	compost soil	http://purl.obolibrary.org/obo/PATO_0001985	frozen
+http://purl.obolibrary.org/obo/ENVO_01000797	gaseous environmental material	http://purl.obolibrary.org/obo/ENVO_00010483	environmental material	http://purl.obolibrary.org/obo/PATO_0001547	quality of a gas
+http://purl.obolibrary.org/obo/ENVO_01000314	high osmolarity environment	http://purl.obolibrary.org/obo/ENVO_01000254	environmental system	http://purl.obolibrary.org/obo/PATO_0001657	increased osmolarity
+http://purl.obolibrary.org/obo/ENVO_01000314	high osmolarity environment	http://purl.obolibrary.org/obo/ENVO_01000997	environmental system determined by a quality	http://purl.obolibrary.org/obo/PATO_0001657	increased osmolarity
+http://purl.obolibrary.org/obo/ENVO_01000305	high temperature environment	http://purl.obolibrary.org/obo/ENVO_01000254	environmental system	http://purl.obolibrary.org/obo/PATO_0001305	increased temperature
+http://purl.obolibrary.org/obo/ENVO_01000305	high temperature environment	http://purl.obolibrary.org/obo/ENVO_01000997	environmental system determined by a quality	http://purl.obolibrary.org/obo/PATO_0001305	increased temperature
+http://purl.obolibrary.org/obo/ENVO_01001088	liquid aerosol	http://purl.obolibrary.org/obo/ENVO_00010505	aerosol	http://purl.obolibrary.org/obo/PATO_0001548	quality of a liquid
+http://purl.obolibrary.org/obo/ENVO_01000815	liquid environmental material	http://purl.obolibrary.org/obo/ENVO_00010483	environmental material	http://purl.obolibrary.org/obo/PATO_0001548	quality of a liquid
+http://purl.obolibrary.org/obo/ENVO_01001089	solid aerosol	http://purl.obolibrary.org/obo/ENVO_00010505	aerosol	http://purl.obolibrary.org/obo/PATO_0001546	quality of a solid
+http://purl.obolibrary.org/obo/ENVO_01000814	solid environmental material	http://purl.obolibrary.org/obo/ENVO_00010483	environmental material	http://purl.obolibrary.org/obo/PATO_0001546	quality of a solid

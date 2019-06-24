@@ -1,0 +1,12 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/AGRO_00000252	bund height measurement protocol	http://purl.obolibrary.org/obo/AGRO_00000441	bund height
+http://purl.obolibrary.org/obo/AGRO_00000257	implement lenght measurement protocol	http://purl.obolibrary.org/obo/AGRO_00000190	tillage tool blade length
+http://purl.obolibrary.org/obo/AGRO_00000284	irrigation water quantity recording protocol	http://purl.obolibrary.org/obo/AGRO_00000010	irrigation water quantity
+http://purl.obolibrary.org/obo/AGRO_00000272	kjeldahl method	http://purl.obolibrary.org/obo/AGRO_00000452	organic fertilizer carbon to nitrogen ratio
+http://purl.obolibrary.org/obo/AGRO_00000278	mulch color recording protocol	http://purl.obolibrary.org/obo/AGRO_00000194	mulch color
+http://purl.obolibrary.org/obo/AGRO_00000247	mulch thickness measurement protocol	http://purl.obolibrary.org/obo/AGRO_00000192	mulch thickness
+http://purl.obolibrary.org/obo/AGRO_00000449	nitrogen recovery efficiency measurement protocol	http://purl.obolibrary.org/obo/AGRO_00000448	nitrogen recovery efficiency
+http://purl.obolibrary.org/obo/AGRO_00000451	nitrogen use efficiency measurement protocol	http://purl.obolibrary.org/obo/AGRO_00000450	nitrogen use efficiency
+http://purl.obolibrary.org/obo/AGRO_00000282	pivot lenght measurement protocol	http://purl.obolibrary.org/obo/AGRO_00000445	center pivot irrigation equipment length
+http://purl.obolibrary.org/obo/AGRO_00000263	row length mesurement protocol	http://purl.obolibrary.org/obo/AGRO_00000314	row length
+http://purl.obolibrary.org/obo/AGRO_00000281	well depth measurement protocol	http://purl.obolibrary.org/obo/AGRO_00000446	well depth

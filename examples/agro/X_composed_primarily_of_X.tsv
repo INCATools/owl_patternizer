@@ -1,0 +1,9 @@
+defined_class	defined_class_label	v0	v0_label	v1	v1_label
+http://purl.obolibrary.org/obo/ENVO_01000325	aquatic layer	http://purl.obolibrary.org/obo/ENVO_01000281	layer	http://purl.obolibrary.org/obo/ENVO_00002006	water
+http://purl.obolibrary.org/obo/ENVO_01001122	gas planet	http://purl.obolibrary.org/obo/ENVO_01000800	planet	http://purl.obolibrary.org/obo/ENVO_01001155	astrogeological gas
+http://purl.obolibrary.org/obo/ENVO_01000018	gravel	http://purl.obolibrary.org/obo/ENVO_00010483	environmental material	http://purl.obolibrary.org/obo/ENVO_00000341	piece of gravel
+http://purl.obolibrary.org/obo/ENVO_01001010	hydrometeor	http://purl.obolibrary.org/obo/ENVO_01001008	meteor	http://purl.obolibrary.org/obo/ENVO_00002006	water
+http://purl.obolibrary.org/obo/ENVO_01001012	lithometeor	http://purl.obolibrary.org/obo/ENVO_01001008	meteor	http://purl.obolibrary.org/obo/ENVO_00001995	rock
+http://purl.obolibrary.org/obo/ENVO_01000256	mineral material	http://purl.obolibrary.org/obo/ENVO_00010483	environmental material	http://purl.obolibrary.org/obo/CHEBI_46662	mineral
+http://purl.obolibrary.org/obo/ENVO_00000019	saline lake	http://purl.obolibrary.org/obo/ENVO_00000020	lake	http://purl.obolibrary.org/obo/ENVO_00002010	saline water
+http://purl.obolibrary.org/obo/ENVO_01000277	water ice	http://purl.obolibrary.org/obo/ENVO_01001125	ice	http://purl.obolibrary.org/obo/ENVO_00002006	water

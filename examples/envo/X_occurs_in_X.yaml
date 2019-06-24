@@ -8,6 +8,7 @@ description: >-
   Examples: [forest fire](http://purl.obolibrary.org/obo/ENVO_01000791), [industrial fire](http://purl.obolibrary.org/obo/ENVO_01001287), [land fire](http://purl.obolibrary.org/obo/ENVO_01001292) (13 total)
 
 classes: 
+  independent continuant: "BFO:0000004"
   environmental system process: "ENVO:02500000"
 
 

@@ -1,0 +1,91 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/PATO_0045002	normal acidity	http://purl.obolibrary.org/obo/PATO_0001842	acidity
+http://purl.obolibrary.org/obo/PATO_0045003	normal adhesivity	http://purl.obolibrary.org/obo/PATO_0002331	adhesive
+http://purl.obolibrary.org/obo/PATO_0045004	normal affinity	http://purl.obolibrary.org/obo/PATO_0002070	affinity
+http://purl.obolibrary.org/obo/PATO_0045005	normal age	http://purl.obolibrary.org/obo/PATO_0000011	age
+http://purl.obolibrary.org/obo/PATO_0045041	normal angle to	http://purl.obolibrary.org/obo/PATO_0002326	angle
+http://purl.obolibrary.org/obo/PATO_0045056	normal anterior-posterior diameter	http://purl.obolibrary.org/obo/PATO_0002041	anterior-posterior diameter
+http://purl.obolibrary.org/obo/PATO_0045051	normal area	http://purl.obolibrary.org/obo/PATO_0001323	area
+http://purl.obolibrary.org/obo/PATO_0045006	normal avidity	http://purl.obolibrary.org/obo/PATO_0002073	avidity
+http://purl.obolibrary.org/obo/PATO_0045007	normal behavioural activity	http://purl.obolibrary.org/obo/PATO_0001707	behavioural active
+http://purl.obolibrary.org/obo/PATO_0045008	normal cellular motility	http://purl.obolibrary.org/obo/PATO_0001488	cellular motility
+http://purl.obolibrary.org/obo/PATO_0045058	normal circumference	http://purl.obolibrary.org/obo/PATO_0001648	circumference
+http://purl.obolibrary.org/obo/PATO_0045009	normal coiling	http://purl.obolibrary.org/obo/PATO_0000404	coiled
+http://purl.obolibrary.org/obo/PATO_0045010	normal concentration	http://purl.obolibrary.org/obo/PATO_0001159	concentrated
+http://purl.obolibrary.org/obo/PATO_0045011	normal contractility	http://purl.obolibrary.org/obo/PATO_0001690	contractile
+http://purl.obolibrary.org/obo/PATO_0045012	normal coordination	http://purl.obolibrary.org/obo/PATO_0000769	coordinated
+http://purl.obolibrary.org/obo/PATO_0045013	normal curvature	http://purl.obolibrary.org/obo/PATO_0000406	curved
+http://purl.obolibrary.org/obo/PATO_0045052	normal depth	http://purl.obolibrary.org/obo/PATO_0001595	depth
+http://purl.obolibrary.org/obo/PATO_0045055	normal diameter	http://purl.obolibrary.org/obo/PATO_0001334	diameter
+http://purl.obolibrary.org/obo/PATO_0045014	normal distance	http://purl.obolibrary.org/obo/PATO_0000040	distance
+http://purl.obolibrary.org/obo/PATO_0045042	normal distribution	http://purl.obolibrary.org/obo/PATO_0001566	distributed
+http://purl.obolibrary.org/obo/PATO_0045084	normal duration	http://purl.obolibrary.org/obo/PATO_0001309	duration
+http://purl.obolibrary.org/obo/PATO_0045085	normal duration of temperature	http://purl.obolibrary.org/obo/PATO_0001310	duration of temperature
+http://purl.obolibrary.org/obo/PATO_0045015	normal efficiency	http://purl.obolibrary.org/obo/PATO_0001678	efficient
+http://purl.obolibrary.org/obo/PATO_0045016	normal elasticity	http://purl.obolibrary.org/obo/PATO_0001171	elastic
+http://purl.obolibrary.org/obo/PATO_0045043	normal elevation	http://purl.obolibrary.org/obo/PATO_0001687	elevation
+http://purl.obolibrary.org/obo/PATO_0045065	normal fatigability	http://purl.obolibrary.org/obo/PATO_0001815	fatigability
+http://purl.obolibrary.org/obo/PATO_0045017	normal fecundity	http://purl.obolibrary.org/obo/PATO_0000273	fecundity
+http://purl.obolibrary.org/obo/PATO_0045018	normal female fertility	http://purl.obolibrary.org/obo/PATO_0000888	female fertile
+http://purl.obolibrary.org/obo/PATO_0045019	normal female receptivity	http://purl.obolibrary.org/obo/PATO_0001720	female receptivity
+http://purl.obolibrary.org/obo/PATO_0045020	normal fertility	http://purl.obolibrary.org/obo/PATO_0000955	fertile
+http://purl.obolibrary.org/obo/PATO_0045021	normal flexibility	http://purl.obolibrary.org/obo/PATO_0001544	flexible
+http://purl.obolibrary.org/obo/PATO_0045022	normal fluid flow	http://purl.obolibrary.org/obo/PATO_0002243	fluid flow rate
+http://purl.obolibrary.org/obo/PATO_0045023	normal fluorescence	http://purl.obolibrary.org/obo/PATO_0001290	fluorescent
+http://purl.obolibrary.org/obo/PATO_0045024	normal force	http://purl.obolibrary.org/obo/PATO_0001035	force
+http://purl.obolibrary.org/obo/PATO_0045025	normal fragility	http://purl.obolibrary.org/obo/PATO_0001362	fragile
+http://purl.obolibrary.org/obo/PATO_0045087	normal frequency	http://purl.obolibrary.org/obo/PATO_0000044	frequency
+http://purl.obolibrary.org/obo/PATO_0045053	normal height	http://purl.obolibrary.org/obo/PATO_0000119	height
+http://purl.obolibrary.org/obo/PATO_0045054	normal length	http://purl.obolibrary.org/obo/PATO_0000122	length
+http://purl.obolibrary.org/obo/PATO_0045026	normal life span	http://purl.obolibrary.org/obo/PATO_0000050	life span
+http://purl.obolibrary.org/obo/PATO_0045027	normal magnetism	http://purl.obolibrary.org/obo/PATO_0001685	magnetic
+http://purl.obolibrary.org/obo/PATO_0045028	normal male fertility	http://purl.obolibrary.org/obo/PATO_0000891	male fertile
+http://purl.obolibrary.org/obo/PATO_0045029	normal male receptivity	http://purl.obolibrary.org/obo/PATO_0001721	male receptivity
+http://purl.obolibrary.org/obo/PATO_0045030	normal mass	http://purl.obolibrary.org/obo/PATO_0000125	mass
+http://purl.obolibrary.org/obo/PATO_0045031	normal mass density	http://purl.obolibrary.org/obo/PATO_0001164	dense
+http://purl.obolibrary.org/obo/PATO_0045032	normal mobility	http://purl.obolibrary.org/obo/PATO_0000299	mobile
+http://purl.obolibrary.org/obo/PATO_0045001	normal object quality	http://purl.obolibrary.org/obo/PATO_0001241	physical object quality
+http://purl.obolibrary.org/obo/PATO_0045086	normal occurrence	http://purl.obolibrary.org/obo/PATO_0000057	occurrence
+http://purl.obolibrary.org/obo/PATO_0045033	normal odor	http://purl.obolibrary.org/obo/PATO_0001331	odorous
+http://purl.obolibrary.org/obo/PATO_0045034	normal osmolality	http://purl.obolibrary.org/obo/PATO_0002027	osmolality
+http://purl.obolibrary.org/obo/PATO_0045035	normal osmolarity	http://purl.obolibrary.org/obo/PATO_0001655	osmolarity
+http://purl.obolibrary.org/obo/PATO_0045057	normal perimeter	http://purl.obolibrary.org/obo/PATO_0001711	perimeter
+http://purl.obolibrary.org/obo/PATO_0045036	normal permeability	http://purl.obolibrary.org/obo/PATO_0000982	permeable
+http://purl.obolibrary.org/obo/PATO_0045037	normal phosphorylation	http://purl.obolibrary.org/obo/PATO_0002220	phosphorylated
+http://purl.obolibrary.org/obo/PATO_0045038	normal photosensitivity	http://purl.obolibrary.org/obo/PATO_0000547	photosensitive
+http://purl.obolibrary.org/obo/PATO_0045039	normal pigmentation	http://purl.obolibrary.org/obo/PATO_0002248	pigmented
+http://purl.obolibrary.org/obo/PATO_0045040	normal position	http://purl.obolibrary.org/obo/PATO_0000140	position
+http://purl.obolibrary.org/obo/PATO_0045044	normal pressure	http://purl.obolibrary.org/obo/PATO_0001025	pressure
+http://purl.obolibrary.org/obo/PATO_0045073	normal process quality	http://purl.obolibrary.org/obo/PATO_0001236	process quality
+http://purl.obolibrary.org/obo/PATO_0045045	normal radioactivity	http://purl.obolibrary.org/obo/PATO_0001741	radioactive
+http://purl.obolibrary.org/obo/PATO_0045046	normal radiopacity	http://purl.obolibrary.org/obo/PATO_0002136	radiopacity
+http://purl.obolibrary.org/obo/PATO_0045000	normal rate	http://purl.obolibrary.org/obo/PATO_0000161	rate
+http://purl.obolibrary.org/obo/PATO_0045047	normal resistance to	http://purl.obolibrary.org/obo/PATO_0001178	resistant to
+http://purl.obolibrary.org/obo/PATO_0045088	normal sensitivity of a process	http://purl.obolibrary.org/obo/PATO_0001457	sensitivity of a process
+http://purl.obolibrary.org/obo/PATO_0045089	normal sensitivity of a process to oxygen	http://purl.obolibrary.org/obo/PATO_0001459	aerobic (for occurrence)
+http://purl.obolibrary.org/obo/PATO_0045048	normal sensitivity to irradiation	http://purl.obolibrary.org/obo/PATO_0001806	sensitivity to irradiation
+http://purl.obolibrary.org/obo/PATO_0045049	normal sensitivity toward	http://purl.obolibrary.org/obo/PATO_0000516	sensitive toward
+http://purl.obolibrary.org/obo/PATO_0045050	normal size	http://purl.obolibrary.org/obo/PATO_0000117	size
+http://purl.obolibrary.org/obo/PATO_0045062	normal solubility	http://purl.obolibrary.org/obo/PATO_0001537	soluble in
+http://purl.obolibrary.org/obo/PATO_0045063	normal speed	http://purl.obolibrary.org/obo/PATO_0000008	speed
+http://purl.obolibrary.org/obo/PATO_0045064	normal strength	http://purl.obolibrary.org/obo/PATO_0001230	strength
+http://purl.obolibrary.org/obo/PATO_0045066	normal susceptibility toward	http://purl.obolibrary.org/obo/PATO_0001152	susceptible toward
+http://purl.obolibrary.org/obo/PATO_0045067	normal temperature	http://purl.obolibrary.org/obo/PATO_0000146	temperature
+http://purl.obolibrary.org/obo/PATO_0045068	normal tendency	http://purl.obolibrary.org/obo/PATO_0002360	tendency
+http://purl.obolibrary.org/obo/PATO_0045059	normal thickness	http://purl.obolibrary.org/obo/PATO_0000915	thickness
+http://purl.obolibrary.org/obo/PATO_0045069	normal threshold	http://purl.obolibrary.org/obo/PATO_0000152	threshold
+http://purl.obolibrary.org/obo/PATO_0045070	normal tolerance to	http://purl.obolibrary.org/obo/PATO_0000515	tolerant to
+http://purl.obolibrary.org/obo/PATO_0045071	normal tonicity	http://purl.obolibrary.org/obo/PATO_0001439	tonicity
+http://purl.obolibrary.org/obo/PATO_0045072	normal turgor	http://purl.obolibrary.org/obo/PATO_0001620	turgor
+http://purl.obolibrary.org/obo/PATO_0045074	normal variability	http://purl.obolibrary.org/obo/PATO_0001227	variant
+http://purl.obolibrary.org/obo/PATO_0045075	normal variability of color	http://purl.obolibrary.org/obo/PATO_0001615	variant color
+http://purl.obolibrary.org/obo/PATO_0045076	normal variability of rate	http://purl.obolibrary.org/obo/PATO_0001586	variability of rate
+http://purl.obolibrary.org/obo/PATO_0045077	normal variability of size	http://purl.obolibrary.org/obo/PATO_0001956	variability of size
+http://purl.obolibrary.org/obo/PATO_0045078	normal variability of temperature	http://purl.obolibrary.org/obo/PATO_0001314	variant temperature
+http://purl.obolibrary.org/obo/PATO_0045079	normal velocity	http://purl.obolibrary.org/obo/PATO_0002242	velocity
+http://purl.obolibrary.org/obo/PATO_0045080	normal virulence	http://purl.obolibrary.org/obo/PATO_0002146	virulence
+http://purl.obolibrary.org/obo/PATO_0045081	normal viscosity	http://purl.obolibrary.org/obo/PATO_0000998	viscous
+http://purl.obolibrary.org/obo/PATO_0045060	normal volume	http://purl.obolibrary.org/obo/PATO_0000918	volume
+http://purl.obolibrary.org/obo/PATO_0045082	normal waxiness	http://purl.obolibrary.org/obo/PATO_0002381	waxiness
+http://purl.obolibrary.org/obo/PATO_0045083	normal wetness	http://purl.obolibrary.org/obo/PATO_0001823	wet
+http://purl.obolibrary.org/obo/PATO_0045061	normal width	http://purl.obolibrary.org/obo/PATO_0000921	width
