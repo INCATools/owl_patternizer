@@ -5,14 +5,14 @@ pattern_iri: http://purl.obolibrary.org/obo/apo/related_X_related_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [null heterozygous diploid](http://purl.obolibrary.org/obo/APO_0000151), [null homozygous diploid](http://purl.obolibrary.org/obo/APO_0000150), [cell cycle arrest in telophase](http://purl.obolibrary.org/obo/APO_0000139) (4 total)
+  Examples: [null homozygous diploid](http://purl.obolibrary.org/obo/APO_0000150), [null heterozygous diploid](http://purl.obolibrary.org/obo/APO_0000151), [cell cycle arrest in metaphase](http://purl.obolibrary.org/obo/APO_0000133) (4 total)
 
 classes: 
   null: "http://purl.obolibrary.org/obo/APO_0000011"
   cell cycle arrest: "http://purl.obolibrary.org/obo/APO_0000070"
   pheromone-induced cell cycle arrest: "http://purl.obolibrary.org/obo/APO_0000124"
-  heterozygous diploid: "http://purl.obolibrary.org/obo/APO_0000206"
-  homozygous diploid: "http://purl.obolibrary.org/obo/APO_0000207"
+  homozygous diploid: "http://purl.obolibrary.org/obo/APO_0000229"
+  heterozygous diploid: "http://purl.obolibrary.org/obo/APO_0000230"
   arrested: "http://purl.obolibrary.org/obo/APO_0000250"
 
 
@@ -21,8 +21,8 @@ relations:
 
 
 vars:
-  v0: "'null' or 'cell cycle arrest' or 'pheromone-induced cell cycle arrest' or 'heterozygous diploid' or 'homozygous diploid' or 'arrested'"
-  v1: "'null' or 'cell cycle arrest' or 'pheromone-induced cell cycle arrest' or 'heterozygous diploid' or 'homozygous diploid' or 'arrested'"
+  v0: "'null' or 'cell cycle arrest' or 'pheromone-induced cell cycle arrest' or 'homozygous diploid' or 'heterozygous diploid' or 'arrested'"
+  v1: "'null' or 'cell cycle arrest' or 'pheromone-induced cell cycle arrest' or 'homozygous diploid' or 'heterozygous diploid' or 'arrested'"
 
 name:
   # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 

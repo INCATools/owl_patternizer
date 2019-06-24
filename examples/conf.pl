@@ -177,6 +177,9 @@ do_for(Ont) :-
         option(dir(Dir),Options,DefaultDir),
         make_directory_path(Dir),
         
+        concat_atom([Dir,'_src.ttl'], '/', SrcFile),
+        rdf_turtle:rdf_save_turtle(SrcFile,[]),
+        
         option(is_skos(IsSkos),Options,false),
         (   IsSkos
         ->  inject_owl_axioms(skos2owl),
@@ -197,8 +200,8 @@ do_for(Ont) :-
             assert_inferred_equiv_axioms(_,gen,[ new_only(true)|Options ]),
             concat_atom([Dir,'_induced_axioms.ttl'], '/', AxFile),
             rdf_turtle:rdf_save_turtle(AxFile,[graph(gen)]),
-            concat_atom([Dir,'_induced_axioms_merged.ttl'], '/', AxFile),
-            rdf_turtle:rdf_save_turtle(AxFile,[])
+            concat_atom([Dir,'_induced_axioms_merged.ttl'], '/', MergedAxFile),
+            rdf_turtle:rdf_save_turtle(MergedAxFile,[])
         ;   true),
 
         concat_atom([Dir,'_input.ttl'], '/', OwlFile),
