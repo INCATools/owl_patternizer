@@ -26,10 +26,18 @@ t-%:
 
 # E.g. do-envo
 do-%:
-	swipl -l examples/conf.pl -g "do_for($*),halt"
+	swipl --stack_limit=12g --table_space=12g -l examples/conf.pl -g "do_for($*),halt"
 
 doall:
 	swipl -l examples/conf.pl -g do_all,halt
+
+#examples/%/inf.owl: examples/%/merged.owl
+#	robot reason -r elk -i $< -a true -o $@
+examples/%/inf.obo: 
+	robot reason -r elk -i examples/$*/_induced_axioms_merged.ttl -a true -o $@
+
+examples/%/merged.owl:
+	robot merge -i examples/$*/_induced_axioms.ttl -i examples/$*/_src.ttl -a true -o $@
 
 # --------------------
 # Docker
