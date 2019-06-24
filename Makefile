@@ -33,8 +33,9 @@ doall:
 
 #examples/%/inf.owl: examples/%/merged.owl
 #	robot reason -r elk -i $< -a true -o $@
-examples/%/inf.obo: 
-	robot reason -r elk -i examples/$*/_induced_axioms_merged.ttl -a true -o $@
+# temp switch to owltools, see https://github.com/ontodev/robot/issues/518
+examples/%/inf.obo:
+	owltools examples/$*/_induced_axioms_merged.ttl --assert-inferred-subclass-axioms --markIsInferred -o -f obo $@
 
 examples/%/merged.owl:
 	robot merge -i examples/$*/_induced_axioms.ttl -i examples/$*/_src.ttl -a true -o $@
