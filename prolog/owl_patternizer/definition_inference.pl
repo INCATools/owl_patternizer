@@ -380,6 +380,10 @@ class_subterm(C,P,T) :-
         Sub\=[],
         concat_atom(Sub,' ',T).
 
+%! infer_links(+Opts:list) is det
+%
+%    infer basic subClassOf-someValuesFrom links based on lexical patterns
+%
 infer_links(Opts) :-
         % TODO: re-calc indexes
         materialize_index(basic_annot(+,+,-,-)),

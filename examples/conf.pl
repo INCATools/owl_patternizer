@@ -49,6 +49,8 @@
 :- debug(def).
 :- debug(patternizer).
 
+:- [tests/stacktrace].
+
 % ----------------------------------------
 % settings for each ontology
 % ----------------------------------------
