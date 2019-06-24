@@ -6,3 +6,6 @@ target/
 .plhistory
 examples/gen-*
 examples/init-*
+examples/*.owl
+examples/*/_input.ttl
+*.old

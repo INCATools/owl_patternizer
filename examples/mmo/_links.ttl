@@ -1,0 +1,171 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix  owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix  obo: <http://purl.obolibrary.org/obo/> .
+
+# Named toplevel resources (24)
+
+obo:MMO_0000017
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000035
+			] .
+
+obo:MMO_0000035
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000217
+			] .
+
+obo:MMO_0000056
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000057
+			] .
+
+obo:MMO_0000061
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000057
+			] .
+
+obo:MMO_0000089
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000217
+			] .
+
+obo:MMO_0000157
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000035
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000217
+			] .
+
+obo:MMO_0000239
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000441
+			] .
+
+obo:MMO_0000338
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000669
+			] .
+
+obo:MMO_0000345
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000166
+			] .
+
+obo:MMO_0000347
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000428
+			] .
+
+obo:MMO_0000355
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000443
+			] .
+
+obo:MMO_0000356
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000427
+			] .
+
+obo:MMO_0000367
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000364
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000128
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000127
+			] .
+
+obo:MMO_0000423
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000327
+			] .
+
+obo:MMO_0000429
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000444
+			] .
+
+obo:MMO_0000440
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000439
+			] .
+
+obo:MMO_0000465
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000015
+			] .
+
+obo:MMO_0000537
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000535
+			] .
+
+obo:MMO_0000587
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000217
+			] .
+
+obo:MMO_0000655
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000461
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000459
+			] .
+
+obo:MMO_0000656
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000462
+			] .
+
+obo:MMO_0000686
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000662
+			] .
+
+obo:MMO_0000695
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000127
+			] .
+
+obo:MMO_0000696
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000695
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:MMO_0000127
+			] .

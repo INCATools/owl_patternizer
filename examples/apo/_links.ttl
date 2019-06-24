@@ -1,0 +1,293 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix  owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix  obo: <http://purl.obolibrary.org/obo/> .
+
+# Named toplevel resources (35)
+
+obo:APO_0000019
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000011
+			] .
+
+obo:APO_0000056
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000024
+			] .
+
+obo:APO_0000067
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000070
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000250
+			] .
+
+obo:APO_0000068
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000070
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000250
+			] .
+
+obo:APO_0000069
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000070
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000250
+			] .
+
+obo:APO_0000070
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000250
+			] .
+
+obo:APO_0000103
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000309
+			] .
+
+obo:APO_0000104
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000198
+			] .
+
+obo:APO_0000121
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000024
+			] .
+
+obo:APO_0000122
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000070
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000250
+			] .
+
+obo:APO_0000123
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000124
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000070
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000250
+			] .
+
+obo:APO_0000124
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000070
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000250
+			] .
+
+obo:APO_0000133
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000070
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000250
+			] .
+
+obo:APO_0000134
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000070
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000250
+			] .
+
+obo:APO_0000135
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000070
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000250
+			] .
+
+obo:APO_0000136
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000070
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000250
+			] .
+
+obo:APO_0000137
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000070
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000250
+			] .
+
+obo:APO_0000138
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000070
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000250
+			] .
+
+obo:APO_0000139
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000070
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000250
+			] .
+
+obo:APO_0000140
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000070
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000250
+			] .
+
+obo:APO_0000146
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000012
+			] .
+
+obo:APO_0000150
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000011
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000229
+			] .
+
+obo:APO_0000151
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000011
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000230
+			] .
+
+obo:APO_0000156
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000308
+			] .
+
+obo:APO_0000206
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000230
+			] .
+
+obo:APO_0000207
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000229
+			] .
+
+obo:APO_0000211
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000307
+			] .
+
+obo:APO_0000212
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000024
+			] .
+
+obo:APO_0000227
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000070
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000250
+			] .
+
+obo:APO_0000238
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000070
+			] ,
+			[ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000250
+			] .
+
+obo:APO_0000245
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000003
+			] .
+
+obo:APO_0000246
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000004
+			] .
+
+obo:APO_0000247
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000003
+			] .
+
+obo:APO_0000248
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000004
+			] .
+
+obo:APO_0000342
+	rdfs:subClassOf [ a owl:Restriction ;
+			  owl:onProperty skos:related ;
+			  owl:someValuesFrom obo:APO_0000341
+			] .

@@ -1,0 +1,44 @@
+# options: [min(3),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: chemical entity has role X
+pattern_iri: http://purl.obolibrary.org/obo/chebi/chemical_entity_has_role_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [substance with hyaluronic acid synthesis inhibitor role](http://purl.obolibrary.org/obo/GOCHE_131561), [substance with Mycoplasma genitalium metabolite role](http://purl.obolibrary.org/obo/GOCHE_131604), [substance with EC 2.7.7.7 (DNA-directed DNA polymerase) inhibitor role](http://purl.obolibrary.org/obo/GOCHE_131699) (850 total)
+
+classes: 
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  has role: "RO:0000087"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "substance with %s role"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any chemical entity that has role a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'chemical entity' and ('has role' some %s)"
+  vars:
+    - v0
