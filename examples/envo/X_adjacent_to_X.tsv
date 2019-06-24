@@ -1,0 +1,27 @@
+defined_class	defined_class_label	v0	v0_label	v1	v1_label
+http://purl.obolibrary.org/obo/ENVO_00000529	beach ridge	http://purl.obolibrary.org/obo/ENVO_00000283	ridge	http://purl.obolibrary.org/obo/ENVO_00000091	beach
+http://purl.obolibrary.org/obo/ENVO_03000013	cirque glacier	http://purl.obolibrary.org/obo/ENVO_00000133	glacier	http://purl.obolibrary.org/obo/ENVO_00000155	cirque
+http://purl.obolibrary.org/obo/ENVO_00002147	coal mine lake sediment	http://purl.obolibrary.org/obo/ENVO_00002007	sediment	http://purl.obolibrary.org/obo/ENVO_00000020	lake
+http://purl.obolibrary.org/obo/ENVO_00002150	coastal sea water	http://purl.obolibrary.org/obo/ENVO_00002149	sea water	http://purl.obolibrary.org/obo/ENVO_00000303	sea coast
+http://purl.obolibrary.org/obo/ENVO_01000006	coastal upwelling	http://purl.obolibrary.org/obo/ENVO_01000005	upwelling	http://purl.obolibrary.org/obo/ENVO_00000303	sea coast
+http://purl.obolibrary.org/obo/ENVO_02000049	coastal water body	http://purl.obolibrary.org/obo/ENVO_00001999	marine water body	http://purl.obolibrary.org/obo/ENVO_00000303	sea coast
+http://purl.obolibrary.org/obo/ENVO_00000093	lacustrine beach	http://purl.obolibrary.org/obo/ENVO_00000091	beach	http://purl.obolibrary.org/obo/ENVO_00000020	lake
+http://purl.obolibrary.org/obo/ENVO_00000268	lake bed	http://purl.obolibrary.org/obo/ENVO_00000501	submerged bed	http://purl.obolibrary.org/obo/ENVO_00000020	lake
+http://purl.obolibrary.org/obo/ENVO_00000546	lake sediment	http://purl.obolibrary.org/obo/ENVO_00002007	sediment	http://purl.obolibrary.org/obo/ENVO_00000020	lake
+http://purl.obolibrary.org/obo/ENVO_01001106	landslide lake	http://purl.obolibrary.org/obo/ENVO_00000020	lake	http://purl.obolibrary.org/obo/ENVO_00000520	landslide
+http://purl.obolibrary.org/obo/ENVO_01001309	liquid air-water interface layer	http://purl.obolibrary.org/obo/ENVO_01001310	liquid surface layer	http://purl.obolibrary.org/obo/ENVO_00002005	air
+http://purl.obolibrary.org/obo/ENVO_00000181	nunatak	http://purl.obolibrary.org/obo/ENVO_00000480	peak	http://purl.obolibrary.org/obo/ENVO_00000133	glacier
+http://purl.obolibrary.org/obo/ENVO_00000275	ocean trench	http://purl.obolibrary.org/obo/ENVO_01000649	trench	http://purl.obolibrary.org/obo/ENVO_00000015	ocean
+http://purl.obolibrary.org/obo/ENVO_00000457	plateau glacier	http://purl.obolibrary.org/obo/ENVO_00000133	glacier	http://purl.obolibrary.org/obo/ENVO_00000182	plateau
+http://purl.obolibrary.org/obo/ENVO_00000512	pond bed	http://purl.obolibrary.org/obo/ENVO_00000501	submerged bed	http://purl.obolibrary.org/obo/ENVO_00000033	pond
+http://purl.obolibrary.org/obo/ENVO_00000513	reservoir bed	http://purl.obolibrary.org/obo/ENVO_00000501	submerged bed	http://purl.obolibrary.org/obo/ENVO_00000025	reservoir
+http://purl.obolibrary.org/obo/ENVO_00000384	river bed	http://purl.obolibrary.org/obo/ENVO_00000501	submerged bed	http://purl.obolibrary.org/obo/ENVO_00000022	river
+http://purl.obolibrary.org/obo/ENVO_00002209	saline lake sediment	http://purl.obolibrary.org/obo/ENVO_00002007	sediment	http://purl.obolibrary.org/obo/ENVO_00000020	lake
+http://purl.obolibrary.org/obo/ENVO_00000092	sea beach	http://purl.obolibrary.org/obo/ENVO_00000091	beach	http://purl.obolibrary.org/obo/ENVO_00000016	sea
+http://purl.obolibrary.org/obo/ENVO_00000088	sea cliff	http://purl.obolibrary.org/obo/ENVO_00000087	cliff	http://purl.obolibrary.org/obo/ENVO_00000016	sea
+http://purl.obolibrary.org/obo/ENVO_00000482	sea floor	http://purl.obolibrary.org/obo/ENVO_00000501	submerged bed	http://purl.obolibrary.org/obo/ENVO_00000016	sea
+http://purl.obolibrary.org/obo/ENVO_00000304	shore	http://purl.obolibrary.org/obo/ENVO_01000635	land	http://purl.obolibrary.org/obo/ENVO_00000063	water body
+http://purl.obolibrary.org/obo/ENVO_01001553	shore lead	http://purl.obolibrary.org/obo/ENVO_01001551	ice lead	http://purl.obolibrary.org/obo/ENVO_00000304	shore
+http://purl.obolibrary.org/obo/ENVO_00000383	stream bed	http://purl.obolibrary.org/obo/ENVO_00000501	submerged bed	http://purl.obolibrary.org/obo/ENVO_00000023	stream
+http://purl.obolibrary.org/obo/ENVO_00002127	stream sediment	http://purl.obolibrary.org/obo/ENVO_00002007	sediment	http://purl.obolibrary.org/obo/ENVO_00000023	stream
+http://purl.obolibrary.org/obo/ENVO_00000458	valley glacier	http://purl.obolibrary.org/obo/ENVO_00000133	glacier	http://purl.obolibrary.org/obo/ENVO_00000100	valley
