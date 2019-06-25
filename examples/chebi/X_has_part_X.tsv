@@ -1,0 +1,27 @@
+defined_class	defined_class_label	v0	v0_label	v1	v1_label
+http://purl.obolibrary.org/obo/CHEBI_33296	alkali metal molecular entity	http://purl.obolibrary.org/obo/CHEBI_23367	molecular entity	http://purl.obolibrary.org/obo/CHEBI_22314	alkali metal atom
+http://purl.obolibrary.org/obo/CHEBI_35479	alkali metal salt	http://purl.obolibrary.org/obo/CHEBI_24866	salt	http://purl.obolibrary.org/obo/CHEBI_22314	alkali metal atom
+http://purl.obolibrary.org/obo/CHEBI_36902	chalcogen hydride	http://purl.obolibrary.org/obo/CHEBI_33692	hydrides	http://purl.obolibrary.org/obo/CHEBI_33303	chalcogen
+http://purl.obolibrary.org/obo/CHEBI_33304	chalcogen molecular entity	http://purl.obolibrary.org/obo/CHEBI_23367	molecular entity	http://purl.obolibrary.org/obo/CHEBI_33303	chalcogen
+http://purl.obolibrary.org/obo/CHEBI_33484	chalcogen oxoacid	http://purl.obolibrary.org/obo/CHEBI_24833	oxoacid	http://purl.obolibrary.org/obo/CHEBI_33303	chalcogen
+http://purl.obolibrary.org/obo/CHEBI_33485	chalcogen oxoanion	http://purl.obolibrary.org/obo/CHEBI_35406	oxoanion	http://purl.obolibrary.org/obo/CHEBI_33303	chalcogen
+http://purl.obolibrary.org/obo/CHEBI_23114	chloride salt	http://purl.obolibrary.org/obo/CHEBI_24866	salt	http://purl.obolibrary.org/obo/CHEBI_17996	chloride
+http://purl.obolibrary.org/obo/CHEBI_24471	halogen molecular entity	http://purl.obolibrary.org/obo/CHEBI_23367	molecular entity	http://purl.obolibrary.org/obo/CHEBI_24473	halogen
+http://purl.obolibrary.org/obo/CHEBI_37749	halogen oxide	http://purl.obolibrary.org/obo/CHEBI_25741	oxide	http://purl.obolibrary.org/obo/CHEBI_24473	halogen
+http://purl.obolibrary.org/obo/CHEBI_33425	halogen oxoacid	http://purl.obolibrary.org/obo/CHEBI_24833	oxoacid	http://purl.obolibrary.org/obo/CHEBI_24473	halogen
+http://purl.obolibrary.org/obo/CHEBI_33443	halogen oxoanion	http://purl.obolibrary.org/obo/CHEBI_35406	oxoanion	http://purl.obolibrary.org/obo/CHEBI_24473	halogen
+http://purl.obolibrary.org/obo/CHEBI_36094	organic chloride salt	http://purl.obolibrary.org/obo/CHEBI_24868	organic salt	http://purl.obolibrary.org/obo/CHEBI_17996	chloride
+http://purl.obolibrary.org/obo/CHEBI_63526	platinum cation	http://purl.obolibrary.org/obo/CHEBI_36916	cation	http://purl.obolibrary.org/obo/CHEBI_33364	platinum
+http://purl.obolibrary.org/obo/CHEBI_33862	platinum coordination entity	http://purl.obolibrary.org/obo/CHEBI_33240	coordination entity	http://purl.obolibrary.org/obo/CHEBI_33364	platinum
+http://purl.obolibrary.org/obo/CHEBI_33749	platinum molecular entity	http://purl.obolibrary.org/obo/CHEBI_23367	molecular entity	http://purl.obolibrary.org/obo/CHEBI_33364	platinum
+http://purl.obolibrary.org/obo/CHEBI_35881	pnictogen hydride	http://purl.obolibrary.org/obo/CHEBI_33692	hydrides	http://purl.obolibrary.org/obo/CHEBI_33300	pnictogen
+http://purl.obolibrary.org/obo/CHEBI_33302	pnictogen molecular entity	http://purl.obolibrary.org/obo/CHEBI_23367	molecular entity	http://purl.obolibrary.org/obo/CHEBI_33300	pnictogen
+http://purl.obolibrary.org/obo/CHEBI_33408	pnictogen oxoacid	http://purl.obolibrary.org/obo/CHEBI_24833	oxoacid	http://purl.obolibrary.org/obo/CHEBI_33300	pnictogen
+http://purl.obolibrary.org/obo/CHEBI_33459	pnictogen oxoanion	http://purl.obolibrary.org/obo/CHEBI_35406	oxoanion	http://purl.obolibrary.org/obo/CHEBI_33300	pnictogen
+http://purl.obolibrary.org/obo/CHEBI_61452	poly(ethylene terephthalate) polymer	http://purl.obolibrary.org/obo/CHEBI_60027	polymer	http://purl.obolibrary.org/obo/CHEBI_53259	poly(ethylene terephthalate) macromolecule
+http://purl.obolibrary.org/obo/CHEBI_33861	transition element coordination entity	http://purl.obolibrary.org/obo/CHEBI_33240	coordination entity	http://purl.obolibrary.org/obo/CHEBI_27081	transition element atom
+http://purl.obolibrary.org/obo/CHEBI_33497	transition element molecular entity	http://purl.obolibrary.org/obo/CHEBI_23367	molecular entity	http://purl.obolibrary.org/obo/CHEBI_27081	transition element atom
+http://purl.obolibrary.org/obo/CHEBI_35405	transition element oxoanion	http://purl.obolibrary.org/obo/CHEBI_35406	oxoanion	http://purl.obolibrary.org/obo/CHEBI_27081	transition element atom
+http://purl.obolibrary.org/obo/CHEBI_35233	tungsten coordination entity	http://purl.obolibrary.org/obo/CHEBI_33240	coordination entity	http://purl.obolibrary.org/obo/CHEBI_27998	tungsten
+http://purl.obolibrary.org/obo/CHEBI_33742	tungsten molecular entity	http://purl.obolibrary.org/obo/CHEBI_23367	molecular entity	http://purl.obolibrary.org/obo/CHEBI_27998	tungsten
+http://purl.obolibrary.org/obo/CHEBI_36270	tungsten oxoanion	http://purl.obolibrary.org/obo/CHEBI_35406	oxoanion	http://purl.obolibrary.org/obo/CHEBI_27998	tungsten
