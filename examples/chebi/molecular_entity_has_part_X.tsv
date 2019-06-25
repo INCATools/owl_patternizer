@@ -1,0 +1,8 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/CHEBI_33296	alkali metal molecular entity	http://purl.obolibrary.org/obo/CHEBI_22314	alkali metal atom
+http://purl.obolibrary.org/obo/CHEBI_33304	chalcogen molecular entity	http://purl.obolibrary.org/obo/CHEBI_33303	chalcogen
+http://purl.obolibrary.org/obo/CHEBI_24471	halogen molecular entity	http://purl.obolibrary.org/obo/CHEBI_24473	halogen
+http://purl.obolibrary.org/obo/CHEBI_33749	platinum molecular entity	http://purl.obolibrary.org/obo/CHEBI_33364	platinum
+http://purl.obolibrary.org/obo/CHEBI_33302	pnictogen molecular entity	http://purl.obolibrary.org/obo/CHEBI_33300	pnictogen
+http://purl.obolibrary.org/obo/CHEBI_33497	transition element molecular entity	http://purl.obolibrary.org/obo/CHEBI_27081	transition element atom
+http://purl.obolibrary.org/obo/CHEBI_33742	tungsten molecular entity	http://purl.obolibrary.org/obo/CHEBI_27998	tungsten

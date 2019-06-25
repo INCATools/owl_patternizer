@@ -1,0 +1,6 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/CHEBI_64600	C21-steroid hormone	http://purl.obolibrary.org/obo/CHEBI_61313	C21-steroid
+http://purl.obolibrary.org/obo/CHEBI_36699	corticosteroid hormone	http://purl.obolibrary.org/obo/CHEBI_50858	corticosteroid
+http://purl.obolibrary.org/obo/CHEBI_25905	peptide hormone	http://purl.obolibrary.org/obo/CHEBI_16670	peptide
+http://purl.obolibrary.org/obo/CHEBI_26764	steroid hormone	http://purl.obolibrary.org/obo/CHEBI_35341	steroid
+http://purl.obolibrary.org/obo/GOCHE_24621	substance with hormone role	http://purl.obolibrary.org/obo/CHEBI_24431	chemical entity
