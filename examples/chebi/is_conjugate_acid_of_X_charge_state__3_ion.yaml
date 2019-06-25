@@ -1,0 +1,56 @@
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: is conjugate acid of X charge_state -3 ion
+pattern_iri: http://purl.obolibrary.org/obo/chebi/is_conjugate_acid_of_X_charge_state__3_ion
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cyclic 2,3-bisphospho-D-glycerate(3-)](http://purl.obolibrary.org/obo/CHEBI_79081), [ATP(3-)](http://purl.obolibrary.org/obo/CHEBI_57299), [GTP(3-)](http://purl.obolibrary.org/obo/CHEBI_57600) (9 total)
+
+classes: 
+  phosphoric acid derivative: "http://purl.obolibrary.org/obo/CHEBI_26079"
+  organic molecular entity: "http://purl.obolibrary.org/obo/CHEBI_50860"
+  -3 ion: "CHEBI:-3"
+
+
+relations: 
+  is conjugate acid of: "http://purl.obolibrary.org/obo/chebi#is_conjugate_acid_of"
+  charge_state: "inca:charge_state"
+
+
+vars:
+  v0: "'phosphoric acid derivative' or 'organic molecular entity'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s -3 ion"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1111111111111111, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A 2'-deoxyribonucleoside triphosphate oxoanion that is a trianion of %s arising from partial deprotonation of the triphosphate OH groups."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s(3-)"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s trianion"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('is conjugate acid of' some %s) and ('charge_state' some '-3 ion')"
+  vars:
+    - v0

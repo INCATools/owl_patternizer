@@ -1,0 +1,52 @@
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: is conjugate base of X charge_state -5 ion
+pattern_iri: http://purl.obolibrary.org/obo/chebi/is_conjugate_base_of_X_charge_state__5_ion
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [succinyl-CoA(5-)](http://purl.obolibrary.org/obo/CHEBI_57292), [malonyl-CoA(5-)](http://purl.obolibrary.org/obo/CHEBI_57384), [1-phosphatidyl-1D-myo-inositol 3,4-bisphosphate(5-)](http://purl.obolibrary.org/obo/CHEBI_57658) (10 total)
+
+classes: 
+  heteroorganic entity: "http://purl.obolibrary.org/obo/CHEBI_33285"
+  pnictogen molecular entity: "http://purl.obolibrary.org/obo/CHEBI_33302"
+  polyatomic entity: "http://purl.obolibrary.org/obo/CHEBI_36357"
+  -5 ion: "CHEBI:-5"
+
+
+relations: 
+  is conjugate base of: "http://purl.obolibrary.org/obo/chebi#is_conjugate_base_of"
+  charge_state: "inca:charge_state"
+
+
+vars:
+  v0: "'heteroorganic entity' or 'pnictogen molecular entity' or 'polyatomic entity'"
+
+name:
+  # Induced, frequency=0.9, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s -5 ion"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The pentaanion of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('is conjugate base of' some %s) and ('charge_state' some '-5 ion')"
+  vars:
+    - v0

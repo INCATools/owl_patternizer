@@ -1,0 +1,54 @@
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has functional parent X
+pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_functional_parent_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [dTTP](http://purl.obolibrary.org/obo/CHEBI_18077), [L-cysteine thioether](http://purl.obolibrary.org/obo/CHEBI_27532), [TDP](http://purl.obolibrary.org/obo/CHEBI_61377) (158 total)
+
+classes: 
+  molecular entity: "http://purl.obolibrary.org/obo/CHEBI_23367"
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+
+
+relations: 
+  has functional parent: "http://purl.obolibrary.org/obo/chebi#has_functional_parent"
+
+
+vars:
+  v0: "'molecular entity'"
+  v1: "'chemical entity'"
+
+name:
+  # Induced, frequency=0.05063291139240506, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.06962025316455696, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is formally obtained from a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('has functional parent' some %s)"
+  vars:
+    - v0
+    - v1

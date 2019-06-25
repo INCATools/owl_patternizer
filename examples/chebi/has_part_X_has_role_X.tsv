@@ -1,0 +1,5 @@
+defined_class	defined_class_label	v0	v0_label	v1	v1_label
+http://purl.obolibrary.org/obo/CHEBI_21437	Mo-molybdopterin cofactor	http://purl.obolibrary.org/obo/CHEBI_28685	molybdenum atom	http://purl.obolibrary.org/obo/CHEBI_23357	cofactor
+http://purl.obolibrary.org/obo/CHEBI_18231	arsenic acid	http://purl.obolibrary.org/obo/CHEBI_27563	arsenic atom	http://purl.obolibrary.org/obo/CHEBI_39141	Bronsted acid
+http://purl.obolibrary.org/obo/CHEBI_15956	biotin	http://purl.obolibrary.org/obo/CHEBI_49637	hydrogen atom	http://purl.obolibrary.org/obo/CHEBI_75769	B vitamin
+http://purl.obolibrary.org/obo/CHEBI_30409	iron-sulfur-molybdenum cofactor	http://purl.obolibrary.org/obo/CHEBI_48796	iron-sulfur-molybdenum cluster	http://purl.obolibrary.org/obo/CHEBI_23357	cofactor

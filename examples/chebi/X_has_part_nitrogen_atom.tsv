@@ -1,0 +1,8 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/CHEBI_33267	elemental nitrogen	http://purl.obolibrary.org/obo/CHEBI_33465	elemental pnictogen
+http://purl.obolibrary.org/obo/CHEBI_35106	nitrogen hydride	http://purl.obolibrary.org/obo/CHEBI_35881	pnictogen hydride
+http://purl.obolibrary.org/obo/CHEBI_51143	nitrogen molecular entity	http://purl.obolibrary.org/obo/CHEBI_23367	molecular entity
+http://purl.obolibrary.org/obo/CHEBI_35196	nitrogen oxide	http://purl.obolibrary.org/obo/CHEBI_25741	oxide
+http://purl.obolibrary.org/obo/CHEBI_33455	nitrogen oxoacid	http://purl.obolibrary.org/obo/CHEBI_24833	oxoacid
+http://purl.obolibrary.org/obo/CHEBI_33458	nitrogen oxoanion	http://purl.obolibrary.org/obo/CHEBI_35406	oxoanion
+http://purl.obolibrary.org/obo/CHEBI_50335	organic nitrogen anion	http://purl.obolibrary.org/obo/CHEBI_25696	organic anion

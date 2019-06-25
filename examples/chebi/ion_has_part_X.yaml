@@ -1,0 +1,54 @@
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: ion has part X
+pattern_iri: http://purl.obolibrary.org/obo/chebi/ion_has_part_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [iron(2+)](http://purl.obolibrary.org/obo/CHEBI_29033), [calcium ion](http://purl.obolibrary.org/obo/CHEBI_39124), [lead ion](http://purl.obolibrary.org/obo/CHEBI_60249) (13 total)
+
+classes: 
+  ion: "http://purl.obolibrary.org/obo/CHEBI_24870"
+  atom: "http://purl.obolibrary.org/obo/CHEBI_33250"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'atom'"
+
+name:
+  # Induced, frequency=0.7692307692307693, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s ion"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.46153846153846156, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s atom having a net electric charge."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s ion"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s (II) ION"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'ion' and ('has part' some %s)"
+  vars:
+    - v0

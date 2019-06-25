@@ -1,0 +1,14 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/CHEBI_60197	bacteriochlorophyll c	http://purl.obolibrary.org/obo/CHEBI_38201	bacteriochlorophyll
+http://purl.obolibrary.org/obo/CHEBI_23014	carbon oxide	http://purl.obolibrary.org/obo/CHEBI_25741	oxide
+http://purl.obolibrary.org/obo/CHEBI_35605	carbon oxoacid	http://purl.obolibrary.org/obo/CHEBI_24833	oxoacid
+http://purl.obolibrary.org/obo/CHEBI_35604	carbon oxoanion	http://purl.obolibrary.org/obo/CHEBI_35406	oxoanion
+http://purl.obolibrary.org/obo/CHEBI_3543	cephamycin C	http://purl.obolibrary.org/obo/CHEBI_55429	cephamycin
+http://purl.obolibrary.org/obo/CHEBI_18296	chondroitin 6'-sulfate	http://purl.obolibrary.org/obo/CHEBI_37397	chondroitin sulfate
+http://purl.obolibrary.org/obo/CHEBI_28680	cytarabine	http://purl.obolibrary.org/obo/CHEBI_22601	arabinoside
+http://purl.obolibrary.org/obo/CHEBI_18070	cytochrome c	http://purl.obolibrary.org/obo/CHEBI_4056	cytochrome
+http://purl.obolibrary.org/obo/CHEBI_60562	ferroheme c	http://purl.obolibrary.org/obo/CHEBI_38573	ferroheme
+http://purl.obolibrary.org/obo/CHEBI_64551	fumiquinazoline C	http://purl.obolibrary.org/obo/CHEBI_64545	fumiquinazoline
+http://purl.obolibrary.org/obo/CHEBI_27504	mitomycin C	http://purl.obolibrary.org/obo/CHEBI_25357	mitomycin
+http://purl.obolibrary.org/obo/CHEBI_25697	organic cation	http://purl.obolibrary.org/obo/CHEBI_50860	organic molecular entity
+http://purl.obolibrary.org/obo/CHEBI_9470	tetracenomycin C	http://purl.obolibrary.org/obo/CHEBI_48132	tetracenomycin

@@ -1,0 +1,50 @@
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: carboxylic ester has functional parent X
+pattern_iri: http://purl.obolibrary.org/obo/chebi/carboxylic_ester_has_functional_parent_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [carbamate ester](http://purl.obolibrary.org/obo/CHEBI_23003), [beta-amino acid ester](http://purl.obolibrary.org/obo/CHEBI_85139), [fatty acid ester](http://purl.obolibrary.org/obo/CHEBI_35748) (4 total)
+
+classes: 
+  hydroxides: "http://purl.obolibrary.org/obo/CHEBI_24651"
+  carboxylic ester: "http://purl.obolibrary.org/obo/CHEBI_33308"
+  organooxygen compound: "http://purl.obolibrary.org/obo/CHEBI_36963"
+
+
+relations: 
+  has functional parent: "http://purl.obolibrary.org/obo/chebi#has_functional_parent"
+
+
+vars:
+  v0: "'hydroxides' or 'organooxygen compound'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s ester"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A carboxylic ester in which the carboxylic acid component can be any %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s esters"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'carboxylic ester' and ('has functional parent' some %s)"
+  vars:
+    - v0

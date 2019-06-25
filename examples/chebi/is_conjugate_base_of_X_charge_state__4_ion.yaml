@@ -1,0 +1,51 @@
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: is conjugate base of X charge_state -4 ion
+pattern_iri: http://purl.obolibrary.org/obo/chebi/is_conjugate_base_of_X_charge_state__4_ion
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [coenzyme A(4-)](http://purl.obolibrary.org/obo/CHEBI_57287), [acetyl-CoA(4-)](http://purl.obolibrary.org/obo/CHEBI_57288), [2,3-dehydroacyl-CoA(4-)](http://purl.obolibrary.org/obo/CHEBI_60015) (36 total)
+
+classes: 
+  heteroatomic molecular entity: "http://purl.obolibrary.org/obo/CHEBI_37577"
+  organic molecular entity: "http://purl.obolibrary.org/obo/CHEBI_50860"
+  -4 ion: "CHEBI:-4"
+
+
+relations: 
+  is conjugate base of: "http://purl.obolibrary.org/obo/chebi#is_conjugate_base_of"
+  charge_state: "inca:charge_state"
+
+
+vars:
+  v0: "'heteroatomic molecular entity' or 'organic molecular entity'"
+
+name:
+  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s -4 ion"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.08333333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An acyl-CoA(4-) that is the tetraanion of %s, arising from deprotonation of phosphate and diphosphate functions."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('is conjugate base of' some %s) and ('charge_state' some '-4 ion')"
+  vars:
+    - v0

@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has functional parent X is conjugate base of X
+pattern_iri: http://purl.obolibrary.org/obo/chebi/has_functional_parent_X_is_conjugate_base_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [NAD zwitterion](http://purl.obolibrary.org/obo/CHEBI_44215), [4-aminobenzoate](http://purl.obolibrary.org/obo/CHEBI_17836), [trypanothione](http://purl.obolibrary.org/obo/CHEBI_17842) (8 total)
+
+classes: 
+  chalcogen molecular entity: "http://purl.obolibrary.org/obo/CHEBI_33304"
+  organic molecular entity: "http://purl.obolibrary.org/obo/CHEBI_50860"
+
+
+relations: 
+  has functional parent: "http://purl.obolibrary.org/obo/chebi#has_functional_parent"
+  is conjugate base of: "http://purl.obolibrary.org/obo/chebi#is_conjugate_base_of"
+
+
+vars:
+  v0: "'chalcogen molecular entity' or 'organic molecular entity'"
+  v1: "'organic molecular entity'"
+
+name:
+  # Could not induce name, using default
+  text: "has functional parent %s is conjugate base of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any has functional parent a %s that is conjugate base of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has functional parent' some %s) and ('is conjugate base of' some %s)"
+  vars:
+    - v0
+    - v1

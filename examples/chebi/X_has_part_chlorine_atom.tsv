@@ -1,0 +1,7 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/CHEBI_17996	chloride	http://purl.obolibrary.org/obo/CHEBI_22563	anion
+http://purl.obolibrary.org/obo/CHEBI_23117	chlorine molecular entity	http://purl.obolibrary.org/obo/CHEBI_23367	molecular entity
+http://purl.obolibrary.org/obo/CHEBI_33426	chlorine oxoacid	http://purl.obolibrary.org/obo/CHEBI_24833	oxoacid
+http://purl.obolibrary.org/obo/CHEBI_33437	chlorine oxoanion	http://purl.obolibrary.org/obo/CHEBI_35406	oxoanion
+http://purl.obolibrary.org/obo/CHEBI_33431	elemental chlorine	http://purl.obolibrary.org/obo/CHEBI_33434	elemental halogen
+http://purl.obolibrary.org/obo/CHEBI_33432	monoatomic chlorine	http://purl.obolibrary.org/obo/CHEBI_33433	monoatomic halogen

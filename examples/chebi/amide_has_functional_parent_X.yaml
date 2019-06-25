@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: amide has functional parent X
+pattern_iri: http://purl.obolibrary.org/obo/chebi/amide_has_functional_parent_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [nicotinamide](http://purl.obolibrary.org/obo/CHEBI_17154), [lipoamide](http://purl.obolibrary.org/obo/CHEBI_17460), [sulfanilamide](http://purl.obolibrary.org/obo/CHEBI_45373) (4 total)
+
+classes: 
+  oxoacid: "http://purl.obolibrary.org/obo/CHEBI_24833"
+  amide: "http://purl.obolibrary.org/obo/CHEBI_32988"
+
+
+relations: 
+  has functional parent: "http://purl.obolibrary.org/obo/chebi#has_functional_parent"
+
+
+vars:
+  v0: "'oxoacid'"
+
+name:
+  # Could not induce name, using default
+  text: "amide has functional parent %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A monocarboxylic acid amide derived from a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s amide"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'amide' and ('has functional parent' some %s)"
+  vars:
+    - v0

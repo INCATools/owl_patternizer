@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/chebi/molecular_entity_has_part_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [alkali metal molecular entity](http://purl.obolibrary.org/obo/CHEBI_33296), [halogen molecular entity](http://purl.obolibrary.org/obo/CHEBI_24471), [transition element molecular entity](http://purl.obolibrary.org/obo/CHEBI_33497) (7 total)
+  Examples: [iron molecular entity](http://purl.obolibrary.org/obo/CHEBI_24873), [manganese molecular entity](http://purl.obolibrary.org/obo/CHEBI_25154), [alkaline earth molecular entity](http://purl.obolibrary.org/obo/CHEBI_33299) (58 total)
 
 classes: 
   molecular entity: "http://purl.obolibrary.org/obo/CHEBI_23367"
@@ -20,7 +20,7 @@ vars:
   v0: "'atom'"
 
 name:
-  # Induced, frequency=0.7142857142857143, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.7413793103448276, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s molecular entity"
   vars:
     - v0
@@ -35,7 +35,17 @@ annotationProperties:
   exact_synonym: "oio:hasExactSynonym"
   related_synonym: "oio:hasRelatedSynonym"
 
-# could not infer annotations
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s molecular entity"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s molecular entities"
+    vars:
+      - v0
 
 
 equivalentTo:

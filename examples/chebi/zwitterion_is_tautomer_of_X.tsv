@@ -1,0 +1,77 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/CHEBI_57418	 0 ion	http://purl.obolibrary.org/obo/CHEBI_15573	 0 ion
+http://purl.obolibrary.org/obo/CHEBI_57418	 0 ion	http://purl.obolibrary.org/obo/CHEBI_15573	(2-aminoethyl)phosphonic acid
+http://purl.obolibrary.org/obo/CHEBI_57418	(2-aminoethyl)phosphonic acid zwitterion	http://purl.obolibrary.org/obo/CHEBI_15573	 0 ion
+http://purl.obolibrary.org/obo/CHEBI_57418	(2-aminoethyl)phosphonic acid zwitterion	http://purl.obolibrary.org/obo/CHEBI_15573	(2-aminoethyl)phosphonic acid
+http://purl.obolibrary.org/obo/CHEBI_58360	1-aminocyclopropanecarboxylic acid zwitterion	http://purl.obolibrary.org/obo/CHEBI_18053	1-aminocyclopropanecarboxylic acid
+http://purl.obolibrary.org/obo/CHEBI_77860	3-cyano-L-alanine zwitterion	http://purl.obolibrary.org/obo/CHEBI_16934	3-cyano-L-alanine
+http://purl.obolibrary.org/obo/CHEBI_58419	4-hydroxy-L-proline zwitterion	http://purl.obolibrary.org/obo/CHEBI_18240	4-hydroxy-L-proline
+http://purl.obolibrary.org/obo/CHEBI_63137	4-hydroxyproline zwitterion	http://purl.obolibrary.org/obo/CHEBI_20392	4-hydroxyproline
+http://purl.obolibrary.org/obo/CHEBI_85413	5-hydroxyectoine zwitterion	http://purl.obolibrary.org/obo/CHEBI_49432	5-hydroxyectoine
+http://purl.obolibrary.org/obo/CHEBI_57869	6-aminopenicillanic acid zwitterion	http://purl.obolibrary.org/obo/CHEBI_16705	6-aminopenicillanic acid
+http://purl.obolibrary.org/obo/CHEBI_57416	D-alanine zwitterion	http://purl.obolibrary.org/obo/CHEBI_15570	D-alanine
+http://purl.obolibrary.org/obo/CHEBI_59871	D-alpha-amino acid zwitterion	http://purl.obolibrary.org/obo/CHEBI_16733	D-alpha-amino acid
+http://purl.obolibrary.org/obo/CHEBI_74337	D-asparagine zwitterion	http://purl.obolibrary.org/obo/CHEBI_28159	D-asparagine
+http://purl.obolibrary.org/obo/CHEBI_35236	D-cysteine zwitterion	http://purl.obolibrary.org/obo/CHEBI_16375	D-cysteine
+http://purl.obolibrary.org/obo/CHEBI_57932	D-methionine zwitterion	http://purl.obolibrary.org/obo/CHEBI_16867	D-methionine
+http://purl.obolibrary.org/obo/CHEBI_57981	D-phenylalanine zwitterion	http://purl.obolibrary.org/obo/CHEBI_16998	D-phenylalanine
+http://purl.obolibrary.org/obo/CHEBI_57726	D-proline zwitterion	http://purl.obolibrary.org/obo/CHEBI_16313	D-proline
+http://purl.obolibrary.org/obo/CHEBI_35247	D-serine zwitterion	http://purl.obolibrary.org/obo/CHEBI_16523	D-serine
+http://purl.obolibrary.org/obo/CHEBI_57757	D-threonine zwitterion	http://purl.obolibrary.org/obo/CHEBI_16398	D-threonine
+http://purl.obolibrary.org/obo/CHEBI_57719	D-tryptophan zwitterion	http://purl.obolibrary.org/obo/CHEBI_16296	D-tryptophan
+http://purl.obolibrary.org/obo/CHEBI_58570	D-tyrosine zwitterion	http://purl.obolibrary.org/obo/CHEBI_28479	D-tyrosine
+http://purl.obolibrary.org/obo/CHEBI_74338	D-valine zwitterion	http://purl.obolibrary.org/obo/CHEBI_27477	D-valine
+http://purl.obolibrary.org/obo/CHEBI_57972	L-alanine zwitterion	http://purl.obolibrary.org/obo/CHEBI_16977	L-alanine
+http://purl.obolibrary.org/obo/CHEBI_59869	L-alpha-amino acid zwitterion	http://purl.obolibrary.org/obo/CHEBI_15705	L-alpha-amino acid
+http://purl.obolibrary.org/obo/CHEBI_58048	L-asparagine zwitterion	http://purl.obolibrary.org/obo/CHEBI_17196	L-asparagine
+http://purl.obolibrary.org/obo/CHEBI_405237	L-canavanine zwitterion	http://purl.obolibrary.org/obo/CHEBI_609827	L-canavanine
+http://purl.obolibrary.org/obo/CHEBI_35235	L-cysteine zwitterion	http://purl.obolibrary.org/obo/CHEBI_17561	L-cysteine
+http://purl.obolibrary.org/obo/CHEBI_35491	L-cystine zwitterion	http://purl.obolibrary.org/obo/CHEBI_16283	L-cystine
+http://purl.obolibrary.org/obo/CHEBI_57504	L-dopa zwitterion	http://purl.obolibrary.org/obo/CHEBI_15765	L-dopa
+http://purl.obolibrary.org/obo/CHEBI_58359	L-glutamine zwitterion	http://purl.obolibrary.org/obo/CHEBI_18050	L-glutamine
+http://purl.obolibrary.org/obo/CHEBI_57595	L-histidine zwitterion	http://purl.obolibrary.org/obo/CHEBI_15971	L-histidine
+http://purl.obolibrary.org/obo/CHEBI_58199	L-homocysteine zwitterion	http://purl.obolibrary.org/obo/CHEBI_17588	L-homocysteine
+http://purl.obolibrary.org/obo/CHEBI_57476	L-homoserine zwitterion	http://purl.obolibrary.org/obo/CHEBI_15699	L-homoserine
+http://purl.obolibrary.org/obo/CHEBI_58045	L-isoleucine zwitterion	http://purl.obolibrary.org/obo/CHEBI_17191	L-isoleucine
+http://purl.obolibrary.org/obo/CHEBI_57959	L-kynurenine zwitterion	http://purl.obolibrary.org/obo/CHEBI_16946	L-kynurenine
+http://purl.obolibrary.org/obo/CHEBI_57427	L-leucine zwitterion	http://purl.obolibrary.org/obo/CHEBI_15603	L-leucine
+http://purl.obolibrary.org/obo/CHEBI_57844	L-methionine zwitterion	http://purl.obolibrary.org/obo/CHEBI_16643	L-methionine
+http://purl.obolibrary.org/obo/CHEBI_58095	L-phenylalanine zwitterion	http://purl.obolibrary.org/obo/CHEBI_17295	L-phenylalanine
+http://purl.obolibrary.org/obo/CHEBI_61185	L-pipecolic acid zwitterion	http://purl.obolibrary.org/obo/CHEBI_30913	L-pipecolic acid
+http://purl.obolibrary.org/obo/CHEBI_60039	L-proline zwitterion	http://purl.obolibrary.org/obo/CHEBI_17203	L-proline
+http://purl.obolibrary.org/obo/CHEBI_58499	L-pyrrolysine zwitterion	http://purl.obolibrary.org/obo/CHEBI_21860	L-pyrrolysine
+http://purl.obolibrary.org/obo/CHEBI_33384	L-serine zwitterion	http://purl.obolibrary.org/obo/CHEBI_17115	L-serine
+http://purl.obolibrary.org/obo/CHEBI_57926	L-threonine zwitterion	http://purl.obolibrary.org/obo/CHEBI_16857	L-threonine
+http://purl.obolibrary.org/obo/CHEBI_58448	L-thyroxine zwitterion	http://purl.obolibrary.org/obo/CHEBI_18332	L-thyroxine
+http://purl.obolibrary.org/obo/CHEBI_57912	L-tryptophan zwitterion	http://purl.obolibrary.org/obo/CHEBI_16828	L-tryptophan
+http://purl.obolibrary.org/obo/CHEBI_58315	L-tyrosine zwitterion	http://purl.obolibrary.org/obo/CHEBI_17895	L-tyrosine
+http://purl.obolibrary.org/obo/CHEBI_57762	L-valine zwitterion	http://purl.obolibrary.org/obo/CHEBI_16414	L-valine
+http://purl.obolibrary.org/obo/CHEBI_66884	N-alkylglycine zwitterion	http://purl.obolibrary.org/obo/CHEBI_66933	N-alkylglycine
+http://purl.obolibrary.org/obo/CHEBI_86139	N-methyl-L-alpha-amino acid zwitterion	http://purl.obolibrary.org/obo/CHEBI_21752	N-methyl-L-alpha-amino acid
+http://purl.obolibrary.org/obo/CHEBI_58717	S-substituted L-cysteine zwitterion	http://purl.obolibrary.org/obo/CHEBI_47910	S-substituted L-cysteine
+http://purl.obolibrary.org/obo/CHEBI_66916	alanine zwitterion	http://purl.obolibrary.org/obo/CHEBI_16449	alanine
+http://purl.obolibrary.org/obo/CHEBI_78608	alpha-amino acid zwitterion	http://purl.obolibrary.org/obo/CHEBI_33704	alpha-amino acid
+http://purl.obolibrary.org/obo/CHEBI_57966	beta-alanine zwitterion	http://purl.obolibrary.org/obo/CHEBI_16958	beta-alanine
+http://purl.obolibrary.org/obo/CHEBI_57485	carnosine zwitterion	http://purl.obolibrary.org/obo/CHEBI_15727	carnosine
+http://purl.obolibrary.org/obo/CHEBI_73202	ceramide phosphoethanolamine zwitterion	http://purl.obolibrary.org/obo/CHEBI_73204	ceramide phosphoethanolamine
+http://purl.obolibrary.org/obo/CHEBI_57947	creatine zwitterion	http://purl.obolibrary.org/obo/CHEBI_16919	creatine
+http://purl.obolibrary.org/obo/CHEBI_35237	cysteine zwitterion	http://purl.obolibrary.org/obo/CHEBI_15356	cysteine
+http://purl.obolibrary.org/obo/CHEBI_35492	cystine zwitterion	http://purl.obolibrary.org/obo/CHEBI_17376	cystine
+http://purl.obolibrary.org/obo/CHEBI_90799	dipeptide zwitterion	http://purl.obolibrary.org/obo/CHEBI_46761	dipeptide
+http://purl.obolibrary.org/obo/CHEBI_57585	discadenine zwitterion	http://purl.obolibrary.org/obo/CHEBI_15955	discadenine
+http://purl.obolibrary.org/obo/CHEBI_58515	ectoine zwitterion	http://purl.obolibrary.org/obo/CHEBI_27592	ectoine
+http://purl.obolibrary.org/obo/CHEBI_57630	gamma-amino-beta-hydroxybutyric acid zwitterion	http://purl.obolibrary.org/obo/CHEBI_16080	gamma-amino-beta-hydroxybutyric acid
+http://purl.obolibrary.org/obo/CHEBI_59888	gamma-aminobutyric acid zwitterion	http://purl.obolibrary.org/obo/CHEBI_16865	gamma-aminobutyric acid
+http://purl.obolibrary.org/obo/CHEBI_57305	glycine zwitterion	http://purl.obolibrary.org/obo/CHEBI_15428	glycine
+http://purl.obolibrary.org/obo/CHEBI_82706	hercynylcysteine sulfoxide zwitterion	http://purl.obolibrary.org/obo/CHEBI_79057	hercynylcysteine sulfoxide
+http://purl.obolibrary.org/obo/CHEBI_82705	hercynylselenocysteine zwitterion	http://purl.obolibrary.org/obo/CHEBI_79070	hercynylselenocysteine
+http://purl.obolibrary.org/obo/CHEBI_58065	homocysteine zwitterion	http://purl.obolibrary.org/obo/CHEBI_17230	homocysteine
+http://purl.obolibrary.org/obo/CHEBI_57853	hypotaurine zwitterion	http://purl.obolibrary.org/obo/CHEBI_16668	hypotaurine
+http://purl.obolibrary.org/obo/CHEBI_64558	methionine zwitterion	http://purl.obolibrary.org/obo/CHEBI_16811	methionine
+http://purl.obolibrary.org/obo/CHEBI_133011	oxytetracycline zwitterion	http://purl.obolibrary.org/obo/CHEBI_27701	oxytetracycline
+http://purl.obolibrary.org/obo/CHEBI_60466	peptide zwitterion	http://purl.obolibrary.org/obo/CHEBI_16670	peptide
+http://purl.obolibrary.org/obo/CHEBI_57433	sarcosine zwitterion	http://purl.obolibrary.org/obo/CHEBI_15611	sarcosine
+http://purl.obolibrary.org/obo/CHEBI_35243	serine zwitterion	http://purl.obolibrary.org/obo/CHEBI_17822	serine
+http://purl.obolibrary.org/obo/CHEBI_507393	taurine zwitterion	http://purl.obolibrary.org/obo/CHEBI_15891	taurine
+http://purl.obolibrary.org/obo/CHEBI_305790	thyroxine zwitterion	http://purl.obolibrary.org/obo/CHEBI_30660	thyroxine
+http://purl.obolibrary.org/obo/CHEBI_64554	tryptophan zwitterion	http://purl.obolibrary.org/obo/CHEBI_27897	tryptophan

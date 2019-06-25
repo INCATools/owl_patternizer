@@ -1,0 +1,14 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/CHEBI_13941	carbamate	http://purl.obolibrary.org/obo/CHEBI_28616	carbamic acid
+http://purl.obolibrary.org/obo/CHEBI_41609	carbonate	http://purl.obolibrary.org/obo/CHEBI_17544	hydrogencarbonate
+http://purl.obolibrary.org/obo/CHEBI_49709	chlorate	http://purl.obolibrary.org/obo/CHEBI_17322	chloric acid
+http://purl.obolibrary.org/obo/CHEBI_17514	cyanide	http://purl.obolibrary.org/obo/CHEBI_18407	hydrogen cyanide
+http://purl.obolibrary.org/obo/CHEBI_17051	fluoride	http://purl.obolibrary.org/obo/CHEBI_29228	hydrogen fluoride
+http://purl.obolibrary.org/obo/CHEBI_30566	gamma-aminobutyrate	http://purl.obolibrary.org/obo/CHEBI_16865	gamma-aminobutyric acid
+http://purl.obolibrary.org/obo/CHEBI_16382	iodide	http://purl.obolibrary.org/obo/CHEBI_43451	hydrogen iodide
+http://purl.obolibrary.org/obo/CHEBI_36264	molybdate	http://purl.obolibrary.org/obo/CHEBI_36263	hydrogenmolybdate
+http://purl.obolibrary.org/obo/CHEBI_17632	nitrate	http://purl.obolibrary.org/obo/CHEBI_48107	nitric acid
+http://purl.obolibrary.org/obo/CHEBI_50526	phenolate	http://purl.obolibrary.org/obo/CHEBI_15882	phenol
+http://purl.obolibrary.org/obo/CHEBI_35780	phosphate ion	http://purl.obolibrary.org/obo/CHEBI_26078	phosphoric acid
+http://purl.obolibrary.org/obo/CHEBI_16189	sulfate	http://purl.obolibrary.org/obo/CHEBI_45696	hydrogensulfate
+http://purl.obolibrary.org/obo/CHEBI_17359	sulfite	http://purl.obolibrary.org/obo/CHEBI_17137	hydrogensulfite

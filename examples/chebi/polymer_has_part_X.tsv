@@ -1,0 +1,6 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/CHEBI_61444	gamma-poly(glutamate) polymer	http://purl.obolibrary.org/obo/CHEBI_53376	gamma-poly -1 ion
+http://purl.obolibrary.org/obo/CHEBI_61444	gamma-poly(glutamate) polymer	http://purl.obolibrary.org/obo/CHEBI_53376	gamma-poly(glutamate) macromolecule
+http://purl.obolibrary.org/obo/CHEBI_60164	ionic polymer	http://purl.obolibrary.org/obo/CHEBI_53368	ionic macromolecule
+http://purl.obolibrary.org/obo/CHEBI_61445	poly(amide) polymer	http://purl.obolibrary.org/obo/CHEBI_53224	poly(amide) macromolecule
+http://purl.obolibrary.org/obo/CHEBI_61469	polyanionic polymer	http://purl.obolibrary.org/obo/CHEBI_53309	polyanionic macromolecule

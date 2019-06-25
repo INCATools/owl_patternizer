@@ -1,0 +1,9 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/CHEBI_22507	aminoglycoside antibiotic	http://purl.obolibrary.org/obo/CHEBI_47779	aminoglycoside
+http://purl.obolibrary.org/obo/CHEBI_49322	anthracycline antibiotic	http://purl.obolibrary.org/obo/CHEBI_48120	anthracycline
+http://purl.obolibrary.org/obo/CHEBI_27933	beta-lactam antibiotic	http://purl.obolibrary.org/obo/CHEBI_35627	beta-lactam
+http://purl.obolibrary.org/obo/CHEBI_49319	carbocyclic antibiotic	http://purl.obolibrary.org/obo/CHEBI_33598	carbocyclic compound
+http://purl.obolibrary.org/obo/CHEBI_24531	heterocyclic antibiotic	http://purl.obolibrary.org/obo/CHEBI_5686	heterocyclic compound
+http://purl.obolibrary.org/obo/CHEBI_25105	macrolide antibiotic	http://purl.obolibrary.org/obo/CHEBI_25106	macrolide
+http://purl.obolibrary.org/obo/CHEBI_25903	peptide antibiotic	http://purl.obolibrary.org/obo/CHEBI_16670	peptide
+http://purl.obolibrary.org/obo/CHEBI_87228	sulfonamide antibiotic	http://purl.obolibrary.org/obo/CHEBI_35358	sulfonamide

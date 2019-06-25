@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: polymer has part X
+pattern_iri: http://purl.obolibrary.org/obo/chebi/polymer_has_part_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [poly(amide) polymer](http://purl.obolibrary.org/obo/CHEBI_61445), [polyanionic polymer](http://purl.obolibrary.org/obo/CHEBI_61469), [ionic polymer](http://purl.obolibrary.org/obo/CHEBI_60164) (4 total)
+
+classes: 
+  macromolecule: "http://purl.obolibrary.org/obo/CHEBI_33839"
+  polymer: "http://purl.obolibrary.org/obo/CHEBI_60027"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'macromolecule'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s polymer"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A polymer, composed of %s macromolecules."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'polymer' and ('has part' some %s)"
+  vars:
+    - v0

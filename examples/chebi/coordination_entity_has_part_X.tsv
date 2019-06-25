@@ -1,0 +1,11 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/CHEBI_35403	chromium coordination entity	http://purl.obolibrary.org/obo/CHEBI_28073	chromium atom
+http://purl.obolibrary.org/obo/CHEBI_33890	cobalt coordination entity	http://purl.obolibrary.org/obo/CHEBI_27638	cobalt atom
+http://purl.obolibrary.org/obo/CHEBI_33892	iron coordination entity	http://purl.obolibrary.org/obo/CHEBI_18248	iron atom
+http://purl.obolibrary.org/obo/CHEBI_33976	magnesium coordination entity	http://purl.obolibrary.org/obo/CHEBI_25107	magnesium atom
+http://purl.obolibrary.org/obo/CHEBI_35202	molybdenum coordination entity	http://purl.obolibrary.org/obo/CHEBI_28685	molybdenum atom
+http://purl.obolibrary.org/obo/CHEBI_33862	platinum coordination entity	http://purl.obolibrary.org/obo/CHEBI_33364	platinum
+http://purl.obolibrary.org/obo/CHEBI_37190	silicon coordination entity	http://purl.obolibrary.org/obo/CHEBI_27573	silicon atom
+http://purl.obolibrary.org/obo/CHEBI_33861	transition element coordination entity	http://purl.obolibrary.org/obo/CHEBI_27081	transition element atom
+http://purl.obolibrary.org/obo/CHEBI_35233	tungsten coordination entity	http://purl.obolibrary.org/obo/CHEBI_27998	tungsten
+http://purl.obolibrary.org/obo/CHEBI_35166	vanadium coordination entity	http://purl.obolibrary.org/obo/CHEBI_27698	vanadium atom

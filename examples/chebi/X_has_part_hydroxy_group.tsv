@@ -1,0 +1,9 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/CHEBI_24669	hydroxy carboxylic acid	http://purl.obolibrary.org/obo/CHEBI_33575	carboxylic acid
+http://purl.obolibrary.org/obo/CHEBI_24654	hydroxy fatty acid	http://purl.obolibrary.org/obo/CHEBI_35366	fatty acid
+http://purl.obolibrary.org/obo/CHEBI_35868	hydroxy monocarboxylic acid	http://purl.obolibrary.org/obo/CHEBI_25384	monocarboxylic acid
+http://purl.obolibrary.org/obo/CHEBI_140345	hydroxy polyunsaturated fatty acid	http://purl.obolibrary.org/obo/CHEBI_26208	polyunsaturated fatty acid
+http://purl.obolibrary.org/obo/CHEBI_36853	hydroxy seco-steroid	http://purl.obolibrary.org/obo/CHEBI_35788	seco-steroid
+http://purl.obolibrary.org/obo/CHEBI_35350	hydroxy steroid	http://purl.obolibrary.org/obo/CHEBI_35341	steroid
+http://purl.obolibrary.org/obo/CHEBI_52625	inorganic hydroxy compound	http://purl.obolibrary.org/obo/CHEBI_24835	inorganic molecular entity
+http://purl.obolibrary.org/obo/CHEBI_33822	organic hydroxy compound	http://purl.obolibrary.org/obo/CHEBI_50860	organic molecular entity

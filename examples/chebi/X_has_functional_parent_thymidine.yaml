@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has functional parent thymidine
+pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_functional_parent_thymidine
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [dTTP](http://purl.obolibrary.org/obo/CHEBI_18077), [thymidine 5'-monophosphate](http://purl.obolibrary.org/obo/CHEBI_15245), [dTMP](http://purl.obolibrary.org/obo/CHEBI_17013) (4 total)
+
+classes: 
+  thymidine: "http://purl.obolibrary.org/obo/CHEBI_17748"
+  organic phosphate: "http://purl.obolibrary.org/obo/CHEBI_25703"
+
+
+relations: 
+  has functional parent: "http://purl.obolibrary.org/obo/chebi#has_functional_parent"
+
+
+vars:
+  v0: "'organic phosphate'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has functional parent thymidine"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has functional parent a thymidine"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('has functional parent' some 'thymidine')"
+  vars:
+    - v0

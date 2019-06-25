@@ -1,0 +1,21 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/CHEBI_60272	aluminium ion	http://purl.obolibrary.org/obo/CHEBI_28984	aluminium atom
+http://purl.obolibrary.org/obo/CHEBI_85543	bismuth ion	http://purl.obolibrary.org/obo/CHEBI_33301	bismuth atom
+http://purl.obolibrary.org/obo/CHEBI_60270	caesium ion	http://purl.obolibrary.org/obo/CHEBI_30514	caesium atom
+http://purl.obolibrary.org/obo/CHEBI_39124	calcium ion	http://purl.obolibrary.org/obo/CHEBI_22984	calcium atom
+http://purl.obolibrary.org/obo/CHEBI_61310	chromium ion	http://purl.obolibrary.org/obo/CHEBI_28073	chromium atom
+http://purl.obolibrary.org/obo/CHEBI_49552	copper +1 ion	http://purl.obolibrary.org/obo/CHEBI_28694	copper atom
+http://purl.obolibrary.org/obo/CHEBI_29036	copper +2 ion	http://purl.obolibrary.org/obo/CHEBI_28694	copper atom
+http://purl.obolibrary.org/obo/CHEBI_49552	copper(1+)	http://purl.obolibrary.org/obo/CHEBI_28694	copper atom
+http://purl.obolibrary.org/obo/CHEBI_29036	copper(2+)	http://purl.obolibrary.org/obo/CHEBI_28694	copper atom
+http://purl.obolibrary.org/obo/CHEBI_49496	gold +3 ion	http://purl.obolibrary.org/obo/CHEBI_29287	gold atom
+http://purl.obolibrary.org/obo/CHEBI_49496	gold(3+)	http://purl.obolibrary.org/obo/CHEBI_29287	gold atom
+http://purl.obolibrary.org/obo/CHEBI_29033	iron +2 ion	http://purl.obolibrary.org/obo/CHEBI_18248	iron atom
+http://purl.obolibrary.org/obo/CHEBI_29034	iron +3 ion	http://purl.obolibrary.org/obo/CHEBI_18248	iron atom
+http://purl.obolibrary.org/obo/CHEBI_29033	iron(2+)	http://purl.obolibrary.org/obo/CHEBI_18248	iron atom
+http://purl.obolibrary.org/obo/CHEBI_29034	iron(3+)	http://purl.obolibrary.org/obo/CHEBI_18248	iron atom
+http://purl.obolibrary.org/obo/CHEBI_60249	lead ion	http://purl.obolibrary.org/obo/CHEBI_25016	lead atom
+http://purl.obolibrary.org/obo/CHEBI_60250	selenium ion	http://purl.obolibrary.org/obo/CHEBI_27568	selenium atom
+http://purl.obolibrary.org/obo/CHEBI_60247	silver ion	http://purl.obolibrary.org/obo/CHEBI_30512	silver atom
+http://purl.obolibrary.org/obo/CHEBI_60271	tellurium ion	http://purl.obolibrary.org/obo/CHEBI_30452	tellurium atom
+http://purl.obolibrary.org/obo/CHEBI_27365	zinc ion	http://purl.obolibrary.org/obo/CHEBI_27363	zinc atom

@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/chebi/oxoanion_has_part_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [halogen oxoanion](http://purl.obolibrary.org/obo/CHEBI_33443), [transition element oxoanion](http://purl.obolibrary.org/obo/CHEBI_35405), [tungsten oxoanion](http://purl.obolibrary.org/obo/CHEBI_36270) (5 total)
+  Examples: [chlorine oxoanion](http://purl.obolibrary.org/obo/CHEBI_33437), [halogen oxoanion](http://purl.obolibrary.org/obo/CHEBI_33443), [nitrogen oxoanion](http://purl.obolibrary.org/obo/CHEBI_33458) (19 total)
 
 classes: 
   atom: "http://purl.obolibrary.org/obo/CHEBI_33250"
@@ -20,7 +20,7 @@ vars:
   v0: "'atom'"
 
 name:
-  # Induced, frequency=0.8, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s oxoanion"
   vars:
     - v0
@@ -35,7 +35,17 @@ annotationProperties:
   exact_synonym: "oio:hasExactSynonym"
   related_synonym: "oio:hasRelatedSynonym"
 
-# could not infer annotations
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s oxoanion"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s oxoanions"
+    vars:
+      - v0
 
 
 equivalentTo:

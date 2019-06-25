@@ -1,0 +1,60 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/CHEBI_32657	D-asparaginium	http://purl.obolibrary.org/obo/CHEBI_28159	D-asparagine
+http://purl.obolibrary.org/obo/CHEBI_32451	D-cysteinium	http://purl.obolibrary.org/obo/CHEBI_35236	D-cysteine zwitterion
+http://purl.obolibrary.org/obo/CHEBI_32609	D-isoleucinium	http://purl.obolibrary.org/obo/CHEBI_27730	D-isoleucine
+http://purl.obolibrary.org/obo/CHEBI_32624	D-leucinium	http://purl.obolibrary.org/obo/CHEBI_28225	D-leucine
+http://purl.obolibrary.org/obo/CHEBI_32638	D-methioninium	http://purl.obolibrary.org/obo/CHEBI_16867	D-methionine
+http://purl.obolibrary.org/obo/CHEBI_32868	D-prolinium	http://purl.obolibrary.org/obo/CHEBI_16313	D-proline
+http://purl.obolibrary.org/obo/CHEBI_32841	D-serinium	http://purl.obolibrary.org/obo/CHEBI_16523	D-serine
+http://purl.obolibrary.org/obo/CHEBI_32717	D-tryptophanium	http://purl.obolibrary.org/obo/CHEBI_16296	D-tryptophan
+http://purl.obolibrary.org/obo/CHEBI_32682	L-argininium +1 ion	http://purl.obolibrary.org/obo/CHEBI_16467	L-arginine
+http://purl.obolibrary.org/obo/CHEBI_32682	L-argininium(1+)	http://purl.obolibrary.org/obo/CHEBI_16467	L-arginine
+http://purl.obolibrary.org/obo/CHEBI_78902	L-canavanine +1 ion	http://purl.obolibrary.org/obo/CHEBI_609827	L-canavanine
+http://purl.obolibrary.org/obo/CHEBI_78902	L-canavanine(1+)	http://purl.obolibrary.org/obo/CHEBI_609827	L-canavanine
+http://purl.obolibrary.org/obo/CHEBI_32445	L-cysteinium	http://purl.obolibrary.org/obo/CHEBI_35235	L-cysteine zwitterion
+http://purl.obolibrary.org/obo/CHEBI_32666	L-glutaminium	http://purl.obolibrary.org/obo/CHEBI_18050	L-glutamine
+http://purl.obolibrary.org/obo/CHEBI_32620	L-leucinium	http://purl.obolibrary.org/obo/CHEBI_15603	L-leucine
+http://purl.obolibrary.org/obo/CHEBI_32487	L-phenylalaninium	http://purl.obolibrary.org/obo/CHEBI_17295	L-phenylalanine
+http://purl.obolibrary.org/obo/CHEBI_32822	L-threoninium	http://purl.obolibrary.org/obo/CHEBI_16857	L-threonine
+http://purl.obolibrary.org/obo/CHEBI_32762	L-tyrosinium	http://purl.obolibrary.org/obo/CHEBI_58315	L-tyrosine zwitterion
+http://purl.obolibrary.org/obo/CHEBI_32440	alaninium	http://purl.obolibrary.org/obo/CHEBI_16449	alanine
+http://purl.obolibrary.org/obo/CHEBI_84745	amiloride +1 ion	http://purl.obolibrary.org/obo/CHEBI_2639	amiloride
+http://purl.obolibrary.org/obo/CHEBI_84745	amiloride(1+)	http://purl.obolibrary.org/obo/CHEBI_2639	amiloride
+http://purl.obolibrary.org/obo/CHEBI_64678	anthracycline cation	http://purl.obolibrary.org/obo/CHEBI_48120	anthracycline
+http://purl.obolibrary.org/obo/CHEBI_57894	berbamuninium +2 ion	http://purl.obolibrary.org/obo/CHEBI_16777	berbamunine
+http://purl.obolibrary.org/obo/CHEBI_57894	berbamuninium(2+)	http://purl.obolibrary.org/obo/CHEBI_16777	berbamunine
+http://purl.obolibrary.org/obo/CHEBI_83876	cationic sphingoid	http://purl.obolibrary.org/obo/CHEBI_35785	sphingoid
+http://purl.obolibrary.org/obo/CHEBI_60056	cocaine +1 ion	http://purl.obolibrary.org/obo/CHEBI_27958	cocaine
+http://purl.obolibrary.org/obo/CHEBI_60056	cocaine(1+)	http://purl.obolibrary.org/obo/CHEBI_27958	cocaine
+http://purl.obolibrary.org/obo/CHEBI_27843	cyanidin cation	http://purl.obolibrary.org/obo/CHEBI_71682	cyanidin -1 ion
+http://purl.obolibrary.org/obo/CHEBI_27843	cyanidin cation	http://purl.obolibrary.org/obo/CHEBI_71682	cyanidin(1-)
+http://purl.obolibrary.org/obo/CHEBI_32458	cysteinium	http://purl.obolibrary.org/obo/CHEBI_15356	cysteine
+http://purl.obolibrary.org/obo/CHEBI_64677	daunorubicin +1 ion	http://purl.obolibrary.org/obo/CHEBI_41977	daunorubicin
+http://purl.obolibrary.org/obo/CHEBI_64677	daunorubicin(1+)	http://purl.obolibrary.org/obo/CHEBI_41977	daunorubicin
+http://purl.obolibrary.org/obo/CHEBI_64816	doxorubicin +1 ion	http://purl.obolibrary.org/obo/CHEBI_28748	doxorubicin
+http://purl.obolibrary.org/obo/CHEBI_64816	doxorubicin(1+)	http://purl.obolibrary.org/obo/CHEBI_28748	doxorubicin
+http://purl.obolibrary.org/obo/CHEBI_61393	fructosyllysine +1 ion	http://purl.obolibrary.org/obo/CHEBI_24109	fructosyllysine
+http://purl.obolibrary.org/obo/CHEBI_61393	fructosyllysine(1+)	http://purl.obolibrary.org/obo/CHEBI_24109	fructosyllysine
+http://purl.obolibrary.org/obo/CHEBI_32679	glutaminium	http://purl.obolibrary.org/obo/CHEBI_28300	glutamine
+http://purl.obolibrary.org/obo/CHEBI_90688	metformin +1 ion	http://purl.obolibrary.org/obo/CHEBI_6801	metformin
+http://purl.obolibrary.org/obo/CHEBI_90688	metformin(1+)	http://purl.obolibrary.org/obo/CHEBI_6801	metformin
+http://purl.obolibrary.org/obo/CHEBI_132297	methamphetamine +1 ion	http://purl.obolibrary.org/obo/CHEBI_6809	methamphetamine
+http://purl.obolibrary.org/obo/CHEBI_132297	methamphetamine(1+)	http://purl.obolibrary.org/obo/CHEBI_6809	methamphetamine
+http://purl.obolibrary.org/obo/CHEBI_32646	methioninium	http://purl.obolibrary.org/obo/CHEBI_16811	methionine
+http://purl.obolibrary.org/obo/CHEBI_58097	morphine +1 ion	http://purl.obolibrary.org/obo/CHEBI_17303	morphine
+http://purl.obolibrary.org/obo/CHEBI_58097	morphine(1+)	http://purl.obolibrary.org/obo/CHEBI_17303	morphine
+http://purl.obolibrary.org/obo/CHEBI_32505	phenylalaninium	http://purl.obolibrary.org/obo/CHEBI_28044	phenylalanine
+http://purl.obolibrary.org/obo/CHEBI_131530	pyridoxal +1 ion	http://purl.obolibrary.org/obo/CHEBI_17310	pyridoxal
+http://purl.obolibrary.org/obo/CHEBI_131530	pyridoxal(1+)	http://purl.obolibrary.org/obo/CHEBI_17310	pyridoxal
+http://purl.obolibrary.org/obo/CHEBI_131533	pyridoxamine +2 ion	http://purl.obolibrary.org/obo/CHEBI_57761	pyridoxaminium +1 ion
+http://purl.obolibrary.org/obo/CHEBI_131533	pyridoxamine +2 ion	http://purl.obolibrary.org/obo/CHEBI_57761	pyridoxaminium(1+)
+http://purl.obolibrary.org/obo/CHEBI_131533	pyridoxamine(2+)	http://purl.obolibrary.org/obo/CHEBI_57761	pyridoxaminium +1 ion
+http://purl.obolibrary.org/obo/CHEBI_131533	pyridoxamine(2+)	http://purl.obolibrary.org/obo/CHEBI_57761	pyridoxaminium(1+)
+http://purl.obolibrary.org/obo/CHEBI_61269	scopolamine +1 ion	http://purl.obolibrary.org/obo/CHEBI_16794	scopolamine
+http://purl.obolibrary.org/obo/CHEBI_61269	scopolamine(1+)	http://purl.obolibrary.org/obo/CHEBI_16794	scopolamine
+http://purl.obolibrary.org/obo/CHEBI_32754	selenocysteinium	http://purl.obolibrary.org/obo/CHEBI_9093	selenocysteine
+http://purl.obolibrary.org/obo/CHEBI_58290	trypanothione +1 ion	http://purl.obolibrary.org/obo/CHEBI_17842	trypanothione
+http://purl.obolibrary.org/obo/CHEBI_58290	trypanothione(1+)	http://purl.obolibrary.org/obo/CHEBI_17842	trypanothione
+http://purl.obolibrary.org/obo/CHEBI_32728	tryptophanium	http://purl.obolibrary.org/obo/CHEBI_27897	tryptophan
+http://purl.obolibrary.org/obo/CHEBI_32786	tyrosinium	http://purl.obolibrary.org/obo/CHEBI_18186	tyrosine
+http://purl.obolibrary.org/obo/CHEBI_32860	valinium	http://purl.obolibrary.org/obo/CHEBI_27266	valine

@@ -1,0 +1,6 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/CHEBI_18276	dihydrogen	http://purl.obolibrary.org/obo/CHEBI_23367	molecular entity
+http://purl.obolibrary.org/obo/CHEBI_30751	formic acid	http://purl.obolibrary.org/obo/CHEBI_33575	carboxylic acid
+http://purl.obolibrary.org/obo/CHEBI_33608	hydrogen molecular entity	http://purl.obolibrary.org/obo/CHEBI_23367	molecular entity
+http://purl.obolibrary.org/obo/CHEBI_33251	monoatomic hydrogen	http://purl.obolibrary.org/obo/CHEBI_33238	monoatomic entity
+http://purl.obolibrary.org/obo/CHEBI_15377	water	http://purl.obolibrary.org/obo/CHEBI_24651	hydroxides

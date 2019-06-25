@@ -1,0 +1,48 @@
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X is substituent group from X
+pattern_iri: http://purl.obolibrary.org/obo/chebi/X_is_substituent_group_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [carboacyl group](http://purl.obolibrary.org/obo/CHEBI_37838), [cyano group](http://purl.obolibrary.org/obo/CHEBI_48819), [organic group](http://purl.obolibrary.org/obo/CHEBI_33247) (12 total)
+
+classes: 
+  molecular entity: "http://purl.obolibrary.org/obo/CHEBI_23367"
+  group: "http://purl.obolibrary.org/obo/CHEBI_24433"
+
+
+relations: 
+  is substituent group from: "http://purl.obolibrary.org/obo/chebi#is_substituent_group_from"
+
+
+vars:
+  v0: "'group'"
+  v1: "'molecular entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s is substituent group from %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that is substituent group from a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('is substituent group from' some %s)"
+  vars:
+    - v0
+    - v1

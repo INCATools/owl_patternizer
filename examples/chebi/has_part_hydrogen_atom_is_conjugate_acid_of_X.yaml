@@ -1,0 +1,55 @@
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part hydrogen atom is conjugate acid of X
+pattern_iri: http://purl.obolibrary.org/obo/chebi/has_part_hydrogen_atom_is_conjugate_acid_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [nitrous acid](http://purl.obolibrary.org/obo/CHEBI_25567), [hydrogen iodide](http://purl.obolibrary.org/obo/CHEBI_43451), [hydrogen fluoride](http://purl.obolibrary.org/obo/CHEBI_29228) (9 total)
+
+classes: 
+  anion: "http://purl.obolibrary.org/obo/CHEBI_22563"
+  hydrogen atom: "http://purl.obolibrary.org/obo/CHEBI_49637"
+
+
+relations: 
+  has part: "BFO:0000051"
+  is conjugate acid of: "http://purl.obolibrary.org/obo/chebi#is_conjugate_acid_of"
+
+
+vars:
+  v0: "'anion'"
+
+name:
+  # Induced, frequency=0.5555555555555556, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "hydrogen %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1111111111111111, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A d%satomic molecule containing covalently bonded hydrogen and iodine atoms."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "hydrogen %s"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "H%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('has part' some 'hydrogen atom') and ('is conjugate acid of' some %s)"
+  vars:
+    - v0

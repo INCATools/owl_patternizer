@@ -1,0 +1,5 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/CHEBI_17013	dTMP	http://purl.obolibrary.org/obo/CHEBI_25608	nucleoside phosphate
+http://purl.obolibrary.org/obo/CHEBI_18077	dTTP	http://purl.obolibrary.org/obo/CHEBI_16381	2'-deoxyribonucleoside 5'-triphosphate
+http://purl.obolibrary.org/obo/CHEBI_15245	thymidine 5'-monophosphate	http://purl.obolibrary.org/obo/CHEBI_18241	2'-deoxyribonucleoside 5'-monophosphate
+http://purl.obolibrary.org/obo/CHEBI_27001	thymidine phosphate	http://purl.obolibrary.org/obo/CHEBI_25703	organic phosphate

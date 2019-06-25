@@ -5,11 +5,11 @@ pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_role_hormone
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [peptide hormone](http://purl.obolibrary.org/obo/CHEBI_25905), [substance with hormone role](http://purl.obolibrary.org/obo/GOCHE_24621), [steroid hormone](http://purl.obolibrary.org/obo/CHEBI_26764) (5 total)
+  Examples: [peptide hormone](http://purl.obolibrary.org/obo/CHEBI_25905), [steroid hormone](http://purl.obolibrary.org/obo/CHEBI_26764), [corticosteroid hormone](http://purl.obolibrary.org/obo/CHEBI_36699) (4 total)
 
 classes: 
-  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
   hormone: "http://purl.obolibrary.org/obo/CHEBI_24621"
+  organic molecular entity: "http://purl.obolibrary.org/obo/CHEBI_50860"
 
 
 relations: 
@@ -17,17 +17,17 @@ relations:
 
 
 vars:
-  v0: "'chemical entity'"
+  v0: "'organic molecular entity'"
 
 name:
-  # Induced, frequency=0.8, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s hormone"
   vars:
     - v0
 
 def:
-  # Could not induce def, using default
-  text: "Any %s that has role a hormone"
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any %s that acts as hormone."
   vars:
     - v0
 
@@ -35,7 +35,12 @@ annotationProperties:
   exact_synonym: "oio:hasExactSynonym"
   related_synonym: "oio:hasRelatedSynonym"
 
-# could not infer annotations
+annotations:
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s hormones"
+    vars:
+      - v0
 
 
 equivalentTo:

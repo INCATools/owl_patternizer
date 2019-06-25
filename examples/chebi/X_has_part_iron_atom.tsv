@@ -1,0 +1,9 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/CHEBI_26355	heme b	http://purl.obolibrary.org/obo/CHEBI_26361	protoporphyrins
+http://purl.obolibrary.org/obo/CHEBI_29033	iron +2 ion	http://purl.obolibrary.org/obo/CHEBI_24870	ion
+http://purl.obolibrary.org/obo/CHEBI_29034	iron +3 ion	http://purl.obolibrary.org/obo/CHEBI_24870	ion
+http://purl.obolibrary.org/obo/CHEBI_24875	iron cation	http://purl.obolibrary.org/obo/CHEBI_36916	cation
+http://purl.obolibrary.org/obo/CHEBI_33892	iron coordination entity	http://purl.obolibrary.org/obo/CHEBI_33240	coordination entity
+http://purl.obolibrary.org/obo/CHEBI_24873	iron molecular entity	http://purl.obolibrary.org/obo/CHEBI_23367	molecular entity
+http://purl.obolibrary.org/obo/CHEBI_29033	iron(2+)	http://purl.obolibrary.org/obo/CHEBI_24870	ion
+http://purl.obolibrary.org/obo/CHEBI_29034	iron(3+)	http://purl.obolibrary.org/obo/CHEBI_24870	ion

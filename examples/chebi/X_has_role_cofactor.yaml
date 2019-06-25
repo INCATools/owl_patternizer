@@ -1,0 +1,45 @@
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has role cofactor
+pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_role_cofactor
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [molybdopterin cofactor](http://purl.obolibrary.org/obo/CHEBI_25372), [pyrroloquinoline cofactor](http://purl.obolibrary.org/obo/CHEBI_26461), [Mo-molybdopterin cofactor](http://purl.obolibrary.org/obo/CHEBI_21437) (4 total)
+
+classes: 
+  cofactor: "http://purl.obolibrary.org/obo/CHEBI_23357"
+  organic heterotricyclic compound: "http://purl.obolibrary.org/obo/CHEBI_26979"
+  organonitrogen heterocyclic compound: "http://purl.obolibrary.org/obo/CHEBI_38101"
+
+
+relations: 
+  has role: "RO:0000087"
+
+
+vars:
+  v0: "'organic heterotricyclic compound' or 'organonitrogen heterocyclic compound'"
+
+name:
+  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s cofactor"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has role a cofactor"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('has role' some 'cofactor')"
+  vars:
+    - v0

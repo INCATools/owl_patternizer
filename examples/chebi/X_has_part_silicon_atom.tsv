@@ -1,0 +1,6 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/CHEBI_37190	silicon coordination entity	http://purl.obolibrary.org/obo/CHEBI_33240	coordination entity
+http://purl.obolibrary.org/obo/CHEBI_26677	silicon molecular entity	http://purl.obolibrary.org/obo/CHEBI_23367	molecular entity
+http://purl.obolibrary.org/obo/CHEBI_33327	silicon oxide	http://purl.obolibrary.org/obo/CHEBI_25741	oxide
+http://purl.obolibrary.org/obo/CHEBI_33328	silicon oxoacid	http://purl.obolibrary.org/obo/CHEBI_24833	oxoacid
+http://purl.obolibrary.org/obo/CHEBI_37191	silicon oxoanion	http://purl.obolibrary.org/obo/CHEBI_35406	oxoanion

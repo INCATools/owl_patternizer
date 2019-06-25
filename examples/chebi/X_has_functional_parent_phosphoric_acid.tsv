@@ -1,0 +1,16 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/CHEBI_25523	NADP	http://purl.obolibrary.org/obo/CHEBI_47885	dinucleotide
+http://purl.obolibrary.org/obo/CHEBI_44409	NADP zwitterion	http://purl.obolibrary.org/obo/CHEBI_25523	NADP
+http://purl.obolibrary.org/obo/CHEBI_16474	NADPH	http://purl.obolibrary.org/obo/CHEBI_47885	dinucleotide
+http://purl.obolibrary.org/obo/CHEBI_15961	O-phospho-L-homoserine	http://purl.obolibrary.org/obo/CHEBI_24619	homoserine derivative
+http://purl.obolibrary.org/obo/CHEBI_22529	amino sugar phosphate	http://purl.obolibrary.org/obo/CHEBI_28963	amino sugar
+http://purl.obolibrary.org/obo/CHEBI_13956	ceramide 1-phosphate	http://purl.obolibrary.org/obo/CHEBI_17761	ceramide
+http://purl.obolibrary.org/obo/CHEBI_23450	cyclitol phosphate	http://purl.obolibrary.org/obo/CHEBI_23451	cyclitol
+http://purl.obolibrary.org/obo/CHEBI_58944	dialkyl phosphate anion	http://purl.obolibrary.org/obo/CHEBI_22563	anion
+http://purl.obolibrary.org/obo/CHEBI_24838	inorganic phosphate	http://purl.obolibrary.org/obo/CHEBI_24835	inorganic molecular entity
+http://purl.obolibrary.org/obo/CHEBI_25703	organic phosphate	http://purl.obolibrary.org/obo/CHEBI_50860	organic molecular entity
+http://purl.obolibrary.org/obo/CHEBI_28765	phosphatidylinositol phosphate	http://purl.obolibrary.org/obo/CHEBI_28874	phosphatidylinositol
+http://purl.obolibrary.org/obo/CHEBI_26079	phosphoric acid derivative	http://purl.obolibrary.org/obo/CHEBI_33241	oxoacid derivative
+http://purl.obolibrary.org/obo/CHEBI_37734	phosphoric ester	http://purl.obolibrary.org/obo/CHEBI_35701	ester
+http://purl.obolibrary.org/obo/CHEBI_36942	pterin phosphate	http://purl.obolibrary.org/obo/CHEBI_26375	pterins
+http://purl.obolibrary.org/obo/CHEBI_36970	vitamin B6 phosphate	http://purl.obolibrary.org/obo/CHEBI_27306	vitamin B6

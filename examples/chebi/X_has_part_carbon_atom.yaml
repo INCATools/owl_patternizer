@@ -1,0 +1,54 @@
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has part carbon atom
+pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_part_carbon_atom
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cytarabine](http://purl.obolibrary.org/obo/CHEBI_28680), [carbon oxoacid](http://purl.obolibrary.org/obo/CHEBI_35605), [mitomycin C](http://purl.obolibrary.org/obo/CHEBI_27504) (13 total)
+
+classes: 
+  carbon atom: "http://purl.obolibrary.org/obo/CHEBI_27594"
+  p-block molecular entity: "http://purl.obolibrary.org/obo/CHEBI_33675"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'p-block molecular entity'"
+
+name:
+  # Induced, frequency=0.3076923076923077, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s C"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has part a carbon atom"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s C"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "carbon %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('has part' some 'carbon atom')"
+  vars:
+    - v0

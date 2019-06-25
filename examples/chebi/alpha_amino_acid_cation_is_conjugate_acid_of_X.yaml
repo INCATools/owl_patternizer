@@ -1,0 +1,54 @@
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: alpha-amino-acid cation is conjugate acid of X
+pattern_iri: http://purl.obolibrary.org/obo/chebi/alpha_amino_acid_cation_is_conjugate_acid_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [glycinium](http://purl.obolibrary.org/obo/CHEBI_32507), [D-alaninium](http://purl.obolibrary.org/obo/CHEBI_32436), [D-threoninium](http://purl.obolibrary.org/obo/CHEBI_32828) (24 total)
+
+classes: 
+  alpha-amino-acid cation: "http://purl.obolibrary.org/obo/CHEBI_33719"
+  organonitrogen compound: "http://purl.obolibrary.org/obo/CHEBI_35352"
+
+
+relations: 
+  is conjugate acid of: "http://purl.obolibrary.org/obo/chebi#is_conjugate_acid_of"
+
+
+vars:
+  v0: "'organonitrogen compound'"
+
+name:
+  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%sium"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.08333333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An alpha-amino-acid cation that is the conjugate acid of %s, arising from protonation of the amino group."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%sium"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s cation"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'alpha-amino-acid cation' and ('is conjugate acid of' some %s)"
+  vars:
+    - v0

@@ -1,0 +1,45 @@
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has functional parent adenosine
+pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_functional_parent_adenosine
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ATP](http://purl.obolibrary.org/obo/CHEBI_15422), [adenosine 5'-monophosphate](http://purl.obolibrary.org/obo/CHEBI_16027), [adenosine 5'-phosphate](http://purl.obolibrary.org/obo/CHEBI_37096) (5 total)
+
+classes: 
+  adenosine: "http://purl.obolibrary.org/obo/CHEBI_16335"
+  organic phosphate: "http://purl.obolibrary.org/obo/CHEBI_25703"
+  phosphoric ester: "http://purl.obolibrary.org/obo/CHEBI_37734"
+
+
+relations: 
+  has functional parent: "http://purl.obolibrary.org/obo/chebi#has_functional_parent"
+
+
+vars:
+  v0: "'organic phosphate' or 'phosphoric ester'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has functional parent adenosine"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A purine %s having adenine as the nucleobase."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('has functional parent' some 'adenosine')"
+  vars:
+    - v0

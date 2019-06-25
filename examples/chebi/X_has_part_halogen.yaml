@@ -35,7 +35,12 @@ annotationProperties:
   exact_synonym: "oio:hasExactSynonym"
   related_synonym: "oio:hasRelatedSynonym"
 
-# could not infer annotations
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "halogen %s"
+    vars:
+      - v0
 
 
 equivalentTo:

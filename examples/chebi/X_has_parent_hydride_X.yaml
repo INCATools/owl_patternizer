@@ -1,0 +1,55 @@
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has parent hydride X
+pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_parent_hydride_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [alicyclic ketone](http://purl.obolibrary.org/obo/CHEBI_36132), [terpene ketone](http://purl.obolibrary.org/obo/CHEBI_26872), [pyrrolizidine alkaloid](http://purl.obolibrary.org/obo/CHEBI_64948) (14 total)
+
+classes: 
+  p-block molecular entity: "http://purl.obolibrary.org/obo/CHEBI_33675"
+  polyatomic entity: "http://purl.obolibrary.org/obo/CHEBI_36357"
+  organic molecular entity: "http://purl.obolibrary.org/obo/CHEBI_50860"
+
+
+relations: 
+  has parent hydride: "http://purl.obolibrary.org/obo/chebi#has_parent_hydride"
+
+
+vars:
+  v0: "'p-block molecular entity'"
+  v1: "'polyatomic entity' or 'organic molecular entity'"
+
+name:
+  # Induced, frequency=0.7142857142857143, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has parent hydride a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('has parent hydride' some %s)"
+  vars:
+    - v0
+    - v1

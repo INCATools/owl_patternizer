@@ -1,0 +1,54 @@
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: oxoacid derivative has functional parent X
+pattern_iri: http://purl.obolibrary.org/obo/chebi/oxoacid_derivative_has_functional_parent_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [phosphoric acid derivative](http://purl.obolibrary.org/obo/CHEBI_26079), [sulfuric acid derivative](http://purl.obolibrary.org/obo/CHEBI_37826), [sulfinic acid derivative](http://purl.obolibrary.org/obo/CHEBI_37784) (6 total)
+
+classes: 
+  oxoacid: "http://purl.obolibrary.org/obo/CHEBI_24833"
+  oxoacid derivative: "http://purl.obolibrary.org/obo/CHEBI_33241"
+
+
+relations: 
+  has functional parent: "http://purl.obolibrary.org/obo/chebi#has_functional_parent"
+
+
+vars:
+  v0: "'oxoacid'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s derivative"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any oxoacid derivative that has functional parent a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s derivative"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s derivatives"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'oxoacid derivative' and ('has functional parent' some %s)"
+  vars:
+    - v0

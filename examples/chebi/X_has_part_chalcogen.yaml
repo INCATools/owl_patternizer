@@ -26,8 +26,8 @@ name:
     - v0
 
 def:
-  # Could not induce def, using default
-  text: "Any %s that has part a chalcogen"
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any p-block %s containing a chalcogen."
   vars:
     - v0
 
@@ -35,7 +35,12 @@ annotationProperties:
   exact_synonym: "oio:hasExactSynonym"
   related_synonym: "oio:hasRelatedSynonym"
 
-# could not infer annotations
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "chalcogen %s"
+    vars:
+      - v0
 
 
 equivalentTo:

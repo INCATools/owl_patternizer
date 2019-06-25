@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X charge_state +3 ion
+pattern_iri: http://purl.obolibrary.org/obo/chebi/X_charge_state__3_ion
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [monoatomic trication](http://purl.obolibrary.org/obo/CHEBI_27153), [spermidine(3+)](http://purl.obolibrary.org/obo/CHEBI_57834), [streptomycin(3+)](http://purl.obolibrary.org/obo/CHEBI_58007) (5 total)
+
+classes: 
+  monoatomic entity: "http://purl.obolibrary.org/obo/CHEBI_33238"
+  +3 ion: "CHEBI:+3"
+
+
+relations: 
+  charge_state: "inca:charge_state"
+
+
+vars:
+  v0: "'monoatomic entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s charge_state +3 ion"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that charge_state a +3 ion"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('charge_state' some '+3 ion')"
+  vars:
+    - v0

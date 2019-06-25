@@ -1,0 +1,50 @@
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: is conjugate base of X charge_state -1 ion
+pattern_iri: http://purl.obolibrary.org/obo/chebi/is_conjugate_base_of_X_charge_state__1_ion
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [UDP-alpha-D-glucosamine(1-)](http://purl.obolibrary.org/obo/CHEBI_78718), [3-sulfino-L-alanine(1-)](http://purl.obolibrary.org/obo/CHEBI_61085), [dialkyl phosphate(1-)](http://purl.obolibrary.org/obo/CHEBI_138518) (44 total)
+
+classes: 
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+  -1 ion: "CHEBI:-1"
+
+
+relations: 
+  is conjugate base of: "http://purl.obolibrary.org/obo/chebi#is_conjugate_base_of"
+  charge_state: "inca:charge_state"
+
+
+vars:
+  v0: "'chemical entity'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s -1 ion"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.045454545454545456, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An organophosphate oxoanion obtained by deprotonation of the phosphate OH group of any %s; major species at pH 7.3."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('is conjugate base of' some %s) and ('charge_state' some '-1 ion')"
+  vars:
+    - v0
