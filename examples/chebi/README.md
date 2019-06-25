@@ -10,6 +10,16 @@ This is executed with the following pre-processing steps:
 
 See the directory for details. This README provides a hand-written summary of the results.
 
+Note patternizer will produce some mix of generic patterns (with `X`s
+indicating variables in the pattern name) and specific patterns (where
+`X` is replaced by a hard-wired class). These should classify under
+one another. The ontology manager can choose whether to go with morre
+generic patterns or more specific ones.
+
+For more on the approach, see the [parent dir](../..).
+
+Note this is a work in progress, there are bugs to fix.
+
 ## Conjugate bases and charges
 
 ### Generic anions and cations
@@ -51,7 +61,7 @@ The infer_axioms step will infer axioms such as:
 
 From classes like this, we infer the following dosdp yamls:
 
- * [X_charge_state_X_ion.yaml](X_charge_state_X_ion.yaml)
+ * [X_charge_state_X.yaml](X_charge_state_X.yaml)
     * [X_charge_state__1_ion.yaml](X_charge_state__1_ion.yaml)
     * [X_charge_state__2_ion.yaml](X_charge_state__2_ion.yaml)
     * [X_charge_state__3_ion.yaml](X_charge_state__3_ion.yaml)

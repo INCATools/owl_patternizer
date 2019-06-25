@@ -66,7 +66,7 @@ ontology_config(wine,     [min(2)]).
 ontology_config(so,       [min(8)]).
 ontology_config(mso,      [min(5), max_class_signature(6), generalize_properties(false)]).
 %ontology_config(chebi,    [min(3), remove_inexact_synonyms(true), infer_axioms(true), generalize_properties(false)]).
-ontology_config(chebi,    [min(4), infer_axioms(true), generalize_properties(false)]).
+ontology_config(chebi,    [min(4), remove_chemical_synonyms(true), mutate_chebi(true), infer_axioms(true), generalize_properties(false)]).
 ontology_config(uberon,   [min(50), max_and_cardinality(3)]).
 ontology_config(cl,       [min(20), ontology_prefix(cl)]).
 ontology_config(nif_cell, [min(20), imports([uberon]), infer_axioms(true), base('http://ontology.neuinfo.org/NIF/ttl/NIF-Cell.ttl'), ontology_prefix(nifext)]).
@@ -81,6 +81,7 @@ ontology_config(fao,      [infer_axioms(true), min(5), generalize_properties(fal
 ontology_config(ma,       [infer_axioms(true), min(12), generalize_properties(false)]).
 ontology_config(hao,      [infer_axioms(true), min(12), generalize_properties(false)]).
 ontology_config(emapa,    [infer_axioms(true), min(12), generalize_properties(false)]).
+ontology_config(planaa,   [infer_axioms(true), min(12), generalize_properties(false)]).
 ontology_config(zfa,      [infer_axioms(true), min(12), generalize_properties(false)]).
 ontology_config(ehdaa2,   [infer_axioms(true), min(12), generalize_properties(false)]).
 ontology_config(xao,      [infer_axioms(true), min(12), generalize_properties(false)]).
@@ -98,6 +99,9 @@ ontology_config(doid,     [min(25)]).
 ontology_config(idomal,   [min(5), infer_axioms(true)]).
 ontology_config(mp,       [min(50), max_class_signature(4), generalize_properties(false)]).
 ontology_config(hp,       [min(50), max_class_signature(4), generalize_properties(false)]).
+ontology_config(xpo,      [min(50), max_class_signature(4), generalize_properties(false)]).
+ontology_config(zp,       [min(50), max_class_signature(4), generalize_properties(false)]).
+ontology_config(planp,    [min(50), max_class_signature(4), generalize_properties(false)]).
 ontology_config(oae,      [min(10), generalize_properties(false)]).
 ontology_config(fypo,     [min(20), generalize_properties(false)]).
 ontology_config(omp,      [min(20), generalize_properties(false)]).
@@ -177,6 +181,14 @@ do_for(Ont) :-
         
         (   option(remove_inexact_synonyms(true),Options,false)
         ->  remove_inexact_synonyms
+        ;   true),
+
+        (   option(remove_chemical_synonyms(true),Options,false)
+        ->  remove_chemical_synonyms
+        ;   true),
+
+        (   option(mutate_chebi(true),Options,false)
+        ->  mutate_chebi
         ;   true),
 
         

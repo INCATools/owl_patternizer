@@ -20,7 +20,7 @@
 <chebi>
     a void:Dataset ;
 ###    void:dataDump <../tests/data/chebi-with-logdefs.ttl> ;
-    void:dataDump <go_chebi_import.owl> ;
+    void:dataDump <chebi/chebi-subset.owl> ;
     lib:source <http://purl.obolibrary.org/obo/chebi.owl> .
 <mso>
     a void:Dataset ;
@@ -206,6 +206,27 @@
     a lib:Ontology ;
     a lib:Virtual ;
     owl:imports <http://purl.obolibrary.org/obo/hp.owl> .
+
+<zp>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/zp.owl> .
+
+<xpo>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/xpo.owl> .
+
+<planp>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/planp.owl> .
+
+<plana>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/plana.owl> .
+
 
 
 <omp>

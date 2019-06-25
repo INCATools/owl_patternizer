@@ -25,7 +25,10 @@
            assert_inferred_equiv_axioms/0,           
            assert_inferred_equiv_axioms/1,           
            assert_inferred_equiv_axioms/2,           
-           assert_inferred_equiv_axioms/3]).
+           assert_inferred_equiv_axioms/3,
+
+           remove_chemical_synonyms/0,
+           mutate_chebi/0]).
 
 :- use_module(library(owl_patternizer)).
 :- use_module(library(rdf_matcher)).
@@ -35,6 +38,8 @@
 :- use_module(library(semweb/rdf11)).
 :- use_module(library(tabling)).
 :- use_module(library(index_util)).
+
+:- rdf_register_prefix(oio,'http://www.geneontology.org/formats/oboInOwl#').
 
 :- table class_prop_tokens/4.
 
@@ -145,6 +150,7 @@ bm_class_match(MainCls, BM, Match, Vs) :-
         % e.g if MainCls='foo biosynthesis', ParentCls=foo, Expr=some(has_output,foo)
         class_references(MainCls, ParentCls, Expr),
         \+ member(ParentCls, Vs),
+        %debug(xdef,'  Testing ~w Parent=~w // ~w',[MainCls,ParentCls, Expr]),
         % bitmap of parentCls
         class_prop_bm(ParentCls,P,_V,ParentBM),
         P\=id,
@@ -155,9 +161,10 @@ bm_class_match(MainCls, BM, Match, Vs) :-
         IxnBM > 0,
         LenIxn is popcount(IxnBM),
         LenPBM is popcount(ParentBM),
+        LenBM is popcount(BM),
         % | MainCls /\ Parent| / | Parent |
-        Score is LenIxn / LenPBM,
-        %debug(def,' POSSIBLEMATCH(~w <=> ~w) = Score: ~w // p=~w // ~w' ,[MainCls, ParentCls, Score, P, _V]),
+        Score is LenIxn / LenPBM + ((LenIxn / LenBM) / 5),
+        %debug(xdef,' POSSIBLEMATCH(~w <=> ~w) = Score: ~w // p=~w // ~w' ,[MainCls, ParentCls, Score, P, _V]),
         Score > 0.66.
         
         
@@ -360,7 +367,7 @@ exclude_class(C,Opts) :-
 class_references(C,P,X) :- rdfs_subclass_of(C,D), class_directly_references(D,P,X).
 class_references(C,P,X) :- class_directly_references(C,P,X).
 
-class_directly_references(C,C,C).
+class_directly_references(C,C,C) :- \+ rdf_is_bnode(C).
 class_directly_references(C,P,some(Rel,P)) :- owl_some(C,Rel,P).
 
 % non-tabled version
@@ -380,6 +387,8 @@ class_subterm(C,P,T) :-
         append(Sub,_Post,Rest),
         Sub\=[],
         concat_atom(Sub,' ',T).
+
+
 
 %! infer_links(+Opts:list) is det
 %
@@ -418,8 +427,75 @@ subterm_equiv(T,C,G,Opts) :-
         rdf_canonical_literal(T,Lit),
         rdf_assert(C,rdfs:label,Lit,G).
 
+rdf_assert_literal(S,P,O) :-
+        atom_string(O,Str),
+        rdf_canonical_literal(Str, Lit),
+        rdf_assert(S,P,Lit).
 
+% e.g. disodium 7-hydroxy-8-[(e)-phenyldiazenyl]naphthalene-1,3-disulfonate
+remove_chemical_synonyms :-
+        T=rdf(_,P,Lit),
+        findall(T,
+                (   rdf_matcher:pmap(_,P),
+                    T,
+                    rdf_matcher:literal_atom(Lit,A),
+                    is_chemical(A)),
+                Ts),
+        forall(member(rdf(S,P,O),Ts),
+               (   debug(rdf_matcher,'Removing: ~w ~w ~w',[S,P,O]),
+                   rdf_retractall(S,P,O))).
+
+is_chemical(A) :-   sub_atom(A,_,_,_,':').
+is_chemical(A) :-   sub_atom(A,_,_,_,'{').
+is_chemical(A) :-   sub_atom(A,_,_,_,'[').
+is_chemical(A) :-   sub_atom(A,_,_,_,'<->').
+is_chemical(A) :-   sub_atom(A,_,_,_,'->').
+is_chemical(A) :-   sub_atom(A,_,_,_,'-(').
+is_chemical(A) :-   sub_atom(A,_,_,_,')-').
+
+
+has_charge(C,X) :-   rdf(C,'http://purl.obolibrary.org/obo/chebi/charge',X).
+
+mutate_chebi :-
+        % see https://github.com/ebi-chebi/ChEBI/issues/3605
+        forall((has_charge(C,Charge),
+                \+ ((rdfs_subclass_of(D,C),
+                     has_charge(D,Charge2),
+                     Charge2\=Charge))),
+               chebi_add_charge(C,Charge)).
+
+
+chebi_add_charge(C,Charge) :-
+        ensure_atom(Charge,ChargeA),
+        rdf_global_id('CHEBI':ChargeA,ChargeCls),
+        atom_concat(ChargeA,' ion',Name),
+        save_axiom(subClassOf(C,some(inca:charge_state,ChargeCls))),
+        rdf(C,rdfs:label,LabelLit),
+        ensure_atom(LabelLit,Label),
+        debug(def,'Parsing label ~w ~w ',[C, Label]),                
+        concat_atom([Pre,_],'(',Label),
+        concat_atom([Pre,Name],' ',Label2),
+        rdf_assert_literal(C,rdfs:label,Label2),
+        debug(def,'New label ~w ~w => ~w',[C, Label, Label2]),        
+        (   \+ rdf(ChargeCls,_,_)
+        ->  save_axiom(subClassOf(ChargeCls,'CHEBI':'Charge')),
+            rdf_assert_literal(ChargeCls,rdfs:label,Name),
+            forall(chebi_charge_synonym(ChargeA,ChargeSyn),
+                   rdf_assert_literal(ChargeCls,oio:hasExactSynonym,ChargeSyn)),
+            rdf_assert(ChargeCls,rdf:type,owl:'Class')
+        ;   true).
+chebi_add_charge(C,Charge) :-
+        format(user_error,'Failed to add charge ~w ~w~n',[C,Charge]).
+
+            
+chebi_charge_synonym('-1',monoanion).
+chebi_charge_synonym('-2',dianion).
+chebi_charge_synonym('-3',trianion).
+chebi_charge_synonym('+1',monocation).
+chebi_charge_synonym('+2',dication).
+chebi_charge_synonym('+3',trication).
 
         
-
         
+
+     

@@ -17,6 +17,7 @@
 :- rdf_register_prefix('CHEBI','http://purl.obolibrary.org/obo/CHEBI_').
 
 :- debug(def).
+%:- debug(xdef).
 :- debug(index).
 :- debug(counter).
 
@@ -26,7 +27,10 @@
                 cleanup(rdf_retractall(_,_,_,_))]).
 
 load_test_file :-
-        rdf_load('tests/data/chebi_trim.owl'),
+        rdf_load('tests/data/citrate.owl'),
+        debug(def,'Mutating chebi...',[]),
+        mutate_chebi,
+        rdf_save_turtle('target/chebi_enhanced.ttl',[]),
         debug(def,'Creating index...',[]),
         debug(def,'Creating BM index...',[]),
         create_bitmap_index.
@@ -50,8 +54,16 @@ do_all :- save_rdf.
 test(sub) :-
         do_all.
 
+test(conjbase) :-
+        _ChargeCls='http://purl.obolibrary.org/obo/CHEBI_-1',
+        C='http://purl.obolibrary.org/obo/CHEBI_35804',
+        forall(definition_inference:parse_class(C,P,Matches,Score),
+               format('*** ~w ==> ~w [~w] // ~w~n',[C,Matches,P,Score])),
+        true.
+        
+
 save_rdf :-
-        rdf_save_turtle('target/chebi.ttl',[graph(gen)]).
+        rdf_save_turtle('target/chebi_merged.ttl',[]).
 
         
 
