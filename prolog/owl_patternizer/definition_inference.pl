@@ -169,7 +169,8 @@ bm_class_match(MainCls, BM, Match, Vs) :-
 %
 best_parse_atom(C, A, Ms, Score) :-
         debug(def,'Looking for best parse for ~w ~w',[C, A]),        
-        aggregate(max(Score1,Ms1),parse_atom(C, A, Ms1, Score1),max(Score,Ms)).
+        aggregate(max(Score1,Ms1),parse_atom(C, A, Ms1, Score1),max(Score,Ms)),
+        debug(def,'Best parse for ~w ~w = ~w // ~w',[C, A, Score, Ms]).
 
 
 
