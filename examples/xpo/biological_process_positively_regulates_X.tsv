@@ -1,0 +1,81 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/GO_0045760	positive regulation of action potential	http://purl.obolibrary.org/obo/GO_0001508	action potential
+http://purl.obolibrary.org/obo/GO_0048680	positive regulation of axon regeneration	http://purl.obolibrary.org/obo/GO_0031103	axon regeneration
+http://purl.obolibrary.org/obo/GO_0048520	positive regulation of behavior	http://purl.obolibrary.org/obo/GO_0007610	behavior
+http://purl.obolibrary.org/obo/GO_0051099	positive regulation of binding	http://purl.obolibrary.org/obo/GO_0005488	binding
+http://purl.obolibrary.org/obo/GO_0048518	positive regulation of biological process	http://purl.obolibrary.org/obo/GO_0008150	biological_process
+http://purl.obolibrary.org/obo/GO_1904414	positive regulation of cardiac ventricle development	http://purl.obolibrary.org/obo/GO_0003231	cardiac ventricle development
+http://purl.obolibrary.org/obo/GO_1905209	positive regulation of cardiocyte differentiation	http://purl.obolibrary.org/obo/GO_0035051	cardiocyte differentiation
+http://purl.obolibrary.org/obo/GO_0043085	positive regulation of catalytic activity	http://purl.obolibrary.org/obo/GO_0003824	catalytic activity
+http://purl.obolibrary.org/obo/GO_0010647	positive regulation of cell communication	http://purl.obolibrary.org/obo/GO_0007154	cell communication
+http://purl.obolibrary.org/obo/GO_0045787	positive regulation of cell cycle	http://purl.obolibrary.org/obo/GO_0007049	cell cycle
+http://purl.obolibrary.org/obo/GO_0090068	positive regulation of cell cycle process	http://purl.obolibrary.org/obo/GO_0022402	cell cycle process
+http://purl.obolibrary.org/obo/GO_0010720	positive regulation of cell development	http://purl.obolibrary.org/obo/GO_0048468	cell development
+http://purl.obolibrary.org/obo/GO_0045597	positive regulation of cell differentiation	http://purl.obolibrary.org/obo/GO_0030154	cell differentiation
+http://purl.obolibrary.org/obo/GO_0051781	positive regulation of cell division	http://purl.obolibrary.org/obo/GO_0051301	cell division
+http://purl.obolibrary.org/obo/GO_0030335	positive regulation of cell migration	http://purl.obolibrary.org/obo/GO_0016477	cell migration
+http://purl.obolibrary.org/obo/GO_2000147	positive regulation of cell motility	http://purl.obolibrary.org/obo/GO_0048870	cell motility
+http://purl.obolibrary.org/obo/GO_0008284	positive regulation of cell population proliferation	http://purl.obolibrary.org/obo/GO_0008283	cell population proliferation
+http://purl.obolibrary.org/obo/GO_0031346	positive regulation of cell projection organization	http://purl.obolibrary.org/obo/GO_0030030	cell projection organization
+http://purl.obolibrary.org/obo/GO_1901724	positive regulation of cell proliferation involved in kidney development	http://purl.obolibrary.org/obo/GO_0072111	cell proliferation involved in kidney development
+http://purl.obolibrary.org/obo/GO_2000608	positive regulation of cell proliferation involved in mesonephros development	http://purl.obolibrary.org/obo/GO_0061209	cell proliferation involved in mesonephros development
+http://purl.obolibrary.org/obo/GO_0044089	positive regulation of cellular component biogenesis	http://purl.obolibrary.org/obo/GO_0044085	cellular component biogenesis
+http://purl.obolibrary.org/obo/GO_0051272	positive regulation of cellular component movement	http://purl.obolibrary.org/obo/GO_0006928	movement of cell or subcellular component
+http://purl.obolibrary.org/obo/GO_0051130	positive regulation of cellular component organization	http://purl.obolibrary.org/obo/GO_0016043	cellular component organization
+http://purl.obolibrary.org/obo/GO_0031325	positive regulation of cellular metabolic process	http://purl.obolibrary.org/obo/GO_0044237	cellular metabolic process
+http://purl.obolibrary.org/obo/GO_0048522	positive regulation of cellular process	http://purl.obolibrary.org/obo/GO_0009987	cellular process
+http://purl.obolibrary.org/obo/GO_0032467	positive regulation of cytokinesis	http://purl.obolibrary.org/obo/GO_0000910	cytokinesis
+http://purl.obolibrary.org/obo/GO_0051495	positive regulation of cytoskeleton organization	http://purl.obolibrary.org/obo/GO_0007010	cytoskeleton organization
+http://purl.obolibrary.org/obo/GO_0048639	positive regulation of developmental growth	http://purl.obolibrary.org/obo/GO_0048589	developmental growth
+http://purl.obolibrary.org/obo/GO_0051094	positive regulation of developmental process	http://purl.obolibrary.org/obo/GO_0032502	developmental process
+http://purl.obolibrary.org/obo/GO_2000385	positive regulation of ectoderm development	http://purl.obolibrary.org/obo/GO_0007398	ectoderm development
+http://purl.obolibrary.org/obo/GO_0040019	positive regulation of embryonic development	http://purl.obolibrary.org/obo/GO_0009790	embryo development
+http://purl.obolibrary.org/obo/GO_0045684	positive regulation of epidermis development	http://purl.obolibrary.org/obo/GO_0008544	epidermis development
+http://purl.obolibrary.org/obo/GO_2000543	positive regulation of gastrulation	http://purl.obolibrary.org/obo/GO_0007369	gastrulation
+http://purl.obolibrary.org/obo/GO_0045927	positive regulation of growth	http://purl.obolibrary.org/obo/GO_0040007	growth
+http://purl.obolibrary.org/obo/GO_0002684	positive regulation of immune system process	http://purl.obolibrary.org/obo/GO_0002376	immune system process
+http://purl.obolibrary.org/obo/GO_1902533	positive regulation of intracellular signal transduction	http://purl.obolibrary.org/obo/GO_0035556	intracellular signal transduction
+http://purl.obolibrary.org/obo/GO_0090184	positive regulation of kidney development	http://purl.obolibrary.org/obo/GO_0001822	kidney development
+http://purl.obolibrary.org/obo/GO_0033674	positive regulation of kinase activity	http://purl.obolibrary.org/obo/GO_0016301	kinase activity
+http://purl.obolibrary.org/obo/GO_0040017	positive regulation of locomotion	http://purl.obolibrary.org/obo/GO_0040011	locomotion
+http://purl.obolibrary.org/obo/GO_2000382	positive regulation of mesoderm development	http://purl.obolibrary.org/obo/GO_0007498	mesoderm development
+http://purl.obolibrary.org/obo/GO_1905904	positive regulation of mesoderm formation	http://purl.obolibrary.org/obo/GO_0001707	mesoderm formation
+http://purl.obolibrary.org/obo/GO_0061213	positive regulation of mesonephros development	http://purl.obolibrary.org/obo/GO_0001823	mesonephros development
+http://purl.obolibrary.org/obo/GO_0009893	positive regulation of metabolic process	http://purl.obolibrary.org/obo/GO_0008152	metabolic process
+http://purl.obolibrary.org/obo/GO_0045931	positive regulation of mitotic cell cycle	http://purl.obolibrary.org/obo/GO_0000278	mitotic cell cycle
+http://purl.obolibrary.org/obo/GO_1903490	positive regulation of mitotic cytokinesis	http://purl.obolibrary.org/obo/GO_0000281	mitotic cytokinesis
+http://purl.obolibrary.org/obo/GO_0045840	positive regulation of mitotic nuclear division	http://purl.obolibrary.org/obo/GO_0140014	mitotic nuclear division
+http://purl.obolibrary.org/obo/GO_0044093	positive regulation of molecular function	http://purl.obolibrary.org/obo/GO_0003674	molecular_function
+http://purl.obolibrary.org/obo/GO_0051240	positive regulation of multicellular organismal process	http://purl.obolibrary.org/obo/GO_0032501	multicellular organismal process
+http://purl.obolibrary.org/obo/GO_0051149	positive regulation of muscle cell differentiation	http://purl.obolibrary.org/obo/GO_0042692	muscle cell differentiation
+http://purl.obolibrary.org/obo/GO_0048636	positive regulation of muscle organ development	http://purl.obolibrary.org/obo/GO_0007517	muscle organ development
+http://purl.obolibrary.org/obo/GO_0051962	positive regulation of nervous system development	http://purl.obolibrary.org/obo/GO_0007399	nervous system development
+http://purl.obolibrary.org/obo/GO_0031646	positive regulation of nervous system process	http://purl.obolibrary.org/obo/GO_0050877	nervous system process
+http://purl.obolibrary.org/obo/GO_1905294	positive regulation of neural crest cell differentiation	http://purl.obolibrary.org/obo/GO_0014033	neural crest cell differentiation
+http://purl.obolibrary.org/obo/GO_2000179	positive regulation of neural precursor cell proliferation	http://purl.obolibrary.org/obo/GO_0061351	neural precursor cell proliferation
+http://purl.obolibrary.org/obo/GO_0050769	positive regulation of neurogenesis	http://purl.obolibrary.org/obo/GO_0022008	neurogenesis
+http://purl.obolibrary.org/obo/GO_0045666	positive regulation of neuron differentiation	http://purl.obolibrary.org/obo/GO_0030182	neuron differentiation
+http://purl.obolibrary.org/obo/GO_0010976	positive regulation of neuron projection development	http://purl.obolibrary.org/obo/GO_0031175	neuron projection development
+http://purl.obolibrary.org/obo/GO_0070572	positive regulation of neuron projection regeneration	http://purl.obolibrary.org/obo/GO_0031102	neuron projection regeneration
+http://purl.obolibrary.org/obo/GO_0051785	positive regulation of nuclear division	http://purl.obolibrary.org/obo/GO_0000280	nuclear division
+http://purl.obolibrary.org/obo/GO_1902117	positive regulation of organelle assembly	http://purl.obolibrary.org/obo/GO_0070925	organelle assembly
+http://purl.obolibrary.org/obo/GO_0010638	positive regulation of organelle organization	http://purl.obolibrary.org/obo/GO_0006996	organelle organization
+http://purl.obolibrary.org/obo/GO_0045937	positive regulation of phosphate metabolic process	http://purl.obolibrary.org/obo/GO_0006796	phosphate-containing compound metabolic process
+http://purl.obolibrary.org/obo/GO_0010562	positive regulation of phosphorus metabolic process	http://purl.obolibrary.org/obo/GO_0006793	phosphorus metabolic process
+http://purl.obolibrary.org/obo/GO_0042327	positive regulation of phosphorylation	http://purl.obolibrary.org/obo/GO_0016310	phosphorylation
+http://purl.obolibrary.org/obo/GO_0032092	positive regulation of protein binding	http://purl.obolibrary.org/obo/GO_0005515	protein binding
+http://purl.obolibrary.org/obo/GO_1900122	positive regulation of receptor binding	http://purl.obolibrary.org/obo/GO_0005102	signaling receptor binding
+http://purl.obolibrary.org/obo/GO_2000243	positive regulation of reproductive process	http://purl.obolibrary.org/obo/GO_0022414	reproductive process
+http://purl.obolibrary.org/obo/GO_0032103	positive regulation of response to external stimulus	http://purl.obolibrary.org/obo/GO_0009605	response to external stimulus
+http://purl.obolibrary.org/obo/GO_0048584	positive regulation of response to stimulus	http://purl.obolibrary.org/obo/GO_0050896	response to stimulus
+http://purl.obolibrary.org/obo/GO_1903036	positive regulation of response to wounding	http://purl.obolibrary.org/obo/GO_0009611	response to wounding
+http://purl.obolibrary.org/obo/GO_0060298	positive regulation of sarcomere organization	http://purl.obolibrary.org/obo/GO_0045214	sarcomere organization
+http://purl.obolibrary.org/obo/GO_0009967	positive regulation of signal transduction	http://purl.obolibrary.org/obo/GO_0007165	signal transduction
+http://purl.obolibrary.org/obo/GO_0023056	positive regulation of signaling	http://purl.obolibrary.org/obo/GO_0023052	signaling
+http://purl.obolibrary.org/obo/GO_2000273	positive regulation of signaling receptor activity	http://purl.obolibrary.org/obo/GO_0038023	signaling receptor activity
+http://purl.obolibrary.org/obo/GO_2000738	positive regulation of stem cell differentiation	http://purl.obolibrary.org/obo/GO_0048863	stem cell differentiation
+http://purl.obolibrary.org/obo/GO_0051155	positive regulation of striated muscle cell differentiation	http://purl.obolibrary.org/obo/GO_0051146	striated muscle cell differentiation
+http://purl.obolibrary.org/obo/GO_1902905	positive regulation of supramolecular fiber organization	http://purl.obolibrary.org/obo/GO_0097435	supramolecular fiber organization
+http://purl.obolibrary.org/obo/GO_0050806	positive regulation of synaptic transmission	http://purl.obolibrary.org/obo/GO_0007268	chemical synaptic transmission
+http://purl.obolibrary.org/obo/GO_0051347	positive regulation of transferase activity	http://purl.obolibrary.org/obo/GO_0016740	transferase activity
+http://purl.obolibrary.org/obo/GO_0051971	positive regulation of transmission of nerve impulse	http://purl.obolibrary.org/obo/GO_0019226	transmission of nerve impulse

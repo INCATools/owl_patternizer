@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: regulation of biological process regulates X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/regulation_of_biological_process_regulates_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [regulation of action potential](http://purl.obolibrary.org/obo/GO_0098900), [regulation of cytoplasmic translational termination](http://purl.obolibrary.org/obo/GO_1990580), [regulation of neuronal action potential](http://purl.obolibrary.org/obo/GO_0098908) (28 total)
+
+classes: 
+  process: "BFO:0000015"
+  regulation of biological process: "GO:0050789"
+
+
+relations: 
+  regulates: "RO:0002211"
+
+
+vars:
+  v0: "'process'"
+
+name:
+  # Induced, frequency=0.42857142857142855, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "regulation of %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any regulation of biological process that regulates a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "regulation of %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'regulation of biological process' and ('regulates' some %s)"
+  vars:
+    - v0

@@ -1,0 +1,54 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: subdivision of skeleton skeleton of X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/subdivision_of_skeleton_skeleton_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [nasal skeleton](http://purl.obolibrary.org/obo/UBERON_0006813), [pectoral fin skeleton](http://purl.obolibrary.org/obo/UBERON_0010710), [pelvic fin skeleton](http://purl.obolibrary.org/obo/UBERON_0010711) (65 total)
+
+classes: 
+  multicellular anatomical structure: "UBERON:0010000"
+  subdivision of skeleton: "UBERON:0010912"
+
+
+relations: 
+  skeleton of: "RO:0002576"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.4461538461538462, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s digitopodial skeleton"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.4461538461538462, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A subdivision of the skeleton of the autopod consisting of the phalanges of %s plus the associated metapodial element."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s skeleton"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'subdivision of skeleton' and ('skeleton of' some %s)"
+  vars:
+    - v0

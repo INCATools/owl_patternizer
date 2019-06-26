@@ -1,4 +1,4 @@
-# options: [min(8),dir(so),trim(true),base('http://purl.obolibrary.org/obo/so'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/so'),trim(true),base('http://purl.obolibrary.org/obo/so'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: gene has_quality X
 pattern_iri: http://purl.obolibrary.org/obo/so/gene_has_quality_X
 
@@ -8,8 +8,8 @@ description: >-
   Examples: [protein_coding_gene](http://purl.obolibrary.org/obo/SO_0001217), [post_translationally_regulated_gene](http://purl.obolibrary.org/obo/SO_0000890), [translationally_regulated_gene](http://purl.obolibrary.org/obo/SO_0000896) (20 total)
 
 classes: 
-  gene: "http://purl.obolibrary.org/obo/SO_0000704"
-  feature_attribute: "http://purl.obolibrary.org/obo/SO_0000733"
+  gene: "SO:0000704"
+  feature_attribute: "SO:0000733"
 
 
 relations: 
@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'gene' and ('has_quality' some %s)"
+  text: "('gene' and ('has_quality' some %s))"
   vars:
     - v0

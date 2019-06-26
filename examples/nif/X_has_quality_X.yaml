@@ -1,0 +1,53 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has_quality X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_has_quality_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [engineered_region](http://purl.obolibrary.org/obo/SO_0000804), [consensus_region](http://purl.obolibrary.org/obo/SO_0000994), [low_complexity_region](http://purl.obolibrary.org/obo/SO_0001005) (145 total)
+
+classes: 
+  sequence: "http://purl.obolibrary.org/obo/doid#sequence"
+
+
+relations: 
+  has_quality: "http://purl.obolibrary.org/obo/so#has_quality"
+
+
+vars:
+  v0: "'sequence'"
+  v1: "'sequence'"
+
+name:
+  # Induced, frequency=0.43448275862068964, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s_%s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.18620689655172415, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('has_quality' some %s)"
+  vars:
+    - v0
+    - v1

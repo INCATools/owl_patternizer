@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: skeletal muscle organ part of X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/skeletal_muscle_organ_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [hindlimb stylopod muscle](http://purl.obolibrary.org/obo/UBERON_0004252), [thoracic segment muscle](http://purl.obolibrary.org/obo/UBERON_0003830), [muscle of abdomen](http://purl.obolibrary.org/obo/UBERON_0002378) (34 total)
+
+classes: 
+  anatomical entity: "UBERON:0001062"
+  skeletal muscle organ: "UBERON:0014892"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.47058823529411764, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s muscle"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3235294117647059, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any muscle organ that is part of a %s [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s muscle"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'skeletal muscle organ' and ('part of' some %s)"
+  vars:
+    - v0

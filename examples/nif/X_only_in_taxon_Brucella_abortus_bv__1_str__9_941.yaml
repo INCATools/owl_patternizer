@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X only_in_taxon Brucella abortus bv. 1 str. 9-941
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_only_in_taxon_Brucella_abortus_bv__1_str__9_941
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [bifunctional purine biosynthesis protein PURH (Brucella abortus bv. 1 str. 9-941)](http://purl.obolibrary.org/obo/PR_000028180), [glucose-6-phosphate isomerase (Brucella abortus bv. 1 str. 9-941)](http://purl.obolibrary.org/obo/PR_000028048), [superoxide dismutase [Cu-Zn] (Brucella abortus bv. 1 str. 9-941)](http://purl.obolibrary.org/obo/PR_000028251) (59 total)
+
+classes: 
+  Brucella abortus bv. 1 str. 9-941: "http://purl.obolibrary.org/obo/NCBITaxon_262698"
+  protein: "http://purl.obolibrary.org/obo/PR_000000001"
+
+
+relations: 
+  only_in_taxon: "http://purl.obolibrary.org/obo/pr#only_in_taxon"
+
+
+vars:
+  v0: "'protein'"
+
+name:
+  # Induced, frequency=0.9661016949152542, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s (Brucella abortus bv. 1 str. 9-941)"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.9661016949152542, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is encoded in the genome of Brucella abortus bv. 1 str. 9-941."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "Babo9-941-%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('only_in_taxon' some 'Brucella abortus bv. 1 str. 9-941')"
+  vars:
+    - v0

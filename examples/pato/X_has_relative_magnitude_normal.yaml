@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has_relative_magnitude' some 'normal')"
+  text: "(%s and ('has_relative_magnitude' some 'normal'))"
   vars:
     - v0

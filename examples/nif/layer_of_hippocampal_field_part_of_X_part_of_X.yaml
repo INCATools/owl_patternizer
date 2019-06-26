@@ -1,0 +1,48 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: layer of hippocampal field part of X part of X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/layer_of_hippocampal_field_part_of_X_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [stratum pyramidale of uncal CA1](http://purl.obolibrary.org/obo/UBERON_0034860), [stratum pyramidale of uncal CA2](http://purl.obolibrary.org/obo/UBERON_0034865), [stratum pyramidale of uncal CA3](http://purl.obolibrary.org/obo/UBERON_0034871) (40 total)
+
+classes: 
+  anatomical entity: "UBERON:0001062"
+  layer of hippocampal field: "UBERON:0014567"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity'"
+  v1: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.975, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any layer of hippocampal field that part of a %s and part of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'layer of hippocampal field' and ('part of' some %s) and ('part of' some %s)"
+  vars:
+    - v0
+    - v1

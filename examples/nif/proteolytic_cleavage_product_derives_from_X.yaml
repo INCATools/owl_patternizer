@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: proteolytic cleavage product derives_from X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/proteolytic_cleavage_product_derives_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [TGF-beta receptor type-2 proteolytic cleavage product](http://purl.obolibrary.org/obo/PR_000025412), [chordin proteolytic cleavage product](http://purl.obolibrary.org/obo/PR_000025419), [follistatin proteolytic cleavage product](http://purl.obolibrary.org/obo/PR_000025457) (663 total)
+
+classes: 
+  protein: "http://purl.obolibrary.org/obo/PR_000000001"
+  proteolytic cleavage product: "http://purl.obolibrary.org/obo/PR_000018264"
+
+
+relations: 
+  derives_from: "http://purl.obolibrary.org/obo/pr#derives_from"
+
+
+vars:
+  v0: "'protein'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s proteolytic cleavage product"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A proteolytic cleavage product that is derived from %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s/ClvPrd"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'proteolytic cleavage product' and ('derives_from' some %s)"
+  vars:
+    - v0

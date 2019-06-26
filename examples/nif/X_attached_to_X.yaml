@@ -1,0 +1,60 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X attached to X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_attached_to_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [tendon of biceps brachii](http://purl.obolibrary.org/obo/UBERON_0008188), [tendon of triceps brachii](http://purl.obolibrary.org/obo/UBERON_0008192), [set of muscles of vertebral column](http://purl.obolibrary.org/obo/UBERON_0004468) (35 total)
+
+classes: 
+  material anatomical entity: "UBERON:0000465"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  attached to: "RO:0002371"
+
+
+vars:
+  v0: "'material anatomical entity'"
+  v1: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.2857142857142857, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.05714285714285714, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s that is attached to the %s bone."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s of %s"
+    vars:
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "%s and ('attached to' some %s)"
+  vars:
+    - v0
+    - v1

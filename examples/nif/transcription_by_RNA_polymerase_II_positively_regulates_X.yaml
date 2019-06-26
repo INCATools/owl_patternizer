@@ -1,0 +1,44 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: transcription by RNA polymerase II positively regulates X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/transcription_by_RNA_polymerase_II_positively_regulates_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [positive regulation of sulfate assimilation by transcription from RNA polymerase II promoter](http://purl.obolibrary.org/obo/GO_0100053), [positive regulation of sulfite transport by transcription from RNA polymerase II promoter](http://purl.obolibrary.org/obo/GO_0100006), [positive regulation of flocculation via cell wall protein-carbohydrate interaction by transcription from RNA polymerase II promoter](http://purl.obolibrary.org/obo/GO_0100054) (21 total)
+
+classes: 
+  transcription by RNA polymerase II: "GO:0006366"
+  biological_process: "GO:0008150"
+
+
+relations: 
+  positively regulates: "RO:0002213"
+
+
+vars:
+  v0: "'biological_process'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "positive regulation of %s by transcription from RNA polymerase II promoter"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.9523809523809523, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any transcription from RNA polymerase II promoter process that positively_regulates %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "'transcription by RNA polymerase II' and ('positively regulates' some %s)"
+  vars:
+    - v0

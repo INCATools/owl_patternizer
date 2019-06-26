@@ -1,0 +1,51 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of X part of X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_part_of_X_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [female meiotic nuclear division](http://purl.obolibrary.org/obo/GO_0007143), [male meiotic nuclear division](http://purl.obolibrary.org/obo/GO_0007140), [condensed nuclear chromosome, centromeric region](http://purl.obolibrary.org/obo/GO_0000780) (117 total)
+
+classes: 
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
+  v2: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.017094017094017096, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s %s"
+  vars:
+    - v1
+    - v2
+    - v0
+
+def:
+  # Induced, frequency=0.042735042735042736, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a %s and is part of a %s."
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('part of' some %s) and ('part of' some %s)"
+  vars:
+    - v0
+    - v1
+    - v2

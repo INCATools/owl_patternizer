@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: endothelium part of X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/endothelium_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [lymph node endothelium](http://purl.obolibrary.org/obo/UBERON_0004850), [glomerular endothelium](http://purl.obolibrary.org/obo/UBERON_0004189), [aorta endothelium](http://purl.obolibrary.org/obo/UBERON_0004851) (35 total)
+
+classes: 
+  anatomical structure: "UBERON:0000061"
+  endothelium: "UBERON:0001986"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.7142857142857143, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s endothelium"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2857142857142857, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An endothelium that is part of a %s [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s endothelium"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'endothelium' and ('part of' some %s)"
+  vars:
+    - v0

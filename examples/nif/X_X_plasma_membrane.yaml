@@ -1,0 +1,48 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X plasma membrane
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_X_plasma_membrane
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [plasma membrane part](http://purl.obolibrary.org/obo/GO_0044459), [plasma membrane-derived photosystem I](http://purl.obolibrary.org/obo/GO_0030094), [plasma membrane region](http://purl.obolibrary.org/obo/GO_0098590) (27 total)
+
+classes: 
+  entity: "BFO:0000001"
+  part of: "BFO:0000050"
+  occurs in: "BFO:0000066"
+  plasma membrane: "GO:0005886"
+
+
+relations: []
+
+vars:
+  v0: "'entity'"
+  v1: "'part of' or 'occurs in'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s plasma membrane"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s a plasma membrane"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and (%s some 'plasma membrane')"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,56 @@
+# options: [min(50),dir('examples/xpo'),trim(true),base('http://purl.obolibrary.org/obo/xpo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part absent inheres in X part of X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/xpo/has_part_absent_inheres_in_X_part_of_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Absent cardinal vein in the tail](http://purl.obolibrary.org/obo/XPO_0103681), [Absent blood in the heart](http://purl.obolibrary.org/obo/XPO_0103680), [abnormal(ly) absent of gall bladder in http://purl.obolibrary.org/obo/BSPO_0000000 (T)](http://purl.obolibrary.org/obo/XPO_0115915) (52 total)
+
+classes: 
+  abnormal: "PATO:0000460"
+  absent: "PATO:0000462"
+  Xenopus anatomical entity: "http://purl.obolibrary.org/obo/XAO_0000000"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'Xenopus anatomical entity'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.6153846153846154, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "abnormal(ly) absent of %s in %s (T)"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.6153846153846154, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Abnormal(ly) absent of %s in %s (Temporary definition)."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "Missing %s in the %s"
+    vars:
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "('has part' some ('absent' and ('inheres in' some (%s and ('part of' some %s))) and ('has modifier' some 'abnormal')))"
+  vars:
+    - v0
+    - v1

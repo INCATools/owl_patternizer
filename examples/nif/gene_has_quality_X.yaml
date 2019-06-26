@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: gene has_quality X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/gene_has_quality_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [protein_coding_gene](http://purl.obolibrary.org/obo/SO_0001217), [post_translationally_regulated_gene](http://purl.obolibrary.org/obo/SO_0000890), [translationally_regulated_gene](http://purl.obolibrary.org/obo/SO_0000896) (20 total)
+
+classes: 
+  gene: "SO:0000704"
+  feature_attribute: "SO:0000733"
+
+
+relations: 
+  has_quality: "http://purl.obolibrary.org/obo/so#has_quality"
+
+
+vars:
+  v0: "'feature_attribute'"
+
+name:
+  # Induced, frequency=0.8, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s_gene"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.55, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A gene that is %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s gene"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'gene' and ('has_quality' some %s)"
+  vars:
+    - v0

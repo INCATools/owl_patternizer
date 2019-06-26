@@ -1,0 +1,68 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X prostate gland
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_X_prostate_gland
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [prostate lymphoma](http://purl.obolibrary.org/obo/DOID_10290), [prostate cancer](http://purl.obolibrary.org/obo/DOID_10283), [prostate neuroendocrine neoplasm](http://purl.obolibrary.org/obo/DOID_2992) (22 total)
+
+classes: 
+  part of: "BFO:0000050"
+  in_lateral_side_of: "http://purl.obolibrary.org/obo/BSPO_0000126"
+  lymphoma: "http://purl.obolibrary.org/obo/DOID_0060058"
+  neuroendocrine tumor: "http://purl.obolibrary.org/obo/DOID_169"
+  in situ carcinoma: "http://purl.obolibrary.org/obo/DOID_8719"
+  located in: "RO:0001025"
+  bounding layer of: "RO:0002007"
+  has potential to develop into: "RO:0002387"
+  produced by: "RO:0003001"
+  duct: "UBERON:0000058"
+  secretion of exocrine gland: "UBERON:0000456"
+  smooth muscle tissue: "UBERON:0001135"
+  lobe of prostate: "UBERON:0001328"
+  venous plexus: "UBERON:0001593"
+  striated muscle tissue: "UBERON:0002036"
+  prostate gland: "UBERON:0002367"
+  connective tissue: "UBERON:0002384"
+  stroma: "UBERON:0003891"
+  capsule: "UBERON:0003893"
+  epithelial bud: "UBERON:0005153"
+  epithelial cord: "UBERON:0005154"
+  anlage: "UBERON:0007688"
+  luminal layer of epithelium: "UBERON:0011945"
+  anatomical surface region: "UBERON:0036215"
+
+
+relations: []
+
+vars:
+  v0: "'lymphoma' or 'neuroendocrine tumor' or 'in situ carcinoma' or 'duct' or 'secretion of exocrine gland' or 'smooth muscle tissue' or 'lobe of prostate' or 'venous plexus' or 'striated muscle tissue' or 'connective tissue' or 'stroma' or 'capsule' or 'epithelial bud' or 'epithelial cord' or 'anlage' or 'luminal layer of epithelium' or 'anatomical surface region'"
+  v1: "'part of' or 'in_lateral_side_of' or 'located in' or 'bounding layer of' or 'has potential to develop into' or 'produced by'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s prostate gland"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.13636363636363635, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that %s a prostate gland."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and (%s some 'prostate gland')"
+  vars:
+    - v0
+    - v1

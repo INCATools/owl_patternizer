@@ -1,0 +1,54 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: anatomical cavity luminal space of X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/anatomical_cavity_luminal_space_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cervical cavity](http://purl.obolibrary.org/obo/UBERON_0013761), [yolk sac cavity](http://purl.obolibrary.org/obo/UBERON_0005251), [lesser sac cavity](http://purl.obolibrary.org/obo/UBERON_0005252) (22 total)
+
+classes: 
+  material anatomical entity: "UBERON:0000465"
+  anatomical cavity: "UBERON:0002553"
+
+
+relations: 
+  luminal space of: "RO:0002572"
+
+
+vars:
+  v0: "'material anatomical entity'"
+
+name:
+  # Induced, frequency=0.3181818181818182, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "cavity of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.13636363636363635, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "luminal space of the %s of the heart."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "cavity of %s"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'anatomical cavity' and ('luminal space of' some %s)"
+  vars:
+    - v0

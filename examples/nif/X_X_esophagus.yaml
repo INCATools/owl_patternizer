@@ -1,0 +1,50 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X esophagus
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_X_esophagus
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [esophagus carcinoma in situ](http://purl.obolibrary.org/obo/DOID_9095), [esophageal cancer](http://purl.obolibrary.org/obo/DOID_5041), [esophageal disease](http://purl.obolibrary.org/obo/DOID_6050) (26 total)
+
+classes: 
+  part of: "BFO:0000050"
+  located in: "RO:0001025"
+  supplies: "RO:0002178"
+  luminal space of: "RO:0002572"
+  esophagus: "UBERON:0001043"
+  owl:Thing: "owl:Thing"
+
+
+relations: []
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'part of' or 'located in' or 'supplies' or 'luminal space of'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s esophagus"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.23076923076923078, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that %s a esophagus [Automatically generated definition]."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and (%s some 'esophagus')"
+  vars:
+    - v0
+    - v1

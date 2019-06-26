@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X only_in_taxon Rattus norvegicus
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_only_in_taxon_Rattus_norvegicus
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [TGF-beta 1 isoform 1 cleaved 1 (rat)](http://purl.obolibrary.org/obo/PR_000025929), [toll-like receptor 8 (rat)](http://purl.obolibrary.org/obo/PR_000027947), [Bcl2 antagonist of cell death isoform 1 phosphorylated 3 (rat)](http://purl.obolibrary.org/obo/PR_000026134) (40 total)
+
+classes: 
+  Rattus norvegicus: "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  only_in_taxon: "http://purl.obolibrary.org/obo/pr#only_in_taxon"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.975, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s (rat)"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.9, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is encoded in the genome of rat."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "r%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('only_in_taxon' some 'Rattus norvegicus')"
+  vars:
+    - v0

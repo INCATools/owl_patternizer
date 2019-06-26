@@ -1,0 +1,51 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has_part immature protein part lacks_part modified amino-acid residue
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_has_part_immature_protein_part_lacks_part_modified_amino_acid_residue
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [TGF-beta receptor type-2 isoform 1 unmodified form](http://purl.obolibrary.org/obo/PR_000002463), [TGF-beta receptor type-2 isoform 2 unmodified form](http://purl.obolibrary.org/obo/PR_000002464), [anti-Muellerian hormone type-2 receptor isoform 1 unmodified form](http://purl.obolibrary.org/obo/PR_000002465) (689 total)
+
+classes: 
+  protein: "http://purl.obolibrary.org/obo/PR_000000001"
+  immature protein part: "http://purl.obolibrary.org/obo/PR_000021935"
+  modified amino-acid residue: "http://purl.obolibrary.org/obo/PR_000025513"
+
+
+relations: 
+  has_part: "http://purl.obolibrary.org/obo/pr#has_part"
+  lacks_part: "http://purl.obolibrary.org/obo/pr#lacks_part"
+
+
+vars:
+  v0: "'protein'"
+
+name:
+  # Induced, frequency=0.9941944847605225, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s unmodified form"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.8635703918722787, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that has not been subjected to any co- or post-translational residue modification or peptide bond cleavage."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s/UnMod"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('has_part' some 'immature protein part') and ('lacks_part' some 'modified amino-acid residue')"
+  vars:
+    - v0

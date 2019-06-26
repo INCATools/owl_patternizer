@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: in situ carcinoma located in X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/in_situ_carcinoma_located_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cervix uteri carcinoma in situ](http://purl.obolibrary.org/obo/DOID_8991), [skin carcinoma in situ](http://purl.obolibrary.org/obo/DOID_8687), [intestine carcinoma in situ](http://purl.obolibrary.org/obo/DOID_9024) (20 total)
+
+classes: 
+  in situ carcinoma: "http://purl.obolibrary.org/obo/DOID_8719"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  located in: "RO:0001025"
+
+
+vars:
+  v0: "'anatomical entity'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s carcinoma in situ"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.8, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An in situ carcinoma that is located_in the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "carcinoma in situ of %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'in situ carcinoma' and ('located in' some %s)"
+  vars:
+    - v0

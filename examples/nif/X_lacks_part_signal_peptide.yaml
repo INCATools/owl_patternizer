@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X lacks_part signal_peptide
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_lacks_part_signal_peptide
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [TGF-beta receptor type-2, signal peptide removed form](http://purl.obolibrary.org/obo/PR_000018266), [follistatin, signal peptide removed form](http://purl.obolibrary.org/obo/PR_000018268), [interferon gamma, signal peptide removed form](http://purl.obolibrary.org/obo/PR_000018270) (1209 total)
+
+classes: 
+  protein: "http://purl.obolibrary.org/obo/PR_000000001"
+  signal_peptide: "SO:0000418"
+
+
+relations: 
+  lacks_part: "http://purl.obolibrary.org/obo/pr#lacks_part"
+
+
+vars:
+  v0: "'protein'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s, signal peptide removed form"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.7336641852770885, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that has had the signal peptide removed."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s/SigPep-"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('lacks_part' some 'signal_peptide')"
+  vars:
+    - v0

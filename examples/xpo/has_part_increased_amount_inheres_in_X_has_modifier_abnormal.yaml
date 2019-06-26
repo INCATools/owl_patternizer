@@ -1,0 +1,50 @@
+# options: [min(50),dir('examples/xpo'),trim(true),base('http://purl.obolibrary.org/obo/xpo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part increased amount inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/xpo/has_part_increased_amount_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Increased number of ciliated epidermal cell](http://purl.obolibrary.org/obo/XPO_0103633), [abnormal(ly) increased amount of eye (T)](http://purl.obolibrary.org/obo/XPO_0115414), [Increased number of melanophore](http://purl.obolibrary.org/obo/XPO_0103637) (53 total)
+
+classes: 
+  abnormal: "PATO:0000460"
+  increased amount: "PATO:0000470"
+  anatomical structure: "http://purl.obolibrary.org/obo/XAO_0003000"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.24528301886792453, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Increased number of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.24528301886792453, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The presence of an increased number of %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "Extra %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('has part' some ('increased amount' and ('inheres in' some %s) and ('has modifier' some 'abnormal')))"
+  vars:
+    - v0

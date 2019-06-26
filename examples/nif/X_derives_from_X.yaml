@@ -1,0 +1,50 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X derives_from X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_derives_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [TGF-beta receptor type-2 proteolytic cleavage product](http://purl.obolibrary.org/obo/PR_000025412), [chordin proteolytic cleavage product](http://purl.obolibrary.org/obo/PR_000025419), [follistatin proteolytic cleavage product](http://purl.obolibrary.org/obo/PR_000025457) (665 total)
+
+classes: 
+  proteolytic cleavage product: "http://purl.obolibrary.org/obo/PR_000018264"
+  beta-nerve growth factor proteolytic cleavage product: "http://purl.obolibrary.org/obo/PR_000020737"
+  interleukin-6 receptor subunit alpha proteolytic cleavage product: "http://purl.obolibrary.org/obo/PR_000025429"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  derives_from: "http://purl.obolibrary.org/obo/pr#derives_from"
+
+
+vars:
+  v0: "'proteolytic cleavage product' or 'beta-nerve growth factor proteolytic cleavage product' or 'interleukin-6 receptor subunit alpha proteolytic cleavage product'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.9969924812030075, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.9969924812030075, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is derived from %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('derives_from' some %s)"
+  vars:
+    - v0
+    - v1

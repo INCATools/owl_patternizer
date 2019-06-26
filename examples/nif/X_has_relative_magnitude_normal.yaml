@@ -1,0 +1,44 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has_relative_magnitude normal
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_has_relative_magnitude_normal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [normal speed](http://purl.obolibrary.org/obo/PATO_0045063), [normal age](http://purl.obolibrary.org/obo/PATO_0045005), [normal distance](http://purl.obolibrary.org/obo/PATO_0045014) (90 total)
+
+classes: 
+  quality: "PATO:0000001"
+  normal: "PATO:0000461"
+
+
+relations: 
+  has_relative_magnitude: "http://purl.obolibrary.org/obo/pato#has_relative_magnitude"
+
+
+vars:
+  v0: "'quality'"
+
+name:
+  # Induced, frequency=0.5666666666666667, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "normal %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.26666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s which is relatively normal or average"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('has_relative_magnitude' some 'normal')"
+  vars:
+    - v0

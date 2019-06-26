@@ -1,4 +1,4 @@
-# options: [min(5),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X output of X
 pattern_iri: http://purl.obolibrary.org/obo/mso/X_output_of_X
 
@@ -8,9 +8,21 @@ description: >-
   Examples: [engineered transposable element](http://purl.obolibrary.org/obo/MSO_0000798), [engineered plasmid](http://purl.obolibrary.org/obo/MSO_0000637), [mobile element deletion](http://purl.obolibrary.org/obo/MSO_0002066) (18 total)
 
 classes: 
+  transposable element: "MSO:0000101"
+  mRNA: "MSO:0000234"
+  fusion gene: "MSO:0000287"
+  oligonucleotide sequence tag: "MSO:0000324"
+  codon: "MSO:0000360"
+  rescue sequence extent: "MSO:0000411"
+  clone insert: "MSO:0000753"
+  cDNA: "MSO:0000756"
+  episome: "MSO:0000768"
+  peptide variation: "MSO:0001146"
   engineering process: "MSO:3000278"
   codon redefinition process: "MSO:3000291"
   translational bypass: "MSO:3000292"
+  sequence molecular entity extent: "MSO:3100183"
+  DNA extent: "MSO:3100186"
   molecular cloning process: "MSO:3100244"
 
 
@@ -44,7 +56,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('output of' some %s)"
+  text: "(%s and ('output of' some %s))"
   vars:
     - v0
     - v1

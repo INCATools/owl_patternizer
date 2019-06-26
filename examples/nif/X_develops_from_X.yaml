@@ -1,0 +1,53 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X develops from X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_develops_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [imaginal disc-derived wing](http://purl.obolibrary.org/obo/UBERON_0000984), [ectoderm-derived structure](http://purl.obolibrary.org/obo/UBERON_0004121), [endoderm-derived structure](http://purl.obolibrary.org/obo/UBERON_0004119) (27 total)
+
+classes: 
+  material anatomical entity: "UBERON:0000465"
+
+
+relations: 
+  develops from: "RO:0002202"
+
+
+vars:
+  v0: "'material anatomical entity'"
+  v1: "'material anatomical entity'"
+
+name:
+  # Induced, frequency=0.1111111111111111, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s derived %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.25925925925925924, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that develops_from a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s derived %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('develops from' some %s)"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,71 @@
+# options: [min(50),dir('examples/xpo'),trim(true),base('http://purl.obolibrary.org/obo/xpo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of X
+pattern_iri: http://purl.obolibrary.org/obo/xpo/X_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mitotic nuclear division](http://purl.obolibrary.org/obo/GO_0140014), [intracellular part](http://purl.obolibrary.org/obo/GO_0044424), [cell part](http://purl.obolibrary.org/obo/GO_0044464) (58 total)
+
+classes: 
+  nuclear division: "GO:0000280"
+  cytoplasm: "GO:0005737"
+  spindle microtubule: "GO:0005876"
+  cell-cell signaling: "GO:0007267"
+  behavior: "GO:0007610"
+  cell population proliferation: "GO:0008283"
+  anterior/posterior pattern specification: "GO:0009952"
+  neural crest cell development: "GO:0014032"
+  neural crest cell differentiation: "GO:0014033"
+  membrane: "GO:0016020"
+  cell migration: "GO:0016477"
+  cellular component assembly: "GO:0022607"
+  vesicle: "GO:0031982"
+  protein-containing complex: "GO:0032991"
+  non-membrane-bounded organelle: "GO:0043228"
+  developmental growth: "GO:0048589"
+  cytoskeleton-dependent cytokinesis: "GO:0061640"
+  plasma membrane bounded cell projection organization: "GO:0120036"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'nuclear division' or 'cytoplasm' or 'spindle microtubule' or 'cell-cell signaling' or 'behavior' or 'cell population proliferation' or 'anterior/posterior pattern specification' or 'neural crest cell development' or 'neural crest cell differentiation' or 'membrane' or 'cell migration' or 'cellular component assembly' or 'vesicle' or 'protein-containing complex' or 'non-membrane-bounded organelle' or 'developmental growth' or 'cytoskeleton-dependent cytokinesis' or 'plasma membrane bounded cell projection organization'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.3793103448275862, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s involved in %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.034482758620689655, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any %s in the %s of a cell."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s involved in %s"
+    vars:
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "(%s and ('part of' some %s))"
+  vars:
+    - v0
+    - v1

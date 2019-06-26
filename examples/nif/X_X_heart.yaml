@@ -1,0 +1,68 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X heart
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_X_heart
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [heart lipoma](http://purl.obolibrary.org/obo/DOID_6285), [heart cancer](http://purl.obolibrary.org/obo/DOID_117), [cardiac tuberculosis](http://purl.obolibrary.org/obo/DOID_0060570) (24 total)
+
+classes: 
+  part of: "BFO:0000050"
+  in_left_side_of: "http://purl.obolibrary.org/obo/BSPO_0000120"
+  in_right_side_of: "http://purl.obolibrary.org/obo/BSPO_0000121"
+  benign neoplasm: "http://purl.obolibrary.org/obo/DOID_0060072"
+  cancer: "http://purl.obolibrary.org/obo/DOID_162"
+  tuberculosis: "http://purl.obolibrary.org/obo/DOID_399"
+  located in: "RO:0001025"
+  innervates: "RO:0002134"
+  surrounds: "RO:0002221"
+  heart: "UBERON:0000948"
+  adipose tissue: "UBERON:0001013"
+  autonomic nerve plexus: "UBERON:0001816"
+  capillary: "UBERON:0001982"
+  endothelium: "UBERON:0001986"
+  vasculature: "UBERON:0002049"
+  cardiac atrium: "UBERON:0002081"
+  cardiac ventricle: "UBERON:0002082"
+  mesentery: "UBERON:0002095"
+  elastic tissue: "UBERON:0002521"
+  septum: "UBERON:0003037"
+  mesenchyme: "UBERON:0003104"
+  baroreceptor: "UBERON:0004019"
+  organ component layer: "UBERON:0004923"
+  annulus fibrosus: "UBERON:0006444"
+
+
+relations: []
+
+vars:
+  v0: "'benign neoplasm' or 'cancer' or 'tuberculosis' or 'adipose tissue' or 'autonomic nerve plexus' or 'capillary' or 'endothelium' or 'vasculature' or 'cardiac atrium' or 'cardiac ventricle' or 'mesentery' or 'elastic tissue' or 'septum' or 'mesenchyme' or 'baroreceptor' or 'organ component layer' or 'annulus fibrosus'"
+  v1: "'part of' or 'in_left_side_of' or 'in_right_side_of' or 'located in' or 'innervates' or 'surrounds'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s heart"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s a heart"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and (%s some 'heart')"
+  vars:
+    - v0
+    - v1

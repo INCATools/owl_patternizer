@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: canonical Wnt signaling pathway part of X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/canonical_Wnt_signaling_pathway_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [canonical Wnt signaling pathway involved in osteoblast differentiation](http://purl.obolibrary.org/obo/GO_0044339), [canonical Wnt signaling pathway involved in metanephric kidney development](http://purl.obolibrary.org/obo/GO_0061290), [canonical Wnt signaling pathway involved in ureteric bud branching](http://purl.obolibrary.org/obo/GO_0061291) (21 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  canonical Wnt signaling pathway: "GO:0060070"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'biological_process'"
+
+name:
+  # Induced, frequency=0.9047619047619048, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "canonical Wnt signaling pathway involved in %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.19047619047619047, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The series of molecular signals initiated by binding of a Wnt protein to a frizzled family receptor on the surface of the target cell, followed by propagation of the signal via beta-catenin, and ending with a change in transcription of target genes involved in %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "canonical Wnt receptor signaling pathway involved in %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'canonical Wnt signaling pathway' and ('part of' some %s)"
+  vars:
+    - v0

@@ -1,4 +1,4 @@
-# options: [min(8),dir(so),trim(true),base('http://purl.obolibrary.org/obo/so'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/so'),trim(true),base('http://purl.obolibrary.org/obo/so'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: mRNA has_quality X
 pattern_iri: http://purl.obolibrary.org/obo/so/mRNA_has_quality_X
 
@@ -8,8 +8,8 @@ description: >-
   Examples: [edited_mRNA](http://purl.obolibrary.org/obo/SO_0000929), [exemplar_mRNA](http://purl.obolibrary.org/obo/SO_0000734), [mRNA_with_frameshift](http://purl.obolibrary.org/obo/SO_0000108) (10 total)
 
 classes: 
-  mRNA: "http://purl.obolibrary.org/obo/SO_0000234"
-  feature_attribute: "http://purl.obolibrary.org/obo/SO_0000733"
+  mRNA: "SO:0000234"
+  feature_attribute: "SO:0000733"
 
 
 relations: 
@@ -49,6 +49,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'mRNA' and ('has_quality' some %s)"
+  text: "('mRNA' and ('has_quality' some %s))"
   vars:
     - v0

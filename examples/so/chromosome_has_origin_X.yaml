@@ -1,4 +1,4 @@
-# options: [min(8),dir(so),trim(true),base('http://purl.obolibrary.org/obo/so'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/so'),trim(true),base('http://purl.obolibrary.org/obo/so'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: chromosome has_origin X
 pattern_iri: http://purl.obolibrary.org/obo/so/chromosome_has_origin_X
 
@@ -8,8 +8,8 @@ description: >-
   Examples: [macronuclear_chromosome](http://purl.obolibrary.org/obo/SO_0000824), [micronuclear_chromosome](http://purl.obolibrary.org/obo/SO_0000825), [mitochondrial_chromosome](http://purl.obolibrary.org/obo/SO_0000819) (10 total)
 
 classes: 
-  chromosome: "http://purl.obolibrary.org/obo/SO_0000340"
-  organelle_sequence: "http://purl.obolibrary.org/obo/SO_0000736"
+  chromosome: "SO:0000340"
+  organelle_sequence: "SO:0000736"
 
 
 relations: 
@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'chromosome' and ('has_origin' some %s)"
+  text: "('chromosome' and ('has_origin' some %s))"
   vars:
     - v0

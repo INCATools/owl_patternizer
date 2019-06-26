@@ -1,0 +1,69 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has part X has part X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_has_part_X_has_part_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mitochondrial sequence-specific DNA-binding transcription factor activity](http://purl.obolibrary.org/obo/GO_0034246), [ion channel modulating, G protein-coupled receptor signaling pathway](http://purl.obolibrary.org/obo/GO_0099105), [potassium channel activating, G protein-coupled receptor signaling pathway](http://purl.obolibrary.org/obo/GO_0099109) (28 total)
+
+classes: 
+  entity: "BFO:0000001"
+  mitochondrial single-subunit type RNA polymerase binding: "GO:0001001"
+  mitochondrial promoter sequence-specific DNA binding: "GO:0001018"
+  potassium channel activity: "GO:0005267"
+  fibrinolysis: "GO:0042730"
+  plasminogen activation in other organism: "GO:0044542"
+  thorny excrescence: "GO:0097464"
+  potassium channel activator activity: "GO:0099104"
+  hippocampal mossy fiber expansion: "GO:1990026"
+  testis: "UBERON:0000473"
+  pleura: "UBERON:0000977"
+  reproductive system: "UBERON:0000990"
+  ovary: "UBERON:0000992"
+  renal system: "UBERON:0001008"
+  pericardial cavity: "UBERON:0001074"
+  serous pericardium: "UBERON:0002357"
+  pleural cavity: "UBERON:0002402"
+  skeleton: "UBERON:0004288"
+  articular system: "UBERON:0004770"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'entity'"
+  v1: "'mitochondrial single-subunit type RNA polymerase binding' or 'mitochondrial promoter sequence-specific DNA binding' or 'potassium channel activity' or 'fibrinolysis' or 'plasminogen activation in other organism' or 'thorny excrescence' or 'potassium channel activator activity' or 'hippocampal mossy fiber expansion' or 'testis' or 'pleura' or 'reproductive system' or 'ovary' or 'renal system' or 'pericardial cavity' or 'serous pericardium' or 'pleural cavity' or 'skeleton' or 'articular system'"
+  v2: "'mitochondrial single-subunit type RNA polymerase binding' or 'mitochondrial promoter sequence-specific DNA binding' or 'potassium channel activity' or 'fibrinolysis' or 'plasminogen activation in other organism' or 'thorny excrescence' or 'potassium channel activator activity' or 'hippocampal mossy fiber expansion' or 'testis' or 'pleura' or 'reproductive system' or 'ovary' or 'renal system' or 'pericardial cavity' or 'serous pericardium' or 'pleural cavity' or 'skeleton' or 'articular system'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has part %s has part %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has part a %s and has part a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('has part' some %s) and ('has part' some %s)"
+  vars:
+    - v0
+    - v1
+    - v2

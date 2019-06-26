@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of metanephros
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_part_of_metanephros
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [metanephric glomerulus](http://purl.obolibrary.org/obo/UBERON_0004736), [metanephric epithelium](http://purl.obolibrary.org/obo/UBERON_0005108), [metanephric smooth muscle tissue](http://purl.obolibrary.org/obo/UBERON_0005109) (43 total)
+
+classes: 
+  metanephros: "UBERON:0000081"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.9069767441860465, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "metanephric %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.046511627906976744, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s of the mature vertebrate kidney, or metanephros."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of metanephros"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'metanephros')"
+  vars:
+    - v0

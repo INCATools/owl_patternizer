@@ -1,4 +1,4 @@
-# options: [min(5),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has part X
 pattern_iri: http://purl.obolibrary.org/obo/mso/X_has_part_X
 
@@ -8,16 +8,25 @@ description: >-
   Examples: [protein-coding transcript with retained intron](http://purl.obolibrary.org/obo/MSO_0002112), [coding exon](http://purl.obolibrary.org/obo/MSO_0000195), [capped primary transcript](http://purl.obolibrary.org/obo/MSO_0000861) (19 total)
 
 classes: 
+  protein-coding primary transcript: "MSO:0000120"
+  primary transcript: "MSO:0000185"
   intron: "MSO:0000188"
+  mRNA: "MSO:0000234"
+  pseudogenic transcript: "MSO:0000516"
   centromere: "MSO:0000577"
   cap: "MSO:0000581"
   poly(A) tail: "MSO:0000610"
+  gene: "MSO:0000704"
   stop codon redefined as pyrrolysine: "MSO:0000884"
   stop codon redefined as selenocysteine: "MSO:0000885"
+  chromosomal inversion: "MSO:1000030"
   CTG/CUG start codon: "MSO:1001273"
   deoxyribonucleotide base pair: "MSO:3100068"
   ribonucleotide base pair: "MSO:3100086"
+  DNA region: "MSO:3100211"
+  RNA region: "MSO:3100212"
   base-paired nucleotide residue: "MSO:3100213"
+  nucleotide strand region: "MSO:3100217"
 
 
 relations: 
@@ -50,7 +59,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has part' some %s)"
+  text: "(%s and ('has part' some %s))"
   vars:
     - v0
     - v1

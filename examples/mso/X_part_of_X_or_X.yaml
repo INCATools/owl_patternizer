@@ -1,4 +1,4 @@
-# options: [min(5),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X part of X-or-X
 pattern_iri: http://purl.obolibrary.org/obo/mso/X_part_of_X_or_X
 
@@ -8,9 +8,13 @@ description: >-
   Examples: [protein- or protein-complex-binding site of nucleic acid](http://purl.obolibrary.org/obo/MSO_0001654), [nucleic acid motif](http://purl.obolibrary.org/obo/MSO_0000714), [DNA motif](http://purl.obolibrary.org/obo/MSO_0000713) (7 total)
 
 classes: 
+  protein- or protein-complex-binding site: "MSO:0000410"
+  macromolecular motif: "MSO:3000056"
   nucleotide strand: "MSO:3100174"
   deoxyribonucleotide strand: "MSO:3100175"
   ribonucleotide strand: "MSO:3100176"
+  sequence molecular entity extent: "MSO:3100183"
+  RNA extent: "MSO:3100187"
   nucleic acid: "MSO:3100248"
   deoxyribonucleic acid: "MSO:3100249"
   ribonucleic acid: "MSO:3100250"
@@ -49,7 +53,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('part of' some %s or %s)"
+  text: "(%s and ('part of' some %s or %s))"
   vars:
     - v0
     - v1

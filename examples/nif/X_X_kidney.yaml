@@ -1,0 +1,53 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X kidney
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_X_kidney
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [kidney benign neoplasm](http://purl.obolibrary.org/obo/DOID_3116), [renal hypertension](http://purl.obolibrary.org/obo/DOID_1073), [benign renovascular hypertension](http://purl.obolibrary.org/obo/DOID_13145) (30 total)
+
+classes: 
+  part of: "BFO:0000050"
+  located in: "RO:0001025"
+  bounding layer of: "RO:0002007"
+  supplies: "RO:0002178"
+  drains: "RO:0002179"
+  has potential to develop into: "RO:0002387"
+  produced by: "RO:0003001"
+  kidney: "UBERON:0002113"
+  owl:Thing: "owl:Thing"
+
+
+relations: []
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'part of' or 'located in' or 'bounding layer of' or 'supplies' or 'drains' or 'has potential to develop into' or 'produced by'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s kidney"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is %s a kidney [Automatically generated definition]."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and (%s some 'kidney')"
+  vars:
+    - v0
+    - v1

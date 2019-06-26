@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('decreased_in_magnitude_relative_to' some 'normal')"
+  text: "(%s and ('decreased_in_magnitude_relative_to' some 'normal'))"
   vars:
     - v0

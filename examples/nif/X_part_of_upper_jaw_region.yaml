@@ -1,0 +1,54 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of upper jaw region
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_part_of_upper_jaw_region
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [epithelium of upper jaw](http://purl.obolibrary.org/obo/UBERON_0003235), [tooth of upper jaw](http://purl.obolibrary.org/obo/UBERON_0003267), [upper jaw incisor](http://purl.obolibrary.org/obo/UBERON_0003450) (23 total)
+
+classes: 
+  anatomical entity: "UBERON:0001062"
+  upper jaw region: "UBERON:0001709"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.5217391304347826, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "upper %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2608695652173913, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a upper jaw region."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "upper %s"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "maxillary %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('part of' some 'upper jaw region')"
+  vars:
+    - v0

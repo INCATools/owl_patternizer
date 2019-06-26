@@ -1,0 +1,47 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X regulates X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_regulates_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [regulation of cyclin-dependent protein serine/threonine kinase activity involved in G2/M transition of mitotic cell cycle](http://purl.obolibrary.org/obo/GO_0031660), [regulation of cellular ketone metabolic process by negative regulation of transcription from RNA polymerase II promoter](http://purl.obolibrary.org/obo/GO_0072365), [regulation of reactive oxygen species metabolic process by negative regulation of transcription from RNA polymerase II promoter](http://purl.obolibrary.org/obo/GO_1904489) (3600 total)
+
+classes: 
+  process: "BFO:0000015"
+
+
+relations: 
+  regulates: "RO:0002211"
+
+
+vars:
+  v0: "'process'"
+  v1: "'process'"
+
+name:
+  # Induced, frequency=0.017222222222222222, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.004722222222222222, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any %s process that regulates %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('regulates' some %s)"
+  vars:
+    - v0
+    - v1

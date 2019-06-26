@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X only_in_taxon Arabidopsis thaliana
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_only_in_taxon_Arabidopsis_thaliana
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [protein TRANSPORT INHIBITOR RESPONSE 1 (Arabidopsis thaliana)](http://purl.obolibrary.org/obo/PR_000027956), [coronatine-insensitive protein 1 (Arabidopsis thaliana)](http://purl.obolibrary.org/obo/PR_000027958), [SKP1-like protein 1A (Arabidopsis thaliana)](http://purl.obolibrary.org/obo/PR_000027960) (39 total)
+
+classes: 
+  Arabidopsis thaliana: "http://purl.obolibrary.org/obo/NCBITaxon_3702"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  only_in_taxon: "http://purl.obolibrary.org/obo/pr#only_in_taxon"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.8205128205128205, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s (Arabidopsis thaliana)"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5384615384615384, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is encoded in the genome of Arabidopsis thaliana."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "Athal-%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('only_in_taxon' some 'Arabidopsis thaliana')"
+  vars:
+    - v0

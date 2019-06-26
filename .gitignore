@@ -8,4 +8,6 @@ examples/gen-*
 examples/init-*
 examples/*.owl
 examples/*/_input.ttl
+examples/*/_induced_axioms_merged.ttl
+examples/*/_src.ttl
 *.old

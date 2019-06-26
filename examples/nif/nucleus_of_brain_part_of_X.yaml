@@ -1,0 +1,54 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: nucleus of brain part of X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/nucleus_of_brain_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [midbrain nucleus](http://purl.obolibrary.org/obo/UBERON_0009661), [telencephalic nucleus](http://purl.obolibrary.org/obo/UBERON_0009663), [diencephalic nucleus](http://purl.obolibrary.org/obo/UBERON_0006569) (21 total)
+
+classes: 
+  anatomical entity: "UBERON:0001062"
+  nucleus of brain: "UBERON:0002308"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.2857142857142857, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "nucleus of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5238095238095238, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A nucleus of brain that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s nucleus"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'nucleus of brain' and ('part of' some %s)"
+  vars:
+    - v0

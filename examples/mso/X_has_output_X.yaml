@@ -1,4 +1,4 @@
-# options: [min(5),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has output X
 pattern_iri: http://purl.obolibrary.org/obo/mso/X_has_output_X
 
@@ -8,7 +8,9 @@ description: >-
   Examples: [epigenetic modification process](http://purl.obolibrary.org/obo/MSO_3000270), [sequence deletion process](http://purl.obolibrary.org/obo/MSO_0000045), [sequence translocation process](http://purl.obolibrary.org/obo/MSO_0000049) (12 total)
 
 classes: 
+  process: "BFO:0000015"
   biological sequence entity: "MSO:3000265"
+  sequence recoding process: "MSO:3000290"
 
 
 relations: 
@@ -41,7 +43,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has output' some %s)"
+  text: "(%s and ('has output' some %s))"
   vars:
     - v0
     - v1

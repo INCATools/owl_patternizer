@@ -1,4 +1,4 @@
-# options: [min(5),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: sequence molecular entity extent bearer of X
 pattern_iri: http://purl.obolibrary.org/obo/mso/sequence_molecular_entity_extent_bearer_of_X
 
@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'sequence molecular entity extent' and ('bearer of' some %s)"
+  text: "('sequence molecular entity extent' and ('bearer of' some %s))"
   vars:
     - v0

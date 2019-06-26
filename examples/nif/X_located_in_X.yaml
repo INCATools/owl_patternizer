@@ -1,0 +1,53 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X located in X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_located_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Ritter's disease](http://purl.obolibrary.org/obo/DOID_9063), [gas gangrene](http://purl.obolibrary.org/obo/DOID_9159), [aortic disease](http://purl.obolibrary.org/obo/DOID_520) (664 total)
+
+classes: 
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  located in: "RO:0001025"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.6370481927710844, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.024096385542168676, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An %s that is located_in the %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of %s"
+    vars:
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "%s and ('located in' some %s)"
+  vars:
+    - v0
+    - v1

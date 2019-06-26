@@ -1,0 +1,69 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X tongue
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_X_tongue
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [tongue cancer](http://purl.obolibrary.org/obo/DOID_8649), [tongue disease](http://purl.obolibrary.org/obo/DOID_10944), [mucosa of tongue](http://purl.obolibrary.org/obo/UBERON_0005020) (21 total)
+
+classes: 
+  part of: "BFO:0000050"
+  in_dorsal_side_of: "http://purl.obolibrary.org/obo/BSPO_0015101"
+  in_ventral_side_of: "http://purl.obolibrary.org/obo/BSPO_0015102"
+  cancer: "http://purl.obolibrary.org/obo/DOID_162"
+  located in: "RO:0001025"
+  bounding layer of: "RO:0002007"
+  innervates: "RO:0002134"
+  attached to part of: "RO:0002177"
+  supplies: "RO:0002178"
+  has potential to develop into: "RO:0002387"
+  nerve: "UBERON:0001021"
+  artery: "UBERON:0001637"
+  tongue: "UBERON:0001723"
+  taste bud: "UBERON:0001727"
+  gland: "UBERON:0002530"
+  gustatory epithelium: "UBERON:0002926"
+  septum: "UBERON:0003037"
+  compound organ: "UBERON:0003103"
+  mesenchyme: "UBERON:0003104"
+  surface of tongue: "UBERON:0007367"
+  non-keratinized stratified squamous epithelium: "UBERON:0010304"
+  keratinized stratified squamous epithelium: "UBERON:0012329"
+  parakeratinized epithelium: "UBERON:0013193"
+  skeletal muscle organ: "UBERON:0014892"
+  oral frenulum: "UBERON:0036293"
+
+
+relations: []
+
+vars:
+  v0: "'cancer' or 'nerve' or 'artery' or 'taste bud' or 'gland' or 'gustatory epithelium' or 'septum' or 'compound organ' or 'mesenchyme' or 'surface of tongue' or 'non-keratinized stratified squamous epithelium' or 'keratinized stratified squamous epithelium' or 'parakeratinized epithelium' or 'skeletal muscle organ' or 'oral frenulum'"
+  v1: "'part of' or 'in_dorsal_side_of' or 'in_ventral_side_of' or 'located in' or 'bounding layer of' or 'innervates' or 'attached to part of' or 'supplies' or 'has potential to develop into'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s tongue"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.23809523809523808, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that %s a tongue."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and (%s some 'tongue')"
+  vars:
+    - v0
+    - v1

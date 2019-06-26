@@ -1,0 +1,50 @@
+# options: [min(50),dir('examples/xpo'),trim(true),base('http://purl.obolibrary.org/obo/xpo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part morphology inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/xpo/has_part_morphology_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal morphology of ectoderm ](http://purl.obolibrary.org/obo/XPO_0101800), [abnormal morphology of fin ](http://purl.obolibrary.org/obo/XPO_0101937), [abnormal morphology of outer fin ](http://purl.obolibrary.org/obo/XPO_0103094) (1574 total)
+
+classes: 
+  morphology: "PATO:0000051"
+  abnormal: "PATO:0000460"
+  Xenopus anatomical entity: "http://purl.obolibrary.org/obo/XAO_0000000"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'Xenopus anatomical entity'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "abnormal morphology of %s "
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any structural anomaly of the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "abnormal shape of %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('has part' some ('morphology' and ('inheres in' some %s) and ('has modifier' some 'abnormal')))"
+  vars:
+    - v0

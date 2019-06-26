@@ -1,0 +1,48 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X only_in_taxon X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_only_in_taxon_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [transcription adapter with TAZ, KIX and bromo-domains (mouse)](http://purl.obolibrary.org/obo/PR_000027109), [transcription adapter with TAZ, KIX and bromo-domains (human)](http://purl.obolibrary.org/obo/PR_000027108), [creb-binding protein (mouse)](http://purl.obolibrary.org/obo/PR_000027107) (1851 total)
+
+classes: 
+  organism: "http://purl.obolibrary.org/obo/OBI_0100026"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  only_in_taxon: "http://purl.obolibrary.org/obo/pr#only_in_taxon"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'organism'"
+
+name:
+  # Induced, frequency=0.9448946515397083, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s (%s)"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.5953538627768774, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is encoded in the genome of %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('only_in_taxon' some %s)"
+  vars:
+    - v0
+    - v1

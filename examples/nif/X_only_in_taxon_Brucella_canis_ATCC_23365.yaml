@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X only_in_taxon Brucella canis ATCC 23365
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_only_in_taxon_Brucella_canis_ATCC_23365
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [bifunctional purine biosynthesis protein PURH (Brucella canis ATCC 23365)](http://purl.obolibrary.org/obo/PR_000028181), [glycerol kinase (Brucella canis ATCC 23365)](http://purl.obolibrary.org/obo/PR_000028065), [glucose-6-phosphate isomerase (Brucella canis ATCC 23365)](http://purl.obolibrary.org/obo/PR_000028049) (30 total)
+
+classes: 
+  Brucella canis ATCC 23365: "http://purl.obolibrary.org/obo/NCBITaxon_483179"
+  protein: "http://purl.obolibrary.org/obo/PR_000000001"
+
+
+relations: 
+  only_in_taxon: "http://purl.obolibrary.org/obo/pr#only_in_taxon"
+
+
+vars:
+  v0: "'protein'"
+
+name:
+  # Induced, frequency=0.9666666666666667, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s (Brucella canis ATCC 23365)"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.9666666666666667, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is encoded in the genome of Brucella canis ATCC 23365."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "Bcan23365-%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('only_in_taxon' some 'Brucella canis ATCC 23365')"
+  vars:
+    - v0

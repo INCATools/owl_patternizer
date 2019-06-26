@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X lacks_part initiator methionine
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_lacks_part_initiator_methionine
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [RING-box protein 1, initiator methionine removed form](http://purl.obolibrary.org/obo/PR_000018272), [RING-box protein 2, initiator methionine removed form](http://purl.obolibrary.org/obo/PR_000018273), [S-phase kinase-associated protein 1A, initiator methionine removed form](http://purl.obolibrary.org/obo/PR_000018274) (1438 total)
+
+classes: 
+  protein: "http://purl.obolibrary.org/obo/PR_000000001"
+  initiator methionine: "http://purl.obolibrary.org/obo/PR_000021937"
+
+
+relations: 
+  lacks_part: "http://purl.obolibrary.org/obo/pr#lacks_part"
+
+
+vars:
+  v0: "'protein'"
+
+name:
+  # Induced, frequency=0.9993045897079277, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s, initiator methionine removed form"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.8233657858136301, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that has had the initiator methionine removed."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s/InitMet-"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('lacks_part' some 'initiator methionine')"
+  vars:
+    - v0

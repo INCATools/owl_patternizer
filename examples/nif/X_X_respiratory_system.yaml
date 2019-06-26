@@ -1,0 +1,50 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X respiratory system
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_X_respiratory_system
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [respiratory system benign neoplasm](http://purl.obolibrary.org/obo/DOID_0050621), [respiratory system cancer](http://purl.obolibrary.org/obo/DOID_0050615), [respiratory system disease](http://purl.obolibrary.org/obo/DOID_1579) (32 total)
+
+classes: 
+  continuant: "BFO:0000002"
+  part of: "BFO:0000050"
+  located in: "RO:0001025"
+  drains: "RO:0002179"
+  produced by: "RO:0003001"
+  respiratory system: "UBERON:0001004"
+
+
+relations: []
+
+vars:
+  v0: "'continuant'"
+  v1: "'part of' or 'located in' or 'drains' or 'produced by'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s respiratory system"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.34375, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that %s a respiratory system [Automatically generated definition]."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and (%s some 'respiratory system')"
+  vars:
+    - v0
+    - v1

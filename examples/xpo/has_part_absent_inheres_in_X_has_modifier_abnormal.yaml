@@ -1,0 +1,50 @@
+# options: [min(50),dir('examples/xpo'),trim(true),base('http://purl.obolibrary.org/obo/xpo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part absent inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/xpo/has_part_absent_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [absent astral microtubule](http://purl.obolibrary.org/obo/XPO_0103264), [absent spindle microtubule](http://purl.obolibrary.org/obo/XPO_0103265), [absent hatching behavior](http://purl.obolibrary.org/obo/XPO_0103783) (138 total)
+
+classes: 
+  abnormal: "PATO:0000460"
+  absent: "PATO:0000462"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.5217391304347826, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "absent %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5217391304347826, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Absence of %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "missing %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('has part' some ('absent' and ('inheres in' some %s) and ('has modifier' some 'abnormal')))"
+  vars:
+    - v0

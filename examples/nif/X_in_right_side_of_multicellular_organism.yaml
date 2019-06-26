@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X in_right_side_of multicellular organism
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_in_right_side_of_multicellular_organism
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [right ureter](http://purl.obolibrary.org/obo/UBERON_0001222), [right eye](http://purl.obolibrary.org/obo/UBERON_0004549), [right ovary](http://purl.obolibrary.org/obo/UBERON_0002118) (20 total)
+
+classes: 
+  multicellular organism: "UBERON:0000468"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  in_right_side_of: "http://purl.obolibrary.org/obo/BSPO_0000121"
+
+
+vars:
+  v0: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.9, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "right %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is in_the_right_side_of a multicellular organism."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "right %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('in_right_side_of' some 'multicellular organism')"
+  vars:
+    - v0

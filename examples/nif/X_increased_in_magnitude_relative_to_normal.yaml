@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X increased_in_magnitude_relative_to normal
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_increased_in_magnitude_relative_to_normal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased quality](http://purl.obolibrary.org/obo/PATO_0002300), [increased speed](http://purl.obolibrary.org/obo/PATO_0000303), [increased age](http://purl.obolibrary.org/obo/PATO_0001764) (105 total)
+
+classes: 
+  quality: "PATO:0000001"
+  normal: "PATO:0000461"
+
+
+relations: 
+  increased_in_magnitude_relative_to: "http://purl.obolibrary.org/obo/pato#increased_in_magnitude_relative_to"
+
+
+vars:
+  v0: "'quality'"
+
+name:
+  # Induced, frequency=0.5619047619047619, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "increased %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.24761904761904763, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s which is relatively high."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "high %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('increased_in_magnitude_relative_to' some 'normal')"
+  vars:
+    - v0

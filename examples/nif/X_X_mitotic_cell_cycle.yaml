@@ -1,0 +1,51 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X mitotic cell cycle
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_X_mitotic_cell_cycle
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mitotic cell cycle checkpoint](http://purl.obolibrary.org/obo/GO_0007093), [mitotic DNA replication checkpoint](http://purl.obolibrary.org/obo/GO_0033314), [mitotic DNA damage checkpoint](http://purl.obolibrary.org/obo/GO_0044773) (52 total)
+
+classes: 
+  part of: "BFO:0000050"
+  mitotic cell cycle: "GO:0000278"
+  biological_process: "GO:0008150"
+  happens during: "RO:0002092"
+  regulates: "RO:0002211"
+  negatively regulates: "RO:0002212"
+  positively regulates: "RO:0002213"
+
+
+relations: []
+
+vars:
+  v0: "'biological_process'"
+  v1: "'part of' or 'happens during' or 'regulates' or 'negatively regulates' or 'positively regulates'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s mitotic cell cycle"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s a mitotic cell cycle"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and (%s some 'mitotic cell cycle')"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,50 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X forelimb
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_X_forelimb
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [forelimb skin](http://purl.obolibrary.org/obo/UBERON_0003531), [forelimb feather](http://purl.obolibrary.org/obo/UBERON_0018535), [lymph node of upper limb](http://purl.obolibrary.org/obo/UBERON_0016399) (29 total)
+
+classes: 
+  part of: "BFO:0000050"
+  innervates: "RO:0002134"
+  has potential to develop into: "RO:0002387"
+  skeleton of: "RO:0002576"
+  anatomical entity: "UBERON:0001062"
+  forelimb: "UBERON:0002102"
+
+
+relations: []
+
+vars:
+  v0: "'anatomical entity'"
+  v1: "'part of' or 'innervates' or 'has potential to develop into' or 'skeleton of'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s forelimb"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.2413793103448276, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that %s a forelimb."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and (%s some 'forelimb')"
+  vars:
+    - v0
+    - v1

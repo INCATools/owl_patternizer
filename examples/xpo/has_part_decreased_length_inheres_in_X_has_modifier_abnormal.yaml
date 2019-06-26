@@ -1,0 +1,50 @@
+# options: [min(50),dir('examples/xpo'),trim(true),base('http://purl.obolibrary.org/obo/xpo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part decreased length inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/xpo/has_part_decreased_length_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal(ly) decreased length of trunk region (T)](http://purl.obolibrary.org/obo/XPO_0115334), [decreased length of notochord](http://purl.obolibrary.org/obo/XPO_0103574), [abnormal(ly) decreased length of tail region (T)](http://purl.obolibrary.org/obo/XPO_0115363) (53 total)
+
+classes: 
+  abnormal: "PATO:0000460"
+  decreased length: "PATO:0000574"
+  Xenopus anatomical entity: "http://purl.obolibrary.org/obo/XAO_0000000"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'Xenopus anatomical entity'"
+
+name:
+  # Induced, frequency=0.4528301886792453, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "decreased length of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.4528301886792453, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Decreased length or shortening of the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "short %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('has part' some ('decreased length' and ('inheres in' some %s) and ('has modifier' some 'abnormal')))"
+  vars:
+    - v0

@@ -1,4 +1,4 @@
-# options: [min(5),dir(mso),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X derives from X
 pattern_iri: http://purl.obolibrary.org/obo/mso/X_derives_from_X
 
@@ -8,13 +8,27 @@ description: >-
   Examples: [immunoglobulin pseudogene](http://purl.obolibrary.org/obo/MSO_0002098), [macronuclear chromosomal nucleic acid](http://purl.obolibrary.org/obo/MSO_0000824), [micronuclear chromosomal nucleic acid](http://purl.obolibrary.org/obo/MSO_0000825) (17 total)
 
 classes: 
+  macronuclear sequence extent: "MSO:0000083"
+  micronuclear sequence extent: "MSO:0000084"
+  BAC: "MSO:0000153"
+  plasmid: "MSO:0000155"
   pseudogene: "MSO:0000336"
   chromosomal nucleic acid: "MSO:0000340"
   vector replicon: "MSO:0000440"
   insertion: "MSO:0000667"
+  mitochondrial sequence extent: "MSO:0000737"
+  nucleomorphic sequence extent: "MSO:0000739"
+  apicoplast sequence extent: "MSO:0000743"
+  chromoplast sequence extent: "MSO:0000744"
+  chloroplast sequence extent: "MSO:0000745"
+  cyanelle sequence extent: "MSO:0000746"
+  leucoplast sequence extent: "MSO:0000747"
   clone insert: "MSO:0000753"
   genomic DNA clone insert: "MSO:0000914"
+  genomic DNA extent: "MSO:0000991"
+  mobile genetic element: "MSO:0001037"
   integrated mobile genetic element region: "MSO:0001039"
+  immunoglobulin gene: "MSO:0002122"
 
 
 relations: 
@@ -47,7 +61,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('derives from' some %s)"
+  text: "(%s and ('derives from' some %s))"
   vars:
     - v0
     - v1

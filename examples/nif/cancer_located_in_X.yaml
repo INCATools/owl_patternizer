@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: cancer located in X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/cancer_located_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [retinal cell cancer](http://purl.obolibrary.org/obo/DOID_771), [cervical cancer](http://purl.obolibrary.org/obo/DOID_4362), [islet cell tumor](http://purl.obolibrary.org/obo/DOID_1799) (186 total)
+
+classes: 
+  cancer: "http://purl.obolibrary.org/obo/DOID_162"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  located in: "RO:0001025"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.8279569892473119, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s cancer"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.026881720430107527, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A female reproductive organ cancer that is located_in the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "malignant neoplasm of %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "'cancer' and ('located in' some %s)"
+  vars:
+    - v0

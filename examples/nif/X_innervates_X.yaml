@@ -1,0 +1,59 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X innervates X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_innervates_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [splanchnic nerve](http://purl.obolibrary.org/obo/UBERON_0003715), [nerve of penis](http://purl.obolibrary.org/obo/UBERON_0035649), [mylohyoid nerve](http://purl.obolibrary.org/obo/UBERON_0011322) (29 total)
+
+classes: 
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  innervates: "RO:0002134"
+
+
+vars:
+  v0: "'anatomical entity'"
+  v1: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.3103448275862069, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.1724137931034483, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any %s that innervates the %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s to %s"
+    vars:
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "%s and ('innervates' some %s)"
+  vars:
+    - v0
+    - v1

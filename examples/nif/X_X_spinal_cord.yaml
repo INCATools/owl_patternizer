@@ -1,0 +1,69 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X spinal cord
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_X_spinal_cord
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [spinal cord lymphoma](http://purl.obolibrary.org/obo/DOID_14150), [spinal cancer](http://purl.obolibrary.org/obo/DOID_5612), [spinal cord primitive neuroectodermal neoplasm](http://purl.obolibrary.org/obo/DOID_6872) (24 total)
+
+classes: 
+  part of: "BFO:0000050"
+  lymphoma: "http://purl.obolibrary.org/obo/DOID_0060058"
+  neuroectodermal tumor: "http://purl.obolibrary.org/obo/DOID_171"
+  meningioma: "http://purl.obolibrary.org/obo/DOID_3565"
+  neurofibroma: "http://purl.obolibrary.org/obo/DOID_962"
+  located in: "RO:0001025"
+  supplies: "RO:0002178"
+  has potential to developmentally contribute to: "RO:0002385"
+  neural nucleus: "UBERON:0000125"
+  multi-tissue structure: "UBERON:0000481"
+  nervous system commissure: "UBERON:0001020"
+  nerve: "UBERON:0001021"
+  artery: "UBERON:0001637"
+  gray matter: "UBERON:0002020"
+  spinal cord: "UBERON:0002240"
+  white matter: "UBERON:0002316"
+  neural crest: "UBERON:0002342"
+  pia mater: "UBERON:0002361"
+  arachnoid mater: "UBERON:0002362"
+  dura mater: "UBERON:0002363"
+  ependyma: "UBERON:0004670"
+  gracile fasciculus: "UBERON:0005821"
+  cuneate fasciculus: "UBERON:0005832"
+  funiculus of neuraxis: "UBERON:0006133"
+  extends_fibers_into: "http://purl.obolibrary.org/obo/uberon/core#extends_fibers_into"
+
+
+relations: []
+
+vars:
+  v0: "'lymphoma' or 'neuroectodermal tumor' or 'meningioma' or 'neurofibroma' or 'neural nucleus' or 'multi-tissue structure' or 'nervous system commissure' or 'nerve' or 'artery' or 'gray matter' or 'white matter' or 'neural crest' or 'pia mater' or 'arachnoid mater' or 'dura mater' or 'ependyma' or 'gracile fasciculus' or 'cuneate fasciculus' or 'funiculus of neuraxis'"
+  v1: "'part of' or 'located in' or 'supplies' or 'has potential to developmentally contribute to' or 'extends_fibers_into'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s spinal cord"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.20833333333333334, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that %s a spinal cord."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and (%s some 'spinal cord')"
+  vars:
+    - v0
+    - v1

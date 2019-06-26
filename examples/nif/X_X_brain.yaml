@@ -1,0 +1,65 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X brain
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_X_brain
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [intracranial thrombosis](http://purl.obolibrary.org/obo/DOID_4193), [brain cancer](http://purl.obolibrary.org/obo/DOID_1319), [cerebrovascular disease](http://purl.obolibrary.org/obo/DOID_6713) (23 total)
+
+classes: 
+  part of: "BFO:0000050"
+  in_left_side_of: "http://purl.obolibrary.org/obo/BSPO_0000120"
+  in_right_side_of: "http://purl.obolibrary.org/obo/BSPO_0000121"
+  thrombosis: "http://purl.obolibrary.org/obo/DOID_0060903"
+  thalamic neoplasm: "http://purl.obolibrary.org/obo/DOID_6098"
+  located in: "RO:0001025"
+  surrounds: "RO:0002221"
+  sulcus: "UBERON:0000093"
+  neural nucleus: "UBERON:0000125"
+  brain: "UBERON:0000955"
+  nerve fasciculus: "UBERON:0001019"
+  nervous system commissure: "UBERON:0001020"
+  auditory cortex: "UBERON:0001393"
+  cerebral hemisphere: "UBERON:0001869"
+  blood vessel: "UBERON:0001981"
+  endothelium: "UBERON:0001986"
+  gray matter: "UBERON:0002020"
+  white matter: "UBERON:0002316"
+  pia mater: "UBERON:0002361"
+  arachnoid mater: "UBERON:0002362"
+  dura mater: "UBERON:0002363"
+
+
+relations: []
+
+vars:
+  v0: "'thrombosis' or 'thalamic neoplasm' or 'sulcus' or 'neural nucleus' or 'nerve fasciculus' or 'nervous system commissure' or 'auditory cortex' or 'cerebral hemisphere' or 'blood vessel' or 'endothelium' or 'gray matter' or 'white matter' or 'pia mater' or 'arachnoid mater' or 'dura mater'"
+  v1: "'part of' or 'in_left_side_of' or 'in_right_side_of' or 'located in' or 'surrounds'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s brain"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.13043478260869565, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that %s a brain [Automatically generated definition]."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and (%s some 'brain')"
+  vars:
+    - v0
+    - v1

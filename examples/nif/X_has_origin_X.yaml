@@ -1,0 +1,77 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has_origin X
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_has_origin_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [adenomatoid tumor](http://purl.obolibrary.org/obo/DOID_746), [kinetoplast_gene](http://purl.obolibrary.org/obo/SO_0000089), [apicoplast_gene](http://purl.obolibrary.org/obo/SO_0000091) (30 total)
+
+classes: 
+  benign mesothelioma: "http://purl.obolibrary.org/obo/DOID_2645"
+  macronuclear_sequence: "SO:0000083"
+  micronuclear_sequence: "SO:0000084"
+  mt_gene: "SO:0000088"
+  plastid_gene: "SO:0000090"
+  proviral_gene: "SO:0000099"
+  contig: "SO:0000149"
+  read: "SO:0000150"
+  BAC: "SO:0000153"
+  chromosome: "SO:0000340"
+  nuclear_sequence: "SO:0000738"
+  nucleomorphic_sequence: "SO:0000739"
+  kinetoplast: "SO:0000741"
+  apicoplast_sequence: "SO:0000743"
+  chromoplast_sequence: "SO:0000744"
+  cyanelle_sequence: "SO:0000746"
+  leucoplast_sequence: "SO:0000747"
+  proplastid_sequence: "SO:0000748"
+  plasmid_location: "SO:0000749"
+  endogenous_retroviral_sequence: "SO:0000903"
+  orphan: "SO:0000910"
+  mitochondrial_DNA: "SO:0001032"
+  chloroplast_DNA: "SO:0001033"
+  CDS_predicted: "SO:1001254"
+  gland: "UBERON:0002530"
+
+
+relations: 
+  has_origin: "http://purl.obolibrary.org/obo/so#has_origin"
+
+
+vars:
+  v0: "'benign mesothelioma' or 'mt_gene' or 'plastid_gene' or 'proviral_gene' or 'contig' or 'read' or 'chromosome' or 'CDS_predicted'"
+  v1: "'macronuclear_sequence' or 'micronuclear_sequence' or 'BAC' or 'nuclear_sequence' or 'nucleomorphic_sequence' or 'kinetoplast' or 'apicoplast_sequence' or 'chromoplast_sequence' or 'cyanelle_sequence' or 'leucoplast_sequence' or 'proplastid_sequence' or 'plasmid_location' or 'endogenous_retroviral_sequence' or 'orphan' or 'mitochondrial_DNA' or 'chloroplast_DNA' or 'gland'"
+
+name:
+  # Induced, frequency=0.06666666666666667, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s_%s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s from %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "%s and ('has_origin' some %s)"
+  vars:
+    - v0
+    - v1

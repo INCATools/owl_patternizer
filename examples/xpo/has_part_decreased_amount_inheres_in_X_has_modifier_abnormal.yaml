@@ -1,0 +1,68 @@
+# options: [min(50),dir('examples/xpo'),trim(true),base('http://purl.obolibrary.org/obo/xpo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part decreased amount inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/xpo/has_part_decreased_amount_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Decreased number of spindle microtubule](http://purl.obolibrary.org/obo/XPO_0103894), [Decreased number of sarcomere](http://purl.obolibrary.org/obo/XPO_0103892), [Decreased number of ciliated epidermal cell](http://purl.obolibrary.org/obo/XPO_0103886) (65 total)
+
+classes: 
+  spindle microtubule: "GO:0005876"
+  sarcomere: "GO:0030017"
+  abnormal: "PATO:0000460"
+  decreased amount: "PATO:0001997"
+  ciliated epidermal cell: "http://purl.obolibrary.org/obo/XAO_0000031"
+  trunk somite: "http://purl.obolibrary.org/obo/XAO_0000314"
+  melanophore: "http://purl.obolibrary.org/obo/XAO_0001014"
+  hindlimb digit: "http://purl.obolibrary.org/obo/XAO_0003035"
+  forelimb digit: "http://purl.obolibrary.org/obo/XAO_0003036"
+  Meckel's cartilage: "http://purl.obolibrary.org/obo/XAO_0003085"
+  claw: "http://purl.obolibrary.org/obo/XAO_0003103"
+  primordial germ cell: "http://purl.obolibrary.org/obo/XAO_0003149"
+  metatarsus: "http://purl.obolibrary.org/obo/XAO_0003212"
+  tibia-fibula: "http://purl.obolibrary.org/obo/XAO_0003213"
+  hypaxial muscle: "http://purl.obolibrary.org/obo/XAO_0003228"
+  retinal ganglion cell: "http://purl.obolibrary.org/obo/XAO_0004100"
+  ceratohyal: "http://purl.obolibrary.org/obo/XAO_0004219"
+  foot: "http://purl.obolibrary.org/obo/XAO_0004300"
+  head mesenchyme: "http://purl.obolibrary.org/obo/XAO_0004307"
+  trunk vasculature: "http://purl.obolibrary.org/obo/XAO_0004423"
+  proximal tubule: "http://purl.obolibrary.org/obo/XAO_0004518"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'spindle microtubule' or 'sarcomere' or 'ciliated epidermal cell' or 'trunk somite' or 'melanophore' or 'hindlimb digit' or 'forelimb digit' or 'Meckel's cartilage' or 'claw' or 'primordial germ cell' or 'metatarsus' or 'tibia-fibula' or 'hypaxial muscle' or 'retinal ganglion cell' or 'ceratohyal' or 'foot' or 'head mesenchyme' or 'trunk vasculature' or 'proximal tubule'"
+
+name:
+  # Induced, frequency=0.26153846153846155, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "Decreased number of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.26153846153846155, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The presence of a reduced number of %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "Reduced number of %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('has part' some ('decreased amount' and ('inheres in' some %s) and ('has modifier' some 'abnormal')))"
+  vars:
+    - v0

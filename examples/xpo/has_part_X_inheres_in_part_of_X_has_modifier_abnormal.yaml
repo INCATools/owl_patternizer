@@ -1,0 +1,49 @@
+# options: [min(50),dir('examples/xpo'),trim(true),base('http://purl.obolibrary.org/obo/xpo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part X inheres in part of X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/xpo/has_part_X_inheres_in_part_of_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal ectoderm](http://purl.obolibrary.org/obo/XPO_0100168), [abnormal fin](http://purl.obolibrary.org/obo/XPO_0100305), [abnormal outer fin](http://purl.obolibrary.org/obo/XPO_0101462) (1574 total)
+
+classes: 
+  quality: "PATO:0000001"
+  abnormal: "PATO:0000460"
+  Xenopus anatomical entity: "http://purl.obolibrary.org/obo/XAO_0000000"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'quality'"
+  v1: "'Xenopus anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "has part %s inheres in part of %s has modifier abnormal"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "has part a Any %s that inheres in part of a %s and has modifier a abnormal"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some (%s and ('inheres in part of' some %s) and ('has modifier' some 'abnormal')))"
+  vars:
+    - v0
+    - v1

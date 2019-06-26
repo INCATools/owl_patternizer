@@ -1,0 +1,52 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X head
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_X_head
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [skin of head](http://purl.obolibrary.org/obo/UBERON_0001084), [lymph node of head](http://purl.obolibrary.org/obo/UBERON_0015870), [head segment](http://purl.obolibrary.org/obo/UBERON_6000006) (26 total)
+
+classes: 
+  part of: "BFO:0000050"
+  in_left_side_of: "http://purl.obolibrary.org/obo/BSPO_0000120"
+  in_right_side_of: "http://purl.obolibrary.org/obo/BSPO_0000121"
+  in_posterior_side_of: "http://purl.obolibrary.org/obo/BSPO_0000122"
+  in_lateral_side_of: "http://purl.obolibrary.org/obo/BSPO_0000126"
+  intersects_midsagittal_plane_of: "http://purl.obolibrary.org/obo/BSPO_0005001"
+  head: "UBERON:0000033"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: []
+
+vars:
+  v0: "'anatomical entity'"
+  v1: "'part of' or 'in_left_side_of' or 'in_right_side_of' or 'in_posterior_side_of' or 'in_lateral_side_of' or 'intersects_midsagittal_plane_of'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s head"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.23076923076923078, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that %s a head."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and (%s some 'head')"
+  vars:
+    - v0
+    - v1

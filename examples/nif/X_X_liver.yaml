@@ -1,0 +1,69 @@
+# options: [min(20),dir('examples/nif'),trim(true),base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X liver
+pattern_iri: http://ontology.neuinfo.org/NIF/ttl/nif.ttl/X_X_liver
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [liver benign neoplasm](http://purl.obolibrary.org/obo/DOID_916), [liver cancer](http://purl.obolibrary.org/obo/DOID_3571), [hepatic vascular disease](http://purl.obolibrary.org/obo/DOID_272) (20 total)
+
+classes: 
+  part of: "BFO:0000050"
+  benign neoplasm: "http://purl.obolibrary.org/obo/DOID_0060072"
+  cancer: "http://purl.obolibrary.org/obo/DOID_162"
+  vascular disease: "http://purl.obolibrary.org/obo/DOID_178"
+  in situ carcinoma: "http://purl.obolibrary.org/obo/DOID_8719"
+  located in: "RO:0001025"
+  bounding layer of: "RO:0002007"
+  supplies: "RO:0002178"
+  drains: "RO:0002179"
+  has potential to develop into: "RO:0002387"
+  produced by: "RO:0003001"
+  parenchyma: "UBERON:0000353"
+  reticuloendothelial system: "UBERON:0000363"
+  trabecula: "UBERON:0000440"
+  secretion of exocrine gland: "UBERON:0000456"
+  primordium: "UBERON:0001048"
+  artery: "UBERON:0001637"
+  vein: "UBERON:0001638"
+  liver: "UBERON:0002107"
+  bile duct: "UBERON:0002394"
+  stroma: "UBERON:0003891"
+  capsule: "UBERON:0003893"
+  sinusoid: "UBERON:0003909"
+  nonskeletal ligament: "UBERON:0008845"
+  capillary plexus: "UBERON:0035753"
+
+
+relations: []
+
+vars:
+  v0: "'benign neoplasm' or 'cancer' or 'vascular disease' or 'in situ carcinoma' or 'parenchyma' or 'reticuloendothelial system' or 'trabecula' or 'secretion of exocrine gland' or 'primordium' or 'artery' or 'vein' or 'bile duct' or 'stroma' or 'capsule' or 'sinusoid' or 'nonskeletal ligament' or 'capillary plexus'"
+  v1: "'part of' or 'located in' or 'bounding layer of' or 'supplies' or 'drains' or 'has potential to develop into' or 'produced by'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s liver"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that %s a liver."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and (%s some 'liver')"
+  vars:
+    - v0
+    - v1

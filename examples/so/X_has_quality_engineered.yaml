@@ -1,4 +1,4 @@
-# options: [min(8),dir(so),trim(true),base('http://purl.obolibrary.org/obo/so'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/so'),trim(true),base('http://purl.obolibrary.org/obo/so'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has_quality engineered
 pattern_iri: http://purl.obolibrary.org/obo/so/X_has_quality_engineered
 
@@ -8,8 +8,8 @@ description: >-
   Examples: [engineered_region](http://purl.obolibrary.org/obo/SO_0000804), [engineered_transposable_element](http://purl.obolibrary.org/obo/SO_0000798), [engineered_plasmid](http://purl.obolibrary.org/obo/SO_0000637) (9 total)
 
 classes: 
-  region: "http://purl.obolibrary.org/obo/SO_0000001"
-  engineered: "http://purl.obolibrary.org/obo/SO_0000783"
+  region: "SO:0000001"
+  engineered: "SO:0000783"
 
 
 relations: 
@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('has_quality' some 'engineered')"
+  text: "(%s and ('has_quality' some 'engineered'))"
   vars:
     - v0

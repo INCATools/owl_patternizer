@@ -1,4 +1,4 @@
-# options: [min(8),dir(so),trim(true),base('http://purl.obolibrary.org/obo/so'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/so'),trim(true),base('http://purl.obolibrary.org/obo/so'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: transcript has_quality X
 pattern_iri: http://purl.obolibrary.org/obo/so/transcript_has_quality_X
 
@@ -8,8 +8,8 @@ description: >-
   Examples: [edited_transcript](http://purl.obolibrary.org/obo/SO_0000873), [trans_spliced_transcript](http://purl.obolibrary.org/obo/SO_0000479), [transcript_bound_by_protein](http://purl.obolibrary.org/obo/SO_0000279) (10 total)
 
 classes: 
-  transcript: "http://purl.obolibrary.org/obo/SO_0000673"
-  feature_attribute: "http://purl.obolibrary.org/obo/SO_0000733"
+  transcript: "SO:0000673"
+  feature_attribute: "SO:0000733"
 
 
 relations: 
@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'transcript' and ('has_quality' some %s)"
+  text: "('transcript' and ('has_quality' some %s))"
   vars:
     - v0
