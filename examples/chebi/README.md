@@ -16,6 +16,9 @@ indicating variables in the pattern name) and specific patterns (where
 one another. The ontology manager can choose whether to go with morre
 generic patterns or more specific ones.
 
+An advantage of more specific patterns is that auto-generated text
+definitions and synonyms look less generic.
+
 For more on the approach, see the [parent dir](https://github.com/cmungall/owl_patternizer).
 
 Note this is a work in progress, there are bugs to fix.
@@ -36,6 +39,41 @@ See:
 
  * [anion_is_conjugate_base_of_X.yaml](anion_is_conjugate_base_of_X.yaml) - DP
  * [anion_is_conjugate_base_of_X.tsv](anion_is_conjugate_base_of_X.tsv) - derived tuples
+
+Note that we infer both a text definition pattern:
+
+```
+def:
+  # Induced, frequency=0.05921052631578947, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An alpha-amino-acid anion that is the conjugate base of %s, arising from deprotonation of the carboxy group."
+  vars:
+    - v0
+```
+
+as well as a synonym pattern:
+
+```
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%sate"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s anion"
+    vars:
+      - v0
+```
+
+this is in addition to the logical definition pattern:
+
+```
+equivalentTo:
+  text: "'anion' and ('is conjugate base of' some %s)"
+  vars:
+    - v0
+```
 
 Examples in derived tuple form:
 
