@@ -16,6 +16,8 @@ All YAML in this folder was generated automatically from owl_patternizer. See [c
  * OBI
     * [T-cell assay](obi/biological_activity_assay_measuring_epitope_specific_cytokine_production_by_T_cells_has_specified_output_information_content_entity_is_about_X.yaml)
     * [assay about process](obi/X_has_specified_output_information_content_entity_is_about_X.yaml)
+ * CHEBI
+    * see [chebi/README.md](chebi/README.md)
 
 ## Induced Logical Definitions
 

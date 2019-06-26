@@ -1,27 +1,28 @@
-# options: [min(2),dir(sweet),trim(true),base('http://purl.obolibrary.org/obo/sweet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(2),dir('examples/sweet'),trim(true),base('http://purl.obolibrary.org/obo/sweet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X hasRealm land
 pattern_iri: http://purl.obolibrary.org/obo/sweet/X_hasRealm_land
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [land management](http://sweetontology.net/humanEnvirConservation#LandManagement), [land ice](http://sweetontology.net/realmCryo#LandIce) (2 total)
+  Examples: [land management](http://sweetontology.net/humanEnvirConservation#LandManagement), [land resource](http://sweetontology.net/matrNaturalResource#LandResource), [land ice](http://sweetontology.net/realmCryo#LandIce) (3 total)
 
 classes: 
   management: "http://sweetontology.net/humanCommerce#Management"
+  natural resource: "http://sweetontology.net/matrNaturalResource#NaturalResource"
   ice: "http://sweetontology.net/matrWater#Ice"
   land: "http://sweetontology.net/realm#Land"
 
 
 relations: 
-  hasRealm: "ns9:hasRealm"
+  hasRealm: "http://sweetontology.net/rela#hasRealm"
 
 
 vars:
-  v0: "'management' or 'ice'"
+  v0: "'management' or 'natural resource' or 'ice'"
 
 name:
-  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.6666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "land %s"
   vars:
     - v0

@@ -661,7 +661,8 @@ serialize_conj(L, N, _/id) :-
         !, 
         concat_atom(L, ' ', N).
 serialize_conj(L2, N, _) :-
-        concat_atom(L2, ' and ', N).
+        concat_atom(L2, ' and ', N1),
+        concat_atom(['(',N1,')'],N).
 
 serialize_disj([X1|L], N, _/def) :-
         !, 

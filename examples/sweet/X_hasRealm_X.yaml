@@ -1,28 +1,36 @@
-# options: [min(2),dir(sweet),trim(true),base('http://purl.obolibrary.org/obo/sweet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(2),dir('examples/sweet'),trim(true),base('http://purl.obolibrary.org/obo/sweet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X hasRealm X
 pattern_iri: http://purl.obolibrary.org/obo/sweet/X_hasRealm_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [land management](http://sweetontology.net/humanEnvirConservation#LandManagement), [land ice](http://sweetontology.net/realmCryo#LandIce), [mountain fog](http://sweetontology.net/phenAtmoFog#MountainFog) (4 total)
+  Examples: [land management](http://sweetontology.net/humanEnvirConservation#LandManagement), [land resource](http://sweetontology.net/matrNaturalResource#LandResource), [land ice](http://sweetontology.net/realmCryo#LandIce) (7 total)
 
 classes: 
+  management: "http://sweetontology.net/humanCommerce#Management"
+  natural resource: "http://sweetontology.net/matrNaturalResource#NaturalResource"
+  ice: "http://sweetontology.net/matrWater#Ice"
+  fog: "http://sweetontology.net/phenAtmoFog#Fog"
   atmosphere: "http://sweetontology.net/realm#Atmosphere"
   land: "http://sweetontology.net/realm#Land"
+  stellar realm: "http://sweetontology.net/realmAstroStar#StellarRealm"
+  coastal region: "http://sweetontology.net/realmLandCoastal#CoastalRegion"
   mountain: "http://sweetontology.net/realmLandOrographic#Mountain"
+  landform: "http://sweetontology.net/realmLandform#Landform"
+  layer: "http://sweetontology.net/reprSpaceGeometry3D#Layer"
 
 
 relations: 
-  hasRealm: "ns9:hasRealm"
+  hasRealm: "http://sweetontology.net/rela#hasRealm"
 
 
 vars:
-  v0: "'management' or 'ice' or 'fog' or 'layer'"
-  v1: "'atmosphere' or 'land' or 'mountain'"
+  v0: "'management' or 'natural resource' or 'ice' or 'fog' or 'landform' or 'layer'"
+  v1: "'atmosphere' or 'land' or 'stellar realm' or 'coastal region' or 'mountain'"
 
 name:
-  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.5714285714285714, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1

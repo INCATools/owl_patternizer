@@ -1,4 +1,4 @@
-# options: [min(2),dir(sweet),trim(true),base('http://purl.obolibrary.org/obo/sweet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(2),dir('examples/sweet'),trim(true),base('http://purl.obolibrary.org/obo/sweet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X hasImpactOn X
 pattern_iri: http://purl.obolibrary.org/obo/sweet/X_hasImpactOn_X
 
@@ -8,13 +8,14 @@ description: >-
   Examples: [land environmental impact](http://sweetontology.net/phenEnvirImpact#LandEnvironmentalImpact), [ocean environmental impact](http://sweetontology.net/phenEnvirImpact#OceanEnvironmentalImpact), [noise pollution](http://sweetontology.net/phenEnvirImpact#NoisePollution) (3 total)
 
 classes: 
+  environmental impact: "http://sweetontology.net/phenEnvirImpact#EnvironmentalImpact"
   noise: "http://sweetontology.net/phenWaveNoise#Noise"
   land: "http://sweetontology.net/realm#Land"
   ocean: "http://sweetontology.net/realm#Ocean"
 
 
 relations: 
-  hasImpactOn: "ns6:hasImpactOn"
+  hasImpactOn: "http://sweetontology.net/relaSci#hasImpactOn"
 
 
 vars:

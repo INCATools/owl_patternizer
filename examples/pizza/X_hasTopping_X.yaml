@@ -1,4 +1,4 @@
-# options: [min(2),dir(pizza),trim(true),base('http://purl.obolibrary.org/obo/pizza/'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(2),dir('examples/pizza'),trim(true),base('http://purl.obolibrary.org/obo/pizza/'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X hasTopping X
 pattern_iri: http://purl.obolibrary.org/obo/pizza//X_hasTopping_X
 
@@ -8,7 +8,10 @@ description: >-
   Examples: [CheesyPizza](http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza), [MeatyPizza](http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatyPizza), [PizzaTemperada](http://www.co-ode.org/ontologies/pizza/pizza.owl#SpicyPizza) (4 total)
 
 classes: 
+  CheeseTopping: "pizza:CheeseTopping"
+  CoberturaDeCarne: "pizza:MeatTopping"
   Pizza: "pizza:Pizza"
+  CoberturaTemperada: "pizza:SpicyTopping"
 
 
 relations: 
@@ -41,7 +44,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('hasTopping' some %s)"
+  text: "(%s and ('hasTopping' some %s))"
   vars:
     - v0
     - v1

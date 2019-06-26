@@ -1,4 +1,4 @@
-# options: [min(2),dir(sweet),trim(true),base('http://purl.obolibrary.org/obo/sweet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(2),dir('examples/sweet'),trim(true),base('http://purl.obolibrary.org/obo/sweet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X hasPhenomena mixing
 pattern_iri: http://purl.obolibrary.org/obo/sweet/X_hasPhenomena_mixing
 
@@ -13,7 +13,7 @@ classes:
 
 
 relations: 
-  hasPhenomena: "ns9:hasPhenomena"
+  hasPhenomena: "http://sweetontology.net/rela#hasPhenomena"
 
 
 vars:

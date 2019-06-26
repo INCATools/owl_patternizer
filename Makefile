@@ -29,7 +29,7 @@ do-%:
 	swipl --stack_limit=14g --table_space=14g -l examples/conf.pl -g "do_for($*),halt"
 
 doall:
-	swipl -l examples/conf.pl -g do_all,halt
+	swipl -l examples/conf.pl -g doall,halt
 
 #examples/%/inf.owl: examples/%/merged.owl
 #	robot reason -r elk -i $< -a true -o $@

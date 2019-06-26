@@ -1,4 +1,4 @@
-# options: [min(2),dir(sweet),trim(true),base('http://purl.obolibrary.org/obo/sweet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(2),dir('examples/sweet'),trim(true),base('http://purl.obolibrary.org/obo/sweet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X hasPhenomena X
 pattern_iri: http://purl.obolibrary.org/obo/sweet/X_hasPhenomena_X
 
@@ -8,29 +8,39 @@ description: >-
   Examples: [wave phenomena](http://sweetontology.net/phenWave#WavePhenomena), [mixing cloud](http://sweetontology.net/phenAtmoCloud#MixingCloud), [mixing fog](http://sweetontology.net/phenAtmoFog#MixingFog) (13 total)
 
 classes: 
+  nocturnal cooling: "http://sweetontology.net/phenAtmo#NocturnalCooling"
+  fog: "http://sweetontology.net/phenAtmoFog#Fog"
   air pollution: "http://sweetontology.net/phenEnvirImpact#AirPollution"
   eddy: "http://sweetontology.net/phenFluidDynamics#Eddy"
   inversion: "http://sweetontology.net/phenFluidInstability#Inversion"
+  lifting: "http://sweetontology.net/phenFluidInstability#Lifting"
+  transport: "http://sweetontology.net/phenFluidTransport#Transport"
   karst: "http://sweetontology.net/phenGeolGeomorphology#Karst"
   snow cover: "http://sweetontology.net/phenHydro#SnowCover"
   mixing: "http://sweetontology.net/phenMixing#Mixing"
   wave: "http://sweetontology.net/phenWave#Wave"
+  diffusivity: "http://sweetontology.net/propDiffusivity#Diffusivity"
+  temperature: "http://sweetontology.net/propTemperature#Temperature"
+  duration: "http://sweetontology.net/propTime#Duration"
+  atmosphere layer: "http://sweetontology.net/realmAtmo#AtmosphereLayer"
+  boundary layer: "http://sweetontology.net/realmAtmoBoundaryLayer#BoundaryLayer"
   i t c z: "http://sweetontology.net/realmClimateZone#ITCZ"
   orographic: "http://sweetontology.net/realmLandOrographic#Orographic"
+  landform: "http://sweetontology.net/realmLandform#Landform"
   coldest month: "http://sweetontology.net/reprTimeSeason#ColdestMonth"
   warmest month: "http://sweetontology.net/reprTimeSeason#WarmestMonth"
 
 
 relations: 
-  hasPhenomena: "ns9:hasPhenomena"
+  hasPhenomena: "http://sweetontology.net/rela#hasPhenomena"
 
 
 vars:
-  v0: "'fog' or 'lifting' or 'transport' or 'diffusivity' or 'average' or 'temperature' or 'duration' or 'landform' or 'layer'"
-  v1: "'air pollution' or 'eddy' or 'inversion' or 'karst' or 'snow cover' or 'mixing' or 'wave' or 'i t c z' or 'orographic' or 'coldest month' or 'warmest month'"
+  v0: "'fog' or 'lifting' or 'transport' or 'diffusivity' or 'temperature' or 'duration' or 'atmosphere layer' or 'boundary layer' or 'landform'"
+  v1: "'nocturnal cooling' or 'air pollution' or 'eddy' or 'inversion' or 'karst' or 'snow cover' or 'mixing' or 'wave' or 'i t c z' or 'orographic' or 'coldest month' or 'warmest month'"
 
 name:
-  # Induced, frequency=0.7692307692307693, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.6923076923076923, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1

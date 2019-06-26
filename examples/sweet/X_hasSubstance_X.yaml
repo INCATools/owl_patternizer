@@ -1,4 +1,4 @@
-# options: [min(2),dir(sweet),trim(true),base('http://purl.obolibrary.org/obo/sweet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(2),dir('examples/sweet'),trim(true),base('http://purl.obolibrary.org/obo/sweet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X hasSubstance X
 pattern_iri: http://purl.obolibrary.org/obo/sweet/X_hasSubstance_X
 
@@ -8,11 +8,13 @@ description: >-
   Examples: [ice fog](http://sweetontology.net/phenAtmoFog#IceFog), [sand haze](http://sweetontology.net/phenAtmoFog#SandHaze) (2 total)
 
 classes: 
+  sand: "http://sweetontology.net/matrSediment#Sand"
+  ice: "http://sweetontology.net/matrWater#Ice"
   fog: "http://sweetontology.net/phenAtmoFog#Fog"
 
 
 relations: 
-  hasSubstance: "ns5:hasSubstance"
+  hasSubstance: "http://sweetontology.net/relaChemical#hasSubstance"
 
 
 vars:
