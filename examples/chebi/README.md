@@ -16,7 +16,7 @@ indicating variables in the pattern name) and specific patterns (where
 one another. The ontology manager can choose whether to go with morre
 generic patterns or more specific ones.
 
-For more on the approach, see the [parent dir](../..).
+For more on the approach, see the [parent dir](https://github.com/cmungall/owl_patternizer).
 
 Note this is a work in progress, there are bugs to fix.
 
