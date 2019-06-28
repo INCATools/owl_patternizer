@@ -8,6 +8,8 @@ description: >-
   Examples: [expansion of Leptotrichia sp. in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000179), [expansion of Treponema in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000244), [expansion of Treponema denticola in AS human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000223) (25 total)
 
 classes: 
+  rheumatic disease: "http://purl.obolibrary.org/obo/DOID_1575"
+  Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
   increased organism quantity compared with healthy control: "http://purl.obolibrary.org/obo/OHMI_0000032"
   microbe: "http://purl.obolibrary.org/obo/OHMI_0000460"
   oral cavity: "UBERON:0000167"
@@ -46,7 +48,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "('has participant' some %s and ('microbial population phenotype in host' some 'increased organism quantity compared with healthy control') and ('located in' some 'oral cavity' and ('part of' some %s and ('has disease' some %s))))"
+  text: "('has participant' some (%s and ('microbial population phenotype in host' some 'increased organism quantity compared with healthy control') and ('located in' some ('oral cavity' and ('part of' some (%s and ('has disease' some %s)))))))"
   vars:
     - v0
     - v1

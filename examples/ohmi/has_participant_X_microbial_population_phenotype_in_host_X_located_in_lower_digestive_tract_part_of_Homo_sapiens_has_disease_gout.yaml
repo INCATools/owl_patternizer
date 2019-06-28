@@ -8,6 +8,7 @@ description: >-
   Examples: [expansion of Parasporobacterium in gout human gut](http://purl.obolibrary.org/obo/OHMI_0000133), [depletion of Coprococcus catus in gout human gut](http://purl.obolibrary.org/obo/OHMI_0000142), [expansion of Erysipelatoclostridium in gout human gut](http://purl.obolibrary.org/obo/OHMI_0000129) (41 total)
 
 classes: 
+  quality: "BFO:0000019"
   gout: "http://purl.obolibrary.org/obo/DOID_13189"
   Bacteria: "http://purl.obolibrary.org/obo/NCBITaxon_2"
   Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
@@ -44,7 +45,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "('has participant' some %s and ('microbial population phenotype in host' some %s) and ('located in' some 'lower digestive tract' and ('part of' some 'Homo sapiens' and ('has disease' some 'gout'))))"
+  text: "('has participant' some (%s and ('microbial population phenotype in host' some %s) and ('located in' some ('lower digestive tract' and ('part of' some ('Homo sapiens' and ('has disease' some 'gout')))))))"
   vars:
     - v0
     - v1

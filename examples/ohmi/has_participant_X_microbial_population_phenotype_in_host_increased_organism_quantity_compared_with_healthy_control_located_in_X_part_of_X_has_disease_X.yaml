@@ -8,6 +8,10 @@ description: >-
   Examples: [expansion of Beggiatoa in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000290), [expansion of Collinsella in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000300), [expansion of S. moorei in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000283) (218 total)
 
 classes: 
+  organism or virus or viroid: "http://purl.obolibrary.org/obo/CARO_0001010"
+  disease of anatomical entity: "http://purl.obolibrary.org/obo/DOID_7"
+  Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+  organism: "http://purl.obolibrary.org/obo/OBI_0100026"
   increased organism quantity compared with healthy control: "http://purl.obolibrary.org/obo/OHMI_0000032"
   anatomical entity: "UBERON:0001062"
 
@@ -48,7 +52,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "('has participant' some %s and ('microbial population phenotype in host' some 'increased organism quantity compared with healthy control') and ('located in' some %s and ('part of' some %s and ('has disease' some %s))))"
+  text: "('has participant' some (%s and ('microbial population phenotype in host' some 'increased organism quantity compared with healthy control') and ('located in' some (%s and ('part of' some (%s and ('has disease' some %s)))))))"
   vars:
     - v0
     - v1

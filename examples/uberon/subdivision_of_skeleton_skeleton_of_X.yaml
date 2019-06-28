@@ -1,4 +1,4 @@
-# options: [min(50),dir(uberon),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(50),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: subdivision of skeleton skeleton of X
 pattern_iri: http://purl.obolibrary.org/obo/uberon/subdivision_of_skeleton_skeleton_of_X
 
@@ -49,6 +49,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'subdivision of skeleton' and ('skeleton of' some %s)"
+  text: "('subdivision of skeleton' and ('skeleton of' some %s))"
   vars:
     - v0

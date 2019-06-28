@@ -8,6 +8,9 @@ description: >-
   Examples: [expansion of Propionibacterium acnes 17B in arthritis  rat gut](http://purl.obolibrary.org/obo/OHMI_0000185), [expansion of Streptococcaceae in SLE  mouse gut](http://purl.obolibrary.org/obo/OHMI_0000201), [expansion of Streptococcus pyogenes in arthritis  rat gut](http://purl.obolibrary.org/obo/OHMI_0000202) (29 total)
 
 classes: 
+  quality: "BFO:0000019"
+  rheumatic disease: "http://purl.obolibrary.org/obo/DOID_1575"
+  Bacteria: "http://purl.obolibrary.org/obo/NCBITaxon_2"
   Murinae: "http://purl.obolibrary.org/obo/NCBITaxon_39107"
   lower digestive tract: "UBERON:0004907"
 
@@ -48,7 +51,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "('has participant' some %s and ('part of' some %s and ('has disposition' some %s)) and ('located in' some 'lower digestive tract') and ('has quality' some %s))"
+  text: "('has participant' some (%s and (('part of' some (%s and ('has disposition' some %s))) and ('located in' some 'lower digestive tract')) and ('has quality' some %s)))"
   vars:
     - v0
     - v1

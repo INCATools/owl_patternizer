@@ -1,4 +1,4 @@
-# options: [min(50),dir(uberon),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(50),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X drains X
 pattern_iri: http://purl.obolibrary.org/obo/uberon/X_drains_X
 
@@ -8,6 +8,7 @@ description: >-
   Examples: [left renal vein](http://purl.obolibrary.org/obo/UBERON_0001142), [right renal vein](http://purl.obolibrary.org/obo/UBERON_0001141), [left testicular vein](http://purl.obolibrary.org/obo/UBERON_0000443) (53 total)
 
 classes: 
+  anatomical structure: "UBERON:0000061"
   vein: "UBERON:0001638"
 
 
@@ -47,7 +48,7 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('drains' some %s)"
+  text: "(%s and ('drains' some %s))"
   vars:
     - v0
     - v1

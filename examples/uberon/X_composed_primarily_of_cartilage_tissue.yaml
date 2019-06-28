@@ -1,4 +1,4 @@
-# options: [min(50),dir(uberon),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(50),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X composed primarily of cartilage tissue
 pattern_iri: http://purl.obolibrary.org/obo/uberon/X_composed_primarily_of_cartilage_tissue
 
@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('composed primarily of' some 'cartilage tissue')"
+  text: "(%s and ('composed primarily of' some 'cartilage tissue'))"
   vars:
     - v0

@@ -43,6 +43,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "('has participant' some %s and ('microbial population phenotype in host' some 'increased organism quantity compared with healthy control') and ('located in' some 'lower digestive tract' and ('part of' some 'Homo sapiens' and ('has disease' some 'colorectal cancer'))))"
+  text: "('has participant' some (%s and ('microbial population phenotype in host' some 'increased organism quantity compared with healthy control') and ('located in' some ('lower digestive tract' and ('part of' some ('Homo sapiens' and ('has disease' some 'colorectal cancer')))))))"
   vars:
     - v0

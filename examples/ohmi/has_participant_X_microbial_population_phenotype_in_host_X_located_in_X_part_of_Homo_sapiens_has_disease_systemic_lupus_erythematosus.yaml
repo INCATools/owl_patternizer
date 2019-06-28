@@ -8,7 +8,9 @@ description: >-
   Examples: [depletion of Capnocytophaga gingivalis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000237), [depletion of Firmicutes in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000112), [depletion of Streptococcus sanguinis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000238) (27 total)
 
 classes: 
+  quality: "BFO:0000019"
   systemic lupus erythematosus: "http://purl.obolibrary.org/obo/DOID_9074"
+  Bacteria: "http://purl.obolibrary.org/obo/NCBITaxon_2"
   Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
   anatomical entity: "UBERON:0001062"
 
@@ -46,7 +48,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "('has participant' some %s and ('microbial population phenotype in host' some %s) and ('located in' some %s and ('part of' some 'Homo sapiens' and ('has disease' some 'systemic lupus erythematosus'))))"
+  text: "('has participant' some (%s and ('microbial population phenotype in host' some %s) and ('located in' some (%s and ('part of' some ('Homo sapiens' and ('has disease' some 'systemic lupus erythematosus')))))))"
   vars:
     - v0
     - v1

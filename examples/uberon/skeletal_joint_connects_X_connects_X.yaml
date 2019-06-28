@@ -1,4 +1,4 @@
-# options: [min(50),dir(uberon),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(50),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: skeletal joint connects X connects X
 pattern_iri: http://purl.obolibrary.org/obo/uberon/skeletal_joint_connects_X_connects_X
 
@@ -8,6 +8,7 @@ description: >-
   Examples: [sternoclavicular joint](http://purl.obolibrary.org/obo/UBERON_0001469), [humeroradial joint](http://purl.obolibrary.org/obo/UBERON_0011111), [humeroulnar joint](http://purl.obolibrary.org/obo/UBERON_0011110) (81 total)
 
 classes: 
+  CARO_0000000: "http://purl.obolibrary.org/obo/CARO_0000000"
   anatomical structure: "UBERON:0000061"
   skeletal joint: "UBERON:0000982"
 
@@ -17,8 +18,8 @@ relations:
 
 
 vars:
-  v0: "'anatomical structure'"
-  v1: "'anatomical structure'"
+  v0: "'CARO_0000000' or 'anatomical structure'"
+  v1: "'CARO_0000000' or 'anatomical structure'"
 
 name:
   # Induced, frequency=0.2716049382716049, p=http://www.w3.org/2000/01/rdf-schema#label 
@@ -42,7 +43,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'skeletal joint' and ('connects' some %s) and ('connects' some %s)"
+  text: "('skeletal joint' and ('connects' some %s) and ('connects' some %s))"
   vars:
     - v0
     - v1

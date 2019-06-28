@@ -1,4 +1,4 @@
-# options: [min(50),dir(uberon),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(50),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X composed primarily of X
 pattern_iri: http://purl.obolibrary.org/obo/uberon/X_composed_primarily_of_X
 
@@ -9,6 +9,7 @@ description: >-
 
 classes: 
   anatomical entity: "UBERON:0001062"
+  owl:Thing: "owl:Thing"
 
 
 relations: 
@@ -17,7 +18,7 @@ relations:
 
 vars:
   v0: "'anatomical entity'"
-  v1: "'chitin' or 'ependymal cell' or 'endothelial cell' or 'glial cell (sensu Nematoda and Protostomia)' or 'mesenchymal stem cell' or 'glandular epithelial cell' or 'myoepithelial cell' or 'Sertoli cell' or 'white fat cell' or 'brown fat cell' or 'lymphocyte' or 'prickle cell' or 'muscle precursor cell' or 'stratum granulosum cell' or 'hippocampal granule cell' or 'basal cell of epidermis' or 'skeletal muscle fiber' or 'somatic muscle myotube' or 'obliquely striated somatic muscle cell' or 'magnocellular neurosecretory cell (duplicate class)' or 'lens fiber cell' or 'parvocellular neurosecretory cell' or 'extracellular matrix' or 'keratin filament' or 'elastic fiber' or 'neural nucleus' or 'ommatidium' or 'musculature' or 'cardiac muscle tissue' or 'smooth muscle tissue' or 'vein' or 'hyaline cartilage tissue' or 'fibrocartilage' or 'gray matter' or 'white matter' or 'bone tissue' or 'gland' or 'peritubular capillary' or 'pre-cartilage condensation' or 'dense regular connective tissue' or 'vertebral element' or 'collection of collagen fibrils' or 'basibranchial element' or 'epipleural' or 'dorsal scute' or 'abdominal scute' or 'hypobranchial element' or 'ceratobranchial element' or 'epibranchial element' or 'pharyngobranchial element'"
+  v1: "'owl:Thing'"
 
 name:
   # Induced, frequency=0.05707196029776675, p=http://www.w3.org/2000/01/rdf-schema#label 
@@ -41,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('composed primarily of' some %s)"
+  text: "(%s and ('composed primarily of' some %s))"
   vars:
     - v0
     - v1

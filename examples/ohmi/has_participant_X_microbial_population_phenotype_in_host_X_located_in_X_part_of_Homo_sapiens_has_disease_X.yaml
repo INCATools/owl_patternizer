@@ -8,7 +8,11 @@ description: >-
   Examples: [depletion of Coprobacillus in PsA human gut](http://purl.obolibrary.org/obo/OHMI_0000158), [depletion of Capnocytophaga gingivalis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000237), [expansion of Beggiatoa in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000290) (337 total)
 
 classes: 
+  quality: "BFO:0000019"
+  organism or virus or viroid: "http://purl.obolibrary.org/obo/CARO_0001010"
+  disease of anatomical entity: "http://purl.obolibrary.org/obo/DOID_7"
   Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+  organism: "http://purl.obolibrary.org/obo/OBI_0100026"
   anatomical entity: "UBERON:0001062"
 
 
@@ -48,7 +52,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "('has participant' some %s and ('microbial population phenotype in host' some %s) and ('located in' some %s and ('part of' some 'Homo sapiens' and ('has disease' some %s))))"
+  text: "('has participant' some (%s and ('microbial population phenotype in host' some %s) and ('located in' some (%s and ('part of' some ('Homo sapiens' and ('has disease' some %s)))))))"
   vars:
     - v0
     - v1

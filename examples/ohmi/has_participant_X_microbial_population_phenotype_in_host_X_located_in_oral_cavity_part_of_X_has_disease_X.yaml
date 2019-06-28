@@ -8,6 +8,9 @@ description: >-
   Examples: [depletion of Capnocytophaga gingivalis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000237), [expansion of Leptotrichia sp. in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000179), [depletion of Streptococcus sanguinis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000238) (37 total)
 
 classes: 
+  quality: "BFO:0000019"
+  rheumatic disease: "http://purl.obolibrary.org/obo/DOID_1575"
+  Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
   microbe: "http://purl.obolibrary.org/obo/OHMI_0000460"
   oral cavity: "UBERON:0000167"
 
@@ -48,7 +51,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "('has participant' some %s and ('microbial population phenotype in host' some %s) and ('located in' some 'oral cavity' and ('part of' some %s and ('has disease' some %s))))"
+  text: "('has participant' some (%s and ('microbial population phenotype in host' some %s) and ('located in' some ('oral cavity' and ('part of' some (%s and ('has disease' some %s)))))))"
   vars:
     - v0
     - v1

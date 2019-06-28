@@ -86,6 +86,7 @@ ontology_config(zfa,      [infer_axioms(true), min(12), generalize_properties(fa
 ontology_config(ehdaa2,   [infer_axioms(true), min(12), generalize_properties(false)]).
 ontology_config(xao,      [infer_axioms(true), min(12), generalize_properties(false)]).
 ontology_config(wbbt,     [infer_axioms(true), min(12), generalize_properties(false)]).
+ontology_config(fao,      [infer_axioms(true), min(12), generalize_properties(false)]).
 ontology_config(sweet,    [autolabels(true), infer_axioms(true), min(2), generalize_properties(false)]).
 ontology_config(obi,      [min(8), generalize_properties(false)]).
 ontology_config(ero,      [min(8), generalize_properties(false)]).
@@ -94,13 +95,13 @@ ontology_config(sctid,    [max_class_signature(4), generalize_properties(false)]
 ontology_config(to,       [min(20)]).
 ontology_config(envo,     [infer_axioms(true), min(4), generalize_properties(false), ontology_prefix('ENVO'), exclude_prefixes(['FOODON'])]).
 ontology_config(agro,     [min(10), infer_axioms(true), generalize_properties(false)]).
-ontology_config(efo,      [min(50)]).
+ontology_config(efo,      [min(10)]).
 ontology_config(doid,     [min(25)]).
 ontology_config(idomal,   [min(5), infer_axioms(true)]).
 ontology_config(mp,       [min(50), max_class_signature(4), generalize_properties(false)]).
 ontology_config(hp,       [min(50), max_class_signature(4), generalize_properties(false)]).
 ontology_config(xpo,      [min(50), max_class_signature(4), generalize_properties(false)]).
-ontology_config(zp,       [min(50), max_class_signature(4), generalize_properties(false)]).
+ontology_config(zp,       [min(200), max_class_signature(4), generalize_properties(false)]).
 ontology_config(planp,    [min(50), max_class_signature(4), generalize_properties(false)]).
 ontology_config(oae,      [min(10), generalize_properties(false)]).
 ontology_config(fypo,     [min(20), generalize_properties(false)]).
@@ -113,7 +114,7 @@ ontology_config(mmo,      [min(8), infer_links(true), infer_axioms(true), max_cl
 ontology_config(mop,      [min(8), infer_links(true), infer_axioms(true), max_class_signature(4), generalize_properties(false)]).
 ontology_config(micro,    [min(20), generalize_properties(false)]).
 ontology_config(ncit,     [min(50), infer_axioms(true), generalize_properties(false), max_and_cardinality(3)]).
-ontology_config(foodon,   []).
+ontology_config(foodon,   [min(10), infer_axioms(true)]).
 ontology_config(go,       [min(25)]).
 ontology_config(peco,     [min(8), generalize_properties(false)]).
 ontology_config(ohmi,     [min(25), generalize_properties(false)]).

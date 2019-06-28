@@ -1,4 +1,4 @@
-# options: [min(50),dir(uberon),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(50),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X supplies X
 pattern_iri: http://purl.obolibrary.org/obo/uberon/X_supplies_X
 
@@ -8,6 +8,8 @@ description: >-
   Examples: [phrenic nerve](http://purl.obolibrary.org/obo/UBERON_0001884), [left renal artery](http://purl.obolibrary.org/obo/UBERON_0001186), [right renal artery](http://purl.obolibrary.org/obo/UBERON_0001185) (51 total)
 
 classes: 
+  CARO_0000000: "http://purl.obolibrary.org/obo/CARO_0000000"
+  anatomical structure: "UBERON:0000061"
   anatomical entity: "UBERON:0001062"
 
 
@@ -16,7 +18,7 @@ relations:
 
 
 vars:
-  v0: "'anatomical entity'"
+  v0: "'CARO_0000000' or 'anatomical entity'"
   v1: "'anatomical structure'"
 
 name:
@@ -47,7 +49,7 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('supplies' some %s)"
+  text: "(%s and ('supplies' some %s))"
   vars:
     - v0
     - v1

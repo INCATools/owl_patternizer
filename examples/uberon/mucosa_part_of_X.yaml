@@ -1,11 +1,11 @@
-# options: [min(50),dir(uberon),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(50),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: mucosa part of X
 pattern_iri: http://purl.obolibrary.org/obo/uberon/mucosa_part_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [cervical mucosa](http://purl.obolibrary.org/obo/UBERON_0012248), [mucosa of ureter](http://purl.obolibrary.org/obo/UBERON_0004980), [mucosa of urethra](http://purl.obolibrary.org/obo/UBERON_0012299) (95 total)
+  Examples: [cervical mucosa](http://purl.obolibrary.org/obo/UBERON_0012248), [mucosa of ureter](http://purl.obolibrary.org/obo/UBERON_0004980), [mucosa of urethra](http://purl.obolibrary.org/obo/UBERON_0012299) (96 total)
 
 classes: 
   mucosa: "UBERON:0000344"
@@ -20,13 +20,13 @@ vars:
   v0: "'anatomical entity'"
 
 name:
-  # Induced, frequency=0.7578947368421053, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.7604166666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "mucosa of %s"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.7684210526315789, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.7604166666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "A mucosa that is part of a %s [Automatically generated definition]."
   vars:
     - v0
@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'mucosa' and ('part of' some %s)"
+  text: "('mucosa' and ('part of' some %s))"
   vars:
     - v0

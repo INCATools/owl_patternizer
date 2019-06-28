@@ -1,4 +1,4 @@
-# options: [min(50),dir(uberon),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(50),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X extends_fibers_into X
 pattern_iri: http://purl.obolibrary.org/obo/uberon/X_extends_fibers_into_X
 
@@ -8,6 +8,7 @@ description: >-
   Examples: [thoracic dorsal root ganglion](http://purl.obolibrary.org/obo/UBERON_0002835), [lumbar dorsal root ganglion](http://purl.obolibrary.org/obo/UBERON_0002836), [cervical dorsal root ganglion](http://purl.obolibrary.org/obo/UBERON_0002834) (50 total)
 
 classes: 
+  CARO_0000000: "http://purl.obolibrary.org/obo/CARO_0000000"
   anatomical entity: "UBERON:0001062"
 
 
@@ -16,8 +17,8 @@ relations:
 
 
 vars:
-  v0: "'anatomical entity'"
-  v1: "'anatomical entity'"
+  v0: "'CARO_0000000' or 'anatomical entity'"
+  v1: "'CARO_0000000' or 'anatomical entity'"
 
 name:
   # Induced, frequency=0.04, p=http://www.w3.org/2000/01/rdf-schema#label 
@@ -47,7 +48,7 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('extends_fibers_into' some %s)"
+  text: "(%s and ('extends_fibers_into' some %s))"
   vars:
     - v0
     - v1
