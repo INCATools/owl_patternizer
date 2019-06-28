@@ -35,6 +35,11 @@
     void:dataDump <../tests/data/sweet.owl> ;
     lib:source <http://sweetontology.net/> .
 
+<sweet>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://www.geoscienceontology.org/svo/svl> .
+
 <wine>
     a lib:Ontology ;
     a lib:Virtual ;

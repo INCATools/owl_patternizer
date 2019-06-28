@@ -1,0 +1,45 @@
+# options: [min(2),dir('examples/sweet'),trim(true),base('http://purl.obolibrary.org/obo/sweet'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X hasSpatialDistribution magnetic moment
+pattern_iri: http://purl.obolibrary.org/obo/sweet/X_hasSpatialDistribution_magnetic_moment
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [magnetic field](http://sweetontology.net/phenElecMag#MagneticField), [magnetic dipole](http://sweetontology.net/phenElecMag#MagneticDipole) (2 total)
+
+classes: 
+  magnetic moment: "http://sweetontology.net/propCharge#MagneticMoment"
+  field: "http://sweetontology.net/reprMathFunction#Field"
+  dipole: "http://sweetontology.net/reprSpaceGeometry3D#Dipole"
+
+
+relations: 
+  hasSpatialDistribution: "http://sweetontology.net/relaSpace#hasSpatialDistribution"
+
+
+vars:
+  v0: "'field' or 'dipole'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "magnetic %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that hasSpatialDistribution a magnetic moment"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s and ('hasSpatialDistribution' some 'magnetic moment')"
+  vars:
+    - v0

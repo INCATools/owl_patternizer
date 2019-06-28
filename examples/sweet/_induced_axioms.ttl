@@ -1,0 +1,2200 @@
+@prefix                      inca: <https://w3id.org/inca/> .
+@prefix                       owl: <http://www.w3.org/2002/07/owl#> .
+@prefix                       xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix                      rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix                       rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix               stateSystem: <http://sweetontology.net/stateSystem#> .
+@prefix       stateRoleGeographic: <http://sweetontology.net/stateRoleGeographic#> .
+@prefix                stateFluid: <http://sweetontology.net/stateFluid#> .
+@prefix            reprTimeSeason: <http://sweetontology.net/reprTimeSeason#> .
+@prefix                  reprTime: <http://sweetontology.net/reprTime#> .
+@prefix       reprSpaceGeometry3D: <http://sweetontology.net/reprSpaceGeometry3D#> .
+@prefix         reprSpaceGeometry: <http://sweetontology.net/reprSpaceGeometry#> .
+@prefix          reprMathSolution: <http://sweetontology.net/reprMathSolution#> .
+@prefix             reprMathGraph: <http://sweetontology.net/reprMathGraph#> .
+@prefix          reprMathFunction: <http://sweetontology.net/reprMathFunction#> .
+@prefix                  reprMath: <http://sweetontology.net/reprMath#> .
+@prefix reprDataServiceValidation: <http://sweetontology.net/reprDataServiceValidation#> .
+@prefix                      repr: <http://sweetontology.net/repr#> .
+@prefix                  relaTime: <http://sweetontology.net/relaTime#> .
+@prefix                 relaSpace: <http://sweetontology.net/relaSpace#> .
+@prefix                   relaSci: <http://sweetontology.net/relaSci#> .
+@prefix              relaPhysical: <http://sweetontology.net/relaPhysical#> .
+@prefix                  relaMath: <http://sweetontology.net/relaMath#> .
+@prefix              relaChemical: <http://sweetontology.net/relaChemical#> .
+@prefix                      rela: <http://sweetontology.net/rela#> .
+@prefix             realmLandform: <http://sweetontology.net/realmLandform#> .
+@prefix       realmLandOrographic: <http://sweetontology.net/realmLandOrographic#> .
+@prefix          realmLandGlacial: <http://sweetontology.net/realmLandGlacial#> .
+@prefix          realmLandFluvial: <http://sweetontology.net/realmLandFluvial#> .
+@prefix          realmLandCoastal: <http://sweetontology.net/realmLandCoastal#> .
+@prefix      realmGeolContinental: <http://sweetontology.net/realmGeolContinental#> .
+@prefix                 realmGeol: <http://sweetontology.net/realmGeol#> .
+@prefix                 realmCryo: <http://sweetontology.net/realmCryo#> .
+@prefix          realmClimateZone: <http://sweetontology.net/realmClimateZone#> .
+@prefix    realmAtmoBoundaryLayer: <http://sweetontology.net/realmAtmoBoundaryLayer#> .
+@prefix                 realmAtmo: <http://sweetontology.net/realmAtmo#> .
+@prefix            realmAstroStar: <http://sweetontology.net/realmAstroStar#> .
+@prefix           realmAstroHelio: <http://sweetontology.net/realmAstroHelio#> .
+@prefix                     realm: <http://sweetontology.net/realm#> .
+@prefix                  propTime: <http://sweetontology.net/propTime#> .
+@prefix           propTemperature: <http://sweetontology.net/propTemperature#> .
+@prefix        propSpaceThickness: <http://sweetontology.net/propSpaceThickness#> .
+@prefix           propSpaceHeight: <http://sweetontology.net/propSpaceHeight#> .
+@prefix                 propSpace: <http://sweetontology.net/propSpace#> .
+@prefix              propQuantity: <http://sweetontology.net/propQuantity#> .
+@prefix               propOrdinal: <http://sweetontology.net/propOrdinal#> .
+@prefix                  propMass: <http://sweetontology.net/propMass#> .
+@prefix              propFunction: <http://sweetontology.net/propFunction#> .
+@prefix              propFraction: <http://sweetontology.net/propFraction#> .
+@prefix            propEnergyFlux: <http://sweetontology.net/propEnergyFlux#> .
+@prefix                propEnergy: <http://sweetontology.net/propEnergy#> .
+@prefix           propDiffusivity: <http://sweetontology.net/propDiffusivity#> .
+@prefix            propDifference: <http://sweetontology.net/propDifference#> .
+@prefix              propChemical: <http://sweetontology.net/propChemical#> .
+@prefix                propCharge: <http://sweetontology.net/propCharge#> .
+@prefix                propBinary: <http://sweetontology.net/propBinary#> .
+@prefix                      prop: <http://sweetontology.net/prop#> .
+@prefix              procPhysical: <http://sweetontology.net/procPhysical#> .
+@prefix             phenWaveNoise: <http://sweetontology.net/phenWaveNoise#> .
+@prefix                  phenWave: <http://sweetontology.net/phenWave#> .
+@prefix                phenSystem: <http://sweetontology.net/phenSystem#> .
+@prefix                  phenStar: <http://sweetontology.net/phenStar#> .
+@prefix                 phenSolid: <http://sweetontology.net/phenSolid#> .
+@prefix              phenReaction: <http://sweetontology.net/phenReaction#> .
+@prefix         phenPlanetClimate: <http://sweetontology.net/phenPlanetClimate#> .
+@prefix         phenOceanDynamics: <http://sweetontology.net/phenOceanDynamics#> .
+@prefix          phenOceanCoastal: <http://sweetontology.net/phenOceanCoastal#> .
+@prefix                 phenOcean: <http://sweetontology.net/phenOcean#> .
+@prefix                phenMixing: <http://sweetontology.net/phenMixing#> .
+@prefix                 phenHydro: <http://sweetontology.net/phenHydro#> .
+@prefix           phenGeolVolcano: <http://sweetontology.net/phenGeolVolcano#> .
+@prefix        phenGeolSeismicity: <http://sweetontology.net/phenGeolSeismicity#> .
+@prefix     phenGeolGeomorphology: <http://sweetontology.net/phenGeolGeomorphology#> .
+@prefix        phenFluidTransport: <http://sweetontology.net/phenFluidTransport#> .
+@prefix      phenFluidInstability: <http://sweetontology.net/phenFluidInstability#> .
+@prefix         phenFluidDynamics: <http://sweetontology.net/phenFluidDynamics#> .
+@prefix           phenEnvirImpact: <http://sweetontology.net/phenEnvirImpact#> .
+@prefix                phenEnergy: <http://sweetontology.net/phenEnergy#> .
+@prefix               phenElecMag: <http://sweetontology.net/phenElecMag#> .
+@prefix                 phenCycle: <http://sweetontology.net/phenCycle#> .
+@prefix              phenAtmoWind: <http://sweetontology.net/phenAtmoWind#> .
+@prefix          phenAtmoPressure: <http://sweetontology.net/phenAtmoPressure#> .
+@prefix     phenAtmoPrecipitation: <http://sweetontology.net/phenAtmoPrecipitation#> .
+@prefix               phenAtmoFog: <http://sweetontology.net/phenAtmoFog#> .
+@prefix             phenAtmoCloud: <http://sweetontology.net/phenAtmoCloud#> .
+@prefix                  phenAtmo: <http://sweetontology.net/phenAtmo#> .
+@prefix                      phen: <http://sweetontology.net/phen#> .
+@prefix                 matrWater: <http://sweetontology.net/matrWater#> .
+@prefix              matrSediment: <http://sweetontology.net/matrSediment#> .
+@prefix                 matrPlant: <http://sweetontology.net/matrPlant#> .
+@prefix       matrOrganicCompound: <http://sweetontology.net/matrOrganicCompound#> .
+@prefix       matrNaturalResource: <http://sweetontology.net/matrNaturalResource#> .
+@prefix            matrMicrobiota: <http://sweetontology.net/matrMicrobiota#> .
+@prefix               matrElement: <http://sweetontology.net/matrElement#> .
+@prefix              matrCompound: <http://sweetontology.net/matrCompound#> .
+@prefix                      matr: <http://sweetontology.net/matr#> .
+@prefix             humanResearch: <http://sweetontology.net/humanResearch#> .
+@prefix    humanEnvirConservation: <http://sweetontology.net/humanEnvirConservation#> .
+@prefix             humanDecision: <http://sweetontology.net/humanDecision#> .
+@prefix             humanCommerce: <http://sweetontology.net/humanCommerce#> .
+@prefix                     human: <http://sweetontology.net/human#> .
+
+# Named toplevel resources (99)
+
+humanDecision:DecisionTree
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( humanDecision:DecisionActivity
+						   reprMathGraph:Tree
+						 )
+			    ] .
+
+humanEnvirConservation:LandManagement
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( humanCommerce:Management
+						   [ a owl:Restriction ;
+						     owl:onProperty rela:hasRealm ;
+						     owl:someValuesFrom realm:Land
+						   ]
+						 )
+			    ] .
+
+humanResearch:ExperimentActivity
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( human:HumanActivity
+						   humanResearch:Experiment
+						 )
+			    ] .
+
+matrElement:TraceMetal
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( matr:TraceSubstance
+						   matrElement:Metal
+						 )
+			    ] .
+
+matrMicrobiota:MarineMicrobiota
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( matrMicrobiota:Microbiota
+						   matrPlant:MarinePlant
+						 )
+			    ] .
+
+matrNaturalResource:LandResource
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( matrNaturalResource:NaturalResource
+						   [ a owl:Restriction ;
+						     owl:onProperty rela:hasRealm ;
+						     owl:someValuesFrom realm:Land
+						   ]
+						 )
+			    ] .
+
+matrOrganicCompound:OrganicCompound
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( matrCompound:Compound
+						   matrOrganicCompound:OrganicSubstance
+						 )
+			    ] .
+
+phen:AtmosphereLandExchange
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenSystem:Exchange
+						   [ a owl:Restriction ;
+						     owl:onProperty relaSci:hasSource ;
+						     owl:someValuesFrom realm:Atmosphere
+						   ]
+						   [ a owl:Restriction ;
+						     owl:onProperty relaSci:hasSource ;
+						     owl:someValuesFrom realm:Land
+						   ]
+						 )
+			    ] .
+
+phen:RadiativeCooling
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( procPhysical:Cooling
+						   propEnergyFlux:RadiativeForcing
+						 )
+			    ] .
+
+phen:RadiativeHeating
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( procPhysical:Heating
+						   propEnergyFlux:RadiativeForcing
+						 )
+			    ] .
+
+phenAtmo:OrographicLifting
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenFluidInstability:Lifting
+						   [ a owl:Restriction ;
+						     owl:onProperty rela:hasPhenomena ;
+						     owl:someValuesFrom realmLandOrographic:Orographic
+						   ]
+						 )
+			    ] .
+
+phenAtmoCloud:MixingCloud
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenAtmoCloud:Cloud
+						   [ a owl:Restriction ;
+						     owl:onProperty rela:hasPhenomena ;
+						     owl:someValuesFrom phenMixing:Mixing
+						   ]
+						 )
+			    ] .
+
+phenAtmoFog:IceFog
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenAtmoFog:Fog
+						   [ a owl:Restriction ;
+						     owl:onProperty relaChemical:hasSubstance ;
+						     owl:someValuesFrom matrWater:Ice
+						   ]
+						 )
+			    ] .
+
+phenAtmoFog:MixingFog
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenAtmoFog:Fog
+						   [ a owl:Restriction ;
+						     owl:onProperty rela:hasPhenomena ;
+						     owl:someValuesFrom phenMixing:Mixing
+						   ]
+						 )
+			    ] .
+
+phenAtmoFog:MountainFog
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenAtmoFog:Fog
+						   [ a owl:Restriction ;
+						     owl:onProperty rela:hasRealm ;
+						     owl:someValuesFrom realmLandOrographic:Mountain
+						   ]
+						 )
+			    ] .
+
+phenAtmoFog:SandHaze
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenAtmoFog:Haze
+						   [ a owl:Restriction ;
+						     owl:onProperty relaChemical:hasSubstance ;
+						     owl:someValuesFrom matrSediment:Sand
+						   ]
+						 )
+			    ] .
+
+phenAtmoPrecipitation:AtmosphericPrecipitation
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phen:Precipitation
+						   phenAtmo:AtmosphericPhenomena
+						 )
+			    ] .
+
+phenAtmoPressure:AtmosphericAnticyclone
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenAtmo:AtmosphericPhenomena
+						   phenFluidDynamics:Anticyclone
+						 )
+			    ] .
+
+phenAtmoPressure:AtmosphericCyclone
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenAtmo:AtmosphericPhenomena
+						   phenFluidDynamics:Cyclone
+						 )
+			    ] .
+
+phenAtmoPressure:AtmosphericHighPressure
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenAtmo:AtmosphericPhenomena
+						   phenFluidDynamics:HighPressure
+						 )
+			    ] .
+
+phenAtmoPressure:AtmosphericLowPressure
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenAtmo:AtmosphericPhenomena
+						   phenFluidDynamics:LowPressure
+						 )
+			    ] .
+
+phenAtmoPressure:AtmosphericRidge
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenAtmo:AtmosphericPhenomena
+						   reprSpaceGeometry:Ridge
+						 )
+			    ] .
+
+phenAtmoPressure:AtmosphericTrough
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenAtmo:AtmosphericPhenomena
+						   reprSpaceGeometry:Trough
+						 )
+			    ] .
+
+phenAtmoWind:AtmosphericCirculation
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenAtmo:AtmosphericPhenomena
+						   phenFluidDynamics:Circulation
+						 )
+			    ] .
+
+phenElecMag:ElectricDipole
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenElecMag:ElectricField
+						   reprSpaceGeometry3D:Dipole
+						 )
+			    ] .
+
+phenElecMag:MagneticDipole
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( reprSpaceGeometry3D:Dipole
+						   [ a owl:Restriction ;
+						     owl:onProperty relaSpace:hasSpatialDistribution ;
+						     owl:someValuesFrom propCharge:MagneticMoment
+						   ]
+						 )
+			    ] .
+
+phenElecMag:MagneticField
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( reprMathFunction:Field
+						   [ a owl:Restriction ;
+						     owl:onProperty relaSpace:hasSpatialDistribution ;
+						     owl:someValuesFrom propCharge:MagneticMoment
+						   ]
+						 )
+			    ] .
+
+phenEnergy:SolarThermalPower
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenEnergy:SolarPower
+						   phenEnergy:ThermalCollection
+						 )
+			    ] .
+
+phenEnvirImpact:LandEnvironmentalImpact
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenEnvirImpact:EnvironmentalImpact
+						   [ a owl:Restriction ;
+						     owl:onProperty relaSci:hasImpactOn ;
+						     owl:someValuesFrom realm:Land
+						   ]
+						 )
+			    ] .
+
+phenEnvirImpact:MassExtinctionEvent
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phen:Event
+						   [ a owl:Restriction ;
+						     owl:onProperty relaSci:hasImpact ;
+						     owl:someValuesFrom phenEnvirImpact:Extinction
+						   ]
+						 )
+			    ] .
+
+phenEnvirImpact:NoisePollution
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenEnvirImpact:Pollution
+						   [ a owl:Restriction ;
+						     owl:onProperty relaSci:hasImpactOn ;
+						     owl:someValuesFrom phenWaveNoise:Noise
+						   ]
+						 )
+			    ] .
+
+phenEnvirImpact:OceanEnvironmentalImpact
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenEnvirImpact:EnvironmentalImpact
+						   [ a owl:Restriction ;
+						     owl:onProperty relaSci:hasImpactOn ;
+						     owl:someValuesFrom realm:Ocean
+						   ]
+						 )
+			    ] .
+
+phenFluidInstability:FluidInstability
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenFluidDynamics:FluidPhenomena
+						   stateSystem:Instability
+						 )
+			    ] .
+
+phenFluidTransport:HemisphericTransportOfAirPollutants
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenFluidTransport:Transport
+						   [ a owl:Restriction ;
+						     owl:onProperty rela:hasPhenomena ;
+						     owl:someValuesFrom phenEnvirImpact:AirPollution
+						   ]
+						 )
+			    ] .
+
+phenGeolSeismicity:SeismicBodyWave
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenGeolSeismicity:SeismicWave
+						   phenWave:BodyWave
+						 )
+			    ] .
+
+phenGeolSeismicity:SeismicSurfaceWave
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenGeolSeismicity:SeismicWave
+						   phenWave:SurfaceWave
+						 )
+			    ] .
+
+phenGeolVolcano:VolcanicEruption
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenGeolVolcano:VolcanicActivity
+						   phenReaction:Eruption
+						 )
+			    ] .
+
+phenGeolVolcano:VolcanicPlume
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenFluidTransport:Plume
+						   phenGeolVolcano:VolcanicPhenomena
+						 )
+			    ] .
+
+phenOceanCoastal:OceanTide
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenCycle:Tide
+						   phenOcean:OceanPhenomena
+						 )
+			    ] .
+
+phenOceanDynamics:OceanCirculation
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenFluidDynamics:Circulation
+						   phenOcean:OceanPhenomena
+						 )
+			    ] .
+
+phenOceanDynamics:OceanGyre
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenFluidDynamics:Gyre
+						   phenOcean:OceanPhenomena
+						 )
+			    ] .
+
+phenOceanDynamics:OceanMixing
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenMixing:Mixing
+						   phenOcean:OceanPhenomena
+						 )
+			    ] .
+
+phenPlanetClimate:ClimateAnomaly
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( propDifference:Anomaly
+						   [ a owl:Restriction ;
+						     owl:onProperty relaMath:deviationFrom ;
+						     owl:someValuesFrom phenPlanetClimate:Climate
+						   ]
+						 )
+			    ] .
+
+phenPlanetClimate:MoistureClimate
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenPlanetClimate:Climate
+						   [ a owl:Restriction ;
+						     owl:onProperty relaSci:hasQuantity ;
+						     owl:someValuesFrom propChemical:Moisture
+						   ]
+						 )
+			    ] .
+
+phenStar:StellarPhenomena
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phen:Phenomena
+						   [ a owl:Restriction ;
+						     owl:onProperty rela:hasRealm ;
+						     owl:someValuesFrom realmAstroStar:StellarRealm
+						   ]
+						 )
+			    ] .
+
+phenWave:AcousticGravityWave
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenWave:AcousticWave
+						   phenWave:GravityWave
+						 )
+			    ] .
+
+phenWave:InternalGravityWave
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenWave:GravityWave
+						   phenWave:InternalWave
+						 )
+			    ] .
+
+phenWave:ShearWave
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phenWave:TransverseWave
+						   [ a owl:Restriction ;
+						     owl:onProperty relaPhysical:hasRestoringForce ;
+						     owl:someValuesFrom phenSolid:Shear
+						   ]
+						 )
+			    ] .
+
+phenWave:WavePhenomena
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( phen:Phenomena
+						   [ a owl:Restriction ;
+						     owl:onProperty rela:hasPhenomena ;
+						     owl:someValuesFrom phenWave:Wave
+						   ]
+						 )
+			    ] .
+
+propBinary:BinaryProperty
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( prop:Property
+						   reprMathFunction:BinaryFunction
+						 )
+			    ] .
+
+propChemical:DissolvedLoad
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( matr:DissolvedSubstance
+						   propChemical:Load
+						 )
+			    ] .
+
+propChemical:SuspendedLoad
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( matr:SuspendedSubstance
+						   propChemical:Load
+						 )
+			    ] .
+
+propDiffusivity:EddyDiffusivity
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( propDiffusivity:Diffusivity
+						   [ a owl:Restriction ;
+						     owl:onProperty rela:hasPhenomena ;
+						     owl:someValuesFrom phenFluidDynamics:Eddy
+						   ]
+						 )
+			    ] .
+
+propEnergy:ChemicalEnergy
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( prop:ChemicalProperty
+						   propEnergy:Energy
+						 )
+			    ] .
+
+propEnergyFlux:EnergyFlux
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( propQuantity:Flux
+						   [ a owl:Restriction ;
+						     owl:onProperty relaPhysical:transportOf ;
+						     owl:someValuesFrom propEnergy:Energy
+						   ]
+						 )
+			    ] .
+
+propEnergyFlux:RadiativeFlux
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( propEnergyFlux:RadiativeForcing
+						   propQuantity:Flux
+						 )
+			    ] .
+
+propFraction:SaturationMixingRatio
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( propChemical:SaturationProperty
+						   propFraction:MixingRatio
+						 )
+			    ] .
+
+propMass:MassContent
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( propMass:Content
+						   propMass:MassConcentration
+						 )
+			    ] .
+
+propOrdinal:OrdinalProperty
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( prop:Property
+						   repr:OrdinalScale
+						 )
+			    ] .
+
+propQuantity:BiologicalQuantity
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( prop:BiologicalProperty
+						   propQuantity:Quantity
+						 )
+			    ] .
+
+propQuantity:ChemicalQuantity
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( prop:ChemicalProperty
+						   propQuantity:Quantity
+						 )
+			    ] .
+
+propQuantity:ElectromagneticRadiationQuantity
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( prop:ElectromagneticRadiationProperty
+						   propQuantity:ScientificQuantity
+						 )
+			    ] .
+
+propQuantity:PhysicalQuantity
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( prop:PhysicalProperty
+						   propQuantity:Quantity
+						 )
+			    ] .
+
+propQuantity:ThermodynamicQuantity
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( prop:ThermodynamicProperty
+						   propQuantity:Quantity
+						 )
+			    ] .
+
+propQuantity:VectorPotential
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( propQuantity:Potential
+						   propQuantity:VectorQuantity
+						 )
+			    ] .
+
+propSpace:SpatialMeasure
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( prop:Measure
+						   propSpace:SpatialProperty
+						 )
+			    ] .
+
+propSpaceThickness:AverageAnnualPrecipitation
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( propFunction:AnnualAverage
+						   propSpaceThickness:Precipitation
+						 )
+			    ] .
+
+propSpaceThickness:AverageDrySeasonPrecipitation
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( propFunction:Average
+						   propSpaceThickness:Precipitation
+						   [ a owl:Restriction ;
+						     owl:onProperty relaTime:hasTime ;
+						     owl:someValuesFrom reprTimeSeason:DrySeason
+						   ]
+						 )
+			    ] .
+
+propSpaceThickness:AverageMonthlyPrecipitation
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( propFunction:MonthlyAverage
+						   propSpaceThickness:Precipitation
+						 )
+			    ] .
+
+propSpaceThickness:PrecipitationRange
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( propSpaceHeight:HeightRange
+						   propSpaceThickness:Precipitation
+						 )
+			    ] .
+
+propTemperature:ColdestMonthTemperature
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( propTemperature:Temperature
+						   [ a owl:Restriction ;
+						     owl:onProperty rela:hasPhenomena ;
+						     owl:someValuesFrom reprTimeSeason:ColdestMonth
+						   ]
+						 )
+			    ] .
+
+propTemperature:WarmestMonthTemperature
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( propTemperature:Temperature
+						   [ a owl:Restriction ;
+						     owl:onProperty rela:hasPhenomena ;
+						     owl:someValuesFrom reprTimeSeason:WarmestMonth
+						   ]
+						 )
+			    ] .
+
+propTime:AverageITCZDominanceDuration
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( propFunction:Average
+						   propTime:ITCZDominanceDuration
+						 )
+			    ] .
+
+propTime:AverageSnowCoverDuration
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( propFunction:Average
+						   propTime:SnowCoverDuration
+						 )
+			    ] .
+
+propTime:AverageWinterDuration
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( propFunction:Average
+						   propTime:WinterDuration
+						 )
+			    ] .
+
+propTime:ITCZDominanceDuration
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( propTime:Duration
+						   [ a owl:Restriction ;
+						     owl:onProperty rela:hasPhenomena ;
+						     owl:someValuesFrom realmClimateZone:ITCZ
+						   ]
+						 )
+			    ] .
+
+propTime:SnowCoverDuration
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( propTime:Duration
+						   [ a owl:Restriction ;
+						     owl:onProperty rela:hasPhenomena ;
+						     owl:someValuesFrom phenHydro:SnowCover
+						   ]
+						 )
+			    ] .
+
+realm:PlanetarySurface
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( realm:PlanetaryRealm
+						   reprSpaceGeometry:Surface
+						 )
+			    ] .
+
+realmAstroHelio:DLayer
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( repr:3D
+						   reprSpaceGeometry3D:Layer
+						 )
+			    ] .
+
+realmAtmo:AtmosphereLayer
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( reprSpaceGeometry3D:Layer
+						   [ a owl:Restriction ;
+						     owl:onProperty rela:hasRealm ;
+						     owl:someValuesFrom realm:Atmosphere
+						   ]
+						 )
+			    ] .
+
+realmAtmo:InversionLayer
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( realmAtmo:AtmosphereLayer
+						   [ a owl:Restriction ;
+						     owl:onProperty rela:hasPhenomena ;
+						     owl:someValuesFrom phenFluidInstability:Inversion
+						   ]
+						 )
+			    ] .
+
+realmAtmoBoundaryLayer:NocturnalBoundaryLayer
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( realmAtmoBoundaryLayer:BoundaryLayer
+						   [ a owl:Restriction ;
+						     owl:onProperty rela:hasPhenomena ;
+						     owl:someValuesFrom phenAtmo:NocturnalCooling
+						   ]
+						 )
+			    ] .
+
+realmClimateZone:WetSummerDryWinterClimate
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( realmClimateZone:DryWinterClimate
+						   realmClimateZone:WetSummerClimate
+						 )
+			    ] .
+
+realmCryo:LandIce
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( matrWater:Ice
+						   [ a owl:Restriction ;
+						     owl:onProperty rela:hasRealm ;
+						     owl:someValuesFrom realm:Land
+						   ]
+						 )
+			    ] .
+
+realmGeol:DLayer
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( repr:3D
+						   reprSpaceGeometry3D:Layer
+						 )
+			    ] .
+
+realmGeolContinental:ContinentalCrust
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( realmGeol:Continental
+						   realmGeol:Crust
+						 )
+			    ] .
+
+realmGeolContinental:ContinentalLithosphere
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( realmGeol:Continental
+						   realmGeol:Lithosphere
+						 )
+			    ] .
+
+realmLandCoastal:CoastalLandform
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( realmLandform:Landform
+						   [ a owl:Restriction ;
+						     owl:onProperty rela:hasRealm ;
+						     owl:someValuesFrom realmLandCoastal:CoastalRegion
+						   ]
+						 )
+			    ] .
+
+realmLandCoastal:CoastalMargin
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( realmLandCoastal:CoastalRegion
+						   stateRoleGeographic:Margin
+						 )
+			    ] .
+
+realmLandCoastal:CoastalPlain
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( realmLandCoastal:CoastalRegion
+						   realmLandform:Plain
+						 )
+			    ] .
+
+realmLandFluvial:KarstLandform
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( realmLandform:Landform
+						   [ a owl:Restriction ;
+						     owl:onProperty rela:hasPhenomena ;
+						     owl:someValuesFrom phenGeolGeomorphology:Karst
+						   ]
+						 )
+			    ] .
+
+realmLandGlacial:GlacialPlain
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( realmLandGlacial:GlacialLandform
+						   realmLandform:Plain
+						 )
+			    ] .
+
+reprDataServiceValidation:ValidationEvidence
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( humanResearch:Evidence
+						   reprDataServiceValidation:Validation
+						 )
+			    ] .
+
+reprMathFunction:TensorField
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( reprMathFunction:Field
+						   reprMathFunction:TensorFunction
+						 )
+			    ] .
+
+reprMathFunction:VectorField
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( reprMathFunction:Field
+						   reprMathFunction:VectorFunction
+						 )
+			    ] .
+
+reprMathSolution:NumericalApproximation
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( reprMath:NumericalEntity
+						   reprMathSolution:Approximation
+						 )
+			    ] .
+
+reprMathSolution:NumericalSolution
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( reprMath:NumericalEntity
+						   reprMathSolution:Solution
+						 )
+			    ] .
+
+reprTime:TimeFrame
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( repr:ReferenceFrame
+						   reprTime:Time
+						 )
+			    ] .
+
+stateFluid:FluidEquilibriumState
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( stateFluid:FluidState
+						   stateSystem:EquilibriumState
+						 )
+			    ] .
+
+# Toplevel blank-nodes (99)
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenAtmoFog:IceFog ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenAtmoFog:Fog
+					     [ a owl:Restriction ;
+					       owl:onProperty relaChemical:hasSubstance ;
+					       owl:someValuesFrom matrWater:Ice
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenAtmoFog:MixingFog ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenAtmoFog:Fog
+					     [ a owl:Restriction ;
+					       owl:onProperty rela:hasPhenomena ;
+					       owl:someValuesFrom phenMixing:Mixing
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenAtmoFog:MountainFog ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenAtmoFog:Fog
+					     [ a owl:Restriction ;
+					       owl:onProperty rela:hasRealm ;
+					       owl:someValuesFrom realmLandOrographic:Mountain
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenAtmoFog:SandHaze ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenAtmoFog:Haze
+					     [ a owl:Restriction ;
+					       owl:onProperty relaChemical:hasSubstance ;
+					       owl:someValuesFrom matrSediment:Sand
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenAtmoPrecipitation:AtmosphericPrecipitation ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phen:Precipitation
+					     phenAtmo:AtmosphericPhenomena
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenAtmoPressure:AtmosphericAnticyclone ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenAtmo:AtmosphericPhenomena
+					     phenFluidDynamics:Anticyclone
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenAtmoPressure:AtmosphericCyclone ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenAtmo:AtmosphericPhenomena
+					     phenFluidDynamics:Cyclone
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource humanEnvirConservation:LandManagement ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( humanCommerce:Management
+					     [ a owl:Restriction ;
+					       owl:onProperty rela:hasRealm ;
+					       owl:someValuesFrom realm:Land
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenAtmoPressure:AtmosphericHighPressure ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenAtmo:AtmosphericPhenomena
+					     phenFluidDynamics:HighPressure
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenAtmoPressure:AtmosphericLowPressure ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenAtmo:AtmosphericPhenomena
+					     phenFluidDynamics:LowPressure
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenAtmoPressure:AtmosphericRidge ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenAtmo:AtmosphericPhenomena
+					     reprSpaceGeometry:Ridge
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenAtmoPressure:AtmosphericTrough ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenAtmo:AtmosphericPhenomena
+					     reprSpaceGeometry:Trough
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenAtmoWind:AtmosphericCirculation ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenAtmo:AtmosphericPhenomena
+					     phenFluidDynamics:Circulation
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenElecMag:ElectricDipole ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenElecMag:ElectricField
+					     reprSpaceGeometry3D:Dipole
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenElecMag:MagneticDipole ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( reprSpaceGeometry3D:Dipole
+					     [ a owl:Restriction ;
+					       owl:onProperty relaSpace:hasSpatialDistribution ;
+					       owl:someValuesFrom propCharge:MagneticMoment
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenElecMag:MagneticField ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( reprMathFunction:Field
+					     [ a owl:Restriction ;
+					       owl:onProperty relaSpace:hasSpatialDistribution ;
+					       owl:someValuesFrom propCharge:MagneticMoment
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenEnergy:SolarThermalPower ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenEnergy:SolarPower
+					     phenEnergy:ThermalCollection
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource humanResearch:ExperimentActivity ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( human:HumanActivity
+					     humanResearch:Experiment
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenEnvirImpact:LandEnvironmentalImpact ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenEnvirImpact:EnvironmentalImpact
+					     [ a owl:Restriction ;
+					       owl:onProperty relaSci:hasImpactOn ;
+					       owl:someValuesFrom realm:Land
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenEnvirImpact:MassExtinctionEvent ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phen:Event
+					     [ a owl:Restriction ;
+					       owl:onProperty relaSci:hasImpact ;
+					       owl:someValuesFrom phenEnvirImpact:Extinction
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 7
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenEnvirImpact:NoisePollution ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenEnvirImpact:Pollution
+					     [ a owl:Restriction ;
+					       owl:onProperty relaSci:hasImpactOn ;
+					       owl:someValuesFrom phenWaveNoise:Noise
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenEnvirImpact:OceanEnvironmentalImpact ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenEnvirImpact:EnvironmentalImpact
+					     [ a owl:Restriction ;
+					       owl:onProperty relaSci:hasImpactOn ;
+					       owl:someValuesFrom realm:Ocean
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenFluidInstability:FluidInstability ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenFluidDynamics:FluidPhenomena
+					     stateSystem:Instability
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenFluidTransport:HemisphericTransportOfAirPollutants ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenFluidTransport:Transport
+					     [ a owl:Restriction ;
+					       owl:onProperty rela:hasPhenomena ;
+					       owl:someValuesFrom phenEnvirImpact:AirPollution
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenGeolSeismicity:SeismicBodyWave ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenGeolSeismicity:SeismicWave
+					     phenWave:BodyWave
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenGeolSeismicity:SeismicSurfaceWave ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenGeolSeismicity:SeismicWave
+					     phenWave:SurfaceWave
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenGeolVolcano:VolcanicEruption ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenGeolVolcano:VolcanicActivity
+					     phenReaction:Eruption
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource matrElement:TraceMetal ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( matr:TraceSubstance
+					     matrElement:Metal
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenGeolVolcano:VolcanicPlume ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenFluidTransport:Plume
+					     phenGeolVolcano:VolcanicPhenomena
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenOceanCoastal:OceanTide ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenCycle:Tide
+					     phenOcean:OceanPhenomena
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenOceanDynamics:OceanCirculation ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenFluidDynamics:Circulation
+					     phenOcean:OceanPhenomena
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenOceanDynamics:OceanGyre ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenFluidDynamics:Gyre
+					     phenOcean:OceanPhenomena
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenOceanDynamics:OceanMixing ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenMixing:Mixing
+					     phenOcean:OceanPhenomena
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenPlanetClimate:ClimateAnomaly ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( propDifference:Anomaly
+					     [ a owl:Restriction ;
+					       owl:onProperty relaMath:deviationFrom ;
+					       owl:someValuesFrom phenPlanetClimate:Climate
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenPlanetClimate:MoistureClimate ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenPlanetClimate:Climate
+					     [ a owl:Restriction ;
+					       owl:onProperty relaSci:hasQuantity ;
+					       owl:someValuesFrom propChemical:Moisture
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenStar:StellarPhenomena ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phen:Phenomena
+					     [ a owl:Restriction ;
+					       owl:onProperty rela:hasRealm ;
+					       owl:someValuesFrom realmAstroStar:StellarRealm
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenWave:AcousticGravityWave ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenWave:AcousticWave
+					     phenWave:GravityWave
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource matrMicrobiota:MarineMicrobiota ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( matrMicrobiota:Microbiota
+					     matrPlant:MarinePlant
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenWave:InternalGravityWave ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenWave:GravityWave
+					     phenWave:InternalWave
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenWave:ShearWave ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenWave:TransverseWave
+					     [ a owl:Restriction ;
+					       owl:onProperty relaPhysical:hasRestoringForce ;
+					       owl:someValuesFrom phenSolid:Shear
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenWave:WavePhenomena ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phen:Phenomena
+					     [ a owl:Restriction ;
+					       owl:onProperty rela:hasPhenomena ;
+					       owl:someValuesFrom phenWave:Wave
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propBinary:BinaryProperty ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( prop:Property
+					     reprMathFunction:BinaryFunction
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propChemical:DissolvedLoad ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( matr:DissolvedSubstance
+					     propChemical:Load
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propChemical:SuspendedLoad ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( matr:SuspendedSubstance
+					     propChemical:Load
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propDiffusivity:EddyDiffusivity ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( propDiffusivity:Diffusivity
+					     [ a owl:Restriction ;
+					       owl:onProperty rela:hasPhenomena ;
+					       owl:someValuesFrom phenFluidDynamics:Eddy
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propEnergy:ChemicalEnergy ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( prop:ChemicalProperty
+					     propEnergy:Energy
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propEnergyFlux:EnergyFlux ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( propQuantity:Flux
+					     [ a owl:Restriction ;
+					       owl:onProperty relaPhysical:transportOf ;
+					       owl:someValuesFrom propEnergy:Energy
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propEnergyFlux:RadiativeFlux ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( propEnergyFlux:RadiativeForcing
+					     propQuantity:Flux
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propFraction:SaturationMixingRatio ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( propChemical:SaturationProperty
+					     propFraction:MixingRatio
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propMass:MassContent ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( propMass:Content
+					     propMass:MassConcentration
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource matrNaturalResource:LandResource ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( matrNaturalResource:NaturalResource
+					     [ a owl:Restriction ;
+					       owl:onProperty rela:hasRealm ;
+					       owl:someValuesFrom realm:Land
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propOrdinal:OrdinalProperty ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( prop:Property
+					     repr:OrdinalScale
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propQuantity:BiologicalQuantity ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( prop:BiologicalProperty
+					     propQuantity:Quantity
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propQuantity:ChemicalQuantity ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( prop:ChemicalProperty
+					     propQuantity:Quantity
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propQuantity:ElectromagneticRadiationQuantity ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( prop:ElectromagneticRadiationProperty
+					     propQuantity:ScientificQuantity
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propQuantity:PhysicalQuantity ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( prop:PhysicalProperty
+					     propQuantity:Quantity
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propQuantity:ThermodynamicQuantity ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( prop:ThermodynamicProperty
+					     propQuantity:Quantity
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propQuantity:VectorPotential ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( propQuantity:Potential
+					     propQuantity:VectorQuantity
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propSpace:SpatialMeasure ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( prop:Measure
+					     propSpace:SpatialProperty
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propSpaceThickness:AverageAnnualPrecipitation ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( propFunction:AnnualAverage
+					     propSpaceThickness:Precipitation
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource matrOrganicCompound:OrganicCompound ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( matrCompound:Compound
+					     matrOrganicCompound:OrganicSubstance
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propSpaceThickness:AverageDrySeasonPrecipitation ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( propFunction:Average
+					     propSpaceThickness:Precipitation
+					     [ a owl:Restriction ;
+					       owl:onProperty relaTime:hasTime ;
+					       owl:someValuesFrom reprTimeSeason:DrySeason
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propSpaceThickness:AverageMonthlyPrecipitation ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( propFunction:MonthlyAverage
+					     propSpaceThickness:Precipitation
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propSpaceThickness:PrecipitationRange ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( propSpaceHeight:HeightRange
+					     propSpaceThickness:Precipitation
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propTemperature:ColdestMonthTemperature ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( propTemperature:Temperature
+					     [ a owl:Restriction ;
+					       owl:onProperty rela:hasPhenomena ;
+					       owl:someValuesFrom reprTimeSeason:ColdestMonth
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propTemperature:WarmestMonthTemperature ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( propTemperature:Temperature
+					     [ a owl:Restriction ;
+					       owl:onProperty rela:hasPhenomena ;
+					       owl:someValuesFrom reprTimeSeason:WarmestMonth
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propTime:AverageITCZDominanceDuration ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( propFunction:Average
+					     propTime:ITCZDominanceDuration
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propTime:AverageSnowCoverDuration ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( propFunction:Average
+					     propTime:SnowCoverDuration
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propTime:AverageWinterDuration ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( propFunction:Average
+					     propTime:WinterDuration
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propTime:ITCZDominanceDuration ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( propTime:Duration
+					     [ a owl:Restriction ;
+					       owl:onProperty rela:hasPhenomena ;
+					       owl:someValuesFrom realmClimateZone:ITCZ
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 7
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource propTime:SnowCoverDuration ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( propTime:Duration
+					     [ a owl:Restriction ;
+					       owl:onProperty rela:hasPhenomena ;
+					       owl:someValuesFrom phenHydro:SnowCover
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource realm:PlanetarySurface ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( realm:PlanetaryRealm
+					     reprSpaceGeometry:Surface
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource realmAstroHelio:DLayer ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( repr:3D
+					     reprSpaceGeometry3D:Layer
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource realmAtmo:AtmosphereLayer ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( reprSpaceGeometry3D:Layer
+					     [ a owl:Restriction ;
+					       owl:onProperty rela:hasRealm ;
+					       owl:someValuesFrom realm:Atmosphere
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource realmAtmo:InversionLayer ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( realmAtmo:AtmosphereLayer
+					     [ a owl:Restriction ;
+					       owl:onProperty rela:hasPhenomena ;
+					       owl:someValuesFrom phenFluidInstability:Inversion
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource realmAtmoBoundaryLayer:NocturnalBoundaryLayer ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( realmAtmoBoundaryLayer:BoundaryLayer
+					     [ a owl:Restriction ;
+					       owl:onProperty rela:hasPhenomena ;
+					       owl:someValuesFrom phenAtmo:NocturnalCooling
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource realmClimateZone:WetSummerDryWinterClimate ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( realmClimateZone:DryWinterClimate
+					     realmClimateZone:WetSummerClimate
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource realmCryo:LandIce ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( matrWater:Ice
+					     [ a owl:Restriction ;
+					       owl:onProperty rela:hasRealm ;
+					       owl:someValuesFrom realm:Land
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phen:AtmosphereLandExchange ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenSystem:Exchange
+					     [ a owl:Restriction ;
+					       owl:onProperty relaSci:hasSource ;
+					       owl:someValuesFrom realm:Atmosphere
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty relaSci:hasSource ;
+					       owl:someValuesFrom realm:Land
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource realmGeol:DLayer ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( repr:3D
+					     reprSpaceGeometry3D:Layer
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource realmGeolContinental:ContinentalCrust ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( realmGeol:Continental
+					     realmGeol:Crust
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource realmGeolContinental:ContinentalLithosphere ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( realmGeol:Continental
+					     realmGeol:Lithosphere
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource realmLandCoastal:CoastalLandform ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( realmLandform:Landform
+					     [ a owl:Restriction ;
+					       owl:onProperty rela:hasRealm ;
+					       owl:someValuesFrom realmLandCoastal:CoastalRegion
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource realmLandCoastal:CoastalMargin ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( realmLandCoastal:CoastalRegion
+					     stateRoleGeographic:Margin
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource humanDecision:DecisionTree ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( humanDecision:DecisionActivity
+					     reprMathGraph:Tree
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource realmLandCoastal:CoastalPlain ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( realmLandCoastal:CoastalRegion
+					     realmLandform:Plain
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource realmLandFluvial:KarstLandform ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( realmLandform:Landform
+					     [ a owl:Restriction ;
+					       owl:onProperty rela:hasPhenomena ;
+					       owl:someValuesFrom phenGeolGeomorphology:Karst
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource realmLandGlacial:GlacialPlain ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( realmLandGlacial:GlacialLandform
+					     realmLandform:Plain
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource reprDataServiceValidation:ValidationEvidence ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( humanResearch:Evidence
+					     reprDataServiceValidation:Validation
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phen:RadiativeCooling ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( procPhysical:Cooling
+					     propEnergyFlux:RadiativeForcing
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource reprMathFunction:TensorField ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( reprMathFunction:Field
+					     reprMathFunction:TensorFunction
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource reprMathFunction:VectorField ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( reprMathFunction:Field
+					     reprMathFunction:VectorFunction
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource reprMathSolution:NumericalApproximation ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( reprMath:NumericalEntity
+					     reprMathSolution:Approximation
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource reprMathSolution:NumericalSolution ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( reprMath:NumericalEntity
+					     reprMathSolution:Solution
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource reprTime:TimeFrame ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( repr:ReferenceFrame
+					     reprTime:Time
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource stateFluid:FluidEquilibriumState ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( stateFluid:FluidState
+					     stateSystem:EquilibriumState
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phen:RadiativeHeating ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( procPhysical:Heating
+					     propEnergyFlux:RadiativeForcing
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenAtmo:OrographicLifting ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenFluidInstability:Lifting
+					     [ a owl:Restriction ;
+					       owl:onProperty rela:hasPhenomena ;
+					       owl:someValuesFrom realmLandOrographic:Orographic
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource phenAtmoCloud:MixingCloud ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( phenAtmoCloud:Cloud
+					     [ a owl:Restriction ;
+					       owl:onProperty rela:hasPhenomena ;
+					       owl:someValuesFrom phenMixing:Mixing
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .

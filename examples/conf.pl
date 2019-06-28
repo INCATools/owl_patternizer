@@ -88,6 +88,7 @@ ontology_config(xao,      [infer_axioms(true), min(12), generalize_properties(fa
 ontology_config(wbbt,     [infer_axioms(true), min(12), generalize_properties(false)]).
 ontology_config(fao,      [infer_axioms(true), min(12), generalize_properties(false)]).
 ontology_config(sweet,    [autolabels(true), infer_axioms(true), min(2), generalize_properties(false)]).
+ontology_config(svl,      [autolabels(true), infer_axioms(true), min(2), generalize_properties(false)]).
 ontology_config(obi,      [min(8), generalize_properties(false)]).
 ontology_config(ero,      [min(8), generalize_properties(false)]).
 ontology_config(vo,       [min(4), generalize_properties(false)]).
