@@ -49,6 +49,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'zwitterion' and ('is tautomer of' some %s)"
+  text: "('zwitterion' and ('is tautomer of' some %s))"
   vars:
     - v0

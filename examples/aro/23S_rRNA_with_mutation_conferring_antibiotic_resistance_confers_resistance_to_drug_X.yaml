@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/aro/23S_rRNA_with_mutation_conferrin
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [Chlamydomonas reinhardtii 23S rRNA with mutation conferring resistance to erythromycin](http://purl.obolibrary.org/obo/ARO_3004132), [Mycobacterium avium 23S rRNA with mutation conferring resistance to clarithromycin](http://purl.obolibrary.org/obo/ARO_3004164), [Escherichia coli 23S rRNA with mutation conferring resistance to clindamycin](http://purl.obolibrary.org/obo/ARO_3004149) (7 total)
+  Examples: [Mycoplasma pneumoniae 23S rRNA mutation conferring resistance to erythromycin](http://purl.obolibrary.org/obo/ARO_3004179), [Mycobacterium kansasii 23S rRNA with mutation conferring resistance to clarithromycin](http://purl.obolibrary.org/obo/ARO_3004168), [Escherichia coli 23S rRNA with mutation conferring resistance to clindamycin](http://purl.obolibrary.org/obo/ARO_3004149) (7 total)
 
 classes: 
   antibiotic molecule: "http://purl.obolibrary.org/obo/ARO_1000003"
@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'23S rRNA with mutation conferring antibiotic resistance' and ('confers_resistance_to_drug' some %s)"
+  text: "('23S rRNA with mutation conferring antibiotic resistance' and ('confers_resistance_to_drug' some %s))"
   vars:
     - v0

@@ -20,7 +20,7 @@ vars:
   v0: "'molecular entity'"
 
 name:
-  # Induced, frequency=0.6, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.4, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "iron %s"
   vars:
     - v0
@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('has part' some 'iron atom')"
+  text: "(%s and ('has part' some 'iron atom'))"
   vars:
     - v0

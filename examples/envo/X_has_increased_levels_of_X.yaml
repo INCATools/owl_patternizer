@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/X_has_increased_levels_of_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [enriched soil](http://purl.obolibrary.org/obo/ENVO_00003082), [chalk soil](http://purl.obolibrary.org/obo/ENVO_00003914), [water vapour saturated air](http://purl.obolibrary.org/obo/ENVO_01000829) (35 total)
+  Examples: [enriched soil](http://purl.obolibrary.org/obo/ENVO_00003082), [chalk soil](http://purl.obolibrary.org/obo/ENVO_00003914), [water vapour saturated air](http://purl.obolibrary.org/obo/ENVO_01000829) (36 total)
 
 classes: 
   fiat object: "BFO:0000024"
@@ -21,7 +21,7 @@ vars:
   v1: "'material entity'"
 
 name:
-  # Induced, frequency=0.6571428571428571, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.6111111111111112, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
@@ -42,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has_increased_levels_of' some %s)"
+  text: "(%s and ('has_increased_levels_of' some %s))"
   vars:
     - v0
     - v1

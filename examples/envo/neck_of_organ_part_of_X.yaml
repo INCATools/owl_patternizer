@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'neck of organ' and ('part of' some %s)"
+  text: "('neck of organ' and ('part of' some %s))"
   vars:
     - v0

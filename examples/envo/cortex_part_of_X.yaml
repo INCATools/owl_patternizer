@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'cortex' and ('part of' some %s)"
+  text: "('cortex' and ('part of' some %s))"
   vars:
     - v0

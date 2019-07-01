@@ -1,14 +1,14 @@
-# options: [min(20),dir(cl),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X part of X
 pattern_iri: http://purl.obolibrary.org/obo/cl/X_part_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [neural cell](http://purl.obolibrary.org/obo/CL_0002319), [compound eye retinal cell](http://purl.obolibrary.org/obo/CL_0009001), [pituitary gland cell](http://purl.obolibrary.org/obo/CL_2000004) (654 total)
+  Examples: [compound eye retinal cell](http://purl.obolibrary.org/obo/CL_0009001), [pituitary gland cell](http://purl.obolibrary.org/obo/CL_2000004), [inner cell mass native cell](http://purl.obolibrary.org/obo/CL_2000020) (2631 total)
 
 classes: 
-  anatomical entity: "UBERON:0001062"
+  owl:Thing: "owl:Thing"
 
 
 relations: 
@@ -16,19 +16,19 @@ relations:
 
 
 vars:
-  v0: "'cell'"
-  v1: "'anatomical entity'"
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
 
 name:
-  # Induced, frequency=0.28134556574923547, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.37210186240973014, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
     - v0
 
 def:
-  # Induced, frequency=0.1345565749235474, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "Any %s that is part of a %s."
+  # Induced, frequency=0.12884834663625996, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a %s [Automatically generated definition]."
   vars:
     - v0
     - v1
@@ -37,11 +37,17 @@ annotationProperties:
   exact_synonym: "oio:hasExactSynonym"
   related_synonym: "oio:hasRelatedSynonym"
 
-# could not infer annotations
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
 
 
 equivalentTo:
-  text: "%s and ('part of' some %s)"
+  text: "(%s and ('part of' some %s))"
   vars:
     - v0
     - v1

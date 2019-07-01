@@ -1,0 +1,65 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/GO_0045745	positive regulation of G protein-coupled receptor signaling pathway	http://purl.obolibrary.org/obo/GO_0007186	G protein-coupled receptor signaling pathway
+http://purl.obolibrary.org/obo/GO_0014057	positive regulation of acetylcholine secretion, neurotransmission	http://purl.obolibrary.org/obo/GO_0014055	acetylcholine secretion, neurotransmission
+http://purl.obolibrary.org/obo/GO_0051954	positive regulation of amine transport	http://purl.obolibrary.org/obo/GO_0015837	amine transport
+http://purl.obolibrary.org/obo/GO_0051957	positive regulation of amino acid transport	http://purl.obolibrary.org/obo/GO_0006865	amino acid transport
+http://purl.obolibrary.org/obo/GO_1903793	positive regulation of anion transport	http://purl.obolibrary.org/obo/GO_0006820	anion transport
+http://purl.obolibrary.org/obo/GO_0048520	positive regulation of behavior	http://purl.obolibrary.org/obo/GO_0007610	behavior
+http://purl.obolibrary.org/obo/GO_0048518	positive regulation of biological process	http://purl.obolibrary.org/obo/GO_0008150	biological_process
+http://purl.obolibrary.org/obo/GO_0009896	positive regulation of catabolic process	http://purl.obolibrary.org/obo/GO_0009056	catabolic process
+http://purl.obolibrary.org/obo/GO_0033605	positive regulation of catecholamine secretion	http://purl.obolibrary.org/obo/GO_0050432	catecholamine secretion
+http://purl.obolibrary.org/obo/GO_0010647	positive regulation of cell communication	http://purl.obolibrary.org/obo/GO_0007154	cell communication
+http://purl.obolibrary.org/obo/GO_0048522	positive regulation of cellular process	http://purl.obolibrary.org/obo/GO_0009987	cellular process
+http://purl.obolibrary.org/obo/GO_2001040	positive regulation of cellular response to drug	http://purl.obolibrary.org/obo/GO_0035690	cellular response to drug
+http://purl.obolibrary.org/obo/GO_0042753	positive regulation of circadian rhythm	http://purl.obolibrary.org/obo/GO_0007623	circadian rhythm
+http://purl.obolibrary.org/obo/GO_0045938	positive regulation of circadian sleep/wake cycle, sleep	http://purl.obolibrary.org/obo/GO_0050802	circadian sleep/wake cycle, sleep
+http://purl.obolibrary.org/obo/GO_1905789	positive regulation of detection of mechanical stimulus involved in sensory perception of touch	http://purl.obolibrary.org/obo/GO_0050976	detection of mechanical stimulus involved in sensory perception of touch
+http://purl.obolibrary.org/obo/GO_0051094	positive regulation of developmental process	http://purl.obolibrary.org/obo/GO_0032502	developmental process
+http://purl.obolibrary.org/obo/GO_0060456	positive regulation of digestive system process	http://purl.obolibrary.org/obo/GO_0022600	digestive system process
+http://purl.obolibrary.org/obo/GO_0033603	positive regulation of dopamine secretion	http://purl.obolibrary.org/obo/GO_0014046	dopamine secretion
+http://purl.obolibrary.org/obo/GO_0045805	positive regulation of eclosion	http://purl.obolibrary.org/obo/GO_0007562	eclosion
+http://purl.obolibrary.org/obo/GO_2000253	positive regulation of feeding behavior	http://purl.obolibrary.org/obo/GO_0007631	feeding behavior
+http://purl.obolibrary.org/obo/GO_0014054	positive regulation of gamma-aminobutyric acid secretion	http://purl.obolibrary.org/obo/GO_0014051	gamma-aminobutyric acid secretion
+http://purl.obolibrary.org/obo/GO_0014049	positive regulation of glutamate secretion	http://purl.obolibrary.org/obo/GO_0014047	glutamate secretion
+http://purl.obolibrary.org/obo/GO_1903296	positive regulation of glutamate secretion, neurotransmission	http://purl.obolibrary.org/obo/GO_0061535	glutamate secretion, neurotransmission
+http://purl.obolibrary.org/obo/GO_0046887	positive regulation of hormone secretion	http://purl.obolibrary.org/obo/GO_0046879	hormone secretion
+http://purl.obolibrary.org/obo/GO_1904480	positive regulation of intestinal absorption	http://purl.obolibrary.org/obo/GO_0050892	intestinal absorption
+http://purl.obolibrary.org/obo/GO_0043270	positive regulation of ion transport	http://purl.obolibrary.org/obo/GO_0006811	ion transport
+http://purl.obolibrary.org/obo/GO_0050996	positive regulation of lipid catabolic process	http://purl.obolibrary.org/obo/GO_0016042	lipid catabolic process
+http://purl.obolibrary.org/obo/GO_0045834	positive regulation of lipid metabolic process	http://purl.obolibrary.org/obo/GO_0006629	lipid metabolic process
+http://purl.obolibrary.org/obo/GO_0010884	positive regulation of lipid storage	http://purl.obolibrary.org/obo/GO_0019915	lipid storage
+http://purl.obolibrary.org/obo/GO_0040017	positive regulation of locomotion	http://purl.obolibrary.org/obo/GO_0040011	locomotion
+http://purl.obolibrary.org/obo/GO_1902437	positive regulation of male mating behavior	http://purl.obolibrary.org/obo/GO_0060179	male mating behavior
+http://purl.obolibrary.org/obo/GO_0009893	positive regulation of metabolic process	http://purl.obolibrary.org/obo/GO_0008152	metabolic process
+http://purl.obolibrary.org/obo/GO_0043902	positive regulation of multi-organism process	http://purl.obolibrary.org/obo/GO_0051704	multi-organism process
+http://purl.obolibrary.org/obo/GO_0051240	positive regulation of multicellular organismal process	http://purl.obolibrary.org/obo/GO_0032501	multicellular organismal process
+http://purl.obolibrary.org/obo/GO_0031646	positive regulation of neurological system process	http://purl.obolibrary.org/obo/GO_0050877	nervous system process
+http://purl.obolibrary.org/obo/GO_0001956	positive regulation of neurotransmitter secretion	http://purl.obolibrary.org/obo/GO_0007269	neurotransmitter secretion
+http://purl.obolibrary.org/obo/GO_0051590	positive regulation of neurotransmitter transport	http://purl.obolibrary.org/obo/GO_0006836	neurotransmitter transport
+http://purl.obolibrary.org/obo/GO_0032892	positive regulation of organic acid transport	http://purl.obolibrary.org/obo/GO_0015849	organic acid transport
+http://purl.obolibrary.org/obo/GO_0090277	positive regulation of peptide hormone secretion	http://purl.obolibrary.org/obo/GO_0030072	peptide hormone secretion
+http://purl.obolibrary.org/obo/GO_0002793	positive regulation of peptide secretion	http://purl.obolibrary.org/obo/GO_0002790	peptide secretion
+http://purl.obolibrary.org/obo/GO_2000243	positive regulation of reproductive process	http://purl.obolibrary.org/obo/GO_0022414	reproductive process
+http://purl.obolibrary.org/obo/GO_1903942	positive regulation of respiratory gaseous exchange	http://purl.obolibrary.org/obo/GO_0007585	respiratory gaseous exchange
+http://purl.obolibrary.org/obo/GO_1901421	positive regulation of response to alcohol	http://purl.obolibrary.org/obo/GO_0097305	response to alcohol
+http://purl.obolibrary.org/obo/GO_2001025	positive regulation of response to drug	http://purl.obolibrary.org/obo/GO_0042493	response to drug
+http://purl.obolibrary.org/obo/GO_0032103	positive regulation of response to external stimulus	http://purl.obolibrary.org/obo/GO_0009605	response to external stimulus
+http://purl.obolibrary.org/obo/GO_0032106	positive regulation of response to extracellular stimulus	http://purl.obolibrary.org/obo/GO_0009991	response to extracellular stimulus
+http://purl.obolibrary.org/obo/GO_0032109	positive regulation of response to nutrient levels	http://purl.obolibrary.org/obo/GO_0031667	response to nutrient levels
+http://purl.obolibrary.org/obo/GO_0048584	positive regulation of response to stimulus	http://purl.obolibrary.org/obo/GO_0050896	response to stimulus
+http://purl.obolibrary.org/obo/GO_0046878	positive regulation of saliva secretion	http://purl.obolibrary.org/obo/GO_0046541	saliva secretion
+http://purl.obolibrary.org/obo/GO_0051047	positive regulation of secretion	http://purl.obolibrary.org/obo/GO_0046903	secretion
+http://purl.obolibrary.org/obo/GO_1903532	positive regulation of secretion by cell	http://purl.obolibrary.org/obo/GO_0032940	secretion by cell
+http://purl.obolibrary.org/obo/GO_1904662	positive regulation of sensory perception of bitter taste	http://purl.obolibrary.org/obo/GO_0050913	sensory perception of bitter taste
+http://purl.obolibrary.org/obo/GO_1904058	positive regulation of sensory perception of pain	http://purl.obolibrary.org/obo/GO_0019233	sensory perception of pain
+http://purl.obolibrary.org/obo/GO_1904658	positive regulation of sensory perception of sweet taste	http://purl.obolibrary.org/obo/GO_0050916	sensory perception of sweet taste
+http://purl.obolibrary.org/obo/GO_0014064	positive regulation of serotonin secretion	http://purl.obolibrary.org/obo/GO_0001820	serotonin secretion
+http://purl.obolibrary.org/obo/GO_0009967	positive regulation of signal transduction	http://purl.obolibrary.org/obo/GO_0007165	signal transduction
+http://purl.obolibrary.org/obo/GO_0023056	positive regulation of signaling	http://purl.obolibrary.org/obo/GO_0023052	signaling
+http://purl.obolibrary.org/obo/GO_0050806	positive regulation of synaptic transmission	http://purl.obolibrary.org/obo/GO_0007268	chemical synaptic transmission
+http://purl.obolibrary.org/obo/GO_0032230	positive regulation of synaptic transmission, GABAergic	http://purl.obolibrary.org/obo/GO_0051932	synaptic transmission, GABAergic
+http://purl.obolibrary.org/obo/GO_0032224	positive regulation of synaptic transmission, cholinergic	http://purl.obolibrary.org/obo/GO_0007271	synaptic transmission, cholinergic
+http://purl.obolibrary.org/obo/GO_0032226	positive regulation of synaptic transmission, dopaminergic	http://purl.obolibrary.org/obo/GO_0001963	synaptic transmission, dopaminergic
+http://purl.obolibrary.org/obo/GO_0051968	positive regulation of synaptic transmission, glutamatergic	http://purl.obolibrary.org/obo/GO_0035249	synaptic transmission, glutamatergic
+http://purl.obolibrary.org/obo/GO_0051050	positive regulation of transport	http://purl.obolibrary.org/obo/GO_0006810	transport
+http://purl.obolibrary.org/obo/GO_0061095	positive regulation of turning behavior involved in mating	http://purl.obolibrary.org/obo/GO_0034607	turning behavior involved in mating

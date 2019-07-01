@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('part of' some 'pylorus')"
+  text: "(%s and ('part of' some 'pylorus'))"
   vars:
     - v0

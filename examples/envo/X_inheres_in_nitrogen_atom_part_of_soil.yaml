@@ -45,6 +45,6 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('inheres in' some 'nitrogen atom' and ('part of' some 'soil'))"
+  text: "(%s and ('inheres in' some ('nitrogen atom' and ('part of' some 'soil'))))"
   vars:
     - v0

@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'glandular acinus' and ('part of' some %s)"
+  text: "('glandular acinus' and ('part of' some %s))"
   vars:
     - v0

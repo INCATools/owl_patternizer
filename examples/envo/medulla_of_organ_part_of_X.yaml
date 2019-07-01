@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'medulla of organ' and ('part of' some %s)"
+  text: "('medulla of organ' and ('part of' some %s))"
   vars:
     - v0

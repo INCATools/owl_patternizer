@@ -1,11 +1,11 @@
-# options: [min(50),dir(fbbt),trim(true),base('http://purl.obolibrary.org/obo/fbbt'),generalize_properties(true),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(50),dir('examples/fbbt'),trim(true),base('http://purl.obolibrary.org/obo/fbbt'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X part of larval abdominal segment 4
 pattern_iri: http://purl.obolibrary.org/obo/fbbt/X_part_of_larval_abdominal_segment_4
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [non-functional larval spiracle of abdominal segment 4](http://purl.obolibrary.org/obo/FBbt_00000420), [abdominal 4 acute muscle](http://purl.obolibrary.org/obo/FBbt_00000773), [abdominal 4 dorsal acute muscle](http://purl.obolibrary.org/obo/FBbt_00000774) (106 total)
+  Examples: [non-functional larval spiracle of abdominal segment 4](http://purl.obolibrary.org/obo/FBbt_00000420), [abdominal 4 acute muscle](http://purl.obolibrary.org/obo/FBbt_00000773), [abdominal 4 dorsal acute muscle](http://purl.obolibrary.org/obo/FBbt_00000774) (104 total)
 
 classes: 
   larval abdominal segment 4: "http://purl.obolibrary.org/obo/FBbt_00001751"
@@ -20,14 +20,14 @@ vars:
   v0: "'material anatomical entity'"
 
 name:
-  # Induced, frequency=0.0660377358490566, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.0673076923076923, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "abdominal 4 %s"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.009433962264150943, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "Any %s (FBbt:00000412) that is part of some larval abdominal segment 4 (FBbt:00001751)."
+  # Could not induce def, using default
+  text: "Any %s that part of a larval abdominal segment 4"
   vars:
     - v0
 
@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('part of' some 'larval abdominal segment 4')"
+  text: "(%s and ('part of' some 'larval abdominal segment 4'))"
   vars:
     - v0

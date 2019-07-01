@@ -1,4 +1,4 @@
-# options: [min(20),dir(cl),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has plasma membrane part X
 pattern_iri: http://purl.obolibrary.org/obo/cl/X_has_plasma_membrane_part_X
 
@@ -8,7 +8,8 @@ description: >-
   Examples: [ciliated cell](http://purl.obolibrary.org/obo/CL_0000064), [ciliated epithelial cell](http://purl.obolibrary.org/obo/CL_0000067), [alpha-beta T cell](http://purl.obolibrary.org/obo/CL_0000789) (41 total)
 
 classes: 
-  owl:Thing: "owl:Thing"
+  object: "BFO:0000030"
+  native cell: "CL:0000003"
 
 
 relations: 
@@ -17,7 +18,7 @@ relations:
 
 vars:
   v0: "'native cell'"
-  v1: "'owl:Thing'"
+  v1: "'object'"
 
 name:
   # Induced, frequency=0.2682926829268293, p=http://www.w3.org/2000/01/rdf-schema#label 
@@ -47,7 +48,7 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('has plasma membrane part' some %s)"
+  text: "(%s and ('has plasma membrane part' some %s))"
   vars:
     - v0
     - v1

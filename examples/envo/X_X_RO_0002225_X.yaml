@@ -46,7 +46,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and %s and ('RO_0002225' some %s)"
+  text: "(%s and %s and ('RO_0002225' some %s))"
   vars:
     - v0
     - v1

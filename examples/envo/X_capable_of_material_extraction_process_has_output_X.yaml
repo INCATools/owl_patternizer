@@ -43,7 +43,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('capable of' some 'material extraction process' and ('has output' some %s))"
+  text: "(%s and ('capable of' some ('material extraction process' and ('has output' some %s))))"
   vars:
     - v0
     - v1

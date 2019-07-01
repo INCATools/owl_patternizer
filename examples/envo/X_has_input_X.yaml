@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/X_has_input_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [ground deformation process](http://purl.obolibrary.org/obo/ENVO_01000870), [ecosystem fragmentation process](http://purl.obolibrary.org/obo/ENVO_01001168), [icemelt](http://purl.obolibrary.org/obo/ENVO_01000721) (16 total)
+  Examples: [ground deformation process](http://purl.obolibrary.org/obo/ENVO_01000870), [ecosystem fragmentation process](http://purl.obolibrary.org/obo/ENVO_01001168), [icemelt](http://purl.obolibrary.org/obo/ENVO_01000721) (17 total)
 
 classes: 
   entity: "BFO:0000001"
@@ -21,7 +21,7 @@ vars:
   v1: "'entity'"
 
 name:
-  # Induced, frequency=0.125, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.11764705882352941, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
@@ -42,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has input' some %s)"
+  text: "(%s and ('has input' some %s))"
   vars:
     - v0
     - v1

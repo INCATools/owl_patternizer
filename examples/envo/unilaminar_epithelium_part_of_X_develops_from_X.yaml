@@ -50,7 +50,7 @@ annotations:
 
 
 equivalentTo:
-  text: "'unilaminar epithelium' and ('part of' some %s) and ('develops from' some %s)"
+  text: "('unilaminar epithelium' and ('part of' some %s) and ('develops from' some %s))"
   vars:
     - v0
     - v1

@@ -47,7 +47,7 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('develops from' some %s)"
+  text: "(%s and ('develops from' some %s))"
   vars:
     - v0
     - v1

@@ -8,6 +8,7 @@ description: >-
   Examples: [material separation instrument](http://purl.obolibrary.org/obo/ERO_0000624), [mechanical instrument](http://purl.obolibrary.org/obo/ERO_0000626), [material transfer instrument](http://purl.obolibrary.org/obo/ERO_0000629) (10 total)
 
 classes: 
+  function: "BFO:0000034"
   instrument: "http://purl.obolibrary.org/obo/ERO_0000004"
   gene knockdown reagent: "http://purl.obolibrary.org/obo/ERO_0001200"
   recombinant plasmid: "http://purl.obolibrary.org/obo/OBI_0000410"
@@ -43,7 +44,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has_function' some %s)"
+  text: "(%s and ('has_function' some %s))"
   vars:
     - v0
     - v1

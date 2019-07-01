@@ -1,0 +1,10 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/MOP_0000693	alternating copolymerisation	http://purl.obolibrary.org/obo/CHEBI_53517	alternating copolymer
+http://purl.obolibrary.org/obo/MOP_0000699	block copolymerisation	http://purl.obolibrary.org/obo/CHEBI_53511	block copolymer
+http://purl.obolibrary.org/obo/MOP_0000700	diblock copolymerisation	http://purl.obolibrary.org/obo/CHEBI_53512	diblock copolymer
+http://purl.obolibrary.org/obo/MOP_0000694	graft copolymerisation	http://purl.obolibrary.org/obo/CHEBI_53519	graft copolymer
+http://purl.obolibrary.org/obo/MOP_0000695	periodic copolymerisation	http://purl.obolibrary.org/obo/CHEBI_53520	periodic copolymer
+http://purl.obolibrary.org/obo/MOP_0000696	random copolymerisation	http://purl.obolibrary.org/obo/CHEBI_53521	random copolymer
+http://purl.obolibrary.org/obo/MOP_0000697	statistical copolymerisation	http://purl.obolibrary.org/obo/CHEBI_53516	statistical copolymer
+http://purl.obolibrary.org/obo/MOP_0000698	stereospecific copolymerisation	http://purl.obolibrary.org/obo/CHEBI_53522	tactic polymer
+http://purl.obolibrary.org/obo/MOP_0000701	triblock copolymerisation	http://purl.obolibrary.org/obo/CHEBI_53513	triblock copolymer

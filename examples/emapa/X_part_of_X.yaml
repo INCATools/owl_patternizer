@@ -1,11 +1,11 @@
-# options: [min(20),dir(emapa),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(12),dir('examples/emapa'),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X part_of X
 pattern_iri: http://purl.obolibrary.org/obo/emapa/X_part_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [embryo mesenchyme](http://purl.obolibrary.org/obo/EMAPA_35961), [yolk sac mesenchyme](http://purl.obolibrary.org/obo/EMAPA_16267), [cardiovascular system mesenchyme](http://purl.obolibrary.org/obo/EMAPA_35973) (971 total)
+  Examples: [eye neural ectoderm](http://purl.obolibrary.org/obo/EMAPA_35989), [optic sulcus neural ectoderm](http://purl.obolibrary.org/obo/EMAPA_16200), [optic pit neural ectoderm](http://purl.obolibrary.org/obo/EMAPA_16326) (1722 total)
 
 classes: 
   owl:Thing: "owl:Thing"
@@ -20,7 +20,7 @@ vars:
   v1: "'owl:Thing'"
 
 name:
-  # Induced, frequency=0.615859938208033, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.4186991869918699, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
@@ -41,7 +41,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('part_of' some %s)"
+  text: "(%s and ('part_of' some %s))"
   vars:
     - v0
     - v1

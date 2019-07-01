@@ -43,7 +43,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has causal agent' some %s)"
+  text: "(%s and ('has causal agent' some %s))"
   vars:
     - v0
     - v1

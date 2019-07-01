@@ -49,6 +49,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'alpha-amino-acid residue' and ('is substituent group from' some %s)"
+  text: "('alpha-amino-acid residue' and ('is substituent group from' some %s))"
   vars:
     - v0

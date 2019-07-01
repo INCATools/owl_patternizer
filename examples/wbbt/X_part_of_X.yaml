@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/wbbt/X_part_of_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [lateral ganglion right neuron](http://purl.obolibrary.org/obo/WBbt_0005100), [lateral ganglion left neuron](http://purl.obolibrary.org/obo/WBbt_0005102), [inner labial neuron](http://purl.obolibrary.org/obo/WBbt_0005117) (2101 total)
+  Examples: [Y nucleus hermaphrodite](http://purl.obolibrary.org/obo/WBbt_0008186), [excretory gland cell](http://purl.obolibrary.org/obo/WBbt_0005776), [pharyngeal-intestinal valve cell](http://purl.obolibrary.org/obo/WBbt_0007848) (2124 total)
 
 classes: 
   C. elegans Cell and Anatomy: "http://purl.obolibrary.org/obo/WBbt_0000100"
@@ -20,14 +20,14 @@ vars:
   v1: "'C. elegans Cell and Anatomy'"
 
 name:
-  # Induced, frequency=0.8943360304616849, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.8940677966101694, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
     - v0
 
 def:
-  # Induced, frequency=0.8329366968110423, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.8239171374764596, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "%s of pedigree %s"
   vars:
     - v0
@@ -41,7 +41,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('part_of' some %s)"
+  text: "(%s and ('part_of' some %s))"
   vars:
     - v0
     - v1

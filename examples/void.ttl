@@ -35,6 +35,11 @@
     void:dataDump <../tests/data/sweet.owl> ;
     lib:source <http://sweetontology.net/> .
 
+<mesh>
+    a void:Dataset ;
+    void:dataDump <mesh-obo.owl> ;
+    lib:source <http://id.nlm.nih.gov/mesh//> .
+
 <sweet>
     a lib:Ontology ;
     a lib:Virtual ;

@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'disease' and ('RO_0001025' some %s)"
+  text: "('disease' and ('RO_0001025' some %s))"
   vars:
     - v0

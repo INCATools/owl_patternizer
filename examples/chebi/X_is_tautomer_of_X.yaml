@@ -48,7 +48,7 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('is tautomer of' some %s)"
+  text: "(%s and ('is tautomer of' some %s))"
   vars:
     - v0
     - v1

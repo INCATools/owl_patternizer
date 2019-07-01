@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'environmental system determined by a quality' and ('has quality' some %s)"
+  text: "('environmental system determined by a quality' and ('has quality' some %s))"
   vars:
     - v0

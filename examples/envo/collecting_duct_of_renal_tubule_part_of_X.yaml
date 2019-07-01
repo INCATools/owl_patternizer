@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'collecting duct of renal tubule' and ('part of' some %s)"
+  text: "('collecting duct of renal tubule' and ('part of' some %s))"
   vars:
     - v0

@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'serous membrane' and ('part of' some %s)"
+  text: "('serous membrane' and ('part of' some %s))"
   vars:
     - v0

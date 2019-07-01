@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('occurs in' some 'atmosphere')"
+  text: "(%s and ('occurs in' some 'atmosphere'))"
   vars:
     - v0

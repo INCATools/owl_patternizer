@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/aro/participates_in_mutation_conferr
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [Escherichia coli 16S rRNA (rrsB) mutation conferring resistance to tetracycline](http://purl.obolibrary.org/obo/ARO_3003410), [Enterococcus faecalis gshF with mutation conferring daptomycin resistance](http://purl.obolibrary.org/obo/ARO_3003805), [Escherichia coli 16S rRNA mutation conferring resistance to edeine](http://purl.obolibrary.org/obo/ARO_3003223) (6 total)
+  Examples: [Enterococcus faecalis gshF with mutation conferring daptomycin resistance](http://purl.obolibrary.org/obo/ARO_3003805), [Clostridium difficile rpoB with mutation conferring resistance to rifampicin](http://purl.obolibrary.org/obo/ARO_3004563), [Mycobacterium leprae folP with mutation conferring resistance to dapsone](http://purl.obolibrary.org/obo/ARO_3003389) (4 total)
 
 classes: 
   antibiotic molecule: "http://purl.obolibrary.org/obo/ARO_1000003"
@@ -21,14 +21,14 @@ vars:
   v0: "'antibiotic molecule'"
 
 name:
-  # Induced, frequency=0.16666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "Clostridium difficile rpoB with mutation conferring resistance to %s"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "%s binds tightly to the helix 34 domain in 16S rRNA, where it interferes sterically with the binding of aminoacyl-tRNA to the ribosome A site to block protein synthesis. Mutations in the nucleotide sequence in this domain for Propionibacterium acnes can result in resistance against tetracycline."
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s inhibits bacterial synthesis of dihydrofolic acid by competing with with para-aminobenzoate for the active site of dihydropteroate synthetase. Point mutation within the Mycobacterium leprae folP gene results in lowered affinity of dapsone for folP."
   vars:
     - v0
 
@@ -40,6 +40,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "('participates_in' some 'mutation conferring antibiotic resistance') and ('related' some %s)"
+  text: "(('participates_in' some 'mutation conferring antibiotic resistance') and ('related' some %s))"
   vars:
     - v0

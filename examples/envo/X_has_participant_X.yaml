@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/X_has_participant_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [forest process](http://purl.obolibrary.org/obo/ENVO_02500014), [water flow process](http://purl.obolibrary.org/obo/ENVO_01000982), [lava flow process](http://purl.obolibrary.org/obo/ENVO_01000730) (23 total)
+  Examples: [forest process](http://purl.obolibrary.org/obo/ENVO_02500014), [water accumulation process](http://purl.obolibrary.org/obo/ENVO_01001220), [lava flow process](http://purl.obolibrary.org/obo/ENVO_01000730) (29 total)
 
 classes: 
   independent continuant: "BFO:0000004"
@@ -21,7 +21,7 @@ vars:
   v1: "'independent continuant'"
 
 name:
-  # Induced, frequency=0.2608695652173913, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.20689655172413793, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
@@ -42,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has participant' some %s)"
+  text: "(%s and ('has participant' some %s))"
   vars:
     - v0
     - v1

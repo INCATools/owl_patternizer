@@ -5,35 +5,10 @@ pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_hasComponent_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [nitrogen dioxide](http://aims.fao.org/aos/agrovoc/c_5194), [sugar confectionery](http://aims.fao.org/aos/agrovoc/c_7502), [grain crops](http://aims.fao.org/aos/agrovoc/c_3348) (18 total)
+  Examples: [dairy cooperatives](http://aims.fao.org/aos/agrovoc/c_10270), [nitrogen dioxide](http://aims.fao.org/aos/agrovoc/c_5194), [canned meat](http://aims.fao.org/aos/agrovoc/c_16481) (59 total)
 
 classes: 
-  dioxides: "http://aims.fao.org/aos/agrovoc/c_10386"
-  confectionery: "http://aims.fao.org/aos/agrovoc/c_1806"
-  costs: "http://aims.fao.org/aos/agrovoc/c_1922"
-  crops: "http://aims.fao.org/aos/agrovoc/c_1972"
-  Alaska: "http://aims.fao.org/aos/agrovoc/c_240"
-  extracts: "http://aims.fao.org/aos/agrovoc/c_2767"
-  solutions: "http://aims.fao.org/aos/agrovoc/c_28563"
-  fertilizers: "http://aims.fao.org/aos/agrovoc/c_2867"
-  foods: "http://aims.fao.org/aos/agrovoc/c_3032"
-  population: "http://aims.fao.org/aos/agrovoc/c_330887"
-  salts: "http://aims.fao.org/aos/agrovoc/c_33129"
-  grain: "http://aims.fao.org/aos/agrovoc/c_3346"
-  health: "http://aims.fao.org/aos/agrovoc/c_3511"
-  sciences: "http://aims.fao.org/aos/agrovoc/c_37989"
-  inorganic acids: "http://aims.fao.org/aos/agrovoc/c_3880"
-  legumes: "http://aims.fao.org/aos/agrovoc/c_4255"
-  meat: "http://aims.fao.org/aos/agrovoc/c_4669"
-  milk: "http://aims.fao.org/aos/agrovoc/c_4826"
-  analysis: "http://aims.fao.org/aos/agrovoc/c_49928"
-  gulfs: "http://aims.fao.org/aos/agrovoc/c_50112"
-  nitrogen: "http://aims.fao.org/aos/agrovoc/c_5192"
-  plants: "http://aims.fao.org/aos/agrovoc/c_5993"
-  accounting: "http://aims.fao.org/aos/agrovoc/c_62"
-  services: "http://aims.fao.org/aos/agrovoc/c_6989"
-  soil: "http://aims.fao.org/aos/agrovoc/c_7156"
-  sugar: "http://aims.fao.org/aos/agrovoc/c_7498"
+  owl:Thing: "owl:Thing"
 
 
 relations: 
@@ -41,11 +16,11 @@ relations:
 
 
 vars:
-  v0: "'dioxides' or 'confectionery' or 'crops' or 'extracts' or 'solutions' or 'fertilizers' or 'population' or 'salts' or 'sciences' or 'legumes' or 'analysis' or 'gulfs' or 'accounting' or 'services'"
-  v1: "'costs' or 'Alaska' or 'foods' or 'grain' or 'health' or 'inorganic acids' or 'meat' or 'milk' or 'nitrogen' or 'plants' or 'soil' or 'sugar'"
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
 
 name:
-  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.15254237288135594, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
@@ -66,7 +41,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('hasComponent' some %s)"
+  text: "(%s and ('hasComponent' some %s))"
   vars:
     - v0
     - v1

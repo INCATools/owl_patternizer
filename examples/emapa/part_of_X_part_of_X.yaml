@@ -1,11 +1,11 @@
-# options: [min(20),dir(emapa),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(12),dir('examples/emapa'),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: part_of X part_of X
 pattern_iri: http://purl.obolibrary.org/obo/emapa/part_of_X_part_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [eye surface ectoderm](http://purl.obolibrary.org/obo/EMAPA_17003), [tail surface ectoderm](http://purl.obolibrary.org/obo/EMAPA_32773), [trunk surface ectoderm](http://purl.obolibrary.org/obo/EMAPA_36706) (69 total)
+  Examples: [yolk sac endoderm](http://purl.obolibrary.org/obo/EMAPA_16086), [yolk sac parietal endoderm](http://purl.obolibrary.org/obo/EMAPA_35928), [eye surface ectoderm](http://purl.obolibrary.org/obo/EMAPA_17003) (348 total)
 
 classes: 
   owl:Thing: "owl:Thing"
@@ -20,14 +20,14 @@ vars:
   v1: "'owl:Thing'"
 
 name:
-  # Induced, frequency=0.21739130434782608, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.04310344827586207, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v0
     - v1
 
 def:
-  # Induced, frequency=0.028985507246376812, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.005747126436781609, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "The adventitia of %s (TS22-TS28). The outermost layer of the bladder is subdivided into serosa of bladder (TS22-TS28) and %s (TS22-TS28). Most of the bladder is covered by serosa, a serous-fluid-secreting outer epithelial surface of the bladder in contact with the coelomic cavity. The fundus (or dome) is surrounded by serosa, the rest of the bladder, in contact with the adjacent connective tissue, is covered by adventitia. The adventitia refers to the outer part of the bladder that is not exposed to the peritoneal cavity but is a connective tissue layer that binds it to the adventitia of adjacent organs. The proportion of the bladder covered by serosa and adventitia is stage dependant, with adventitia covering more of the bladder early in development, and the majority covered by serosa later in development."
   vars:
     - v0
@@ -37,17 +37,11 @@ annotationProperties:
   exact_synonym: "oio:hasExactSynonym"
   related_synonym: "oio:hasRelatedSynonym"
 
-annotations:
-  - annotationProperty: related_synonym
-    # Induced p=related_synonym 
-    text: "%s %s"
-    vars:
-      - v0
-      - v1
+# could not infer annotations
 
 
 equivalentTo:
-  text: "('part_of' some %s) and ('part_of' some %s)"
+  text: "(('part_of' some %s) and ('part_of' some %s))"
   vars:
     - v0
     - v1

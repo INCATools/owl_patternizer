@@ -40,6 +40,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'nervous system cell part layer' and ('part of' some %s)"
+  text: "('nervous system cell part layer' and ('part of' some %s))"
   vars:
     - v0

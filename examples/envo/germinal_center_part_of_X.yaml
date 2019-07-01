@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'germinal center' and ('part of' some %s)"
+  text: "('germinal center' and ('part of' some %s))"
   vars:
     - v0

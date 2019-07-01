@@ -261,7 +261,7 @@ exclude(X,Opts) :-
         option(max_class_signature(Max),Opts,5),
         Len > Max.
 exclude(X,Opts) :-
-        option(generalize_properties(false),Opts,true),
+        \+ option(generalize_properties(true),Opts,true),
         has_var_prop(X).
 exclude(X,Opts) :-
         option(exclude_prefixes(Prefixes),Opts),
@@ -920,11 +920,14 @@ sub_atom_ci(A,S,L,R,Sub) :-
           
 :- dynamic core_ontology/1.
 :- dynamic ont_import_loaded/1.
+
+% loads import closure and additionally sets core_ontology/1
 load_import_closure :-
         load_import_closure(true).
 load_import_closure(IsLoadIC) :-
         % TODO: move this section elsewhere
         setof(G,S^P^O^rdf(S,P,O,G),Graphs),
+        debug(patternizer,'Core Graphs: ~w',[Graphs]),
         forall(member(G,Graphs),
                assert(core_ontology(G))),
         IsLoadIC,

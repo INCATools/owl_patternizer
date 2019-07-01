@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'mining' and ('has participant' some %s)"
+  text: "('mining' and ('has participant' some %s))"
   vars:
     - v0

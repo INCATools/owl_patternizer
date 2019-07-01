@@ -5,38 +5,28 @@ pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_produces_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [Carica papaya](http://aims.fao.org/aos/agrovoc/c_1323), [Carya pecan](http://aims.fao.org/aos/agrovoc/c_1349), [Chenopodium quinoa](http://aims.fao.org/aos/agrovoc/c_1531) (20 total)
+  Examples: [Carica papaya](http://aims.fao.org/aos/agrovoc/c_1323), [Carya pecan](http://aims.fao.org/aos/agrovoc/c_1349), [Chenopodium quinoa](http://aims.fao.org/aos/agrovoc/c_1531) (30 total)
 
 classes: 
-  kaki: "http://aims.fao.org/aos/agrovoc/c_11934"
-  papayas: "http://aims.fao.org/aos/agrovoc/c_13087"
-  pecans: "http://aims.fao.org/aos/agrovoc/c_13178"
   Carica: "http://aims.fao.org/aos/agrovoc/c_1322"
   Carya: "http://aims.fao.org/aos/agrovoc/c_1348"
-  quinoa: "http://aims.fao.org/aos/agrovoc/c_13716"
   Chenopodium: "http://aims.fao.org/aos/agrovoc/c_1528"
+  Coffea: "http://aims.fao.org/aos/agrovoc/c_1720"
   crops: "http://aims.fao.org/aos/agrovoc/c_1972"
   Diospyros: "http://aims.fao.org/aos/agrovoc/c_2302"
-  essential oils: "http://aims.fao.org/aos/agrovoc/c_2669"
-  forest products: "http://aims.fao.org/aos/agrovoc/c_3049"
-  longans: "http://aims.fao.org/aos/agrovoc/c_331528"
+  fermentation: "http://aims.fao.org/aos/agrovoc/c_2855"
+  gardening: "http://aims.fao.org/aos/agrovoc/c_3195"
+  hybridization: "http://aims.fao.org/aos/agrovoc/c_3706"
   Dimocarpus: "http://aims.fao.org/aos/agrovoc/c_37372"
   industry: "http://aims.fao.org/aos/agrovoc/c_3848"
-  lactic acid: "http://aims.fao.org/aos/agrovoc/c_4142"
-  leather: "http://aims.fao.org/aos/agrovoc/c_4241"
   animals: "http://aims.fao.org/aos/agrovoc/c_444"
-  lucuma: "http://aims.fao.org/aos/agrovoc/c_4456"
-  meat: "http://aims.fao.org/aos/agrovoc/c_4669"
   Pouteria: "http://aims.fao.org/aos/agrovoc/c_6150"
-  propionic acid: "http://aims.fao.org/aos/agrovoc/c_6227"
+  skin glands: "http://aims.fao.org/aos/agrovoc/c_7099"
   Averrhoa: "http://aims.fao.org/aos/agrovoc/c_732"
-  sugar: "http://aims.fao.org/aos/agrovoc/c_7498"
   Bacteria: "http://aims.fao.org/aos/agrovoc/c_765"
-  tobacco: "http://aims.fao.org/aos/agrovoc/c_7796"
   trees: "http://aims.fao.org/aos/agrovoc/c_7887"
-  waxes: "http://aims.fao.org/aos/agrovoc/c_8336"
-  wool: "http://aims.fao.org/aos/agrovoc/c_8436"
-  carambola: "http://aims.fao.org/aos/agrovoc/c_9605"
+  Vicia: "http://aims.fao.org/aos/agrovoc/c_8214"
+  owl:Thing: "owl:Thing"
 
 
 relations: 
@@ -44,11 +34,11 @@ relations:
 
 
 vars:
-  v0: "'Carica' or 'Carya' or 'Chenopodium' or 'crops' or 'Diospyros' or 'Dimocarpus' or 'industry' or 'animals' or 'Pouteria' or 'Averrhoa' or 'Bacteria' or 'trees'"
-  v1: "'kaki' or 'papayas' or 'pecans' or 'quinoa' or 'essential oils' or 'forest products' or 'longans' or 'lactic acid' or 'leather' or 'lucuma' or 'meat' or 'propionic acid' or 'sugar' or 'tobacco' or 'waxes' or 'wool' or 'carambola'"
+  v0: "'Carica' or 'Carya' or 'Chenopodium' or 'Coffea' or 'crops' or 'Diospyros' or 'fermentation' or 'gardening' or 'hybridization' or 'Dimocarpus' or 'industry' or 'animals' or 'Pouteria' or 'skin glands' or 'Averrhoa' or 'Bacteria' or 'trees' or 'Vicia'"
+  v1: "'owl:Thing'"
 
 name:
-  # Induced, frequency=0.35, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.23333333333333334, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
@@ -69,7 +59,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('produces' some %s)"
+  text: "(%s and ('produces' some %s))"
   vars:
     - v0
     - v1

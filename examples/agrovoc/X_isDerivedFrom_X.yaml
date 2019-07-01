@@ -5,14 +5,19 @@ pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_isDerivedFrom_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [fish extracts](http://aims.fao.org/aos/agrovoc/c_2921), [flower extracts](http://aims.fao.org/aos/agrovoc/c_35305), [fruit extracts](http://aims.fao.org/aos/agrovoc/c_29024) (26 total)
+  Examples: [canned fish](http://aims.fao.org/aos/agrovoc/c_16479), [dried fish](http://aims.fao.org/aos/agrovoc/c_2381), [frozen fish](http://aims.fao.org/aos/agrovoc/c_3115) (36 total)
 
 classes: 
+  canned products: "http://aims.fao.org/aos/agrovoc/c_1259"
+  dried products: "http://aims.fao.org/aos/agrovoc/c_15740"
+  frozen products: "http://aims.fao.org/aos/agrovoc/c_15741"
+  energy: "http://aims.fao.org/aos/agrovoc/c_2565"
   extracts: "http://aims.fao.org/aos/agrovoc/c_2767"
   flours: "http://aims.fao.org/aos/agrovoc/c_2988"
   meat: "http://aims.fao.org/aos/agrovoc/c_4669"
   milk: "http://aims.fao.org/aos/agrovoc/c_4826"
   oils: "http://aims.fao.org/aos/agrovoc/c_5334"
+  oilseed cakes: "http://aims.fao.org/aos/agrovoc/c_5336"
   protein concentrates: "http://aims.fao.org/aos/agrovoc/c_6250"
   owl:Thing: "owl:Thing"
 
@@ -22,11 +27,11 @@ relations:
 
 
 vars:
-  v0: "'extracts' or 'flours' or 'meat' or 'milk' or 'oils' or 'protein concentrates'"
+  v0: "'canned products' or 'dried products' or 'frozen products' or 'energy' or 'extracts' or 'flours' or 'meat' or 'milk' or 'oils' or 'oilseed cakes' or 'protein concentrates'"
   v1: "'owl:Thing'"
 
 name:
-  # Induced, frequency=0.23076923076923078, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.16666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
@@ -47,7 +52,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('isDerivedFrom' some %s)"
+  text: "(%s and ('isDerivedFrom' some %s))"
   vars:
     - v0
     - v1

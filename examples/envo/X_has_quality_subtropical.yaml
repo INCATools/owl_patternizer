@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has quality' some 'subtropical')"
+  text: "(%s and ('has quality' some 'subtropical'))"
   vars:
     - v0

@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('part of' some 'lower respiratory tract')"
+  text: "(%s and ('part of' some 'lower respiratory tract'))"
   vars:
     - v0

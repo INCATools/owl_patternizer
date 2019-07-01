@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'woodland biome' and ('has quality' some %s)"
+  text: "('woodland biome' and ('has quality' some %s))"
   vars:
     - v0

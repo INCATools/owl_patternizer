@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'enriched soil' and ('has_increased_levels_of' some %s)"
+  text: "('enriched soil' and ('has_increased_levels_of' some %s))"
   vars:
     - v0

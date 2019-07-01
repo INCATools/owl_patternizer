@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/X_has_quality_temperate
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [temperate marginal sea biome](http://purl.obolibrary.org/obo/ENVO_01000856), [temperate woodland biome](http://purl.obolibrary.org/obo/ENVO_01000221), [temperate shrubland biome](http://purl.obolibrary.org/obo/ENVO_01000215) (15 total)
+  Examples: [temperate marginal sea biome](http://purl.obolibrary.org/obo/ENVO_01000856), [temperate woodland biome](http://purl.obolibrary.org/obo/ENVO_01000221), [temperate shrubland biome](http://purl.obolibrary.org/obo/ENVO_01000215) (13 total)
 
 classes: 
   temperate: "ENVO:01000206"
@@ -20,13 +20,13 @@ vars:
   v0: "'ecosystem'"
 
 name:
-  # Induced, frequency=0.6666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.7692307692307693, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "temperate %s"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.2, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.23076923076923078, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "A %s which is subject to temperate climate patterns."
   vars:
     - v0
@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has quality' some 'temperate')"
+  text: "(%s and ('has quality' some 'temperate'))"
   vars:
     - v0

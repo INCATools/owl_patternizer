@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_functional_parent_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [dTTP](http://purl.obolibrary.org/obo/CHEBI_18077), [L-cysteine thioether](http://purl.obolibrary.org/obo/CHEBI_27532), [TDP](http://purl.obolibrary.org/obo/CHEBI_61377) (158 total)
+  Examples: [L-cysteine thioether](http://purl.obolibrary.org/obo/CHEBI_27532), [dTTP](http://purl.obolibrary.org/obo/CHEBI_18077), [TDP](http://purl.obolibrary.org/obo/CHEBI_61377) (157 total)
 
 classes: 
   molecular entity: "http://purl.obolibrary.org/obo/CHEBI_23367"
@@ -21,14 +21,14 @@ vars:
   v1: "'chemical entity'"
 
 name:
-  # Induced, frequency=0.05063291139240506, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.07006369426751592, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
     - v0
 
 def:
-  # Induced, frequency=0.06962025316455696, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.07006369426751592, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "A %s that is formally obtained from a %s."
   vars:
     - v0
@@ -48,7 +48,7 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('has functional parent' some %s)"
+  text: "(%s and ('has functional parent' some %s))"
   vars:
     - v0
     - v1

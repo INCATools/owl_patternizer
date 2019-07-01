@@ -45,6 +45,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'concentration of' and ('inheres in' some %s and ('part of' some 'soil'))"
+  text: "('concentration of' and ('inheres in' some (%s and ('part of' some 'soil'))))"
   vars:
     - v0

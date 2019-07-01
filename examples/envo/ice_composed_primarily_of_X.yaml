@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'ice' and ('composed primarily of' some %s)"
+  text: "('ice' and ('composed primarily of' some %s))"
   vars:
     - v0

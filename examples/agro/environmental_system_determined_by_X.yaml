@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'environmental system' and ('determined by' some %s)"
+  text: "('environmental system' and ('determined by' some %s))"
   vars:
     - v0

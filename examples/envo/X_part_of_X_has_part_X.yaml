@@ -45,7 +45,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('part of' some %s) and ('has part' some %s)"
+  text: "(%s and ('part of' some %s) and ('has part' some %s))"
   vars:
     - v0
     - v1

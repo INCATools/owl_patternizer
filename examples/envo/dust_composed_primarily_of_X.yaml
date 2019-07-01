@@ -5,10 +5,10 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/dust_composed_primarily_of_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [kaolin dust](http://purl.obolibrary.org/obo/ENVO_01001288), [talc dust](http://purl.obolibrary.org/obo/ENVO_01001285), [aluminium dust](http://purl.obolibrary.org/obo/ENVO_01001283) (4 total)
+  Examples: [kaolin dust](http://purl.obolibrary.org/obo/ENVO_01001288), [talc dust](http://purl.obolibrary.org/obo/ENVO_01001285), [aluminium dust](http://purl.obolibrary.org/obo/ENVO_01001283) (5 total)
 
 classes: 
-  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+  material entity: "BFO:0000040"
   dust: "ENVO:00002008"
 
 
@@ -17,17 +17,17 @@ relations:
 
 
 vars:
-  v0: "'chemical entity'"
+  v0: "'material entity'"
 
 name:
-  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.6, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s dust"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "Dust which is derived from %s material."
+  # Induced, frequency=0.2, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Dust which is composed primarily of some %s."
   vars:
     - v0
 
@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'dust' and ('composed primarily of' some %s)"
+  text: "('dust' and ('composed primarily of' some %s))"
   vars:
     - v0

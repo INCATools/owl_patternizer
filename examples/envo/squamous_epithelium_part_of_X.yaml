@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'squamous epithelium' and ('part of' some %s)"
+  text: "('squamous epithelium' and ('part of' some %s))"
   vars:
     - v0

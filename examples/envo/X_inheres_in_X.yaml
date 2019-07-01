@@ -48,7 +48,7 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('inheres in' some %s)"
+  text: "(%s and ('inheres in' some %s))"
   vars:
     - v0
     - v1

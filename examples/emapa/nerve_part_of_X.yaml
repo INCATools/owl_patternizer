@@ -1,11 +1,11 @@
-# options: [min(20),dir(emapa),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(12),dir('examples/emapa'),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: nerve part_of X
 pattern_iri: http://purl.obolibrary.org/obo/emapa/nerve_part_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [limb nerve](http://purl.obolibrary.org/obo/EMAPA_37291), [central nervous system nerve](http://purl.obolibrary.org/obo/EMAPA_17263), [nerve of urinary system](http://purl.obolibrary.org/obo/EMAPA_35948) (41 total)
+  Examples: [limb nerve](http://purl.obolibrary.org/obo/EMAPA_37291), [central nervous system nerve](http://purl.obolibrary.org/obo/EMAPA_17263), [nerve of urinary system](http://purl.obolibrary.org/obo/EMAPA_35948) (43 total)
 
 classes: 
   nerve: "http://purl.obolibrary.org/obo/EMAPA_32808"
@@ -20,8 +20,8 @@ vars:
   v0: "'owl:Thing'"
 
 name:
-  # Induced, frequency=0.5121951219512195, p=http://www.w3.org/2000/01/rdf-schema#label 
-  text: "nerve of %s"
+  # Induced, frequency=0.4418604651162791, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s nerve"
   vars:
     - v0
 
@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'nerve' and ('part_of' some %s)"
+  text: "('nerve' and ('part_of' some %s))"
   vars:
     - v0

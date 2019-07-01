@@ -49,6 +49,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'cardiac muscle tissue' and ('part of' some %s)"
+  text: "('cardiac muscle tissue' and ('part of' some %s))"
   vars:
     - v0

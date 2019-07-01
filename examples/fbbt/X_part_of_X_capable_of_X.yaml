@@ -1,13 +1,15 @@
-# options: [min(50),dir(fbbt),trim(true),base('http://purl.obolibrary.org/obo/fbbt'),generalize_properties(true),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(50),dir('examples/fbbt'),trim(true),base('http://purl.obolibrary.org/obo/fbbt'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X part of X capable_of X
 pattern_iri: http://purl.obolibrary.org/obo/fbbt/X_part_of_X_capable_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [abdominal 8 sensory neuron](http://purl.obolibrary.org/obo/FBbt_00002607), [abdominal 9 sensory neuron](http://purl.obolibrary.org/obo/FBbt_00002619), [abdominal 10 sensory neuron](http://purl.obolibrary.org/obo/FBbt_00002624) (72 total)
+  Examples: [abdominal 8 sensory neuron](http://purl.obolibrary.org/obo/FBbt_00002607), [abdominal 9 sensory neuron](http://purl.obolibrary.org/obo/FBbt_00002619), [abdominal 10 sensory neuron](http://purl.obolibrary.org/obo/FBbt_00002624) (55 total)
 
 classes: 
+  anatomical structure: "http://purl.obolibrary.org/obo/FBbt_00007001"
+  material anatomical entity: "http://purl.obolibrary.org/obo/FBbt_00007016"
   biological_process: "GO:0008150"
 
 
@@ -30,8 +32,8 @@ name:
     - v2
 
 def:
-  # Induced, frequency=0.013888888888888888, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "Any %s (FBbt:00005106) that is part of some %s (FBbt:00001755) and that capable of some %s (GO:0050906)."
+  # Could not induce def, using default
+  text: "Any %s that part of a %s and capable_of a %s"
   vars:
     - v0
     - v1
@@ -45,7 +47,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('part of' some %s) and ('capable_of' some %s)"
+  text: "(%s and ('part of' some %s) and ('capable_of' some %s))"
   vars:
     - v0
     - v1

@@ -26,8 +26,8 @@ name:
     - v0
 
 def:
-  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "A %s planet which 1) is considerably smaller than a gas giant and 2) has a rocky core around which a thick envelope primarily composed of hydrogen, helium, and smaller proportions of volatiles."
+  # Could not induce def, using default
+  text: "Any planet that composed primarily of a %s"
   vars:
     - v0
 
@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'planet' and ('composed primarily of' some %s)"
+  text: "('planet' and ('composed primarily of' some %s))"
   vars:
     - v0

@@ -48,7 +48,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has participant' some %s or %s or %s)"
+  text: "(%s and ('has participant' some %s or %s or %s))"
   vars:
     - v0
     - v1

@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'lymphatic vessel' and ('part of' some %s)"
+  text: "('lymphatic vessel' and ('part of' some %s))"
   vars:
     - v0

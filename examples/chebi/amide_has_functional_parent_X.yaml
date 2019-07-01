@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'amide' and ('has functional parent' some %s)"
+  text: "('amide' and ('has functional parent' some %s))"
   vars:
     - v0

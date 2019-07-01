@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'lymph node' and ('part of' some %s)"
+  text: "('lymph node' and ('part of' some %s))"
   vars:
     - v0

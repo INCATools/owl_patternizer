@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has functional parent' some 'thymidine')"
+  text: "(%s and ('has functional parent' some 'thymidine'))"
   vars:
     - v0

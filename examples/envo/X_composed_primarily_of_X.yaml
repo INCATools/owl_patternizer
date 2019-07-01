@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/X_composed_primarily_of_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [ice mass](http://purl.obolibrary.org/obo/ENVO_01000293), [snow mass](http://purl.obolibrary.org/obo/ENVO_03000111), [hypersaline lake](http://purl.obolibrary.org/obo/ENVO_01001020) (93 total)
+  Examples: [ice mass](http://purl.obolibrary.org/obo/ENVO_01000293), [snow mass](http://purl.obolibrary.org/obo/ENVO_03000111), [hypersaline lake](http://purl.obolibrary.org/obo/ENVO_01001020) (138 total)
 
 classes: 
   material entity: "BFO:0000040"
@@ -20,14 +20,14 @@ vars:
   v1: "'material entity'"
 
 name:
-  # Induced, frequency=0.3548387096774194, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.2463768115942029, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
     - v0
 
 def:
-  # Induced, frequency=0.07526881720430108, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.057971014492753624, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "A %s which is primarily composed of %s."
   vars:
     - v0
@@ -41,7 +41,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('composed primarily of' some %s)"
+  text: "(%s and ('composed primarily of' some %s))"
   vars:
     - v0
     - v1

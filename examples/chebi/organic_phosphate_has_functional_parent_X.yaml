@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/chebi/organic_phosphate_has_function
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [phosphocholines](http://purl.obolibrary.org/obo/CHEBI_36700), [carbohydrate phosphate](http://purl.obolibrary.org/obo/CHEBI_26816), [N-phosphocreatine](http://purl.obolibrary.org/obo/CHEBI_17287) (7 total)
+  Examples: [phosphocholines](http://purl.obolibrary.org/obo/CHEBI_36700), [CHEBI_18412](http://purl.obolibrary.org/obo/CHEBI_18412), [carbohydrate phosphate](http://purl.obolibrary.org/obo/CHEBI_26816) (7 total)
 
 classes: 
   organic phosphate: "http://purl.obolibrary.org/obo/CHEBI_25703"
@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'organic phosphate' and ('has functional parent' some %s)"
+  text: "('organic phosphate' and ('has functional parent' some %s))"
   vars:
     - v0

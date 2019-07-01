@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'instrument' and ('has_function' some %s)"
+  text: "('instrument' and ('has_function' some %s))"
   vars:
     - v0

@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'copolymerisation' and ('has participant beginning to exist' some %s)"
+  text: "('copolymerisation' and ('has participant beginning to exist' some %s))"
   vars:
     - v0

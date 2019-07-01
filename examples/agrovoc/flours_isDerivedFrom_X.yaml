@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'flours' and ('isDerivedFrom' some %s)"
+  text: "('flours' and ('isDerivedFrom' some %s))"
   vars:
     - v0

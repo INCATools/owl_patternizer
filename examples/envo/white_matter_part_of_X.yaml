@@ -50,6 +50,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'white matter' and ('part of' some %s)"
+  text: "('white matter' and ('part of' some %s))"
   vars:
     - v0

@@ -40,6 +40,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has functional parent' some 'adenosine')"
+  text: "(%s and ('has functional parent' some 'adenosine'))"
   vars:
     - v0

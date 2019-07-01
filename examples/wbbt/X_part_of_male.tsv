@@ -1,0 +1,16 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/WBbt_0008620	AMsoL male	http://purl.obolibrary.org/obo/WBbt_0003931	AMsoL
+http://purl.obolibrary.org/obo/WBbt_0008622	AMsoR male	http://purl.obolibrary.org/obo/WBbt_0003929	AMsoR
+http://purl.obolibrary.org/obo/WBbt_0008064	B cell male	http://purl.obolibrary.org/obo/WBbt_0003825	B cell
+http://purl.obolibrary.org/obo/WBbt_0008321	Z1.ppaap male	http://purl.obolibrary.org/obo/WBbt_0007643	Z1.ppaap
+http://purl.obolibrary.org/obo/WBbt_0005052	Z1.pppap male	http://purl.obolibrary.org/obo/WBbt_0007672	Z1.pppap
+http://purl.obolibrary.org/obo/WBbt_0005046	Z4.aaapp male	http://purl.obolibrary.org/obo/WBbt_0007704	Z4.aaapp
+http://purl.obolibrary.org/obo/WBbt_0004708	Z4.aappa male	http://purl.obolibrary.org/obo/WBbt_0007742	Z4.aappa
+http://purl.obolibrary.org/obo/WBbt_0005044	Z4.aappp male	http://purl.obolibrary.org/obo/WBbt_0007749	Z4.aappp
+http://purl.obolibrary.org/obo/WBbt_0008136	adult seam cell left male	http://purl.obolibrary.org/obo/WBbt_0006809	adult seam cell left
+http://purl.obolibrary.org/obo/WBbt_0008138	adult seam cell right male	http://purl.obolibrary.org/obo/WBbt_0006810	adult seam cell right
+http://purl.obolibrary.org/obo/WBbt_0008070	hyp7 syncytium male	http://purl.obolibrary.org/obo/WBbt_0005734	hyp7 syncytium
+http://purl.obolibrary.org/obo/WBbt_0006914	male alae seam cell	http://purl.obolibrary.org/obo/WBbt_0005753	seam cell
+http://purl.obolibrary.org/obo/WBbt_0008209	male gonadal cell	http://purl.obolibrary.org/obo/WBbt_0004017	Cell
+http://purl.obolibrary.org/obo/WBbt_0008604	male sex myoblast	http://purl.obolibrary.org/obo/WBbt_0008373	sex myoblast
+http://purl.obolibrary.org/obo/WBbt_0006912	male tail seam cell	http://purl.obolibrary.org/obo/WBbt_0005753	seam cell

@@ -5,19 +5,34 @@ pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_hasGoalOrProcess_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [trituration equipment](http://aims.fao.org/aos/agrovoc/c_26042), [maintenance equipment](http://aims.fao.org/aos/agrovoc/c_25749), [refrigeration equipment](http://aims.fao.org/aos/agrovoc/c_25722) (6 total)
+  Examples: [resource management](http://aims.fao.org/aos/agrovoc/c_6524), [rotary cultivators](http://aims.fao.org/aos/agrovoc/c_24077), [trituration equipment](http://aims.fao.org/aos/agrovoc/c_26042) (15 total)
 
 classes: 
   trituration: "http://aims.fao.org/aos/agrovoc/c_15003"
-  equipment: "http://aims.fao.org/aos/agrovoc/c_2631"
+  environmental protection: "http://aims.fao.org/aos/agrovoc/c_15898"
+  management: "http://aims.fao.org/aos/agrovoc/c_16086"
+  feed processing: "http://aims.fao.org/aos/agrovoc/c_16127"
+  agricultural development: "http://aims.fao.org/aos/agrovoc/c_199"
+  cultivators: "http://aims.fao.org/aos/agrovoc/c_2019"
+  rotary cultivation: "http://aims.fao.org/aos/agrovoc/c_24233"
   revegetation: "http://aims.fao.org/aos/agrovoc/c_26815"
+  domestic consumption: "http://aims.fao.org/aos/agrovoc/c_28666"
+  organizations: "http://aims.fao.org/aos/agrovoc/c_37968"
+  industry: "http://aims.fao.org/aos/agrovoc/c_3848"
   maintenance: "http://aims.fao.org/aos/agrovoc/c_4524"
+  markets: "http://aims.fao.org/aos/agrovoc/c_4626"
+  health care: "http://aims.fao.org/aos/agrovoc/c_49891"
+  centres: "http://aims.fao.org/aos/agrovoc/c_50169"
   international trade promotion: "http://aims.fao.org/aos/agrovoc/c_50243"
-  trade organizations: "http://aims.fao.org/aos/agrovoc/c_50317"
+  planning: "http://aims.fao.org/aos/agrovoc/c_5951"
   plants: "http://aims.fao.org/aos/agrovoc/c_5993"
   pollination: "http://aims.fao.org/aos/agrovoc/c_6073"
   refrigeration: "http://aims.fao.org/aos/agrovoc/c_6485"
+  resource allocation: "http://aims.fao.org/aos/agrovoc/c_6521"
   selfing: "http://aims.fao.org/aos/agrovoc/c_6959"
+  stubble cleaning: "http://aims.fao.org/aos/agrovoc/c_7472"
+  advisory services: "http://aims.fao.org/aos/agrovoc/c_8631"
+  burning: "http://aims.fao.org/aos/agrovoc/c_9499"
 
 
 relations: 
@@ -25,11 +40,11 @@ relations:
 
 
 vars:
-  v0: "'equipment' or 'trade organizations' or 'plants' or 'pollination'"
-  v1: "'trituration' or 'revegetation' or 'maintenance' or 'international trade promotion' or 'refrigeration' or 'selfing'"
+  v0: "'management' or 'cultivators' or 'organizations' or 'industry' or 'markets' or 'centres' or 'planning' or 'plants' or 'pollination' or 'burning'"
+  v1: "'trituration' or 'environmental protection' or 'feed processing' or 'agricultural development' or 'rotary cultivation' or 'revegetation' or 'domestic consumption' or 'maintenance' or 'health care' or 'international trade promotion' or 'refrigeration' or 'resource allocation' or 'selfing' or 'stubble cleaning' or 'advisory services'"
 
 name:
-  # Induced, frequency=0.6666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
@@ -50,7 +65,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('hasGoalOrProcess' some %s)"
+  text: "(%s and ('hasGoalOrProcess' some %s))"
   vars:
     - v0
     - v1

@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/aro/determinant_of_antibiotic_resist
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [determinant of fosfomycin resistance](http://purl.obolibrary.org/obo/ARO_3000271), [determinant of resistance to nucleoside antibiotics](http://purl.obolibrary.org/obo/ARO_3004027), [determinant of resistance to lipopeptide antibiotics](http://purl.obolibrary.org/obo/ARO_3003073) (9 total)
+  Examples: [determinant of macrolide resistance](http://purl.obolibrary.org/obo/ARO_3000315), [determinant of fluoroquinolone resistance](http://purl.obolibrary.org/obo/ARO_3000102), [determinant of aminoglycoside resistance](http://purl.obolibrary.org/obo/ARO_3000104) (24 total)
 
 classes: 
   antibiotic molecule: "http://purl.obolibrary.org/obo/ARO_1000003"
@@ -20,13 +20,13 @@ vars:
   v0: "'antibiotic molecule'"
 
 name:
-  # Induced, frequency=0.5555555555555556, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.20833333333333334, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "determinant of resistance to %ss"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.4444444444444444, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.4166666666666667, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "Enzymes, other proteins or other gene products shown clinically to confer resistance to %ss."
   vars:
     - v0
@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'determinant of antibiotic resistance' and ('confers_resistance_to' some %s)"
+  text: "('determinant of antibiotic resistance' and ('confers_resistance_to' some %s))"
   vars:
     - v0

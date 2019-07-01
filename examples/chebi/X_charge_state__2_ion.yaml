@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('charge_state' some '+2 ion')"
+  text: "(%s and ('charge_state' some '+2 ion'))"
   vars:
     - v0

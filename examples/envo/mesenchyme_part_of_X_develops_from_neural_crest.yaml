@@ -47,6 +47,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'mesenchyme' and ('part of' some %s) and ('develops from' some 'neural crest')"
+  text: "('mesenchyme' and ('part of' some %s) and ('develops from' some 'neural crest'))"
   vars:
     - v0

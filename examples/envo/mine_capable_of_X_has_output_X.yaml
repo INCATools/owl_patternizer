@@ -43,7 +43,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'mine' and ('capable of' some %s and ('has output' some %s))"
+  text: "('mine' and ('capable of' some (%s and ('has output' some %s))))"
   vars:
     - v0
     - v1

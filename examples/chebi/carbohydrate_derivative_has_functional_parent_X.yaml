@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'carbohydrate derivative' and ('has functional parent' some %s)"
+  text: "('carbohydrate derivative' and ('has functional parent' some %s))"
   vars:
     - v0

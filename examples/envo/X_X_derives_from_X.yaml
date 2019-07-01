@@ -44,7 +44,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and %s and ('derives from' some %s)"
+  text: "(%s and %s and ('derives from' some %s))"
   vars:
     - v0
     - v1

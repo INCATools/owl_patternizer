@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('has role' some 'hormone')"
+  text: "(%s and ('has role' some 'hormone'))"
   vars:
     - v0

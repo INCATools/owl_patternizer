@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'anatomical structure' and ('develops from' some %s)"
+  text: "('anatomical structure' and ('develops from' some %s))"
   vars:
     - v0

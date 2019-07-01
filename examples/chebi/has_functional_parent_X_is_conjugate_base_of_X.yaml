@@ -43,7 +43,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "('has functional parent' some %s) and ('is conjugate base of' some %s)"
+  text: "(('has functional parent' some %s) and ('is conjugate base of' some %s))"
   vars:
     - v0
     - v1

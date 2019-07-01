@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/agrovoc/viruses_causes_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [Borna disease virus](http://aims.fao.org/aos/agrovoc/c_18805), [Duck hepatitis virus](http://aims.fao.org/aos/agrovoc/c_10478), [Pest of small ruminants virus](http://aims.fao.org/aos/agrovoc/c_16581) (11 total)
+  Examples: [Borna disease virus](http://aims.fao.org/aos/agrovoc/c_18805), [Duck hepatitis virus](http://aims.fao.org/aos/agrovoc/c_10478), [Pest of small ruminants virus](http://aims.fao.org/aos/agrovoc/c_16581) (12 total)
 
 classes: 
   viroses: "http://aims.fao.org/aos/agrovoc/c_8260"
@@ -20,7 +20,7 @@ vars:
   v0: "'viroses'"
 
 name:
-  # Induced, frequency=0.9090909090909091, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.8333333333333334, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s virus"
   vars:
     - v0
@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'viruses' and ('causes' some %s)"
+  text: "('viruses' and ('causes' some %s))"
   vars:
     - v0

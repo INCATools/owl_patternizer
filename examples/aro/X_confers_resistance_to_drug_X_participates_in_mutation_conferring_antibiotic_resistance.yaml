@@ -5,9 +5,10 @@ pattern_iri: http://purl.obolibrary.org/obo/aro/X_confers_resistance_to_drug_X_p
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [Klebsiella mutant PhoP conferring antibiotic resistance to colistin](http://purl.obolibrary.org/obo/ARO_3003585), [Staphylococcus aureus GlpT with mutation conferring resistance to fosfomycin](http://purl.obolibrary.org/obo/ARO_3003901), [Escherichia coli UhpT with mutation conferring resistance to fosfomycin](http://purl.obolibrary.org/obo/ARO_3003890) (4 total)
+  Examples: [Klebsiella mutant PhoP conferring antibiotic resistance to colistin](http://purl.obolibrary.org/obo/ARO_3003585), [Escherichia coli GlpT with mutation conferring resistance to fosfomycin](http://purl.obolibrary.org/obo/ARO_3003889), [Escherichia coli UhpT with mutation conferring resistance to fosfomycin](http://purl.obolibrary.org/obo/ARO_3003890) (4 total)
 
 classes: 
+  antibiotic molecule: "http://purl.obolibrary.org/obo/ARO_1000003"
   determinant of antibiotic resistance: "http://purl.obolibrary.org/obo/ARO_3000000"
   mutation conferring antibiotic resistance: "http://purl.obolibrary.org/obo/ARO_3000212"
 
@@ -43,7 +44,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('confers_resistance_to_drug' some %s) and ('participates_in' some 'mutation conferring antibiotic resistance')"
+  text: "(%s and ('confers_resistance_to_drug' some %s) and ('participates_in' some 'mutation conferring antibiotic resistance'))"
   vars:
     - v0
     - v1

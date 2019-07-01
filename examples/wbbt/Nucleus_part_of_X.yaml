@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/wbbt/Nucleus_part_of_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [Z4.aappppa (5R) nucleus](http://purl.obolibrary.org/obo/WBbt_0003511), [Z4.aapppaa (5L) nucleus](http://purl.obolibrary.org/obo/WBbt_0005723), [Z4.aappapp (5R) nucleus](http://purl.obolibrary.org/obo/WBbt_0003505) (2065 total)
+  Examples: [Z4.aappppa (5R) nucleus](http://purl.obolibrary.org/obo/WBbt_0003511), [Z4.aapppaa (5L) nucleus](http://purl.obolibrary.org/obo/WBbt_0005723), [Z4.aappapp (5R) nucleus](http://purl.obolibrary.org/obo/WBbt_0003505) (2070 total)
 
 classes: 
   Cell: "http://purl.obolibrary.org/obo/WBbt_0004017"
@@ -20,13 +20,13 @@ vars:
   v0: "'Cell'"
 
 name:
-  # Induced, frequency=0.9036319612590799, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.9115942028985508, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s nucleus"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.847457627118644, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.8454106280193237, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "nucleus of pedigree %s"
   vars:
     - v0
@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'Nucleus' and ('part_of' some %s)"
+  text: "('Nucleus' and ('part_of' some %s))"
   vars:
     - v0

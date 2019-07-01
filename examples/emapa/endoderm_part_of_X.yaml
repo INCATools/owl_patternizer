@@ -1,15 +1,32 @@
-# options: [min(20),dir(emapa),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(12),dir('examples/emapa'),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: endoderm part_of X
 pattern_iri: http://purl.obolibrary.org/obo/emapa/endoderm_part_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [embryo endoderm](http://purl.obolibrary.org/obo/EMAPA_16062), [branchial arch endoderm](http://purl.obolibrary.org/obo/EMAPA_32754), [1st branchial arch endoderm](http://purl.obolibrary.org/obo/EMAPA_16127) (21 total)
+  Examples: [embryo endoderm](http://purl.obolibrary.org/obo/EMAPA_16062), [extraembryonic endoderm](http://purl.obolibrary.org/obo/EMAPA_16052), [branchial arch endoderm](http://purl.obolibrary.org/obo/EMAPA_32754) (18 total)
 
 classes: 
+  embryo: "http://purl.obolibrary.org/obo/EMAPA_16039"
+  extraembryonic component: "http://purl.obolibrary.org/obo/EMAPA_16042"
+  branchial arch: "http://purl.obolibrary.org/obo/EMAPA_16117"
+  1st branchial membrane: "http://purl.obolibrary.org/obo/EMAPA_16121"
+  alimentary system: "http://purl.obolibrary.org/obo/EMAPA_16246"
+  gut: "http://purl.obolibrary.org/obo/EMAPA_16247"
+  foregut diverticulum: "http://purl.obolibrary.org/obo/EMAPA_16248"
+  hindgut diverticulum: "http://purl.obolibrary.org/obo/EMAPA_16251"
+  midgut: "http://purl.obolibrary.org/obo/EMAPA_16255"
+  buccopharyngeal membrane: "http://purl.obolibrary.org/obo/EMAPA_16259"
+  2nd branchial membrane: "http://purl.obolibrary.org/obo/EMAPA_16273"
+  thyroid primordium: "http://purl.obolibrary.org/obo/EMAPA_16361"
+  foregut-midgut junction: "http://purl.obolibrary.org/obo/EMAPA_16363"
+  1st branchial arch mandibular component: "http://purl.obolibrary.org/obo/EMAPA_16382"
+  1st branchial arch maxillary component: "http://purl.obolibrary.org/obo/EMAPA_16388"
+  3rd branchial membrane: "http://purl.obolibrary.org/obo/EMAPA_16583"
+  4th branchial membrane: "http://purl.obolibrary.org/obo/EMAPA_16763"
+  branchial pouch: "http://purl.obolibrary.org/obo/EMAPA_32752"
   endoderm: "http://purl.obolibrary.org/obo/EMAPA_35986"
-  owl:Thing: "owl:Thing"
 
 
 relations: 
@@ -17,10 +34,10 @@ relations:
 
 
 vars:
-  v0: "'owl:Thing'"
+  v0: "'embryo' or 'extraembryonic component' or 'branchial arch' or '1st branchial membrane' or 'alimentary system' or 'gut' or 'foregut diverticulum' or 'hindgut diverticulum' or 'midgut' or 'buccopharyngeal membrane' or '2nd branchial membrane' or 'thyroid primordium' or 'foregut-midgut junction' or '1st branchial arch mandibular component' or '1st branchial arch maxillary component' or '3rd branchial membrane' or '4th branchial membrane' or 'branchial pouch'"
 
 name:
-  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.9444444444444444, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s endoderm"
   vars:
     - v0
@@ -39,6 +56,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'endoderm' and ('part_of' some %s)"
+  text: "('endoderm' and ('part_of' some %s))"
   vars:
     - v0

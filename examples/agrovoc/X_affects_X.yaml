@@ -5,24 +5,40 @@ pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_affects_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [sex differentiation disorders](http://aims.fao.org/aos/agrovoc/c_7012), [growth disorders](http://aims.fao.org/aos/agrovoc/c_3396), [protein metabolism disorders](http://aims.fao.org/aos/agrovoc/c_6255) (11 total)
+  Examples: [food adulteration](http://aims.fao.org/aos/agrovoc/c_10958), [sex differentiation disorders](http://aims.fao.org/aos/agrovoc/c_7012), [growth disorders](http://aims.fao.org/aos/agrovoc/c_3396) (23 total)
 
 classes: 
+  nitrification: "http://aims.fao.org/aos/agrovoc/c_12834"
   adrenal glands: "http://aims.fao.org/aos/agrovoc/c_135"
+  adulteration: "http://aims.fao.org/aos/agrovoc/c_138"
   disorders: "http://aims.fao.org/aos/agrovoc/c_15584"
+  body weight: "http://aims.fao.org/aos/agrovoc/c_15846"
+  debt: "http://aims.fao.org/aos/agrovoc/c_2140"
   sex differentiation: "http://aims.fao.org/aos/agrovoc/c_26822"
   contamination: "http://aims.fao.org/aos/agrovoc/c_28317"
   inhibition: "http://aims.fao.org/aos/agrovoc/c_28427"
   foods: "http://aims.fao.org/aos/agrovoc/c_3032"
   hazards: "http://aims.fao.org/aos/agrovoc/c_330736"
+  deficiencies: "http://aims.fao.org/aos/agrovoc/c_330738"
   stored products: "http://aims.fao.org/aos/agrovoc/c_33118"
   growth: "http://aims.fao.org/aos/agrovoc/c_3394"
-  health: "http://aims.fao.org/aos/agrovoc/c_3511"
+  food safety: "http://aims.fao.org/aos/agrovoc/c_33995"
+  proteinase inhibitors: "http://aims.fao.org/aos/agrovoc/c_36656"
+  animal health: "http://aims.fao.org/aos/agrovoc/c_431"
+  losses: "http://aims.fao.org/aos/agrovoc/c_4438"
   metabolism: "http://aims.fao.org/aos/agrovoc/c_4769"
   diseases: "http://aims.fao.org/aos/agrovoc/c_49879"
+  organic matter: "http://aims.fao.org/aos/agrovoc/c_5387"
+  parathyroid gland: "http://aims.fao.org/aos/agrovoc/c_5580"
   pests: "http://aims.fao.org/aos/agrovoc/c_5741"
+  public finance: "http://aims.fao.org/aos/agrovoc/c_6347"
   salivary glands: "http://aims.fao.org/aos/agrovoc/c_6753"
+  soil chemistry: "http://aims.fao.org/aos/agrovoc/c_7161"
+  soil fertility: "http://aims.fao.org/aos/agrovoc/c_7170"
+  thyroid gland: "http://aims.fao.org/aos/agrovoc/c_7753"
   tongue: "http://aims.fao.org/aos/agrovoc/c_7809"
+  toxicity: "http://aims.fao.org/aos/agrovoc/c_7826"
+  trypsin: "http://aims.fao.org/aos/agrovoc/c_7989"
   vision: "http://aims.fao.org/aos/agrovoc/c_8266"
 
 
@@ -31,11 +47,11 @@ relations:
 
 
 vars:
-  v0: "'disorders' or 'contamination' or 'inhibition' or 'hazards' or 'diseases' or 'pests'"
-  v1: "'adrenal glands' or 'sex differentiation' or 'foods' or 'stored products' or 'growth' or 'health' or 'metabolism' or 'salivary glands' or 'tongue' or 'vision'"
+  v0: "'adulteration' or 'disorders' or 'debt' or 'contamination' or 'inhibition' or 'hazards' or 'deficiencies' or 'proteinase inhibitors' or 'losses' or 'diseases' or 'organic matter' or 'pests' or 'toxicity'"
+  v1: "'nitrification' or 'adrenal glands' or 'body weight' or 'sex differentiation' or 'foods' or 'stored products' or 'growth' or 'food safety' or 'animal health' or 'metabolism' or 'parathyroid gland' or 'public finance' or 'salivary glands' or 'soil chemistry' or 'soil fertility' or 'thyroid gland' or 'tongue' or 'trypsin' or 'vision'"
 
 name:
-  # Induced, frequency=0.6363636363636364, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.30434782608695654, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
@@ -56,7 +72,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('affects' some %s)"
+  text: "(%s and ('affects' some %s))"
   vars:
     - v0
     - v1

@@ -40,6 +40,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'power plant' and ('capable of' some 'anthropogenic generation of energy' and ('has input' some %s))"
+  text: "('power plant' and ('capable of' some ('anthropogenic generation of energy' and ('has input' some %s))))"
   vars:
     - v0

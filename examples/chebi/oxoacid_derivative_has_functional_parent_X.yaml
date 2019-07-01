@@ -49,6 +49,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'oxoacid derivative' and ('has functional parent' some %s)"
+  text: "('oxoacid derivative' and ('has functional parent' some %s))"
   vars:
     - v0

@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'dust' and ('derives from' some %s)"
+  text: "('dust' and ('derives from' some %s))"
   vars:
     - v0

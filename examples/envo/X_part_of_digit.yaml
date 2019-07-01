@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('part of' some 'digit')"
+  text: "(%s and ('part of' some 'digit'))"
   vars:
     - v0

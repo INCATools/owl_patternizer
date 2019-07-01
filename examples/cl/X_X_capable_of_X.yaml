@@ -1,4 +1,4 @@
-# options: [min(20),dir(cl),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X X capable of X
 pattern_iri: http://purl.obolibrary.org/obo/cl/X_X_capable_of_X
 
@@ -8,6 +8,7 @@ description: >-
   Examples: [single fate stem cell](http://purl.obolibrary.org/obo/CL_0000035), [male gamete](http://purl.obolibrary.org/obo/CL_0000408), [secondary spermatocyte](http://purl.obolibrary.org/obo/CL_0000657) (47 total)
 
 classes: 
+  native cell: "CL:0000003"
   detection of stimulus involved in sensory perception: "GO:0050906"
 
 
@@ -44,7 +45,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and %s and ('capable of' some %s)"
+  text: "(%s and %s and ('capable of' some %s))"
   vars:
     - v0
     - v1

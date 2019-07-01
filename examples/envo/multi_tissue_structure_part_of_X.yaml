@@ -45,6 +45,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'multi-tissue structure' and ('part of' some %s)"
+  text: "('multi-tissue structure' and ('part of' some %s))"
   vars:
     - v0

@@ -8,6 +8,7 @@ description: >-
   Examples: [radical formation](http://purl.obolibrary.org/obo/MOP_0000786), [epoxidation](http://purl.obolibrary.org/obo/MOP_0000671), [polymerisation](http://purl.obolibrary.org/obo/MOP_0000629) (20 total)
 
 classes: 
+  molecular entity: "http://purl.obolibrary.org/obo/CHEBI_23367"
   molecular process: "http://purl.obolibrary.org/obo/MOP_0000543"
 
 
@@ -41,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has participant beginning to exist' some %s)"
+  text: "(%s and ('has participant beginning to exist' some %s))"
   vars:
     - v0
     - v1

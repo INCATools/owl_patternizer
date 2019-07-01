@@ -49,6 +49,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'oxoacid' and ('has part' some %s)"
+  text: "('oxoacid' and ('has part' some %s))"
   vars:
     - v0

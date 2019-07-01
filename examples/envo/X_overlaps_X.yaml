@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/X_overlaps_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [coastal plain](http://purl.obolibrary.org/obo/ENVO_00000090), [forested area](http://purl.obolibrary.org/obo/ENVO_00000111), [sea shore](http://purl.obolibrary.org/obo/ENVO_00000485) (14 total)
+  Examples: [two-dimensional fiat ice surface](http://purl.obolibrary.org/obo/ENVO_01001544), [vadose cave](http://purl.obolibrary.org/obo/ENVO_01000369), [coastal plain](http://purl.obolibrary.org/obo/ENVO_00000090) (26 total)
 
 classes: 
   independent continuant: "BFO:0000004"
@@ -20,7 +20,7 @@ vars:
   v1: "'independent continuant'"
 
 name:
-  # Induced, frequency=0.2857142857142857, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.15384615384615385, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
@@ -41,7 +41,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('overlaps' some %s)"
+  text: "(%s and ('overlaps' some %s))"
   vars:
     - v0
     - v1

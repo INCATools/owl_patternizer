@@ -40,6 +40,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has role' some 'cofactor')"
+  text: "(%s and ('has role' some 'cofactor'))"
   vars:
     - v0

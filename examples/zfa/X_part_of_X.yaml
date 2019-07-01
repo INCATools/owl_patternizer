@@ -1,11 +1,11 @@
-# options: [min(20),dir(zfa),trim(true),base('http://purl.obolibrary.org/obo/zfa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(12),dir('examples/zfa'),trim(true),base('http://purl.obolibrary.org/obo/zfa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X part of X
 pattern_iri: http://purl.obolibrary.org/obo/zfa/X_part_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [mesoderm pectoral fin bud](http://purl.obolibrary.org/obo/ZFA_0000789), [mesoderm pelvic fin bud](http://purl.obolibrary.org/obo/ZFA_0001386), [caudal fin](http://purl.obolibrary.org/obo/ZFA_0001058) (356 total)
+  Examples: [hyaloid artery](http://purl.obolibrary.org/obo/ZFA_0005045), [oral ectoderm](http://purl.obolibrary.org/obo/ZFA_0005463), [pectoral fin skeleton](http://purl.obolibrary.org/obo/ZFA_0000943) (444 total)
 
 classes: 
   zebrafish anatomical entity: "http://purl.obolibrary.org/obo/ZFA_0100000"
@@ -20,15 +20,15 @@ vars:
   v1: "'zebrafish anatomical entity'"
 
 name:
-  # Induced, frequency=0.21910112359550563, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.25675675675675674, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v0
     - v1
 
 def:
-  # Induced, frequency=0.047752808988764044, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "%s that is part of the %s."
+  # Induced, frequency=0.06756756756756757, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s cell part of %s."
   vars:
     - v0
     - v1
@@ -42,12 +42,12 @@ annotations:
     # Induced p=exact_synonym 
     text: "%s %s"
     vars:
-      - v1
       - v0
+      - v1
 
 
 equivalentTo:
-  text: "%s and ('part of' some %s)"
+  text: "(%s and ('part of' some %s))"
   vars:
     - v0
     - v1

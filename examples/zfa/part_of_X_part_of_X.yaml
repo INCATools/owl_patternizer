@@ -1,11 +1,11 @@
-# options: [min(20),dir(zfa),trim(true),base('http://purl.obolibrary.org/obo/zfa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(12),dir('examples/zfa'),trim(true),base('http://purl.obolibrary.org/obo/zfa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: part of X part of X
 pattern_iri: http://purl.obolibrary.org/obo/zfa/part_of_X_part_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [floor plate rhombomere region](http://purl.obolibrary.org/obo/ZFA_0001258), [floor plate spinal cord region](http://purl.obolibrary.org/obo/ZFA_0000890), [floor plate telencephalic region](http://purl.obolibrary.org/obo/ZFA_0000914) (49 total)
+  Examples: [floor plate rhombomere region](http://purl.obolibrary.org/obo/ZFA_0001258), [floor plate spinal cord region](http://purl.obolibrary.org/obo/ZFA_0000890), [floor plate telencephalic region](http://purl.obolibrary.org/obo/ZFA_0000914) (32 total)
 
 classes: 
   anatomical structure: "http://purl.obolibrary.org/obo/ZFA_0000037"
@@ -20,15 +20,15 @@ vars:
   v1: "'anatomical structure'"
 
 name:
-  # Induced, frequency=0.5510204081632653, p=http://www.w3.org/2000/01/rdf-schema#label 
-  text: "%s pioneer %s"
+  # Induced, frequency=0.1875, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
   vars:
     - v0
     - v1
 
 def:
-  # Induced, frequency=0.5510204081632653, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "%s pioneer cell part of %s."
+  # Induced, frequency=0.1875, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s that is part of the %s."
   vars:
     - v0
     - v1
@@ -40,14 +40,14 @@ annotationProperties:
 annotations:
   - annotationProperty: exact_synonym
     # Induced p=exact_synonym 
-    text: "%s pioneers %s"
+    text: "%s %s"
     vars:
       - v0
       - v1
 
 
 equivalentTo:
-  text: "('part of' some %s) and ('part of' some %s)"
+  text: "(('part of' some %s) and ('part of' some %s))"
   vars:
     - v0
     - v1

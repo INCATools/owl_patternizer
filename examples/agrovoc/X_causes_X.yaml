@@ -5,32 +5,25 @@ pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_causes_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [toxic substances](http://aims.fao.org/aos/agrovoc/c_7825), [toxic minerals](http://aims.fao.org/aos/agrovoc/c_35674), [Scrapie agent](http://aims.fao.org/aos/agrovoc/c_6882) (18 total)
+  Examples: [Mycobacterium avium subsp. paratuberculosis](http://aims.fao.org/aos/agrovoc/c_37851), [greenhouse gases](http://aims.fao.org/aos/agrovoc/c_34841), [female genital diseases](http://aims.fao.org/aos/agrovoc/c_2849) (30 total)
 
 classes: 
-  paratuberculosis: "http://aims.fao.org/aos/agrovoc/c_16452"
-  pseudotuberculosis: "http://aims.fao.org/aos/agrovoc/c_16457"
-  Borna disease: "http://aims.fao.org/aos/agrovoc/c_16693"
-  duck viral hepatitis: "http://aims.fao.org/aos/agrovoc/c_16717"
-  pest of small ruminants: "http://aims.fao.org/aos/agrovoc/c_16789"
-  vesicular stomatitis: "http://aims.fao.org/aos/agrovoc/c_16826"
-  scrapie: "http://aims.fao.org/aos/agrovoc/c_24311"
-  distemper: "http://aims.fao.org/aos/agrovoc/c_27088"
-  cholera: "http://aims.fao.org/aos/agrovoc/c_34154"
-  african horse sickness: "http://aims.fao.org/aos/agrovoc/c_34202"
-  Marek's disease: "http://aims.fao.org/aos/agrovoc/c_4599"
+  Mycobacterium avium: "http://aims.fao.org/aos/agrovoc/c_12730"
+  gases: "http://aims.fao.org/aos/agrovoc/c_3197"
+  genital diseases: "http://aims.fao.org/aos/agrovoc/c_3223"
+  Closteroviruses: "http://aims.fao.org/aos/agrovoc/c_32854"
+  Influenzavirus: "http://aims.fao.org/aos/agrovoc/c_3859"
   minerals: "http://aims.fao.org/aos/agrovoc/c_4857"
   agents: "http://aims.fao.org/aos/agrovoc/c_49873"
-  Mycobacterium: "http://aims.fao.org/aos/agrovoc/c_5018"
-  newcastle disease: "http://aims.fao.org/aos/agrovoc/c_5165"
-  rabies: "http://aims.fao.org/aos/agrovoc/c_6416"
-  rinderpest: "http://aims.fao.org/aos/agrovoc/c_6605"
-  toxicity: "http://aims.fao.org/aos/agrovoc/c_7826"
-  tuberculosis: "http://aims.fao.org/aos/agrovoc/c_7997"
+  mutation: "http://aims.fao.org/aos/agrovoc/c_5014"
+  pest mites: "http://aims.fao.org/aos/agrovoc/c_5730"
+  pollutants: "http://aims.fao.org/aos/agrovoc/c_6076"
+  pollution: "http://aims.fao.org/aos/agrovoc/c_6077"
+  polyploidy: "http://aims.fao.org/aos/agrovoc/c_6094"
+  Salmonella: "http://aims.fao.org/aos/agrovoc/c_6757"
   Vibrio: "http://aims.fao.org/aos/agrovoc/c_8212"
-  viruses: "http://aims.fao.org/aos/agrovoc/c_8262"
   Yersinia: "http://aims.fao.org/aos/agrovoc/c_8485"
-  bluetongue: "http://aims.fao.org/aos/agrovoc/c_976"
+  owl:Thing: "owl:Thing"
 
 
 relations: 
@@ -38,11 +31,11 @@ relations:
 
 
 vars:
-  v0: "'minerals' or 'agents' or 'Mycobacterium' or 'Vibrio' or 'viruses' or 'Yersinia'"
-  v1: "'paratuberculosis' or 'pseudotuberculosis' or 'Borna disease' or 'duck viral hepatitis' or 'pest of small ruminants' or 'vesicular stomatitis' or 'scrapie' or 'distemper' or 'cholera' or 'african horse sickness' or 'Marek's disease' or 'newcastle disease' or 'rabies' or 'rinderpest' or 'toxicity' or 'tuberculosis' or 'bluetongue'"
+  v0: "'Mycobacterium avium' or 'gases' or 'genital diseases' or 'Closteroviruses' or 'Influenzavirus' or 'minerals' or 'agents' or 'mutation' or 'pest mites' or 'pollutants' or 'pollution' or 'polyploidy' or 'Salmonella' or 'Vibrio' or 'Yersinia'"
+  v1: "'owl:Thing'"
 
 name:
-  # Induced, frequency=0.1111111111111111, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.06666666666666667, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v0
@@ -63,7 +56,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('causes' some %s)"
+  text: "(%s and ('causes' some %s))"
   vars:
     - v0
     - v1

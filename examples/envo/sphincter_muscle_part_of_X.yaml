@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'sphincter muscle' and ('part of' some %s)"
+  text: "('sphincter muscle' and ('part of' some %s))"
   vars:
     - v0

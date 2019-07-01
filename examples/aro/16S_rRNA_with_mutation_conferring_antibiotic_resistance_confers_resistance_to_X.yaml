@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'16S rRNA with mutation conferring antibiotic resistance' and ('confers_resistance_to' some %s)"
+  text: "('16S rRNA with mutation conferring antibiotic resistance' and ('confers_resistance_to' some %s))"
   vars:
     - v0

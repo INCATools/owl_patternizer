@@ -424,13 +424,16 @@ subterm_equiv(T,C,G,Opts) :-
         !,
         concat_atom([Prefix,T],C),
         rdf_assert(C,rdf:type,owl:'Class',G),
-        rdf_canonical_literal(T,Lit),
-        rdf_assert(C,rdfs:label,Lit,G).
+        rdf_assert_literal(C,rdfs:label,T,G).
 
 rdf_assert_literal(S,P,O) :-
         atom_string(O,Str),
         rdf_canonical_literal(Str, Lit),
         rdf_assert(S,P,Lit).
+rdf_assert_literal(S,P,O,G) :-
+        atom_string(O,Str),
+        rdf_canonical_literal(Str, Lit),
+        rdf_assert(S,P,Lit,G).
 
 % e.g. disodium 7-hydroxy-8-[(e)-phenyldiazenyl]naphthalene-1,3-disulfonate
 remove_chemical_synonyms :-

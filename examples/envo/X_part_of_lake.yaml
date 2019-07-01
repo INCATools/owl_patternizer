@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_lake
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [lake shore](http://purl.obolibrary.org/obo/ENVO_00000382), [lake inlet](http://purl.obolibrary.org/obo/ENVO_00000476), [lake layer](http://purl.obolibrary.org/obo/ENVO_01000283) (4 total)
+  Examples: [lake shore](http://purl.obolibrary.org/obo/ENVO_00000382), [lake inlet](http://purl.obolibrary.org/obo/ENVO_00000476), [lake surface](http://purl.obolibrary.org/obo/ENVO_00000105) (5 total)
 
 classes: 
   geographic feature: "ENVO:00000000"
@@ -20,14 +20,14 @@ vars:
   v0: "'geographic feature'"
 
 name:
-  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.4, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "lake %s"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "A %s which is part of a lake."
+  # Could not induce def, using default
+  text: "Any %s that part of a lake"
   vars:
     - v0
 
@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('part of' some 'lake')"
+  text: "(%s and ('part of' some 'lake'))"
   vars:
     - v0

@@ -7,6 +7,8 @@
 #PACKNAME=sparkle
 #include ../Makefile.inc
 
+OBO = http://purl.obolibrary.org/obo
+
 SWIPL = swipl  -L0 -G0 -T0  -p library=prolog
 all: test
 
@@ -24,12 +26,22 @@ coverage:
 t-%:
 	$(SWIPL) -l tests/$*_test.pl -g run_tests,halt
 
+
 # E.g. do-envo
 do-%:
 	swipl --stack_limit=14g --table_space=14g -l examples/conf.pl -g "do_for($*),halt"
 
 doall:
 	swipl -l examples/conf.pl -g doall,halt
+
+
+EXDIR = examples
+ONTS = $(patsubst $(EXDIR)/%/, %, $(sort $(dir $(wildcard $(EXDIR)/*/*.yaml))))
+
+doall2: $(patsubst %, do-%, $(ONTS))
+x:
+	echo yy $(patsubst %, do-%, $(ONTS))
+	echo xx $(ONTS)
 
 #examples/%/inf.owl: examples/%/merged.owl
 #	robot reason -r elk -i $< -a true -o $@
@@ -52,6 +64,13 @@ examples/%.tsv:
 
 examples/%/pattern.owl:
 	dosdp-tools prototype --obo-prefixes --template=examples/$* --outfile=$@
+
+examples/%/pattern-terms.txt: examples/%/pattern.owl
+	robot query -i $< -q sparql/seed.rq $@
+examples/%/pattern-imports.owl: examples/%/pattern-terms.txt
+	robot extract -m BOT -i examples/$*/_input.ttl -T $< -o $@
+examples/%/pattern-inf.owl: examples/%/pattern-imports.owl
+	robot merge -i examples/$*/pattern.owl -i $< reason -r hermit annotate -O $(OBO)/$@ -o $@
 
 #examples/chebi/seed.txt:
 #	pq-ontobee -f tsv --distinct 'owl_some(_,_,C),str_starts(str(C),"http://purl.obolibrary.org/obo/CHEBI_")' C > $@

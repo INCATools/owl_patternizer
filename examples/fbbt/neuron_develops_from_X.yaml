@@ -1,4 +1,4 @@
-# options: [min(50),dir(fbbt),trim(true),base('http://purl.obolibrary.org/obo/fbbt'),generalize_properties(true),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(50),dir('examples/fbbt'),trim(true),base('http://purl.obolibrary.org/obo/fbbt'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: neuron develops_from X
 pattern_iri: http://purl.obolibrary.org/obo/fbbt/neuron_develops_from_X
 
@@ -20,14 +20,14 @@ vars:
   v0: "'procephalic neuroblast'"
 
 name:
-  # Induced, frequency=0.010869565217391304, p=http://www.w3.org/2000/01/rdf-schema#label 
-  text: "DPMpl3 lineage neuron%s"
+  # Could not induce name, using default
+  text: "neuron develops_from %s"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.010869565217391304, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "Neuron developing from the %s (BAlc1 and BAlc2) neuroblast."
+  # Could not induce def, using default
+  text: "Any neuron that develops_from a %s"
   vars:
     - v0
 
@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'neuron' and ('develops_from' some %s)"
+  text: "('neuron' and ('develops_from' some %s))"
   vars:
     - v0

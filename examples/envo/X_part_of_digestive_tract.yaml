@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('part of' some 'digestive tract')"
+  text: "(%s and ('part of' some 'digestive tract'))"
   vars:
     - v0

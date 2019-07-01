@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/chebi/cation_is_conjugate_acid_of_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [cysteinium](http://purl.obolibrary.org/obo/CHEBI_32458), [L-leucinium](http://purl.obolibrary.org/obo/CHEBI_32620), [D-tryptophanium](http://purl.obolibrary.org/obo/CHEBI_32717) (41 total)
+  Examples: [cysteinium](http://purl.obolibrary.org/obo/CHEBI_32458), [L-valinium](http://purl.obolibrary.org/obo/CHEBI_32852), [D-serinium](http://purl.obolibrary.org/obo/CHEBI_32841) (37 total)
 
 classes: 
   cation: "http://purl.obolibrary.org/obo/CHEBI_36916"
@@ -20,13 +20,13 @@ vars:
   v0: "'organic molecular entity'"
 
 name:
-  # Induced, frequency=0.43902439024390244, p=http://www.w3.org/2000/01/rdf-schema#label 
-  text: "%sium"
+  # Induced, frequency=0.32432432432432434, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s +1 ion"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.07317073170731707, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.05405405405405406, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "An alpha-amino-acid cation that is the conjugate acid of %s, arising from protonation of the amino group."
   vars:
     - v0
@@ -49,6 +49,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'cation' and ('is conjugate acid of' some %s)"
+  text: "('cation' and ('is conjugate acid of' some %s))"
   vars:
     - v0

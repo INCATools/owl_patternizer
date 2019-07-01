@@ -1,0 +1,12 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/MA_0000525	abdominal segment bone	http://purl.obolibrary.org/obo/MA_0000021	abdominal segment of trunk
+http://purl.obolibrary.org/obo/MA_0001478	chondrocranium bone	http://purl.obolibrary.org/obo/MA_0000317	chondrocranium
+http://purl.obolibrary.org/obo/MA_0000576	head bone	http://purl.obolibrary.org/obo/MA_0000023	head
+http://purl.obolibrary.org/obo/MA_0000569	head or neck bone	http://purl.obolibrary.org/obo/MA_0000006	head and neck
+http://purl.obolibrary.org/obo/MA_0000655	hip bone	http://purl.obolibrary.org/obo/MA_0000045	hip
+http://purl.obolibrary.org/obo/MA_0000688	limb bone	http://purl.obolibrary.org/obo/MA_0000007	limb
+http://purl.obolibrary.org/obo/MA_0000584	neck bone	http://purl.obolibrary.org/obo/MA_0000024	neck
+http://purl.obolibrary.org/obo/MA_0000532	pelvis bone	http://purl.obolibrary.org/obo/MA_0000030	pelvis
+http://purl.obolibrary.org/obo/MA_0000631	shoulder bone	http://purl.obolibrary.org/obo/MA_0000038	shoulder
+http://purl.obolibrary.org/obo/MA_0000696	tail bone	http://purl.obolibrary.org/obo/MA_0000008	tail
+http://purl.obolibrary.org/obo/MA_0000512	trunk bone	http://purl.obolibrary.org/obo/MA_0000004	trunk

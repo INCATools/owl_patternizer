@@ -1,0 +1,23 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/MA_0000518	abdomen blood vessel	http://purl.obolibrary.org/obo/MA_0000029	abdomen
+http://purl.obolibrary.org/obo/MA_0000524	abdominal segment blood vessel	http://purl.obolibrary.org/obo/MA_0000021	abdominal segment of trunk
+http://purl.obolibrary.org/obo/MA_0000591	arm blood vessel	http://purl.obolibrary.org/obo/MA_0000033	arm
+http://purl.obolibrary.org/obo/MA_0000061	arterial blood vessel	http://purl.obolibrary.org/obo/MA_0002719	arterial system
+http://purl.obolibrary.org/obo/MA_0002769	brain vasculature	http://purl.obolibrary.org/obo/MA_0000168	brain
+http://purl.obolibrary.org/obo/MA_0000549	chest blood vessel	http://purl.obolibrary.org/obo/MA_0000031	chest
+http://purl.obolibrary.org/obo/MA_0000642	foot blood vessel	http://purl.obolibrary.org/obo/MA_0000044	foot
+http://purl.obolibrary.org/obo/MA_0000611	forelimb blood vessel	http://purl.obolibrary.org/obo/MA_0000025	forelimb
+http://purl.obolibrary.org/obo/MA_0000618	hand blood vessel	http://purl.obolibrary.org/obo/MA_0000037	hand
+http://purl.obolibrary.org/obo/MA_0000575	head blood vessel	http://purl.obolibrary.org/obo/MA_0000023	head
+http://purl.obolibrary.org/obo/MA_0000568	head or neck blood vessel	http://purl.obolibrary.org/obo/MA_0000006	head and neck
+http://purl.obolibrary.org/obo/MA_0000659	hindlimb blood vessel	http://purl.obolibrary.org/obo/MA_0000026	hindlimb
+http://purl.obolibrary.org/obo/MA_0000669	leg blood vessel	http://purl.obolibrary.org/obo/MA_0000047	leg
+http://purl.obolibrary.org/obo/MA_0000687	limb blood vessel	http://purl.obolibrary.org/obo/MA_0000007	limb
+http://purl.obolibrary.org/obo/MA_0002457	lung blood vessel	http://purl.obolibrary.org/obo/MA_0000415	lung
+http://purl.obolibrary.org/obo/MA_0000583	neck blood vessel	http://purl.obolibrary.org/obo/MA_0000024	neck
+http://purl.obolibrary.org/obo/MA_0000531	pelvis blood vessel	http://purl.obolibrary.org/obo/MA_0000030	pelvis
+http://purl.obolibrary.org/obo/MA_0000695	tail blood vessel	http://purl.obolibrary.org/obo/MA_0000008	tail
+http://purl.obolibrary.org/obo/MA_0000554	thoracic cavity blood vessel	http://purl.obolibrary.org/obo/MA_0000032	thoracic cavity
+http://purl.obolibrary.org/obo/MA_0000558	thoracic segment blood vessel	http://purl.obolibrary.org/obo/MA_0000022	thoracic segment of trunk
+http://purl.obolibrary.org/obo/MA_0000511	trunk blood vessel	http://purl.obolibrary.org/obo/MA_0000004	trunk
+http://purl.obolibrary.org/obo/MA_0000066	venous blood vessel	http://purl.obolibrary.org/obo/MA_0002720	venous system

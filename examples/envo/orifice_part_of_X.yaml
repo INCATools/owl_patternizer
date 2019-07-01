@@ -40,6 +40,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'orifice' and ('part of' some %s)"
+  text: "('orifice' and ('part of' some %s))"
   vars:
     - v0

@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'endochondral element' and ('part of' some %s)"
+  text: "('endochondral element' and ('part of' some %s))"
   vars:
     - v0

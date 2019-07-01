@@ -45,7 +45,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('composed primarily of' some %s or %s)"
+  text: "(%s and ('composed primarily of' some %s or %s))"
   vars:
     - v0
     - v1

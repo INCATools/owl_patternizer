@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'artery' and ('part of' some %s)"
+  text: "('artery' and ('part of' some %s))"
   vars:
     - v0

@@ -42,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has quality' some %s)"
+  text: "(%s and ('has quality' some %s))"
   vars:
     - v0
     - v1

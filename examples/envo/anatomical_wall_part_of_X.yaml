@@ -49,6 +49,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'anatomical wall' and ('part of' some %s)"
+  text: "('anatomical wall' and ('part of' some %s))"
   vars:
     - v0

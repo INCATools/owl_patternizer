@@ -49,7 +49,7 @@ annotations:
 
 
 equivalentTo:
-  text: "('is conjugate acid of' some %s) and ('charge_state' some %s)"
+  text: "(('is conjugate acid of' some %s) and ('charge_state' some %s))"
   vars:
     - v0
     - v1

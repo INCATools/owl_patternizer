@@ -43,7 +43,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has part' some 'planetary surface' and ('composed primarily of' some %s))"
+  text: "(%s and ('has part' some ('planetary surface' and ('composed primarily of' some %s))))"
   vars:
     - v0
     - v1

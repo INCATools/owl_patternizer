@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('has parent hydride' some 'terpene')"
+  text: "(%s and ('has parent hydride' some 'terpene'))"
   vars:
     - v0

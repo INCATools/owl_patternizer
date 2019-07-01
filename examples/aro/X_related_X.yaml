@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/aro/X_related_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [determinant of tetracycline resistance](http://purl.obolibrary.org/obo/ARO_3000472), [determinant of pleuromutilin resistance](http://purl.obolibrary.org/obo/ARO_3003753), [dapsone resistant dihydropteroate synthase folP](http://purl.obolibrary.org/obo/ARO_3003388) (20 total)
+  Examples: [determinant of tetracycline resistance](http://purl.obolibrary.org/obo/ARO_3000472), [determinant of pleuromutilin resistance](http://purl.obolibrary.org/obo/ARO_3003753), [fosfomycin biosynthesis](http://purl.obolibrary.org/obo/ARO_3000459) (20 total)
 
 classes: 
   process or component of antibiotic biology or chemistry: "http://purl.obolibrary.org/obo/ARO_1000001"
@@ -41,7 +41,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('related' some %s)"
+  text: "(%s and ('related' some %s))"
   vars:
     - v0
     - v1

@@ -8,6 +8,7 @@ description: >-
   Examples: [Observational study](http://purl.org/net/OCRe/research.owl#Observational_study), [nucleic acid oligonucleotide library](http://purl.obolibrary.org/obo/ERO_0001143), [BAC library](http://purl.obolibrary.org/obo/ERO_0000429) (14 total)
 
 classes: 
+  genomic library: "http://purl.obolibrary.org/obo/ERO_0000279"
   BAC: "http://purl.obolibrary.org/obo/ERO_0000286"
   YAC: "http://purl.obolibrary.org/obo/ERO_0000287"
   PAC: "http://purl.obolibrary.org/obo/ERO_0000288"
@@ -16,11 +17,16 @@ classes:
   yeast two-hybrid construct: "http://purl.obolibrary.org/obo/ERO_0000295"
   transgenic lambda phage: "http://purl.obolibrary.org/obo/ERO_0000296"
   intervention: "http://purl.obolibrary.org/obo/ERO_0000347"
+  expression library: "http://purl.obolibrary.org/obo/ERO_0000430"
   primer: "http://purl.obolibrary.org/obo/ERO_0000631"
   shRNA plasmid: "http://purl.obolibrary.org/obo/ERO_0001137"
   dsRNA plasmid: "http://purl.obolibrary.org/obo/ERO_0001138"
   miRNA plasmid: "http://purl.obolibrary.org/obo/ERO_0001139"
+  nucleic acid oligonucleotide library: "http://purl.obolibrary.org/obo/ERO_0001143"
+  RNA interference construct library: "http://purl.obolibrary.org/obo/ERO_0001153"
+  organism library: "http://purl.obolibrary.org/obo/ERO_0001212"
   observational method: "http://purl.obolibrary.org/obo/ERO_0001317"
+  Quantitative human study: "http://purl.org/net/OCRe/research.owl#Quantitative_human_study"
 
 
 relations: 
@@ -53,7 +59,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has_part' some %s)"
+  text: "(%s and ('has_part' some %s))"
   vars:
     - v0
     - v1

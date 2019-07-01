@@ -49,6 +49,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'molecular entity' and ('has part' some %s)"
+  text: "('molecular entity' and ('has part' some %s))"
   vars:
     - v0

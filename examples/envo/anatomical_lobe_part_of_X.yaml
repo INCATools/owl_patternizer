@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'anatomical lobe' and ('part of' some %s)"
+  text: "('anatomical lobe' and ('part of' some %s))"
   vars:
     - v0

@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'collection of collagen fibrils' and ('part of' some %s)"
+  text: "('collection of collagen fibrils' and ('part of' some %s))"
   vars:
     - v0

@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'cartilage element' and ('part of' some %s)"
+  text: "('cartilage element' and ('part of' some %s))"
   vars:
     - v0

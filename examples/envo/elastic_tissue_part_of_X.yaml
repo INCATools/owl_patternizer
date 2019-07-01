@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'elastic tissue' and ('part of' some %s)"
+  text: "('elastic tissue' and ('part of' some %s))"
   vars:
     - v0

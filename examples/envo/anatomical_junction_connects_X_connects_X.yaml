@@ -42,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'anatomical junction' and ('connects' some %s) and ('connects' some %s)"
+  text: "('anatomical junction' and ('connects' some %s) and ('connects' some %s))"
   vars:
     - v0
     - v1

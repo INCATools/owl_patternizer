@@ -42,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('charge_state' some %s)"
+  text: "(%s and ('charge_state' some %s))"
   vars:
     - v0
     - v1

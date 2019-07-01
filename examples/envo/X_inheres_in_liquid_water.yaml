@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('inheres in' some 'liquid water')"
+  text: "(%s and ('inheres in' some 'liquid water'))"
   vars:
     - v0

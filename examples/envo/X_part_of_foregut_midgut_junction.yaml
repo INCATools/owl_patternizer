@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('part of' some 'foregut-midgut junction')"
+  text: "(%s and ('part of' some 'foregut-midgut junction'))"
   vars:
     - v0

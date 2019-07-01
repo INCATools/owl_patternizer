@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'environmental material' and ('composed primarily of' some %s)"
+  text: "('environmental material' and ('composed primarily of' some %s))"
   vars:
     - v0

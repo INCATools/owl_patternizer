@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'exterior wall' and ('composed primarily of' some %s)"
+  text: "('exterior wall' and ('composed primarily of' some %s))"
   vars:
     - v0

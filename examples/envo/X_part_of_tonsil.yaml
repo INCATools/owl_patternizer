@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('part of' some 'tonsil')"
+  text: "(%s and ('part of' some 'tonsil'))"
   vars:
     - v0

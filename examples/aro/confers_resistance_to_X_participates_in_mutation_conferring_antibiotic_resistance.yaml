@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/aro/confers_resistance_to_X_particip
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [Staphylococcus aureus murA with mutation conferring resistance to fosfomycin](http://purl.obolibrary.org/obo/ARO_3003776), [Clostridium difficile murG with mutation conferring resistance to vancomycin](http://purl.obolibrary.org/obo/ARO_3004561), [Staphylococcus aureus fusE with mutation conferring resistance to fusidic acid](http://purl.obolibrary.org/obo/ARO_3003737) (4 total)
+  Examples: [Borrelia burgdorferi murA with mutation conferring resistance to fosfomycin](http://purl.obolibrary.org/obo/ARO_3003777), [Clostridium difficile murG with mutation conferring resistance to vancomycin](http://purl.obolibrary.org/obo/ARO_3004561), [Staphylococcus aureus fusE with mutation conferring resistance to fusidic acid](http://purl.obolibrary.org/obo/ARO_3003737) (4 total)
 
 classes: 
   antibiotic molecule: "http://purl.obolibrary.org/obo/ARO_1000003"
@@ -40,6 +40,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "('confers_resistance_to' some %s) and ('participates_in' some 'mutation conferring antibiotic resistance')"
+  text: "(('confers_resistance_to' some %s) and ('participates_in' some 'mutation conferring antibiotic resistance'))"
   vars:
     - v0

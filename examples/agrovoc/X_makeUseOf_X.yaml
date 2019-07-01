@@ -5,25 +5,10 @@ pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_makeUseOf_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [DNA cloning](http://aims.fao.org/aos/agrovoc/c_27695), [DNA transcription](http://aims.fao.org/aos/agrovoc/c_35127), [wastewater irrigation](http://aims.fao.org/aos/agrovoc/c_25323) (12 total)
+  Examples: [culture techniques](http://aims.fao.org/aos/agrovoc/c_24396), [DNA cloning](http://aims.fao.org/aos/agrovoc/c_27695), [water mills](http://aims.fao.org/aos/agrovoc/c_16150) (58 total)
 
 classes: 
-  cloning: "http://aims.fao.org/aos/agrovoc/c_15952"
-  DNA: "http://aims.fao.org/aos/agrovoc/c_2347"
-  drugs: "http://aims.fao.org/aos/agrovoc/c_2395"
-  gross margins: "http://aims.fao.org/aos/agrovoc/c_24851"
-  lasers: "http://aims.fao.org/aos/agrovoc/c_26026"
-  fruits: "http://aims.fao.org/aos/agrovoc/c_3131"
-  transcription: "http://aims.fao.org/aos/agrovoc/c_35126"
-  communication: "http://aims.fao.org/aos/agrovoc/c_37866"
-  irrigation: "http://aims.fao.org/aos/agrovoc/c_3954"
-  analysis: "http://aims.fao.org/aos/agrovoc/c_49928"
-  pressure: "http://aims.fao.org/aos/agrovoc/c_6174"
-  radiation: "http://aims.fao.org/aos/agrovoc/c_6422"
-  technology: "http://aims.fao.org/aos/agrovoc/c_7644"
-  therapy: "http://aims.fao.org/aos/agrovoc/c_7715"
-  vegetables: "http://aims.fao.org/aos/agrovoc/c_8174"
-  wastewater: "http://aims.fao.org/aos/agrovoc/c_8308"
+  owl:Thing: "owl:Thing"
 
 
 relations: 
@@ -31,11 +16,11 @@ relations:
 
 
 vars:
-  v0: "'cloning' or 'transcription' or 'irrigation' or 'analysis' or 'radiation' or 'technology' or 'therapy' or 'vegetables'"
-  v1: "'DNA' or 'drugs' or 'gross margins' or 'lasers' or 'fruits' or 'communication' or 'pressure' or 'wastewater'"
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
 
 name:
-  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.06896551724137931, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
@@ -56,7 +41,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('makeUseOf' some %s)"
+  text: "(%s and ('makeUseOf' some %s))"
   vars:
     - v0
     - v1

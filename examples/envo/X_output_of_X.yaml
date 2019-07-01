@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/X_output_of_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [manufactured product](http://purl.obolibrary.org/obo/ENVO_00003074), [construction](http://purl.obolibrary.org/obo/ENVO_00000070), [construction](http://purl.obolibrary.org/obo/ENVO_00000070) (9 total)
+  Examples: [manufactured product](http://purl.obolibrary.org/obo/ENVO_00003074), [construction](http://purl.obolibrary.org/obo/ENVO_00000070), [construction](http://purl.obolibrary.org/obo/ENVO_00000070) (10 total)
 
 classes: 
   material entity: "BFO:0000040"
@@ -42,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('output of' some %s)"
+  text: "(%s and ('output of' some %s))"
   vars:
     - v0
     - v1

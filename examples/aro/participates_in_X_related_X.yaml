@@ -5,9 +5,10 @@ pattern_iri: http://purl.obolibrary.org/obo/aro/participates_in_X_related_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [Escherichia coli 16S rRNA (rrsB) mutation conferring resistance to tetracycline](http://purl.obolibrary.org/obo/ARO_3003410), [Enterococcus faecalis gshF with mutation conferring daptomycin resistance](http://purl.obolibrary.org/obo/ARO_3003805), [Escherichia coli 16S rRNA mutation conferring resistance to edeine](http://purl.obolibrary.org/obo/ARO_3003223) (6 total)
+  Examples: [Enterococcus faecalis gshF with mutation conferring daptomycin resistance](http://purl.obolibrary.org/obo/ARO_3003805), [Clostridium difficile rpoB with mutation conferring resistance to rifampicin](http://purl.obolibrary.org/obo/ARO_3004563), [Mycobacterium leprae folP with mutation conferring resistance to dapsone](http://purl.obolibrary.org/obo/ARO_3003389) (4 total)
 
 classes: 
+  antibiotic molecule: "http://purl.obolibrary.org/obo/ARO_1000003"
   mutation conferring antibiotic resistance: "http://purl.obolibrary.org/obo/ARO_3000212"
 
 
@@ -42,7 +43,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "('participates_in' some %s) and ('related' some %s)"
+  text: "(('participates_in' some %s) and ('related' some %s))"
   vars:
     - v0
     - v1

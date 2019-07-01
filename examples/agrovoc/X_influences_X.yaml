@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_influences_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [household food security](http://aims.fao.org/aos/agrovoc/c_9000078), [management techniques](http://aims.fao.org/aos/agrovoc/c_28011), [marketing techniques](http://aims.fao.org/aos/agrovoc/c_4625) (38 total)
+  Examples: [marketing cooperatives](http://aims.fao.org/aos/agrovoc/c_12408), [purchasing cooperatives](http://aims.fao.org/aos/agrovoc/c_13679), [household food security](http://aims.fao.org/aos/agrovoc/c_9000078) (196 total)
 
 classes: 
   owl:Thing: "owl:Thing"
@@ -20,7 +20,7 @@ vars:
   v1: "'owl:Thing'"
 
 name:
-  # Induced, frequency=0.5789473684210527, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.10714285714285714, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
@@ -41,7 +41,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('influences' some %s)"
+  text: "(%s and ('influences' some %s))"
   vars:
     - v0
     - v1

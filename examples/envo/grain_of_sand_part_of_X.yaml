@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'grain of sand' and ('part of' some %s)"
+  text: "('grain of sand' and ('part of' some %s))"
   vars:
     - v0

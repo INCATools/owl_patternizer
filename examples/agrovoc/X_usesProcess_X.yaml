@@ -5,24 +5,35 @@ pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_usesProcess_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [isolation techniques](http://aims.fao.org/aos/agrovoc/c_3965), [fluidized bed drying](http://aims.fao.org/aos/agrovoc/c_37302), [canning industry](http://aims.fao.org/aos/agrovoc/c_1261) (11 total)
+  Examples: [isolation techniques](http://aims.fao.org/aos/agrovoc/c_3965), [vegetable crops](http://aims.fao.org/aos/agrovoc/c_8165), [in vitro culture](http://aims.fao.org/aos/agrovoc/c_24135) (28 total)
 
 classes: 
+  disinfection: "http://aims.fao.org/aos/agrovoc/c_10397"
   canning: "http://aims.fao.org/aos/agrovoc/c_1260"
   centralization: "http://aims.fao.org/aos/agrovoc/c_1440"
-  techniques: "http://aims.fao.org/aos/agrovoc/c_14816"
+  vegetable growing: "http://aims.fao.org/aos/agrovoc/c_16509"
+  crops: "http://aims.fao.org/aos/agrovoc/c_1972"
+  data collection: "http://aims.fao.org/aos/agrovoc/c_2128"
   drying: "http://aims.fao.org/aos/agrovoc/c_2402"
+  culture techniques: "http://aims.fao.org/aos/agrovoc/c_24396"
   infiltration: "http://aims.fao.org/aos/agrovoc/c_26789"
   pulping: "http://aims.fao.org/aos/agrovoc/c_26811"
   fluidized bed processing: "http://aims.fao.org/aos/agrovoc/c_28599"
+  fumigation: "http://aims.fao.org/aos/agrovoc/c_3142"
+  in vitro regeneration: "http://aims.fao.org/aos/agrovoc/c_34114"
+  heating: "http://aims.fao.org/aos/agrovoc/c_3524"
   isolation: "http://aims.fao.org/aos/agrovoc/c_37744"
   industry: "http://aims.fao.org/aos/agrovoc/c_3848"
+  injection: "http://aims.fao.org/aos/agrovoc/c_3871"
   milling: "http://aims.fao.org/aos/agrovoc/c_4840"
-  plants: "http://aims.fao.org/aos/agrovoc/c_5993"
+  analysis: "http://aims.fao.org/aos/agrovoc/c_49928"
+  pelleting: "http://aims.fao.org/aos/agrovoc/c_5663"
   reclamation: "http://aims.fao.org/aos/agrovoc/c_6474"
+  seed treatment: "http://aims.fao.org/aos/agrovoc/c_6940"
   shading: "http://aims.fao.org/aos/agrovoc/c_7020"
+  soil treatment: "http://aims.fao.org/aos/agrovoc/c_7203"
+  soil water: "http://aims.fao.org/aos/agrovoc/c_7205"
   storage: "http://aims.fao.org/aos/agrovoc/c_7427"
-  water: "http://aims.fao.org/aos/agrovoc/c_8309"
 
 
 relations: 
@@ -30,11 +41,11 @@ relations:
 
 
 vars:
-  v0: "'techniques' or 'fluidized bed processing' or 'industry' or 'plants' or 'storage' or 'water'"
-  v1: "'canning' or 'centralization' or 'drying' or 'infiltration' or 'pulping' or 'isolation' or 'milling' or 'reclamation' or 'shading'"
+  v0: "'crops' or 'culture techniques' or 'fluidized bed processing' or 'industry' or 'analysis' or 'seed treatment' or 'soil treatment' or 'soil water' or 'storage'"
+  v1: "'disinfection' or 'canning' or 'centralization' or 'vegetable growing' or 'data collection' or 'drying' or 'infiltration' or 'pulping' or 'fumigation' or 'in vitro regeneration' or 'heating' or 'isolation' or 'injection' or 'milling' or 'pelleting' or 'reclamation' or 'seed treatment' or 'shading'"
 
 name:
-  # Induced, frequency=0.45454545454545453, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.14285714285714285, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
@@ -55,7 +66,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('usesProcess' some %s)"
+  text: "(%s and ('usesProcess' some %s))"
   vars:
     - v0
     - v1

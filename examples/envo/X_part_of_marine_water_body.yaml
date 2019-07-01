@@ -5,11 +5,11 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_marine_water_body
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [marine thermocline](http://purl.obolibrary.org/obo/ENVO_01000075), [marine chemocline](http://purl.obolibrary.org/obo/ENVO_01000076), [marine pycnocline](http://purl.obolibrary.org/obo/ENVO_01000077) (4 total)
+  Examples: [marine thermocline](http://purl.obolibrary.org/obo/ENVO_01000075), [marine chemocline](http://purl.obolibrary.org/obo/ENVO_01000076), [marine pycnocline](http://purl.obolibrary.org/obo/ENVO_01000077) (6 total)
 
 classes: 
   marine water body: "ENVO:00001999"
-  cline: "ENVO:01000258"
+  layer: "ENVO:01000281"
 
 
 relations: 
@@ -17,7 +17,7 @@ relations:
 
 
 vars:
-  v0: "'cline'"
+  v0: "'layer'"
 
 name:
   # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
@@ -26,8 +26,8 @@ name:
     - v0
 
 def:
-  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "A marine %s is a marine cline caused by a strong, vertical chemistry gradient within a body of marine water. Chemoclines most commonly occur where local conditions favor the formations of anoxic bottom water."
+  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a marine water body."
   vars:
     - v0
 
@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('part of' some 'marine water body')"
+  text: "(%s and ('part of' some 'marine water body'))"
   vars:
     - v0

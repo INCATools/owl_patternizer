@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/X_derives_from_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [igneous rock](http://purl.obolibrary.org/obo/ENVO_00002013), [gold mine drainage](http://purl.obolibrary.org/obo/ENVO_00002112), [compost soil](http://purl.obolibrary.org/obo/ENVO_00005747) (95 total)
+  Examples: [igneous rock](http://purl.obolibrary.org/obo/ENVO_00002013), [gold mine drainage](http://purl.obolibrary.org/obo/ENVO_00002112), [compost soil](http://purl.obolibrary.org/obo/ENVO_00005747) (98 total)
 
 classes: 
   material entity: "BFO:0000040"
@@ -20,15 +20,15 @@ vars:
   v1: "'material entity'"
 
 name:
-  # Induced, frequency=0.08421052631578947, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.08163265306122448, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
     - v0
 
 def:
-  # Induced, frequency=0.021052631578947368, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "%s which is derived from %s."
+  # Could not induce def, using default
+  text: "Any %s that derives from a %s"
   vars:
     - v0
     - v1
@@ -41,7 +41,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('derives from' some %s)"
+  text: "(%s and ('derives from' some %s))"
   vars:
     - v0
     - v1

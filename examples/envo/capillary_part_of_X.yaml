@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'capillary' and ('part of' some %s)"
+  text: "('capillary' and ('part of' some %s))"
   vars:
     - v0

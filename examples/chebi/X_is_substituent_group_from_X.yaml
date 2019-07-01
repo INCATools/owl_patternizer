@@ -42,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('is substituent group from' some %s)"
+  text: "(%s and ('is substituent group from' some %s))"
   vars:
     - v0
     - v1

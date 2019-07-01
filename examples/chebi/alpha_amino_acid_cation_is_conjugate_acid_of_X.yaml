@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/chebi/alpha_amino_acid_cation_is_con
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [glycinium](http://purl.obolibrary.org/obo/CHEBI_32507), [D-alaninium](http://purl.obolibrary.org/obo/CHEBI_32436), [D-threoninium](http://purl.obolibrary.org/obo/CHEBI_32828) (24 total)
+  Examples: [glycinium](http://purl.obolibrary.org/obo/CHEBI_32507), [D-alaninium](http://purl.obolibrary.org/obo/CHEBI_32436), [L-leucinium](http://purl.obolibrary.org/obo/CHEBI_32620) (29 total)
 
 classes: 
   alpha-amino-acid cation: "http://purl.obolibrary.org/obo/CHEBI_33719"
@@ -20,13 +20,13 @@ vars:
   v0: "'organonitrogen compound'"
 
 name:
-  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.8275862068965517, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%sium"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.08333333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.10344827586206896, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "An alpha-amino-acid cation that is the conjugate acid of %s, arising from protonation of the amino group."
   vars:
     - v0
@@ -49,6 +49,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'alpha-amino-acid cation' and ('is conjugate acid of' some %s)"
+  text: "('alpha-amino-acid cation' and ('is conjugate acid of' some %s))"
   vars:
     - v0

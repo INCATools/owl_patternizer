@@ -6,7 +6,7 @@
 @prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix  obo: <http://purl.obolibrary.org/obo/> .
 
-# Named toplevel resources (20)
+# Named toplevel resources (4)
 
 obo:APO_0000056
 	owl:equivalentClass [ a owl:Class ;
@@ -14,188 +14,6 @@ obo:APO_0000056
 						   [ a owl:Restriction ;
 						     owl:onProperty skos:related ;
 						     owl:someValuesFrom obo:APO_0000024
-						   ]
-						 )
-			    ] .
-
-obo:APO_0000067
-	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000070
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000250
-						   ]
-						 )
-			    ] .
-
-obo:APO_0000068
-	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000070
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000250
-						   ]
-						 )
-			    ] .
-
-obo:APO_0000069
-	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000070
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000250
-						   ]
-						 )
-			    ] .
-
-obo:APO_0000122
-	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000070
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000250
-						   ]
-						 )
-			    ] .
-
-obo:APO_0000123
-	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000124
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000250
-						   ]
-						 )
-			    ] .
-
-obo:APO_0000124
-	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000070
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000250
-						   ]
-						 )
-			    ] .
-
-obo:APO_0000133
-	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000070
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000250
-						   ]
-						 )
-			    ] .
-
-obo:APO_0000134
-	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000070
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000250
-						   ]
-						 )
-			    ] .
-
-obo:APO_0000135
-	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000070
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000250
-						   ]
-						 )
-			    ] .
-
-obo:APO_0000136
-	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000070
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000250
-						   ]
-						 )
-			    ] .
-
-obo:APO_0000137
-	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000070
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000250
-						   ]
-						 )
-			    ] .
-
-obo:APO_0000138
-	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000070
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000250
-						   ]
-						 )
-			    ] .
-
-obo:APO_0000139
-	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000070
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000250
-						   ]
-						 )
-			    ] .
-
-obo:APO_0000140
-	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000070
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000250
 						   ]
 						 )
 			    ] .
@@ -208,7 +26,7 @@ obo:APO_0000150
 						   ]
 						   [ a owl:Restriction ;
 						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000229
+						     owl:someValuesFrom obo:APO_0000207
 						   ]
 						 )
 			    ] .
@@ -221,7 +39,7 @@ obo:APO_0000151
 						   ]
 						   [ a owl:Restriction ;
 						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000230
+						     owl:someValuesFrom obo:APO_0000206
 						   ]
 						 )
 			    ] .
@@ -236,230 +54,21 @@ obo:APO_0000212
 						 )
 			    ] .
 
-obo:APO_0000227
-	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000070
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000250
-						   ]
-						 )
-			    ] .
-
-obo:APO_0000238
-	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000070
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:APO_0000250
-						   ]
-						 )
-			    ] .
-
-# Toplevel blank-nodes (20)
+# Toplevel blank-nodes (4)
 [ a owl:Axiom ;
   rdfs:comment "Autogenerated" ;
   owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:APO_0000122 ;
+  owl:annotatedSource obo:APO_0000056 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000070
-					     ]
+			owl:intersectionOf ( obo:APO_0000049
 					     [ a owl:Restriction ;
 					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000250
+					       owl:someValuesFrom obo:APO_0000024
 					     ]
 					   )
 		      ] ;
   inca:annotationPropertyUsed "label" ;
-  inca:score 1
-] .
-[ a owl:Axiom ;
-  rdfs:comment "Autogenerated" ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:APO_0000123 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000124
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000250
-					     ]
-					   )
-		      ] ;
-  inca:annotationPropertyUsed "label" ;
-  inca:score 2
-] .
-[ a owl:Axiom ;
-  rdfs:comment "Autogenerated" ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:APO_0000124 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000070
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000250
-					     ]
-					   )
-		      ] ;
-  inca:annotationPropertyUsed "label" ;
-  inca:score 3
-] .
-[ a owl:Axiom ;
-  rdfs:comment "Autogenerated" ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:APO_0000133 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000070
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000250
-					     ]
-					   )
-		      ] ;
-  inca:annotationPropertyUsed "label" ;
-  inca:score 2
-] .
-[ a owl:Axiom ;
-  rdfs:comment "Autogenerated" ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:APO_0000134 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000070
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000250
-					     ]
-					   )
-		      ] ;
-  inca:annotationPropertyUsed "label" ;
-  inca:score -2
-] .
-[ a owl:Axiom ;
-  rdfs:comment "Autogenerated" ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:APO_0000135 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000070
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000250
-					     ]
-					   )
-		      ] ;
-  inca:annotationPropertyUsed "label" ;
-  inca:score 2
-] .
-[ a owl:Axiom ;
-  rdfs:comment "Autogenerated" ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:APO_0000136 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000070
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000250
-					     ]
-					   )
-		      ] ;
-  inca:annotationPropertyUsed "label" ;
-  inca:score 1
-] .
-[ a owl:Axiom ;
-  rdfs:comment "Autogenerated" ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:APO_0000137 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000070
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000250
-					     ]
-					   )
-		      ] ;
-  inca:annotationPropertyUsed "label" ;
-  inca:score 1
-] .
-[ a owl:Axiom ;
-  rdfs:comment "Autogenerated" ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:APO_0000138 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000070
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000250
-					     ]
-					   )
-		      ] ;
-  inca:annotationPropertyUsed "label" ;
-  inca:score 1
-] .
-[ a owl:Axiom ;
-  rdfs:comment "Autogenerated" ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:APO_0000139 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000070
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000250
-					     ]
-					   )
-		      ] ;
-  inca:annotationPropertyUsed "label" ;
-  inca:score 2
-] .
-[ a owl:Axiom ;
-  rdfs:comment "Autogenerated" ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:APO_0000140 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000070
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000250
-					     ]
-					   )
-		      ] ;
-  inca:annotationPropertyUsed "label" ;
-  inca:score 0
+  inca:score 7
 ] .
 [ a owl:Axiom ;
   rdfs:comment "Autogenerated" ;
@@ -472,7 +81,7 @@ obo:APO_0000238
 					     ]
 					     [ a owl:Restriction ;
 					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000229
+					       owl:someValuesFrom obo:APO_0000207
 					     ]
 					   )
 		      ] ;
@@ -490,7 +99,7 @@ obo:APO_0000238
 					     ]
 					     [ a owl:Restriction ;
 					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000230
+					       owl:someValuesFrom obo:APO_0000206
 					     ]
 					   )
 		      ] ;
@@ -511,109 +120,4 @@ obo:APO_0000238
 		      ] ;
   inca:annotationPropertyUsed "label" ;
   inca:score 8
-] .
-[ a owl:Axiom ;
-  rdfs:comment "Autogenerated" ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:APO_0000227 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000070
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000250
-					     ]
-					   )
-		      ] ;
-  inca:annotationPropertyUsed "label" ;
-  inca:score 1
-] .
-[ a owl:Axiom ;
-  rdfs:comment "Autogenerated" ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:APO_0000238 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000070
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000250
-					     ]
-					   )
-		      ] ;
-  inca:annotationPropertyUsed "label" ;
-  inca:score -1
-] .
-[ a owl:Axiom ;
-  rdfs:comment "Autogenerated" ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:APO_0000056 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( obo:APO_0000049
-					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000024
-					     ]
-					   )
-		      ] ;
-  inca:annotationPropertyUsed "label" ;
-  inca:score 7
-] .
-[ a owl:Axiom ;
-  rdfs:comment "Autogenerated" ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:APO_0000067 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000070
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000250
-					     ]
-					   )
-		      ] ;
-  inca:annotationPropertyUsed "label" ;
-  inca:score 1
-] .
-[ a owl:Axiom ;
-  rdfs:comment "Autogenerated" ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:APO_0000068 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000070
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000250
-					     ]
-					   )
-		      ] ;
-  inca:annotationPropertyUsed "label" ;
-  inca:score 1
-] .
-[ a owl:Axiom ;
-  rdfs:comment "Autogenerated" ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:APO_0000069 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000070
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:APO_0000250
-					     ]
-					   )
-		      ] ;
-  inca:annotationPropertyUsed "label" ;
-  inca:score 2
 ] .

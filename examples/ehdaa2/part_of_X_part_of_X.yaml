@@ -1,14 +1,14 @@
-# options: [min(20),dir(ehdaa2),trim(true),base('http://purl.obolibrary.org/obo/ehdaa2'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(12),dir('examples/ehdaa2'),trim(true),base('http://purl.obolibrary.org/obo/ehdaa2'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: part_of X part_of X
 pattern_iri: http://purl.obolibrary.org/obo/ehdaa2/part_of_X_part_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [pectoral girdle and thoracic body wall muscle system](http://purl.obolibrary.org/obo/EHDAA2_0001421), [aortic valve leaflet endocardium](http://purl.obolibrary.org/obo/EHDAA2_0004179), [aortico-pulmonary spiral septum endocardium](http://purl.obolibrary.org/obo/EHDAA2_0004187) (89 total)
+  Examples: [pectoral girdle and thoracic body wall muscle system](http://purl.obolibrary.org/obo/EHDAA2_0001421), [1st arch mandibular mesenchyme from neural crest](http://purl.obolibrary.org/obo/EHDAA2_0000037), [1st arch maxillary mesenchyme from neural crest](http://purl.obolibrary.org/obo/EHDAA2_0000044) (152 total)
 
 classes: 
-  anatomical entity: "ns1:CARO_0000000"
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
 
 
 relations: 
@@ -20,7 +20,7 @@ vars:
   v1: "'anatomical entity'"
 
 name:
-  # Induced, frequency=0.29213483146067415, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.18421052631578946, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v0
@@ -41,7 +41,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "('part_of' some %s) and ('part_of' some %s)"
+  text: "(('part_of' some %s) and ('part_of' some %s))"
   vars:
     - v0
     - v1

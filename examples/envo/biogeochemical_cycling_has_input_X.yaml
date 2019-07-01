@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'biogeochemical cycling' and ('has input' some %s)"
+  text: "('biogeochemical cycling' and ('has input' some %s))"
   vars:
     - v0

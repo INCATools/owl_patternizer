@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/agro/X_participates_in_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [tillage implement](http://purl.obolibrary.org/obo/AGRO_00000223), [land levelling implement](http://purl.obolibrary.org/obo/AGRO_00000224), [residue management implement](http://purl.obolibrary.org/obo/AGRO_00000225) (10 total)
+  Examples: [tillage implement](http://purl.obolibrary.org/obo/AGRO_00000223), [land levelling implement](http://purl.obolibrary.org/obo/AGRO_00000224), [residue management implement](http://purl.obolibrary.org/obo/AGRO_00000225) (12 total)
 
 classes: 
   agricultural implement: "http://purl.obolibrary.org/obo/AGRO_00000416"
@@ -42,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('participates in' some %s)"
+  text: "(%s and ('participates in' some %s))"
   vars:
     - v0
     - v1

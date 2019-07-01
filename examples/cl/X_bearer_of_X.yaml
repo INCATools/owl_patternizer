@@ -1,4 +1,4 @@
-# options: [min(20),dir(cl),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X bearer of X
 pattern_iri: http://purl.obolibrary.org/obo/cl/X_bearer_of_X
 
@@ -8,6 +8,15 @@ description: >-
   Examples: [haploid cell](http://purl.obolibrary.org/obo/CL_0000413), [anucleate cell](http://purl.obolibrary.org/obo/CL_0000225), [binucleate cell](http://purl.obolibrary.org/obo/CL_0000227) (25 total)
 
 classes: 
+  erythrocyte: "CL:0000232"
+  phagocyte (sensu Vertebrata): "CL:0000518"
+  odontoclast: "CL:0000588"
+  natural killer cell: "CL:0000623"
+  plasma cell: "CL:0000786"
+  double-positive, alpha-beta thymocyte: "CL:0000809"
+  neoplastic cell: "CL:0001063"
+  nucleus: "GO:0005634"
+  cytoplasm: "GO:0005737"
   quality: "PATO:0000001"
 
 
@@ -16,7 +25,7 @@ relations:
 
 
 vars:
-  v0: "'anatomical structure' or 'cellular_component'"
+  v0: "'erythrocyte' or 'phagocyte (sensu Vertebrata)' or 'odontoclast' or 'natural killer cell' or 'plasma cell' or 'double-positive, alpha-beta thymocyte' or 'neoplastic cell' or 'nucleus' or 'cytoplasm'"
   v1: "'quality'"
 
 name:
@@ -47,7 +56,7 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('bearer of' some %s)"
+  text: "(%s and ('bearer of' some %s))"
   vars:
     - v0
     - v1

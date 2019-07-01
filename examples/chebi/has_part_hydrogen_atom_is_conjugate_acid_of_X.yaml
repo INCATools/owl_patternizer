@@ -50,6 +50,6 @@ annotations:
 
 
 equivalentTo:
-  text: "('has part' some 'hydrogen atom') and ('is conjugate acid of' some %s)"
+  text: "(('has part' some 'hydrogen atom') and ('is conjugate acid of' some %s))"
   vars:
     - v0

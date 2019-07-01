@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/X_has_part_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [lake with an anoxic hypolimnion](http://purl.obolibrary.org/obo/ENVO_01001073), [lake with an oxic hypolimnion](http://purl.obolibrary.org/obo/ENVO_01001077), [lake with a hypoxic hypolimnion](http://purl.obolibrary.org/obo/ENVO_01001074) (59 total)
+  Examples: [lake with an anoxic hypolimnion](http://purl.obolibrary.org/obo/ENVO_01001073), [lake with an oxic hypolimnion](http://purl.obolibrary.org/obo/ENVO_01001077), [lake with a hypoxic hypolimnion](http://purl.obolibrary.org/obo/ENVO_01001074) (81 total)
 
 classes: 
   entity: "BFO:0000001"
@@ -20,14 +20,14 @@ vars:
   v1: "'entity'"
 
 name:
-  # Induced, frequency=0.2542372881355932, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.18518518518518517, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
     - v0
 
 def:
-  # Induced, frequency=0.03389830508474576, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.024691358024691357, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "A %s that contains, and has been formed by, a %s."
   vars:
     - v0
@@ -47,7 +47,7 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('has part' some %s)"
+  text: "(%s and ('has part' some %s))"
   vars:
     - v0
     - v1

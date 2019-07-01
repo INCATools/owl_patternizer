@@ -45,6 +45,6 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('part of' some 'central nervous system')"
+  text: "(%s and ('part of' some 'central nervous system'))"
   vars:
     - v0

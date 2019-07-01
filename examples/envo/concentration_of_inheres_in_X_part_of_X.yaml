@@ -49,7 +49,7 @@ annotations:
 
 
 equivalentTo:
-  text: "'concentration of' and ('inheres in' some %s and ('part of' some %s))"
+  text: "('concentration of' and ('inheres in' some (%s and ('part of' some %s))))"
   vars:
     - v0
     - v1

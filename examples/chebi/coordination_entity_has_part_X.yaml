@@ -49,6 +49,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'coordination entity' and ('has part' some %s)"
+  text: "('coordination entity' and ('has part' some %s))"
   vars:
     - v0

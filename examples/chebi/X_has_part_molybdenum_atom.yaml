@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('has part' some 'molybdenum atom')"
+  text: "(%s and ('has part' some 'molybdenum atom'))"
   vars:
     - v0

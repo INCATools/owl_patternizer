@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/wbbt/X_part_of_male
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [AMsoR male](http://purl.obolibrary.org/obo/WBbt_0008622), [AMsoL male](http://purl.obolibrary.org/obo/WBbt_0008620), [B cell male](http://purl.obolibrary.org/obo/WBbt_0008064) (12 total)
+  Examples: [B cell male](http://purl.obolibrary.org/obo/WBbt_0008064), [AMsoR male](http://purl.obolibrary.org/obo/WBbt_0008622), [AMsoL male](http://purl.obolibrary.org/obo/WBbt_0008620) (14 total)
 
 classes: 
   Cell: "http://purl.obolibrary.org/obo/WBbt_0004017"
@@ -20,13 +20,13 @@ vars:
   v0: "'Cell'"
 
 name:
-  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.7857142857142857, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s male"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.14285714285714285, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "%s cell in male animal."
   vars:
     - v0
@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('part_of' some 'male')"
+  text: "(%s and ('part_of' some 'male'))"
   vars:
     - v0

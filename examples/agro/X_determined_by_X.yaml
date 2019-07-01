@@ -5,11 +5,11 @@ pattern_iri: http://purl.obolibrary.org/obo/agro/X_determined_by_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [environment associated with an animal part or small animal](http://purl.obolibrary.org/obo/ENVO_01001055), [soil environment](http://purl.obolibrary.org/obo/ENVO_01001044), [aquatic environment](http://purl.obolibrary.org/obo/ENVO_01000317) (20 total)
+  Examples: [environment associated with an animal part or small animal](http://purl.obolibrary.org/obo/ENVO_01001055), [soil environment](http://purl.obolibrary.org/obo/ENVO_01001044), [aquatic environment](http://purl.obolibrary.org/obo/ENVO_01000317) (19 total)
 
 classes: 
   material entity: "BFO:0000040"
-  system: "RO:0002577"
+  environmental system: "ENVO:01000254"
 
 
 relations: 
@@ -17,11 +17,11 @@ relations:
 
 
 vars:
-  v0: "'system'"
+  v0: "'environmental system'"
   v1: "'material entity'"
 
 name:
-  # Induced, frequency=0.2, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.21052631578947367, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
@@ -48,7 +48,7 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('determined by' some %s)"
+  text: "(%s and ('determined by' some %s))"
   vars:
     - v0
     - v1

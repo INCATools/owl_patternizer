@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'loop of Henle' and ('part of' some %s)"
+  text: "('loop of Henle' and ('part of' some %s))"
   vars:
     - v0

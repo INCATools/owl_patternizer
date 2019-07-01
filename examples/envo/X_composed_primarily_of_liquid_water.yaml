@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/X_composed_primarily_of_liquid_
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [drinking water reservoir](http://purl.obolibrary.org/obo/ENVO_00000449), [water-based planetary surface](http://purl.obolibrary.org/obo/ENVO_01001193), [water droplet](http://purl.obolibrary.org/obo/ENVO_01000833) (9 total)
+  Examples: [drinking water reservoir](http://purl.obolibrary.org/obo/ENVO_00000449), [water surface](http://purl.obolibrary.org/obo/ENVO_01001191), [water-based planetary surface](http://purl.obolibrary.org/obo/ENVO_01001193) (10 total)
 
 classes: 
   material entity: "BFO:0000040"
@@ -20,13 +20,13 @@ vars:
   v0: "'material entity'"
 
 name:
-  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.3, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "water %s"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.1111111111111111, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.1, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "%s is water frozen into a solid state. It can appear transparent or opaque bluish-white color, depending on the presence of impurities or air inclusions. The addition of other materials such as soil may further alter its appearance."
   vars:
     - v0
@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('composed primarily of' some 'liquid water')"
+  text: "(%s and ('composed primarily of' some 'liquid water'))"
   vars:
     - v0

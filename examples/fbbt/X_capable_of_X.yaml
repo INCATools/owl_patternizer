@@ -1,13 +1,14 @@
-# options: [min(50),dir(fbbt),trim(true),base('http://purl.obolibrary.org/obo/fbbt'),generalize_properties(true),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(50),dir('examples/fbbt'),trim(true),base('http://purl.obolibrary.org/obo/fbbt'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X capable_of X
 pattern_iri: http://purl.obolibrary.org/obo/fbbt/X_capable_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [serotonergic thoracic neuron](http://purl.obolibrary.org/obo/FBbt_00100360), [peptidergic neuron](http://purl.obolibrary.org/obo/FBbt_00004101), [cholinergic neuron](http://purl.obolibrary.org/obo/FBbt_00007173) (52 total)
+  Examples: [serotonergic thoracic neuron](http://purl.obolibrary.org/obo/FBbt_00100360), [peptidergic neuron](http://purl.obolibrary.org/obo/FBbt_00004101), [carbon dioxide sensitive neuron](http://purl.obolibrary.org/obo/FBbt_00100045) (55 total)
 
 classes: 
+  material anatomical entity: "http://purl.obolibrary.org/obo/FBbt_00007016"
   biological_process: "GO:0008150"
 
 
@@ -27,8 +28,8 @@ name:
     - v1
 
 def:
-  # Induced, frequency=0.019230769230769232, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "Any %s (FBbt:00005106) that capable of some %s (GO:0002790)."
+  # Could not induce def, using default
+  text: "Any %s that capable_of a %s"
   vars:
     - v0
     - v1
@@ -41,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('capable_of' some %s)"
+  text: "(%s and ('capable_of' some %s))"
   vars:
     - v0
     - v1

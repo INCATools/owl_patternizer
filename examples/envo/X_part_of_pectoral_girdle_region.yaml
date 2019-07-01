@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('part of' some 'pectoral girdle region')"
+  text: "(%s and ('part of' some 'pectoral girdle region'))"
   vars:
     - v0

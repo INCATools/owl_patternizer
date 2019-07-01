@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/layer_composed_primarily_of_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [grease ice layer](http://purl.obolibrary.org/obo/ENVO_03000074), [solid layer](http://purl.obolibrary.org/obo/ENVO_01001275), [liquid layer](http://purl.obolibrary.org/obo/ENVO_01001273) (5 total)
+  Examples: [grease ice layer](http://purl.obolibrary.org/obo/ENVO_03000074), [litter layer](http://purl.obolibrary.org/obo/ENVO_01000338), [solid layer](http://purl.obolibrary.org/obo/ENVO_01001275) (5 total)
 
 classes: 
   material entity: "BFO:0000040"
@@ -20,7 +20,7 @@ vars:
   v0: "'material entity'"
 
 name:
-  # Induced, frequency=0.4, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.2, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s layer"
   vars:
     - v0
@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'layer' and ('composed primarily of' some %s)"
+  text: "('layer' and ('composed primarily of' some %s))"
   vars:
     - v0

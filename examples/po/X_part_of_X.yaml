@@ -1,18 +1,19 @@
-# options: [min(8),dir(po),trim(true),base('http://purl.obolibrary.org/obo/po'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
-pattern_name: X part_of X
+# options: [min(8),dir('examples/po'),trim(true),base('http://purl.obolibrary.org/obo/po'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of X
 pattern_iri: http://purl.obolibrary.org/obo/po/X_part_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [secondary xylem parenchyma cell](http://purl.obolibrary.org/obo/PO_0004525), [stem epidermis](http://purl.obolibrary.org/obo/PO_0025178), [branch epidermis](http://purl.obolibrary.org/obo/PO_0025179) (77 total)
+  Examples: [lateral root tip](http://purl.obolibrary.org/obo/PO_0000027), [primary root tip](http://purl.obolibrary.org/obo/PO_0000026), [fruit septum](http://purl.obolibrary.org/obo/PO_0025268) (421 total)
 
 classes: 
+  plant structure: "http://purl.obolibrary.org/obo/PO_0009011"
   plant anatomical entity: "http://purl.obolibrary.org/obo/PO_0025131"
 
 
 relations: 
-  part_of: "BFO:0000050"
+  part of: "BFO:0000050"
 
 
 vars:
@@ -20,15 +21,15 @@ vars:
   v1: "'plant structure'"
 
 name:
-  # Induced, frequency=0.2727272727272727, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.41092636579572445, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
     - v0
 
 def:
-  # Induced, frequency=0.06493506493506493, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "A portion of %s that is part of a %s."
+  # Induced, frequency=0.0498812351543943, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a %s."
   vars:
     - v0
     - v1
@@ -41,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('part_of' some %s)"
+  text: "(%s and ('part of' some %s))"
   vars:
     - v0
     - v1

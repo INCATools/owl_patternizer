@@ -45,6 +45,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'meninx' and ('part of' some %s)"
+  text: "('meninx' and ('part of' some %s))"
   vars:
     - v0

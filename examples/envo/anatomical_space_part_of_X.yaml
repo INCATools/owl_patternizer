@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'anatomical space' and ('part of' some %s)"
+  text: "('anatomical space' and ('part of' some %s))"
   vars:
     - v0

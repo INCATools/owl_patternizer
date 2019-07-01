@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'monosaccharide derivative' and ('has functional parent' some %s)"
+  text: "('monosaccharide derivative' and ('has functional parent' some %s))"
   vars:
     - v0

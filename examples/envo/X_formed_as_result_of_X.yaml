@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/X_formed_as_result_of_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [frost heave](http://purl.obolibrary.org/obo/ENVO_01001568), [volcanic rock](http://purl.obolibrary.org/obo/ENVO_00002015), [volcanic feature](http://purl.obolibrary.org/obo/ENVO_00000094) (6 total)
+  Examples: [rockslide lake](http://purl.obolibrary.org/obo/ENVO_01001107), [oceanic island](http://purl.obolibrary.org/obo/ENVO_00000222), [frost heave](http://purl.obolibrary.org/obo/ENVO_01001568) (12 total)
 
 classes: 
   material entity: "BFO:0000040"
@@ -42,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('formed as result of' some %s)"
+  text: "(%s and ('formed as result of' some %s))"
   vars:
     - v0
     - v1

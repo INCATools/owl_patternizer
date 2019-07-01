@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'anatomical entity environment' and ('determined by' some %s)"
+  text: "('anatomical entity environment' and ('determined by' some %s))"
   vars:
     - v0

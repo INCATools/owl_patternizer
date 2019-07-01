@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('has functional parent' some 'phosphoric acid')"
+  text: "(%s and ('has functional parent' some 'phosphoric acid'))"
   vars:
     - v0

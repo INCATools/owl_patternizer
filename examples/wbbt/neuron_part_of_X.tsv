@@ -1,0 +1,15 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/WBbt_0005394	amphid neuron	http://purl.obolibrary.org/obo/WBbt_0005391	amphid sensillum
+http://purl.obolibrary.org/obo/WBbt_0005801	dorsal-rectal ganglion neuron	http://purl.obolibrary.org/obo/WBbt_0005212	dorso-rectal ganglion
+http://purl.obolibrary.org/obo/WBbt_0006751	head neuron	http://purl.obolibrary.org/obo/WBbt_0005739	head
+http://purl.obolibrary.org/obo/WBbt_0005117	inner labial neuron	http://purl.obolibrary.org/obo/WBbt_0005116	inner labial sensillum
+http://purl.obolibrary.org/obo/WBbt_0005102	lateral ganglion left neuron	http://purl.obolibrary.org/obo/WBbt_0005103	lateral ganglion left
+http://purl.obolibrary.org/obo/WBbt_0005100	lateral ganglion right neuron	http://purl.obolibrary.org/obo/WBbt_0005101	lateral ganglion right
+http://purl.obolibrary.org/obo/WBbt_0006802	lumbar neuron	http://purl.obolibrary.org/obo/WBbt_0005830	lumbar ganglion
+http://purl.obolibrary.org/obo/WBbt_0006801	outer labial neuron	http://purl.obolibrary.org/obo/WBbt_0005501	outer labial sensillum
+http://purl.obolibrary.org/obo/WBbt_0006753	phasmid neuron	http://purl.obolibrary.org/obo/WBbt_0005425	phasmid sensillum
+http://purl.obolibrary.org/obo/WBbt_0005447	preanal ganglion neuron	http://purl.obolibrary.org/obo/WBbt_0005448	preanal ganglion
+http://purl.obolibrary.org/obo/WBbt_0006971	ray neuron	http://purl.obolibrary.org/obo/WBbt_0006941	ray
+http://purl.obolibrary.org/obo/WBbt_0005403	retrovesicular ganglion neuron	http://purl.obolibrary.org/obo/WBbt_0005656	retrovesicular ganglion
+http://purl.obolibrary.org/obo/WBbt_0005831	spicule neuron	http://purl.obolibrary.org/obo/WBbt_0005312	copulatory spicule
+http://purl.obolibrary.org/obo/WBbt_0006759	tail neuron	http://purl.obolibrary.org/obo/WBbt_0006977	tail ganglion

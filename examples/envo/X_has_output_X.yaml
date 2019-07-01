@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/X_has_output_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [construction process](http://purl.obolibrary.org/obo/ENVO_01000996), [island formation process](http://purl.obolibrary.org/obo/ENVO_1000748), [primary aerosol formation process](http://purl.obolibrary.org/obo/ENVO_01001367) (25 total)
+  Examples: [construction process](http://purl.obolibrary.org/obo/ENVO_01000996), [island formation process](http://purl.obolibrary.org/obo/ENVO_1000748), [sea ice formation process](http://purl.obolibrary.org/obo/ENVO_03000044) (27 total)
 
 classes: 
   entity: "BFO:0000001"
@@ -21,7 +21,7 @@ vars:
   v1: "'entity'"
 
 name:
-  # Induced, frequency=0.44, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.4444444444444444, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s formation %s"
   vars:
     - v1
@@ -42,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has output' some %s)"
+  text: "(%s and ('has output' some %s))"
   vars:
     - v0
     - v1

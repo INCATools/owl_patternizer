@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_part_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [indole alkaloid](http://purl.obolibrary.org/obo/CHEBI_38958), [chloride](http://purl.obolibrary.org/obo/CHEBI_17996), [cytarabine](http://purl.obolibrary.org/obo/CHEBI_28680) (205 total)
+  Examples: [indole alkaloid](http://purl.obolibrary.org/obo/CHEBI_38958), [chloride](http://purl.obolibrary.org/obo/CHEBI_17996), [iron molecular entity](http://purl.obolibrary.org/obo/CHEBI_24873) (204 total)
 
 classes: 
   chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
@@ -20,14 +20,14 @@ vars:
   v1: "'chemical entity'"
 
 name:
-  # Induced, frequency=0.6341463414634146, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.6225490196078431, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
     - v0
 
 def:
-  # Induced, frequency=0.00975609756097561, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.00980392156862745, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "A %s, composed of %s macromolecules."
   vars:
     - v0
@@ -47,7 +47,7 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('has part' some %s)"
+  text: "(%s and ('has part' some %s))"
   vars:
     - v0
     - v1

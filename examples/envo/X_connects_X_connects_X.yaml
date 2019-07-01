@@ -45,7 +45,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('connects' some %s) and ('connects' some %s)"
+  text: "(%s and ('connects' some %s) and ('connects' some %s))"
   vars:
     - v0
     - v1

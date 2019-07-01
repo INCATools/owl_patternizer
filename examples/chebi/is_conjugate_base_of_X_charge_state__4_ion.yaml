@@ -46,6 +46,6 @@ annotations:
 
 
 equivalentTo:
-  text: "('is conjugate base of' some %s) and ('charge_state' some '-4 ion')"
+  text: "(('is conjugate base of' some %s) and ('charge_state' some '-4 ion'))"
   vars:
     - v0

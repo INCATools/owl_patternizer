@@ -1,0 +1,327 @@
+defined_class	defined_class_label	v0	v0_label	v1	v1_label
+http://purl.obolibrary.org/obo/MA_0000879	3rd ventricle choroid plexus	http://purl.obolibrary.org/obo/MA_0000823	choroid plexus	http://purl.obolibrary.org/obo/MA_0000182	3rd ventricle
+http://purl.obolibrary.org/obo/MA_0000882	3rd ventricle ependyma	http://purl.obolibrary.org/obo/MA_0000809	brain ependyma	http://purl.obolibrary.org/obo/MA_0000182	3rd ventricle
+http://purl.obolibrary.org/obo/MA_0000983	4th ventricle choroid plexus	http://purl.obolibrary.org/obo/MA_0000823	choroid plexus	http://purl.obolibrary.org/obo/MA_0000196	4th ventricle
+http://purl.obolibrary.org/obo/MA_0000986	4th ventricle ependyma	http://purl.obolibrary.org/obo/MA_0000809	brain ependyma	http://purl.obolibrary.org/obo/MA_0000196	4th ventricle
+http://purl.obolibrary.org/obo/MA_0000518	abdomen blood vessel	http://purl.obolibrary.org/obo/MA_0000060	blood vessel	http://purl.obolibrary.org/obo/MA_0000029	abdomen
+http://purl.obolibrary.org/obo/MA_0000519	abdomen connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000029	abdomen
+http://purl.obolibrary.org/obo/MA_0000520	abdomen muscle	http://purl.obolibrary.org/obo/MA_0000514	trunk muscle	http://purl.obolibrary.org/obo/MA_0000029	abdomen
+http://purl.obolibrary.org/obo/MA_0000521	abdomen nerve	http://purl.obolibrary.org/obo/MA_0000217	nerve	http://purl.obolibrary.org/obo/MA_0000029	abdomen
+http://purl.obolibrary.org/obo/MA_0000522	abdomen organ	http://purl.obolibrary.org/obo/MA_0000516	trunk organ	http://purl.obolibrary.org/obo/MA_0000029	abdomen
+http://purl.obolibrary.org/obo/MA_0000523	abdomen skin	http://purl.obolibrary.org/obo/MA_0000151	skin	http://purl.obolibrary.org/obo/MA_0000029	abdomen
+http://purl.obolibrary.org/obo/MA_0000524	abdominal segment blood vessel	http://purl.obolibrary.org/obo/MA_0000060	blood vessel	http://purl.obolibrary.org/obo/MA_0000021	abdominal segment of trunk
+http://purl.obolibrary.org/obo/MA_0000525	abdominal segment bone	http://purl.obolibrary.org/obo/MA_0001459	bone	http://purl.obolibrary.org/obo/MA_0000021	abdominal segment of trunk
+http://purl.obolibrary.org/obo/MA_0000526	abdominal segment connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000021	abdominal segment of trunk
+http://purl.obolibrary.org/obo/MA_0000528	abdominal segment nerve	http://purl.obolibrary.org/obo/MA_0000217	nerve	http://purl.obolibrary.org/obo/MA_0000021	abdominal segment of trunk
+http://purl.obolibrary.org/obo/MA_0000530	abdominal segment skin	http://purl.obolibrary.org/obo/MA_0000151	skin	http://purl.obolibrary.org/obo/MA_0000021	abdominal segment of trunk
+http://purl.obolibrary.org/obo/MA_0000639	ankle connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000043	ankle
+http://purl.obolibrary.org/obo/MA_0000463	ankle joint	http://purl.obolibrary.org/obo/MA_0000691	limb joint	http://purl.obolibrary.org/obo/MA_0000043	ankle
+http://purl.obolibrary.org/obo/MA_0000640	ankle nerve	http://purl.obolibrary.org/obo/MA_0000217	nerve	http://purl.obolibrary.org/obo/MA_0000043	ankle
+http://purl.obolibrary.org/obo/MA_0002859	aorta elastic tissue	http://purl.obolibrary.org/obo/MA_0002853	elastic tissue	http://purl.obolibrary.org/obo/MA_0000062	aorta
+http://purl.obolibrary.org/obo/MA_0000702	aorta smooth muscle	http://purl.obolibrary.org/obo/MA_0000710	blood vessel smooth muscle	http://purl.obolibrary.org/obo/MA_0000062	aorta
+http://purl.obolibrary.org/obo/MA_0000591	arm blood vessel	http://purl.obolibrary.org/obo/MA_0000060	blood vessel	http://purl.obolibrary.org/obo/MA_0000033	arm
+http://purl.obolibrary.org/obo/MA_0000592	arm bone	http://purl.obolibrary.org/obo/MA_0000688	limb bone	http://purl.obolibrary.org/obo/MA_0000033	arm
+http://purl.obolibrary.org/obo/MA_0000593	arm connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000033	arm
+http://purl.obolibrary.org/obo/MA_0000594	arm muscle	http://purl.obolibrary.org/obo/MA_0000692	limb muscle	http://purl.obolibrary.org/obo/MA_0000033	arm
+http://purl.obolibrary.org/obo/MA_0000595	arm nerve	http://purl.obolibrary.org/obo/MA_0000217	nerve	http://purl.obolibrary.org/obo/MA_0000033	arm
+http://purl.obolibrary.org/obo/MA_0000061	arterial blood vessel	http://purl.obolibrary.org/obo/MA_0000060	blood vessel	http://purl.obolibrary.org/obo/MA_0002719	arterial system
+http://purl.obolibrary.org/obo/MA_0000704	arterial system smooth muscle	http://purl.obolibrary.org/obo/MA_0000710	blood vessel smooth muscle	http://purl.obolibrary.org/obo/MA_0002719	arterial system
+http://purl.obolibrary.org/obo/MA_0000706	arteriole smooth muscle	http://purl.obolibrary.org/obo/MA_0000710	blood vessel smooth muscle	http://purl.obolibrary.org/obo/MA_0000063	arteriole
+http://purl.obolibrary.org/obo/MA_0000708	artery smooth muscle	http://purl.obolibrary.org/obo/MA_0000710	blood vessel smooth muscle	http://purl.obolibrary.org/obo/MA_0000064	artery
+http://purl.obolibrary.org/obo/MA_0000081	atrium myocardium	http://purl.obolibrary.org/obo/MA_0000164	myocardium	http://purl.obolibrary.org/obo/MA_0000073	heart atrium
+http://purl.obolibrary.org/obo/MA_0002856	blood vessel elastic tissue	http://purl.obolibrary.org/obo/MA_0002853	elastic tissue	http://purl.obolibrary.org/obo/MA_0000060	blood vessel
+http://purl.obolibrary.org/obo/MA_0002780	bone tissue	http://purl.obolibrary.org/obo/MA_0003002	tissue	http://purl.obolibrary.org/obo/MA_0001459	bone
+http://purl.obolibrary.org/obo/MA_0000815	brain dura mater	http://purl.obolibrary.org/obo/MA_0001115	dura mater	http://purl.obolibrary.org/obo/MA_0000813	brain meninges
+http://purl.obolibrary.org/obo/MA_0000810	brain grey matter	http://purl.obolibrary.org/obo/MA_0001112	grey matter	http://purl.obolibrary.org/obo/MA_0000168	brain
+http://purl.obolibrary.org/obo/MA_0000813	brain meninges	http://purl.obolibrary.org/obo/MA_0001113	meninges	http://purl.obolibrary.org/obo/MA_0000168	brain
+http://purl.obolibrary.org/obo/MA_0000816	brain pia mater	http://purl.obolibrary.org/obo/MA_0001116	pia mater	http://purl.obolibrary.org/obo/MA_0000813	brain meninges
+http://purl.obolibrary.org/obo/MA_0002769	brain vasculature	http://purl.obolibrary.org/obo/MA_0000060	blood vessel	http://purl.obolibrary.org/obo/MA_0000168	brain
+http://purl.obolibrary.org/obo/MA_0000820	brain white matter	http://purl.obolibrary.org/obo/MA_0001135	white matter	http://purl.obolibrary.org/obo/MA_0000168	brain
+http://purl.obolibrary.org/obo/MA_0000821	brainstem nucleus	http://purl.obolibrary.org/obo/MA_0000811	brain nucleus	http://purl.obolibrary.org/obo/MA_0000169	brainstem
+http://purl.obolibrary.org/obo/MA_0000822	brainstem periaqueductal grey	http://purl.obolibrary.org/obo/MA_0002895	periaqueductal grey	http://purl.obolibrary.org/obo/MA_0000169	brainstem
+http://purl.obolibrary.org/obo/MA_0002741	brainstem white matter	http://purl.obolibrary.org/obo/MA_0001135	white matter	http://purl.obolibrary.org/obo/MA_0000169	brainstem
+http://purl.obolibrary.org/obo/MA_0001772	bronchiole epithelium	http://purl.obolibrary.org/obo/MA_0001783	lung epithelium	http://purl.obolibrary.org/obo/MA_0000422	bronchiole
+http://purl.obolibrary.org/obo/MA_0001342	capitate	http://purl.obolibrary.org/obo/MA_0002558	distal carpal bone	http://purl.obolibrary.org/obo/MA_0000037	hand
+http://purl.obolibrary.org/obo/MA_0002441	cardiac muscle tissue	http://purl.obolibrary.org/obo/MA_0002437	muscle tissue	http://purl.obolibrary.org/obo/MA_0000164	myocardium
+http://purl.obolibrary.org/obo/MA_0002857	cardiovascular system elastic tissue	http://purl.obolibrary.org/obo/MA_0002853	elastic tissue	http://purl.obolibrary.org/obo/MA_0000010	cardiovascular system
+http://purl.obolibrary.org/obo/MA_0000310	caudal vertebra	http://purl.obolibrary.org/obo/MA_0000309	vertebra	http://purl.obolibrary.org/obo/MA_0000008	tail
+http://purl.obolibrary.org/obo/MA_0002967	cerebellum hemisphere lobule	http://purl.obolibrary.org/obo/MA_0002966	cerebellum lobule	http://purl.obolibrary.org/obo/MA_0000200	cerebellum hemisphere
+http://purl.obolibrary.org/obo/MA_0002968	cerebellum vermis lobule	http://purl.obolibrary.org/obo/MA_0002966	cerebellum lobule	http://purl.obolibrary.org/obo/MA_0000202	cerebellum vermis
+http://purl.obolibrary.org/obo/MA_0002430	cerebellum white matter	http://purl.obolibrary.org/obo/MA_0001135	white matter	http://purl.obolibrary.org/obo/MA_0000198	cerebellum
+http://purl.obolibrary.org/obo/MA_0000549	chest blood vessel	http://purl.obolibrary.org/obo/MA_0000060	blood vessel	http://purl.obolibrary.org/obo/MA_0000031	chest
+http://purl.obolibrary.org/obo/MA_0000547	chest bone	http://purl.obolibrary.org/obo/MA_0000512	trunk bone	http://purl.obolibrary.org/obo/MA_0000031	chest
+http://purl.obolibrary.org/obo/MA_0000550	chest connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000031	chest
+http://purl.obolibrary.org/obo/MA_0000548	chest muscle	http://purl.obolibrary.org/obo/MA_0000514	trunk muscle	http://purl.obolibrary.org/obo/MA_0000031	chest
+http://purl.obolibrary.org/obo/MA_0000551	chest nerve	http://purl.obolibrary.org/obo/MA_0000217	nerve	http://purl.obolibrary.org/obo/MA_0000031	chest
+http://purl.obolibrary.org/obo/MA_0000552	chest organ	http://purl.obolibrary.org/obo/MA_0000516	trunk organ	http://purl.obolibrary.org/obo/MA_0000031	chest
+http://purl.obolibrary.org/obo/MA_0000553	chest skin	http://purl.obolibrary.org/obo/MA_0000151	skin	http://purl.obolibrary.org/obo/MA_0000031	chest
+http://purl.obolibrary.org/obo/MA_0001478	chondrocranium bone	http://purl.obolibrary.org/obo/MA_0001459	bone	http://purl.obolibrary.org/obo/MA_0000317	chondrocranium
+http://purl.obolibrary.org/obo/MA_0000214	cranial ganglion	http://purl.obolibrary.org/obo/MA_0002406	ganglion	http://purl.obolibrary.org/obo/MA_0000213	cranial ganglion/nerve
+http://purl.obolibrary.org/obo/MA_0000215	cranial nerve	http://purl.obolibrary.org/obo/MA_0000217	nerve	http://purl.obolibrary.org/obo/MA_0000213	cranial ganglion/nerve
+http://purl.obolibrary.org/obo/MA_0000827	diencephalon arachnoid mater	http://purl.obolibrary.org/obo/MA_0001114	arachnoid mater	http://purl.obolibrary.org/obo/MA_0000826	diencephalon meninges
+http://purl.obolibrary.org/obo/MA_0000828	diencephalon dura mater	http://purl.obolibrary.org/obo/MA_0001115	dura mater	http://purl.obolibrary.org/obo/MA_0000826	diencephalon meninges
+http://purl.obolibrary.org/obo/MA_0000829	diencephalon pia mater	http://purl.obolibrary.org/obo/MA_0001116	pia mater	http://purl.obolibrary.org/obo/MA_0000826	diencephalon meninges
+http://purl.obolibrary.org/obo/MA_0000609	elbow connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000036	elbow
+http://purl.obolibrary.org/obo/MA_0000451	elbow joint	http://purl.obolibrary.org/obo/MA_0000691	limb joint	http://purl.obolibrary.org/obo/MA_0000036	elbow
+http://purl.obolibrary.org/obo/MA_0002563	endocrine gland	http://purl.obolibrary.org/obo/MA_0003038	gland	http://purl.obolibrary.org/obo/MA_0000012	endocrine system
+http://purl.obolibrary.org/obo/MA_0001582	endocrine pancreas	http://purl.obolibrary.org/obo/MA_0002563	endocrine gland	http://purl.obolibrary.org/obo/MA_0000120	pancreas
+http://purl.obolibrary.org/obo/MA_0002564	exocrine gland	http://purl.obolibrary.org/obo/MA_0003038	gland	http://purl.obolibrary.org/obo/MA_0002411	exocrine system
+http://purl.obolibrary.org/obo/MA_0002415	exocrine pancreas	http://purl.obolibrary.org/obo/MA_0002564	exocrine gland	http://purl.obolibrary.org/obo/MA_0000120	pancreas
+http://purl.obolibrary.org/obo/MA_0002451	eye skin gland	http://purl.obolibrary.org/obo/MA_0000267	eye gland	http://purl.obolibrary.org/obo/MA_0000151	skin
+http://purl.obolibrary.org/obo/MA_0003163	eyelid epithelium	http://purl.obolibrary.org/obo/MA_0003162	eye epithelium	http://purl.obolibrary.org/obo/MA_0000268	eyelid
+http://purl.obolibrary.org/obo/MA_0000269	eyelid muscle	http://purl.obolibrary.org/obo/MA_0000271	eye muscle	http://purl.obolibrary.org/obo/MA_0000268	eyelid
+http://purl.obolibrary.org/obo/MA_0000642	foot blood vessel	http://purl.obolibrary.org/obo/MA_0000060	blood vessel	http://purl.obolibrary.org/obo/MA_0000044	foot
+http://purl.obolibrary.org/obo/MA_0000643	foot bone	http://purl.obolibrary.org/obo/MA_0000688	limb bone	http://purl.obolibrary.org/obo/MA_0000044	foot
+http://purl.obolibrary.org/obo/MA_0000644	foot connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000044	foot
+http://purl.obolibrary.org/obo/MA_0000048	foot digit	http://purl.obolibrary.org/obo/MA_0000690	limb digit	http://purl.obolibrary.org/obo/MA_0000044	foot
+http://purl.obolibrary.org/obo/MA_0000646	foot digit bone	http://purl.obolibrary.org/obo/MA_0000643	foot bone	http://purl.obolibrary.org/obo/MA_0000048	foot digit
+http://purl.obolibrary.org/obo/MA_0001380	foot distal phalanx	http://purl.obolibrary.org/obo/MA_0002914	distal phalanx	http://purl.obolibrary.org/obo/MA_0000044	foot
+http://purl.obolibrary.org/obo/MA_0000464	foot joint	http://purl.obolibrary.org/obo/MA_0000691	limb joint	http://purl.obolibrary.org/obo/MA_0000044	foot
+http://purl.obolibrary.org/obo/MA_0001386	foot middle phalanx	http://purl.obolibrary.org/obo/MA_0002915	middle phalanx	http://purl.obolibrary.org/obo/MA_0000044	foot
+http://purl.obolibrary.org/obo/MA_0000652	foot muscle	http://purl.obolibrary.org/obo/MA_0000692	limb muscle	http://purl.obolibrary.org/obo/MA_0000044	foot
+http://purl.obolibrary.org/obo/MA_0000653	foot nerve	http://purl.obolibrary.org/obo/MA_0000217	nerve	http://purl.obolibrary.org/obo/MA_0000044	foot
+http://purl.obolibrary.org/obo/MA_0000305	foot phalanx	http://purl.obolibrary.org/obo/MA_0000304	phalanx	http://purl.obolibrary.org/obo/MA_0000044	foot
+http://purl.obolibrary.org/obo/MA_0001387	foot proximal phalanx	http://purl.obolibrary.org/obo/MA_0002916	proximal phalanx	http://purl.obolibrary.org/obo/MA_0000044	foot
+http://purl.obolibrary.org/obo/MA_0000884	forebrain arachnoid mater	http://purl.obolibrary.org/obo/MA_0001114	arachnoid mater	http://purl.obolibrary.org/obo/MA_0000883	forebrain meninges
+http://purl.obolibrary.org/obo/MA_0000885	forebrain dura mater	http://purl.obolibrary.org/obo/MA_0001115	dura mater	http://purl.obolibrary.org/obo/MA_0000883	forebrain meninges
+http://purl.obolibrary.org/obo/MA_0000883	forebrain meninges	http://purl.obolibrary.org/obo/MA_0001113	meninges	http://purl.obolibrary.org/obo/MA_0000170	forebrain
+http://purl.obolibrary.org/obo/MA_0000886	forebrain pia mater	http://purl.obolibrary.org/obo/MA_0001116	pia mater	http://purl.obolibrary.org/obo/MA_0000883	forebrain meninges
+http://purl.obolibrary.org/obo/MA_0003204	foregut epithelium	http://purl.obolibrary.org/obo/MA_0003201	gut epithelium	http://purl.obolibrary.org/obo/MA_0001526	foregut
+http://purl.obolibrary.org/obo/MA_0000611	forelimb blood vessel	http://purl.obolibrary.org/obo/MA_0000060	blood vessel	http://purl.obolibrary.org/obo/MA_0000025	forelimb
+http://purl.obolibrary.org/obo/MA_0000612	forelimb bone	http://purl.obolibrary.org/obo/MA_0000688	limb bone	http://purl.obolibrary.org/obo/MA_0000025	forelimb
+http://purl.obolibrary.org/obo/MA_0000613	forelimb connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000025	forelimb
+http://purl.obolibrary.org/obo/MA_0000614	forelimb joint	http://purl.obolibrary.org/obo/MA_0000691	limb joint	http://purl.obolibrary.org/obo/MA_0000025	forelimb
+http://purl.obolibrary.org/obo/MA_0000615	forelimb muscle	http://purl.obolibrary.org/obo/MA_0000692	limb muscle	http://purl.obolibrary.org/obo/MA_0000025	forelimb
+http://purl.obolibrary.org/obo/MA_0000616	forelimb nerve	http://purl.obolibrary.org/obo/MA_0000217	nerve	http://purl.obolibrary.org/obo/MA_0000025	forelimb
+http://purl.obolibrary.org/obo/MA_0001343	hamate	http://purl.obolibrary.org/obo/MA_0002558	distal carpal bone	http://purl.obolibrary.org/obo/MA_0000037	hand
+http://purl.obolibrary.org/obo/MA_0000618	hand blood vessel	http://purl.obolibrary.org/obo/MA_0000060	blood vessel	http://purl.obolibrary.org/obo/MA_0000037	hand
+http://purl.obolibrary.org/obo/MA_0000619	hand bone	http://purl.obolibrary.org/obo/MA_0000688	limb bone	http://purl.obolibrary.org/obo/MA_0000037	hand
+http://purl.obolibrary.org/obo/MA_0000620	hand connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000037	hand
+http://purl.obolibrary.org/obo/MA_0000041	hand digit	http://purl.obolibrary.org/obo/MA_0000690	limb digit	http://purl.obolibrary.org/obo/MA_0000037	hand
+http://purl.obolibrary.org/obo/MA_0000622	hand digit bone	http://purl.obolibrary.org/obo/MA_0000619	hand bone	http://purl.obolibrary.org/obo/MA_0000041	hand digit
+http://purl.obolibrary.org/obo/MA_0001388	hand distal phalanx	http://purl.obolibrary.org/obo/MA_0002914	distal phalanx	http://purl.obolibrary.org/obo/MA_0000037	hand
+http://purl.obolibrary.org/obo/MA_0000452	hand joint	http://purl.obolibrary.org/obo/MA_0000691	limb joint	http://purl.obolibrary.org/obo/MA_0000037	hand
+http://purl.obolibrary.org/obo/MA_0001394	hand middle phalanx	http://purl.obolibrary.org/obo/MA_0002915	middle phalanx	http://purl.obolibrary.org/obo/MA_0000037	hand
+http://purl.obolibrary.org/obo/MA_0000628	hand muscle	http://purl.obolibrary.org/obo/MA_0000692	limb muscle	http://purl.obolibrary.org/obo/MA_0000037	hand
+http://purl.obolibrary.org/obo/MA_0000629	hand nerve	http://purl.obolibrary.org/obo/MA_0000217	nerve	http://purl.obolibrary.org/obo/MA_0000037	hand
+http://purl.obolibrary.org/obo/MA_0000306	hand phalanx	http://purl.obolibrary.org/obo/MA_0000304	phalanx	http://purl.obolibrary.org/obo/MA_0000037	hand
+http://purl.obolibrary.org/obo/MA_0001395	hand proximal phalanx	http://purl.obolibrary.org/obo/MA_0002916	proximal phalanx	http://purl.obolibrary.org/obo/MA_0000037	hand
+http://purl.obolibrary.org/obo/MA_0001248	harderian gland epithelium	http://purl.obolibrary.org/obo/MA_0003162	eye epithelium	http://purl.obolibrary.org/obo/MA_0001247	harderian gland
+http://purl.obolibrary.org/obo/MA_0000575	head blood vessel	http://purl.obolibrary.org/obo/MA_0000060	blood vessel	http://purl.obolibrary.org/obo/MA_0000023	head
+http://purl.obolibrary.org/obo/MA_0000576	head bone	http://purl.obolibrary.org/obo/MA_0001459	bone	http://purl.obolibrary.org/obo/MA_0000023	head
+http://purl.obolibrary.org/obo/MA_0000577	head connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000023	head
+http://purl.obolibrary.org/obo/MA_0000568	head or neck blood vessel	http://purl.obolibrary.org/obo/MA_0000060	blood vessel	http://purl.obolibrary.org/obo/MA_0000006	head and neck
+http://purl.obolibrary.org/obo/MA_0000569	head or neck bone	http://purl.obolibrary.org/obo/MA_0001459	bone	http://purl.obolibrary.org/obo/MA_0000006	head and neck
+http://purl.obolibrary.org/obo/MA_0000570	head or neck connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000006	head and neck
+http://purl.obolibrary.org/obo/MA_0000574	head or neck skin	http://purl.obolibrary.org/obo/MA_0000151	skin	http://purl.obolibrary.org/obo/MA_0000006	head and neck
+http://purl.obolibrary.org/obo/MA_0000582	head skin	http://purl.obolibrary.org/obo/MA_0000151	skin	http://purl.obolibrary.org/obo/MA_0000023	head
+http://purl.obolibrary.org/obo/MA_0002858	heart elastic tissue	http://purl.obolibrary.org/obo/MA_0002853	elastic tissue	http://purl.obolibrary.org/obo/MA_0000072	heart
+http://purl.obolibrary.org/obo/MA_0000988	hindbrain arachnoid mater	http://purl.obolibrary.org/obo/MA_0001114	arachnoid mater	http://purl.obolibrary.org/obo/MA_0000987	hindbrain meninges
+http://purl.obolibrary.org/obo/MA_0000989	hindbrain dura mater	http://purl.obolibrary.org/obo/MA_0001115	dura mater	http://purl.obolibrary.org/obo/MA_0000987	hindbrain meninges
+http://purl.obolibrary.org/obo/MA_0000987	hindbrain meninges	http://purl.obolibrary.org/obo/MA_0001113	meninges	http://purl.obolibrary.org/obo/MA_0000195	hindbrain
+http://purl.obolibrary.org/obo/MA_0000990	hindbrain pia mater	http://purl.obolibrary.org/obo/MA_0001116	pia mater	http://purl.obolibrary.org/obo/MA_0000987	hindbrain meninges
+http://purl.obolibrary.org/obo/MA_0003206	hindgut epithelium	http://purl.obolibrary.org/obo/MA_0003201	gut epithelium	http://purl.obolibrary.org/obo/MA_0001527	hindgut
+http://purl.obolibrary.org/obo/MA_0000659	hindlimb blood vessel	http://purl.obolibrary.org/obo/MA_0000060	blood vessel	http://purl.obolibrary.org/obo/MA_0000026	hindlimb
+http://purl.obolibrary.org/obo/MA_0000660	hindlimb bone	http://purl.obolibrary.org/obo/MA_0000688	limb bone	http://purl.obolibrary.org/obo/MA_0000026	hindlimb
+http://purl.obolibrary.org/obo/MA_0000661	hindlimb connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000026	hindlimb
+http://purl.obolibrary.org/obo/MA_0000662	hindlimb joint	http://purl.obolibrary.org/obo/MA_0000691	limb joint	http://purl.obolibrary.org/obo/MA_0000026	hindlimb
+http://purl.obolibrary.org/obo/MA_0000663	hindlimb muscle	http://purl.obolibrary.org/obo/MA_0000692	limb muscle	http://purl.obolibrary.org/obo/MA_0000026	hindlimb
+http://purl.obolibrary.org/obo/MA_0000664	hindlimb nerve	http://purl.obolibrary.org/obo/MA_0000217	nerve	http://purl.obolibrary.org/obo/MA_0000026	hindlimb
+http://purl.obolibrary.org/obo/MA_0000655	hip bone	http://purl.obolibrary.org/obo/MA_0001459	bone	http://purl.obolibrary.org/obo/MA_0000045	hip
+http://purl.obolibrary.org/obo/MA_0000656	hip connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000045	hip
+http://purl.obolibrary.org/obo/MA_0000470	hip joint	http://purl.obolibrary.org/obo/MA_0000691	limb joint	http://purl.obolibrary.org/obo/MA_0000045	hip
+http://purl.obolibrary.org/obo/MA_0000657	hip muscle	http://purl.obolibrary.org/obo/MA_0000692	limb muscle	http://purl.obolibrary.org/obo/MA_0000045	hip
+http://purl.obolibrary.org/obo/MA_0003225	incisor dental lamina	http://purl.obolibrary.org/obo/MA_0001597	dental lamina	http://purl.obolibrary.org/obo/MA_0003223	incisor epithelium
+http://purl.obolibrary.org/obo/MA_0003231	incisor dental papilla	http://purl.obolibrary.org/obo/MA_0001598	dental papilla	http://purl.obolibrary.org/obo/MA_0003229	incisor mesenchyme
+http://purl.obolibrary.org/obo/MA_0003221	incisor dental pulp	http://purl.obolibrary.org/obo/MA_0001599	dental pulp	http://purl.obolibrary.org/obo/MA_0000349	incisor
+http://purl.obolibrary.org/obo/MA_0003227	incisor enamel organ	http://purl.obolibrary.org/obo/MA_0001604	tooth enamel organ	http://purl.obolibrary.org/obo/MA_0003223	incisor epithelium
+http://purl.obolibrary.org/obo/MA_0003223	incisor epithelium	http://purl.obolibrary.org/obo/MA_0003151	tooth epithelium	http://purl.obolibrary.org/obo/MA_0000349	incisor
+http://purl.obolibrary.org/obo/MA_0003229	incisor mesenchyme	http://purl.obolibrary.org/obo/MA_0003152	tooth mesenchyme	http://purl.obolibrary.org/obo/MA_0000349	incisor
+http://purl.obolibrary.org/obo/MA_0001189	inner ear epithelium	http://purl.obolibrary.org/obo/MA_0003161	ear epithelium	http://purl.obolibrary.org/obo/MA_0000237	inner ear
+http://purl.obolibrary.org/obo/MA_0002596	inner renal medulla vasa recta	http://purl.obolibrary.org/obo/MA_0002595	renal medullary capillary	http://purl.obolibrary.org/obo/MA_0001652	kidney inner medulla
+http://purl.obolibrary.org/obo/MA_0002826	iris epithelium	http://purl.obolibrary.org/obo/MA_0003162	eye epithelium	http://purl.obolibrary.org/obo/MA_0000273	iris
+http://purl.obolibrary.org/obo/MA_0001663	juxtamedullary renal corpuscle	http://purl.obolibrary.org/obo/MA_0000376	renal corpuscle	http://purl.obolibrary.org/obo/MA_0001648	juxtamedullary cortex
+http://purl.obolibrary.org/obo/MA_0002600	kidney cortex collecting duct	http://purl.obolibrary.org/obo/MA_0000371	kidney collecting duct	http://purl.obolibrary.org/obo/MA_0000372	kidney cortex
+http://purl.obolibrary.org/obo/MA_0002590	kidney cortex peritubular capillary	http://purl.obolibrary.org/obo/MA_0002588	peritubular capillary	http://purl.obolibrary.org/obo/MA_0000372	kidney cortex
+http://purl.obolibrary.org/obo/MA_0002609	kidney cortex tubule	http://purl.obolibrary.org/obo/MA_0000377	kidney tubule	http://purl.obolibrary.org/obo/MA_0000372	kidney cortex
+http://purl.obolibrary.org/obo/MA_0002935	kidney medulla collecting duct	http://purl.obolibrary.org/obo/MA_0000371	kidney collecting duct	http://purl.obolibrary.org/obo/MA_0000373	kidney medulla
+http://purl.obolibrary.org/obo/MA_0002995	kidney medulla tubule	http://purl.obolibrary.org/obo/MA_0000377	kidney tubule	http://purl.obolibrary.org/obo/MA_0000373	kidney medulla
+http://purl.obolibrary.org/obo/MA_0002589	kidney outer medulla peritubular capillary	http://purl.obolibrary.org/obo/MA_0002588	peritubular capillary	http://purl.obolibrary.org/obo/MA_0001653	kidney outer medulla
+http://purl.obolibrary.org/obo/MA_0002597	kidney outer medulla vasa recta	http://purl.obolibrary.org/obo/MA_0002595	renal medullary capillary	http://purl.obolibrary.org/obo/MA_0001653	kidney outer medulla
+http://purl.obolibrary.org/obo/MA_0001681	kidney tubule epithelium	http://purl.obolibrary.org/obo/MA_0002846	kidney epithelium	http://purl.obolibrary.org/obo/MA_0000377	kidney tubule
+http://purl.obolibrary.org/obo/MA_0000666	knee bone	http://purl.obolibrary.org/obo/MA_0000688	limb bone	http://purl.obolibrary.org/obo/MA_0000046	knee
+http://purl.obolibrary.org/obo/MA_0000667	knee connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000046	knee
+http://purl.obolibrary.org/obo/MA_0000471	knee joint	http://purl.obolibrary.org/obo/MA_0000691	limb joint	http://purl.obolibrary.org/obo/MA_0000046	knee
+http://purl.obolibrary.org/obo/MA_0001296	lacrimal gland	http://purl.obolibrary.org/obo/MA_0003038	gland	http://purl.obolibrary.org/obo/MA_0000274	lacrimal apparatus
+http://purl.obolibrary.org/obo/MA_0001297	lacrimal gland epithelium	http://purl.obolibrary.org/obo/MA_0003162	eye epithelium	http://purl.obolibrary.org/obo/MA_0001296	lacrimal gland
+http://purl.obolibrary.org/obo/MA_0001544	large intestine crypt of lieberkuhn	http://purl.obolibrary.org/obo/MA_0001535	crypt of lieberkuhn	http://purl.obolibrary.org/obo/MA_0000333	large intestine
+http://purl.obolibrary.org/obo/MA_0001550	large intestine peyer's patch	http://purl.obolibrary.org/obo/MA_0000137	peyer's patch	http://purl.obolibrary.org/obo/MA_0000333	large intestine
+http://purl.obolibrary.org/obo/MA_0001758	larynx cartilage	http://purl.obolibrary.org/obo/MA_0000586	neck cartilage	http://purl.obolibrary.org/obo/MA_0000414	larynx
+http://purl.obolibrary.org/obo/MA_0001754	larynx connective tissue	http://purl.obolibrary.org/obo/MA_0001814	respiratory system connective tissue	http://purl.obolibrary.org/obo/MA_0000414	larynx
+http://purl.obolibrary.org/obo/MA_0001755	larynx ligament	http://purl.obolibrary.org/obo/MA_0003004	nonskeletal ligament	http://purl.obolibrary.org/obo/MA_0000414	larynx
+http://purl.obolibrary.org/obo/MA_0000961	lateral ventricle choroid plexus	http://purl.obolibrary.org/obo/MA_0000823	choroid plexus	http://purl.obolibrary.org/obo/MA_0000192	lateral ventricle
+http://purl.obolibrary.org/obo/MA_0000964	lateral ventricle ependyma	http://purl.obolibrary.org/obo/MA_0000809	brain ependyma	http://purl.obolibrary.org/obo/MA_0000192	lateral ventricle
+http://purl.obolibrary.org/obo/MA_0003131	left lung epithelium	http://purl.obolibrary.org/obo/MA_0001783	lung epithelium	http://purl.obolibrary.org/obo/MA_0000425	left lung
+http://purl.obolibrary.org/obo/MA_0001781	left lung hilus	http://purl.obolibrary.org/obo/MA_0003099	lung hilus	http://purl.obolibrary.org/obo/MA_0000425	left lung
+http://purl.obolibrary.org/obo/MA_0003133	left lung lobar bronchus	http://purl.obolibrary.org/obo/MA_0000437	lobar bronchus	http://purl.obolibrary.org/obo/MA_0000425	left lung
+http://purl.obolibrary.org/obo/MA_0001874	left ventricle membranous part	http://purl.obolibrary.org/obo/MA_0001878	heart ventricle membranous part	http://purl.obolibrary.org/obo/MA_0000092	heart left ventricle
+http://purl.obolibrary.org/obo/MA_0001875	left ventricle muscular part	http://purl.obolibrary.org/obo/MA_0001879	heart ventricle muscular part	http://purl.obolibrary.org/obo/MA_0000092	heart left ventricle
+http://purl.obolibrary.org/obo/MA_0002983	left ventricle myocardium	http://purl.obolibrary.org/obo/MA_0000164	myocardium	http://purl.obolibrary.org/obo/MA_0000092	heart left ventricle
+http://purl.obolibrary.org/obo/MA_0000669	leg blood vessel	http://purl.obolibrary.org/obo/MA_0000060	blood vessel	http://purl.obolibrary.org/obo/MA_0000047	leg
+http://purl.obolibrary.org/obo/MA_0000670	leg bone	http://purl.obolibrary.org/obo/MA_0000688	limb bone	http://purl.obolibrary.org/obo/MA_0000047	leg
+http://purl.obolibrary.org/obo/MA_0000671	leg connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000047	leg
+http://purl.obolibrary.org/obo/MA_0000672	leg muscle	http://purl.obolibrary.org/obo/MA_0000692	limb muscle	http://purl.obolibrary.org/obo/MA_0000047	leg
+http://purl.obolibrary.org/obo/MA_0000673	leg nerve	http://purl.obolibrary.org/obo/MA_0000217	nerve	http://purl.obolibrary.org/obo/MA_0000047	leg
+http://purl.obolibrary.org/obo/MA_0001301	lens epithelium	http://purl.obolibrary.org/obo/MA_0003162	eye epithelium	http://purl.obolibrary.org/obo/MA_0000275	lens
+http://purl.obolibrary.org/obo/MA_0000687	limb blood vessel	http://purl.obolibrary.org/obo/MA_0000060	blood vessel	http://purl.obolibrary.org/obo/MA_0000007	limb
+http://purl.obolibrary.org/obo/MA_0000688	limb bone	http://purl.obolibrary.org/obo/MA_0001459	bone	http://purl.obolibrary.org/obo/MA_0000007	limb
+http://purl.obolibrary.org/obo/MA_0000689	limb connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000007	limb
+http://purl.obolibrary.org/obo/MA_0000298	limb long bone	http://purl.obolibrary.org/obo/MA_0002802	long bone	http://purl.obolibrary.org/obo/MA_0000007	limb
+http://purl.obolibrary.org/obo/MA_0000693	limb nerve	http://purl.obolibrary.org/obo/MA_0000217	nerve	http://purl.obolibrary.org/obo/MA_0000007	limb
+http://purl.obolibrary.org/obo/MA_0000694	limb skin	http://purl.obolibrary.org/obo/MA_0000151	skin	http://purl.obolibrary.org/obo/MA_0000007	limb
+http://purl.obolibrary.org/obo/MA_0002977	long bone epiphyseal plate hypertrophic zone	http://purl.obolibrary.org/obo/MA_0002849	hypertrophic cartilage zone	http://purl.obolibrary.org/obo/MA_0002839	long bone epiphyseal plate
+http://purl.obolibrary.org/obo/MA_0000597	lower arm blood vessel	http://purl.obolibrary.org/obo/MA_0000591	arm blood vessel	http://purl.obolibrary.org/obo/MA_0000034	lower arm
+http://purl.obolibrary.org/obo/MA_0000598	lower arm bone	http://purl.obolibrary.org/obo/MA_0000592	arm bone	http://purl.obolibrary.org/obo/MA_0000034	lower arm
+http://purl.obolibrary.org/obo/MA_0000599	lower arm connective tissue	http://purl.obolibrary.org/obo/MA_0000593	arm connective tissue	http://purl.obolibrary.org/obo/MA_0000034	lower arm
+http://purl.obolibrary.org/obo/MA_0000600	lower arm muscle	http://purl.obolibrary.org/obo/MA_0000594	arm muscle	http://purl.obolibrary.org/obo/MA_0000034	lower arm
+http://purl.obolibrary.org/obo/MA_0000601	lower arm nerve	http://purl.obolibrary.org/obo/MA_0000595	arm nerve	http://purl.obolibrary.org/obo/MA_0000034	lower arm
+http://purl.obolibrary.org/obo/MA_0000602	lower arm skin	http://purl.obolibrary.org/obo/MA_0000596	arm skin	http://purl.obolibrary.org/obo/MA_0000034	lower arm
+http://purl.obolibrary.org/obo/MA_0000499	lower back blood vessel	http://purl.obolibrary.org/obo/MA_0000493	back blood vessel	http://purl.obolibrary.org/obo/MA_0000027	lower back
+http://purl.obolibrary.org/obo/MA_0000500	lower back bone	http://purl.obolibrary.org/obo/MA_0000494	back bone	http://purl.obolibrary.org/obo/MA_0000027	lower back
+http://purl.obolibrary.org/obo/MA_0000501	lower back connective tissue	http://purl.obolibrary.org/obo/MA_0000495	back connective tissue	http://purl.obolibrary.org/obo/MA_0000027	lower back
+http://purl.obolibrary.org/obo/MA_0000502	lower back muscle	http://purl.obolibrary.org/obo/MA_0000496	back muscle	http://purl.obolibrary.org/obo/MA_0000027	lower back
+http://purl.obolibrary.org/obo/MA_0000503	lower back nerve	http://purl.obolibrary.org/obo/MA_0000497	back nerve	http://purl.obolibrary.org/obo/MA_0000027	lower back
+http://purl.obolibrary.org/obo/MA_0000504	lower back skin	http://purl.obolibrary.org/obo/MA_0000498	back skin	http://purl.obolibrary.org/obo/MA_0000027	lower back
+http://purl.obolibrary.org/obo/MA_0001600	lower jaw incisor	http://purl.obolibrary.org/obo/MA_0000349	incisor	http://purl.obolibrary.org/obo/MA_0001906	lower jaw
+http://purl.obolibrary.org/obo/MA_0001602	lower jaw molar	http://purl.obolibrary.org/obo/MA_0000350	molar	http://purl.obolibrary.org/obo/MA_0001906	lower jaw
+http://purl.obolibrary.org/obo/MA_0001907	lower jaw tooth	http://purl.obolibrary.org/obo/MA_0000348	tooth	http://purl.obolibrary.org/obo/MA_0001906	lower jaw
+http://purl.obolibrary.org/obo/MA_0000675	lower leg blood vessel	http://purl.obolibrary.org/obo/MA_0000669	leg blood vessel	http://purl.obolibrary.org/obo/MA_0000051	lower leg
+http://purl.obolibrary.org/obo/MA_0000676	lower leg bone	http://purl.obolibrary.org/obo/MA_0000670	leg bone	http://purl.obolibrary.org/obo/MA_0000051	lower leg
+http://purl.obolibrary.org/obo/MA_0000677	lower leg connective tissue	http://purl.obolibrary.org/obo/MA_0000671	leg connective tissue	http://purl.obolibrary.org/obo/MA_0000051	lower leg
+http://purl.obolibrary.org/obo/MA_0000678	lower leg muscle	http://purl.obolibrary.org/obo/MA_0000672	leg muscle	http://purl.obolibrary.org/obo/MA_0000051	lower leg
+http://purl.obolibrary.org/obo/MA_0000679	lower leg nerve	http://purl.obolibrary.org/obo/MA_0000673	leg nerve	http://purl.obolibrary.org/obo/MA_0000051	lower leg
+http://purl.obolibrary.org/obo/MA_0000680	lower leg skin	http://purl.obolibrary.org/obo/MA_0000674	leg skin	http://purl.obolibrary.org/obo/MA_0000051	lower leg
+http://purl.obolibrary.org/obo/MA_0002457	lung blood vessel	http://purl.obolibrary.org/obo/MA_0000060	blood vessel	http://purl.obolibrary.org/obo/MA_0000415	lung
+http://purl.obolibrary.org/obo/MA_0001782	lung connective tissue	http://purl.obolibrary.org/obo/MA_0001814	respiratory system connective tissue	http://purl.obolibrary.org/obo/MA_0000415	lung
+http://purl.obolibrary.org/obo/MA_0002860	lung elastic tissue	http://purl.obolibrary.org/obo/MA_0002853	elastic tissue	http://purl.obolibrary.org/obo/MA_0000415	lung
+http://purl.obolibrary.org/obo/MA_0001846	main bronchus cartilage	http://purl.obolibrary.org/obo/MA_0001835	bronchus cartilage	http://purl.obolibrary.org/obo/MA_0000438	main bronchus
+http://purl.obolibrary.org/obo/MA_0002911	mammary gland fat	http://purl.obolibrary.org/obo/MA_0000009	adipose tissue	http://purl.obolibrary.org/obo/MA_0000145	mammary gland
+http://purl.obolibrary.org/obo/MA_0001059	midbrain arachnoid mater	http://purl.obolibrary.org/obo/MA_0001114	arachnoid mater	http://purl.obolibrary.org/obo/MA_0001058	midbrain meninges
+http://purl.obolibrary.org/obo/MA_0001060	midbrain dura mater	http://purl.obolibrary.org/obo/MA_0001115	dura mater	http://purl.obolibrary.org/obo/MA_0001058	midbrain meninges
+http://purl.obolibrary.org/obo/MA_0001058	midbrain meninges	http://purl.obolibrary.org/obo/MA_0001113	meninges	http://purl.obolibrary.org/obo/MA_0000207	midbrain
+http://purl.obolibrary.org/obo/MA_0000209	midbrain periaqueductal grey	http://purl.obolibrary.org/obo/MA_0002895	periaqueductal grey	http://purl.obolibrary.org/obo/MA_0000207	midbrain
+http://purl.obolibrary.org/obo/MA_0001061	midbrain pia mater	http://purl.obolibrary.org/obo/MA_0001116	pia mater	http://purl.obolibrary.org/obo/MA_0001058	midbrain meninges
+http://purl.obolibrary.org/obo/MA_0003169	middle ear epithelium	http://purl.obolibrary.org/obo/MA_0003161	ear epithelium	http://purl.obolibrary.org/obo/MA_0000253	middle ear
+http://purl.obolibrary.org/obo/MA_0003205	midgut epithelium	http://purl.obolibrary.org/obo/MA_0003201	gut epithelium	http://purl.obolibrary.org/obo/MA_0001564	midgut
+http://purl.obolibrary.org/obo/MA_0003226	molar dental lamina	http://purl.obolibrary.org/obo/MA_0001597	dental lamina	http://purl.obolibrary.org/obo/MA_0003224	molar epithelium
+http://purl.obolibrary.org/obo/MA_0003232	molar dental papilla	http://purl.obolibrary.org/obo/MA_0001598	dental papilla	http://purl.obolibrary.org/obo/MA_0003230	molar mesenchyme
+http://purl.obolibrary.org/obo/MA_0003222	molar dental pulp	http://purl.obolibrary.org/obo/MA_0001599	dental pulp	http://purl.obolibrary.org/obo/MA_0000350	molar
+http://purl.obolibrary.org/obo/MA_0003228	molar enamel organ	http://purl.obolibrary.org/obo/MA_0001604	tooth enamel organ	http://purl.obolibrary.org/obo/MA_0003224	molar epithelium
+http://purl.obolibrary.org/obo/MA_0003224	molar epithelium	http://purl.obolibrary.org/obo/MA_0003151	tooth epithelium	http://purl.obolibrary.org/obo/MA_0000350	molar
+http://purl.obolibrary.org/obo/MA_0003230	molar mesenchyme	http://purl.obolibrary.org/obo/MA_0003152	tooth mesenchyme	http://purl.obolibrary.org/obo/MA_0000350	molar
+http://purl.obolibrary.org/obo/MA_0003172	naris epithelium	http://purl.obolibrary.org/obo/MA_0003171	nose epithelium	http://purl.obolibrary.org/obo/MA_0000282	naris
+http://purl.obolibrary.org/obo/MA_0001324	nasal cavity epithelium	http://purl.obolibrary.org/obo/MA_0003171	nose epithelium	http://purl.obolibrary.org/obo/MA_0000284	nasal cavity
+http://purl.obolibrary.org/obo/MA_0001326	nasal cavity respiratory epithelium	http://purl.obolibrary.org/obo/MA_0001324	nasal cavity epithelium	http://purl.obolibrary.org/obo/MA_0000434	respiratory tract
+http://purl.obolibrary.org/obo/MA_0001864	nasopharynx connective tissue	http://purl.obolibrary.org/obo/MA_0001814	respiratory system connective tissue	http://purl.obolibrary.org/obo/MA_0000443	nasopharynx
+http://purl.obolibrary.org/obo/MA_0001865	nasopharynx epithelium	http://purl.obolibrary.org/obo/MA_0002725	pharynx epithelium	http://purl.obolibrary.org/obo/MA_0000443	nasopharynx
+http://purl.obolibrary.org/obo/MA_0000583	neck blood vessel	http://purl.obolibrary.org/obo/MA_0000060	blood vessel	http://purl.obolibrary.org/obo/MA_0000024	neck
+http://purl.obolibrary.org/obo/MA_0000584	neck bone	http://purl.obolibrary.org/obo/MA_0001459	bone	http://purl.obolibrary.org/obo/MA_0000024	neck
+http://purl.obolibrary.org/obo/MA_0000585	neck connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000024	neck
+http://purl.obolibrary.org/obo/MA_0000590	neck skin	http://purl.obolibrary.org/obo/MA_0000151	skin	http://purl.obolibrary.org/obo/MA_0000024	neck
+http://purl.obolibrary.org/obo/MA_0001605	oropharynx epithelium	http://purl.obolibrary.org/obo/MA_0002725	pharynx epithelium	http://purl.obolibrary.org/obo/MA_0000351	oropharynx
+http://purl.obolibrary.org/obo/MA_0003170	outer ear epithelium	http://purl.obolibrary.org/obo/MA_0003161	ear epithelium	http://purl.obolibrary.org/obo/MA_0000258	outer ear
+http://purl.obolibrary.org/obo/MA_0000489	outflow tract myocardium	http://purl.obolibrary.org/obo/MA_0000164	myocardium	http://purl.obolibrary.org/obo/MA_0000100	outflow tract
+http://purl.obolibrary.org/obo/MA_0000531	pelvis blood vessel	http://purl.obolibrary.org/obo/MA_0000060	blood vessel	http://purl.obolibrary.org/obo/MA_0000030	pelvis
+http://purl.obolibrary.org/obo/MA_0000532	pelvis bone	http://purl.obolibrary.org/obo/MA_0001459	bone	http://purl.obolibrary.org/obo/MA_0000030	pelvis
+http://purl.obolibrary.org/obo/MA_0000533	pelvis connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000030	pelvis
+http://purl.obolibrary.org/obo/MA_0000534	pelvis muscle	http://purl.obolibrary.org/obo/MA_0000514	trunk muscle	http://purl.obolibrary.org/obo/MA_0000030	pelvis
+http://purl.obolibrary.org/obo/MA_0000542	pelvis nerve	http://purl.obolibrary.org/obo/MA_0000217	nerve	http://purl.obolibrary.org/obo/MA_0000030	pelvis
+http://purl.obolibrary.org/obo/MA_0000543	pelvis organ	http://purl.obolibrary.org/obo/MA_0000516	trunk organ	http://purl.obolibrary.org/obo/MA_0000030	pelvis
+http://purl.obolibrary.org/obo/MA_0000546	pelvis skin	http://purl.obolibrary.org/obo/MA_0000151	skin	http://purl.obolibrary.org/obo/MA_0000030	pelvis
+http://purl.obolibrary.org/obo/MA_0001161	peripheral nervous system ganglion	http://purl.obolibrary.org/obo/MA_0002406	ganglion	http://purl.obolibrary.org/obo/MA_0000218	peripheral nervous system
+http://purl.obolibrary.org/obo/MA_0001376	proximal sesamoid bone of foot	http://purl.obolibrary.org/obo/MA_0001375	sesamoid bone	http://purl.obolibrary.org/obo/MA_0000044	foot
+http://purl.obolibrary.org/obo/MA_0001377	proximal sesamoid bone of hand	http://purl.obolibrary.org/obo/MA_0001375	sesamoid bone	http://purl.obolibrary.org/obo/MA_0000037	hand
+http://purl.obolibrary.org/obo/MA_0001820	respiratory system elastic tissue	http://purl.obolibrary.org/obo/MA_0002853	elastic tissue	http://purl.obolibrary.org/obo/MA_0001822	respiratory system submucosa
+http://purl.obolibrary.org/obo/MA_0003173	retina epithelium	http://purl.obolibrary.org/obo/MA_0003162	eye epithelium	http://purl.obolibrary.org/obo/MA_0000276	retina
+http://purl.obolibrary.org/obo/MA_0003132	right lung epithelium	http://purl.obolibrary.org/obo/MA_0001783	lung epithelium	http://purl.obolibrary.org/obo/MA_0000426	right lung
+http://purl.obolibrary.org/obo/MA_0001790	right lung hilus	http://purl.obolibrary.org/obo/MA_0003099	lung hilus	http://purl.obolibrary.org/obo/MA_0000426	right lung
+http://purl.obolibrary.org/obo/MA_0003134	right lung lobar bronchus	http://purl.obolibrary.org/obo/MA_0000437	lobar bronchus	http://purl.obolibrary.org/obo/MA_0000426	right lung
+http://purl.obolibrary.org/obo/MA_0001791	right lung lobe	http://purl.obolibrary.org/obo/MA_0003098	lung lobe	http://purl.obolibrary.org/obo/MA_0000426	right lung
+http://purl.obolibrary.org/obo/MA_0001876	right ventricle membranous part	http://purl.obolibrary.org/obo/MA_0001878	heart ventricle membranous part	http://purl.obolibrary.org/obo/MA_0000093	heart right ventricle
+http://purl.obolibrary.org/obo/MA_0001877	right ventricle muscular part	http://purl.obolibrary.org/obo/MA_0001879	heart ventricle muscular part	http://purl.obolibrary.org/obo/MA_0000093	heart right ventricle
+http://purl.obolibrary.org/obo/MA_0002984	right ventricle myocardium	http://purl.obolibrary.org/obo/MA_0000164	myocardium	http://purl.obolibrary.org/obo/MA_0000093	heart right ventricle
+http://purl.obolibrary.org/obo/MA_0002452	sebaceous gland of eye	http://purl.obolibrary.org/obo/MA_0002565	sebaceous gland	http://purl.obolibrary.org/obo/MA_0000261	eye
+http://purl.obolibrary.org/obo/MA_0000631	shoulder bone	http://purl.obolibrary.org/obo/MA_0001459	bone	http://purl.obolibrary.org/obo/MA_0000038	shoulder
+http://purl.obolibrary.org/obo/MA_0000632	shoulder connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000038	shoulder
+http://purl.obolibrary.org/obo/MA_0000459	shoulder joint	http://purl.obolibrary.org/obo/MA_0000691	limb joint	http://purl.obolibrary.org/obo/MA_0000038	shoulder
+http://purl.obolibrary.org/obo/MA_0000633	shoulder muscle	http://purl.obolibrary.org/obo/MA_0000692	limb muscle	http://purl.obolibrary.org/obo/MA_0000038	shoulder
+http://purl.obolibrary.org/obo/MA_0000634	shoulder nerve	http://purl.obolibrary.org/obo/MA_0000217	nerve	http://purl.obolibrary.org/obo/MA_0000038	shoulder
+http://purl.obolibrary.org/obo/MA_0002439	skeletal muscle tissue	http://purl.obolibrary.org/obo/MA_0003002	tissue	http://purl.obolibrary.org/obo/MA_0003148	skeletal muscle
+http://purl.obolibrary.org/obo/MA_0001552	small intestine crypt of lieberkuhn	http://purl.obolibrary.org/obo/MA_0001535	crypt of lieberkuhn	http://purl.obolibrary.org/obo/MA_0000337	small intestine
+http://purl.obolibrary.org/obo/MA_0001554	small intestine lamina propria	http://purl.obolibrary.org/obo/MA_0001899	gastrointestinal system lamina propria	http://purl.obolibrary.org/obo/MA_0002686	small intestine mucosa
+http://purl.obolibrary.org/obo/MA_0001557	small intestine peyer's patch	http://purl.obolibrary.org/obo/MA_0000137	peyer's patch	http://purl.obolibrary.org/obo/MA_0000337	small intestine
+http://purl.obolibrary.org/obo/MA_0001131	spinal cord arachnoid mater	http://purl.obolibrary.org/obo/MA_0001114	arachnoid mater	http://purl.obolibrary.org/obo/MA_0001130	spinal cord meninges
+http://purl.obolibrary.org/obo/MA_0001132	spinal cord dura mater	http://purl.obolibrary.org/obo/MA_0001115	dura mater	http://purl.obolibrary.org/obo/MA_0001130	spinal cord meninges
+http://purl.obolibrary.org/obo/MA_0000002	spinal cord grey matter	http://purl.obolibrary.org/obo/MA_0001112	grey matter	http://purl.obolibrary.org/obo/MA_0000216	spinal cord
+http://purl.obolibrary.org/obo/MA_0001130	spinal cord meninges	http://purl.obolibrary.org/obo/MA_0001113	meninges	http://purl.obolibrary.org/obo/MA_0000216	spinal cord
+http://purl.obolibrary.org/obo/MA_0001133	spinal cord pia mater	http://purl.obolibrary.org/obo/MA_0001116	pia mater	http://purl.obolibrary.org/obo/MA_0001130	spinal cord meninges
+http://purl.obolibrary.org/obo/MA_0000910	spinal cord white matter	http://purl.obolibrary.org/obo/MA_0001135	white matter	http://purl.obolibrary.org/obo/MA_0000216	spinal cord
+http://purl.obolibrary.org/obo/MA_0001614	stomach glandular region mucosa	http://purl.obolibrary.org/obo/MA_0002683	stomach mucosa	http://purl.obolibrary.org/obo/MA_0001613	stomach glandular region
+http://purl.obolibrary.org/obo/MA_0000695	tail blood vessel	http://purl.obolibrary.org/obo/MA_0000060	blood vessel	http://purl.obolibrary.org/obo/MA_0000008	tail
+http://purl.obolibrary.org/obo/MA_0000696	tail bone	http://purl.obolibrary.org/obo/MA_0001459	bone	http://purl.obolibrary.org/obo/MA_0000008	tail
+http://purl.obolibrary.org/obo/MA_0000697	tail connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000008	tail
+http://purl.obolibrary.org/obo/MA_0000700	tail skin	http://purl.obolibrary.org/obo/MA_0000151	skin	http://purl.obolibrary.org/obo/MA_0000008	tail
+http://purl.obolibrary.org/obo/MA_0000980	telencephalon arachnoid matter	http://purl.obolibrary.org/obo/MA_0000814	brain arachnoid matter	http://purl.obolibrary.org/obo/MA_0000979	telencephalon meninges
+http://purl.obolibrary.org/obo/MA_0000981	telencephalon dura mater	http://purl.obolibrary.org/obo/MA_0001115	dura mater	http://purl.obolibrary.org/obo/MA_0000979	telencephalon meninges
+http://purl.obolibrary.org/obo/MA_0000982	telencephalon pia mater	http://purl.obolibrary.org/obo/MA_0001116	pia mater	http://purl.obolibrary.org/obo/MA_0000979	telencephalon meninges
+http://purl.obolibrary.org/obo/MA_0000554	thoracic cavity blood vessel	http://purl.obolibrary.org/obo/MA_0000060	blood vessel	http://purl.obolibrary.org/obo/MA_0000032	thoracic cavity
+http://purl.obolibrary.org/obo/MA_0000555	thoracic cavity connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000032	thoracic cavity
+http://purl.obolibrary.org/obo/MA_0000556	thoracic cavity nerve	http://purl.obolibrary.org/obo/MA_0000217	nerve	http://purl.obolibrary.org/obo/MA_0000032	thoracic cavity
+http://purl.obolibrary.org/obo/MA_0000557	thoracic cavity organ	http://purl.obolibrary.org/obo/MA_0000516	trunk organ	http://purl.obolibrary.org/obo/MA_0000032	thoracic cavity
+http://purl.obolibrary.org/obo/MA_0000558	thoracic segment blood vessel	http://purl.obolibrary.org/obo/MA_0000060	blood vessel	http://purl.obolibrary.org/obo/MA_0000022	thoracic segment of trunk
+http://purl.obolibrary.org/obo/MA_0000559	thoracic segment bone	http://purl.obolibrary.org/obo/MA_0000512	trunk bone	http://purl.obolibrary.org/obo/MA_0000022	thoracic segment of trunk
+http://purl.obolibrary.org/obo/MA_0000560	thoracic segment connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000022	thoracic segment of trunk
+http://purl.obolibrary.org/obo/MA_0000561	thoracic segment muscle	http://purl.obolibrary.org/obo/MA_0000514	trunk muscle	http://purl.obolibrary.org/obo/MA_0000022	thoracic segment of trunk
+http://purl.obolibrary.org/obo/MA_0000562	thoracic segment nerve	http://purl.obolibrary.org/obo/MA_0000217	nerve	http://purl.obolibrary.org/obo/MA_0000022	thoracic segment of trunk
+http://purl.obolibrary.org/obo/MA_0000563	thoracic segment organ	http://purl.obolibrary.org/obo/MA_0000516	trunk organ	http://purl.obolibrary.org/obo/MA_0000022	thoracic segment of trunk
+http://purl.obolibrary.org/obo/MA_0000564	thorax skin	http://purl.obolibrary.org/obo/MA_0000151	skin	http://purl.obolibrary.org/obo/MA_0000022	thoracic segment of trunk
+http://purl.obolibrary.org/obo/MA_0001857	trachea cartilage	http://purl.obolibrary.org/obo/MA_0000586	neck cartilage	http://purl.obolibrary.org/obo/MA_0000441	trachea
+http://purl.obolibrary.org/obo/MA_0001853	trachea connective tissue	http://purl.obolibrary.org/obo/MA_0001814	respiratory system connective tissue	http://purl.obolibrary.org/obo/MA_0000441	trachea
+http://purl.obolibrary.org/obo/MA_0001861	trachea elastic tissue	http://purl.obolibrary.org/obo/MA_0002853	elastic tissue	http://purl.obolibrary.org/obo/MA_0001860	trachea submucosa
+http://purl.obolibrary.org/obo/MA_0001863	trachea smooth muscle	http://purl.obolibrary.org/obo/MA_0001830	respiratory system smooth muscle	http://purl.obolibrary.org/obo/MA_0000441	trachea
+http://purl.obolibrary.org/obo/MA_0001340	trapezium	http://purl.obolibrary.org/obo/MA_0002558	distal carpal bone	http://purl.obolibrary.org/obo/MA_0000037	hand
+http://purl.obolibrary.org/obo/MA_0001341	trapezoid	http://purl.obolibrary.org/obo/MA_0002558	distal carpal bone	http://purl.obolibrary.org/obo/MA_0000037	hand
+http://purl.obolibrary.org/obo/MA_0003180	tricuspid valve leaflet	http://purl.obolibrary.org/obo/MA_0003179	valve leaflet	http://purl.obolibrary.org/obo/MA_0000090	tricuspid valve
+http://purl.obolibrary.org/obo/MA_0000511	trunk blood vessel	http://purl.obolibrary.org/obo/MA_0000060	blood vessel	http://purl.obolibrary.org/obo/MA_0000004	trunk
+http://purl.obolibrary.org/obo/MA_0000512	trunk bone	http://purl.obolibrary.org/obo/MA_0001459	bone	http://purl.obolibrary.org/obo/MA_0000004	trunk
+http://purl.obolibrary.org/obo/MA_0000513	trunk connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000004	trunk
+http://purl.obolibrary.org/obo/MA_0000515	trunk nerve	http://purl.obolibrary.org/obo/MA_0000217	nerve	http://purl.obolibrary.org/obo/MA_0000004	trunk
+http://purl.obolibrary.org/obo/MA_0000517	trunk skin	http://purl.obolibrary.org/obo/MA_0000151	skin	http://purl.obolibrary.org/obo/MA_0000004	trunk
+http://purl.obolibrary.org/obo/MA_0000603	upper arm blood vessel	http://purl.obolibrary.org/obo/MA_0000591	arm blood vessel	http://purl.obolibrary.org/obo/MA_0000035	upper arm
+http://purl.obolibrary.org/obo/MA_0000604	upper arm bone	http://purl.obolibrary.org/obo/MA_0000592	arm bone	http://purl.obolibrary.org/obo/MA_0000035	upper arm
+http://purl.obolibrary.org/obo/MA_0000605	upper arm connective tissue	http://purl.obolibrary.org/obo/MA_0000593	arm connective tissue	http://purl.obolibrary.org/obo/MA_0000035	upper arm
+http://purl.obolibrary.org/obo/MA_0000606	upper arm muscle	http://purl.obolibrary.org/obo/MA_0000594	arm muscle	http://purl.obolibrary.org/obo/MA_0000035	upper arm
+http://purl.obolibrary.org/obo/MA_0000608	upper arm skin	http://purl.obolibrary.org/obo/MA_0000596	arm skin	http://purl.obolibrary.org/obo/MA_0000035	upper arm
+http://purl.obolibrary.org/obo/MA_0000505	upper back blood vessel	http://purl.obolibrary.org/obo/MA_0000493	back blood vessel	http://purl.obolibrary.org/obo/MA_0000028	upper back
+http://purl.obolibrary.org/obo/MA_0000506	upper back bone	http://purl.obolibrary.org/obo/MA_0000494	back bone	http://purl.obolibrary.org/obo/MA_0000028	upper back
+http://purl.obolibrary.org/obo/MA_0000507	upper back connective tissue	http://purl.obolibrary.org/obo/MA_0000495	back connective tissue	http://purl.obolibrary.org/obo/MA_0000028	upper back
+http://purl.obolibrary.org/obo/MA_0000508	upper back muscle	http://purl.obolibrary.org/obo/MA_0000496	back muscle	http://purl.obolibrary.org/obo/MA_0000028	upper back
+http://purl.obolibrary.org/obo/MA_0000509	upper back nerve	http://purl.obolibrary.org/obo/MA_0000497	back nerve	http://purl.obolibrary.org/obo/MA_0000028	upper back
+http://purl.obolibrary.org/obo/MA_0000510	upper back skin	http://purl.obolibrary.org/obo/MA_0000498	back skin	http://purl.obolibrary.org/obo/MA_0000028	upper back
+http://purl.obolibrary.org/obo/MA_0001601	upper jaw incisor	http://purl.obolibrary.org/obo/MA_0000349	incisor	http://purl.obolibrary.org/obo/MA_0001908	upper jaw
+http://purl.obolibrary.org/obo/MA_0001603	upper jaw molar	http://purl.obolibrary.org/obo/MA_0000350	molar	http://purl.obolibrary.org/obo/MA_0001908	upper jaw
+http://purl.obolibrary.org/obo/MA_0001909	upper jaw tooth	http://purl.obolibrary.org/obo/MA_0000348	tooth	http://purl.obolibrary.org/obo/MA_0001908	upper jaw
+http://purl.obolibrary.org/obo/MA_0000681	upper leg blood vessel	http://purl.obolibrary.org/obo/MA_0000669	leg blood vessel	http://purl.obolibrary.org/obo/MA_0000052	upper leg
+http://purl.obolibrary.org/obo/MA_0000682	upper leg bone	http://purl.obolibrary.org/obo/MA_0000670	leg bone	http://purl.obolibrary.org/obo/MA_0000052	upper leg
+http://purl.obolibrary.org/obo/MA_0000683	upper leg connective tissue	http://purl.obolibrary.org/obo/MA_0000671	leg connective tissue	http://purl.obolibrary.org/obo/MA_0000052	upper leg
+http://purl.obolibrary.org/obo/MA_0000684	upper leg muscle	http://purl.obolibrary.org/obo/MA_0000672	leg muscle	http://purl.obolibrary.org/obo/MA_0000052	upper leg
+http://purl.obolibrary.org/obo/MA_0000685	upper leg nerve	http://purl.obolibrary.org/obo/MA_0000673	leg nerve	http://purl.obolibrary.org/obo/MA_0000052	upper leg
+http://purl.obolibrary.org/obo/MA_0000686	upper leg skin	http://purl.obolibrary.org/obo/MA_0000674	leg skin	http://purl.obolibrary.org/obo/MA_0000052	upper leg
+http://purl.obolibrary.org/obo/MA_0001688	urethra gland	http://purl.obolibrary.org/obo/MA_0003038	gland	http://purl.obolibrary.org/obo/MA_0000379	urethra
+http://purl.obolibrary.org/obo/MA_0001732	vagina sebaceous gland	http://purl.obolibrary.org/obo/MA_0002565	sebaceous gland	http://purl.obolibrary.org/obo/MA_0000394	vagina
+http://purl.obolibrary.org/obo/MA_0000066	venous blood vessel	http://purl.obolibrary.org/obo/MA_0000060	blood vessel	http://purl.obolibrary.org/obo/MA_0002720	venous system
+http://purl.obolibrary.org/obo/MA_0000082	ventricle myocardium	http://purl.obolibrary.org/obo/MA_0000164	myocardium	http://purl.obolibrary.org/obo/MA_0000091	heart ventricle
+http://purl.obolibrary.org/obo/MA_0001328	vomeronasal organ sensory epithelium	http://purl.obolibrary.org/obo/MA_0003174	sensory organ epithelium	http://purl.obolibrary.org/obo/MA_0000289	vomeronasal organ
+http://purl.obolibrary.org/obo/MA_0000636	wrist connective tissue	http://purl.obolibrary.org/obo/MA_0000011	connective tissue	http://purl.obolibrary.org/obo/MA_0000039	wrist
+http://purl.obolibrary.org/obo/MA_0000460	wrist joint	http://purl.obolibrary.org/obo/MA_0000691	limb joint	http://purl.obolibrary.org/obo/MA_0000039	wrist
+http://purl.obolibrary.org/obo/MA_0000637	wrist nerve	http://purl.obolibrary.org/obo/MA_0000217	nerve	http://purl.obolibrary.org/obo/MA_0000039	wrist

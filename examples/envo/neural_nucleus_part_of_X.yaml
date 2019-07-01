@@ -45,6 +45,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'neural nucleus' and ('part of' some %s)"
+  text: "('neural nucleus' and ('part of' some %s))"
   vars:
     - v0

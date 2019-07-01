@@ -1,14 +1,14 @@
-# options: [min(20),dir(ehdaa2),trim(true),base('http://purl.obolibrary.org/obo/ehdaa2'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(12),dir('examples/ehdaa2'),trim(true),base('http://purl.obolibrary.org/obo/ehdaa2'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: part_of X develops_from X
 pattern_iri: http://purl.obolibrary.org/obo/ehdaa2/part_of_X_develops_from_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [early pharyngeal arch endoderm](http://purl.obolibrary.org/obo/EHDAA2_0001457), [digital region apical ectodermal ridge](http://purl.obolibrary.org/obo/EHDAA2_0000405), [early endolymphatic appendage associated mesenchyme](http://purl.obolibrary.org/obo/EHDAA2_0004123) (59 total)
+  Examples: [1st arch mandibular ectoderm](http://purl.obolibrary.org/obo/EHDAA2_0000032), [1st arch maxillary ectoderm](http://purl.obolibrary.org/obo/EHDAA2_0000039), [2nd arch ectoderm](http://purl.obolibrary.org/obo/EHDAA2_0000055) (166 total)
 
 classes: 
-  anatomical structure: "ns1:CARO_0000003"
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
 
 
 relations: 
@@ -18,10 +18,10 @@ relations:
 
 vars:
   v0: "'anatomical entity'"
-  v1: "'anatomical structure'"
+  v1: "'anatomical entity'"
 
 name:
-  # Induced, frequency=0.11864406779661017, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.04216867469879518, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
@@ -42,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "('part_of' some %s) and ('develops_from' some %s)"
+  text: "(('part_of' some %s) and ('develops_from' some %s))"
   vars:
     - v0
     - v1

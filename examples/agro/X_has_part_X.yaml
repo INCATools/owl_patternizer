@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/agro/X_has_part_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [chloride](http://purl.obolibrary.org/obo/CHEBI_17996), [potassium chloride](http://purl.obolibrary.org/obo/CHEBI_32588), [alkaline earth molecular entity](http://purl.obolibrary.org/obo/CHEBI_33299) (74 total)
+  Examples: [potassium chloride](http://purl.obolibrary.org/obo/CHEBI_32588), [alkaline earth molecular entity](http://purl.obolibrary.org/obo/CHEBI_33299), [alkali metal molecular entity](http://purl.obolibrary.org/obo/CHEBI_33296) (86 total)
 
 classes: 
   material entity: "BFO:0000040"
@@ -20,7 +20,7 @@ vars:
   v1: "'material entity'"
 
 name:
-  # Induced, frequency=0.527027027027027, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.45348837209302323, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
@@ -47,7 +47,7 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('has part' some %s)"
+  text: "(%s and ('has part' some %s))"
   vars:
     - v0
     - v1

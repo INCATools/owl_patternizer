@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/agro/molecular_entity_has_part_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [alkaline earth molecular entity](http://purl.obolibrary.org/obo/CHEBI_33299), [alkali metal molecular entity](http://purl.obolibrary.org/obo/CHEBI_33296), [calcium molecular entity](http://purl.obolibrary.org/obo/CHEBI_22985) (17 total)
+  Examples: [alkaline earth molecular entity](http://purl.obolibrary.org/obo/CHEBI_33299), [alkali metal molecular entity](http://purl.obolibrary.org/obo/CHEBI_33296), [calcium molecular entity](http://purl.obolibrary.org/obo/CHEBI_22985) (19 total)
 
 classes: 
   molecular entity: "http://purl.obolibrary.org/obo/CHEBI_23367"
@@ -20,7 +20,7 @@ vars:
   v0: "'atom'"
 
 name:
-  # Induced, frequency=0.7647058823529411, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.6842105263157895, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s molecular entity"
   vars:
     - v0
@@ -49,6 +49,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'molecular entity' and ('has part' some %s)"
+  text: "('molecular entity' and ('has part' some %s))"
   vars:
     - v0

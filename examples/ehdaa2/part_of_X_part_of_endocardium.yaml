@@ -1,4 +1,4 @@
-# options: [min(20),dir(ehdaa2),trim(true),base('http://purl.obolibrary.org/obo/ehdaa2'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(12),dir('examples/ehdaa2'),trim(true),base('http://purl.obolibrary.org/obo/ehdaa2'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: part_of X part_of endocardium
 pattern_iri: http://purl.obolibrary.org/obo/ehdaa2/part_of_X_part_of_endocardium
 
@@ -8,8 +8,8 @@ description: >-
   Examples: [aortic valve leaflet endocardium](http://purl.obolibrary.org/obo/EHDAA2_0004179), [aortico-pulmonary spiral septum endocardium](http://purl.obolibrary.org/obo/EHDAA2_0004187), [mitral valve leaflet endocardium](http://purl.obolibrary.org/obo/EHDAA2_0000169) (20 total)
 
 classes: 
-  multi-tissue structure: "ns1:CARO_0000055"
-  endocardium: "ns1:EHDAA2_0004153"
+  multi-tissue structure: "http://purl.obolibrary.org/obo/CARO_0000055"
+  endocardium: "http://purl.obolibrary.org/obo/EHDAA2_0004153"
 
 
 relations: 
@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "('part_of' some %s) and ('part_of' some 'endocardium')"
+  text: "(('part_of' some %s) and ('part_of' some 'endocardium'))"
   vars:
     - v0

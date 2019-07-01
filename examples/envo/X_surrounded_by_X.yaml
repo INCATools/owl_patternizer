@@ -42,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('surrounded by' some %s)"
+  text: "(%s and ('surrounded by' some %s))"
   vars:
     - v0
     - v1

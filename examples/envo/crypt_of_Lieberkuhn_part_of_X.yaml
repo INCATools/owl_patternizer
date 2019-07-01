@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'crypt of Lieberkuhn' and ('part of' some %s)"
+  text: "('crypt of Lieberkuhn' and ('part of' some %s))"
   vars:
     - v0

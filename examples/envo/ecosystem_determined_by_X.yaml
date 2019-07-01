@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'ecosystem' and ('determined by' some %s)"
+  text: "('ecosystem' and ('determined by' some %s))"
   vars:
     - v0

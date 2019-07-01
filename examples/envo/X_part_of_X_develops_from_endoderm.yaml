@@ -43,7 +43,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('part of' some %s) and ('develops from' some 'endoderm')"
+  text: "(%s and ('part of' some %s) and ('develops from' some 'endoderm'))"
   vars:
     - v0
     - v1

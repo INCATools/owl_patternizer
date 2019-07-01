@@ -5,10 +5,10 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/X_participates_in_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [public infrastructure](http://purl.obolibrary.org/obo/ENVO_01000779), [domestic building](http://purl.obolibrary.org/obo/ENVO_01001480), [industrial building](http://purl.obolibrary.org/obo/ENVO_00003861) (5 total)
+  Examples: [public infrastructure](http://purl.obolibrary.org/obo/ENVO_01000779), [residential building](http://purl.obolibrary.org/obo/ENVO_01000933), [industrial building](http://purl.obolibrary.org/obo/ENVO_00003861) (7 total)
 
 classes: 
-  environmental feature: "ENVO:00002297"
+  material entity: "BFO:0000040"
   environmental system process: "ENVO:02500000"
 
 
@@ -17,19 +17,19 @@ relations:
 
 
 vars:
-  v0: "'environmental feature'"
+  v0: "'material entity'"
   v1: "'environmental system process'"
 
 name:
-  # Induced, frequency=0.2, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.14285714285714285, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
     - v0
 
 def:
-  # Could not induce def, using default
-  text: "Any %s that participates in a %s"
+  # Induced, frequency=0.14285714285714285, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s which is composed of water droplets falling to a planetary surface during a %s process."
   vars:
     - v0
     - v1
@@ -42,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('participates in' some %s)"
+  text: "(%s and ('participates in' some %s))"
   vars:
     - v0
     - v1

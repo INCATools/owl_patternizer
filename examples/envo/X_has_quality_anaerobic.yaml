@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('has quality' some 'anaerobic')"
+  text: "(%s and ('has quality' some 'anaerobic'))"
   vars:
     - v0

@@ -1,15 +1,15 @@
-# options: [min(20),dir(ehdaa2),trim(true),base('http://purl.obolibrary.org/obo/ehdaa2'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(12),dir('examples/ehdaa2'),trim(true),base('http://purl.obolibrary.org/obo/ehdaa2'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: epithelium part_of X
 pattern_iri: http://purl.obolibrary.org/obo/ehdaa2/epithelium_part_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [auditory hillocks surface epithelium](http://purl.obolibrary.org/obo/EHDAA2_0000157), [bladder epithelium](http://purl.obolibrary.org/obo/EHDAA2_0000582), [caecum epithelium](http://purl.obolibrary.org/obo/EHDAA2_0000209) (99 total)
+  Examples: [bladder epithelium](http://purl.obolibrary.org/obo/EHDAA2_0000582), [caecum epithelium](http://purl.obolibrary.org/obo/EHDAA2_0000209), [carpal region epithelium](http://purl.obolibrary.org/obo/EHDAA2_0000219) (99 total)
 
 classes: 
-  anatomical entity: "ns1:CARO_0000000"
-  epithelium: "ns1:CARO_0000066"
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  epithelium: "http://purl.obolibrary.org/obo/CARO_0000066"
 
 
 relations: 
@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'epithelium' and ('part_of' some %s)"
+  text: "('epithelium' and ('part_of' some %s))"
   vars:
     - v0

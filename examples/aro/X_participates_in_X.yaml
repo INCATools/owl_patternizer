@@ -5,9 +5,10 @@ pattern_iri: http://purl.obolibrary.org/obo/aro/X_participates_in_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [Escherichia coli acrR with mutation conferring multidrug antibiotic resistance](http://purl.obolibrary.org/obo/ARO_3003807), [Escherichia coli marR mutant conferring antibiotic resistance](http://purl.obolibrary.org/obo/ARO_3003378), [Escherichia coli soxR with mutation conferring antibiotic resistance](http://purl.obolibrary.org/obo/ARO_3003381) (30 total)
+  Examples: [Enterobacter aerogenes acrR with mutation conferring multidrug antibiotic resistance](http://purl.obolibrary.org/obo/ARO_3003374), [Escherichia coli marR mutant conferring antibiotic resistance](http://purl.obolibrary.org/obo/ARO_3003378), [Escherichia coli soxR with mutation conferring antibiotic resistance](http://purl.obolibrary.org/obo/ARO_3003381) (17 total)
 
 classes: 
+  mechanism of antibiotic resistance: "http://purl.obolibrary.org/obo/ARO_1000002"
   determinant of antibiotic resistance: "http://purl.obolibrary.org/obo/ARO_3000000"
 
 
@@ -20,7 +21,7 @@ vars:
   v1: "'mechanism of antibiotic resistance'"
 
 name:
-  # Induced, frequency=0.06666666666666667, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.11764705882352941, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "Escherichia coli %s with %s"
   vars:
     - v0
@@ -41,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('participates_in' some %s)"
+  text: "(%s and ('participates_in' some %s))"
   vars:
     - v0
     - v1

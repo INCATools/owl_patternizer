@@ -69,11 +69,11 @@ ontology_config(mso,      [min(5), max_class_signature(6), generalize_properties
 ontology_config(chebi,    [min(4), remove_chemical_synonyms(true), mutate_chebi(true), infer_axioms(true), generalize_properties(false)]).
 ontology_config(uberon,   [min(50), max_and_cardinality(3)]).
 ontology_config(cl,       [min(20), ontology_prefix(cl)]).
-ontology_config(nif_cell, [min(20), imports([uberon]), infer_axioms(true), base('http://ontology.neuinfo.org/NIF/ttl/NIF-Cell.ttl'), ontology_prefix(nifext)]).
-ontology_config(nif,      [min(20), base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'), ontology_prefix(nifext)]).
+ontology_config(nif_cell, [min(10), imports([uberon]), infer_axioms(true), base('http://ontology.neuinfo.org/NIF/ttl/NIF-Cell.ttl'), ontology_prefix(nifext)]).
+ontology_config(nif,      [min(20), base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),  ontology_prefix(nifext)]).
 ontology_config(clo,      [min(20), ontology_prefix(clo)]).
 ontology_config(eco,      [min(10), ontology_prefix(eco)]).
-ontology_config(fbbt,     [min(50)]).
+ontology_config(fbbt,     [min(50), generalize_properties(false)]).
 ontology_config(fbcv,     [infer_axioms(true), min(5), generalize_properties(false)]).
 ontology_config(mondo,    []).
 ontology_config(geo,      []).
@@ -127,6 +127,7 @@ ontology_config(tads,     [infer_axioms(true), min(8), generalize_properties(fal
 ontology_config(ceph,     [min(8), generalize_properties(false)]).
 ontology_config(flopo,    [min(50), generalize_properties(false)]).
 ontology_config(agrovoc,  [infer_axioms(true), min(6), generalize_properties(false)]).
+ontology_config(mesh,     [infer_axioms(true), min(6), generalize_properties(false)]).
 ontology_config(gemet,    [is_skos(true), infer_links(true),new_class_prefix('http://x.org/'), infer_axioms(true), min(5), generalize_properties(false)]).
 
 autolabels :-

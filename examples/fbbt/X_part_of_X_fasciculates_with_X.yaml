@@ -1,13 +1,15 @@
-# options: [min(50),dir(fbbt),trim(true),base('http://purl.obolibrary.org/obo/fbbt'),generalize_properties(true),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(50),dir('examples/fbbt'),trim(true),base('http://purl.obolibrary.org/obo/fbbt'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X part of X fasciculates_with X
 pattern_iri: http://purl.obolibrary.org/obo/fbbt/X_part_of_X_fasciculates_with_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [prothoracic desA neuron](http://purl.obolibrary.org/obo/FBbt_00002066), [mesothoracic desA neuron](http://purl.obolibrary.org/obo/FBbt_00002106), [metathoracic desA neuron](http://purl.obolibrary.org/obo/FBbt_00002144) (57 total)
+  Examples: [prothoracic desA neuron](http://purl.obolibrary.org/obo/FBbt_00002066), [mesothoracic desA neuron](http://purl.obolibrary.org/obo/FBbt_00002106), [metathoracic desA neuron](http://purl.obolibrary.org/obo/FBbt_00002144) (58 total)
 
 classes: 
+  nerve: "http://purl.obolibrary.org/obo/FBbt_00005105"
+  neuron: "http://purl.obolibrary.org/obo/FBbt_00005106"
   multicellular structure: "http://purl.obolibrary.org/obo/FBbt_00100313"
 
 
@@ -30,8 +32,8 @@ name:
     - v2
 
 def:
-  # Induced, frequency=0.017543859649122806, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "Any %s (FB%st:00001999) that is part of some mesothoracic dorsal sensillum campaniformium dc1 (FBbt:00002749) and that fasciculates with some %s (FBbt:00002104)."
+  # Could not induce def, using default
+  text: "Any %s that part of a %s and fasciculates_with a %s"
   vars:
     - v0
     - v1
@@ -45,7 +47,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('part of' some %s) and ('fasciculates_with' some %s)"
+  text: "(%s and ('part of' some %s) and ('fasciculates_with' some %s))"
   vars:
     - v0
     - v1

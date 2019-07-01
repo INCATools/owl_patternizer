@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'neural plate' and ('develops from' some %s)"
+  text: "('neural plate' and ('develops from' some %s))"
   vars:
     - v0

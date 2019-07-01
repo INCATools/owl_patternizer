@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('part of' some 'female organism')"
+  text: "(%s and ('part of' some 'female organism'))"
   vars:
     - v0

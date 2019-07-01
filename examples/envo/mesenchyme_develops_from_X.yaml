@@ -46,6 +46,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'mesenchyme' and ('develops from' some %s)"
+  text: "('mesenchyme' and ('develops from' some %s))"
   vars:
     - v0

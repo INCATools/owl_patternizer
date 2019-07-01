@@ -5,9 +5,10 @@ pattern_iri: http://purl.obolibrary.org/obo/aro/X_confers_resistance_to_drug_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [determinant of linezolid resistance](http://purl.obolibrary.org/obo/ARO_3000267), [determinant of triclosan resistance](http://purl.obolibrary.org/obo/ARO_3003696), [determinant of pyrazinamide resistance](http://purl.obolibrary.org/obo/ARO_3003433) (29 total)
+  Examples: [determinant of linezolid resistance](http://purl.obolibrary.org/obo/ARO_3000267), [determinant of triclosan resistance](http://purl.obolibrary.org/obo/ARO_3003696), [determinant of pyrazinamide resistance](http://purl.obolibrary.org/obo/ARO_3003433) (42 total)
 
 classes: 
+  antibiotic molecule: "http://purl.obolibrary.org/obo/ARO_1000003"
   determinant of antibiotic resistance: "http://purl.obolibrary.org/obo/ARO_3000000"
 
 
@@ -41,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('confers_resistance_to_drug' some %s)"
+  text: "(%s and ('confers_resistance_to_drug' some %s))"
   vars:
     - v0
     - v1

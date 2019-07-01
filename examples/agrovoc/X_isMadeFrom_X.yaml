@@ -5,18 +5,38 @@ pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_isMadeFrom_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [wood extracts](http://aims.fao.org/aos/agrovoc/c_8424), [aluminium foil](http://aims.fao.org/aos/agrovoc/c_35853), [rye flour](http://aims.fao.org/aos/agrovoc/c_25501) (7 total)
+  Examples: [cereal byproducts](http://aims.fao.org/aos/agrovoc/c_1471), [canned vegetables](http://aims.fao.org/aos/agrovoc/c_16483), [ewe cheese](http://aims.fao.org/aos/agrovoc/c_32464) (21 total)
 
 classes: 
+  bones: "http://aims.fao.org/aos/agrovoc/c_1001"
+  byproducts: "http://aims.fao.org/aos/agrovoc/c_1172"
+  canned products: "http://aims.fao.org/aos/agrovoc/c_1259"
+  potatoes: "http://aims.fao.org/aos/agrovoc/c_13551"
   rye: "http://aims.fao.org/aos/agrovoc/c_14010"
+  cereal products: "http://aims.fao.org/aos/agrovoc/c_1473"
+  cheese: "http://aims.fao.org/aos/agrovoc/c_1507"
+  starch products: "http://aims.fao.org/aos/agrovoc/c_15524"
+  dried products: "http://aims.fao.org/aos/agrovoc/c_15740"
+  frozen products: "http://aims.fao.org/aos/agrovoc/c_15741"
+  ewe milk: "http://aims.fao.org/aos/agrovoc/c_16081"
+  goat milk: "http://aims.fao.org/aos/agrovoc/c_16083"
+  DNA: "http://aims.fao.org/aos/agrovoc/c_2347"
+  plastic film: "http://aims.fao.org/aos/agrovoc/c_25728"
+  immobilized biocatalysts: "http://aims.fao.org/aos/agrovoc/c_27551"
   extracts: "http://aims.fao.org/aos/agrovoc/c_2767"
   foils: "http://aims.fao.org/aos/agrovoc/c_28374"
+  polyethylene: "http://aims.fao.org/aos/agrovoc/c_28510"
   flours: "http://aims.fao.org/aos/agrovoc/c_2988"
-  foods: "http://aims.fao.org/aos/agrovoc/c_3032"
   aluminium: "http://aims.fao.org/aos/agrovoc/c_317"
+  cocoa powder: "http://aims.fao.org/aos/agrovoc/c_33967"
   genetically modified organisms: "http://aims.fao.org/aos/agrovoc/c_34285"
+  nucleic probes: "http://aims.fao.org/aos/agrovoc/c_35729"
+  animal meals: "http://aims.fao.org/aos/agrovoc/c_35866"
+  tree injectors: "http://aims.fao.org/aos/agrovoc/c_37687"
+  injection: "http://aims.fao.org/aos/agrovoc/c_3871"
   microorganisms: "http://aims.fao.org/aos/agrovoc/c_4807"
   wood: "http://aims.fao.org/aos/agrovoc/c_8421"
+  beverages: "http://aims.fao.org/aos/agrovoc/c_896"
 
 
 relations: 
@@ -24,11 +44,11 @@ relations:
 
 
 vars:
-  v0: "'extracts' or 'foils' or 'flours' or 'foods' or 'genetically modified organisms'"
-  v1: "'rye' or 'aluminium' or 'genetically modified organisms' or 'microorganisms' or 'wood'"
+  v0: "'byproducts' or 'canned products' or 'cheese' or 'starch products' or 'dried products' or 'frozen products' or 'plastic film' or 'immobilized biocatalysts' or 'extracts' or 'foils' or 'flours' or 'genetically modified organisms' or 'nucleic probes' or 'animal meals' or 'injection' or 'beverages'"
+  v1: "'bones' or 'potatoes' or 'rye' or 'cereal products' or 'ewe milk' or 'goat milk' or 'DNA' or 'polyethylene' or 'aluminium' or 'cocoa powder' or 'genetically modified organisms' or 'tree injectors' or 'microorganisms' or 'wood'"
 
 name:
-  # Induced, frequency=0.2857142857142857, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.09523809523809523, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
@@ -49,7 +69,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('isMadeFrom' some %s)"
+  text: "(%s and ('isMadeFrom' some %s))"
   vars:
     - v0
     - v1

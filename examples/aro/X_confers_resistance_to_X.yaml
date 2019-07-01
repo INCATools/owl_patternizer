@@ -5,9 +5,10 @@ pattern_iri: http://purl.obolibrary.org/obo/aro/X_confers_resistance_to_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [determinant of fosfomycin resistance](http://purl.obolibrary.org/obo/ARO_3000271), [determinant of resistance to nucleoside antibiotics](http://purl.obolibrary.org/obo/ARO_3004027), [determinant of resistance to lipopeptide antibiotics](http://purl.obolibrary.org/obo/ARO_3003073) (21 total)
+  Examples: [determinant of macrolide resistance](http://purl.obolibrary.org/obo/ARO_3000315), [determinant of fluoroquinolone resistance](http://purl.obolibrary.org/obo/ARO_3000102), [determinant of aminoglycoside resistance](http://purl.obolibrary.org/obo/ARO_3000104) (39 total)
 
 classes: 
+  antibiotic molecule: "http://purl.obolibrary.org/obo/ARO_1000003"
   determinant of antibiotic resistance: "http://purl.obolibrary.org/obo/ARO_3000000"
 
 
@@ -41,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('confers_resistance_to' some %s)"
+  text: "(%s and ('confers_resistance_to' some %s))"
   vars:
     - v0
     - v1

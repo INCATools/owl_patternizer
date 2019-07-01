@@ -50,6 +50,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'dura mater' and ('part of' some %s)"
+  text: "('dura mater' and ('part of' some %s))"
   vars:
     - v0

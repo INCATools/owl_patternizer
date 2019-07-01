@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'adipose tissue' and ('part of' some %s)"
+  text: "('adipose tissue' and ('part of' some %s))"
   vars:
     - v0

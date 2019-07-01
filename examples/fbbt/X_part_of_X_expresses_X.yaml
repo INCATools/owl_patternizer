@@ -1,14 +1,16 @@
-# options: [min(50),dir(fbbt),trim(true),base('http://purl.obolibrary.org/obo/fbbt'),generalize_properties(true),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(50),dir('examples/fbbt'),trim(true),base('http://purl.obolibrary.org/obo/fbbt'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X part of X expresses X
 pattern_iri: http://purl.obolibrary.org/obo/fbbt/X_part_of_X_expresses_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [larval NPF neuron](http://purl.obolibrary.org/obo/FBbt_00047250), [larval TrpA1 neuron](http://purl.obolibrary.org/obo/FBbt_00047254), [adult doublesex neuron](http://purl.obolibrary.org/obo/FBbt_00047347) (89 total)
+  Examples: [larval NPF neuron](http://purl.obolibrary.org/obo/FBbt_00047250), [larval TrpA1 neuron](http://purl.obolibrary.org/obo/FBbt_00047254), [adult doublesex neuron](http://purl.obolibrary.org/obo/FBbt_00047347) (92 total)
 
 classes: 
-  SO_0000704: "http://purl.obolibrary.org/obo/SO_0000704"
+  anatomical structure: "http://purl.obolibrary.org/obo/FBbt_00007001"
+  multicellular structure: "http://purl.obolibrary.org/obo/FBbt_00100313"
+  SO_0000704: "SO:0000704"
 
 
 relations: 
@@ -22,20 +24,20 @@ vars:
   v2: "'SO_0000704'"
 
 name:
-  # Induced, frequency=0.011235955056179775, p=http://www.w3.org/2000/01/rdf-schema#label 
-  text: "%s %s %s"
+  # Could not induce name, using default
+  text: "%s part of %s expresses %s"
   vars:
+    - v0
     - v1
     - v2
-    - v0
 
 def:
-  # Induced, frequency=0.011235955056179775, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "Any %s (FBbt:00005106) that is part of some adult %s Lo lineage clone (%s)."
+  # Could not induce def, using default
+  text: "Any %s that part of a %s and expresses a %s"
   vars:
     - v0
-    - v2
     - v1
+    - v2
 
 annotationProperties:
   exact_synonym: "oio:hasExactSynonym"
@@ -45,7 +47,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('part of' some %s) and ('expresses' some %s)"
+  text: "(%s and ('part of' some %s) and ('expresses' some %s))"
   vars:
     - v0
     - v1

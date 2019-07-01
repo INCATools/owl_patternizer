@@ -1,0 +1,57 @@
+defined_class	defined_class_label	v0	v0_label	v1	v1_label
+http://purl.obolibrary.org/obo/MA_0000641	ankle skin	http://purl.obolibrary.org/obo/MA_0000043	ankle	http://purl.obolibrary.org/obo/MA_0000694	limb skin
+http://purl.obolibrary.org/obo/MA_0000641	ankle skin	http://purl.obolibrary.org/obo/MA_0000694	limb skin	http://purl.obolibrary.org/obo/MA_0000043	ankle
+http://purl.obolibrary.org/obo/MA_0000596	arm skin	http://purl.obolibrary.org/obo/MA_0000033	arm	http://purl.obolibrary.org/obo/MA_0000694	limb skin
+http://purl.obolibrary.org/obo/MA_0000596	arm skin	http://purl.obolibrary.org/obo/MA_0000694	limb skin	http://purl.obolibrary.org/obo/MA_0000033	arm
+http://purl.obolibrary.org/obo/MA_0003120	autopod skin	http://purl.obolibrary.org/obo/MA_0000694	limb skin	http://purl.obolibrary.org/obo/MA_0002714	autopod
+http://purl.obolibrary.org/obo/MA_0003120	autopod skin	http://purl.obolibrary.org/obo/MA_0002714	autopod	http://purl.obolibrary.org/obo/MA_0000694	limb skin
+http://purl.obolibrary.org/obo/MA_0002572	descending thoracic aorta	http://purl.obolibrary.org/obo/MA_0002569	thoracic aorta	http://purl.obolibrary.org/obo/MA_0002571	descending aorta
+http://purl.obolibrary.org/obo/MA_0002572	descending thoracic aorta	http://purl.obolibrary.org/obo/MA_0002571	descending aorta	http://purl.obolibrary.org/obo/MA_0002569	thoracic aorta
+http://purl.obolibrary.org/obo/MA_0001668	distal convoluted tubule macula densa	http://purl.obolibrary.org/obo/MA_0001666	distal convoluted tubule	http://purl.obolibrary.org/obo/MA_0002603	macula densa
+http://purl.obolibrary.org/obo/MA_0001668	distal convoluted tubule macula densa	http://purl.obolibrary.org/obo/MA_0002603	macula densa	http://purl.obolibrary.org/obo/MA_0001666	distal convoluted tubule
+http://purl.obolibrary.org/obo/MA_0002604	distal straight tubule macula densa	http://purl.obolibrary.org/obo/MA_0001677	loop of henle ascending limb thick segment	http://purl.obolibrary.org/obo/MA_0002603	macula densa
+http://purl.obolibrary.org/obo/MA_0002604	distal straight tubule macula densa	http://purl.obolibrary.org/obo/MA_0002603	macula densa	http://purl.obolibrary.org/obo/MA_0001677	loop of henle ascending limb thick segment
+http://purl.obolibrary.org/obo/MA_0000610	elbow skin	http://purl.obolibrary.org/obo/MA_0000036	elbow	http://purl.obolibrary.org/obo/MA_0000694	limb skin
+http://purl.obolibrary.org/obo/MA_0000610	elbow skin	http://purl.obolibrary.org/obo/MA_0000694	limb skin	http://purl.obolibrary.org/obo/MA_0000036	elbow
+http://purl.obolibrary.org/obo/MA_0002638	female membranous urethra	http://purl.obolibrary.org/obo/MA_0002637	female urethra	http://purl.obolibrary.org/obo/MA_0002647	membranous urethra
+http://purl.obolibrary.org/obo/MA_0002638	female membranous urethra	http://purl.obolibrary.org/obo/MA_0002647	membranous urethra	http://purl.obolibrary.org/obo/MA_0002637	female urethra
+http://purl.obolibrary.org/obo/MA_0000654	foot skin	http://purl.obolibrary.org/obo/MA_0000044	foot	http://purl.obolibrary.org/obo/MA_0000694	limb skin
+http://purl.obolibrary.org/obo/MA_0000654	foot skin	http://purl.obolibrary.org/obo/MA_0000694	limb skin	http://purl.obolibrary.org/obo/MA_0000044	foot
+http://purl.obolibrary.org/obo/MA_0000617	forelimb skin	http://purl.obolibrary.org/obo/MA_0000025	forelimb	http://purl.obolibrary.org/obo/MA_0000694	limb skin
+http://purl.obolibrary.org/obo/MA_0000617	forelimb skin	http://purl.obolibrary.org/obo/MA_0000694	limb skin	http://purl.obolibrary.org/obo/MA_0000025	forelimb
+http://purl.obolibrary.org/obo/MA_0002606	glomerular mesangium	http://purl.obolibrary.org/obo/MA_0001657	glomerulus	http://purl.obolibrary.org/obo/MA_0002617	mesangium
+http://purl.obolibrary.org/obo/MA_0002606	glomerular mesangium	http://purl.obolibrary.org/obo/MA_0002617	mesangium	http://purl.obolibrary.org/obo/MA_0001657	glomerulus
+http://purl.obolibrary.org/obo/MA_0000630	hand skin	http://purl.obolibrary.org/obo/MA_0000037	hand	http://purl.obolibrary.org/obo/MA_0000694	limb skin
+http://purl.obolibrary.org/obo/MA_0000630	hand skin	http://purl.obolibrary.org/obo/MA_0000694	limb skin	http://purl.obolibrary.org/obo/MA_0000037	hand
+http://purl.obolibrary.org/obo/MA_0001636	hepatic duct extrahepatic part	http://purl.obolibrary.org/obo/MA_0000357	hepatic duct	http://purl.obolibrary.org/obo/MA_0002659	bile duct extrahepatic part
+http://purl.obolibrary.org/obo/MA_0001636	hepatic duct extrahepatic part	http://purl.obolibrary.org/obo/MA_0002659	bile duct extrahepatic part	http://purl.obolibrary.org/obo/MA_0000357	hepatic duct
+http://purl.obolibrary.org/obo/MA_0001637	hepatic duct intrahepatic part	http://purl.obolibrary.org/obo/MA_0000357	hepatic duct	http://purl.obolibrary.org/obo/MA_0001630	bile duct intrahepatic part
+http://purl.obolibrary.org/obo/MA_0001637	hepatic duct intrahepatic part	http://purl.obolibrary.org/obo/MA_0001630	bile duct intrahepatic part	http://purl.obolibrary.org/obo/MA_0000357	hepatic duct
+http://purl.obolibrary.org/obo/MA_0000665	hindlimb skin	http://purl.obolibrary.org/obo/MA_0000026	hindlimb	http://purl.obolibrary.org/obo/MA_0000694	limb skin
+http://purl.obolibrary.org/obo/MA_0000665	hindlimb skin	http://purl.obolibrary.org/obo/MA_0000694	limb skin	http://purl.obolibrary.org/obo/MA_0000026	hindlimb
+http://purl.obolibrary.org/obo/MA_0000658	hip skin	http://purl.obolibrary.org/obo/MA_0000045	hip	http://purl.obolibrary.org/obo/MA_0000694	limb skin
+http://purl.obolibrary.org/obo/MA_0000658	hip skin	http://purl.obolibrary.org/obo/MA_0000694	limb skin	http://purl.obolibrary.org/obo/MA_0000045	hip
+http://purl.obolibrary.org/obo/MA_0002608	kidney cortex interstitium	http://purl.obolibrary.org/obo/MA_0000372	kidney cortex	http://purl.obolibrary.org/obo/MA_0002616	kidney interstitium
+http://purl.obolibrary.org/obo/MA_0002608	kidney cortex interstitium	http://purl.obolibrary.org/obo/MA_0002616	kidney interstitium	http://purl.obolibrary.org/obo/MA_0000372	kidney cortex
+http://purl.obolibrary.org/obo/MA_0000668	knee skin	http://purl.obolibrary.org/obo/MA_0000046	knee	http://purl.obolibrary.org/obo/MA_0000694	limb skin
+http://purl.obolibrary.org/obo/MA_0000668	knee skin	http://purl.obolibrary.org/obo/MA_0000694	limb skin	http://purl.obolibrary.org/obo/MA_0000046	knee
+http://purl.obolibrary.org/obo/MA_0002695	large intestine wall	http://purl.obolibrary.org/obo/MA_0000333	large intestine	http://purl.obolibrary.org/obo/MA_0002693	intestine wall
+http://purl.obolibrary.org/obo/MA_0002695	large intestine wall	http://purl.obolibrary.org/obo/MA_0002693	intestine wall	http://purl.obolibrary.org/obo/MA_0000333	large intestine
+http://purl.obolibrary.org/obo/MA_0000674	leg skin	http://purl.obolibrary.org/obo/MA_0000047	leg	http://purl.obolibrary.org/obo/MA_0000694	limb skin
+http://purl.obolibrary.org/obo/MA_0000674	leg skin	http://purl.obolibrary.org/obo/MA_0000694	limb skin	http://purl.obolibrary.org/obo/MA_0000047	leg
+http://purl.obolibrary.org/obo/MA_0002641	male membranous urethra	http://purl.obolibrary.org/obo/MA_0002640	male urethra	http://purl.obolibrary.org/obo/MA_0002647	membranous urethra
+http://purl.obolibrary.org/obo/MA_0002641	male membranous urethra	http://purl.obolibrary.org/obo/MA_0002647	membranous urethra	http://purl.obolibrary.org/obo/MA_0002640	male urethra
+http://purl.obolibrary.org/obo/MA_0000239	osseus cochlea	http://purl.obolibrary.org/obo/MA_0000238	bony labyrinth	http://purl.obolibrary.org/obo/MA_0000240	cochlea
+http://purl.obolibrary.org/obo/MA_0000239	osseus cochlea	http://purl.obolibrary.org/obo/MA_0000240	cochlea	http://purl.obolibrary.org/obo/MA_0000238	bony labyrinth
+http://purl.obolibrary.org/obo/MA_0000250	osseus semicircular canal	http://purl.obolibrary.org/obo/MA_0000238	bony labyrinth	http://purl.obolibrary.org/obo/MA_0000249	semicircular canal
+http://purl.obolibrary.org/obo/MA_0000250	osseus semicircular canal	http://purl.obolibrary.org/obo/MA_0000249	semicircular canal	http://purl.obolibrary.org/obo/MA_0000238	bony labyrinth
+http://purl.obolibrary.org/obo/MA_0002580	part of afferent arteriole forming juxtaglomerular complex	http://purl.obolibrary.org/obo/MA_0002546	juxtaglomerular complex	http://purl.obolibrary.org/obo/MA_0002579	afferent arteriole
+http://purl.obolibrary.org/obo/MA_0002580	part of afferent arteriole forming juxtaglomerular complex	http://purl.obolibrary.org/obo/MA_0002579	afferent arteriole	http://purl.obolibrary.org/obo/MA_0002546	juxtaglomerular complex
+http://purl.obolibrary.org/obo/MA_0000635	shoulder skin	http://purl.obolibrary.org/obo/MA_0000038	shoulder	http://purl.obolibrary.org/obo/MA_0000694	limb skin
+http://purl.obolibrary.org/obo/MA_0000635	shoulder skin	http://purl.obolibrary.org/obo/MA_0000694	limb skin	http://purl.obolibrary.org/obo/MA_0000038	shoulder
+http://purl.obolibrary.org/obo/MA_0003079	snout skin	http://purl.obolibrary.org/obo/MA_0000582	head skin	http://purl.obolibrary.org/obo/MA_0001910	snout
+http://purl.obolibrary.org/obo/MA_0003079	snout skin	http://purl.obolibrary.org/obo/MA_0001910	snout	http://purl.obolibrary.org/obo/MA_0000582	head skin
+http://purl.obolibrary.org/obo/MA_0000715	venous system smooth muscle	http://purl.obolibrary.org/obo/MA_0000710	blood vessel smooth muscle	http://purl.obolibrary.org/obo/MA_0002720	venous system
+http://purl.obolibrary.org/obo/MA_0000715	venous system smooth muscle	http://purl.obolibrary.org/obo/MA_0002720	venous system	http://purl.obolibrary.org/obo/MA_0000710	blood vessel smooth muscle
+http://purl.obolibrary.org/obo/MA_0000638	wrist skin	http://purl.obolibrary.org/obo/MA_0000039	wrist	http://purl.obolibrary.org/obo/MA_0000694	limb skin
+http://purl.obolibrary.org/obo/MA_0000638	wrist skin	http://purl.obolibrary.org/obo/MA_0000694	limb skin	http://purl.obolibrary.org/obo/MA_0000039	wrist

@@ -1,0 +1,82 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/GO_0050804	modulation of chemical synaptic transmission	http://purl.obolibrary.org/obo/GO_0007268	chemical synaptic transmission
+http://purl.obolibrary.org/obo/GO_0008277	regulation of G protein-coupled receptor signaling pathway	http://purl.obolibrary.org/obo/GO_0007186	G protein-coupled receptor signaling pathway
+http://purl.obolibrary.org/obo/GO_0014056	regulation of acetylcholine secretion, neurotransmission	http://purl.obolibrary.org/obo/GO_0014055	acetylcholine secretion, neurotransmission
+http://purl.obolibrary.org/obo/GO_0051952	regulation of amine transport	http://purl.obolibrary.org/obo/GO_0015837	amine transport
+http://purl.obolibrary.org/obo/GO_0051955	regulation of amino acid transport	http://purl.obolibrary.org/obo/GO_0006865	amino acid transport
+http://purl.obolibrary.org/obo/GO_0044070	regulation of anion transport	http://purl.obolibrary.org/obo/GO_0006820	anion transport
+http://purl.obolibrary.org/obo/GO_0050795	regulation of behavior	http://purl.obolibrary.org/obo/GO_0007610	behavior
+http://purl.obolibrary.org/obo/GO_0050789	regulation of biological process	http://purl.obolibrary.org/obo/GO_0008150	biological_process
+http://purl.obolibrary.org/obo/GO_0009894	regulation of catabolic process	http://purl.obolibrary.org/obo/GO_0009056	catabolic process
+http://purl.obolibrary.org/obo/GO_0050433	regulation of catecholamine secretion	http://purl.obolibrary.org/obo/GO_0050432	catecholamine secretion
+http://purl.obolibrary.org/obo/GO_0010646	regulation of cell communication	http://purl.obolibrary.org/obo/GO_0007154	cell communication
+http://purl.obolibrary.org/obo/GO_0060341	regulation of cellular localization	http://purl.obolibrary.org/obo/GO_0051641	cellular localization
+http://purl.obolibrary.org/obo/GO_0050794	regulation of cellular process	http://purl.obolibrary.org/obo/GO_0009987	cellular process
+http://purl.obolibrary.org/obo/GO_2001038	regulation of cellular response to drug	http://purl.obolibrary.org/obo/GO_0035690	cellular response to drug
+http://purl.obolibrary.org/obo/GO_0042752	regulation of circadian rhythm	http://purl.obolibrary.org/obo/GO_0007623	circadian rhythm
+http://purl.obolibrary.org/obo/GO_0042749	regulation of circadian sleep/wake cycle	http://purl.obolibrary.org/obo/GO_0042745	circadian sleep/wake cycle
+http://purl.obolibrary.org/obo/GO_0045187	regulation of circadian sleep/wake cycle, sleep	http://purl.obolibrary.org/obo/GO_0050802	circadian sleep/wake cycle, sleep
+http://purl.obolibrary.org/obo/GO_1905787	regulation of detection of mechanical stimulus involved in sensory perception of touch	http://purl.obolibrary.org/obo/GO_0050976	detection of mechanical stimulus involved in sensory perception of touch
+http://purl.obolibrary.org/obo/GO_0050793	regulation of developmental process	http://purl.obolibrary.org/obo/GO_0032502	developmental process
+http://purl.obolibrary.org/obo/GO_0044058	regulation of digestive system process	http://purl.obolibrary.org/obo/GO_0022600	digestive system process
+http://purl.obolibrary.org/obo/GO_0014059	regulation of dopamine secretion	http://purl.obolibrary.org/obo/GO_0014046	dopamine secretion
+http://purl.obolibrary.org/obo/GO_0007563	regulation of eclosion	http://purl.obolibrary.org/obo/GO_0007562	eclosion
+http://purl.obolibrary.org/obo/GO_0044060	regulation of endocrine process	http://purl.obolibrary.org/obo/GO_0050886	endocrine process
+http://purl.obolibrary.org/obo/GO_0060259	regulation of feeding behavior	http://purl.obolibrary.org/obo/GO_0007631	feeding behavior
+http://purl.obolibrary.org/obo/GO_0014052	regulation of gamma-aminobutyric acid secretion	http://purl.obolibrary.org/obo/GO_0014051	gamma-aminobutyric acid secretion
+http://purl.obolibrary.org/obo/GO_0014048	regulation of glutamate secretion	http://purl.obolibrary.org/obo/GO_0014047	glutamate secretion
+http://purl.obolibrary.org/obo/GO_1903294	regulation of glutamate secretion, neurotransmission	http://purl.obolibrary.org/obo/GO_0061535	glutamate secretion, neurotransmission
+http://purl.obolibrary.org/obo/GO_2000821	regulation of grooming behavior	http://purl.obolibrary.org/obo/GO_0007625	grooming behavior
+http://purl.obolibrary.org/obo/GO_0046883	regulation of hormone secretion	http://purl.obolibrary.org/obo/GO_0046879	hormone secretion
+http://purl.obolibrary.org/obo/GO_1904478	regulation of intestinal absorption	http://purl.obolibrary.org/obo/GO_0050892	intestinal absorption
+http://purl.obolibrary.org/obo/GO_0043269	regulation of ion transport	http://purl.obolibrary.org/obo/GO_0006811	ion transport
+http://purl.obolibrary.org/obo/GO_0050994	regulation of lipid catabolic process	http://purl.obolibrary.org/obo/GO_0016042	lipid catabolic process
+http://purl.obolibrary.org/obo/GO_0019216	regulation of lipid metabolic process	http://purl.obolibrary.org/obo/GO_0006629	lipid metabolic process
+http://purl.obolibrary.org/obo/GO_0010883	regulation of lipid storage	http://purl.obolibrary.org/obo/GO_0019915	lipid storage
+http://purl.obolibrary.org/obo/GO_0032879	regulation of localization	http://purl.obolibrary.org/obo/GO_0051179	localization
+http://purl.obolibrary.org/obo/GO_0040012	regulation of locomotion	http://purl.obolibrary.org/obo/GO_0040011	locomotion
+http://purl.obolibrary.org/obo/GO_0090325	regulation of locomotion involved in locomotory behavior	http://purl.obolibrary.org/obo/GO_0031987	locomotion involved in locomotory behavior
+http://purl.obolibrary.org/obo/GO_1902435	regulation of male mating behavior	http://purl.obolibrary.org/obo/GO_0060179	male mating behavior
+http://purl.obolibrary.org/obo/GO_0019222	regulation of metabolic process	http://purl.obolibrary.org/obo/GO_0008152	metabolic process
+http://purl.obolibrary.org/obo/GO_0043900	regulation of multi-organism process	http://purl.obolibrary.org/obo/GO_0051704	multi-organism process
+http://purl.obolibrary.org/obo/GO_2000026	regulation of multicellular organismal development	http://purl.obolibrary.org/obo/GO_0007275	multicellular organism development
+http://purl.obolibrary.org/obo/GO_0051239	regulation of multicellular organismal process	http://purl.obolibrary.org/obo/GO_0032501	multicellular organismal process
+http://purl.obolibrary.org/obo/GO_0031644	regulation of neurological system process	http://purl.obolibrary.org/obo/GO_0050877	nervous system process
+http://purl.obolibrary.org/obo/GO_0046928	regulation of neurotransmitter secretion	http://purl.obolibrary.org/obo/GO_0007269	neurotransmitter secretion
+http://purl.obolibrary.org/obo/GO_0051588	regulation of neurotransmitter transport	http://purl.obolibrary.org/obo/GO_0006836	neurotransmitter transport
+http://purl.obolibrary.org/obo/GO_0090328	regulation of olfactory learning	http://purl.obolibrary.org/obo/GO_0008355	olfactory learning
+http://purl.obolibrary.org/obo/GO_0032890	regulation of organic acid transport	http://purl.obolibrary.org/obo/GO_0015849	organic acid transport
+http://purl.obolibrary.org/obo/GO_0090276	regulation of peptide hormone secretion	http://purl.obolibrary.org/obo/GO_0030072	peptide hormone secretion
+http://purl.obolibrary.org/obo/GO_0002791	regulation of peptide secretion	http://purl.obolibrary.org/obo/GO_0002790	peptide secretion
+http://purl.obolibrary.org/obo/GO_0090087	regulation of peptide transport	http://purl.obolibrary.org/obo/GO_0015833	peptide transport
+http://purl.obolibrary.org/obo/GO_0080090	regulation of primary metabolic process	http://purl.obolibrary.org/obo/GO_0044238	primary metabolic process
+http://purl.obolibrary.org/obo/GO_0098801	regulation of renal system process	http://purl.obolibrary.org/obo/GO_0003014	renal system process
+http://purl.obolibrary.org/obo/GO_2000241	regulation of reproductive process	http://purl.obolibrary.org/obo/GO_0022414	reproductive process
+http://purl.obolibrary.org/obo/GO_0043576	regulation of respiratory gaseous exchange	http://purl.obolibrary.org/obo/GO_0007585	respiratory gaseous exchange
+http://purl.obolibrary.org/obo/GO_0044065	regulation of respiratory system process	http://purl.obolibrary.org/obo/GO_0003016	respiratory system process
+http://purl.obolibrary.org/obo/GO_1901419	regulation of response to alcohol	http://purl.obolibrary.org/obo/GO_0097305	response to alcohol
+http://purl.obolibrary.org/obo/GO_2001023	regulation of response to drug	http://purl.obolibrary.org/obo/GO_0042493	response to drug
+http://purl.obolibrary.org/obo/GO_0032101	regulation of response to external stimulus	http://purl.obolibrary.org/obo/GO_0009605	response to external stimulus
+http://purl.obolibrary.org/obo/GO_0032104	regulation of response to extracellular stimulus	http://purl.obolibrary.org/obo/GO_0009991	response to extracellular stimulus
+http://purl.obolibrary.org/obo/GO_0032107	regulation of response to nutrient levels	http://purl.obolibrary.org/obo/GO_0031667	response to nutrient levels
+http://purl.obolibrary.org/obo/GO_0048583	regulation of response to stimulus	http://purl.obolibrary.org/obo/GO_0050896	response to stimulus
+http://purl.obolibrary.org/obo/GO_0080134	regulation of response to stress	http://purl.obolibrary.org/obo/GO_0006950	response to stress
+http://purl.obolibrary.org/obo/GO_0022400	regulation of rhodopsin mediated signaling pathway	http://purl.obolibrary.org/obo/GO_0016056	rhodopsin mediated signaling pathway
+http://purl.obolibrary.org/obo/GO_0046877	regulation of saliva secretion	http://purl.obolibrary.org/obo/GO_0046541	saliva secretion
+http://purl.obolibrary.org/obo/GO_0051046	regulation of secretion	http://purl.obolibrary.org/obo/GO_0046903	secretion
+http://purl.obolibrary.org/obo/GO_1903530	regulation of secretion by cell	http://purl.obolibrary.org/obo/GO_0032940	secretion by cell
+http://purl.obolibrary.org/obo/GO_0051931	regulation of sensory perception	http://purl.obolibrary.org/obo/GO_0007600	sensory perception
+http://purl.obolibrary.org/obo/GO_1904660	regulation of sensory perception of bitter taste	http://purl.obolibrary.org/obo/GO_0050913	sensory perception of bitter taste
+http://purl.obolibrary.org/obo/GO_0051930	regulation of sensory perception of pain	http://purl.obolibrary.org/obo/GO_0019233	sensory perception of pain
+http://purl.obolibrary.org/obo/GO_1904656	regulation of sensory perception of sweet taste	http://purl.obolibrary.org/obo/GO_0050916	sensory perception of sweet taste
+http://purl.obolibrary.org/obo/GO_0014062	regulation of serotonin secretion	http://purl.obolibrary.org/obo/GO_0001820	serotonin secretion
+http://purl.obolibrary.org/obo/GO_0009966	regulation of signal transduction	http://purl.obolibrary.org/obo/GO_0007165	signal transduction
+http://purl.obolibrary.org/obo/GO_0023051	regulation of signaling	http://purl.obolibrary.org/obo/GO_0023052	signaling
+http://purl.obolibrary.org/obo/GO_0032228	regulation of synaptic transmission, GABAergic	http://purl.obolibrary.org/obo/GO_0051932	synaptic transmission, GABAergic
+http://purl.obolibrary.org/obo/GO_0032222	regulation of synaptic transmission, cholinergic	http://purl.obolibrary.org/obo/GO_0007271	synaptic transmission, cholinergic
+http://purl.obolibrary.org/obo/GO_0032225	regulation of synaptic transmission, dopaminergic	http://purl.obolibrary.org/obo/GO_0001963	synaptic transmission, dopaminergic
+http://purl.obolibrary.org/obo/GO_0051966	regulation of synaptic transmission, glutamatergic	http://purl.obolibrary.org/obo/GO_0035249	synaptic transmission, glutamatergic
+http://purl.obolibrary.org/obo/GO_0044057	regulation of system process	http://purl.obolibrary.org/obo/GO_0003008	system process
+http://purl.obolibrary.org/obo/GO_0099177	regulation of trans-synaptic signaling	http://purl.obolibrary.org/obo/GO_0099537	trans-synaptic signaling
+http://purl.obolibrary.org/obo/GO_0051049	regulation of transport	http://purl.obolibrary.org/obo/GO_0006810	transport
+http://purl.obolibrary.org/obo/GO_0061094	regulation of turning behavior involved in mating	http://purl.obolibrary.org/obo/GO_0034607	turning behavior involved in mating

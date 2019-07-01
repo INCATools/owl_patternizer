@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'monoatomic entity' and ('charge_state' some %s)"
+  text: "('monoatomic entity' and ('charge_state' some %s))"
   vars:
     - v0

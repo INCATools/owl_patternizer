@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/envo/X_part_of_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [methane-releasing thermokarst lake](http://purl.obolibrary.org/obo/ENVO_03000083), [continental island](http://purl.obolibrary.org/obo/ENVO_00000221), [ice cap ridge](http://purl.obolibrary.org/obo/ENVO_00000528) (1559 total)
+  Examples: [thermokarst lake](http://purl.obolibrary.org/obo/ENVO_03000082), [rural settlement](http://purl.obolibrary.org/obo/ENVO_01000763), [public road](http://purl.obolibrary.org/obo/ENVO_01000780) (1575 total)
 
 classes: 
   entity: "BFO:0000001"
@@ -20,14 +20,14 @@ vars:
   v1: "'entity'"
 
 name:
-  # Induced, frequency=0.3341885824246312, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.3295238095238095, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
     - v0
 
 def:
-  # Induced, frequency=0.1802437459910199, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.1784126984126984, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "A %s that is part of a %s [Automatically generated definition]."
   vars:
     - v0
@@ -47,7 +47,7 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('part of' some %s)"
+  text: "(%s and ('part of' some %s))"
   vars:
     - v0
     - v1

@@ -1,11 +1,11 @@
-# options: [min(20),dir(emapa),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(12),dir('examples/emapa'),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: mesenchyme part_of X
 pattern_iri: http://purl.obolibrary.org/obo/emapa/mesenchyme_part_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [embryo mesenchyme](http://purl.obolibrary.org/obo/EMAPA_35961), [yolk sac mesenchyme](http://purl.obolibrary.org/obo/EMAPA_16267), [cardiovascular system mesenchyme](http://purl.obolibrary.org/obo/EMAPA_35973) (147 total)
+  Examples: [embryo mesenchyme](http://purl.obolibrary.org/obo/EMAPA_35961), [extraembryonic mesenchyme](http://purl.obolibrary.org/obo/EMAPA_31863), [yolk sac mesenchyme](http://purl.obolibrary.org/obo/EMAPA_16267) (182 total)
 
 classes: 
   mesenchyme: "http://purl.obolibrary.org/obo/EMAPA_16097"
@@ -20,7 +20,7 @@ vars:
   v0: "'owl:Thing'"
 
 name:
-  # Induced, frequency=0.8707482993197279, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.8626373626373627, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s mesenchyme"
   vars:
     - v0
@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'mesenchyme' and ('part_of' some %s)"
+  text: "('mesenchyme' and ('part_of' some %s))"
   vars:
     - v0

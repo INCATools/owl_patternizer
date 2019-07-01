@@ -40,6 +40,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'environmental material' and ('has quality' some %s)"
+  text: "('environmental material' and ('has quality' some %s))"
   vars:
     - v0

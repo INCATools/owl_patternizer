@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('charge_state' some '+1 ion')"
+  text: "(%s and ('charge_state' some '+1 ion'))"
   vars:
     - v0

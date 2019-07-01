@@ -46,7 +46,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('capable of' some %s and ('realizes' some %s))"
+  text: "(%s and ('capable of' some (%s and ('realizes' some %s))))"
   vars:
     - v0
     - v1

@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'apical ectodermal ridge' and ('part of' some %s)"
+  text: "('apical ectodermal ridge' and ('part of' some %s))"
   vars:
     - v0

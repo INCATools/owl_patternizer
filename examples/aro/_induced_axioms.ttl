@@ -1,3 +1,4 @@
+@prefix inca: <https://w3id.org/inca/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix  owl: <http://www.w3.org/2002/07/owl#> .
 @prefix  xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -6,7 +7,7 @@
 @prefix   RO: <http://purl.obolibrary.org/obo/RO#> .
 @prefix  obo: <http://purl.obolibrary.org/obo/> .
 
-# Named toplevel resources (191)
+# Named toplevel resources (205)
 
 obo:ARO_3000036
 	owl:equivalentClass [ a owl:Class ;
@@ -14,6 +15,46 @@ obo:ARO_3000036
 						   [ a owl:Restriction ;
 						     owl:onProperty skos:related ;
 						     owl:someValuesFrom obo:ARO_0000051
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3000052
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000387
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3000102
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_0000001
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3000104
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_0000016
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3000129
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000007
 						   ]
 						 )
 			    ] .
@@ -27,6 +68,46 @@ obo:ARO_3000187
 						   [ a owl:Restriction ;
 						     owl:onProperty skos:related ;
 						     owl:someValuesFrom obo:ARO_3000007
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3000201
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000557
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_0000000
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3000233
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000557
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_0000026
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3000240
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_0000026
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3000241
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_0000017
 						   ]
 						 )
 			    ] .
@@ -51,11 +132,51 @@ obo:ARO_3000271
 						 )
 			    ] .
 
+obo:ARO_3000315
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_0000000
+						   ]
+						 )
+			    ] .
+
 obo:ARO_3000342
 	owl:equivalentClass [ a owl:Class ;
 			      owl:intersectionOf ( obo:ARO_3000557
 						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_0000025
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3000383
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000157
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3000408
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000282
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3000459
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000082
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
 						     owl:someValuesFrom obo:ARO_0000025
 						   ]
 						 )
@@ -67,6 +188,16 @@ obo:ARO_3000472
 						   [ a owl:Restriction ;
 						     owl:onProperty skos:related ;
 						     owl:someValuesFrom obo:ARO_0000051
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3000477
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000103
 						   ]
 						 )
 			    ] .
@@ -101,6 +232,16 @@ obo:ARO_3000576
 						 )
 			    ] .
 
+obo:ARO_3000737
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3003277
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_targeted_by ;
+						     owl:someValuesFrom obo:ARO_3000157
+						   ]
+						 )
+			    ] .
+
 obo:ARO_3000751
 	owl:equivalentClass [ a owl:Class ;
 			      owl:intersectionOf ( obo:ARO_3000000
@@ -131,12 +272,32 @@ obo:ARO_3001218
 						 )
 			    ] .
 
+obo:ARO_3001311
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3001219
+						   ]
+						 )
+			    ] .
+
 obo:ARO_3002876
 	owl:equivalentClass [ a owl:Class ;
 			      owl:intersectionOf ( obo:ARO_3003422
 						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_3000497
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3002984
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_0000022
 						   ]
 						 )
 			    ] .
@@ -181,19 +342,6 @@ obo:ARO_3003080
 						 )
 			    ] .
 
-obo:ARO_3003090
-	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty RO:_confers_resistance_to_drug ;
-						     owl:someValuesFrom obo:ARO_0000068
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_derives_from ;
-						     owl:someValuesFrom obo:ARO_3003278
-						   ]
-						 )
-			    ] .
-
 obo:ARO_3003091
 	owl:equivalentClass [ a owl:Class ;
 			      owl:intersectionOf ( obo:ARO_3003421
@@ -206,10 +354,7 @@ obo:ARO_3003091
 
 obo:ARO_3003223
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
-						   ]
+			      owl:intersectionOf ( obo:ARO_3003211
 						   [ a owl:Restriction ;
 						     owl:onProperty skos:related ;
 						     owl:someValuesFrom obo:ARO_3000119
@@ -219,65 +364,50 @@ obo:ARO_3003223
 
 obo:ARO_3003236
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000049
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003237
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000052
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003238
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000005
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003239
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000013
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003240
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000014
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
@@ -364,23 +494,9 @@ obo:ARO_3003326
 						 )
 			    ] .
 
-obo:ARO_3003361
-	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( obo:ARO_3003360
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_derives_from ;
-						     owl:someValuesFrom obo:ARO_3000731
-						   ]
-						 )
-			    ] .
-
 obo:ARO_3003368
 	owl:equivalentClass [ a owl:Class ;
 			      owl:intersectionOf ( obo:ARO_3003358
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_derives_from ;
-						     owl:someValuesFrom obo:ARO_3000731
-						   ]
 						   [ a owl:Restriction ;
 						     owl:onProperty skos:related ;
 						     owl:someValuesFrom obo:ARO_3001234
@@ -395,10 +511,6 @@ obo:ARO_3003369
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_3000586
 						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_derives_from ;
-						     owl:someValuesFrom obo:ARO_3000731
-						   ]
 						 )
 			    ] .
 
@@ -409,22 +521,15 @@ obo:ARO_3003370
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_3001242
 						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_derives_from ;
-						     owl:someValuesFrom obo:ARO_3000731
-						   ]
 						 )
 			    ] .
 
 obo:ARO_3003372
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000039
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
@@ -451,26 +556,20 @@ obo:ARO_3003374
 
 obo:ARO_3003376
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000039
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003377
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000039
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
@@ -540,114 +639,87 @@ obo:ARO_3003389
 
 obo:ARO_3003396
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000014
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003397
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_3000653
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003399
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000049
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003402
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000005
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003403
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_3000657
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003405
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000040
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003406
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000040
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003408
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000052
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003410
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
-						   ]
+			      owl:intersectionOf ( obo:ARO_3003211
 						   [ a owl:Restriction ;
 						     owl:onProperty skos:related ;
 						     owl:someValuesFrom obo:ARO_0000051
@@ -657,10 +729,7 @@ obo:ARO_3003410
 
 obo:ARO_3003411
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
-						   ]
+			      owl:intersectionOf ( obo:ARO_3003211
 						   [ a owl:Restriction ;
 						     owl:onProperty skos:related ;
 						     owl:someValuesFrom obo:ARO_0000051
@@ -710,26 +779,20 @@ obo:ARO_3003433
 
 obo:ARO_3003436
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000049
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003437
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000018
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
@@ -740,10 +803,6 @@ obo:ARO_3003438
 						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_3001237
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_derives_from ;
-						     owl:someValuesFrom obo:ARO_3000731
 						   ]
 						 )
 			    ] .
@@ -832,88 +891,67 @@ obo:ARO_3003470
 
 obo:ARO_3003480
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000040
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003481
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000013
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003485
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000039
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003493
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000039
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003495
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000039
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003497
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000039
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003499
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
-						   ]
+			      owl:intersectionOf ( obo:ARO_3003211
 						   [ a owl:Restriction ;
 						     owl:onProperty skos:related ;
 						     owl:someValuesFrom obo:ARO_0000051
@@ -923,49 +961,37 @@ obo:ARO_3003499
 
 obo:ARO_3003502
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000039
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003503
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000049
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003504
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000014
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003510
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
-						   ]
+			      owl:intersectionOf ( obo:ARO_3003211
 						   [ a owl:Restriction ;
 						     owl:onProperty skos:related ;
 						     owl:someValuesFrom obo:ARO_0000051
@@ -985,78 +1011,60 @@ obo:ARO_3003511
 
 obo:ARO_3003512
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000039
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003514
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000013
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003515
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000049
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003516
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000052
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003517
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000014
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003518
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000005
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
@@ -1073,117 +1081,90 @@ obo:ARO_3003532
 
 obo:ARO_3003539
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_3000214
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003540
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_3000214
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003541
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000040
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003542
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000049
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003543
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000049
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003544
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000005
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003545
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000005
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003546
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000018
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3003547
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000018
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
@@ -1318,6 +1299,16 @@ obo:ARO_3003737
 						 )
 			    ] .
 
+obo:ARO_3003747
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000079
+						   ]
+						 )
+			    ] .
+
 obo:ARO_3003753
 	owl:equivalentClass [ a owl:Class ;
 			      owl:intersectionOf ( obo:ARO_3000000
@@ -1350,6 +1341,16 @@ obo:ARO_3003760
 						   [ a owl:Restriction ;
 						     owl:onProperty RO:_participates_in ;
 						     owl:someValuesFrom obo:ARO_3000212
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3003763
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3004116
 						   ]
 						 )
 			    ] .
@@ -1595,19 +1596,6 @@ obo:ARO_3003896
 						 )
 			    ] .
 
-obo:ARO_3003899
-	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
-						     owl:onProperty RO:_confers_resistance_to_drug ;
-						     owl:someValuesFrom obo:ARO_0000025
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
-						   ]
-						 )
-			    ] .
-
 obo:ARO_3003901
 	owl:equivalentClass [ a owl:Class ;
 			      owl:intersectionOf ( obo:ARO_3004247
@@ -1659,25 +1647,12 @@ obo:ARO_3003976
 						 )
 			    ] .
 
-obo:ARO_3003977
-	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( obo:ARO_3003976
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_confers_resistance_to_drug ;
-						     owl:someValuesFrom obo:ARO_3003975
-						   ]
-						 )
-			    ] .
-
 obo:ARO_3003978
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3003211
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000040
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
@@ -1701,6 +1676,16 @@ obo:ARO_3004027
 						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to ;
 						     owl:someValuesFrom obo:ARO_3000034
+						   ]
+						 )
+			    ] .
+
+obo:ARO_3004028
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000000
+						   [ a owl:Restriction ;
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000171
 						   ]
 						 )
 			    ] .
@@ -1763,16 +1748,6 @@ obo:ARO_3004053
 			    ] .
 
 obo:ARO_3004057
-	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( obo:ARO_3000336
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_confers_resistance_to_drug ;
-						     owl:someValuesFrom obo:ARO_0000072
-						   ]
-						 )
-			    ] .
-
-obo:ARO_3004058
 	owl:equivalentClass [ a owl:Class ;
 			      owl:intersectionOf ( obo:ARO_3000336
 						   [ a owl:Restriction ;
@@ -2006,16 +1981,6 @@ obo:ARO_3004157
 						 )
 			    ] .
 
-obo:ARO_3004159
-	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( obo:ARO_3004178
-						   [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:ARO_3001317
-						   ]
-						 )
-			    ] .
-
 obo:ARO_3004160
 	owl:equivalentClass [ a owl:Class ;
 			      owl:intersectionOf ( obo:ARO_3000336
@@ -2110,34 +2075,28 @@ obo:ARO_3004178
 	owl:equivalentClass [ a owl:Class ;
 			      owl:intersectionOf ( obo:ARO_3000336
 						   [ a owl:Restriction ;
-						     owl:onProperty skos:related ;
-						     owl:someValuesFrom obo:ARO_3001317
+						     owl:onProperty RO:_confers_resistance_to ;
+						     owl:someValuesFrom obo:ARO_3000670
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3004179
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_0000006
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
 
 obo:ARO_3004180
 	owl:equivalentClass [ a owl:Class ;
-			      owl:intersectionOf ( [ a owl:Restriction ;
+			      owl:intersectionOf ( obo:ARO_3000336
+						   [ a owl:Restriction ;
 						     owl:onProperty RO:_confers_resistance_to_drug ;
 						     owl:someValuesFrom obo:ARO_3000385
-						   ]
-						   [ a owl:Restriction ;
-						     owl:onProperty RO:_participates_in ;
-						     owl:someValuesFrom obo:ARO_3000212
 						   ]
 						 )
 			    ] .
@@ -2208,6 +2167,16 @@ obo:ARO_3004335
 						 )
 			    ] .
 
+obo:ARO_3004376
+	owl:equivalentClass [ a owl:Class ;
+			      owl:intersectionOf ( obo:ARO_3000082
+						   [ a owl:Restriction ;
+						     owl:onProperty skos:related ;
+						     owl:someValuesFrom obo:ARO_0000055
+						   ]
+						 )
+			    ] .
+
 obo:ARO_3004423
 	owl:equivalentClass [ a owl:Class ;
 			      owl:intersectionOf ( obo:ARO_3004417
@@ -2254,188 +2223,204 @@ obo:ARO_3004563
 						 )
 			    ] .
 
-# Toplevel blank-nodes (191)
+# Toplevel blank-nodes (205)
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
   owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3003539 ;
+  owl:annotatedSource obo:ARO_3003517 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty RO:_confers_resistance_to_drug ;
-					       owl:someValuesFrom obo:ARO_3000214
-					     ]
+			owl:intersectionOf ( obo:ARO_3003211
 					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000014
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
   owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3003540 ;
+  owl:annotatedSource obo:ARO_3003518 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty RO:_confers_resistance_to_drug ;
-					       owl:someValuesFrom obo:ARO_3000214
-					     ]
+			owl:intersectionOf ( obo:ARO_3003211
 					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3003541 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty RO:_confers_resistance_to_drug ;
-					       owl:someValuesFrom obo:ARO_0000040
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3003542 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty RO:_confers_resistance_to_drug ;
-					       owl:someValuesFrom obo:ARO_0000049
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3003543 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty RO:_confers_resistance_to_drug ;
-					       owl:someValuesFrom obo:ARO_0000049
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3003544 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000005
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
   owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3000271 ;
+  owl:annotatedSource obo:ARO_3003532 ;
   owl:annotatedTarget [ a owl:Class ;
 			owl:intersectionOf ( obo:ARO_3000000
 					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to ;
-					       owl:someValuesFrom obo:ARO_0000025
+					       owl:someValuesFrom obo:ARO_3000527
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 7
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
   owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3003545 ;
+  owl:annotatedSource obo:ARO_3003539 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000214
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003540 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000214
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000104 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_0000016
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003541 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000040
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003542 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000049
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003543 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000049
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003544 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000005
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003545 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000005
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003546 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000018
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003547 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000018
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 5 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003585 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2449,12 +2434,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 7 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003666 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2464,12 +2449,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000016
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 7
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 7 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003667 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2479,12 +2464,27 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000053
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 7
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 7 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000129 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000007
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003668 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2494,12 +2494,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000527
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 7
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 6 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003669 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2509,12 +2509,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000051
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003696 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2524,12 +2524,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000870
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 7 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003702 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2539,27 +2539,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000735
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 7
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3000342 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( obo:ARO_3000557
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_confers_resistance_to ;
-					       owl:someValuesFrom obo:ARO_0000025
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score 0 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003729 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2576,12 +2561,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 0
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 0 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003730 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2594,12 +2579,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000732
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 0
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003735 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2612,12 +2597,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003737 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2630,12 +2615,27 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003747 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000079
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003753 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2645,12 +2645,30 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3001317
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000187 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_3000001
+					     ]
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_3000007
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 0
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003756 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2663,12 +2681,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003760 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2681,12 +2699,27 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003763 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3004116
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003775 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2699,27 +2732,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3000472 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( obo:ARO_3000000
-					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:ARO_0000051
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003776 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2732,12 +2750,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003777 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2750,12 +2768,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003778 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2768,12 +2786,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003779 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2786,12 +2804,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003788 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2804,12 +2822,27 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000201 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000557
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_0000000
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003794 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2822,12 +2855,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 0 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003797 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2840,12 +2873,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 0
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 0 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003800 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2858,27 +2891,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 0
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 7 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3000494 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( obo:ARO_3000000
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_confers_resistance_to ;
-					       owl:someValuesFrom obo:ARO_3000081
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003803 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2891,12 +2909,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 0 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003805 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2909,12 +2927,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000068
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 0
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 4 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003807 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2924,12 +2942,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 0 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003813 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2942,12 +2960,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 0
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 0 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003815 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2960,12 +2978,27 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 0
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 4 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000233 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000557
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_0000026
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003889 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2979,12 +3012,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 4 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003890 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -2998,12 +3031,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 4 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003893 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3017,27 +3050,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3000529 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( obo:ARO_3000000
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_confers_resistance_to ;
-					       owl:someValuesFrom obo:ARO_3000554
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score 3 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003895 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3047,12 +3065,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000067
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 3
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 3 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003896 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3062,30 +3080,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000067
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 3
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3003899 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty RO:_confers_resistance_to_drug ;
-					       owl:someValuesFrom obo:ARO_0000025
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score 4 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003901 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3099,12 +3099,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 4 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003902 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3118,12 +3118,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003917 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3136,12 +3136,27 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3003919
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 7 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000240 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_0000026
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003976 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3151,60 +3166,27 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3003975
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 7
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 6 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3003977 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( obo:ARO_3003976
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_confers_resistance_to_drug ;
-					       owl:someValuesFrom obo:ARO_3003975
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3000576 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( obo:ARO_3000557
-					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:ARO_3000169
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003978 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000040
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 2 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003985 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3217,12 +3199,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3003251
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 2
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 7 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004027 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3232,12 +3214,27 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000034
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 7
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -4 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004028 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000171
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004045 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3250,12 +3247,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000870
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 0 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004048 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3269,12 +3266,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000073
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 0
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 3 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004049 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3284,12 +3281,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000870
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 3
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 2 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004051 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3299,12 +3296,27 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000550
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 2
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000241 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_0000017
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004053 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3314,12 +3326,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000550
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 6 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004057 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3329,42 +3341,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000072
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 7 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3000751 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( obo:ARO_3000000
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_confers_resistance_to ;
-					       owl:someValuesFrom obo:ARO_3000053
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score 5 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3004058 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( obo:ARO_3000336
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_confers_resistance_to_drug ;
-					       owl:someValuesFrom obo:ARO_0000072
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004066 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3374,12 +3356,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000188
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004068 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3389,12 +3371,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000188
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004070 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3408,12 +3390,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000662
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004071 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3423,12 +3405,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3003474
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -3 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004078 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3438,12 +3420,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000060
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -3
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004079 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3457,12 +3439,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000051
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 2 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004081 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3472,12 +3454,27 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000052
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 2
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000267 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_0000072
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004083 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3487,27 +3484,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000036
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3000863 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( obo:ARO_3003421
-					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:ARO_3000693
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score 0 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004097 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3520,12 +3502,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 0
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 7 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004125 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3535,12 +3517,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000000
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 7
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 4 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004131 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3554,12 +3536,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000057
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 5 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004132 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3569,12 +3551,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000006
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 5 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004133 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3584,12 +3566,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000145
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 5 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004134 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3599,12 +3581,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000065
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004135 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3617,12 +3599,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004136 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3632,12 +3614,27 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000497
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000271 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_0000025
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004149 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3647,27 +3644,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000066
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 7 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3001218 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( obo:ARO_3003425
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_confers_resistance_to_drug ;
-					       owl:someValuesFrom obo:ARO_3000188
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score 5 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004150 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3677,12 +3659,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000385
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004153 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3695,12 +3677,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004157 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3713,27 +3695,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 6 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3004159 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( obo:ARO_3004178
-					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:ARO_3001317
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score 5 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004160 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3743,12 +3710,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000065
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 5 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004163 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3758,12 +3725,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000065
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 5 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004164 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3773,12 +3740,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000065
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 5 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004165 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3788,12 +3755,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000065
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 5 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004166 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3803,12 +3770,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000065
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 5 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004167 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3818,27 +3785,27 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000158
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
   owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3002876 ;
+  owl:annotatedSource obo:ARO_3000315 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( obo:ARO_3003422
+			owl:intersectionOf ( obo:ARO_3000000
 					     [ a owl:Restriction ;
-					       owl:onProperty RO:_confers_resistance_to_drug ;
-					       owl:someValuesFrom obo:ARO_3000497
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_0000000
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 5 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004168 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3848,12 +3815,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000065
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 5 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004169 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3863,12 +3830,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000065
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 7 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004172 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3878,63 +3845,57 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000079
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 7
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 6 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004178 ;
   owl:annotatedTarget [ a owl:Class ;
 			owl:intersectionOf ( obo:ARO_3000336
 					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:ARO_3001317
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000670
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 7
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004179 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000006
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004180 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3000336
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_3000385
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 7 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004187 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3944,12 +3905,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000017
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 7
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 7 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004188 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3959,12 +3920,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000387
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 7
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 6 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004281 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -3974,27 +3935,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000244
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3003024 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( obo:ARO_3000000
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_confers_resistance_to ;
-					       owl:someValuesFrom obo:ARO_3000759
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score 6 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004282 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4004,12 +3950,27 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000244
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000342 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000557
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_0000025
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004334 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4022,12 +3983,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004335 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4040,12 +4001,27 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 7 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3004376 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000082
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_0000055
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004423 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4055,12 +4031,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3004522
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 7
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 5 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004546 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4070,12 +4046,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000006
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004561 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4088,12 +4064,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3004563 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4106,12 +4082,252 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000169
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000383 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000157
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000408 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000282
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000459 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000082
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_0000025
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000472 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_0000051
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000477 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000103
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000494 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000081
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 7
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000529 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000554
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000576 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000557
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_3000169
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000737 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003277
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_targeted_by ;
+					       owl:someValuesFrom obo:ARO_3000157
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000751 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000053
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 7
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000863 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003421
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_3000693
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3001218 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003425
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000188
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 7
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3001311 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3001219
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3002876 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3003422
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to_drug ;
+					       owl:someValuesFrom obo:ARO_3000497
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3002984 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_0000022
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3003024 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000759
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003025 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4121,12 +4337,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000759
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 7 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003073 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4136,12 +4352,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000035
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 7
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003080 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4151,30 +4367,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000068
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 3 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3003090 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty RO:_confers_resistance_to_drug ;
-					       owl:someValuesFrom obo:ARO_0000068
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_derives_from ;
-					       owl:someValuesFrom obo:ARO_3003278
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003091 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4184,120 +4382,102 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000068
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003223 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
+			owl:intersectionOf ( obo:ARO_3003211
 					     [ a owl:Restriction ;
 					       owl:onProperty skos:related ;
 					       owl:someValuesFrom obo:ARO_3000119
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003236 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000049
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003237 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000052
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003238 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000005
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003239 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000013
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003240 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000014
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 7 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003265 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4307,12 +4487,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000013
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 7
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 3 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003275 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4325,12 +4505,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3003272
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 3
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003278 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4340,12 +4520,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000068
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 3 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003290 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4355,12 +4535,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_0000068
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 3
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003319 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4373,12 +4553,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003325 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4391,12 +4571,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003326 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4409,46 +4589,27 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 6 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3003361 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( obo:ARO_3003360
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_derives_from ;
-					       owl:someValuesFrom obo:ARO_3000731
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003368 ;
   owl:annotatedTarget [ a owl:Class ;
 			owl:intersectionOf ( obo:ARO_3003358
 					     [ a owl:Restriction ;
-					       owl:onProperty RO:_derives_from ;
-					       owl:someValuesFrom obo:ARO_3000731
-					     ]
-					     [ a owl:Restriction ;
 					       owl:onProperty skos:related ;
 					       owl:someValuesFrom obo:ARO_3001234
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003369 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4457,17 +4618,13 @@ obo:ARO_3004563
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_3000586
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_derives_from ;
-					       owl:someValuesFrom obo:ARO_3000731
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003370 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4476,35 +4633,28 @@ obo:ARO_3004563
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_3001242
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_derives_from ;
-					       owl:someValuesFrom obo:ARO_3000731
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003372 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000039
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 4 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003373 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4514,12 +4664,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 4 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003374 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4529,48 +4679,42 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003376 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000039
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003377 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000039
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 5 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003378 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4580,12 +4724,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 5 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003381 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4595,12 +4739,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 5 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003382 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4610,12 +4754,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 5 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003383 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4625,12 +4769,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 6 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003388 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4640,12 +4784,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3003412
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 6
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003389 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4658,192 +4802,162 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3003412
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003396 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000014
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003397 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_3000653
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003399 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000049
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003402 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000005
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003403 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_3000657
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003405 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000040
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003406 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000040
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003408 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000052
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003410 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
+			owl:intersectionOf ( obo:ARO_3003211
 					     [ a owl:Restriction ;
 					       owl:onProperty skos:related ;
 					       owl:someValuesFrom obo:ARO_0000051
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003411 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
+			owl:intersectionOf ( obo:ARO_3003211
 					     [ a owl:Restriction ;
 					       owl:onProperty skos:related ;
 					       owl:someValuesFrom obo:ARO_0000051
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003416 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4853,12 +4967,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000520
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003418 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4868,12 +4982,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3003413
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003432 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4883,12 +4997,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000520
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003433 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4898,48 +5012,57 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3003413
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003436 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000049
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003437 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000018
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000036 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000557
+					     [ a owl:Restriction ;
+					       owl:onProperty skos:related ;
+					       owl:someValuesFrom obo:ARO_0000051
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003438 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4948,17 +5071,13 @@ obo:ARO_3004563
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_3001237
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_derives_from ;
-					       owl:someValuesFrom obo:ARO_3000731
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003447 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4968,12 +5087,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000497
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003450 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4983,12 +5102,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000497
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003457 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -4998,12 +5117,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3003474
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003458 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -5016,12 +5135,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003461 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -5034,12 +5153,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003465 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -5052,27 +5171,12 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score -1
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3000036 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( obo:ARO_3000557
-					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:ARO_0000051
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score 0 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003470 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -5085,228 +5189,207 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 0
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003480 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000040
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000052 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_3000387
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003481 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000013
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003485 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000039
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003493 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000039
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003495 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000039
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003497 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000039
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003499 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
+			owl:intersectionOf ( obo:ARO_3003211
 					     [ a owl:Restriction ;
 					       owl:onProperty skos:related ;
 					       owl:someValuesFrom obo:ARO_0000051
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003502 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000039
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003503 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000049
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 0 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3000187 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:ARO_3000001
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty skos:related ;
-					       owl:someValuesFrom obo:ARO_3000007
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003504 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000014
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003510 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
+			owl:intersectionOf ( obo:ARO_3003211
 					     [ a owl:Restriction ;
 					       owl:onProperty skos:related ;
 					       owl:someValuesFrom obo:ARO_0000051
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score 5 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedSource obo:ARO_3000102 ;
+  owl:annotatedTarget [ a owl:Class ;
+			owl:intersectionOf ( obo:ARO_3000000
+					     [ a owl:Restriction ;
+					       owl:onProperty RO:_confers_resistance_to ;
+					       owl:someValuesFrom obo:ARO_0000001
+					     ]
+					   )
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 8
+] .
+[ a owl:Axiom ;
+  rdfs:comment "Autogenerated" ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003511 ;
   owl:annotatedTarget [ a owl:Class ;
@@ -5316,143 +5399,67 @@ obo:ARO_3004563
 					       owl:someValuesFrom obo:ARO_3000212
 					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -2 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003512 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000039
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 4
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003514 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000013
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003515 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000049
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .
 [ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
   rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
   owl:annotatedProperty owl:equivalentClass ;
   owl:annotatedSource obo:ARO_3003516 ;
   owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
+			owl:intersectionOf ( obo:ARO_3003211
+					     [ a owl:Restriction ;
 					       owl:onProperty RO:_confers_resistance_to_drug ;
 					       owl:someValuesFrom obo:ARO_0000052
 					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
 					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3003517 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty RO:_confers_resistance_to_drug ;
-					       owl:someValuesFrom obo:ARO_0000014
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score 8 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3000267 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( obo:ARO_3000000
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_confers_resistance_to_drug ;
-					       owl:someValuesFrom obo:ARO_0000072
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score -1 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3003518 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( [ a owl:Restriction ;
-					       owl:onProperty RO:_confers_resistance_to_drug ;
-					       owl:someValuesFrom obo:ARO_0000005
-					     ]
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_participates_in ;
-					       owl:someValuesFrom obo:ARO_3000212
-					     ]
-					   )
-		      ]
-] .
-[ a owl:Axiom ;
-  rdfs:annotationPropertyUsed <label> ;
-  rdfs:comment "Autogenerated" ;
-  rdfs:score 7 ;
-  owl:annotatedProperty owl:equivalentClass ;
-  owl:annotatedSource obo:ARO_3003532 ;
-  owl:annotatedTarget [ a owl:Class ;
-			owl:intersectionOf ( obo:ARO_3000000
-					     [ a owl:Restriction ;
-					       owl:onProperty RO:_confers_resistance_to ;
-					       owl:someValuesFrom obo:ARO_3000527
-					     ]
-					   )
-		      ]
+		      ] ;
+  inca:annotationPropertyUsed "label" ;
+  inca:score 5
 ] .

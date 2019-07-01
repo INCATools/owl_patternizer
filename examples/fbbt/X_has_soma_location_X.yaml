@@ -1,13 +1,14 @@
-# options: [min(50),dir(fbbt),trim(true),base('http://purl.obolibrary.org/obo/fbbt'),generalize_properties(true),max_and_cardinality(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(50),dir('examples/fbbt'),trim(true),base('http://purl.obolibrary.org/obo/fbbt'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has_soma_location X
 pattern_iri: http://purl.obolibrary.org/obo/fbbt/X_has_soma_location_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [A1-7 VL3/4 motor neuron](http://purl.obolibrary.org/obo/FBbt_00002215), [abdominal 1 VL3/4 motor neuron](http://purl.obolibrary.org/obo/FBbt_00002216), [abdominal 2 VL3/4 motor neuron](http://purl.obolibrary.org/obo/FBbt_00002217) (93 total)
+  Examples: [larval subesophageal VUM neuron](http://purl.obolibrary.org/obo/FBbt_00047750), [larval mandibular VUM neuron](http://purl.obolibrary.org/obo/FBbt_00047752), [larval maxillary VUM neuron](http://purl.obolibrary.org/obo/FBbt_00047756) (181 total)
 
 classes: 
+  neuron: "http://purl.obolibrary.org/obo/FBbt_00005106"
   anatomical structure: "http://purl.obolibrary.org/obo/FBbt_00007001"
 
 
@@ -20,15 +21,15 @@ vars:
   v1: "'anatomical structure'"
 
 name:
-  # Induced, frequency=0.021505376344086023, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.011049723756906077, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s of %s"
   vars:
     - v0
     - v1
 
 def:
-  # Induced, frequency=0.010752688172043012, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "Any %s (FBbt:00002215) that has soma location some %s (FBbt:00001752)."
+  # Could not induce def, using default
+  text: "Any %s that has_soma_location a %s"
   vars:
     - v0
     - v1
@@ -41,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has_soma_location' some %s)"
+  text: "(%s and ('has_soma_location' some %s))"
   vars:
     - v0
     - v1

@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'temperature' and ('inheres in' some %s)"
+  text: "('temperature' and ('inheres in' some %s))"
   vars:
     - v0

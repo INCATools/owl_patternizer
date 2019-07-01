@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('confers_resistance_to_drug' some 'ethambutol')"
+  text: "(%s and ('confers_resistance_to_drug' some 'ethambutol'))"
   vars:
     - v0

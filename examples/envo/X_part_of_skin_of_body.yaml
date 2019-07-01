@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('part of' some 'skin of body')"
+  text: "(%s and ('part of' some 'skin of body'))"
   vars:
     - v0

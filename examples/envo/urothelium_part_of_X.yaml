@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "'urothelium' and ('part of' some %s)"
+  text: "('urothelium' and ('part of' some %s))"
   vars:
     - v0

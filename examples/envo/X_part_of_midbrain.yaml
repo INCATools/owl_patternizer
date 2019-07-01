@@ -45,6 +45,6 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('part of' some 'midbrain')"
+  text: "(%s and ('part of' some 'midbrain'))"
   vars:
     - v0

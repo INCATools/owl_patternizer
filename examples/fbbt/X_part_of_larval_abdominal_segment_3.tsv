@@ -1,0 +1,105 @@
+defined_class	defined_class_label	v0	v0_label
+http://purl.obolibrary.org/obo/FBbt_00001990	A3 neuron	http://purl.obolibrary.org/obo/FBbt_00001987	abdominal neuron
+http://purl.obolibrary.org/obo/FBbt_00002274	abdominal 3 V neuron	http://purl.obolibrary.org/obo/FBbt_00002271	abdominal V neuron
+http://purl.obolibrary.org/obo/FBbt_00000728	abdominal 3 acute muscle	http://purl.obolibrary.org/obo/FBbt_00000589	A1-7 acute muscle
+http://purl.obolibrary.org/obo/FBbt_00001113	abdominal 3 anterior commissure	http://purl.obolibrary.org/obo/FBbt_00001110	abdominal anterior commissure
+http://purl.obolibrary.org/obo/FBbt_00002520	abdominal 3 anterior ventral multidendritic neuron vdaa	http://purl.obolibrary.org/obo/FBbt_00002517	abdominal anterior ventral multidendritic neuron vdaa
+http://purl.obolibrary.org/obo/FBbt_00002324	abdominal 3 desA neuron	http://purl.obolibrary.org/obo/FBbt_00002321	abdominal desA neuron
+http://purl.obolibrary.org/obo/FBbt_00002332	abdominal 3 desB neuron	http://purl.obolibrary.org/obo/FBbt_00002329	abdominal desB neuron
+http://purl.obolibrary.org/obo/FBbt_00100761	abdominal 3 dopaminergic AM neuron	http://purl.obolibrary.org/obo/FBbt_00100390	larval dopaminergic AM neuron
+http://purl.obolibrary.org/obo/FBbt_00000729	abdominal 3 dorsal acute muscle	http://purl.obolibrary.org/obo/FBbt_00000590	A1-7 dorsal acute muscle
+http://purl.obolibrary.org/obo/FBbt_00000730	abdominal 3 dorsal acute muscle 1	http://purl.obolibrary.org/obo/FBbt_00000591	A1-7 dorsal acute muscle 1
+http://purl.obolibrary.org/obo/FBbt_00000731	abdominal 3 dorsal acute muscle 2	http://purl.obolibrary.org/obo/FBbt_00000592	A1-7 dorsal acute muscle 2
+http://purl.obolibrary.org/obo/FBbt_00000732	abdominal 3 dorsal acute muscle 3	http://purl.obolibrary.org/obo/FBbt_00000593	A1-7 dorsal acute muscle 3
+http://purl.obolibrary.org/obo/FBbt_00002445	abdominal 3 dorsal bipolar neuron dbp	http://purl.obolibrary.org/obo/FBbt_00002442	abdominal dorsal bipolar neuron dbp
+http://purl.obolibrary.org/obo/FBbt_00002210	abdominal 3 dorsal motor neuron	http://purl.obolibrary.org/obo/FBbt_00002207	A1-7 dorsal motor neuron
+http://purl.obolibrary.org/obo/FBbt_00002389	abdominal 3 dorsal multidendritic neuron ddaA	http://purl.obolibrary.org/obo/FBbt_00002386	abdominal dorsal multidendritic neuron ddaA
+http://purl.obolibrary.org/obo/FBbt_00002397	abdominal 3 dorsal multidendritic neuron ddaB	http://purl.obolibrary.org/obo/FBbt_00002394	abdominal dorsal multidendritic neuron ddaB
+http://purl.obolibrary.org/obo/FBbt_00002405	abdominal 3 dorsal multidendritic neuron ddaC	http://purl.obolibrary.org/obo/FBbt_00002402	abdominal dorsal multidendritic neuron ddaC
+http://purl.obolibrary.org/obo/FBbt_00002413	abdominal 3 dorsal multidendritic neuron ddaD	http://purl.obolibrary.org/obo/FBbt_00002410	abdominal dorsal multidendritic neuron ddaD
+http://purl.obolibrary.org/obo/FBbt_00002421	abdominal 3 dorsal multidendritic neuron ddaE	http://purl.obolibrary.org/obo/FBbt_00002418	abdominal dorsal multidendritic neuron ddaE
+http://purl.obolibrary.org/obo/FBbt_00012389	abdominal 3 dorsal multidendritic neuron ddaF	http://purl.obolibrary.org/obo/FBbt_00006025	abdominal dorsal multidendritic neuron ddaF
+http://purl.obolibrary.org/obo/FBbt_00000738	abdominal 3 dorsal oblique muscle	http://purl.obolibrary.org/obo/FBbt_00000608	A1-7 dorsal oblique muscle
+http://purl.obolibrary.org/obo/FBbt_00000739	abdominal 3 dorsal oblique muscle 1	http://purl.obolibrary.org/obo/FBbt_00000609	A1-7 dorsal oblique muscle 1
+http://purl.obolibrary.org/obo/FBbt_00000740	abdominal 3 dorsal oblique muscle 2	http://purl.obolibrary.org/obo/FBbt_00000610	A1-7 dorsal oblique muscle 2
+http://purl.obolibrary.org/obo/FBbt_00000741	abdominal 3 dorsal oblique muscle 3	http://purl.obolibrary.org/obo/FBbt_00000611	A1-7 dorsal oblique muscle 3
+http://purl.obolibrary.org/obo/FBbt_00000742	abdominal 3 dorsal oblique muscle 4	http://purl.obolibrary.org/obo/FBbt_00000612	A1-7 dorsal oblique muscle 4
+http://purl.obolibrary.org/obo/FBbt_00000743	abdominal 3 dorsal oblique muscle 5	http://purl.obolibrary.org/obo/FBbt_00000613	A1-7 dorsal oblique muscle 5
+http://purl.obolibrary.org/obo/FBbt_00002802	abdominal 3 dorsal sensillum campaniformium dc1	http://purl.obolibrary.org/obo/FBbt_00002799	abdominal dorsal sensillum campaniformium dc1
+http://purl.obolibrary.org/obo/FBbt_00002810	abdominal 3 dorsal sensillum campaniformium dc2	http://purl.obolibrary.org/obo/FBbt_00002807	abdominal dorsal sensillum campaniformium dc2
+http://purl.obolibrary.org/obo/FBbt_00002786	abdominal 3 dorsal sensillum trichodeum dh1	http://purl.obolibrary.org/obo/FBbt_00002783	abdominal dorsal sensillum trichodeum dh1
+http://purl.obolibrary.org/obo/FBbt_00100036	abdominal 3 dorsal sensillum trichodeum dh2	http://purl.obolibrary.org/obo/FBbt_00100033	abdominal dorsal sensillum trichodeum dh2
+http://purl.obolibrary.org/obo/FBbt_00000764	abdominal 3 dorsal transverse muscle 1	http://purl.obolibrary.org/obo/FBbt_00000625	A1-7 dorsal transverse muscle 1
+http://purl.obolibrary.org/obo/FBbt_00002915	abdominal 3 dorsal trichome	http://purl.obolibrary.org/obo/FBbt_00002912	abdominal dorsal trichome
+http://purl.obolibrary.org/obo/FBbt_00002184	abdominal 3 intersegmental bidendritic neuron isbp	http://purl.obolibrary.org/obo/FBbt_00002181	abdominal intersegmental bidendritic neuron isbp
+http://purl.obolibrary.org/obo/FBbt_00002192	abdominal 3 intersegmental trachea-associated neuron istd	http://purl.obolibrary.org/obo/FBbt_00002189	abdominal intersegmental trachea-associated neuron istd
+http://purl.obolibrary.org/obo/FBbt_00001698	abdominal 3 larval oenocyte group	http://purl.obolibrary.org/obo/FBbt_00001695	abdominal larval oenocyte group
+http://purl.obolibrary.org/obo/FBbt_00002290	abdominal 3 lateral ipsisegmental neuron	http://purl.obolibrary.org/obo/FBbt_00002287	abdominal lateral ipsisegmental neuron
+http://purl.obolibrary.org/obo/FBbt_00000755	abdominal 3 lateral longitudinal muscle 1	http://purl.obolibrary.org/obo/FBbt_00000600	A1-7 lateral longitudinal muscle 1
+http://purl.obolibrary.org/obo/FBbt_00002826	abdominal 3 lateral monoscolopidial chordotonal organ lch1	http://purl.obolibrary.org/obo/FBbt_00002823	abdominal lateral monoscolopidial chordotonal organ lch1
+http://purl.obolibrary.org/obo/FBbt_00002437	abdominal 3 lateral multidendritic neuron ldaA	http://purl.obolibrary.org/obo/FBbt_00002434	abdominal lateral multidendritic neuron ldaA
+http://purl.obolibrary.org/obo/FBbt_00002429	abdominal 3 lateral multidendritic neuron ldaB	http://purl.obolibrary.org/obo/FBbt_00002426	abdominal lateral multidendritic neuron ldaB
+http://purl.obolibrary.org/obo/FBbt_00000745	abdominal 3 lateral oblique muscle 1	http://purl.obolibrary.org/obo/FBbt_00000615	A1-7 lateral oblique muscle 1
+http://purl.obolibrary.org/obo/FBbt_00002834	abdominal 3 lateral pentascolopidial chordotonal organ lch5	http://purl.obolibrary.org/obo/FBbt_00002831	abdominal lateral pentascolopidial chordotonal organ lch5
+http://purl.obolibrary.org/obo/FBbt_00002858	abdominal 3 lateral sensillum campaniformium lc1	http://purl.obolibrary.org/obo/FBbt_00002855	abdominal lateral sensillum campaniformium lc1
+http://purl.obolibrary.org/obo/FBbt_00002842	abdominal 3 lateral sensillum trichodeum lh1	http://purl.obolibrary.org/obo/FBbt_00002839	abdominal lateral sensillum trichodeum lh1
+http://purl.obolibrary.org/obo/FBbt_00002850	abdominal 3 lateral sensillum trichodeum lh2	http://purl.obolibrary.org/obo/FBbt_00002847	abdominal lateral sensillum trichodeum lh2
+http://purl.obolibrary.org/obo/FBbt_00000765	abdominal 3 lateral transverse muscle	http://purl.obolibrary.org/obo/FBbt_00000626	A1-7 lateral transverse muscle
+http://purl.obolibrary.org/obo/FBbt_00000766	abdominal 3 lateral transverse muscle 1	http://purl.obolibrary.org/obo/FBbt_00000627	A1-7 lateral transverse muscle 1
+http://purl.obolibrary.org/obo/FBbt_00000767	abdominal 3 lateral transverse muscle 2	http://purl.obolibrary.org/obo/FBbt_00000628	A1-7 lateral transverse muscle 2
+http://purl.obolibrary.org/obo/FBbt_00000768	abdominal 3 lateral transverse muscle 3	http://purl.obolibrary.org/obo/FBbt_00000629	A1-7 lateral transverse muscle 3
+http://purl.obolibrary.org/obo/FBbt_00000769	abdominal 3 lateral transverse muscle 4	http://purl.obolibrary.org/obo/FBbt_00000630	A1-7 lateral transverse muscle 4
+http://purl.obolibrary.org/obo/FBbt_00000753	abdominal 3 longitudinal muscle	http://purl.obolibrary.org/obo/FBbt_00000598	A1-7 longitudinal muscle
+http://purl.obolibrary.org/obo/FBbt_00002600	abdominal 3 median nerve	http://purl.obolibrary.org/obo/FBbt_00002597	abdominal median nerve
+http://purl.obolibrary.org/obo/FBbt_00000737	abdominal 3 oblique muscle	http://purl.obolibrary.org/obo/FBbt_00000607	A1-7 oblique muscle
+http://purl.obolibrary.org/obo/FBbt_00001128	abdominal 3 posterior commissure	http://purl.obolibrary.org/obo/FBbt_00001125	abdominal posterior commissure
+http://purl.obolibrary.org/obo/FBbt_00002528	abdominal 3 posterior ventral multidendritic neuron vdap	http://purl.obolibrary.org/obo/FBbt_00002525	abdominal posterior ventral multidendritic neuron vdap
+http://purl.obolibrary.org/obo/FBbt_00000761	abdominal 3 segment border muscle	http://purl.obolibrary.org/obo/FBbt_00000606	A1-7 segment border muscle
+http://purl.obolibrary.org/obo/FBbt_00000762	abdominal 3 transverse muscle	http://purl.obolibrary.org/obo/FBbt_00000623	A1-7 transverse muscle
+http://purl.obolibrary.org/obo/FBbt_00002455	abdominal 3 vch neuron	http://purl.obolibrary.org/obo/FBbt_00002452	abdominal vch neuron
+http://purl.obolibrary.org/obo/FBbt_00000733	abdominal 3 ventral acute muscle	http://purl.obolibrary.org/obo/FBbt_00000594	A1-7 ventral acute muscle
+http://purl.obolibrary.org/obo/FBbt_00000734	abdominal 3 ventral acute muscle 1	http://purl.obolibrary.org/obo/FBbt_00000595	A1-7 ventral acute muscle 1
+http://purl.obolibrary.org/obo/FBbt_00000735	abdominal 3 ventral acute muscle 2	http://purl.obolibrary.org/obo/FBbt_00110256	ventral acute muscle 2
+http://purl.obolibrary.org/obo/FBbt_00000736	abdominal 3 ventral acute muscle 3	http://purl.obolibrary.org/obo/FBbt_00000597	ventral acute muscle 3
+http://purl.obolibrary.org/obo/FBbt_00002592	abdominal 3 ventral bipolar neuron vbp	http://purl.obolibrary.org/obo/FBbt_00002589	abdominal ventral bipolar neuron vbp
+http://purl.obolibrary.org/obo/FBbt_00002923	abdominal 3 ventral denticle belt	http://purl.obolibrary.org/obo/FBbt_00002920	abdominal ventral denticle belt
+http://purl.obolibrary.org/obo/FBbt_00002298	abdominal 3 ventral intersegmental neuron	http://purl.obolibrary.org/obo/FBbt_00002295	abdominal ventral intersegmental neuron
+http://purl.obolibrary.org/obo/FBbt_00000756	abdominal 3 ventral longitudinal muscle	http://purl.obolibrary.org/obo/FBbt_00000601	A1-7 ventral longitudinal muscle
+http://purl.obolibrary.org/obo/FBbt_00000757	abdominal 3 ventral longitudinal muscle 1	http://purl.obolibrary.org/obo/FBbt_00000602	A1-7 ventral longitudinal muscle 1
+http://purl.obolibrary.org/obo/FBbt_00000758	abdominal 3 ventral longitudinal muscle 2	http://purl.obolibrary.org/obo/FBbt_00000603	A1-7 ventral longitudinal muscle 2
+http://purl.obolibrary.org/obo/FBbt_00000759	abdominal 3 ventral longitudinal muscle 3	http://purl.obolibrary.org/obo/FBbt_00000604	A1-7 ventral longitudinal muscle 3
+http://purl.obolibrary.org/obo/FBbt_00000760	abdominal 3 ventral longitudinal muscle 4	http://purl.obolibrary.org/obo/FBbt_00000605	A1-7 ventral longitudinal muscle 4
+http://purl.obolibrary.org/obo/FBbt_00002907	abdominal 3 ventral monoscolopidial chordotonal organ vch1	http://purl.obolibrary.org/obo/FBbt_00002904	abdominal ventral monoscolopidial chordotonal organ vch1
+http://purl.obolibrary.org/obo/FBbt_00007267	abdominal 3 ventral monoscolopidial chordotonal organ vch2	http://purl.obolibrary.org/obo/FBbt_00007255	abdominal ventral monoscolopidial chordotonal organ vch2
+http://purl.obolibrary.org/obo/FBbt_00002234	abdominal 3 ventral motor neuron	http://purl.obolibrary.org/obo/FBbt_00002231	A1-7 ventral motor neuron
+http://purl.obolibrary.org/obo/FBbt_00002536	abdominal 3 ventral multidendritic neuron v'dap	http://purl.obolibrary.org/obo/FBbt_00002533	abdominal ventral multidendritic neuron v'dap
+http://purl.obolibrary.org/obo/FBbt_00002544	abdominal 3 ventral multidendritic neuron vdaA	http://purl.obolibrary.org/obo/FBbt_00002541	abdominal ventral multidendritic neuron vdaA
+http://purl.obolibrary.org/obo/FBbt_00002552	abdominal 3 ventral multidendritic neuron vdaB	http://purl.obolibrary.org/obo/FBbt_00002549	abdominal ventral multidendritic neuron vdaB
+http://purl.obolibrary.org/obo/FBbt_00002560	abdominal 3 ventral multidendritic neuron vdaC	http://purl.obolibrary.org/obo/FBbt_00002557	abdominal ventral multidendritic neuron vdaC
+http://purl.obolibrary.org/obo/FBbt_00002568	abdominal 3 ventral multidendritic neuron vdaD	http://purl.obolibrary.org/obo/FBbt_00002565	abdominal ventral multidendritic neuron vdaD
+http://purl.obolibrary.org/obo/FBbt_00002576	abdominal 3 ventral multidendritic neuron vtd1	http://purl.obolibrary.org/obo/FBbt_00002573	abdominal ventral multidendritic neuron vtd1
+http://purl.obolibrary.org/obo/FBbt_00002584	abdominal 3 ventral multidendritic neuron vtd2	http://purl.obolibrary.org/obo/FBbt_00002581	abdominal ventral multidendritic neuron vtd2
+http://purl.obolibrary.org/obo/FBbt_00000746	abdominal 3 ventral oblique muscle	http://purl.obolibrary.org/obo/FBbt_00000616	A1-7 ventral oblique muscle
+http://purl.obolibrary.org/obo/FBbt_00000747	abdominal 3 ventral oblique muscle 1	http://purl.obolibrary.org/obo/FBbt_00000617	A1-7 ventral oblique muscle 1
+http://purl.obolibrary.org/obo/FBbt_00000748	abdominal 3 ventral oblique muscle 2	http://purl.obolibrary.org/obo/FBbt_00000618	A1-7 ventral oblique muscle 2
+http://purl.obolibrary.org/obo/FBbt_00000749	abdominal 3 ventral oblique muscle 3	http://purl.obolibrary.org/obo/FBbt_00000619	A1-7 ventral oblique muscle 3
+http://purl.obolibrary.org/obo/FBbt_00000752	abdominal 3 ventral oblique muscle 6	http://purl.obolibrary.org/obo/FBbt_00000622	ventral oblique muscle 6
+http://purl.obolibrary.org/obo/FBbt_00002866	abdominal 3 ventral sensillum campaniformium vc1	http://purl.obolibrary.org/obo/FBbt_00002863	abdominal ventral sensillum campaniformium vc1
+http://purl.obolibrary.org/obo/FBbt_00002874	abdominal 3 ventral sensillum campaniformium vc2	http://purl.obolibrary.org/obo/FBbt_00002871	abdominal ventral sensillum campaniformium vc2
+http://purl.obolibrary.org/obo/FBbt_00002882	abdominal 3 ventral sensillum campaniformium vc3	http://purl.obolibrary.org/obo/FBbt_00002879	abdominal ventral sensillum campaniformium vc3
+http://purl.obolibrary.org/obo/FBbt_00002890	abdominal 3 ventral sensillum campaniformium vc4a	http://purl.obolibrary.org/obo/FBbt_00002887	abdominal ventral sensillum campaniformium vc4a
+http://purl.obolibrary.org/obo/FBbt_00002898	abdominal 3 ventral sensillum campaniformium vc4b	http://purl.obolibrary.org/obo/FBbt_00002895	abdominal ventral sensillum campaniformium vc4b
+http://purl.obolibrary.org/obo/FBbt_00005226	abdominal 3 ventral sensillum campaniformium vc5	http://purl.obolibrary.org/obo/FBbt_00002903	abdominal ventral sensillum campaniformium vc5
+http://purl.obolibrary.org/obo/FBbt_00000770	abdominal 3 ventral transverse muscle	http://purl.obolibrary.org/obo/FBbt_00000631	A1-7 ventral transverse muscle
+http://purl.obolibrary.org/obo/FBbt_00000771	abdominal 3 ventral transverse muscle 1	http://purl.obolibrary.org/obo/FBbt_00000632	A2-7 ventral transverse muscle 1
+http://purl.obolibrary.org/obo/FBbt_00001798	anterior dorsal histoblast nest abdominal 3	http://purl.obolibrary.org/obo/FBbt_00001792	anterior dorsal histoblast nest abdominal
+http://purl.obolibrary.org/obo/FBbt_00001011	embryonic/larval abdominal 3 intersegmental apodeme	http://purl.obolibrary.org/obo/FBbt_00001007	embryonic/larval intersegmental apodeme
+http://purl.obolibrary.org/obo/FBbt_00001023	embryonic/larval abdominal 3 intrasegmental apodeme 1	http://purl.obolibrary.org/obo/FBbt_00001021	embryonic/larval A1-7 intrasegmental apodeme 1
+http://purl.obolibrary.org/obo/FBbt_00001030	embryonic/larval abdominal 3 intrasegmental apodeme 2	http://purl.obolibrary.org/obo/FBbt_00001028	embryonic/larval A1-7 intrasegmental apodeme 2
+http://purl.obolibrary.org/obo/FBbt_00000727	hypodermal muscle of larval abdominal 3	http://purl.obolibrary.org/obo/FBbt_00000681	hypodermal muscle of larval abdomen
+http://purl.obolibrary.org/obo/FBbt_00111035	larval abdominal 3 neuromere	http://purl.obolibrary.org/obo/FBbt_00005140	neuromere
+http://purl.obolibrary.org/obo/FBbt_00000419	non-functional larval spiracle of abdominal segment 3	http://purl.obolibrary.org/obo/FBbt_00000412	non-functional larval spiracle
+http://purl.obolibrary.org/obo/FBbt_00001812	posterior dorsal histoblast nest abdominal 3	http://purl.obolibrary.org/obo/FBbt_00001809	posterior dorsal histoblast nest abdominal
+http://purl.obolibrary.org/obo/FBbt_00001799	small cell associated with anterior dorsal histoblasts abdominal 3	http://purl.obolibrary.org/obo/FBbt_00001793	small cell associated with anterior dorsal histoblasts abdominal
+http://purl.obolibrary.org/obo/FBbt_00001829	spiracular histoblast nest abdominal 3	http://purl.obolibrary.org/obo/FBbt_00001826	spiracular histoblast nest abdominal
+http://purl.obolibrary.org/obo/FBbt_00001821	ventral histoblast nest abdominal 3	http://purl.obolibrary.org/obo/FBbt_00001818	ventral histoblast nest abdominal

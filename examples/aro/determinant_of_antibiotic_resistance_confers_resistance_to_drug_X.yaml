@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'determinant of antibiotic resistance' and ('confers_resistance_to_drug' some %s)"
+  text: "('determinant of antibiotic resistance' and ('confers_resistance_to_drug' some %s))"
   vars:
     - v0

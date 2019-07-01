@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/agro/agricultural_implement_particip
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [tillage implement](http://purl.obolibrary.org/obo/AGRO_00000223), [land levelling implement](http://purl.obolibrary.org/obo/AGRO_00000224), [residue management implement](http://purl.obolibrary.org/obo/AGRO_00000225) (10 total)
+  Examples: [tillage implement](http://purl.obolibrary.org/obo/AGRO_00000223), [land levelling implement](http://purl.obolibrary.org/obo/AGRO_00000224), [residue management implement](http://purl.obolibrary.org/obo/AGRO_00000225) (12 total)
 
 classes: 
   agricultural implement: "http://purl.obolibrary.org/obo/AGRO_00000416"
@@ -20,13 +20,13 @@ vars:
   v0: "'planned process'"
 
 name:
-  # Induced, frequency=0.7, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s implement"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.6, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.6666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "An implement that is used during a %s process."
   vars:
     - v0
@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "'agricultural implement' and ('participates in' some %s)"
+  text: "('agricultural implement' and ('participates in' some %s))"
   vars:
     - v0
