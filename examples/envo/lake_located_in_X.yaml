@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: lake located in X
+pattern_iri: http://purl.obolibrary.org/obo/envo/lake_located_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [fjord lake](http://purl.obolibrary.org/obo/ENVO_00000201), [meteorite lake](http://purl.obolibrary.org/obo/ENVO_01001065), [caldera lake](http://purl.obolibrary.org/obo/ENVO_01001061) (4 total)
+
+classes: 
+  lake: "ENVO:00000020"
+  astronomical body part: "ENVO:01000813"
+
+
+relations: 
+  located in: "RO:0001025"
+
+
+vars:
+  v0: "'astronomical body part'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s lake"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A lake contained within a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('lake' and ('located in' some %s))"
+  vars:
+    - v0

@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part_of meiotic cell cycle
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_part_of_meiotic_cell_cycle
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [meiotic cell cycle checkpoint](http://purl.obolibrary.org/obo/GO_0033313), [meiotic G2/MI DNA replication checkpoint](http://purl.obolibrary.org/obo/GO_0033315), [meiotic nuclear division](http://purl.obolibrary.org/obo/GO_0140013) (20 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  meiotic cell cycle: "GO:0051321"
+
+
+relations: 
+  part_of: "BFO:0000050"
+
+
+vars:
+  v0: "'biological_process'"
+
+name:
+  # Induced, frequency=0.55, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "meiotic %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that part_of a meiotic cell cycle"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "meiotic %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part_of' some 'meiotic cell cycle'))"
+  vars:
+    - v0

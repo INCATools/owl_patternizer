@@ -1,0 +1,48 @@
+# options: [min(50),dir('examples/zp'),trim(true),base('http://purl.obolibrary.org/obo/zp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X positively regulates X
+pattern_iri: http://purl.obolibrary.org/obo/zp/X_positively_regulates_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [heart induction](http://purl.obolibrary.org/obo/GO_0003129), [pancreas induction](http://purl.obolibrary.org/obo/GO_0061132), [positive regulation of purine nucleotide biosynthetic process by transcription from RNA polymerase II promoter](http://purl.obolibrary.org/obo/GO_0100036) (1107 total)
+
+classes: 
+  process: "BFO:0000015"
+  biological_process: "GO:0008150"
+
+
+relations: 
+  positively regulates: "RO:0002213"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'process'"
+
+name:
+  # Induced, frequency=0.013550135501355014, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "positive %s of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.005420054200542005, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any %s process that positively_regulates %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('positively regulates' some %s))"
+  vars:
+    - v0
+    - v1

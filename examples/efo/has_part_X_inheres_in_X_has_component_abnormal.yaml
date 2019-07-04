@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/efo'),trim(true),base('http://purl.obolibrary.org/obo/efo'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part X inheres_in X has component abnormal
+pattern_iri: http://purl.obolibrary.org/obo/efo/has_part_X_inheres_in_X_has_component_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Gingival bleeding](http://purl.obolibrary.org/obo/HP_0000225), [Hepatic fibrosis](http://purl.obolibrary.org/obo/HP_0001395), [hepatitis](http://purl.obolibrary.org/obo/HP_0012115) (17 total)
+
+classes: 
+  abnormal: "PATO:0000460"
+  experimental factor: "EFO:0000001"
+  quality: "http://www.ifomis.org/bfo/1.1/snap#Quality"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'quality'"
+  v1: "'experimental factor'"
+
+name:
+  # Could not induce name, using default
+  text: "has part %s inheres_in %s has component abnormal"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "has part a Any %s that inheres_in a %s and has component a abnormal"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some (%s and ('inheres_in' some %s) and ('has component' some 'abnormal')))"
+  vars:
+    - v0
+    - v1

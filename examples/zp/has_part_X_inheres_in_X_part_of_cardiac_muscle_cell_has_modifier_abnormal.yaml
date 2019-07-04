@@ -1,0 +1,66 @@
+# options: [min(50),dir('examples/zp'),trim(true),base('http://purl.obolibrary.org/obo/zp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part X inheres in X part of cardiac muscle cell has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/zp/has_part_X_inheres_in_X_part_of_cardiac_muscle_cell_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [nucleus cardiac muscle cell morphology, abnormal](http://purl.obolibrary.org/obo/ZP_0101958), [mitochondrion cardiac muscle cell morphology, abnormal](http://purl.obolibrary.org/obo/ZP_0019327), [Z disc cardiac muscle cell shape, abnormal](http://purl.obolibrary.org/obo/ZP_0000756) (59 total)
+
+classes: 
+  basal side: "http://purl.obolibrary.org/obo/BSPO_0000058"
+  nucleus: "GO:0005634"
+  mitochondrion: "GO:0005739"
+  autophagosome: "GO:0005776"
+  striated muscle myosin thick filament: "GO:0005863"
+  striated muscle thin filament: "GO:0005865"
+  intercalated disc: "GO:0014704"
+  apical plasma membrane: "GO:0016324"
+  sarcomere: "GO:0030017"
+  Z disc: "GO:0030018"
+  A band: "GO:0031672"
+  H zone: "GO:0031673"
+  I band: "GO:0031674"
+  actin filament bundle: "GO:0032432"
+  cell projection: "GO:0042995"
+  apical junction complex: "GO:0043296"
+  cardiac myofibril: "GO:0097512"
+  quality: "PATO:0000001"
+  abnormal: "PATO:0000460"
+  cardiac muscle cell: "http://purl.obolibrary.org/obo/ZFA_0009316"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'quality'"
+  v1: "'basal side' or 'nucleus' or 'mitochondrion' or 'autophagosome' or 'striated muscle myosin thick filament' or 'striated muscle thin filament' or 'intercalated disc' or 'apical plasma membrane' or 'sarcomere' or 'Z disc' or 'A band' or 'H zone' or 'I band' or 'actin filament bundle' or 'cell projection' or 'apical junction complex' or 'cardiac myofibril'"
+
+name:
+  # Induced, frequency=0.9661016949152542, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s cardiac muscle cell %s, abnormal"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.9661016949152542, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Abnormal(ly) %s (of) cardiac muscle cell of %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some (%s and ('inheres in' some (%s and ('part of' some 'cardiac muscle cell'))) and ('has modifier' some 'abnormal')))"
+  vars:
+    - v0
+    - v1

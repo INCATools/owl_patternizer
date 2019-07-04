@@ -1,0 +1,61 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X occurs in X
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_occurs_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [proteolysis within lysosome associated with antigen processing and presentation](http://purl.obolibrary.org/obo/GO_0002500), [extracellular transport](http://purl.obolibrary.org/obo/GO_0006858), [intracellular transport](http://purl.obolibrary.org/obo/GO_0046907) (22 total)
+
+classes: 
+  extracellular region: "GO:0005576"
+  intracellular: "GO:0005622"
+  lysosome: "GO:0005764"
+  biological_process: "GO:0008150"
+  membrane: "GO:0016020"
+  axon: "GO:0030424"
+  synapse: "GO:0045202"
+  presynapse: "GO:0098793"
+  postsynapse: "GO:0098794"
+
+
+relations: 
+  occurs in: "BFO:0000066"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'extracellular region' or 'intracellular' or 'lysosome' or 'membrane' or 'axon' or 'synapse' or 'presynapse' or 'postsynapse'"
+
+name:
+  # Induced, frequency=0.3181818181818182, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.09090909090909091, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any process, acting in the %s that results in %s."
+  vars:
+    - v1
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s in %s"
+    vars:
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "(%s and ('occurs in' some %s))"
+  vars:
+    - v0
+    - v1

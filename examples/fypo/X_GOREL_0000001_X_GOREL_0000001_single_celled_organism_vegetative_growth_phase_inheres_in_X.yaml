@@ -1,0 +1,69 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X GOREL_0000001 X GOREL_0000001 single-celled organism vegetative growth phase inheres_in X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_GOREL_0000001_X_GOREL_0000001_single_celled_organism_vegetative_growth_phase_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [arrested mitotic spindle elongation during anaphase B](http://purl.obolibrary.org/obo/FYPO_0004830), [increased duration of protein localization to mitotic spindle pole body during anaphase](http://purl.obolibrary.org/obo/FYPO_0005096), [increased duration of protein localization to telomere during mitotic anaphase B](http://purl.obolibrary.org/obo/FYPO_0006285) (110 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  single-celled organism vegetative growth phase: "GO:0072690"
+  quality: "PATO:0000001"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  GOREL_0000001: "http://purl.obolibrary.org/obo/GOREL_0000001"
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'quality'"
+  v1: "'biological_process'"
+  v2: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.08181818181818182, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of %s during %s"
+  vars:
+    - v0
+    - v2
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that GOREL_0000001 a %s and GOREL_0000001 a single-celled organism vegetative growth phase and inheres_in a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s during %s"
+    vars:
+      - v0
+      - v2
+      - v1
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s of %s during %s during mitotic cell cycle"
+    vars:
+      - v0
+      - v2
+      - v1
+
+
+equivalentTo:
+  text: "(%s and ('GOREL_0000001' some %s) and ('GOREL_0000001' some 'single-celled organism vegetative growth phase') and ('inheres_in' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

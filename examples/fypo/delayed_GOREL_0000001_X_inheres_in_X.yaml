@@ -1,0 +1,55 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: delayed GOREL_0000001 X inheres_in X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/delayed_GOREL_0000001_X_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [delayed onset of cell cycle arrest in mitotic G1 phase in response to pheromone](http://purl.obolibrary.org/obo/FYPO_0004074), [delayed onset of protein localization to spindle during meiosis I](http://purl.obolibrary.org/obo/FYPO_0005635), [delayed onset of transcription during glucose starvation](http://purl.obolibrary.org/obo/FYPO_0006355) (43 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  delayed: "PATO:0000502"
+
+
+relations: 
+  GOREL_0000001: "http://purl.obolibrary.org/obo/GOREL_0000001"
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'biological_process'"
+
+name:
+  # Could not induce name, using default
+  text: "delayed GOREL_0000001 %s inheres_in %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any delayed that GOREL_0000001 a %s and inheres_in a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "delayed onset of %s during %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "('delayed' and ('GOREL_0000001' some %s) and ('inheres_in' some %s))"
+  vars:
+    - v0
+    - v1

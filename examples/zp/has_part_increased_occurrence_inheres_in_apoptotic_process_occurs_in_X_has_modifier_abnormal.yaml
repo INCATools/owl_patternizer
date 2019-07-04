@@ -1,0 +1,46 @@
+# options: [min(50),dir('examples/zp'),trim(true),base('http://purl.obolibrary.org/obo/zp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part increased occurrence inheres in apoptotic process occurs in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/zp/has_part_increased_occurrence_inheres_in_apoptotic_process_occurs_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [brain increased occurrence apoptotic process, abnormal](http://purl.obolibrary.org/obo/ZP_0009002), [central nervous system increased occurrence apoptotic process, abnormal](http://purl.obolibrary.org/obo/ZP_0019207), [endoderm increased occurrence apoptotic process, abnormal](http://purl.obolibrary.org/obo/ZP_0013909) (83 total)
+
+classes: 
+  apoptotic process: "GO:0006915"
+  abnormal: "PATO:0000460"
+  increased occurrence: "PATO:0002051"
+  anatomical structure: "http://purl.obolibrary.org/obo/ZFA_0000037"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s increased occurrence apoptotic process, abnormal"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Abnormal(ly) increased occurrence (of) %s of apoptotic process."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some ('increased occurrence' and ('inheres in' some ('apoptotic process' and ('occurs in' some %s))) and ('has modifier' some 'abnormal')))"
+  vars:
+    - v0

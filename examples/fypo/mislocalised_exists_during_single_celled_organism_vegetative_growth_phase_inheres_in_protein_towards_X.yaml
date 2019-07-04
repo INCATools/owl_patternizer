@@ -1,0 +1,58 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: mislocalised exists_during single-celled organism vegetative growth phase inheres_in protein towards X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/mislocalised_exists_during_single_celled_organism_vegetative_growth_phase_inheres_in_protein_towards_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [protein mislocalized to centromere](http://purl.obolibrary.org/obo/FYPO_0001796), [protein mislocalized to nucleus during vegetative growth](http://purl.obolibrary.org/obo/FYPO_0000784), [protein mislocalized to nucleoplasm](http://purl.obolibrary.org/obo/FYPO_0002843) (20 total)
+
+classes: 
+  protein: "http://purl.obolibrary.org/obo/CHEBI_36080"
+  cell part: "GO:0044464"
+  single-celled organism vegetative growth phase: "GO:0072690"
+  mislocalised: "PATO:0000628"
+
+
+relations: 
+  exists_during: "http://purl.obolibrary.org/obo/GOREL_0000032"
+  inheres_in: "RO:0000052"
+  towards: "RO:0002503"
+
+
+vars:
+  v0: "'cell part'"
+
+name:
+  # Induced, frequency=0.7, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "protein mislocalized to %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.45, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A cell phenotype observed in the vegetative growth phase of the life cycle in which a protein that is not normally found in the %s is observed there."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "protein mislocalised to %s during vegetative growth"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "protein mislocalized to %s during mitotic cell cycle"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('mislocalised' and ('exists_during' some 'single-celled organism vegetative growth phase') and ('inheres_in' some 'protein') and ('towards' some %s))"
+  vars:
+    - v0

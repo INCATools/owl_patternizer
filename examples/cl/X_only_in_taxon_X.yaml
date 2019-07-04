@@ -1,0 +1,55 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X only in taxon X
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_only_in_taxon_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Mus musculus protein](http://purl.obolibrary.org/obo/PR_000029032), [Rattus norvegicus protein](http://purl.obolibrary.org/obo/PR_000029033), [viral protein](http://purl.obolibrary.org/obo/PR_000036197) (464 total)
+
+classes: 
+  root: "http://purl.obolibrary.org/obo/NCBITaxon_1"
+  organism: "http://purl.obolibrary.org/obo/OBI_0100026"
+  protein: "http://purl.obolibrary.org/obo/PR_000000001"
+
+
+relations: 
+  only in taxon: "RO:0002160"
+
+
+vars:
+  v0: "'protein'"
+  v1: "'root' or 'organism'"
+
+name:
+  # Induced, frequency=0.8318965517241379, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s (%s)"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.7737068965517241, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is encoded in the genome of %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s%s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('only in taxon' some %s))"
+  vars:
+    - v0
+    - v1

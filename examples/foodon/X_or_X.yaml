@@ -1,0 +1,45 @@
+# options: [min(10),dir('examples/foodon'),trim(true),base('http://purl.obolibrary.org/obo/foodon'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X-or-X
+pattern_iri: http://purl.obolibrary.org/obo/foodon/X_or_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [canola or rapeseed oil](http://purl.obolibrary.org/obo/FOODON_03460851), [FOODON_03412255](http://purl.obolibrary.org/obo/FOODON_03412255), [FOODON_03412126](http://purl.obolibrary.org/obo/FOODON_03412126) (11 total)
+
+classes: 
+  owl:Thing: "owl:Thing"
+
+
+relations: []
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
+
+name:
+  # Could not induce name, using default
+  text: "%s/%s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s or %s"
+  vars:
+    - v0
+    - v1

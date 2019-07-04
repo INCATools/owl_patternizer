@@ -1,0 +1,48 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X negatively regulates X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_negatively_regulates_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [negative regulation of mitotic sister chromatid segregation](http://purl.obolibrary.org/obo/GO_0033048), [negative regulation of cell cycle checkpoint](http://purl.obolibrary.org/obo/GO_1901977), [negative regulation of G1/S transition of mitotic cell cycle](http://purl.obolibrary.org/obo/GO_2000134) (73 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  negatively regulates: "RO:0002212"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'owl:Thing'"
+
+name:
+  # Could not induce name, using default
+  text: "%s negatively regulates %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that negatively regulates a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('negatively regulates' some %s))"
+  vars:
+    - v0
+    - v1

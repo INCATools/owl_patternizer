@@ -1,0 +1,50 @@
+# options: [min(50),dir('examples/zp'),trim(true),base('http://purl.obolibrary.org/obo/zp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part detached from inheres in X towards X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/zp/has_part_detached_from_inheres_in_X_towards_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [forerunner cell group detached from forerunner cell group, abnormal](http://purl.obolibrary.org/obo/ZP_0005381), [lens detached from retina, abnormal](http://purl.obolibrary.org/obo/ZP_0011869), [retinal neural layer detached from retinal pigmented epithelium, abnormal](http://purl.obolibrary.org/obo/ZP_0007852) (80 total)
+
+classes: 
+  continuant: "BFO:0000002"
+  abnormal: "PATO:0000460"
+  detached from: "PATO:0001453"
+  zebrafish anatomical entity: "http://purl.obolibrary.org/obo/ZFA_0100000"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'continuant' or 'zebrafish anatomical entity'"
+  v1: "'continuant' or 'zebrafish anatomical entity'"
+
+name:
+  # Induced, frequency=0.5875, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s detached from %s, abnormal"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.5875, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Abnormal(ly) detached from (of) %s (%s)."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some ('detached from' and ('inheres in' some %s) and ('towards' some %s) and ('has modifier' some 'abnormal')))"
+  vars:
+    - v0
+    - v1

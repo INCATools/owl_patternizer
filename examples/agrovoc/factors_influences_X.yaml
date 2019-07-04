@@ -1,0 +1,50 @@
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: factors influences X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/factors_influences_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [climatic factors](http://aims.fao.org/aos/agrovoc/c_29554), [cultural factors](http://aims.fao.org/aos/agrovoc/c_9000026), [environmental factors](http://aims.fao.org/aos/agrovoc/c_2594) (7 total)
+
+classes: 
+  climatic zones: "http://aims.fao.org/aos/agrovoc/c_1669"
+  cultural values: "http://aims.fao.org/aos/agrovoc/c_28661"
+  factors: "http://aims.fao.org/aos/agrovoc/c_331093"
+  environmental degradation: "http://aims.fao.org/aos/agrovoc/c_34821"
+  meteorological observations: "http://aims.fao.org/aos/agrovoc/c_4780"
+  production possibilities: "http://aims.fao.org/aos/agrovoc/c_6207"
+  risk: "http://aims.fao.org/aos/agrovoc/c_6612"
+  yields: "http://aims.fao.org/aos/agrovoc/c_8488"
+
+
+relations: 
+  influences: "http://aims.fao.org/aos/agrontology#influences"
+
+
+vars:
+  v0: "'climatic zones' or 'cultural values' or 'environmental degradation' or 'meteorological observations' or 'production possibilities' or 'risk' or 'yields'"
+
+name:
+  # Induced, frequency=0.14285714285714285, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s factors"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any factors that influences a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('factors' and ('influences' some %s))"
+  vars:
+    - v0

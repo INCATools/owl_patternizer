@@ -1,0 +1,44 @@
+# options: [min(12),dir('examples/emapa'),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: costal cartilage part_of X
+pattern_iri: http://purl.obolibrary.org/obo/emapa/costal_cartilage_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [T1 rib costal cartilage](http://purl.obolibrary.org/obo/EMAPA_25116), [T2 rib costal cartilage](http://purl.obolibrary.org/obo/EMAPA_25706), [T3 rib costal cartilage](http://purl.obolibrary.org/obo/EMAPA_25709) (13 total)
+
+classes: 
+  rib: "http://purl.obolibrary.org/obo/EMAPA_18010"
+  costal cartilage: "http://purl.obolibrary.org/obo/EMAPA_35262"
+
+
+relations: 
+  part_of: "http://purl.obolibrary.org/obo/emapa#part_of"
+
+
+vars:
+  v0: "'rib'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s costal cartilage"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any costal cartilage that part_of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('costal cartilage' and ('part_of' some %s))"
+  vars:
+    - v0

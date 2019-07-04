@@ -1,0 +1,44 @@
+# options: [min(12),dir('examples/emapa'),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: blood vessel part_of X
+pattern_iri: http://purl.obolibrary.org/obo/emapa/blood_vessel_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [heart blood vessel](http://purl.obolibrary.org/obo/EMAPA_35397), [arterial blood vessel](http://purl.obolibrary.org/obo/EMAPA_35144), [venous blood vessel](http://purl.obolibrary.org/obo/EMAPA_35932) (22 total)
+
+classes: 
+  blood vessel: "http://purl.obolibrary.org/obo/EMAPA_32743"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  part_of: "http://purl.obolibrary.org/obo/emapa#part_of"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.8181818181818182, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s blood vessel"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any blood vessel that part_of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('blood vessel' and ('part_of' some %s))"
+  vars:
+    - v0

@@ -1,0 +1,51 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X forelimb
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_X_forelimb
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [forelimb skin](http://purl.obolibrary.org/obo/UBERON_0003531), [lymph node of upper limb](http://purl.obolibrary.org/obo/UBERON_0016399), [forelimb joint](http://purl.obolibrary.org/obo/UBERON_0003839) (22 total)
+
+classes: 
+  continuant: "BFO:0000002"
+  part of: "BFO:0000050"
+  innervates: "RO:0002134"
+  has potential to develop into: "RO:0002387"
+  skeleton of: "RO:0002576"
+  anatomical entity: "UBERON:0001062"
+  forelimb: "UBERON:0002102"
+
+
+relations: []
+
+vars:
+  v0: "'continuant' or 'anatomical entity'"
+  v1: "'part of' or 'innervates' or 'has potential to develop into' or 'skeleton of'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s forelimb"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.2727272727272727, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that %s a forelimb [Automatically generated definition]."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and (%s some 'forelimb'))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,63 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X GOREL_0000001 X GOREL_0000001 single-celled organism vegetative growth phase inheres_in protein phosphorylation
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_GOREL_0000001_X_GOREL_0000001_single_celled_organism_vegetative_growth_phase_inheres_in_protein_phosphorylation
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased duration of protein phosphorylation during cellular response to phosphate starvation](http://purl.obolibrary.org/obo/FYPO_0006229), [increased duration of protein phosphorylation during cellular response to osmotic stress](http://purl.obolibrary.org/obo/FYPO_0006718), [increased duration of protein phosphorylation during cellular response to salt stress](http://purl.obolibrary.org/obo/FYPO_0004062) (30 total)
+
+classes: 
+  protein phosphorylation: "GO:0006468"
+  biological_process: "GO:0008150"
+  single-celled organism vegetative growth phase: "GO:0072690"
+  physical quality of a process: "PATO:0002062"
+
+
+relations: 
+  GOREL_0000001: "http://purl.obolibrary.org/obo/GOREL_0000001"
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'physical quality of a process'"
+  v1: "'biological_process'"
+
+name:
+  # Induced, frequency=0.2, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of protein phosphorylation during %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that GOREL_0000001 a %s and GOREL_0000001 a single-celled organism vegetative growth phase and inheres_in a protein phosphorylation"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of protein phosphorylation during %s during vegetative growth"
+    vars:
+      - v0
+      - v1
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s of protein phosphorylation during %s during mitotic cell cycle"
+    vars:
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "(%s and ('GOREL_0000001' some %s) and ('GOREL_0000001' some 'single-celled organism vegetative growth phase') and ('inheres_in' some 'protein phosphorylation'))"
+  vars:
+    - v0
+    - v1

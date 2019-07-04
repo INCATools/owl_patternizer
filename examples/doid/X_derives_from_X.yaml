@@ -1,0 +1,48 @@
+# options: [min(25),dir('examples/doid'),trim(true),base('http://purl.obolibrary.org/obo/doid'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X derives_from X
+pattern_iri: http://purl.obolibrary.org/obo/doid/X_derives_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [in situ carcinoma](http://purl.obolibrary.org/obo/DOID_8719), [cell type benign neoplasm](http://purl.obolibrary.org/obo/DOID_0060084), [benign mastocytoma](http://purl.obolibrary.org/obo/DOID_4658) (27 total)
+
+classes: 
+  disease of cellular proliferation: "http://purl.obolibrary.org/obo/DOID_14566"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  derives_from: "http://purl.obolibrary.org/obo/doid#derives_from"
+
+
+vars:
+  v0: "'disease of cellular proliferation'"
+  v1: "'owl:Thing'"
+
+name:
+  # Could not induce name, using default
+  text: "%s derives_from %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that derives_from a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('derives_from' some %s))"
+  vars:
+    - v0
+    - v1

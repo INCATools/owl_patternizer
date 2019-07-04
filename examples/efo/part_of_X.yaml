@@ -1,0 +1,43 @@
+# options: [min(10),dir('examples/efo'),trim(true),base('http://purl.obolibrary.org/obo/efo'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: part_of X
+pattern_iri: http://purl.obolibrary.org/obo/efo/part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [hippocampus](http://purl.obolibrary.org/obo/MA_0000191), [flower](http://purl.obolibrary.org/obo/PO_0009046), [leaf component](http://www.ebi.ac.uk/efo/EFO_0001983) (24 total)
+
+classes: 
+  anatomy basic component: "EFO:0000786"
+
+
+relations: 
+  part_of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomy basic component'"
+
+name:
+  # Induced, frequency=0.5833333333333334, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5416666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('part_of' some %s)"
+  vars:
+    - v0

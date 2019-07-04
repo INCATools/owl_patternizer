@@ -1,0 +1,58 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: morphology exists_during single-celled organism vegetative growth phase inheres_in X qualifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/fypo/morphology_exists_during_single_celled_organism_vegetative_growth_phase_inheres_in_X_qualifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal vacuolar morphology during vegetative growth](http://purl.obolibrary.org/obo/FYPO_0000368), [abnormal kinetochore morphology during vegetative growth](http://purl.obolibrary.org/obo/FYPO_0000050), [abnormal telomere morphology during vegetative growth](http://purl.obolibrary.org/obo/FYPO_0002254) (27 total)
+
+classes: 
+  cell part: "GO:0044464"
+  single-celled organism vegetative growth phase: "GO:0072690"
+  morphology: "PATO:0000051"
+  abnormal: "PATO:0000460"
+
+
+relations: 
+  exists_during: "http://purl.obolibrary.org/obo/GOREL_0000032"
+  inheres_in: "RO:0000052"
+  qualifier: "http://purl.obolibrary.org/obo/fypo#qualifier"
+
+
+vars:
+  v0: "'cell part'"
+
+name:
+  # Induced, frequency=0.4074074074074074, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "abnormal %s morphology"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.6296296296296297, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A physical cellular phenotype observed in the vegetative growth phase of the life cycle in which the size, shape, or structure of the %s is abnormal."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "abnormal %s morphology during vegetative growth"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "abnormal %s morphology during mitotic cell cycle"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('morphology' and ('exists_during' some 'single-celled organism vegetative growth phase') and ('inheres_in' some %s) and ('qualifier' some 'abnormal'))"
+  vars:
+    - v0

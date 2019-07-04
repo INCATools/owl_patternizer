@@ -1,0 +1,53 @@
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X hasTheme X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_hasTheme_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [microbial ecology](http://aims.fao.org/aos/agrovoc/c_24111), [population ecology](http://aims.fao.org/aos/agrovoc/c_37336), [animal histology](http://aims.fao.org/aos/agrovoc/c_27959) (6 total)
+
+classes: 
+  management: "http://aims.fao.org/aos/agrovoc/c_16086"
+  microbial flora: "http://aims.fao.org/aos/agrovoc/c_16367"
+  animal nutrition: "http://aims.fao.org/aos/agrovoc/c_27925"
+  animal tissues: "http://aims.fao.org/aos/agrovoc/c_27963"
+  sciences: "http://aims.fao.org/aos/agrovoc/c_37989"
+  marine geology: "http://aims.fao.org/aos/agrovoc/c_4612"
+  plant population: "http://aims.fao.org/aos/agrovoc/c_5975"
+
+
+relations: 
+  hasTheme: "http://aims.fao.org/aos/agrontology#hasTheme"
+
+
+vars:
+  v0: "'sciences'"
+  v1: "'management' or 'microbial flora' or 'animal nutrition' or 'animal tissues' or 'marine geology' or 'plant population'"
+
+name:
+  # Induced, frequency=0.16666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that hasTheme a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('hasTheme' some %s))"
+  vars:
+    - v0
+    - v1

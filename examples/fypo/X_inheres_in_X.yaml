@@ -1,0 +1,47 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X inheres_in X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [molecular function phenotype](http://purl.obolibrary.org/obo/FYPO_0000652), [DNA binding phenotype](http://purl.obolibrary.org/obo/FYPO_0000653), [RNA binding phenotype](http://purl.obolibrary.org/obo/FYPO_0002131) (412 total)
+
+classes: 
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.055825242718446605, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.014563106796116505, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A cellular process phenotype in which %s begins %sr than normal."
+  vars:
+    - v1
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('inheres_in' some %s))"
+  vars:
+    - v0
+    - v1

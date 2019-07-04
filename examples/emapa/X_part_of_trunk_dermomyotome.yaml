@@ -1,0 +1,45 @@
+# options: [min(12),dir('examples/emapa'),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part_of trunk dermomyotome
+pattern_iri: http://purl.obolibrary.org/obo/emapa/X_part_of_trunk_dermomyotome
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [trunk dermatome](http://purl.obolibrary.org/obo/EMAPA_32840), [trunk myotome](http://purl.obolibrary.org/obo/EMAPA_32843), [somite 05 dermomyotome](http://purl.obolibrary.org/obo/EMAPA_16414) (28 total)
+
+classes: 
+  trunk dermomyotome: "http://purl.obolibrary.org/obo/EMAPA_29695"
+  dermatome: "http://purl.obolibrary.org/obo/EMAPA_32838"
+  myotome: "http://purl.obolibrary.org/obo/EMAPA_32841"
+
+
+relations: 
+  part_of: "http://purl.obolibrary.org/obo/emapa#part_of"
+
+
+vars:
+  v0: "'dermatome' or 'myotome'"
+
+name:
+  # Induced, frequency=0.07142857142857142, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "trunk %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that part_of a trunk dermomyotome"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('part_of' some 'trunk dermomyotome'))"
+  vars:
+    - v0

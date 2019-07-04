@@ -1,0 +1,48 @@
+# options: [min(5),dir('examples/fao'),trim(true),base('http://purl.obolibrary.org/obo/fao'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of X
+pattern_iri: http://purl.obolibrary.org/obo/fao/X_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ascospore in ascocarp-bound ascus](http://purl.obolibrary.org/obo/FAO_0000013), [ascospore in free ascus](http://purl.obolibrary.org/obo/FAO_0000016), [hypha in mycelium](http://purl.obolibrary.org/obo/FAO_0001003) (7 total)
+
+classes: 
+  fungal structure: "http://purl.obolibrary.org/obo/FAO_0000001"
+  multicellular fungal structure, multicellular organism: "http://purl.obolibrary.org/obo/FAO_0002004"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'fungal structure'"
+  v1: "'multicellular fungal structure, multicellular organism'"
+
+name:
+  # Induced, frequency=0.42857142857142855, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s in %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that part of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('part of' some %s))"
+  vars:
+    - v0
+    - v1

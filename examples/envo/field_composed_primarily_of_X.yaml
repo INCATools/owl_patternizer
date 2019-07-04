@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: field composed primarily of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/field_composed_primarily_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [sea ice field](http://purl.obolibrary.org/obo/ENVO_01001531), [gravel field](http://purl.obolibrary.org/obo/ENVO_00000548), [marine mesoscale eddy field](http://purl.obolibrary.org/obo/ENVO_01000353) (4 total)
+
+classes: 
+  fiat object: "BFO:0000024"
+  field: "ENVO:01000352"
+
+
+relations: 
+  composed primarily of: "RO:0002473"
+
+
+vars:
+  v0: "'fiat object'"
+
+name:
+  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s field"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A field of %s, formed in regions of perennial frost."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('field' and ('composed primarily of' some %s))"
+  vars:
+    - v0

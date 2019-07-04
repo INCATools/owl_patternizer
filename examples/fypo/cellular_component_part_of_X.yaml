@@ -1,0 +1,48 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: cellular_component part_of X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/cellular_component_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [nuclear chromosome part](http://purl.obolibrary.org/obo/GO_0044454), [intracellular part](http://purl.obolibrary.org/obo/GO_0044424), [cell part](http://purl.obolibrary.org/obo/GO_0044464) (22 total)
+
+classes: 
+  cellular_component: "GO:0005575"
+
+
+relations: 
+  part_of: "BFO:0000050"
+
+
+vars:
+  v0: "'cellular_component'"
+
+name:
+  # Induced, frequency=0.6818181818181818, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s part"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any cellular_component that part_of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s component"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('cellular_component' and ('part_of' some %s))"
+  vars:
+    - v0

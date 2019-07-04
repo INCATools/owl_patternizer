@@ -1,0 +1,56 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X during single-celled organism vegetative growth phase inheres_in X qualifier X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_during_single_celled_organism_vegetative_growth_phase_inheres_in_X_qualifier_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [normal 1,3-beta-D-glucan synthase activity during vegetative growth](http://purl.obolibrary.org/obo/FYPO_0004893), [normal mitotic cell cycle checkpoint](http://purl.obolibrary.org/obo/FYPO_0001703), [normal mitotic spindle assembly checkpoint](http://purl.obolibrary.org/obo/FYPO_0003762) (191 total)
+
+classes: 
+  single-celled organism vegetative growth phase: "GO:0072690"
+  quality: "PATO:0000001"
+  deviation(from_normal): "PATO:0000069"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  during: "http://purl.obolibrary.org/obo/GOREL_0000002"
+  inheres_in: "RO:0000052"
+  qualifier: "http://purl.obolibrary.org/obo/fypo#qualifier"
+
+
+vars:
+  v0: "'quality'"
+  v1: "'owl:Thing'"
+  v2: "'deviation(from_normal)'"
+
+name:
+  # Could not induce name, using default
+  text: "%s during single-celled organism vegetative growth phase inheres_in %s qualifier %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that during a single-celled organism vegetative growth phase and inheres_in a %s and qualifier a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('during' some 'single-celled organism vegetative growth phase') and ('inheres_in' some %s) and ('qualifier' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

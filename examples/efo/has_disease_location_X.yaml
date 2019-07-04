@@ -1,0 +1,43 @@
+# options: [min(10),dir('examples/efo'),trim(true),base('http://purl.obolibrary.org/obo/efo'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has_disease_location X
+pattern_iri: http://purl.obolibrary.org/obo/efo/has_disease_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [motor neuron disease](http://www.ebi.ac.uk/efo/EFO_0003782), [parathyroid disease](http://www.ebi.ac.uk/efo/EFO_0005754), [ciliopathy](http://www.ebi.ac.uk/efo/EFO_0003900) (36 total)
+
+classes: 
+  material entity: "http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"
+
+
+relations: 
+  has_disease_location: "EFO:0000784"
+
+
+vars:
+  v0: "'material entity'"
+
+name:
+  # Induced, frequency=0.2777777777777778, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s disease"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "has_disease_location a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has_disease_location' some %s)"
+  vars:
+    - v0

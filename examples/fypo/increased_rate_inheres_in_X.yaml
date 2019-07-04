@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: increased rate inheres_in X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/increased_rate_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased ferric-chelate reductase activity](http://purl.obolibrary.org/obo/FYPO_0005176), [increased rate of re-entry into mitotic cell cycle after pheromone arrest](http://purl.obolibrary.org/obo/FYPO_0000559), [increased inositol hexakisphosphate kinase activity](http://purl.obolibrary.org/obo/FYPO_0006894) (69 total)
+
+classes: 
+  increased rate: "PATO:0000912"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.8840579710144928, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "increased %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.7391304347826086, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A molecular function phenotype in which the observed rate of %s is increased."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "increased %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('increased rate' and ('inheres_in' some %s))"
+  vars:
+    - v0

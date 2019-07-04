@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X lung
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_X_lung
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [fibroblast of lung](http://purl.obolibrary.org/obo/CL_0002553), [lung ciliated cell](http://purl.obolibrary.org/obo/CL_1000271), [epithelial cell of lung](http://purl.obolibrary.org/obo/CL_0000082) (25 total)
+
+classes: 
+  part of: "BFO:0000050"
+  drains: "RO:0002179"
+  has potential to develop into: "RO:0002387"
+  lung: "UBERON:0002048"
+  owl:Thing: "owl:Thing"
+
+
+relations: []
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'part of' or 'drains' or 'has potential to develop into'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s lung"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.12, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that %s a lung."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and (%s some 'lung'))"
+  vars:
+    - v0
+    - v1

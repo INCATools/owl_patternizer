@@ -1,0 +1,45 @@
+# options: [min(50),dir('examples/zp'),trim(true),base('http://purl.obolibrary.org/obo/zp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part X inheres in ceratohyal cartilage has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/zp/has_part_X_inheres_in_ceratohyal_cartilage_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ceratohyal cartilage quality, abnormal](http://purl.obolibrary.org/obo/ZP_0008320), [ceratohyal cartilage morphology, abnormal](http://purl.obolibrary.org/obo/ZP_0000921), [ceratohyal cartilage shape, abnormal](http://purl.obolibrary.org/obo/ZP_0011604) (51 total)
+
+classes: 
+  quality: "PATO:0000001"
+  abnormal: "PATO:0000460"
+  ceratohyal cartilage: "http://purl.obolibrary.org/obo/ZFA_0001400"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'quality'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "ceratohyal cartilage %s, abnormal"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Abnormal(ly) %s (of) ceratohyal cartilage."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some (%s and ('inheres in' some 'ceratohyal cartilage') and ('has modifier' some 'abnormal')))"
+  vars:
+    - v0

@@ -1,0 +1,61 @@
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X isMeansFor X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_isMeansFor_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [weight reduction diet](http://aims.fao.org/aos/agrovoc/c_17057), [cooking methods](http://aims.fao.org/aos/agrovoc/c_331045), [tanning agents](http://aims.fao.org/aos/agrovoc/c_28162) (8 total)
+
+classes: 
+  weight reduction: "http://aims.fao.org/aos/agrovoc/c_15301"
+  aerial surveying: "http://aims.fao.org/aos/agrovoc/c_156"
+  cooking: "http://aims.fao.org/aos/agrovoc/c_1851"
+  diet: "http://aims.fao.org/aos/agrovoc/c_2261"
+  nutrition surveillance: "http://aims.fao.org/aos/agrovoc/c_32498"
+  induced flowering: "http://aims.fao.org/aos/agrovoc/c_3841"
+  agents: "http://aims.fao.org/aos/agrovoc/c_49873"
+  photography: "http://aims.fao.org/aos/agrovoc/c_5808"
+  plant growth substances: "http://aims.fao.org/aos/agrovoc/c_5968"
+  postharvest control: "http://aims.fao.org/aos/agrovoc/c_6130"
+  seed certification: "http://aims.fao.org/aos/agrovoc/c_6929"
+  spraying: "http://aims.fao.org/aos/agrovoc/c_7334"
+  surveys: "http://aims.fao.org/aos/agrovoc/c_7537"
+  tanning: "http://aims.fao.org/aos/agrovoc/c_7605"
+  testing: "http://aims.fao.org/aos/agrovoc/c_7683"
+
+
+relations: 
+  isMeansFor: "http://aims.fao.org/aos/agrontology#isMeansFor"
+
+
+vars:
+  v0: "'diet' or 'agents' or 'photography' or 'plant growth substances' or 'spraying' or 'surveys' or 'testing'"
+  v1: "'weight reduction' or 'aerial surveying' or 'cooking' or 'nutrition surveillance' or 'induced flowering' or 'postharvest control' or 'seed certification' or 'tanning'"
+
+name:
+  # Induced, frequency=0.375, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that isMeansFor a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('isMeansFor' some %s))"
+  vars:
+    - v0
+    - v1

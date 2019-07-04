@@ -1,0 +1,49 @@
+# options: [min(50),dir('examples/zp'),trim(true),base('http://purl.obolibrary.org/obo/zp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part separated from inheres in X towards X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/zp/has_part_separated_from_inheres_in_X_towards_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [dorsal aorta separated from posterior cardinal vein, abnormal](http://purl.obolibrary.org/obo/ZP_0016712), [ectoderm separated from somite, abnormal](http://purl.obolibrary.org/obo/ZP_0104101), [retinal ganglion cell layer separated from retinal neural layer, abnormal](http://purl.obolibrary.org/obo/ZP_0101583) (56 total)
+
+classes: 
+  abnormal: "PATO:0000460"
+  separated from: "PATO:0001505"
+  anatomical structure: "http://purl.obolibrary.org/obo/ZFA_0000037"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'anatomical structure'"
+  v1: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.5892857142857143, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s separated from %s, abnormal"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.5892857142857143, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Abnormal(ly) separated from (of) %s (%s)."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some ('separated from' and ('inheres in' some %s) and ('towards' some %s) and ('has modifier' some 'abnormal')))"
+  vars:
+    - v0
+    - v1

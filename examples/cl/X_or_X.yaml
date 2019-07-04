@@ -1,0 +1,45 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X-or-X
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_or_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [CD7-negative lymphoid progenitor OR granulocyte monocyte progenitor](http://purl.obolibrary.org/obo/CL_0001012), [CD34-positive, CD38-positive common myeloid progenitor OR CD34-positive, CD38-positive common lymphoid progenitor](http://purl.obolibrary.org/obo/CL_0000995), [CD115-positive monocyte OR common dendritic progenitor](http://purl.obolibrary.org/obo/CL_0001019) (21 total)
+
+classes: 
+  owl:Thing: "owl:Thing"
+
+
+relations: []
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.09523809523809523, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s OR %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s or %s"
+  vars:
+    - v0
+    - v1

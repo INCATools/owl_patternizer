@@ -1,0 +1,49 @@
+# options: [min(8),dir('examples/po'),trim(true),base('http://purl.obolibrary.org/obo/po'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: epidermis part of X
+pattern_iri: http://purl.obolibrary.org/obo/po/epidermis_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [shoot-borne root epidermis](http://purl.obolibrary.org/obo/PO_0006039), [shoot axis tuber epidermis](http://purl.obolibrary.org/obo/PO_0025046), [subterranean tuber epidermis](http://purl.obolibrary.org/obo/PO_0025048) (34 total)
+
+classes: 
+  epidermis: "http://purl.obolibrary.org/obo/PO_0005679"
+  plant structure: "http://purl.obolibrary.org/obo/PO_0009011"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'plant structure'"
+
+name:
+  # Induced, frequency=0.9117647058823529, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s epidermis"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.08823529411764706, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A portion of leaf epidermis that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "epidermis del %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('epidermis' and ('part of' some %s))"
+  vars:
+    - v0

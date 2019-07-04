@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: bone element part of X
+pattern_iri: http://purl.obolibrary.org/obo/cl/bone_element_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [head bone](http://purl.obolibrary.org/obo/UBERON_0003457), [upper leg bone](http://purl.obolibrary.org/obo/UBERON_0003826), [thoracic segment bone](http://purl.obolibrary.org/obo/UBERON_0003827) (44 total)
+
+classes: 
+  bone element: "UBERON:0001474"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.4772727272727273, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s bone"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2727272727272727, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A bone that is part of a %s [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s bone"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('bone element' and ('part of' some %s))"
+  vars:
+    - v0

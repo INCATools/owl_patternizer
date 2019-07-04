@@ -1,0 +1,49 @@
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X isDerivedFrom fish
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_isDerivedFrom_fish
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [canned fish](http://aims.fao.org/aos/agrovoc/c_16479), [dried fish](http://aims.fao.org/aos/agrovoc/c_2381), [frozen fish](http://aims.fao.org/aos/agrovoc/c_3115) (7 total)
+
+classes: 
+  canned products: "http://aims.fao.org/aos/agrovoc/c_1259"
+  dried products: "http://aims.fao.org/aos/agrovoc/c_15740"
+  frozen products: "http://aims.fao.org/aos/agrovoc/c_15741"
+  fish: "http://aims.fao.org/aos/agrovoc/c_15903"
+  extracts: "http://aims.fao.org/aos/agrovoc/c_2767"
+  oils: "http://aims.fao.org/aos/agrovoc/c_5334"
+  protein concentrates: "http://aims.fao.org/aos/agrovoc/c_6250"
+
+
+relations: 
+  isDerivedFrom: "http://aims.fao.org/aos/agrontology#isDerivedFrom"
+
+
+vars:
+  v0: "'canned products' or 'dried products' or 'frozen products' or 'extracts' or 'oils' or 'protein concentrates'"
+
+name:
+  # Induced, frequency=0.42857142857142855, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "fish %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that isDerivedFrom a fish"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('isDerivedFrom' some 'fish'))"
+  vars:
+    - v0

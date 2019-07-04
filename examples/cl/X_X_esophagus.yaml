@@ -1,0 +1,66 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X esophagus
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_X_esophagus
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [epithelial cell of esophagus](http://purl.obolibrary.org/obo/CL_0002252), [glandular cell of esophagus](http://purl.obolibrary.org/obo/CL_0002657), [smooth muscle cell of the esophagus](http://purl.obolibrary.org/obo/CL_0002599) (23 total)
+
+classes: 
+  part of: "BFO:0000050"
+  glandular epithelial cell: "CL:0000150"
+  smooth muscle cell: "CL:0000192"
+  supplies: "RO:0002178"
+  luminal space of: "RO:0002572"
+  submucosa: "UBERON:0000009"
+  lamina propria: "UBERON:0000030"
+  anatomical wall: "UBERON:0000060"
+  mucosa: "UBERON:0000344"
+  secretion of exocrine gland: "UBERON:0000456"
+  anatomical space: "UBERON:0000464"
+  esophagus: "UBERON:0001043"
+  skeletal muscle tissue: "UBERON:0001134"
+  artery: "UBERON:0001637"
+  taste bud: "UBERON:0001727"
+  mesentery: "UBERON:0002095"
+  sphincter muscle: "UBERON:0004590"
+  adventitia: "UBERON:0005742"
+  muscular coat: "UBERON:0006660"
+  muscularis mucosa: "UBERON:0006676"
+  squamous epithelium: "UBERON:0006914"
+  submucosal gland: "UBERON:0011148"
+
+
+relations: []
+
+vars:
+  v0: "'glandular epithelial cell' or 'smooth muscle cell' or 'submucosa' or 'lamina propria' or 'anatomical wall' or 'mucosa' or 'secretion of exocrine gland' or 'anatomical space' or 'skeletal muscle tissue' or 'artery' or 'taste bud' or 'mesentery' or 'sphincter muscle' or 'adventitia' or 'muscular coat' or 'muscularis mucosa' or 'squamous epithelium' or 'submucosal gland'"
+  v1: "'part of' or 'supplies' or 'luminal space of'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s esophagus"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.2608695652173913, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that %s a esophagus [Automatically generated definition]."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and (%s some 'esophagus'))"
+  vars:
+    - v0
+    - v1

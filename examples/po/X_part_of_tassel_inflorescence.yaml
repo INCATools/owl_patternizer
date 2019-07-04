@@ -1,0 +1,49 @@
+# options: [min(8),dir('examples/po'),trim(true),base('http://purl.obolibrary.org/obo/po'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of tassel inflorescence
+pattern_iri: http://purl.obolibrary.org/obo/po/X_part_of_tassel_inflorescence
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [tassel meristem](http://purl.obolibrary.org/obo/PO_0009106), [tassel spikelet pair meristem](http://purl.obolibrary.org/obo/PO_0006358), [tassel spikelet](http://purl.obolibrary.org/obo/PO_0006309) (8 total)
+
+classes: 
+  plant structure: "http://purl.obolibrary.org/obo/PO_0009011"
+  tassel inflorescence: "http://purl.obolibrary.org/obo/PO_0020126"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'plant structure'"
+
+name:
+  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "tassel %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.125, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s (PO:0009051) that is part of the tassel inflorescence (PO:0020126) and bears tassel florets (PO:0006310) at maturity."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "雄穂（花）の%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'tassel inflorescence'))"
+  vars:
+    - v0

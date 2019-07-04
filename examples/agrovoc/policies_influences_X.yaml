@@ -1,0 +1,59 @@
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: policies influences X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/policies_influences_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [nutrition policies](http://aims.fao.org/aos/agrovoc/c_32497), [export policies](http://aims.fao.org/aos/agrovoc/c_28685), [price policies](http://aims.fao.org/aos/agrovoc/c_6179) (16 total)
+
+classes: 
+  human nutrition: "http://aims.fao.org/aos/agrovoc/c_27933"
+  export credits: "http://aims.fao.org/aos/agrovoc/c_28683"
+  price stabilization: "http://aims.fao.org/aos/agrovoc/c_28746"
+  agricultural planning: "http://aims.fao.org/aos/agrovoc/c_28825"
+  food aid: "http://aims.fao.org/aos/agrovoc/c_3012"
+  forestry: "http://aims.fao.org/aos/agrovoc/c_3055"
+  structural change: "http://aims.fao.org/aos/agrovoc/c_34340"
+  energy technology: "http://aims.fao.org/aos/agrovoc/c_37873"
+  international trade: "http://aims.fao.org/aos/agrovoc/c_3919"
+  educational systems: "http://aims.fao.org/aos/agrovoc/c_50113"
+  policies: "http://aims.fao.org/aos/agrovoc/c_6062"
+  production: "http://aims.fao.org/aos/agrovoc/c_6200"
+  regional development: "http://aims.fao.org/aos/agrovoc/c_6488"
+  research: "http://aims.fao.org/aos/agrovoc/c_6513"
+  rural development: "http://aims.fao.org/aos/agrovoc/c_6701"
+  social services: "http://aims.fao.org/aos/agrovoc/c_7134"
+  environmental conventions: "http://aims.fao.org/aos/agrovoc/c_9000052"
+
+
+relations: 
+  influences: "http://aims.fao.org/aos/agrontology#influences"
+
+
+vars:
+  v0: "'human nutrition' or 'export credits' or 'price stabilization' or 'agricultural planning' or 'food aid' or 'forestry' or 'structural change' or 'energy technology' or 'international trade' or 'educational systems' or 'production' or 'regional development' or 'research' or 'rural development' or 'social services' or 'environmental conventions'"
+
+name:
+  # Induced, frequency=0.1875, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s policies"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any policies that influences a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('policies' and ('influences' some %s))"
+  vars:
+    - v0

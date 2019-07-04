@@ -1,0 +1,48 @@
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: management hasObjectOfActivity X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/management_hasObjectOfActivity_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [energy management](http://aims.fao.org/aos/agrovoc/c_24837), [forest genetic resources management](http://aims.fao.org/aos/agrovoc/c_1374841888067), [forest management](http://aims.fao.org/aos/agrovoc/c_16129) (6 total)
+
+classes: 
+  management: "http://aims.fao.org/aos/agrovoc/c_16086"
+  energy resources: "http://aims.fao.org/aos/agrovoc/c_28006"
+  forest genetic resources: "http://aims.fao.org/aos/agrovoc/c_331594"
+  model forests: "http://aims.fao.org/aos/agrovoc/c_331599"
+  human resources: "http://aims.fao.org/aos/agrovoc/c_3684"
+  wildlife: "http://aims.fao.org/aos/agrovoc/c_8389"
+
+
+relations: 
+  hasObjectOfActivity: "http://aims.fao.org/aos/agrontology#hasObjectOfActivity"
+
+
+vars:
+  v0: "'energy resources' or 'forest genetic resources' or 'model forests' or 'human resources' or 'wildlife'"
+
+name:
+  # Induced, frequency=0.6666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s management"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any management that hasObjectOfActivity a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('management' and ('hasObjectOfActivity' some %s))"
+  vars:
+    - v0

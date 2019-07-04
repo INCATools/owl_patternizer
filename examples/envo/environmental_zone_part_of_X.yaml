@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: environmental zone part of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/environmental_zone_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [terrestrial environmental zone](http://purl.obolibrary.org/obo/ENVO_01001199), [atmospheric zone](http://purl.obolibrary.org/obo/ENVO_01001299), [marine environmental zone](http://purl.obolibrary.org/obo/ENVO_01001201) (4 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  environmental zone: "ENVO:01000408"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material entity'"
+
+name:
+  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%sal zone"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An environmental zone which is bounded by material parts of a %s mass or the atmosphere or space adjacent to it."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('environmental zone' and ('part of' some %s))"
+  vars:
+    - v0

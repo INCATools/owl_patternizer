@@ -1,0 +1,46 @@
+# options: [min(50),dir('examples/zp'),trim(true),base('http://purl.obolibrary.org/obo/zp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part decreased diameter inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/zp/has_part_decreased_diameter_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [artery decreased diameter, abnormal](http://purl.obolibrary.org/obo/ZP_0020155), [brain decreased diameter, abnormal](http://purl.obolibrary.org/obo/ZP_0001234), [cardiac ventricle decreased diameter, abnormal](http://purl.obolibrary.org/obo/ZP_0000714) (57 total)
+
+classes: 
+  continuant: "BFO:0000002"
+  abnormal: "PATO:0000460"
+  decreased diameter: "PATO:0001715"
+  zebrafish anatomical entity: "http://purl.obolibrary.org/obo/ZFA_0100000"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'continuant' or 'zebrafish anatomical entity'"
+
+name:
+  # Induced, frequency=0.7192982456140351, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s decreased diameter, abnormal"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.7192982456140351, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Abnormal(ly) decreased diameter (of) %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some ('decreased diameter' and ('inheres in' some %s) and ('has modifier' some 'abnormal')))"
+  vars:
+    - v0

@@ -1,0 +1,58 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: decreased concentration exists_during single-celled organism vegetative growth phase inheres_in CL_0000334 towards X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/decreased_concentration_exists_during_single_celled_organism_vegetative_growth_phase_inheres_in_CL_0000334_towards_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [decreased cellular 5-phosphoribosyl diphosphate level](http://purl.obolibrary.org/obo/FYPO_0006698), [decreased cellular sulfide level](http://purl.obolibrary.org/obo/FYPO_0001412), [decreased cellular acetyl-CoA level](http://purl.obolibrary.org/obo/FYPO_0006712) (86 total)
+
+classes: 
+  CL_0000334: "CL:0000334"
+  single-celled organism vegetative growth phase: "GO:0072690"
+  decreased concentration: "PATO:0001163"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  exists_during: "http://purl.obolibrary.org/obo/GOREL_0000032"
+  inheres_in: "RO:0000052"
+  towards: "RO:0002503"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.47674418604651164, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "decreased cellular %s level"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2558139534883721, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A cell phenotype observed in the vegetative growth phase of the life cycle in which the amount of %s measured in a cell is lower than normal."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "decreased cellular %s level during vegetative growth"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "decreased cellular %s level during mitotic cell cycle"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('decreased concentration' and ('exists_during' some 'single-celled organism vegetative growth phase') and ('inheres_in' some 'CL_0000334') and ('towards' some %s))"
+  vars:
+    - v0

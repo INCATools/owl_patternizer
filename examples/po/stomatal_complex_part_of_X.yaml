@@ -1,0 +1,49 @@
+# options: [min(8),dir('examples/po'),trim(true),base('http://purl.obolibrary.org/obo/po'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: stomatal complex part of X
+pattern_iri: http://purl.obolibrary.org/obo/po/stomatal_complex_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [phyllome stomatal complex](http://purl.obolibrary.org/obo/PO_0025215), [stamen stomatal complex](http://purl.obolibrary.org/obo/PO_0025220), [carpel stomatal complex](http://purl.obolibrary.org/obo/PO_0025217) (9 total)
+
+classes: 
+  stomatal complex: "http://purl.obolibrary.org/obo/PO_0002000"
+  plant structure: "http://purl.obolibrary.org/obo/PO_0009011"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'plant structure'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s stomatal complex"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3333333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A phyllome stomatal complex that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s epidermal stomatal complex (exact)"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('stomatal complex' and ('part of' some %s))"
+  vars:
+    - v0

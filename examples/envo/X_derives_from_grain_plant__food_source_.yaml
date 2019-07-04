@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X derives from grain plant (food source)
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_derives_from_grain_plant__food_source_
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [grain based vinegar food product](http://purl.obolibrary.org/obo/FOODON_00001919), [cereal grain food product](http://purl.obolibrary.org/obo/FOODON_00001093), [fermented cereal beverage](http://purl.obolibrary.org/obo/FOODON_00001838) (5 total)
+
+classes: 
+  foodon product type: "FOODON:00001002"
+  grain plant (food source): "FOODON:03411324"
+
+
+relations: 
+  derives from: "RO:0001000"
+
+
+vars:
+  v0: "'foodon product type'"
+
+name:
+  # Induced, frequency=0.2, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "grain based %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that derives from a grain plant (food source)"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('derives from' some 'grain plant (food source)'))"
+  vars:
+    - v0

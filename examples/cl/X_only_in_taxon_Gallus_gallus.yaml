@@ -1,0 +1,54 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X only in taxon Gallus gallus
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_only_in_taxon_Gallus_gallus
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Gallus gallus protein](http://purl.obolibrary.org/obo/PR_000029063), [neural cell adhesion molecule 1 (chicken)](http://purl.obolibrary.org/obo/PR_P13590), [uncharacterized protein, CD8A translation product (chicken)](http://purl.obolibrary.org/obo/PR_F1NXT4) (29 total)
+
+classes: 
+  Gallus gallus: "http://purl.obolibrary.org/obo/NCBITaxon_9031"
+  protein: "http://purl.obolibrary.org/obo/PR_000000001"
+
+
+relations: 
+  only in taxon: "RO:0002160"
+
+
+vars:
+  v0: "'protein'"
+
+name:
+  # Induced, frequency=0.3793103448275862, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s (chicken)"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.7241379310344828, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is encoded in the genome of chicken."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "chick-%s"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('only in taxon' some 'Gallus gallus'))"
+  vars:
+    - v0

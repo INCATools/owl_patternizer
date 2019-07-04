@@ -1,0 +1,62 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X GOREL_0000001 single-celled organism vegetative growth phase inheres_in X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_GOREL_0000001_single_celled_organism_vegetative_growth_phase_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased duration of mitotic S phase](http://purl.obolibrary.org/obo/FYPO_0000614), [increased duration of mitotic M phase](http://purl.obolibrary.org/obo/FYPO_0000274), [increased duration of mitotic prophase](http://purl.obolibrary.org/obo/FYPO_0005683) (482 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  single-celled organism vegetative growth phase: "GO:0072690"
+  physical quality of a process: "PATO:0002062"
+
+
+relations: 
+  GOREL_0000001: "http://purl.obolibrary.org/obo/GOREL_0000001"
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'physical quality of a process'"
+  v1: "'biological_process'"
+
+name:
+  # Induced, frequency=0.08921161825726141, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.024896265560165973, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A cellular process phenotype observed in the vegetative growth phase of the life cycle in which %s begins %sr than normal."
+  vars:
+    - v1
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v0
+      - v1
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s of %s during mitotic cell cycle"
+    vars:
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "(%s and ('GOREL_0000001' some 'single-celled organism vegetative growth phase') and ('inheres_in' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,54 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: organic material composed primarily of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/organic_material_composed_primarily_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [vomit material](http://purl.obolibrary.org/obo/ENVO_00000338), [amniotic fluid material](http://purl.obolibrary.org/obo/ENVO_02000021), [excreta material](http://purl.obolibrary.org/obo/ENVO_02000022) (21 total)
+
+classes: 
+  organic material: "ENVO:01000155"
+  organism substance: "UBERON:0000463"
+
+
+relations: 
+  composed primarily of: "RO:0002473"
+
+
+vars:
+  v0: "'organism substance'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s material"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any organic material that composed primarily of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s material"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('organic material' and ('composed primarily of' some %s))"
+  vars:
+    - v0

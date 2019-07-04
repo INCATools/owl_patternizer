@@ -1,0 +1,55 @@
+# options: [min(10),dir('examples/agro'),trim(true),base('http://purl.obolibrary.org/obo/agro'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X is_conjugate_base_of X
+pattern_iri: http://purl.obolibrary.org/obo/agro/X_is_conjugate_base_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [carboxylic acid anion](http://purl.obolibrary.org/obo/CHEBI_29067), [amino-acid anion](http://purl.obolibrary.org/obo/CHEBI_37022), [carbonate](http://purl.obolibrary.org/obo/CHEBI_41609) (10 total)
+
+classes: 
+  ion: "http://purl.obolibrary.org/obo/CHEBI_24870"
+  p-block molecular entity: "http://purl.obolibrary.org/obo/CHEBI_33675"
+  heteroatomic molecular entity: "http://purl.obolibrary.org/obo/CHEBI_37577"
+
+
+relations: 
+  is_conjugate_base_of: "http://purl.obolibrary.org/obo/chebi#is_conjugate_base_of"
+
+
+vars:
+  v0: "'ion'"
+  v1: "'p-block molecular entity' or 'heteroatomic molecular entity'"
+
+name:
+  # Induced, frequency=0.2, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A nitrogen oxoan%s formed by loss of a proton from %s. Principal species present at pH 7.3."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('is_conjugate_base_of' some %s))"
+  vars:
+    - v0
+    - v1

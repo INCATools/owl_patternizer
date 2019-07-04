@@ -1,0 +1,49 @@
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: diseases affects X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/diseases_affects_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [adrenal gland diseases](http://aims.fao.org/aos/agrovoc/c_8625), [endocrine diseases](http://aims.fao.org/aos/agrovoc/c_2558), [animal diseases](http://aims.fao.org/aos/agrovoc/c_426) (7 total)
+
+classes: 
+  adrenal glands: "http://aims.fao.org/aos/agrovoc/c_135"
+  animal health: "http://aims.fao.org/aos/agrovoc/c_431"
+  diseases: "http://aims.fao.org/aos/agrovoc/c_49879"
+  parathyroid gland: "http://aims.fao.org/aos/agrovoc/c_5580"
+  salivary glands: "http://aims.fao.org/aos/agrovoc/c_6753"
+  thyroid gland: "http://aims.fao.org/aos/agrovoc/c_7753"
+  tongue: "http://aims.fao.org/aos/agrovoc/c_7809"
+
+
+relations: 
+  affects: "http://aims.fao.org/aos/agrontology#affects"
+
+
+vars:
+  v0: "'adrenal glands' or 'animal health' or 'parathyroid gland' or 'salivary glands' or 'thyroid gland' or 'tongue'"
+
+name:
+  # Induced, frequency=0.14285714285714285, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s diseases"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any diseases that affects a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('diseases' and ('affects' some %s))"
+  vars:
+    - v0

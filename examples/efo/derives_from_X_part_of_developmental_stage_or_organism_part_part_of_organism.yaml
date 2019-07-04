@@ -1,0 +1,46 @@
+# options: [min(10),dir('examples/efo'),trim(true),base('http://purl.obolibrary.org/obo/efo'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: derives_from X part_of developmental stage-or-organism part part_of organism
+pattern_iri: http://purl.obolibrary.org/obo/efo/derives_from_X_part_of_developmental_stage_or_organism_part_part_of_organism
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [stem cell derived cell line](http://www.ebi.ac.uk/efo/EFO_0002886), [fibroblast derived cell line](http://www.ebi.ac.uk/efo/EFO_0002009), [epithelial cell derived cell line](http://www.ebi.ac.uk/efo/EFO_0001641) (12 total)
+
+classes: 
+  organism: "http://purl.obolibrary.org/obo/OBI_0100026"
+  cell type: "EFO:0000324"
+  developmental stage: "EFO:0000399"
+  organism part: "EFO:0000635"
+
+
+relations: 
+  derives_from: "http://www.obofoundry.org/ro/ro.owl#derives_from"
+
+
+vars:
+  v0: "'cell type'"
+
+name:
+  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s derived cell line"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A cell line that derives from %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('derives_from' some (%s and ('part_of' some ('developmental stage' or 'organism part' and ('part_of' some 'organism')))))"
+  vars:
+    - v0

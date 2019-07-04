@@ -1,0 +1,47 @@
+# options: [min(8),dir('examples/po'),trim(true),base('http://purl.obolibrary.org/obo/po'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has part X
+pattern_iri: http://purl.obolibrary.org/obo/po/X_has_part_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [archesporium](http://purl.obolibrary.org/obo/PO_0030074), [pistillate inflorescence](http://purl.obolibrary.org/obo/PO_0025598), [staminate inflorescence](http://purl.obolibrary.org/obo/PO_0025601) (11 total)
+
+classes: 
+  plant structure: "http://purl.obolibrary.org/obo/PO_0009011"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'plant structure'"
+  v1: "'plant structure'"
+
+name:
+  # Induced, frequency=0.18181818181818182, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has part a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has part' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,48 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X contains process X
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_contains_process_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [container of an intermittent water body](http://purl.obolibrary.org/obo/ENVO_00000549), [channel of an intermittent stream](http://purl.obolibrary.org/obo/ENVO_01000980), [marine tidal flow zone](http://purl.obolibrary.org/obo/ENVO_01001341) (8 total)
+
+classes: 
+  environmental zone: "ENVO:01000408"
+  environmental system process: "ENVO:02500000"
+
+
+relations: 
+  contains process: "BFO:0000067"
+
+
+vars:
+  v0: "'environmental zone'"
+  v1: "'environmental system process'"
+
+name:
+  # Could not induce name, using default
+  text: "%s contains process %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that contains process a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('contains process' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,64 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: decreased concentration exists_during X inheres_in CL_0000521 towards X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/decreased_concentration_exists_during_X_inheres_in_CL_0000521_towards_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [decreased protein level during mating](http://purl.obolibrary.org/obo/FYPO_0006541), [decreased RNA level during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0001152), [decreased protein level during cellular response to nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0001283) (20 total)
+
+classes: 
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+  CL_0000521: "CL:0000521"
+  biological_process: "GO:0008150"
+  decreased concentration: "PATO:0001163"
+
+
+relations: 
+  exists_during: "http://purl.obolibrary.org/obo/GOREL_0000032"
+  inheres_in: "RO:0000052"
+  towards: "RO:0002503"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'chemical entity'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "decreased %s level during %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any decreased concentration that exists_during a %s and inheres_in a CL_0000521 and towards a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "reduced %s level during %s"
+    vars:
+      - v1
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "decreased %s accumulation during %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "('decreased concentration' and ('exists_during' some %s) and ('inheres_in' some 'CL_0000521') and ('towards' some %s))"
+  vars:
+    - v0
+    - v1

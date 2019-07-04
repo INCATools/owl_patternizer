@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/aro'),trim(true),base('http://purl.obolibrary.org/obo/aro'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: antibiotic inactivation enzyme confers_resistance_to X
+pattern_iri: http://purl.obolibrary.org/obo/aro/antibiotic_inactivation_enzyme_confers_resistance_to_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [macrolide inactivation enzyme](http://purl.obolibrary.org/obo/ARO_3000201), [fosfomycin inactivation enzyme](http://purl.obolibrary.org/obo/ARO_3000342), [streptogramin inactivation enzyme](http://purl.obolibrary.org/obo/ARO_3000233) (4 total)
+
+classes: 
+  antibiotic molecule: "http://purl.obolibrary.org/obo/ARO_1000003"
+  antibiotic inactivation enzyme: "http://purl.obolibrary.org/obo/ARO_3000557"
+
+
+relations: 
+  confers_resistance_to: "http://purl.obolibrary.org/obo/RO#_confers_resistance_to"
+
+
+vars:
+  v0: "'antibiotic molecule'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s inactivation enzyme"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Enzymes shown to inactivate %ss by chemical modification, thereby conferring resistance to macrolides."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('antibiotic inactivation enzyme' and ('confers_resistance_to' some %s))"
+  vars:
+    - v0

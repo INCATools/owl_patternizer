@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: pulse food product X RO_0002225 X
+pattern_iri: http://purl.obolibrary.org/obo/envo/pulse_food_product_X_RO_0002225_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [chickpea food product](http://purl.obolibrary.org/obo/FOODON_00001199), [cowpea food product](http://purl.obolibrary.org/obo/FOODON_00001200), [lentil food product](http://purl.obolibrary.org/obo/FOODON_00001195) (14 total)
+
+classes: 
+  pulse food product: "FOODON:00001209"
+  bean (vegetable) food product: "FOODON:00001635"
+  vegetable-producing plant (food source): "FOODON:03411579"
+
+
+relations: 
+  RO_0002225: "RO:0002225"
+
+
+vars:
+  v0: "'bean (vegetable) food product'"
+  v1: "'vegetable-producing plant (food source)'"
+
+name:
+  # Could not induce name, using default
+  text: "pulse food product %s RO_0002225 %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any pulse food product that %s and RO_0002225 a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('pulse food product' and %s and ('RO_0002225' some %s))"
+  vars:
+    - v0
+    - v1

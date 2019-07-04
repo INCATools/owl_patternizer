@@ -1,0 +1,62 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X exists_during single-celled organism vegetative growth phase inheres_in X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_exists_during_single_celled_organism_vegetative_growth_phase_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [elongated vegetative cell](http://purl.obolibrary.org/obo/FYPO_0001122), [branched vegetative cell](http://purl.obolibrary.org/obo/FYPO_0000015), [branched septum](http://purl.obolibrary.org/obo/FYPO_0003439) (93 total)
+
+classes: 
+  single-celled organism vegetative growth phase: "GO:0072690"
+  physical object quality: "PATO:0001241"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  exists_during: "http://purl.obolibrary.org/obo/GOREL_0000032"
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'physical object quality'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.20430107526881722, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.08602150537634409, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A physical cellular phenotype observed in the vegetative growth phase of the life cycle in which cells form %ss that are %ser than normal."
+  vars:
+    - v1
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s during vegetative growth"
+    vars:
+      - v0
+      - v1
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s %s during mitotic cell cycle"
+    vars:
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "(%s and ('exists_during' some 'single-celled organism vegetative growth phase') and ('inheres_in' some %s))"
+  vars:
+    - v0
+    - v1

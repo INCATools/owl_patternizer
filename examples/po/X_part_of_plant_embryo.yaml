@@ -1,0 +1,49 @@
+# options: [min(8),dir('examples/po'),trim(true),base('http://purl.obolibrary.org/obo/po'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of plant embryo
+pattern_iri: http://purl.obolibrary.org/obo/po/X_part_of_plant_embryo
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [plant embryo vascular system](http://purl.obolibrary.org/obo/PO_0008011), [embryo endodermis](http://purl.obolibrary.org/obo/PO_0005015), [embryo hypocotyl-root junction](http://purl.obolibrary.org/obo/PO_0025300) (18 total)
+
+classes: 
+  plant embryo: "http://purl.obolibrary.org/obo/PO_0009009"
+  plant structure: "http://purl.obolibrary.org/obo/PO_0009011"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'plant structure'"
+
+name:
+  # Induced, frequency=0.6111111111111112, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "embryo %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that part of a plant embryo"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "embryonic %s (exact)"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'plant embryo'))"
+  vars:
+    - v0

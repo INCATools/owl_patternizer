@@ -1,0 +1,53 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X exists_during single-celled organism vegetative growth phase inheres_in fungal-type vacuole towards X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_exists_during_single_celled_organism_vegetative_growth_phase_inheres_in_fungal_type_vacuole_towards_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased vacuolar glycine level](http://purl.obolibrary.org/obo/FYPO_0004771), [increased vacuolar histidine level](http://purl.obolibrary.org/obo/FYPO_0004772), [increased vacuolar arginine level](http://purl.obolibrary.org/obo/FYPO_0004768) (21 total)
+
+classes: 
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+  fungal-type vacuole: "GO:0000324"
+  single-celled organism vegetative growth phase: "GO:0072690"
+  deviation(from_normal): "PATO:0000069"
+  concentrated: "PATO:0001159"
+
+
+relations: 
+  exists_during: "http://purl.obolibrary.org/obo/GOREL_0000032"
+  inheres_in: "RO:0000052"
+  towards: "RO:0002503"
+
+
+vars:
+  v0: "'deviation(from_normal)' or 'concentrated'"
+  v1: "'chemical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s exists_during single-celled organism vegetative growth phase inheres_in fungal-type vacuole towards %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that exists_during a single-celled organism vegetative growth phase and inheres_in a fungal-type vacuole and towards a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('exists_during' some 'single-celled organism vegetative growth phase') and ('inheres_in' some 'fungal-type vacuole') and ('towards' some %s))"
+  vars:
+    - v0
+    - v1

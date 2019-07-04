@@ -1,0 +1,74 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: decreased occurrence GOREL_0000001 X occurs_at X inheres_in X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/decreased_occurrence_GOREL_0000001_X_occurs_at_X_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [decreased protein localization to chromatin at RNA polymerase II promoter during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0005049), [decreased chromatin binding at promoter element during glucose starvation](http://purl.obolibrary.org/obo/FYPO_0006755), [decreased histone exchange at pericentric heterochromatin](http://purl.obolibrary.org/obo/FYPO_0004748) (52 total)
+
+classes: 
+  chromatin binding: "GO:0003682"
+  mitotic recombination: "GO:0006312"
+  transcription, DNA-templated: "GO:0006351"
+  exocytosis: "GO:0006887"
+  biological_process: "GO:0008150"
+  chromatin silencing at centromere: "GO:0030702"
+  heterochromatin assembly: "GO:0031507"
+  histone H3-K9 dimethylation: "GO:0036123"
+  histone H3-K9 trimethylation: "GO:0036124"
+  histone exchange: "GO:0043486"
+  histone H3-K9 acetylation: "GO:0043970"
+  histone H4-K16 acetylation: "GO:0043984"
+  histone H3-K14 acetylation: "GO:0044154"
+  histone H3-K4 dimethylation: "GO:0044648"
+  histone H2B conserved C-terminal lysine ubiquitination: "GO:0071894"
+  protein localization to plasma membrane: "GO:0072659"
+  protein localization to heterochromatin: "GO:0097355"
+  mitotic DNA replication: "GO:1902969"
+  maintenance of protein localization to heterochromatin: "GO:1990153"
+  histone H2A phosphorylation: "GO:1990164"
+  decreased occurrence: "PATO:0002052"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  GOREL_0000001: "http://purl.obolibrary.org/obo/GOREL_0000001"
+  occurs_at: "http://purl.obolibrary.org/obo/GOREL_0000501"
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'owl:Thing'"
+  v2: "'chromatin binding' or 'mitotic recombination' or 'transcription, DNA-templated' or 'exocytosis' or 'chromatin silencing at centromere' or 'heterochromatin assembly' or 'histone H3-K9 dimethylation' or 'histone H3-K9 trimethylation' or 'histone exchange' or 'histone H3-K9 acetylation' or 'histone H4-K16 acetylation' or 'histone H3-K14 acetylation' or 'histone H3-K4 dimethylation' or 'histone H2B conserved C-terminal lysine ubiquitination' or 'protein localization to plasma membrane' or 'protein localization to heterochromatin' or 'mitotic DNA replication' or 'maintenance of protein localization to heterochromatin' or 'histone H2A phosphorylation'"
+
+name:
+  # Could not induce name, using default
+  text: "decreased occurrence GOREL_0000001 %s occurs_at %s inheres_in %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any decreased occurrence that GOREL_0000001 a %s and occurs_at a %s and inheres_in a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('decreased occurrence' and ('GOREL_0000001' some %s) and ('occurs_at' some %s) and ('inheres_in' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

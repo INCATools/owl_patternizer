@@ -1,0 +1,54 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X inheres in part of X qualifier X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_inheres_in_part_of_X_qualifier_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal microtubule cytoskeleton organization](http://purl.obolibrary.org/obo/FYPO_0000054), [abnormal mitotic cell cycle](http://purl.obolibrary.org/obo/FYPO_0000059), [abnormal re-entry into mitotic cell cycle after pheromone arrest](http://purl.obolibrary.org/obo/FYPO_0000555) (174 total)
+
+classes: 
+  quality: "PATO:0000001"
+  deviation(from_normal): "PATO:0000069"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  inheres in part of: "RO:0002314"
+  qualifier: "http://purl.obolibrary.org/obo/fypo#qualifier"
+
+
+vars:
+  v0: "'quality'"
+  v1: "'owl:Thing'"
+  v2: "'deviation(from_normal)'"
+
+name:
+  # Could not induce name, using default
+  text: "%s inheres in part of %s qualifier %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that inheres in part of a %s and qualifier a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('inheres in part of' some %s) and ('qualifier' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

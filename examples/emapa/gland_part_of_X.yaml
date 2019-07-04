@@ -1,0 +1,58 @@
+# options: [min(12),dir('examples/emapa'),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: gland part_of X
+pattern_iri: http://purl.obolibrary.org/obo/emapa/gland_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [eye gland](http://purl.obolibrary.org/obo/EMAPA_35334), [gut gland](http://purl.obolibrary.org/obo/EMAPA_18815), [foregut diverticulum gland](http://purl.obolibrary.org/obo/EMAPA_16360) (15 total)
+
+classes: 
+  eye: "http://purl.obolibrary.org/obo/EMAPA_16198"
+  gut: "http://purl.obolibrary.org/obo/EMAPA_16247"
+  foregut diverticulum: "http://purl.obolibrary.org/obo/EMAPA_16248"
+  oral region: "http://purl.obolibrary.org/obo/EMAPA_16262"
+  stomatodeum: "http://purl.obolibrary.org/obo/EMAPA_16263"
+  foregut-midgut junction: "http://purl.obolibrary.org/obo/EMAPA_16363"
+  foregut: "http://purl.obolibrary.org/obo/EMAPA_16548"
+  diencephalon: "http://purl.obolibrary.org/obo/EMAPA_16896"
+  integumental system: "http://purl.obolibrary.org/obo/EMAPA_17524"
+  skin: "http://purl.obolibrary.org/obo/EMAPA_17525"
+  gland: "http://purl.obolibrary.org/obo/EMAPA_18425"
+  urethra of male: "http://purl.obolibrary.org/obo/EMAPA_18692"
+  hemolymphoid system: "http://purl.obolibrary.org/obo/EMAPA_18765"
+  endocrine system: "http://purl.obolibrary.org/obo/EMAPA_35306"
+  exocrine system: "http://purl.obolibrary.org/obo/EMAPA_35329"
+  lacrimal apparatus: "http://purl.obolibrary.org/obo/EMAPA_35462"
+
+
+relations: 
+  part_of: "http://purl.obolibrary.org/obo/emapa#part_of"
+
+
+vars:
+  v0: "'eye' or 'gut' or 'foregut diverticulum' or 'oral region' or 'stomatodeum' or 'foregut-midgut junction' or 'foregut' or 'diencephalon' or 'integumental system' or 'skin' or 'urethra of male' or 'hemolymphoid system' or 'endocrine system' or 'exocrine system' or 'lacrimal apparatus'"
+
+name:
+  # Induced, frequency=0.7333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s gland"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any gland that part_of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('gland' and ('part_of' some %s))"
+  vars:
+    - v0

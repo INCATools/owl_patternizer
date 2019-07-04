@@ -1,0 +1,66 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X inheres_in CL_0000521 towards X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_inheres_in_CL_0000521_towards_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [DNA content increased](http://purl.obolibrary.org/obo/FYPO_0002729), [increased cellular cAMP level](http://purl.obolibrary.org/obo/FYPO_0001661), [increased level of substance in cell](http://purl.obolibrary.org/obo/FYPO_0000990) (28 total)
+
+classes: 
+  N(alpha),N(alpha),N(alpha)-trimethyl-L-histidine: "http://purl.obolibrary.org/obo/CHEBI_15781"
+  deoxyribonucleic acid: "http://purl.obolibrary.org/obo/CHEBI_16991"
+  3',5'-cyclic AMP: "http://purl.obolibrary.org/obo/CHEBI_17489"
+  alpha,alpha-trehalose 6-phosphate: "http://purl.obolibrary.org/obo/CHEBI_18283"
+  trehalose: "http://purl.obolibrary.org/obo/CHEBI_27082"
+  ribonucleic acid: "http://purl.obolibrary.org/obo/CHEBI_33697"
+  protein: "http://purl.obolibrary.org/obo/CHEBI_36080"
+  purvalanol A: "http://purl.obolibrary.org/obo/CHEBI_47600"
+  ergothioneine: "http://purl.obolibrary.org/obo/CHEBI_4828"
+  hercynylcysteine sulfoxide: "http://purl.obolibrary.org/obo/CHEBI_79057"
+  hercynylselenocysteine: "http://purl.obolibrary.org/obo/CHEBI_79070"
+  selenoneine: "http://purl.obolibrary.org/obo/CHEBI_79071"
+  CL_0000521: "CL:0000521"
+  astral microtubule: "GO:0000235"
+  division septum: "GO:0000935"
+  spindle pole body: "GO:0005816"
+  mating projection: "GO:0005937"
+  Mei2 nuclear dot complex: "GO:0033620"
+  physical object quality: "PATO:0001241"
+
+
+relations: 
+  inheres_in: "RO:0000052"
+  towards: "RO:0002503"
+
+
+vars:
+  v0: "'physical object quality'"
+  v1: "'N(alpha),N(alpha),N(alpha)-trimethyl-L-histidine' or 'deoxyribonucleic acid' or '3',5'-cyclic AMP' or 'alpha,alpha-trehalose 6-phosphate' or 'trehalose' or 'ribonucleic acid' or 'protein' or 'purvalanol A' or 'ergothioneine' or 'hercynylcysteine sulfoxide' or 'hercynylselenocysteine' or 'selenoneine' or 'astral microtubule' or 'division septum' or 'spindle pole body' or 'mating projection' or 'Mei2 nuclear dot complex'"
+
+name:
+  # Could not induce name, using default
+  text: "%s inheres_in CL_0000521 towards %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that inheres_in a CL_0000521 and towards a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('inheres_in' some 'CL_0000521') and ('towards' some %s))"
+  vars:
+    - v0
+    - v1

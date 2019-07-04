@@ -1,0 +1,69 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X exists_during X inheres_in X towards protein
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_exists_during_X_inheres_in_X_towards_protein
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased protein level during cellular response to nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0001219), [increased protein level during meiosis I](http://purl.obolibrary.org/obo/FYPO_0005413), [increased protein level during meiotic anaphase I](http://purl.obolibrary.org/obo/FYPO_0005415) (33 total)
+
+classes: 
+  protein: "http://purl.obolibrary.org/obo/CHEBI_36080"
+  CL_0000334: "CL:0000334"
+  proteasome complex: "GO:0000502"
+  chromatin: "GO:0000785"
+  nucleus: "GO:0005634"
+  RNA polymerase II, core complex: "GO:0005665"
+  anaphase-promoting complex: "GO:0005680"
+  spliceosomal complex: "GO:0005681"
+  cytoplasm: "GO:0005737"
+  mitochondrion: "GO:0005739"
+  autophagosome: "GO:0005776"
+  plasma membrane: "GO:0005886"
+  biological_process: "GO:0008150"
+  preribosome, large subunit precursor: "GO:0030687"
+  mitotic spindle: "GO:0072686"
+  deviation(from_normal): "PATO:0000069"
+  concentrated: "PATO:0001159"
+
+
+relations: 
+  exists_during: "http://purl.obolibrary.org/obo/GOREL_0000032"
+  inheres_in: "RO:0000052"
+  towards: "RO:0002503"
+
+
+vars:
+  v0: "'deviation(from_normal)' or 'concentrated'"
+  v1: "'biological_process'"
+  v2: "'CL_0000334' or 'proteasome complex' or 'chromatin' or 'nucleus' or 'RNA polymerase II, core complex' or 'anaphase-promoting complex' or 'spliceosomal complex' or 'cytoplasm' or 'mitochondrion' or 'autophagosome' or 'plasma membrane' or 'preribosome, large subunit precursor' or 'mitotic spindle'"
+
+name:
+  # Could not induce name, using default
+  text: "%s exists_during %s inheres_in %s towards protein"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that exists_during a %s and inheres_in a %s and towards a protein"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('exists_during' some %s) and ('inheres_in' some %s) and ('towards' some 'protein'))"
+  vars:
+    - v0
+    - v1
+    - v2

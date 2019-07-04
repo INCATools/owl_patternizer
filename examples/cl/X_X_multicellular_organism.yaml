@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X multicellular organism
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_X_multicellular_organism
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [left ureter](http://purl.obolibrary.org/obo/UBERON_0001223), [right ureter](http://purl.obolibrary.org/obo/UBERON_0001222), [space surrounding organism](http://purl.obolibrary.org/obo/UBERON_0013514) (28 total)
+
+classes: 
+  in_left_side_of: "http://purl.obolibrary.org/obo/BSPO_0000120"
+  in_right_side_of: "http://purl.obolibrary.org/obo/BSPO_0000121"
+  surrounds: "RO:0002221"
+  multicellular organism: "UBERON:0000468"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: []
+
+vars:
+  v0: "'anatomical entity'"
+  v1: "'in_left_side_of' or 'in_right_side_of' or 'surrounds'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s multicellular organism"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s a multicellular organism"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and (%s some 'multicellular organism'))"
+  vars:
+    - v0
+    - v1

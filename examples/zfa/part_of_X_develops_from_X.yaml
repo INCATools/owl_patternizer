@@ -1,0 +1,49 @@
+# options: [min(12),dir('examples/zfa'),trim(true),base('http://purl.obolibrary.org/obo/zfa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: part of X develops from X
+pattern_iri: http://purl.obolibrary.org/obo/zfa/part_of_X_develops_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [neuromast](http://purl.obolibrary.org/obo/ZFA_0000243), [midbrain hindbrain boundary neural keel](http://purl.obolibrary.org/obo/ZFA_0007045), [midbrain hindbrain boundary neural plate](http://purl.obolibrary.org/obo/ZFA_0007044) (12 total)
+
+classes: 
+  anatomical structure: "http://purl.obolibrary.org/obo/ZFA_0000037"
+  zebrafish anatomical entity: "http://purl.obolibrary.org/obo/ZFA_0100000"
+
+
+relations: 
+  part of: "BFO:0000050"
+  develops from: "RO:0002202"
+
+
+vars:
+  v0: "'anatomical structure'"
+  v1: "'zebrafish anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "part of %s develops from %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any part of a %s that develops from a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(('part of' some %s) and ('develops from' some %s))"
+  vars:
+    - v0
+    - v1

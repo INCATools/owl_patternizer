@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: decreased rate inheres_in X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/decreased_rate_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [decreased inositol hexakisphosphate kinase activity](http://purl.obolibrary.org/obo/FYPO_0006893), [decreased 6,7-dimethyl-8-ribityllumazine synthase activity](http://purl.obolibrary.org/obo/FYPO_0002809), [decreased telomerase RNA reverse transcriptase activity](http://purl.obolibrary.org/obo/FYPO_0005540) (116 total)
+
+classes: 
+  decreased rate: "PATO:0000911"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.9051724137931034, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "decreased %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.6810344827586207, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A molecular function phenotype in which the observed rate of %s is decreased."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "reduced %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('decreased rate' and ('inheres_in' some %s))"
+  vars:
+    - v0

@@ -1,0 +1,61 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X exists_during X inheres_in X towards ribonucleic acid
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_exists_during_X_inheres_in_X_towards_ribonucleic_acid
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased RNA level during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0002020), [increased RNA level during nitrogen starvation in h- cells](http://purl.obolibrary.org/obo/FYPO_0004177), [increased RNA level during nitrogen starvation in h+ cells](http://purl.obolibrary.org/obo/FYPO_0004178) (22 total)
+
+classes: 
+  ribonucleic acid: "http://purl.obolibrary.org/obo/CHEBI_33697"
+  CL_0000334: "CL:0000334"
+  CL_0002674: "CL:0002674"
+  CL_0002675: "CL:0002675"
+  nucleus: "GO:0005634"
+  mitochondrion: "GO:0005739"
+  biological_process: "GO:0008150"
+  deviation(from_normal): "PATO:0000069"
+  concentrated: "PATO:0001159"
+
+
+relations: 
+  exists_during: "http://purl.obolibrary.org/obo/GOREL_0000032"
+  inheres_in: "RO:0000052"
+  towards: "RO:0002503"
+
+
+vars:
+  v0: "'deviation(from_normal)' or 'concentrated'"
+  v1: "'biological_process'"
+  v2: "'CL_0000334' or 'CL_0002674' or 'CL_0002675' or 'nucleus' or 'mitochondrion'"
+
+name:
+  # Could not induce name, using default
+  text: "%s exists_during %s inheres_in %s towards ribonucleic acid"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that exists_during a %s and inheres_in a %s and towards a ribonucleic acid"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('exists_during' some %s) and ('inheres_in' some %s) and ('towards' some 'ribonucleic acid'))"
+  vars:
+    - v0
+    - v1
+    - v2

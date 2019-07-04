@@ -1,0 +1,59 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X during single-celled organism vegetative growth phase inheres_in X towards X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_during_single_celled_organism_vegetative_growth_phase_inheres_in_X_towards_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased cellular reactive oxygen species level during vegetative growth](http://purl.obolibrary.org/obo/FYPO_0003004), [decreased cellular reactive oxygen species level during vegetative growth](http://purl.obolibrary.org/obo/FYPO_0002780), [decreased cellular GGPP level](http://purl.obolibrary.org/obo/FYPO_0002323) (38 total)
+
+classes: 
+  CL_0000334: "CL:0000334"
+  fungal-type vacuole: "GO:0000324"
+  mitochondrion: "GO:0005739"
+  fungal-type cell wall: "GO:0009277"
+  single-celled organism vegetative growth phase: "GO:0072690"
+  physical object quality: "PATO:0001241"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  during: "http://purl.obolibrary.org/obo/GOREL_0000002"
+  inheres_in: "RO:0000052"
+  towards: "RO:0002503"
+
+
+vars:
+  v0: "'physical object quality'"
+  v1: "'CL_0000334' or 'fungal-type vacuole' or 'mitochondrion' or 'fungal-type cell wall'"
+  v2: "'owl:Thing'"
+
+name:
+  # Could not induce name, using default
+  text: "%s during single-celled organism vegetative growth phase inheres_in %s towards %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that during a single-celled organism vegetative growth phase and inheres_in a %s and towards a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('during' some 'single-celled organism vegetative growth phase') and ('inheres_in' some %s) and ('towards' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

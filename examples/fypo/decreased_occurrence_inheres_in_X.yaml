@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: decreased occurrence inheres_in X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/decreased_occurrence_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [decreased peptide-N4-(N-acetyl-beta-glucosaminyl)asparagine amidase activity](http://purl.obolibrary.org/obo/FYPO_0000688), [decreased re-entry into mitotic cell cycle after pheromone arrest](http://purl.obolibrary.org/obo/FYPO_0000557), [decreased mitophagy](http://purl.obolibrary.org/obo/FYPO_0000500) (89 total)
+
+classes: 
+  decreased occurrence: "PATO:0002052"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.7640449438202247, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "decreased %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.16853932584269662, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A molecular function phenotype in which occurrence of %s by a gene product (usually a protein) in a mutant is decreased. The affected gene product may be encoded by the mutated gene, or by a different gene."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "reduced %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('decreased occurrence' and ('inheres_in' some %s))"
+  vars:
+    - v0

@@ -1,0 +1,44 @@
+# options: [min(12),dir('examples/emapa'),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: connective tissue part_of X
+pattern_iri: http://purl.obolibrary.org/obo/emapa/connective_tissue_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [limb connective tissue](http://purl.obolibrary.org/obo/EMAPA_37313), [respiratory system connective tissue](http://purl.obolibrary.org/obo/EMAPA_35977), [lung connective tissue](http://purl.obolibrary.org/obo/EMAPA_35521) (29 total)
+
+classes: 
+  connective tissue: "http://purl.obolibrary.org/obo/EMAPA_35251"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  part_of: "http://purl.obolibrary.org/obo/emapa#part_of"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.896551724137931, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s connective tissue"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any connective tissue that part_of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('connective tissue' and ('part_of' some %s))"
+  vars:
+    - v0

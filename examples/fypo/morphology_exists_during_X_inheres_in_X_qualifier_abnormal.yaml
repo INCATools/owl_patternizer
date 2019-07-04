@@ -1,0 +1,58 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: morphology exists_during X inheres_in X qualifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/fypo/morphology_exists_during_X_inheres_in_X_qualifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal microtubule cytoskeleton morphology during mating](http://purl.obolibrary.org/obo/FYPO_0003065), [abnormal vacuolar morphology during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0005178), [abnormal cell cortex morphology during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0001230) (38 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  cell part: "GO:0044464"
+  morphology: "PATO:0000051"
+  abnormal: "PATO:0000460"
+
+
+relations: 
+  exists_during: "http://purl.obolibrary.org/obo/GOREL_0000032"
+  inheres_in: "RO:0000052"
+  qualifier: "http://purl.obolibrary.org/obo/fypo#qualifier"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'cell part'"
+
+name:
+  # Induced, frequency=0.05263157894736842, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "abnormal %s morphology during %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any morphology that exists_during a %s and inheres_in a %s and qualifier a abnormal"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "abnormal %s morphology during %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "('morphology' and ('exists_during' some %s) and ('inheres_in' some %s) and ('qualifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

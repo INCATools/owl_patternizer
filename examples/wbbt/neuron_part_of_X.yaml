@@ -1,0 +1,49 @@
+# options: [min(12),dir('examples/wbbt'),trim(true),base('http://purl.obolibrary.org/obo/wbbt'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: neuron part_of X
+pattern_iri: http://purl.obolibrary.org/obo/wbbt/neuron_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [lateral ganglion right neuron](http://purl.obolibrary.org/obo/WBbt_0005100), [lateral ganglion left neuron](http://purl.obolibrary.org/obo/WBbt_0005102), [inner labial neuron](http://purl.obolibrary.org/obo/WBbt_0005117) (14 total)
+
+classes: 
+  C. elegans Cell and Anatomy: "http://purl.obolibrary.org/obo/WBbt_0000100"
+  neuron: "http://purl.obolibrary.org/obo/WBbt_0003679"
+
+
+relations: 
+  part_of: "BFO:0000050"
+
+
+vars:
+  v0: "'C. elegans Cell and Anatomy'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s neuron"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any neuron that part_of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s neuron"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('neuron' and ('part_of' some %s))"
+  vars:
+    - v0

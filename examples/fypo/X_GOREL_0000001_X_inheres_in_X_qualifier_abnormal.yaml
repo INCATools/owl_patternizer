@@ -1,0 +1,74 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X GOREL_0000001 X inheres_in X qualifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_GOREL_0000001_X_inheres_in_X_qualifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal maintenance of protein location in cell cortex of cell tip during karyogamy](http://purl.obolibrary.org/obo/FYPO_0005990), [increased nucleophagy during G0](http://purl.obolibrary.org/obo/FYPO_0006665), [abnormal dTTP biosynthetic process](http://purl.obolibrary.org/obo/FYPO_0002631) (21 total)
+
+classes: 
+  dTTP biosynthetic process: "GO:0006235"
+  chromatin remodeling: "GO:0006338"
+  transcription, DNA-templated: "GO:0006351"
+  tRNA aminoacylation for protein translation: "GO:0006418"
+  mitotic chromosome condensation: "GO:0007076"
+  biological_process: "GO:0008150"
+  autophagy of nucleus: "GO:0044804"
+  microtubule polymerization: "GO:0046785"
+  tRNA folding: "GO:0061818"
+  lithium ion transmembrane transport: "GO:0090452"
+  maintenance of protein location in cell cortex of cell tip: "GO:0097248"
+  copper ion import across plasma membrane: "GO:0098705"
+  sodium ion import across plasma membrane: "GO:0098719"
+  microtubule polymerization based protein transport to cell tip cortex: "GO:0099110"
+  protein transport along microtubule to cell tip: "GO:0099117"
+  mitotic nuclear division: "GO:0140014"
+  leptomycin B binding: "GO:1901707"
+  protein localization to septin ring: "GO:1902935"
+  protein localization to microtubule minus-end: "GO:1904519"
+  potassium ion import across plasma membrane: "GO:1990573"
+  quality: "PATO:0000001"
+  abnormal: "PATO:0000460"
+
+
+relations: 
+  GOREL_0000001: "http://purl.obolibrary.org/obo/GOREL_0000001"
+  inheres_in: "RO:0000052"
+  qualifier: "http://purl.obolibrary.org/obo/fypo#qualifier"
+
+
+vars:
+  v0: "'quality'"
+  v1: "'biological_process'"
+  v2: "'dTTP biosynthetic process' or 'chromatin remodeling' or 'transcription, DNA-templated' or 'tRNA aminoacylation for protein translation' or 'mitotic chromosome condensation' or 'autophagy of nucleus' or 'microtubule polymerization' or 'tRNA folding' or 'lithium ion transmembrane transport' or 'maintenance of protein location in cell cortex of cell tip' or 'copper ion import across plasma membrane' or 'sodium ion import across plasma membrane' or 'microtubule polymerization based protein transport to cell tip cortex' or 'protein transport along microtubule to cell tip' or 'mitotic nuclear division' or 'leptomycin B binding' or 'protein localization to septin ring' or 'protein localization to microtubule minus-end' or 'potassium ion import across plasma membrane'"
+
+name:
+  # Could not induce name, using default
+  text: "%s GOREL_0000001 %s inheres_in %s qualifier abnormal"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that GOREL_0000001 a %s and inheres_in a %s and qualifier a abnormal"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('GOREL_0000001' some %s) and ('inheres_in' some %s) and ('qualifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1
+    - v2

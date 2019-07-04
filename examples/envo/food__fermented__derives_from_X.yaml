@@ -1,0 +1,45 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: food (fermented) derives from X
+pattern_iri: http://purl.obolibrary.org/obo/envo/food__fermented__derives_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [fermented meat product](http://purl.obolibrary.org/obo/FOODON_00001314), [fermented bean product](http://purl.obolibrary.org/obo/FOODON_03310006), [fermented fruit food product](http://purl.obolibrary.org/obo/FOODON_00001069) (4 total)
+
+classes: 
+  food (fermented): "FOODON:00001258"
+  food product by organism: "FOODON:00002381"
+  food material: "FOODON:00002403"
+
+
+relations: 
+  derives from: "RO:0001000"
+
+
+vars:
+  v0: "'food product by organism' or 'food material'"
+
+name:
+  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "fermented %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any food (fermented) that derives from a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('food (fermented)' and ('derives from' some %s))"
+  vars:
+    - v0

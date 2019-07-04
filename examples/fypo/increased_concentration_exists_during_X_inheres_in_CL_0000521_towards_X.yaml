@@ -1,0 +1,64 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: increased concentration exists_during X inheres_in CL_0000521 towards X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/increased_concentration_exists_during_X_inheres_in_CL_0000521_towards_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased RNA level during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0002020), [increased protein level during cellular response to nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0001219), [increased protein level during meiosis I](http://purl.obolibrary.org/obo/FYPO_0005413) (22 total)
+
+classes: 
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+  CL_0000521: "CL:0000521"
+  biological_process: "GO:0008150"
+  increased concentration: "PATO:0001162"
+
+
+relations: 
+  exists_during: "http://purl.obolibrary.org/obo/GOREL_0000032"
+  inheres_in: "RO:0000052"
+  towards: "RO:0002503"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'chemical entity'"
+
+name:
+  # Induced, frequency=0.3181818181818182, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "increased %s level during %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.2727272727272727, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A cell phenotype in which the amount of %s measured in a cell is higher than normal when the cell is in %s."
+  vars:
+    - v1
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "increased %s level during %s"
+    vars:
+      - v1
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "increased %s accumulation during %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "('increased concentration' and ('exists_during' some %s) and ('inheres_in' some 'CL_0000521') and ('towards' some %s))"
+  vars:
+    - v0
+    - v1

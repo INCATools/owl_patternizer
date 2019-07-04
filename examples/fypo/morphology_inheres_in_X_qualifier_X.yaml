@@ -1,0 +1,68 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: morphology inheres_in X qualifier X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/morphology_inheres_in_X_qualifier_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal cell morphology](http://purl.obolibrary.org/obo/FYPO_0000005), [normal cell morphology](http://purl.obolibrary.org/obo/FYPO_0000672), [abnormal spore morphology](http://purl.obolibrary.org/obo/FYPO_0000348) (23 total)
+
+classes: 
+  CL_0000596: "CL:0000596"
+  fungal-type vacuole: "GO:0000324"
+  kinetochore: "GO:0000776"
+  chromosome, telomeric region: "GO:0000781"
+  ascospore wall: "GO:0005619"
+  nucleus: "GO:0005634"
+  chromosome: "GO:0005694"
+  spindle pole body: "GO:0005816"
+  spindle: "GO:0005819"
+  mating projection: "GO:0005937"
+  cell cortex: "GO:0005938"
+  microtubule cytoskeleton: "GO:0015630"
+  linear element: "GO:0030998"
+  morphology: "PATO:0000051"
+  deviation(from_normal): "PATO:0000069"
+
+
+relations: 
+  inheres_in: "RO:0000052"
+  qualifier: "http://purl.obolibrary.org/obo/fypo#qualifier"
+
+
+vars:
+  v0: "'CL_0000596' or 'fungal-type vacuole' or 'kinetochore' or 'chromosome, telomeric region' or 'ascospore wall' or 'nucleus' or 'chromosome' or 'spindle pole body' or 'spindle' or 'mating projection' or 'cell cortex' or 'microtubule cytoskeleton' or 'linear element'"
+  v1: "'deviation(from_normal)'"
+
+name:
+  # Induced, frequency=0.6521739130434783, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s morphology"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.43478260869565216, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A physical cellular phenotype in which the size, shape, or structure of the %s is %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s morphology"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "('morphology' and ('inheres_in' some %s) and ('qualifier' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,54 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X GOREL_0000001 X inheres_in X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_GOREL_0000001_X_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased duration of meiotic recombination double-strand break repair](http://purl.obolibrary.org/obo/FYPO_0005618), [increased duration of protein phosphorylation during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0006345), [increased duration of mitotic S phase](http://purl.obolibrary.org/obo/FYPO_0000614) (555 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  physical quality of a process: "PATO:0002062"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  GOREL_0000001: "http://purl.obolibrary.org/obo/GOREL_0000001"
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'physical quality of a process'"
+  v1: "'biological_process'"
+  v2: "'owl:Thing'"
+
+name:
+  # Could not induce name, using default
+  text: "%s GOREL_0000001 %s inheres_in %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that GOREL_0000001 a %s and inheres_in a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('GOREL_0000001' some %s) and ('inheres_in' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

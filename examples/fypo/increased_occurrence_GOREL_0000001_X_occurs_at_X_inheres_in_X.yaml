@@ -1,0 +1,71 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: increased occurrence GOREL_0000001 X occurs_at X inheres_in X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/increased_occurrence_GOREL_0000001_X_occurs_at_X_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased DNA recombination at telomere during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0005407), [increased histone H2A phosphorylation at telomere during meiosis I](http://purl.obolibrary.org/obo/FYPO_0006461), [increased histone H2A phosphorylation at protein coding gene during meiosis I](http://purl.obolibrary.org/obo/FYPO_0006460) (74 total)
+
+classes: 
+  chromatin binding: "GO:0003682"
+  mitotic recombination: "GO:0006312"
+  transcription, DNA-templated: "GO:0006351"
+  biological_process: "GO:0008150"
+  chromatin silencing at centromere: "GO:0030702"
+  histone H4-K20 dimethylation: "GO:0034772"
+  histone H3-K9 dimethylation: "GO:0036123"
+  histone H3-K9 trimethylation: "GO:0036124"
+  histone exchange: "GO:0043486"
+  histone H3-K9 acetylation: "GO:0043970"
+  histone H4-K12 acetylation: "GO:0043983"
+  histone H4-K16 acetylation: "GO:0043984"
+  histone H3-K14 acetylation: "GO:0044154"
+  histone H3-K4 dimethylation: "GO:0044648"
+  histone H3-K56 acetylation: "GO:0097043"
+  protein localization to heterochromatin: "GO:0097355"
+  histone H2A phosphorylation: "GO:1990164"
+  increased occurrence: "PATO:0002051"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  GOREL_0000001: "http://purl.obolibrary.org/obo/GOREL_0000001"
+  occurs_at: "http://purl.obolibrary.org/obo/GOREL_0000501"
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'owl:Thing'"
+  v2: "'chromatin binding' or 'mitotic recombination' or 'transcription, DNA-templated' or 'chromatin silencing at centromere' or 'histone H4-K20 dimethylation' or 'histone H3-K9 dimethylation' or 'histone H3-K9 trimethylation' or 'histone exchange' or 'histone H3-K9 acetylation' or 'histone H4-K12 acetylation' or 'histone H4-K16 acetylation' or 'histone H3-K14 acetylation' or 'histone H3-K4 dimethylation' or 'histone H3-K56 acetylation' or 'protein localization to heterochromatin' or 'histone H2A phosphorylation'"
+
+name:
+  # Induced, frequency=0.04054054054054054, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "increased %s at %s during %s"
+  vars:
+    - v2
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any increased occurrence that GOREL_0000001 a %s and occurs_at a %s and inheres_in a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('increased occurrence' and ('GOREL_0000001' some %s) and ('occurs_at' some %s) and ('inheres_in' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

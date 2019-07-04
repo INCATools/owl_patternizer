@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has quality temperate has quality X
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_has_quality_temperate_has_quality_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [temperate deciduous broadleaf forest](http://purl.obolibrary.org/obo/ENVO_01000385), [temperate broadleaf evergreen forest](http://purl.obolibrary.org/obo/ENVO_01000397), [temperate deciduous needleleaf forest](http://purl.obolibrary.org/obo/ENVO_01000386) (4 total)
+
+classes: 
+  temperate: "ENVO:01000206"
+  forest ecosystem: "ENVO:01001243"
+  shedability: "PATO:0001729"
+
+
+relations: 
+  has quality: "RO:0000086"
+
+
+vars:
+  v0: "'forest ecosystem'"
+  v1: "'shedability'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has quality temperate has quality %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has quality a temperate and has quality a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has quality' some 'temperate') and ('has quality' some %s))"
+  vars:
+    - v0
+    - v1

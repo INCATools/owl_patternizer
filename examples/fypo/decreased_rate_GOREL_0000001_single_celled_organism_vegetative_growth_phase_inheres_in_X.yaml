@@ -1,0 +1,56 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: decreased rate GOREL_0000001 single-celled organism vegetative growth phase inheres_in X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/decreased_rate_GOREL_0000001_single_celled_organism_vegetative_growth_phase_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [decreased rate of mitotic spindle elongation](http://purl.obolibrary.org/obo/FYPO_0003268), [decreased rate of cytokinesis](http://purl.obolibrary.org/obo/FYPO_0000419), [decreased rate of cell separation after cytokinesis](http://purl.obolibrary.org/obo/FYPO_0005628) (28 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  single-celled organism vegetative growth phase: "GO:0072690"
+  decreased rate: "PATO:0000911"
+
+
+relations: 
+  GOREL_0000001: "http://purl.obolibrary.org/obo/GOREL_0000001"
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'biological_process'"
+
+name:
+  # Induced, frequency=0.5357142857142857, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "decreased rate of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.39285714285714285, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A cellular process phenotype observed in the vegetative growth phase of the life cycle in which the rate, or speed, of %s is decreased."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "decreased rate of %s during vegetative growth"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "decreased rate of %s during mitotic cell cycle"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('decreased rate' and ('GOREL_0000001' some 'single-celled organism vegetative growth phase') and ('inheres_in' some %s))"
+  vars:
+    - v0

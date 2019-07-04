@@ -1,0 +1,64 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X GOREL_0000001 cellular response to nitrogen starvation inheres_in X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_GOREL_0000001_cellular_response_to_nitrogen_starvation_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased duration of protein phosphorylation during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0006345), [decreased nuclease activity during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0005891), [decreased rate of endocytosis during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0006384) (20 total)
+
+classes: 
+  chromatin binding: "GO:0003682"
+  nuclease activity: "GO:0004518"
+  transcription, DNA-templated: "GO:0006351"
+  RNA catabolic process: "GO:0006401"
+  endocytosis: "GO:0006897"
+  cellular response to nitrogen starvation: "GO:0006995"
+  gene expression: "GO:0010467"
+  protein processing: "GO:0016485"
+  protein catabolic process: "GO:0030163"
+  protein localization to nucleus: "GO:0034504"
+  phosphorylation of RNA polymerase II C-terminal domain serine 2 residues: "GO:0071619"
+  L-lysine import across plasma membrane: "GO:0097639"
+  L-glutamate import across plasma membrane: "GO:0098712"
+  L-methionine import across plasma membrane: "GO:1905544"
+  protein localization to cell periphery: "GO:1990778"
+  deviation(from_normal): "PATO:0000069"
+  physical quality of a process: "PATO:0002062"
+
+
+relations: 
+  GOREL_0000001: "http://purl.obolibrary.org/obo/GOREL_0000001"
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'deviation(from_normal)' or 'physical quality of a process'"
+  v1: "'chromatin binding' or 'nuclease activity' or 'transcription, DNA-templated' or 'RNA catabolic process' or 'endocytosis' or 'gene expression' or 'protein processing' or 'protein catabolic process' or 'protein localization to nucleus' or 'phosphorylation of RNA polymerase II C-terminal domain serine 2 residues' or 'L-lysine import across plasma membrane' or 'L-glutamate import across plasma membrane' or 'L-methionine import across plasma membrane' or 'protein localization to cell periphery'"
+
+name:
+  # Induced, frequency=0.1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of %s during nitrogen starvation"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that GOREL_0000001 a cellular response to nitrogen starvation and inheres_in a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('GOREL_0000001' some 'cellular response to nitrogen starvation') and ('inheres_in' some %s))"
+  vars:
+    - v0
+    - v1

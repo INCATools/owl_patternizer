@@ -1,0 +1,57 @@
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X benefitsFrom X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_benefitsFrom_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [annual weeds](http://aims.fao.org/aos/agrovoc/c_459), [irrigated broad leaf weed](http://aims.fao.org/aos/agrovoc/c_330791), [plant protection](http://aims.fao.org/aos/agrovoc/c_5978) (6 total)
+
+classes: 
+  dairy cooperatives: "http://aims.fao.org/aos/agrovoc/c_10270"
+  development aid: "http://aims.fao.org/aos/agrovoc/c_2225"
+  plant biotechnology: "http://aims.fao.org/aos/agrovoc/c_27590"
+  annuals: "http://aims.fao.org/aos/agrovoc/c_28997"
+  broad leaf weeds: "http://aims.fao.org/aos/agrovoc/c_330650"
+  protection: "http://aims.fao.org/aos/agrovoc/c_330896"
+  industry: "http://aims.fao.org/aos/agrovoc/c_3848"
+  agencies: "http://aims.fao.org/aos/agrovoc/c_50152"
+  planning: "http://aims.fao.org/aos/agrovoc/c_5951"
+  regional accounting: "http://aims.fao.org/aos/agrovoc/c_6487"
+  weeds: "http://aims.fao.org/aos/agrovoc/c_8347"
+
+
+relations: 
+  benefitsFrom: "http://aims.fao.org/aos/agrontology#benefitsFrom"
+
+
+vars:
+  v0: "'annuals' or 'broad leaf weeds' or 'protection' or 'industry' or 'agencies' or 'planning'"
+  v1: "'dairy cooperatives' or 'development aid' or 'plant biotechnology' or 'regional accounting' or 'weeds'"
+
+name:
+  # Could not induce name, using default
+  text: "%s benefitsFrom %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that benefitsFrom a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('benefitsFrom' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,48 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X negatively regulates X
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_negatively_regulates_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [negative regulation of mitotic sister chromatid segregation](http://purl.obolibrary.org/obo/GO_0033048), [negative regulation of mitotic cell cycle](http://purl.obolibrary.org/obo/GO_0045930), [negative regulation of nuclear division](http://purl.obolibrary.org/obo/GO_0051784) (361 total)
+
+classes: 
+  process: "BFO:0000015"
+  biological_process: "GO:0008150"
+
+
+relations: 
+  negatively regulates: "RO:0002212"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'process'"
+
+name:
+  # Induced, frequency=0.0110803324099723, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "negative %s of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that negatively regulates a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('negatively regulates' some %s))"
+  vars:
+    - v0
+    - v1

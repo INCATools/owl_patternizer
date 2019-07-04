@@ -1,0 +1,49 @@
+# options: [min(8),dir('examples/po'),trim(true),base('http://purl.obolibrary.org/obo/po'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of shoot axis
+pattern_iri: http://purl.obolibrary.org/obo/po/X_part_of_shoot_axis
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [shoot axis periderm](http://purl.obolibrary.org/obo/PO_0005048), [shoot axis vascular cambium](http://purl.obolibrary.org/obo/PO_0025437), [shoot axis cork cambium](http://purl.obolibrary.org/obo/PO_0025435) (11 total)
+
+classes: 
+  plant structure: "http://purl.obolibrary.org/obo/PO_0009011"
+  shoot axis: "http://purl.obolibrary.org/obo/PO_0025029"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'plant structure'"
+
+name:
+  # Induced, frequency=0.8181818181818182, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "shoot axis %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that part of a shoot axis"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "シュート軸%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'shoot axis'))"
+  vars:
+    - v0

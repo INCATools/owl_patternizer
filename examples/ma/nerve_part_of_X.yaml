@@ -1,0 +1,60 @@
+# options: [min(12),dir('examples/ma'),trim(true),base('http://purl.obolibrary.org/obo/ma'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: nerve part of X
+pattern_iri: http://purl.obolibrary.org/obo/ma/nerve_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [trunk nerve](http://purl.obolibrary.org/obo/MA_0000515), [limb nerve](http://purl.obolibrary.org/obo/MA_0000693), [abdominal segment nerve](http://purl.obolibrary.org/obo/MA_0000528) (18 total)
+
+classes: 
+  trunk: "http://purl.obolibrary.org/obo/MA_0000004"
+  abdominal segment of trunk: "http://purl.obolibrary.org/obo/MA_0000021"
+  thoracic segment of trunk: "http://purl.obolibrary.org/obo/MA_0000022"
+  forelimb: "http://purl.obolibrary.org/obo/MA_0000025"
+  hindlimb: "http://purl.obolibrary.org/obo/MA_0000026"
+  abdomen: "http://purl.obolibrary.org/obo/MA_0000029"
+  pelvis: "http://purl.obolibrary.org/obo/MA_0000030"
+  chest: "http://purl.obolibrary.org/obo/MA_0000031"
+  thoracic cavity: "http://purl.obolibrary.org/obo/MA_0000032"
+  arm: "http://purl.obolibrary.org/obo/MA_0000033"
+  hand: "http://purl.obolibrary.org/obo/MA_0000037"
+  shoulder: "http://purl.obolibrary.org/obo/MA_0000038"
+  wrist: "http://purl.obolibrary.org/obo/MA_0000039"
+  ankle: "http://purl.obolibrary.org/obo/MA_0000043"
+  foot: "http://purl.obolibrary.org/obo/MA_0000044"
+  leg: "http://purl.obolibrary.org/obo/MA_0000047"
+  cranial ganglion/nerve: "http://purl.obolibrary.org/obo/MA_0000213"
+  nerve: "http://purl.obolibrary.org/obo/MA_0000217"
+
+
+relations: 
+  part of: "http://purl.obolibrary.org/obo/ma#part_of"
+
+
+vars:
+  v0: "'trunk' or 'abdominal segment of trunk' or 'thoracic segment of trunk' or 'forelimb' or 'hindlimb' or 'abdomen' or 'pelvis' or 'chest' or 'thoracic cavity' or 'arm' or 'hand' or 'shoulder' or 'wrist' or 'ankle' or 'foot' or 'leg' or 'cranial ganglion/nerve'"
+
+name:
+  # Induced, frequency=0.8333333333333334, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s nerve"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any nerve that part of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('nerve' and ('part of' some %s))"
+  vars:
+    - v0

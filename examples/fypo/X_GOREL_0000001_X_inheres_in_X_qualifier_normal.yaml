@@ -1,0 +1,56 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X GOREL_0000001 X inheres_in X qualifier normal
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_GOREL_0000001_X_inheres_in_X_qualifier_normal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [normal protein localization to cell cortex of cell tip during karyogamy](http://purl.obolibrary.org/obo/FYPO_0005991), [normal transcription during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0005117), [normal protein phosphorylation during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0005035) (296 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  quality: "PATO:0000001"
+  normal: "PATO:0000461"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  GOREL_0000001: "http://purl.obolibrary.org/obo/GOREL_0000001"
+  inheres_in: "RO:0000052"
+  qualifier: "http://purl.obolibrary.org/obo/fypo#qualifier"
+
+
+vars:
+  v0: "'quality'"
+  v1: "'biological_process'"
+  v2: "'owl:Thing'"
+
+name:
+  # Could not induce name, using default
+  text: "%s GOREL_0000001 %s inheres_in %s qualifier normal"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that GOREL_0000001 a %s and inheres_in a %s and qualifier a normal"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('GOREL_0000001' some %s) and ('inheres_in' some %s) and ('qualifier' some 'normal'))"
+  vars:
+    - v0
+    - v1
+    - v2

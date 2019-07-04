@@ -1,0 +1,56 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: decreased rate GOREL_0000001 X inheres_in X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/decreased_rate_GOREL_0000001_X_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [decreased nuclease activity during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0005891), [decreased rate of endocytosis during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0006384), [decreased glutamate dehydrogenase (NADP+) activity during cellular response to iron ion starvation](http://purl.obolibrary.org/obo/FYPO_0005734) (33 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  decreased rate: "PATO:0000911"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  GOREL_0000001: "http://purl.obolibrary.org/obo/GOREL_0000001"
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.06060606060606061, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "decreased %s during %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any decreased rate that GOREL_0000001 a %s and inheres_in a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "decreased %s during %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "('decreased rate' and ('GOREL_0000001' some %s) and ('inheres_in' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,52 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: increased concentration exists_during X inheres_in CL_0000334 towards X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/increased_concentration_exists_during_X_inheres_in_CL_0000334_towards_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased cellular glutathione level during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0004140), [increased RNA level during cellular response to iron ion starvation](http://purl.obolibrary.org/obo/FYPO_0002014), [increased RNA level during cellular response to zinc ion starvation](http://purl.obolibrary.org/obo/FYPO_0001547) (105 total)
+
+classes: 
+  CL_0000334: "CL:0000334"
+  biological_process: "GO:0008150"
+  increased concentration: "PATO:0001162"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  exists_during: "http://purl.obolibrary.org/obo/GOREL_0000032"
+  inheres_in: "RO:0000052"
+  towards: "RO:0002503"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.02857142857142857, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "increased %s level during %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.01904761904761905, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A cell phenotype observed in the vegetative growth phase of the life cycle in which the amount of %s measured in a cell during a %s is higher than normal. Total RNA or a specific RNA may be affected."
+  vars:
+    - v1
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('increased concentration' and ('exists_during' some %s) and ('inheres_in' some 'CL_0000334') and ('towards' some %s))"
+  vars:
+    - v0
+    - v1

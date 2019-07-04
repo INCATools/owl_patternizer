@@ -1,0 +1,44 @@
+# options: [min(12),dir('examples/emapa'),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: gut muscularis part_of X
+pattern_iri: http://purl.obolibrary.org/obo/emapa/gut_muscularis_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [midgut muscularis](http://purl.obolibrary.org/obo/EMAPA_27141), [oral region muscularis](http://purl.obolibrary.org/obo/EMAPA_26952), [foregut-midgut junction muscularis](http://purl.obolibrary.org/obo/EMAPA_27015) (20 total)
+
+classes: 
+  gut muscularis: "http://purl.obolibrary.org/obo/EMAPA_35385"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  part_of: "http://purl.obolibrary.org/obo/emapa#part_of"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s muscularis"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any gut muscularis that part_of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('gut muscularis' and ('part_of' some %s))"
+  vars:
+    - v0

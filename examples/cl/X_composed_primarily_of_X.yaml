@@ -1,0 +1,48 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X composed primarily of X
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_composed_primarily_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [muscle organ](http://purl.obolibrary.org/obo/UBERON_0001630), [vertebral column](http://purl.obolibrary.org/obo/UBERON_0001130), [multi-unit eye](http://purl.obolibrary.org/obo/UBERON_0015165) (91 total)
+
+classes: 
+  continuant: "BFO:0000002"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  composed primarily of: "RO:0002473"
+
+
+vars:
+  v0: "'anatomical entity'"
+  v1: "'continuant' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.07692307692307693, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.16483516483516483, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is composed primarily of %s tissue."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('composed primarily of' some %s))"
+  vars:
+    - v0
+    - v1

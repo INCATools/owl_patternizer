@@ -1,0 +1,50 @@
+# options: [min(50),dir('examples/zp'),trim(true),base('http://purl.obolibrary.org/obo/zp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part X inheres in anterior-posterior axis part of X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/zp/has_part_X_inheres_in_anterior_posterior_axis_part_of_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [anterior-posterior axis whole organism morphology, abnormal](http://purl.obolibrary.org/obo/ZP_0014482), [anterior-posterior axis trunk morphology, abnormal](http://purl.obolibrary.org/obo/ZP_0022778), [anterior-posterior axis whole organism shape, abnormal](http://purl.obolibrary.org/obo/ZP_0021743) (51 total)
+
+classes: 
+  anterior-posterior axis: "http://purl.obolibrary.org/obo/BSPO_0000013"
+  abnormal: "PATO:0000460"
+  physical object quality: "PATO:0001241"
+  anatomical structure: "http://purl.obolibrary.org/obo/ZFA_0000037"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'physical object quality'"
+  v1: "'anatomical structure'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "anterior-posterior axis %s %s, abnormal"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Abnormal(ly) %s (of) %s of anterior-posterior axis."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some (%s and ('inheres in' some ('anterior-posterior axis' and ('part of' some %s))) and ('has modifier' some 'abnormal')))"
+  vars:
+    - v0
+    - v1

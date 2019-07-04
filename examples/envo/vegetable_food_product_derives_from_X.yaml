@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: vegetable food product derives from X
+pattern_iri: http://purl.obolibrary.org/obo/envo/vegetable_food_product_derives_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mushroom vegetable food product](http://purl.obolibrary.org/obo/FOODON_00002050), [cowpea vegetable food product](http://purl.obolibrary.org/obo/FOODON_00001783), [barley vegetable food product](http://purl.obolibrary.org/obo/FOODON_00001633) (5 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  vegetable food product: "FOODON:00001261"
+
+
+relations: 
+  derives from: "RO:0001000"
+
+
+vars:
+  v0: "'material entity'"
+
+name:
+  # Induced, frequency=0.2, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "plant %s vegetable food product"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any vegetable food product that derives from a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('vegetable food product' and ('derives from' some %s))"
+  vars:
+    - v0

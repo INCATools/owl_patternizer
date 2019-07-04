@@ -1,0 +1,69 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X during X inheres_in X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_during_X_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased duration of mitotic cell cycle](http://purl.obolibrary.org/obo/FYPO_0005955), [increased duration of mitotic DNA damage checkpoint](http://purl.obolibrary.org/obo/FYPO_0002341), [decreased duration of mitotic spindle assembly checkpoint](http://purl.obolibrary.org/obo/FYPO_0005781) (36 total)
+
+classes: 
+  mitotic cell cycle: "GO:0000278"
+  1,3-beta-D-glucan synthase activity: "GO:0003843"
+  catalase activity: "GO:0004096"
+  alpha,alpha-trehalase activity: "GO:0004555"
+  ubiquitin-protein transferase activity: "GO:0004842"
+  mitotic spindle assembly checkpoint: "GO:0007094"
+  meiosis I: "GO:0007127"
+  biological_process: "GO:0008150"
+  unidimensional cell growth: "GO:0009826"
+  phosphatase activity: "GO:0016791"
+  intra-S DNA damage checkpoint: "GO:0031573"
+  protein localization to kinetochore: "GO:0034501"
+  protein localization to chromosome, telomeric region: "GO:0070198"
+  protein localization to endoplasmic reticulum: "GO:0070972"
+  mitotic G1 cell cycle arrest in response to nitrogen starvation: "GO:0071851"
+  cyclin-dependent protein kinase activity: "GO:0097472"
+  process quality: "PATO:0001236"
+  sequence_alteration: "SO:0001059"
+
+
+relations: 
+  during: "http://purl.obolibrary.org/obo/GOREL_0000002"
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'process quality'"
+  v1: "'biological_process'"
+  v2: "'mitotic cell cycle' or '1,3-beta-D-glucan synthase activity' or 'catalase activity' or 'alpha,alpha-trehalase activity' or 'ubiquitin-protein transferase activity' or 'mitotic spindle assembly checkpoint' or 'meiosis I' or 'unidimensional cell growth' or 'phosphatase activity' or 'intra-S DNA damage checkpoint' or 'protein localization to kinetochore' or 'protein localization to chromosome, telomeric region' or 'protein localization to endoplasmic reticulum' or 'mitotic G1 cell cycle arrest in response to nitrogen starvation' or 'cyclin-dependent protein kinase activity' or 'sequence_alteration'"
+
+name:
+  # Could not induce name, using default
+  text: "%s during %s inheres_in %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that during a %s and inheres_in a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('during' some %s) and ('inheres_in' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

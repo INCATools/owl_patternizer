@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: increased occurrence inheres_in X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/increased_occurrence_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased flocculation](http://purl.obolibrary.org/obo/FYPO_0000155), [increased re-entry into mitotic cell cycle after pheromone arrest](http://purl.obolibrary.org/obo/FYPO_0000558), [increased mitophagy](http://purl.obolibrary.org/obo/FYPO_0000501) (42 total)
+
+classes: 
+  increased occurrence: "PATO:0002051"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.7857142857142857, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "increased %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.19047619047619047, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A molecular function phenotype in which occurrence of %s by a gene product (usually a protein) in a mutant is increased. The affected gene product may be encoded by the mutated gene, or by a different gene."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "increased %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('increased occurrence' and ('inheres_in' some %s))"
+  vars:
+    - v0

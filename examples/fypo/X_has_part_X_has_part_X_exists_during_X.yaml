@@ -1,0 +1,58 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has_part X has_part X exists_during X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_has_part_X_has_part_X_exists_during_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [inviable tapered cell](http://purl.obolibrary.org/obo/FYPO_0002109), [viable tapered cell](http://purl.obolibrary.org/obo/FYPO_0002108), [inviable tapered vegetative cell](http://purl.obolibrary.org/obo/FYPO_0002111) (60 total)
+
+classes: 
+  cell phenotype: "http://purl.obolibrary.org/obo/FYPO_0000002"
+  cellular physical quality phenotype: "http://purl.obolibrary.org/obo/FYPO_0000136"
+  biological_process: "GO:0008150"
+
+
+relations: 
+  has_part: "BFO:0000051"
+  exists_during: "http://purl.obolibrary.org/obo/GOREL_0000032"
+
+
+vars:
+  v0: "'cell phenotype'"
+  v1: "'cellular physical quality phenotype'"
+  v2: "'cellular physical quality phenotype'"
+  v3: "'biological_process'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has_part %s has_part %s exists_during %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has_part a %s and has_part a %s and exists_during a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has_part' some %s) and ('has_part' some %s) and ('exists_during' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3

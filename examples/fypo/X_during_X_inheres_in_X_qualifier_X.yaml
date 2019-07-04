@@ -1,0 +1,60 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X during X inheres_in X qualifier X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_during_X_inheres_in_X_qualifier_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [normal mitotic cell cycle phase](http://purl.obolibrary.org/obo/FYPO_0002740), [normal DNA binding during cellular response to DNA damage](http://purl.obolibrary.org/obo/FYPO_0006088), [normal protein localization to cell tip during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0006385) (232 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  quality: "PATO:0000001"
+  deviation(from_normal): "PATO:0000069"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  during: "http://purl.obolibrary.org/obo/GOREL_0000002"
+  inheres_in: "RO:0000052"
+  qualifier: "http://purl.obolibrary.org/obo/fypo#qualifier"
+
+
+vars:
+  v0: "'quality'"
+  v1: "'biological_process'"
+  v2: "'owl:Thing'"
+  v3: "'deviation(from_normal)'"
+
+name:
+  # Could not induce name, using default
+  text: "%s during %s inheres_in %s qualifier %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that during a %s and inheres_in a %s and qualifier a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('during' some %s) and ('inheres_in' some %s) and ('qualifier' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3

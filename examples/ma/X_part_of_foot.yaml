@@ -1,0 +1,53 @@
+# options: [min(12),dir('examples/ma'),trim(true),base('http://purl.obolibrary.org/obo/ma'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of foot
+pattern_iri: http://purl.obolibrary.org/obo/ma/X_part_of_foot
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [foot connective tissue](http://purl.obolibrary.org/obo/MA_0000644), [foot blood vessel](http://purl.obolibrary.org/obo/MA_0000642), [foot nerve](http://purl.obolibrary.org/obo/MA_0000653) (12 total)
+
+classes: 
+  connective tissue: "http://purl.obolibrary.org/obo/MA_0000011"
+  foot: "http://purl.obolibrary.org/obo/MA_0000044"
+  blood vessel: "http://purl.obolibrary.org/obo/MA_0000060"
+  nerve: "http://purl.obolibrary.org/obo/MA_0000217"
+  limb digit: "http://purl.obolibrary.org/obo/MA_0000690"
+  limb joint: "http://purl.obolibrary.org/obo/MA_0000691"
+  limb muscle: "http://purl.obolibrary.org/obo/MA_0000692"
+  sesamoid bone: "http://purl.obolibrary.org/obo/MA_0001375"
+  distal phalanx: "http://purl.obolibrary.org/obo/MA_0002914"
+  middle phalanx: "http://purl.obolibrary.org/obo/MA_0002915"
+  proximal phalanx: "http://purl.obolibrary.org/obo/MA_0002916"
+
+
+relations: 
+  part of: "http://purl.obolibrary.org/obo/ma#part_of"
+
+
+vars:
+  v0: "'connective tissue' or 'blood vessel' or 'nerve' or 'limb digit' or 'limb joint' or 'limb muscle' or 'sesamoid bone' or 'distal phalanx' or 'middle phalanx' or 'proximal phalanx'"
+
+name:
+  # Induced, frequency=0.5833333333333334, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "foot %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that part of a foot"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'foot'))"
+  vars:
+    - v0

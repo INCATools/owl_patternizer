@@ -1,0 +1,44 @@
+# options: [min(12),dir('examples/ehdaa2'),trim(true),base('http://purl.obolibrary.org/obo/ehdaa2'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: dermomyotome develops_from X
+pattern_iri: http://purl.obolibrary.org/obo/ehdaa2/dermomyotome_develops_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [dermomyotome 01](http://purl.obolibrary.org/obo/EHDAA2_0000341), [dermomyotome 02](http://purl.obolibrary.org/obo/EHDAA2_0000342), [dermomyotome 03](http://purl.obolibrary.org/obo/EHDAA2_0000343) (38 total)
+
+classes: 
+  dermomyotome: "http://purl.obolibrary.org/obo/AEO_0000214"
+  somite: "http://purl.obolibrary.org/obo/AEO_0001015"
+
+
+relations: 
+  develops_from: "RO:0002202"
+
+
+vars:
+  v0: "'somite'"
+
+name:
+  # Could not induce name, using default
+  text: "dermomyotome develops_from %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any dermomyotome that develops_from a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('dermomyotome' and ('develops_from' some %s))"
+  vars:
+    - v0

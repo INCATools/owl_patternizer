@@ -1,0 +1,48 @@
+# options: [min(50),dir('examples/fbbt'),trim(true),base('http://purl.obolibrary.org/obo/fbbt'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has_postsynaptic_terminal_in X
+pattern_iri: http://purl.obolibrary.org/obo/fbbt/X_has_postsynaptic_terminal_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Kenyon cell of main calyx](http://purl.obolibrary.org/obo/FBbt_00047926), [dorsal cibarial sense organ neuron of posterior sensillum](http://purl.obolibrary.org/obo/FBbt_00110884), [dorsal cibarial sense organ neuron of anterior sensillum](http://purl.obolibrary.org/obo/FBbt_00110885) (58 total)
+
+classes: 
+  neuron: "http://purl.obolibrary.org/obo/FBbt_00005106"
+  material anatomical entity: "http://purl.obolibrary.org/obo/FBbt_00007016"
+
+
+relations: 
+  has_postsynaptic_terminal_in: "RO:0002110"
+
+
+vars:
+  v0: "'neuron'"
+  v1: "'material anatomical entity'"
+
+name:
+  # Induced, frequency=0.08620689655172414, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.034482758620689655, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s that receives input in the antennal mechanosensory and motor center (AMMC) %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has_postsynaptic_terminal_in' some %s))"
+  vars:
+    - v0
+    - v1

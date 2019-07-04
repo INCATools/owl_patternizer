@@ -1,0 +1,58 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: lacks all parts of type during single-celled organism vegetative growth phase inheres_in CL_0000334 towards X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/lacks_all_parts_of_type_during_single_celled_organism_vegetative_growth_phase_inheres_in_CL_0000334_towards_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [sulfide absent from cell](http://purl.obolibrary.org/obo/FYPO_0003693), [ergosterol absent from cell](http://purl.obolibrary.org/obo/FYPO_0002313), [cAMP absent from cell](http://purl.obolibrary.org/obo/FYPO_0003159) (31 total)
+
+classes: 
+  CL_0000334: "CL:0000334"
+  single-celled organism vegetative growth phase: "GO:0072690"
+  lacks all parts of type: "PATO:0002000"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  during: "http://purl.obolibrary.org/obo/GOREL_0000002"
+  inheres_in: "RO:0000052"
+  towards: "RO:0002503"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.41935483870967744, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s absent from cell"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1935483870967742, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A cell phenotype observed in the vegetative growth phase of the life cycle in which the amount of %s measured in a cell is too low to detect."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s absent from cell during vegetative growth"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s absent from cell during mitotic cell cycle"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('lacks all parts of type' and ('during' some 'single-celled organism vegetative growth phase') and ('inheres_in' some 'CL_0000334') and ('towards' some %s))"
+  vars:
+    - v0

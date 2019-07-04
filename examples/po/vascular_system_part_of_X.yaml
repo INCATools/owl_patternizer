@@ -1,0 +1,54 @@
+# options: [min(8),dir('examples/po'),trim(true),base('http://purl.obolibrary.org/obo/po'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: vascular system part of X
+pattern_iri: http://purl.obolibrary.org/obo/po/vascular_system_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [phyllome vascular system](http://purl.obolibrary.org/obo/PO_0025206), [fruit vascular system](http://purl.obolibrary.org/obo/PO_0008003), [plant embryo vascular system](http://purl.obolibrary.org/obo/PO_0008011) (19 total)
+
+classes: 
+  vascular system: "http://purl.obolibrary.org/obo/PO_0000034"
+  plant structure: "http://purl.obolibrary.org/obo/PO_0009011"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'plant structure'"
+
+name:
+  # Induced, frequency=0.8947368421052632, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s vascular system"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any vascular system that part of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "sistema vascular del %s"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s vein (related)"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('vascular system' and ('part of' some %s))"
+  vars:
+    - v0

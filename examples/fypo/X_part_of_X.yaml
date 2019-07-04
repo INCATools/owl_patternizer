@@ -1,0 +1,53 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part_of X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mitotic cell cycle checkpoint](http://purl.obolibrary.org/obo/GO_0007093), [meiotic cell cycle checkpoint](http://purl.obolibrary.org/obo/GO_0033313), [mitotic DNA replication checkpoint](http://purl.obolibrary.org/obo/GO_0033314) (201 total)
+
+classes: 
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  part_of: "BFO:0000050"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.15422885572139303, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s involved in %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.0845771144278607, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any %s that is involved in %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s involved in %s"
+    vars:
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "(%s and ('part_of' some %s))"
+  vars:
+    - v0
+    - v1

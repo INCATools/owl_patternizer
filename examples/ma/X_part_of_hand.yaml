@@ -1,0 +1,54 @@
+# options: [min(12),dir('examples/ma'),trim(true),base('http://purl.obolibrary.org/obo/ma'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of hand
+pattern_iri: http://purl.obolibrary.org/obo/ma/X_part_of_hand
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [hand connective tissue](http://purl.obolibrary.org/obo/MA_0000620), [hand blood vessel](http://purl.obolibrary.org/obo/MA_0000618), [hand nerve](http://purl.obolibrary.org/obo/MA_0000629) (13 total)
+
+classes: 
+  connective tissue: "http://purl.obolibrary.org/obo/MA_0000011"
+  hand: "http://purl.obolibrary.org/obo/MA_0000037"
+  blood vessel: "http://purl.obolibrary.org/obo/MA_0000060"
+  nerve: "http://purl.obolibrary.org/obo/MA_0000217"
+  limb digit: "http://purl.obolibrary.org/obo/MA_0000690"
+  limb joint: "http://purl.obolibrary.org/obo/MA_0000691"
+  limb muscle: "http://purl.obolibrary.org/obo/MA_0000692"
+  sesamoid bone: "http://purl.obolibrary.org/obo/MA_0001375"
+  distal carpal bone: "http://purl.obolibrary.org/obo/MA_0002558"
+  distal phalanx: "http://purl.obolibrary.org/obo/MA_0002914"
+  middle phalanx: "http://purl.obolibrary.org/obo/MA_0002915"
+  proximal phalanx: "http://purl.obolibrary.org/obo/MA_0002916"
+
+
+relations: 
+  part of: "http://purl.obolibrary.org/obo/ma#part_of"
+
+
+vars:
+  v0: "'connective tissue' or 'blood vessel' or 'nerve' or 'limb digit' or 'limb joint' or 'limb muscle' or 'sesamoid bone' or 'distal carpal bone' or 'distal phalanx' or 'middle phalanx' or 'proximal phalanx'"
+
+name:
+  # Induced, frequency=0.5384615384615384, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "hand %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that part of a hand"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'hand'))"
+  vars:
+    - v0

@@ -1,0 +1,44 @@
+# options: [min(12),dir('examples/emapa'),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: vertebral neural arch part_of X
+pattern_iri: http://purl.obolibrary.org/obo/emapa/vertebral_neural_arch_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [C1 vertebra neural arch](http://purl.obolibrary.org/obo/EMAPA_26523), [C2 vertebra neural arch](http://purl.obolibrary.org/obo/EMAPA_26539), [C3 vertebra neural arch](http://purl.obolibrary.org/obo/EMAPA_25732) (49 total)
+
+classes: 
+  vertebral neural arch: "http://purl.obolibrary.org/obo/EMAPA_36614"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  part_of: "http://purl.obolibrary.org/obo/emapa#part_of"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s neural arch"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any vertebral neural arch that part_of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('vertebral neural arch' and ('part_of' some %s))"
+  vars:
+    - v0

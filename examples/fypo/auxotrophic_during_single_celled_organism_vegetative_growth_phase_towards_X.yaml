@@ -1,0 +1,56 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: auxotrophic during single-celled organism vegetative growth phase towards X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/auxotrophic_during_single_celled_organism_vegetative_growth_phase_towards_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [growth auxotrophic for choline](http://purl.obolibrary.org/obo/FYPO_0004555), [growth auxotrophic for leucine](http://purl.obolibrary.org/obo/FYPO_0000635), [growth auxotrophic for histidine](http://purl.obolibrary.org/obo/FYPO_0002068) (21 total)
+
+classes: 
+  single-celled organism vegetative growth phase: "GO:0072690"
+  auxotrophic: "PATO:0000422"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  during: "http://purl.obolibrary.org/obo/GOREL_0000002"
+  towards: "RO:0002503"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.9523809523809523, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "growth auxotrophic for %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any auxotrophic that during a single-celled organism vegetative growth phase and towards a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s auxotrophy"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "growth auxotrophic for %s during mitotic cell cycle"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('auxotrophic' and ('during' some 'single-celled organism vegetative growth phase') and ('towards' some %s))"
+  vars:
+    - v0

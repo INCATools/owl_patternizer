@@ -1,0 +1,71 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: increased concentration exists_during X inheres_in X towards X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/increased_concentration_exists_during_X_inheres_in_X_towards_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased cellular glutathione level during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0004140), [increased RNA level during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0002020), [increased protein level during cellular response to nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0001219) (164 total)
+
+classes: 
+  CL_0000334: "CL:0000334"
+  CL_0002674: "CL:0002674"
+  CL_0002675: "CL:0002675"
+  fungal-type vacuole: "GO:0000324"
+  chromatin: "GO:0000785"
+  nucleus: "GO:0005634"
+  cytoplasm: "GO:0005737"
+  mitochondrion: "GO:0005739"
+  autophagosome: "GO:0005776"
+  cytosol: "GO:0005829"
+  plasma membrane: "GO:0005886"
+  biological_process: "GO:0008150"
+  fungal-type cell wall: "GO:0009277"
+  external side of plasma membrane: "GO:0009897"
+  cell wall-bounded periplasmic space: "GO:0030287"
+  cell tip: "GO:0051286"
+  mitotic spindle: "GO:0072686"
+  increased concentration: "PATO:0001162"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  exists_during: "http://purl.obolibrary.org/obo/GOREL_0000032"
+  inheres_in: "RO:0000052"
+  towards: "RO:0002503"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'CL_0000334' or 'CL_0002674' or 'CL_0002675' or 'fungal-type vacuole' or 'chromatin' or 'nucleus' or 'cytoplasm' or 'mitochondrion' or 'autophagosome' or 'cytosol' or 'plasma membrane' or 'fungal-type cell wall' or 'external side of plasma membrane' or 'cell wall-bounded periplasmic space' or 'cell tip' or 'mitotic spindle'"
+  v2: "'owl:Thing'"
+
+name:
+  # Could not induce name, using default
+  text: "increased concentration exists_during %s inheres_in %s towards %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any increased concentration that exists_during a %s and inheres_in a %s and towards a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('increased concentration' and ('exists_during' some %s) and ('inheres_in' some %s) and ('towards' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

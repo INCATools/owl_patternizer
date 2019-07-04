@@ -1,0 +1,52 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: quality GOREL_0000001 X inheres in part of X qualifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/fypo/quality_GOREL_0000001_X_inheres_in_part_of_X_qualifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal protein localization during mating](http://purl.obolibrary.org/obo/FYPO_0005989), [abnormal membrane organization during mating](http://purl.obolibrary.org/obo/FYPO_0004525), [abnormal chromatin organization during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0001282) (397 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  quality: "PATO:0000001"
+  abnormal: "PATO:0000460"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  GOREL_0000001: "http://purl.obolibrary.org/obo/GOREL_0000001"
+  inheres in part of: "RO:0002314"
+  qualifier: "http://purl.obolibrary.org/obo/fypo#qualifier"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.015113350125944584, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "abnormal %s during %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any quality that GOREL_0000001 a %s and inheres in part of a %s and qualifier a abnormal"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('quality' and ('GOREL_0000001' some %s) and ('inheres in part of' some %s) and ('qualifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

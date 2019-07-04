@@ -1,0 +1,53 @@
+# options: [min(10),dir('examples/efo'),trim(true),base('http://purl.obolibrary.org/obo/efo'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: neoplasm X X-or-part_of X
+pattern_iri: http://purl.obolibrary.org/obo/efo/neoplasm_X_X_or_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [adrenal gland neoplasm](http://www.ebi.ac.uk/efo/EFO_0003850), [skin neoplasm](http://www.ebi.ac.uk/efo/EFO_0004198), [head and neck neoplasia](http://www.ebi.ac.uk/efo/EFO_0005950) (22 total)
+
+classes: 
+  neoplasm: "EFO:0000616"
+  has_disease_location: "EFO:0000784"
+  animal component: "EFO:0000787"
+
+
+relations: 
+  part_of: "BFO:0000050"
+
+
+vars:
+  v0: "'has_disease_location'"
+  v1: "'animal component'"
+  v2: "'animal component'"
+
+name:
+  # Could not induce name, using default
+  text: "neoplasm %s %s/part_of %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any neoplasm that %s a Any %s that part_of a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('neoplasm' and (%s some %s or ('part_of' some %s)))"
+  vars:
+    - v0
+    - v1
+    - v2

@@ -1,0 +1,57 @@
+# options: [min(12),dir('examples/emapa'),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: bone part_of X
+pattern_iri: http://purl.obolibrary.org/obo/emapa/bone_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [limb bone](http://purl.obolibrary.org/obo/EMAPA_35494), [upper arm bone](http://purl.obolibrary.org/obo/EMAPA_35892), [hindlimb bone](http://purl.obolibrary.org/obo/EMAPA_35934) (15 total)
+
+classes: 
+  upper arm: "http://purl.obolibrary.org/obo/EMAPA_17424"
+  hindlimb: "http://purl.obolibrary.org/obo/EMAPA_17458"
+  foot: "http://purl.obolibrary.org/obo/EMAPA_17459"
+  lower leg: "http://purl.obolibrary.org/obo/EMAPA_17496"
+  upper leg: "http://purl.obolibrary.org/obo/EMAPA_17499"
+  viscerocranium: "http://purl.obolibrary.org/obo/EMAPA_18022"
+  trunk: "http://purl.obolibrary.org/obo/EMAPA_31857"
+  head: "http://purl.obolibrary.org/obo/EMAPA_31858"
+  hand skeleton: "http://purl.obolibrary.org/obo/EMAPA_32643"
+  bone: "http://purl.obolibrary.org/obo/EMAPA_32782"
+  abdominal segment of trunk: "http://purl.obolibrary.org/obo/EMAPA_35104"
+  jaw skeleton: "http://purl.obolibrary.org/obo/EMAPA_35455"
+  neck: "http://purl.obolibrary.org/obo/EMAPA_35587"
+  thoracic segment of trunk: "http://purl.obolibrary.org/obo/EMAPA_35862"
+  craniocervical region: "http://purl.obolibrary.org/obo/EMAPA_36867"
+
+
+relations: 
+  part_of: "http://purl.obolibrary.org/obo/emapa#part_of"
+
+
+vars:
+  v0: "'upper arm' or 'hindlimb' or 'foot' or 'lower leg' or 'upper leg' or 'viscerocranium' or 'trunk' or 'head' or 'hand skeleton' or 'abdominal segment of trunk' or 'jaw skeleton' or 'neck' or 'thoracic segment of trunk' or 'craniocervical region'"
+
+name:
+  # Induced, frequency=0.7333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s bone"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any bone that part_of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('bone' and ('part_of' some %s))"
+  vars:
+    - v0

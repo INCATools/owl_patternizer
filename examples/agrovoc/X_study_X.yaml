@@ -1,0 +1,69 @@
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X study X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_study_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [land economics](http://aims.fao.org/aos/agrovoc/c_25195), [mitochondrial genetics](http://aims.fao.org/aos/agrovoc/c_27859), [economic geography](http://aims.fao.org/aos/agrovoc/c_2473) (13 total)
+
+classes: 
+  social conditions: "http://aims.fao.org/aos/agrovoc/c_14370"
+  economics: "http://aims.fao.org/aos/agrovoc/c_2481"
+  economic environment: "http://aims.fao.org/aos/agrovoc/c_24949"
+  mitochondrial inheritance: "http://aims.fao.org/aos/agrovoc/c_27860"
+  human diseases: "http://aims.fao.org/aos/agrovoc/c_29198"
+  fluids: "http://aims.fao.org/aos/agrovoc/c_2994"
+  animal structure: "http://aims.fao.org/aos/agrovoc/c_31917"
+  genetics: "http://aims.fao.org/aos/agrovoc/c_3222"
+  geography: "http://aims.fao.org/aos/agrovoc/c_3230"
+  soil organisms: "http://aims.fao.org/aos/agrovoc/c_33552"
+  gender: "http://aims.fao.org/aos/agrovoc/c_34835"
+  mechanics: "http://aims.fao.org/aos/agrovoc/c_35220"
+  rural conditions: "http://aims.fao.org/aos/agrovoc/c_36748"
+  land: "http://aims.fao.org/aos/agrovoc/c_4172"
+  physiology: "http://aims.fao.org/aos/agrovoc/c_49881"
+  anatomy: "http://aims.fao.org/aos/agrovoc/c_49890"
+  morphology: "http://aims.fao.org/aos/agrovoc/c_49903"
+  analysis: "http://aims.fao.org/aos/agrovoc/c_49928"
+  pathology: "http://aims.fao.org/aos/agrovoc/c_5631"
+  plant secretions: "http://aims.fao.org/aos/agrovoc/c_5982"
+  sociology: "http://aims.fao.org/aos/agrovoc/c_7142"
+  soil mechanics: "http://aims.fao.org/aos/agrovoc/c_7177"
+  wood: "http://aims.fao.org/aos/agrovoc/c_8421"
+
+
+relations: 
+  study: "http://aims.fao.org/aos/agrontology#study"
+
+
+vars:
+  v0: "'economics' or 'genetics' or 'geography' or 'mechanics' or 'physiology' or 'anatomy' or 'morphology' or 'analysis' or 'pathology' or 'sociology'"
+  v1: "'social conditions' or 'economic environment' or 'mitochondrial inheritance' or 'human diseases' or 'fluids' or 'animal structure' or 'soil organisms' or 'gender' or 'rural conditions' or 'land' or 'plant secretions' or 'soil mechanics' or 'wood'"
+
+name:
+  # Induced, frequency=0.23076923076923078, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that study a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('study' some %s))"
+  vars:
+    - v0
+    - v1

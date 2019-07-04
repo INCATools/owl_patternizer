@@ -1,0 +1,58 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X GOREL_0000001 single-celled organism vegetative growth phase occurs_at X inheres_in protein localization to chromatin
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_GOREL_0000001_single_celled_organism_vegetative_growth_phase_occurs_at_X_inheres_in_protein_localization_to_chromatin
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [delayed onset of protein localization to chromatin at replication origin](http://purl.obolibrary.org/obo/FYPO_0006734), [premature protein localization to chromatin at replication origin](http://purl.obolibrary.org/obo/FYPO_0005109), [increased protein localization to chromatin at RNA polymerase II promoter during vegetative growth](http://purl.obolibrary.org/obo/FYPO_0005048) (25 total)
+
+classes: 
+  protein localization to chromatin: "GO:0071168"
+  single-celled organism vegetative growth phase: "GO:0072690"
+  temporal distribution quality: "PATO:0002323"
+  biological_region: "SO:0001411"
+
+
+relations: 
+  GOREL_0000001: "http://purl.obolibrary.org/obo/GOREL_0000001"
+  occurs_at: "http://purl.obolibrary.org/obo/GOREL_0000501"
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'temporal distribution quality'"
+  v1: "'biological_region'"
+
+name:
+  # Could not induce name, using default
+  text: "%s GOREL_0000001 single-celled organism vegetative growth phase occurs_at %s inheres_in protein localization to chromatin"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that GOREL_0000001 a single-celled organism vegetative growth phase and occurs_at a %s and inheres_in a protein localization to chromatin"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s protein localization to chromatin at replication %sgin"
+    vars:
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "(%s and ('GOREL_0000001' some 'single-celled organism vegetative growth phase') and ('occurs_at' some %s) and ('inheres_in' some 'protein localization to chromatin'))"
+  vars:
+    - v0
+    - v1

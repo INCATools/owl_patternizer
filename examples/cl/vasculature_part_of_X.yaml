@@ -1,0 +1,55 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: vasculature part of X
+pattern_iri: http://purl.obolibrary.org/obo/cl/vasculature_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [vasculature of eye](http://purl.obolibrary.org/obo/UBERON_0002203), [appendage vasculature](http://purl.obolibrary.org/obo/UBERON_0007304), [vasculature of head](http://purl.obolibrary.org/obo/UBERON_0002200) (24 total)
+
+classes: 
+  independent continuant: "BFO:0000004"
+  material anatomical entity: "UBERON:0000465"
+  vasculature: "UBERON:0002049"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'independent continuant' or 'material anatomical entity'"
+
+name:
+  # Induced, frequency=0.4583333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s vasculature"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.375, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A vasculature that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s vasculature"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s blood vessel"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('vasculature' and ('part of' some %s))"
+  vars:
+    - v0

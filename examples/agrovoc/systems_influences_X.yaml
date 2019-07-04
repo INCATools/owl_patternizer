@@ -1,0 +1,49 @@
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: systems influences X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/systems_influences_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [classification systems](http://aims.fao.org/aos/agrovoc/c_9000017), [educational systems](http://aims.fao.org/aos/agrovoc/c_50113), [economic systems](http://aims.fao.org/aos/agrovoc/c_2479) (6 total)
+
+classes: 
+  classification: "http://aims.fao.org/aos/agrovoc/c_1653"
+  educational institutions: "http://aims.fao.org/aos/agrovoc/c_16541"
+  economic environment: "http://aims.fao.org/aos/agrovoc/c_24949"
+  systems: "http://aims.fao.org/aos/agrovoc/c_330985"
+  information services: "http://aims.fao.org/aos/agrovoc/c_3865"
+  irrigation: "http://aims.fao.org/aos/agrovoc/c_3954"
+  animal feeding: "http://aims.fao.org/aos/agrovoc/c_429"
+
+
+relations: 
+  influences: "http://aims.fao.org/aos/agrontology#influences"
+
+
+vars:
+  v0: "'classification' or 'educational institutions' or 'economic environment' or 'information services' or 'irrigation' or 'animal feeding'"
+
+name:
+  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s systems"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any systems that influences a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('systems' and ('influences' some %s))"
+  vars:
+    - v0

@@ -1,0 +1,44 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X composed primarily of pre-cartilage condensation
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_composed_primarily_of_pre_cartilage_condensation
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [otic capsule pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0010349), [vertebra pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0011095), [cervical vertebra pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0013506) (22 total)
+
+classes: 
+  skeletal element: "UBERON:0004765"
+  pre-cartilage condensation: "UBERON:0005866"
+
+
+relations: 
+  composed primarily of: "RO:0002473"
+
+
+vars:
+  v0: "'skeletal element'"
+
+name:
+  # Induced, frequency=0.09090909090909091, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s bone pre-cartilage condensation"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5454545454545454, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is composed primarily of a pre-cartilage condensation."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('composed primarily of' some 'pre-cartilage condensation'))"
+  vars:
+    - v0

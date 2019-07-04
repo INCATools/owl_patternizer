@@ -1,0 +1,64 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X exists_during single-celled organism vegetative growth phase inheres_in X qualifier normal
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_exists_during_single_celled_organism_vegetative_growth_phase_inheres_in_X_qualifier_normal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [normal nuclear microtubules](http://purl.obolibrary.org/obo/FYPO_0004722), [normal cytoplasmic microtubules](http://purl.obolibrary.org/obo/FYPO_0001976), [normal cell polarity](http://purl.obolibrary.org/obo/FYPO_0005465) (39 total)
+
+classes: 
+  single-celled organism vegetative growth phase: "GO:0072690"
+  quality: "PATO:0000001"
+  normal: "PATO:0000461"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  exists_during: "http://purl.obolibrary.org/obo/GOREL_0000032"
+  inheres_in: "RO:0000052"
+  qualifier: "http://purl.obolibrary.org/obo/fypo#qualifier"
+
+
+vars:
+  v0: "'quality'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.20512820512820512, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "normal %s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.05128205128205128, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A physical cellular phenotype observed in the vegetative growth phase of the life cycle in which %s %s is normal (i.e. indistinguishable from wild type)."
+  vars:
+    - v1
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "normal %s %s during vegetative growth"
+    vars:
+      - v1
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "normal %s %s during mitotic cell cycle"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('exists_during' some 'single-celled organism vegetative growth phase') and ('inheres_in' some %s) and ('qualifier' some 'normal'))"
+  vars:
+    - v0
+    - v1

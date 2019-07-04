@@ -1,0 +1,48 @@
+# options: [min(8),dir('examples/po'),trim(true),base('http://purl.obolibrary.org/obo/po'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has participant X
+pattern_iri: http://purl.obolibrary.org/obo/po/X_has_participant_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [plant embryo dormant stage](http://purl.obolibrary.org/obo/PO_0025377), [seedling development stage](http://purl.obolibrary.org/obo/PO_0007131), [whole plant development stage](http://purl.obolibrary.org/obo/PO_0007033) (15 total)
+
+classes: 
+  plant structure: "http://purl.obolibrary.org/obo/PO_0009011"
+  plant structure development stage: "http://purl.obolibrary.org/obo/PO_0009012"
+
+
+relations: 
+  has participant: "RO:0000057"
+
+
+vars:
+  v0: "'plant structure development stage'"
+  v1: "'plant structure'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has participant %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.13333333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that has as primary participant a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has participant' some %s))"
+  vars:
+    - v0
+    - v1

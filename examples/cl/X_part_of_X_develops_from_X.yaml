@@ -1,0 +1,82 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of X develops from X
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_part_of_X_develops_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [endothelial cell of lymphatic vessel](http://purl.obolibrary.org/obo/CL_0002138), [anterior part of tongue](http://purl.obolibrary.org/obo/UBERON_0010032), [auditory hillocks, pharyngeal arch 2 derived](http://purl.obolibrary.org/obo/UBERON_0016612) (39 total)
+
+classes: 
+  continuant: "BFO:0000002"
+  endothelial cell of vascular tree: "CL:0002139"
+  vascular lymphangioblast: "CL:0005022"
+  anatomical cluster: "UBERON:0000477"
+  extraembryonic structure: "UBERON:0000478"
+  simple squamous epithelium: "UBERON:0000487"
+  ectoderm: "UBERON:0000924"
+  endoderm: "UBERON:0000925"
+  mesoderm: "UBERON:0000926"
+  anatomical entity: "UBERON:0001062"
+  odontogenic papilla: "UBERON:0001763"
+  neural crest: "UBERON:0002342"
+  pharyngeal arch 2: "UBERON:0003066"
+  mesenchyme: "UBERON:0003104"
+  Mullerian duct: "UBERON:0003890"
+  epithelial tube: "UBERON:0003914"
+  pharyngeal arch 1: "UBERON:0004362"
+  skeletal tissue: "UBERON:0004755"
+  splanchnopleure: "UBERON:0004873"
+  somatopleure: "UBERON:0004874"
+  subdivision of digestive tract: "UBERON:0004921"
+  lingual swellings: "UBERON:0006260"
+  head mesenchyme from mesoderm: "UBERON:0006904"
+  subdivision of oviduct: "UBERON:0013515"
+
+
+relations: 
+  part of: "BFO:0000050"
+  develops from: "RO:0002202"
+
+
+vars:
+  v0: "'endothelial cell of vascular tree' or 'anatomical cluster' or 'extraembryonic structure' or 'simple squamous epithelium' or 'mesenchyme' or 'epithelial tube' or 'skeletal tissue' or 'subdivision of digestive tract' or 'subdivision of oviduct'"
+  v1: "'continuant' or 'anatomical entity'"
+  v2: "'vascular lymphangioblast' or 'ectoderm' or 'endoderm' or 'mesoderm' or 'odontogenic papilla' or 'neural crest' or 'pharyngeal arch 2' or 'Mullerian duct' or 'pharyngeal arch 1' or 'splanchnopleure' or 'somatopleure' or 'lingual swellings' or 'head mesenchyme from mesoderm'"
+
+name:
+  # Could not induce name, using default
+  text: "%s part of %s develops from %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Induced, frequency=0.5128205128205128, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s that develops_from a %s and is part of a %s."
+  vars:
+    - v0
+    - v2
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s derived from %s of %s"
+    vars:
+      - v0
+      - v2
+      - v1
+
+
+equivalentTo:
+  text: "(%s and ('part of' some %s) and ('develops from' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

@@ -1,0 +1,45 @@
+# options: [min(12),dir('examples/emapa'),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part_of limb skin
+pattern_iri: http://purl.obolibrary.org/obo/emapa/X_part_of_limb_skin
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [limb dermis](http://purl.obolibrary.org/obo/EMAPA_32727), [limb epidermis](http://purl.obolibrary.org/obo/EMAPA_32728), [forelimb skin](http://purl.obolibrary.org/obo/EMAPA_32612) (16 total)
+
+classes: 
+  dermis: "http://purl.obolibrary.org/obo/EMAPA_17527"
+  epidermis: "http://purl.obolibrary.org/obo/EMAPA_17528"
+  limb skin: "http://purl.obolibrary.org/obo/EMAPA_32726"
+
+
+relations: 
+  part_of: "http://purl.obolibrary.org/obo/emapa#part_of"
+
+
+vars:
+  v0: "'dermis' or 'epidermis'"
+
+name:
+  # Induced, frequency=0.125, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "limb %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that part_of a limb skin"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('part_of' some 'limb skin'))"
+  vars:
+    - v0

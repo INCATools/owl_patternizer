@@ -1,0 +1,56 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: cell phenotype has_part X has_part X exists_during single-celled organism vegetative growth phase
+pattern_iri: http://purl.obolibrary.org/obo/fypo/cell_phenotype_has_part_X_has_part_X_exists_during_single_celled_organism_vegetative_growth_phase
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [inviable tapered cell](http://purl.obolibrary.org/obo/FYPO_0002109), [viable tapered cell](http://purl.obolibrary.org/obo/FYPO_0002108), [inviable tapered vegetative cell](http://purl.obolibrary.org/obo/FYPO_0002111) (51 total)
+
+classes: 
+  cell phenotype: "http://purl.obolibrary.org/obo/FYPO_0000002"
+  cellular physical quality phenotype: "http://purl.obolibrary.org/obo/FYPO_0000136"
+  single-celled organism vegetative growth phase: "GO:0072690"
+
+
+relations: 
+  has_part: "BFO:0000051"
+  exists_during: "http://purl.obolibrary.org/obo/GOREL_0000032"
+
+
+vars:
+  v0: "'cellular physical quality phenotype'"
+  v1: "'cellular physical quality phenotype'"
+
+name:
+  # Induced, frequency=0.058823529411764705, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s with %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any cell phenotype that has_part a %s and has_part a %s and exists_during a single-celled organism vegetative growth phase"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s with %s during mitotic cell cycle"
+    vars:
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "('cell phenotype' and ('has_part' some %s) and ('has_part' some %s) and ('exists_during' some 'single-celled organism vegetative growth phase'))"
+  vars:
+    - v0
+    - v1

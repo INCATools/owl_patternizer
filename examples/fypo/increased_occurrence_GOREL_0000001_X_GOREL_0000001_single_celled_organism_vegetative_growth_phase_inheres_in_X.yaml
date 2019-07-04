@@ -1,0 +1,62 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: increased occurrence GOREL_0000001 X GOREL_0000001 single-celled organism vegetative growth phase inheres_in X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/increased_occurrence_GOREL_0000001_X_GOREL_0000001_single_celled_organism_vegetative_growth_phase_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased protein phosphorylation during mitotic G1 phase](http://purl.obolibrary.org/obo/FYPO_0004354), [increased protein degradation during mitotic G1 phase](http://purl.obolibrary.org/obo/FYPO_0004200), [increased protein localization to chromatin during mitotic G1 phase](http://purl.obolibrary.org/obo/FYPO_0005897) (36 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  single-celled organism vegetative growth phase: "GO:0072690"
+  increased occurrence: "PATO:0002051"
+
+
+relations: 
+  GOREL_0000001: "http://purl.obolibrary.org/obo/GOREL_0000001"
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'biological_process'"
+
+name:
+  # Induced, frequency=0.8888888888888888, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "increased %s during %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.08333333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An inviable phenotype observed in the vegetative growth phase of the life cycle in which a cell lyses, i.e. the plasma membrane ruptures and cytoplasm is lost, during a %s. Note that in fission yeast cell %s, the integrity of the cell wall is also compromised."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "increased %s during %s during vegetative growth"
+    vars:
+      - v1
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "increased %s during %s during mitotic cell cycle"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "('increased occurrence' and ('GOREL_0000001' some %s) and ('GOREL_0000001' some 'single-celled organism vegetative growth phase') and ('inheres_in' some %s))"
+  vars:
+    - v0
+    - v1

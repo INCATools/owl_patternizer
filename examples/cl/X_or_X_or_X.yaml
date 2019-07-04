@@ -1,0 +1,50 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X-or-X-or-X
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_or_X_or_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [humerus endochondral element](http://purl.obolibrary.org/obo/UBERON_0015053), [tibia endochondral element](http://purl.obolibrary.org/obo/UBERON_0015004), [femur endochondral element](http://purl.obolibrary.org/obo/UBERON_0015052) (25 total)
+
+classes: 
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: []
+
+vars:
+  v0: "'anatomical entity' or 'anatomical entity'"
+  v1: "'anatomical entity' or 'anatomical entity'"
+  v2: "'anatomical entity' or 'anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s/%s/%s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s or %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s or %s or %s"
+  vars:
+    - v0
+    - v1
+    - v2

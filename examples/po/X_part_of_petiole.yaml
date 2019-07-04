@@ -1,0 +1,49 @@
+# options: [min(8),dir('examples/po'),trim(true),base('http://purl.obolibrary.org/obo/po'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of petiole
+pattern_iri: http://purl.obolibrary.org/obo/po/X_part_of_petiole
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [petiole vascular system](http://purl.obolibrary.org/obo/PO_0000052), [petiole stomatal complex](http://purl.obolibrary.org/obo/PO_0025189), [petiole parenchyma](http://purl.obolibrary.org/obo/PO_0006066) (9 total)
+
+classes: 
+  petiole: "http://purl.obolibrary.org/obo/PO_0020038"
+  plant anatomical entity: "http://purl.obolibrary.org/obo/PO_0025131"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'plant anatomical entity'"
+
+name:
+  # Induced, frequency=0.8888888888888888, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "petiole %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1111111111111111, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s of the petiole."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "葉柄%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'petiole'))"
+  vars:
+    - v0

@@ -1,0 +1,55 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has potential to develop into X
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_has_potential_to_develop_into_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ureter ureteric bud](http://purl.obolibrary.org/obo/UBERON_0005081), [metanephric ureteric bud](http://purl.obolibrary.org/obo/UBERON_0005080), [future coelemic cavity lumen](http://purl.obolibrary.org/obo/UBERON_0003886) (81 total)
+
+classes: 
+  continuant: "BFO:0000002"
+  independent continuant: "BFO:0000004"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  has potential to develop into: "RO:0002387"
+
+
+vars:
+  v0: "'continuant' or 'anatomical entity'"
+  v1: "'independent continuant' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.24691358024691357, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.2839506172839506, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that has the potential to develop into a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('has potential to develop into' some %s))"
+  vars:
+    - v0
+    - v1

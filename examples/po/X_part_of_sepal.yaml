@@ -1,0 +1,49 @@
+# options: [min(8),dir('examples/po'),trim(true),base('http://purl.obolibrary.org/obo/po'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of sepal
+pattern_iri: http://purl.obolibrary.org/obo/po/X_part_of_sepal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [sepal vascular system](http://purl.obolibrary.org/obo/PO_0004723), [sepal stomatal complex](http://purl.obolibrary.org/obo/PO_0025219), [sepal parenchyma](http://purl.obolibrary.org/obo/PO_0006068) (9 total)
+
+classes: 
+  plant structure: "http://purl.obolibrary.org/obo/PO_0009011"
+  sepal: "http://purl.obolibrary.org/obo/PO_0009031"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'plant structure'"
+
+name:
+  # Induced, frequency=0.5555555555555556, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "sepal %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2222222222222222, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a sepal."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "がく片%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'sepal'))"
+  vars:
+    - v0

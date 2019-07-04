@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: building floor composed primarily of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/building_floor_composed_primarily_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [stone building floor](http://purl.obolibrary.org/obo/ENVO_01000493), [sandy building floor](http://purl.obolibrary.org/obo/ENVO_01000490), [concrete building floor](http://purl.obolibrary.org/obo/ENVO_01000489) (5 total)
+
+classes: 
+  environmental material: "ENVO:00010483"
+  building floor: "ENVO:01000486"
+
+
+relations: 
+  composed primarily of: "RO:0002473"
+
+
+vars:
+  v0: "'environmental material'"
+
+name:
+  # Induced, frequency=0.4, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s building floor"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s building floor is a building floor that is composed primarily of concrete"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('building floor' and ('composed primarily of' some %s))"
+  vars:
+    - v0

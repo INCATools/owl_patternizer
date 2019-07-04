@@ -1,0 +1,49 @@
+# options: [min(8),dir('examples/po'),trim(true),base('http://purl.obolibrary.org/obo/po'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: meristematic apical cell part of X
+pattern_iri: http://purl.obolibrary.org/obo/po/meristematic_apical_cell_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [root meristematic apical cell](http://purl.obolibrary.org/obo/PO_0030008), [shoot meristematic apical cell](http://purl.obolibrary.org/obo/PO_0030009), [embryo apical cell](http://purl.obolibrary.org/obo/PO_0025284) (9 total)
+
+classes: 
+  plant structure: "http://purl.obolibrary.org/obo/PO_0009011"
+  meristematic apical cell: "http://purl.obolibrary.org/obo/PO_0030007"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'plant structure'"
+
+name:
+  # Induced, frequency=0.5555555555555556, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s meristematic apical cell"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2222222222222222, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A gametophyte meristematic apical cell that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s apical cell (exact)"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('meristematic apical cell' and ('part of' some %s))"
+  vars:
+    - v0

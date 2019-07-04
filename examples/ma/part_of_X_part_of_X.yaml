@@ -1,0 +1,47 @@
+# options: [min(12),dir('examples/ma'),trim(true),base('http://purl.obolibrary.org/obo/ma'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: part of X part of X
+pattern_iri: http://purl.obolibrary.org/obo/ma/part_of_X_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [forelimb skin](http://purl.obolibrary.org/obo/MA_0000617), [hindlimb skin](http://purl.obolibrary.org/obo/MA_0000665), [arm skin](http://purl.obolibrary.org/obo/MA_0000596) (28 total)
+
+classes: 
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  part of: "http://purl.obolibrary.org/obo/ma#part_of"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.07142857142857142, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any part of a %s that part of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(('part of' some %s) and ('part of' some %s))"
+  vars:
+    - v0
+    - v1

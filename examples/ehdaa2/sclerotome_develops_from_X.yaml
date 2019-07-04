@@ -1,0 +1,44 @@
+# options: [min(12),dir('examples/ehdaa2'),trim(true),base('http://purl.obolibrary.org/obo/ehdaa2'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: sclerotome develops_from X
+pattern_iri: http://purl.obolibrary.org/obo/ehdaa2/sclerotome_develops_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [sclerotome 01](http://purl.obolibrary.org/obo/EHDAA2_0001780), [sclerotome 02](http://purl.obolibrary.org/obo/EHDAA2_0001782), [sclerotome 03](http://purl.obolibrary.org/obo/EHDAA2_0001783) (36 total)
+
+classes: 
+  sclerotome: "http://purl.obolibrary.org/obo/AEO_0000212"
+  somite: "http://purl.obolibrary.org/obo/AEO_0001015"
+
+
+relations: 
+  develops_from: "RO:0002202"
+
+
+vars:
+  v0: "'somite'"
+
+name:
+  # Could not induce name, using default
+  text: "sclerotome develops_from %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any sclerotome that develops_from a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('sclerotome' and ('develops_from' some %s))"
+  vars:
+    - v0

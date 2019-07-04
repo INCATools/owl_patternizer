@@ -1,0 +1,70 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: morphology exists_during X inheres_in X qualifier normal
+pattern_iri: http://purl.obolibrary.org/obo/fypo/morphology_exists_during_X_inheres_in_X_qualifier_normal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [normal cell morphology during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0002048), [normal cell cortex morphology during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0001232), [normal nuclear morphology during G0](http://purl.obolibrary.org/obo/FYPO_0006668) (22 total)
+
+classes: 
+  CL_0000334: "CL:0000334"
+  astral microtubule: "GO:0000235"
+  fungal-type vacuole: "GO:0000324"
+  chromosome, telomeric region: "GO:0000781"
+  division septum: "GO:0000935"
+  nucleus: "GO:0005634"
+  nuclear envelope: "GO:0005635"
+  chromosome: "GO:0005694"
+  mitochondrion: "GO:0005739"
+  endoplasmic reticulum: "GO:0005783"
+  Golgi apparatus: "GO:0005794"
+  actomyosin contractile ring: "GO:0005826"
+  plasma membrane: "GO:0005886"
+  cell cortex: "GO:0005938"
+  biological_process: "GO:0008150"
+  actin cytoskeleton: "GO:0015629"
+  microtubule cytoskeleton: "GO:0015630"
+  actin cortical patch: "GO:0030479"
+  medial cortex septin ring: "GO:0036391"
+  formin-nucleated actin cable: "GO:0070648"
+  morphology: "PATO:0000051"
+  normal: "PATO:0000461"
+
+
+relations: 
+  exists_during: "http://purl.obolibrary.org/obo/GOREL_0000032"
+  inheres_in: "RO:0000052"
+  qualifier: "http://purl.obolibrary.org/obo/fypo#qualifier"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'CL_0000334' or 'astral microtubule' or 'fungal-type vacuole' or 'chromosome, telomeric region' or 'division septum' or 'nucleus' or 'nuclear envelope' or 'chromosome' or 'mitochondrion' or 'endoplasmic reticulum' or 'Golgi apparatus' or 'actomyosin contractile ring' or 'plasma membrane' or 'cell cortex' or 'actin cytoskeleton' or 'microtubule cytoskeleton' or 'actin cortical patch' or 'medial cortex septin ring' or 'formin-nucleated actin cable'"
+
+name:
+  # Could not induce name, using default
+  text: "morphology exists_during %s inheres_in %s qualifier normal"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any morphology that exists_during a %s and inheres_in a %s and qualifier a normal"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('morphology' and ('exists_during' some %s) and ('inheres_in' some %s) and ('qualifier' some 'normal'))"
+  vars:
+    - v0
+    - v1

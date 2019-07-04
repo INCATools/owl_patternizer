@@ -1,0 +1,58 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X inheres in part of X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_inheres_in_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mating phenotype](http://purl.obolibrary.org/obo/FYPO_0000301), [cell phenotype](http://purl.obolibrary.org/obo/FYPO_0000002), [cell cycle phenotype](http://purl.obolibrary.org/obo/FYPO_0000631) (40 total)
+
+classes: 
+  cell phenotype: "http://purl.obolibrary.org/obo/FYPO_0000002"
+  cell population growth phenotype: "http://purl.obolibrary.org/obo/FYPO_0000139"
+  physical object quality: "PATO:0001241"
+  increased occurrence: "PATO:0002051"
+  decreased occurrence: "PATO:0002052"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  inheres in part of: "RO:0002314"
+
+
+vars:
+  v0: "'cell phenotype' or 'cell population growth phenotype' or 'physical object quality' or 'increased occurrence' or 'decreased occurrence'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.125, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.075, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that affects a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "fission yeast %s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('inheres in part of' some %s))"
+  vars:
+    - v0
+    - v1

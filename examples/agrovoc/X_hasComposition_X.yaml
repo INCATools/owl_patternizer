@@ -1,0 +1,61 @@
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X hasComposition X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_hasComposition_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [titanium dioxide](http://aims.fao.org/aos/agrovoc/c_331330), [food colourants](http://aims.fao.org/aos/agrovoc/c_3015), [broadleaved forests](http://aims.fao.org/aos/agrovoc/c_1100) (9 total)
+
+classes: 
+  dioxides: "http://aims.fao.org/aos/agrovoc/c_10386"
+  colour: "http://aims.fao.org/aos/agrovoc/c_1773"
+  leaf protein: "http://aims.fao.org/aos/agrovoc/c_24867"
+  broadleaved trees: "http://aims.fao.org/aos/agrovoc/c_28203"
+  food additives: "http://aims.fao.org/aos/agrovoc/c_3011"
+  forests: "http://aims.fao.org/aos/agrovoc/c_3062"
+  titanium: "http://aims.fao.org/aos/agrovoc/c_32704"
+  salts: "http://aims.fao.org/aos/agrovoc/c_33129"
+  gums: "http://aims.fao.org/aos/agrovoc/c_3441"
+  halogens: "http://aims.fao.org/aos/agrovoc/c_3477"
+  organic acids: "http://aims.fao.org/aos/agrovoc/c_5383"
+  peat: "http://aims.fao.org/aos/agrovoc/c_5647"
+  protein concentrates: "http://aims.fao.org/aos/agrovoc/c_6250"
+  resins: "http://aims.fao.org/aos/agrovoc/c_6519"
+  soil types: "http://aims.fao.org/aos/agrovoc/c_7204"
+
+
+relations: 
+  hasComposition: "http://aims.fao.org/aos/agrontology#hasComposition"
+
+
+vars:
+  v0: "'dioxides' or 'food additives' or 'forests' or 'salts' or 'protein concentrates' or 'resins' or 'soil types'"
+  v1: "'colour' or 'leaf protein' or 'broadleaved trees' or 'titanium' or 'gums' or 'halogens' or 'organic acids' or 'peat'"
+
+name:
+  # Could not induce name, using default
+  text: "%s hasComposition %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that hasComposition a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('hasComposition' some %s))"
+  vars:
+    - v0
+    - v1

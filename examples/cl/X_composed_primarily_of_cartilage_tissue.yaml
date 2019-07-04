@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X composed primarily of cartilage tissue
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_composed_primarily_of_cartilage_tissue
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cartilaginous projection](http://purl.obolibrary.org/obo/UBERON_0011769), [cartilaginous otic capsule](http://purl.obolibrary.org/obo/UBERON_0005410), [cartilage element](http://purl.obolibrary.org/obo/UBERON_0007844) (30 total)
+
+classes: 
+  anatomical structure: "UBERON:0000061"
+  cartilage tissue: "UBERON:0002418"
+
+
+relations: 
+  composed primarily of: "RO:0002473"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s cartilage"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is composed primarily of cartilage tissue."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "cartilaginous %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('composed primarily of' some 'cartilage tissue'))"
+  vars:
+    - v0

@@ -1,0 +1,52 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X GOREL_0000001 single-celled organism vegetative growth phase inheres in part of X qualifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_GOREL_0000001_single_celled_organism_vegetative_growth_phase_inheres_in_part_of_X_qualifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal mitochondrion inheritance](http://purl.obolibrary.org/obo/FYPO_0000906), [abnormal mitochondrial genome maintenance](http://purl.obolibrary.org/obo/FYPO_0000490), [abnormal mitotic spindle elongation](http://purl.obolibrary.org/obo/FYPO_0000131) (365 total)
+
+classes: 
+  single-celled organism vegetative growth phase: "GO:0072690"
+  quality: "PATO:0000001"
+  abnormal: "PATO:0000460"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  GOREL_0000001: "http://purl.obolibrary.org/obo/GOREL_0000001"
+  inheres in part of: "RO:0002314"
+  qualifier: "http://purl.obolibrary.org/obo/fypo#qualifier"
+
+
+vars:
+  v0: "'quality'"
+  v1: "'owl:Thing'"
+
+name:
+  # Could not induce name, using default
+  text: "%s GOREL_0000001 single-celled organism vegetative growth phase inheres in part of %s qualifier abnormal"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that GOREL_0000001 a single-celled organism vegetative growth phase and inheres in part of a %s and qualifier a abnormal"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('GOREL_0000001' some 'single-celled organism vegetative growth phase') and ('inheres in part of' some %s) and ('qualifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

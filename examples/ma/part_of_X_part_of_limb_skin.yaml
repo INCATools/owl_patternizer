@@ -1,0 +1,55 @@
+# options: [min(12),dir('examples/ma'),trim(true),base('http://purl.obolibrary.org/obo/ma'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: part of X part of limb skin
+pattern_iri: http://purl.obolibrary.org/obo/ma/part_of_X_part_of_limb_skin
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [forelimb skin](http://purl.obolibrary.org/obo/MA_0000617), [hindlimb skin](http://purl.obolibrary.org/obo/MA_0000665), [arm skin](http://purl.obolibrary.org/obo/MA_0000596) (12 total)
+
+classes: 
+  forelimb: "http://purl.obolibrary.org/obo/MA_0000025"
+  hindlimb: "http://purl.obolibrary.org/obo/MA_0000026"
+  arm: "http://purl.obolibrary.org/obo/MA_0000033"
+  elbow: "http://purl.obolibrary.org/obo/MA_0000036"
+  hand: "http://purl.obolibrary.org/obo/MA_0000037"
+  shoulder: "http://purl.obolibrary.org/obo/MA_0000038"
+  wrist: "http://purl.obolibrary.org/obo/MA_0000039"
+  ankle: "http://purl.obolibrary.org/obo/MA_0000043"
+  foot: "http://purl.obolibrary.org/obo/MA_0000044"
+  hip: "http://purl.obolibrary.org/obo/MA_0000045"
+  knee: "http://purl.obolibrary.org/obo/MA_0000046"
+  leg: "http://purl.obolibrary.org/obo/MA_0000047"
+  limb skin: "http://purl.obolibrary.org/obo/MA_0000694"
+
+
+relations: 
+  part of: "http://purl.obolibrary.org/obo/ma#part_of"
+
+
+vars:
+  v0: "'forelimb' or 'hindlimb' or 'arm' or 'elbow' or 'hand' or 'shoulder' or 'wrist' or 'ankle' or 'foot' or 'hip' or 'knee' or 'leg'"
+
+name:
+  # Induced, frequency=1.0833333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s skin"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any part of a %s that part of a limb skin"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(('part of' some %s) and ('part of' some 'limb skin'))"
+  vars:
+    - v0

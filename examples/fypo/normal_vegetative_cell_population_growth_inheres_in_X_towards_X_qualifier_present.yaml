@@ -1,0 +1,52 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: normal vegetative cell population growth inheres_in X towards X qualifier present
+pattern_iri: http://purl.obolibrary.org/obo/fypo/normal_vegetative_cell_population_growth_inheres_in_X_towards_X_qualifier_present
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [normal growth on acetaldehyde](http://purl.obolibrary.org/obo/FYPO_0005776), [normal growth on staurosporine](http://purl.obolibrary.org/obo/FYPO_0001238), [normal growth on urea](http://purl.obolibrary.org/obo/FYPO_0006017) (131 total)
+
+classes: 
+  culture medium: "http://purl.obolibrary.org/obo/BTO_0000316"
+  normal vegetative cell population growth: "http://purl.obolibrary.org/obo/FYPO_0001357"
+  present: "PATO:0000467"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  inheres_in: "RO:0000052"
+  towards: "RO:0002503"
+  qualifier: "http://purl.obolibrary.org/obo/fypo#qualifier"
+
+
+vars:
+  v0: "'culture medium'"
+  v1: "'owl:Thing'"
+
+name:
+  # Could not induce name, using default
+  text: "normal vegetative cell population growth inheres_in %s towards %s qualifier present"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.7099236641221374, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A phenotype in which vegetative cell population growth is normal (i.e. indistinguishable from wild type) in a %s containing %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('normal vegetative cell population growth' and ('inheres_in' some %s) and ('towards' some %s) and ('qualifier' some 'present'))"
+  vars:
+    - v0
+    - v1

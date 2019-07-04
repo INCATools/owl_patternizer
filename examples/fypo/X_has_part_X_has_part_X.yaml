@@ -1,0 +1,57 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has_part X has_part X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_has_part_X_has_part_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [swollen elongated cell](http://purl.obolibrary.org/obo/FYPO_0001429), [elongated multinucleate cell](http://purl.obolibrary.org/obo/FYPO_0003342), [small multiseptate cell during stationary phase](http://purl.obolibrary.org/obo/FYPO_0004496) (33 total)
+
+classes: 
+  phenotype: "http://purl.obolibrary.org/obo/FYPO_0000001"
+  cellular process phenotype: "http://purl.obolibrary.org/obo/FYPO_0000114"
+  abnormal protein-protein interaction: "http://purl.obolibrary.org/obo/FYPO_0000704"
+  abnormal septum during vegetative growth: "http://purl.obolibrary.org/obo/FYPO_0002455"
+  abnormal vegetative cell phenotype: "http://purl.obolibrary.org/obo/FYPO_0003755"
+  abnormal microtubule bundle: "http://purl.obolibrary.org/obo/FYPO_0005558"
+  quality: "PATO:0000001"
+
+
+relations: 
+  has_part: "BFO:0000051"
+
+
+vars:
+  v0: "'cellular process phenotype' or 'abnormal protein-protein interaction' or 'abnormal septum during vegetative growth' or 'abnormal vegetative cell phenotype' or 'abnormal microtubule bundle'"
+  v1: "'phenotype' or 'quality'"
+  v2: "'phenotype' or 'quality'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has_part %s has_part %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has_part a %s and has_part a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has_part' some %s) and ('has_part' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

@@ -1,0 +1,49 @@
+# options: [min(8),dir('examples/po'),trim(true),base('http://purl.obolibrary.org/obo/po'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: trichome part of X
+pattern_iri: http://purl.obolibrary.org/obo/po/trichome_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [shoot axis trichome](http://purl.obolibrary.org/obo/PO_0005003), [leaf trichome](http://purl.obolibrary.org/obo/PO_0006504), [sepal trichome](http://purl.obolibrary.org/obo/PO_0025182) (11 total)
+
+classes: 
+  trichome: "http://purl.obolibrary.org/obo/PO_0000282"
+  shoot system epidermis: "http://purl.obolibrary.org/obo/PO_0006035"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'shoot system epidermis'"
+
+name:
+  # Could not induce name, using default
+  text: "trichome part of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5454545454545454, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A phyllome trichome that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "tricoma de la %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('trichome' and ('part of' some %s))"
+  vars:
+    - v0

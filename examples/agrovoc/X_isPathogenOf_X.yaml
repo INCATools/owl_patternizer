@@ -1,0 +1,48 @@
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X isPathogenOf X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_isPathogenOf_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Botrytis fabae](http://aims.fao.org/aos/agrovoc/c_26414), [Botrytis tulipae](http://aims.fao.org/aos/agrovoc/c_26415), [Erysiphe syringae](http://aims.fao.org/aos/agrovoc/c_5bf615c6) (13 total)
+
+classes: 
+  Ascomycota: "http://aims.fao.org/aos/agrovoc/c_331215"
+  organisms: "http://aims.fao.org/aos/agrovoc/c_49904"
+
+
+relations: 
+  isPathogenOf: "http://aims.fao.org/aos/agrontology#isPathogenOf"
+
+
+vars:
+  v0: "'Ascomycota'"
+  v1: "'organisms'"
+
+name:
+  # Could not induce name, using default
+  text: "%s isPathogenOf %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that isPathogenOf a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('isPathogenOf' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,53 @@
+# options: [min(50),dir('examples/fbbt'),trim(true),base('http://purl.obolibrary.org/obo/fbbt'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: biological_process RO_0002212 X
+pattern_iri: http://purl.obolibrary.org/obo/fbbt/biological_process_RO_0002212_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [negative regulation of serotonin secretion](http://purl.obolibrary.org/obo/GO_0014063), [negative regulation of synaptic transmission, dopaminergic](http://purl.obolibrary.org/obo/GO_0032227), [negative regulation of peptide secretion](http://purl.obolibrary.org/obo/GO_0002792) (66 total)
+
+classes: 
+  biological_process: "GO:0008150"
+
+
+relations: 
+  RO_0002212: "RO:0002212"
+
+
+vars:
+  v0: "'biological_process'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "negative regulation of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.24242424242424243, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any process that stops, prevents or reduces the frequency, rate or extent of %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "down regulation of %s"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "negative regulation of %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('biological_process' and ('RO_0002212' some %s))"
+  vars:
+    - v0

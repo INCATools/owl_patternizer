@@ -1,0 +1,58 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: lacking processual parts during X inheres_in X qualifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/fypo/lacking_processual_parts_during_X_inheres_in_X_qualifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abolished protein kinase activity during mitotic G1 phase](http://purl.obolibrary.org/obo/FYPO_0003437), [abolished protein localization to nucleus during mating](http://purl.obolibrary.org/obo/FYPO_0006674), [abolished protein localization to chromatin during premeiotic DNA replication](http://purl.obolibrary.org/obo/FYPO_0001680) (208 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  abnormal: "PATO:0000460"
+  lacking processual parts: "PATO:0001558"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  during: "http://purl.obolibrary.org/obo/GOREL_0000002"
+  inheres_in: "RO:0000052"
+  qualifier: "http://purl.obolibrary.org/obo/fypo#qualifier"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.08653846153846154, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "abolished %s during %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any lacking processual parts that during a %s and inheres_in a %s and qualifier a abnormal"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "abolished %s during %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "('lacking processual parts' and ('during' some %s) and ('inheres_in' some %s) and ('qualifier' some 'abnormal'))"
+  vars:
+    - v0
+    - v1

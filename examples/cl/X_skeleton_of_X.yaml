@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X skeleton of X
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_skeleton_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [nasal skeleton](http://purl.obolibrary.org/obo/UBERON_0006813), [metatarsus skeleton](http://purl.obolibrary.org/obo/UBERON_0010545), [skeleton of lower jaw](http://purl.obolibrary.org/obo/UBERON_0003278) (30 total)
+
+classes: 
+  connected anatomical structure: "http://purl.obolibrary.org/obo/CARO_0000003"
+  organism subdivision: "UBERON:0000475"
+  subdivision of skeleton: "UBERON:0010912"
+
+
+relations: 
+  skeleton of: "RO:0002576"
+
+
+vars:
+  v0: "'subdivision of skeleton'"
+  v1: "'connected anatomical structure' or 'organism subdivision'"
+
+name:
+  # Could not induce name, using default
+  text: "%s skeleton of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that skeleton of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('skeleton of' some %s))"
+  vars:
+    - v0
+    - v1

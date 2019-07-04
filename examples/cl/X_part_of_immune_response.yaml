@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of immune response
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_part_of_immune_response
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [myeloid dendritic cell activation involved in immune response](http://purl.obolibrary.org/obo/GO_0002277), [cell activation involved in immune response](http://purl.obolibrary.org/obo/GO_0002263), [cytokine production involved in immune response](http://purl.obolibrary.org/obo/GO_0002367) (20 total)
+
+classes: 
+  immune response: "GO:0006955"
+  biological_process: "GO:0008150"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'biological_process'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s involved in immune response"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that part of a immune response"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s during immune response"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'immune response'))"
+  vars:
+    - v0

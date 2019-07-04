@@ -1,0 +1,45 @@
+# options: [min(50),dir('examples/zp'),trim(true),base('http://purl.obolibrary.org/obo/zp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part decreased length inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/zp/has_part_decreased_length_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [swimming decreased length, abnormal](http://purl.obolibrary.org/obo/ZP_0015397), [brain decreased length, abnormal](http://purl.obolibrary.org/obo/ZP_0011210), [cardiac ventricle decreased length, abnormal](http://purl.obolibrary.org/obo/ZP_0006046) (379 total)
+
+classes: 
+  entity: "BFO:0000001"
+  abnormal: "PATO:0000460"
+  decreased length: "PATO:0000574"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'entity'"
+
+name:
+  # Induced, frequency=0.44854881266490765, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s decreased length, abnormal"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.44854881266490765, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Abnormal(ly) decreased length (of) %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some ('decreased length' and ('inheres in' some %s) and ('has modifier' some 'abnormal')))"
+  vars:
+    - v0

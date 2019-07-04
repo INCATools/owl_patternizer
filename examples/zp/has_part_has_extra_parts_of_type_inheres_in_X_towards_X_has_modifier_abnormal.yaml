@@ -1,0 +1,49 @@
+# options: [min(50),dir('examples/zp'),trim(true),base('http://purl.obolibrary.org/obo/zp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part has extra parts of type inheres in X towards X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/zp/has_part_has_extra_parts_of_type_inheres_in_X_towards_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mitotic cell cycle has extra parts of type nuclear division, abnormal](http://purl.obolibrary.org/obo/ZP_0020542), [brain has extra parts of type neuronal stem cell, abnormal](http://purl.obolibrary.org/obo/ZP_0018098), [brain has extra parts of type astrocyte, abnormal](http://purl.obolibrary.org/obo/ZP_0018099) (293 total)
+
+classes: 
+  entity: "BFO:0000001"
+  abnormal: "PATO:0000460"
+  has extra parts of type: "PATO:0002002"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'entity'"
+  v1: "'entity'"
+
+name:
+  # Induced, frequency=0.6177474402730375, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s has extra parts of type %s, abnormal"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.6177474402730375, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Abnormal(ly) has extra parts of type (of) %s (%s)."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some ('has extra parts of type' and ('inheres in' some %s) and ('towards' some %s) and ('has modifier' some 'abnormal')))"
+  vars:
+    - v0
+    - v1

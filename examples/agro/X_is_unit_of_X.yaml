@@ -1,0 +1,54 @@
+# options: [min(10),dir('examples/agro'),trim(true),base('http://purl.obolibrary.org/obo/agro'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X is_unit_of X
+pattern_iri: http://purl.obolibrary.org/obo/agro/X_is_unit_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [concentration unit](http://purl.obolibrary.org/obo/UO_0000051), [frequency unit](http://purl.obolibrary.org/obo/UO_0000105), [mass unit](http://purl.obolibrary.org/obo/UO_0000002) (13 total)
+
+classes: 
+  quality: "PATO:0000001"
+  unit: "http://purl.obolibrary.org/obo/UO_0000000"
+
+
+relations: 
+  is_unit_of: "http://purl.obolibrary.org/obo/uo#is_unit_of"
+
+
+vars:
+  v0: "'unit'"
+  v1: "'quality'"
+
+name:
+  # Induced, frequency=0.6153846153846154, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that is_unit_of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s derived %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('is_unit_of' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,56 @@
+# options: [min(12),dir('examples/emapa'),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: part_of X part_of limb skin
+pattern_iri: http://purl.obolibrary.org/obo/emapa/part_of_X_part_of_limb_skin
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [forelimb skin](http://purl.obolibrary.org/obo/EMAPA_32612), [arm skin](http://purl.obolibrary.org/obo/EMAPA_37350), [elbow skin](http://purl.obolibrary.org/obo/EMAPA_18051) (14 total)
+
+classes: 
+  forelimb: "http://purl.obolibrary.org/obo/EMAPA_17412"
+  arm: "http://purl.obolibrary.org/obo/EMAPA_17413"
+  elbow: "http://purl.obolibrary.org/obo/EMAPA_17414"
+  shoulder: "http://purl.obolibrary.org/obo/EMAPA_17421"
+  hand: "http://purl.obolibrary.org/obo/EMAPA_17428"
+  hindlimb: "http://purl.obolibrary.org/obo/EMAPA_17458"
+  foot: "http://purl.obolibrary.org/obo/EMAPA_17459"
+  leg: "http://purl.obolibrary.org/obo/EMAPA_17489"
+  hip: "http://purl.obolibrary.org/obo/EMAPA_17490"
+  knee: "http://purl.obolibrary.org/obo/EMAPA_17493"
+  forelimb digit: "http://purl.obolibrary.org/obo/EMAPA_32642"
+  hindlimb digit: "http://purl.obolibrary.org/obo/EMAPA_32649"
+  forelimb interdigital region: "http://purl.obolibrary.org/obo/EMAPA_32651"
+  limb skin: "http://purl.obolibrary.org/obo/EMAPA_32726"
+
+
+relations: 
+  part_of: "http://purl.obolibrary.org/obo/emapa#part_of"
+
+
+vars:
+  v0: "'forelimb' or 'arm' or 'elbow' or 'shoulder' or 'hand' or 'hindlimb' or 'foot' or 'leg' or 'hip' or 'knee' or 'forelimb digit' or 'hindlimb digit' or 'forelimb interdigital region'"
+
+name:
+  # Induced, frequency=1.2142857142857142, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s skin"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any part_of a %s that part_of a limb skin"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(('part_of' some %s) and ('part_of' some 'limb skin'))"
+  vars:
+    - v0

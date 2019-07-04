@@ -1,0 +1,44 @@
+# options: [min(12),dir('examples/ehdaa2'),trim(true),base('http://purl.obolibrary.org/obo/ehdaa2'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: part_of X part_of rhombencephalon floor plate
+pattern_iri: http://purl.obolibrary.org/obo/ehdaa2/part_of_X_part_of_rhombencephalon_floor_plate
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [pro-rhombomere a floor plate](http://purl.obolibrary.org/obo/EHDAA2_0001545), [pro-rhombomere b floor plate](http://purl.obolibrary.org/obo/EHDAA2_0001552), [pro-rhombomere c floor plate](http://purl.obolibrary.org/obo/EHDAA2_0001558) (13 total)
+
+classes: 
+  multi-tissue structure: "http://purl.obolibrary.org/obo/CARO_0000055"
+  rhombencephalon floor plate: "http://purl.obolibrary.org/obo/EHDAA2_0004324"
+
+
+relations: 
+  part_of: "BFO:0000050"
+
+
+vars:
+  v0: "'multi-tissue structure'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s floor plate"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any part_of a %s that part_of a rhombencephalon floor plate"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(('part_of' some %s) and ('part_of' some 'rhombencephalon floor plate'))"
+  vars:
+    - v0

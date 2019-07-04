@@ -1,0 +1,44 @@
+# options: [min(12),dir('examples/ehdaa2'),trim(true),base('http://purl.obolibrary.org/obo/ehdaa2'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: myotome develops_from X
+pattern_iri: http://purl.obolibrary.org/obo/ehdaa2/myotome_develops_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [myotome 05](http://purl.obolibrary.org/obo/EHDAA2_0003355), [myotome 06](http://purl.obolibrary.org/obo/EHDAA2_0003357), [myotome 07](http://purl.obolibrary.org/obo/EHDAA2_0003358) (35 total)
+
+classes: 
+  transitional anatomical structure: "http://purl.obolibrary.org/obo/AEO_0000132"
+  myotome: "http://purl.obolibrary.org/obo/AEO_0001018"
+
+
+relations: 
+  develops_from: "RO:0002202"
+
+
+vars:
+  v0: "'transitional anatomical structure'"
+
+name:
+  # Could not induce name, using default
+  text: "myotome develops_from %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any myotome that develops_from a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('myotome' and ('develops_from' some %s))"
+  vars:
+    - v0

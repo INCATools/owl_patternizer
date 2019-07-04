@@ -1,0 +1,44 @@
+# options: [min(10),dir('examples/agro'),trim(true),base('http://purl.obolibrary.org/obo/agro'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: process has participant X
+pattern_iri: http://purl.obolibrary.org/obo/agro/process_has_participant_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [liming process](http://purl.obolibrary.org/obo/AGRO_00000112), [land levelling process](http://purl.obolibrary.org/obo/AGRO_00000004), [crop residue management process](http://purl.obolibrary.org/obo/AGRO_00000005) (11 total)
+
+classes: 
+  process: "BFO:0000015"
+  material entity: "BFO:0000040"
+
+
+relations: 
+  has participant: "RO:0000057"
+
+
+vars:
+  v0: "'material entity'"
+
+name:
+  # Could not induce name, using default
+  text: "process has participant %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any process that has participant a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('process' and ('has participant' some %s))"
+  vars:
+    - v0

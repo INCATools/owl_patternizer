@@ -1,0 +1,48 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X positively regulates X
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_positively_regulates_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [positive regulation of mitotic cell cycle](http://purl.obolibrary.org/obo/GO_0045931), [positive regulation of nuclear division](http://purl.obolibrary.org/obo/GO_0051785), [positive regulation of ossification](http://purl.obolibrary.org/obo/GO_0045778) (361 total)
+
+classes: 
+  process: "BFO:0000015"
+  biological_process: "GO:0008150"
+
+
+relations: 
+  positively regulates: "RO:0002213"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'process'"
+
+name:
+  # Induced, frequency=0.013850415512465374, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "positive %s of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that positively regulates a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('positively regulates' some %s))"
+  vars:
+    - v0
+    - v1

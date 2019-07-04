@@ -1,0 +1,48 @@
+# options: [min(10),dir('examples/efo'),trim(true),base('http://purl.obolibrary.org/obo/efo'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: cellular component part_of X
+pattern_iri: http://purl.obolibrary.org/obo/efo/cellular_component_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cell part](http://purl.obolibrary.org/obo/GO_0044464), [intracellular part](http://purl.obolibrary.org/obo/GO_0044424), [nuclear part](http://purl.obolibrary.org/obo/GO_0044428) (14 total)
+
+classes: 
+  cellular component: "GO:0005575"
+
+
+relations: 
+  part_of: "BFO:0000050"
+
+
+vars:
+  v0: "'cellular component'"
+
+name:
+  # Induced, frequency=0.7142857142857143, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s part"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any cellular component that part_of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s component"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('cellular component' and ('part_of' some %s))"
+  vars:
+    - v0

@@ -1,0 +1,71 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of lung
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_part_of_lung
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [fibroblast of lung](http://purl.obolibrary.org/obo/CL_0002553), [lung ciliated cell](http://purl.obolibrary.org/obo/CL_1000271), [epithelial cell of lung](http://purl.obolibrary.org/obo/CL_0000082) (23 total)
+
+classes: 
+  fibroblast: "CL:0000057"
+  ciliated cell: "CL:0000064"
+  goblet cell: "CL:0000160"
+  neuroendocrine cell: "CL:0000165"
+  macrophage: "CL:0000235"
+  endothelial cell of vascular tree: "CL:0002139"
+  parenchyma: "UBERON:0000353"
+  mucous gland: "UBERON:0000414"
+  lymphatic vessel: "UBERON:0001473"
+  capillary: "UBERON:0001982"
+  lung: "UBERON:0002048"
+  vasculature: "UBERON:0002049"
+  bronchus: "UBERON:0002185"
+  elastic tissue: "UBERON:0002521"
+  mesenchyme: "UBERON:0003104"
+  alveolus: "UBERON:0003215"
+  blood vessel endothelium: "UBERON:0004638"
+  lobule: "UBERON:0009911"
+  collection of collagen fibrils: "UBERON:0011860"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'fibroblast' or 'ciliated cell' or 'goblet cell' or 'neuroendocrine cell' or 'macrophage' or 'endothelial cell of vascular tree' or 'parenchyma' or 'mucous gland' or 'lymphatic vessel' or 'capillary' or 'vasculature' or 'bronchus' or 'elastic tissue' or 'mesenchyme' or 'alveolus' or 'blood vessel endothelium' or 'lobule' or 'collection of collagen fibrils'"
+
+name:
+  # Induced, frequency=0.5217391304347826, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "lung %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.13043478260869565, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a lung."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of lung"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "pulmonary %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'lung'))"
+  vars:
+    - v0

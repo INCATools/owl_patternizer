@@ -1,0 +1,46 @@
+# options: [min(50),dir('examples/zp'),trim(true),base('http://purl.obolibrary.org/obo/zp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part hypoplastic inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/zp/has_part_hypoplastic_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Kupffer's vesicle hypoplastic, abnormal](http://purl.obolibrary.org/obo/ZP_0007920), [brain hypoplastic, abnormal](http://purl.obolibrary.org/obo/ZP_0004224), [cardiac ventricle hypoplastic, abnormal](http://purl.obolibrary.org/obo/ZP_0002485) (204 total)
+
+classes: 
+  continuant: "BFO:0000002"
+  abnormal: "PATO:0000460"
+  hypoplastic: "PATO:0000645"
+  zebrafish anatomical entity: "http://purl.obolibrary.org/obo/ZFA_0100000"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'continuant' or 'zebrafish anatomical entity'"
+
+name:
+  # Induced, frequency=0.8774509803921569, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s hypoplastic, abnormal"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.8774509803921569, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Abnormal(ly) hypoplastic (of) %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some ('hypoplastic' and ('inheres in' some %s) and ('has modifier' some 'abnormal')))"
+  vars:
+    - v0

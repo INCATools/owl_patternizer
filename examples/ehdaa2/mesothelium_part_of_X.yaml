@@ -1,0 +1,44 @@
+# options: [min(12),dir('examples/ehdaa2'),trim(true),base('http://purl.obolibrary.org/obo/ehdaa2'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: mesothelium part_of X
+pattern_iri: http://purl.obolibrary.org/obo/ehdaa2/mesothelium_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [foregut mesothelium](http://purl.obolibrary.org/obo/EHDAA2_0004573), [foregut-midgut junction mesothelium](http://purl.obolibrary.org/obo/EHDAA2_0000575), [indifferent gonad mesothelium](http://purl.obolibrary.org/obo/EHDAA2_0000718) (12 total)
+
+classes: 
+  mesothelium: "http://purl.obolibrary.org/obo/AEO_0000111"
+  anatomical structure: "http://purl.obolibrary.org/obo/CARO_0000003"
+
+
+relations: 
+  part_of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s mesothelium"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any mesothelium that part_of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('mesothelium' and ('part_of' some %s))"
+  vars:
+    - v0

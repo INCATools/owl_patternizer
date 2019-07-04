@@ -1,0 +1,55 @@
+# options: [min(12),dir('examples/emapa'),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: skin part_of X
+pattern_iri: http://purl.obolibrary.org/obo/emapa/skin_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [limb skin](http://purl.obolibrary.org/obo/EMAPA_32726), [tail skin](http://purl.obolibrary.org/obo/EMAPA_36502), [trunk skin](http://purl.obolibrary.org/obo/EMAPA_37278) (12 total)
+
+classes: 
+  limb: "http://purl.obolibrary.org/obo/EMAPA_16405"
+  tail: "http://purl.obolibrary.org/obo/EMAPA_16748"
+  skin: "http://purl.obolibrary.org/obo/EMAPA_17525"
+  trunk: "http://purl.obolibrary.org/obo/EMAPA_31857"
+  head: "http://purl.obolibrary.org/obo/EMAPA_31858"
+  abdomen: "http://purl.obolibrary.org/obo/EMAPA_35102"
+  abdominal segment of trunk: "http://purl.obolibrary.org/obo/EMAPA_35104"
+  neck: "http://purl.obolibrary.org/obo/EMAPA_35587"
+  lower back: "http://purl.obolibrary.org/obo/EMAPA_36623"
+  craniocervical region: "http://purl.obolibrary.org/obo/EMAPA_36867"
+  periorbital region: "http://purl.obolibrary.org/obo/EMAPA_36969"
+  chest: "http://purl.obolibrary.org/obo/EMAPA_37232"
+  upper back: "http://purl.obolibrary.org/obo/EMAPA_37234"
+
+
+relations: 
+  part_of: "http://purl.obolibrary.org/obo/emapa#part_of"
+
+
+vars:
+  v0: "'limb' or 'tail' or 'trunk' or 'head' or 'abdomen' or 'abdominal segment of trunk' or 'neck' or 'lower back' or 'craniocervical region' or 'periorbital region' or 'chest' or 'upper back'"
+
+name:
+  # Induced, frequency=0.8333333333333334, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s skin"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any skin that part_of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('skin' and ('part_of' some %s))"
+  vars:
+    - v0

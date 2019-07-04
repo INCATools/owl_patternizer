@@ -1,0 +1,71 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: increased concentration exists_during single-celled organism vegetative growth phase inheres_in X towards X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/increased_concentration_exists_during_single_celled_organism_vegetative_growth_phase_inheres_in_X_towards_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased cellular 4'-phosphopantothenate level](http://purl.obolibrary.org/obo/FYPO_0002548), [increased cellular 2-myristoylglycerophosphocholine level](http://purl.obolibrary.org/obo/FYPO_0006139), [increased cellular gamma-glutamyl-2-aminobutyrate level](http://purl.obolibrary.org/obo/FYPO_0005882) (134 total)
+
+classes: 
+  CL_0000334: "CL:0000334"
+  fungal-type vacuole: "GO:0000324"
+  chromatin: "GO:0000785"
+  nucleus: "GO:0005634"
+  cytoplasm: "GO:0005737"
+  mitochondrion: "GO:0005739"
+  autophagosome: "GO:0005776"
+  cytosol: "GO:0005829"
+  plasma membrane: "GO:0005886"
+  fungal-type cell wall: "GO:0009277"
+  external side of plasma membrane: "GO:0009897"
+  cell wall-bounded periplasmic space: "GO:0030287"
+  cell tip: "GO:0051286"
+  mitotic spindle: "GO:0072686"
+  single-celled organism vegetative growth phase: "GO:0072690"
+  increased concentration: "PATO:0001162"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  exists_during: "http://purl.obolibrary.org/obo/GOREL_0000032"
+  inheres_in: "RO:0000052"
+  towards: "RO:0002503"
+
+
+vars:
+  v0: "'CL_0000334' or 'fungal-type vacuole' or 'chromatin' or 'nucleus' or 'cytoplasm' or 'mitochondrion' or 'autophagosome' or 'cytosol' or 'plasma membrane' or 'fungal-type cell wall' or 'external side of plasma membrane' or 'cell wall-bounded periplasmic space' or 'cell tip' or 'mitotic spindle'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.03731343283582089, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "increased %s level in %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.029850746268656716, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A cell phenotype observed in the vegetative growth phase of the life cycle in which the amount of %s measured in the %s is higher than normal."
+  vars:
+    - v1
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "increased %s level in %s during vegetative growth"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "('increased concentration' and ('exists_during' some 'single-celled organism vegetative growth phase') and ('inheres_in' some %s) and ('towards' some %s))"
+  vars:
+    - v0
+    - v1

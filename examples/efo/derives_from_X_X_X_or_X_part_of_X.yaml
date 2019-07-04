@@ -1,0 +1,62 @@
+# options: [min(10),dir('examples/efo'),trim(true),base('http://purl.obolibrary.org/obo/efo'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: derives_from X X X-or-X part_of X
+pattern_iri: http://purl.obolibrary.org/obo/efo/derives_from_X_X_X_or_X_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [stem cell derived cell line](http://www.ebi.ac.uk/efo/EFO_0002886), [fibroblast derived cell line](http://www.ebi.ac.uk/efo/EFO_0002009), [epithelial cell derived cell line](http://www.ebi.ac.uk/efo/EFO_0001641) (19 total)
+
+classes: 
+  part_of: "BFO:0000050"
+  organism: "http://purl.obolibrary.org/obo/OBI_0100026"
+  experimental factor: "EFO:0000001"
+  cell type: "EFO:0000324"
+
+
+relations: 
+  derives_from: "http://www.obofoundry.org/ro/ro.owl#derives_from"
+
+
+vars:
+  v0: "'cell type'"
+  v1: "'part_of'"
+  v2: "'experimental factor'"
+  v3: "'experimental factor'"
+  v4: "'organism'"
+
+name:
+  # Could not induce name, using default
+  text: "derives_from %s %s %s/%s part_of %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+    - v4
+
+def:
+  # Could not induce def, using default
+  text: "derives_from a Any %s that %s a Any Any %s that %s that part_of a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+    - v4
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('derives_from' some (%s and (%s some (%s or %s and ('part_of' some %s)))))"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+    - v4

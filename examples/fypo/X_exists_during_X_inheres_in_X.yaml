@@ -1,0 +1,54 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X exists_during X inheres_in X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_exists_during_X_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [elongated vegetative cell](http://purl.obolibrary.org/obo/FYPO_0001122), [branched vegetative cell](http://purl.obolibrary.org/obo/FYPO_0000015), [branched septum](http://purl.obolibrary.org/obo/FYPO_0003439) (117 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  quality: "PATO:0000001"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  exists_during: "http://purl.obolibrary.org/obo/GOREL_0000032"
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'quality'"
+  v1: "'biological_process'"
+  v2: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.03418803418803419, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s during %s"
+  vars:
+    - v0
+    - v2
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that exists_during a %s and inheres_in a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('exists_during' some %s) and ('inheres_in' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

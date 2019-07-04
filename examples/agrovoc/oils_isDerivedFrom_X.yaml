@@ -1,0 +1,50 @@
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: oils isDerivedFrom X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/oils_isDerivedFrom_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [groundnut oil](http://aims.fao.org/aos/agrovoc/c_25477), [fish oils](http://aims.fao.org/aos/agrovoc/c_2926), [cottonseed oil](http://aims.fao.org/aos/agrovoc/c_25474) (7 total)
+
+classes: 
+  groundnuts: "http://aims.fao.org/aos/agrovoc/c_11368"
+  fish: "http://aims.fao.org/aos/agrovoc/c_15903"
+  cottonseed: "http://aims.fao.org/aos/agrovoc/c_25473"
+  palm kernels: "http://aims.fao.org/aos/agrovoc/c_25493"
+  rapeseed: "http://aims.fao.org/aos/agrovoc/c_25499"
+  safflower seed: "http://aims.fao.org/aos/agrovoc/c_25503"
+  Amyris balsamifera: "http://aims.fao.org/aos/agrovoc/c_331366"
+  oils: "http://aims.fao.org/aos/agrovoc/c_5334"
+
+
+relations: 
+  isDerivedFrom: "http://aims.fao.org/aos/agrontology#isDerivedFrom"
+
+
+vars:
+  v0: "'groundnuts' or 'fish' or 'cottonseed' or 'palm kernels' or 'rapeseed' or 'safflower seed' or 'Amyris balsamifera'"
+
+name:
+  # Induced, frequency=0.2857142857142857, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s oil"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any oils that isDerivedFrom a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('oils' and ('isDerivedFrom' some %s))"
+  vars:
+    - v0

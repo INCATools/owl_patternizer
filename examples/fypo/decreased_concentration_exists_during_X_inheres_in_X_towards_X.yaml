@@ -1,0 +1,69 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: decreased concentration exists_during X inheres_in X towards X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/decreased_concentration_exists_during_X_inheres_in_X_towards_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [decreased protein level during mating](http://purl.obolibrary.org/obo/FYPO_0006541), [decreased cellular glutathione level during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0004141), [decreased RNA level during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0001152) (143 total)
+
+classes: 
+  CL_0000334: "CL:0000334"
+  fungal-type vacuole: "GO:0000324"
+  proteasome complex: "GO:0000502"
+  RNA polymerase II, core complex: "GO:0005665"
+  anaphase-promoting complex: "GO:0005680"
+  spliceosomal complex: "GO:0005681"
+  mitochondrion: "GO:0005739"
+  autophagosome: "GO:0005776"
+  cytosol: "GO:0005829"
+  plasma membrane: "GO:0005886"
+  biological_process: "GO:0008150"
+  fungal-type cell wall: "GO:0009277"
+  cell surface: "GO:0009986"
+  preribosome, large subunit precursor: "GO:0030687"
+  mitotic spindle: "GO:0072686"
+  decreased concentration: "PATO:0001163"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  exists_during: "http://purl.obolibrary.org/obo/GOREL_0000032"
+  inheres_in: "RO:0000052"
+  towards: "RO:0002503"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'CL_0000334' or 'fungal-type vacuole' or 'proteasome complex' or 'RNA polymerase II, core complex' or 'anaphase-promoting complex' or 'spliceosomal complex' or 'mitochondrion' or 'autophagosome' or 'cytosol' or 'plasma membrane' or 'fungal-type cell wall' or 'cell surface' or 'preribosome, large subunit precursor' or 'mitotic spindle'"
+  v2: "'owl:Thing'"
+
+name:
+  # Could not induce name, using default
+  text: "decreased concentration exists_during %s inheres_in %s towards %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any decreased concentration that exists_during a %s and inheres_in a %s and towards a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('decreased concentration' and ('exists_during' some %s) and ('inheres_in' some %s) and ('towards' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

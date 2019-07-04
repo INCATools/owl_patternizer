@@ -1,0 +1,51 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: quality inheres in part of X qualifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/fypo/quality_inheres_in_part_of_X_qualifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal microtubule cytoskeleton organization](http://purl.obolibrary.org/obo/FYPO_0000054), [abnormal mitotic cell cycle](http://purl.obolibrary.org/obo/FYPO_0000059), [abnormal re-entry into mitotic cell cycle after pheromone arrest](http://purl.obolibrary.org/obo/FYPO_0000555) (164 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  quality: "PATO:0000001"
+  abnormal: "PATO:0000460"
+
+
+relations: 
+  inheres in part of: "RO:0002314"
+  qualifier: "http://purl.obolibrary.org/obo/fypo#qualifier"
+
+
+vars:
+  v0: "'biological_process'"
+
+name:
+  # Induced, frequency=0.7865853658536586, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "abnormal %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.11585365853658537, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A cellular process phenotype in which %s is abnormal."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "abnormal %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('quality' and ('inheres in part of' some %s) and ('qualifier' some 'abnormal'))"
+  vars:
+    - v0

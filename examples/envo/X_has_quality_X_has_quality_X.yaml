@@ -1,0 +1,52 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has quality X has quality X
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_has_quality_X_has_quality_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [tropical deciduous broadleaf forest](http://purl.obolibrary.org/obo/ENVO_01000387), [temperate deciduous broadleaf forest](http://purl.obolibrary.org/obo/ENVO_01000385), [temperate broadleaf evergreen forest](http://purl.obolibrary.org/obo/ENVO_01000397) (7 total)
+
+classes: 
+  forest ecosystem: "ENVO:01001243"
+  physical object quality: "PATO:0001241"
+
+
+relations: 
+  has quality: "RO:0000086"
+
+
+vars:
+  v0: "'forest ecosystem'"
+  v1: "'physical object quality'"
+  v2: "'physical object quality'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has quality %s has quality %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Induced, frequency=0.14285714285714285, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s which is located in a region subject to %s climate patterns modulated by sufficient elevation to encounter %s climate patterns."
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has quality' some %s) and ('has quality' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

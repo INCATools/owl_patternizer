@@ -1,0 +1,63 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X inheres_in X towards X qualifier X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_inheres_in_X_towards_X_qualifier_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [septated vegetative cell](http://purl.obolibrary.org/obo/FYPO_0002342), [septated cell](http://purl.obolibrary.org/obo/FYPO_0004296), [normal growth on acetaldehyde](http://purl.obolibrary.org/obo/FYPO_0005776) (166 total)
+
+classes: 
+  culture medium: "http://purl.obolibrary.org/obo/BTO_0000316"
+  CL_0000334: "CL:0000334"
+  protein-containing complex binding: "GO:0044877"
+  cellular response to pheromone: "GO:0071444"
+  quality: "PATO:0000001"
+  qualitative: "PATO:0000068"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  inheres_in: "RO:0000052"
+  towards: "RO:0002503"
+  qualifier: "http://purl.obolibrary.org/obo/fypo#qualifier"
+
+
+vars:
+  v0: "'quality'"
+  v1: "'culture medium' or 'CL_0000334' or 'protein-containing complex binding' or 'cellular response to pheromone'"
+  v2: "'owl:Thing'"
+  v3: "'qualitative'"
+
+name:
+  # Could not induce name, using default
+  text: "%s inheres_in %s towards %s qualifier %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that inheres_in a %s and towards a %s and qualifier a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('inheres_in' some %s) and ('towards' some %s) and ('qualifier' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3

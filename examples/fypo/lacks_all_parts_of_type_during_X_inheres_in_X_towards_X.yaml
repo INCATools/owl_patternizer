@@ -1,0 +1,59 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: lacks all parts of type during X inheres_in X towards X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/lacks_all_parts_of_type_during_X_inheres_in_X_towards_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [RNA absent from cell during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0001996), [meiotic spindle absent from cell during meiosis II](http://purl.obolibrary.org/obo/FYPO_0003614), [RNA absent from cell during cellular response to pheromone](http://purl.obolibrary.org/obo/FYPO_0004072) (40 total)
+
+classes: 
+  CL_0000334: "CL:0000334"
+  fungal-type vacuole: "GO:0000324"
+  mitochondrion: "GO:0005739"
+  biological_process: "GO:0008150"
+  fungal-type cell wall: "GO:0009277"
+  lacks all parts of type: "PATO:0002000"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  during: "http://purl.obolibrary.org/obo/GOREL_0000002"
+  inheres_in: "RO:0000052"
+  towards: "RO:0002503"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'CL_0000334' or 'fungal-type vacuole' or 'mitochondrion' or 'fungal-type cell wall'"
+  v2: "'owl:Thing'"
+
+name:
+  # Could not induce name, using default
+  text: "lacks all parts of type during %s inheres_in %s towards %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any lacks all parts of type that during a %s and inheres_in a %s and towards a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('lacks all parts of type' and ('during' some %s) and ('inheres_in' some %s) and ('towards' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

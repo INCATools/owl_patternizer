@@ -1,0 +1,48 @@
+# options: [min(10),dir('examples/efo'),trim(true),base('http://purl.obolibrary.org/obo/efo'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X is_about X
+pattern_iri: http://purl.obolibrary.org/obo/efo/X_is_about_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [lipid measurement](http://www.ebi.ac.uk/efo/EFO_0004529), [organochlorine pesticide measurement](http://www.ebi.ac.uk/efo/EFO_0007960), [vitamin measurement](http://www.ebi.ac.uk/efo/EFO_0004729) (17 total)
+
+classes: 
+  experimental factor: "EFO:0000001"
+  measurement: "EFO:0001444"
+
+
+relations: 
+  is_about: "http://purl.obolibrary.org/obo/IAO_0000136"
+
+
+vars:
+  v0: "'measurement'"
+  v1: "'experimental factor'"
+
+name:
+  # Induced, frequency=0.47058823529411764, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that is_about a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('is_about' some %s))"
+  vars:
+    - v0
+    - v1

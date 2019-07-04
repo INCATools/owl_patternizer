@@ -1,0 +1,49 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part_of mitotic cell cycle
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_part_of_mitotic_cell_cycle
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mitotic cell cycle checkpoint](http://purl.obolibrary.org/obo/GO_0007093), [mitotic DNA replication checkpoint](http://purl.obolibrary.org/obo/GO_0033314), [mitotic DNA damage checkpoint](http://purl.obolibrary.org/obo/GO_0044773) (33 total)
+
+classes: 
+  mitotic cell cycle: "GO:0000278"
+  biological_process: "GO:0008150"
+
+
+relations: 
+  part_of: "BFO:0000050"
+
+
+vars:
+  v0: "'biological_process'"
+
+name:
+  # Induced, frequency=0.6666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "mitotic %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.12121212121212122, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any %s that is involved in mitotic cell cycle."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s involved in mitotic cell cycle"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part_of' some 'mitotic cell cycle'))"
+  vars:
+    - v0

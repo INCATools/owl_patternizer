@@ -1,0 +1,54 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X inheres_in X qualifier X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_inheres_in_X_qualifier_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal phenotype](http://purl.obolibrary.org/obo/FYPO_0001985), [normal phenotype](http://purl.obolibrary.org/obo/FYPO_0000257), [abnormal cell phenotype](http://purl.obolibrary.org/obo/FYPO_0003037) (601 total)
+
+classes: 
+  quality: "PATO:0000001"
+  deviation(from_normal): "PATO:0000069"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  inheres_in: "RO:0000052"
+  qualifier: "http://purl.obolibrary.org/obo/fypo#qualifier"
+
+
+vars:
+  v0: "'quality'"
+  v1: "'owl:Thing'"
+  v2: "'deviation(from_normal)'"
+
+name:
+  # Induced, frequency=0.03826955074875208, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s %s"
+  vars:
+    - v2
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that inheres_in a %s and qualifier a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('inheres_in' some %s) and ('qualifier' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

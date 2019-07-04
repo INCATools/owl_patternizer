@@ -1,0 +1,47 @@
+# options: [min(12),dir('examples/ehdaa2'),trim(true),base('http://purl.obolibrary.org/obo/ehdaa2'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X located_in X
+pattern_iri: http://purl.obolibrary.org/obo/ehdaa2/X_located_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [adenohypophysis lumen](http://purl.obolibrary.org/obo/EHDAA2_0004140), [female nephric duct lumen](http://purl.obolibrary.org/obo/EHDAA2_0000503), [male nephric duct lumen](http://purl.obolibrary.org/obo/EHDAA2_0001051) (14 total)
+
+classes: 
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+
+
+relations: 
+  located_in: "RO:0001025"
+
+
+vars:
+  v0: "'anatomical entity'"
+  v1: "'anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s located_in %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that located_in a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('located_in' some %s))"
+  vars:
+    - v0
+    - v1

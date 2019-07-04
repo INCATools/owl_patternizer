@@ -1,0 +1,54 @@
+# options: [min(12),dir('examples/emapa'),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: joint part_of X
+pattern_iri: http://purl.obolibrary.org/obo/emapa/joint_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [limb joint](http://purl.obolibrary.org/obo/EMAPA_36501), [forelimb joint](http://purl.obolibrary.org/obo/EMAPA_19204), [elbow joint](http://purl.obolibrary.org/obo/EMAPA_19102) (13 total)
+
+classes: 
+  forelimb: "http://purl.obolibrary.org/obo/EMAPA_17412"
+  elbow: "http://purl.obolibrary.org/obo/EMAPA_17414"
+  shoulder: "http://purl.obolibrary.org/obo/EMAPA_17421"
+  hand: "http://purl.obolibrary.org/obo/EMAPA_17428"
+  hindlimb: "http://purl.obolibrary.org/obo/EMAPA_17458"
+  foot: "http://purl.obolibrary.org/obo/EMAPA_17459"
+  hip: "http://purl.obolibrary.org/obo/EMAPA_17490"
+  knee: "http://purl.obolibrary.org/obo/EMAPA_17493"
+  forelimb digit: "http://purl.obolibrary.org/obo/EMAPA_32642"
+  hindlimb digit: "http://purl.obolibrary.org/obo/EMAPA_32649"
+  ankle: "http://purl.obolibrary.org/obo/EMAPA_32783"
+  joint: "http://purl.obolibrary.org/obo/EMAPA_35456"
+
+
+relations: 
+  part_of: "http://purl.obolibrary.org/obo/emapa#part_of"
+
+
+vars:
+  v0: "'forelimb' or 'elbow' or 'shoulder' or 'hand' or 'hindlimb' or 'foot' or 'hip' or 'knee' or 'forelimb digit' or 'hindlimb digit' or 'ankle'"
+
+name:
+  # Induced, frequency=0.8461538461538461, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s joint"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any joint that part_of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('joint' and ('part_of' some %s))"
+  vars:
+    - v0

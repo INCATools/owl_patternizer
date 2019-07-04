@@ -1,0 +1,60 @@
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X hasPractice X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_hasPractice_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [viticulture cooperatives](http://aims.fao.org/aos/agrovoc/c_37730), [trap fishing](http://aims.fao.org/aos/agrovoc/c_7875), [dust protection](http://aims.fao.org/aos/agrovoc/c_2416) (7 total)
+
+classes: 
+  cooperatives: "http://aims.fao.org/aos/agrovoc/c_10090"
+  broadcasting: "http://aims.fao.org/aos/agrovoc/c_1101"
+  dust extraction: "http://aims.fao.org/aos/agrovoc/c_28341"
+  cooperative bargaining: "http://aims.fao.org/aos/agrovoc/c_28850"
+  fishing methods: "http://aims.fao.org/aos/agrovoc/c_2950"
+  protection: "http://aims.fao.org/aos/agrovoc/c_330896"
+  systems: "http://aims.fao.org/aos/agrovoc/c_330985"
+  multiple use: "http://aims.fao.org/aos/agrovoc/c_34052"
+  land use: "http://aims.fao.org/aos/agrovoc/c_4182"
+  marketing: "http://aims.fao.org/aos/agrovoc/c_4620"
+  pollarding: "http://aims.fao.org/aos/agrovoc/c_6069"
+  sowing: "http://aims.fao.org/aos/agrovoc/c_7268"
+  trapping: "http://aims.fao.org/aos/agrovoc/c_7878"
+  viticulture: "http://aims.fao.org/aos/agrovoc/c_8277"
+
+
+relations: 
+  hasPractice: "http://aims.fao.org/aos/agrontology#hasPractice"
+
+
+vars:
+  v0: "'cooperatives' or 'fishing methods' or 'protection' or 'systems' or 'land use' or 'marketing' or 'sowing'"
+  v1: "'broadcasting' or 'dust extraction' or 'cooperative bargaining' or 'multiple use' or 'pollarding' or 'trapping' or 'viticulture'"
+
+name:
+  # Induced, frequency=0.14285714285714285, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that hasPractice a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('hasPractice' some %s))"
+  vars:
+    - v0
+    - v1

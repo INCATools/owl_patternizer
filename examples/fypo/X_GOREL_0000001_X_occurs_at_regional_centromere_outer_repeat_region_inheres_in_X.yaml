@@ -1,0 +1,57 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X GOREL_0000001 X occurs_at regional_centromere_outer_repeat_region inheres_in X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_GOREL_0000001_X_occurs_at_regional_centromere_outer_repeat_region_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased protein localization to centromere outer repeat](http://purl.obolibrary.org/obo/FYPO_0003009), [increased histone H3-K9 dimethylation at centromere outer repeat during vegetative growth](http://purl.obolibrary.org/obo/FYPO_0000887), [increased histone H3-K9 trimethylation at centromere outer repeat during vegetative growth](http://purl.obolibrary.org/obo/FYPO_0000889) (20 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  single-celled organism vegetative growth phase: "GO:0072690"
+  occurrence: "PATO:0000057"
+  deviation(from_normal): "PATO:0000069"
+  regional_centromere_outer_repeat_region: "SO:0001799"
+
+
+relations: 
+  GOREL_0000001: "http://purl.obolibrary.org/obo/GOREL_0000001"
+  occurs_at: "http://purl.obolibrary.org/obo/GOREL_0000501"
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'occurrence' or 'deviation(from_normal)'"
+  v1: "'single-celled organism vegetative growth phase'"
+  v2: "'biological_process'"
+
+name:
+  # Could not induce name, using default
+  text: "%s GOREL_0000001 %s occurs_at regional_centromere_outer_repeat_region inheres_in %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that GOREL_0000001 a %s and occurs_at a regional_centromere_outer_repeat_region and inheres_in a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('GOREL_0000001' some %s) and ('occurs_at' some 'regional_centromere_outer_repeat_region') and ('inheres_in' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

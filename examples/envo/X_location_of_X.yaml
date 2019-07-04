@@ -1,0 +1,48 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X location of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_location_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ice cave](http://purl.obolibrary.org/obo/ENVO_01000365), [lake channel](http://purl.obolibrary.org/obo/ENVO_00000397), [stream channel](http://purl.obolibrary.org/obo/ENVO_01000650) (4 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  solid astronomical body part: "ENVO:00000191"
+
+
+relations: 
+  location of: "RO:0001015"
+
+
+vars:
+  v0: "'solid astronomical body part'"
+  v1: "'material entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s location of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that location of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('location of' some %s))"
+  vars:
+    - v0
+    - v1

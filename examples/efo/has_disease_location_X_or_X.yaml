@@ -1,0 +1,47 @@
+# options: [min(10),dir('examples/efo'),trim(true),base('http://purl.obolibrary.org/obo/efo'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has_disease_location X-or-X
+pattern_iri: http://purl.obolibrary.org/obo/efo/has_disease_location_X_or_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [rheumatic disease](http://www.ebi.ac.uk/efo/EFO_0005755), [heart disease](http://www.ebi.ac.uk/efo/EFO_0003777), [endocrine system disease](http://www.ebi.ac.uk/efo/EFO_0001379) (16 total)
+
+classes: 
+  animal component: "EFO:0000787"
+
+
+relations: 
+  has_disease_location: "EFO:0000784"
+
+
+vars:
+  v0: "'animal component'"
+  v1: "'animal component'"
+
+name:
+  # Could not induce name, using default
+  text: "has_disease_location %s/%s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "has_disease_location a Any %s that %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has_disease_location' some %s or %s)"
+  vars:
+    - v0
+    - v1

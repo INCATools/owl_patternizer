@@ -1,0 +1,85 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X develops from X
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_develops_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [fibroblast neural crest derived](http://purl.obolibrary.org/obo/CL_0000005), [ecto-epithelial cell](http://purl.obolibrary.org/obo/CL_0002077), [meso-epithelial cell](http://purl.obolibrary.org/obo/CL_0002078) (31 total)
+
+classes: 
+  common myeloid progenitor: "CL:0000049"
+  fibroblast: "CL:0000057"
+  neurectodermal cell: "CL:0000133"
+  fat cell: "CL:0000136"
+  smooth muscle cell: "CL:0000192"
+  mesodermal cell: "CL:0000222"
+  migratory neural crest cell: "CL:0000333"
+  cardioblast (sensu Arthropoda): "CL:0000465"
+  neuron: "CL:0000540"
+  leukocyte: "CL:0000738"
+  cardiac muscle cell: "CL:0000746"
+  ecto-epithelial cell: "CL:0002077"
+  inner cell mass: "UBERON:0000087"
+  ectoderm: "UBERON:0000924"
+  endoderm: "UBERON:0000925"
+  mesoderm: "UBERON:0000926"
+  brain: "UBERON:0000955"
+  neural tube: "UBERON:0001049"
+  bone element: "UBERON:0001474"
+  cranial ganglion: "UBERON:0001714"
+  somite: "UBERON:0002329"
+  epiblast (generic): "UBERON:0002532"
+  neural plate: "UBERON:0003075"
+  epibranchial placode: "UBERON:0003078"
+  trunk neural crest: "UBERON:0003083"
+  rhombencephalon neural crest: "UBERON:0003852"
+  head mesenchyme: "UBERON:0005253"
+  cartilaginous condensation: "UBERON:0005863"
+  future forebrain: "UBERON:0006240"
+  future spinal cord: "UBERON:0006241"
+  presumptive hindbrain: "UBERON:0007277"
+  presumptive midbrain: "UBERON:0009616"
+  head paraxial mesoderm: "UBERON:0009617"
+
+
+relations: 
+  develops from: "RO:0002202"
+
+
+vars:
+  v0: "'fibroblast' or 'fat cell' or 'smooth muscle cell' or 'neuron' or 'leukocyte' or 'cardiac muscle cell' or 'ecto-epithelial cell' or 'brain' or 'bone element' or 'cranial ganglion' or 'somite' or 'epiblast (generic)' or 'neural plate' or 'head mesenchyme'"
+  v1: "'common myeloid progenitor' or 'neurectodermal cell' or 'mesodermal cell' or 'migratory neural crest cell' or 'cardioblast (sensu Arthropoda)' or 'inner cell mass' or 'ectoderm' or 'endoderm' or 'mesoderm' or 'neural tube' or 'epibranchial placode' or 'trunk neural crest' or 'rhombencephalon neural crest' or 'cartilaginous condensation' or 'future forebrain' or 'future spinal cord' or 'presumptive hindbrain' or 'presumptive midbrain' or 'head paraxial mesoderm'"
+
+name:
+  # Induced, frequency=0.0967741935483871, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s derived from %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.1935483870967742, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that develops_from a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s derived %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('develops from' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,53 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X FOODON_00001303 X
+pattern_iri: http://purl.obolibrary.org/obo/envo/X_X_FOODON_00001303_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [fonio plant (food source)](http://purl.obolibrary.org/obo/FOODON_03412043), [bambara groundnut plant (food source)](http://purl.obolibrary.org/obo/FOODON_03413418), [bacteria (food source)](http://purl.obolibrary.org/obo/FOODON_03412846) (26 total)
+
+classes: 
+  FOODON_00001303: "FOODON:00001303"
+  cellular organisms: "http://purl.obolibrary.org/obo/NCBITaxon_131567"
+  organism: "http://purl.obolibrary.org/obo/OBI_0100026"
+
+
+relations: 
+  FOODON_00001303: "FOODON:00001303"
+
+
+vars:
+  v0: "'FOODON_00001303'"
+  v1: "'cellular organisms' or 'organism'"
+  v2: "'cellular organisms' or 'organism'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s FOODON_00001303 %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s a %s that FOODON_00001303 a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "((%s only %s) and ('FOODON_00001303' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

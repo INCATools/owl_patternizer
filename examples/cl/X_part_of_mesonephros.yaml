@@ -1,0 +1,44 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of mesonephros
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_part_of_mesonephros
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mesonephric glomerular visceral epithelial cell](http://purl.obolibrary.org/obo/CL_0002523), [mesonephric glomerulus](http://purl.obolibrary.org/obo/UBERON_0005325), [mesonephric epithelium](http://purl.obolibrary.org/obo/UBERON_0005103) (24 total)
+
+classes: 
+  mesonephros: "UBERON:0000080"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.875, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "mesonephric %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that part of a mesonephros"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'mesonephros'))"
+  vars:
+    - v0

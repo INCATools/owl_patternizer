@@ -1,0 +1,59 @@
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X controls X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_controls_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [plant disease control](http://aims.fao.org/aos/agrovoc/c_5960), [environmental protection](http://aims.fao.org/aos/agrovoc/c_15898), [cold tolerance](http://aims.fao.org/aos/agrovoc/c_9994) (9 total)
+
+classes: 
+  rodents: "http://aims.fao.org/aos/agrovoc/c_13948"
+  disease control: "http://aims.fao.org/aos/agrovoc/c_2327"
+  wood defects: "http://aims.fao.org/aos/agrovoc/c_28188"
+  protection: "http://aims.fao.org/aos/agrovoc/c_330896"
+  hail: "http://aims.fao.org/aos/agrovoc/c_3469"
+  environmental degradation: "http://aims.fao.org/aos/agrovoc/c_34821"
+  cold stress: "http://aims.fao.org/aos/agrovoc/c_37531"
+  tolerance: "http://aims.fao.org/aos/agrovoc/c_37740"
+  plant diseases: "http://aims.fao.org/aos/agrovoc/c_5962"
+  technology: "http://aims.fao.org/aos/agrovoc/c_7644"
+  weather control: "http://aims.fao.org/aos/agrovoc/c_8339"
+  weeds: "http://aims.fao.org/aos/agrovoc/c_8347"
+  biological control: "http://aims.fao.org/aos/agrovoc/c_918"
+
+
+relations: 
+  controls: "http://aims.fao.org/aos/agrontology#controls"
+
+
+vars:
+  v0: "'disease control' or 'protection' or 'tolerance' or 'technology' or 'weather control' or 'biological control'"
+  v1: "'rodents' or 'wood defects' or 'hail' or 'environmental degradation' or 'cold stress' or 'plant diseases' or 'weeds'"
+
+name:
+  # Could not induce name, using default
+  text: "%s controls %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that controls a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('controls' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,59 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X exists_during X inheres_in X towards X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_exists_during_X_inheres_in_X_towards_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [protein mislocalized to nucleus during meiosis I](http://purl.obolibrary.org/obo/FYPO_0003454), [protein mislocalized to nucleus during glucose starvation](http://purl.obolibrary.org/obo/FYPO_0004841), [RNA mislocalized to cytoplasm during vegetative growth](http://purl.obolibrary.org/obo/FYPO_0006862) (337 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  physical object quality: "PATO:0001241"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  exists_during: "http://purl.obolibrary.org/obo/GOREL_0000032"
+  inheres_in: "RO:0000052"
+  towards: "RO:0002503"
+
+
+vars:
+  v0: "'physical object quality'"
+  v1: "'biological_process'"
+  v2: "'owl:Thing'"
+  v3: "'owl:Thing'"
+
+name:
+  # Could not induce name, using default
+  text: "%s exists_during %s inheres_in %s towards %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that exists_during a %s and inheres_in a %s and towards a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('exists_during' some %s) and ('inheres_in' some %s) and ('towards' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3

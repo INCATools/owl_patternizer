@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: contaminated soil has_increased_levels_of X
+pattern_iri: http://purl.obolibrary.org/obo/envo/contaminated_soil_has_increased_levels_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [xylene contaminated soil](http://purl.obolibrary.org/obo/ENVO_00002146), [metal contaminated soil](http://purl.obolibrary.org/obo/ENVO_00003081), [oil contaminated soil](http://purl.obolibrary.org/obo/ENVO_00002875) (4 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  contaminated soil: "ENVO:00002116"
+
+
+relations: 
+  has_increased_levels_of: "http://purl.obolibrary.org/obo/envo#has_increased_levels_of"
+
+
+vars:
+  v0: "'material entity'"
+
+name:
+  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s contaminated soil"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.75, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Soil which has elevated concentrations of %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('contaminated soil' and ('has_increased_levels_of' some %s))"
+  vars:
+    - v0

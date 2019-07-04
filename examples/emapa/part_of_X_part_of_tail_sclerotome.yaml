@@ -1,0 +1,44 @@
+# options: [min(12),dir('examples/emapa'),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: part_of X part_of tail sclerotome
+pattern_iri: http://purl.obolibrary.org/obo/emapa/part_of_X_part_of_tail_sclerotome
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [somite 31 sclerotome](http://purl.obolibrary.org/obo/EMAPA_16864), [somite 32 sclerotome](http://purl.obolibrary.org/obo/EMAPA_16868), [somite 33 sclerotome](http://purl.obolibrary.org/obo/EMAPA_16872) (30 total)
+
+classes: 
+  tail somite: "http://purl.obolibrary.org/obo/EMAPA_16860"
+  tail sclerotome: "http://purl.obolibrary.org/obo/EMAPA_31151"
+
+
+relations: 
+  part_of: "http://purl.obolibrary.org/obo/emapa#part_of"
+
+
+vars:
+  v0: "'tail somite'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s sclerotome"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any part_of a %s that part_of a tail sclerotome"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(('part_of' some %s) and ('part_of' some 'tail sclerotome'))"
+  vars:
+    - v0

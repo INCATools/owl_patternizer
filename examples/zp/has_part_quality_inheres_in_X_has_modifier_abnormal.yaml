@@ -1,0 +1,50 @@
+# options: [min(50),dir('examples/zp'),trim(true),base('http://purl.obolibrary.org/obo/zp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part quality inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/zp/has_part_quality_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal Kupffer's vesicle](http://purl.obolibrary.org/obo/ZP_0127643), [abnormal adaxial cell](http://purl.obolibrary.org/obo/ZP_0127644), [abnormal anterior axial hypoblast](http://purl.obolibrary.org/obo/ZP_0127645) (3031 total)
+
+classes: 
+  quality: "PATO:0000001"
+  abnormal: "PATO:0000460"
+  zebrafish anatomical entity: "http://purl.obolibrary.org/obo/ZFA_0100000"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'zebrafish anatomical entity'"
+
+name:
+  # Induced, frequency=0.999340151765094, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "abnormal %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.999340151765094, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Abnormality of %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "abnormality of %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('has part' some ('quality' and ('inheres in' some %s) and ('has modifier' some 'abnormal')))"
+  vars:
+    - v0

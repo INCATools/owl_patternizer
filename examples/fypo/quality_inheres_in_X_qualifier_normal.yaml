@@ -1,0 +1,51 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: quality inheres_in X qualifier normal
+pattern_iri: http://purl.obolibrary.org/obo/fypo/quality_inheres_in_X_qualifier_normal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [normal phenotype](http://purl.obolibrary.org/obo/FYPO_0000257), [normal tRNA binding](http://purl.obolibrary.org/obo/FYPO_0006253), [normal succinate dehydrogenase activity](http://purl.obolibrary.org/obo/FYPO_0003994) (159 total)
+
+classes: 
+  quality: "PATO:0000001"
+  normal: "PATO:0000461"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  inheres_in: "RO:0000052"
+  qualifier: "http://purl.obolibrary.org/obo/fypo#qualifier"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.8301886792452831, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "normal %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.18238993710691823, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A molecular function phenotype in which the observed rate of %s is normal (i.e. indistinguishable from wild type)."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "normal %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('quality' and ('inheres_in' some %s) and ('qualifier' some 'normal'))"
+  vars:
+    - v0

@@ -1,0 +1,48 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X regulates X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_regulates_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [regulation of mitotic sister chromatid segregation](http://purl.obolibrary.org/obo/GO_0033047), [regulation of cell cycle checkpoint](http://purl.obolibrary.org/obo/GO_1901976), [regulation of G1/S transition of mitotic cell cycle](http://purl.obolibrary.org/obo/GO_2000045) (110 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  regulates: "RO:0002211"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'owl:Thing'"
+
+name:
+  # Could not induce name, using default
+  text: "%s regulates %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that regulates a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('regulates' some %s))"
+  vars:
+    - v0
+    - v1

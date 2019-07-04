@@ -1,0 +1,45 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: food product by organism food material derives from X
+pattern_iri: http://purl.obolibrary.org/obo/envo/food_product_by_organism_food_material_derives_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [invertebrate animal food product](http://purl.obolibrary.org/obo/FOODON_00001176), [fungal food product](http://purl.obolibrary.org/obo/FOODON_00001143), [vertebrate animal food product](http://purl.obolibrary.org/obo/FOODON_00001092) (6 total)
+
+classes: 
+  food product by organism: "FOODON:00002381"
+  food material: "FOODON:00002403"
+  food source: "FOODON:03411564"
+
+
+relations: 
+  derives from: "RO:0001000"
+
+
+vars:
+  v0: "'food source'"
+
+name:
+  # Could not induce name, using default
+  text: "food product by organism food material derives from %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any food product by organism that food material and derives from a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('food product by organism' and 'food material' and ('derives from' some %s))"
+  vars:
+    - v0

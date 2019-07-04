@@ -1,0 +1,64 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: quality GOREL_0000001 single-celled organism vegetative growth phase inheres in part of X qualifier X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/quality_GOREL_0000001_single_celled_organism_vegetative_growth_phase_inheres_in_part_of_X_qualifier_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [abnormal mitochondrion inheritance](http://purl.obolibrary.org/obo/FYPO_0000906), [abnormal mitochondrial genome maintenance](http://purl.obolibrary.org/obo/FYPO_0000490), [abnormal mitotic spindle elongation](http://purl.obolibrary.org/obo/FYPO_0000131) (378 total)
+
+classes: 
+  single-celled organism vegetative growth phase: "GO:0072690"
+  quality: "PATO:0000001"
+  deviation(from_normal): "PATO:0000069"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  GOREL_0000001: "http://purl.obolibrary.org/obo/GOREL_0000001"
+  inheres in part of: "RO:0002314"
+  qualifier: "http://purl.obolibrary.org/obo/fypo#qualifier"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'deviation(from_normal)'"
+
+name:
+  # Induced, frequency=0.5185185185185185, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.1111111111111111, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A cellular process phenotype observed in the vegetative growth phase of the life cycle in which %s is %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s during vegetative growth"
+    vars:
+      - v1
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s %s during mitotic cell cycle"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "('quality' and ('GOREL_0000001' some 'single-celled organism vegetative growth phase') and ('inheres in part of' some %s) and ('qualifier' some %s))"
+  vars:
+    - v0
+    - v1

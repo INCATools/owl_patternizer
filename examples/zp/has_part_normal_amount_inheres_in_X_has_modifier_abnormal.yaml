@@ -1,0 +1,46 @@
+# options: [min(50),dir('examples/zp'),trim(true),base('http://purl.obolibrary.org/obo/zp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has part normal amount inheres in X has modifier abnormal
+pattern_iri: http://purl.obolibrary.org/obo/zp/has_part_normal_amount_inheres_in_X_has_modifier_abnormal
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [forerunner cell group normal amount, abnormal](http://purl.obolibrary.org/obo/ZP_0100525), [somite normal amount, abnormal](http://purl.obolibrary.org/obo/ZP_0013030), [neuromast normal amount, abnormal](http://purl.obolibrary.org/obo/ZP_0100072) (206 total)
+
+classes: 
+  continuant: "BFO:0000002"
+  abnormal: "PATO:0000460"
+  normal amount: "PATO:0002050"
+  zebrafish anatomical entity: "http://purl.obolibrary.org/obo/ZFA_0100000"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'continuant' or 'zebrafish anatomical entity'"
+
+name:
+  # Induced, frequency=0.4223300970873786, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s normal amount, abnormal"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.4223300970873786, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Abnormal(ly) normal amount (of) %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has part' some ('normal amount' and ('inheres in' some %s) and ('has modifier' some 'abnormal')))"
+  vars:
+    - v0

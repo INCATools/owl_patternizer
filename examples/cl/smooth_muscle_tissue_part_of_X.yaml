@@ -1,0 +1,55 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: smooth muscle tissue part of X
+pattern_iri: http://purl.obolibrary.org/obo/cl/smooth_muscle_tissue_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [smooth muscle of eye](http://purl.obolibrary.org/obo/UBERON_0003386), [ureter smooth muscle](http://purl.obolibrary.org/obo/UBERON_0009919), [urethra smooth muscle layer](http://purl.obolibrary.org/obo/UBERON_0004219) (50 total)
+
+classes: 
+  continuant: "BFO:0000002"
+  material anatomical entity: "UBERON:0000465"
+  smooth muscle tissue: "UBERON:0001135"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'continuant' or 'material anatomical entity'"
+
+name:
+  # Induced, frequency=0.64, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s smooth muscle"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.54, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A portion of smooth muscle tissue that is part of a %s [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "smooth muscle tissue of %s"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s smooth muscle"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('smooth muscle tissue' and ('part of' some %s))"
+  vars:
+    - v0

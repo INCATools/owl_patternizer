@@ -1,0 +1,55 @@
+# options: [min(12),dir('examples/emapa'),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: smooth muscle tissue part_of X
+pattern_iri: http://purl.obolibrary.org/obo/emapa/smooth_muscle_tissue_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [venous system smooth muscle](http://purl.obolibrary.org/obo/EMAPA_36613), [alimentary system smooth muscle](http://purl.obolibrary.org/obo/EMAPA_35117), [trachea smooth muscle](http://purl.obolibrary.org/obo/EMAPA_19192) (12 total)
+
+classes: 
+  venous system: "http://purl.obolibrary.org/obo/EMAPA_16240"
+  alimentary system: "http://purl.obolibrary.org/obo/EMAPA_16246"
+  trachea: "http://purl.obolibrary.org/obo/EMAPA_16853"
+  gallbladder: "http://purl.obolibrary.org/obo/EMAPA_17202"
+  renal pelvis: "http://purl.obolibrary.org/obo/EMAPA_17948"
+  aorta: "http://purl.obolibrary.org/obo/EMAPA_18601"
+  spleen: "http://purl.obolibrary.org/obo/EMAPA_18767"
+  prostate gland: "http://purl.obolibrary.org/obo/EMAPA_19287"
+  esophagus muscularis: "http://purl.obolibrary.org/obo/EMAPA_26983"
+  alveolar system: "http://purl.obolibrary.org/obo/EMAPA_32692"
+  smooth muscle tissue: "http://purl.obolibrary.org/obo/EMAPA_32717"
+  intestine wall: "http://purl.obolibrary.org/obo/EMAPA_35444"
+  stomach wall: "http://purl.obolibrary.org/obo/EMAPA_35826"
+
+
+relations: 
+  part_of: "http://purl.obolibrary.org/obo/emapa#part_of"
+
+
+vars:
+  v0: "'venous system' or 'alimentary system' or 'trachea' or 'gallbladder' or 'renal pelvis' or 'aorta' or 'spleen' or 'prostate gland' or 'esophagus muscularis' or 'alveolar system' or 'intestine wall' or 'stomach wall'"
+
+name:
+  # Induced, frequency=0.5833333333333334, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s smooth muscle"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any smooth muscle tissue that part_of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('smooth muscle tissue' and ('part_of' some %s))"
+  vars:
+    - v0

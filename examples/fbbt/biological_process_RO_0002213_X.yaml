@@ -1,0 +1,53 @@
+# options: [min(50),dir('examples/fbbt'),trim(true),base('http://purl.obolibrary.org/obo/fbbt'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: biological_process RO_0002213 X
+pattern_iri: http://purl.obolibrary.org/obo/fbbt/biological_process_RO_0002213_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [positive regulation of serotonin secretion](http://purl.obolibrary.org/obo/GO_0014064), [positive regulation of synaptic transmission, dopaminergic](http://purl.obolibrary.org/obo/GO_0032226), [positive regulation of peptide secretion](http://purl.obolibrary.org/obo/GO_0002793) (64 total)
+
+classes: 
+  biological_process: "GO:0008150"
+
+
+relations: 
+  RO_0002213: "RO:0002213"
+
+
+vars:
+  v0: "'biological_process'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "positive regulation of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any process that activates or increases the frequency, rate or extent of %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "up regulation of %s"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "positive regulation of %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('biological_process' and ('RO_0002213' some %s))"
+  vars:
+    - v0

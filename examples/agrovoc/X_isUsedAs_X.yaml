@@ -1,0 +1,58 @@
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X isUsedAs X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_isUsedAs_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [calcium chloride](http://aims.fao.org/aos/agrovoc/c_15892), [feed crops](http://aims.fao.org/aos/agrovoc/c_2829), [food crops](http://aims.fao.org/aos/agrovoc/c_3017) (8 total)
+
+classes: 
+  calcium fertilizers: "http://aims.fao.org/aos/agrovoc/c_1199"
+  chlorides: "http://aims.fao.org/aos/agrovoc/c_1567"
+  crops: "http://aims.fao.org/aos/agrovoc/c_1972"
+  cucurbit vegetables: "http://aims.fao.org/aos/agrovoc/c_2006"
+  cyanamides: "http://aims.fao.org/aos/agrovoc/c_2052"
+  desserts: "http://aims.fao.org/aos/agrovoc/c_24015"
+  extracts: "http://aims.fao.org/aos/agrovoc/c_2767"
+  tanning agents: "http://aims.fao.org/aos/agrovoc/c_28162"
+  feeds: "http://aims.fao.org/aos/agrovoc/c_2843"
+  grapes: "http://aims.fao.org/aos/agrovoc/c_3359"
+  pheromones: "http://aims.fao.org/aos/agrovoc/c_5778"
+  sex attractants: "http://aims.fao.org/aos/agrovoc/c_7011"
+
+
+relations: 
+  isUsedAs: "http://aims.fao.org/aos/agrontology#isUsedAs"
+
+
+vars:
+  v0: "'chlorides' or 'crops' or 'cyanamides' or 'extracts' or 'grapes' or 'pheromones'"
+  v1: "'calcium fertilizers' or 'cucurbit vegetables' or 'desserts' or 'tanning agents' or 'feeds' or 'sex attractants'"
+
+name:
+  # Could not induce name, using default
+  text: "%s isUsedAs %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that isUsedAs a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('isUsedAs' some %s))"
+  vars:
+    - v0
+    - v1

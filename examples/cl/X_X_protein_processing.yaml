@@ -1,0 +1,50 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X protein processing
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_X_protein_processing
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [regulation of protein processing](http://purl.obolibrary.org/obo/GO_0070613), [negative regulation of protein processing](http://purl.obolibrary.org/obo/GO_0010955), [positive regulation of protein processing](http://purl.obolibrary.org/obo/GO_0010954) (25 total)
+
+classes: 
+  protein processing: "GO:0016485"
+  regulates: "RO:0002211"
+  negatively regulates: "RO:0002212"
+  positively regulates: "RO:0002213"
+  output of: "RO:0002353"
+  owl:Thing: "owl:Thing"
+
+
+relations: []
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'regulates' or 'negatively regulates' or 'positively regulates' or 'output of'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s protein processing"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s a protein processing"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and (%s some 'protein processing'))"
+  vars:
+    - v0
+    - v1

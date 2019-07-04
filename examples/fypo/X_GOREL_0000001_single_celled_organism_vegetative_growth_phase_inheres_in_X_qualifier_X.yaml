@@ -1,0 +1,56 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X GOREL_0000001 single-celled organism vegetative growth phase inheres_in X qualifier X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_GOREL_0000001_single_celled_organism_vegetative_growth_phase_inheres_in_X_qualifier_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [decreased cell population growth at high temperature](http://purl.obolibrary.org/obo/FYPO_0000082), [decreased cell population growth at low temperature](http://purl.obolibrary.org/obo/FYPO_0000080), [normal cell population growth at high temperature](http://purl.obolibrary.org/obo/FYPO_0000674) (291 total)
+
+classes: 
+  single-celled organism vegetative growth phase: "GO:0072690"
+  quality: "PATO:0000001"
+  deviation(from_normal): "PATO:0000069"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  GOREL_0000001: "http://purl.obolibrary.org/obo/GOREL_0000001"
+  inheres_in: "RO:0000052"
+  qualifier: "http://purl.obolibrary.org/obo/fypo#qualifier"
+
+
+vars:
+  v0: "'quality'"
+  v1: "'owl:Thing'"
+  v2: "'deviation(from_normal)'"
+
+name:
+  # Induced, frequency=0.013745704467353952, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s of %s"
+  vars:
+    - v2
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.006872852233676976, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A cellular process phenotype in which the frequency of %s of %s is %s (i.e. indistinguishable from wild type)."
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('GOREL_0000001' some 'single-celled organism vegetative growth phase') and ('inheres_in' some %s) and ('qualifier' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

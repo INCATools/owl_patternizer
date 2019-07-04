@@ -1,0 +1,49 @@
+# options: [min(8),dir('examples/po'),trim(true),base('http://purl.obolibrary.org/obo/po'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: phyllome margin part of X
+pattern_iri: http://purl.obolibrary.org/obo/po/phyllome_margin_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [scale leaf margin](http://purl.obolibrary.org/obo/PO_0025014), [sporophyll margin](http://purl.obolibrary.org/obo/PO_0025016), [stamen margin](http://purl.obolibrary.org/obo/PO_0025020) (11 total)
+
+classes: 
+  phyllome: "http://purl.obolibrary.org/obo/PO_0006001"
+  phyllome margin: "http://purl.obolibrary.org/obo/PO_0025018"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'phyllome'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s margin"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.18181818181818182, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The margin of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "margen del %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('phyllome margin' and ('part of' some %s))"
+  vars:
+    - v0

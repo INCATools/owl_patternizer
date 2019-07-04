@@ -1,0 +1,54 @@
+# options: [min(50),dir('examples/zp'),trim(true),base('http://purl.obolibrary.org/obo/zp'),generalize_properties(false),max_and_cardinality(4),max_class_signature(4),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X occurs in X
+pattern_iri: http://purl.obolibrary.org/obo/zp/X_occurs_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cytoplasmic pattern recognition receptor signaling pathway](http://purl.obolibrary.org/obo/GO_0002753), [mitochondrial DNA metabolic process](http://purl.obolibrary.org/obo/GO_0032042), [mitochondrial DNA replication](http://purl.obolibrary.org/obo/GO_0006264) (86 total)
+
+classes: 
+  cellular_component: "GO:0005575"
+  biological_process: "GO:0008150"
+
+
+relations: 
+  occurs in: "BFO:0000066"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'cellular_component'"
+
+name:
+  # Induced, frequency=0.313953488372093, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%sl %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.03488372093023256, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s that occurs at the %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s in %s"
+    vars:
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "(%s and ('occurs in' some %s))"
+  vars:
+    - v0
+    - v1

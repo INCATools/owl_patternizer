@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/envo'),trim(true),base('http://purl.obolibrary.org/obo/envo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: biome has part X
+pattern_iri: http://purl.obolibrary.org/obo/envo/biome_has_part_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ocean biome](http://purl.obolibrary.org/obo/ENVO_01000048), [mangrove biome](http://purl.obolibrary.org/obo/ENVO_01000181), [grassland biome](http://purl.obolibrary.org/obo/ENVO_01000177) (6 total)
+
+classes: 
+  independent continuant: "BFO:0000004"
+  biome: "ENVO:00000428"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'independent continuant'"
+
+name:
+  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s biome"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %sland biome is a terrestrial biome which includes, across its entire spatial extent, woody plants spaced sufficiently far apart to allow light penetration to support communities of herbaceous plants or shrubs living closer to the woodland floor."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('biome' and ('has part' some %s))"
+  vars:
+    - v0

@@ -1,0 +1,49 @@
+# options: [min(8),dir('examples/po'),trim(true),base('http://purl.obolibrary.org/obo/po'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of fruit
+pattern_iri: http://purl.obolibrary.org/obo/po/X_part_of_fruit
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [fruit septum](http://purl.obolibrary.org/obo/PO_0025268), [fruit vascular system](http://purl.obolibrary.org/obo/PO_0008003), [fruit abscission zone](http://purl.obolibrary.org/obo/PO_0006503) (9 total)
+
+classes: 
+  fruit: "http://purl.obolibrary.org/obo/PO_0009001"
+  plant anatomical entity: "http://purl.obolibrary.org/obo/PO_0025131"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'plant anatomical entity'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "fruit %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1111111111111111, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s (PO:0000034) that includes the totality of the portions of vascular tissue (PO:0009015) in their specific arrangement in a fruit (PO:0009001)."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "果実%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'fruit'))"
+  vars:
+    - v0

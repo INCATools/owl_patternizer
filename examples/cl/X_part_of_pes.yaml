@@ -1,0 +1,50 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of pes
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_part_of_pes
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [skin of pes](http://purl.obolibrary.org/obo/UBERON_0001513), [pes joint](http://purl.obolibrary.org/obo/UBERON_0001487), [musculature of pes](http://purl.obolibrary.org/obo/UBERON_0004488) (22 total)
+
+classes: 
+  continuant: "BFO:0000002"
+  anatomical entity: "UBERON:0001062"
+  pes: "UBERON:0002387"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'continuant' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.2727272727272727, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "pes %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.18181818181818182, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a pes."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of foot"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'pes'))"
+  vars:
+    - v0

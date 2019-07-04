@@ -1,0 +1,52 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: mislocalised exists_during X inheres_in protein towards X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/mislocalised_exists_during_X_inheres_in_protein_towards_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [protein mislocalized to nucleus during meiosis I](http://purl.obolibrary.org/obo/FYPO_0003454), [protein mislocalized to nucleus during glucose starvation](http://purl.obolibrary.org/obo/FYPO_0004841), [protein mislocalized to centromere](http://purl.obolibrary.org/obo/FYPO_0001796) (22 total)
+
+classes: 
+  protein: "http://purl.obolibrary.org/obo/CHEBI_36080"
+  biological_process: "GO:0008150"
+  cell part: "GO:0044464"
+  mislocalised: "PATO:0000628"
+
+
+relations: 
+  exists_during: "http://purl.obolibrary.org/obo/GOREL_0000032"
+  inheres_in: "RO:0000052"
+  towards: "RO:0002503"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'cell part'"
+
+name:
+  # Could not induce name, using default
+  text: "mislocalised exists_during %s inheres_in protein towards %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any mislocalised that exists_during a %s and inheres_in a protein and towards a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('mislocalised' and ('exists_during' some %s) and ('inheres_in' some 'protein') and ('towards' some %s))"
+  vars:
+    - v0
+    - v1

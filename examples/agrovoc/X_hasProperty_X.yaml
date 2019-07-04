@@ -1,0 +1,58 @@
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X hasProperty X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_hasProperty_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [meat texture](http://aims.fao.org/aos/agrovoc/c_15895), [agricultural population](http://aims.fao.org/aos/agrovoc/c_8676), [chronic respiratory diseases](http://aims.fao.org/aos/agrovoc/c_16703) (6 total)
+
+classes: 
+  texture: "http://aims.fao.org/aos/agrovoc/c_15578"
+  liquidity: "http://aims.fao.org/aos/agrovoc/c_28723"
+  agricultural unemployment: "http://aims.fao.org/aos/agrovoc/c_28828"
+  chronic course: "http://aims.fao.org/aos/agrovoc/c_29248"
+  meat performance: "http://aims.fao.org/aos/agrovoc/c_32877"
+  population: "http://aims.fao.org/aos/agrovoc/c_330887"
+  seedlessness: "http://aims.fao.org/aos/agrovoc/c_33546"
+  infection: "http://aims.fao.org/aos/agrovoc/c_3852"
+  respiratory diseases: "http://aims.fao.org/aos/agrovoc/c_6529"
+  assets: "http://aims.fao.org/aos/agrovoc/c_677"
+  tuberculosis: "http://aims.fao.org/aos/agrovoc/c_7997"
+  varieties: "http://aims.fao.org/aos/agrovoc/c_8157"
+
+
+relations: 
+  hasProperty: "http://aims.fao.org/aos/agrontology#hasProperty"
+
+
+vars:
+  v0: "'meat performance' or 'population' or 'respiratory diseases' or 'assets' or 'tuberculosis' or 'varieties'"
+  v1: "'texture' or 'liquidity' or 'agricultural unemployment' or 'chronic course' or 'seedlessness' or 'infection'"
+
+name:
+  # Induced, frequency=0.16666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "mycobacterium %s %ss"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that hasProperty a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('hasProperty' some %s))"
+  vars:
+    - v0
+    - v1

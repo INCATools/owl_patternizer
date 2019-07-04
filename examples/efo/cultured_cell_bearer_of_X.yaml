@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/efo'),trim(true),base('http://purl.obolibrary.org/obo/efo'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: cultured cell bearer_of X
+pattern_iri: http://purl.obolibrary.org/obo/efo/cultured_cell_bearer_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [normal cell line](http://www.ebi.ac.uk/efo/EFO_0002922), [hepatoma cell line](http://www.ebi.ac.uk/efo/EFO_0005216), [breast adenocarcinoma cell line](http://www.ebi.ac.uk/efo/EFO_0005215) (14 total)
+
+classes: 
+  cultured cell: "CL:0000010"
+  material property: "http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"
+
+
+relations: 
+  bearer_of: "http://purl.org/obo/owl/OBO_REL#bearer_of"
+
+
+vars:
+  v0: "'material property'"
+
+name:
+  # Induced, frequency=0.9285714285714286, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s cell line"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.14285714285714285, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A cell line which is a model for %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s cell"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('cultured cell' and ('bearer_of' some %s))"
+  vars:
+    - v0

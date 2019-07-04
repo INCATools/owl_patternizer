@@ -1,0 +1,67 @@
+# options: [min(6),dir('examples/agrovoc'),trim(true),base('http://purl.obolibrary.org/obo/agrovoc'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X isComposedOf X
+pattern_iri: http://purl.obolibrary.org/obo/agrovoc/X_isComposedOf_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [public enterprises](http://aims.fao.org/aos/agrovoc/c_6345), [DNA sequence](http://aims.fao.org/aos/agrovoc/c_27812), [bile salts](http://aims.fao.org/aos/agrovoc/c_905) (13 total)
+
+classes: 
+  enterprises: "http://aims.fao.org/aos/agrovoc/c_10626"
+  DNA: "http://aims.fao.org/aos/agrovoc/c_2347"
+  Coastal waters: "http://aims.fao.org/aos/agrovoc/c_25205"
+  evergreen plants: "http://aims.fao.org/aos/agrovoc/c_2743"
+  nucleotide sequence: "http://aims.fao.org/aos/agrovoc/c_27583"
+  fats: "http://aims.fao.org/aos/agrovoc/c_2816"
+  feathers: "http://aims.fao.org/aos/agrovoc/c_2822"
+  granite: "http://aims.fao.org/aos/agrovoc/c_32468"
+  public sector: "http://aims.fao.org/aos/agrovoc/c_32526"
+  salts: "http://aims.fao.org/aos/agrovoc/c_33129"
+  animal meals: "http://aims.fao.org/aos/agrovoc/c_35866"
+  hormones: "http://aims.fao.org/aos/agrovoc/c_3663"
+  lagoons: "http://aims.fao.org/aos/agrovoc/c_4158"
+  mixed forests: "http://aims.fao.org/aos/agrovoc/c_4874"
+  tissue: "http://aims.fao.org/aos/agrovoc/c_49880"
+  oils: "http://aims.fao.org/aos/agrovoc/c_5334"
+  protein concentrates: "http://aims.fao.org/aos/agrovoc/c_6250"
+  soil types: "http://aims.fao.org/aos/agrovoc/c_7204"
+  vascular bundles: "http://aims.fao.org/aos/agrovoc/c_8159"
+  bile acids: "http://aims.fao.org/aos/agrovoc/c_903"
+  blood proteins: "http://aims.fao.org/aos/agrovoc/c_970"
+
+
+relations: 
+  isComposedOf: "http://aims.fao.org/aos/agrontology#isComposedOf"
+
+
+vars:
+  v0: "'enterprises' or 'nucleotide sequence' or 'salts' or 'animal meals' or 'hormones' or 'lagoons' or 'mixed forests' or 'tissue' or 'protein concentrates' or 'soil types'"
+  v1: "'DNA' or 'Coastal waters' or 'evergreen plants' or 'fats' or 'feathers' or 'granite' or 'public sector' or 'oils' or 'vascular bundles' or 'bile acids' or 'blood proteins'"
+
+name:
+  # Could not induce name, using default
+  text: "%s isComposedOf %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that isComposedOf a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('isComposedOf' some %s))"
+  vars:
+    - v0
+    - v1

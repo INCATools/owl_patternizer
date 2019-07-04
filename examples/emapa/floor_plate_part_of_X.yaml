@@ -1,0 +1,59 @@
+# options: [min(12),dir('examples/emapa'),trim(true),base('http://purl.obolibrary.org/obo/emapa'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: floor plate part_of X
+pattern_iri: http://purl.obolibrary.org/obo/emapa/floor_plate_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [future brain floor plate](http://purl.obolibrary.org/obo/EMAPA_32677), [future midbrain floor plate](http://purl.obolibrary.org/obo/EMAPA_16141), [future hindbrain floor plate](http://purl.obolibrary.org/obo/EMAPA_16154) (16 total)
+
+classes: 
+  future brain: "http://purl.obolibrary.org/obo/EMAPA_16089"
+  future midbrain: "http://purl.obolibrary.org/obo/EMAPA_16140"
+  future hindbrain: "http://purl.obolibrary.org/obo/EMAPA_16148"
+  central nervous system: "http://purl.obolibrary.org/obo/EMAPA_16470"
+  prosencephalon: "http://purl.obolibrary.org/obo/EMAPA_16512"
+  future forebrain: "http://purl.obolibrary.org/obo/EMAPA_16640"
+  brain: "http://purl.obolibrary.org/obo/EMAPA_16894"
+  diencephalon: "http://purl.obolibrary.org/obo/EMAPA_16896"
+  telencephalon: "http://purl.obolibrary.org/obo/EMAPA_16910"
+  hindbrain: "http://purl.obolibrary.org/obo/EMAPA_16916"
+  midbrain: "http://purl.obolibrary.org/obo/EMAPA_16974"
+  metencephalon: "http://purl.obolibrary.org/obo/EMAPA_17071"
+  myelencephalon: "http://purl.obolibrary.org/obo/EMAPA_17082"
+  medulla oblongata: "http://purl.obolibrary.org/obo/EMAPA_17550"
+  spinal cord: "http://purl.obolibrary.org/obo/EMAPA_17577"
+  floor plate: "http://purl.obolibrary.org/obo/EMAPA_32684"
+  rhombomere: "http://purl.obolibrary.org/obo/EMAPA_32820"
+
+
+relations: 
+  part_of: "http://purl.obolibrary.org/obo/emapa#part_of"
+
+
+vars:
+  v0: "'future brain' or 'future midbrain' or 'future hindbrain' or 'central nervous system' or 'prosencephalon' or 'future forebrain' or 'brain' or 'diencephalon' or 'telencephalon' or 'hindbrain' or 'midbrain' or 'metencephalon' or 'myelencephalon' or 'medulla oblongata' or 'spinal cord' or 'rhombomere'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s floor plate"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any floor plate that part_of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('floor plate' and ('part_of' some %s))"
+  vars:
+    - v0

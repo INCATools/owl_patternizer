@@ -1,0 +1,64 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: increased occurrence GOREL_0000001 single-celled organism vegetative growth phase occurs_at X inheres_in X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/increased_occurrence_GOREL_0000001_single_celled_organism_vegetative_growth_phase_occurs_at_X_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased histone exchange at pericentric heterochromatin](http://purl.obolibrary.org/obo/FYPO_0004761), [increased H4-K20 dimethylation at double-strand break site during vegetative growth](http://purl.obolibrary.org/obo/FYPO_0005611), [increased histone H3-K9 dimethylation at heterochromatin island during vegetative growth](http://purl.obolibrary.org/obo/FYPO_0006373) (69 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  single-celled organism vegetative growth phase: "GO:0072690"
+  increased occurrence: "PATO:0002051"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  GOREL_0000001: "http://purl.obolibrary.org/obo/GOREL_0000001"
+  occurs_at: "http://purl.obolibrary.org/obo/GOREL_0000501"
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'biological_process'"
+
+name:
+  # Induced, frequency=0.2898550724637681, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "increased %s at %s during vegetative growth"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any increased occurrence that GOREL_0000001 a single-celled organism vegetative growth phase and occurs_at a %s and inheres_in a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "increased %s at %s during vegetative growth"
+    vars:
+      - v1
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "increased %s at %s during mitotic cell cycle"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "('increased occurrence' and ('GOREL_0000001' some 'single-celled organism vegetative growth phase') and ('occurs_at' some %s) and ('inheres_in' some %s))"
+  vars:
+    - v0
+    - v1

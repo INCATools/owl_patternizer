@@ -1,0 +1,62 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X inheres_in X towards X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/X_inheres_in_X_towards_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [protein mislocalized to prospore membrane](http://purl.obolibrary.org/obo/FYPO_0004447), [protein mislocalized to nucleus](http://purl.obolibrary.org/obo/FYPO_0003453), [protein mislocalized to cytoplasm](http://purl.obolibrary.org/obo/FYPO_0004842) (374 total)
+
+classes: 
+  culture medium: "http://purl.obolibrary.org/obo/BTO_0000316"
+  protein: "http://purl.obolibrary.org/obo/CHEBI_36080"
+  CL_0000334: "CL:0000334"
+  CL_0000596: "CL:0000596"
+  cytolysis: "GO:0019835"
+  meiotic spindle pole body: "GO:0035974"
+  mitotic spindle pole body: "GO:0044732"
+  protein-containing complex binding: "GO:0044877"
+  single-celled organism vegetative growth phase: "GO:0072690"
+  quality: "PATO:0000001"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  inheres_in: "RO:0000052"
+  towards: "RO:0002503"
+
+
+vars:
+  v0: "'quality'"
+  v1: "'culture medium' or 'protein' or 'CL_0000334' or 'CL_0000596' or 'cytolysis' or 'meiotic spindle pole body' or 'mitotic spindle pole body' or 'protein-containing complex binding' or 'single-celled organism vegetative growth phase'"
+  v2: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.01871657754010695, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of %s in %s"
+  vars:
+    - v0
+    - v2
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that inheres_in a %s and towards a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('inheres_in' some %s) and ('towards' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

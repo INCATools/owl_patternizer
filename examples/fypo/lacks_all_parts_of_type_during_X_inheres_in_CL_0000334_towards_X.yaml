@@ -1,0 +1,52 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: lacks all parts of type during X inheres_in CL_0000334 towards X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/lacks_all_parts_of_type_during_X_inheres_in_CL_0000334_towards_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [RNA absent from cell during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0001996), [meiotic spindle absent from cell during meiosis II](http://purl.obolibrary.org/obo/FYPO_0003614), [RNA absent from cell during cellular response to pheromone](http://purl.obolibrary.org/obo/FYPO_0004072) (35 total)
+
+classes: 
+  CL_0000334: "CL:0000334"
+  biological_process: "GO:0008150"
+  lacks all parts of type: "PATO:0002000"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  during: "http://purl.obolibrary.org/obo/GOREL_0000002"
+  inheres_in: "RO:0000052"
+  towards: "RO:0002503"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.05714285714285714, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s absent from cell during %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any lacks all parts of type that during a %s and inheres_in a CL_0000334 and towards a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('lacks all parts of type' and ('during' some %s) and ('inheres_in' some 'CL_0000334') and ('towards' some %s))"
+  vars:
+    - v0
+    - v1

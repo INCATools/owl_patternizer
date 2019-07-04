@@ -1,0 +1,56 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: increased occurrence GOREL_0000001 X inheres_in X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/increased_occurrence_GOREL_0000001_X_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [increased transcription during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0005661), [increased RNA catabolic process during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0005892), [increased protein phosphorylation during nitrogen starvation](http://purl.obolibrary.org/obo/FYPO_0002681) (132 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  increased occurrence: "PATO:0002051"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  GOREL_0000001: "http://purl.obolibrary.org/obo/GOREL_0000001"
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.03787878787878788, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "increased %s during %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.015151515151515152, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A molecular function phenotype in which occurrence of %s by a gene product (usually a protein) in a mutant is increased during a %s. The affected gene product may be encoded by the mutated gene, or by a different gene, and may normally bind DNA, protein, or both in chromatin."
+  vars:
+    - v1
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "increased %s during %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "('increased occurrence' and ('GOREL_0000001' some %s) and ('inheres_in' some %s))"
+  vars:
+    - v0
+    - v1

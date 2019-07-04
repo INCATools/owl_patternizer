@@ -1,0 +1,62 @@
+# options: [min(20),dir('examples/fypo'),trim(true),base('http://purl.obolibrary.org/obo/fypo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: decreased occurrence GOREL_0000001 X GOREL_0000001 single-celled organism vegetative growth phase inheres_in X
+pattern_iri: http://purl.obolibrary.org/obo/fypo/decreased_occurrence_GOREL_0000001_X_GOREL_0000001_single_celled_organism_vegetative_growth_phase_inheres_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [decreased protein degradation during mitotic G1 phase](http://purl.obolibrary.org/obo/FYPO_0006519), [decreased UV-damage excision repair during mitotic G1 phase](http://purl.obolibrary.org/obo/FYPO_0004061), [decreased protein localization to chromatin during mitotic G1 phase](http://purl.obolibrary.org/obo/FYPO_0005896) (52 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  single-celled organism vegetative growth phase: "GO:0072690"
+  decreased occurrence: "PATO:0002052"
+
+
+relations: 
+  GOREL_0000001: "http://purl.obolibrary.org/obo/GOREL_0000001"
+  inheres_in: "RO:0000052"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'biological_process'"
+
+name:
+  # Induced, frequency=0.8846153846153846, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "decreased %s during %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.038461538461538464, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A cellular process phenotype observed in the vegetative growth phase of the life cycle in which %s occurs to a lower extent than normal during a %s. All genes, or a specific subset of genes, may be affected."
+  vars:
+    - v1
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "reduced %s during %s"
+    vars:
+      - v1
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "decreased %s during %s during mitotic cell cycle"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "('decreased occurrence' and ('GOREL_0000001' some %s) and ('GOREL_0000001' some 'single-celled organism vegetative growth phase') and ('inheres_in' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,51 @@
+# options: [min(10),dir('examples/efo'),trim(true),base('http://purl.obolibrary.org/obo/efo'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X-or-X
+pattern_iri: http://purl.obolibrary.org/obo/efo/X_X_or_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [lymphoma or leukaemia cell line](http://www.ebi.ac.uk/efo/EFO_0002937), [ovarian cancer cell lines](http://www.ebi.ac.uk/efo/EFO_0002394), [rheumatic disease](http://www.ebi.ac.uk/efo/EFO_0005755) (18 total)
+
+classes: 
+  bearer_of: "http://purl.org/obo/owl/OBO_REL#bearer_of"
+  experimental factor: "EFO:0000001"
+  has_disease_location: "EFO:0000784"
+
+
+relations: []
+
+vars:
+  v0: "'bearer_of' or 'has_disease_location'"
+  v1: "'experimental factor'"
+  v2: "'experimental factor'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s/%s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "%s a Any %s that %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s some %s or %s)"
+  vars:
+    - v0
+    - v1
+    - v2

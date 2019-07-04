@@ -1,0 +1,43 @@
+# options: [min(10),dir('examples/efo'),trim(true),base('http://purl.obolibrary.org/obo/efo'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: derives_from X
+pattern_iri: http://purl.obolibrary.org/obo/efo/derives_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [interleukin (Mus musculus)](http://www.ebi.ac.uk/efo/EFO_0003792), [interleukin (Rattus norvegicus)](http://www.ebi.ac.uk/efo/EFO_0003793), [interleukin (Homo sapiens)](http://www.ebi.ac.uk/efo/EFO_0003791) (33 total)
+
+classes: 
+  material entity: "http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"
+
+
+relations: 
+  derives_from: "http://www.obofoundry.org/ro/ro.owl#derives_from"
+
+
+vars:
+  v0: "'material entity'"
+
+name:
+  # Induced, frequency=0.09090909090909091, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "interleukin (%s)"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "derives_from a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('derives_from' some %s)"
+  vars:
+    - v0

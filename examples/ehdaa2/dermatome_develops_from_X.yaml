@@ -1,0 +1,44 @@
+# options: [min(12),dir('examples/ehdaa2'),trim(true),base('http://purl.obolibrary.org/obo/ehdaa2'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: dermatome develops_from X
+pattern_iri: http://purl.obolibrary.org/obo/ehdaa2/dermatome_develops_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [dermatome 05](http://purl.obolibrary.org/obo/EHDAA2_0003354), [dermatome 06](http://purl.obolibrary.org/obo/EHDAA2_0003356), [dermatome 07](http://purl.obolibrary.org/obo/EHDAA2_0003359) (35 total)
+
+classes: 
+  transitional anatomical structure: "http://purl.obolibrary.org/obo/AEO_0000132"
+  dermatome: "http://purl.obolibrary.org/obo/AEO_0001017"
+
+
+relations: 
+  develops_from: "RO:0002202"
+
+
+vars:
+  v0: "'transitional anatomical structure'"
+
+name:
+  # Could not induce name, using default
+  text: "dermatome develops_from %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any dermatome that develops_from a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('dermatome' and ('develops_from' some %s))"
+  vars:
+    - v0

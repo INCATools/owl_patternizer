@@ -1,0 +1,44 @@
+# options: [min(8),dir('examples/po'),trim(true),base('http://purl.obolibrary.org/obo/po'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: primordium develops from X
+pattern_iri: http://purl.obolibrary.org/obo/po/primordium_develops_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [carpel primordium](http://purl.obolibrary.org/obo/PO_0004703), [phyllome primordium](http://purl.obolibrary.org/obo/PO_0025128), [vascular leaf primordium](http://purl.obolibrary.org/obo/PO_0000017) (10 total)
+
+classes: 
+  portion of meristem tissue: "http://purl.obolibrary.org/obo/PO_0009013"
+  primordium: "http://purl.obolibrary.org/obo/PO_0025127"
+
+
+relations: 
+  develops from: "RO:0002202"
+
+
+vars:
+  v0: "'portion of meristem tissue'"
+
+name:
+  # Could not induce name, using default
+  text: "primordium develops from %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A phyllome primordium (PO:0025128) that develops from a %s (PO:0006005) and is committed to the development of a carpel (PO:0009030)."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('primordium' and ('develops from' some %s))"
+  vars:
+    - v0
