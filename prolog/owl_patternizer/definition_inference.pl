@@ -27,6 +27,11 @@
            assert_inferred_equiv_axioms/2,           
            assert_inferred_equiv_axioms/3,
 
+           label_delta_class_pair/4,
+           label_delta_class_pair/6,
+           index_entity_tokens/0,
+           tokens_delta_class_pair/6,
+           tokens_delta_class_pair_rel/7,
            remove_chemical_synonyms/0,
            mutate_chebi/0]).
 
@@ -435,6 +440,77 @@ rdf_assert_literal(S,P,O,G) :-
         rdf_canonical_literal(Str, Lit),
         rdf_assert(S,P,Lit,G).
 
+label_delta_class_pair(Subterm1, Subterm2, C1, C2) :-
+        label_delta_class_pair(Subterm1, Subterm2, C1, C2, _, _).
+label_delta_class_pair(Subterm1, Subterm2, C1, C2, P1, P2) :-
+        atom_length(Subterm1,Len1),
+        atom_length(Subterm2,Len2),
+        basic_annot(C1,P1,V1,_),
+        sub_atom(V1,StartX,Len1,RestX,Subterm1),
+        sub_atom(V1,0,StartX,_,SharedBase),
+        sub_atom(V1,_,RestX,0,SharedEnd),
+        basic_annot(C2,P2,V2,_),
+        %C2\=C1,
+        sub_atom(V2,0,StartX,_,SharedBase),        
+        sub_atom(V2,_,RestX,0,SharedEnd),        
+        sub_atom(V2,StartX,Len2,RestX,Subterm2).
+
+index_entity_tokens :-
+        materialize_index(entity_tokens(+,+,-,-)).
+
+entity_tokens(C,Toks,P,V) :-
+        basic_annot(C,P,V,_),
+        concat_atom(Toks,' ',V).
+
+tokens_delta_class_pair(SubTokens1, SubTokens2, C1, C2, P1, P2) :-
+        \+ var(SubTokens2),
+        entity_tokens(C1,Toks1,P1,_),
+        % create open lists, with shared tail
+        append(SubTokens1,TailX,MatchTokens1),
+        append(SubTokens2,TailX,MatchTokens2),
+        append(BaseX,MatchTokens1,Toks1),
+        entity_tokens(C2,Toks2,P2,_),
+        append(BaseX,MatchTokens2,Toks2).
+tokens_delta_class_pair(SubTokens1, SubTokens2, C1, C2, P1, P2) :-
+        var(SubTokens2),
+        entity_tokens(C1,Toks1,P1,_),
+        % create open list; tail will be unified later
+        append(SubTokens1,TailX,MatchTokens1),
+        append(BaseX,MatchTokens1,Toks1),
+        entity_tokens(C2,Toks2,P2,_),
+        append(BaseX,MatchTokens2,Toks2),
+        append(SubTokens2,TailX,MatchTokens2),
+        SubTokens1\=SubTokens2,
+        % prevent trivial substitutions of whole of first term
+        \+ ((BaseX=[], TailX=[])).
+
+
+/*
+
+  Example of use:
+  
+  pl2sparql -f tsv -T -l -e -u owl_patternizer/definition_inference -i envo "tokens_delta_class_pair_rel([biome],_,_,_,_,_,_Rels)"
+  */
+tokens_delta_class_pair_rel(SubTokens1, SubTokens2, C1, C2, P1, P2, Rels) :-
+        tokens_delta_class_pair(SubTokens1, SubTokens2, C1, C2, P1, P2),
+        findall(Rel,rel(C1, C2, Rel),Rels).
+
+rel(C, C, identical).
+
+rel(C1, C2, P) :- owl_edge(C1, P, C2).
+rel(C1, C2, reverse(P)) :- owl_edge(C2, P, C1).
+rel(C1, C2, R) :- shared_node(C1,C2,R).
+
+shared_node(C1,C2,common(X,P1,P2)) :-
+        owl_edge(C1,P1,X),
+        \+ rdf_global_id(rdfs:subClassOf, P1),
+        owl_edge(C2,P2,X),
+        \+ rdf_global_id(rdfs:subClassOf, P2).
+        
+        
+
+
+        
 % e.g. disodium 7-hydroxy-8-[(e)-phenyldiazenyl]naphthalene-1,3-disulfonate
 remove_chemical_synonyms :-
         T=rdf(_,P,Lit),
