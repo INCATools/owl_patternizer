@@ -462,6 +462,10 @@ entity_tokens(C,Toks,P,V) :-
         basic_annot(C,P,V,_),
         concat_atom(Toks,' ',V).
 
+%! tokens_delta_class_pair(+SubTokens1:list, ?SubTokens2:list, ?C1, ?C2, ?Pred1, ?Pred2) is nondet
+%
+%    true if a label/syn of C1 can be turned into a label/syn of C2 by replacing the first set of tokens with the second
+%
 tokens_delta_class_pair(SubTokens1, SubTokens2, C1, C2, P1, P2) :-
         \+ var(SubTokens2),
         entity_tokens(C1,Toks1,P1,_),
@@ -484,29 +488,35 @@ tokens_delta_class_pair(SubTokens1, SubTokens2, C1, C2, P1, P2) :-
         % prevent trivial substitutions of whole of first term
         \+ ((BaseX=[], TailX=[])).
 
-
-/*
-
-  Example of use:
-  
-  pl2sparql -f tsv -T -l -e -u owl_patternizer/definition_inference -i envo "tokens_delta_class_pair_rel([biome],_,_,_,_,_,_Rels)"
-  */
+%! tokens_delta_class_pair_rel(+SubTokens1:list, ?SubTokens2:list, ?C1, ?C2, ?Pred1, ?Pred2, ?Rels:list) is nondet
+%
+%    as tokens_delta_class_pair/6 but attempts to find any relationships between C1 and C2
+%
 tokens_delta_class_pair_rel(SubTokens1, SubTokens2, C1, C2, P1, P2, Rels) :-
         tokens_delta_class_pair(SubTokens1, SubTokens2, C1, C2, P1, P2),
         findall(Rel,rel(C1, C2, Rel),Rels).
 
 rel(C, C, identical).
 
-rel(C1, C2, P) :- owl_edge(C1, P, C2).
-rel(C1, C2, reverse(P)) :- owl_edge(C2, P, C1).
+rel(C1, C2, P) :- owl_edge(C1, Px, C2), plabel(Px,P).
+rel(C1, C2, rev(P)) :- owl_edge(C2, Px, C1), plabel(Px,P).
 rel(C1, C2, R) :- shared_node(C1,C2,R).
 
 shared_node(C1,C2,common(X,P1,P2)) :-
-        owl_edge(C1,P1,X),
-        \+ rdf_global_id(rdfs:subClassOf, P1),
-        owl_edge(C2,P2,X),
-        \+ rdf_global_id(rdfs:subClassOf, P2).
-        
+        owl_edge(C1,P1x,X),
+        \+ rdf_global_id(rdfs:subClassOf, P1x),
+        owl_edge(C2,P2x,X),
+        \+ rdf_global_id(rdfs:subClassOf, P2x),
+        plabel(P1x,P1),
+        plabel(P2x,P2).
+
+plabel(P,L) :- owl:label(P,L1),ensure_atom(L1,L),!.
+plabel(P,isa) :- rdf_global_id(rdfs:subClassOf,P),!.
+plabel(P,L) :- rdf_global_id(Pre:Post,P),!,concat_atom([Pre,Post],':',L).
+plabel(P,P).
+
+
+
         
 
 
