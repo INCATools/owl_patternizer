@@ -62,6 +62,7 @@ ontology_config(pizza,    [min(2), base('http://purl.obolibrary.org/obo/pizza/')
 ontology_config(pato,     [infer_axioms(true), min(5), generalize_properties(false), ontology_prefix(pato)]).
 
 ontology_config(wine,     [min(2)]).
+ontology_config(cco,      [min(3), load_import_closure(false), generalize_properties(false)]).
 
 ontology_config(so,       [min(8)]).
 ontology_config(mso,      [min(5), max_class_signature(6), generalize_properties(false)]).
@@ -230,6 +231,7 @@ do_for(Ont) :-
         rdf_turtle:rdf_save_turtle(OwlFile,[]),
             
         % TODO: merge options
+        option(load_import_closure(IsLoadImports),Options,true),
         option(min(Min),Options,40),
         option(base(Base),Options,DefaultBase),
         option(generalize_properties(GP),Options,true),
@@ -240,6 +242,7 @@ do_for(Ont) :-
                            dir(Dir),
                            trim(true),
                            base(Base),
+                           load_import_closure(IsLoadImports),
                            generalize_properties(GP),
                            max_and_cardinality(MAC),
                            max_class_signature(MCS),

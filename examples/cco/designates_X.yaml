@@ -1,0 +1,43 @@
+# options: [min(3),dir('examples/cco'),trim(true),base('http://purl.obolibrary.org/obo/cco'),load_import_closure(false),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: designates X
+pattern_iri: http://purl.obolibrary.org/obo/cco/designates_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Designative Information Content Entity](http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeInformationContentEntity), [Spatial Region Identifier](http://www.ontologyrepository.com/CommonCoreOntologies/SpatialRegionIdentifier), [Temporal Region Identifier](http://www.ontologyrepository.com/CommonCoreOntologies/TemporalRegionIdentifier) (43 total)
+
+classes: 
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  designates: "http://www.ontologyrepository.com/CommonCoreOntologies/designates"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.813953488372093, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s Identifier"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "designates a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('designates' some %s)"
+  vars:
+    - v0

@@ -194,6 +194,10 @@
 <agrovoc>
     a void:Dataset ;
     void:dataDump <../tests/data/agrovoc_owl.ttl> .
+
+<cco>
+    a void:Dataset ;
+    void:dataDump <../../CommonCoreOntologies/all.ttl> .
     
 <envoX>
     a lib:Ontology ;

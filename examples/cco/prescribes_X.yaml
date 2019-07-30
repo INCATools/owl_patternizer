@@ -1,0 +1,43 @@
+# options: [min(3),dir('examples/cco'),trim(true),base('http://purl.obolibrary.org/obo/cco'),load_import_closure(false),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: prescribes X
+pattern_iri: http://purl.obolibrary.org/obo/cco/prescribes_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Directive Information Content Entity](http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity), [Quality Specification](http://www.ontologyrepository.com/CommonCoreOntologies/QualitySpecification), [Artifact Function Specification](http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactFunctionSpecification) (59 total)
+
+classes: 
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  prescribes: "http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.9491525423728814, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s Specification"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "prescribes a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('prescribes' some %s)"
+  vars:
+    - v0

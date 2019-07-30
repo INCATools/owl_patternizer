@@ -1,0 +1,43 @@
+# options: [min(3),dir('examples/cco'),trim(true),base('http://purl.obolibrary.org/obo/cco'),load_import_closure(false),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: RO_0000087 X
+pattern_iri: http://purl.obolibrary.org/obo/cco/RO_0000087_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Allied Person](http://www.ontologyrepository.com/CommonCoreOntologies/AlliedPerson), [Citizen](http://www.ontologyrepository.com/CommonCoreOntologies/Citizen), [Enemy](http://www.ontologyrepository.com/CommonCoreOntologies/Enemy) (5 total)
+
+classes: 
+  BFO_0000023: "BFO:0000023"
+
+
+relations: 
+  RO_0000087: "RO:0000087"
+
+
+vars:
+  v0: "'BFO_0000023'"
+
+name:
+  # Could not induce name, using default
+  text: "RO_0000087 %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "RO_0000087 a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('RO_0000087' some %s)"
+  vars:
+    - v0

@@ -1,0 +1,43 @@
+# options: [min(3),dir('examples/cco'),trim(true),base('http://purl.obolibrary.org/obo/cco'),load_import_closure(false),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: BFO_0000050 X
+pattern_iri: http://purl.obolibrary.org/obo/cco/BFO_0000050_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [City Part](http://www.ontologyrepository.com/CommonCoreOntologies/CityPart), [Country Part](http://www.ontologyrepository.com/CommonCoreOntologies/CountryPart), [Geopolitical Entity Part](http://www.ontologyrepository.com/CommonCoreOntologies/GeopoliticalEntityPart) (5 total)
+
+classes: 
+  Geopolitical Entity: "http://www.ontologyrepository.com/CommonCoreOntologies/GeopoliticalEntity"
+
+
+relations: 
+  BFO_0000050: "BFO:0000050"
+
+
+vars:
+  v0: "'Geopolitical Entity'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s Part"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "BFO_0000050 a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('BFO_0000050' some %s)"
+  vars:
+    - v0
