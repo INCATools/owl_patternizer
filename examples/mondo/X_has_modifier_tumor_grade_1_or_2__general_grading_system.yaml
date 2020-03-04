@@ -1,0 +1,50 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has modifier tumor grade 1 or 2, general grading system
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_has_modifier_tumor_grade_1_or_2__general_grading_system
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [low-grade astrocytoma](http://purl.obolibrary.org/obo/MONDO_0016685), [low grade glioma](http://purl.obolibrary.org/obo/MONDO_0021637), [low grade astrocytic tumor](http://purl.obolibrary.org/obo/MONDO_0021638) (5 total)
+
+classes: 
+  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  disease by anatomical system: "http://purl.obolibrary.org/obo/MONDO_0021199"
+  tumor grade 1 or 2, general grading system: "http://purl.obolibrary.org/obo/MONDO_0024495"
+
+
+relations: 
+  has modifier: "RO:0002573"
+
+
+vars:
+  v0: "'neoplasm (disease)' or 'disease by anatomical system'"
+
+name:
+  # Induced, frequency=0.4, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "low grade %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A grade I or grade II %s arising from the central nervous system. This category includes pilocytic astrocytoma, diffuse astrocytoma, subependymal giant cell astrocytoma, ependymoma, oligodendroglioma, oligoastrocytoma, and angiocentric glioma."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "low grade %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('has modifier' some 'tumor grade 1 or 2, general grading system'))"
+  vars:
+    - v0

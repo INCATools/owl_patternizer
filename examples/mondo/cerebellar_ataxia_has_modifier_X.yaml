@@ -1,0 +1,54 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: cerebellar ataxia has modifier X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/cerebellar_ataxia_has_modifier_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [autosomal dominant cerebellar ataxia](http://purl.obolibrary.org/obo/MONDO_0020380), [autosomal recessive cerebellar ataxia](http://purl.obolibrary.org/obo/MONDO_0015244), [X-linked cerebellar ataxia](http://purl.obolibrary.org/obo/MONDO_0016612) (6 total)
+
+classes: 
+  Autosomal dominant inheritance: "http://purl.obolibrary.org/obo/HP_0000006"
+  Autosomal recessive inheritance: "http://purl.obolibrary.org/obo/HP_0000007"
+  X-linked inheritance: "http://purl.obolibrary.org/obo/HP_0001417"
+  cerebellar ataxia: "http://purl.obolibrary.org/obo/MONDO_0000437"
+  rare: "http://purl.obolibrary.org/obo/MONDO_0021136"
+  congenital: "http://purl.obolibrary.org/obo/MONDO_0021140"
+  acquired: "http://purl.obolibrary.org/obo/MONDO_0021141"
+
+
+relations: 
+  has modifier: "RO:0002573"
+
+
+vars:
+  v0: "'Autosomal dominant inheritance' or 'Autosomal recessive inheritance' or 'X-linked inheritance' or 'rare' or 'congenital' or 'acquired'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s cerebellar ataxia"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s cerebellar ataxia (ADCA) describes a clinically and genetically heterogeneous group of neurodegenerative diseases characterized by a slowly progressive ataxia of gait, stance and limbs, dysarthria and/or oculomotor disorder, due to cerebellar degeneration in the absence of coexisting diseases. The degenerative process can be limited to the cerebellum (ADCA type 3) or may additionally involve the retina (ADCA type 2), optic nerve, ponto-medullary systems, basal ganglia, cerebral cortex, spinal tracts or peripheral nerves (ADCA type 1) (see these terms). In ACDA type 4 (see this term), a cerebellar syndrome is associated with epilepsy."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "cerebellar ataxia, %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('cerebellar ataxia' and ('has modifier' some %s))"
+  vars:
+    - v0

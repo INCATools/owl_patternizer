@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has modifier Transient
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_has_modifier_Transient
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [transient tic disorder](http://purl.obolibrary.org/obo/MONDO_0002419), [transient ischemic attack (disease)](http://purl.obolibrary.org/obo/MONDO_0005264), [transient arthritis](http://purl.obolibrary.org/obo/MONDO_0002204) (9 total)
+
+classes: 
+  Transient: "http://purl.obolibrary.org/obo/HP_0025153"
+  disease by anatomical system: "http://purl.obolibrary.org/obo/MONDO_0021199"
+
+
+relations: 
+  has modifier: "RO:0002573"
+
+
+vars:
+  v0: "'disease by anatomical system'"
+
+name:
+  # Induced, frequency=0.6666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "transient %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2222222222222222, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s that is not permanent."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has modifier' some 'Transient'))"
+  vars:
+    - v0

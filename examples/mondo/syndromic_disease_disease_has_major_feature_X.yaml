@@ -1,0 +1,61 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: syndromic disease disease has major feature X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/syndromic_disease_disease_has_major_feature_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [syndrome with microcephaly as major feature](http://purl.obolibrary.org/obo/MONDO_0017119), [syndromic epicanthus](http://purl.obolibrary.org/obo/MONDO_0020165), [syndromic palpebral coloboma](http://purl.obolibrary.org/obo/MONDO_0020157) (15 total)
+
+classes: 
+  Microcephaly: "http://purl.obolibrary.org/obo/HP_0000252"
+  Epicanthus: "http://purl.obolibrary.org/obo/HP_0000286"
+  Eyelid coloboma: "http://purl.obolibrary.org/obo/HP_0000625"
+  Hypoparathyroidism: "http://purl.obolibrary.org/obo/HP_0000829"
+  Brachydactyly: "http://purl.obolibrary.org/obo/HP_0001156"
+  Ataxia: "http://purl.obolibrary.org/obo/HP_0001251"
+  Dandy-Walker malformation: "http://purl.obolibrary.org/obo/HP_0001305"
+  Myoclonus: "http://purl.obolibrary.org/obo/HP_0001336"
+  Eosinophilia: "http://purl.obolibrary.org/obo/HP_0001880"
+  Myotonia: "http://purl.obolibrary.org/obo/HP_0002486"
+  Aplasia/Hypoplasia of the corpus callosum: "http://purl.obolibrary.org/obo/HP_0007370"
+  syndromic disease: "http://purl.obolibrary.org/obo/MONDO_0002254"
+  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  pulmonary hypertension: "http://purl.obolibrary.org/obo/MONDO_0005149"
+
+
+relations: 
+  disease has major feature: "http://purl.obolibrary.org/obo/mondo#disease_has_major_feature"
+
+
+vars:
+  v0: "'Microcephaly' or 'Epicanthus' or 'Eyelid coloboma' or 'Hypoparathyroidism' or 'Brachydactyly' or 'Ataxia' or 'Dandy-Walker malformation' or 'Myoclonus' or 'Eosinophilia' or 'Myotonia' or 'Aplasia/Hypoplasia of the corpus callosum' or 'neoplasm (disease)' or 'pulmonary hypertension'"
+
+name:
+  # Induced, frequency=0.13333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "syndrome with %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any syndromic disease that disease has major feature a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s syndrome"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('syndromic disease' and ('disease has major feature' some %s))"
+  vars:
+    - v0

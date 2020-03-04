@@ -1,0 +1,54 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease has location X realized in response to stimulus X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_has_location_X_realized_in_response_to_stimulus_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [hantavirus pulmonary syndrome](http://purl.obolibrary.org/obo/MONDO_0017879), [microglandular adenosis of breast](http://purl.obolibrary.org/obo/MONDO_0004534), [maxillary sinus adenocarcinoma](http://purl.obolibrary.org/obo/MONDO_0004328) (11 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  disease has location: "RO:0004026"
+  realized in response to stimulus: "RO:0004028"
+
+
+vars:
+  v0: "'disease or disorder'"
+  v1: "'anatomical entity'"
+  v2: "'material entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s disease has location %s realized in response to stimulus %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that disease has location a %s and realized in response to stimulus a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('disease has location' some %s) and ('realized in response to stimulus' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

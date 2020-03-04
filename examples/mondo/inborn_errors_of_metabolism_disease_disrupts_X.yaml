@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: inborn errors of metabolism disease disrupts X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/inborn_errors_of_metabolism_disease_disrupts_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [inborn disorder of amino acid and other organic acid metabolism](http://purl.obolibrary.org/obo/MONDO_0019189), [inherited lipid metabolism disorder](http://purl.obolibrary.org/obo/MONDO_0002525), [inherited fatty acid metabolism disorder](http://purl.obolibrary.org/obo/MONDO_0037858) (4 total)
+
+classes: 
+  organic substance metabolic process: "GO:0071704"
+  inborn errors of metabolism: "http://purl.obolibrary.org/obo/MONDO_0019052"
+
+
+relations: 
+  disease disrupts: "RO:0004024"
+
+
+vars:
+  v0: "'organic substance metabolic process'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "inherited %s disorder"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any inborn errors of metabolism that disease disrupts a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('inborn errors of metabolism' and ('disease disrupts' some %s))"
+  vars:
+    - v0

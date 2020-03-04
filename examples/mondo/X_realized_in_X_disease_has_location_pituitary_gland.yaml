@@ -1,0 +1,50 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X realized in X disease has location pituitary gland
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_realized_in_X_disease_has_location_pituitary_gland
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [growth hormone-producing pituitary gland adenoma](http://purl.obolibrary.org/obo/MONDO_0006238), [ACTH-producing pituitary gland adenoma](http://purl.obolibrary.org/obo/MONDO_0006068), [ACTH-producing pituitary gland carcinoma](http://purl.obolibrary.org/obo/MONDO_0006069) (6 total)
+
+classes: 
+  peptide hormone secretion: "GO:0030072"
+  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  pituitary gland: "UBERON:0000007"
+
+
+relations: 
+  realized in: "BFO:0000054"
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'neoplasm (disease)'"
+  v1: "'peptide hormone secretion'"
+
+name:
+  # Could not induce name, using default
+  text: "%s realized in %s disease has location pituitary gland"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that realized in a %s and disease has location a pituitary gland"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('realized in' some %s) and ('disease has location' some 'pituitary gland'))"
+  vars:
+    - v0
+    - v1

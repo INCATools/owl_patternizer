@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease has location frontal sinus
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_has_location_frontal_sinus
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [frontal sinus inverted papilloma](http://purl.obolibrary.org/obo/MONDO_0004448), [frontal sinus cancer](http://purl.obolibrary.org/obo/MONDO_0001756), [frontal sinus neoplasm](http://purl.obolibrary.org/obo/MONDO_0001757) (6 total)
+
+classes: 
+  cell proliferation disorder: "http://purl.obolibrary.org/obo/MONDO_0045024"
+  frontal sinus: "UBERON:0001760"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'cell proliferation disorder'"
+
+name:
+  # Induced, frequency=0.6666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "frontal sinus %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3333333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that involves the frontal sinus."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of the frontal sinus"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('disease has location' some 'frontal sinus'))"
+  vars:
+    - v0

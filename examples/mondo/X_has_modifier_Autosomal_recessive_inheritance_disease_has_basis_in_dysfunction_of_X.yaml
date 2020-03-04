@@ -1,0 +1,50 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has modifier Autosomal recessive inheritance disease has basis in dysfunction of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_has_modifier_Autosomal_recessive_inheritance_disease_has_basis_in_dysfunction_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [craniometaphyseal dysplasia, autosomal recessive](http://purl.obolibrary.org/obo/MONDO_0009035), [dyskeratosis congenita, autosomal recessive 2](http://purl.obolibrary.org/obo/MONDO_0013519), [dyskeratosis congenita, autosomal recessive 5](http://purl.obolibrary.org/obo/MONDO_0014076) (16 total)
+
+classes: 
+  disposition: "BFO:0000016"
+  Autosomal recessive inheritance: "http://purl.obolibrary.org/obo/HP_0000007"
+  SO_0001217: "SO:0001217"
+
+
+relations: 
+  has modifier: "RO:0002573"
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'disposition'"
+  v1: "'SO_0001217'"
+
+name:
+  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "autosomal recessive %s due to %s deficiency"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has modifier a Autosomal recessive inheritance and disease has basis in dysfunction of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has modifier' some 'Autosomal recessive inheritance') and ('disease has basis in dysfunction of' some %s))"
+  vars:
+    - v0
+    - v1

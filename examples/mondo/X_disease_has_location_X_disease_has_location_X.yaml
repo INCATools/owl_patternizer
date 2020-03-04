@@ -1,0 +1,65 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease has location X disease has location X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_has_location_X_disease_has_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [disease of glomerular basement membrane](http://purl.obolibrary.org/obo/MONDO_0019723), [renal artery disease](http://purl.obolibrary.org/obo/MONDO_0002286), [cancer of short bone of upper limb](http://purl.obolibrary.org/obo/MONDO_0024312) (8 total)
+
+classes: 
+  basement membrane: "GO:0005604"
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  nerve: "UBERON:0001021"
+  chordate pharynx: "UBERON:0001042"
+  renal artery: "UBERON:0001184"
+  skin of body: "UBERON:0002097"
+  forelimb: "UBERON:0002102"
+  hindlimb: "UBERON:0002103"
+  kidney: "UBERON:0002113"
+  integument: "UBERON:0002199"
+  pelvic region of trunk: "UBERON:0002355"
+  peritoneum: "UBERON:0002358"
+  mediastinum: "UBERON:0003728"
+  glomerular basement membrane: "UBERON:0005777"
+  short bone: "UBERON:0013630"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'disease or disorder'"
+  v1: "'basement membrane' or 'nerve' or 'chordate pharynx' or 'renal artery' or 'skin of body' or 'forelimb' or 'hindlimb' or 'kidney' or 'integument' or 'pelvic region of trunk' or 'peritoneum' or 'mediastinum' or 'glomerular basement membrane' or 'short bone'"
+  v2: "'basement membrane' or 'nerve' or 'chordate pharynx' or 'renal artery' or 'skin of body' or 'forelimb' or 'hindlimb' or 'kidney' or 'integument' or 'pelvic region of trunk' or 'peritoneum' or 'mediastinum' or 'glomerular basement membrane' or 'short bone'"
+
+name:
+  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of %s of %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that disease has location a %s and disease has location a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('disease has location' some %s) and ('disease has location' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

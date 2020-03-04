@@ -1,0 +1,52 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X realized in X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_realized_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [enuresis](http://purl.obolibrary.org/obo/MONDO_0024290), [functioning gonadotropic adenoma](http://purl.obolibrary.org/obo/MONDO_0019612), [cortisol-producing adrenal cortex adenoma](http://purl.obolibrary.org/obo/MONDO_0006174) (5 total)
+
+classes: 
+  gonadotropin secretion: "GO:0032274"
+  cortisol secretion: "GO:0043400"
+  corticotropin secretion: "GO:0051458"
+  MFOMD_0000105: "http://purl.obolibrary.org/obo/MFOMD_0000105"
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  NCIT_C19085: "NCIT:C19085"
+
+
+relations: 
+  realized in: "BFO:0000054"
+
+
+vars:
+  v0: "'disease or disorder'"
+  v1: "'gonadotropin secretion' or 'cortisol secretion' or 'corticotropin secretion' or 'MFOMD_0000105' or 'NCIT_C19085'"
+
+name:
+  # Could not induce name, using default
+  text: "%s realized in %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that realized in a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('realized in' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,56 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has modifier tumor grade 1 or 2, general grading system disease has location X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_has_modifier_tumor_grade_1_or_2__general_grading_system_disease_has_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [neuroendocrine tumor of the anal canal](http://purl.obolibrary.org/obo/MONDO_0015069), [neuroendocrine tumor of rectum, well differentiated, low or intermediate grade](http://purl.obolibrary.org/obo/MONDO_0015068), [neuroendocrine tumor of the appendix, well differentiated, low or intermediate grade](http://purl.obolibrary.org/obo/MONDO_0015066) (9 total)
+
+classes: 
+  neuroendocrine neoplasm: "http://purl.obolibrary.org/obo/MONDO_0019496"
+  tumor grade 1 or 2, general grading system: "http://purl.obolibrary.org/obo/MONDO_0024495"
+  anatomical structure: "UBERON:0000061"
+
+
+relations: 
+  has modifier: "RO:0002573"
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'neuroendocrine neoplasm'"
+  v1: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.1111111111111111, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s, well differentiated, low or intermediate grade"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has modifier a tumor grade 1 or 2, general grading system and disease has location a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('has modifier' some 'tumor grade 1 or 2, general grading system') and ('disease has location' some %s))"
+  vars:
+    - v0
+    - v1

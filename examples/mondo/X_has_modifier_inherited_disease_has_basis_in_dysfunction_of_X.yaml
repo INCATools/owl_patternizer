@@ -1,0 +1,50 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has modifier inherited disease has basis in dysfunction of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_has_modifier_inherited_disease_has_basis_in_dysfunction_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [inherited bleeding disorder, platelet-type](http://purl.obolibrary.org/obo/MONDO_0000009), [rare male infertility due to adrenal disorder of genetic origin](http://purl.obolibrary.org/obo/MONDO_0018406), [female infertility due to an anomaly of ovarian function of genetic origin](http://purl.obolibrary.org/obo/MONDO_0018413) (4 total)
+
+classes: 
+  independent continuant: "BFO:0000004"
+  inherited: "http://purl.obolibrary.org/obo/MONDO_0021152"
+  disease by anatomical system: "http://purl.obolibrary.org/obo/MONDO_0021199"
+
+
+relations: 
+  has modifier: "RO:0002573"
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'disease by anatomical system'"
+  v1: "'independent continuant'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "rare %s due to %s disorder of genetic origin"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has modifier a inherited and disease has basis in dysfunction of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has modifier' some 'inherited') and ('disease has basis in dysfunction of' some %s))"
+  vars:
+    - v0
+    - v1

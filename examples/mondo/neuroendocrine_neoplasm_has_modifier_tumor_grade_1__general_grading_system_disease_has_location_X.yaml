@@ -1,0 +1,51 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: neuroendocrine neoplasm has modifier tumor grade 1, general grading system disease has location X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/neuroendocrine_neoplasm_has_modifier_tumor_grade_1__general_grading_system_disease_has_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [intestinal neuroendocrine tumor G1](http://purl.obolibrary.org/obo/MONDO_0021533), [gastric neuroendocrine tumor G1](http://purl.obolibrary.org/obo/MONDO_0006227), [rectal neuroendocrine tumor G1](http://purl.obolibrary.org/obo/MONDO_0021534) (12 total)
+
+classes: 
+  neuroendocrine neoplasm: "http://purl.obolibrary.org/obo/MONDO_0019496"
+  tumor grade 1, general grading system: "http://purl.obolibrary.org/obo/MONDO_0024491"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  has modifier: "RO:0002573"
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s neuroendocrine tumor G1"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5833333333333334, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A well differentiated, low grade neuroendocrine tumor (carcinoid tumor) that arises from the %s. The mitotic count is less than 2 per 10 HPF and/or the Ki67 index is equal to or less than 2 percent."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s NET G1"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('neuroendocrine neoplasm' and ('has modifier' some 'tumor grade 1, general grading system') and ('disease has location' some %s))"
+  vars:
+    - v0

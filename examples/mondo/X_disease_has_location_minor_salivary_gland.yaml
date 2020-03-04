@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease has location minor salivary gland
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_has_location_minor_salivary_gland
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [minor salivary gland adenocarcinoma](http://purl.obolibrary.org/obo/MONDO_0006304), [malignant tumor of minor salivary gland](http://purl.obolibrary.org/obo/MONDO_0021316), [minor salivary gland carcinoma](http://purl.obolibrary.org/obo/MONDO_0045069) (5 total)
+
+classes: 
+  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  minor salivary gland: "UBERON:0001830"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'neoplasm (disease)'"
+
+name:
+  # Induced, frequency=0.6, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of minor salivary gland"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.6, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that involves the minor salivary gland."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of the minor salivary gland"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('disease has location' some 'minor salivary gland'))"
+  vars:
+    - v0

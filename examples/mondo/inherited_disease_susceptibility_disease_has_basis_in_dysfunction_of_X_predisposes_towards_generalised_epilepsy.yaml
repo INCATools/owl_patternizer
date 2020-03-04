@@ -1,0 +1,51 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: inherited disease susceptibility disease has basis in dysfunction of X predisposes towards generalised epilepsy
+pattern_iri: http://purl.obolibrary.org/obo/mondo/inherited_disease_susceptibility_disease_has_basis_in_dysfunction_of_X_predisposes_towards_generalised_epilepsy
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [epilepsy, idiopathic generalized, susceptibility to, 9](http://purl.obolibrary.org/obo/MONDO_0011892), [epilepsy, idiopathic generalized, susceptibility to, 8](http://purl.obolibrary.org/obo/MONDO_0013032), [epilepsy, idiopathic generalized, susceptibility to, 11](http://purl.obolibrary.org/obo/MONDO_0011875) (4 total)
+
+classes: 
+  generalised epilepsy: "http://purl.obolibrary.org/obo/MONDO_0005579"
+  inherited disease susceptibility: "http://purl.obolibrary.org/obo/MONDO_0020573"
+  SO_0001217: "SO:0001217"
+
+
+relations: 
+  disease has basis in dysfunction of: "RO:0004020"
+  predisposes towards: "http://purl.obolibrary.org/obo/mondo#predisposes_towards"
+
+
+vars:
+  v0: "'SO_0001217'"
+
+name:
+  # Could not induce name, using default
+  text: "inherited disease susceptibility disease has basis in dysfunction of %s predisposes towards generalised epilepsy"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.75, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any generalised epilepsy in which the cause of the disease is a mutation in the %s gene."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s generalised epilepsy"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('inherited disease susceptibility' and ('disease has basis in dysfunction of' some %s) and ('predisposes towards' some 'generalised epilepsy'))"
+  vars:
+    - v0

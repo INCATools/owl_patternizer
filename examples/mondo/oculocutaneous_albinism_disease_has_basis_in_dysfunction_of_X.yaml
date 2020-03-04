@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: oculocutaneous albinism disease has basis in dysfunction of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/oculocutaneous_albinism_disease_has_basis_in_dysfunction_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [oculocutaneous albinism type 1A](http://purl.obolibrary.org/obo/MONDO_0008745), [oculocutaneous albinism type 3](http://purl.obolibrary.org/obo/MONDO_0008747), [oculocutaneous albinism type 4](http://purl.obolibrary.org/obo/MONDO_0011683) (4 total)
+
+classes: 
+  oculocutaneous albinism: "http://purl.obolibrary.org/obo/MONDO_0018910"
+  SO_0001217: "SO:0001217"
+
+
+relations: 
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'SO_0001217'"
+
+name:
+  # Could not induce name, using default
+  text: "oculocutaneous albinism disease has basis in dysfunction of %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any oculocutaneous albinism that disease has basis in dysfunction of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s oculocutaneous albinism"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('oculocutaneous albinism' and ('disease has basis in dysfunction of' some %s))"
+  vars:
+    - v0

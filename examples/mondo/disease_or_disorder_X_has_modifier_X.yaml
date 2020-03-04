@@ -1,0 +1,48 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: disease or disorder X has modifier X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/disease_or_disorder_X_has_modifier_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ADNP-related multiple congenital anomalies - intellectual disability - autism spectrum disorder](http://purl.obolibrary.org/obo/MONDO_0014379), [rare genetic parathyroid disease and phosphocalcic metabolism disorder](http://purl.obolibrary.org/obo/MONDO_0015970), [other rare diabetes mellitus](http://purl.obolibrary.org/obo/MONDO_0015888) (10 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease characteristic: "http://purl.obolibrary.org/obo/MONDO_0021125"
+
+
+relations: 
+  has modifier: "RO:0002573"
+
+
+vars:
+  v0: "'disease or disorder'"
+  v1: "'disease characteristic'"
+
+name:
+  # Induced, frequency=0.1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s due to adrenal disorder"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any disease or disorder that %s and has modifier a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('disease or disorder' and %s and ('has modifier' some %s))"
+  vars:
+    - v0
+    - v1

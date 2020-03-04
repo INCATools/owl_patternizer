@@ -1,0 +1,65 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: congenital myasthenic syndrome disease has basis in dysfunction of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/congenital_myasthenic_syndrome_disease_has_basis_in_dysfunction_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [congenital myasthenic syndrome 16](http://purl.obolibrary.org/obo/MONDO_0013620), [congenital myasthenic syndrome 21](http://purl.obolibrary.org/obo/MONDO_0014983), [congenital myasthenic syndrome 18](http://purl.obolibrary.org/obo/MONDO_0014590) (17 total)
+
+classes: 
+  SCN4A: "http://identifiers.org/hgnc/10591"
+  SLC18A3: "http://identifiers.org/hgnc/10936"
+  SNAP25: "http://identifiers.org/hgnc/11132"
+  SYT2: "http://identifiers.org/hgnc/11510"
+  SLC5A7: "http://identifiers.org/hgnc/14025"
+  CHAT: "http://identifiers.org/hgnc/1912"
+  CHRNA1: "http://identifiers.org/hgnc/1955"
+  COL13A1: "http://identifiers.org/hgnc/2190"
+  COLQ: "http://identifiers.org/hgnc/2226"
+  DOK7: "http://identifiers.org/hgnc/26594"
+  ALG14: "http://identifiers.org/hgnc/28287"
+  AGRN: "http://identifiers.org/hgnc/329"
+  LRP4: "http://identifiers.org/hgnc/6696"
+  MUSK: "http://identifiers.org/hgnc/7525"
+  RAPSN: "http://identifiers.org/hgnc/9863"
+  presynapse: "GO:0098793"
+  postsynapse: "GO:0098794"
+  congenital myasthenic syndrome: "http://purl.obolibrary.org/obo/MONDO_0018940"
+
+
+relations: 
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'SCN4A' or 'SLC18A3' or 'SNAP25' or 'SYT2' or 'SLC5A7' or 'CHAT' or 'CHRNA1' or 'COL13A1' or 'COLQ' or 'DOK7' or 'ALG14' or 'AGRN' or 'LRP4' or 'MUSK' or 'RAPSN' or 'presynapse' or 'postsynapse'"
+
+name:
+  # Could not induce name, using default
+  text: "congenital myasthenic syndrome disease has basis in dysfunction of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.7647058823529411, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any congenital myasthenic syndrome in which the cause of the disease is a mutation in the %s gene."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s congenital myasthenic syndrome"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('congenital myasthenic syndrome' and ('disease has basis in dysfunction of' some %s))"
+  vars:
+    - v0

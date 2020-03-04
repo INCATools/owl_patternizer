@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: dysostosis of genetic origin disease has major feature X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/dysostosis_of_genetic_origin_disease_has_major_feature_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [brachydactyly (disease)](http://purl.obolibrary.org/obo/MONDO_0021004), [syndactyly (disease)](http://purl.obolibrary.org/obo/MONDO_0021002), [polydactyly (disease)](http://purl.obolibrary.org/obo/MONDO_0021003) (4 total)
+
+classes: 
+  Abnormality of limbs: "http://purl.obolibrary.org/obo/HP_0040064"
+  dysostosis of genetic origin: "http://purl.obolibrary.org/obo/MONDO_0018454"
+
+
+relations: 
+  disease has major feature: "http://purl.obolibrary.org/obo/mondo#disease_has_major_feature"
+
+
+vars:
+  v0: "'Abnormality of limbs'"
+
+name:
+  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s (disease)"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.75, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A disease characterized by the presence of %s, including syndromic and non-syndromic forms."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('dysostosis of genetic origin' and ('disease has major feature' some %s))"
+  vars:
+    - v0

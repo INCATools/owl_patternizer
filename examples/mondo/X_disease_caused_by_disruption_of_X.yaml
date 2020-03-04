@@ -1,0 +1,54 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease caused by disruption of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_caused_by_disruption_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [type III hypersensitivity disease](http://purl.obolibrary.org/obo/MONDO_0007004), [type IV hypersensitivity disease](http://purl.obolibrary.org/obo/MONDO_0002459), [neural tube closure defect](http://purl.obolibrary.org/obo/MONDO_0017059) (199 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  disease caused by disruption of: "RO:0004021"
+
+
+vars:
+  v0: "'disease or disorder'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.12060301507537688, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.18592964824120603, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that has its basis in the disruption of %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of %s"
+    vars:
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "(%s and ('disease caused by disruption of' some %s))"
+  vars:
+    - v0
+    - v1

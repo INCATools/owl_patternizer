@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: squamous papilloma disease has location X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/squamous_papilloma_disease_has_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cervix squamous papilloma](http://purl.obolibrary.org/obo/MONDO_0004788), [squamous cell skin papilloma](http://purl.obolibrary.org/obo/MONDO_0004204), [nasal vestibule squamous papilloma](http://purl.obolibrary.org/obo/MONDO_0003753) (7 total)
+
+classes: 
+  squamous papilloma: "http://purl.obolibrary.org/obo/MONDO_0001825"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.42857142857142855, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s squamous papilloma"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.14285714285714285, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A benign exophytic neoplasm that arises from the %s, usually the true vocal cords. It is related to human papillomavirus infection and may arise as a single or multiple lesions. It is characterized by the presence of a connective tissue core covered by stratified squamous epithelium. Hoarseness is the presenting symptom. Transformation to carcinoma is rare."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s squamous papilloma"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('squamous papilloma' and ('disease has location' some %s))"
+  vars:
+    - v0

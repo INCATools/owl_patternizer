@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: peripheral nerve lesion disease has location X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/peripheral_nerve_lesion_disease_has_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [femoral neuropathy](http://purl.obolibrary.org/obo/MONDO_0006759), [lesion of sciatic nerve](http://purl.obolibrary.org/obo/MONDO_0001543), [common peroneal nerve lesion](http://purl.obolibrary.org/obo/MONDO_0001542) (6 total)
+
+classes: 
+  peripheral nerve lesion: "http://purl.obolibrary.org/obo/MONDO_0024334"
+  nerve: "UBERON:0001021"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'nerve'"
+
+name:
+  # Induced, frequency=0.6666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s lesion"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.8333333333333334, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A peripheral nerve lesion that involves the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s peripheral nerve lesion"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('peripheral nerve lesion' and ('disease has location' some %s))"
+  vars:
+    - v0

@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: primary pigmented nodular adrenocortical disease disease has basis in dysfunction of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/primary_pigmented_nodular_adrenocortical_disease_disease_has_basis_in_dysfunction_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [pigmented nodular adrenocortical disease, primary, 2](http://purl.obolibrary.org/obo/MONDO_0012505), [pigmented nodular adrenocortical disease, primary, 3](http://purl.obolibrary.org/obo/MONDO_0013616), [pigmented nodular adrenocortical disease, primary, 4](http://purl.obolibrary.org/obo/MONDO_0014359) (4 total)
+
+classes: 
+  primary pigmented nodular adrenocortical disease: "http://purl.obolibrary.org/obo/MONDO_0015999"
+  SO_0001217: "SO:0001217"
+
+
+relations: 
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'SO_0001217'"
+
+name:
+  # Could not induce name, using default
+  text: "primary pigmented nodular adrenocortical disease disease has basis in dysfunction of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any primary pigmented nodular adrenocortical disease in which the cause of the disease is a mutation in the %s gene."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s primary pigmented nodular adrenocortical disease"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('primary pigmented nodular adrenocortical disease' and ('disease has basis in dysfunction of' some %s))"
+  vars:
+    - v0

@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease has location brain
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_has_location_brain
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [brain disease](http://purl.obolibrary.org/obo/MONDO_0005560), [cerebral organic aciduria](http://purl.obolibrary.org/obo/MONDO_0019213), [brain germinoma](http://purl.obolibrary.org/obo/MONDO_0002214) (19 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  brain: "UBERON:0000955"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'disease or disorder'"
+
+name:
+  # Induced, frequency=0.5263157894736842, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "brain %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.47368421052631576, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that involves the brain."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "brain %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('disease has location' some 'brain'))"
+  vars:
+    - v0

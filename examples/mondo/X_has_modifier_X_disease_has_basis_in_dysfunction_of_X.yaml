@@ -1,0 +1,58 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has modifier X disease has basis in dysfunction of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_has_modifier_X_disease_has_basis_in_dysfunction_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [hypophosphatemic rickets, X-linked recessive](http://purl.obolibrary.org/obo/MONDO_0010358), [inherited bleeding disorder, platelet-type](http://purl.obolibrary.org/obo/MONDO_0000009), [rare male infertility due to adrenal disorder of genetic origin](http://purl.obolibrary.org/obo/MONDO_0018406) (30 total)
+
+classes: 
+  disposition: "BFO:0000016"
+  Autosomal dominant inheritance: "http://purl.obolibrary.org/obo/HP_0000006"
+  Autosomal recessive inheritance: "http://purl.obolibrary.org/obo/HP_0000007"
+  X-linked recessive inheritance: "http://purl.obolibrary.org/obo/HP_0001419"
+  Adult onset: "http://purl.obolibrary.org/obo/HP_0003581"
+  inherited: "http://purl.obolibrary.org/obo/MONDO_0021152"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  has modifier: "RO:0002573"
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'disposition'"
+  v1: "'Autosomal dominant inheritance' or 'Autosomal recessive inheritance' or 'X-linked recessive inheritance' or 'Adult onset' or 'inherited'"
+  v2: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.13333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s due to %s deficiency"
+  vars:
+    - v1
+    - v0
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has modifier a %s and disease has basis in dysfunction of a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has modifier' some %s) and ('disease has basis in dysfunction of' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

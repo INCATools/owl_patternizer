@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: autoimmune lymphoproliferative syndrome disease has basis in dysfunction of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/autoimmune_lymphoproliferative_syndrome_disease_has_basis_in_dysfunction_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [autoimmune lymphoproliferative syndrome type 2A](http://purl.obolibrary.org/obo/MONDO_0011383), [autoimmune lymphoproliferative syndrome type 2B](http://purl.obolibrary.org/obo/MONDO_0011804), [autoimmune lymphoproliferative syndrome type 4](http://purl.obolibrary.org/obo/MONDO_0013767) (4 total)
+
+classes: 
+  autoimmune lymphoproliferative syndrome: "http://purl.obolibrary.org/obo/MONDO_0017979"
+  SO_0001217: "SO:0001217"
+
+
+relations: 
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'SO_0001217'"
+
+name:
+  # Could not induce name, using default
+  text: "autoimmune lymphoproliferative syndrome disease has basis in dysfunction of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A rare, primary immunodeficiency with an autosomal dominant pattern of inheritance but incomplete penetrance. It is caused by a mutation in the %s (caspase-10) gene that leads to defective Fas-induced apoptosis. Disruption of Fas-induced apoptosis impairs lymphocyte homeostasis and immune tolerance. Characteristic laboratory findings include an increase in circulating, double-negative (CD4-/CD8-) T cells in the setting of immune-mediated anemia, thrombocytopenia and neutropenia. Clinical signs present in childhood include fatigue, pallor, bruising, hepatosplenomegaly and chronic, non-malignant, non-infectious lymphadenopathy. The clinical course is influenced by a strong association with other autoimmune disorders and an increased risk for developing Hodgkin and non-Hodgkin lymphoma."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s autoimmune lymphoproliferative syndrome"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('autoimmune lymphoproliferative syndrome' and ('disease has basis in dysfunction of' some %s))"
+  vars:
+    - v0

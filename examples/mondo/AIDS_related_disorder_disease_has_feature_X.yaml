@@ -1,0 +1,47 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: AIDS-related disorder disease has feature X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/AIDS_related_disorder_disease_has_feature_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [HIV wasting syndrome](http://purl.obolibrary.org/obo/MONDO_0005797), [HIV-associated cancer](http://purl.obolibrary.org/obo/MONDO_0018628), [HIV enteropathy](http://purl.obolibrary.org/obo/MONDO_0005796) (4 total)
+
+classes: 
+  Cachexia: "http://purl.obolibrary.org/obo/HP_0004326"
+  cancer: "http://purl.obolibrary.org/obo/MONDO_0004992"
+  intestinal disease: "http://purl.obolibrary.org/obo/MONDO_0005020"
+  kidney disease: "http://purl.obolibrary.org/obo/MONDO_0005240"
+  AIDS-related disorder: "http://purl.obolibrary.org/obo/MONDO_0024571"
+
+
+relations: 
+  disease has feature: "RO:0004029"
+
+
+vars:
+  v0: "'Cachexia' or 'cancer' or 'intestinal disease' or 'kidney disease'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "HIV-associated %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s in human immunodeficiency virus (HIV)-infected patients. It is characterized by nephrotic syndrome, azotemia, normal to large kidneys on ultrasound images, and focal segmental glomerulosclerosis on renal biopsy findings."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('AIDS-related disorder' and ('disease has feature' some %s))"
+  vars:
+    - v0

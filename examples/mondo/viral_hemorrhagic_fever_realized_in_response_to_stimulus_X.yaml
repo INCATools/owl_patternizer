@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: viral hemorrhagic fever realized in response to stimulus X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/viral_hemorrhagic_fever_realized_in_response_to_stimulus_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Rift valley fever](http://purl.obolibrary.org/obo/MONDO_0017880), [arenavirus hemorrhagic fever](http://purl.obolibrary.org/obo/MONDO_0005651), [Argentine hemorrhagic fever](http://purl.obolibrary.org/obo/MONDO_0017874) (10 total)
+
+classes: 
+  viral hemorrhagic fever: "http://purl.obolibrary.org/obo/MONDO_0018087"
+  ssRNA viruses: "http://purl.obolibrary.org/obo/NCBITaxon_439488"
+
+
+relations: 
+  realized in response to stimulus: "RO:0004028"
+
+
+vars:
+  v0: "'ssRNA viruses'"
+
+name:
+  # Could not induce name, using default
+  text: "viral hemorrhagic fever realized in response to stimulus %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A viral hemorrhagic fever that is caused by the %s, which is transmitted by contact with infected rodents; it is characterized by fever, headache, malaise, myalgia, and hearing loss."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('viral hemorrhagic fever' and ('realized in response to stimulus' some %s))"
+  vars:
+    - v0

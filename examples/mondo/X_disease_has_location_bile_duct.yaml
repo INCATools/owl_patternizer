@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease has location bile duct
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_has_location_bile_duct
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [bile duct disease](http://purl.obolibrary.org/obo/MONDO_0002887), [bile duct cystadenoma](http://purl.obolibrary.org/obo/MONDO_0003420), [bile duct carcinoma in situ](http://purl.obolibrary.org/obo/MONDO_0000374) (12 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  bile duct: "UBERON:0002394"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'disease or disorder'"
+
+name:
+  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "bile duct %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that disease has location a bile duct"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "bile duct %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('disease has location' some 'bile duct'))"
+  vars:
+    - v0

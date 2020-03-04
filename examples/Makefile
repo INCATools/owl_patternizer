@@ -14,7 +14,7 @@ realclean: clean
 	rm */*.yaml
 
 gen-%:
-	touch init-$* && pl2sparql $(OPTS) -e -c conf.pl -A void.ttl  "do_for('$*')" && touch $@
+	touch init-$* && pl2sparql $(OPTS) -e --consult conf.pl -A void.ttl  "do_for('$*')" && touch $@
 
 
 prep-chebi:

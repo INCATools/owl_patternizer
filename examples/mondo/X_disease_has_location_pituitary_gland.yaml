@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease has location pituitary gland
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_has_location_pituitary_gland
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [pituitary gland disease](http://purl.obolibrary.org/obo/MONDO_0003381), [neurohypophyseal diabetes insipidus](http://purl.obolibrary.org/obo/MONDO_0007450), [pituitary adenocarcinoma (disease)](http://purl.obolibrary.org/obo/MONDO_0017582) (9 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  pituitary gland: "UBERON:0000007"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'disease or disorder'"
+
+name:
+  # Induced, frequency=0.2222222222222222, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "pituitary %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1111111111111111, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s involving the pituitary gland."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "pituitary gland %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('disease has location' some 'pituitary gland'))"
+  vars:
+    - v0

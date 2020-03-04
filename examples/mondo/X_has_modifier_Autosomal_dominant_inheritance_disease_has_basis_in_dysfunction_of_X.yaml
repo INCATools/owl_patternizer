@@ -1,0 +1,50 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has modifier Autosomal dominant inheritance disease has basis in dysfunction of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_has_modifier_Autosomal_dominant_inheritance_disease_has_basis_in_dysfunction_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [dyskeratosis congenita, autosomal dominant 2](http://purl.obolibrary.org/obo/MONDO_0013521), [dyskeratosis congenita, autosomal dominant 3](http://purl.obolibrary.org/obo/MONDO_0013522), [dyskeratosis congenita, autosomal dominant 6](http://purl.obolibrary.org/obo/MONDO_0014690) (7 total)
+
+classes: 
+  Autosomal dominant inheritance: "http://purl.obolibrary.org/obo/HP_0000006"
+  disease by anatomical system: "http://purl.obolibrary.org/obo/MONDO_0021199"
+  SO_0001217: "SO:0001217"
+
+
+relations: 
+  has modifier: "RO:0002573"
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'disease by anatomical system'"
+  v1: "'SO_0001217'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has modifier Autosomal dominant inheritance disease has basis in dysfunction of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.14285714285714285, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s characterized by autosomal dominant inheritance that has_material_basis_in heterozygous mutation in the %s gene on chromosome 3p21."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has modifier' some 'Autosomal dominant inheritance') and ('disease has basis in dysfunction of' some %s))"
+  vars:
+    - v0
+    - v1

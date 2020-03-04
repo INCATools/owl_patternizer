@@ -1,0 +1,51 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X infectious disease realized in response to stimulus Neisseria gonorrhoeae
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_infectious_disease_realized_in_response_to_stimulus_Neisseria_gonorrhoeae
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [gonococcal bursitis](http://purl.obolibrary.org/obo/MONDO_0001719), [gonococcal salpingitis](http://purl.obolibrary.org/obo/MONDO_0021159), [gonococcal spondylitis](http://purl.obolibrary.org/obo/MONDO_0001640) (5 total)
+
+classes: 
+  infectious disease: "http://purl.obolibrary.org/obo/MONDO_0005550"
+  inflammatory disease: "http://purl.obolibrary.org/obo/MONDO_0021166"
+  disease by anatomical system: "http://purl.obolibrary.org/obo/MONDO_0021199"
+  Neisseria gonorrhoeae: "http://purl.obolibrary.org/obo/NCBITaxon_485"
+
+
+relations: 
+  realized in response to stimulus: "RO:0004028"
+
+
+vars:
+  v0: "'inflammatory disease' or 'disease by anatomical system'"
+
+name:
+  # Induced, frequency=1.2, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "gonococcal %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=1.2, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An %s caused by infection with Neisseria gonorrhoeae."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "Neisseria gonorrhoeae %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and 'infectious disease' and ('realized in response to stimulus' some 'Neisseria gonorrhoeae'))"
+  vars:
+    - v0

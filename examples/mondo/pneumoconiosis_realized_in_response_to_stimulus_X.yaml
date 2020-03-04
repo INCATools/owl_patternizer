@@ -1,0 +1,59 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: pneumoconiosis realized in response to stimulus X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/pneumoconiosis_realized_in_response_to_stimulus_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [chronic beryllium disease](http://purl.obolibrary.org/obo/MONDO_0015274), [silicosiderosis](http://purl.obolibrary.org/obo/MONDO_0043283), [silicosis](http://purl.obolibrary.org/obo/MONDO_0005960) (11 total)
+
+classes: 
+  beryllium molecular entity: "http://purl.obolibrary.org/obo/CHEBI_33780"
+  hematite: "http://purl.obolibrary.org/obo/CHEBI_50818"
+  ENVO_01001282: "ENVO:01001282"
+  ENVO_01001284: "ENVO:01001284"
+  ENVO_01001285: "ENVO:01001285"
+  ENVO_01001286: "ENVO:01001286"
+  ENVO_01001288: "ENVO:01001288"
+  coal dust: "ENVO:02000099"
+  mineral dust: "ENVO:02000100"
+  asbestos dust: "ENVO:02000106"
+  cotton dust: "ENVO:02000108"
+  pneumoconiosis: "http://purl.obolibrary.org/obo/MONDO_0015926"
+
+
+relations: 
+  realized in response to stimulus: "RO:0004028"
+
+
+vars:
+  v0: "'beryllium molecular entity' or 'hematite' or 'ENVO_01001282' or 'ENVO_01001284' or 'ENVO_01001285' or 'ENVO_01001286' or 'ENVO_01001288' or 'coal dust' or 'mineral dust' or 'asbestos dust' or 'cotton dust'"
+
+name:
+  # Could not induce name, using default
+  text: "pneumoconiosis realized in response to stimulus %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any pneumoconiosis that realized in response to stimulus a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s pneumoconiosis"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('pneumoconiosis' and ('realized in response to stimulus' some %s))"
+  vars:
+    - v0

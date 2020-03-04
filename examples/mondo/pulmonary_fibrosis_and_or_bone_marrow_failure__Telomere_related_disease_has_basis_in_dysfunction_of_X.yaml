@@ -1,0 +1,52 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: pulmonary fibrosis and/or bone marrow failure, Telomere-related disease has basis in dysfunction of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/pulmonary_fibrosis_and_or_bone_marrow_failure__Telomere_related_disease_has_basis_in_dysfunction_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [pulmonary fibrosis and/or bone marrow failure, Telomere-related, 2](http://purl.obolibrary.org/obo/MONDO_0013879), [pulmonary fibrosis and/or bone marrow failure, Telomere-related, 1](http://purl.obolibrary.org/obo/MONDO_0013878), [pulmonary fibrosis and/or bone marrow failure, Telomere-related, 3](http://purl.obolibrary.org/obo/MONDO_0014613) (4 total)
+
+classes: 
+  TERC: "http://identifiers.org/hgnc/11727"
+  TERT: "http://identifiers.org/hgnc/11730"
+  RTEL1: "http://identifiers.org/hgnc/15888"
+  PARN: "http://identifiers.org/hgnc/8609"
+  pulmonary fibrosis and/or bone marrow failure, Telomere-related: "http://purl.obolibrary.org/obo/MONDO_0000148"
+
+
+relations: 
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'TERC' or 'TERT' or 'RTEL1' or 'PARN'"
+
+name:
+  # Could not induce name, using default
+  text: "pulmonary fibrosis and/or bone marrow failure, Telomere-related disease has basis in dysfunction of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.75, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any pulmonary fibrosis and/or bone marrow failure, Telomere-related in which the cause of the disease is a mutation in the %s gene."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s pulmonary fibrosis and/or bone marrow failure, Telomere-related"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('pulmonary fibrosis and/or bone marrow failure, Telomere-related' and ('disease has basis in dysfunction of' some %s))"
+  vars:
+    - v0

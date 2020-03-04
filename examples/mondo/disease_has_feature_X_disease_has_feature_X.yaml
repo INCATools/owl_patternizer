@@ -1,0 +1,47 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: disease has feature X disease has feature X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/disease_has_feature_X_disease_has_feature_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cardiomyopathy hypogonadism metabolic anomalies](http://purl.obolibrary.org/obo/MONDO_0022655), [cataract associated with a metabolic disease](http://purl.obolibrary.org/obo/MONDO_0020228), [cystic hygroma lethal cleft palate](http://purl.obolibrary.org/obo/MONDO_0022916) (5 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+
+
+relations: 
+  disease has feature: "RO:0004029"
+
+
+vars:
+  v0: "'disease or disorder'"
+  v1: "'disease or disorder'"
+
+name:
+  # Induced, frequency=0.2, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s metabolic anomalies"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.2, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s with %s is a condition that is characterized by abnormal positioning of the heart and other internal organs. In people affected by dextrocardia , the tip of the heart points towards the right side of the chest instead of the left side. Situs inversus refers to the mirror-image reversal of the organs in the chest and abdominal cavity. Some affected people have no obvious signs or symptoms. However, a small percentage of people also have congenital heart defects , usually transposition of the great vessels . Dextrocardia with situs inversus can also be associated with primary ciliary dyskinesia (also known as Kartagener syndrome ). Treatment typically depends on the heart or physical problems the person may have in addition to dextrocardia with situs inversus."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(('disease has feature' some %s) and ('disease has feature' some %s))"
+  vars:
+    - v0
+    - v1

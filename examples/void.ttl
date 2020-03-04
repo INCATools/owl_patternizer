@@ -199,6 +199,10 @@
     a void:Dataset ;
     void:dataDump <../../CommonCoreOntologies/all.ttl> .
     
+<medgen>
+    a void:Dataset ;
+    void:dataDump <../../disease-normalizer/sources/medgen/medgen.owl> .
+    
 <envoX>
     a lib:Ontology ;
     a lib:Virtual ;

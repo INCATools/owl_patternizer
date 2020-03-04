@@ -1,0 +1,45 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: disease or disorder X has modifier rare
+pattern_iri: http://purl.obolibrary.org/obo/mondo/disease_or_disorder_X_has_modifier_rare
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [rare genetic parathyroid disease and phosphocalcic metabolism disorder](http://purl.obolibrary.org/obo/MONDO_0015970), [other rare diabetes mellitus](http://purl.obolibrary.org/obo/MONDO_0015888), [rare familial disorder with hypertrophic cardiomyopathy](http://purl.obolibrary.org/obo/MONDO_0020484) (7 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  rare: "http://purl.obolibrary.org/obo/MONDO_0021136"
+  disease by anatomical system: "http://purl.obolibrary.org/obo/MONDO_0021199"
+
+
+relations: 
+  has modifier: "RO:0002573"
+
+
+vars:
+  v0: "'disease by anatomical system'"
+
+name:
+  # Induced, frequency=0.14285714285714285, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "other rare %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any disease or disorder that %s and has modifier a rare"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('disease or disorder' and %s and ('has modifier' some 'rare'))"
+  vars:
+    - v0

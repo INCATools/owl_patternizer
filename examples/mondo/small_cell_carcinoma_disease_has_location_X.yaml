@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: small cell carcinoma disease has location X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/small_cell_carcinoma_disease_has_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cervical small cell carcinoma](http://purl.obolibrary.org/obo/MONDO_0006142), [pancreatic small cell neuroendocrine carcinoma](http://purl.obolibrary.org/obo/MONDO_0006348), [ureter small cell carcinoma](http://purl.obolibrary.org/obo/MONDO_0006482) (16 total)
+
+classes: 
+  small cell carcinoma: "http://purl.obolibrary.org/obo/MONDO_0000402"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.3125, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s small cell carcinoma"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1875, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An aggressive, high-grade and poorly differentiated carcinoma with neuroendocrine differentiation that arises from the %s. It is characterized by the presence of malignant small cells."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s small cell carcinoma"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('small cell carcinoma' and ('disease has location' some %s))"
+  vars:
+    - v0

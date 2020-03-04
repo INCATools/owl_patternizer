@@ -1,0 +1,56 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: neuroendocrine neoplasm has modifier X disease has location X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/neuroendocrine_neoplasm_has_modifier_X_disease_has_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [intestinal neuroendocrine tumor G1](http://purl.obolibrary.org/obo/MONDO_0021533), [gastric neuroendocrine tumor G1](http://purl.obolibrary.org/obo/MONDO_0006227), [rectal neuroendocrine tumor G1](http://purl.obolibrary.org/obo/MONDO_0021534) (23 total)
+
+classes: 
+  continuant: "BFO:0000002"
+  neuroendocrine neoplasm: "http://purl.obolibrary.org/obo/MONDO_0019496"
+  anatomical structure: "UBERON:0000061"
+
+
+relations: 
+  has modifier: "RO:0002573"
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'continuant'"
+  v1: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.17391304347826086, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s neuroendocrine tumor %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.30434782608695654, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s, low grade neuroendocrine tumor (carcinoid tumor) that arises from the %s. The mitotic count is less than 2 per 10 HPF and/or the Ki67 index is equal to or less than 2 percent."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s NET %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "('neuroendocrine neoplasm' and ('has modifier' some %s) and ('disease has location' some %s))"
+  vars:
+    - v0
+    - v1

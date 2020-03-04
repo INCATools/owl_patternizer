@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease has location uterus
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_has_location_uterus
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [uterine disease](http://purl.obolibrary.org/obo/MONDO_0002654), [uterine carcinosarcoma](http://purl.obolibrary.org/obo/MONDO_0006485), [uterus intravascular leiomyomatosis](http://purl.obolibrary.org/obo/MONDO_0003702) (9 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  uterus: "UBERON:0000995"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'disease or disorder'"
+
+name:
+  # Induced, frequency=0.6666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "uterine %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2222222222222222, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s involving a uterus."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "uterus %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('disease has location' some 'uterus'))"
+  vars:
+    - v0

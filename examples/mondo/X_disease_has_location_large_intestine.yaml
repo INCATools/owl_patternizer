@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease has location large intestine
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_has_location_large_intestine
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [large intestine disease](http://purl.obolibrary.org/obo/MONDO_0024634), [colorectal leiomyoma](http://purl.obolibrary.org/obo/MONDO_0003299), [colorectal Kaposi sarcoma](http://purl.obolibrary.org/obo/MONDO_0024659) (8 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  large intestine: "UBERON:0000059"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'disease or disorder'"
+
+name:
+  # Induced, frequency=0.625, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "colorectal %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.375, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that involves the large intestine."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "large intestine %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('disease has location' some 'large intestine'))"
+  vars:
+    - v0

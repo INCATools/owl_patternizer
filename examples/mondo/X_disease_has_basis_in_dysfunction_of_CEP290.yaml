@@ -1,0 +1,50 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease has basis in dysfunction of CEP290
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_has_basis_in_dysfunction_of_CEP290
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Senior-Loken syndrome 6](http://purl.obolibrary.org/obo/MONDO_0012433), [Joubert syndrome 5](http://purl.obolibrary.org/obo/MONDO_0012432), [Meckel syndrome, type 4](http://purl.obolibrary.org/obo/MONDO_0012626) (4 total)
+
+classes: 
+  CEP290: "http://identifiers.org/hgnc/29021"
+  eye disease: "http://purl.obolibrary.org/obo/MONDO_0005328"
+  genetic nervous system disorder: "http://purl.obolibrary.org/obo/MONDO_0019117"
+
+
+relations: 
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'eye disease' or 'genetic nervous system disorder'"
+
+name:
+  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s 10"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any %s in which the cause of the disease is a mutation in the CEP290 gene."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s caused by mutation in CEP290"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('disease has basis in dysfunction of' some 'CEP290'))"
+  vars:
+    - v0

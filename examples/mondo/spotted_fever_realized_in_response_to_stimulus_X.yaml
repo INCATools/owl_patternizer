@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: spotted fever realized in response to stimulus X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/spotted_fever_realized_in_response_to_stimulus_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Japanese spotted fever](http://purl.obolibrary.org/obo/MONDO_0000233), [Rickettsia parkeri spotted fever](http://purl.obolibrary.org/obo/MONDO_0000234), [pseudotyphus of California](http://purl.obolibrary.org/obo/MONDO_0019364) (4 total)
+
+classes: 
+  spotted fever: "http://purl.obolibrary.org/obo/MONDO_0001195"
+  spotted fever group: "http://purl.obolibrary.org/obo/NCBITaxon_114277"
+
+
+relations: 
+  realized in response to stimulus: "RO:0004028"
+
+
+vars:
+  v0: "'spotted fever group'"
+
+name:
+  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A spotted fever that has_material_basis_in %s, which is transmitted_by Gulf Coast tick (Amblyomma maculatum). The infection has_symptom fever, has_symptom headache, has_symptom eschar, and has_symptom rash."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s spotted fever"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('spotted fever' and ('realized in response to stimulus' some %s))"
+  vars:
+    - v0

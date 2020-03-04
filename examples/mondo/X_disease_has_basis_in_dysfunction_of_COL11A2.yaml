@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease has basis in dysfunction of COL11A2
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_has_basis_in_dysfunction_of_COL11A2
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [fibrochondrogenesis 2](http://purl.obolibrary.org/obo/MONDO_0013795), [Stickler syndrome type 3](http://purl.obolibrary.org/obo/MONDO_0008490), [autosomal dominant nonsyndromic deafness 13](http://purl.obolibrary.org/obo/MONDO_0011159) (4 total)
+
+classes: 
+  COL11A2: "http://identifiers.org/hgnc/2187"
+  disease by anatomical system: "http://purl.obolibrary.org/obo/MONDO_0021199"
+
+
+relations: 
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'disease by anatomical system'"
+
+name:
+  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s 13"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.75, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any %s in which the cause of the disease is a mutation in the COL11A2 gene."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s caused by mutation in COL11A2"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('disease has basis in dysfunction of' some 'COL11A2'))"
+  vars:
+    - v0

@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease has location cornea
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_has_location_cornea
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [corneal disease](http://purl.obolibrary.org/obo/MONDO_0000942), [cornea cancer](http://purl.obolibrary.org/obo/MONDO_0003802), [cornea neoplasm](http://purl.obolibrary.org/obo/MONDO_0021238) (9 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  cornea: "UBERON:0000964"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'disease or disorder'"
+
+name:
+  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "cornea %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3333333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that involves the cornea."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "cornea %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('disease has location' some 'cornea'))"
+  vars:
+    - v0

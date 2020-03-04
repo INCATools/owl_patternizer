@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: familial cutaneous melanoma disease has basis in dysfunction of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/familial_cutaneous_melanoma_disease_has_basis_in_dysfunction_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [melanoma, cutaneous malignant, susceptibility to, 10](http://purl.obolibrary.org/obo/MONDO_0014368), [melanoma, cutaneous malignant, susceptibility to, 3](http://purl.obolibrary.org/obo/MONDO_0012183), [melanoma, cutaneous malignant, susceptibility to, 5](http://purl.obolibrary.org/obo/MONDO_0013133) (4 total)
+
+classes: 
+  familial cutaneous melanoma: "http://purl.obolibrary.org/obo/MONDO_0024462"
+  SO_0001217: "SO:0001217"
+
+
+relations: 
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'SO_0001217'"
+
+name:
+  # Could not induce name, using default
+  text: "familial cutaneous melanoma disease has basis in dysfunction of %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any familial cutaneous melanoma that disease has basis in dysfunction of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('familial cutaneous melanoma' and ('disease has basis in dysfunction of' some %s))"
+  vars:
+    - v0

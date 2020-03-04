@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease has location skin of eyelid
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_has_location_skin_of_eyelid
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [malignant tumor of palpebral epidermis](http://purl.obolibrary.org/obo/MONDO_0020175), [palpebral epidermal tumor](http://purl.obolibrary.org/obo/MONDO_0020172), [palpebral nevus](http://purl.obolibrary.org/obo/MONDO_0020179) (6 total)
+
+classes: 
+  cell proliferation disorder: "http://purl.obolibrary.org/obo/MONDO_0045024"
+  skin of eyelid: "UBERON:0001457"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'cell proliferation disorder'"
+
+name:
+  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "palpebral %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that involves the skin of eyelid."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "skin of eyelid %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('disease has location' some 'skin of eyelid'))"
+  vars:
+    - v0

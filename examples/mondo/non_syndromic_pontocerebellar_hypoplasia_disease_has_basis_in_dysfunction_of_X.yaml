@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: non-syndromic pontocerebellar hypoplasia disease has basis in dysfunction of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/non_syndromic_pontocerebellar_hypoplasia_disease_has_basis_in_dysfunction_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [pontocerebellar hypoplasia type 1A](http://purl.obolibrary.org/obo/MONDO_0011866), [pontocerebellar hypoplasia type 3](http://purl.obolibrary.org/obo/MONDO_0011948), [pontocerebellar hypoplasia type 2C](http://purl.obolibrary.org/obo/MONDO_0012891) (13 total)
+
+classes: 
+  non-syndromic pontocerebellar hypoplasia: "http://purl.obolibrary.org/obo/MONDO_0020135"
+  SO_0001217: "SO:0001217"
+
+
+relations: 
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'SO_0001217'"
+
+name:
+  # Could not induce name, using default
+  text: "non-syndromic pontocerebellar hypoplasia disease has basis in dysfunction of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.6923076923076923, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any non-syndromic pontocerebellar hypoplasia in which the cause of the disease is a mutation in the %s gene."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s non-syndromic pontocerebellar hypoplasia"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('non-syndromic pontocerebellar hypoplasia' and ('disease has basis in dysfunction of' some %s))"
+  vars:
+    - v0

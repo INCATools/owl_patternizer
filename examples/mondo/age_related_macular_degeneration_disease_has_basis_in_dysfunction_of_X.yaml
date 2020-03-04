@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: age-related macular degeneration disease has basis in dysfunction of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/age_related_macular_degeneration_disease_has_basis_in_dysfunction_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [age related macular degeneration 10](http://purl.obolibrary.org/obo/MONDO_0012674), [age related macular degeneration 9](http://purl.obolibrary.org/obo/MONDO_0012659), [age related macular degeneration 15](http://purl.obolibrary.org/obo/MONDO_0014266) (12 total)
+
+classes: 
+  age-related macular degeneration: "http://purl.obolibrary.org/obo/MONDO_0005150"
+  SO_0001217: "SO:0001217"
+
+
+relations: 
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'SO_0001217'"
+
+name:
+  # Could not induce name, using default
+  text: "age-related macular degeneration disease has basis in dysfunction of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any age-related macular degeneration in which the cause of the disease is a mutation in the %s gene."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s age-related macular degeneration"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('age-related macular degeneration' and ('disease has basis in dysfunction of' some %s))"
+  vars:
+    - v0

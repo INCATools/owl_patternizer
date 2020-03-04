@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease has location intestine
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_has_location_intestine
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [intestinal disease](http://purl.obolibrary.org/obo/MONDO_0005020), [angiodysplasia of intestine](http://purl.obolibrary.org/obo/MONDO_0001138), [intestine carcinoma in situ](http://purl.obolibrary.org/obo/MONDO_0004698) (13 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  intestine: "UBERON:0000160"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'disease or disorder'"
+
+name:
+  # Induced, frequency=0.5384615384615384, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "intestinal %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3076923076923077, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that involves the intestine."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "intestine %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('disease has location' some 'intestine'))"
+  vars:
+    - v0

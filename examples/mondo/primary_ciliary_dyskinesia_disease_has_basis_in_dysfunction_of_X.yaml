@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: primary ciliary dyskinesia disease has basis in dysfunction of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/primary_ciliary_dyskinesia_disease_has_basis_in_dysfunction_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [primary ciliary dyskinesia 28](http://purl.obolibrary.org/obo/MONDO_0014216), [primary ciliary dyskinesia 24](http://purl.obolibrary.org/obo/MONDO_0014202), [primary ciliary dyskinesia 26](http://purl.obolibrary.org/obo/MONDO_0014211) (33 total)
+
+classes: 
+  primary ciliary dyskinesia: "http://purl.obolibrary.org/obo/MONDO_0016575"
+  SO_0001217: "SO:0001217"
+
+
+relations: 
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'SO_0001217'"
+
+name:
+  # Could not induce name, using default
+  text: "primary ciliary dyskinesia disease has basis in dysfunction of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any primary ciliary dyskinesia in which the cause of the disease is a mutation in the %s gene."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s primary ciliary dyskinesia"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('primary ciliary dyskinesia' and ('disease has basis in dysfunction of' some %s))"
+  vars:
+    - v0

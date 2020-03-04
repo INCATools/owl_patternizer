@@ -1,0 +1,48 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X realized in response to stimulus Simplexvirus
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_X_realized_in_response_to_stimulus_Simplexvirus
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [herpes simplex dermatitis](http://purl.obolibrary.org/obo/MONDO_0004712), [herpes simplex virus gingivostomatitis](http://purl.obolibrary.org/obo/MONDO_0005792), [herpetic whitlow](http://purl.obolibrary.org/obo/MONDO_0004616) (4 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  Simplexvirus: "http://purl.obolibrary.org/obo/NCBITaxon_10294"
+
+
+relations: 
+  realized in response to stimulus: "RO:0004028"
+
+
+vars:
+  v0: "'disease or disorder'"
+  v1: "'disease or disorder'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s realized in response to stimulus Simplexvirus"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s and realized in response to stimulus a Simplexvirus"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and %s and ('realized in response to stimulus' some 'Simplexvirus'))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: inverted papilloma disease has location X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/inverted_papilloma_disease_has_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ureter inverted papilloma](http://purl.obolibrary.org/obo/MONDO_0004043), [inverted urothelial papilloma](http://purl.obolibrary.org/obo/MONDO_0021109), [renal pelvis inverted papilloma](http://purl.obolibrary.org/obo/MONDO_0003776) (8 total)
+
+classes: 
+  inverted papilloma: "http://purl.obolibrary.org/obo/MONDO_0002537"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.875, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s inverted papilloma"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A benign neoplasm that arises from the ciliated respiratory mucosa that lines the %s. It results from the invagination and proliferation of epithelial cells in the underlying stroma."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s inverted papilloma"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('inverted papilloma' and ('disease has location' some %s))"
+  vars:
+    - v0

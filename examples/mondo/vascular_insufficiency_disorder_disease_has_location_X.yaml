@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: vascular insufficiency disorder disease has location X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/vascular_insufficiency_disorder_disease_has_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [vertebral artery insufficiency](http://purl.obolibrary.org/obo/MONDO_0001631), [basilar artery insufficiency](http://purl.obolibrary.org/obo/MONDO_0002250), [venous insufficiency (disease)](http://purl.obolibrary.org/obo/MONDO_0000945) (7 total)
+
+classes: 
+  vascular insufficiency disorder: "http://purl.obolibrary.org/obo/MONDO_0020674"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.5714285714285714, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s insufficiency"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2857142857142857, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Dysfunction of the %s characterized by incomplete valve closure."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s syndrome"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('vascular insufficiency disorder' and ('disease has location' some %s))"
+  vars:
+    - v0

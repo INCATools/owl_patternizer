@@ -1,0 +1,64 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: disease or disorder disease has major feature X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/disease_or_disorder_disease_has_major_feature_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [hyperpigmentation of the skin](http://purl.obolibrary.org/obo/MONDO_0019289), [hypopigmentation of the skin (disease)](http://purl.obolibrary.org/obo/MONDO_0019290), [rare genetic disease with myoclonus as a major feature](http://purl.obolibrary.org/obo/MONDO_0017665) (18 total)
+
+classes: 
+  Hyperpigmentation of the skin: "http://purl.obolibrary.org/obo/HP_0000953"
+  Hypopigmentation of the skin: "http://purl.obolibrary.org/obo/HP_0001010"
+  Myoclonus: "http://purl.obolibrary.org/obo/HP_0001336"
+  Abnormal aortic morphology: "http://purl.obolibrary.org/obo/HP_0001679"
+  Abnormal tricuspid valve morphology: "http://purl.obolibrary.org/obo/HP_0001702"
+  Diarrhea: "http://purl.obolibrary.org/obo/HP_0002014"
+  Constipation: "http://purl.obolibrary.org/obo/HP_0002019"
+  Headache: "http://purl.obolibrary.org/obo/HP_0002315"
+  Diffuse palmoplantar keratoderma: "http://purl.obolibrary.org/obo/HP_0007435"
+  Lipodystrophy: "http://purl.obolibrary.org/obo/HP_0009125"
+  Pain: "http://purl.obolibrary.org/obo/HP_0012531"
+  Increased circulating androgen level: "http://purl.obolibrary.org/obo/HP_0030348"
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  epilepsy: "http://purl.obolibrary.org/obo/MONDO_0005027"
+  focal palmoplantar keratoderma: "http://purl.obolibrary.org/obo/MONDO_0017672"
+  punctate palmoplantar keratoderma: "http://purl.obolibrary.org/obo/MONDO_0017675"
+  Cushing syndrome: "http://purl.obolibrary.org/obo/MONDO_0018912"
+
+
+relations: 
+  disease has major feature: "http://purl.obolibrary.org/obo/mondo#disease_has_major_feature"
+
+
+vars:
+  v0: "'Hyperpigmentation of the skin' or 'Hypopigmentation of the skin' or 'Myoclonus' or 'Abnormal aortic morphology' or 'Abnormal tricuspid valve morphology' or 'Diarrhea' or 'Constipation' or 'Headache' or 'Diffuse palmoplantar keratoderma' or 'Lipodystrophy' or 'Pain' or 'Increased circulating androgen level' or 'epilepsy' or 'focal palmoplantar keratoderma' or 'punctate palmoplantar keratoderma' or 'Cushing syndrome'"
+
+name:
+  # Induced, frequency=0.2222222222222222, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "disease with %s as a major feature"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1111111111111111, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A disease in which %s is a major feature.."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('disease or disorder' and ('disease has major feature' some %s))"
+  vars:
+    - v0

@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: papillary adenocarcinoma disease has location X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/papillary_adenocarcinoma_disease_has_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [gastric papillary adenocarcinoma](http://purl.obolibrary.org/obo/MONDO_0006228), [thyroid gland papillary carcinoma](http://purl.obolibrary.org/obo/MONDO_0005075), [papillary lung adenocarcinoma](http://purl.obolibrary.org/obo/MONDO_0006049) (5 total)
+
+classes: 
+  papillary adenocarcinoma: "http://purl.obolibrary.org/obo/MONDO_0002512"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.2, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s gland papillary carcinoma"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A differentiated adenocarcinoma arising from the follicular cells of the %s gland. Radiation exposure is a risk factor and it is the most common malignant thyroid lesion, comprising 75% to 80% of all thyroid cancers in iodine sufficient countries. Diagnostic procedures include thyroid ultrasound and fine needle biopsy. Microscopically, the diagnosis is based on the distinct characteristics of the malignant cells, which include enlargement, oval shape, elongation, and overlapping of the nuclei. The nuclei also display clearing or have a ground glass appearance."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s papillary adenocarcinoma"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('papillary adenocarcinoma' and ('disease has location' some %s))"
+  vars:
+    - v0

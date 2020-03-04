@@ -24,7 +24,6 @@
 :- use_module(library(semweb/rdf_http_plugin)).
 :- use_module(library(semweb/rdf11)).
 :- use_module(library(semweb/rdfs)).
-:- use_module(library(tabling)).
 
 % ========================================
 % UTIL

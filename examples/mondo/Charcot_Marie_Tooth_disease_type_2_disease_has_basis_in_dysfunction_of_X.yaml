@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: Charcot-Marie-Tooth disease type 2 disease has basis in dysfunction of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/Charcot_Marie_Tooth_disease_type_2_disease_has_basis_in_dysfunction_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [autosomal dominant Charcot-Marie-Tooth disease type 2 due to TFG mutation](http://purl.obolibrary.org/obo/MONDO_0018567), [Charcot-Marie-Tooth disease type 2Y](http://purl.obolibrary.org/obo/MONDO_0014735), [Charcot-Marie-Tooth disease type 2R](http://purl.obolibrary.org/obo/MONDO_0014208) (18 total)
+
+classes: 
+  Charcot-Marie-Tooth disease type 2: "http://purl.obolibrary.org/obo/MONDO_0018993"
+  SO_0001217: "SO:0001217"
+
+
+relations: 
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'SO_0001217'"
+
+name:
+  # Induced, frequency=0.1111111111111111, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "autosomal dominant Charcot-Marie-Tooth disease type 2 due to %s mutation"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any Charcot-Marie-Tooth disease type 2 in which the cause of the disease is a mutation in the %s gene."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s Charcot-Marie-Tooth disease type 2"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('Charcot-Marie-Tooth disease type 2' and ('disease has basis in dysfunction of' some %s))"
+  vars:
+    - v0

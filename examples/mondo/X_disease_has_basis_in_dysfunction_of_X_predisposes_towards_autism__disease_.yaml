@@ -1,0 +1,50 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease has basis in dysfunction of X predisposes towards autism (disease)
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_has_basis_in_dysfunction_of_X_predisposes_towards_autism__disease_
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [autism, susceptibility to, X-linked 5](http://purl.obolibrary.org/obo/MONDO_0010449), [autism, susceptibility to, 15](http://purl.obolibrary.org/obo/MONDO_0012801), [autism, susceptibility to, X-linked 2](http://purl.obolibrary.org/obo/MONDO_0010341) (9 total)
+
+classes: 
+  autism (disease): "http://purl.obolibrary.org/obo/MONDO_0005260"
+  inherited disease susceptibility: "http://purl.obolibrary.org/obo/MONDO_0020573"
+  SO_0001217: "SO:0001217"
+
+
+relations: 
+  disease has basis in dysfunction of: "RO:0004020"
+  predisposes towards: "http://purl.obolibrary.org/obo/mondo#predisposes_towards"
+
+
+vars:
+  v0: "'inherited disease susceptibility'"
+  v1: "'SO_0001217'"
+
+name:
+  # Could not induce name, using default
+  text: "%s disease has basis in dysfunction of %s predisposes towards autism (disease)"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that disease has basis in dysfunction of a %s and predisposes towards a autism (disease)"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('disease has basis in dysfunction of' some %s) and ('predisposes towards' some 'autism (disease)'))"
+  vars:
+    - v0
+    - v1

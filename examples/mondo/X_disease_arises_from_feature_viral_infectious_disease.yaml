@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease arises from feature viral infectious disease
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_arises_from_feature_viral_infectious_disease
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [post-viral disorder](http://purl.obolibrary.org/obo/MONDO_0021674), [hepatitis D virus infection](http://purl.obolibrary.org/obo/MONDO_0005789), [viral dilated cardiomyopathy](http://purl.obolibrary.org/obo/MONDO_0005200) (5 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  viral infectious disease: "http://purl.obolibrary.org/obo/MONDO_0005108"
+
+
+relations: 
+  disease arises from feature: "RO:0004022"
+
+
+vars:
+  v0: "'disease or disorder'"
+
+name:
+  # Induced, frequency=0.2, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s D virus infection"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An %s caused by infection with Viruses."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('disease arises from feature' some 'viral infectious disease'))"
+  vars:
+    - v0

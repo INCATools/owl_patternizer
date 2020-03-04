@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: progressive external ophthalmoplegia with mitochondrial DNA deletions disease has basis in dysfunction of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/progressive_external_ophthalmoplegia_with_mitochondrial_DNA_deletions_disease_has_basis_in_dysfunction_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 2](http://purl.obolibrary.org/obo/MONDO_0012238), [progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 3](http://purl.obolibrary.org/obo/MONDO_0012241), [progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 5](http://purl.obolibrary.org/obo/MONDO_0013117) (5 total)
+
+classes: 
+  progressive external ophthalmoplegia with mitochondrial DNA deletions: "http://purl.obolibrary.org/obo/MONDO_0000090"
+  SO_0001217: "SO:0001217"
+
+
+relations: 
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'SO_0001217'"
+
+name:
+  # Could not induce name, using default
+  text: "progressive external ophthalmoplegia with mitochondrial DNA deletions disease has basis in dysfunction of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any progressive external ophthalmoplegia with mitochondrial DNA deletions in which the cause of the disease is a mutation in the %s gene."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s progressive external ophthalmoplegia with mitochondrial DNA deletions"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('progressive external ophthalmoplegia with mitochondrial DNA deletions' and ('disease has basis in dysfunction of' some %s))"
+  vars:
+    - v0

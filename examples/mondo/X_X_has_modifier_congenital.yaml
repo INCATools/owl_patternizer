@@ -1,0 +1,48 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X has modifier congenital
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_X_has_modifier_congenital
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ADNP-related multiple congenital anomalies - intellectual disability - autism spectrum disorder](http://purl.obolibrary.org/obo/MONDO_0014379), [nonsyndromic congenital nail disorder 6](http://purl.obolibrary.org/obo/MONDO_0007135), [congenital cataract-microcephaly-nevus flammeus simplex-severe intellectual disability syndrome](http://purl.obolibrary.org/obo/MONDO_0014643) (4 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  congenital: "http://purl.obolibrary.org/obo/MONDO_0021140"
+
+
+relations: 
+  has modifier: "RO:0002573"
+
+
+vars:
+  v0: "'disease or disorder'"
+  v1: "'disease or disorder'"
+
+name:
+  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "ADNP-related multiple congenital anomalies - %s - autism spectrum %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s and has modifier a congenital"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and %s and ('has modifier' some 'congenital'))"
+  vars:
+    - v0
+    - v1

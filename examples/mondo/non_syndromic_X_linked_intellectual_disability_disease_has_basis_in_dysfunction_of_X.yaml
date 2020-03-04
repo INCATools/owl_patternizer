@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: non-syndromic X-linked intellectual disability disease has basis in dysfunction of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/non_syndromic_X_linked_intellectual_disability_disease_has_basis_in_dysfunction_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [intellectual disability, X-linked 19](http://purl.obolibrary.org/obo/MONDO_0010447), [intellectual disability, X-linked 96](http://purl.obolibrary.org/obo/MONDO_0010429), [intellectual disability, X-linked 58](http://purl.obolibrary.org/obo/MONDO_0010266) (22 total)
+
+classes: 
+  non-syndromic X-linked intellectual disability: "http://purl.obolibrary.org/obo/MONDO_0019181"
+  SO_0001217: "SO:0001217"
+
+
+relations: 
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'SO_0001217'"
+
+name:
+  # Could not induce name, using default
+  text: "non-syndromic X-linked intellectual disability disease has basis in dysfunction of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.9545454545454546, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any non-syndromic X-linked intellectual disability in which the cause of the disease is a mutation in the %s gene."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s non-syndromic X-linked intellectual disability"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('non-syndromic X-linked intellectual disability' and ('disease has basis in dysfunction of' some %s))"
+  vars:
+    - v0

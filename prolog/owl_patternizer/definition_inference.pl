@@ -41,7 +41,6 @@
 :- use_module(library(sparqlprog/owl_util)).
 :- use_module(library(semweb/rdfs)).
 :- use_module(library(semweb/rdf11)).
-:- use_module(library(tabling)).
 :- use_module(library(index_util)).
 
 :- rdf_register_prefix(oio,'http://www.geneontology.org/formats/oboInOwl#').
@@ -247,6 +246,7 @@ matches_to_class_expression(Ms, and(Xs)) :-
 
 
 % TODO: move these
+% can be replaced with owl_assert_axiom in owl_util
 save_axiom(Axiom) :-
         rdf_default_graph(G),
         save_axiom(Axiom,G).

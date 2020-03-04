@@ -1,0 +1,45 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X-or-X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_or_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [secondary hyperparathyroidism (disease)](http://purl.obolibrary.org/obo/MONDO_0006964), [nutritional or metabolic disease](http://purl.obolibrary.org/obo/MONDO_0024297), [neoplastic disease or syndrome](http://purl.obolibrary.org/obo/MONDO_0023370) (9 total)
+
+classes: 
+  specifically dependent continuant: "BFO:0000020"
+
+
+relations: []
+
+vars:
+  v0: "'specifically dependent continuant'"
+  v1: "'specifically dependent continuant'"
+
+name:
+  # Could not induce name, using default
+  text: "%s/%s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.1111111111111111, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Used to describe tumor samples that exhibit %s or %s cells. They are generally expected to be fast growing and aggressive."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s or %s"
+  vars:
+    - v0
+    - v1

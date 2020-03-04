@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: disease or disorder disease has inflammation site X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/disease_or_disorder_disease_has_inflammation_site_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [neuronitis](http://purl.obolibrary.org/obo/MONDO_0004466), [hypophysitis](http://purl.obolibrary.org/obo/MONDO_0021156), [dermatitis](http://purl.obolibrary.org/obo/MONDO_0002406) (133 total)
+
+classes: 
+  independent continuant: "BFO:0000004"
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+
+
+relations: 
+  disease has inflammation site: "RO:0004027"
+
+
+vars:
+  v0: "'independent continuant'"
+
+name:
+  # Induced, frequency=0.09022556390977443, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%sitis"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.16541353383458646, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Inflammation of the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s inflammation"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('disease or disorder' and ('disease has inflammation site' some %s))"
+  vars:
+    - v0

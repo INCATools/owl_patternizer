@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: agnosia disease caused by disruption of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/agnosia_disease_caused_by_disruption_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [visual agnosia (disease)](http://purl.obolibrary.org/obo/MONDO_0000685), [auditory agnosia](http://purl.obolibrary.org/obo/MONDO_0000667), [akinetopsia](http://purl.obolibrary.org/obo/MONDO_0000660) (6 total)
+
+classes: 
+  visual perception: "GO:0007601"
+  sensory perception of sound: "GO:0007605"
+  perception of rate of movement: "GO:0019232"
+  sensory perception of pain: "GO:0019233"
+  sensory perception of touch: "GO:0050975"
+  agnosia: "http://purl.obolibrary.org/obo/MONDO_0005638"
+  NBO_0000551: "http://purl.obolibrary.org/obo/NBO_0000551"
+
+
+relations: 
+  disease caused by disruption of: "RO:0004021"
+
+
+vars:
+  v0: "'visual perception' or 'sensory perception of sound' or 'perception of rate of movement' or 'sensory perception of pain' or 'sensory perception of touch' or 'NBO_0000551'"
+
+name:
+  # Could not induce name, using default
+  text: "agnosia disease caused by disruption of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An agnosia that is a loss of the ability to distinguishing environmental and non-verbal auditory cues including difficulty distinguishing speech from non-speech sounds even though %s is usually normal."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('agnosia' and ('disease caused by disruption of' some %s))"
+  vars:
+    - v0

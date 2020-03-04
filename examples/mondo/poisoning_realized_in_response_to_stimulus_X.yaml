@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: poisoning realized in response to stimulus X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/poisoning_realized_in_response_to_stimulus_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [methanol poisoning](http://purl.obolibrary.org/obo/MONDO_0017860), [colchicine poisoning](http://purl.obolibrary.org/obo/MONDO_0017859), [manganese poisoning](http://purl.obolibrary.org/obo/MONDO_0017638) (9 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  poisoning: "http://purl.obolibrary.org/obo/MONDO_0029000"
+
+
+relations: 
+  realized in response to stimulus: "RO:0004028"
+
+
+vars:
+  v0: "'material entity'"
+
+name:
+  # Induced, frequency=0.5555555555555556, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s poisoning"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1111111111111111, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s poisoning is a rare intoxication with paraquat (a non-selective bipyridilium herbicide that has been banned in Europe), usually occurring through ingestion of the poison, and that presents with caustic injury of the oral cavity and pharynx, as well as nausea, vomiting, epigastric pain, lethargy, loss of consciousness and fever. Patients may develop potentially life-threatening complications such as hepatic dysfunction, acute tubular necrosis and renal insufficiency, and respiratory failure (due to pulmonary fibrosis) due to its inherent toxicity and lack of effective treatment. Intoxication via inhalation, injection and dermal or mucus contact have also been reported."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s poisoning"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('poisoning' and ('realized in response to stimulus' some %s))"
+  vars:
+    - v0

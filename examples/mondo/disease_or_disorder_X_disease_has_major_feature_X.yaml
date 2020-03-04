@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: disease or disorder X disease has major feature X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/disease_or_disorder_X_disease_has_major_feature_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [autism spectrum disorder - epilepsy - arthrogryposis syndrome](http://purl.obolibrary.org/obo/MONDO_0014248), [acquired testicular failure](http://purl.obolibrary.org/obo/MONDO_0023554), [ulceration of vulva](http://purl.obolibrary.org/obo/MONDO_0001551) (4 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  epilepsy: "http://purl.obolibrary.org/obo/MONDO_0005027"
+  arthrogryposis syndrome: "http://purl.obolibrary.org/obo/MONDO_0015225"
+
+
+relations: 
+  disease has major feature: "http://purl.obolibrary.org/obo/mondo#disease_has_major_feature"
+
+
+vars:
+  v0: "'arthrogryposis syndrome'"
+  v1: "'epilepsy'"
+
+name:
+  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "autism spectrum disorder - %s - %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any disease or disorder that %s and disease has major feature a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('disease or disorder' and %s and ('disease has major feature' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: inflammatory myofibroblastic tumor disease has location X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/inflammatory_myofibroblastic_tumor_disease_has_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [bladder inflammatory myofibroblastic tumor](http://purl.obolibrary.org/obo/MONDO_0006112), [lung inflammatory myofibroblastic tumor](http://purl.obolibrary.org/obo/MONDO_0006276), [liver inflammatory myofibroblastic tumor](http://purl.obolibrary.org/obo/MONDO_0004726) (4 total)
+
+classes: 
+  inflammatory myofibroblastic tumor: "http://purl.obolibrary.org/obo/MONDO_0015798"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s inflammatory myofibroblastic tumor"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.75, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A multinodular intermediate fibroblastic neoplasm arising from the %s. It is characterized by the presence of spindle-shaped fibroblasts and myofibroblasts, and a chronic inflammatory infiltrate composed of eosinophils, lymphocytes and plasma cells."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s inflammatory myofibroblastic tumor"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('inflammatory myofibroblastic tumor' and ('disease has location' some %s))"
+  vars:
+    - v0

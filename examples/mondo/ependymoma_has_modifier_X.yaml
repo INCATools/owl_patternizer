@@ -1,0 +1,47 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: ependymoma has modifier X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/ependymoma_has_modifier_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [childhood ependymoma](http://purl.obolibrary.org/obo/MONDO_0003478), [low grade ependymoma](http://purl.obolibrary.org/obo/MONDO_0016697), [benign ependymoma](http://purl.obolibrary.org/obo/MONDO_0003161) (4 total)
+
+classes: 
+  Childhood onset: "http://purl.obolibrary.org/obo/HP_0011463"
+  ependymoma: "http://purl.obolibrary.org/obo/MONDO_0016698"
+  tumor grade 1, general grading system: "http://purl.obolibrary.org/obo/MONDO_0024491"
+  neoplastic, non-malignant: "PATO:0002096"
+  neoplastic, malignant: "PATO:0002097"
+
+
+relations: 
+  has modifier: "RO:0002573"
+
+
+vars:
+  v0: "'Childhood onset' or 'tumor grade 1, general grading system' or 'neoplastic, non-malignant' or 'neoplastic, malignant'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s ependymoma"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any ependymoma that has modifier a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('ependymoma' and ('has modifier' some %s))"
+  vars:
+    - v0

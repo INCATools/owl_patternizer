@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: lymphadenitis (disease) disease has location X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/lymphadenitis__disease__disease_has_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cervical lymphadenitis](http://purl.obolibrary.org/obo/MONDO_0003067), [sialadenitis](http://purl.obolibrary.org/obo/MONDO_0006969), [submandibular adenitis](http://purl.obolibrary.org/obo/MONDO_0003066) (6 total)
+
+classes: 
+  lymphadenitis (disease): "http://purl.obolibrary.org/obo/MONDO_0002052"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.16666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%sry lymphadenitis"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An infection of the lymph nodes in the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s lymphadenitis (disease)"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('lymphadenitis (disease)' and ('disease has location' some %s))"
+  vars:
+    - v0

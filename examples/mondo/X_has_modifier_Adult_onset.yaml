@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has modifier Adult onset
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_has_modifier_Adult_onset
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [adult central nervous system primitive neuroectodermal neoplasm](http://purl.obolibrary.org/obo/MONDO_0002795), [B-cell adult acute lymphocytic leukemia](http://purl.obolibrary.org/obo/MONDO_0000814), [adult Fanconi syndrome](http://purl.obolibrary.org/obo/MONDO_0060778) (62 total)
+
+classes: 
+  Adult onset: "http://purl.obolibrary.org/obo/HP_0003581"
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+
+
+relations: 
+  has modifier: "RO:0002573"
+
+
+vars:
+  v0: "'disease or disorder'"
+
+name:
+  # Induced, frequency=0.8064516129032258, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "adult %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3225806451612903, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that occurs in an adult."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of adults"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('has modifier' some 'Adult onset'))"
+  vars:
+    - v0

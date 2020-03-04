@@ -1,0 +1,56 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X X disease has location X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_X_X_disease_has_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [skin vascular disease](http://purl.obolibrary.org/obo/MONDO_0019293), [inherited vitreous-retinal disease](http://purl.obolibrary.org/obo/MONDO_0020238), [urethra inverted papilloma](http://purl.obolibrary.org/obo/MONDO_0004042) (5 total)
+
+classes: 
+  papilloma: "http://purl.obolibrary.org/obo/MONDO_0002363"
+  urethra: "UBERON:0000057"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'papilloma'"
+  v1: "'papilloma'"
+  v2: "'papilloma'"
+  v3: "'urethra'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s %s disease has location %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s and %s and disease has location a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and %s and %s and ('disease has location' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3

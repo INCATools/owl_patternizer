@@ -1,0 +1,54 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease has inflammation site X realized in response to stimulus X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_has_inflammation_site_X_realized_in_response_to_stimulus_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Epstein-Barr virus hepatitis](http://purl.obolibrary.org/obo/MONDO_0000286), [gonococcal cervicitis](http://purl.obolibrary.org/obo/MONDO_0021157), [gonococcal keratitis](http://purl.obolibrary.org/obo/MONDO_0004852) (24 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  root: "http://purl.obolibrary.org/obo/NCBITaxon_1"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  disease has inflammation site: "RO:0004027"
+  realized in response to stimulus: "RO:0004028"
+
+
+vars:
+  v0: "'disease or disorder'"
+  v1: "'multicellular anatomical structure'"
+  v2: "'root'"
+
+name:
+  # Could not induce name, using default
+  text: "%s disease has inflammation site %s realized in response to stimulus %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that disease has inflammation site a %s and realized in response to stimulus a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('disease has inflammation site' some %s) and ('realized in response to stimulus' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

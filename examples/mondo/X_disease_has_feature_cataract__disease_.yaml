@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease has feature cataract (disease)
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_has_feature_cataract__disease_
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cerebral disease with cataract](http://purl.obolibrary.org/obo/MONDO_0020229), [microphthalmia, isolated, with cataract](http://purl.obolibrary.org/obo/MONDO_0000169), [musculoskeletal disease with cataract](http://purl.obolibrary.org/obo/MONDO_0020232) (7 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  cataract (disease): "http://purl.obolibrary.org/obo/MONDO_0005129"
+
+
+relations: 
+  disease has feature: "RO:0004029"
+
+
+vars:
+  v0: "'disease or disorder'"
+
+name:
+  # Induced, frequency=0.5714285714285714, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s with cataract"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that disease has feature a cataract (disease)"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('disease has feature' some 'cataract (disease)'))"
+  vars:
+    - v0

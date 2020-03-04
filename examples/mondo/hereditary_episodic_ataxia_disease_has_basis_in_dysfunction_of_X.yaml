@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: hereditary episodic ataxia disease has basis in dysfunction of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/hereditary_episodic_ataxia_disease_has_basis_in_dysfunction_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [episodic ataxia type 6](http://purl.obolibrary.org/obo/MONDO_0012982), [episodic ataxia type 2](http://purl.obolibrary.org/obo/MONDO_0007163), [episodic ataxia type 5](http://purl.obolibrary.org/obo/MONDO_0013464) (4 total)
+
+classes: 
+  hereditary episodic ataxia: "http://purl.obolibrary.org/obo/MONDO_0016227"
+  SO_0001217: "SO:0001217"
+
+
+relations: 
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'SO_0001217'"
+
+name:
+  # Could not induce name, using default
+  text: "hereditary episodic ataxia disease has basis in dysfunction of %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any hereditary episodic ataxia that disease has basis in dysfunction of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s hereditary episodic ataxia"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('hereditary episodic ataxia' and ('disease has basis in dysfunction of' some %s))"
+  vars:
+    - v0

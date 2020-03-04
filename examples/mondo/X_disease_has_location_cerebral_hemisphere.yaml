@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease has location cerebral hemisphere
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_has_location_cerebral_hemisphere
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cerebral hemisphere cancer](http://purl.obolibrary.org/obo/MONDO_0002731), [neoplasm of cerebral hemisphere](http://purl.obolibrary.org/obo/MONDO_0021374), [cerebral hemisphere lipoma](http://purl.obolibrary.org/obo/MONDO_0003843) (4 total)
+
+classes: 
+  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  cerebral hemisphere: "UBERON:0001869"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'neoplasm (disease)'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "cerebral hemisphere %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s involving a cerebral hemisphere."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of cerebral hemisphere"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('disease has location' some 'cerebral hemisphere'))"
+  vars:
+    - v0

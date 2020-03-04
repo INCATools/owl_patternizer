@@ -1,0 +1,45 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: inherited genetic disease X has modifier rare
+pattern_iri: http://purl.obolibrary.org/obo/mondo/inherited_genetic_disease_X_has_modifier_rare
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [rare hereditary disease with peripheral neuropathy](http://purl.obolibrary.org/obo/MONDO_0016132), [rare hereditary disease with avascular necrosis](http://purl.obolibrary.org/obo/MONDO_0018377), [rare genetic disorder with obstructive azoospermia](http://purl.obolibrary.org/obo/MONDO_0018409) (4 total)
+
+classes: 
+  inherited genetic disease: "http://purl.obolibrary.org/obo/MONDO_0003847"
+  rare: "http://purl.obolibrary.org/obo/MONDO_0021136"
+  disease by anatomical system: "http://purl.obolibrary.org/obo/MONDO_0021199"
+
+
+relations: 
+  has modifier: "RO:0002573"
+
+
+vars:
+  v0: "'disease by anatomical system'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "rare hereditary disease with %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An instance of rare %s that is caused by a modification of the individual's genome."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('inherited genetic disease' and %s and ('has modifier' some 'rare'))"
+  vars:
+    - v0

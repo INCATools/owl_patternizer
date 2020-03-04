@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: cancer X disease has location X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/cancer_X_disease_has_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [malignant testicular germ cell tumor](http://purl.obolibrary.org/obo/MONDO_0003510), [ACTH-producing pituitary gland carcinoma](http://purl.obolibrary.org/obo/MONDO_0006069), [cancer of short bone of upper limb](http://purl.obolibrary.org/obo/MONDO_0024312) (4 total)
+
+classes: 
+  cancer: "http://purl.obolibrary.org/obo/MONDO_0004992"
+  malignant germ cell tumor: "http://purl.obolibrary.org/obo/MONDO_0006290"
+  testis: "UBERON:0000473"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'malignant germ cell tumor'"
+  v1: "'testis'"
+
+name:
+  # Could not induce name, using default
+  text: "cancer %s disease has location %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any cancer that %s and disease has location a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('cancer' and %s and ('disease has location' some %s))"
+  vars:
+    - v0
+    - v1

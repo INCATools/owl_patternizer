@@ -1,0 +1,48 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: neoplasm (disease) has modifier X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/neoplasm__disease__has_modifier_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [childhood neoplasm](http://purl.obolibrary.org/obo/MONDO_0021079), [rare epithelial tumor of stomach](http://purl.obolibrary.org/obo/MONDO_0018972), [inherited gynecological tumor](http://purl.obolibrary.org/obo/MONDO_0015981) (5 total)
+
+classes: 
+  Childhood onset: "http://purl.obolibrary.org/obo/HP_0011463"
+  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  rare: "http://purl.obolibrary.org/obo/MONDO_0021136"
+  inherited: "http://purl.obolibrary.org/obo/MONDO_0021152"
+  neoplastic, non-malignant: "PATO:0002096"
+  neoplastic, malignant: "PATO:0002097"
+
+
+relations: 
+  has modifier: "RO:0002573"
+
+
+vars:
+  v0: "'Childhood onset' or 'rare' or 'inherited' or 'neoplastic, non-malignant' or 'neoplastic, malignant'"
+
+name:
+  # Induced, frequency=0.2, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s bronchopulmonary tumor"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A neoplasm which is characterized by the absence of morphologic features associated with malignancy (severe cytologic atypia, tumor cell necrosis, and high mitotic rate). %s neoplasms remain confined to the original site of growth and do not metastasize to other anatomic sites."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('neoplasm (disease)' and ('has modifier' some %s))"
+  vars:
+    - v0

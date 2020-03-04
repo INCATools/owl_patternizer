@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: autosomal dominant nonsyndromic deafness disease has basis in dysfunction of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/autosomal_dominant_nonsyndromic_deafness_disease_has_basis_in_dysfunction_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [autosomal dominant nonsyndromic deafness 23](http://purl.obolibrary.org/obo/MONDO_0011519), [autosomal dominant nonsyndromic deafness 12](http://purl.obolibrary.org/obo/MONDO_0011102), [autosomal dominant nonsyndromic deafness 6](http://purl.obolibrary.org/obo/MONDO_0010963) (35 total)
+
+classes: 
+  autosomal dominant nonsyndromic deafness: "http://purl.obolibrary.org/obo/MONDO_0019587"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Could not induce name, using default
+  text: "autosomal dominant nonsyndromic deafness disease has basis in dysfunction of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.9714285714285714, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any autosomal dominant nonsyndromic deafness in which the cause of the disease is a mutation in the %s gene."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s autosomal dominant nonsyndromic deafness"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('autosomal dominant nonsyndromic deafness' and ('disease has basis in dysfunction of' some %s))"
+  vars:
+    - v0

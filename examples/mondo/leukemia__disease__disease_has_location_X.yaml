@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: leukemia (disease) disease has location X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/leukemia__disease__disease_has_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [T-cell leukemia](http://purl.obolibrary.org/obo/MONDO_0005525), [aggressive NK-cell leukemia](http://purl.obolibrary.org/obo/MONDO_0019470), [central nervous system leukemia](http://purl.obolibrary.org/obo/MONDO_0001606) (4 total)
+
+classes: 
+  independent continuant: "BFO:0000004"
+  leukemia (disease): "http://purl.obolibrary.org/obo/MONDO_0005059"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'independent continuant'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s leukemia"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A leukemia (disease) that involves the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s leukemia (disease)"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('leukemia (disease)' and ('disease has location' some %s))"
+  vars:
+    - v0

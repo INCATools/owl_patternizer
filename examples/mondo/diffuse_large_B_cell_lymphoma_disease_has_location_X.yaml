@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: diffuse large B-cell lymphoma disease has location X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/diffuse_large_B_cell_lymphoma_disease_has_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [breast diffuse large B-cell lymphoma](http://purl.obolibrary.org/obo/MONDO_0006117), [diffuse large B-cell lymphoma of the central nervous system](http://purl.obolibrary.org/obo/MONDO_0017596), [thyroid gland diffuse large B-cell lymphoma](http://purl.obolibrary.org/obo/MONDO_0006462) (7 total)
+
+classes: 
+  diffuse large B-cell lymphoma: "http://purl.obolibrary.org/obo/MONDO_0018905"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.42857142857142855, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s diffuse large B-cell lymphoma"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.14285714285714285, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A diffuse large B-cell lymphoma arising from the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s diffuse large B-cell lymphoma"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('diffuse large B-cell lymphoma' and ('disease has location' some %s))"
+  vars:
+    - v0

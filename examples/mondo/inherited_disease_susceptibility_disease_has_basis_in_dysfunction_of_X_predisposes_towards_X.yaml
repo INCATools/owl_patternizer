@@ -1,0 +1,56 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: inherited disease susceptibility disease has basis in dysfunction of X predisposes towards X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/inherited_disease_susceptibility_disease_has_basis_in_dysfunction_of_X_predisposes_towards_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [autism, susceptibility to, X-linked 5](http://purl.obolibrary.org/obo/MONDO_0010449), [bulimia nervosa, susceptibility to, 2](http://purl.obolibrary.org/obo/MONDO_0012461), [nephrolithiasis susceptibility caused by SLC26A1](http://purl.obolibrary.org/obo/MONDO_0020722) (75 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  inherited disease susceptibility: "http://purl.obolibrary.org/obo/MONDO_0020573"
+  SO_0001217: "SO:0001217"
+
+
+relations: 
+  disease has basis in dysfunction of: "RO:0004020"
+  predisposes towards: "http://purl.obolibrary.org/obo/mondo#predisposes_towards"
+
+
+vars:
+  v0: "'SO_0001217'"
+  v1: "'disease or disorder'"
+
+name:
+  # Could not induce name, using default
+  text: "inherited disease susceptibility disease has basis in dysfunction of %s predisposes towards %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.6133333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any %s in which the cause of the disease is a mutation in the %s gene."
+  vars:
+    - v1
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "('inherited disease susceptibility' and ('disease has basis in dysfunction of' some %s) and ('predisposes towards' some %s))"
+  vars:
+    - v0
+    - v1

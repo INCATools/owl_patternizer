@@ -1,0 +1,54 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has modifier X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_has_modifier_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [autosomal dominant disease](http://purl.obolibrary.org/obo/MONDO_0000426), [autosomal recessive disease](http://purl.obolibrary.org/obo/MONDO_0006025), [X-linked disease](http://purl.obolibrary.org/obo/MONDO_0000425) (1007 total)
+
+classes: 
+  disposition: "BFO:0000016"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  has modifier: "RO:0002573"
+
+
+vars:
+  v0: "'disposition'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.35749751737835156, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.13704071499503476, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s form of %s."
+  vars:
+    - v1
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s, %s"
+    vars:
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "(%s and ('has modifier' some %s))"
+  vars:
+    - v0
+    - v1

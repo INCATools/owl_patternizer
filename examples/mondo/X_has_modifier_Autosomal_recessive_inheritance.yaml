@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has modifier Autosomal recessive inheritance
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_has_modifier_Autosomal_recessive_inheritance
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [autosomal recessive disease](http://purl.obolibrary.org/obo/MONDO_0006025), [autosomal recessive hypophosphatemic rickets](http://purl.obolibrary.org/obo/MONDO_0017324), [bifid nose, autosomal recessive](http://purl.obolibrary.org/obo/MONDO_0008866) (52 total)
+
+classes: 
+  disposition: "BFO:0000016"
+  Autosomal recessive inheritance: "http://purl.obolibrary.org/obo/HP_0000007"
+
+
+relations: 
+  has modifier: "RO:0002573"
+
+
+vars:
+  v0: "'disposition'"
+
+name:
+  # Induced, frequency=0.7307692307692307, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "autosomal recessive %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5384615384615384, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Autosomal recessive form of %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s, autosomal recessive"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('has modifier' some 'Autosomal recessive inheritance'))"
+  vars:
+    - v0

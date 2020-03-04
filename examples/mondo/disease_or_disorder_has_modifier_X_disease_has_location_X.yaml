@@ -1,0 +1,50 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: disease or disorder has modifier X disease has location X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/disease_or_disorder_has_modifier_X_disease_has_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [congenital nervous system disorder](http://purl.obolibrary.org/obo/MONDO_0002320), [inherited odontologic disease](http://purl.obolibrary.org/obo/MONDO_0019183), [genetic parenchymatous liver disease](http://purl.obolibrary.org/obo/MONDO_0015508) (4 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease characteristic: "http://purl.obolibrary.org/obo/MONDO_0021125"
+  anatomical structure: "UBERON:0000061"
+
+
+relations: 
+  has modifier: "RO:0002573"
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'disease characteristic'"
+  v1: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s disorder"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any disease or disorder that has modifier a %s and disease has location a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('disease or disorder' and ('has modifier' some %s) and ('disease has location' some %s))"
+  vars:
+    - v0
+    - v1

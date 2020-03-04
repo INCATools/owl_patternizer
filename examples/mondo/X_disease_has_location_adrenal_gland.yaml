@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease has location adrenal gland
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_has_location_adrenal_gland
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [adrenal gland disease](http://purl.obolibrary.org/obo/MONDO_0005495), [adrenal gland cancer](http://purl.obolibrary.org/obo/MONDO_0002817), [adrenal carcinoma](http://purl.obolibrary.org/obo/MONDO_0002814) (7 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  adrenal gland: "UBERON:0002369"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'disease or disorder'"
+
+name:
+  # Induced, frequency=0.7142857142857143, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "adrenal gland %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2857142857142857, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s arising from the adrenal gland."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "adrenal gland %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('disease has location' some 'adrenal gland'))"
+  vars:
+    - v0

@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: inherited disease susceptibility predisposes towards X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/inherited_disease_susceptibility_predisposes_towards_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [chronic mucocutaneous candidiasis (disease)](http://purl.obolibrary.org/obo/MONDO_0015279), [inherited susceptibility to asthma](http://purl.obolibrary.org/obo/MONDO_0010940), [Kaposi sarcoma, susceptibility to](http://purl.obolibrary.org/obo/MONDO_0007845) (19 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  inherited disease susceptibility: "http://purl.obolibrary.org/obo/MONDO_0020573"
+
+
+relations: 
+  predisposes towards: "http://purl.obolibrary.org/obo/mondo#predisposes_towards"
+
+
+vars:
+  v0: "'disease or disorder'"
+
+name:
+  # Induced, frequency=0.47368421052631576, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s, susceptibility to"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any inherited disease susceptibility that predisposes towards a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s, susceptibility to"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('inherited disease susceptibility' and ('predisposes towards' some %s))"
+  vars:
+    - v0

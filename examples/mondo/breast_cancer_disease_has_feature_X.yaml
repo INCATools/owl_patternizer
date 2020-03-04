@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: breast cancer disease has feature X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/breast_cancer_disease_has_feature_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [estrogen-receptor positive breast cancer](http://purl.obolibrary.org/obo/MONDO_0006512), [estrogen-receptor negative breast cancer](http://purl.obolibrary.org/obo/MONDO_0006513), [progesterone-receptor positive breast cancer](http://purl.obolibrary.org/obo/MONDO_0000615) (6 total)
+
+classes: 
+  breast cancer: "http://purl.obolibrary.org/obo/MONDO_0007254"
+  NCIT_C15492: "NCIT:C15492"
+  NCIT_C15493: "NCIT:C15493"
+  NCIT_C15496: "NCIT:C15496"
+  NCIT_C15497: "NCIT:C15497"
+  NCIT_C68748: "NCIT:C68748"
+  NCIT_C68749: "NCIT:C68749"
+
+
+relations: 
+  disease has feature: "RO:0004029"
+
+
+vars:
+  v0: "'NCIT_C15492' or 'NCIT_C15493' or 'NCIT_C15496' or 'NCIT_C15497' or 'NCIT_C68748' or 'NCIT_C68749'"
+
+name:
+  # Could not induce name, using default
+  text: "breast cancer disease has feature %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any breast cancer that disease has feature a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('breast cancer' and ('disease has feature' some %s))"
+  vars:
+    - v0

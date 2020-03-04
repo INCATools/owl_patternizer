@@ -1,0 +1,50 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: severe congenital neutropenia has modifier X disease has basis in dysfunction of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/severe_congenital_neutropenia_has_modifier_X_disease_has_basis_in_dysfunction_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [congenital neutropenia-myelofibrosis-nephromegaly syndrome](http://purl.obolibrary.org/obo/MONDO_0014118), [autosomal recessive severe congenital neutropenia due to CSF3R deficiency](http://purl.obolibrary.org/obo/MONDO_0014865), [autosomal recessive severe congenital neutropenia due to G6PC3 deficiency](http://purl.obolibrary.org/obo/MONDO_0012930) (5 total)
+
+classes: 
+  Autosomal recessive inheritance: "http://purl.obolibrary.org/obo/HP_0000007"
+  severe congenital neutropenia: "http://purl.obolibrary.org/obo/MONDO_0018542"
+  SO_0001217: "SO:0001217"
+
+
+relations: 
+  has modifier: "RO:0002573"
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'Autosomal recessive inheritance'"
+  v1: "'SO_0001217'"
+
+name:
+  # Induced, frequency=0.8, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s severe congenital neutropenia due to %s deficiency"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any severe congenital neutropenia that has modifier a %s and disease has basis in dysfunction of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('severe congenital neutropenia' and ('has modifier' some %s) and ('disease has basis in dysfunction of' some %s))"
+  vars:
+    - v0
+    - v1

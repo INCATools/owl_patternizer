@@ -1,0 +1,72 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has modifier X disease has location X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_has_modifier_X_disease_has_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [congenital nervous system disorder](http://purl.obolibrary.org/obo/MONDO_0002320), [inherited odontologic disease](http://purl.obolibrary.org/obo/MONDO_0019183), [genetic parenchymatous liver disease](http://purl.obolibrary.org/obo/MONDO_0015508) (43 total)
+
+classes: 
+  Adult onset: "http://purl.obolibrary.org/obo/HP_0003581"
+  Childhood onset: "http://purl.obolibrary.org/obo/HP_0011463"
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  has an isolated presentation: "http://purl.obolibrary.org/obo/MONDO_0021128"
+  congenital: "http://purl.obolibrary.org/obo/MONDO_0021140"
+  inherited: "http://purl.obolibrary.org/obo/MONDO_0021152"
+  tumor grade 1, general grading system: "http://purl.obolibrary.org/obo/MONDO_0024491"
+  tumor grade 2, general grading system: "http://purl.obolibrary.org/obo/MONDO_0024492"
+  NCIT_C45980: "NCIT:C45980"
+  chronic: "PATO:0001863"
+  neoplastic, malignant: "PATO:0002097"
+  neoplastic, invasive: "PATO:0002129"
+  anatomical structure: "UBERON:0000061"
+  stomach: "UBERON:0000945"
+
+
+relations: 
+  has modifier: "RO:0002573"
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'disease or disorder'"
+  v1: "'Adult onset' or 'Childhood onset' or 'has an isolated presentation' or 'congenital' or 'inherited' or 'tumor grade 1, general grading system' or 'tumor grade 2, general grading system' or 'NCIT_C45980' or 'chronic' or 'neoplastic, malignant' or 'neoplastic, invasive' or 'stomach'"
+  v2: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.09302325581395349, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s %s"
+  vars:
+    - v2
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.16279069767441862, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s, low grade %s (carcinoid tumor) that arises from the %s. The mitotic count is less than 2 per 10 HPF and/or the Ki67 index is equal to or less than 2 percent."
+  vars:
+    - v1
+    - v0
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s %s"
+    vars:
+      - v2
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "(%s and ('has modifier' some %s) and ('disease has location' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has modifier has a syndromic presentation
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_has_modifier_has_a_syndromic_presentation
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [syndromic disease](http://purl.obolibrary.org/obo/MONDO_0002254), [syndromic intellectual disability](http://purl.obolibrary.org/obo/MONDO_0000508), [syndromic myopia](http://purl.obolibrary.org/obo/MONDO_0020208) (32 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  has a syndromic presentation: "http://purl.obolibrary.org/obo/MONDO_0021127"
+
+
+relations: 
+  has modifier: "RO:0002573"
+
+
+vars:
+  v0: "'disease or disorder'"
+
+name:
+  # Induced, frequency=0.90625, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "syndromic %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.90625, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a larger syndrome."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "syndrome associated with %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('has modifier' some 'has a syndromic presentation'))"
+  vars:
+    - v0

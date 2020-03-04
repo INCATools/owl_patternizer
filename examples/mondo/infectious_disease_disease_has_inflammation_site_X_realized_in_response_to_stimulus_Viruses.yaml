@@ -1,0 +1,46 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: infectious disease disease has inflammation site X realized in response to stimulus Viruses
+pattern_iri: http://purl.obolibrary.org/obo/mondo/infectious_disease_disease_has_inflammation_site_X_realized_in_response_to_stimulus_Viruses
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [viral gastritis](http://purl.obolibrary.org/obo/MONDO_0002270), [viral esophagitis](http://purl.obolibrary.org/obo/MONDO_0003846), [viral laryngitis](http://purl.obolibrary.org/obo/MONDO_0002646) (8 total)
+
+classes: 
+  infectious disease: "http://purl.obolibrary.org/obo/MONDO_0005550"
+  Viruses: "http://purl.obolibrary.org/obo/NCBITaxon_10239"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  disease has inflammation site: "RO:0004027"
+  realized in response to stimulus: "RO:0004028"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.125, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "viral %sitis"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.125, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Acute inflammation of the %s caused by viruses, including rhinovirus, influenza virus, parainfluenza virus, and adenovirus."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('infectious disease' and ('disease has inflammation site' some %s) and ('realized in response to stimulus' some 'Viruses'))"
+  vars:
+    - v0

@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease has location renal pelvis
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_has_location_renal_pelvis
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [renal pelvis inverted papilloma](http://purl.obolibrary.org/obo/MONDO_0003776), [kidney pelvis sarcomatoid transitional cell carcinoma](http://purl.obolibrary.org/obo/MONDO_0004009), [renal pelvis urothelial papilloma](http://purl.obolibrary.org/obo/MONDO_0003777) (13 total)
+
+classes: 
+  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  renal pelvis: "UBERON:0001224"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'neoplasm (disease)'"
+
+name:
+  # Induced, frequency=0.46153846153846156, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "renal pelvis %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.38461538461538464, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that involves the renal pelvis."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "renal pelvis %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('disease has location' some 'renal pelvis'))"
+  vars:
+    - v0

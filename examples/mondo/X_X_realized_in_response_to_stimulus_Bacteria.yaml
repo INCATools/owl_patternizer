@@ -1,0 +1,48 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X realized in response to stimulus Bacteria
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_X_realized_in_response_to_stimulus_Bacteria
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [bacterial pneumonia](http://purl.obolibrary.org/obo/MONDO_0004652), [bacterial gastritis](http://purl.obolibrary.org/obo/MONDO_0002842), [bacterial conjunctivitis](http://purl.obolibrary.org/obo/MONDO_0006668) (5 total)
+
+classes: 
+  infectious disease: "http://purl.obolibrary.org/obo/MONDO_0005550"
+  Bacteria: "http://purl.obolibrary.org/obo/NCBITaxon_2"
+
+
+relations: 
+  realized in response to stimulus: "RO:0004028"
+
+
+vars:
+  v0: "'infectious disease'"
+  v1: "'infectious disease'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s realized in response to stimulus Bacteria"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.2, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Acute %s of the lung parenchyma caused by bacteria (e.g., Streptococcus %se, Haemophilus influenzae, Chlamydia pneumoniae, Mycoplasma pneumoniae, and Legionella pneumophila). Signs and symptoms include productive cough, fever, chills, shortness of breath, and chest pain."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and %s and ('realized in response to stimulus' some 'Bacteria'))"
+  vars:
+    - v0
+    - v1

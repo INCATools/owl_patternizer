@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease has location epicardium
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_has_location_epicardium
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [epicardium cancer](http://purl.obolibrary.org/obo/MONDO_0003104), [neoplasm of epicardium](http://purl.obolibrary.org/obo/MONDO_0021379), [epicardium lipoma](http://purl.obolibrary.org/obo/MONDO_0003840) (4 total)
+
+classes: 
+  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  epicardium: "UBERON:0002348"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'neoplasm (disease)'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of epicardium"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that involves the epicardium."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of the epicardium"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('disease has location' some 'epicardium'))"
+  vars:
+    - v0

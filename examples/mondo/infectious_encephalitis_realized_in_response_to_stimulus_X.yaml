@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: infectious encephalitis realized in response to stimulus X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/infectious_encephalitis_realized_in_response_to_stimulus_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [herpes simplex encephalitis](http://purl.obolibrary.org/obo/MONDO_0012521), [western equine encephalitis](http://purl.obolibrary.org/obo/MONDO_0019380), [st. Louis encephalitis](http://purl.obolibrary.org/obo/MONDO_0005969) (6 total)
+
+classes: 
+  infectious encephalitis: "http://purl.obolibrary.org/obo/MONDO_0020067"
+  root: "http://purl.obolibrary.org/obo/NCBITaxon_1"
+
+
+relations: 
+  realized in response to stimulus: "RO:0004028"
+
+
+vars:
+  v0: "'root'"
+
+name:
+  # Could not induce name, using default
+  text: "infectious encephalitis realized in response to stimulus %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A viral encephalitis caused by the %s (encephalitis virus, st. louis), a flavivirus. It is transmitted to humans and other vertebrates primarily by mosquitoes of the genus culex. The primary animal vectors are wild birds and the disorder is endemic to the midwestern and southeastern United States. Infections may be limited to an influenza-like illness or present as an aseptic meningitis or encephalitis. Clinical manifestations of the encephalitic presentation may include seizures, lethargy, myoclonus, focal neurologic signs, coma, and death. (From Adams et al., Principles of Neurology, 6th ed, p750)"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s caused infectious encephalitis"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('infectious encephalitis' and ('realized in response to stimulus' some %s))"
+  vars:
+    - v0

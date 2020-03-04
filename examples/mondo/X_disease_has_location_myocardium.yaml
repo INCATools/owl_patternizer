@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease has location myocardium
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_has_location_myocardium
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [myocardial disorder](http://purl.obolibrary.org/obo/MONDO_0024643), [myocardium cancer](http://purl.obolibrary.org/obo/MONDO_0004749), [myocardial ischemia](http://purl.obolibrary.org/obo/MONDO_0024644) (5 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  myocardium: "UBERON:0002349"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'disease or disorder'"
+
+name:
+  # Induced, frequency=0.4, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of myocardium"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.4, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that involves the myocardium."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "myocardium %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('disease has location' some 'myocardium'))"
+  vars:
+    - v0

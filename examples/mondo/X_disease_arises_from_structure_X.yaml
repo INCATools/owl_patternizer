@@ -1,0 +1,54 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X disease arises from structure X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_disease_arises_from_structure_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [transitional cell papilloma](http://purl.obolibrary.org/obo/MONDO_0005605), [gonadal teratoma](http://purl.obolibrary.org/obo/MONDO_0006233), [ovarian teratoma](http://purl.obolibrary.org/obo/MONDO_0005602) (58 total)
+
+classes: 
+  independent continuant: "BFO:0000004"
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+
+
+relations: 
+  disease arises from structure: "RO:0004030"
+
+
+vars:
+  v0: "'disease or disorder'"
+  v1: "'independent continuant'"
+
+name:
+  # Induced, frequency=0.1206896551724138, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that disease arises from structure a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('disease arises from structure' some %s))"
+  vars:
+    - v0
+    - v1

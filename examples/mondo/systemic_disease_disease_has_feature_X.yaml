@@ -1,0 +1,45 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: systemic disease disease has feature X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/systemic_disease_disease_has_feature_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [systemic diseases with posterior uveitis](http://purl.obolibrary.org/obo/MONDO_0017260), [systemic disease with skin involvement](http://purl.obolibrary.org/obo/MONDO_0017368), [systemic disease with cataract](http://purl.obolibrary.org/obo/MONDO_0020227) (5 total)
+
+classes: 
+  systemic disease: "http://purl.obolibrary.org/obo/MONDO_0015938"
+  disease by anatomical system: "http://purl.obolibrary.org/obo/MONDO_0021199"
+  disorder by anatomical region: "http://purl.obolibrary.org/obo/MONDO_0024505"
+
+
+relations: 
+  disease has feature: "RO:0004029"
+
+
+vars:
+  v0: "'disease by anatomical system' or 'disorder by anatomical region'"
+
+name:
+  # Induced, frequency=0.6, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "systemic diseases with %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any systemic disease that disease has feature a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('systemic disease' and ('disease has feature' some %s))"
+  vars:
+    - v0

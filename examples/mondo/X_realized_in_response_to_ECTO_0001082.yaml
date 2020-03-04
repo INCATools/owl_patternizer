@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X realized in response to ECTO_0001082
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_realized_in_response_to_ECTO_0001082
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [alcohol amnestic disorder](http://purl.obolibrary.org/obo/MONDO_0021702), [alcoholic polyneuropathy](http://purl.obolibrary.org/obo/MONDO_0006645), [alcoholic hepatitis](http://purl.obolibrary.org/obo/MONDO_0001505) (14 total)
+
+classes: 
+  ECTO_0001082: "http://purl.obolibrary.org/obo/ECTO_0001082"
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+
+
+relations: 
+  realized in response to: "RO:0009501"
+
+
+vars:
+  v0: "'disease or disorder'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "alcoholic %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that realized in response to a ECTO_0001082"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "alcoholic %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('realized in response to' some 'ECTO_0001082'))"
+  vars:
+    - v0

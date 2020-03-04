@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has modifier X-linked inheritance
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_has_modifier_X_linked_inheritance
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [X-linked disease](http://purl.obolibrary.org/obo/MONDO_0000425), [X-linked hypophosphatemic rickets (recessive or dominant)](http://purl.obolibrary.org/obo/MONDO_0020720), [mycobacterium tuberculosis, susceptibility to, X-linked](http://purl.obolibrary.org/obo/MONDO_0010282) (31 total)
+
+classes: 
+  disposition: "BFO:0000016"
+  X-linked inheritance: "http://purl.obolibrary.org/obo/HP_0001417"
+
+
+relations: 
+  has modifier: "RO:0002573"
+
+
+vars:
+  v0: "'disposition'"
+
+name:
+  # Induced, frequency=0.7096774193548387, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "X-linked %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.4838709677419355, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "X-linked form of %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s, X-linked"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('has modifier' some 'X-linked inheritance'))"
+  vars:
+    - v0

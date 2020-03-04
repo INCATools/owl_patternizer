@@ -1,0 +1,44 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: poisoning realized in response to X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/poisoning_realized_in_response_to_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [formaldehyde poisoning](http://purl.obolibrary.org/obo/MONDO_0023176), [cadmium poisoning](http://purl.obolibrary.org/obo/MONDO_0043523), [mercury poisoning](http://purl.obolibrary.org/obo/MONDO_0018020) (4 total)
+
+classes: 
+  exposure to chemical entity: "http://purl.obolibrary.org/obo/ECTO_0000231"
+  poisoning: "http://purl.obolibrary.org/obo/MONDO_0029000"
+
+
+relations: 
+  realized in response to: "RO:0009501"
+
+
+vars:
+  v0: "'exposure to chemical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "poisoning realized in response to %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Poisoning occurring after %s compounds or fumes. It may cause gastrointestinal syndromes, anemia, or pneumonitis."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('poisoning' and ('realized in response to' some %s))"
+  vars:
+    - v0

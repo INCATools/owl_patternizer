@@ -51,7 +51,7 @@
 :- debug(def).
 :- debug(patternizer).
 
-:- [tests/stacktrace].
+%:- [tests/stacktrace].
 
 % ----------------------------------------
 % settings for each ontology
@@ -62,7 +62,7 @@ ontology_config(pizza,    [min(2), base('http://purl.obolibrary.org/obo/pizza/')
 ontology_config(pato,     [infer_axioms(true), min(5), generalize_properties(false), ontology_prefix(pato)]).
 
 ontology_config(wine,     [min(2)]).
-ontology_config(cco,      [min(3), load_import_closure(false), generalize_properties(false)]).
+ontology_config(cco,      [infer_axioms(true), min(3), load_import_closure(false), generalize_properties(false)]).
 
 ontology_config(so,       [min(8)]).
 ontology_config(mso,      [min(5), max_class_signature(6), generalize_properties(false)]).
@@ -76,7 +76,7 @@ ontology_config(clo,      [min(20), ontology_prefix(clo)]).
 ontology_config(eco,      [min(10), ontology_prefix(eco)]).
 ontology_config(fbbt,     [min(50), generalize_properties(false)]).
 ontology_config(fbcv,     [infer_axioms(true), min(5), generalize_properties(false)]).
-ontology_config(mondo,    []).
+ontology_config(mondo,    [infer_axioms(true), min(4), generalize_properties(false), remove_inexact_synonyms(true)]).
 ontology_config(geo,      []).
 ontology_config(fao,      [infer_axioms(true), min(5), generalize_properties(false)]).
 ontology_config(ma,       [infer_axioms(true), min(12), generalize_properties(false)]).
@@ -129,6 +129,7 @@ ontology_config(ceph,     [min(8), generalize_properties(false)]).
 ontology_config(flopo,    [min(50), generalize_properties(false)]).
 ontology_config(agrovoc,  [infer_axioms(true), min(6), generalize_properties(false)]).
 ontology_config(mesh,     [infer_axioms(true), min(6), generalize_properties(false)]).
+ontology_config(medgen,   [infer_axioms(true), min(5), generalize_properties(false)]).
 ontology_config(gemet,    [is_skos(true), infer_links(true),new_class_prefix('http://x.org/'), infer_axioms(true), min(5), generalize_properties(false)]).
 
 autolabels :-

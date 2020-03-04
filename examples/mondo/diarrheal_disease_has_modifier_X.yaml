@@ -1,0 +1,52 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: diarrheal disease has modifier X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/diarrheal_disease_has_modifier_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [congenital diarrhea](http://purl.obolibrary.org/obo/MONDO_0000824), [infantile diarrhea](http://purl.obolibrary.org/obo/MONDO_0043555), [acute diarrhea](http://purl.obolibrary.org/obo/MONDO_0000257) (4 total)
+
+classes: 
+  Congenital onset: "http://purl.obolibrary.org/obo/HP_0003577"
+  Infantile onset: "http://purl.obolibrary.org/obo/HP_0003593"
+  diarrheal disease: "http://purl.obolibrary.org/obo/MONDO_0001673"
+  acute: "PATO:0000389"
+  chronic: "PATO:0001863"
+
+
+relations: 
+  has modifier: "RO:0002573"
+
+
+vars:
+  v0: "'Congenital onset' or 'Infantile onset' or 'acute' or 'chronic'"
+
+name:
+  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s diarrhea"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s form of diarrhea."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s diarrheal disease"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('diarrheal disease' and ('has modifier' some %s))"
+  vars:
+    - v0

@@ -1,0 +1,48 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X transmitted by X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_transmitted_by_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [tick-borne infectious disease](http://purl.obolibrary.org/obo/MONDO_0025294), [arbovirus infection](http://purl.obolibrary.org/obo/MONDO_0020731), [rat-bite fever](http://purl.obolibrary.org/obo/MONDO_0006941) (6 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  Bilateria: "http://purl.obolibrary.org/obo/NCBITaxon_33213"
+
+
+relations: 
+  transmitted by: "RO:0002451"
+
+
+vars:
+  v0: "'disease or disorder'"
+  v1: "'Bilateria'"
+
+name:
+  # Could not induce name, using default
+  text: "%s transmitted by %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s that is transmitted by %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('transmitted by' some %s))"
+  vars:
+    - v0
+    - v1

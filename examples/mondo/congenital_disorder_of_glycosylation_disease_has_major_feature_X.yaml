@@ -1,0 +1,56 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: congenital disorder of glycosylation disease has major feature X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/congenital_disorder_of_glycosylation_disease_has_major_feature_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [congenital disorder of glycosylation with nephropathy as a major feature](http://purl.obolibrary.org/obo/MONDO_0018294), [congenital disorder of glycosylation with deafness as a major feature](http://purl.obolibrary.org/obo/MONDO_0018295), [congenital disorder of glycosylation-related bone disorder](http://purl.obolibrary.org/obo/MONDO_0018292) (9 total)
+
+classes: 
+  Nephropathy: "http://purl.obolibrary.org/obo/HP_0000112"
+  Hearing impairment: "http://purl.obolibrary.org/obo/HP_0000365"
+  Abnormality of the skeletal system: "http://purl.obolibrary.org/obo/HP_0000924"
+  Abnormality of the skin: "http://purl.obolibrary.org/obo/HP_0000951"
+  Abnormality of the liver: "http://purl.obolibrary.org/obo/HP_0001392"
+  Dilated cardiomyopathy: "http://purl.obolibrary.org/obo/HP_0001644"
+  Abnormal intestine morphology: "http://purl.obolibrary.org/obo/HP_0002242"
+  epilepsy: "http://purl.obolibrary.org/obo/MONDO_0005027"
+  congenital disorder of glycosylation: "http://purl.obolibrary.org/obo/MONDO_0015286"
+
+
+relations: 
+  disease has major feature: "http://purl.obolibrary.org/obo/mondo#disease_has_major_feature"
+
+
+vars:
+  v0: "'Nephropathy' or 'Hearing impairment' or 'Abnormality of the skeletal system' or 'Abnormality of the skin' or 'Abnormality of the liver' or 'Dilated cardiomyopathy' or 'Abnormal intestine morphology' or 'epilepsy'"
+
+name:
+  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "congenital disorder of glycosylation with %s as a major feature"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any congenital disorder of glycosylation that disease has major feature a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "CDG with %s as a major feature"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('congenital disorder of glycosylation' and ('disease has major feature' some %s))"
+  vars:
+    - v0

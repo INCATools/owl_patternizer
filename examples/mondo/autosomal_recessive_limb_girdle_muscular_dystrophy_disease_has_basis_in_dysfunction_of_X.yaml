@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: autosomal recessive limb-girdle muscular dystrophy disease has basis in dysfunction of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/autosomal_recessive_limb_girdle_muscular_dystrophy_disease_has_basis_in_dysfunction_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [autosomal recessive limb-girdle muscular dystrophy type 2D](http://purl.obolibrary.org/obo/MONDO_0011968), [autosomal recessive limb-girdle muscular dystrophy type 2E](http://purl.obolibrary.org/obo/MONDO_0011423), [autosomal recessive limb-girdle muscular dystrophy type 2F](http://purl.obolibrary.org/obo/MONDO_0011028) (24 total)
+
+classes: 
+  autosomal recessive limb-girdle muscular dystrophy: "http://purl.obolibrary.org/obo/MONDO_0015152"
+  SO_0001217: "SO:0001217"
+
+
+relations: 
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'SO_0001217'"
+
+name:
+  # Could not induce name, using default
+  text: "autosomal recessive limb-girdle muscular dystrophy disease has basis in dysfunction of %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any autosomal recessive limb-girdle muscular dystrophy that disease has basis in dysfunction of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s autosomal recessive limb-girdle muscular dystrophy"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('autosomal recessive limb-girdle muscular dystrophy' and ('disease has basis in dysfunction of' some %s))"
+  vars:
+    - v0

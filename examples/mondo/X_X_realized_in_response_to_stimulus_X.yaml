@@ -1,0 +1,52 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X realized in response to stimulus X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_X_realized_in_response_to_stimulus_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [hantavirus pulmonary syndrome](http://purl.obolibrary.org/obo/MONDO_0017879), [Epstein-Barr virus hepatitis](http://purl.obolibrary.org/obo/MONDO_0000286), [malignant otitis externa caused by Pseudomonas aeruginosa](http://purl.obolibrary.org/obo/MONDO_0041095) (85 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  realized in response to stimulus: "RO:0004028"
+
+
+vars:
+  v0: "'disease or disorder'"
+  v1: "'disease or disorder'"
+  v2: "'owl:Thing'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s realized in response to stimulus %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Induced, frequency=0.2235294117647059, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An %s caused by %s with %s."
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and %s and ('realized in response to stimulus' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

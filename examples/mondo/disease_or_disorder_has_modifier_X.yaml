@@ -1,0 +1,60 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: disease or disorder has modifier X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/disease_or_disorder_has_modifier_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [autosomal dominant disease](http://purl.obolibrary.org/obo/MONDO_0000426), [autosomal recessive disease](http://purl.obolibrary.org/obo/MONDO_0006025), [X-linked disease](http://purl.obolibrary.org/obo/MONDO_0000425) (14 total)
+
+classes: 
+  Autosomal dominant inheritance: "http://purl.obolibrary.org/obo/HP_0000006"
+  Autosomal recessive inheritance: "http://purl.obolibrary.org/obo/HP_0000007"
+  X-linked recessive inheritance: "http://purl.obolibrary.org/obo/HP_0001419"
+  X-linked dominant inheritance: "http://purl.obolibrary.org/obo/HP_0001423"
+  Y-linked inheritance: "http://purl.obolibrary.org/obo/HP_0001450"
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  has a syndromic presentation: "http://purl.obolibrary.org/obo/MONDO_0021127"
+  rare: "http://purl.obolibrary.org/obo/MONDO_0021136"
+  congenital: "http://purl.obolibrary.org/obo/MONDO_0021140"
+  acquired: "http://purl.obolibrary.org/obo/MONDO_0021141"
+  inherited: "http://purl.obolibrary.org/obo/MONDO_0021152"
+  disseminated: "http://purl.obolibrary.org/obo/MONDO_0022202"
+  acute: "PATO:0000389"
+
+
+relations: 
+  has modifier: "RO:0002573"
+
+
+vars:
+  v0: "'Autosomal dominant inheritance' or 'Autosomal recessive inheritance' or 'X-linked recessive inheritance' or 'X-linked dominant inheritance' or 'Y-linked inheritance' or 'has a syndromic presentation' or 'rare' or 'congenital' or 'acquired' or 'inherited' or 'disseminated' or 'acute'"
+
+name:
+  # Induced, frequency=0.42857142857142855, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s disease"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.35714285714285715, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s form of disease."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s disease or disorder"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('disease or disorder' and ('has modifier' some %s))"
+  vars:
+    - v0

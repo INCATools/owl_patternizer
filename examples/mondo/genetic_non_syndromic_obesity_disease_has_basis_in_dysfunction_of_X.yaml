@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: genetic non-syndromic obesity disease has basis in dysfunction of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/genetic_non_syndromic_obesity_disease_has_basis_in_dysfunction_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [obesity due to SIM1 deficiency](http://purl.obolibrary.org/obo/MONDO_0018244), [obesity due to CEP19 deficiency](http://purl.obolibrary.org/obo/MONDO_0014309), [severe early-onset obesity-insulin resistance syndrome due to SH2B1 deficiency](http://purl.obolibrary.org/obo/MONDO_0017994) (8 total)
+
+classes: 
+  genetic non-syndromic obesity: "http://purl.obolibrary.org/obo/MONDO_0020075"
+  SO_0001217: "SO:0001217"
+
+
+relations: 
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'SO_0001217'"
+
+name:
+  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "obesity due to %s deficiency"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.125, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Congenital %stin deficiency is a form of monogenic obesity characterised by severe early-onset obesity and marked hyperphagia."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s deficiency"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('genetic non-syndromic obesity' and ('disease has basis in dysfunction of' some %s))"
+  vars:
+    - v0

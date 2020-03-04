@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: Paget disease disease has location X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/Paget_disease_disease_has_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cutaneous Paget disease](http://purl.obolibrary.org/obo/MONDO_0002655), [anal canal Paget disease](http://purl.obolibrary.org/obo/MONDO_0004468), [mammary Paget disease](http://purl.obolibrary.org/obo/MONDO_0002648) (8 total)
+
+classes: 
+  Paget disease: "http://purl.obolibrary.org/obo/MONDO_0021165"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.375, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s Paget disease"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.125, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A malignant neoplasm in which there is infiltration of the %s by neoplastic large cells with abundant pale cytoplasm and large nuclei with prominent nucleoli (Paget cells). It may affect the anus, penis, scrotum, and vulva."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s Paget disease"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('Paget disease' and ('disease has location' some %s))"
+  vars:
+    - v0

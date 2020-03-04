@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: clear cell adenocarcinoma disease has location X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/clear_cell_adenocarcinoma_disease_has_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cervical clear cell adenocarcinoma](http://purl.obolibrary.org/obo/MONDO_0006135), [urethra clear cell adenocarcinoma](http://purl.obolibrary.org/obo/MONDO_0003387), [ovarian clear cell adenocarcinoma](http://purl.obolibrary.org/obo/MONDO_0006045) (10 total)
+
+classes: 
+  clear cell adenocarcinoma: "http://purl.obolibrary.org/obo/MONDO_0005004"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.6, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s clear cell adenocarcinoma"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A carcinoma with glandular differentiation arising from the %s. Morphologically, it is characterized by the presence of glycogen-rich cells with hyperchromatic nuclei."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s clear cell adenocarcinoma"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('clear cell adenocarcinoma' and ('disease has location' some %s))"
+  vars:
+    - v0

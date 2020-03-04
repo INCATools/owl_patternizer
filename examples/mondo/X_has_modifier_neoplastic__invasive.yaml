@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has modifier neoplastic, invasive
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_has_modifier_neoplastic__invasive
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [invasive lobular breast carcinoma](http://purl.obolibrary.org/obo/MONDO_0005051), [invasive breast carcinoma](http://purl.obolibrary.org/obo/MONDO_0006256), [invasive carcinoma](http://purl.obolibrary.org/obo/MONDO_0040677) (9 total)
+
+classes: 
+  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  neoplastic, invasive: "PATO:0002129"
+
+
+relations: 
+  has modifier: "RO:0002573"
+
+
+vars:
+  v0: "'neoplasm (disease)'"
+
+name:
+  # Induced, frequency=0.6666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "invasive %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1111111111111111, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is not confined to the epithelium, and has spread to the surrounding stroma."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "invasive %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('has modifier' some 'neoplastic, invasive'))"
+  vars:
+    - v0

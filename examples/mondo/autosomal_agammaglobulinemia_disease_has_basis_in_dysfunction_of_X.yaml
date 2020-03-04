@@ -1,0 +1,56 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: autosomal agammaglobulinemia disease has basis in dysfunction of X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/autosomal_agammaglobulinemia_disease_has_basis_in_dysfunction_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [agammaglobulinemia 8, autosomal dominant](http://purl.obolibrary.org/obo/MONDO_0014840), [agammaglobulinemia 4, autosomal recessive](http://purl.obolibrary.org/obo/MONDO_0013289), [agammaglobulinemia 3, autosomal recessive](http://purl.obolibrary.org/obo/MONDO_0013288) (8 total)
+
+classes: 
+  TCF3: "http://identifiers.org/hgnc/11633"
+  BLNK: "http://identifiers.org/hgnc/14211"
+  CD79A: "http://identifiers.org/hgnc/1698"
+  CD79B: "http://identifiers.org/hgnc/1699"
+  LRRC8A: "http://identifiers.org/hgnc/19027"
+  IGHM: "http://identifiers.org/hgnc/5541"
+  IGLL1: "http://identifiers.org/hgnc/5870"
+  PIK3R1: "http://identifiers.org/hgnc/8979"
+  autosomal agammaglobulinemia: "http://purl.obolibrary.org/obo/MONDO_0011096"
+
+
+relations: 
+  disease has basis in dysfunction of: "RO:0004020"
+
+
+vars:
+  v0: "'TCF3' or 'BLNK' or 'CD79A' or 'CD79B' or 'LRRC8A' or 'IGHM' or 'IGLL1' or 'PIK3R1'"
+
+name:
+  # Could not induce name, using default
+  text: "autosomal agammaglobulinemia disease has basis in dysfunction of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.875, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any autosomal agammaglobulinemia in which the cause of the disease is a mutation in the %s gene."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s autosomal agammaglobulinemia"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('autosomal agammaglobulinemia' and ('disease has basis in dysfunction of' some %s))"
+  vars:
+    - v0

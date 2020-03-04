@@ -1,0 +1,54 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: peripheral neuropathy disease has location X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/peripheral_neuropathy_disease_has_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [axonal neuropathy](http://purl.obolibrary.org/obo/MONDO_0004183), [sensory peripheral neuropathy](http://purl.obolibrary.org/obo/MONDO_0002321), [median nerve neuropathy](http://purl.obolibrary.org/obo/MONDO_0003598) (6 total)
+
+classes: 
+  axon: "GO:0030424"
+  peripheral neuropathy: "http://purl.obolibrary.org/obo/MONDO_0005244"
+  sensory nerve: "UBERON:0001027"
+  median nerve: "UBERON:0001148"
+  radial nerve: "UBERON:0001492"
+  brachial nerve plexus: "UBERON:0001814"
+  autonomic nervous system: "UBERON:0002410"
+
+
+relations: 
+  disease has location: "RO:0004026"
+
+
+vars:
+  v0: "'axon' or 'sensory nerve' or 'median nerve' or 'radial nerve' or 'brachial nerve plexus' or 'autonomic nervous system'"
+
+name:
+  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s neuropathy"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s disorder characterized by regional paresthesia, pain and muscle weakness, and limited movement in the arm or hand."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s peripheral neuropathy"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('peripheral neuropathy' and ('disease has location' some %s))"
+  vars:
+    - v0

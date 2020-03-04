@@ -1,0 +1,50 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: infectious disease disease has location X realized in response to stimulus X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/infectious_disease_disease_has_location_X_realized_in_response_to_stimulus_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cutaneous syphilis](http://purl.obolibrary.org/obo/MONDO_0006718), [Aeromonas hydrophila intestinal disease](http://purl.obolibrary.org/obo/MONDO_0024459), [Trichomonas vaginitis urogenital infection](http://purl.obolibrary.org/obo/MONDO_0005993) (6 total)
+
+classes: 
+  infectious disease: "http://purl.obolibrary.org/obo/MONDO_0005550"
+  root: "http://purl.obolibrary.org/obo/NCBITaxon_1"
+  anatomical structure: "UBERON:0000061"
+
+
+relations: 
+  disease has location: "RO:0004026"
+  realized in response to stimulus: "RO:0004028"
+
+
+vars:
+  v0: "'anatomical structure'"
+  v1: "'root'"
+
+name:
+  # Induced, frequency=0.16666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%sl infection of %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Cutaneous lesions arising from infection with %s. In the primary stage, 18-21 days following infection, one or more chancres appear. If untreated, the subsequent stages of the disease appear as syphilids. These eruptions are superficial, nondestructive, exanthematic, transient, macular roseolas that may later be maculopapular or papular polymorphous or scaly, pustular, pigmented eruptions.(Arnold, Odom, and James, Andrew's Diseases of the %s, 8th ed, p409)"
+  vars:
+    - v1
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('infectious disease' and ('disease has location' some %s) and ('realized in response to stimulus' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: ependymal tumor has modifier X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/ependymal_tumor_has_modifier_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [subependymoma](http://purl.obolibrary.org/obo/MONDO_0007667), [benign ependymoma](http://purl.obolibrary.org/obo/MONDO_0003161), [anaplastic ependymoma](http://purl.obolibrary.org/obo/MONDO_0016700) (4 total)
+
+classes: 
+  ependymal tumor: "http://purl.obolibrary.org/obo/MONDO_0003266"
+  quality: "PATO:0000001"
+
+
+relations: 
+  has modifier: "RO:0002573"
+
+
+vars:
+  v0: "'quality'"
+
+name:
+  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s ependymoma"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A WHO %s, slow growing tumor of children and young adults, usually located intraventricularly. It is the most common ependymal neoplasm. It often causes clinical symptoms by blocking cerebrospinal fluid pathways. Key histological features include perivascular pseudorosettes and ependymal rosettes. (WHO)"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "WHO %s ependymal tumor"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('ependymal tumor' and ('has modifier' some %s))"
+  vars:
+    - v0

@@ -1,0 +1,48 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X has modifier inherited
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_X_has_modifier_inherited
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [inborn errors of metabolism](http://purl.obolibrary.org/obo/MONDO_0019052), [methylmalonic aciduria and homocystinuria type cblF](http://purl.obolibrary.org/obo/MONDO_0010183), [inherited isolated nail anomaly](http://purl.obolibrary.org/obo/MONDO_0019284) (6 total)
+
+classes: 
+  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  inherited: "http://purl.obolibrary.org/obo/MONDO_0021152"
+
+
+relations: 
+  has modifier: "RO:0002573"
+
+
+vars:
+  v0: "'disease or disorder'"
+  v1: "'disease or disorder'"
+
+name:
+  # Induced, frequency=0.16666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s and %s type cblF"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "cblF type %s with %s is a form of methylmalonic acidemia with homocystinuria, an inborn error of vitamin B12 (cobalamin) metabolism characterized by megaloblastic anemia, lethargy, failure to thrive, developmental delay, intellectual deficit and seizures. The disorder is caused by mutations in the LMBRD1 gene (6q13) and is transmitted in an autosomal recessive manner."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and %s and ('has modifier' some 'inherited'))"
+  vars:
+    - v0
+    - v1

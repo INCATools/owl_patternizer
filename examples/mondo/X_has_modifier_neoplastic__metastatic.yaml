@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has modifier neoplastic, metastatic
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_has_modifier_neoplastic__metastatic
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [metastatic malignant neoplasm in the lymph nodes](http://purl.obolibrary.org/obo/MONDO_0005438), [metastatic squamous cell carcinoma](http://purl.obolibrary.org/obo/MONDO_0044907), [metastatic melanoma](http://purl.obolibrary.org/obo/MONDO_0005191) (7 total)
+
+classes: 
+  neoplastic disease or syndrome: "http://purl.obolibrary.org/obo/MONDO_0023370"
+  neoplastic, metastatic: "PATO:0002098"
+
+
+relations: 
+  has modifier: "RO:0002573"
+
+
+vars:
+  v0: "'neoplastic disease or syndrome'"
+
+name:
+  # Induced, frequency=0.42857142857142855, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "metastatic %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.14285714285714285, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that has spread from its primary site to another anatomic site. Melanomas frequently metastasize to lymph nodes, liver, lungs, and brain."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "metastatic %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('has modifier' some 'neoplastic, metastatic'))"
+  vars:
+    - v0

@@ -1,0 +1,49 @@
+# options: [min(4),dir('examples/mondo'),trim(true),base('http://purl.obolibrary.org/obo/mondo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: infectious disease disease has inflammation site X
+pattern_iri: http://purl.obolibrary.org/obo/mondo/infectious_disease_disease_has_inflammation_site_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [skin infection](http://purl.obolibrary.org/obo/MONDO_0021201), [infective vaginitis](http://purl.obolibrary.org/obo/MONDO_0023557), [infectious colitis](http://purl.obolibrary.org/obo/MONDO_0006039) (11 total)
+
+classes: 
+  infectious disease: "http://purl.obolibrary.org/obo/MONDO_0005550"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  disease has inflammation site: "RO:0004027"
+
+
+vars:
+  v0: "'anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "infectious disease disease has inflammation site %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.18181818181818182, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An infectious disease involving a pathogenic inflammatory response in the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s infection"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('infectious disease' and ('disease has inflammation site' some %s))"
+  vars:
+    - v0
