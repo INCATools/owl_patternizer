@@ -8,7 +8,7 @@ description: >-
   Examples: [prostate disease](http://purl.obolibrary.org/obo/MONDO_0003105), [prostate small cell carcinoma](http://purl.obolibrary.org/obo/MONDO_0006390), [prostate leiomyoma](http://purl.obolibrary.org/obo/MONDO_0002452) (29 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   prostate gland: "UBERON:0002367"
 
 

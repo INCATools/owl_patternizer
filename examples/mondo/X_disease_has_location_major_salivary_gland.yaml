@@ -8,7 +8,7 @@ description: >-
   Examples: [major salivary gland carcinoma ex pleomorphic adenoma](http://purl.obolibrary.org/obo/MONDO_0006285), [major salivary gland mucoepidermoid carcinoma](http://purl.obolibrary.org/obo/MONDO_0006286), [major salivary gland adenoid cystic carcinoma](http://purl.obolibrary.org/obo/MONDO_0045063) (7 total)
 
 classes: 
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  neoplasm (disease): "MONDO:0005070"
   major salivary gland: "UBERON:0001829"
 
 

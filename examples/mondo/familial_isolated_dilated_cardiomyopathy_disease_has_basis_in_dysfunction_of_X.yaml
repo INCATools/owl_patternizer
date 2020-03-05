@@ -8,7 +8,7 @@ description: >-
   Examples: [dilated cardiomyopathy 1E](http://purl.obolibrary.org/obo/MONDO_0011003), [dilated cardiomyopathy 1GG](http://purl.obolibrary.org/obo/MONDO_0013339), [dilated cardiomyopathy 1L](http://purl.obolibrary.org/obo/MONDO_0011702) (30 total)
 
 classes: 
-  familial isolated dilated cardiomyopathy: "http://purl.obolibrary.org/obo/MONDO_0015470"
+  familial isolated dilated cardiomyopathy: "MONDO:0015470"
   SO_0001217: "SO:0001217"
 
 

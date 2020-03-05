@@ -8,7 +8,7 @@ description: >-
   Examples: [mature gastric teratoma](http://purl.obolibrary.org/obo/MONDO_0004467), [mature ovarian teratoma](http://purl.obolibrary.org/obo/MONDO_0003820), [central nervous system mature teratoma](http://purl.obolibrary.org/obo/MONDO_0003733) (5 total)
 
 classes: 
-  mature teratoma: "http://purl.obolibrary.org/obo/MONDO_0003517"
+  mature teratoma: "MONDO:0003517"
   multicellular anatomical structure: "UBERON:0010000"
 
 

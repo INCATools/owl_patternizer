@@ -8,7 +8,7 @@ description: >-
   Examples: [testicular yolk sac tumor](http://purl.obolibrary.org/obo/MONDO_0003402), [ovarian yolk sac tumor](http://purl.obolibrary.org/obo/MONDO_0006344), [vaginal yolk sac tumor](http://purl.obolibrary.org/obo/MONDO_0002143) (6 total)
 
 classes: 
-  yolk sac tumor: "http://purl.obolibrary.org/obo/MONDO_0005744"
+  yolk sac tumor: "MONDO:0005744"
   anatomical entity: "UBERON:0001062"
 
 

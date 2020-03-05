@@ -8,7 +8,7 @@ description: >-
   Examples: [mediastinal disease](http://purl.obolibrary.org/obo/MONDO_0043707), [mediastinum leiomyoma](http://purl.obolibrary.org/obo/MONDO_0003284), [mediastinal schwannoma](http://purl.obolibrary.org/obo/MONDO_0004398) (26 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   mediastinum: "UBERON:0003728"
 
 

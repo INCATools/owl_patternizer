@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   metabolic process: "GO:0008152"
-  inborn carbohydrate metabolic disorder: "http://purl.obolibrary.org/obo/MONDO_0019214"
+  inborn carbohydrate metabolic disorder: "MONDO:0019214"
 
 
 relations: 

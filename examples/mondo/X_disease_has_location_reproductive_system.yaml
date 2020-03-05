@@ -8,7 +8,7 @@ description: >-
   Examples: [reproductive system disease](http://purl.obolibrary.org/obo/MONDO_0005039), [genital herpes](http://purl.obolibrary.org/obo/MONDO_0005770), [reproductive system cancer](http://purl.obolibrary.org/obo/MONDO_0002149) (5 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   reproductive system: "UBERON:0000990"
 
 

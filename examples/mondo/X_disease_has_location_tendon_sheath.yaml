@@ -8,7 +8,7 @@ description: >-
   Examples: [tendon sheath disorder](http://purl.obolibrary.org/obo/MONDO_0024876), [tenosynovial giant cell tumor](http://purl.obolibrary.org/obo/MONDO_0002522), [tendon sheath lipoma](http://purl.obolibrary.org/obo/MONDO_0004076) (4 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   tendon sheath: "UBERON:0000304"
 
 

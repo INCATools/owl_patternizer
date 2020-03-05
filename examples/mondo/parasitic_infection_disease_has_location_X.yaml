@@ -8,7 +8,7 @@ description: >-
   Examples: [parasitic skin disease](http://purl.obolibrary.org/obo/MONDO_0024610), [parasitic intestinal disease](http://purl.obolibrary.org/obo/MONDO_0024270), [parasitic eye infection](http://purl.obolibrary.org/obo/MONDO_0020947) (4 total)
 
 classes: 
-  parasitic infection: "http://purl.obolibrary.org/obo/MONDO_0005135"
+  parasitic infection: "MONDO:0005135"
   multicellular anatomical structure: "UBERON:0010000"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [Noonan syndrome 8](http://purl.obolibrary.org/obo/MONDO_0014143), [Noonan syndrome 7](http://purl.obolibrary.org/obo/MONDO_0013379), [Noonan syndrome 4](http://purl.obolibrary.org/obo/MONDO_0012547) (8 total)
 
 classes: 
-  Noonan syndrome: "http://purl.obolibrary.org/obo/MONDO_0018997"
+  Noonan syndrome: "MONDO:0018997"
   SO_0001217: "SO:0001217"
 
 

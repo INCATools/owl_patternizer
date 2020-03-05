@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   process: "BFO:0000015"
-  hemolytic anemia: "http://purl.obolibrary.org/obo/MONDO_0003664"
+  hemolytic anemia: "MONDO:0003664"
 
 
 relations: 

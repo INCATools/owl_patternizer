@@ -8,7 +8,7 @@ description: >-
   Examples: [microcephaly 7, primary, autosomal recessive](http://purl.obolibrary.org/obo/MONDO_0012989), [microcephaly 6, primary, autosomal recessive](http://purl.obolibrary.org/obo/MONDO_0012029), [microcephaly 12, primary, autosomal recessive](http://purl.obolibrary.org/obo/MONDO_0014484) (12 total)
 
 classes: 
-  autosomal recessive primary microcephaly: "http://purl.obolibrary.org/obo/MONDO_0016660"
+  autosomal recessive primary microcephaly: "MONDO:0016660"
   SO_0001217: "SO:0001217"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [uterine cervix carcinoma in situ](http://purl.obolibrary.org/obo/MONDO_0042487), [skin carcinoma in situ](http://purl.obolibrary.org/obo/MONDO_0004641), [carcinoma in situ of ureter](http://purl.obolibrary.org/obo/MONDO_0021284) (41 total)
 
 classes: 
-  in situ carcinoma: "http://purl.obolibrary.org/obo/MONDO_0004647"
+  in situ carcinoma: "MONDO:0004647"
   anatomical entity: "UBERON:0001062"
 
 

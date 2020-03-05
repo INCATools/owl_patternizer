@@ -8,7 +8,7 @@ description: >-
   Examples: [intellectual disability, autosomal dominant 5](http://purl.obolibrary.org/obo/MONDO_0012960), [intellectual disability, autosomal dominant 22](http://purl.obolibrary.org/obo/MONDO_0012869), [intellectual disability, autosomal dominant 10](http://purl.obolibrary.org/obo/MONDO_0013657) (22 total)
 
 classes: 
-  autosomal dominant non-syndromic intellectual disability: "http://purl.obolibrary.org/obo/MONDO_0015802"
+  autosomal dominant non-syndromic intellectual disability: "MONDO:0015802"
   SO_0001217: "SO:0001217"
 
 

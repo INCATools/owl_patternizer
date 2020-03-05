@@ -8,7 +8,7 @@ description: >-
   Examples: [epididymal adenomatoid tumor](http://purl.obolibrary.org/obo/MONDO_0004227), [epididymal adenocarcinoma](http://purl.obolibrary.org/obo/MONDO_0001017), [epididymis cancer](http://purl.obolibrary.org/obo/MONDO_0001016) (5 total)
 
 classes: 
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  neoplasm (disease): "MONDO:0005070"
   epididymis: "UBERON:0001301"
 
 

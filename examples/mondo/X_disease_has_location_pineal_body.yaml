@@ -8,7 +8,7 @@ description: >-
   Examples: [pineal region germinoma](http://purl.obolibrary.org/obo/MONDO_0004216), [pineal region teratoma](http://purl.obolibrary.org/obo/MONDO_0004015), [pineal region dysgerminoma](http://purl.obolibrary.org/obo/MONDO_0003480) (12 total)
 
 classes: 
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  neoplasm (disease): "MONDO:0005070"
   pineal body: "UBERON:0001905"
 
 

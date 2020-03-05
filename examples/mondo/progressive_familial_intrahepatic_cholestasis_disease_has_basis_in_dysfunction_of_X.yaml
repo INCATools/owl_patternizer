@@ -8,7 +8,7 @@ description: >-
   Examples: [cholestasis, progressive familial intrahepatic, 4](http://purl.obolibrary.org/obo/MONDO_0014381), [progressive familial intrahepatic cholestasis type 2](http://purl.obolibrary.org/obo/MONDO_0011156), [progressive familial intrahepatic cholestasis type 3](http://purl.obolibrary.org/obo/MONDO_0011214) (4 total)
 
 classes: 
-  progressive familial intrahepatic cholestasis: "http://purl.obolibrary.org/obo/MONDO_0015762"
+  progressive familial intrahepatic cholestasis: "MONDO:0015762"
   SO_0001217: "SO:0001217"
 
 

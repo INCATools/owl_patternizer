@@ -9,8 +9,8 @@ description: >-
 
 classes: 
   CEP290: "http://identifiers.org/hgnc/29021"
-  eye disease: "http://purl.obolibrary.org/obo/MONDO_0005328"
-  genetic nervous system disorder: "http://purl.obolibrary.org/obo/MONDO_0019117"
+  eye disease: "MONDO:0005328"
+  genetic nervous system disorder: "MONDO:0019117"
 
 
 relations: 

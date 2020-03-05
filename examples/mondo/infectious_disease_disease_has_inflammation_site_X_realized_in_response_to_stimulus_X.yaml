@@ -8,7 +8,7 @@ description: >-
   Examples: [gonococcal cervicitis](http://purl.obolibrary.org/obo/MONDO_0021157), [gonococcal keratitis](http://purl.obolibrary.org/obo/MONDO_0004852), [gonococcal urethritis](http://purl.obolibrary.org/obo/MONDO_0020971) (23 total)
 
 classes: 
-  infectious disease: "http://purl.obolibrary.org/obo/MONDO_0005550"
+  infectious disease: "MONDO:0005550"
   root: "http://purl.obolibrary.org/obo/NCBITaxon_1"
   multicellular anatomical structure: "UBERON:0010000"
 

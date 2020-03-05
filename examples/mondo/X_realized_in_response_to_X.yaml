@@ -23,7 +23,7 @@ classes:
   micturition: "GO:0060073"
   thinking: "http://purl.obolibrary.org/obo/MF_0000013"
   orgasm: "http://purl.obolibrary.org/obo/MF_0000061"
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   Cryptostroma corticale: "http://purl.obolibrary.org/obo/NCBITaxon_1463975"
 
 

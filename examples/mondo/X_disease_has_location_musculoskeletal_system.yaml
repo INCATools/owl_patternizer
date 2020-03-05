@@ -8,7 +8,7 @@ description: >-
   Examples: [musculoskeletal system disease](http://purl.obolibrary.org/obo/MONDO_0002081), [musculoskeletal system cancer](http://purl.obolibrary.org/obo/MONDO_0000637), [musculoskeletal system benign neoplasm](http://purl.obolibrary.org/obo/MONDO_0000636) (4 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   musculoskeletal system: "UBERON:0002204"
 
 

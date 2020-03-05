@@ -8,7 +8,7 @@ description: >-
   Examples: [nemaline myopathy 5](http://purl.obolibrary.org/obo/MONDO_0011539), [nemaline myopathy 4](http://purl.obolibrary.org/obo/MONDO_0012240), [nemaline myopathy 1](http://purl.obolibrary.org/obo/MONDO_0012239) (11 total)
 
 classes: 
-  nemaline myopathy: "http://purl.obolibrary.org/obo/MONDO_0018958"
+  nemaline myopathy: "MONDO:0018958"
   SO_0001217: "SO:0001217"
 
 

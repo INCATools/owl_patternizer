@@ -8,7 +8,7 @@ description: >-
   Examples: [disease of genitourinary system](http://purl.obolibrary.org/obo/MONDO_0021145), [urogenital neoplasm](http://purl.obolibrary.org/obo/MONDO_0025370), [autoimmune disease of urogenital tract](http://purl.obolibrary.org/obo/MONDO_0000601) (4 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   genitourinary system: "UBERON:0004122"
 
 

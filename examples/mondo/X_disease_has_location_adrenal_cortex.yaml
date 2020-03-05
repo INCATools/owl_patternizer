@@ -8,7 +8,7 @@ description: >-
   Examples: [adrenal cortex disease](http://purl.obolibrary.org/obo/MONDO_0002816), [adrenal cortex adenoma](http://purl.obolibrary.org/obo/MONDO_0003924), [malignant tumor of adrenal cortex](http://purl.obolibrary.org/obo/MONDO_0021312) (6 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   adrenal cortex: "UBERON:0001235"
 
 

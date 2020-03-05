@@ -8,7 +8,7 @@ description: >-
   Examples: [cervical basaloid carcinoma](http://purl.obolibrary.org/obo/MONDO_0004088), [skin basaloid carcinoma](http://purl.obolibrary.org/obo/MONDO_0004091), [basaloid carcinoma of the penis](http://purl.obolibrary.org/obo/MONDO_0004089) (6 total)
 
 classes: 
-  basaloid squamous cell carcinoma: "http://purl.obolibrary.org/obo/MONDO_0003486"
+  basaloid squamous cell carcinoma: "MONDO:0003486"
   multicellular anatomical structure: "UBERON:0010000"
 
 

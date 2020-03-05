@@ -8,7 +8,7 @@ description: >-
   Examples: [paragangliomas 5](http://purl.obolibrary.org/obo/MONDO_0013602), [paragangliomas 4](http://purl.obolibrary.org/obo/MONDO_0007273), [paragangliomas 3](http://purl.obolibrary.org/obo/MONDO_0011544) (5 total)
 
 classes: 
-  paraganglioma: "http://purl.obolibrary.org/obo/MONDO_0000448"
+  paraganglioma: "MONDO:0000448"
   SO_0001217: "SO:0001217"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [autosomal dominant nonsyndromic deafness 23](http://purl.obolibrary.org/obo/MONDO_0011519), [autosomal dominant nonsyndromic deafness 12](http://purl.obolibrary.org/obo/MONDO_0011102), [autosomal dominant nonsyndromic deafness 6](http://purl.obolibrary.org/obo/MONDO_0010963) (35 total)
 
 classes: 
-  autosomal dominant nonsyndromic deafness: "http://purl.obolibrary.org/obo/MONDO_0019587"
+  autosomal dominant nonsyndromic deafness: "MONDO:0019587"
   owl:Thing: "owl:Thing"
 
 

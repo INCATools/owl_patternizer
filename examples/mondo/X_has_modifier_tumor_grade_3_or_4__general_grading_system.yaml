@@ -8,8 +8,8 @@ description: >-
   Examples: [high grade malignant neoplasm](http://purl.obolibrary.org/obo/MONDO_0020665), [high grade B-cell lymphoma](http://purl.obolibrary.org/obo/MONDO_0044889), [high grade B-cell lymphoma](http://purl.obolibrary.org/obo/MONDO_0044889) (5 total)
 
 classes: 
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
-  tumor grade 3 or 4, general grading system: "http://purl.obolibrary.org/obo/MONDO_0024497"
+  neoplasm (disease): "MONDO:0005070"
+  tumor grade 3 or 4, general grading system: "MONDO:0024497"
 
 
 relations: 

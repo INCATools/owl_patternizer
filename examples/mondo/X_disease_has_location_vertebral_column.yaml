@@ -8,7 +8,7 @@ description: >-
   Examples: [vertebral column disease](http://purl.obolibrary.org/obo/MONDO_0000812), [spinal fracture](http://purl.obolibrary.org/obo/MONDO_0005309), [tuberculosis, spinal](http://purl.obolibrary.org/obo/MONDO_0043836) (4 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   vertebral column: "UBERON:0001130"
 
 

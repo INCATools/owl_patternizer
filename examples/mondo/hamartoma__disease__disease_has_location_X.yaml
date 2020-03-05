@@ -8,7 +8,7 @@ description: >-
   Examples: [hamartoma of skin appendage](http://purl.obolibrary.org/obo/MONDO_0021539), [eccrine sweat gland hamartoma](http://purl.obolibrary.org/obo/MONDO_0024482), [gastric hamartomatous polyp](http://purl.obolibrary.org/obo/MONDO_0006224) (5 total)
 
 classes: 
-  hamartoma (disease): "http://purl.obolibrary.org/obo/MONDO_0006499"
+  hamartoma (disease): "MONDO:0006499"
   multicellular anatomical structure: "UBERON:0010000"
 
 

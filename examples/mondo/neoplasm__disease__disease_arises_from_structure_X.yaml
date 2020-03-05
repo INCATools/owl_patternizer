@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   independent continuant: "BFO:0000004"
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  neoplasm (disease): "MONDO:0005070"
 
 
 relations: 

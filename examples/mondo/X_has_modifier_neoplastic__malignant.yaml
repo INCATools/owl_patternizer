@@ -8,7 +8,7 @@ description: >-
   Examples: [malignant giant cell tumor](http://purl.obolibrary.org/obo/MONDO_0002402), [malignant syringoma](http://purl.obolibrary.org/obo/MONDO_0003519), [malignant epithelial tumor of ovary](http://purl.obolibrary.org/obo/MONDO_0018364) (44 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   neoplastic, malignant: "PATO:0002097"
 
 

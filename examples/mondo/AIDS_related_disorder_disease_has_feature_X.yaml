@@ -9,10 +9,10 @@ description: >-
 
 classes: 
   Cachexia: "http://purl.obolibrary.org/obo/HP_0004326"
-  cancer: "http://purl.obolibrary.org/obo/MONDO_0004992"
-  intestinal disease: "http://purl.obolibrary.org/obo/MONDO_0005020"
-  kidney disease: "http://purl.obolibrary.org/obo/MONDO_0005240"
-  AIDS-related disorder: "http://purl.obolibrary.org/obo/MONDO_0024571"
+  cancer: "MONDO:0004992"
+  intestinal disease: "MONDO:0005020"
+  kidney disease: "MONDO:0005240"
+  AIDS-related disorder: "MONDO:0024571"
 
 
 relations: 

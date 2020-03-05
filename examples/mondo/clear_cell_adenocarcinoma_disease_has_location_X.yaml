@@ -8,7 +8,7 @@ description: >-
   Examples: [cervical clear cell adenocarcinoma](http://purl.obolibrary.org/obo/MONDO_0006135), [urethra clear cell adenocarcinoma](http://purl.obolibrary.org/obo/MONDO_0003387), [ovarian clear cell adenocarcinoma](http://purl.obolibrary.org/obo/MONDO_0006045) (10 total)
 
 classes: 
-  clear cell adenocarcinoma: "http://purl.obolibrary.org/obo/MONDO_0005004"
+  clear cell adenocarcinoma: "MONDO:0005004"
   multicellular anatomical structure: "UBERON:0010000"
 
 

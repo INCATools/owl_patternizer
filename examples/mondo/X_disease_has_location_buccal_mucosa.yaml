@@ -8,7 +8,7 @@ description: >-
   Examples: [papilloma of buccal mucosa](http://purl.obolibrary.org/obo/MONDO_0021276), [cheek mucosa cancer](http://purl.obolibrary.org/obo/MONDO_0004645), [buccal mucosa neoplasm](http://purl.obolibrary.org/obo/MONDO_0021241) (5 total)
 
 classes: 
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  neoplasm (disease): "MONDO:0005070"
   buccal mucosa: "UBERON:0006956"
 
 

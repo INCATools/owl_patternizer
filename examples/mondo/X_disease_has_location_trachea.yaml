@@ -8,7 +8,7 @@ description: >-
   Examples: [tracheal disease](http://purl.obolibrary.org/obo/MONDO_0002567), [trachea leiomyoma](http://purl.obolibrary.org/obo/MONDO_0002318), [trachea mucoepidermoid carcinoma](http://purl.obolibrary.org/obo/MONDO_0000534) (12 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   trachea: "UBERON:0003126"
 
 

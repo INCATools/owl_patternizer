@@ -8,8 +8,8 @@ description: >-
   Examples: [congenital nervous system disorder](http://purl.obolibrary.org/obo/MONDO_0002320), [inherited odontologic disease](http://purl.obolibrary.org/obo/MONDO_0019183), [genetic parenchymatous liver disease](http://purl.obolibrary.org/obo/MONDO_0015508) (4 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
-  disease characteristic: "http://purl.obolibrary.org/obo/MONDO_0021125"
+  disease or disorder: "MONDO:0000001"
+  disease characteristic: "MONDO:0021125"
   anatomical structure: "UBERON:0000061"
 
 

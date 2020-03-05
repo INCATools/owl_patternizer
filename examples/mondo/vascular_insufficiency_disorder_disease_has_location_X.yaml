@@ -8,7 +8,7 @@ description: >-
   Examples: [vertebral artery insufficiency](http://purl.obolibrary.org/obo/MONDO_0001631), [basilar artery insufficiency](http://purl.obolibrary.org/obo/MONDO_0002250), [venous insufficiency (disease)](http://purl.obolibrary.org/obo/MONDO_0000945) (7 total)
 
 classes: 
-  vascular insufficiency disorder: "http://purl.obolibrary.org/obo/MONDO_0020674"
+  vascular insufficiency disorder: "MONDO:0020674"
   anatomical entity: "UBERON:0001062"
 
 

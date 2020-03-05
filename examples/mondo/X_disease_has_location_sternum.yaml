@@ -8,7 +8,7 @@ description: >-
   Examples: [sternum cancer](http://purl.obolibrary.org/obo/MONDO_0003273), [sternum lymphoma](http://purl.obolibrary.org/obo/MONDO_0003988), [sternal neoplasm](http://purl.obolibrary.org/obo/MONDO_0021578) (4 total)
 
 classes: 
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  neoplasm (disease): "MONDO:0005070"
   sternum: "UBERON:0000975"
 
 

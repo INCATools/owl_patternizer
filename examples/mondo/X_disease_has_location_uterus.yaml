@@ -8,7 +8,7 @@ description: >-
   Examples: [uterine disease](http://purl.obolibrary.org/obo/MONDO_0002654), [uterine carcinosarcoma](http://purl.obolibrary.org/obo/MONDO_0006485), [uterus intravascular leiomyomatosis](http://purl.obolibrary.org/obo/MONDO_0003702) (9 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   uterus: "UBERON:0000995"
 
 

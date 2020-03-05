@@ -11,7 +11,7 @@ classes:
   cellular metabolic process: "GO:0044237"
   small molecule metabolic process: "GO:0044281"
   organonitrogen compound metabolic process: "GO:1901564"
-  inherited amino acid metabolic disorder: "http://purl.obolibrary.org/obo/MONDO_0004736"
+  inherited amino acid metabolic disorder: "MONDO:0004736"
 
 
 relations: 

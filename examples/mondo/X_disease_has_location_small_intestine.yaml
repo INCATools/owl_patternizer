@@ -8,7 +8,7 @@ description: >-
   Examples: [small intestine disease](http://purl.obolibrary.org/obo/MONDO_0024635), [small intestine leiomyoma](http://purl.obolibrary.org/obo/MONDO_0002092), [small intestinal L-cell glucagon-like peptide producing tumor](http://purl.obolibrary.org/obo/MONDO_0004252) (24 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   small intestine: "UBERON:0002108"
 
 

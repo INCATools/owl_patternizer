@@ -8,8 +8,8 @@ description: >-
   Examples: [epilepsy, idiopathic generalized, susceptibility to, 9](http://purl.obolibrary.org/obo/MONDO_0011892), [epilepsy, idiopathic generalized, susceptibility to, 8](http://purl.obolibrary.org/obo/MONDO_0013032), [epilepsy, idiopathic generalized, susceptibility to, 11](http://purl.obolibrary.org/obo/MONDO_0011875) (4 total)
 
 classes: 
-  generalised epilepsy: "http://purl.obolibrary.org/obo/MONDO_0005579"
-  inherited disease susceptibility: "http://purl.obolibrary.org/obo/MONDO_0020573"
+  generalised epilepsy: "MONDO:0005579"
+  inherited disease susceptibility: "MONDO:0020573"
   SO_0001217: "SO:0001217"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [cutaneous Paget disease](http://purl.obolibrary.org/obo/MONDO_0002655), [anal canal Paget disease](http://purl.obolibrary.org/obo/MONDO_0004468), [mammary Paget disease](http://purl.obolibrary.org/obo/MONDO_0002648) (8 total)
 
 classes: 
-  Paget disease: "http://purl.obolibrary.org/obo/MONDO_0021165"
+  Paget disease: "MONDO:0021165"
   multicellular anatomical structure: "UBERON:0010000"
 
 

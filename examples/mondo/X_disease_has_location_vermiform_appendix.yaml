@@ -8,7 +8,7 @@ description: >-
   Examples: [disorder of appendix](http://purl.obolibrary.org/obo/MONDO_0056798), [appendix villous adenoma](http://purl.obolibrary.org/obo/MONDO_0006092), [appendix leiomyoma](http://purl.obolibrary.org/obo/MONDO_0003300) (17 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   vermiform appendix: "UBERON:0001154"
 
 

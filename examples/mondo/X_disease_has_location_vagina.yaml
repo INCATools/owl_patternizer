@@ -8,7 +8,7 @@ description: >-
   Examples: [vaginal disease](http://purl.obolibrary.org/obo/MONDO_0001433), [vaginal villous adenoma](http://purl.obolibrary.org/obo/MONDO_0003946), [vaginal leiomyoma](http://purl.obolibrary.org/obo/MONDO_0001536) (28 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   vagina: "UBERON:0000996"
 
 

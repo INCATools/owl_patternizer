@@ -8,7 +8,7 @@ description: >-
   Examples: [vitelliform macular dystrophy 2](http://purl.obolibrary.org/obo/MONDO_0007931), [vitelliform macular dystrophy 5](http://purl.obolibrary.org/obo/MONDO_0014509), [vitelliform macular dystrophy 4](http://purl.obolibrary.org/obo/MONDO_0014508) (4 total)
 
 classes: 
-  vitelliform macular dystrophy: "http://purl.obolibrary.org/obo/MONDO_0000390"
+  vitelliform macular dystrophy: "MONDO:0000390"
   SO_0001217: "SO:0001217"
 
 

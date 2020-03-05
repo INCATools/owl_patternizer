@@ -8,7 +8,7 @@ description: >-
   Examples: [progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 2](http://purl.obolibrary.org/obo/MONDO_0012238), [progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 3](http://purl.obolibrary.org/obo/MONDO_0012241), [progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 5](http://purl.obolibrary.org/obo/MONDO_0013117) (5 total)
 
 classes: 
-  progressive external ophthalmoplegia with mitochondrial DNA deletions: "http://purl.obolibrary.org/obo/MONDO_0000090"
+  progressive external ophthalmoplegia with mitochondrial DNA deletions: "MONDO:0000090"
   SO_0001217: "SO:0001217"
 
 

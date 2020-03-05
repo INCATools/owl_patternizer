@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   material entity: "BFO:0000040"
-  allergic disease: "http://purl.obolibrary.org/obo/MONDO_0005271"
+  allergic disease: "MONDO:0005271"
 
 
 relations: 

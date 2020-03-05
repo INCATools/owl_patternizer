@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   neuron projection bundle: "http://purl.obolibrary.org/obo/CARO_0001001"
-  cranial nerve palsy: "http://purl.obolibrary.org/obo/MONDO_0002782"
+  cranial nerve palsy: "MONDO:0002782"
   cranial nerve: "UBERON:0001785"
 
 

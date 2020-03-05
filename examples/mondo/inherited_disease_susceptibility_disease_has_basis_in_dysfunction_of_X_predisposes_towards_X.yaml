@@ -8,8 +8,8 @@ description: >-
   Examples: [autism, susceptibility to, X-linked 5](http://purl.obolibrary.org/obo/MONDO_0010449), [bulimia nervosa, susceptibility to, 2](http://purl.obolibrary.org/obo/MONDO_0012461), [nephrolithiasis susceptibility caused by SLC26A1](http://purl.obolibrary.org/obo/MONDO_0020722) (75 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
-  inherited disease susceptibility: "http://purl.obolibrary.org/obo/MONDO_0020573"
+  disease or disorder: "MONDO:0000001"
+  inherited disease susceptibility: "MONDO:0020573"
   SO_0001217: "SO:0001217"
 
 

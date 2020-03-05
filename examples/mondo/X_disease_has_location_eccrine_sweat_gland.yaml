@@ -8,7 +8,7 @@ description: >-
   Examples: [eccrine papillary adenoma](http://purl.obolibrary.org/obo/MONDO_0003450), [eccrine sweat gland cancer](http://purl.obolibrary.org/obo/MONDO_0005506), [eccrine carcinoma](http://purl.obolibrary.org/obo/MONDO_0024240) (6 total)
 
 classes: 
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  neoplasm (disease): "MONDO:0005070"
   eccrine sweat gland: "UBERON:0000423"
 
 

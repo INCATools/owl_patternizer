@@ -8,7 +8,7 @@ description: >-
   Examples: [Adams-Oliver syndrome 2](http://purl.obolibrary.org/obo/MONDO_0013635), [Adams-Oliver syndrome 4](http://purl.obolibrary.org/obo/MONDO_0014124), [Adams-Oliver syndrome 6](http://purl.obolibrary.org/obo/MONDO_0014703) (6 total)
 
 classes: 
-  Adams-Oliver syndrome: "http://purl.obolibrary.org/obo/MONDO_0007034"
+  Adams-Oliver syndrome: "MONDO:0007034"
   SO_0001217: "SO:0001217"
 
 

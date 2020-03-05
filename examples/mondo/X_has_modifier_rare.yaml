@@ -8,8 +8,8 @@ description: >-
   Examples: [rare hypothalamic or pituitary disease](http://purl.obolibrary.org/obo/MONDO_0015889), [hereditary ataxia](http://purl.obolibrary.org/obo/MONDO_0000557), [rare non surgically correctable form of primary aldosteronism](http://purl.obolibrary.org/obo/MONDO_0016508) (28 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
-  rare: "http://purl.obolibrary.org/obo/MONDO_0021136"
+  disease or disorder: "MONDO:0000001"
+  rare: "MONDO:0021136"
 
 
 relations: 

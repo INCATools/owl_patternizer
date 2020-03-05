@@ -8,7 +8,7 @@ description: >-
   Examples: [autosomal recessive nonsyndromic deafness 21](http://purl.obolibrary.org/obo/MONDO_0011351), [autosomal recessive nonsyndromic deafness 18A](http://purl.obolibrary.org/obo/MONDO_0011192), [autosomal recessive nonsyndromic deafness 98](http://purl.obolibrary.org/obo/MONDO_0013929) (53 total)
 
 classes: 
-  autosomal recessive nonsyndromic deafness: "http://purl.obolibrary.org/obo/MONDO_0019588"
+  autosomal recessive nonsyndromic deafness: "MONDO:0019588"
   SO_0001217: "SO:0001217"
 
 

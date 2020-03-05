@@ -8,7 +8,7 @@ description: >-
   Examples: [neurodegeneration with brain iron accumulation 4](http://purl.obolibrary.org/obo/MONDO_0013674), [neurodegeneration with brain iron accumulation 5](http://purl.obolibrary.org/obo/MONDO_0010476), [neurodegeneration with brain iron accumulation 6](http://purl.obolibrary.org/obo/MONDO_0014290) (4 total)
 
 classes: 
-  neurodegeneration with brain iron accumulation: "http://purl.obolibrary.org/obo/MONDO_0018307"
+  neurodegeneration with brain iron accumulation: "MONDO:0018307"
   SO_0001217: "SO:0001217"
 
 

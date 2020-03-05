@@ -8,7 +8,7 @@ description: >-
   Examples: [benign digestive system neoplasm](http://purl.obolibrary.org/obo/MONDO_0000385), [autoimmune disease of gastrointestinal tract](http://purl.obolibrary.org/obo/MONDO_0000588), [gastrointestinal tuberculosis](http://purl.obolibrary.org/obo/MONDO_0005768) (4 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   alimentary part of gastrointestinal system: "UBERON:0005409"
 
 

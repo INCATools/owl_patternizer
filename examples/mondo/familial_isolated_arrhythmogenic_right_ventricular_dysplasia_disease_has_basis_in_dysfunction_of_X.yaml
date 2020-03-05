@@ -8,7 +8,7 @@ description: >-
   Examples: [arrhythmogenic right ventricular dysplasia 2](http://purl.obolibrary.org/obo/MONDO_0010975), [arrhythmogenic right ventricular dysplasia 11](http://purl.obolibrary.org/obo/MONDO_0012506), [arrhythmogenic right ventricular dysplasia 12](http://purl.obolibrary.org/obo/MONDO_0012684) (4 total)
 
 classes: 
-  familial isolated arrhythmogenic right ventricular dysplasia: "http://purl.obolibrary.org/obo/MONDO_0016342"
+  familial isolated arrhythmogenic right ventricular dysplasia: "MONDO:0016342"
   SO_0001217: "SO:0001217"
 
 

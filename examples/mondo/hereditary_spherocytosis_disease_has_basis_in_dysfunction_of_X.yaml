@@ -8,7 +8,7 @@ description: >-
   Examples: [hereditary spherocytosis type 4](http://purl.obolibrary.org/obo/MONDO_0012981), [hereditary spherocytosis type 3](http://purl.obolibrary.org/obo/MONDO_0010053), [hereditary spherocytosis type 2](http://purl.obolibrary.org/obo/MONDO_0000913) (5 total)
 
 classes: 
-  hereditary spherocytosis: "http://purl.obolibrary.org/obo/MONDO_0019350"
+  hereditary spherocytosis: "MONDO:0019350"
   SO_0001217: "SO:0001217"
 
 

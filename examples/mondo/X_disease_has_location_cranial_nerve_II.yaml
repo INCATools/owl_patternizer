@@ -8,7 +8,7 @@ description: >-
   Examples: [optic nerve disease](http://purl.obolibrary.org/obo/MONDO_0002135), [optic nerve neoplasm](http://purl.obolibrary.org/obo/MONDO_0002640), [optic nerve astrocytoma](http://purl.obolibrary.org/obo/MONDO_0003234) (5 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   cranial nerve II: "UBERON:0000941"
 
 

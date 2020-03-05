@@ -8,7 +8,7 @@ description: >-
   Examples: [eyelid degenerative disease](http://purl.obolibrary.org/obo/MONDO_0000941), [choroidal sclerosis](http://purl.obolibrary.org/obo/MONDO_0004885), [cerebral degeneration](http://purl.obolibrary.org/obo/MONDO_0024238) (5 total)
 
 classes: 
-  neurodegenerative disease: "http://purl.obolibrary.org/obo/MONDO_0005559"
+  neurodegenerative disease: "MONDO:0005559"
   anatomical entity: "UBERON:0001062"
 
 

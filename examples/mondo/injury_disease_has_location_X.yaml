@@ -8,7 +8,7 @@ description: >-
   Examples: [brain injury](http://purl.obolibrary.org/obo/MONDO_0043510), [nervous system injury](http://purl.obolibrary.org/obo/MONDO_0044745), [spinal injury](http://purl.obolibrary.org/obo/MONDO_0037747) (5 total)
 
 classes: 
-  injury: "http://purl.obolibrary.org/obo/MONDO_0021178"
+  injury: "MONDO:0021178"
   anatomical structure: "UBERON:0000061"
 
 

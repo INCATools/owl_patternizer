@@ -8,7 +8,7 @@ description: >-
   Examples: [pericardium disease](http://purl.obolibrary.org/obo/MONDO_0000474), [pericardium leiomyoma](http://purl.obolibrary.org/obo/MONDO_0003294), [mature pericardial teratoma](http://purl.obolibrary.org/obo/MONDO_0004432) (7 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   pericardium: "UBERON:0002407"
 
 

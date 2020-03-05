@@ -8,7 +8,7 @@ description: >-
   Examples: [lymphocytic choriomeningitis](http://purl.obolibrary.org/obo/MONDO_0001449), [streptococcal meningitis](http://purl.obolibrary.org/obo/MONDO_0001316), [pneumococcal meningitis](http://purl.obolibrary.org/obo/MONDO_0006913) (9 total)
 
 classes: 
-  infectious meningitis: "http://purl.obolibrary.org/obo/MONDO_0004796"
+  infectious meningitis: "MONDO:0004796"
   root: "http://purl.obolibrary.org/obo/NCBITaxon_1"
 
 

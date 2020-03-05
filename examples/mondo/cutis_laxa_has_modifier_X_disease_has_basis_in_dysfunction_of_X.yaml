@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   Mode of inheritance: "http://purl.obolibrary.org/obo/HP_0000005"
-  cutis laxa: "http://purl.obolibrary.org/obo/MONDO_0016175"
+  cutis laxa: "MONDO:0016175"
   SO_0001217: "SO:0001217"
 
 

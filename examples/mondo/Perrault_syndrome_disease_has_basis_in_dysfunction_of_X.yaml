@@ -8,7 +8,7 @@ description: >-
   Examples: [Perrault syndrome 5](http://purl.obolibrary.org/obo/MONDO_0014504), [Perrault syndrome 4](http://purl.obolibrary.org/obo/MONDO_0014126), [Perrault syndrome 3](http://purl.obolibrary.org/obo/MONDO_0013588) (5 total)
 
 classes: 
-  Perrault syndrome: "http://purl.obolibrary.org/obo/MONDO_0017312"
+  Perrault syndrome: "MONDO:0017312"
   SO_0001217: "SO:0001217"
 
 

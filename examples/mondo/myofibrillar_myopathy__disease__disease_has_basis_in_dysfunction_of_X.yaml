@@ -8,7 +8,7 @@ description: >-
   Examples: [myofibrillar myopathy 4](http://purl.obolibrary.org/obo/MONDO_0012277), [myofibrillar myopathy 8](http://purl.obolibrary.org/obo/MONDO_0014993), [myofibrillar myopathy 7](http://purl.obolibrary.org/obo/MONDO_0014922) (6 total)
 
 classes: 
-  myofibrillar myopathy (disease): "http://purl.obolibrary.org/obo/MONDO_0018943"
+  myofibrillar myopathy (disease): "MONDO:0018943"
   SO_0001217: "SO:0001217"
 
 

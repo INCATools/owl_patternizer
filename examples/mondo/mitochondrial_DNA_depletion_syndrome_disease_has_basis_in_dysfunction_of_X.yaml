@@ -8,7 +8,7 @@ description: >-
   Examples: [mitochondrial DNA depletion syndrome 9](http://purl.obolibrary.org/obo/MONDO_0009504), [mitochondrial DNA depletion syndrome 15 (hepatocerebral type);](http://purl.obolibrary.org/obo/MONDO_0014943), [mitochondrial DNA depletion syndrome 13](http://purl.obolibrary.org/obo/MONDO_0014198) (7 total)
 
 classes: 
-  mitochondrial DNA depletion syndrome: "http://purl.obolibrary.org/obo/MONDO_0018158"
+  mitochondrial DNA depletion syndrome: "MONDO:0018158"
   SO_0001217: "SO:0001217"
 
 

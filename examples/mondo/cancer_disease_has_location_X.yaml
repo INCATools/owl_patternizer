@@ -8,7 +8,7 @@ description: >-
   Examples: [cervical cancer](http://purl.obolibrary.org/obo/MONDO_0002974), [pituitary cancer](http://purl.obolibrary.org/obo/MONDO_0002109), [peripheral nervous system cancer](http://purl.obolibrary.org/obo/MONDO_0021089) (227 total)
 
 classes: 
-  cancer: "http://purl.obolibrary.org/obo/MONDO_0004992"
+  cancer: "MONDO:0004992"
   anatomical entity: "UBERON:0001062"
 
 

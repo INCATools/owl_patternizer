@@ -8,7 +8,7 @@ description: >-
   Examples: [cerebellar disease](http://purl.obolibrary.org/obo/MONDO_0002427), [childhood cerebellar astrocytic neoplasm](http://purl.obolibrary.org/obo/MONDO_0003842), [cancer of cerebellum](http://purl.obolibrary.org/obo/MONDO_0021317) (11 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   cerebellum: "UBERON:0002037"
 
 

@@ -10,7 +10,7 @@ description: >-
 classes: 
   cellular metabolic process: "GO:0044237"
   organic substance metabolic process: "GO:0071704"
-  metabolic disease: "http://purl.obolibrary.org/obo/MONDO_0005066"
+  metabolic disease: "MONDO:0005066"
 
 
 relations: 

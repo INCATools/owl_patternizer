@@ -8,7 +8,7 @@ description: >-
   Examples: [mycotic endocarditis](http://purl.obolibrary.org/obo/MONDO_0042433), [fungal lung infectious disease](http://purl.obolibrary.org/obo/MONDO_0005766), [fungal gastritis](http://purl.obolibrary.org/obo/MONDO_0002843) (4 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   Fungi: "http://purl.obolibrary.org/obo/NCBITaxon_4751"
 
 

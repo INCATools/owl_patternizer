@@ -19,7 +19,7 @@ classes:
   mineral dust: "ENVO:02000100"
   asbestos dust: "ENVO:02000106"
   cotton dust: "ENVO:02000108"
-  pneumoconiosis: "http://purl.obolibrary.org/obo/MONDO_0015926"
+  pneumoconiosis: "MONDO:0015926"
 
 
 relations: 

@@ -8,7 +8,7 @@ description: >-
   Examples: [spindle cell liposarcoma](http://purl.obolibrary.org/obo/MONDO_0003596), [spindle cell neoplasm](http://purl.obolibrary.org/obo/MONDO_0020664), [spindle cell sarcoma](http://purl.obolibrary.org/obo/MONDO_0002927) (11 total)
 
 classes: 
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  neoplasm (disease): "MONDO:0005070"
   NCIT_C53637: "NCIT:C53637"
 
 

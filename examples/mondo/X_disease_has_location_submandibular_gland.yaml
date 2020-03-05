@@ -8,7 +8,7 @@ description: >-
   Examples: [submandibular gland disease](http://purl.obolibrary.org/obo/MONDO_0001597), [submandibular adenitis](http://purl.obolibrary.org/obo/MONDO_0003066), [mucoepidermoid carcinoma of submandibular gland](http://purl.obolibrary.org/obo/MONDO_0021279) (6 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   submandibular gland: "UBERON:0001736"
 
 

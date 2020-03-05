@@ -8,7 +8,7 @@ description: >-
   Examples: [gastric teratoma](http://purl.obolibrary.org/obo/MONDO_0003513), [central nervous system teratoma](http://purl.obolibrary.org/obo/MONDO_0002718), [sacrococcygeal teratoma](http://purl.obolibrary.org/obo/MONDO_0042727) (7 total)
 
 classes: 
-  teratoma: "http://purl.obolibrary.org/obo/MONDO_0002601"
+  teratoma: "MONDO:0002601"
   anatomical entity: "UBERON:0001062"
 
 

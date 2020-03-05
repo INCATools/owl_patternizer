@@ -8,7 +8,7 @@ description: >-
   Examples: [subependymoma](http://purl.obolibrary.org/obo/MONDO_0007667), [benign ependymoma](http://purl.obolibrary.org/obo/MONDO_0003161), [anaplastic ependymoma](http://purl.obolibrary.org/obo/MONDO_0016700) (4 total)
 
 classes: 
-  ependymal tumor: "http://purl.obolibrary.org/obo/MONDO_0003266"
+  ependymal tumor: "MONDO:0003266"
   quality: "PATO:0000001"
 
 

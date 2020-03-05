@@ -8,7 +8,7 @@ description: >-
   Examples: [adenocarcinoma of cervix uteri](http://purl.obolibrary.org/obo/MONDO_0016275), [pituitary adenocarcinoma (disease)](http://purl.obolibrary.org/obo/MONDO_0017582), [ureter adenocarcinoma](http://purl.obolibrary.org/obo/MONDO_0003216) (57 total)
 
 classes: 
-  adenocarcinoma: "http://purl.obolibrary.org/obo/MONDO_0004970"
+  adenocarcinoma: "MONDO:0004970"
   anatomical entity: "UBERON:0001062"
 
 

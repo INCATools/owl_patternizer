@@ -12,7 +12,7 @@ classes:
   TERT: "http://identifiers.org/hgnc/11730"
   RTEL1: "http://identifiers.org/hgnc/15888"
   PARN: "http://identifiers.org/hgnc/8609"
-  pulmonary fibrosis and/or bone marrow failure, Telomere-related: "http://purl.obolibrary.org/obo/MONDO_0000148"
+  pulmonary fibrosis and/or bone marrow failure, Telomere-related: "MONDO:0000148"
 
 
 relations: 

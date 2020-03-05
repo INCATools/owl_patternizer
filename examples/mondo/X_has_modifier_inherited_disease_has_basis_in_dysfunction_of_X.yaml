@@ -9,8 +9,8 @@ description: >-
 
 classes: 
   independent continuant: "BFO:0000004"
-  inherited: "http://purl.obolibrary.org/obo/MONDO_0021152"
-  disease by anatomical system: "http://purl.obolibrary.org/obo/MONDO_0021199"
+  inherited: "MONDO:0021152"
+  disease by anatomical system: "MONDO:0021199"
 
 
 relations: 

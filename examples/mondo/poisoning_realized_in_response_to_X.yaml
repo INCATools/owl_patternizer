@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   exposure to chemical entity: "http://purl.obolibrary.org/obo/ECTO_0000231"
-  poisoning: "http://purl.obolibrary.org/obo/MONDO_0029000"
+  poisoning: "MONDO:0029000"
 
 
 relations: 

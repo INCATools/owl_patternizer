@@ -8,7 +8,7 @@ description: >-
   Examples: [atrial fibrillation, familial, 13](http://purl.obolibrary.org/obo/MONDO_0014155), [atrial fibrillation, familial, 14](http://purl.obolibrary.org/obo/MONDO_0014156), [atrial fibrillation, familial, 10](http://purl.obolibrary.org/obo/MONDO_0013530) (12 total)
 
 classes: 
-  familial atrial fibrillation: "http://purl.obolibrary.org/obo/MONDO_0018054"
+  familial atrial fibrillation: "MONDO:0018054"
   SO_0001217: "SO:0001217"
 
 

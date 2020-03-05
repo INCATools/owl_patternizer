@@ -8,7 +8,7 @@ description: >-
   Examples: [Epstein-Barr virus hepatitis](http://purl.obolibrary.org/obo/MONDO_0000286), [gonococcal cervicitis](http://purl.obolibrary.org/obo/MONDO_0021157), [gonococcal keratitis](http://purl.obolibrary.org/obo/MONDO_0004852) (24 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   root: "http://purl.obolibrary.org/obo/NCBITaxon_1"
   multicellular anatomical structure: "UBERON:0010000"
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [eye disease](http://purl.obolibrary.org/obo/MONDO_0005328), [eye carcinoma in situ](http://purl.obolibrary.org/obo/MONDO_0004659), [ocular cancer](http://purl.obolibrary.org/obo/MONDO_0002236) (12 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   eyeball of camera-type eye: "UBERON:0010230"
 
 

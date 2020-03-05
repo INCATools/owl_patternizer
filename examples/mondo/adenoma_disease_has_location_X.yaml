@@ -8,7 +8,7 @@ description: >-
   Examples: [pituitary gland adenoma](http://purl.obolibrary.org/obo/MONDO_0006373), [breast adenoma](http://purl.obolibrary.org/obo/MONDO_0002058), [Bartholin gland adenoma](http://purl.obolibrary.org/obo/MONDO_0003419) (31 total)
 
 classes: 
-  adenoma: "http://purl.obolibrary.org/obo/MONDO_0004972"
+  adenoma: "MONDO:0004972"
   multicellular anatomical structure: "UBERON:0010000"
 
 

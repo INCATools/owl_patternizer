@@ -10,7 +10,7 @@ description: >-
 classes: 
   organonitrogen compound: "http://purl.obolibrary.org/obo/CHEBI_35352"
   organic molecule: "http://purl.obolibrary.org/obo/CHEBI_72695"
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
 
 
 relations: 

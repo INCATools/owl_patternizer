@@ -8,7 +8,7 @@ description: >-
   Examples: [epithelial skin neoplasm](http://purl.obolibrary.org/obo/MONDO_0021634), [epithelial tumor of anal canal](http://purl.obolibrary.org/obo/MONDO_0018516), [ovarian epithelial tumor](http://purl.obolibrary.org/obo/MONDO_0002229) (7 total)
 
 classes: 
-  epithelial neoplasm: "http://purl.obolibrary.org/obo/MONDO_0005626"
+  epithelial neoplasm: "MONDO:0005626"
   multicellular anatomical structure: "UBERON:0010000"
 
 

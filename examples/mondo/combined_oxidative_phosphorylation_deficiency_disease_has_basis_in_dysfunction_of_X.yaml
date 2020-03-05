@@ -8,7 +8,7 @@ description: >-
   Examples: [combined oxidative phosphorylation defect type 9](http://purl.obolibrary.org/obo/MONDO_0013811), [fatal mitochondrial disease due to combined oxidative phosphorylation defect type 3](http://purl.obolibrary.org/obo/MONDO_0012512), [combined oxidative phosphorylation defect type 4](http://purl.obolibrary.org/obo/MONDO_0012534) (29 total)
 
 classes: 
-  combined oxidative phosphorylation deficiency: "http://purl.obolibrary.org/obo/MONDO_0000732"
+  combined oxidative phosphorylation deficiency: "MONDO:0000732"
   SO_0001217: "SO:0001217"
 
 

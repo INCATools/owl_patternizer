@@ -8,7 +8,7 @@ description: >-
   Examples: [hyperphosphatasia with intellectual disability syndrome 3](http://purl.obolibrary.org/obo/MONDO_0013628), [hyperphosphatasia with intellectual disability syndrome 5](http://purl.obolibrary.org/obo/MONDO_0014457), [hyperphosphatasia with intellectual disability syndrome 2](http://purl.obolibrary.org/obo/MONDO_0013882) (6 total)
 
 classes: 
-  hyperphosphatasia-intellectual disability syndrome: "http://purl.obolibrary.org/obo/MONDO_0016596"
+  hyperphosphatasia-intellectual disability syndrome: "MONDO:0016596"
   SO_0001217: "SO:0001217"
 
 

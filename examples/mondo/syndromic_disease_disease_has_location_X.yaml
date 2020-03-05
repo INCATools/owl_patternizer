@@ -8,7 +8,7 @@ description: >-
   Examples: [superior mesenteric artery syndrome](http://purl.obolibrary.org/obo/MONDO_0002687), [Tietze syndrome](http://purl.obolibrary.org/obo/MONDO_0001858), [anterior spinal artery syndrome](http://purl.obolibrary.org/obo/MONDO_0006650) (5 total)
 
 classes: 
-  syndromic disease: "http://purl.obolibrary.org/obo/MONDO_0002254"
+  syndromic disease: "MONDO:0002254"
   anatomical entity: "UBERON:0001062"
 
 

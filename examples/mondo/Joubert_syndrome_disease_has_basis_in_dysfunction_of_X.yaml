@@ -8,7 +8,7 @@ description: >-
   Examples: [Joubert syndrome 15](http://purl.obolibrary.org/obo/MONDO_0013763), [Joubert syndrome 14](http://purl.obolibrary.org/obo/MONDO_0013745), [Joubert syndrome 23](http://purl.obolibrary.org/obo/MONDO_0014664) (24 total)
 
 classes: 
-  Joubert syndrome: "http://purl.obolibrary.org/obo/MONDO_0018772"
+  Joubert syndrome: "MONDO:0018772"
   SO_0001217: "SO:0001217"
 
 

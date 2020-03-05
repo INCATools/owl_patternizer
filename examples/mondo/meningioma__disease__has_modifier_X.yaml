@@ -9,10 +9,10 @@ description: >-
 
 classes: 
   Childhood onset: "http://purl.obolibrary.org/obo/HP_0011463"
-  meningioma (disease): "http://purl.obolibrary.org/obo/MONDO_0016642"
-  inherited: "http://purl.obolibrary.org/obo/MONDO_0021152"
-  tumor grade 2, general grading system: "http://purl.obolibrary.org/obo/MONDO_0024492"
-  tumor grade 3, general grading system: "http://purl.obolibrary.org/obo/MONDO_0024493"
+  meningioma (disease): "MONDO:0016642"
+  inherited: "MONDO:0021152"
+  tumor grade 2, general grading system: "MONDO:0024492"
+  tumor grade 3, general grading system: "MONDO:0024493"
   anaplastic: "PATO:0002092"
   neoplastic, non-malignant: "PATO:0002096"
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [endometrial disease](http://purl.obolibrary.org/obo/MONDO_0000931), [endometrial small cell carcinoma](http://purl.obolibrary.org/obo/MONDO_0006197), [endometrium carcinoma in situ](http://purl.obolibrary.org/obo/MONDO_0003315) (14 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   endometrium: "UBERON:0001295"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [cavernous hemangioma of retina](http://purl.obolibrary.org/obo/MONDO_0021281), [cavernous hemangioma of colon](http://purl.obolibrary.org/obo/MONDO_0003644), [cavernous hemangioma of face](http://purl.obolibrary.org/obo/MONDO_0003645) (4 total)
 
 classes: 
-  cavernous hemangioma: "http://purl.obolibrary.org/obo/MONDO_0003155"
+  cavernous hemangioma: "MONDO:0003155"
   multicellular anatomical structure: "UBERON:0010000"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [peripheral nervous system disease](http://purl.obolibrary.org/obo/MONDO_0003620), [peripheral nervous system cancer](http://purl.obolibrary.org/obo/MONDO_0021089), [peripheral ganglioneuroblastoma](http://purl.obolibrary.org/obo/MONDO_0003327) (6 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   peripheral nervous system: "UBERON:0000010"
 
 

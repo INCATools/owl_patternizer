@@ -13,7 +13,7 @@ classes:
   perception of rate of movement: "GO:0019232"
   sensory perception of pain: "GO:0019233"
   sensory perception of touch: "GO:0050975"
-  agnosia: "http://purl.obolibrary.org/obo/MONDO_0005638"
+  agnosia: "MONDO:0005638"
   NBO_0000551: "http://purl.obolibrary.org/obo/NBO_0000551"
 
 

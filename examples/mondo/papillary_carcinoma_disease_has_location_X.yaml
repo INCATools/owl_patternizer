@@ -8,7 +8,7 @@ description: >-
   Examples: [papillary carcinoma of the cervix uteri](http://purl.obolibrary.org/obo/MONDO_0016285), [breast papillary carcinoma](http://purl.obolibrary.org/obo/MONDO_0003532), [papillary carcinoma of the penis](http://purl.obolibrary.org/obo/MONDO_0004433) (7 total)
 
 classes: 
-  papillary carcinoma: "http://purl.obolibrary.org/obo/MONDO_0006509"
+  papillary carcinoma: "MONDO:0006509"
   multicellular anatomical structure: "UBERON:0010000"
 
 

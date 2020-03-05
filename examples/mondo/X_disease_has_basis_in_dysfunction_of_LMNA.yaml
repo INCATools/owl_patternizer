@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   LMNA: "http://identifiers.org/hgnc/6636"
-  nervous system disorder: "http://purl.obolibrary.org/obo/MONDO_0005071"
+  nervous system disorder: "MONDO:0005071"
 
 
 relations: 

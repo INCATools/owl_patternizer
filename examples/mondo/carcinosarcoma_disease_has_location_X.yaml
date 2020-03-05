@@ -8,7 +8,7 @@ description: >-
   Examples: [cervical carcinosarcoma](http://purl.obolibrary.org/obo/MONDO_0002877), [ovarian carcinosarcoma](http://purl.obolibrary.org/obo/MONDO_0003792), [uterine carcinosarcoma](http://purl.obolibrary.org/obo/MONDO_0006485) (5 total)
 
 classes: 
-  carcinosarcoma: "http://purl.obolibrary.org/obo/MONDO_0002928"
+  carcinosarcoma: "MONDO:0002928"
   reproductive structure: "UBERON:0005156"
 
 

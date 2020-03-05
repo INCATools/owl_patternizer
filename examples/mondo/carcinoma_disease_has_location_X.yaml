@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   independent continuant: "BFO:0000004"
-  carcinoma: "http://purl.obolibrary.org/obo/MONDO_0004993"
+  carcinoma: "MONDO:0004993"
 
 
 relations: 

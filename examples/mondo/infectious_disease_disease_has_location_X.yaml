@@ -8,7 +8,7 @@ description: >-
   Examples: [skin disease caused by infection](http://purl.obolibrary.org/obo/MONDO_0024294), [respiratory tract infectious disease](http://purl.obolibrary.org/obo/MONDO_0024355), [corneal infection](http://purl.obolibrary.org/obo/MONDO_0023865) (9 total)
 
 classes: 
-  infectious disease: "http://purl.obolibrary.org/obo/MONDO_0005550"
+  infectious disease: "MONDO:0005550"
   anatomical structure: "UBERON:0000061"
 
 

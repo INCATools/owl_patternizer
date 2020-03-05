@@ -8,7 +8,7 @@ description: >-
   Examples: [atrial heart septal defect 4](http://purl.obolibrary.org/obo/MONDO_0012654), [atrial heart septal defect 6](http://purl.obolibrary.org/obo/MONDO_0013123), [atrial heart septal defect 5](http://purl.obolibrary.org/obo/MONDO_0013011) (8 total)
 
 classes: 
-  atrial heart septal defect: "http://purl.obolibrary.org/obo/MONDO_0006664"
+  atrial heart septal defect: "MONDO:0006664"
   SO_0001217: "SO:0001217"
 
 

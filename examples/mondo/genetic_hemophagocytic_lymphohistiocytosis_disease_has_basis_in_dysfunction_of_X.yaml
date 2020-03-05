@@ -8,7 +8,7 @@ description: >-
   Examples: [familial hemophagocytic lymphohistiocytosis 4](http://purl.obolibrary.org/obo/MONDO_0011336), [familial hemophagocytic lymphohistiocytosis 5](http://purl.obolibrary.org/obo/MONDO_0013135), [familial hemophagocytic lymphohistiocytosis 3](http://purl.obolibrary.org/obo/MONDO_0012146) (4 total)
 
 classes: 
-  genetic hemophagocytic lymphohistiocytosis: "http://purl.obolibrary.org/obo/MONDO_0015541"
+  genetic hemophagocytic lymphohistiocytosis: "MONDO:0015541"
   SO_0001217: "SO:0001217"
 
 

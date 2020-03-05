@@ -8,7 +8,7 @@ description: >-
   Examples: [Meier-Gorlin syndrome 3](http://purl.obolibrary.org/obo/MONDO_0013430), [Meier-Gorlin syndrome 7](http://purl.obolibrary.org/obo/MONDO_0014894), [Meier-Gorlin syndrome 5](http://purl.obolibrary.org/obo/MONDO_0013432) (7 total)
 
 classes: 
-  Meier-Gorlin syndrome: "http://purl.obolibrary.org/obo/MONDO_0016817"
+  Meier-Gorlin syndrome: "MONDO:0016817"
   SO_0001217: "SO:0001217"
 
 

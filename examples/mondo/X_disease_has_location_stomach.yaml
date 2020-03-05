@@ -8,7 +8,7 @@ description: >-
   Examples: [stomach disease](http://purl.obolibrary.org/obo/MONDO_0004298), [gastric small cell neuroendocrine carcinoma](http://purl.obolibrary.org/obo/MONDO_0006229), [gastric leiomyoma](http://purl.obolibrary.org/obo/MONDO_0000938) (37 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   stomach: "UBERON:0000945"
 
 

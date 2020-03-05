@@ -8,7 +8,7 @@ description: >-
   Examples: [iris disease](http://purl.obolibrary.org/obo/MONDO_0002289), [intermediate cell type iris melanoma](http://purl.obolibrary.org/obo/MONDO_0004063), [iris cancer](http://purl.obolibrary.org/obo/MONDO_0002658) (7 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   iris: "UBERON:0001769"
 
 

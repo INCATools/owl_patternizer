@@ -8,7 +8,7 @@ description: >-
   Examples: [pseudohypoaldosteronism type 2C](http://purl.obolibrary.org/obo/MONDO_0013778), [pseudohypoaldosteronism type 2B](http://purl.obolibrary.org/obo/MONDO_0013777), [pseudohypoaldosteronism type 2E](http://purl.obolibrary.org/obo/MONDO_0013782) (4 total)
 
 classes: 
-  pseudohypoaldosteronism type 2: "http://purl.obolibrary.org/obo/MONDO_0019162"
+  pseudohypoaldosteronism type 2: "MONDO:0019162"
   SO_0001217: "SO:0001217"
 
 

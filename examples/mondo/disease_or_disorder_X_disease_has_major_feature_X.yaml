@@ -8,9 +8,9 @@ description: >-
   Examples: [autism spectrum disorder - epilepsy - arthrogryposis syndrome](http://purl.obolibrary.org/obo/MONDO_0014248), [acquired testicular failure](http://purl.obolibrary.org/obo/MONDO_0023554), [ulceration of vulva](http://purl.obolibrary.org/obo/MONDO_0001551) (4 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
-  epilepsy: "http://purl.obolibrary.org/obo/MONDO_0005027"
-  arthrogryposis syndrome: "http://purl.obolibrary.org/obo/MONDO_0015225"
+  disease or disorder: "MONDO:0000001"
+  epilepsy: "MONDO:0005027"
+  arthrogryposis syndrome: "MONDO:0015225"
 
 
 relations: 

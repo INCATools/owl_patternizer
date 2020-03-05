@@ -8,7 +8,7 @@ description: >-
   Examples: [hypophosphatemic rickets, X-linked recessive](http://purl.obolibrary.org/obo/MONDO_0010358), [Fanconi renotubular syndrome 4 with maturity-onset diabetes of the young](http://purl.obolibrary.org/obo/MONDO_0014458), [inherited bleeding disorder, platelet-type](http://purl.obolibrary.org/obo/MONDO_0000009) (41 total)
 
 classes: 
-  disease by anatomical system: "http://purl.obolibrary.org/obo/MONDO_0021199"
+  disease by anatomical system: "MONDO:0021199"
   SO_0001217: "SO:0001217"
 
 

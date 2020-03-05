@@ -8,7 +8,7 @@ description: >-
   Examples: [parathyroid gland disease](http://purl.obolibrary.org/obo/MONDO_0001223), [parathyroid gland adenoma](http://purl.obolibrary.org/obo/MONDO_0006890), [malignant tumor of parathyroid gland](http://purl.obolibrary.org/obo/MONDO_0021311) (7 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   parathyroid gland: "UBERON:0001132"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [Bartter disease type 1](http://purl.obolibrary.org/obo/MONDO_0011127), [Bartter disease type 5](http://purl.obolibrary.org/obo/MONDO_0010503), [Bartter disease type 4a](http://purl.obolibrary.org/obo/MONDO_0011242) (4 total)
 
 classes: 
-  Bartter syndrome: "http://purl.obolibrary.org/obo/MONDO_0015231"
+  Bartter syndrome: "MONDO:0015231"
   SO_0001217: "SO:0001217"
 
 

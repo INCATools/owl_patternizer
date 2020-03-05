@@ -9,8 +9,8 @@ description: >-
 
 classes: 
   Childhood onset: "http://purl.obolibrary.org/obo/HP_0011463"
-  ependymoma: "http://purl.obolibrary.org/obo/MONDO_0016698"
-  tumor grade 1, general grading system: "http://purl.obolibrary.org/obo/MONDO_0024491"
+  ependymoma: "MONDO:0016698"
+  tumor grade 1, general grading system: "MONDO:0024491"
   neoplastic, non-malignant: "PATO:0002096"
   neoplastic, malignant: "PATO:0002097"
 

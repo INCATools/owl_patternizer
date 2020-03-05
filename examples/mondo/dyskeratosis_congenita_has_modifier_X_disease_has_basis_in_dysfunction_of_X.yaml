@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   Mode of inheritance: "http://purl.obolibrary.org/obo/HP_0000005"
-  dyskeratosis congenita: "http://purl.obolibrary.org/obo/MONDO_0015780"
+  dyskeratosis congenita: "MONDO:0015780"
   SO_0001217: "SO:0001217"
 
 

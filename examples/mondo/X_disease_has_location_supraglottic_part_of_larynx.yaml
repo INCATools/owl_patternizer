@@ -8,7 +8,7 @@ description: >-
   Examples: [supraglottis cancer](http://purl.obolibrary.org/obo/MONDO_0001724), [carcinoma of supraglottis](http://purl.obolibrary.org/obo/MONDO_0004357), [supraglottis neoplasm](http://purl.obolibrary.org/obo/MONDO_0004427) (5 total)
 
 classes: 
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  neoplasm (disease): "MONDO:0005070"
   supraglottic part of larynx: "UBERON:0036263"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [ovarian dysgenesis 2](http://purl.obolibrary.org/obo/MONDO_0010349), [premature ovarian failure 8](http://purl.obolibrary.org/obo/MONDO_0014321), [premature ovarian failure 2B](http://purl.obolibrary.org/obo/MONDO_0010373) (11 total)
 
 classes: 
-  primary ovarian failure: "http://purl.obolibrary.org/obo/MONDO_0005387"
+  primary ovarian failure: "MONDO:0005387"
   SO_0001217: "SO:0001217"
 
 

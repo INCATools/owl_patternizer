@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   biological_process: "GO:0008150"
-  metabolic disease: "http://purl.obolibrary.org/obo/MONDO_0005066"
+  metabolic disease: "MONDO:0005066"
 
 
 relations: 

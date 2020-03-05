@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   material entity: "BFO:0000040"
-  poisoning: "http://purl.obolibrary.org/obo/MONDO_0029000"
+  poisoning: "MONDO:0029000"
 
 
 relations: 

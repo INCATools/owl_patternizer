@@ -19,9 +19,9 @@ classes:
   Eosinophilia: "http://purl.obolibrary.org/obo/HP_0001880"
   Myotonia: "http://purl.obolibrary.org/obo/HP_0002486"
   Aplasia/Hypoplasia of the corpus callosum: "http://purl.obolibrary.org/obo/HP_0007370"
-  syndromic disease: "http://purl.obolibrary.org/obo/MONDO_0002254"
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
-  pulmonary hypertension: "http://purl.obolibrary.org/obo/MONDO_0005149"
+  syndromic disease: "MONDO:0002254"
+  neoplasm (disease): "MONDO:0005070"
+  pulmonary hypertension: "MONDO:0005149"
 
 
 relations: 

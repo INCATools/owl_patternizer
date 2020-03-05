@@ -8,7 +8,7 @@ description: >-
   Examples: [Cowden syndrome 2](http://purl.obolibrary.org/obo/MONDO_0012878), [Cowden syndrome 3](http://purl.obolibrary.org/obo/MONDO_0014045), [Cowden syndrome 7](http://purl.obolibrary.org/obo/MONDO_0014802) (7 total)
 
 classes: 
-  Cowden disease: "http://purl.obolibrary.org/obo/MONDO_0016063"
+  Cowden disease: "MONDO:0016063"
   SO_0001217: "SO:0001217"
 
 

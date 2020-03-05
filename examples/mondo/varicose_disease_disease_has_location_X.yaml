@@ -8,7 +8,7 @@ description: >-
   Examples: [vulval varices](http://purl.obolibrary.org/obo/MONDO_0021642), [esophageal varices](http://purl.obolibrary.org/obo/MONDO_0001221), [varicocele](http://purl.obolibrary.org/obo/MONDO_0001498) (5 total)
 
 classes: 
-  varicose disease: "http://purl.obolibrary.org/obo/MONDO_0008638"
+  varicose disease: "MONDO:0008638"
   multicellular anatomical structure: "UBERON:0010000"
 
 

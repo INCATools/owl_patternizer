@@ -8,8 +8,8 @@ description: >-
   Examples: [anaplastic ependymoma](http://purl.obolibrary.org/obo/MONDO_0016700), [grade III meningioma](http://purl.obolibrary.org/obo/MONDO_0020634), [anaplastic oligodendroglioma](http://purl.obolibrary.org/obo/MONDO_0016696) (4 total)
 
 classes: 
-  nervous system neoplasm: "http://purl.obolibrary.org/obo/MONDO_0021248"
-  tumor grade 3, general grading system: "http://purl.obolibrary.org/obo/MONDO_0024493"
+  nervous system neoplasm: "MONDO:0021248"
+  tumor grade 3, general grading system: "MONDO:0024493"
 
 
 relations: 

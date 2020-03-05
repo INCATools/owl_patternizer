@@ -8,7 +8,7 @@ description: >-
   Examples: [cutaneous granular cell tumor](http://purl.obolibrary.org/obo/MONDO_0002291), [breast granular cell tumor](http://purl.obolibrary.org/obo/MONDO_0002487), [cardiac granular cell neoplasm](http://purl.obolibrary.org/obo/MONDO_0003254) (7 total)
 
 classes: 
-  granular cell tumor: "http://purl.obolibrary.org/obo/MONDO_0006235"
+  granular cell tumor: "MONDO:0006235"
   anatomical entity: "UBERON:0001062"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [3-methylglutaconic aciduria with deafness, encephalopathy, and Leigh-like syndrome](http://purl.obolibrary.org/obo/MONDO_0013875), [3-methylglutaconic aciduria type 5](http://purl.obolibrary.org/obo/MONDO_0012435), [3-methylglutaconic aciduria with cataracts, neurologic involvement and neutropenia](http://purl.obolibrary.org/obo/MONDO_0014561) (5 total)
 
 classes: 
-  3-methylglutaconic aciduria: "http://purl.obolibrary.org/obo/MONDO_0017359"
+  3-methylglutaconic aciduria: "MONDO:0017359"
   SO_0001217: "SO:0001217"
 
 

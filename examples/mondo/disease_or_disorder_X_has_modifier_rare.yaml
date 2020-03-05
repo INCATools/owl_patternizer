@@ -8,9 +8,9 @@ description: >-
   Examples: [rare genetic parathyroid disease and phosphocalcic metabolism disorder](http://purl.obolibrary.org/obo/MONDO_0015970), [other rare diabetes mellitus](http://purl.obolibrary.org/obo/MONDO_0015888), [rare familial disorder with hypertrophic cardiomyopathy](http://purl.obolibrary.org/obo/MONDO_0020484) (7 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
-  rare: "http://purl.obolibrary.org/obo/MONDO_0021136"
-  disease by anatomical system: "http://purl.obolibrary.org/obo/MONDO_0021199"
+  disease or disorder: "MONDO:0000001"
+  rare: "MONDO:0021136"
+  disease by anatomical system: "MONDO:0021199"
 
 
 relations: 

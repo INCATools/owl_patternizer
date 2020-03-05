@@ -8,7 +8,7 @@ description: >-
   Examples: [testicular disease](http://purl.obolibrary.org/obo/MONDO_0002329), [testicular trophoblastic tumor](http://purl.obolibrary.org/obo/MONDO_0002871), [testicular seminoma](http://purl.obolibrary.org/obo/MONDO_0003669) (20 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   testis: "UBERON:0000473"
 
 

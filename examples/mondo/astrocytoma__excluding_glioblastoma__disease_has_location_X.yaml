@@ -8,7 +8,7 @@ description: >-
   Examples: [optic nerve astrocytoma](http://purl.obolibrary.org/obo/MONDO_0003234), [brain astrocytoma](http://purl.obolibrary.org/obo/MONDO_0021631), [cerebral astrocytoma](http://purl.obolibrary.org/obo/MONDO_0021633) (9 total)
 
 classes: 
-  astrocytoma (excluding glioblastoma): "http://purl.obolibrary.org/obo/MONDO_0019781"
+  astrocytoma (excluding glioblastoma): "MONDO:0019781"
   anatomical entity: "UBERON:0001062"
 
 

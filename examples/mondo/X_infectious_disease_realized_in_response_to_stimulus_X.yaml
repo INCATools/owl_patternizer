@@ -8,8 +8,8 @@ description: >-
   Examples: [malignant otitis externa caused by Pseudomonas aeruginosa](http://purl.obolibrary.org/obo/MONDO_0041095), [mesenteric lymphadenitis due to Yersinia infection](http://purl.obolibrary.org/obo/MONDO_0041535), [Trichomonas balanoposthitis](http://purl.obolibrary.org/obo/MONDO_0030707) (35 total)
 
 classes: 
-  infectious disease: "http://purl.obolibrary.org/obo/MONDO_0005550"
-  disease by anatomical system: "http://purl.obolibrary.org/obo/MONDO_0021199"
+  infectious disease: "MONDO:0005550"
+  disease by anatomical system: "MONDO:0021199"
   owl:Thing: "owl:Thing"
 
 

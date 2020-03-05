@@ -8,7 +8,7 @@ description: >-
   Examples: [maturity-onset diabetes of the young type 11](http://purl.obolibrary.org/obo/MONDO_0013242), [maturity-onset diabetes of the young type 3](http://purl.obolibrary.org/obo/MONDO_0010894), [maturity-onset diabetes of the young type 7](http://purl.obolibrary.org/obo/MONDO_0012513) (11 total)
 
 classes: 
-  maturity-onset diabetes of the young (disease): "http://purl.obolibrary.org/obo/MONDO_0018911"
+  maturity-onset diabetes of the young (disease): "MONDO:0018911"
   SO_0001217: "SO:0001217"
 
 

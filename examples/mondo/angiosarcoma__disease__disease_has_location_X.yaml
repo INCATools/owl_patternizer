@@ -8,7 +8,7 @@ description: >-
   Examples: [skin angiosarcoma](http://purl.obolibrary.org/obo/MONDO_0003029), [breast angiosarcoma](http://purl.obolibrary.org/obo/MONDO_0003024), [angiosarcoma of the scalp](http://purl.obolibrary.org/obo/MONDO_0022454) (14 total)
 
 classes: 
-  angiosarcoma (disease): "http://purl.obolibrary.org/obo/MONDO_0016982"
+  angiosarcoma (disease): "MONDO:0016982"
   anatomical entity: "UBERON:0001062"
 
 

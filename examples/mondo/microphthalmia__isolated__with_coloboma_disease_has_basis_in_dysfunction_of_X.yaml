@@ -8,7 +8,7 @@ description: >-
   Examples: [microphthalmia, isolated, with coloboma 5](http://purl.obolibrary.org/obo/MONDO_0012709), [microphthalmia, isolated, with coloboma 3](http://purl.obolibrary.org/obo/MONDO_0012408), [microphthalmia, isolated, with coloboma 9](http://purl.obolibrary.org/obo/MONDO_0014059) (5 total)
 
 classes: 
-  microphthalmia, isolated, with coloboma: "http://purl.obolibrary.org/obo/MONDO_0000170"
+  microphthalmia, isolated, with coloboma: "MONDO:0000170"
   SO_0001217: "SO:0001217"
 
 

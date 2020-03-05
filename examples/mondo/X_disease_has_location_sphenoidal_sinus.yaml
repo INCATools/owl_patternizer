@@ -8,7 +8,7 @@ description: >-
   Examples: [sphenoid sinus inverted papilloma](http://purl.obolibrary.org/obo/MONDO_0004326), [sphenoidal sinus cancer](http://purl.obolibrary.org/obo/MONDO_0001994), [sphenoidal sinus neoplasm](http://purl.obolibrary.org/obo/MONDO_0004047) (6 total)
 
 classes: 
-  cell proliferation disorder: "http://purl.obolibrary.org/obo/MONDO_0045024"
+  cell proliferation disorder: "MONDO:0045024"
   sphenoidal sinus: "UBERON:0001724"
 
 

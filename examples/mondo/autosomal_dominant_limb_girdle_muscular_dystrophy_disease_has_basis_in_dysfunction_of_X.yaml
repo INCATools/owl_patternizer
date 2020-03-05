@@ -8,7 +8,7 @@ description: >-
   Examples: [autosomal dominant limb-girdle muscular dystrophy type 1A](http://purl.obolibrary.org/obo/MONDO_0008032), [muscular dystrophy, limb-girdle, autosomal dominant 4](http://purl.obolibrary.org/obo/MONDO_0029133), [autosomal dominant limb-girdle muscular dystrophy type 1D (DNAJB6)](http://purl.obolibrary.org/obo/MONDO_0021018) (5 total)
 
 classes: 
-  autosomal dominant limb-girdle muscular dystrophy: "http://purl.obolibrary.org/obo/MONDO_0015151"
+  autosomal dominant limb-girdle muscular dystrophy: "MONDO:0015151"
   SO_0001217: "SO:0001217"
 
 

@@ -9,9 +9,9 @@ description: >-
 
 classes: 
   Childhood onset: "http://purl.obolibrary.org/obo/HP_0011463"
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
-  rare: "http://purl.obolibrary.org/obo/MONDO_0021136"
-  inherited: "http://purl.obolibrary.org/obo/MONDO_0021152"
+  neoplasm (disease): "MONDO:0005070"
+  rare: "MONDO:0021136"
+  inherited: "MONDO:0021152"
   neoplastic, non-malignant: "PATO:0002096"
   neoplastic, malignant: "PATO:0002097"
 

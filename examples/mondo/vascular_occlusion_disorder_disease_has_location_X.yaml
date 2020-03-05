@@ -8,7 +8,7 @@ description: >-
   Examples: [retinal vascular occlusion](http://purl.obolibrary.org/obo/MONDO_0002089), [vertebral artery occlusion](http://purl.obolibrary.org/obo/MONDO_0001258), [central retinal artery occlusion](http://purl.obolibrary.org/obo/MONDO_0001633) (7 total)
 
 classes: 
-  vascular occlusion disorder: "http://purl.obolibrary.org/obo/MONDO_0020672"
+  vascular occlusion disorder: "MONDO:0020672"
   multicellular anatomical structure: "UBERON:0010000"
 
 

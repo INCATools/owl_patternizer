@@ -8,7 +8,7 @@ description: >-
   Examples: [achromatopsia 2](http://purl.obolibrary.org/obo/MONDO_0009003), [achromatopsia 3](http://purl.obolibrary.org/obo/MONDO_0009875), [achromatopsia 4](http://purl.obolibrary.org/obo/MONDO_0013465) (4 total)
 
 classes: 
-  achromatopsia: "http://purl.obolibrary.org/obo/MONDO_0018852"
+  achromatopsia: "MONDO:0018852"
   SO_0001217: "SO:0001217"
 
 

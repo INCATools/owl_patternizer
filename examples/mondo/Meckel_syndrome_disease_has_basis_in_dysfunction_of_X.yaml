@@ -8,7 +8,7 @@ description: >-
   Examples: [Meckel syndrome, type 9](http://purl.obolibrary.org/obo/MONDO_0013630), [Meckel syndrome, type 2](http://purl.obolibrary.org/obo/MONDO_0011296), [Meckel syndrome, type 8](http://purl.obolibrary.org/obo/MONDO_0013482) (10 total)
 
 classes: 
-  Meckel syndrome: "http://purl.obolibrary.org/obo/MONDO_0018921"
+  Meckel syndrome: "MONDO:0018921"
   SO_0001217: "SO:0001217"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [urethral villous adenoma](http://purl.obolibrary.org/obo/MONDO_0003565), [vaginal villous adenoma](http://purl.obolibrary.org/obo/MONDO_0003946), [rectal villous adenoma](http://purl.obolibrary.org/obo/MONDO_0006396) (8 total)
 
 classes: 
-  villous adenoma: "http://purl.obolibrary.org/obo/MONDO_0000502"
+  villous adenoma: "MONDO:0000502"
   multicellular anatomical structure: "UBERON:0010000"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [breast mucinous cystadenocarcinoma](http://purl.obolibrary.org/obo/MONDO_0002705), [ovarian mucinous cystadenocarcinoma](http://purl.obolibrary.org/obo/MONDO_0002701), [appendix mucinous cystadenocarcinoma](http://purl.obolibrary.org/obo/MONDO_0002703) (4 total)
 
 classes: 
-  mucinous cystadenocarcinoma: "http://purl.obolibrary.org/obo/MONDO_0005858"
+  mucinous cystadenocarcinoma: "MONDO:0005858"
   multicellular anatomical structure: "UBERON:0010000"
 
 

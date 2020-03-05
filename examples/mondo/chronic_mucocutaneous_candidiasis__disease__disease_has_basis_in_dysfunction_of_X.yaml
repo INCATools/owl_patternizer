@@ -8,7 +8,7 @@ description: >-
   Examples: [autoimmune enteropathy and endocrinopathy - susceptibility to chronic infections syndrome](http://purl.obolibrary.org/obo/MONDO_0013599), [candidiasis, familial, 8](http://purl.obolibrary.org/obo/MONDO_0014230), [candidiasis, familial, 4](http://purl.obolibrary.org/obo/MONDO_0013140) (7 total)
 
 classes: 
-  chronic mucocutaneous candidiasis (disease): "http://purl.obolibrary.org/obo/MONDO_0015279"
+  chronic mucocutaneous candidiasis (disease): "MONDO:0015279"
   SO_0001217: "SO:0001217"
 
 

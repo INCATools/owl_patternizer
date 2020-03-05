@@ -8,7 +8,7 @@ description: >-
   Examples: [amelogenesis imperfecta hypomaturation type 2A5](http://purl.obolibrary.org/obo/MONDO_0014385), [amelogenesis imperfecta type 1G](http://purl.obolibrary.org/obo/MONDO_0008771), [amelogenesis imperfecta, type 3A](http://purl.obolibrary.org/obo/MONDO_0007538) (12 total)
 
 classes: 
-  amelogenesis imperfecta: "http://purl.obolibrary.org/obo/MONDO_0019507"
+  amelogenesis imperfecta: "MONDO:0019507"
   SO_0001217: "SO:0001217"
 
 

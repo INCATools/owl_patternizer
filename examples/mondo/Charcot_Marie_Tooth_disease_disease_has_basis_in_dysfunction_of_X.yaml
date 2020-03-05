@@ -8,7 +8,7 @@ description: >-
   Examples: [Charcot-Marie-Tooth disease axonal type 2X](http://purl.obolibrary.org/obo/MONDO_0014726), [Charcot-Marie-Tooth disease dominant intermediate c](http://purl.obolibrary.org/obo/MONDO_0012012), [Charcot-Marie-Tooth disease recessive intermediate a](http://purl.obolibrary.org/obo/MONDO_0012014) (15 total)
 
 classes: 
-  Charcot-Marie-Tooth disease: "http://purl.obolibrary.org/obo/MONDO_0015626"
+  Charcot-Marie-Tooth disease: "MONDO:0015626"
   SO_0001217: "SO:0001217"
 
 

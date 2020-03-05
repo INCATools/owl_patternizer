@@ -8,7 +8,7 @@ description: >-
   Examples: [glossopharyngeal nerve disease](http://purl.obolibrary.org/obo/MONDO_0002639), [glossopharyngeal motor neuropathy](http://purl.obolibrary.org/obo/MONDO_0004279), [glossopharyngeal nerve paralysis](http://purl.obolibrary.org/obo/MONDO_0002781) (5 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   glossopharyngeal nerve: "UBERON:0001649"
 
 

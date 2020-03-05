@@ -8,7 +8,7 @@ description: >-
   Examples: [malignant tumor of palpebral epidermis](http://purl.obolibrary.org/obo/MONDO_0020175), [palpebral epidermal tumor](http://purl.obolibrary.org/obo/MONDO_0020172), [palpebral nevus](http://purl.obolibrary.org/obo/MONDO_0020179) (6 total)
 
 classes: 
-  cell proliferation disorder: "http://purl.obolibrary.org/obo/MONDO_0045024"
+  cell proliferation disorder: "MONDO:0045024"
   skin of eyelid: "UBERON:0001457"
 
 

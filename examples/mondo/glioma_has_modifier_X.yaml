@@ -8,7 +8,7 @@ description: >-
   Examples: [grade II glioma](http://purl.obolibrary.org/obo/MONDO_0021639), [grade III glioma](http://purl.obolibrary.org/obo/MONDO_0021640), [low grade glioma](http://purl.obolibrary.org/obo/MONDO_0021637) (6 total)
 
 classes: 
-  glioma: "http://purl.obolibrary.org/obo/MONDO_0021042"
+  glioma: "MONDO:0021042"
   quality: "PATO:0000001"
 
 

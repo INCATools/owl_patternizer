@@ -8,7 +8,7 @@ description: >-
   Examples: [cervical lymphadenitis](http://purl.obolibrary.org/obo/MONDO_0003067), [cervical dermoid cyst](http://purl.obolibrary.org/obo/MONDO_0015379), [malignant tumor of neck](http://purl.obolibrary.org/obo/MONDO_0021310) (6 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   neck: "UBERON:0000974"
 
 

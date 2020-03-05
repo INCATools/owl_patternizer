@@ -8,7 +8,7 @@ description: >-
   Examples: [cervical small cell carcinoma](http://purl.obolibrary.org/obo/MONDO_0006142), [pancreatic small cell neuroendocrine carcinoma](http://purl.obolibrary.org/obo/MONDO_0006348), [ureter small cell carcinoma](http://purl.obolibrary.org/obo/MONDO_0006482) (16 total)
 
 classes: 
-  small cell carcinoma: "http://purl.obolibrary.org/obo/MONDO_0000402"
+  small cell carcinoma: "MONDO:0000402"
   multicellular anatomical structure: "UBERON:0010000"
 
 

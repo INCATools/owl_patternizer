@@ -8,7 +8,7 @@ description: >-
   Examples: [colorectal adenocarcinoma](http://purl.obolibrary.org/obo/MONDO_0005008), [colorectal adenoma](http://purl.obolibrary.org/obo/MONDO_0005484), [colorectal cancer](http://purl.obolibrary.org/obo/MONDO_0005575) (9 total)
 
 classes: 
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  neoplasm (disease): "MONDO:0005070"
   colorectum: "UBERON:0012652"
 
 

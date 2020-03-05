@@ -8,7 +8,7 @@ description: >-
   Examples: [nervous system disorder](http://purl.obolibrary.org/obo/MONDO_0005071), [nervous system cancer](http://purl.obolibrary.org/obo/MONDO_0005872), [nervous system neoplasm](http://purl.obolibrary.org/obo/MONDO_0021248) (9 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   nervous system: "UBERON:0001016"
 
 

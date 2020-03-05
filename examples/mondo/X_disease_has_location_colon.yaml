@@ -8,7 +8,7 @@ description: >-
   Examples: [colonic disease](http://purl.obolibrary.org/obo/MONDO_0003409), [colon small cell neuroendocrine carcinoma](http://purl.obolibrary.org/obo/MONDO_0003978), [villous adenoma of colon](http://purl.obolibrary.org/obo/MONDO_0021271) (28 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   colon: "UBERON:0001155"
 
 

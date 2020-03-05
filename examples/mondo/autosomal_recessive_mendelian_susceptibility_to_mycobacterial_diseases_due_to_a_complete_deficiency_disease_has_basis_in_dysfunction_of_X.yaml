@@ -8,7 +8,7 @@ description: >-
   Examples: [autosomal recessive mendelian susceptibility to mycobacterial diseases due to complete RORgamma receptor deficiency](http://purl.obolibrary.org/obo/MONDO_0014710), [mendelian susceptibility to mycobacterial diseases due to complete ISG15 deficiency](http://purl.obolibrary.org/obo/MONDO_0014502), [mendelian susceptibility to mycobacterial diseases due to complete IFNgammaR1 deficiency](http://purl.obolibrary.org/obo/MONDO_0020530) (6 total)
 
 classes: 
-  autosomal recessive mendelian susceptibility to mycobacterial diseases due to a complete deficiency: "http://purl.obolibrary.org/obo/MONDO_0017897"
+  autosomal recessive mendelian susceptibility to mycobacterial diseases due to a complete deficiency: "MONDO:0017897"
   SO_0001217: "SO:0001217"
 
 

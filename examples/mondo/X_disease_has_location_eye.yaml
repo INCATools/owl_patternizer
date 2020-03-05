@@ -8,7 +8,7 @@ description: >-
   Examples: [fungal infection of eye](http://purl.obolibrary.org/obo/MONDO_0020944), [viral eye infection](http://purl.obolibrary.org/obo/MONDO_0020950), [parasitic eye infection](http://purl.obolibrary.org/obo/MONDO_0020947) (5 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   eye: "UBERON:0000970"
 
 

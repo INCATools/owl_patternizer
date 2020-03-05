@@ -8,7 +8,7 @@ description: >-
   Examples: [gingival disease](http://purl.obolibrary.org/obo/MONDO_0002021), [leukoplakia of gingiva](http://purl.obolibrary.org/obo/MONDO_0022538), [gingival cancer](http://purl.obolibrary.org/obo/MONDO_0005507) (8 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   gingiva: "UBERON:0001828"
 
 

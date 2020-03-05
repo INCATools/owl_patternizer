@@ -8,8 +8,8 @@ description: >-
   Examples: [acquired dermis elastic tissue disorder with increased elastic tissue](http://purl.obolibrary.org/obo/MONDO_0016436), [acquired mineral metabolism disease](http://purl.obolibrary.org/obo/MONDO_0024301), [acquired ataxia](http://purl.obolibrary.org/obo/MONDO_0016593) (63 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
-  acquired: "http://purl.obolibrary.org/obo/MONDO_0021141"
+  disease or disorder: "MONDO:0000001"
+  acquired: "MONDO:0021141"
 
 
 relations: 

@@ -8,7 +8,7 @@ description: >-
   Examples: [face disease](http://purl.obolibrary.org/obo/MONDO_0044987), [facial dermoid cyst](http://purl.obolibrary.org/obo/MONDO_0015380), [cavernous hemangioma of face](http://purl.obolibrary.org/obo/MONDO_0003645) (5 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   face: "UBERON:0001456"
 
 

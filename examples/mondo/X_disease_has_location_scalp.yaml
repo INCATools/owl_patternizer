@@ -8,7 +8,7 @@ description: >-
   Examples: [scalp disease](http://purl.obolibrary.org/obo/MONDO_0044999), [dermatophytosis of scalp or beard](http://purl.obolibrary.org/obo/MONDO_0002967), [seborrheic infantile dermatitis](http://purl.obolibrary.org/obo/MONDO_0006609) (4 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   scalp: "UBERON:0000403"
 
 

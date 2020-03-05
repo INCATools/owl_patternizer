@@ -8,7 +8,7 @@ description: >-
   Examples: [congenital nervous system disorder](http://purl.obolibrary.org/obo/MONDO_0002320), [inherited odontologic disease](http://purl.obolibrary.org/obo/MONDO_0019183), [genetic parenchymatous liver disease](http://purl.obolibrary.org/obo/MONDO_0015508) (69 total)
 
 classes: 
-  cancer: "http://purl.obolibrary.org/obo/MONDO_0004992"
+  cancer: "MONDO:0004992"
   multicellular anatomical structure: "UBERON:0010000"
 
 

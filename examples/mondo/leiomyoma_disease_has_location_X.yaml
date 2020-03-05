@@ -8,7 +8,7 @@ description: >-
   Examples: [leiomyoma cutis](http://purl.obolibrary.org/obo/MONDO_0003291), [ureter leiomyoma](http://purl.obolibrary.org/obo/MONDO_0001399), [urethra leiomyoma](http://purl.obolibrary.org/obo/MONDO_0002222) (30 total)
 
 classes: 
-  leiomyoma: "http://purl.obolibrary.org/obo/MONDO_0001572"
+  leiomyoma: "MONDO:0001572"
   anatomical entity: "UBERON:0001062"
 
 

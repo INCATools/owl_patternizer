@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   ERCC6: "http://identifiers.org/hgnc/3438"
-  disease by anatomical system: "http://purl.obolibrary.org/obo/MONDO_0021199"
+  disease by anatomical system: "MONDO:0021199"
 
 
 relations: 

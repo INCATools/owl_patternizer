@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   process: "BFO:0000015"
-  reflex epilepsy: "http://purl.obolibrary.org/obo/MONDO_0017768"
+  reflex epilepsy: "MONDO:0017768"
 
 
 relations: 

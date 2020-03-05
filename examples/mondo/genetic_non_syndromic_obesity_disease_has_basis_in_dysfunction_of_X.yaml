@@ -8,7 +8,7 @@ description: >-
   Examples: [obesity due to SIM1 deficiency](http://purl.obolibrary.org/obo/MONDO_0018244), [obesity due to CEP19 deficiency](http://purl.obolibrary.org/obo/MONDO_0014309), [severe early-onset obesity-insulin resistance syndrome due to SH2B1 deficiency](http://purl.obolibrary.org/obo/MONDO_0017994) (8 total)
 
 classes: 
-  genetic non-syndromic obesity: "http://purl.obolibrary.org/obo/MONDO_0020075"
+  genetic non-syndromic obesity: "MONDO:0020075"
   SO_0001217: "SO:0001217"
 
 

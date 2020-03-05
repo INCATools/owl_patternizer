@@ -8,7 +8,7 @@ description: >-
   Examples: [uveal disease](http://purl.obolibrary.org/obo/MONDO_0002661), [epithelioid cell uveal melanoma](http://purl.obolibrary.org/obo/MONDO_0006200), [uveal cancer](http://purl.obolibrary.org/obo/MONDO_0002659) (5 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   uvea: "UBERON:0001768"
 
 

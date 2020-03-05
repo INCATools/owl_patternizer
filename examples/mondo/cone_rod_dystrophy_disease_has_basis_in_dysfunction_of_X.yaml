@@ -8,7 +8,7 @@ description: >-
   Examples: [Newfoundland cone-rod dystrophy](http://purl.obolibrary.org/obo/MONDO_0011839), [cone-rod dystrophy 10](http://purl.obolibrary.org/obo/MONDO_0012464), [cone-rod dystrophy 13](http://purl.obolibrary.org/obo/MONDO_0011987) (17 total)
 
 classes: 
-  cone-rod dystrophy: "http://purl.obolibrary.org/obo/MONDO_0015993"
+  cone-rod dystrophy: "MONDO:0015993"
   SO_0001217: "SO:0001217"
 
 

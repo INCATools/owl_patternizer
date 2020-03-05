@@ -8,7 +8,7 @@ description: >-
   Examples: [Fanconi anemia complementation group U](http://purl.obolibrary.org/obo/MONDO_0014987), [Fanconi anemia complementation group L](http://purl.obolibrary.org/obo/MONDO_0013566), [Fanconi anemia complementation group P](http://purl.obolibrary.org/obo/MONDO_0013499) (11 total)
 
 classes: 
-  Fanconi anemia: "http://purl.obolibrary.org/obo/MONDO_0019391"
+  Fanconi anemia: "MONDO:0019391"
   SO_0001217: "SO:0001217"
 
 

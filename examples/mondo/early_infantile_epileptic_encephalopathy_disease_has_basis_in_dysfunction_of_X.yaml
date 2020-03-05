@@ -8,7 +8,7 @@ description: >-
   Examples: [epileptic encephalopathy, early infantile, 11](http://purl.obolibrary.org/obo/MONDO_0013388), [epileptic encephalopathy, early infantile, 13](http://purl.obolibrary.org/obo/MONDO_0013801), [epileptic encephalopathy, early infantile, 41](http://purl.obolibrary.org/obo/MONDO_0014916) (38 total)
 
 classes: 
-  early infantile epileptic encephalopathy: "http://purl.obolibrary.org/obo/MONDO_0016021"
+  early infantile epileptic encephalopathy: "MONDO:0016021"
   SO_0001217: "SO:0001217"
 
 

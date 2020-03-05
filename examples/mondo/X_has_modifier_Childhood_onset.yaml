@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   Childhood onset: "http://purl.obolibrary.org/obo/HP_0011463"
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
 
 
 relations: 

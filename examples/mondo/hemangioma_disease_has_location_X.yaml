@@ -8,7 +8,7 @@ description: >-
   Examples: [skin hemangioma](http://purl.obolibrary.org/obo/MONDO_0003110), [breast hemangioma](http://purl.obolibrary.org/obo/MONDO_0003126), [gastric hemangioma](http://purl.obolibrary.org/obo/MONDO_0002414) (20 total)
 
 classes: 
-  hemangioma: "http://purl.obolibrary.org/obo/MONDO_0006500"
+  hemangioma: "MONDO:0006500"
   anatomical entity: "UBERON:0001062"
 
 

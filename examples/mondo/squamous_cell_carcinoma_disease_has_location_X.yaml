@@ -8,7 +8,7 @@ description: >-
   Examples: [cervical squamous cell carcinoma](http://purl.obolibrary.org/obo/MONDO_0006143), [skin squamous cell carcinoma](http://purl.obolibrary.org/obo/MONDO_0002529), [ureter squamous cell carcinoma](http://purl.obolibrary.org/obo/MONDO_0003502) (63 total)
 
 classes: 
-  squamous cell carcinoma: "http://purl.obolibrary.org/obo/MONDO_0005096"
+  squamous cell carcinoma: "MONDO:0005096"
   anatomical entity: "UBERON:0001062"
 
 

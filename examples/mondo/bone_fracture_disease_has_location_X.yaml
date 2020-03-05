@@ -8,7 +8,7 @@ description: >-
   Examples: [tibia fracture](http://purl.obolibrary.org/obo/MONDO_0005320), [spinal fracture](http://purl.obolibrary.org/obo/MONDO_0005309), [ulna fracture](http://purl.obolibrary.org/obo/MONDO_0005322) (4 total)
 
 classes: 
-  bone fracture: "http://purl.obolibrary.org/obo/MONDO_0005315"
+  bone fracture: "MONDO:0005315"
   multicellular anatomical structure: "UBERON:0010000"
 
 

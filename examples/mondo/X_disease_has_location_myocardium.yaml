@@ -8,7 +8,7 @@ description: >-
   Examples: [myocardial disorder](http://purl.obolibrary.org/obo/MONDO_0024643), [myocardium cancer](http://purl.obolibrary.org/obo/MONDO_0004749), [myocardial ischemia](http://purl.obolibrary.org/obo/MONDO_0024644) (5 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   myocardium: "UBERON:0002349"
 
 

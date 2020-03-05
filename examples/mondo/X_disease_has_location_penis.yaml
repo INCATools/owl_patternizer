@@ -8,7 +8,7 @@ description: >-
   Examples: [penile disease](http://purl.obolibrary.org/obo/MONDO_0002036), [basaloid carcinoma of the penis](http://purl.obolibrary.org/obo/MONDO_0004089), [penile urethral cancer](http://purl.obolibrary.org/obo/MONDO_0004504) (19 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   penis: "UBERON:0000989"
 
 

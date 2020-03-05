@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   axon: "GO:0030424"
-  peripheral neuropathy: "http://purl.obolibrary.org/obo/MONDO_0005244"
+  peripheral neuropathy: "MONDO:0005244"
   sensory nerve: "UBERON:0001027"
   median nerve: "UBERON:0001148"
   radial nerve: "UBERON:0001492"

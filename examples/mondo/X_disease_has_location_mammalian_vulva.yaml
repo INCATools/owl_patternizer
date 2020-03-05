@@ -8,7 +8,7 @@ description: >-
   Examples: [vulvar leiomyoma](http://purl.obolibrary.org/obo/MONDO_0003298), [vestibular papilloma](http://purl.obolibrary.org/obo/MONDO_0002194), [vulvar neuroendocrine carcinoma](http://purl.obolibrary.org/obo/MONDO_0056816) (41 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   mammalian vulva: "UBERON:0000997"
 
 

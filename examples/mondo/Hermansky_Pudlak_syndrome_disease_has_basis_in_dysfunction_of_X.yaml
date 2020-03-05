@@ -8,7 +8,7 @@ description: >-
   Examples: [Hermansky-Pudlak syndrome 3](http://purl.obolibrary.org/obo/MONDO_0013555), [Hermansky-Pudlak syndrome 4](http://purl.obolibrary.org/obo/MONDO_0013556), [Hermansky-Pudlak syndrome 5](http://purl.obolibrary.org/obo/MONDO_0013557) (10 total)
 
 classes: 
-  Hermansky-Pudlak syndrome: "http://purl.obolibrary.org/obo/MONDO_0019312"
+  Hermansky-Pudlak syndrome: "MONDO:0019312"
   SO_0001217: "SO:0001217"
 
 

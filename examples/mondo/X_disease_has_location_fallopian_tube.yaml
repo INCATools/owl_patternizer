@@ -8,7 +8,7 @@ description: >-
   Examples: [fallopian tube disease](http://purl.obolibrary.org/obo/MONDO_0002156), [tubal pregnancy](http://purl.obolibrary.org/obo/MONDO_0043762), [fallopian tube leiomyoma](http://purl.obolibrary.org/obo/MONDO_0003285) (28 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   fallopian tube: "UBERON:0003889"
 
 

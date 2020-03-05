@@ -8,7 +8,7 @@ description: >-
   Examples: [cataract 33](http://purl.obolibrary.org/obo/MONDO_0012665), [cataract 41](http://purl.obolibrary.org/obo/MONDO_0007287), [cataract 43](http://purl.obolibrary.org/obo/MONDO_0014565) (21 total)
 
 classes: 
-  early-onset non-syndromic cataract: "http://purl.obolibrary.org/obo/MONDO_0011060"
+  early-onset non-syndromic cataract: "MONDO:0011060"
   SO_0001217: "SO:0001217"
 
 

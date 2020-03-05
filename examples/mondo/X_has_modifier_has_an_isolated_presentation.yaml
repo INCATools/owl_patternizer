@@ -8,8 +8,8 @@ description: >-
   Examples: [isolated trigonocephaly](http://purl.obolibrary.org/obo/MONDO_0018065), [isolated polycystic liver disease](http://purl.obolibrary.org/obo/MONDO_0008265), [isolated Klippel-Feil syndrome](http://purl.obolibrary.org/obo/MONDO_0016520) (41 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
-  has an isolated presentation: "http://purl.obolibrary.org/obo/MONDO_0021128"
+  disease or disorder: "MONDO:0000001"
+  has an isolated presentation: "MONDO:0021128"
 
 
 relations: 

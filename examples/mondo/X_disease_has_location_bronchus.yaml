@@ -8,7 +8,7 @@ description: >-
   Examples: [bronchial disease](http://purl.obolibrary.org/obo/MONDO_0001358), [bronchus adenoma](http://purl.obolibrary.org/obo/MONDO_0003427), [bronchus mucoepidermoid carcinoma](http://purl.obolibrary.org/obo/MONDO_0000531) (9 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   bronchus: "UBERON:0002185"
 
 

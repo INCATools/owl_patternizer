@@ -8,8 +8,8 @@ description: >-
   Examples: [inborn errors of metabolism](http://purl.obolibrary.org/obo/MONDO_0019052), [methylmalonic aciduria and homocystinuria type cblF](http://purl.obolibrary.org/obo/MONDO_0010183), [inherited isolated nail anomaly](http://purl.obolibrary.org/obo/MONDO_0019284) (6 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
-  inherited: "http://purl.obolibrary.org/obo/MONDO_0021152"
+  disease or disorder: "MONDO:0000001"
+  inherited: "MONDO:0021152"
 
 
 relations: 

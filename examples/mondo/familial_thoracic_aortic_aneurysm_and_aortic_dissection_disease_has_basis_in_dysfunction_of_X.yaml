@@ -8,7 +8,7 @@ description: >-
   Examples: [aortic aneurysm, familial thoracic 6](http://purl.obolibrary.org/obo/MONDO_0012730), [aortic aneurysm, familial thoracic 9](http://purl.obolibrary.org/obo/MONDO_0014514), [aortic aneurysm, familial thoracic 10](http://purl.obolibrary.org/obo/MONDO_0014950) (5 total)
 
 classes: 
-  familial thoracic aortic aneurysm and aortic dissection: "http://purl.obolibrary.org/obo/MONDO_0019625"
+  familial thoracic aortic aneurysm and aortic dissection: "MONDO:0019625"
   SO_0001217: "SO:0001217"
 
 

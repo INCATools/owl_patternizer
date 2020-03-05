@@ -8,7 +8,7 @@ description: >-
   Examples: [anaplastic ependymoma](http://purl.obolibrary.org/obo/MONDO_0016700), [anaplastic cancer](http://purl.obolibrary.org/obo/MONDO_0020633), [anaplastic meningioma](http://purl.obolibrary.org/obo/MONDO_0020635) (7 total)
 
 classes: 
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  neoplasm (disease): "MONDO:0005070"
   anaplastic: "PATO:0002092"
 
 

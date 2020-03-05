@@ -8,7 +8,7 @@ description: >-
   Examples: [lymph node disease](http://purl.obolibrary.org/obo/MONDO_0004928), [lymph node adenoid cystic carcinoma](http://purl.obolibrary.org/obo/MONDO_0000715), [lymph node cancer](http://purl.obolibrary.org/obo/MONDO_0001082) (7 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   lymph node: "UBERON:0000029"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [viral pneumonia](http://purl.obolibrary.org/obo/MONDO_0006012), [cytomegalovirus pneumonia](http://purl.obolibrary.org/obo/MONDO_0024354), [staphylococcal pneumonia](http://purl.obolibrary.org/obo/MONDO_0005970) (5 total)
 
 classes: 
-  pneumonia: "http://purl.obolibrary.org/obo/MONDO_0005249"
+  pneumonia: "MONDO:0005249"
   root: "http://purl.obolibrary.org/obo/NCBITaxon_1"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [pontocerebellar hypoplasia type 1A](http://purl.obolibrary.org/obo/MONDO_0011866), [pontocerebellar hypoplasia type 3](http://purl.obolibrary.org/obo/MONDO_0011948), [pontocerebellar hypoplasia type 2C](http://purl.obolibrary.org/obo/MONDO_0012891) (13 total)
 
 classes: 
-  non-syndromic pontocerebellar hypoplasia: "http://purl.obolibrary.org/obo/MONDO_0020135"
+  non-syndromic pontocerebellar hypoplasia: "MONDO:0020135"
   SO_0001217: "SO:0001217"
 
 

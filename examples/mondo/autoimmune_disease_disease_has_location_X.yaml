@@ -8,7 +8,7 @@ description: >-
   Examples: [autoimmune disease of peripheral nervous system](http://purl.obolibrary.org/obo/MONDO_0000590), [autoimmune disease of blood](http://purl.obolibrary.org/obo/MONDO_0000602), [autoimmune disease of endocrine system](http://purl.obolibrary.org/obo/MONDO_0000569) (11 total)
 
 classes: 
-  autoimmune disease: "http://purl.obolibrary.org/obo/MONDO_0007179"
+  autoimmune disease: "MONDO:0007179"
   material anatomical entity: "UBERON:0000465"
 
 

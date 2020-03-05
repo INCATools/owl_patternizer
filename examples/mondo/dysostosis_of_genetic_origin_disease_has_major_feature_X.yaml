@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   Abnormality of limbs: "http://purl.obolibrary.org/obo/HP_0040064"
-  dysostosis of genetic origin: "http://purl.obolibrary.org/obo/MONDO_0018454"
+  dysostosis of genetic origin: "MONDO:0018454"
 
 
 relations: 

@@ -8,7 +8,7 @@ description: >-
   Examples: [cervix disease](http://purl.obolibrary.org/obo/MONDO_0002256), [cervical small cell carcinoma](http://purl.obolibrary.org/obo/MONDO_0006142), [cervix squamous papilloma](http://purl.obolibrary.org/obo/MONDO_0004788) (35 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   uterine cervix: "UBERON:0000002"
 
 

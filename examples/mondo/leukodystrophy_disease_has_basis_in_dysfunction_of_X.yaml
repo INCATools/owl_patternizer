@@ -8,7 +8,7 @@ description: >-
   Examples: [hypomyelinating leukodystrophy 3](http://purl.obolibrary.org/obo/MONDO_0009843), [hypomyelinating leukodystrophy 12](http://purl.obolibrary.org/obo/MONDO_0014732), [hypomyelinating leukodystrophy 2](http://purl.obolibrary.org/obo/MONDO_0012125) (10 total)
 
 classes: 
-  leukodystrophy: "http://purl.obolibrary.org/obo/MONDO_0019046"
+  leukodystrophy: "MONDO:0019046"
   SO_0001217: "SO:0001217"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [floor of mouth mucoepidermoid carcinoma](http://purl.obolibrary.org/obo/MONDO_0006213), [malignant tumor of floor of mouth](http://purl.obolibrary.org/obo/MONDO_0021320), [carcinoma of floor of mouth](http://purl.obolibrary.org/obo/MONDO_0021343) (7 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   mouth floor: "UBERON:0003679"
 
 

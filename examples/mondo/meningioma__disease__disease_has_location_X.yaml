@@ -8,7 +8,7 @@ description: >-
   Examples: [skin meningioma](http://purl.obolibrary.org/obo/MONDO_0004429), [brain meningioma](http://purl.obolibrary.org/obo/MONDO_0000642), [choroid plexus meningioma](http://purl.obolibrary.org/obo/MONDO_0003053) (26 total)
 
 classes: 
-  meningioma (disease): "http://purl.obolibrary.org/obo/MONDO_0016642"
+  meningioma (disease): "MONDO:0016642"
   anatomical entity: "UBERON:0001062"
 
 

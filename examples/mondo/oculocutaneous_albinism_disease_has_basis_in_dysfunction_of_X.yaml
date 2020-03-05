@@ -8,7 +8,7 @@ description: >-
   Examples: [oculocutaneous albinism type 1A](http://purl.obolibrary.org/obo/MONDO_0008745), [oculocutaneous albinism type 3](http://purl.obolibrary.org/obo/MONDO_0008747), [oculocutaneous albinism type 4](http://purl.obolibrary.org/obo/MONDO_0011683) (4 total)
 
 classes: 
-  oculocutaneous albinism: "http://purl.obolibrary.org/obo/MONDO_0018910"
+  oculocutaneous albinism: "MONDO:0018910"
   SO_0001217: "SO:0001217"
 
 

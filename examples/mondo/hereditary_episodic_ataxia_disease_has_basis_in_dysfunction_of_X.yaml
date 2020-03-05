@@ -8,7 +8,7 @@ description: >-
   Examples: [episodic ataxia type 6](http://purl.obolibrary.org/obo/MONDO_0012982), [episodic ataxia type 2](http://purl.obolibrary.org/obo/MONDO_0007163), [episodic ataxia type 5](http://purl.obolibrary.org/obo/MONDO_0013464) (4 total)
 
 classes: 
-  hereditary episodic ataxia: "http://purl.obolibrary.org/obo/MONDO_0016227"
+  hereditary episodic ataxia: "MONDO:0016227"
   SO_0001217: "SO:0001217"
 
 

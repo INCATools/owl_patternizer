@@ -8,7 +8,7 @@ description: >-
   Examples: [ureter inverted papilloma](http://purl.obolibrary.org/obo/MONDO_0004043), [inverted urothelial papilloma](http://purl.obolibrary.org/obo/MONDO_0021109), [renal pelvis inverted papilloma](http://purl.obolibrary.org/obo/MONDO_0003776) (8 total)
 
 classes: 
-  inverted papilloma: "http://purl.obolibrary.org/obo/MONDO_0002537"
+  inverted papilloma: "MONDO:0002537"
   anatomical entity: "UBERON:0001062"
 
 

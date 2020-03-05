@@ -8,7 +8,7 @@ description: >-
   Examples: [glycogen storage disease due to GLUT2 deficiency](http://purl.obolibrary.org/obo/MONDO_0009216), [glycogen storage disease III](http://purl.obolibrary.org/obo/MONDO_0009291), [glycogen storage disease due to glucose-6-phosphatase deficiency type IA](http://purl.obolibrary.org/obo/MONDO_0009287) (16 total)
 
 classes: 
-  glycogen storage disease: "http://purl.obolibrary.org/obo/MONDO_0002412"
+  glycogen storage disease: "MONDO:0002412"
   SO_0001217: "SO:0001217"
 
 

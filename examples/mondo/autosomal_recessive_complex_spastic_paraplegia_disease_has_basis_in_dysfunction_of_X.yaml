@@ -8,7 +8,7 @@ description: >-
   Examples: [hereditary spastic paraplegia 18](http://purl.obolibrary.org/obo/MONDO_0012639), [autosomal recessive spastic paraplegia type 76](http://purl.obolibrary.org/obo/MONDO_0014827), [hereditary spastic paraplegia 44](http://purl.obolibrary.org/obo/MONDO_0013179) (14 total)
 
 classes: 
-  autosomal recessive complex spastic paraplegia: "http://purl.obolibrary.org/obo/MONDO_0015089"
+  autosomal recessive complex spastic paraplegia: "MONDO:0015089"
   SO_0001217: "SO:0001217"
 
 

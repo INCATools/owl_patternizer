@@ -8,7 +8,7 @@ description: >-
   Examples: [uterine cervix leukoplakia](http://purl.obolibrary.org/obo/MONDO_0004702), [leukoplakia of penis](http://purl.obolibrary.org/obo/MONDO_0006830), [leukoplakia of vagina](http://purl.obolibrary.org/obo/MONDO_0004679) (5 total)
 
 classes: 
-  leukoplakia: "http://purl.obolibrary.org/obo/MONDO_0043243"
+  leukoplakia: "MONDO:0043243"
   multicellular anatomical structure: "UBERON:0010000"
 
 

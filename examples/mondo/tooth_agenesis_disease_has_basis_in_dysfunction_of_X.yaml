@@ -8,7 +8,7 @@ description: >-
   Examples: [tooth agenesis, selective, 8](http://purl.obolibrary.org/obo/MONDO_0014901), [tooth agenesis, selective, 4](http://purl.obolibrary.org/obo/MONDO_0007881), [tooth agenesis, selective, 9](http://purl.obolibrary.org/obo/MONDO_0014999) (7 total)
 
 classes: 
-  tooth agenesis: "http://purl.obolibrary.org/obo/MONDO_0005486"
+  tooth agenesis: "MONDO:0005486"
   SO_0001217: "SO:0001217"
 
 

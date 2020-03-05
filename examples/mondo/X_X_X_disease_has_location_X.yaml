@@ -8,7 +8,7 @@ description: >-
   Examples: [skin vascular disease](http://purl.obolibrary.org/obo/MONDO_0019293), [inherited vitreous-retinal disease](http://purl.obolibrary.org/obo/MONDO_0020238), [urethra inverted papilloma](http://purl.obolibrary.org/obo/MONDO_0004042) (5 total)
 
 classes: 
-  papilloma: "http://purl.obolibrary.org/obo/MONDO_0002363"
+  papilloma: "MONDO:0002363"
   urethra: "UBERON:0000057"
 
 

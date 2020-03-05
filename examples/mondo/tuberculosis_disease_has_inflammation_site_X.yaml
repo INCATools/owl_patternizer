@@ -8,7 +8,7 @@ description: >-
   Examples: [intestinal tuberculosis](http://purl.obolibrary.org/obo/MONDO_0001678), [oral tuberculosis](http://purl.obolibrary.org/obo/MONDO_0005887), [cardiac tuberculosis](http://purl.obolibrary.org/obo/MONDO_0000813) (8 total)
 
 classes: 
-  tuberculosis: "http://purl.obolibrary.org/obo/MONDO_0018076"
+  tuberculosis: "MONDO:0018076"
   multicellular anatomical structure: "UBERON:0010000"
 
 

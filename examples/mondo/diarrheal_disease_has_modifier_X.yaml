@@ -10,7 +10,7 @@ description: >-
 classes: 
   Congenital onset: "http://purl.obolibrary.org/obo/HP_0003577"
   Infantile onset: "http://purl.obolibrary.org/obo/HP_0003593"
-  diarrheal disease: "http://purl.obolibrary.org/obo/MONDO_0001673"
+  diarrheal disease: "MONDO:0001673"
   acute: "PATO:0000389"
   chronic: "PATO:0001863"
 

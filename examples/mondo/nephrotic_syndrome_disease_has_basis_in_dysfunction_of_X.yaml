@@ -8,7 +8,7 @@ description: >-
   Examples: [nephrotic syndrome 14](http://purl.obolibrary.org/obo/MONDO_0033203), [nephrotic syndrome, type 4](http://purl.obolibrary.org/obo/MONDO_0009733), [nephrotic syndrome, type 2](http://purl.obolibrary.org/obo/MONDO_0010974) (15 total)
 
 classes: 
-  nephrotic syndrome: "http://purl.obolibrary.org/obo/MONDO_0005377"
+  nephrotic syndrome: "MONDO:0005377"
   SO_0001217: "SO:0001217"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [abdominal ectopic pregnancy](http://purl.obolibrary.org/obo/MONDO_0043759), [ovarian ectopic pregnancy](http://purl.obolibrary.org/obo/MONDO_0044098), [pregnancy, cornual](http://purl.obolibrary.org/obo/MONDO_0044101) (4 total)
 
 classes: 
-  ectopic pregnancy: "http://purl.obolibrary.org/obo/MONDO_0000755"
+  ectopic pregnancy: "MONDO:0000755"
   multicellular anatomical structure: "UBERON:0010000"
 
 

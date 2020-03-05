@@ -8,7 +8,7 @@ description: >-
   Examples: [tick-borne infectious disease](http://purl.obolibrary.org/obo/MONDO_0025294), [arbovirus infection](http://purl.obolibrary.org/obo/MONDO_0020731), [rat-bite fever](http://purl.obolibrary.org/obo/MONDO_0006941) (6 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   Bilateria: "http://purl.obolibrary.org/obo/NCBITaxon_33213"
 
 

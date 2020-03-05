@@ -8,7 +8,7 @@ description: >-
   Examples: [gonococcal epididymo-orchitis](http://purl.obolibrary.org/obo/MONDO_0021158), [epidemic keratoconjunctivitis](http://purl.obolibrary.org/obo/MONDO_0001615), [herpetic vulvovaginitis](http://purl.obolibrary.org/obo/MONDO_0021175) (4 total)
 
 classes: 
-  infectious disease: "http://purl.obolibrary.org/obo/MONDO_0005550"
+  infectious disease: "MONDO:0005550"
   root: "http://purl.obolibrary.org/obo/NCBITaxon_1"
   multicellular anatomical structure: "UBERON:0010000"
 

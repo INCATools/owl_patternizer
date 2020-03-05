@@ -8,7 +8,7 @@ description: >-
   Examples: [Rift valley fever](http://purl.obolibrary.org/obo/MONDO_0017880), [arenavirus hemorrhagic fever](http://purl.obolibrary.org/obo/MONDO_0005651), [Argentine hemorrhagic fever](http://purl.obolibrary.org/obo/MONDO_0017874) (10 total)
 
 classes: 
-  viral hemorrhagic fever: "http://purl.obolibrary.org/obo/MONDO_0018087"
+  viral hemorrhagic fever: "MONDO:0018087"
   ssRNA viruses: "http://purl.obolibrary.org/obo/NCBITaxon_439488"
 
 

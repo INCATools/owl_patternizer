@@ -8,7 +8,7 @@ description: >-
   Examples: [optic choroid disease](http://purl.obolibrary.org/obo/MONDO_0001898), [choroid epithelioid cell melanoma](http://purl.obolibrary.org/obo/MONDO_0004085), [choroid mixed cell melanoma](http://purl.obolibrary.org/obo/MONDO_0003913) (12 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   optic choroid: "UBERON:0001776"
 
 

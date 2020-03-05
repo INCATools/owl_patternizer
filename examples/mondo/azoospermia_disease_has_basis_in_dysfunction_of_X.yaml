@@ -8,7 +8,7 @@ description: >-
   Examples: [spermatogenic failure 13](http://purl.obolibrary.org/obo/MONDO_0014365), [spermatogenic failure, X-linked, 2](http://purl.obolibrary.org/obo/MONDO_0010647), [spermatogenic failure 3](http://purl.obolibrary.org/obo/MONDO_0011720) (14 total)
 
 classes: 
-  azoospermia: "http://purl.obolibrary.org/obo/MONDO_0004983"
+  azoospermia: "MONDO:0004983"
   SO_0001217: "SO:0001217"
 
 

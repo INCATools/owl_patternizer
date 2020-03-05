@@ -8,7 +8,7 @@ description: >-
   Examples: [skin sarcoidosis](http://purl.obolibrary.org/obo/MONDO_0006611), [cardiac sarcoidosis](http://purl.obolibrary.org/obo/MONDO_0001707), [neurosarcoidosis](http://purl.obolibrary.org/obo/MONDO_0045047) (5 total)
 
 classes: 
-  sarcoidosis: "http://purl.obolibrary.org/obo/MONDO_0019338"
+  sarcoidosis: "MONDO:0019338"
   anatomical structure: "UBERON:0000061"
 
 

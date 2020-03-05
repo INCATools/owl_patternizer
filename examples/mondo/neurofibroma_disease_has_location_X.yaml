@@ -8,7 +8,7 @@ description: >-
   Examples: [neurofibroma of the heart](http://purl.obolibrary.org/obo/MONDO_0004752), [neurofibroma of the esophagus](http://purl.obolibrary.org/obo/MONDO_0004837), [neurofibroma of gallbladder](http://purl.obolibrary.org/obo/MONDO_0003303) (5 total)
 
 classes: 
-  neurofibroma: "http://purl.obolibrary.org/obo/MONDO_0016755"
+  neurofibroma: "MONDO:0016755"
   anatomical entity: "UBERON:0001062"
 
 

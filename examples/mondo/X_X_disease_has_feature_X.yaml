@@ -8,8 +8,8 @@ description: >-
   Examples: [rare disorder with female infertility due to a congenital hypogonadotropic hypogonadism](http://purl.obolibrary.org/obo/MONDO_0018399), [non-functioning endocrine neoplasm](http://purl.obolibrary.org/obo/MONDO_0021119), [functioning endocrine neoplasm](http://purl.obolibrary.org/obo/MONDO_0021120) (15 total)
 
 classes: 
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
-  Zollinger-Ellison syndrome: "http://purl.obolibrary.org/obo/MONDO_0019610"
+  neoplasm (disease): "MONDO:0005070"
+  Zollinger-Ellison syndrome: "MONDO:0019610"
   NCIT_C37109: "NCIT:C37109"
 
 

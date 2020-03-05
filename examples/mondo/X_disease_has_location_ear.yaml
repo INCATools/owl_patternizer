@@ -8,7 +8,7 @@ description: >-
   Examples: [disease of ear](http://purl.obolibrary.org/obo/MONDO_0021205), [malignant ear neoplasm](http://purl.obolibrary.org/obo/MONDO_0003277), [ear neoplasm](http://purl.obolibrary.org/obo/MONDO_0021233) (5 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   ear: "UBERON:0001690"
 
 

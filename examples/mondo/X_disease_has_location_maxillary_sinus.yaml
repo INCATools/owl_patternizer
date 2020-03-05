@@ -8,7 +8,7 @@ description: >-
   Examples: [maxillary sinus inverted papilloma](http://purl.obolibrary.org/obo/MONDO_0004384), [maxillary sinus adenoid cystic carcinoma](http://purl.obolibrary.org/obo/MONDO_0006297), [maxillary sinus carcinoma](http://purl.obolibrary.org/obo/MONDO_0001748) (9 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   maxillary sinus: "UBERON:0001764"
 
 

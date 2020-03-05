@@ -8,7 +8,7 @@ description: >-
   Examples: [anal margin carcinoma](http://purl.obolibrary.org/obo/MONDO_0002941), [anal margin squamous cell carcinoma](http://purl.obolibrary.org/obo/MONDO_0001470), [anal margin basal cell carcinoma](http://purl.obolibrary.org/obo/MONDO_0002940) (4 total)
 
 classes: 
-  carcinoma: "http://purl.obolibrary.org/obo/MONDO_0004993"
+  carcinoma: "MONDO:0004993"
   perianal skin: "UBERON:0012336"
 
 

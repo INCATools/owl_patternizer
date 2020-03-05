@@ -8,7 +8,7 @@ description: >-
   Examples: [primary ciliary dyskinesia 28](http://purl.obolibrary.org/obo/MONDO_0014216), [primary ciliary dyskinesia 24](http://purl.obolibrary.org/obo/MONDO_0014202), [primary ciliary dyskinesia 26](http://purl.obolibrary.org/obo/MONDO_0014211) (33 total)
 
 classes: 
-  primary ciliary dyskinesia: "http://purl.obolibrary.org/obo/MONDO_0016575"
+  primary ciliary dyskinesia: "MONDO:0016575"
   SO_0001217: "SO:0001217"
 
 

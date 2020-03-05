@@ -8,7 +8,7 @@ description: >-
   Examples: [dystonia 23](http://purl.obolibrary.org/obo/MONDO_0013928), [dystonia 24](http://purl.obolibrary.org/obo/MONDO_0014019), [dystonia 28, childhood-onset](http://purl.obolibrary.org/obo/MONDO_0015004) (8 total)
 
 classes: 
-  dystonic disorder: "http://purl.obolibrary.org/obo/MONDO_0003441"
+  dystonic disorder: "MONDO:0003441"
   SO_0001217: "SO:0001217"
 
 

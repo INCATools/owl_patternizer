@@ -8,7 +8,7 @@ description: >-
   Examples: [malignant germ cell tumor of cervix uteri](http://purl.obolibrary.org/obo/MONDO_0016289), [malignant gastric germ cell tumor](http://purl.obolibrary.org/obo/MONDO_0003112), [malignant cardiac germ cell tumor](http://purl.obolibrary.org/obo/MONDO_0001991) (7 total)
 
 classes: 
-  malignant germ cell tumor: "http://purl.obolibrary.org/obo/MONDO_0006290"
+  malignant germ cell tumor: "MONDO:0006290"
   multicellular anatomical structure: "UBERON:0010000"
 
 

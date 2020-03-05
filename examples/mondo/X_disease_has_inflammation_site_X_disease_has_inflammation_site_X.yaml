@@ -8,7 +8,7 @@ description: >-
   Examples: [dermatomyositis](http://purl.obolibrary.org/obo/MONDO_0016367), [pelvic inflammatory disease](http://purl.obolibrary.org/obo/MONDO_0000922), [meningoencephalitis](http://purl.obolibrary.org/obo/MONDO_0005845) (22 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   anatomical entity: "UBERON:0001062"
 
 

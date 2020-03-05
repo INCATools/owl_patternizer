@@ -8,7 +8,7 @@ description: >-
   Examples: [uterine ligament mucinous adenocarcinoma](http://purl.obolibrary.org/obo/MONDO_0002740), [uterine ligament adenocarcinoma](http://purl.obolibrary.org/obo/MONDO_0002741), [uterine ligament cancer](http://purl.obolibrary.org/obo/MONDO_0003612) (9 total)
 
 classes: 
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  neoplasm (disease): "MONDO:0005070"
   uterine ligament: "UBERON:0036262"
 
 

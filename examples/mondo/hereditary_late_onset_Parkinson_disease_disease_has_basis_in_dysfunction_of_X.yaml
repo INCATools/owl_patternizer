@@ -8,7 +8,7 @@ description: >-
   Examples: [Parkinson disease 11, autosomal dominant, susceptibility to](http://purl.obolibrary.org/obo/MONDO_0011896), [Parkinson disease 21](http://purl.obolibrary.org/obo/MONDO_0014604), [Parkinson disease 18, autosomal dominant, susceptibility to](http://purl.obolibrary.org/obo/MONDO_0013653) (4 total)
 
 classes: 
-  hereditary late onset Parkinson disease: "http://purl.obolibrary.org/obo/MONDO_0018466"
+  hereditary late onset Parkinson disease: "MONDO:0018466"
   SO_0001217: "SO:0001217"
 
 

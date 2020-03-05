@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   Autosomal recessive inheritance: "http://purl.obolibrary.org/obo/HP_0000007"
-  severe congenital neutropenia: "http://purl.obolibrary.org/obo/MONDO_0018542"
+  severe congenital neutropenia: "MONDO:0018542"
   SO_0001217: "SO:0001217"
 
 

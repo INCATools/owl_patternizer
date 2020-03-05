@@ -8,7 +8,7 @@ description: >-
   Examples: [salivary gland carcinoma ex pleomorphic adenoma](http://purl.obolibrary.org/obo/MONDO_0006403), [lacrimal gland carcinoma ex pleomorphic adenoma](http://purl.obolibrary.org/obo/MONDO_0002469), [major salivary gland carcinoma ex pleomorphic adenoma](http://purl.obolibrary.org/obo/MONDO_0006285) (4 total)
 
 classes: 
-  carcinoma ex pleomorphic adenoma: "http://purl.obolibrary.org/obo/MONDO_0002472"
+  carcinoma ex pleomorphic adenoma: "MONDO:0002472"
   exocrine gland: "UBERON:0002365"
 
 

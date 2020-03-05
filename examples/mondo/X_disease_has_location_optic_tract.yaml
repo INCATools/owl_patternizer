@@ -8,7 +8,7 @@ description: >-
   Examples: [visual pathway disease](http://purl.obolibrary.org/obo/MONDO_0001834), [optic tract meningioma](http://purl.obolibrary.org/obo/MONDO_0024648), [optic tract astrocytoma](http://purl.obolibrary.org/obo/MONDO_0024649) (4 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   optic tract: "UBERON:0001908"
 
 

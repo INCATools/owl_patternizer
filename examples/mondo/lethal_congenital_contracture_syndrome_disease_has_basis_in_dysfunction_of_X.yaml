@@ -8,7 +8,7 @@ description: >-
   Examples: [lethal congenital contracture syndrome 9](http://purl.obolibrary.org/obo/MONDO_0014670), [lethal congenital contracture syndrome 8](http://purl.obolibrary.org/obo/MONDO_0014570), [lethal congenital contracture syndrome 11](http://purl.obolibrary.org/obo/MONDO_0014965) (9 total)
 
 classes: 
-  lethal congenital contracture syndrome: "http://purl.obolibrary.org/obo/MONDO_0017436"
+  lethal congenital contracture syndrome: "MONDO:0017436"
   SO_0001217: "SO:0001217"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [melanoma, cutaneous malignant, susceptibility to, 10](http://purl.obolibrary.org/obo/MONDO_0014368), [melanoma, cutaneous malignant, susceptibility to, 3](http://purl.obolibrary.org/obo/MONDO_0012183), [melanoma, cutaneous malignant, susceptibility to, 5](http://purl.obolibrary.org/obo/MONDO_0013133) (4 total)
 
 classes: 
-  familial cutaneous melanoma: "http://purl.obolibrary.org/obo/MONDO_0024462"
+  familial cutaneous melanoma: "MONDO:0024462"
   SO_0001217: "SO:0001217"
 
 

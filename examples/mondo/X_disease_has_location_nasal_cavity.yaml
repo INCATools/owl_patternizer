@@ -8,7 +8,7 @@ description: >-
   Examples: [nasal cavity disease](http://purl.obolibrary.org/obo/MONDO_0002232), [nasal cavity carcinoma in situ](http://purl.obolibrary.org/obo/MONDO_0003784), [nasal cavity adenocarcinoma](http://purl.obolibrary.org/obo/MONDO_0003211) (11 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   nasal cavity: "UBERON:0001707"
 
 

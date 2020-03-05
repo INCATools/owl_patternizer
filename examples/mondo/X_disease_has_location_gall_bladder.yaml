@@ -8,7 +8,7 @@ description: >-
   Examples: [gallbladder disease](http://purl.obolibrary.org/obo/MONDO_0005281), [gallbladder small cell neuroendocrine carcinoma](http://purl.obolibrary.org/obo/MONDO_0006219), [gallbladder leiomyoma](http://purl.obolibrary.org/obo/MONDO_0003297) (27 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   gall bladder: "UBERON:0002110"
 
 

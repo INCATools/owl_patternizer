@@ -8,7 +8,7 @@ description: >-
   Examples: [cervical lymphadenitis](http://purl.obolibrary.org/obo/MONDO_0003067), [sialadenitis](http://purl.obolibrary.org/obo/MONDO_0006969), [submandibular adenitis](http://purl.obolibrary.org/obo/MONDO_0003066) (6 total)
 
 classes: 
-  lymphadenitis (disease): "http://purl.obolibrary.org/obo/MONDO_0002052"
+  lymphadenitis (disease): "MONDO:0002052"
   multicellular anatomical structure: "UBERON:0010000"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [Bardet-Biedl syndrome 16](http://purl.obolibrary.org/obo/MONDO_0014444), [Bardet-Biedl syndrome 11](http://purl.obolibrary.org/obo/MONDO_0014439), [Bardet-Biedl syndrome 19](http://purl.obolibrary.org/obo/MONDO_0014447) (15 total)
 
 classes: 
-  Bardet-Biedl syndrome: "http://purl.obolibrary.org/obo/MONDO_0015229"
+  Bardet-Biedl syndrome: "MONDO:0015229"
   SO_0001217: "SO:0001217"
 
 

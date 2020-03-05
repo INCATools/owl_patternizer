@@ -8,7 +8,7 @@ description: >-
   Examples: [ADNP-related multiple congenital anomalies - intellectual disability - autism spectrum disorder](http://purl.obolibrary.org/obo/MONDO_0014379), [rare genetic parathyroid disease and phosphocalcic metabolism disorder](http://purl.obolibrary.org/obo/MONDO_0015970), [other rare diabetes mellitus](http://purl.obolibrary.org/obo/MONDO_0015888) (33 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   quality: "PATO:0000001"
 
 

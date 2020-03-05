@@ -8,7 +8,7 @@ description: >-
   Examples: [cervical adenosarcoma](http://purl.obolibrary.org/obo/MONDO_0002876), [ovarian adenosarcoma](http://purl.obolibrary.org/obo/MONDO_0002880), [vaginal adenosarcoma](http://purl.obolibrary.org/obo/MONDO_0002881) (6 total)
 
 classes: 
-  adenosarcoma: "http://purl.obolibrary.org/obo/MONDO_0005636"
+  adenosarcoma: "MONDO:0005636"
   reproductive structure: "UBERON:0005156"
 
 

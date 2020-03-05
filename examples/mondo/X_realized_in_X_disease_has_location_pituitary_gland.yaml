@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   peptide hormone secretion: "GO:0030072"
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  neoplasm (disease): "MONDO:0005070"
   pituitary gland: "UBERON:0000007"
 
 

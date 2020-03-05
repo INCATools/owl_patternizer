@@ -8,7 +8,7 @@ description: >-
   Examples: [immunodeficiency 49](http://purl.obolibrary.org/obo/MONDO_0014981), [immunodeficiency 28](http://purl.obolibrary.org/obo/MONDO_0013953), [immunodeficiency 39](http://purl.obolibrary.org/obo/MONDO_0014597) (5 total)
 
 classes: 
-  primary immunodeficiency disease: "http://purl.obolibrary.org/obo/MONDO_0003778"
+  primary immunodeficiency disease: "MONDO:0003778"
   SO_0001217: "SO:0001217"
 
 

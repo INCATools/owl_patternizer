@@ -8,7 +8,7 @@ description: >-
   Examples: [Trichomonas balanoposthitis](http://purl.obolibrary.org/obo/MONDO_0030707), [Trichomonas cervicitis](http://purl.obolibrary.org/obo/MONDO_0030708), [Trichomonas prostatitis](http://purl.obolibrary.org/obo/MONDO_0030705) (5 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   Trichomonas vaginalis: "http://purl.obolibrary.org/obo/NCBITaxon_5722"
 
 

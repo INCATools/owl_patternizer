@@ -8,7 +8,7 @@ description: >-
   Examples: [arteriosclerotic retinopathy](http://purl.obolibrary.org/obo/MONDO_0042495), [cavernous hemangioma of retina](http://purl.obolibrary.org/obo/MONDO_0021281), [retinal cancer](http://purl.obolibrary.org/obo/MONDO_0003072) (14 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   retina: "UBERON:0000966"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [skin infection](http://purl.obolibrary.org/obo/MONDO_0021201), [infective vaginitis](http://purl.obolibrary.org/obo/MONDO_0023557), [infectious colitis](http://purl.obolibrary.org/obo/MONDO_0006039) (11 total)
 
 classes: 
-  infectious disease: "http://purl.obolibrary.org/obo/MONDO_0005550"
+  infectious disease: "MONDO:0005550"
   anatomical entity: "UBERON:0001062"
 
 

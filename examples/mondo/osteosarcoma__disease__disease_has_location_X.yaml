@@ -8,7 +8,7 @@ description: >-
   Examples: [breast extraskeletal osteosarcoma](http://purl.obolibrary.org/obo/MONDO_0004360), [central nervous system extraskeletal osteosarcoma](http://purl.obolibrary.org/obo/MONDO_0004423), [liver extraskeletal osteosarcoma](http://purl.obolibrary.org/obo/MONDO_0003866) (5 total)
 
 classes: 
-  osteosarcoma (disease): "http://purl.obolibrary.org/obo/MONDO_0009807"
+  osteosarcoma (disease): "MONDO:0009807"
   anatomical entity: "UBERON:0001062"
 
 

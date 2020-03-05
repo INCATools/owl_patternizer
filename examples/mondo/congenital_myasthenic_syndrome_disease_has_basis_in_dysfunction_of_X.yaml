@@ -25,7 +25,7 @@ classes:
   RAPSN: "http://identifiers.org/hgnc/9863"
   presynapse: "GO:0098793"
   postsynapse: "GO:0098794"
-  congenital myasthenic syndrome: "http://purl.obolibrary.org/obo/MONDO_0018940"
+  congenital myasthenic syndrome: "MONDO:0018940"
 
 
 relations: 

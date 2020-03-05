@@ -8,7 +8,7 @@ description: >-
   Examples: [multiple epiphyseal dysplasia type 4](http://purl.obolibrary.org/obo/MONDO_0009189), [epiphyseal dysplasia, multiple, 6](http://purl.obolibrary.org/obo/MONDO_0013591), [epiphyseal dysplasia, multiple, 2](http://purl.obolibrary.org/obo/MONDO_0010844) (6 total)
 
 classes: 
-  multiple epiphyseal dysplasia (disease): "http://purl.obolibrary.org/obo/MONDO_0016648"
+  multiple epiphyseal dysplasia (disease): "MONDO:0016648"
   SO_0001217: "SO:0001217"
 
 

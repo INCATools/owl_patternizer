@@ -8,7 +8,7 @@ description: >-
   Examples: [pigmented nodular adrenocortical disease, primary, 2](http://purl.obolibrary.org/obo/MONDO_0012505), [pigmented nodular adrenocortical disease, primary, 3](http://purl.obolibrary.org/obo/MONDO_0013616), [pigmented nodular adrenocortical disease, primary, 4](http://purl.obolibrary.org/obo/MONDO_0014359) (4 total)
 
 classes: 
-  primary pigmented nodular adrenocortical disease: "http://purl.obolibrary.org/obo/MONDO_0015999"
+  primary pigmented nodular adrenocortical disease: "MONDO:0015999"
   SO_0001217: "SO:0001217"
 
 

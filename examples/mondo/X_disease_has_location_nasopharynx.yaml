@@ -8,7 +8,7 @@ description: >-
   Examples: [nasopharyngeal disease](http://purl.obolibrary.org/obo/MONDO_0004821), [nasopharyngeal teratoma](http://purl.obolibrary.org/obo/MONDO_0015391), [carcinoma in situ of nasopharynx](http://purl.obolibrary.org/obo/MONDO_0021297) (9 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   nasopharynx: "UBERON:0001728"
 
 

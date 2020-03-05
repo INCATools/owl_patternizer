@@ -8,7 +8,7 @@ description: >-
   Examples: [fungal infection of eye](http://purl.obolibrary.org/obo/MONDO_0020944), [otomycosis](http://purl.obolibrary.org/obo/MONDO_0000262), [superficial mycosis](http://purl.obolibrary.org/obo/MONDO_0024268) (6 total)
 
 classes: 
-  fungal infectious disease: "http://purl.obolibrary.org/obo/MONDO_0002041"
+  fungal infectious disease: "MONDO:0002041"
   anatomical structure: "UBERON:0000061"
 
 

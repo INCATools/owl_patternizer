@@ -8,7 +8,7 @@ description: >-
   Examples: [inverted urothelial papilloma](http://purl.obolibrary.org/obo/MONDO_0021109), [urothelial hyperplasia](http://purl.obolibrary.org/obo/MONDO_0024483), [urothelial neoplasm](http://purl.obolibrary.org/obo/MONDO_0024337) (5 total)
 
 classes: 
-  cell proliferation disorder: "http://purl.obolibrary.org/obo/MONDO_0045024"
+  cell proliferation disorder: "MONDO:0045024"
   urothelium: "UBERON:0000365"
 
 

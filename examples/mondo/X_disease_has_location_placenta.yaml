@@ -8,7 +8,7 @@ description: >-
   Examples: [placenta disease](http://purl.obolibrary.org/obo/MONDO_0005917), [placenta cancer](http://purl.obolibrary.org/obo/MONDO_0002178), [placenta neoplasm](http://purl.obolibrary.org/obo/MONDO_0021218) (6 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   placenta: "UBERON:0001987"
 
 

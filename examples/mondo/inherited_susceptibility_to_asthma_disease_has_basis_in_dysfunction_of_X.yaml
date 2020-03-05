@@ -8,7 +8,7 @@ description: >-
   Examples: [asthma-related traits, susceptibility to, 5](http://purl.obolibrary.org/obo/MONDO_0012607), [asthma-related traits, susceptibility to, 7](http://purl.obolibrary.org/obo/MONDO_0012771), [asthma-related traits, susceptibility to, 2](http://purl.obolibrary.org/obo/MONDO_0012067) (4 total)
 
 classes: 
-  inherited susceptibility to asthma: "http://purl.obolibrary.org/obo/MONDO_0010940"
+  inherited susceptibility to asthma: "MONDO:0010940"
   SO_0001217: "SO:0001217"
 
 

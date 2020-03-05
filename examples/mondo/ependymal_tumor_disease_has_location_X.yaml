@@ -8,7 +8,7 @@ description: >-
   Examples: [ependymal tumor of brain](http://purl.obolibrary.org/obo/MONDO_0004245), [parietal lobe ependymal tumor](http://purl.obolibrary.org/obo/MONDO_0000520), [ependymal tumor of spinal cord](http://purl.obolibrary.org/obo/MONDO_0021546) (4 total)
 
 classes: 
-  ependymal tumor: "http://purl.obolibrary.org/obo/MONDO_0003266"
+  ependymal tumor: "MONDO:0003266"
   ectoderm-derived structure: "UBERON:0004121"
   multicellular anatomical structure: "UBERON:0010000"
 

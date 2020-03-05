@@ -8,7 +8,7 @@ description: >-
   Examples: [catecholaminergic polymorphic ventricular tachycardia 5](http://purl.obolibrary.org/obo/MONDO_0014191), [catecholaminergic polymorphic ventricular tachycardia 4](http://purl.obolibrary.org/obo/MONDO_0013966), [catecholaminergic polymorphic ventricular tachycardia 2](http://purl.obolibrary.org/obo/MONDO_0012762) (4 total)
 
 classes: 
-  catecholaminergic polymorphic ventricular tachycardia: "http://purl.obolibrary.org/obo/MONDO_0017990"
+  catecholaminergic polymorphic ventricular tachycardia: "MONDO:0017990"
   SO_0001217: "SO:0001217"
 
 

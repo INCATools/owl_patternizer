@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   catalytic activity: "GO:0003824"
-  mucopolysaccharidosis: "http://purl.obolibrary.org/obo/MONDO_0019249"
+  mucopolysaccharidosis: "MONDO:0019249"
 
 
 relations: 

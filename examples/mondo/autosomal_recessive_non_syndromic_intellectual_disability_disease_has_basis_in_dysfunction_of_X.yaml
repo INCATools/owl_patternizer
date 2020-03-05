@@ -8,7 +8,7 @@ description: >-
   Examples: [intellectual disability, autosomal recessive 47](http://purl.obolibrary.org/obo/MONDO_0014524), [intellectual disability, autosomal recessive 57](http://purl.obolibrary.org/obo/MONDO_0014962), [intellectual disability, autosomal recessive 45](http://purl.obolibrary.org/obo/MONDO_0014430) (26 total)
 
 classes: 
-  autosomal recessive non-syndromic intellectual disability: "http://purl.obolibrary.org/obo/MONDO_0019502"
+  autosomal recessive non-syndromic intellectual disability: "MONDO:0019502"
   SO_0001217: "SO:0001217"
 
 

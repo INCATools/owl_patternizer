@@ -8,7 +8,7 @@ description: >-
   Examples: [progressive myoclonic epilepsy type 8](http://purl.obolibrary.org/obo/MONDO_0014545), [epilepsy, progressive myoclonic, 1B](http://purl.obolibrary.org/obo/MONDO_0012904), [progressive myoclonic epilepsy type 5](http://purl.obolibrary.org/obo/MONDO_0013451) (7 total)
 
 classes: 
-  progressive myoclonic epilepsy: "http://purl.obolibrary.org/obo/MONDO_0020074"
+  progressive myoclonic epilepsy: "MONDO:0020074"
   SO_0001217: "SO:0001217"
 
 

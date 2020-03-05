@@ -16,7 +16,7 @@ classes:
   IGHM: "http://identifiers.org/hgnc/5541"
   IGLL1: "http://identifiers.org/hgnc/5870"
   PIK3R1: "http://identifiers.org/hgnc/8979"
-  autosomal agammaglobulinemia: "http://purl.obolibrary.org/obo/MONDO_0011096"
+  autosomal agammaglobulinemia: "MONDO:0011096"
 
 
 relations: 

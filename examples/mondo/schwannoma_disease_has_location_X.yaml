@@ -8,7 +8,7 @@ description: >-
   Examples: [schwannoma of ureter](http://purl.obolibrary.org/obo/MONDO_0001400), [neurilemmoma of the pleura](http://purl.obolibrary.org/obo/MONDO_0003926), [trigeminal schwannoma](http://purl.obolibrary.org/obo/MONDO_0002555) (6 total)
 
 classes: 
-  schwannoma: "http://purl.obolibrary.org/obo/MONDO_0002546"
+  schwannoma: "MONDO:0002546"
   anatomical entity: "UBERON:0001062"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [complement component 3 deficiency](http://purl.obolibrary.org/obo/MONDO_0013417), [complement component 4a deficiency](http://purl.obolibrary.org/obo/MONDO_0013721), [complement component 4b deficiency](http://purl.obolibrary.org/obo/MONDO_0013720) (8 total)
 
 classes: 
-  classic complement early component deficiency: "http://purl.obolibrary.org/obo/MONDO_0000015"
+  classic complement early component deficiency: "MONDO:0000015"
   SO_0001217: "SO:0001217"
 
 

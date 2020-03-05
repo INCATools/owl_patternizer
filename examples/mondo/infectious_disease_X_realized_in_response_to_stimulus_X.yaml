@@ -8,8 +8,8 @@ description: >-
   Examples: [herpetic whitlow](http://purl.obolibrary.org/obo/MONDO_0004616), [Histoplasma pericarditis](http://purl.obolibrary.org/obo/MONDO_0000981), [gonococcal cystitis](http://purl.obolibrary.org/obo/MONDO_0021160) (41 total)
 
 classes: 
-  infectious disease: "http://purl.obolibrary.org/obo/MONDO_0005550"
-  disease by anatomical system: "http://purl.obolibrary.org/obo/MONDO_0021199"
+  infectious disease: "MONDO:0005550"
+  disease by anatomical system: "MONDO:0021199"
   root: "http://purl.obolibrary.org/obo/NCBITaxon_1"
 
 

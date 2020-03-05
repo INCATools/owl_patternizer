@@ -8,7 +8,7 @@ description: >-
   Examples: [neuronal ceroid lipofuscinosis 2](http://purl.obolibrary.org/obo/MONDO_0008769), [neuronal ceroid lipofuscinosis 3](http://purl.obolibrary.org/obo/MONDO_0008767), [neuronal ceroid lipofuscinosis 5](http://purl.obolibrary.org/obo/MONDO_0009745) (10 total)
 
 classes: 
-  neuronal ceroid lipofuscinosis: "http://purl.obolibrary.org/obo/MONDO_0016295"
+  neuronal ceroid lipofuscinosis: "MONDO:0016295"
   SO_0001217: "SO:0001217"
 
 

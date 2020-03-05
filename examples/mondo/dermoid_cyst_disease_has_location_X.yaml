@@ -8,7 +8,7 @@ description: >-
   Examples: [nasal dermoid cyst](http://purl.obolibrary.org/obo/MONDO_0010921), [dermoid cyst of skin](http://purl.obolibrary.org/obo/MONDO_0001778), [cervical dermoid cyst](http://purl.obolibrary.org/obo/MONDO_0015379) (7 total)
 
 classes: 
-  dermoid cyst: "http://purl.obolibrary.org/obo/MONDO_0002378"
+  dermoid cyst: "MONDO:0002378"
   multicellular anatomical structure: "UBERON:0010000"
 
 

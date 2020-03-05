@@ -8,7 +8,7 @@ description: >-
   Examples: [trigeminal nerve disease](http://purl.obolibrary.org/obo/MONDO_0003543), [trigeminal schwannoma](http://purl.obolibrary.org/obo/MONDO_0002555), [trigeminal nerve neoplasm](http://purl.obolibrary.org/obo/MONDO_0001420) (4 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   trigeminal nerve: "UBERON:0001645"
 
 

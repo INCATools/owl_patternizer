@@ -8,7 +8,7 @@ description: >-
   Examples: [Senior-Loken syndrome 7](http://purl.obolibrary.org/obo/MONDO_0013326), [Senior-Loken syndrome 9](http://purl.obolibrary.org/obo/MONDO_0014712), [Senior-Loken syndrome 8](http://purl.obolibrary.org/obo/MONDO_0014579) (7 total)
 
 classes: 
-  Senior-Loken syndrome: "http://purl.obolibrary.org/obo/MONDO_0017842"
+  Senior-Loken syndrome: "MONDO:0017842"
   SO_0001217: "SO:0001217"
 
 

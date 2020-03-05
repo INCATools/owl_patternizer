@@ -8,7 +8,7 @@ description: >-
   Examples: [ureter urothelial papilloma](http://purl.obolibrary.org/obo/MONDO_0004044), [urethral urothelial papilloma](http://purl.obolibrary.org/obo/MONDO_0002221), [renal pelvis urothelial papilloma](http://purl.obolibrary.org/obo/MONDO_0003777) (4 total)
 
 classes: 
-  urothelial papilloma: "http://purl.obolibrary.org/obo/MONDO_0004041"
+  urothelial papilloma: "MONDO:0004041"
   multicellular anatomical structure: "UBERON:0010000"
 
 

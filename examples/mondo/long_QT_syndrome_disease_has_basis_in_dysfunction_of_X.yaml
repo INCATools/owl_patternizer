@@ -8,7 +8,7 @@ description: >-
   Examples: [long QT syndrome 10](http://purl.obolibrary.org/obo/MONDO_0012737), [long QT syndrome 3](http://purl.obolibrary.org/obo/MONDO_0011377), [long QT syndrome 12](http://purl.obolibrary.org/obo/MONDO_0013062) (10 total)
 
 classes: 
-  long QT syndrome: "http://purl.obolibrary.org/obo/MONDO_0002442"
+  long QT syndrome: "MONDO:0002442"
   SO_0001217: "SO:0001217"
 
 

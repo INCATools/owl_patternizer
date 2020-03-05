@@ -8,7 +8,7 @@ description: >-
   Examples: [duodenal disease](http://purl.obolibrary.org/obo/MONDO_0002866), [duodenal villous adenoma](http://purl.obolibrary.org/obo/MONDO_0006187), [duodenal gastrin-producing neuroendocrine tumor](http://purl.obolibrary.org/obo/MONDO_0004411) (9 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   duodenum: "UBERON:0002114"
 
 

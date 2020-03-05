@@ -8,8 +8,8 @@ description: >-
   Examples: [primary systemic mycosis](http://purl.obolibrary.org/obo/MONDO_0000308), [primary bacterial infectious disease](http://purl.obolibrary.org/obo/MONDO_0000314), [primary syphilis](http://purl.obolibrary.org/obo/MONDO_0002896) (4 total)
 
 classes: 
-  infectious disease: "http://purl.obolibrary.org/obo/MONDO_0005550"
-  primary infectious: "http://purl.obolibrary.org/obo/MONDO_0045036"
+  infectious disease: "MONDO:0005550"
+  primary infectious: "MONDO:0045036"
 
 
 relations: 

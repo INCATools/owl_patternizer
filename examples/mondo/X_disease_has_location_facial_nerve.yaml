@@ -8,7 +8,7 @@ description: >-
   Examples: [facial nerve disease](http://purl.obolibrary.org/obo/MONDO_0002098), [facial nerve neoplasm](http://purl.obolibrary.org/obo/MONDO_0002101), [Bell's palsy](http://purl.obolibrary.org/obo/MONDO_0005665) (4 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   facial nerve: "UBERON:0001647"
 
 

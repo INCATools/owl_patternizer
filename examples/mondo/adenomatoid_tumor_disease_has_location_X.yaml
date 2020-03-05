@@ -8,7 +8,7 @@ description: >-
   Examples: [pleural adenomatoid tumor](http://purl.obolibrary.org/obo/MONDO_0024326), [epididymal adenomatoid tumor](http://purl.obolibrary.org/obo/MONDO_0004227), [fallopian tube adenomatoid tumor](http://purl.obolibrary.org/obo/MONDO_0003328) (4 total)
 
 classes: 
-  adenomatoid tumor: "http://purl.obolibrary.org/obo/MONDO_0004230"
+  adenomatoid tumor: "MONDO:0004230"
   multicellular anatomical structure: "UBERON:0010000"
 
 

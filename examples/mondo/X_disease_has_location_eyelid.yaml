@@ -8,7 +8,7 @@ description: >-
   Examples: [eyelid disease](http://purl.obolibrary.org/obo/MONDO_0003382), [papilloma of eyelid](http://purl.obolibrary.org/obo/MONDO_0021275), [eyelid capillary hemangioma](http://purl.obolibrary.org/obo/MONDO_0021627) (16 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   eyelid: "UBERON:0001711"
 
 

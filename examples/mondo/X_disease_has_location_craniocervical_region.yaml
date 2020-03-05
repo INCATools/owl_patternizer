@@ -8,7 +8,7 @@ description: >-
   Examples: [head or neck disease/disorder](http://purl.obolibrary.org/obo/MONDO_0021059), [head and neck paraganglioma](http://purl.obolibrary.org/obo/MONDO_0006239), [head and neck cancer](http://purl.obolibrary.org/obo/MONDO_0005627) (6 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   craniocervical region: "UBERON:0007811"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [carcinoma in situ of oropharynx](http://purl.obolibrary.org/obo/MONDO_0021298), [adenoid cystic carcinoma of oropharynx](http://purl.obolibrary.org/obo/MONDO_0021300), [oropharynx cancer](http://purl.obolibrary.org/obo/MONDO_0004608) (8 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   oropharynx: "UBERON:0001729"
 
 

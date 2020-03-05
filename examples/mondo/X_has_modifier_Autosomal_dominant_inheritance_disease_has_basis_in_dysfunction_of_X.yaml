@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   Autosomal dominant inheritance: "http://purl.obolibrary.org/obo/HP_0000006"
-  disease by anatomical system: "http://purl.obolibrary.org/obo/MONDO_0021199"
+  disease by anatomical system: "MONDO:0021199"
   SO_0001217: "SO:0001217"
 
 

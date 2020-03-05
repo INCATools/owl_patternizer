@@ -8,7 +8,7 @@ description: >-
   Examples: [undifferentiated carcinoma of stomach](http://purl.obolibrary.org/obo/MONDO_0018504), [undifferentiated ovarian carcinoma](http://purl.obolibrary.org/obo/MONDO_0006477), [undifferentiated carcinoma of esophagus](http://purl.obolibrary.org/obo/MONDO_0018481) (10 total)
 
 classes: 
-  undifferentiated carcinoma: "http://purl.obolibrary.org/obo/MONDO_0005617"
+  undifferentiated carcinoma: "MONDO:0005617"
   multicellular anatomical structure: "UBERON:0010000"
 
 

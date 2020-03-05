@@ -8,7 +8,7 @@ description: >-
   Examples: [Seckel syndrome 7](http://purl.obolibrary.org/obo/MONDO_0013922), [Seckel syndrome 4](http://purl.obolibrary.org/obo/MONDO_0013358), [Seckel syndrome 6](http://purl.obolibrary.org/obo/MONDO_0013871) (9 total)
 
 classes: 
-  Seckel syndrome: "http://purl.obolibrary.org/obo/MONDO_0019342"
+  Seckel syndrome: "MONDO:0019342"
   SO_0001217: "SO:0001217"
 
 

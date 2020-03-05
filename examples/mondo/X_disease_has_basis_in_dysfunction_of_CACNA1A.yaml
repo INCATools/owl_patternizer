@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   CACNA1A: "http://identifiers.org/hgnc/1388"
-  brain disease: "http://purl.obolibrary.org/obo/MONDO_0005560"
+  brain disease: "MONDO:0005560"
 
 
 relations: 

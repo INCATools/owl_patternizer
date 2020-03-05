@@ -8,7 +8,7 @@ description: >-
   Examples: [bladder inflammatory myofibroblastic tumor](http://purl.obolibrary.org/obo/MONDO_0006112), [lung inflammatory myofibroblastic tumor](http://purl.obolibrary.org/obo/MONDO_0006276), [liver inflammatory myofibroblastic tumor](http://purl.obolibrary.org/obo/MONDO_0004726) (4 total)
 
 classes: 
-  inflammatory myofibroblastic tumor: "http://purl.obolibrary.org/obo/MONDO_0015798"
+  inflammatory myofibroblastic tumor: "MONDO:0015798"
   anatomical entity: "UBERON:0001062"
 
 

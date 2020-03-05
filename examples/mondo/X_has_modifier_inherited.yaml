@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   disposition: "BFO:0000016"
-  inherited: "http://purl.obolibrary.org/obo/MONDO_0021152"
+  inherited: "MONDO:0021152"
 
 
 relations: 

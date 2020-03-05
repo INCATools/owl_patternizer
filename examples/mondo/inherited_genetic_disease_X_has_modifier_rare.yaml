@@ -8,9 +8,9 @@ description: >-
   Examples: [rare hereditary disease with peripheral neuropathy](http://purl.obolibrary.org/obo/MONDO_0016132), [rare hereditary disease with avascular necrosis](http://purl.obolibrary.org/obo/MONDO_0018377), [rare genetic disorder with obstructive azoospermia](http://purl.obolibrary.org/obo/MONDO_0018409) (4 total)
 
 classes: 
-  inherited genetic disease: "http://purl.obolibrary.org/obo/MONDO_0003847"
-  rare: "http://purl.obolibrary.org/obo/MONDO_0021136"
-  disease by anatomical system: "http://purl.obolibrary.org/obo/MONDO_0021199"
+  inherited genetic disease: "MONDO:0003847"
+  rare: "MONDO:0021136"
+  disease by anatomical system: "MONDO:0021199"
 
 
 relations: 

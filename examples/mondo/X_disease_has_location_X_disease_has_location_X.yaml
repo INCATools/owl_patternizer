@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   basement membrane: "GO:0005604"
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   nerve: "UBERON:0001021"
   chordate pharynx: "UBERON:0001042"
   renal artery: "UBERON:0001184"

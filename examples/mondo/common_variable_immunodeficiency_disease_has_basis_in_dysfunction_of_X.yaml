@@ -8,7 +8,7 @@ description: >-
   Examples: [immunodeficiency, common variable, 6](http://purl.obolibrary.org/obo/MONDO_0013286), [immunodeficiency, common variable, 5](http://purl.obolibrary.org/obo/MONDO_0013285), [immunodeficiency, common variable, 12](http://purl.obolibrary.org/obo/MONDO_0014697) (4 total)
 
 classes: 
-  common variable immunodeficiency: "http://purl.obolibrary.org/obo/MONDO_0015517"
+  common variable immunodeficiency: "MONDO:0015517"
   SO_0001217: "SO:0001217"
 
 

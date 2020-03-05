@@ -8,8 +8,8 @@ description: >-
   Examples: [diabetic autonomic neuropathy](http://purl.obolibrary.org/obo/MONDO_0001299), [diabetic neuropathy](http://purl.obolibrary.org/obo/MONDO_0006626), [diabetic retinopathy](http://purl.obolibrary.org/obo/MONDO_0005266) (4 total)
 
 classes: 
-  diabetes mellitus (disease): "http://purl.obolibrary.org/obo/MONDO_0005015"
-  nervous system disorder: "http://purl.obolibrary.org/obo/MONDO_0005071"
+  diabetes mellitus (disease): "MONDO:0005015"
+  nervous system disorder: "MONDO:0005071"
 
 
 relations: 

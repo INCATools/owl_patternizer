@@ -8,7 +8,7 @@ description: >-
   Examples: [hantavirus pulmonary syndrome](http://purl.obolibrary.org/obo/MONDO_0017879), [Epstein-Barr virus hepatitis](http://purl.obolibrary.org/obo/MONDO_0000286), [malignant otitis externa caused by Pseudomonas aeruginosa](http://purl.obolibrary.org/obo/MONDO_0041095) (85 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   owl:Thing: "owl:Thing"
 
 

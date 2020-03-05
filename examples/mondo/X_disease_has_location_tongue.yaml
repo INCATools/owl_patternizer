@@ -8,7 +8,7 @@ description: >-
   Examples: [tongue disease](http://purl.obolibrary.org/obo/MONDO_0001165), [tongue cancer](http://purl.obolibrary.org/obo/MONDO_0004631), [tongue neoplasm](http://purl.obolibrary.org/obo/MONDO_0021240) (6 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   tongue: "UBERON:0001723"
 
 

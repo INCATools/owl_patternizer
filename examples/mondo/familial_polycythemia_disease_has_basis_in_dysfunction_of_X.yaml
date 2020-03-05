@@ -8,7 +8,7 @@ description: >-
   Examples: [erythrocytosis, familial, 3](http://purl.obolibrary.org/obo/MONDO_0012353), [Chuvash polycythemia](http://purl.obolibrary.org/obo/MONDO_0009892), [erythrocytosis, familial, 4](http://purl.obolibrary.org/obo/MONDO_0012729) (5 total)
 
 classes: 
-  familial polycythemia: "http://purl.obolibrary.org/obo/MONDO_0001115"
+  familial polycythemia: "MONDO:0001115"
   SO_0001217: "SO:0001217"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [skin lipoma](http://purl.obolibrary.org/obo/MONDO_0000964), [colorectal lipoma](http://purl.obolibrary.org/obo/MONDO_0003885), [tendon sheath lipoma](http://purl.obolibrary.org/obo/MONDO_0004076) (28 total)
 
 classes: 
-  lipoma: "http://purl.obolibrary.org/obo/MONDO_0005106"
+  lipoma: "MONDO:0005106"
   anatomical entity: "UBERON:0001062"
 
 

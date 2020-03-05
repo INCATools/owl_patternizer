@@ -8,7 +8,7 @@ description: >-
   Examples: [pancreatic cystadenoma](http://purl.obolibrary.org/obo/MONDO_0002809), [ovarian cystadenoma](http://purl.obolibrary.org/obo/MONDO_0005183), [seminal vesicle cystadenoma](http://purl.obolibrary.org/obo/MONDO_0003609) (7 total)
 
 classes: 
-  cystadenoma: "http://purl.obolibrary.org/obo/MONDO_0002369"
+  cystadenoma: "MONDO:0002369"
   multicellular anatomical structure: "UBERON:0010000"
 
 

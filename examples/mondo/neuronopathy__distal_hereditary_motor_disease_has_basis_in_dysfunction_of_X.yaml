@@ -8,7 +8,7 @@ description: >-
   Examples: [neuronopathy, distal hereditary motor, type 7A](http://purl.obolibrary.org/obo/MONDO_0008024), [neuronopathy, distal hereditary motor, type 5B](http://purl.obolibrary.org/obo/MONDO_0013884), [neuronopathy, distal hereditary motor, type 7B](http://purl.obolibrary.org/obo/MONDO_0011879) (7 total)
 
 classes: 
-  neuronopathy, distal hereditary motor: "http://purl.obolibrary.org/obo/MONDO_0000075"
+  neuronopathy, distal hereditary motor: "MONDO:0000075"
   SO_0001217: "SO:0001217"
 
 

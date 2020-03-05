@@ -8,7 +8,7 @@ description: >-
   Examples: [papillary urothelial neoplasm](http://purl.obolibrary.org/obo/MONDO_0003443), [gallbladder papillary neoplasm](http://purl.obolibrary.org/obo/MONDO_0002518), [bile duct papillary neoplasm](http://purl.obolibrary.org/obo/MONDO_0003455) (4 total)
 
 classes: 
-  papillary epithelial neoplasm: "http://purl.obolibrary.org/obo/MONDO_0021096"
+  papillary epithelial neoplasm: "MONDO:0021096"
   endoderm-derived structure: "UBERON:0004119"
   multicellular anatomical structure: "UBERON:0010000"
 

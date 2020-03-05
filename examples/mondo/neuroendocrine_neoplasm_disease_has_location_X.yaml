@@ -8,7 +8,7 @@ description: >-
   Examples: [anal canal neuroendocrine neoplasm](http://purl.obolibrary.org/obo/MONDO_0003504), [intestinal neuroendocrine neoplasm](http://purl.obolibrary.org/obo/MONDO_0002883), [breast neuroendocrine neoplasm](http://purl.obolibrary.org/obo/MONDO_0002485) (21 total)
 
 classes: 
-  neuroendocrine neoplasm: "http://purl.obolibrary.org/obo/MONDO_0019496"
+  neuroendocrine neoplasm: "MONDO:0019496"
   anatomical structure: "UBERON:0000061"
 
 

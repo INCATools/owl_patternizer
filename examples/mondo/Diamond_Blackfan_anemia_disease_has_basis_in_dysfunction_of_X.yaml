@@ -8,7 +8,7 @@ description: >-
   Examples: [Diamond-Blackfan anemia 7](http://purl.obolibrary.org/obo/MONDO_0012938), [Diamond-Blackfan anemia 12](http://purl.obolibrary.org/obo/MONDO_0014245), [Diamond-Blackfan anemia 11](http://purl.obolibrary.org/obo/MONDO_0013964) (14 total)
 
 classes: 
-  Diamond-Blackfan anemia: "http://purl.obolibrary.org/obo/MONDO_0015253"
+  Diamond-Blackfan anemia: "MONDO:0015253"
   SO_0001217: "SO:0001217"
 
 

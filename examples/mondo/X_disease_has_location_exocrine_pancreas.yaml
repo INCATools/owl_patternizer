@@ -8,7 +8,7 @@ description: >-
   Examples: [pancreatic cystadenoma](http://purl.obolibrary.org/obo/MONDO_0002809), [malignant exocrine pancreas neoplasm](http://purl.obolibrary.org/obo/MONDO_0002116), [exocrine pancreatic carcinoma](http://purl.obolibrary.org/obo/MONDO_0005192) (5 total)
 
 classes: 
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  neoplasm (disease): "MONDO:0005070"
   exocrine pancreas: "UBERON:0000017"
 
 

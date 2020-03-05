@@ -8,7 +8,7 @@ description: >-
   Examples: [gastric non-hodgkin lymphoma](http://purl.obolibrary.org/obo/MONDO_0042493), [central nervous system non-hodgkin lymphoma](http://purl.obolibrary.org/obo/MONDO_0044887), [lung non-Hodgkin lymphoma](http://purl.obolibrary.org/obo/MONDO_0020644) (4 total)
 
 classes: 
-  non-Hodgkin lymphoma: "http://purl.obolibrary.org/obo/MONDO_0018908"
+  non-Hodgkin lymphoma: "MONDO:0018908"
   anatomical entity: "UBERON:0001062"
 
 

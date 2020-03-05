@@ -8,7 +8,7 @@ description: >-
   Examples: [corneal dystrophy, Fuchs endothelial, 3](http://purl.obolibrary.org/obo/MONDO_0013203), [corneal dystrophy, Fuchs endothelial, 6](http://purl.obolibrary.org/obo/MONDO_0013206), [corneal dystrophy, Fuchs endothelial, 4](http://purl.obolibrary.org/obo/MONDO_0013204) (5 total)
 
 classes: 
-  Fuchs' endothelial dystrophy: "http://purl.obolibrary.org/obo/MONDO_0005321"
+  Fuchs' endothelial dystrophy: "MONDO:0005321"
   SO_0001217: "SO:0001217"
 
 

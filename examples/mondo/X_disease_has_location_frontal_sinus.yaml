@@ -8,7 +8,7 @@ description: >-
   Examples: [frontal sinus inverted papilloma](http://purl.obolibrary.org/obo/MONDO_0004448), [frontal sinus cancer](http://purl.obolibrary.org/obo/MONDO_0001756), [frontal sinus neoplasm](http://purl.obolibrary.org/obo/MONDO_0001757) (6 total)
 
 classes: 
-  cell proliferation disorder: "http://purl.obolibrary.org/obo/MONDO_0045024"
+  cell proliferation disorder: "MONDO:0045024"
   frontal sinus: "UBERON:0001760"
 
 

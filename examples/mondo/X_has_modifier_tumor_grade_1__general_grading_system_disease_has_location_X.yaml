@@ -8,8 +8,8 @@ description: >-
   Examples: [intestinal neuroendocrine tumor G1](http://purl.obolibrary.org/obo/MONDO_0021533), [gastric neuroendocrine tumor G1](http://purl.obolibrary.org/obo/MONDO_0006227), [rectal neuroendocrine tumor G1](http://purl.obolibrary.org/obo/MONDO_0021534) (12 total)
 
 classes: 
-  neuroendocrine neoplasm: "http://purl.obolibrary.org/obo/MONDO_0019496"
-  tumor grade 1, general grading system: "http://purl.obolibrary.org/obo/MONDO_0024491"
+  neuroendocrine neoplasm: "MONDO:0019496"
+  tumor grade 1, general grading system: "MONDO:0024491"
   multicellular anatomical structure: "UBERON:0010000"
 
 

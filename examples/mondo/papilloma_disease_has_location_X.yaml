@@ -8,7 +8,7 @@ description: >-
   Examples: [skin papilloma](http://purl.obolibrary.org/obo/MONDO_0002536), [intraductal papilloma](http://purl.obolibrary.org/obo/MONDO_0002060), [papilloma of eyelid](http://purl.obolibrary.org/obo/MONDO_0021275) (8 total)
 
 classes: 
-  papilloma: "http://purl.obolibrary.org/obo/MONDO_0002363"
+  papilloma: "MONDO:0002363"
   multicellular anatomical structure: "UBERON:0010000"
 
 

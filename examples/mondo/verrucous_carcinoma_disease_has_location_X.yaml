@@ -8,7 +8,7 @@ description: >-
   Examples: [cervical verrucous carcinoma](http://purl.obolibrary.org/obo/MONDO_0002761), [urethral verrucous carcinoma](http://purl.obolibrary.org/obo/MONDO_0002763), [verrucous carcinoma of oral cavity](http://purl.obolibrary.org/obo/MONDO_0021538) (13 total)
 
 classes: 
-  verrucous carcinoma: "http://purl.obolibrary.org/obo/MONDO_0006006"
+  verrucous carcinoma: "MONDO:0006006"
   anatomical entity: "UBERON:0001062"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [chronic fungal otitis externa](http://purl.obolibrary.org/obo/MONDO_0001052), [chronic endometritis](http://purl.obolibrary.org/obo/MONDO_0024279), [chronic venous insufficiency](http://purl.obolibrary.org/obo/MONDO_0000492) (65 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   chronic: "PATO:0001863"
 
 

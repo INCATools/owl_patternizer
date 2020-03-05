@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   disposition: "BFO:0000016"
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   SO_0001217: "SO:0001217"
 
 

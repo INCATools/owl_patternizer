@@ -8,7 +8,7 @@ description: >-
   Examples: [Usher syndrome type 2A](http://purl.obolibrary.org/obo/MONDO_0010169), [Usher syndrome type 3A](http://purl.obolibrary.org/obo/MONDO_0010170), [Usher syndrome type 1G](http://purl.obolibrary.org/obo/MONDO_0011748) (6 total)
 
 classes: 
-  Usher syndrome: "http://purl.obolibrary.org/obo/MONDO_0019501"
+  Usher syndrome: "MONDO:0019501"
   SO_0001217: "SO:0001217"
 
 

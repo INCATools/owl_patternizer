@@ -8,7 +8,7 @@ description: >-
   Examples: [osteogenesis imperfecta type 13](http://purl.obolibrary.org/obo/MONDO_0013924), [osteogenesis imperfecta type 17](http://purl.obolibrary.org/obo/MONDO_0014672), [osteogenesis imperfecta type 15](http://purl.obolibrary.org/obo/MONDO_0014086) (12 total)
 
 classes: 
-  osteogenesis imperfecta: "http://purl.obolibrary.org/obo/MONDO_0019019"
+  osteogenesis imperfecta: "MONDO:0019019"
   SO_0001217: "SO:0001217"
 
 

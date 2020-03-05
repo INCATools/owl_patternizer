@@ -8,7 +8,7 @@ description: >-
   Examples: [carcinoma in situ of epiglottis](http://purl.obolibrary.org/obo/MONDO_0021287), [epiglottis cancer](http://purl.obolibrary.org/obo/MONDO_0004473), [epiglottis neoplasm](http://purl.obolibrary.org/obo/MONDO_0004109) (4 total)
 
 classes: 
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  neoplasm (disease): "MONDO:0005070"
   epiglottis: "UBERON:0000388"
 
 

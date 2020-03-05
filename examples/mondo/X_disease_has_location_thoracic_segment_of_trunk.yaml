@@ -8,7 +8,7 @@ description: >-
   Examples: [thoracic disease](http://purl.obolibrary.org/obo/MONDO_0000651), [thoracic cancer](http://purl.obolibrary.org/obo/MONDO_0003274), [neoplasm of thorax](http://purl.obolibrary.org/obo/MONDO_0021350) (4 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   thoracic segment of trunk: "UBERON:0000915"
 
 

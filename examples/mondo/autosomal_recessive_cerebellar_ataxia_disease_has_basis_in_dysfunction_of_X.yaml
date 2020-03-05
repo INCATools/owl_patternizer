@@ -8,7 +8,7 @@ description: >-
   Examples: [autosomal recessive spinocerebellar ataxia 14](http://purl.obolibrary.org/obo/MONDO_0014159), [autosomal recessive spinocerebellar ataxia 16](http://purl.obolibrary.org/obo/MONDO_0014339), [autosomal recessive spinocerebellar ataxia 20](http://purl.obolibrary.org/obo/MONDO_0014601) (5 total)
 
 classes: 
-  autosomal recessive cerebellar ataxia: "http://purl.obolibrary.org/obo/MONDO_0015244"
+  autosomal recessive cerebellar ataxia: "MONDO:0015244"
   SO_0001217: "SO:0001217"
 
 

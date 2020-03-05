@@ -8,8 +8,8 @@ description: >-
   Examples: [mitochondrial DNA maintenance syndrome](http://purl.obolibrary.org/obo/MONDO_0018121), [spinocerebellar ataxia type 29](http://purl.obolibrary.org/obo/MONDO_0007298), [isolated congenital microcephaly](http://purl.obolibrary.org/obo/MONDO_0016056) (56 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
-  congenital: "http://purl.obolibrary.org/obo/MONDO_0021140"
+  disease or disorder: "MONDO:0000001"
+  congenital: "MONDO:0021140"
 
 
 relations: 

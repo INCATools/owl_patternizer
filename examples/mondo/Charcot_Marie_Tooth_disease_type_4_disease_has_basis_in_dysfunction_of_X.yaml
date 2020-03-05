@@ -8,7 +8,7 @@ description: >-
   Examples: [Charcot-Marie-Tooth disease type 4B3](http://purl.obolibrary.org/obo/MONDO_0014117), [Charcot-Marie-Tooth disease type 4K](http://purl.obolibrary.org/obo/MONDO_0014733), [Charcot-Marie-Tooth disease type 4F](http://purl.obolibrary.org/obo/MONDO_0013959) (11 total)
 
 classes: 
-  Charcot-Marie-Tooth disease type 4: "http://purl.obolibrary.org/obo/MONDO_0018995"
+  Charcot-Marie-Tooth disease type 4: "MONDO:0018995"
   SO_0001217: "SO:0001217"
 
 

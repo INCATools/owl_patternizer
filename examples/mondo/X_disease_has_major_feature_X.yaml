@@ -8,7 +8,7 @@ description: >-
   Examples: [hyperpigmentation of the skin](http://purl.obolibrary.org/obo/MONDO_0019289), [hypopigmentation of the skin (disease)](http://purl.obolibrary.org/obo/MONDO_0019290), [rare genetic disease with myoclonus as a major feature](http://purl.obolibrary.org/obo/MONDO_0017665) (83 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   owl:Thing: "owl:Thing"
 
 

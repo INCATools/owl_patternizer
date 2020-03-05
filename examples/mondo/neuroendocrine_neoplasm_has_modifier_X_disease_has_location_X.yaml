@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   continuant: "BFO:0000002"
-  neuroendocrine neoplasm: "http://purl.obolibrary.org/obo/MONDO_0019496"
+  neuroendocrine neoplasm: "MONDO:0019496"
   anatomical structure: "UBERON:0000061"
 
 

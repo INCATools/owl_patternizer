@@ -9,9 +9,9 @@ description: >-
 
 classes: 
   Childhood onset: "http://purl.obolibrary.org/obo/HP_0011463"
-  astrocytic tumor: "http://purl.obolibrary.org/obo/MONDO_0021636"
-  tumor grade 2, general grading system: "http://purl.obolibrary.org/obo/MONDO_0024492"
-  tumor grade 4, general grading system: "http://purl.obolibrary.org/obo/MONDO_0024494"
+  astrocytic tumor: "MONDO:0021636"
+  tumor grade 2, general grading system: "MONDO:0024492"
+  tumor grade 4, general grading system: "MONDO:0024494"
 
 
 relations: 

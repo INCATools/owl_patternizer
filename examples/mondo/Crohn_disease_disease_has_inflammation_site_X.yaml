@@ -8,7 +8,7 @@ description: >-
   Examples: [perianal Crohn disease](http://purl.obolibrary.org/obo/MONDO_0005537), [Crohn disease of the esophagus](http://purl.obolibrary.org/obo/MONDO_0022901), [small bowel Crohn disease](http://purl.obolibrary.org/obo/MONDO_0005539) (5 total)
 
 classes: 
-  Crohn disease: "http://purl.obolibrary.org/obo/MONDO_0005011"
+  Crohn disease: "MONDO:0005011"
   multicellular anatomical structure: "UBERON:0010000"
 
 

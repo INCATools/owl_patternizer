@@ -8,7 +8,7 @@ description: >-
   Examples: [kidney disease](http://purl.obolibrary.org/obo/MONDO_0005240), [renal leiomyoma](http://purl.obolibrary.org/obo/MONDO_0006053), [kidney angiomyolipoma](http://purl.obolibrary.org/obo/MONDO_0004555) (24 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   kidney: "UBERON:0002113"
 
 

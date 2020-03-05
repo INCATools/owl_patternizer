@@ -8,7 +8,7 @@ description: >-
   Examples: [sebaceous gland disease](http://purl.obolibrary.org/obo/MONDO_0006607), [sebaceous adenocarcinoma](http://purl.obolibrary.org/obo/MONDO_0006962), [sebaceous adenoma](http://purl.obolibrary.org/obo/MONDO_0002375) (8 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   sebaceous gland: "UBERON:0001821"
 
 

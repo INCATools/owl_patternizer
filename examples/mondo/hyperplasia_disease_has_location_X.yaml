@@ -8,7 +8,7 @@ description: >-
   Examples: [urothelial hyperplasia](http://purl.obolibrary.org/obo/MONDO_0024483), [parathyroid hyperplasia (disease)](http://purl.obolibrary.org/obo/MONDO_0006354), [adrenal medullary hyperplasia](http://purl.obolibrary.org/obo/MONDO_0006077) (4 total)
 
 classes: 
-  hyperplasia: "http://purl.obolibrary.org/obo/MONDO_0005043"
+  hyperplasia: "MONDO:0005043"
   multicellular anatomical structure: "UBERON:0010000"
 
 

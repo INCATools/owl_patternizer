@@ -8,7 +8,7 @@ description: >-
   Examples: [intellectual disability, X-linked 19](http://purl.obolibrary.org/obo/MONDO_0010447), [intellectual disability, X-linked 96](http://purl.obolibrary.org/obo/MONDO_0010429), [intellectual disability, X-linked 58](http://purl.obolibrary.org/obo/MONDO_0010266) (22 total)
 
 classes: 
-  non-syndromic X-linked intellectual disability: "http://purl.obolibrary.org/obo/MONDO_0019181"
+  non-syndromic X-linked intellectual disability: "MONDO:0019181"
   SO_0001217: "SO:0001217"
 
 

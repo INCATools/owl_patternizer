@@ -8,9 +8,9 @@ description: >-
   Examples: [systemic diseases with posterior uveitis](http://purl.obolibrary.org/obo/MONDO_0017260), [systemic disease with skin involvement](http://purl.obolibrary.org/obo/MONDO_0017368), [systemic disease with cataract](http://purl.obolibrary.org/obo/MONDO_0020227) (5 total)
 
 classes: 
-  systemic disease: "http://purl.obolibrary.org/obo/MONDO_0015938"
-  disease by anatomical system: "http://purl.obolibrary.org/obo/MONDO_0021199"
-  disorder by anatomical region: "http://purl.obolibrary.org/obo/MONDO_0024505"
+  systemic disease: "MONDO:0015938"
+  disease by anatomical system: "MONDO:0021199"
+  disorder by anatomical region: "MONDO:0024505"
 
 
 relations: 

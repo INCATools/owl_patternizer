@@ -8,7 +8,7 @@ description: >-
   Examples: [autosomal dominant Charcot-Marie-Tooth disease type 2 due to TFG mutation](http://purl.obolibrary.org/obo/MONDO_0018567), [Charcot-Marie-Tooth disease type 2Y](http://purl.obolibrary.org/obo/MONDO_0014735), [Charcot-Marie-Tooth disease type 2R](http://purl.obolibrary.org/obo/MONDO_0014208) (18 total)
 
 classes: 
-  Charcot-Marie-Tooth disease type 2: "http://purl.obolibrary.org/obo/MONDO_0018993"
+  Charcot-Marie-Tooth disease type 2: "MONDO:0018993"
   SO_0001217: "SO:0001217"
 
 

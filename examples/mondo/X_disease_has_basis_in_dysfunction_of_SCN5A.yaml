@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   SCN5A: "http://identifiers.org/hgnc/10593"
-  heart disease: "http://purl.obolibrary.org/obo/MONDO_0005267"
+  heart disease: "MONDO:0005267"
 
 
 relations: 

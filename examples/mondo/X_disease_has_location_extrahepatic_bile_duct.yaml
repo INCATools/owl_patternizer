@@ -8,7 +8,7 @@ description: >-
   Examples: [extrahepatic bile duct leiomyoma](http://purl.obolibrary.org/obo/MONDO_0003286), [extrahepatic cholestasis](http://purl.obolibrary.org/obo/MONDO_0006757), [extrahepatic bile duct cystadenoma](http://purl.obolibrary.org/obo/MONDO_0004462) (21 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   extrahepatic bile duct: "UBERON:0003703"
 
 

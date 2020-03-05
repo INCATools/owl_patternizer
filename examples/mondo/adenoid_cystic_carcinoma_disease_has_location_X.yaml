@@ -8,7 +8,7 @@ description: >-
   Examples: [adenoid cystic carcinoma of the cervix uteri](http://purl.obolibrary.org/obo/MONDO_0016286), [lymph node adenoid cystic carcinoma](http://purl.obolibrary.org/obo/MONDO_0000715), [adenoid cystic breast carcinoma](http://purl.obolibrary.org/obo/MONDO_0003185) (20 total)
 
 classes: 
-  adenoid cystic carcinoma: "http://purl.obolibrary.org/obo/MONDO_0004971"
+  adenoid cystic carcinoma: "MONDO:0004971"
   anatomical entity: "UBERON:0001062"
 
 

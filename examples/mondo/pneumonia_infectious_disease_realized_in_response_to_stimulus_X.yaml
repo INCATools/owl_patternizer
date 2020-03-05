@@ -8,8 +8,8 @@ description: >-
   Examples: [staphylococcus aureus pneumonia](http://purl.obolibrary.org/obo/MONDO_0041879), [bacterial pneumonia](http://purl.obolibrary.org/obo/MONDO_0004652), [Klebsiella pneumonia](http://purl.obolibrary.org/obo/MONDO_0030602) (4 total)
 
 classes: 
-  pneumonia: "http://purl.obolibrary.org/obo/MONDO_0005249"
-  infectious disease: "http://purl.obolibrary.org/obo/MONDO_0005550"
+  pneumonia: "MONDO:0005249"
+  infectious disease: "MONDO:0005550"
   Bacteria: "http://purl.obolibrary.org/obo/NCBITaxon_2"
 
 

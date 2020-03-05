@@ -9,10 +9,10 @@ description: >-
 
 classes: 
   Hypertension: "http://purl.obolibrary.org/obo/HP_0000822"
-  cancer: "http://purl.obolibrary.org/obo/MONDO_0004992"
-  diabetes mellitus (disease): "http://purl.obolibrary.org/obo/MONDO_0005015"
-  melanoma (disease): "http://purl.obolibrary.org/obo/MONDO_0005105"
-  retinal disease: "http://purl.obolibrary.org/obo/MONDO_0005283"
+  cancer: "MONDO:0004992"
+  diabetes mellitus (disease): "MONDO:0005015"
+  melanoma (disease): "MONDO:0005105"
+  retinal disease: "MONDO:0005283"
 
 
 relations: 

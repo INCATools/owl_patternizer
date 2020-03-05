@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   organonitrogen compound: "http://purl.obolibrary.org/obo/CHEBI_35352"
-  substance abuse: "http://purl.obolibrary.org/obo/MONDO_0002491"
+  substance abuse: "MONDO:0002491"
 
 
 relations: 

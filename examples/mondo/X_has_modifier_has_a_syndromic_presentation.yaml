@@ -8,8 +8,8 @@ description: >-
   Examples: [syndromic disease](http://purl.obolibrary.org/obo/MONDO_0002254), [syndromic intellectual disability](http://purl.obolibrary.org/obo/MONDO_0000508), [syndromic myopia](http://purl.obolibrary.org/obo/MONDO_0020208) (32 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
-  has a syndromic presentation: "http://purl.obolibrary.org/obo/MONDO_0021127"
+  disease or disorder: "MONDO:0000001"
+  has a syndromic presentation: "MONDO:0021127"
 
 
 relations: 

@@ -8,7 +8,7 @@ description: >-
   Examples: [heterotaxy, visceral, 1, X-linked](http://purl.obolibrary.org/obo/MONDO_0010607), [heterotaxy, visceral, 7, autosomal](http://purl.obolibrary.org/obo/MONDO_0014762), [heterotaxy, visceral, 4, autosomal](http://purl.obolibrary.org/obo/MONDO_0013403) (4 total)
 
 classes: 
-  visceral heterotaxy: "http://purl.obolibrary.org/obo/MONDO_0018677"
+  visceral heterotaxy: "MONDO:0018677"
   SO_0001217: "SO:0001217"
 
 

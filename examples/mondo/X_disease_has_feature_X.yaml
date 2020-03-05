@@ -8,7 +8,7 @@ description: >-
   Examples: [fatty liver disease](http://purl.obolibrary.org/obo/MONDO_0004790), [obesity disorder](http://purl.obolibrary.org/obo/MONDO_0011122), [potassium deficiency disease](http://purl.obolibrary.org/obo/MONDO_0003019) (126 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   owl:Thing: "owl:Thing"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [trigeminal neuralgia](http://purl.obolibrary.org/obo/MONDO_0008599), [facial neuralgia](http://purl.obolibrary.org/obo/MONDO_0001818), [glossopharyngeal neuralgia](http://purl.obolibrary.org/obo/MONDO_0016372) (5 total)
 
 classes: 
-  neuralgia: "http://purl.obolibrary.org/obo/MONDO_0021667"
+  neuralgia: "MONDO:0021667"
   neuron projection bundle: "UBERON:0000122"
 
 

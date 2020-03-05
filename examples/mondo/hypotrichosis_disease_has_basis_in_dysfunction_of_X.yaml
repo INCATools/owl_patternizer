@@ -8,7 +8,7 @@ description: >-
   Examples: [hypotrichosis 12](http://purl.obolibrary.org/obo/MONDO_0014384), [hypotrichosis 11](http://purl.obolibrary.org/obo/MONDO_0014027), [hypotrichosis 8](http://purl.obolibrary.org/obo/MONDO_0010206) (10 total)
 
 classes: 
-  hypotrichosis: "http://purl.obolibrary.org/obo/MONDO_0003037"
+  hypotrichosis: "MONDO:0003037"
   SO_0001217: "SO:0001217"
 
 

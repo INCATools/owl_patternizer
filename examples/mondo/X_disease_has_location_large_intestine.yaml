@@ -8,7 +8,7 @@ description: >-
   Examples: [large intestine disease](http://purl.obolibrary.org/obo/MONDO_0024634), [colorectal leiomyoma](http://purl.obolibrary.org/obo/MONDO_0003299), [colorectal Kaposi sarcoma](http://purl.obolibrary.org/obo/MONDO_0024659) (8 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   large intestine: "UBERON:0000059"
 
 

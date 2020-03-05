@@ -8,7 +8,7 @@ description: >-
   Examples: [dermatophytosis of scalp or beard](http://purl.obolibrary.org/obo/MONDO_0002967), [tinea unguium](http://purl.obolibrary.org/obo/MONDO_0001628), [tinea pedis](http://purl.obolibrary.org/obo/MONDO_0005984) (5 total)
 
 classes: 
-  dermatophytosis: "http://purl.obolibrary.org/obo/MONDO_0004678"
+  dermatophytosis: "MONDO:0004678"
   material anatomical entity: "UBERON:0000465"
 
 

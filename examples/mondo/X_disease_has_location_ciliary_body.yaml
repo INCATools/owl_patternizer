@@ -8,7 +8,7 @@ description: >-
   Examples: [ciliary body disease](http://purl.obolibrary.org/obo/MONDO_0002970), [leiomyoma of ciliary body](http://purl.obolibrary.org/obo/MONDO_0021273), [ciliary body epithelioid cell melanoma](http://purl.obolibrary.org/obo/MONDO_0004086) (10 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   ciliary body: "UBERON:0001775"
 
 

@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   organic substance metabolic process: "GO:0071704"
-  inborn errors of metabolism: "http://purl.obolibrary.org/obo/MONDO_0019052"
+  inborn errors of metabolism: "MONDO:0019052"
 
 
 relations: 

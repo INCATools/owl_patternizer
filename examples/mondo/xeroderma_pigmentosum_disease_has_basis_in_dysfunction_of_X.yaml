@@ -8,7 +8,7 @@ description: >-
   Examples: [xeroderma pigmentosum group A](http://purl.obolibrary.org/obo/MONDO_0010210), [xeroderma pigmentosum group D](http://purl.obolibrary.org/obo/MONDO_0010212), [xeroderma pigmentosum group B](http://purl.obolibrary.org/obo/MONDO_0012531) (5 total)
 
 classes: 
-  xeroderma pigmentosum: "http://purl.obolibrary.org/obo/MONDO_0019600"
+  xeroderma pigmentosum: "MONDO:0019600"
   SO_0001217: "SO:0001217"
 
 

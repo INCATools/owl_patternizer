@@ -8,8 +8,8 @@ description: >-
   Examples: [energy metabolism disorder with epilepsy](http://purl.obolibrary.org/obo/MONDO_0016401), [familial mesial temporal lobe epilepsy with febrile seizures](http://purl.obolibrary.org/obo/MONDO_0013742), [monogenic disease with epilepsy](http://purl.obolibrary.org/obo/MONDO_0015653) (14 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
-  epilepsy: "http://purl.obolibrary.org/obo/MONDO_0005027"
+  disease or disorder: "MONDO:0000001"
+  epilepsy: "MONDO:0005027"
 
 
 relations: 

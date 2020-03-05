@@ -8,7 +8,7 @@ description: >-
   Examples: [retinal neuroblastoma](http://purl.obolibrary.org/obo/MONDO_0024340), [cervical neuroblastoma](http://purl.obolibrary.org/obo/MONDO_0000549), [cerebral neuroblastoma](http://purl.obolibrary.org/obo/MONDO_0002900) (7 total)
 
 classes: 
-  neuroblastoma: "http://purl.obolibrary.org/obo/MONDO_0005072"
+  neuroblastoma: "MONDO:0005072"
   anatomical entity: "UBERON:0001062"
 
 

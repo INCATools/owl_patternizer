@@ -8,7 +8,7 @@ description: >-
   Examples: [ureter transitional cell carcinoma](http://purl.obolibrary.org/obo/MONDO_0004030), [urethra transitional cell carcinoma](http://purl.obolibrary.org/obo/MONDO_0002836), [Bartholin gland transitional cell carcinoma](http://purl.obolibrary.org/obo/MONDO_0002828) (10 total)
 
 classes: 
-  transitional cell carcinoma: "http://purl.obolibrary.org/obo/MONDO_0006474"
+  transitional cell carcinoma: "MONDO:0006474"
   anatomical structure: "UBERON:0000061"
 
 

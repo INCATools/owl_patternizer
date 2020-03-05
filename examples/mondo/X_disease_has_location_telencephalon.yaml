@@ -8,7 +8,7 @@ description: >-
   Examples: [childhood cerebral astrocytoma](http://purl.obolibrary.org/obo/MONDO_0004071), [cerebral neuroblastoma](http://purl.obolibrary.org/obo/MONDO_0002900), [cerebral sarcoma](http://purl.obolibrary.org/obo/MONDO_0007300) (9 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   telencephalon: "UBERON:0001893"
 
 

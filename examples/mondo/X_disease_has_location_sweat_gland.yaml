@@ -8,7 +8,7 @@ description: >-
   Examples: [sweat gland disease](http://purl.obolibrary.org/obo/MONDO_0006615), [sweat gland adenoma](http://purl.obolibrary.org/obo/MONDO_0021110), [sweat gland cancer](http://purl.obolibrary.org/obo/MONDO_0002206) (6 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   sweat gland: "UBERON:0001820"
 
 

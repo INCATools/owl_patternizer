@@ -8,7 +8,7 @@ description: >-
   Examples: [acute disease](http://purl.obolibrary.org/obo/MONDO_0020683), [acute adenoiditis](http://purl.obolibrary.org/obo/MONDO_0020686), [acute endometritis](http://purl.obolibrary.org/obo/MONDO_0004265) (56 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   acute: "PATO:0000389"
 
 

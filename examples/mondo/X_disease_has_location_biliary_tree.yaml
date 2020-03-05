@@ -8,7 +8,7 @@ description: >-
   Examples: [biliary tract disease](http://purl.obolibrary.org/obo/MONDO_0004868), [biliary tract cancer](http://purl.obolibrary.org/obo/MONDO_0003060), [biliary tract neoplasm (disease)](http://purl.obolibrary.org/obo/MONDO_0005304) (4 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   biliary tree: "UBERON:0001173"
 
 

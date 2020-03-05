@@ -8,7 +8,7 @@ description: >-
   Examples: [holoprosencephaly 3](http://purl.obolibrary.org/obo/MONDO_0007733), [holoprosencephaly 2](http://purl.obolibrary.org/obo/MONDO_0007999), [holoprosencephaly 4](http://purl.obolibrary.org/obo/MONDO_0007734) (7 total)
 
 classes: 
-  holoprosencephaly: "http://purl.obolibrary.org/obo/MONDO_0016296"
+  holoprosencephaly: "MONDO:0016296"
   SO_0001217: "SO:0001217"
 
 

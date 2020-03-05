@@ -20,11 +20,11 @@ classes:
   Lipodystrophy: "http://purl.obolibrary.org/obo/HP_0009125"
   Pain: "http://purl.obolibrary.org/obo/HP_0012531"
   Increased circulating androgen level: "http://purl.obolibrary.org/obo/HP_0030348"
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
-  epilepsy: "http://purl.obolibrary.org/obo/MONDO_0005027"
-  focal palmoplantar keratoderma: "http://purl.obolibrary.org/obo/MONDO_0017672"
-  punctate palmoplantar keratoderma: "http://purl.obolibrary.org/obo/MONDO_0017675"
-  Cushing syndrome: "http://purl.obolibrary.org/obo/MONDO_0018912"
+  disease or disorder: "MONDO:0000001"
+  epilepsy: "MONDO:0005027"
+  focal palmoplantar keratoderma: "MONDO:0017672"
+  punctate palmoplantar keratoderma: "MONDO:0017675"
+  Cushing syndrome: "MONDO:0018912"
 
 
 relations: 

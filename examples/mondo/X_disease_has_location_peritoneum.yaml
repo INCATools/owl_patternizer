@@ -8,7 +8,7 @@ description: >-
   Examples: [disease of peritoneum](http://purl.obolibrary.org/obo/MONDO_0020591), [benign peritoneal mesothelioma](http://purl.obolibrary.org/obo/MONDO_0002112), [peritoneum cancer](http://purl.obolibrary.org/obo/MONDO_0002087) (10 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   peritoneum: "UBERON:0002358"
 
 

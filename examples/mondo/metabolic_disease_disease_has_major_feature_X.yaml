@@ -12,8 +12,8 @@ classes:
   Acidosis: "http://purl.obolibrary.org/obo/HP_0001941"
   Hyperlipidemia: "http://purl.obolibrary.org/obo/HP_0003077"
   Hyperlipoproteinemia: "http://purl.obolibrary.org/obo/HP_0010980"
-  epilepsy: "http://purl.obolibrary.org/obo/MONDO_0005027"
-  metabolic disease: "http://purl.obolibrary.org/obo/MONDO_0005066"
+  epilepsy: "MONDO:0005027"
+  metabolic disease: "MONDO:0005066"
 
 
 relations: 

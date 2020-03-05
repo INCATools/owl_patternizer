@@ -11,10 +11,10 @@ classes:
   Autosomal dominant inheritance: "http://purl.obolibrary.org/obo/HP_0000006"
   Autosomal recessive inheritance: "http://purl.obolibrary.org/obo/HP_0000007"
   X-linked inheritance: "http://purl.obolibrary.org/obo/HP_0001417"
-  cerebellar ataxia: "http://purl.obolibrary.org/obo/MONDO_0000437"
-  rare: "http://purl.obolibrary.org/obo/MONDO_0021136"
-  congenital: "http://purl.obolibrary.org/obo/MONDO_0021140"
-  acquired: "http://purl.obolibrary.org/obo/MONDO_0021141"
+  cerebellar ataxia: "MONDO:0000437"
+  rare: "MONDO:0021136"
+  congenital: "MONDO:0021140"
+  acquired: "MONDO:0021141"
 
 
 relations: 

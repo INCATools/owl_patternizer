@@ -8,7 +8,7 @@ description: >-
   Examples: [hypogonadotropic hypogonadism 16 with or without anosmia](http://purl.obolibrary.org/obo/MONDO_0013961), [hypogonadotropic hypogonadism 10 with or without anosmia](http://purl.obolibrary.org/obo/MONDO_0013912), [hypogonadotropic hypogonadism 11 with or without anosmia](http://purl.obolibrary.org/obo/MONDO_0013913) (22 total)
 
 classes: 
-  hypogonadotropic hypogonadism: "http://purl.obolibrary.org/obo/MONDO_0018555"
+  hypogonadotropic hypogonadism: "MONDO:0018555"
   SO_0001217: "SO:0001217"
 
 

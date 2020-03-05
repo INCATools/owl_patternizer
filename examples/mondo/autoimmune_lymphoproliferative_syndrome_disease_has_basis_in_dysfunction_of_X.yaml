@@ -8,7 +8,7 @@ description: >-
   Examples: [autoimmune lymphoproliferative syndrome type 2A](http://purl.obolibrary.org/obo/MONDO_0011383), [autoimmune lymphoproliferative syndrome type 2B](http://purl.obolibrary.org/obo/MONDO_0011804), [autoimmune lymphoproliferative syndrome type 4](http://purl.obolibrary.org/obo/MONDO_0013767) (4 total)
 
 classes: 
-  autoimmune lymphoproliferative syndrome: "http://purl.obolibrary.org/obo/MONDO_0017979"
+  autoimmune lymphoproliferative syndrome: "MONDO:0017979"
   SO_0001217: "SO:0001217"
 
 

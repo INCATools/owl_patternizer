@@ -8,7 +8,7 @@ description: >-
   Examples: [Leber congenital amaurosis 2](http://purl.obolibrary.org/obo/MONDO_0008765), [Leber congenital amaurosis 15](http://purl.obolibrary.org/obo/MONDO_0013457), [Leber congenital amaurosis 6](http://purl.obolibrary.org/obo/MONDO_0013446) (17 total)
 
 classes: 
-  Leber congenital amaurosis: "http://purl.obolibrary.org/obo/MONDO_0018998"
+  Leber congenital amaurosis: "MONDO:0018998"
   SO_0001217: "SO:0001217"
 
 

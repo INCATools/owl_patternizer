@@ -8,7 +8,7 @@ description: >-
   Examples: [cecal disease](http://purl.obolibrary.org/obo/MONDO_0002031), [cecum villous adenoma](http://purl.obolibrary.org/obo/MONDO_0000525), [carcinoma in situ of cecum](http://purl.obolibrary.org/obo/MONDO_0021289) (9 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   caecum: "UBERON:0001153"
 
 

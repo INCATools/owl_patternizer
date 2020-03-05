@@ -8,7 +8,7 @@ description: >-
   Examples: [rete ovarii cystadenoma](http://purl.obolibrary.org/obo/MONDO_0003610), [rete ovarii cystadenofibroma](http://purl.obolibrary.org/obo/MONDO_0004006), [rete ovarii adenocarcinoma](http://purl.obolibrary.org/obo/MONDO_0003191) (5 total)
 
 classes: 
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  neoplasm (disease): "MONDO:0005070"
   rete ovarii: "UBERON:0010185"
 
 

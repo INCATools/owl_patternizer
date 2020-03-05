@@ -9,15 +9,15 @@ description: >-
 
 classes: 
   Woolly hair: "http://purl.obolibrary.org/obo/HP_0002224"
-  premature menopause: "http://purl.obolibrary.org/obo/MONDO_0001119"
-  syndromic disease: "http://purl.obolibrary.org/obo/MONDO_0002254"
-  plasma cell neoplasm: "http://purl.obolibrary.org/obo/MONDO_0004959"
-  hypertrophic cardiomyopathy: "http://purl.obolibrary.org/obo/MONDO_0005045"
-  carcinoid tumor (disease): "http://purl.obolibrary.org/obo/MONDO_0005369"
-  Peutz-Jeghers polyp: "http://purl.obolibrary.org/obo/MONDO_0006365"
-  pleuropulmonary blastoma: "http://purl.obolibrary.org/obo/MONDO_0011014"
-  frontonasal dysplasia: "http://purl.obolibrary.org/obo/MONDO_0016643"
-  osteogenesis imperfecta: "http://purl.obolibrary.org/obo/MONDO_0019019"
+  premature menopause: "MONDO:0001119"
+  syndromic disease: "MONDO:0002254"
+  plasma cell neoplasm: "MONDO:0004959"
+  hypertrophic cardiomyopathy: "MONDO:0005045"
+  carcinoid tumor (disease): "MONDO:0005369"
+  Peutz-Jeghers polyp: "MONDO:0006365"
+  pleuropulmonary blastoma: "MONDO:0011014"
+  frontonasal dysplasia: "MONDO:0016643"
+  osteogenesis imperfecta: "MONDO:0019019"
 
 
 relations: 

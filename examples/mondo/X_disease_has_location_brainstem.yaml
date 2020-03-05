@@ -8,7 +8,7 @@ description: >-
   Examples: [brainstem cancer](http://purl.obolibrary.org/obo/MONDO_0002912), [brainstem neoplasm](http://purl.obolibrary.org/obo/MONDO_0021228), [benign neoplasm of brain stem](http://purl.obolibrary.org/obo/MONDO_0021507) (9 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   brainstem: "UBERON:0002298"
 
 

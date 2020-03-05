@@ -8,7 +8,7 @@ description: >-
   Examples: [cutaneous mucoepidermoid carcinoma](http://purl.obolibrary.org/obo/MONDO_0003091), [oral cavity mucoepidermoid carcinoma](http://purl.obolibrary.org/obo/MONDO_0044964), [mucoepidermoid breast carcinoma](http://purl.obolibrary.org/obo/MONDO_0003087) (18 total)
 
 classes: 
-  mucoepidermoid carcinoma: "http://purl.obolibrary.org/obo/MONDO_0003036"
+  mucoepidermoid carcinoma: "MONDO:0003036"
   anatomical entity: "UBERON:0001062"
 
 

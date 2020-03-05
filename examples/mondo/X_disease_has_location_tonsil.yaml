@@ -8,7 +8,7 @@ description: >-
   Examples: [tonsil cancer](http://purl.obolibrary.org/obo/MONDO_0006998), [tonsil carcinoma](http://purl.obolibrary.org/obo/MONDO_0021337), [tonsillar lymphoma](http://purl.obolibrary.org/obo/MONDO_0044884) (7 total)
 
 classes: 
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  neoplasm (disease): "MONDO:0005070"
   tonsil: "UBERON:0002372"
 
 

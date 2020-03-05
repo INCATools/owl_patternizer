@@ -8,7 +8,7 @@ description: >-
   Examples: [hereditary spastic paraplegia 12](http://purl.obolibrary.org/obo/MONDO_0011489), [hereditary spastic paraplegia 11](http://purl.obolibrary.org/obo/MONDO_0011445), [hereditary spastic paraplegia 3A](http://purl.obolibrary.org/obo/MONDO_0008437) (28 total)
 
 classes: 
-  hereditary spastic paraplegia: "http://purl.obolibrary.org/obo/MONDO_0019064"
+  hereditary spastic paraplegia: "MONDO:0019064"
   SO_0001217: "SO:0001217"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [nail disease](http://purl.obolibrary.org/obo/MONDO_0002884), [tinea unguium](http://purl.obolibrary.org/obo/MONDO_0001628), [nail tumor](http://purl.obolibrary.org/obo/MONDO_0017588) (5 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   nail: "UBERON:0001705"
 
 

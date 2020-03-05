@@ -8,7 +8,7 @@ description: >-
   Examples: [breast large cell neuroendocrine carcinoma](http://purl.obolibrary.org/obo/MONDO_0003959), [ovarian large-cell neuroendocrine carcinoma](http://purl.obolibrary.org/obo/MONDO_0003049), [pancreatic large cell neuroendocrine carcinoma](http://purl.obolibrary.org/obo/MONDO_0006347) (5 total)
 
 classes: 
-  large cell neuroendocrine carcinoma: "http://purl.obolibrary.org/obo/MONDO_0005057"
+  large cell neuroendocrine carcinoma: "MONDO:0005057"
   multicellular anatomical structure: "UBERON:0010000"
 
 

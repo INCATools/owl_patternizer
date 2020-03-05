@@ -8,7 +8,7 @@ description: >-
   Examples: [cervical fibroepithelial polyp](http://purl.obolibrary.org/obo/MONDO_0060777), [fibroepithelial polyp of urethra](http://purl.obolibrary.org/obo/MONDO_0006550), [vaginal fibroepithelial polyp](http://purl.obolibrary.org/obo/MONDO_0060774) (6 total)
 
 classes: 
-  fibroepithelial polyp: "http://purl.obolibrary.org/obo/MONDO_0060765"
+  fibroepithelial polyp: "MONDO:0060765"
   multicellular anatomical structure: "UBERON:0010000"
 
 

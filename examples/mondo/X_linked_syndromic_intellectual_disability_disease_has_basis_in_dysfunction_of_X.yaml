@@ -8,7 +8,7 @@ description: >-
   Examples: [intellectual disability, X-linked, syndromic 33](http://purl.obolibrary.org/obo/MONDO_0010500), [MED12-related intellectual disability syndrome](http://purl.obolibrary.org/obo/MONDO_0100000), [intellectual disability, X-linked 99, syndromic, female-restricted](http://purl.obolibrary.org/obo/MONDO_0010502) (5 total)
 
 classes: 
-  X-linked syndromic intellectual disability: "http://purl.obolibrary.org/obo/MONDO_0020119"
+  X-linked syndromic intellectual disability: "MONDO:0020119"
   SO_0001217: "SO:0001217"
 
 

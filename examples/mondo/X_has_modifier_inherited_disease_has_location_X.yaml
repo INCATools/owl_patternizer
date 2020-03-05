@@ -8,8 +8,8 @@ description: >-
   Examples: [inherited odontologic disease](http://purl.obolibrary.org/obo/MONDO_0019183), [genetic parenchymatous liver disease](http://purl.obolibrary.org/obo/MONDO_0015508), [inherited renal tubular disease](http://purl.obolibrary.org/obo/MONDO_0015962) (7 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
-  inherited: "http://purl.obolibrary.org/obo/MONDO_0021152"
+  disease or disorder: "MONDO:0000001"
+  inherited: "MONDO:0021152"
   multicellular anatomical structure: "UBERON:0010000"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [parasympathetic paraganglioma](http://purl.obolibrary.org/obo/MONDO_0021052), [sympathetic paraganglioma](http://purl.obolibrary.org/obo/MONDO_0021072), [carotid body paraganglioma](http://purl.obolibrary.org/obo/MONDO_0021053) (6 total)
 
 classes: 
-  paraganglioma: "http://purl.obolibrary.org/obo/MONDO_0000448"
+  paraganglioma: "MONDO:0000448"
   anatomical entity: "UBERON:0001062"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [femoral neuropathy](http://purl.obolibrary.org/obo/MONDO_0006759), [lesion of sciatic nerve](http://purl.obolibrary.org/obo/MONDO_0001543), [common peroneal nerve lesion](http://purl.obolibrary.org/obo/MONDO_0001542) (6 total)
 
 classes: 
-  peripheral nerve lesion: "http://purl.obolibrary.org/obo/MONDO_0024334"
+  peripheral nerve lesion: "MONDO:0024334"
   nerve: "UBERON:0001021"
 
 

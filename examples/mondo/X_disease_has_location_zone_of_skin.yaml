@@ -8,7 +8,7 @@ description: >-
   Examples: [skin disease](http://purl.obolibrary.org/obo/MONDO_0005093), [external hirudiniasis](http://purl.obolibrary.org/obo/MONDO_0024303), [leiomyoma cutis](http://purl.obolibrary.org/obo/MONDO_0003291) (44 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   zone of skin: "UBERON:0000014"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [malignant endocrine neoplasm](http://purl.obolibrary.org/obo/MONDO_0021069), [endocrine gland neoplasm](http://purl.obolibrary.org/obo/MONDO_0002082), [benign endocrine neoplasm](http://purl.obolibrary.org/obo/MONDO_0000627) (4 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   endocrine gland: "UBERON:0002368"
 
 

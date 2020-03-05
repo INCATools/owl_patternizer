@@ -8,7 +8,7 @@ description: >-
   Examples: [malignant peritoneal germ cell tumor](http://purl.obolibrary.org/obo/MONDO_0040673), [malignant pleural mesothelioma](http://purl.obolibrary.org/obo/MONDO_0005112), [malignant cutaneous granular cell skin tumor](http://purl.obolibrary.org/obo/MONDO_0004314) (5 total)
 
 classes: 
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  neoplasm (disease): "MONDO:0005070"
   neoplastic, malignant: "PATO:0002097"
   multicellular anatomical structure: "UBERON:0010000"
 

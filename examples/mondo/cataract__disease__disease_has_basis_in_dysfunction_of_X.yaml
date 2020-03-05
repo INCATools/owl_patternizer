@@ -8,7 +8,7 @@ description: >-
   Examples: [cataract 18](http://purl.obolibrary.org/obo/MONDO_0012395), [cataract 9 multiple types](http://purl.obolibrary.org/obo/MONDO_0011413), [cataract 3 multiple types](http://purl.obolibrary.org/obo/MONDO_0011104) (10 total)
 
 classes: 
-  cataract (disease): "http://purl.obolibrary.org/obo/MONDO_0005129"
+  cataract (disease): "MONDO:0005129"
   SO_0001217: "SO:0001217"
 
 

@@ -8,7 +8,7 @@ description: >-
   Examples: [epicardium cancer](http://purl.obolibrary.org/obo/MONDO_0003104), [neoplasm of epicardium](http://purl.obolibrary.org/obo/MONDO_0021379), [epicardium lipoma](http://purl.obolibrary.org/obo/MONDO_0003840) (4 total)
 
 classes: 
-  neoplasm (disease): "http://purl.obolibrary.org/obo/MONDO_0005070"
+  neoplasm (disease): "MONDO:0005070"
   epicardium: "UBERON:0002348"
 
 

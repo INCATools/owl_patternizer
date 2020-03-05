@@ -8,7 +8,7 @@ description: >-
   Examples: [carcinoma in situ of gastric cardia](http://purl.obolibrary.org/obo/MONDO_0021294), [gastric cardia adenocarcinoma](http://purl.obolibrary.org/obo/MONDO_0003835), [cardia cancer](http://purl.obolibrary.org/obo/MONDO_0001063) (4 total)
 
 classes: 
-  cancer: "http://purl.obolibrary.org/obo/MONDO_0004992"
+  cancer: "MONDO:0004992"
   cardia of stomach: "UBERON:0001162"
 
 

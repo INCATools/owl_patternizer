@@ -8,7 +8,7 @@ description: >-
   Examples: [mitochondrial DNA maintenance syndrome](http://purl.obolibrary.org/obo/MONDO_0018121), [inborn disorder of methionine cycle and sulfur amino acid metabolism](http://purl.obolibrary.org/obo/MONDO_0019222), [inborn aminoacylase deficiency](http://purl.obolibrary.org/obo/MONDO_0017686) (54 total)
 
 classes: 
-  inborn errors of metabolism: "http://purl.obolibrary.org/obo/MONDO_0019052"
+  inborn errors of metabolism: "MONDO:0019052"
   owl:Thing: "owl:Thing"
 
 

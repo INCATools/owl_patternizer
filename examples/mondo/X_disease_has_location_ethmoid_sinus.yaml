@@ -8,7 +8,7 @@ description: >-
   Examples: [ethmoid sinus inverted papilloma](http://purl.obolibrary.org/obo/MONDO_0003925), [ethmoid sinus adenoid cystic carcinoma](http://purl.obolibrary.org/obo/MONDO_0006201), [ethmoid sinus cancer](http://purl.obolibrary.org/obo/MONDO_0001763) (7 total)
 
 classes: 
-  cell proliferation disorder: "http://purl.obolibrary.org/obo/MONDO_0045024"
+  cell proliferation disorder: "MONDO:0045024"
   ethmoid sinus: "UBERON:0002453"
 
 

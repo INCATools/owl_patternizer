@@ -8,7 +8,7 @@ description: >-
   Examples: [Japanese spotted fever](http://purl.obolibrary.org/obo/MONDO_0000233), [Rickettsia parkeri spotted fever](http://purl.obolibrary.org/obo/MONDO_0000234), [pseudotyphus of California](http://purl.obolibrary.org/obo/MONDO_0019364) (4 total)
 
 classes: 
-  spotted fever: "http://purl.obolibrary.org/obo/MONDO_0001195"
+  spotted fever: "MONDO:0001195"
   spotted fever group: "http://purl.obolibrary.org/obo/NCBITaxon_114277"
 
 

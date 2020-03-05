@@ -8,7 +8,7 @@ description: >-
   Examples: [mendelian susceptibility to mycobacterial diseases due to partial STAT1 deficiency](http://purl.obolibrary.org/obo/MONDO_0013956), [mendelian susceptibility to mycobacterial diseases due to partial IRF8 deficiency](http://purl.obolibrary.org/obo/MONDO_0013957), [autosomal dominant mendelian susceptibility to mycobacterial diseases due to partial IFNgammaR1 deficiency](http://purl.obolibrary.org/obo/MONDO_0014429) (4 total)
 
 classes: 
-  autosomal dominant mendelian susceptibility to mycobacterial diseases due to a partial deficiency: "http://purl.obolibrary.org/obo/MONDO_0017899"
+  autosomal dominant mendelian susceptibility to mycobacterial diseases due to a partial deficiency: "MONDO:0017899"
   SO_0001217: "SO:0001217"
 
 

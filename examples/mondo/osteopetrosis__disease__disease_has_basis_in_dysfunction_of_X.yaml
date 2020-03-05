@@ -8,7 +8,7 @@ description: >-
   Examples: [autosomal recessive osteopetrosis 7](http://purl.obolibrary.org/obo/MONDO_0012859), [autosomal recessive osteopetrosis 3](http://purl.obolibrary.org/obo/MONDO_0009818), [autosomal recessive osteopetrosis 5](http://purl.obolibrary.org/obo/MONDO_0009817) (5 total)
 
 classes: 
-  osteopetrosis (disease): "http://purl.obolibrary.org/obo/MONDO_0017198"
+  osteopetrosis (disease): "MONDO:0017198"
   SO_0001217: "SO:0001217"
 
 

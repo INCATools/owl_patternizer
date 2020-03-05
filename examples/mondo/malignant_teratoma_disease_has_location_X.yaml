@@ -8,7 +8,7 @@ description: >-
   Examples: [malignant teratoma of testis](http://purl.obolibrary.org/obo/MONDO_0021282), [immature gastric teratoma](http://purl.obolibrary.org/obo/MONDO_0004048), [immature ovarian teratoma](http://purl.obolibrary.org/obo/MONDO_0018369) (4 total)
 
 classes: 
-  malignant teratoma: "http://purl.obolibrary.org/obo/MONDO_0003514"
+  malignant teratoma: "MONDO:0003514"
   anatomical entity: "UBERON:0001062"
 
 

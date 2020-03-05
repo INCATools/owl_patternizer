@@ -13,7 +13,7 @@ classes:
   Autosomal recessive inheritance: "http://purl.obolibrary.org/obo/HP_0000007"
   X-linked recessive inheritance: "http://purl.obolibrary.org/obo/HP_0001419"
   Adult onset: "http://purl.obolibrary.org/obo/HP_0003581"
-  inherited: "http://purl.obolibrary.org/obo/MONDO_0021152"
+  inherited: "MONDO:0021152"
   owl:Thing: "owl:Thing"
 
 

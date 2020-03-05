@@ -8,7 +8,7 @@ description: >-
   Examples: [muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type a, 10](http://purl.obolibrary.org/obo/MONDO_0014022), [muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type a, 8](http://purl.obolibrary.org/obo/MONDO_0013904), [muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type a, 12](http://purl.obolibrary.org/obo/MONDO_0014101) (5 total)
 
 classes: 
-  muscular dystrophy-dystroglycanopathy, type A: "http://purl.obolibrary.org/obo/MONDO_0000171"
+  muscular dystrophy-dystroglycanopathy, type A: "MONDO:0000171"
   SO_0001217: "SO:0001217"
 
 

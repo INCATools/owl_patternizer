@@ -9,7 +9,7 @@ description: >-
 
 classes: 
   Mode of inheritance: "http://purl.obolibrary.org/obo/HP_0000005"
-  hereditary hypophosphatemic rickets: "http://purl.obolibrary.org/obo/MONDO_0000044"
+  hereditary hypophosphatemic rickets: "MONDO:0000044"
 
 
 relations: 

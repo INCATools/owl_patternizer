@@ -8,7 +8,7 @@ description: >-
   Examples: [cutaneous tuberculosis](http://purl.obolibrary.org/obo/MONDO_0021948), [lymph node tuberculosis](http://purl.obolibrary.org/obo/MONDO_0005831), [ureter tuberculosis](http://purl.obolibrary.org/obo/MONDO_0004517) (17 total)
 
 classes: 
-  tuberculosis: "http://purl.obolibrary.org/obo/MONDO_0018076"
+  tuberculosis: "MONDO:0018076"
   anatomical structure: "UBERON:0000061"
 
 

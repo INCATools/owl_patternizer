@@ -15,8 +15,8 @@ classes:
   Abnormality of the liver: "http://purl.obolibrary.org/obo/HP_0001392"
   Dilated cardiomyopathy: "http://purl.obolibrary.org/obo/HP_0001644"
   Abnormal intestine morphology: "http://purl.obolibrary.org/obo/HP_0002242"
-  epilepsy: "http://purl.obolibrary.org/obo/MONDO_0005027"
-  congenital disorder of glycosylation: "http://purl.obolibrary.org/obo/MONDO_0015286"
+  epilepsy: "MONDO:0005027"
+  congenital disorder of glycosylation: "MONDO:0015286"
 
 
 relations: 

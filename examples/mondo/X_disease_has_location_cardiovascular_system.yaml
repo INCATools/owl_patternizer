@@ -8,7 +8,7 @@ description: >-
   Examples: [cardiovascular disease](http://purl.obolibrary.org/obo/MONDO_0004995), [cardiovascular cancer](http://purl.obolibrary.org/obo/MONDO_0002100), [cardiovascular neoplasm](http://purl.obolibrary.org/obo/MONDO_0024757) (5 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   cardiovascular system: "UBERON:0004535"
 
 

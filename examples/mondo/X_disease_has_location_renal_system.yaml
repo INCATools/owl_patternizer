@@ -8,7 +8,7 @@ description: >-
   Examples: [urinary system disease](http://purl.obolibrary.org/obo/MONDO_0002118), [malignant urinary system neoplasm](http://purl.obolibrary.org/obo/MONDO_0006295), [urinary system neoplasm](http://purl.obolibrary.org/obo/MONDO_0021066) (6 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   renal system: "UBERON:0001008"
 
 

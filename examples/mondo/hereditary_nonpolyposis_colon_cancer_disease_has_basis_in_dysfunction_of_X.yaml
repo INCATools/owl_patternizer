@@ -8,7 +8,7 @@ description: >-
   Examples: [colorectal cancer, hereditary nonpolyposis, type 8](http://purl.obolibrary.org/obo/MONDO_0013196), [colorectal cancer, hereditary nonpolyposis, type 6](http://purl.obolibrary.org/obo/MONDO_0013695), [colorectal cancer, hereditary nonpolyposis, type 7](http://purl.obolibrary.org/obo/MONDO_0013725) (5 total)
 
 classes: 
-  hereditary nonpolyposis colon cancer: "http://purl.obolibrary.org/obo/MONDO_0018630"
+  hereditary nonpolyposis colon cancer: "MONDO:0018630"
   SO_0001217: "SO:0001217"
 
 

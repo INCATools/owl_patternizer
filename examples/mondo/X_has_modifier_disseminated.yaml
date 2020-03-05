@@ -8,8 +8,8 @@ description: >-
   Examples: [disseminated eosinophilic collagen disease](http://purl.obolibrary.org/obo/MONDO_0004803), [disseminated candidiasis](http://purl.obolibrary.org/obo/MONDO_0042233), [systemic mycosis](http://purl.obolibrary.org/obo/MONDO_0000256) (6 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
-  disseminated: "http://purl.obolibrary.org/obo/MONDO_0022202"
+  disease or disorder: "MONDO:0000001"
+  disseminated: "MONDO:0022202"
 
 
 relations: 

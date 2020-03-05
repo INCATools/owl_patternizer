@@ -8,8 +8,8 @@ description: >-
   Examples: [neuroendocrine tumor of the anal canal](http://purl.obolibrary.org/obo/MONDO_0015069), [neuroendocrine tumor of rectum, well differentiated, low or intermediate grade](http://purl.obolibrary.org/obo/MONDO_0015068), [neuroendocrine tumor of the appendix, well differentiated, low or intermediate grade](http://purl.obolibrary.org/obo/MONDO_0015066) (9 total)
 
 classes: 
-  neuroendocrine neoplasm: "http://purl.obolibrary.org/obo/MONDO_0019496"
-  tumor grade 1 or 2, general grading system: "http://purl.obolibrary.org/obo/MONDO_0024495"
+  neuroendocrine neoplasm: "MONDO:0019496"
+  tumor grade 1 or 2, general grading system: "MONDO:0024495"
   anatomical structure: "UBERON:0000061"
 
 

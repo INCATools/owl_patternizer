@@ -8,7 +8,7 @@ description: >-
   Examples: [gonococcal bursitis](http://purl.obolibrary.org/obo/MONDO_0001719), [gonococcal salpingitis](http://purl.obolibrary.org/obo/MONDO_0021159), [gonococcal spondylitis](http://purl.obolibrary.org/obo/MONDO_0001640) (13 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   Neisseria gonorrhoeae: "http://purl.obolibrary.org/obo/NCBITaxon_485"
 
 

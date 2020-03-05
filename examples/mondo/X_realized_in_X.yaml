@@ -12,7 +12,7 @@ classes:
   cortisol secretion: "GO:0043400"
   corticotropin secretion: "GO:0051458"
   MFOMD_0000105: "http://purl.obolibrary.org/obo/MFOMD_0000105"
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   NCIT_C19085: "NCIT:C19085"
 
 

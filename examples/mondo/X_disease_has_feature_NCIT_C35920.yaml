@@ -8,7 +8,7 @@ description: >-
   Examples: [cribriform variant testicular seminoma](http://purl.obolibrary.org/obo/MONDO_0004168), [cribriform carcinoma of breast](http://purl.obolibrary.org/obo/MONDO_0045059), [cribriform carcinoma](http://purl.obolibrary.org/obo/MONDO_0006176) (4 total)
 
 classes: 
-  cancer: "http://purl.obolibrary.org/obo/MONDO_0004992"
+  cancer: "MONDO:0004992"
   NCIT_C35920: "NCIT:C35920"
 
 

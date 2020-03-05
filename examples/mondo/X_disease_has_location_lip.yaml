@@ -8,7 +8,7 @@ description: >-
   Examples: [lip disease](http://purl.obolibrary.org/obo/MONDO_0004748), [herpes labialis](http://purl.obolibrary.org/obo/MONDO_0043653), [lip carcinoma in situ](http://purl.obolibrary.org/obo/MONDO_0004636) (8 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   lip: "UBERON:0001833"
 
 

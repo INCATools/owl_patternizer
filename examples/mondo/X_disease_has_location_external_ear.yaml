@@ -8,7 +8,7 @@ description: >-
   Examples: [external ear disease](http://purl.obolibrary.org/obo/MONDO_0002776), [otomycosis](http://purl.obolibrary.org/obo/MONDO_0000262), [external ear cancer](http://purl.obolibrary.org/obo/MONDO_0003574) (9 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
+  disease or disorder: "MONDO:0000001"
   external ear: "UBERON:0001691"
 
 

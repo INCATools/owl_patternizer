@@ -8,8 +8,8 @@ description: >-
   Examples: [chronic mucocutaneous candidiasis (disease)](http://purl.obolibrary.org/obo/MONDO_0015279), [inherited susceptibility to asthma](http://purl.obolibrary.org/obo/MONDO_0010940), [Kaposi sarcoma, susceptibility to](http://purl.obolibrary.org/obo/MONDO_0007845) (19 total)
 
 classes: 
-  disease or disorder: "http://purl.obolibrary.org/obo/MONDO_0000001"
-  inherited disease susceptibility: "http://purl.obolibrary.org/obo/MONDO_0020573"
+  disease or disorder: "MONDO:0000001"
+  inherited disease susceptibility: "MONDO:0020573"
 
 
 relations: 

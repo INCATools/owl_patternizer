@@ -8,7 +8,7 @@ description: >-
   Examples: [epidemic louse-borne typhus](http://purl.obolibrary.org/obo/MONDO_0019362), [endemic typhus](http://purl.obolibrary.org/obo/MONDO_0000330), [phlebotomus fever](http://purl.obolibrary.org/obo/MONDO_0005913) (4 total)
 
 classes: 
-  infectious disease: "http://purl.obolibrary.org/obo/MONDO_0005550"
+  infectious disease: "MONDO:0005550"
   root: "http://purl.obolibrary.org/obo/NCBITaxon_1"
   Arthropoda: "http://purl.obolibrary.org/obo/NCBITaxon_6656"
 

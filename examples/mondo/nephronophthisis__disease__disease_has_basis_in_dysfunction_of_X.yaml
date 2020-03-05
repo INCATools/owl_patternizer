@@ -8,7 +8,7 @@ description: >-
   Examples: [nephronophthisis 9](http://purl.obolibrary.org/obo/MONDO_0013444), [nephronophthisis 14](http://purl.obolibrary.org/obo/MONDO_0013916), [nephronophthisis 2](http://purl.obolibrary.org/obo/MONDO_0011190) (14 total)
 
 classes: 
-  nephronophthisis (disease): "http://purl.obolibrary.org/obo/MONDO_0019005"
+  nephronophthisis (disease): "MONDO:0019005"
   SO_0001217: "SO:0001217"
 
 

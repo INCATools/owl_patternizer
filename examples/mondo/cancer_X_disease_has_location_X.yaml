@@ -8,8 +8,8 @@ description: >-
   Examples: [malignant testicular germ cell tumor](http://purl.obolibrary.org/obo/MONDO_0003510), [ACTH-producing pituitary gland carcinoma](http://purl.obolibrary.org/obo/MONDO_0006069), [cancer of short bone of upper limb](http://purl.obolibrary.org/obo/MONDO_0024312) (4 total)
 
 classes: 
-  cancer: "http://purl.obolibrary.org/obo/MONDO_0004992"
-  malignant germ cell tumor: "http://purl.obolibrary.org/obo/MONDO_0006290"
+  cancer: "MONDO:0004992"
+  malignant germ cell tumor: "MONDO:0006290"
   testis: "UBERON:0000473"
 
 

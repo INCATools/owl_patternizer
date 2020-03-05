@@ -8,7 +8,7 @@ description: >-
   Examples: [adrenal medulla cancer](http://purl.obolibrary.org/obo/MONDO_0003606), [adrenal medulla carcinoma](http://purl.obolibrary.org/obo/MONDO_0004202), [adrenal medullary hyperplasia](http://purl.obolibrary.org/obo/MONDO_0006077) (6 total)
 
 classes: 
-  cell proliferation disorder: "http://purl.obolibrary.org/obo/MONDO_0045024"
+  cell proliferation disorder: "MONDO:0045024"
   adrenal medulla: "UBERON:0001236"
 
 

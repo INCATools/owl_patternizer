@@ -8,7 +8,7 @@ description: >-
   Examples: [skin adenosquamous carcinoma](http://purl.obolibrary.org/obo/MONDO_0056818), [adenosquamous breast carcinoma](http://purl.obolibrary.org/obo/MONDO_0003548), [Bartholin gland adenosquamous carcinoma](http://purl.obolibrary.org/obo/MONDO_0003555) (19 total)
 
 classes: 
-  adenosquamous carcinoma: "http://purl.obolibrary.org/obo/MONDO_0006074"
+  adenosquamous carcinoma: "MONDO:0006074"
   multicellular anatomical structure: "UBERON:0010000"
 
 
