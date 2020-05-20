@@ -1,0 +1,38 @@
+pattern_name: X transmitted by vector
+pattern_iri: http://purl.obolibrary.org/obo/mondo/X_transmitted_by_vector
+
+description: 
+
+  Examples: MONDO_0001444 'Chagas disease', MONDO_0017572 'tick-borne encephalitis'
+
+classes: 
+  infectious disease: "MONDO:0005550"
+  organism: "OBI:0100026"
+
+
+relations: 
+  transmitted by: "RO:0002451"
+
+
+vars:
+  infectious_disease: "'infectious disease'"
+  vector: "'organism'"
+
+name:
+  text: "%s transmitted by %s"
+  vars:
+    - infectious_disease
+    - vector
+
+def:
+  text: "%s that is transmitted by %s."
+  vars:
+    - infectious_disease
+    - vector
+
+
+equivalentTo:
+  text: "(%s and ('transmitted by' some %s))"
+  vars:
+    - infectious_disease
+    - vector
