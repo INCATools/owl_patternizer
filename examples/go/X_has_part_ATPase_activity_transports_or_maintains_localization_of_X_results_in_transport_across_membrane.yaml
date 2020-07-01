@@ -1,0 +1,58 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has part ATPase activity transports or maintains localization of X results in transport across membrane
+pattern_iri: http://purl.obolibrary.org/obo/go/X_has_part_ATPase_activity_transports_or_maintains_localization_of_X_results_in_transport_across_membrane
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ATPase-coupled choline transmembrane transporter activity](http://purl.obolibrary.org/obo/GO_0033266), [ATPase-coupled cysteine transmembrane transporter activity](http://purl.obolibrary.org/obo/GO_0033230), [ATPase-coupled betaine transporter activity](http://purl.obolibrary.org/obo/GO_0031458) (61 total)
+
+classes: 
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+  transporter activity: "GO:0005215"
+  membrane: "GO:0016020"
+  ATPase activity: "GO:0016887"
+
+
+relations: 
+  has part: "BFO:0000051"
+  transports or maintains localization of: "RO:0002313"
+  results in transport across: "RO:0002342"
+
+
+vars:
+  v0: "'transporter activity'"
+  v1: "'chemical entity'"
+
+name:
+  # Induced, frequency=0.5573770491803278, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "ATPase-coupled %s transmembrane %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has part a ATPase activity and transports or maintains localization of a %s and results in transport across a membrane"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "ATP-dependent %s transmembrane %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('has part' some 'ATPase activity') and ('transports or maintains localization of' some %s) and ('results in transport across' some 'membrane'))"
+  vars:
+    - v0
+    - v1

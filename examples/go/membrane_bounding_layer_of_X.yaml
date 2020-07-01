@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: membrane bounding layer of X
+pattern_iri: http://purl.obolibrary.org/obo/go/membrane_bounding_layer_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [Golgi cis cisterna membrane](http://purl.obolibrary.org/obo/GO_1990674), [Golgi trans cisterna membrane](http://purl.obolibrary.org/obo/GO_1990676), [multivesicular body membrane](http://purl.obolibrary.org/obo/GO_0032585) (30 total)
+
+classes: 
+  membrane: "GO:0016020"
+  cellular anatomical entity: "GO:0110165"
+
+
+relations: 
+  bounding layer of: "RO:0002007"
+
+
+vars:
+  v0: "'cellular anatomical entity'"
+
+name:
+  # Induced, frequency=0.8333333333333334, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s membrane"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The portion of the plasma membrane surrounding a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s membrane"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('membrane' and ('bounding layer of' some %s))"
+  vars:
+    - v0

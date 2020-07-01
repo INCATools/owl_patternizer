@@ -1,0 +1,51 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X meiotic cell cycle
+pattern_iri: http://purl.obolibrary.org/obo/go/X_X_meiotic_cell_cycle
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [meiotic cell cycle checkpoint](http://purl.obolibrary.org/obo/GO_0033313), [meiotic G2/MI DNA replication checkpoint](http://purl.obolibrary.org/obo/GO_0033315), [negative regulation of transcription from RNA polymerase II promoter involved in meiotic cell cycle](http://purl.obolibrary.org/obo/GO_0010674) (43 total)
+
+classes: 
+  part of: "BFO:0000050"
+  biological_process: "GO:0008150"
+  meiotic cell cycle: "GO:0051321"
+  happens during: "RO:0002092"
+  regulates: "RO:0002211"
+  negatively regulates: "RO:0002212"
+  positively regulates: "RO:0002213"
+
+
+relations: []
+
+vars:
+  v0: "'biological_process'"
+  v1: "'part of' or 'happens during' or 'regulates' or 'negatively regulates' or 'positively regulates'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s meiotic cell cycle"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s a meiotic cell cycle"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and (%s some 'meiotic cell cycle'))"
+  vars:
+    - v0
+    - v1

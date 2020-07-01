@@ -1,0 +1,54 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has input X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_has_input_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [egg activation](http://purl.obolibrary.org/obo/GO_0007343), [neuroblast activation](http://purl.obolibrary.org/obo/GO_0007407), [fibroblast activation](http://purl.obolibrary.org/obo/GO_0072537) (1808 total)
+
+classes: 
+  process: "BFO:0000015"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  has input: "RO:0002233"
+
+
+vars:
+  v0: "'process'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.35398230088495575, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.00165929203539823, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Degradation of a %s by %s."
+  vars:
+    - v1
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('has input' some %s))"
+  vars:
+    - v0
+    - v1

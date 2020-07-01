@@ -1,0 +1,54 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X proton transports or maintains localization of X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_X_proton_transports_or_maintains_localization_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [lactate:proton symporter activity](http://purl.obolibrary.org/obo/GO_0015650), [lysine:proton symporter activity](http://purl.obolibrary.org/obo/GO_0015493), [phosphate:proton symporter activity](http://purl.obolibrary.org/obo/GO_0015317) (27 total)
+
+classes: 
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+  proton: "http://purl.obolibrary.org/obo/CHEBI_24636"
+  symporter activity: "GO:0015293"
+  transports or maintains localization of: "RO:0002313"
+
+
+relations: 
+  transports or maintains localization of: "RO:0002313"
+
+
+vars:
+  v0: "'symporter activity'"
+  v1: "'transports or maintains localization of'"
+  v2: "'chemical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s proton transports or maintains localization of %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s a proton and transports or maintains localization of a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and (%s some 'proton') and ('transports or maintains localization of' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

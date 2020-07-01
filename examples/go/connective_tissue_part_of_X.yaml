@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: connective tissue part of X
+pattern_iri: http://purl.obolibrary.org/obo/go/connective_tissue_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [head connective tissue](http://purl.obolibrary.org/obo/UBERON_0003566), [upper leg connective tissue](http://purl.obolibrary.org/obo/UBERON_0004266), [thoracic segment connective tissue](http://purl.obolibrary.org/obo/UBERON_0003837) (42 total)
+
+classes: 
+  anatomical structure: "UBERON:0000061"
+  connective tissue: "UBERON:0002384"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.9047619047619048, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s connective tissue"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.7619047619047619, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A portion of connective tissue that is part of a %s [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "connective tissue of %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('connective tissue' and ('part of' some %s))"
+  vars:
+    - v0

@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: anatomical structure formation involved in morphogenesis results in formation of X
+pattern_iri: http://purl.obolibrary.org/obo/go/anatomical_structure_formation_involved_in_morphogenesis_results_in_formation_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [syncytium formation](http://purl.obolibrary.org/obo/GO_0006949), [platelet formation](http://purl.obolibrary.org/obo/GO_0030220), [pole cell formation](http://purl.obolibrary.org/obo/GO_0007279) (194 total)
+
+classes: 
+  anatomical structure formation involved in morphogenesis: "GO:0048646"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  results in formation of: "RO:0002297"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.8917525773195877, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s formation"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.04639175257731959, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The process that gives rise to the %s. This process pertains to the initial formation of a structure from unspecified parts."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s formation"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('anatomical structure formation involved in morphogenesis' and ('results in formation of' some %s))"
+  vars:
+    - v0

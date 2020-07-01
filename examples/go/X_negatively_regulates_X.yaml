@@ -1,0 +1,48 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X negatively regulates X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_negatively_regulates_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [negative regulation of G1/S transition of mitotic cell cycle by negative regulation of transcription from RNA polymerase II promoter](http://purl.obolibrary.org/obo/GO_1900477), [negative regulation of mitochondrial unfolded protein response by negative regulation of transcription from RNA polymerase II promoter](http://purl.obolibrary.org/obo/GO_1904490), [negative regulation of neuron apoptotic process by negative regulation of transcription from RNA polymerase II promoter](http://purl.obolibrary.org/obo/GO_1904089) (3125 total)
+
+classes: 
+  process: "BFO:0000015"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  negatively regulates: "RO:0002212"
+
+
+vars:
+  v0: "'process'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.02912, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "negative %s of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.00128, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that results in negative regulation of %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('negatively regulates' some %s))"
+  vars:
+    - v0
+    - v1

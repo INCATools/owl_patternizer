@@ -1,0 +1,44 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: protein-containing complex capable of X
+pattern_iri: http://purl.obolibrary.org/obo/go/protein_containing_complex_capable_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [alpha-1,6-mannosyltransferase complex](http://purl.obolibrary.org/obo/GO_0000136), [mannosyltransferase complex](http://purl.obolibrary.org/obo/GO_0031501), [succinate dehydrogenase complex](http://purl.obolibrary.org/obo/GO_0045281) (289 total)
+
+classes: 
+  process: "BFO:0000015"
+  protein-containing complex: "GO:0032991"
+
+
+relations: 
+  capable of: "RO:0002215"
+
+
+vars:
+  v0: "'process'"
+
+name:
+  # Induced, frequency=0.01730103806228374, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s complex"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.20069204152249134, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A protein complex which is capable of %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('protein-containing complex' and ('capable of' some %s))"
+  vars:
+    - v0

@@ -1,0 +1,50 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X immune response
+pattern_iri: http://purl.obolibrary.org/obo/go/X_X_immune_response
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [myeloid dendritic cell activation involved in immune response](http://purl.obolibrary.org/obo/GO_0002277), [microglial cell activation involved in immune response](http://purl.obolibrary.org/obo/GO_0002282), [cell activation involved in immune response](http://purl.obolibrary.org/obo/GO_0002263) (46 total)
+
+classes: 
+  part of: "BFO:0000050"
+  immune response: "GO:0006955"
+  biological_process: "GO:0008150"
+  regulates: "RO:0002211"
+  negatively regulates: "RO:0002212"
+  positively regulates: "RO:0002213"
+
+
+relations: []
+
+vars:
+  v0: "'biological_process'"
+  v1: "'part of' or 'regulates' or 'negatively regulates' or 'positively regulates'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s immune response"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s a immune response"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and (%s some 'immune response'))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,48 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X results in growth of X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_results_in_growth_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cell growth](http://purl.obolibrary.org/obo/GO_0016049), [oocyte growth](http://purl.obolibrary.org/obo/GO_0001555), [glial cell growth](http://purl.obolibrary.org/obo/GO_0042065) (28 total)
+
+classes: 
+  growth: "GO:0040007"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  results in growth of: "RO:0002343"
+
+
+vars:
+  v0: "'growth'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.4642857142857143, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that results in growth of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('results in growth of' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: artery supplies X
+pattern_iri: http://purl.obolibrary.org/obo/go/artery_supplies_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [hypophysial artery](http://purl.obolibrary.org/obo/UBERON_0035403), [ureteric segment of renal artery](http://purl.obolibrary.org/obo/UBERON_0003468), [mesenteric artery](http://purl.obolibrary.org/obo/UBERON_0005616) (37 total)
+
+classes: 
+  anatomical structure: "UBERON:0000061"
+  artery: "UBERON:0001637"
+
+
+relations: 
+  supplies: "RO:0002178"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.08108108108108109, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s artery"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.10810810810810811, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An artery that supplies the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s artery"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('artery' and ('supplies' some %s))"
+  vars:
+    - v0

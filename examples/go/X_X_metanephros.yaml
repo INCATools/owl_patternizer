@@ -1,0 +1,50 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X metanephros
+pattern_iri: http://purl.obolibrary.org/obo/go/X_X_metanephros
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [metanephros morphogenesis](http://purl.obolibrary.org/obo/GO_0003338), [metanephros development](http://purl.obolibrary.org/obo/GO_0001656), [metanephric glomerulus](http://purl.obolibrary.org/obo/UBERON_0004736) (47 total)
+
+classes: 
+  part of: "BFO:0000050"
+  results in development of: "RO:0002296"
+  results in morphogenesis of: "RO:0002298"
+  has potential to develop into: "RO:0002387"
+  metanephros: "UBERON:0000081"
+  owl:Thing: "owl:Thing"
+
+
+relations: []
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'part of' or 'results in development of' or 'results in morphogenesis of' or 'has potential to develop into'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s metanephros"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.0425531914893617, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is %s a metanephros."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and (%s some 'metanephros'))"
+  vars:
+    - v0
+    - v1

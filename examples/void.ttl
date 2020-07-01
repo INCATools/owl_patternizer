@@ -195,6 +195,10 @@
     a void:Dataset ;
     void:dataDump <../tests/data/agrovoc_owl.ttl> .
 
+<gcmd>
+    a void:Dataset ;
+    void:dataDump <./gcmd.rdf> .
+
 <cco>
     a void:Dataset ;
     void:dataDump <../../CommonCoreOntologies/all.ttl> .

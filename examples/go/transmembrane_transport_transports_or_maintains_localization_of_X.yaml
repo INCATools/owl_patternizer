@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: transmembrane transport transports or maintains localization of X
+pattern_iri: http://purl.obolibrary.org/obo/go/transmembrane_transport_transports_or_maintains_localization_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cysteine transmembrane transport](http://purl.obolibrary.org/obo/GO_1903712), [L-alpha-amino acid transmembrane transport](http://purl.obolibrary.org/obo/GO_1902475), [L-ornithine transmembrane transport](http://purl.obolibrary.org/obo/GO_1903352) (28 total)
+
+classes: 
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+  transmembrane transport: "GO:0055085"
+
+
+relations: 
+  transports or maintains localization of: "RO:0002313"
+
+
+vars:
+  v0: "'chemical entity'"
+
+name:
+  # Induced, frequency=0.7142857142857143, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s transmembrane transport"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5357142857142857, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The directed movement of %s across a membrane."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s membrane transport"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('transmembrane transport' and ('transports or maintains localization of' some %s))"
+  vars:
+    - v0

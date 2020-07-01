@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: binding has input X
+pattern_iri: http://purl.obolibrary.org/obo/go/binding_has_input_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [XTP binding](http://purl.obolibrary.org/obo/GO_1901640), [beta-endorphin binding](http://purl.obolibrary.org/obo/GO_0031626), [NAD binding](http://purl.obolibrary.org/obo/GO_0051287) (745 total)
+
+classes: 
+  binding: "GO:0005488"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  has input: "RO:0002233"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.7248322147651006, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s binding"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.174496644295302, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Interacting selectively and non-covalently with %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s binding"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('binding' and ('has input' some %s))"
+  vars:
+    - v0

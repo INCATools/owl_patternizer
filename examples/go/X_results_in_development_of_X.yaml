@@ -1,0 +1,48 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X results in development of X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_results_in_development_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cell development](http://purl.obolibrary.org/obo/GO_0048468), [conidium development](http://purl.obolibrary.org/obo/GO_0061794), [anatomical structure development](http://purl.obolibrary.org/obo/GO_0048856) (766 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  results in development of: "RO:0002296"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.06788511749347259, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that results in development of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('results in development of' some %s))"
+  vars:
+    - v0
+    - v1

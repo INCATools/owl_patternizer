@@ -1,0 +1,56 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: transport transports or maintains localization of X results in transport across X results in transport to from or in X
+pattern_iri: http://purl.obolibrary.org/obo/go/transport_transports_or_maintains_localization_of_X_results_in_transport_across_X_results_in_transport_to_from_or_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mitochondrial NAD transmembrane transport](http://purl.obolibrary.org/obo/GO_1990549), [mitochondrial coenzyme A transmembrane transport](http://purl.obolibrary.org/obo/GO_1990559), [mitochondrial pyruvate transmembrane transport](http://purl.obolibrary.org/obo/GO_0006850) (26 total)
+
+classes: 
+  molecular entity: "http://purl.obolibrary.org/obo/CHEBI_23367"
+  transport: "GO:0006810"
+  membrane: "GO:0016020"
+  cellular anatomical entity: "GO:0110165"
+
+
+relations: 
+  transports or maintains localization of: "RO:0002313"
+  results in transport across: "RO:0002342"
+  results in transport to from or in: "RO:0002344"
+
+
+vars:
+  v0: "'molecular entity'"
+  v1: "'membrane'"
+  v2: "'cellular anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "transport transports or maintains localization of %s results in transport across %s results in transport to from or in %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Induced, frequency=0.5, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The process in which %s is transported across a %s, into or out of the %s."
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('transport' and ('transports or maintains localization of' some %s) and ('results in transport across' some %s) and ('results in transport to from or in' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

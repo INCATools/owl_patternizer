@@ -1,0 +1,69 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of X part of X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_part_of_X_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [female meiotic nuclear division](http://purl.obolibrary.org/obo/GO_0007143), [male meiotic nuclear division](http://purl.obolibrary.org/obo/GO_0007140), [condensed nuclear chromosome, centromeric region](http://purl.obolibrary.org/obo/GO_0000780) (45 total)
+
+classes: 
+  condensed chromosome, centromeric region: "GO:0000779"
+  cytosol: "GO:0005829"
+  meiosis I: "GO:0007127"
+  meiosis II: "GO:0007135"
+  membrane: "GO:0016020"
+  cell leading edge: "GO:0031252"
+  postsynapse: "GO:0098794"
+  head: "UBERON:0000033"
+  duct: "UBERON:0000058"
+  multi-tissue structure: "UBERON:0000481"
+  unilaminar epithelium: "UBERON:0000490"
+  adipose tissue: "UBERON:0001013"
+  blood vessel: "UBERON:0001981"
+  mesenchyme: "UBERON:0003104"
+  cerebral hemisphere gray matter: "UBERON:0005401"
+  organ system subdivision: "UBERON:0011216"
+  subdivision of tube: "UBERON:0013522"
+  zone of organ: "UBERON:0034944"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'condensed chromosome, centromeric region' or 'cytosol' or 'meiosis I' or 'meiosis II' or 'membrane' or 'cell leading edge' or 'postsynapse' or 'head' or 'duct' or 'multi-tissue structure' or 'unilaminar epithelium' or 'adipose tissue' or 'blood vessel' or 'mesenchyme' or 'cerebral hemisphere gray matter' or 'organ system subdivision' or 'subdivision of tube' or 'zone of organ'"
+  v1: "'owl:Thing'"
+  v2: "'owl:Thing'"
+
+name:
+  # Could not induce name, using default
+  text: "%s part of %s part of %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Induced, frequency=0.044444444444444446, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a %s and is part of a %s."
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('part of' some %s) and ('part of' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

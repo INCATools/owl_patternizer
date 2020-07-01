@@ -1,0 +1,50 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: cellular metabolic compound salvage has output X
+pattern_iri: http://purl.obolibrary.org/obo/go/cellular_metabolic_compound_salvage_has_output_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [NAD salvage](http://purl.obolibrary.org/obo/GO_0034355), [XMP salvage](http://purl.obolibrary.org/obo/GO_0032265), [deoxycytidine salvage](http://purl.obolibrary.org/obo/GO_0006237) (45 total)
+
+classes: 
+  polyatomic entity: "http://purl.obolibrary.org/obo/CHEBI_36357"
+  organic molecular entity: "http://purl.obolibrary.org/obo/CHEBI_50860"
+  cellular metabolic compound salvage: "GO:0043094"
+
+
+relations: 
+  has output: "RO:0002234"
+
+
+vars:
+  v0: "'polyatomic entity' or 'organic molecular entity'"
+
+name:
+  # Induced, frequency=0.5777777777777777, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s salvage"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.06666666666666667, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any process which produces a %s from derivatives of it, without de novo synthesis."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s salvage pathway"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('cellular metabolic compound salvage' and ('has output' some %s))"
+  vars:
+    - v0

@@ -1,0 +1,56 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X in_left_side_of X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_in_left_side_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [left ureter](http://purl.obolibrary.org/obo/UBERON_0001223), [left testis](http://purl.obolibrary.org/obo/UBERON_0004533), [left eye](http://purl.obolibrary.org/obo/UBERON_0004548) (30 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  material anatomical entity: "UBERON:0000465"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  in_left_side_of: "http://purl.obolibrary.org/obo/BSPO_0000120"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity' or 'anatomical entity'"
+  v1: "'anatomical entity' or 'material anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s in_left_side_of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.2, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is in the left side of a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "left %s of %s"
+    vars:
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "(%s and ('in_left_side_of' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,54 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has primary input X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_has_primary_input_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [rRNA 5'-end processing](http://purl.obolibrary.org/obo/GO_0000967), [tRNA 5'-end processing](http://purl.obolibrary.org/obo/GO_0099116), [snRNA 5'-end processing](http://purl.obolibrary.org/obo/GO_1990273) (974 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  biological_process: "GO:0008150"
+
+
+relations: 
+  has primary input: "RO:0004009"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'material entity'"
+
+name:
+  # Induced, frequency=0.702258726899384, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.2135523613963039, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The chemical reactions and pathways resulting in the %s of %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('has primary input' some %s))"
+  vars:
+    - v0
+    - v1

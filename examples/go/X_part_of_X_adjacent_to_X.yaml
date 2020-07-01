@@ -1,0 +1,54 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of X adjacent to X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_part_of_X_adjacent_to_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cytoplasmic side of Golgi membrane](http://purl.obolibrary.org/obo/GO_0098548), [lumenal side of Golgi membrane](http://purl.obolibrary.org/obo/GO_0098547), [cytoplasmic side of mitochondrial outer membrane](http://purl.obolibrary.org/obo/GO_0032473) (41 total)
+
+classes: 
+  independent continuant: "BFO:0000004"
+  material entity: "BFO:0000040"
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+
+
+relations: 
+  part of: "BFO:0000050"
+  adjacent to: "RO:0002220"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+  v1: "'material entity' or 'anatomical entity'"
+  v2: "'independent continuant'"
+
+name:
+  # Could not induce name, using default
+  text: "%s part of %s adjacent to %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that part of a %s and adjacent to a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('part of' some %s) and ('adjacent to' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

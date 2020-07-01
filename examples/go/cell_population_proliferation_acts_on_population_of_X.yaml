@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: cell population proliferation acts_on_population_of X
+pattern_iri: http://purl.obolibrary.org/obo/go/cell_population_proliferation_acts_on_population_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [male germ cell proliferation](http://purl.obolibrary.org/obo/GO_0002176), [neuroblast proliferation](http://purl.obolibrary.org/obo/GO_0007405), [stem cell proliferation](http://purl.obolibrary.org/obo/GO_0072089) (60 total)
+
+classes: 
+  native cell: "CL:0000003"
+  cell population proliferation: "GO:0008283"
+
+
+relations: 
+  acts_on_population_of: "http://purl.obolibrary.org/obo/GOREL_0001006"
+
+
+vars:
+  v0: "'native cell'"
+
+name:
+  # Induced, frequency=0.8833333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s proliferation"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The expansion of a %s population by cell division."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s proliferation"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('cell population proliferation' and ('acts_on_population_of' some %s))"
+  vars:
+    - v0

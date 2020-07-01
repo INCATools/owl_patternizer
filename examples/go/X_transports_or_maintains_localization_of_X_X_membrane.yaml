@@ -1,0 +1,55 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X transports or maintains localization of X X membrane
+pattern_iri: http://purl.obolibrary.org/obo/go/X_transports_or_maintains_localization_of_X_X_membrane
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [urea transmembrane transporter activity](http://purl.obolibrary.org/obo/GO_0015204), [peptide transmembrane transporter activity](http://purl.obolibrary.org/obo/GO_1904680), [propionate transmembrane transporter activity](http://purl.obolibrary.org/obo/GO_0015552) (167 total)
+
+classes: 
+  process: "BFO:0000015"
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+  membrane: "GO:0016020"
+  has target end location: "RO:0002339"
+  results in transport across: "RO:0002342"
+
+
+relations: 
+  transports or maintains localization of: "RO:0002313"
+
+
+vars:
+  v0: "'process'"
+  v1: "'chemical entity'"
+  v2: "'has target end location' or 'results in transport across'"
+
+name:
+  # Could not induce name, using default
+  text: "%s transports or maintains localization of %s %s membrane"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that transports or maintains localization of a %s and %s a membrane"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('transports or maintains localization of' some %s) and (%s some 'membrane'))"
+  vars:
+    - v0
+    - v1
+    - v2

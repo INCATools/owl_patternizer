@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: gland part of X
+pattern_iri: http://purl.obolibrary.org/obo/go/gland_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [urethral gland](http://purl.obolibrary.org/obo/UBERON_0001338), [gland of anal canal](http://purl.obolibrary.org/obo/UBERON_0004760), [cloacal gland](http://purl.obolibrary.org/obo/UBERON_0012478) (29 total)
+
+classes: 
+  anatomical structure: "UBERON:0000061"
+  gland: "UBERON:0002530"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.3103448275862069, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s gland"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.20689655172413793, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A gland that is part of a %s [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s gland"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('gland' and ('part of' some %s))"
+  vars:
+    - v0

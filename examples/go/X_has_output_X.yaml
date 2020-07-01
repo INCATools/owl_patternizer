@@ -1,0 +1,48 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has output X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_has_output_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [fermentative hydrogen production](http://purl.obolibrary.org/obo/GO_0044812), [rRNA transcription](http://purl.obolibrary.org/obo/GO_0009303), [tRNA transcription](http://purl.obolibrary.org/obo/GO_0009304) (78 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  biological_process: "GO:0008150"
+
+
+relations: 
+  has output: "RO:0002234"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'material entity'"
+
+name:
+  # Induced, frequency=0.08974358974358974, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s to %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has output a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has output' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: metabolic process has primary input or output X
+pattern_iri: http://purl.obolibrary.org/obo/go/metabolic_process_has_primary_input_or_output_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [vistamycin metabolic process](http://purl.obolibrary.org/obo/GO_1901150), [alpha-copaene metabolic process](http://purl.obolibrary.org/obo/GO_1901929), [alpha-ribazole metabolic process](http://purl.obolibrary.org/obo/GO_0097289) (1304 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  metabolic process: "GO:0008152"
+
+
+relations: 
+  has primary input or output: "RO:0004007"
+
+
+vars:
+  v0: "'material entity'"
+
+name:
+  # Induced, frequency=0.6932515337423313, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s metabolic process"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1848159509202454, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The chemical reactions and pathways involving %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s metabolism"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('metabolic process' and ('has primary input or output' some %s))"
+  vars:
+    - v0

@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: protein localization has target end location X
+pattern_iri: http://purl.obolibrary.org/obo/go/protein_localization_has_target_end_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [protein localization to Golgi membrane](http://purl.obolibrary.org/obo/GO_1903292), [protein localization to astral microtubule](http://purl.obolibrary.org/obo/GO_1902888), [protein localization to pericentriolar material](http://purl.obolibrary.org/obo/GO_1905793) (135 total)
+
+classes: 
+  cellular_component: "GO:0005575"
+  protein localization: "GO:0008104"
+
+
+relations: 
+  has target end location: "RO:0002339"
+
+
+vars:
+  v0: "'cellular_component'"
+
+name:
+  # Induced, frequency=0.9629629629629629, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "protein localization to %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.4222222222222222, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A process in which a protein is transported to, or maintained in, a location within a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "protein localisation to %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('protein localization' and ('has target end location' some %s))"
+  vars:
+    - v0

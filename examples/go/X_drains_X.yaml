@@ -1,0 +1,54 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X drains X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_drains_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [left renal vein](http://purl.obolibrary.org/obo/UBERON_0001142), [right renal vein](http://purl.obolibrary.org/obo/UBERON_0001141), [left testicular vein](http://purl.obolibrary.org/obo/UBERON_0000443) (41 total)
+
+classes: 
+  anatomical structure: "UBERON:0000061"
+  vein: "UBERON:0001638"
+
+
+relations: 
+  drains: "RO:0002179"
+
+
+vars:
+  v0: "'vein'"
+  v1: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.0975609756097561, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%sl %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.07317073170731707, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that drains a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('drains' some %s))"
+  vars:
+    - v0
+    - v1

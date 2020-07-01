@@ -1,0 +1,50 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: side of membrane part of X adjacent to X
+pattern_iri: http://purl.obolibrary.org/obo/go/side_of_membrane_part_of_X_adjacent_to_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cytoplasmic side of Golgi membrane](http://purl.obolibrary.org/obo/GO_0098548), [lumenal side of Golgi membrane](http://purl.obolibrary.org/obo/GO_0098547), [cytoplasmic side of mitochondrial outer membrane](http://purl.obolibrary.org/obo/GO_0032473) (30 total)
+
+classes: 
+  membrane: "GO:0016020"
+  side of membrane: "GO:0098552"
+  cellular anatomical entity: "GO:0110165"
+
+
+relations: 
+  part of: "BFO:0000050"
+  adjacent to: "RO:0002220"
+
+
+vars:
+  v0: "'membrane'"
+  v1: "'cellular anatomical entity'"
+
+name:
+  # Induced, frequency=0.4666666666666667, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%sic side of %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.3, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The side (leaflet) of the %s that faces the %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('side of membrane' and ('part of' some %s) and ('adjacent to' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: cell fate specification results in specification of X
+pattern_iri: http://purl.obolibrary.org/obo/go/cell_fate_specification_results_in_specification_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [neuroblast fate specification](http://purl.obolibrary.org/obo/GO_0014018), [stem cell fate specification](http://purl.obolibrary.org/obo/GO_0048866), [myoblast fate specification](http://purl.obolibrary.org/obo/GO_0048626) (31 total)
+
+classes: 
+  connected anatomical structure: "http://purl.obolibrary.org/obo/CARO_0000003"
+  cell fate specification: "GO:0001708"
+
+
+relations: 
+  results in specification of: "RO:0002356"
+
+
+vars:
+  v0: "'connected anatomical structure'"
+
+name:
+  # Induced, frequency=0.8064516129032258, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s fate specification"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1935483870967742, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The process in which a cell becomes capable of differentiating autonomously into a %s in an environment that is neutral with respect to the developmental pathway. Upon specification, the cell fate can be reversed."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s fate specification"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('cell fate specification' and ('results in specification of' some %s))"
+  vars:
+    - v0

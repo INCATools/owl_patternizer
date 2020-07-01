@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X occurs in mitochondrion
+pattern_iri: http://purl.obolibrary.org/obo/go/X_occurs_in_mitochondrion
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mitochondrial RNA 5'-end processing](http://purl.obolibrary.org/obo/GO_0000964), [mitochondrial tRNA wobble uridine modification](http://purl.obolibrary.org/obo/GO_0070899), [mitochondrial DNA metabolic process](http://purl.obolibrary.org/obo/GO_0032042) (66 total)
+
+classes: 
+  mitochondrion: "GO:0005739"
+  biological_process: "GO:0008150"
+
+
+relations: 
+  occurs in: "BFO:0000066"
+
+
+vars:
+  v0: "'biological_process'"
+
+name:
+  # Induced, frequency=0.9090909090909091, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "mitochondrial %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.030303030303030304, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any %s that takes place in mitochondrion."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "mitochondrial %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('occurs in' some 'mitochondrion'))"
+  vars:
+    - v0

@@ -1,0 +1,57 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X nucleus
+pattern_iri: http://purl.obolibrary.org/obo/go/X_X_nucleus
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [nuclear ubiquitin ligase complex](http://purl.obolibrary.org/obo/GO_0000152), [nuclear exosome (RNase complex)](http://purl.obolibrary.org/obo/GO_0000176), [nuclear cyclin-dependent protein kinase holoenzyme complex](http://purl.obolibrary.org/obo/GO_0019908) (46 total)
+
+classes: 
+  part of: "BFO:0000050"
+  occurs in: "BFO:0000066"
+  results_in_distribution_of: "http://purl.obolibrary.org/obo/GOREL_0002003"
+  results_in_fission_of: "http://purl.obolibrary.org/obo/GOREL_0002004"
+  results_in_fusion_of: "http://purl.obolibrary.org/obo/GOREL_0002005"
+  nucleus: "GO:0005634"
+  bounding layer of: "RO:0002007"
+  has input: "RO:0002233"
+  transports or maintains localization of: "RO:0002313"
+  has target end location: "RO:0002339"
+  results_in_disassembly_of: "RO:0002590"
+  results_in_organization_of: "RO:0002592"
+  owl:Thing: "owl:Thing"
+
+
+relations: []
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'part of' or 'occurs in' or 'results_in_distribution_of' or 'results_in_fission_of' or 'results_in_fusion_of' or 'bounding layer of' or 'has input' or 'transports or maintains localization of' or 'has target end location' or 'results_in_disassembly_of' or 'results_in_organization_of'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s nucleus"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s a nucleus"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and (%s some 'nucleus'))"
+  vars:
+    - v0
+    - v1

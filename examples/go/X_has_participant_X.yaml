@@ -1,0 +1,54 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has participant X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_has_participant_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cell wall polysaccharide catabolic process](http://purl.obolibrary.org/obo/GO_0044347), [nervous system process](http://purl.obolibrary.org/obo/GO_0050877), [pyruvate dehydrogenase [NAD(P)+] activity](http://purl.obolibrary.org/obo/GO_0034603) (60 total)
+
+classes: 
+  process: "BFO:0000015"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  has participant: "RO:0000057"
+
+
+vars:
+  v0: "'process'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.43333333333333335, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has participant a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('has participant' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X output of protein processing
+pattern_iri: http://purl.obolibrary.org/obo/go/X_output_of_protein_processing
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [proteolytic cleavage product](http://purl.obolibrary.org/obo/PR_000018264), [interferon gamma proteolytic cleavage product](http://purl.obolibrary.org/obo/PR_000018271), [nodal protein proteolytic cleavage product](http://purl.obolibrary.org/obo/PR_000025433) (53 total)
+
+classes: 
+  protein processing: "GO:0016485"
+  protein: "http://purl.obolibrary.org/obo/PR_000000001"
+
+
+relations: 
+  output of: "RO:0002353"
+
+
+vars:
+  v0: "'protein'"
+
+name:
+  # Induced, frequency=0.9811320754716981, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s proteolytic cleavage product"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.6037735849056604, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that has been processed by proteolytic cleavage."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s/ClvPrd"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('output of' some 'protein processing'))"
+  vars:
+    - v0

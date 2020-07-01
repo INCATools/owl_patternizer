@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X results in maturation of X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_results_in_maturation_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [central nervous system vasculogenesis](http://purl.obolibrary.org/obo/GO_0022009), [amphid sensory organ dendrite retrograde extension](http://purl.obolibrary.org/obo/GO_0003391), [salivary gland cell autophagic cell death](http://purl.obolibrary.org/obo/GO_0035071) (77 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  biological_process: "GO:0008150"
+
+
+relations: 
+  results in maturation of: "RO:0002299"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.11688311688311688, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that results in maturation of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('results in maturation of' some %s))"
+  vars:
+    - v0
+    - v1

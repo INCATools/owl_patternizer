@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: integral component of membrane part of X
+pattern_iri: http://purl.obolibrary.org/obo/go/integral_component_of_membrane_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [integral component of Golgi membrane](http://purl.obolibrary.org/obo/GO_0030173), [integral component of fungal-type vacuolar membrane](http://purl.obolibrary.org/obo/GO_0071627), [integral component of autophagosome membrane](http://purl.obolibrary.org/obo/GO_0097637) (50 total)
+
+classes: 
+  integral component of membrane: "GO:0016021"
+  cellular anatomical entity: "GO:0110165"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'cellular anatomical entity'"
+
+name:
+  # Induced, frequency=0.96, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "integral component of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The component of the %s consisting of the gene products and protein complexes having at least some part of their peptide sequence embedded in the hydrophobic region of the membrane."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "integral component of %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('integral component of membrane' and ('part of' some %s))"
+  vars:
+    - v0

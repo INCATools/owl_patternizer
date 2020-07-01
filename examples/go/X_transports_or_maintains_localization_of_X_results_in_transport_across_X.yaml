@@ -1,0 +1,62 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X transports or maintains localization of X results in transport across X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_transports_or_maintains_localization_of_X_results_in_transport_across_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [urea transmembrane transporter activity](http://purl.obolibrary.org/obo/GO_0015204), [peptide transmembrane transporter activity](http://purl.obolibrary.org/obo/GO_1904680), [propionate transmembrane transporter activity](http://purl.obolibrary.org/obo/GO_0015552) (178 total)
+
+classes: 
+  process: "BFO:0000015"
+  material entity: "BFO:0000040"
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+
+
+relations: 
+  transports or maintains localization of: "RO:0002313"
+  results in transport across: "RO:0002342"
+
+
+vars:
+  v0: "'process'"
+  v1: "'chemical entity'"
+  v2: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.6741573033707865, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s trans%s %s"
+  vars:
+    - v1
+    - v2
+    - v0
+
+def:
+  # Induced, frequency=0.1348314606741573, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The process in which %s is %sed across a %s."
+  vars:
+    - v1
+    - v0
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s %s"
+    vars:
+      - v1
+      - v2
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('transports or maintains localization of' some %s) and ('results in transport across' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

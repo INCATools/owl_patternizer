@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: anatomical structure morphogenesis results in morphogenesis of X
+pattern_iri: http://purl.obolibrary.org/obo/go/anatomical_structure_morphogenesis_results_in_morphogenesis_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cell morphogenesis](http://purl.obolibrary.org/obo/GO_0000902), [oocyte morphogenesis](http://purl.obolibrary.org/obo/GO_0048601), [endothelial cell morphogenesis](http://purl.obolibrary.org/obo/GO_0001886) (381 total)
+
+classes: 
+  independent continuant: "BFO:0000004"
+  anatomical structure morphogenesis: "GO:0009653"
+
+
+relations: 
+  results in morphogenesis of: "RO:0002298"
+
+
+vars:
+  v0: "'independent continuant'"
+
+name:
+  # Induced, frequency=0.9238845144356955, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s morphogenesis"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.08661417322834646, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The process in which the anatomical structures of the %s are generated and organized."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s morphogenesis"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('anatomical structure morphogenesis' and ('results in morphogenesis of' some %s))"
+  vars:
+    - v0

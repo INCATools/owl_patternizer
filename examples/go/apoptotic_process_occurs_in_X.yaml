@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: apoptotic process occurs in X
+pattern_iri: http://purl.obolibrary.org/obo/go/apoptotic_process_occurs_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [fibroblast apoptotic process](http://purl.obolibrary.org/obo/GO_0044346), [epithelial cell apoptotic process](http://purl.obolibrary.org/obo/GO_1904019), [T cell apoptotic process](http://purl.obolibrary.org/obo/GO_0070231) (48 total)
+
+classes: 
+  native cell: "CL:0000003"
+  apoptotic process: "GO:0006915"
+
+
+relations: 
+  occurs in: "BFO:0000066"
+
+
+vars:
+  v0: "'native cell'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s apoptotic process"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any apoptotic process in a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s apoptotic process"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('apoptotic process' and ('occurs in' some %s))"
+  vars:
+    - v0

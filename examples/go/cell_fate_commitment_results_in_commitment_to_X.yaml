@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: cell fate commitment results in commitment to X
+pattern_iri: http://purl.obolibrary.org/obo/go/cell_fate_commitment_results_in_commitment_to_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [oocyte fate commitment](http://purl.obolibrary.org/obo/GO_0048600), [neuroblast fate commitment](http://purl.obolibrary.org/obo/GO_0014017), [stem cell fate commitment](http://purl.obolibrary.org/obo/GO_0048865) (58 total)
+
+classes: 
+  connected anatomical structure: "http://purl.obolibrary.org/obo/CARO_0000003"
+  cell fate commitment: "GO:0045165"
+
+
+relations: 
+  results in commitment to: "RO:0002348"
+
+
+vars:
+  v0: "'connected anatomical structure'"
+
+name:
+  # Induced, frequency=0.6379310344827587, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s fate commitment"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.08620689655172414, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The process in which the developmental fate of a cell becomes restricted such that it will develop into a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s fate commitment"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('cell fate commitment' and ('results in commitment to' some %s))"
+  vars:
+    - v0

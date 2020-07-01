@@ -1,0 +1,48 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X regulates levels of X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_regulates_levels_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cellular sulfide ion homeostasis](http://purl.obolibrary.org/obo/GO_0070219), [cellular water homeostasis](http://purl.obolibrary.org/obo/GO_0009992), [cellular glucose homeostasis](http://purl.obolibrary.org/obo/GO_0001678) (103 total)
+
+classes: 
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+  homeostatic process: "GO:0042592"
+
+
+relations: 
+  regulates levels of: "RO:0002332"
+
+
+vars:
+  v0: "'homeostatic process'"
+  v1: "'chemical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s regulates levels of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that regulates levels of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('regulates levels of' some %s))"
+  vars:
+    - v0
+    - v1

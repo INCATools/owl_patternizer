@@ -1,0 +1,55 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: anatomical structure arrangement results in structural organization of X
+pattern_iri: http://purl.obolibrary.org/obo/go/anatomical_structure_arrangement_results_in_structural_organization_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [stamen structural organization](http://purl.obolibrary.org/obo/GO_0048456), [carpel structural organization](http://purl.obolibrary.org/obo/GO_0048463), [sepal structural organization](http://purl.obolibrary.org/obo/GO_0048454) (36 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  anatomical structure arrangement: "GO:0048532"
+
+
+relations: 
+  results in structural organization of: "RO:0002355"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.9166666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s structural organization"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.19444444444444445, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The process that contributes to the act of creating the structural organization of the %s. This process pertains to the physical shaping of a rudimentary structure."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s structural organisation"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s structural organization"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('anatomical structure arrangement' and ('results in structural organization of' some %s))"
+  vars:
+    - v0

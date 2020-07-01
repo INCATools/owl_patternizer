@@ -1,0 +1,44 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: chemical homeostasis regulates levels of X
+pattern_iri: http://purl.obolibrary.org/obo/go/chemical_homeostasis_regulates_levels_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [sulfide ion homeostasis](http://purl.obolibrary.org/obo/GO_0070218), [cysteine homeostasis](http://purl.obolibrary.org/obo/GO_0080145), [water homeostasis](http://purl.obolibrary.org/obo/GO_0030104) (60 total)
+
+classes: 
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+  chemical homeostasis: "GO:0048878"
+
+
+relations: 
+  regulates levels of: "RO:0002332"
+
+
+vars:
+  v0: "'chemical entity'"
+
+name:
+  # Induced, frequency=0.5666666666666667, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s homeostasis"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.26666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any process involved in the maintenance of an internal steady state of %s within an organism or cell."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('chemical homeostasis' and ('regulates levels of' some %s))"
+  vars:
+    - v0

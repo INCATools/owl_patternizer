@@ -1,0 +1,54 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X located_in X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_located_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [renal lymph node](http://purl.obolibrary.org/obo/UBERON_0003425), [retroperitoneal lymph node](http://purl.obolibrary.org/obo/UBERON_0035371), [material entity in digestive tract](http://purl.obolibrary.org/obo/UBERON_0035118) (25 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  located_in: "RO:0001025"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+  v1: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.32, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.24, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a %s [Automatically generated definition]."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('located_in' some %s))"
+  vars:
+    - v0
+    - v1

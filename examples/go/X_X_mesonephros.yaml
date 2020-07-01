@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X mesonephros
+pattern_iri: http://purl.obolibrary.org/obo/go/X_X_mesonephros
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mesonephros morphogenesis](http://purl.obolibrary.org/obo/GO_0061206), [mesonephros development](http://purl.obolibrary.org/obo/GO_0001823), [mesonephric glomerulus](http://purl.obolibrary.org/obo/UBERON_0005325) (26 total)
+
+classes: 
+  part of: "BFO:0000050"
+  results in development of: "RO:0002296"
+  results in morphogenesis of: "RO:0002298"
+  mesonephros: "UBERON:0000080"
+  owl:Thing: "owl:Thing"
+
+
+relations: []
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'part of' or 'results in development of' or 'results in morphogenesis of'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s mesonephros"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.07692307692307693, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is %s a mesonephros."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and (%s some 'mesonephros'))"
+  vars:
+    - v0
+    - v1

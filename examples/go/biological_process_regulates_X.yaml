@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: biological_process regulates X
+pattern_iri: http://purl.obolibrary.org/obo/go/biological_process_regulates_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [regulation of single strand break repair](http://purl.obolibrary.org/obo/GO_1903516), [regulation of mitotic spindle elongation](http://purl.obolibrary.org/obo/GO_0032888), [regulation of autophagosome assembly](http://purl.obolibrary.org/obo/GO_2000785) (3371 total)
+
+classes: 
+  process: "BFO:0000015"
+  biological_process: "GO:0008150"
+
+
+relations: 
+  regulates: "RO:0002211"
+
+
+vars:
+  v0: "'process'"
+
+name:
+  # Induced, frequency=0.9827944230198754, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "regulation of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.530999703352121, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any process that modulates the frequency, rate or extent of %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "regulation of %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('biological_process' and ('regulates' some %s))"
+  vars:
+    - v0

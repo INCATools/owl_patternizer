@@ -1,0 +1,54 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X results in morphogenesis of X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_results_in_morphogenesis_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [branching morphogenesis of an epithelial tube](http://purl.obolibrary.org/obo/GO_0048754), [branching morphogenesis of a nerve](http://purl.obolibrary.org/obo/GO_0048755), [cell morphogenesis](http://purl.obolibrary.org/obo/GO_0000902) (395 total)
+
+classes: 
+  independent continuant: "BFO:0000004"
+  developmental process: "GO:0032502"
+
+
+relations: 
+  results in morphogenesis of: "RO:0002298"
+
+
+vars:
+  v0: "'developmental process'"
+  v1: "'independent continuant'"
+
+name:
+  # Induced, frequency=0.9012658227848102, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.005063291139240506, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The process in which the %s is generated and organized. %s pertains to the creation of form."
+  vars:
+    - v1
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('results in morphogenesis of' some %s))"
+  vars:
+    - v0
+    - v1

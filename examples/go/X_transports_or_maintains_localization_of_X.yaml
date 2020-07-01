@@ -1,0 +1,54 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X transports or maintains localization of X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_transports_or_maintains_localization_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [sterol transporter activity](http://purl.obolibrary.org/obo/GO_0015248), [long-chain fatty acid transporter activity](http://purl.obolibrary.org/obo/GO_0005324), [phospholipid transporter activity](http://purl.obolibrary.org/obo/GO_0005548) (1042 total)
+
+classes: 
+  process: "BFO:0000015"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  transports or maintains localization of: "RO:0002313"
+
+
+vars:
+  v0: "'process'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.5902111324376199, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.02399232245681382, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The directed movement of %s into, out of or within a cell, or between cells, by means of some agent such as a %ser or pore."
+  vars:
+    - v1
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('transports or maintains localization of' some %s))"
+  vars:
+    - v0
+    - v1

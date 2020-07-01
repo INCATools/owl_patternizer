@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: cellular component disassembly results_in_disassembly_of X
+pattern_iri: http://purl.obolibrary.org/obo/go/cellular_component_disassembly_results_in_disassembly_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [autophagosome membrane disassembly](http://purl.obolibrary.org/obo/GO_0030399), [proteasome complex disassembly](http://purl.obolibrary.org/obo/GO_1903009), [chromatin disassembly](http://purl.obolibrary.org/obo/GO_0031498) (69 total)
+
+classes: 
+  cellular_component: "GO:0005575"
+  cellular component disassembly: "GO:0022411"
+
+
+relations: 
+  results_in_disassembly_of: "RO:0002590"
+
+
+vars:
+  v0: "'cellular_component'"
+
+name:
+  # Induced, frequency=0.8985507246376812, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s disassembly"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3333333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The disaggregation of a %s into its constituent components."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s disassembly"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('cellular component disassembly' and ('results_in_disassembly_of' some %s))"
+  vars:
+    - v0

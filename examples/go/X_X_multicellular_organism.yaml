@@ -1,0 +1,70 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X X multicellular organism
+pattern_iri: http://purl.obolibrary.org/obo/go/X_X_multicellular_organism
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [body morphogenesis](http://purl.obolibrary.org/obo/GO_0010171), [multicellular organism growth](http://purl.obolibrary.org/obo/GO_0035264), [multicellular organism development](http://purl.obolibrary.org/obo/GO_0007275) (30 total)
+
+classes: 
+  in_left_side_of: "http://purl.obolibrary.org/obo/BSPO_0000120"
+  in_right_side_of: "http://purl.obolibrary.org/obo/BSPO_0000121"
+  intersects_midsagittal_plane_of: "http://purl.obolibrary.org/obo/BSPO_0005001"
+  anatomical structure morphogenesis: "GO:0009653"
+  developmental growth: "GO:0048589"
+  anatomical structure development: "GO:0048856"
+  surrounds: "RO:0002221"
+  results in developmental progression of: "RO:0002295"
+  results in morphogenesis of: "RO:0002298"
+  results in growth of: "RO:0002343"
+  ureter: "UBERON:0000056"
+  anatomical space: "UBERON:0000464"
+  multicellular organism: "UBERON:0000468"
+  eye: "UBERON:0000970"
+  ovary: "UBERON:0000992"
+  suprarenal vein: "UBERON:0001146"
+  common iliac artery: "UBERON:0001191"
+  pelvic girdle region: "UBERON:0001271"
+  subclavian artery: "UBERON:0001533"
+  external ear: "UBERON:0001691"
+  kidney: "UBERON:0002113"
+  recurrent laryngeal nerve: "UBERON:0003716"
+  fallopian tube: "UBERON:0003889"
+  vitelline vein: "UBERON:0005487"
+  anatomical surface: "UBERON:0006984"
+  fin: "UBERON:0008897"
+
+
+relations: []
+
+vars:
+  v0: "'anatomical structure morphogenesis' or 'developmental growth' or 'anatomical structure development' or 'ureter' or 'anatomical space' or 'eye' or 'ovary' or 'suprarenal vein' or 'common iliac artery' or 'pelvic girdle region' or 'subclavian artery' or 'external ear' or 'kidney' or 'recurrent laryngeal nerve' or 'fallopian tube' or 'vitelline vein' or 'anatomical surface' or 'fin'"
+  v1: "'in_left_side_of' or 'in_right_side_of' or 'intersects_midsagittal_plane_of' or 'surrounds' or 'results in developmental progression of' or 'results in morphogenesis of' or 'results in growth of'"
+
+name:
+  # Could not induce name, using default
+  text: "%s %s multicellular organism"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s a multicellular organism"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and (%s some 'multicellular organism'))"
+  vars:
+    - v0
+    - v1

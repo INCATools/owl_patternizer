@@ -1,0 +1,64 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: transporter activity has part X transports or maintains localization of X results in transport across membrane
+pattern_iri: http://purl.obolibrary.org/obo/go/transporter_activity_has_part_X_transports_or_maintains_localization_of_X_results_in_transport_across_membrane
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ATPase-coupled choline transmembrane transporter activity](http://purl.obolibrary.org/obo/GO_0033266), [ATPase-coupled cysteine transmembrane transporter activity](http://purl.obolibrary.org/obo/GO_0033230), [ATPase-coupled betaine transporter activity](http://purl.obolibrary.org/obo/GO_0031458) (60 total)
+
+classes: 
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+  transporter activity: "GO:0005215"
+  membrane: "GO:0016020"
+  ATPase activity: "GO:0016887"
+
+
+relations: 
+  has part: "BFO:0000051"
+  transports or maintains localization of: "RO:0002313"
+  results in transport across: "RO:0002342"
+
+
+vars:
+  v0: "'ATPase activity'"
+  v1: "'chemical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "transporter activity has part %s transports or maintains localization of %s results in transport across membrane"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any transporter activity that has part a %s and transports or maintains localization of a %s and results in transport across a membrane"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s-transporting %s"
+    vars:
+      - v1
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s transmembrane-transporting %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "('transporter activity' and ('has part' some %s) and ('transports or maintains localization of' some %s) and ('results in transport across' some 'membrane'))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,60 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X imports X exports X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_imports_X_exports_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [antiporter activity](http://purl.obolibrary.org/obo/GO_0015297), [branched-chain amino acid:sodium symporter activity](http://purl.obolibrary.org/obo/GO_0015657), [glucose 6-phosphate:inorganic phosphate antiporter activity](http://purl.obolibrary.org/obo/GO_0061513) (62 total)
+
+classes: 
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+  secondary active transmembrane transporter activity: "GO:0015291"
+
+
+relations: 
+  imports: "RO:0002340"
+  exports: "RO:0002345"
+
+
+vars:
+  v0: "'secondary active transmembrane transporter activity'"
+  v1: "'chemical entity'"
+  v2: "'chemical entity'"
+
+name:
+  # Induced, frequency=0.3548387096774194, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s:%s %s"
+  vars:
+    - v1
+    - v2
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that imports a %s and exports a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s/%s %s"
+    vars:
+      - v1
+      - v2
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('imports' some %s) and ('exports' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

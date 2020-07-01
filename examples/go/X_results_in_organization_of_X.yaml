@@ -1,0 +1,48 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X results_in_organization_of X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_results_in_organization_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [chromatin organization](http://purl.obolibrary.org/obo/GO_0006325), [cellular component organization](http://purl.obolibrary.org/obo/GO_0016043), [postsynaptic density organization](http://purl.obolibrary.org/obo/GO_0097106) (188 total)
+
+classes: 
+  cellular_component: "GO:0005575"
+  biological_process: "GO:0008150"
+
+
+relations: 
+  results_in_organization_of: "RO:0002592"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'cellular_component'"
+
+name:
+  # Could not induce name, using default
+  text: "%s results_in_organization_of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that results_in_organization_of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('results_in_organization_of' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,54 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: transmembrane transporter activity transports or maintains localization of X
+pattern_iri: http://purl.obolibrary.org/obo/go/transmembrane_transporter_activity_transports_or_maintains_localization_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [beta-hydroxybutyrate transmembrane transporter activity](http://purl.obolibrary.org/obo/GO_0097253), [D-galactonate transmembrane transporter activity](http://purl.obolibrary.org/obo/GO_0042881), [carcinine transmembrane transporter activity](http://purl.obolibrary.org/obo/GO_1905131) (330 total)
+
+classes: 
+  transmembrane transporter activity: "GO:0022857"
+  owl:Thing: "owl:Thing"
+
+
+relations: 
+  transports or maintains localization of: "RO:0002313"
+
+
+vars:
+  v0: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.7, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s transmembrane transporter activity"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.11818181818181818, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Enables the transfer of %s from one side of a membrane to the other."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s permease activity"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s transporter activity"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('transmembrane transporter activity' and ('transports or maintains localization of' some %s))"
+  vars:
+    - v0

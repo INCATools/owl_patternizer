@@ -1,0 +1,56 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: antiporter activity imports X exports X
+pattern_iri: http://purl.obolibrary.org/obo/go/antiporter_activity_imports_X_exports_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [glucose 6-phosphate:inorganic phosphate antiporter activity](http://purl.obolibrary.org/obo/GO_0061513), [acetylcholine:proton antiporter activity](http://purl.obolibrary.org/obo/GO_0005278), [ATP:ADP antiporter activity](http://purl.obolibrary.org/obo/GO_0005471) (60 total)
+
+classes: 
+  molecular entity: "http://purl.obolibrary.org/obo/CHEBI_23367"
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+  antiporter activity: "GO:0015297"
+
+
+relations: 
+  imports: "RO:0002340"
+  exports: "RO:0002345"
+
+
+vars:
+  v0: "'chemical entity'"
+  v1: "'molecular entity'"
+
+name:
+  # Induced, frequency=0.36666666666666664, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s:%s antiporter activity"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any antiporter activity that imports a %s and exports a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s-%s antiporter activity"
+    vars:
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "('antiporter activity' and ('imports' some %s) and ('exports' some %s))"
+  vars:
+    - v0
+    - v1

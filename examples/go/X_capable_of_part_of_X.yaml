@@ -1,0 +1,48 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X capable of part of X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_capable_of_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mitotic cohesin complex](http://purl.obolibrary.org/obo/GO_0030892), [meiotic cohesin complex](http://purl.obolibrary.org/obo/GO_0030893), [primary cell wall cellulose synthase complex](http://purl.obolibrary.org/obo/GO_0044567) (45 total)
+
+classes: 
+  process: "BFO:0000015"
+  material entity: "BFO:0000040"
+
+
+relations: 
+  capable of part of: "RO:0002216"
+
+
+vars:
+  v0: "'material entity'"
+  v1: "'process'"
+
+name:
+  # Induced, frequency=0.06666666666666667, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s involved in %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.044444444444444446, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any %s that is capable of carrying out some part of the process of %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('capable of part of' some %s))"
+  vars:
+    - v0
+    - v1

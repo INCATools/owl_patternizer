@@ -1,0 +1,60 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X transports or maintains localization of X X mitochondrial membrane results in transport to from or in X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_transports_or_maintains_localization_of_X_X_mitochondrial_membrane_results_in_transport_to_from_or_in_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mitochondrial NAD transmembrane transport](http://purl.obolibrary.org/obo/GO_1990549), [mitochondrial coenzyme A transmembrane transport](http://purl.obolibrary.org/obo/GO_1990559), [mitochondrial pyruvate transmembrane transport](http://purl.obolibrary.org/obo/GO_0006850) (25 total)
+
+classes: 
+  molecular entity: "http://purl.obolibrary.org/obo/CHEBI_23367"
+  transport: "GO:0006810"
+  mitochondrial membrane: "GO:0031966"
+  cellular anatomical entity: "GO:0110165"
+  results in transport across: "RO:0002342"
+
+
+relations: 
+  transports or maintains localization of: "RO:0002313"
+  results in transport to from or in: "RO:0002344"
+
+
+vars:
+  v0: "'transport'"
+  v1: "'molecular entity'"
+  v2: "'results in transport across'"
+  v3: "'cellular anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s transports or maintains localization of %s %s mitochondrial membrane results in transport to from or in %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that transports or maintains localization of a %s and %s a mitochondrial membrane and results in transport to from or in a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('transports or maintains localization of' some %s) and (%s some 'mitochondrial membrane') and ('results in transport to from or in' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3

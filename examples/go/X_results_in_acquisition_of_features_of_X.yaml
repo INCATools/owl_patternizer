@@ -1,0 +1,54 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X results in acquisition of features of X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_results_in_acquisition_of_features_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [spermatid differentiation](http://purl.obolibrary.org/obo/GO_0048515), [oocyte differentiation](http://purl.obolibrary.org/obo/GO_0009994), [neuroblast differentiation](http://purl.obolibrary.org/obo/GO_0014016) (329 total)
+
+classes: 
+  connected anatomical structure: "http://purl.obolibrary.org/obo/CARO_0000003"
+  cellular developmental process: "GO:0048869"
+
+
+relations: 
+  results in acquisition of features of: "RO:0002315"
+
+
+vars:
+  v0: "'cellular developmental process'"
+  v1: "'connected anatomical structure'"
+
+name:
+  # Induced, frequency=0.015197568389057751, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that results in acquisition of features of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('results in acquisition of features of' some %s))"
+  vars:
+    - v0
+    - v1

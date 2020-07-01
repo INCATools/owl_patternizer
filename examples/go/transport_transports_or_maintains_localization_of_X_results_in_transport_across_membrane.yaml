@@ -1,0 +1,56 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: transport transports or maintains localization of X results in transport across membrane
+pattern_iri: http://purl.obolibrary.org/obo/go/transport_transports_or_maintains_localization_of_X_results_in_transport_across_membrane
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [D-galactonate transmembrane transport](http://purl.obolibrary.org/obo/GO_0042875), [NAD transmembrane transport](http://purl.obolibrary.org/obo/GO_0035352), [coenzyme A transmembrane transport](http://purl.obolibrary.org/obo/GO_0035349) (142 total)
+
+classes: 
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+  transport: "GO:0006810"
+  membrane: "GO:0016020"
+
+
+relations: 
+  transports or maintains localization of: "RO:0002313"
+  results in transport across: "RO:0002342"
+
+
+vars:
+  v0: "'chemical entity'"
+
+name:
+  # Induced, frequency=0.7323943661971831, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s transmembrane transport"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.16901408450704225, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The process in which %s is transported across a membrane."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s membrane transport"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s transport"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('transport' and ('transports or maintains localization of' some %s) and ('results in transport across' some 'membrane'))"
+  vars:
+    - v0

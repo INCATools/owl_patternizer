@@ -1,0 +1,51 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X connects X connects X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_connects_X_connects_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [internal naris](http://purl.obolibrary.org/obo/UBERON_0010425), [external naris](http://purl.obolibrary.org/obo/UBERON_0005928), [sternoclavicular joint](http://purl.obolibrary.org/obo/UBERON_0001469) (44 total)
+
+classes: 
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  connects: "RO:0002176"
+
+
+vars:
+  v0: "'anatomical entity'"
+  v1: "'anatomical entity'"
+  v2: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.045454545454545456, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%sry-%sry %s"
+  vars:
+    - v1
+    - v2
+    - v0
+
+def:
+  # Induced, frequency=0.09090909090909091, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that connects a %s and connects a %s."
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('connects' some %s) and ('connects' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

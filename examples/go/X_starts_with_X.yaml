@@ -1,0 +1,48 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X starts with X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_starts_with_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [glycolytic process via Entner-Doudoroff Pathway](http://purl.obolibrary.org/obo/GO_0061688), [glycolytic fermentation](http://purl.obolibrary.org/obo/GO_0019660), [macroautophagy](http://purl.obolibrary.org/obo/GO_0016236) (26 total)
+
+classes: 
+  process: "BFO:0000015"
+  cellular process: "GO:0009987"
+
+
+relations: 
+  starts with: "RO:0002224"
+
+
+vars:
+  v0: "'cellular process'"
+  v1: "'process'"
+
+name:
+  # Could not induce name, using default
+  text: "%s starts with %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that starts with a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('starts with' some %s))"
+  vars:
+    - v0
+    - v1

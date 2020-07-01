@@ -1,0 +1,60 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X process has causal agent X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_process_has_causal_agent_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [T cell cytokine production](http://purl.obolibrary.org/obo/GO_0002369), [B cell cytokine production](http://purl.obolibrary.org/obo/GO_0002368), [dendritic cell cytokine production](http://purl.obolibrary.org/obo/GO_0002371) (67 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  biological_process: "GO:0008150"
+
+
+relations: 
+  process has causal agent: "RO:0002608"
+
+
+vars:
+  v0: "'biological_process'"
+  v1: "'material entity'"
+
+name:
+  # Induced, frequency=0.208955223880597, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s by %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.13432835820895522, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any process that contributes to %s by a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s by %s"
+    vars:
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "(%s and ('process has causal agent' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,44 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: cellular response to chemical stimulus has input X
+pattern_iri: http://purl.obolibrary.org/obo/go/cellular_response_to_chemical_stimulus_has_input_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cellular response to vitamin A](http://purl.obolibrary.org/obo/GO_0071299), [cellular response to D-galactose](http://purl.obolibrary.org/obo/GO_1905378), [cellular response to acetaldehyde](http://purl.obolibrary.org/obo/GO_1905641) (333 total)
+
+classes: 
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+  cellular response to chemical stimulus: "GO:0070887"
+
+
+relations: 
+  has input: "RO:0002233"
+
+
+vars:
+  v0: "'chemical entity'"
+
+name:
+  # Induced, frequency=0.7177177177177178, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "cellular response to %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5675675675675675, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a %s stimulus."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('cellular response to chemical stimulus' and ('has input' some %s))"
+  vars:
+    - v0

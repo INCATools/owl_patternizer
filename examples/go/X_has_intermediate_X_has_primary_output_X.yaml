@@ -1,0 +1,61 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has intermediate X has primary output X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_has_intermediate_X_has_primary_output_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [beta-alanine biosynthetic process via 3-ureidopropionate](http://purl.obolibrary.org/obo/GO_0033396), [ubiquinone biosynthetic process via 2-polyprenylphenol](http://purl.obolibrary.org/obo/GO_0032193), [beta-alanine biosynthetic process via 1,3 diaminopropane](http://purl.obolibrary.org/obo/GO_0033394) (35 total)
+
+classes: 
+  molecular entity: "http://purl.obolibrary.org/obo/CHEBI_23367"
+  organic molecular entity: "http://purl.obolibrary.org/obo/CHEBI_50860"
+  biosynthetic process: "GO:0009058"
+
+
+relations: 
+  has intermediate: "RO:0002505"
+  has primary output: "RO:0004008"
+
+
+vars:
+  v0: "'biosynthetic process'"
+  v1: "'organic molecular entity'"
+  v2: "'molecular entity'"
+
+name:
+  # Induced, frequency=0.2, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s via %s"
+  vars:
+    - v2
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.05714285714285714, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The chemical reactions and pathways resulting in the %s of %s via %s."
+  vars:
+    - v0
+    - v2
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s via %s"
+    vars:
+      - v2
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "(%s and ('has intermediate' some %s) and ('has primary output' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

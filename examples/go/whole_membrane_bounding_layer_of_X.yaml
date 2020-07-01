@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: whole membrane bounding layer of X
+pattern_iri: http://purl.obolibrary.org/obo/go/whole_membrane_bounding_layer_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [lytic vacuole membrane](http://purl.obolibrary.org/obo/GO_0098852), [fungal-type vacuole membrane](http://purl.obolibrary.org/obo/GO_0000329), [plant-type vacuole membrane](http://purl.obolibrary.org/obo/GO_0009705) (72 total)
+
+classes: 
+  whole membrane: "GO:0098805"
+  cellular anatomical entity: "GO:0110165"
+
+
+relations: 
+  bounding layer of: "RO:0002007"
+
+
+vars:
+  v0: "'cellular anatomical entity'"
+
+name:
+  # Induced, frequency=0.7916666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s membrane"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.4305555555555556, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The lipid bilayer surrounding a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s membrane"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('whole membrane' and ('bounding layer of' some %s))"
+  vars:
+    - v0

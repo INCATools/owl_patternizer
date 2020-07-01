@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: extrinsic component of membrane part of X
+pattern_iri: http://purl.obolibrary.org/obo/go/extrinsic_component_of_membrane_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [extrinsic component of Golgi membrane](http://purl.obolibrary.org/obo/GO_0090498), [extrinsic component of fungal-type vacuolar membrane](http://purl.obolibrary.org/obo/GO_0097042), [extrinsic component of autophagosome membrane](http://purl.obolibrary.org/obo/GO_0097635) (46 total)
+
+classes: 
+  extrinsic component of membrane: "GO:0019898"
+  cellular anatomical entity: "GO:0110165"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'cellular anatomical entity'"
+
+name:
+  # Induced, frequency=0.9347826086956522, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "extrinsic component of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.45652173913043476, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The component of the %s consisting of gene products and protein complexes that are loosely bound to one of its surfaces, but not integrated into the hydrophobic region."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "extrinsic to %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('extrinsic component of membrane' and ('part of' some %s))"
+  vars:
+    - v0

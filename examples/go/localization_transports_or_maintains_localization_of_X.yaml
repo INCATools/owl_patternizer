@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: localization transports or maintains localization of X
+pattern_iri: http://purl.obolibrary.org/obo/go/localization_transports_or_maintains_localization_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [lipoprotein localization](http://purl.obolibrary.org/obo/GO_0044872), [localization of cell](http://purl.obolibrary.org/obo/GO_0051674), [oocyte localization involved in germarium-derived egg chamber formation](http://purl.obolibrary.org/obo/GO_0030720) (41 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  localization: "GO:0051179"
+
+
+relations: 
+  transports or maintains localization of: "RO:0002313"
+
+
+vars:
+  v0: "'material entity'"
+
+name:
+  # Induced, frequency=0.9512195121951219, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s localization"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.14634146341463414, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any process in which a %s is transported to, and/or maintained in, a specific location within the cell."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s localisation"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('localization' and ('transports or maintains localization of' some %s))"
+  vars:
+    - v0

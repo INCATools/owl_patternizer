@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: cell activation has input X
+pattern_iri: http://purl.obolibrary.org/obo/go/cell_activation_has_input_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [egg activation](http://purl.obolibrary.org/obo/GO_0007343), [neuroblast activation](http://purl.obolibrary.org/obo/GO_0007407), [fibroblast activation](http://purl.obolibrary.org/obo/GO_0072537) (35 total)
+
+classes: 
+  native cell: "CL:0000003"
+  cell activation: "GO:0001775"
+
+
+relations: 
+  has input: "RO:0002233"
+
+
+vars:
+  v0: "'native cell'"
+
+name:
+  # Induced, frequency=0.9142857142857143, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s activation"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.14285714285714285, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A change in the morphology or behavior of a %s resulting from exposure to an activating factor such as a cellular or soluble ligand."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s activation"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('cell activation' and ('has input' some %s))"
+  vars:
+    - v0

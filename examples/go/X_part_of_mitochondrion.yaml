@@ -1,0 +1,49 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of mitochondrion
+pattern_iri: http://purl.obolibrary.org/obo/go/X_part_of_mitochondrion
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mitochondrial DNA-directed RNA polymerase complex](http://purl.obolibrary.org/obo/GO_0034245), [mitochondrial creatine kinase complex](http://purl.obolibrary.org/obo/GO_0002187), [mitochondrial chromosome](http://purl.obolibrary.org/obo/GO_0000262) (28 total)
+
+classes: 
+  cellular_component: "GO:0005575"
+  mitochondrion: "GO:0005739"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'cellular_component'"
+
+name:
+  # Induced, frequency=0.9285714285714286, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "mitochondrial %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that part of a mitochondrion"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "mitochondrial %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'mitochondrion'))"
+  vars:
+    - v0

@@ -1,0 +1,52 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: transporter activity X ATPase activity transports or maintains localization of X results in transport across membrane
+pattern_iri: http://purl.obolibrary.org/obo/go/transporter_activity_X_ATPase_activity_transports_or_maintains_localization_of_X_results_in_transport_across_membrane
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ATPase-coupled choline transmembrane transporter activity](http://purl.obolibrary.org/obo/GO_0033266), [ATPase-coupled cysteine transmembrane transporter activity](http://purl.obolibrary.org/obo/GO_0033230), [ATPase-coupled betaine transporter activity](http://purl.obolibrary.org/obo/GO_0031458) (60 total)
+
+classes: 
+  has part: "BFO:0000051"
+  chemical entity: "http://purl.obolibrary.org/obo/CHEBI_24431"
+  transporter activity: "GO:0005215"
+  membrane: "GO:0016020"
+  ATPase activity: "GO:0016887"
+
+
+relations: 
+  transports or maintains localization of: "RO:0002313"
+  results in transport across: "RO:0002342"
+
+
+vars:
+  v0: "'has part'"
+  v1: "'chemical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "transporter activity %s ATPase activity transports or maintains localization of %s results in transport across membrane"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any transporter activity that %s a ATPase activity and transports or maintains localization of a %s and results in transport across a membrane"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('transporter activity' and (%s some 'ATPase activity') and ('transports or maintains localization of' some %s) and ('results in transport across' some 'membrane'))"
+  vars:
+    - v0
+    - v1

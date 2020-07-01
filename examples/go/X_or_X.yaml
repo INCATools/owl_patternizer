@@ -1,0 +1,45 @@
+# options: [min(25),dir('examples/go'),trim(true),base('http://purl.obolibrary.org/obo/go'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X-or-X
+pattern_iri: http://purl.obolibrary.org/obo/go/X_or_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cellular organisms or viruses](http://purl.obolibrary.org/obo/NCBITaxon_Union_0000030), [Viridiplantae or Cyanobacteria](http://purl.obolibrary.org/obo/NCBITaxon_Union_0000002), [Prokaryota](http://purl.obolibrary.org/obo/NCBITaxon_Union_0000004) (25 total)
+
+classes: 
+  owl:Thing: "owl:Thing"
+
+
+relations: []
+
+vars:
+  v0: "'owl:Thing'"
+  v1: "'owl:Thing'"
+
+name:
+  # Induced, frequency=0.32, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s or %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s or %s"
+  vars:
+    - v0
+    - v1
