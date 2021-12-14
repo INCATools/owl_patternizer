@@ -2,26 +2,27 @@
 
 Automatically extract common patterns from an OWL Ontology
 
-Currently this only looks for equivalence axioms between a named class
-and a class expression (aka logical definitions), where the class
-expression uses the following constructs (arbitrarily nested):
+## Background
 
- - some
- - only
- - and
- - or
- - named classes
- - named object properties
+Creating large ontologies or terminologies is a resource-intensive task, with the possibility to introduce human error. Use of description logic languages such as OWL-DL accompanied by reasoning can automate some parts of ontology construction and validation, but adding the appropriate OWL axioms can itself be a time consuming process requiring expert ontologists.
 
-It will generate out descriptions of the pattern in YAML following [DOSDP Schema](https://github.com/INCATools/dead_simple_owl_design_patterns/)
+the OWL patternizer looks for stereotypical patterns in ontologies and vocabularies (both logical and lexical), and generalizes these to [DOSDPs](https://github.com/INCATools/dead_simple_owl_design_patterns/commits)
+
+For example, if an ontology has lots of terms like:
+
+ * abnormal limb morphology
+ * abnormal head morphology
+ * abnormal epiphysis morphology
+ * increased limb size
+ * decreased limb size
+ * increased head size
+ * decreased head size
+
+With logical definitions, then it will detect the OWL patterns for these. If there are no logical definitions present, it will do a best effort at inducing logical definitions from lexical patterns.
 
 The approach is intended to be knowledge-free. Minimal underlying assumptions about the ontology. As such, the generated yaml will be more generic than hand-crafted. The intent is that it is used to bootstrap and analyze an ontology.
 
 Additionally, if your starting point is a thesaurus-like ontology (no logical defs), there is a step for generating candidates.
-
-## Draft paper
-
- * [google doc](https://docs.google.com/document/d/177cASJWn8QnxCSu05cw3HoJiweBGJgPmpHeua3ORKh0/edit#)
 
 ## Example
 
@@ -75,6 +76,21 @@ equivalentTo:
     - v0
 ```
 
+The patterns are annotated with comments indicating provenance and confidence. 
+
+Currently this only looks for equivalence axioms between a named class
+and a class expression (aka logical definitions), where the class
+expression uses the following constructs (arbitrarily nested):
+
+ - some
+ - only
+ - and
+ - or
+ - named classes
+ - named object properties
+
+
+
 ## Installation
 
 There are two ways to do this
@@ -94,10 +110,15 @@ TODO
 
 For purely auto-generated examples, see:
 
- * [examples/](https://github.com/cmungall/owl_patternizer/tree/master/examples)
+ * [examples/](https://github.com/INCATools/owl_patternizer/tree/master/examples)
 
 (may be moved to other repo)
 
 ## TODO
 
  * range validation gets thrown off if there are dangling classes
+
+## Draft paper
+
+ * [google doc](https://docs.google.com/document/d/177cASJWn8QnxCSu05cw3HoJiweBGJgPmpHeua3ORKh0/edit#)
+
