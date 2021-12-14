@@ -1,14 +1,16 @@
-# options: [min(50),dir(uberon),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(6),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has part X
 pattern_iri: http://purl.obolibrary.org/obo/uberon/X_has_part_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [vaned feather](http://purl.obolibrary.org/obo/UBERON_0008292), [nucleus of midbrain tegmentum](http://purl.obolibrary.org/obo/UBERON_0007414), [secondary nodular lymphoid tissue](http://purl.obolibrary.org/obo/UBERON_0001745) (58 total)
+  Examples: [vaned feather](http://purl.obolibrary.org/obo/UBERON_0008292), [nucleus of midbrain tegmentum](http://purl.obolibrary.org/obo/UBERON_0007414), [secondary nodular lymphoid tissue](http://purl.obolibrary.org/obo/UBERON_0001745) (59 total)
 
 classes: 
+  material entity: "BFO:0000040"
   anatomical entity: "UBERON:0001062"
+  owl:Thing: "owl:Thing"
 
 
 relations: 
@@ -16,18 +18,18 @@ relations:
 
 
 vars:
-  v0: "'anatomical entity'"
-  v1: "'ciliated epithelial cell' or 'squamous epithelial cell' or 'T cell' or 'sensory epithelial cell' or 'slow muscle cell' or 'fast muscle cell' or 'smooth muscle cell' or 'B cell' or 'serous secreting cell' or 'mucus secreting cell' or 'germ cell' or 'cardiac muscle cell' or 'myelin sheath' or 'keratin filament' or 'follicular antrum' or 'egg chorion' or 'embryo' or 'transverse process of vertebra' or 'pelvic girdle region' or 'pectoral girdle region' or 'taste bud' or 'nucleus pulposus' or 'lymph' or 'cardiac chamber' or 'webbed interdigital region' or 'strand of vibrissa hair' or 'stomach glandular epithelium' or 'feather vane' or 'cardiac gastric gland' or 'trabecular network of bone' or 'stomach non-glandular epithelium' or 'pneumatic cavity of bone' or 'germinal center' or 'digit 6' or 'digit 7' or 'digit 8'"
+  v0: "'material entity' or 'anatomical entity'"
+  v1: "'owl:Thing'"
 
 name:
-  # Induced, frequency=0.05172413793103448, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.05084745762711865, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%sbed %s"
   vars:
     - v1
     - v0
 
 def:
-  # Induced, frequency=0.05172413793103448, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.05084745762711865, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "A %s that has_part a %s."
   vars:
     - v0
@@ -47,7 +49,7 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('has part' some %s)"
+  text: "(%s and ('has part' some %s))"
   vars:
     - v0
     - v1

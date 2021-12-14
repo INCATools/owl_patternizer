@@ -217,6 +217,11 @@
     a lib:Virtual ;
     owl:imports <http://purl.obolibrary.org/obo/agro.owl> .
 
+<ecocore>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/ecocore.owl> .
+
     
 <to>
     a lib:Ontology ;

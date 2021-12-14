@@ -1,15 +1,15 @@
-# options: [min(50),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(6),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X in taxon X
 pattern_iri: http://purl.obolibrary.org/obo/uberon/X_in_taxon_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [Nothing](http://www.w3.org/2002/07/owl#Nothing), [Nothing](http://www.w3.org/2002/07/owl#Nothing), [Nothing](http://www.w3.org/2002/07/owl#Nothing) (268 total)
+  Examples: [Nothing](http://www.w3.org/2002/07/owl#Nothing), [Nothing](http://www.w3.org/2002/07/owl#Nothing), [Nothing](http://www.w3.org/2002/07/owl#Nothing) (272 total)
 
 classes: 
+  entity: "BFO:0000001"
   Metazoa: "http://purl.obolibrary.org/obo/NCBITaxon_33208"
-  owl:Thing: "owl:Thing"
 
 
 relations: 
@@ -17,7 +17,7 @@ relations:
 
 
 vars:
-  v0: "'owl:Thing'"
+  v0: "'entity'"
   v1: "'Metazoa'"
 
 name:

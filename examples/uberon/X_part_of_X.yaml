@@ -1,13 +1,14 @@
-# options: [min(50),dir(uberon),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(6),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X part of X
 pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [submucosa of large intestine](http://purl.obolibrary.org/obo/UBERON_0001208), [submucosa of anal canal](http://purl.obolibrary.org/obo/UBERON_0003329), [intestinal submucosa](http://purl.obolibrary.org/obo/UBERON_0009566) (3557 total)
+  Examples: [submucosa of large intestine](http://purl.obolibrary.org/obo/UBERON_0001208), [submucosa of anal canal](http://purl.obolibrary.org/obo/UBERON_0003329), [intestinal submucosa](http://purl.obolibrary.org/obo/UBERON_0009566) (3637 total)
 
 classes: 
+  independent continuant: "BFO:0000004"
   anatomical entity: "UBERON:0001062"
 
 
@@ -17,17 +18,17 @@ relations:
 
 vars:
   v0: "'anatomical entity'"
-  v1: "'BFO_0000004'"
+  v1: "'independent continuant'"
 
 name:
-  # Induced, frequency=0.29659825695811076, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.2889744294748419, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
     - v0
 
 def:
-  # Induced, frequency=0.181613719426483, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.16689579323618367, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "A %s that is part of a %s."
   vars:
     - v0
@@ -47,7 +48,7 @@ annotations:
 
 
 equivalentTo:
-  text: "%s and ('part of' some %s)"
+  text: "(%s and ('part of' some %s))"
   vars:
     - v0
     - v1

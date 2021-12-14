@@ -1,11 +1,11 @@
-# options: [min(50),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(6),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X composed primarily of X
 pattern_iri: http://purl.obolibrary.org/obo/uberon/X_composed_primarily_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [muscle organ](http://purl.obolibrary.org/obo/UBERON_0001630), [vertebral column](http://purl.obolibrary.org/obo/UBERON_0001130), [endothelial blood brain barrier](http://purl.obolibrary.org/obo/UBERON_0000201) (403 total)
+  Examples: [muscle organ](http://purl.obolibrary.org/obo/UBERON_0001630), [vertebral column](http://purl.obolibrary.org/obo/UBERON_0001130), [endothelial blood brain barrier](http://purl.obolibrary.org/obo/UBERON_0000201) (423 total)
 
 classes: 
   anatomical entity: "UBERON:0001062"
@@ -21,15 +21,15 @@ vars:
   v1: "'owl:Thing'"
 
 name:
-  # Induced, frequency=0.05707196029776675, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.054373522458628844, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v0
     - v1
 
 def:
-  # Induced, frequency=0.10421836228287841, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "A %s that is composed primarily of %s tissue."
+  # Induced, frequency=0.08274231678486997, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is composed primarily of a %s."
   vars:
     - v0
     - v1

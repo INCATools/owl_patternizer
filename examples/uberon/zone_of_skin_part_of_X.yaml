@@ -1,11 +1,11 @@
-# options: [min(50),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(6),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: zone of skin part of X
 pattern_iri: http://purl.obolibrary.org/obo/uberon/zone_of_skin_part_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [skin of forelimb wing](http://purl.obolibrary.org/obo/UBERON_0010855), [skin of head](http://purl.obolibrary.org/obo/UBERON_0001084), [upper leg skin](http://purl.obolibrary.org/obo/UBERON_0004262) (58 total)
+  Examples: [skin of forelimb wing](http://purl.obolibrary.org/obo/UBERON_0010855), [skin of head](http://purl.obolibrary.org/obo/UBERON_0001084), [upper leg skin](http://purl.obolibrary.org/obo/UBERON_0004262) (60 total)
 
 classes: 
   zone of skin: "UBERON:0000014"
@@ -20,13 +20,13 @@ vars:
   v0: "'anatomical structure'"
 
 name:
-  # Induced, frequency=0.603448275862069, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.6, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "skin of %s"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.4827586206896552, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.4666666666666667, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "A zone of skin that is part of a %s [Automatically generated definition]."
   vars:
     - v0

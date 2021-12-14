@@ -1,11 +1,11 @@
-# options: [min(50),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),generalize_properties(true),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(6),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: epithelium part of X
 pattern_iri: http://purl.obolibrary.org/obo/uberon/epithelium_part_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [cervix epithelium](http://purl.obolibrary.org/obo/UBERON_0004801), [naris epithelium](http://purl.obolibrary.org/obo/UBERON_0035036), [nose epithelium](http://purl.obolibrary.org/obo/UBERON_0019306) (203 total)
+  Examples: [cervix epithelium](http://purl.obolibrary.org/obo/UBERON_0004801), [naris epithelium](http://purl.obolibrary.org/obo/UBERON_0035036), [nose epithelium](http://purl.obolibrary.org/obo/UBERON_0019306) (204 total)
 
 classes: 
   epithelium: "UBERON:0000483"
@@ -20,14 +20,14 @@ vars:
   v0: "'anatomical entity'"
 
 name:
-  # Induced, frequency=0.5320197044334976, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.5294117647058824, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s epithelium"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.31527093596059114, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "An epithelium that is part of a %s [Automatically generated definition]."
+  # Induced, frequency=0.3284313725490196, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An epithelium that is part of a %s."
   vars:
     - v0
 
