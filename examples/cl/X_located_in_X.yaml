@@ -1,4 +1,4 @@
-# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X located in X
 pattern_iri: http://purl.obolibrary.org/obo/cl/X_located_in_X
 
@@ -8,22 +8,8 @@ description: >-
   Examples: [amniocyte](http://purl.obolibrary.org/obo/CL_0002323), [renal lymph node](http://purl.obolibrary.org/obo/UBERON_0003425), [material entity in digestive tract](http://purl.obolibrary.org/obo/UBERON_0035118) (24 total)
 
 classes: 
-  continuant: "BFO:0000002"
-  extraembryonic cell: "CL:0000349"
-  lymph node: "UBERON:0000029"
-  blood: "UBERON:0000178"
-  mucous gland: "UBERON:0000414"
-  nerve: "UBERON:0001021"
+  independent continuant: "BFO:0000004"
   anatomical entity: "UBERON:0001062"
-  mesothelium: "UBERON:0001136"
-  lymphatic vessel: "UBERON:0001473"
-  artery: "UBERON:0001637"
-  vein: "UBERON:0001638"
-  vasculature: "UBERON:0002049"
-  connective tissue: "UBERON:0002384"
-  venous sinus: "UBERON:0006615"
-  transudate: "UBERON:0007779"
-  bodily gas: "UBERON:0034873"
 
 
 relations: 
@@ -31,8 +17,8 @@ relations:
 
 
 vars:
-  v0: "'extraembryonic cell' or 'lymph node' or 'blood' or 'mucous gland' or 'nerve' or 'mesothelium' or 'lymphatic vessel' or 'artery' or 'vein' or 'vasculature' or 'connective tissue' or 'venous sinus' or 'transudate' or 'bodily gas'"
-  v1: "'continuant' or 'anatomical entity'"
+  v0: "'independent continuant'"
+  v1: "'independent continuant' or 'anatomical entity'"
 
 name:
   # Induced, frequency=0.4583333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 

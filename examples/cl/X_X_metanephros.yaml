@@ -1,14 +1,16 @@
-# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X X metanephros
 pattern_iri: http://purl.obolibrary.org/obo/cl/X_X_metanephros
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [metanephric glomerular visceral epithelial cell](http://purl.obolibrary.org/obo/CL_0002525), [metanephric glomerulus](http://purl.obolibrary.org/obo/UBERON_0004736), [metanephric ureteric bud](http://purl.obolibrary.org/obo/UBERON_0005080) (37 total)
+  Examples: [metanephric glomerular visceral epithelial cell](http://purl.obolibrary.org/obo/CL_0002525), [metanephros morphogenesis](http://purl.obolibrary.org/obo/GO_0003338), [metanephros development](http://purl.obolibrary.org/obo/GO_0001656) (39 total)
 
 classes: 
   part of: "BFO:0000050"
+  results in development of: "RO:0002296"
+  results in morphogenesis of: "RO:0002298"
   has potential to develop into: "RO:0002387"
   metanephros: "UBERON:0000081"
   owl:Thing: "owl:Thing"
@@ -18,7 +20,7 @@ relations: []
 
 vars:
   v0: "'owl:Thing'"
-  v1: "'part of' or 'has potential to develop into'"
+  v1: "'part of' or 'results in development of' or 'results in morphogenesis of' or 'has potential to develop into'"
 
 name:
   # Could not induce name, using default
@@ -28,7 +30,7 @@ name:
     - v1
 
 def:
-  # Induced, frequency=0.05405405405405406, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.05128205128205128, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "A %s that %s a metanephros."
   vars:
     - v0

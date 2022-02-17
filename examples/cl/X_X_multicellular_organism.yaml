@@ -1,25 +1,46 @@
-# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X X multicellular organism
 pattern_iri: http://purl.obolibrary.org/obo/cl/X_X_multicellular_organism
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [left ureter](http://purl.obolibrary.org/obo/UBERON_0001223), [right ureter](http://purl.obolibrary.org/obo/UBERON_0001222), [space surrounding organism](http://purl.obolibrary.org/obo/UBERON_0013514) (28 total)
+  Examples: [body morphogenesis](http://purl.obolibrary.org/obo/GO_0010171), [multicellular organism growth](http://purl.obolibrary.org/obo/GO_0035264), [multicellular organism development](http://purl.obolibrary.org/obo/GO_0007275) (33 total)
 
 classes: 
   in_left_side_of: "http://purl.obolibrary.org/obo/BSPO_0000120"
   in_right_side_of: "http://purl.obolibrary.org/obo/BSPO_0000121"
+  anatomical structure morphogenesis: "GO:0009653"
+  developmental growth: "GO:0048589"
+  anatomical structure development: "GO:0048856"
   surrounds: "RO:0002221"
+  results in developmental progression of: "RO:0002295"
+  results in morphogenesis of: "RO:0002298"
+  results in growth of: "RO:0002343"
+  ureter: "UBERON:0000056"
+  anatomical space: "UBERON:0000464"
   multicellular organism: "UBERON:0000468"
-  anatomical entity: "UBERON:0001062"
+  eye: "UBERON:0000970"
+  ovary: "UBERON:0000992"
+  dorsum: "UBERON:0001137"
+  suprarenal vein: "UBERON:0001146"
+  common iliac artery: "UBERON:0001191"
+  pelvic girdle region: "UBERON:0001271"
+  subclavian artery: "UBERON:0001533"
+  external ear: "UBERON:0001691"
+  umbilical vein: "UBERON:0002066"
+  kidney: "UBERON:0002113"
+  recurrent laryngeal nerve: "UBERON:0003716"
+  fallopian tube: "UBERON:0003889"
+  vitelline vein: "UBERON:0005487"
+  anatomical surface: "UBERON:0006984"
 
 
 relations: []
 
 vars:
-  v0: "'anatomical entity'"
-  v1: "'in_left_side_of' or 'in_right_side_of' or 'surrounds'"
+  v0: "'anatomical structure morphogenesis' or 'developmental growth' or 'anatomical structure development' or 'ureter' or 'anatomical space' or 'eye' or 'ovary' or 'dorsum' or 'suprarenal vein' or 'common iliac artery' or 'pelvic girdle region' or 'subclavian artery' or 'external ear' or 'umbilical vein' or 'kidney' or 'recurrent laryngeal nerve' or 'fallopian tube' or 'vitelline vein' or 'anatomical surface'"
+  v1: "'in_left_side_of' or 'in_right_side_of' or 'surrounds' or 'results in developmental progression of' or 'results in morphogenesis of' or 'results in growth of'"
 
 name:
   # Could not induce name, using default

@@ -1,15 +1,14 @@
-# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X regulates X
 pattern_iri: http://purl.obolibrary.org/obo/cl/X_regulates_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [regulation of mitotic sister chromatid segregation](http://purl.obolibrary.org/obo/GO_0033047), [regulation of microtubule cytoskeleton organization](http://purl.obolibrary.org/obo/GO_0070507), [regulation of mitotic cell cycle](http://purl.obolibrary.org/obo/GO_0007346) (391 total)
+  Examples: [regulation of skeletal muscle contraction by action potential](http://purl.obolibrary.org/obo/GO_0100001), [protein kinase regulator activity](http://purl.obolibrary.org/obo/GO_0019887), [regulation of synapse organization by posttranscriptional regulation of gene expression](http://purl.obolibrary.org/obo/GO_1904739) (1121 total)
 
 classes: 
   process: "BFO:0000015"
-  biological_process: "GO:0008150"
 
 
 relations: 
@@ -17,11 +16,11 @@ relations:
 
 
 vars:
-  v0: "'biological_process'"
+  v0: "'process'"
   v1: "'process'"
 
 name:
-  # Induced, frequency=0.010230179028132993, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.9616413916146298, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s of %s"
   vars:
     - v0
@@ -38,7 +37,13 @@ annotationProperties:
   exact_synonym: "oio:hasExactSynonym"
   related_synonym: "oio:hasRelatedSynonym"
 
-# could not infer annotations
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of %s"
+    vars:
+      - v0
+      - v1
 
 
 equivalentTo:

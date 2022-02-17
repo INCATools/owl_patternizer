@@ -1,22 +1,15 @@
-# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X occurs in X
 pattern_iri: http://purl.obolibrary.org/obo/cl/X_occurs_in_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [proteolysis within lysosome associated with antigen processing and presentation](http://purl.obolibrary.org/obo/GO_0002500), [extracellular transport](http://purl.obolibrary.org/obo/GO_0006858), [intracellular transport](http://purl.obolibrary.org/obo/GO_0046907) (22 total)
+  Examples: [neuronal action potential](http://purl.obolibrary.org/obo/GO_0019228), [cardiac muscle cell action potential](http://purl.obolibrary.org/obo/GO_0086001), [Purkinje myocyte action potential](http://purl.obolibrary.org/obo/GO_0086017) (171 total)
 
 classes: 
-  extracellular region: "GO:0005576"
-  intracellular: "GO:0005622"
-  lysosome: "GO:0005764"
   biological_process: "GO:0008150"
-  membrane: "GO:0016020"
-  axon: "GO:0030424"
-  synapse: "GO:0045202"
-  presynapse: "GO:0098793"
-  postsynapse: "GO:0098794"
+  owl:Thing: "owl:Thing"
 
 
 relations: 
@@ -25,21 +18,21 @@ relations:
 
 vars:
   v0: "'biological_process'"
-  v1: "'extracellular region' or 'intracellular' or 'lysosome' or 'membrane' or 'axon' or 'synapse' or 'presynapse' or 'postsynapse'"
+  v1: "'owl:Thing'"
 
 name:
-  # Induced, frequency=0.3181818181818182, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.5146198830409356, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
     - v0
 
 def:
-  # Induced, frequency=0.09090909090909091, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "Any process, acting in the %s that results in %s."
+  # Induced, frequency=0.06432748538011696, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any %s in a %s."
   vars:
-    - v1
     - v0
+    - v1
 
 annotationProperties:
   exact_synonym: "oio:hasExactSynonym"
@@ -48,10 +41,10 @@ annotationProperties:
 annotations:
   - annotationProperty: exact_synonym
     # Induced p=exact_synonym 
-    text: "%s in %s"
+    text: "%s %s"
     vars:
-      - v0
       - v1
+      - v0
 
 
 equivalentTo:

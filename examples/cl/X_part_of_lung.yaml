@@ -1,11 +1,11 @@
-# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X part of lung
 pattern_iri: http://purl.obolibrary.org/obo/cl/X_part_of_lung
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [fibroblast of lung](http://purl.obolibrary.org/obo/CL_0002553), [lung ciliated cell](http://purl.obolibrary.org/obo/CL_1000271), [epithelial cell of lung](http://purl.obolibrary.org/obo/CL_0000082) (23 total)
+  Examples: [fibroblast of lung](http://purl.obolibrary.org/obo/CL_0002553), [lung ciliated cell](http://purl.obolibrary.org/obo/CL_1000271), [epithelial cell of lung](http://purl.obolibrary.org/obo/CL_0000082) (25 total)
 
 classes: 
   fibroblast: "CL:0000057"
@@ -13,7 +13,8 @@ classes:
   goblet cell: "CL:0000160"
   neuroendocrine cell: "CL:0000165"
   macrophage: "CL:0000235"
-  endothelial cell of vascular tree: "CL:0002139"
+  pericyte cell: "CL:0000669"
+  capillary endothelial cell: "CL:0002144"
   parenchyma: "UBERON:0000353"
   mucous gland: "UBERON:0000414"
   lymphatic vessel: "UBERON:0001473"
@@ -34,16 +35,16 @@ relations:
 
 
 vars:
-  v0: "'fibroblast' or 'ciliated cell' or 'goblet cell' or 'neuroendocrine cell' or 'macrophage' or 'endothelial cell of vascular tree' or 'parenchyma' or 'mucous gland' or 'lymphatic vessel' or 'capillary' or 'vasculature' or 'bronchus' or 'elastic tissue' or 'mesenchyme' or 'alveolus' or 'blood vessel endothelium' or 'lobule' or 'collection of collagen fibrils'"
+  v0: "'fibroblast' or 'ciliated cell' or 'goblet cell' or 'neuroendocrine cell' or 'macrophage' or 'pericyte cell' or 'capillary endothelial cell' or 'parenchyma' or 'mucous gland' or 'lymphatic vessel' or 'capillary' or 'vasculature' or 'bronchus' or 'elastic tissue' or 'mesenchyme' or 'alveolus' or 'blood vessel endothelium' or 'lobule' or 'collection of collagen fibrils'"
 
 name:
-  # Induced, frequency=0.5217391304347826, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.52, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "lung %s"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.13043478260869565, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.16, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "A %s that is part of a lung."
   vars:
     - v0

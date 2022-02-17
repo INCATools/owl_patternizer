@@ -1,26 +1,42 @@
-# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X X hindlimb
 pattern_iri: http://purl.obolibrary.org/obo/cl/X_X_hindlimb
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [hindlimb skin](http://purl.obolibrary.org/obo/UBERON_0003532), [lymph node of lower limb](http://purl.obolibrary.org/obo/UBERON_0016398), [hindlimb joint](http://purl.obolibrary.org/obo/UBERON_0003840) (20 total)
+  Examples: [hindlimb morphogenesis](http://purl.obolibrary.org/obo/GO_0035137), [hindlimb skin](http://purl.obolibrary.org/obo/UBERON_0003532), [lymph node of lower limb](http://purl.obolibrary.org/obo/UBERON_0016398) (21 total)
 
 classes: 
-  continuant: "BFO:0000002"
   part of: "BFO:0000050"
+  anatomical structure morphogenesis: "GO:0009653"
   innervates: "RO:0002134"
+  results in morphogenesis of: "RO:0002298"
   skeleton of: "RO:0002576"
-  anatomical entity: "UBERON:0001062"
+  zone of skin: "UBERON:0000014"
+  lymph node: "UBERON:0000029"
+  skeletal joint: "UBERON:0000982"
+  musculature: "UBERON:0001015"
+  nerve: "UBERON:0001021"
+  spinal nerve plexus: "UBERON:0001813"
   hindlimb: "UBERON:0002103"
+  connective tissue: "UBERON:0002384"
+  autopod region: "UBERON:0002470"
+  zeugopod: "UBERON:0002471"
+  stylopod: "UBERON:0002472"
+  long bone: "UBERON:0002495"
+  mesenchyme: "UBERON:0003104"
+  digital artery: "UBERON:0004552"
+  subdivision of skeleton: "UBERON:0010912"
+  skeletal muscle organ: "UBERON:0014892"
+  proximal mesopodial endochondral element: "UBERON:0017750"
 
 
 relations: []
 
 vars:
-  v0: "'continuant' or 'anatomical entity'"
-  v1: "'part of' or 'innervates' or 'skeleton of'"
+  v0: "'anatomical structure morphogenesis' or 'zone of skin' or 'lymph node' or 'skeletal joint' or 'musculature' or 'nerve' or 'spinal nerve plexus' or 'connective tissue' or 'autopod region' or 'zeugopod' or 'stylopod' or 'long bone' or 'mesenchyme' or 'digital artery' or 'subdivision of skeleton' or 'skeletal muscle organ' or 'proximal mesopodial endochondral element'"
+  v1: "'part of' or 'innervates' or 'results in morphogenesis of' or 'skeleton of'"
 
 name:
   # Could not induce name, using default
@@ -30,7 +46,7 @@ name:
     - v1
 
 def:
-  # Induced, frequency=0.3, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.2857142857142857, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "A %s that %s a hindlimb [Automatically generated definition]."
   vars:
     - v0

@@ -1,4 +1,4 @@
-# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X X esophagus
 pattern_iri: http://purl.obolibrary.org/obo/cl/X_X_esophagus
 
@@ -11,7 +11,9 @@ classes:
   part of: "BFO:0000050"
   glandular epithelial cell: "CL:0000150"
   smooth muscle cell: "CL:0000192"
+  anatomical structure development: "GO:0048856"
   supplies: "RO:0002178"
+  results in development of: "RO:0002296"
   luminal space of: "RO:0002572"
   submucosa: "UBERON:0000009"
   lamina propria: "UBERON:0000030"
@@ -21,13 +23,13 @@ classes:
   anatomical space: "UBERON:0000464"
   esophagus: "UBERON:0001043"
   skeletal muscle tissue: "UBERON:0001134"
+  smooth muscle tissue: "UBERON:0001135"
   artery: "UBERON:0001637"
   taste bud: "UBERON:0001727"
   mesentery: "UBERON:0002095"
   sphincter muscle: "UBERON:0004590"
   adventitia: "UBERON:0005742"
   muscular coat: "UBERON:0006660"
-  muscularis mucosa: "UBERON:0006676"
   squamous epithelium: "UBERON:0006914"
   submucosal gland: "UBERON:0011148"
 
@@ -35,8 +37,8 @@ classes:
 relations: []
 
 vars:
-  v0: "'glandular epithelial cell' or 'smooth muscle cell' or 'submucosa' or 'lamina propria' or 'anatomical wall' or 'mucosa' or 'secretion of exocrine gland' or 'anatomical space' or 'skeletal muscle tissue' or 'artery' or 'taste bud' or 'mesentery' or 'sphincter muscle' or 'adventitia' or 'muscular coat' or 'muscularis mucosa' or 'squamous epithelium' or 'submucosal gland'"
-  v1: "'part of' or 'supplies' or 'luminal space of'"
+  v0: "'glandular epithelial cell' or 'smooth muscle cell' or 'anatomical structure development' or 'submucosa' or 'lamina propria' or 'anatomical wall' or 'mucosa' or 'secretion of exocrine gland' or 'anatomical space' or 'skeletal muscle tissue' or 'smooth muscle tissue' or 'artery' or 'taste bud' or 'mesentery' or 'sphincter muscle' or 'adventitia' or 'muscular coat' or 'squamous epithelium' or 'submucosal gland'"
+  v1: "'part of' or 'supplies' or 'results in development of' or 'luminal space of'"
 
 name:
   # Could not induce name, using default

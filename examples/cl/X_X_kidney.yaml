@@ -1,18 +1,21 @@
-# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X X kidney
 pattern_iri: http://purl.obolibrary.org/obo/cl/X_X_kidney
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [kidney epithelial cell](http://purl.obolibrary.org/obo/CL_0002518), [kidney nerve cell](http://purl.obolibrary.org/obo/CL_1000606), [kidney cell](http://purl.obolibrary.org/obo/CL_1000497) (24 total)
+  Examples: [kidney epithelial cell](http://purl.obolibrary.org/obo/CL_0002518), [kidney nerve cell](http://purl.obolibrary.org/obo/CL_1000606), [kidney cell](http://purl.obolibrary.org/obo/CL_1000497) (26 total)
 
 classes: 
   part of: "BFO:0000050"
   located in: "RO:0001025"
   bounding layer of: "RO:0002007"
+  has soma location: "RO:0002100"
   supplies: "RO:0002178"
   drains: "RO:0002179"
+  results in development of: "RO:0002296"
+  results in morphogenesis of: "RO:0002298"
   has potential to develop into: "RO:0002387"
   produced by: "RO:0003001"
   kidney: "UBERON:0002113"
@@ -23,7 +26,7 @@ relations: []
 
 vars:
   v0: "'owl:Thing'"
-  v1: "'part of' or 'located in' or 'bounding layer of' or 'supplies' or 'drains' or 'has potential to develop into' or 'produced by'"
+  v1: "'part of' or 'located in' or 'bounding layer of' or 'has soma location' or 'supplies' or 'drains' or 'results in development of' or 'results in morphogenesis of' or 'has potential to develop into' or 'produced by'"
 
 name:
   # Could not induce name, using default
@@ -33,7 +36,7 @@ name:
     - v1
 
 def:
-  # Induced, frequency=0.125, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.11538461538461539, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "A %s that is %s a kidney [Automatically generated definition]."
   vars:
     - v0
