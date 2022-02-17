@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/uberon/mesenchyme_part_of_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [eye mesenchyme](http://purl.obolibrary.org/obo/UBERON_0003314), [head mesenchyme](http://purl.obolibrary.org/obo/UBERON_0005253), [urethra mesenchymal layer](http://purl.obolibrary.org/obo/UBERON_0015418) (102 total)
+  Examples: [eye mesenchyme](http://purl.obolibrary.org/obo/UBERON_0003314), [head mesenchyme](http://purl.obolibrary.org/obo/UBERON_0005253), [urethra mesenchymal layer](http://purl.obolibrary.org/obo/UBERON_0015418), [mesonephric mesenchyme](http://purl.obolibrary.org/obo/UBERON_0005323), [mesenchyme pectoral fin](http://purl.obolibrary.org/obo/UBERON_0003934), [mesenchyme pelvic fin](http://purl.obolibrary.org/obo/UBERON_0003935), [amniotic mesoderm](http://purl.obolibrary.org/obo/UBERON_0003262), [upper leg mesenchyme](http://purl.obolibrary.org/obo/UBERON_0005254), [mesenchyme of testis](http://purl.obolibrary.org/obo/UBERON_0003312), [cardiac mesenchyme](http://purl.obolibrary.org/obo/UBERON_0009751) (102 total)
 
 classes: 
   anatomical entity: "UBERON:0001062"

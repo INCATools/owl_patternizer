@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/uberon/X_drains_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [left renal vein](http://purl.obolibrary.org/obo/UBERON_0001142), [right renal vein](http://purl.obolibrary.org/obo/UBERON_0001141), [left testicular vein](http://purl.obolibrary.org/obo/UBERON_0000443) (55 total)
+  Examples: [left renal vein](http://purl.obolibrary.org/obo/UBERON_0001142), [right renal vein](http://purl.obolibrary.org/obo/UBERON_0001141), [left testicular vein](http://purl.obolibrary.org/obo/UBERON_0000443), [right testicular vein](http://purl.obolibrary.org/obo/UBERON_0000442), [lymph node vein](http://purl.obolibrary.org/obo/UBERON_8410033), [superior vesical vein](http://purl.obolibrary.org/obo/UBERON_0006355), [mesenteric vein](http://purl.obolibrary.org/obo/UBERON_0005617), [testicular vein](http://purl.obolibrary.org/obo/UBERON_0001144), [dorsal metatarsal vein](http://purl.obolibrary.org/obo/UBERON_0001549), [ovarian vein](http://purl.obolibrary.org/obo/UBERON_0001145) (55 total)
 
 classes: 
   anatomical structure: "UBERON:0000061"

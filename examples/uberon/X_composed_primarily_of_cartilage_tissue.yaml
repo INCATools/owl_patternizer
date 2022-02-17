@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/uberon/X_composed_primarily_of_carti
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [cartilaginous projection](http://purl.obolibrary.org/obo/UBERON_0011769), [cartilaginous otic capsule](http://purl.obolibrary.org/obo/UBERON_0005410), [cartilage element](http://purl.obolibrary.org/obo/UBERON_0007844) (152 total)
+  Examples: [cartilaginous projection](http://purl.obolibrary.org/obo/UBERON_0011769), [cartilaginous otic capsule](http://purl.obolibrary.org/obo/UBERON_0005410), [cartilage element](http://purl.obolibrary.org/obo/UBERON_0007844), [vertebra cartilage element](http://purl.obolibrary.org/obo/UBERON_0011094), [cartilaginous joint](http://purl.obolibrary.org/obo/UBERON_0002213), [procoracoid cartilage](http://purl.obolibrary.org/obo/UBERON_0011247), [hyomandibular cartilage](http://purl.obolibrary.org/obo/UBERON_0011607), [basihyal cartilage](http://purl.obolibrary.org/obo/UBERON_0011615), [sesamoid cartilage](http://purl.obolibrary.org/obo/UBERON_0013632), [basibranchial cartilage](http://purl.obolibrary.org/obo/UBERON_0013747) (152 total)
 
 classes: 
   anatomical structure: "UBERON:0000061"

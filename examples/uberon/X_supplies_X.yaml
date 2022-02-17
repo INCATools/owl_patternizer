@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/uberon/X_supplies_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [phrenic nerve](http://purl.obolibrary.org/obo/UBERON_0001884), [left renal artery](http://purl.obolibrary.org/obo/UBERON_0001186), [right renal artery](http://purl.obolibrary.org/obo/UBERON_0001185) (54 total)
+  Examples: [phrenic nerve](http://purl.obolibrary.org/obo/UBERON_0001884), [left renal artery](http://purl.obolibrary.org/obo/UBERON_0001186), [right renal artery](http://purl.obolibrary.org/obo/UBERON_0001185), [left testicular artery](http://purl.obolibrary.org/obo/UBERON_0001189), [right testicular artery](http://purl.obolibrary.org/obo/UBERON_0001188), [hypophysial artery](http://purl.obolibrary.org/obo/UBERON_0035403), [lymph node artery](http://purl.obolibrary.org/obo/UBERON_8410034), [ureteric segment of renal artery](http://purl.obolibrary.org/obo/UBERON_0003468), [mesenteric artery](http://purl.obolibrary.org/obo/UBERON_0005616), [testicular artery](http://purl.obolibrary.org/obo/UBERON_0001187) (54 total)
 
 classes: 
   material entity: "BFO:0000040"

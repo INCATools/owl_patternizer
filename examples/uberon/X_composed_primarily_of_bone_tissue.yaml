@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/uberon/X_composed_primarily_of_bone_
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [bony otic capsule](http://purl.obolibrary.org/obo/UBERON_0005411), [bone element](http://purl.obolibrary.org/obo/UBERON_0001474), [mesethmoid bone](http://purl.obolibrary.org/obo/UBERON_0011238) (137 total)
+  Examples: [bony otic capsule](http://purl.obolibrary.org/obo/UBERON_0005411), [bone element](http://purl.obolibrary.org/obo/UBERON_0001474), [mesethmoid bone](http://purl.obolibrary.org/obo/UBERON_0011238), [vertebra](http://purl.obolibrary.org/obo/UBERON_0002412), [procoracoid bone](http://purl.obolibrary.org/obo/UBERON_0011246), [hyomandibular bone](http://purl.obolibrary.org/obo/UBERON_0011606), [basihyal bone](http://purl.obolibrary.org/obo/UBERON_0011618), [sesamoid bone](http://purl.obolibrary.org/obo/UBERON_0001479), [basibranchial bone](http://purl.obolibrary.org/obo/UBERON_0004740), [radius bone](http://purl.obolibrary.org/obo/UBERON_0001423) (137 total)
 
 classes: 
   anatomical structure: "UBERON:0000061"

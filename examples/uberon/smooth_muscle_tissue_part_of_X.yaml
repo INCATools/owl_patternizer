@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/uberon/smooth_muscle_tissue_part_of_
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [smooth muscle of eye](http://purl.obolibrary.org/obo/UBERON_0003386), [ureter smooth muscle](http://purl.obolibrary.org/obo/UBERON_0009919), [urethra smooth muscle layer](http://purl.obolibrary.org/obo/UBERON_0004219) (55 total)
+  Examples: [smooth muscle of eye](http://purl.obolibrary.org/obo/UBERON_0003386), [ureter smooth muscle](http://purl.obolibrary.org/obo/UBERON_0009919), [urethra smooth muscle layer](http://purl.obolibrary.org/obo/UBERON_0004219), [large intestine smooth muscle](http://purl.obolibrary.org/obo/UBERON_0004220), [mesonephric smooth muscle tissue](http://purl.obolibrary.org/obo/UBERON_0005321), [metanephric smooth muscle tissue](http://purl.obolibrary.org/obo/UBERON_0005109), [intestine smooth muscle](http://purl.obolibrary.org/obo/UBERON_0004221), [stomach smooth muscle](http://purl.obolibrary.org/obo/UBERON_0004222), [aorta smooth muscle tissue](http://purl.obolibrary.org/obo/UBERON_0004178), [vagina smooth muscle](http://purl.obolibrary.org/obo/UBERON_0004223) (55 total)
 
 classes: 
   material anatomical entity: "UBERON:0000465"

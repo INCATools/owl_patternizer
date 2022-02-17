@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/uberon/X_composed_primarily_of_pre_c
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [otic capsule pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0010349), [vertebra pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0011095), [radius-ulna pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0006287) (67 total)
+  Examples: [otic capsule pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0010349), [vertebra pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0011095), [radius-ulna pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0006287), [cervical vertebra pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0013506), [thoracic vertebra pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0013508), [lumbar vertebra pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0013510), [sacral vertebra pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0010744), [calcaneum pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0010801), [stapes pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0006294), [incus pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0006248) (67 total)
 
 classes: 
   skeletal element: "UBERON:0004765"
