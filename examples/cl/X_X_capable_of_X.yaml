@@ -1,11 +1,11 @@
-# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X X capable of X
 pattern_iri: http://purl.obolibrary.org/obo/cl/X_X_capable_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [sensory receptor cell](http://purl.obolibrary.org/obo/CL_0000197), [single fate stem cell](http://purl.obolibrary.org/obo/CL_0000035), [male gamete](http://purl.obolibrary.org/obo/CL_0000408) (54 total)
+  Examples: [sensory receptor cell](http://purl.obolibrary.org/obo/CL_0000197), [single fate stem cell](http://purl.obolibrary.org/obo/CL_0000035), [male gamete](http://purl.obolibrary.org/obo/CL_0000408), [secondary spermatocyte](http://purl.obolibrary.org/obo/CL_0000657), [primary spermatocyte](http://purl.obolibrary.org/obo/CL_0000656), [primordial germ cell](http://purl.obolibrary.org/obo/CL_0000670), [cholangiocyte](http://purl.obolibrary.org/obo/CL_1000488), [pancreatic ductal cell](http://purl.obolibrary.org/obo/CL_0002079), [pancreatic centro-acinar cell](http://purl.obolibrary.org/obo/CL_0002080), [mucosal type mast cell](http://purl.obolibrary.org/obo/CL_0000485) (54 total)
 
 classes: 
   material entity: "BFO:0000040"

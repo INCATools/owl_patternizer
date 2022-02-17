@@ -1,11 +1,11 @@
-# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: fibroblast part of X
 pattern_iri: http://purl.obolibrary.org/obo/cl/fibroblast_part_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [fibroblast of breast](http://purl.obolibrary.org/obo/CL_4006000), [embryonic fibroblast](http://purl.obolibrary.org/obo/CL_2000042), [fibroblast of cardiac tissue](http://purl.obolibrary.org/obo/CL_0002548) (31 total)
+  Examples: [fibroblast of breast](http://purl.obolibrary.org/obo/CL_4006000), [embryonic fibroblast](http://purl.obolibrary.org/obo/CL_2000042), [fibroblast of cardiac tissue](http://purl.obolibrary.org/obo/CL_0002548), [ovarian fibroblast](http://purl.obolibrary.org/obo/CL_2000063), [fibroblast of skin of back](http://purl.obolibrary.org/obo/CL_0011022), [skeletal muscle fibroblast](http://purl.obolibrary.org/obo/CL_0011027), [fibroblast of lymphatic vessel](http://purl.obolibrary.org/obo/CL_0002554), [muscle fibroblast](http://purl.obolibrary.org/obo/CL_1001609), [fibroblast of periodontium](http://purl.obolibrary.org/obo/CL_0002556), [optic choroid fibroblast](http://purl.obolibrary.org/obo/CL_2000070) (31 total)
 
 classes: 
   independent continuant: "BFO:0000004"

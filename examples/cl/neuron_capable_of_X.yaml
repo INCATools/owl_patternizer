@@ -1,11 +1,11 @@
-# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: neuron capable of X
 pattern_iri: http://purl.obolibrary.org/obo/cl/neuron_capable_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [cholinergic neuron](http://purl.obolibrary.org/obo/CL_0000108), [gonadotropin releasing neuron](http://purl.obolibrary.org/obo/CL_0011111), [neurosecretory neuron](http://purl.obolibrary.org/obo/CL_0000381) (20 total)
+  Examples: [cholinergic neuron](http://purl.obolibrary.org/obo/CL_0000108), [gonadotropin releasing neuron](http://purl.obolibrary.org/obo/CL_0011111), [neurosecretory neuron](http://purl.obolibrary.org/obo/CL_0000381), [sensory neuron](http://purl.obolibrary.org/obo/CL_0000101), [chemoreceptor cell](http://purl.obolibrary.org/obo/CL_0000206), [olfactory receptor cell](http://purl.obolibrary.org/obo/CL_0000207), [taste receptor cell](http://purl.obolibrary.org/obo/CL_0000209), [photoreceptor cell](http://purl.obolibrary.org/obo/CL_0000210), [mechanoreceptor cell](http://purl.obolibrary.org/obo/CL_0000199), [touch receptor cell](http://purl.obolibrary.org/obo/CL_0000200) (20 total)
 
 classes: 
   neuron: "CL:0000540"

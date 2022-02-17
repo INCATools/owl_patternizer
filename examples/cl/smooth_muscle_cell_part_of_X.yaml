@@ -1,11 +1,11 @@
-# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: smooth muscle cell part of X
 pattern_iri: http://purl.obolibrary.org/obo/cl/smooth_muscle_cell_part_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [enteric smooth muscle cell](http://purl.obolibrary.org/obo/CL_0002504), [uterine smooth muscle cell](http://purl.obolibrary.org/obo/CL_0002601), [smooth muscle cell of the esophagus](http://purl.obolibrary.org/obo/CL_0002599) (28 total)
+  Examples: [enteric smooth muscle cell](http://purl.obolibrary.org/obo/CL_0002504), [uterine smooth muscle cell](http://purl.obolibrary.org/obo/CL_0002601), [smooth muscle cell of the esophagus](http://purl.obolibrary.org/obo/CL_0002599), [smooth muscle cell of rectum](http://purl.obolibrary.org/obo/CL_1000286), [smooth muscle cell of cecum](http://purl.obolibrary.org/obo/CL_1000281), [smooth muscle cell of bladder](http://purl.obolibrary.org/obo/CL_0002597), [myometrial cell](http://purl.obolibrary.org/obo/CL_0002366), [lymphatic vessel smooth muscle cell](http://purl.obolibrary.org/obo/CL_0019017), [arcuate artery smooth muscle cell](http://purl.obolibrary.org/obo/CL_1001214), [smooth muscle cell of sphincter of pupil](http://purl.obolibrary.org/obo/CL_0002243) (28 total)
 
 classes: 
   independent continuant: "BFO:0000004"

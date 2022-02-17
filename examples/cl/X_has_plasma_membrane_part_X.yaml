@@ -1,11 +1,11 @@
-# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has plasma membrane part X
 pattern_iri: http://purl.obolibrary.org/obo/cl/X_has_plasma_membrane_part_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [alpha-beta T cell](http://purl.obolibrary.org/obo/CL_0000789), [gamma-delta T cell](http://purl.obolibrary.org/obo/CL_0000798), [dendritic cell, human](http://purl.obolibrary.org/obo/CL_0001056) (35 total)
+  Examples: [alpha-beta T cell](http://purl.obolibrary.org/obo/CL_0000789), [gamma-delta T cell](http://purl.obolibrary.org/obo/CL_0000798), [dendritic cell, human](http://purl.obolibrary.org/obo/CL_0001056), [GlyA-positive erythrocyte](http://purl.obolibrary.org/obo/CL_0002021), [myeloid dendritic cell, human](http://purl.obolibrary.org/obo/CL_0001057), [CD38-positive naive B cell](http://purl.obolibrary.org/obo/CL_0002101), [CD4-positive, CD25-positive, CCR4-positive, alpha-beta regulatory T cell](http://purl.obolibrary.org/obo/CL_0001047), [CD8-alpha-beta-positive, alpha-beta intraepithelial T cell](http://purl.obolibrary.org/obo/CL_0000796), [CD8-alpha alpha positive, gamma-delta intraepithelial T cell](http://purl.obolibrary.org/obo/CL_0000802), [B-1a B cell](http://purl.obolibrary.org/obo/CL_0000820) (35 total)
 
 classes: 
   independent continuant: "BFO:0000004"

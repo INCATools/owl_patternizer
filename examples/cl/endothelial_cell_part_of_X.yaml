@@ -1,11 +1,11 @@
-# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: endothelial cell part of X
 pattern_iri: http://purl.obolibrary.org/obo/cl/endothelial_cell_part_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [glomerular endothelial cell](http://purl.obolibrary.org/obo/CL_0002188), [cardiac endothelial cell](http://purl.obolibrary.org/obo/CL_0010008), [cerebral cortex endothelial cell](http://purl.obolibrary.org/obo/CL_1001602) (25 total)
+  Examples: [glomerular endothelial cell](http://purl.obolibrary.org/obo/CL_0002188), [cardiac endothelial cell](http://purl.obolibrary.org/obo/CL_0010008), [cerebral cortex endothelial cell](http://purl.obolibrary.org/obo/CL_1001602), [endothelial cell of uterus](http://purl.obolibrary.org/obo/CL_0009095), [colon endothelial cell](http://purl.obolibrary.org/obo/CL_1001572), [endothelial cell of hepatic sinusoid](http://purl.obolibrary.org/obo/CL_1000398), [arcuate artery endothelial cell](http://purl.obolibrary.org/obo/CL_1001213), [endothelial cell of artery](http://purl.obolibrary.org/obo/CL_1000413), [endothelial cell of hepatic portal vein](http://purl.obolibrary.org/obo/CL_0009094), [endothelial cell of arteriole](http://purl.obolibrary.org/obo/CL_1000412) (25 total)
 
 classes: 
   independent continuant: "BFO:0000004"

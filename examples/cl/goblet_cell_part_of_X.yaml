@@ -1,11 +1,11 @@
-# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: goblet cell part of X
 pattern_iri: http://purl.obolibrary.org/obo/cl/goblet_cell_part_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [large intestine goblet cell](http://purl.obolibrary.org/obo/CL_1000320), [respiratory goblet cell](http://purl.obolibrary.org/obo/CL_0002370), [gastric goblet cell](http://purl.obolibrary.org/obo/CL_1000313) (23 total)
+  Examples: [large intestine goblet cell](http://purl.obolibrary.org/obo/CL_1000320), [respiratory goblet cell](http://purl.obolibrary.org/obo/CL_0002370), [gastric goblet cell](http://purl.obolibrary.org/obo/CL_1000313), [appendix goblet cell](http://purl.obolibrary.org/obo/CL_1000327), [colon goblet cell](http://purl.obolibrary.org/obo/CL_0009039), [intestinal villus goblet cell](http://purl.obolibrary.org/obo/CL_1000317), [pancreatic goblet cell](http://purl.obolibrary.org/obo/CL_1000322), [intestine goblet cell](http://purl.obolibrary.org/obo/CL_0019031), [conjunctiva goblet cell](http://purl.obolibrary.org/obo/CL_2000084), [nasal mucosa goblet cell](http://purl.obolibrary.org/obo/CL_0002480) (23 total)
 
 classes: 
   goblet cell: "CL:0000160"

@@ -1,11 +1,11 @@
-# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: epithelial cell part of X
 pattern_iri: http://purl.obolibrary.org/obo/cl/epithelial_cell_part_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [epithelial cell of cervix](http://purl.obolibrary.org/obo/CL_0002535), [epithelial cell of exocrine pancreas](http://purl.obolibrary.org/obo/CL_1001433), [epithelial cell of urethra](http://purl.obolibrary.org/obo/CL_1000296) (49 total)
+  Examples: [epithelial cell of cervix](http://purl.obolibrary.org/obo/CL_0002535), [epithelial cell of exocrine pancreas](http://purl.obolibrary.org/obo/CL_1001433), [epithelial cell of urethra](http://purl.obolibrary.org/obo/CL_1000296), [duct epithelial cell](http://purl.obolibrary.org/obo/CL_0000068), [intestinal epithelial cell](http://purl.obolibrary.org/obo/CL_0002563), [epithelial cell of amnion](http://purl.obolibrary.org/obo/CL_0002536), [epithelial cell of stomach](http://purl.obolibrary.org/obo/CL_0002178), [ovarian surface epithelial cell](http://purl.obolibrary.org/obo/CL_2000064), [epithelial cell of esophagus](http://purl.obolibrary.org/obo/CL_0002252), [epithelial cell of appendix](http://purl.obolibrary.org/obo/CL_1000405) (49 total)
 
 classes: 
   epithelial cell: "CL:0000066"
