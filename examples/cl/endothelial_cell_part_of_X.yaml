@@ -1,0 +1,55 @@
+# options: [min(20),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: endothelial cell part of X
+pattern_iri: http://purl.obolibrary.org/obo/cl/endothelial_cell_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [glomerular endothelial cell](http://purl.obolibrary.org/obo/CL_0002188), [cardiac endothelial cell](http://purl.obolibrary.org/obo/CL_0010008), [cerebral cortex endothelial cell](http://purl.obolibrary.org/obo/CL_1001602) (25 total)
+
+classes: 
+  independent continuant: "BFO:0000004"
+  endothelial cell: "CL:0000115"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'independent continuant' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.48, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "endothelial cell of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.16, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An endothelial cell that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s endothelial cell"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s endothelial cells"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('endothelial cell' and ('part of' some %s))"
+  vars:
+    - v0

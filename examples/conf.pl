@@ -71,7 +71,7 @@ ontology_config(mso,      [min(5), max_class_signature(6), generalize_properties
 %ontology_config(chebi,    [min(3), remove_inexact_synonyms(true), infer_axioms(true), generalize_properties(false)]).
 ontology_config(chebi,    [min(4), remove_chemical_synonyms(true), mutate_chebi(true), infer_axioms(true), generalize_properties(false)]).
 ontology_config(uberon,   [min(6), generalize_properties(false), max_and_cardinality(3), ontology_prefix(uberon)]).
-ontology_config(cl,       [min(20), ontology_prefix('CL')]).
+ontology_config(cl,       [min(10), ontology_prefix('CL')]).
 ontology_config(nif_cell, [min(10), imports([uberon]), infer_axioms(true), base('http://ontology.neuinfo.org/NIF/ttl/NIF-Cell.ttl'), ontology_prefix(nifext)]).
 ontology_config(nif,      [min(20), base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),  ontology_prefix(nifext)]).
 ontology_config(clo,      [min(20), ontology_prefix(clo)]).
@@ -166,6 +166,22 @@ uncamelify([H|T], [H|T2]) :-
 trim_ws([' '|X],X) :- !.
 trim_ws(X,X).
 
+exclude_class(C,Opts) :-
+        option(ontology_prefix(Prefix),Opts),
+        \+ rdf_global_id(Prefix:_,C),
+        \+ atom_concat(Prefix,_,C).
+
+trim_logical_definitions(Opts) :-
+        findall(triple(S,P,O),
+                (   P=owl:equivalentClass,
+                    rdf(S,P,O),
+                    exclude_class(S,Opts)),
+                Triples),
+        length(Triples,N),
+        format('Removing: ~w Triples',[N]),
+        forall(member(triple(S,P,O),Triples),
+               rdf_retractall(S,P,O)).
+
 
 % ----------------------------------------
 % top-level
@@ -234,6 +250,8 @@ do_for(Ont) :-
 
         concat_atom([Dir,'_input.ttl'], '/', OwlFile),
         rdf_save_turtle(OwlFile,[]),
+
+        trim_logical_definitions(Options),
             
         % TODO: merge options
         option(load_import_closure(IsLoadImports),Options,true),
