@@ -170,6 +170,9 @@ exclude_class(C,Opts) :-
         option(ontology_prefix(Prefix),Opts),
         \+ rdf_global_id(Prefix:_,C),
         \+ atom_concat(Prefix,_,C).
+exclude_class('http://www.w3.org/2002/07/owl#Nothing',_).
+exclude_class('http://www.w3.org/2002/07/owl#Thing',_).
+
 
 trim_logical_definitions(Opts) :-
         findall(triple(S,P,O),
