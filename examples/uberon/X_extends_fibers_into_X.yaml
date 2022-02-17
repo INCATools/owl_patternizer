@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/uberon/X_extends_fibers_into_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [thoracic dorsal root ganglion](http://purl.obolibrary.org/obo/UBERON_0002835), [lumbar dorsal root ganglion](http://purl.obolibrary.org/obo/UBERON_0002836), [cervical dorsal root ganglion](http://purl.obolibrary.org/obo/UBERON_0002834) (50 total)
+  Examples: [thoracic dorsal root ganglion](http://purl.obolibrary.org/obo/UBERON_0002835), [lumbar dorsal root ganglion](http://purl.obolibrary.org/obo/UBERON_0002836), [cervical dorsal root ganglion](http://purl.obolibrary.org/obo/UBERON_0002834), [sacral dorsal root ganglion](http://purl.obolibrary.org/obo/UBERON_0002837), [sensory ganglion](http://purl.obolibrary.org/obo/UBERON_0001800), [submandibular ganglion](http://purl.obolibrary.org/obo/UBERON_0002059), [vagus X ganglion](http://purl.obolibrary.org/obo/UBERON_0005362), [sublingual ganglion](http://purl.obolibrary.org/obo/UBERON_0005407), [cranial ganglion](http://purl.obolibrary.org/obo/UBERON_0001714), [nucleus of pudendal nerve](http://purl.obolibrary.org/obo/UBERON_0022278) (50 total)
 
 classes: 
   material entity: "BFO:0000040"

@@ -1,0 +1,48 @@
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X develops from X
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_develops_from_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [fibroblast neural crest derived](http://purl.obolibrary.org/obo/CL_0000005), [ecto-epithelial cell](http://purl.obolibrary.org/obo/CL_0002077), [meso-epithelial cell](http://purl.obolibrary.org/obo/CL_0002078), [neural crest derived fat cell](http://purl.obolibrary.org/obo/CL_0002333), [smooth muscle cell neural crest derived](http://purl.obolibrary.org/obo/CL_0000027), [neural crest derived neuron](http://purl.obolibrary.org/obo/CL_0000029), [myeloid leukocyte](http://purl.obolibrary.org/obo/CL_0000766), [cardiac muscle cell (sensu Arthopoda)](http://purl.obolibrary.org/obo/CL_0000193), [myeloid cell](http://purl.obolibrary.org/obo/CL_0000763), [neurecto-epithelial cell](http://purl.obolibrary.org/obo/CL_0000710) (11 total)
+
+classes: 
+  independent continuant: "BFO:0000004"
+  native cell: "CL:0000003"
+
+
+relations: 
+  develops from: "RO:0002202"
+
+
+vars:
+  v0: "'native cell'"
+  v1: "'independent continuant' or 'native cell'"
+
+name:
+  # Could not induce name, using default
+  text: "%s develops from %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that develops from a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('develops from' some %s))"
+  vars:
+    - v0
+    - v1

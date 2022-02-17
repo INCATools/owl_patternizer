@@ -532,7 +532,7 @@ show_vars(Indent,OrderedVars,VSet) :-
 % sample first 3 classes that instantiate a pattern as exemplars
 % TODO: this has the effect of selecting "samey" classes, vary this somehow
 extract_examples(Matches, ExamplesA, Opts) :-
-        option(max_examples(Max),Opts,3),
+        option(max_examples(Max),Opts,10),
         select_first_n(Matches, Max, Sample),
         maplist([Match,Out]>>(class_equiv_expression(Id,Match),label_or_frag(Id,N),sformat(Out,'[~w](~w)',[N,Id])),Sample,Examples),
         concat_atom(Examples, ', ', ExamplesA).

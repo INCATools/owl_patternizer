@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of colon
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_part_of_colon
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [colon epithelial cell](http://purl.obolibrary.org/obo/CL_0011108), [mesothelial cell of colon](http://purl.obolibrary.org/obo/CL_0009025), [colon endothelial cell](http://purl.obolibrary.org/obo/CL_1001572), [colon glandular cell](http://purl.obolibrary.org/obo/CL_1001588), [colon goblet cell](http://purl.obolibrary.org/obo/CL_0009039), [enteroendocrine cell of colon](http://purl.obolibrary.org/obo/CL_0009042), [colon macrophage](http://purl.obolibrary.org/obo/CL_0009038), [type D cell of colon](http://purl.obolibrary.org/obo/CL_0002265), [intestinal crypt stem cell of colon](http://purl.obolibrary.org/obo/CL_0009043), [smooth muscle cell of colon](http://purl.obolibrary.org/obo/CL_1000280) (11 total)
+
+classes: 
+  independent continuant: "BFO:0000004"
+  animal cell: "CL:0000548"
+  colon: "UBERON:0001155"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'independent continuant' or 'animal cell'"
+
+name:
+  # Induced, frequency=0.36363636363636365, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "colon %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.18181818181818182, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is located in the colon."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of colon"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'colon'))"
+  vars:
+    - v0

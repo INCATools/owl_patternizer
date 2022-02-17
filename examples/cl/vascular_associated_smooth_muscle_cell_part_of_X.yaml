@@ -1,0 +1,44 @@
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: vascular associated smooth muscle cell part of X
+pattern_iri: http://purl.obolibrary.org/obo/cl/vascular_associated_smooth_muscle_cell_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [smooth muscle cell of the brain vasculature](http://purl.obolibrary.org/obo/CL_0002590), [smooth muscle cell of the umbilical artery](http://purl.obolibrary.org/obo/CL_0002594), [smooth muscle cell of the brachiocephalic vasculature](http://purl.obolibrary.org/obo/CL_0002589), [smooth muscle cell of the subclavian artery](http://purl.obolibrary.org/obo/CL_0002595), [smooth muscle cell of the coronary artery](http://purl.obolibrary.org/obo/CL_0002592), [smooth muscle cell of the pulmonary artery](http://purl.obolibrary.org/obo/CL_0002591), [smooth muscle cell of the umbilical vein](http://purl.obolibrary.org/obo/CL_0002588), [smooth muscle cell of the internal thoracic artery](http://purl.obolibrary.org/obo/CL_0002593), [aortic smooth muscle cell](http://purl.obolibrary.org/obo/CL_0002539), [smooth muscle cell of the carotid artery](http://purl.obolibrary.org/obo/CL_0002596) (11 total)
+
+classes: 
+  vascular associated smooth muscle cell: "CL:0000359"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.6363636363636364, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "smooth muscle cell of the %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.36363636363636365, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A smooth muscle cell of the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('vascular associated smooth muscle cell' and ('part of' some %s))"
+  vars:
+    - v0

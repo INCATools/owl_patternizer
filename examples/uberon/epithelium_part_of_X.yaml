@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/uberon/epithelium_part_of_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [cervix epithelium](http://purl.obolibrary.org/obo/UBERON_0004801), [naris epithelium](http://purl.obolibrary.org/obo/UBERON_0035036), [nose epithelium](http://purl.obolibrary.org/obo/UBERON_0019306) (204 total)
+  Examples: [cervix epithelium](http://purl.obolibrary.org/obo/UBERON_0004801), [naris epithelium](http://purl.obolibrary.org/obo/UBERON_0035036), [nose epithelium](http://purl.obolibrary.org/obo/UBERON_0019306), [skin epithelium](http://purl.obolibrary.org/obo/UBERON_0019204), [exocrine pancreas epithelium](http://purl.obolibrary.org/obo/UBERON_0013697), [eye epithelium](http://purl.obolibrary.org/obo/UBERON_0015808), [sensory organ epithelium](http://purl.obolibrary.org/obo/UBERON_0019304), [epithelium of urethra](http://purl.obolibrary.org/obo/UBERON_0002325), [epithelial layer of duct](http://purl.obolibrary.org/obo/UBERON_0034969), [epithelium of large intestine](http://purl.obolibrary.org/obo/UBERON_0001278) (204 total)
 
 classes: 
   epithelium: "UBERON:0000483"

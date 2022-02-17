@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of anorectum
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_part_of_anorectum
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [T cell of anorectum](http://purl.obolibrary.org/obo/CL_0009051), [anorectum goblet cell](http://purl.obolibrary.org/obo/CL_0009057), [enteroendocrine cell of anorectum](http://purl.obolibrary.org/obo/CL_0009063), [smooth muscle cell of anorectum](http://purl.obolibrary.org/obo/CL_0009052), [anorectum macrophage](http://purl.obolibrary.org/obo/CL_0009048), [B cell of anorectum](http://purl.obolibrary.org/obo/CL_0009050), [paneth cell of anorectum](http://purl.obolibrary.org/obo/CL_0009055), [enterocyte of anorectum](http://purl.obolibrary.org/obo/CL_0009058), [microfold cell of epithelium proper of anorectum](http://purl.obolibrary.org/obo/CL_0009054), [intestinal crypt stem cell of anorectum](http://purl.obolibrary.org/obo/CL_0009061) (12 total)
+
+classes: 
+  independent continuant: "BFO:0000004"
+  native cell: "CL:0000003"
+  anorectum: "UBERON:8410050"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'independent continuant' or 'native cell'"
+
+name:
+  # Induced, frequency=0.6666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of anorectum"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5833333333333334, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is located in the anorectum."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "anorectum %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'anorectum'))"
+  vars:
+    - v0

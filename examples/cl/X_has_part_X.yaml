@@ -1,0 +1,52 @@
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has part X
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_has_part_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ciliated cell](http://purl.obolibrary.org/obo/CL_0000064), [ciliated epithelial cell](http://purl.obolibrary.org/obo/CL_0000067), [ciliated olfactory receptor neuron](http://purl.obolibrary.org/obo/CL_0000847), [immature basophil](http://purl.obolibrary.org/obo/CL_0000768), [band form basophil](http://purl.obolibrary.org/obo/CL_0000770), [immature eosinophil](http://purl.obolibrary.org/obo/CL_0000772), [band form eosinophil](http://purl.obolibrary.org/obo/CL_0000774), [immature neutrophil](http://purl.obolibrary.org/obo/CL_0000776), [immature NK T cell](http://purl.obolibrary.org/obo/CL_0000914), [group 3 innate lymphoid cell](http://purl.obolibrary.org/obo/CL_0001071) (10 total)
+
+classes: 
+  native cell: "CL:0000003"
+  banded nucleus: "CL:0017506"
+  alobate nucleus: "CL:0017509"
+  cilium: "GO:0005929"
+  nuclear receptor ROR-gamma isoform 2: "http://purl.obolibrary.org/obo/PR_000003455"
+  early growth response protein 2: "http://purl.obolibrary.org/obo/PR_000003469"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'native cell'"
+  v1: "'banded nucleus' or 'alobate nucleus' or 'cilium' or 'nuclear receptor ROR-gamma isoform 2' or 'early growth response protein 2'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has part %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An %s that express %s. These cells give rise to T cells expressing NK markers."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has part' some %s))"
+  vars:
+    - v0
+    - v1

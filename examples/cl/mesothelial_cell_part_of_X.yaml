@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: mesothelial cell part of X
+pattern_iri: http://purl.obolibrary.org/obo/cl/mesothelial_cell_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mesothelial cell of pleura](http://purl.obolibrary.org/obo/CL_1000491), [mesothelial cell of appendix](http://purl.obolibrary.org/obo/CL_0009029), [mesothelial cell of colon](http://purl.obolibrary.org/obo/CL_0009025), [mesothelial cell of visceral peritoneum](http://purl.obolibrary.org/obo/CL_1000457), [mesothelial cell of parietal peritoneum](http://purl.obolibrary.org/obo/CL_1000456), [mesothelial cell of anterior chamber of eye](http://purl.obolibrary.org/obo/CL_1000444), [mesothelial cell of small intestine](http://purl.obolibrary.org/obo/CL_0009024), [mesothelial cell of epicardium](http://purl.obolibrary.org/obo/CL_0011019), [mesothelial cell of peritoneum](http://purl.obolibrary.org/obo/CL_1000490), [mesothelial cell of dura mater](http://purl.obolibrary.org/obo/CL_1000298) (12 total)
+
+classes: 
+  mesothelial cell: "CL:0000077"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "mesothelial cell of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.9166666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A mesothelial cell that is part of the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s mesothelial cell"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('mesothelial cell' and ('part of' some %s))"
+  vars:
+    - v0

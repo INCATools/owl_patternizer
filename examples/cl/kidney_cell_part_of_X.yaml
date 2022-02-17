@@ -1,0 +1,44 @@
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: kidney cell part of X
+pattern_iri: http://purl.obolibrary.org/obo/cl/kidney_cell_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [kidney medulla cell](http://purl.obolibrary.org/obo/CL_1000504), [kidney pelvis cell](http://purl.obolibrary.org/obo/CL_1000505), [kidney cortical cell](http://purl.obolibrary.org/obo/CL_0002681), [kidney tubule cell](http://purl.obolibrary.org/obo/CL_1000507), [kidney collecting duct cell](http://purl.obolibrary.org/obo/CL_1001225), [kidney cortex collecting duct epithelial cell](http://purl.obolibrary.org/obo/CL_1000549), [kidney outer medulla collecting duct epithelial cell](http://purl.obolibrary.org/obo/CL_1000548), [kidney inner medulla collecting duct epithelial cell](http://purl.obolibrary.org/obo/CL_1000547), [kidney papillary duct principal epithelial cell](http://purl.obolibrary.org/obo/CL_1000550), [kidney medulla collecting duct epithelial cell](http://purl.obolibrary.org/obo/CL_1000546) (13 total)
+
+classes: 
+  kidney cell: "CL:1000497"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.46153846153846156, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s cell"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any kidney cell that part of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('kidney cell' and ('part of' some %s))"
+  vars:
+    - v0

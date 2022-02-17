@@ -1,0 +1,62 @@
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X lacks_plasma_membrane_part X
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_lacks_plasma_membrane_part_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [IgD-negative memory B cell](http://purl.obolibrary.org/obo/CL_0001053), [CD38-negative naive B cell](http://purl.obolibrary.org/obo/CL_0002102), [B-1b B cell](http://purl.obolibrary.org/obo/CL_0000821), [CD8alpha-negative thymic conventional dendritic cell](http://purl.obolibrary.org/obo/CL_0002460), [CD38-negative unswitched memory B cell](http://purl.obolibrary.org/obo/CL_0002111), [IgG-negative class switched memory B cell](http://purl.obolibrary.org/obo/CL_0002117), [IgG-negative double negative memory B cell](http://purl.obolibrary.org/obo/CL_0002104), [SIRPa-negative adipose dendritic cell](http://purl.obolibrary.org/obo/CL_0002464), [MHC-II-negative non-classical monocyte](http://purl.obolibrary.org/obo/CL_0002471), [IgD-negative CD38-positive IgG memory B cell](http://purl.obolibrary.org/obo/CL_0002107) (13 total)
+
+classes: 
+  CARO_0000006: "http://purl.obolibrary.org/obo/CARO_0000006"
+  mononuclear cell: "CL:0000842"
+  MHC class II protein complex: "GO:0042613"
+  IgG immunoglobulin complex: "GO:0071735"
+  IgD immunoglobulin complex: "GO:0071738"
+  T-cell surface glycoprotein CD8 alpha chain: "http://purl.obolibrary.org/obo/PR_000001084"
+  ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase 1: "http://purl.obolibrary.org/obo/PR_000001408"
+  T-cell surface glycoprotein CD5: "http://purl.obolibrary.org/obo/PR_000001839"
+  signal transducer CD24: "http://purl.obolibrary.org/obo/PR_000001932"
+  tyrosine-protein phosphatase non-receptor type substrate 1: "http://purl.obolibrary.org/obo/PR_000001968"
+
+
+relations: 
+  lacks_plasma_membrane_part: "http://purl.obolibrary.org/obo/cl#lacks_plasma_membrane_part"
+
+
+vars:
+  v0: "'CARO_0000006' or 'mononuclear cell'"
+  v1: "'MHC class II protein complex' or 'IgG immunoglobulin complex' or 'IgD immunoglobulin complex' or 'T-cell surface glycoprotein CD8 alpha chain' or 'ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase 1' or 'T-cell surface glycoprotein CD5' or 'signal transducer CD24' or 'tyrosine-protein phosphatase non-receptor type substrate 1'"
+
+name:
+  # Induced, frequency=0.3076923076923077, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s-negative %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that lacks_plasma_membrane_part a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s- %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('lacks_plasma_membrane_part' some %s))"
+  vars:
+    - v0
+    - v1

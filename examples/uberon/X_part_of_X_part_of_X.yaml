@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_X_part_of_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [insect adult head](http://purl.obolibrary.org/obo/UBERON_6003007), [hepatopancreatic ampulla](http://purl.obolibrary.org/obo/UBERON_0004913), [wall of anal canal](http://purl.obolibrary.org/obo/UBERON_0036362) (103 total)
+  Examples: [insect adult head](http://purl.obolibrary.org/obo/UBERON_6003007), [hepatopancreatic ampulla](http://purl.obolibrary.org/obo/UBERON_0004913), [wall of anal canal](http://purl.obolibrary.org/obo/UBERON_0036362), [epidermis of feather follicle](http://purl.obolibrary.org/obo/UBERON_0011807), [roof plate of midbrain](http://purl.obolibrary.org/obo/UBERON_0003299), [roof plate of telencephalon](http://purl.obolibrary.org/obo/UBERON_0003300), [roof plate of diencephalon](http://purl.obolibrary.org/obo/UBERON_0003301), [roof plate of metencephalon](http://purl.obolibrary.org/obo/UBERON_0003302), [roof plate of medulla oblongata](http://purl.obolibrary.org/obo/UBERON_0003303), [dermis of feather follicle](http://purl.obolibrary.org/obo/UBERON_0011806) (103 total)
 
 classes: 
   material entity: "BFO:0000040"

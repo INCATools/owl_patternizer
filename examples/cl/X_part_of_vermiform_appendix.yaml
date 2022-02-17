@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of vermiform appendix
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_part_of_vermiform_appendix
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [epithelial cell of appendix](http://purl.obolibrary.org/obo/CL_1000405), [mesothelial cell of appendix](http://purl.obolibrary.org/obo/CL_0009029), [T cell of appendix](http://purl.obolibrary.org/obo/CL_0009031), [appendix glandular cell](http://purl.obolibrary.org/obo/CL_1001585), [appendix goblet cell](http://purl.obolibrary.org/obo/CL_1000327), [appendix macrophage](http://purl.obolibrary.org/obo/CL_0009036), [B cell of appendix](http://purl.obolibrary.org/obo/CL_0009032), [dendritic cell of appendix](http://purl.obolibrary.org/obo/CL_0009034), [paneth cell of the appendix](http://purl.obolibrary.org/obo/CL_0002624), [enterocyte of appendix](http://purl.obolibrary.org/obo/CL_0009026) (14 total)
+
+classes: 
+  independent continuant: "BFO:0000004"
+  animal cell: "CL:0000548"
+  vermiform appendix: "UBERON:0001154"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'independent continuant' or 'animal cell'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of appendix"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.35714285714285715, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is located in a vermiform appendix."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of vermiform appendix"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'vermiform appendix'))"
+  vars:
+    - v0

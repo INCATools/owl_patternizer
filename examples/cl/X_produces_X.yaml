@@ -1,0 +1,48 @@
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X produces X
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_produces_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [antibody secreting cell](http://purl.obolibrary.org/obo/CL_0000946), [IgG plasma cell](http://purl.obolibrary.org/obo/CL_0000985), [IgE plasma cell](http://purl.obolibrary.org/obo/CL_0000947), [IgA plasma cell](http://purl.obolibrary.org/obo/CL_0000987), [IgM plasma cell](http://purl.obolibrary.org/obo/CL_0000986), [IgG short lived plasma cell](http://purl.obolibrary.org/obo/CL_0000977), [IgE short lived plasma cell](http://purl.obolibrary.org/obo/CL_0000951), [IgA short lived plasma cell](http://purl.obolibrary.org/obo/CL_0000976), [IgM short lived plasma cell](http://purl.obolibrary.org/obo/CL_0000978), [IgG plasmablast](http://purl.obolibrary.org/obo/CL_0000982) (14 total)
+
+classes: 
+  lymphocyte of B lineage: "CL:0000945"
+  immunoglobulin complex, circulating: "GO:0042571"
+
+
+relations: 
+  produces: "RO:0003000"
+
+
+vars:
+  v0: "'lymphocyte of B lineage'"
+  v1: "'immunoglobulin complex, circulating'"
+
+name:
+  # Could not induce name, using default
+  text: "%s produces %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that produces a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('produces' some %s))"
+  vars:
+    - v0
+    - v1

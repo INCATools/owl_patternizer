@@ -1,0 +1,45 @@
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: neuron has soma location X
+pattern_iri: http://purl.obolibrary.org/obo/cl/neuron_has_soma_location_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [peripheral nervous system neuron](http://purl.obolibrary.org/obo/CL_2000032), [spiral ganglion neuron](http://purl.obolibrary.org/obo/CL_0011113), [cerebral cortex neuron](http://purl.obolibrary.org/obo/CL_0010012), [central nervous system neuron](http://purl.obolibrary.org/obo/CL_2000029), [enteric neuron](http://purl.obolibrary.org/obo/CL_0007011), [cerebellar neuron](http://purl.obolibrary.org/obo/CL_1001611), [kidney nerve cell](http://purl.obolibrary.org/obo/CL_1000606), [lateral ventricle neuron](http://purl.obolibrary.org/obo/CL_1001582), [autonomic neuron](http://purl.obolibrary.org/obo/CL_0000107), [spinal cord medial motor column neuron](http://purl.obolibrary.org/obo/CL_2000024) (14 total)
+
+classes: 
+  independent continuant: "BFO:0000004"
+  neuron: "CL:0000540"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  has soma location: "RO:0002100"
+
+
+vars:
+  v0: "'independent continuant' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.7857142857142857, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s neuron"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2857142857142857, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any neuron that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('neuron' and ('has soma location' some %s))"
+  vars:
+    - v0

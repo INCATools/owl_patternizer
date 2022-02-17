@@ -1,0 +1,54 @@
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of X capable of X
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_part_of_X_capable_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [sensory receptor cell](http://purl.obolibrary.org/obo/CL_0000197), [primordial germ cell](http://purl.obolibrary.org/obo/CL_0000670), [cholangiocyte](http://purl.obolibrary.org/obo/CL_1000488), [pancreatic ductal cell](http://purl.obolibrary.org/obo/CL_0002079), [pancreatic centro-acinar cell](http://purl.obolibrary.org/obo/CL_0002080), [mucosal type mast cell](http://purl.obolibrary.org/obo/CL_0000485), [kidney granular cell](http://purl.obolibrary.org/obo/CL_0000648), [type B pancreatic cell](http://purl.obolibrary.org/obo/CL_0000169), [type II cell of adrenal medulla](http://purl.obolibrary.org/obo/CL_0002082), [type I cell of adrenal medulla](http://purl.obolibrary.org/obo/CL_0002083) (17 total)
+
+classes: 
+  process: "BFO:0000015"
+  cell: "CL:0000000"
+  anatomical structure: "UBERON:0000061"
+
+
+relations: 
+  part of: "BFO:0000050"
+  capable of: "RO:0002215"
+
+
+vars:
+  v0: "'cell'"
+  v1: "'anatomical structure'"
+  v2: "'process'"
+
+name:
+  # Could not induce name, using default
+  text: "%s part of %s capable of %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that part of a %s and capable of a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('part of' some %s) and ('capable of' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

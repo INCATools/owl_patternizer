@@ -1,0 +1,54 @@
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has characteristic X capable of X
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_has_characteristic_X_capable_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [single fate stem cell](http://purl.obolibrary.org/obo/CL_0000035), [male gamete](http://purl.obolibrary.org/obo/CL_0000408), [secondary spermatocyte](http://purl.obolibrary.org/obo/CL_0000657), [primary spermatocyte](http://purl.obolibrary.org/obo/CL_0000656), [basket cell](http://purl.obolibrary.org/obo/CL_0000118), [small basket cell](http://purl.obolibrary.org/obo/CL_4023090), [large basket cell](http://purl.obolibrary.org/obo/CL_4023088), [nest basket cell](http://purl.obolibrary.org/obo/CL_4023089), [Martinotti neuron](http://purl.obolibrary.org/obo/CL_4023076), [T Martinotti neuron](http://purl.obolibrary.org/obo/CL_4023086) (18 total)
+
+classes: 
+  native cell: "CL:0000003"
+  biological_process: "GO:0008150"
+  physical object quality: "PATO:0001241"
+
+
+relations: 
+  has characteristic: "RO:0000053"
+  capable of: "RO:0002215"
+
+
+vars:
+  v0: "'native cell'"
+  v1: "'physical object quality'"
+  v2: "'biological_process'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has characteristic %s capable of %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has characteristic a %s and capable of a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has characteristic' some %s) and ('capable of' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

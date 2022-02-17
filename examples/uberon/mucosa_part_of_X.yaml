@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/uberon/mucosa_part_of_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [cervical mucosa](http://purl.obolibrary.org/obo/UBERON_0012248), [mucosa of ureter](http://purl.obolibrary.org/obo/UBERON_0004980), [mucosa of urethra](http://purl.obolibrary.org/obo/UBERON_0012299) (96 total)
+  Examples: [cervical mucosa](http://purl.obolibrary.org/obo/UBERON_0012248), [mucosa of ureter](http://purl.obolibrary.org/obo/UBERON_0004980), [mucosa of urethra](http://purl.obolibrary.org/obo/UBERON_0012299), [mucosa of large intestine](http://purl.obolibrary.org/obo/UBERON_0001207), [mucosa of anal canal](http://purl.obolibrary.org/obo/UBERON_0003342), [intestinal mucosa](http://purl.obolibrary.org/obo/UBERON_0001242), [cloacal mucosa](http://purl.obolibrary.org/obo/UBERON_0012480), [mouth mucosa](http://purl.obolibrary.org/obo/UBERON_0003729), [mucosa of oral region](http://purl.obolibrary.org/obo/UBERON_0003343), [mucosa of epiglottis](http://purl.obolibrary.org/obo/UBERON_0004982) (96 total)
 
 classes: 
   mucosa: "UBERON:0000344"

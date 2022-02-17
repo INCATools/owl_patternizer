@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [submucosa of large intestine](http://purl.obolibrary.org/obo/UBERON_0001208), [submucosa of anal canal](http://purl.obolibrary.org/obo/UBERON_0003329), [intestinal submucosa](http://purl.obolibrary.org/obo/UBERON_0009566) (3637 total)
+  Examples: [submucosa of large intestine](http://purl.obolibrary.org/obo/UBERON_0001208), [submucosa of anal canal](http://purl.obolibrary.org/obo/UBERON_0003329), [intestinal submucosa](http://purl.obolibrary.org/obo/UBERON_0009566), [submucosa of cloaca](http://purl.obolibrary.org/obo/UBERON_0012482), [submucosa of stomach](http://purl.obolibrary.org/obo/UBERON_0001200), [respiratory system submucosa](http://purl.obolibrary.org/obo/UBERON_0004777), [submucosa of pharynx](http://purl.obolibrary.org/obo/UBERON_0004924), [submucosa of esophagus](http://purl.obolibrary.org/obo/UBERON_0001972), [submucosa of laryngopharynx](http://purl.obolibrary.org/obo/UBERON_0004925), [submucosa of rectum](http://purl.obolibrary.org/obo/UBERON_0003330) (3207 total)
 
 classes: 
   independent continuant: "BFO:0000004"
@@ -21,14 +21,14 @@ vars:
   v1: "'independent continuant'"
 
 name:
-  # Induced, frequency=0.2889744294748419, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.32772061116308077, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s %s"
   vars:
     - v1
     - v0
 
 def:
-  # Induced, frequency=0.16689579323618367, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.18927346429685063, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "A %s that is part of a %s."
   vars:
     - v0

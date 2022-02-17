@@ -70,7 +70,7 @@ ontology_config(so,       [min(8)]).
 ontology_config(mso,      [min(5), max_class_signature(6), generalize_properties(false)]).
 %ontology_config(chebi,    [min(3), remove_inexact_synonyms(true), infer_axioms(true), generalize_properties(false)]).
 ontology_config(chebi,    [min(4), remove_chemical_synonyms(true), mutate_chebi(true), infer_axioms(true), generalize_properties(false)]).
-ontology_config(uberon,   [min(6), generalize_properties(false), max_and_cardinality(3), ontology_prefix(uberon)]).
+ontology_config(uberon,   [min(6), generalize_properties(false), max_and_cardinality(3), ontology_prefix('UBERON')]).
 ontology_config(cl,       [min(10), ontology_prefix('CL')]).
 ontology_config(nif_cell, [min(10), imports([uberon]), infer_axioms(true), base('http://ontology.neuinfo.org/NIF/ttl/NIF-Cell.ttl'), ontology_prefix(nifext)]).
 ontology_config(nif,      [min(20), base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),  ontology_prefix(nifext)]).

@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/uberon/zone_of_skin_part_of_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [skin of forelimb wing](http://purl.obolibrary.org/obo/UBERON_0010855), [skin of head](http://purl.obolibrary.org/obo/UBERON_0001084), [upper leg skin](http://purl.obolibrary.org/obo/UBERON_0004262) (60 total)
+  Examples: [skin of forelimb wing](http://purl.obolibrary.org/obo/UBERON_0010855), [skin of head](http://purl.obolibrary.org/obo/UBERON_0001084), [upper leg skin](http://purl.obolibrary.org/obo/UBERON_0004262), [skin of scalp](http://purl.obolibrary.org/obo/UBERON_8300000), [skin of thorax](http://purl.obolibrary.org/obo/UBERON_0001418), [skin of abdomen](http://purl.obolibrary.org/obo/UBERON_0001416), [skin of neck](http://purl.obolibrary.org/obo/UBERON_0001417), [skin of leg](http://purl.obolibrary.org/obo/UBERON_0001511), [skin of penis](http://purl.obolibrary.org/obo/UBERON_0001331), [skin of back](http://purl.obolibrary.org/obo/UBERON_0001068) (60 total)
 
 classes: 
   zone of skin: "UBERON:0000014"

@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: stromal cell part of X
+pattern_iri: http://purl.obolibrary.org/obo/cl/stromal_cell_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [stromal cell of ovary](http://purl.obolibrary.org/obo/CL_0002132), [stromal cell of lamina propria of small intestine](http://purl.obolibrary.org/obo/CL_0009022), [stromal cell of pancreas](http://purl.obolibrary.org/obo/CL_0002574), [stromal cell of endometrium](http://purl.obolibrary.org/obo/CL_0002255), [type B synovial cell](http://purl.obolibrary.org/obo/CL_0002301), [prostate stromal cell](http://purl.obolibrary.org/obo/CL_0002622), [stromal cell of bone marrow](http://purl.obolibrary.org/obo/CL_0010001), [stromal cell of lamina propria of colon](http://purl.obolibrary.org/obo/CL_0009040), [stromal cell of lamina propria of large intestine](http://purl.obolibrary.org/obo/CL_0009021), [stromal cell of ovarian medulla](http://purl.obolibrary.org/obo/CL_0002134) (10 total)
+
+classes: 
+  stromal cell: "CL:0000499"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.7, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "stromal cell of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A stromal cell of the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s stromal cell"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('stromal cell' and ('part of' some %s))"
+  vars:
+    - v0

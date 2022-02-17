@@ -1,0 +1,46 @@
+# options: [min(10),dir('examples/cl'),trim(true),base('http://purl.obolibrary.org/obo/cl'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has_low_plasma_membrane_amount MHC class II protein complex has_low_plasma_membrane_amount CD86 molecule has_low_plasma_membrane_amount CD80 molecule
+pattern_iri: http://purl.obolibrary.org/obo/cl/X_has_low_plasma_membrane_amount_MHC_class_II_protein_complex_has_low_plasma_membrane_amount_CD86_molecule_has_low_plasma_membrane_amount_CD80_molecule
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [immature conventional dendritic cell](http://purl.obolibrary.org/obo/CL_0000840), [immature CD8_alpha-negative CD11b-negative dendritic cell](http://purl.obolibrary.org/obo/CL_0001001), [immature CD8_alpha-negative CD11b-positive dendritic cell](http://purl.obolibrary.org/obo/CL_0000997), [immature CD8_alpha-positive CD11b-negative dendritic cell](http://purl.obolibrary.org/obo/CL_0001004), [immature dermal dendritic cell](http://purl.obolibrary.org/obo/CL_0001009), [immature interstitial dendritic cell](http://purl.obolibrary.org/obo/CL_0001011), [immature CD1a-positive Langerhans cell](http://purl.obolibrary.org/obo/CL_0001016), [immature CD8_alpha-low Langerhans cell](http://purl.obolibrary.org/obo/CL_0001018), [immature CD14-positive dermal dendritic cell](http://purl.obolibrary.org/obo/CL_0002527), [immature CD1a-positive dermal dendritic cell](http://purl.obolibrary.org/obo/CL_0002530) (11 total)
+
+classes: 
+  conventional dendritic cell: "CL:0000990"
+  MHC class II protein complex: "GO:0042613"
+  CD86 molecule: "http://purl.obolibrary.org/obo/PR_000001412"
+  CD80 molecule: "http://purl.obolibrary.org/obo/PR_000001438"
+
+
+relations: 
+  has_low_plasma_membrane_amount: "http://purl.obolibrary.org/obo/cl#has_low_plasma_membrane_amount"
+
+
+vars:
+  v0: "'conventional dendritic cell'"
+
+name:
+  # Induced, frequency=0.9090909090909091, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "immature %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2727272727272727, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An immature %s is CD80-low, CD86-low, and MHCII-low."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has_low_plasma_membrane_amount' some 'MHC class II protein complex') and ('has_low_plasma_membrane_amount' some 'CD86 molecule') and ('has_low_plasma_membrane_amount' some 'CD80 molecule'))"
+  vars:
+    - v0

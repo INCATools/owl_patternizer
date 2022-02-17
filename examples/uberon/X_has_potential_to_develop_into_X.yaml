@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/uberon/X_has_potential_to_develop_in
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [future central tendon](http://purl.obolibrary.org/obo/UBERON_0006239), [future pterygopalatine ganglion](http://purl.obolibrary.org/obo/UBERON_0010128), [ureter ureteric bud](http://purl.obolibrary.org/obo/UBERON_0005081) (123 total)
+  Examples: [future central tendon](http://purl.obolibrary.org/obo/UBERON_0006239), [future pterygopalatine ganglion](http://purl.obolibrary.org/obo/UBERON_0010128), [ureter ureteric bud](http://purl.obolibrary.org/obo/UBERON_0005081), [metanephric ureteric bud](http://purl.obolibrary.org/obo/UBERON_0005080), [future coelemic cavity lumen](http://purl.obolibrary.org/obo/UBERON_0003886), [pronephric mesoderm](http://purl.obolibrary.org/obo/UBERON_0005721), [eye primordium](http://purl.obolibrary.org/obo/UBERON_0003071), [tetrapod frontal bone primordium](http://purl.obolibrary.org/obo/UBERON_0006236), [tetrapod parietal bone primordium](http://purl.obolibrary.org/obo/UBERON_0006274), [stomach primordium](http://purl.obolibrary.org/obo/UBERON_0012172) (123 total)
 
 classes: 
   anatomical entity: "UBERON:0001062"
