@@ -1,0 +1,46 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X-or-X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_or_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [epithelium](http://purl.obolibrary.org/obo/UBERON_0000483), [glans](http://purl.obolibrary.org/obo/UBERON_0035651), [manual digit 1 or 5](http://purl.obolibrary.org/obo/UBERON_0019231), [tongue muscle](http://purl.obolibrary.org/obo/UBERON_0000378), [brain ventricle/choroid plexus](http://purl.obolibrary.org/obo/UBERON_0003947), [ganglion of ciliary nerve](http://purl.obolibrary.org/obo/UBERON_0035783), [skeletal joint](http://purl.obolibrary.org/obo/UBERON_0000982), [trunk or cervical vertebra](http://purl.obolibrary.org/obo/UBERON_0004451), [nephric duct](http://purl.obolibrary.org/obo/UBERON_0009201), [pedal digit 1 or 5](http://purl.obolibrary.org/obo/UBERON_0019241) (25 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: []
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+  v1: "'material entity' or 'anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s/%s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "%s or %s"
+  vars:
+    - v0
+    - v1

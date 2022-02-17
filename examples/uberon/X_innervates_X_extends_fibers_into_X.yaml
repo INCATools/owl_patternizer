@@ -1,0 +1,55 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X innervates X extends_fibers_into X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_innervates_X_extends_fibers_into_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [facial nerve](http://purl.obolibrary.org/obo/UBERON_0001647), [vomeronasal nerve](http://purl.obolibrary.org/obo/UBERON_0009121), [otic ganglion](http://purl.obolibrary.org/obo/UBERON_0003963), [hypoglossal nerve](http://purl.obolibrary.org/obo/UBERON_0001650), [abducens nerve](http://purl.obolibrary.org/obo/UBERON_0001646), [vestibulocochlear nerve](http://purl.obolibrary.org/obo/UBERON_0001648), [olfactory nerve](http://purl.obolibrary.org/obo/UBERON_0001579), [trochlear nerve](http://purl.obolibrary.org/obo/UBERON_0001644), [cranial nerve II](http://purl.obolibrary.org/obo/UBERON_0000941), [superior mesenteric plexus](http://purl.obolibrary.org/obo/UBERON_0005488) (10 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  anatomical entity: "UBERON:0001062"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  innervates: "RO:0002134"
+  extends_fibers_into: "http://purl.obolibrary.org/obo/uberon/core#extends_fibers_into"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity' or 'anatomical entity'"
+  v1: "'anatomical entity' or 'multicellular anatomical structure'"
+  v2: "'material entity' or 'anatomical entity' or 'anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s innervates %s extends_fibers_into %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Induced, frequency=0.1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s carrying fibers from the %s to the %s."
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('innervates' some %s) and ('extends_fibers_into' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

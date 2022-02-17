@@ -1,0 +1,54 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has quality X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_has_quality_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [down feather](http://purl.obolibrary.org/obo/UBERON_0008291), [wing](http://purl.obolibrary.org/obo/UBERON_0000023), [vestigial structure](http://purl.obolibrary.org/obo/UBERON_0005160), [sac](http://purl.obolibrary.org/obo/UBERON_0009856), [multicellular anatomical structure](http://purl.obolibrary.org/obo/UBERON_0010000), [bodily gas](http://purl.obolibrary.org/obo/UBERON_0034873), [bodily fluid](http://purl.obolibrary.org/obo/UBERON_0006314), [enclosed anatomical space](http://purl.obolibrary.org/obo/UBERON_0012467), [open anatomical space](http://purl.obolibrary.org/obo/UBERON_0010064), [lamina](http://purl.obolibrary.org/obo/UBERON_0000957) (20 total)
+
+classes: 
+  physical object quality: "PATO:0001241"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  has quality: "RO:0000086"
+
+
+vars:
+  v0: "'anatomical entity'"
+  v1: "'physical object quality'"
+
+name:
+  # Induced, frequency=0.2, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has quality a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('has quality' some %s))"
+  vars:
+    - v0
+    - v1

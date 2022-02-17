@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of kidney
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_kidney
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [renal duct](http://purl.obolibrary.org/obo/UBERON_0006553), [renal parenchyma](http://purl.obolibrary.org/obo/UBERON_0008987), [kidney epithelium](http://purl.obolibrary.org/obo/UBERON_0004819), [renal medulla](http://purl.obolibrary.org/obo/UBERON_0000362), [cortex of kidney](http://purl.obolibrary.org/obo/UBERON_0001225), [kidney blood vessel](http://purl.obolibrary.org/obo/UBERON_0003517), [kidney capillary](http://purl.obolibrary.org/obo/UBERON_0003527), [kidney vasculature](http://purl.obolibrary.org/obo/UBERON_0006544), [kidney arterial blood vessel](http://purl.obolibrary.org/obo/UBERON_0003644), [renal fat pad](http://purl.obolibrary.org/obo/UBERON_0014464) (16 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "UBERON:0001062"
+  kidney: "UBERON:0002113"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.375, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "kidney %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.125, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a kidney [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of kidney"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'kidney'))"
+  vars:
+    - v0

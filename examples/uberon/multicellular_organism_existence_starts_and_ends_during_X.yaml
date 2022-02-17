@@ -1,0 +1,44 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: multicellular organism existence starts and ends during X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/multicellular_organism_existence_starts_and_ends_during_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [larva](http://purl.obolibrary.org/obo/UBERON_0002548), [pupa](http://purl.obolibrary.org/obo/UBERON_0003143), [blastula](http://purl.obolibrary.org/obo/UBERON_0000307), [gastrula](http://purl.obolibrary.org/obo/UBERON_0004734), [neurula embryo](http://purl.obolibrary.org/obo/UBERON_0004455), [nematode larva](http://purl.obolibrary.org/obo/UBERON_0009850), [2-cell stage embryo](http://purl.obolibrary.org/obo/UBERON_0019249), [4-cell stage embryo](http://purl.obolibrary.org/obo/UBERON_0019251), [8-cell stage embryo](http://purl.obolibrary.org/obo/UBERON_0019252), [echinopluteus larva](http://purl.obolibrary.org/obo/UBERON_0008265) (11 total)
+
+classes: 
+  life cycle stage: "UBERON:0000105"
+  multicellular organism: "UBERON:0000468"
+
+
+relations: 
+  existence starts and ends during: "RO:0002491"
+
+
+vars:
+  v0: "'life cycle stage'"
+
+name:
+  # Induced, frequency=0.2727272727272727, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s embryo"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any multicellular organism that existence starts and ends during a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('multicellular organism' and ('existence starts and ends during' some %s))"
+  vars:
+    - v0

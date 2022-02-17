@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of duodenum
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_duodenum
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [submucosa of duodenum](http://purl.obolibrary.org/obo/UBERON_0003332), [duodenum lamina propria](http://purl.obolibrary.org/obo/UBERON_0015834), [serosa of duodenum](http://purl.obolibrary.org/obo/UBERON_0003336), [duodenal mucosa](http://purl.obolibrary.org/obo/UBERON_0000320), [lumen of duodenum](http://purl.obolibrary.org/obo/UBERON_0016512), [duodenal epithelium](http://purl.obolibrary.org/obo/UBERON_0008346), [intestinal villus of duodenum](http://purl.obolibrary.org/obo/UBERON_0008342), [crypt of Lieberkuhn of duodenum](http://purl.obolibrary.org/obo/UBERON_0013482), [mesentery of duodenum](http://purl.obolibrary.org/obo/UBERON_0003397), [muscle layer of duodenum](http://purl.obolibrary.org/obo/UBERON_0012488) (12 total)
+
+classes: 
+  anatomical entity: "UBERON:0001062"
+  duodenum: "UBERON:0002114"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.5833333333333334, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of duodenum"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3333333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a duodenum [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "duodenal %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'duodenum'))"
+  vars:
+    - v0

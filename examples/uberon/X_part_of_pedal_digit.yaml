@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of pedal digit
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_pedal_digit
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [pedal digit skin](http://purl.obolibrary.org/obo/UBERON_0003530), [pedal digit epithelium](http://purl.obolibrary.org/obo/UBERON_0005226), [pedal digit nerve](http://purl.obolibrary.org/obo/UBERON_0003435), [pedal digit bone](http://purl.obolibrary.org/obo/UBERON_0004248), [nail of pedal digit](http://purl.obolibrary.org/obo/UBERON_0009567), [pedal digit blood vessel](http://purl.obolibrary.org/obo/UBERON_0003508), [pedal digit connective tissue](http://purl.obolibrary.org/obo/UBERON_0003578), [pedal digit mesenchyme](http://purl.obolibrary.org/obo/UBERON_0005255), [distal phalanx of pes](http://purl.obolibrary.org/obo/UBERON_0003867), [middle phalanx of pes](http://purl.obolibrary.org/obo/UBERON_0003866) (17 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "UBERON:0001062"
+  pedal digit: "UBERON:0001466"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.47058823529411764, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "pedal digit %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.29411764705882354, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a toe [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of toe"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'pedal digit'))"
+  vars:
+    - v0

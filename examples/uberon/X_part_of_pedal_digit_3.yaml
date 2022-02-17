@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of pedal digit 3
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_pedal_digit_3
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [pedal digit 3 epithelium](http://purl.obolibrary.org/obo/UBERON_0005650), [nail of pedal digit 3](http://purl.obolibrary.org/obo/UBERON_0011280), [pedal digit 3 mesenchyme](http://purl.obolibrary.org/obo/UBERON_0005697), [pedal digit 3 phalanx](http://purl.obolibrary.org/obo/UBERON_0003642), [distal phalanx of pedal digit 3](http://purl.obolibrary.org/obo/UBERON_0004317), [middle phalanx of pedal digit 3](http://purl.obolibrary.org/obo/UBERON_0004325), [proximal phalanx of pedal digit 3](http://purl.obolibrary.org/obo/UBERON_0004334), [interphalangeal joint of pedal digit 3](http://purl.obolibrary.org/obo/UBERON_0007726), [distal interphalangeal joint of pedal digit 3](http://purl.obolibrary.org/obo/UBERON_0014507), [pedal digit 3 phalanx endochondral element](http://purl.obolibrary.org/obo/UBERON_0015033) (10 total)
+
+classes: 
+  pedal digit 3: "UBERON:0003633"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of pedal digit 3"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a foot digit 3 [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of third toe"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'pedal digit 3'))"
+  vars:
+    - v0

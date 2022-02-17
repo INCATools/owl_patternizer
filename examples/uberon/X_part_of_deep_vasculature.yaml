@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of deep vasculature
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_deep_vasculature
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [deep lymph node](http://purl.obolibrary.org/obo/UBERON_0015918), [deep lymphatic vessel](http://purl.obolibrary.org/obo/UBERON_0035545), [deep temporal artery](http://purl.obolibrary.org/obo/UBERON_0035041), [deep vein](http://purl.obolibrary.org/obo/UBERON_0035552), [deep temporal vein](http://purl.obolibrary.org/obo/UBERON_0001661), [deep circumflex iliac artery](http://purl.obolibrary.org/obo/UBERON_0009040), [deep auricular artery](http://purl.obolibrary.org/obo/UBERON_0014695), [deep cervical artery](http://purl.obolibrary.org/obo/UBERON_0012321), [deep external pudendal artery](http://purl.obolibrary.org/obo/UBERON_0007316), [deep external pudendal vein](http://purl.obolibrary.org/obo/UBERON_0009048) (10 total)
+
+classes: 
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  multicellular anatomical structure: "UBERON:0010000"
+  deep vasculature: "UBERON:0035551"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity' or 'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.9, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "deep %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is located deeper within the organism, further from the surface."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "deep %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'deep vasculature'))"
+  vars:
+    - v0

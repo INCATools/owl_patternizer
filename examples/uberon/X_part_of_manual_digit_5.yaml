@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of manual digit 5
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_manual_digit_5
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [manual digit 5 epithelium](http://purl.obolibrary.org/obo/UBERON_0005648), [nail of manual digit 5](http://purl.obolibrary.org/obo/UBERON_0011277), [manual digit 5 mesenchyme](http://purl.obolibrary.org/obo/UBERON_0005695), [manual digit 5 phalanx](http://purl.obolibrary.org/obo/UBERON_0003639), [distal phalanx of manual digit 5](http://purl.obolibrary.org/obo/UBERON_0004314), [middle phalanx of manual digit 5](http://purl.obolibrary.org/obo/UBERON_0004323), [proximal phalanx of manual digit 5](http://purl.obolibrary.org/obo/UBERON_0004331), [interphalangeal joint of manual digit 5](http://purl.obolibrary.org/obo/UBERON_0007732), [proximal interphalangeal joint of little finger](http://purl.obolibrary.org/obo/UBERON_0016426), [distal interphalangeal joint of manural digit 5](http://purl.obolibrary.org/obo/UBERON_0014671) (11 total)
+
+classes: 
+  manual digit 5: "UBERON:0003625"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.36363636363636365, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of manual digit 5"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.36363636363636365, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a hand digit 5 [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of fifth finger"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'manual digit 5'))"
+  vars:
+    - v0

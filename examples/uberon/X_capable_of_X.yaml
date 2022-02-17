@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X capable of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_capable_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [chemosensory organ](http://purl.obolibrary.org/obo/UBERON_0000005), [olfactory organ](http://purl.obolibrary.org/obo/UBERON_0002268), [reproductive organ](http://purl.obolibrary.org/obo/UBERON_0003133), [respiration organ](http://purl.obolibrary.org/obo/UBERON_0000171), [sense organ](http://purl.obolibrary.org/obo/UBERON_0000020), [electroreceptor organ](http://purl.obolibrary.org/obo/UBERON_0010521), [respiratory system](http://purl.obolibrary.org/obo/UBERON_0001004), [renal system](http://purl.obolibrary.org/obo/UBERON_0001008), [digestive system](http://purl.obolibrary.org/obo/UBERON_0001007), [endocrine system](http://purl.obolibrary.org/obo/UBERON_0000949) (32 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  biological_process: "GO:0008150"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  capable of: "RO:0002215"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+  v1: "'biological_process'"
+
+name:
+  # Could not induce name, using default
+  text: "%s capable of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that capable of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('capable of' some %s))"
+  vars:
+    - v0
+    - v1

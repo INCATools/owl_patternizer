@@ -1,0 +1,55 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of post-anal tail
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_post_anal_tail
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [tail skin](http://purl.obolibrary.org/obo/UBERON_0003534), [tail intervertebral disc](http://purl.obolibrary.org/obo/UBERON_0003449), [bone of tail](http://purl.obolibrary.org/obo/UBERON_0006068), [tail vein](http://purl.obolibrary.org/obo/UBERON_0003481), [tail blood vessel](http://purl.obolibrary.org/obo/UBERON_0003524), [tail vasculature](http://purl.obolibrary.org/obo/UBERON_0010204), [tail connective tissue](http://purl.obolibrary.org/obo/UBERON_0003599), [tail fat pad](http://purl.obolibrary.org/obo/UBERON_0018132), [fascia of tail](http://purl.obolibrary.org/obo/UBERON_0035096), [tail external integument structure](http://purl.obolibrary.org/obo/UBERON_3000982) (10 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "UBERON:0001062"
+  post-anal tail: "UBERON:0007812"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.8, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "tail %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.4, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a tail [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of tail"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "tail %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'post-anal tail'))"
+  vars:
+    - v0

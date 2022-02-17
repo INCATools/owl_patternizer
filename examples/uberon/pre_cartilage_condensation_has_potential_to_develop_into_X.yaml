@@ -1,0 +1,44 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: pre-cartilage condensation has potential to develop into X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/pre_cartilage_condensation_has_potential_to_develop_into_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [tibia pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0010850), [clavicle pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0010844), [radius pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0010846), [ulna pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0010847), [carpus pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0006214), [fibula pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0010852), [tarsus pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0010540), [patella pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0012081), [supraoccipital pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0011163), [tibiotarsus pre-cartilage condensation](http://purl.obolibrary.org/obo/UBERON_0010903) (11 total)
+
+classes: 
+  bone element: "UBERON:0001474"
+  pre-cartilage condensation: "UBERON:0005866"
+
+
+relations: 
+  has potential to develop into: "RO:0002387"
+
+
+vars:
+  v0: "'bone element'"
+
+name:
+  # Induced, frequency=0.8181818181818182, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s pre-cartilage condensation"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A pre-cartilage condensation that has the potential to develop into a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('pre-cartilage condensation' and ('has potential to develop into' some %s))"
+  vars:
+    - v0

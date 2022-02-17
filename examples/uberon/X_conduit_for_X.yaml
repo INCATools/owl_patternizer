@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X conduit for X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_conduit_for_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [hypoglossal canal](http://purl.obolibrary.org/obo/UBERON_0006682), [vidian canal](http://purl.obolibrary.org/obo/UBERON_0018373), [ilioischiadic foramen](http://purl.obolibrary.org/obo/UBERON_0018326), [optic foramen](http://purl.obolibrary.org/obo/UBERON_0005745), [carotid canal](http://purl.obolibrary.org/obo/UBERON_0006668), [facial nerve canal](http://purl.obolibrary.org/obo/UBERON_0018413), [foramen for glossopharyngeal nerve](http://purl.obolibrary.org/obo/UBERON_0018321), [foramen magnum](http://purl.obolibrary.org/obo/UBERON_0003687), [mental foramen](http://purl.obolibrary.org/obo/UBERON_0006812), [vestibular aqueduct](http://purl.obolibrary.org/obo/UBERON_0002279) (10 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  anatomical entity: "UBERON:0001062"
+  anatomical conduit: "UBERON:0004111"
+
+
+relations: 
+  conduit for: "http://purl.obolibrary.org/obo/uberon/core#conduit_for"
+
+
+vars:
+  v0: "'anatomical conduit'"
+  v1: "'material entity' or 'anatomical entity' or 'anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s conduit for %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Situated just caudal to the acetabulum, the %s is bound dorsally by the illium and ventrally by the ischium. The foramen transmitts the %ss and vessels (Baumel et al. 1993)."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('conduit for' some %s))"
+  vars:
+    - v0
+    - v1

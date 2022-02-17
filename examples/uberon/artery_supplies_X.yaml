@@ -1,0 +1,54 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: artery supplies X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/artery_supplies_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [hypophysial artery](http://purl.obolibrary.org/obo/UBERON_0035403), [lymph node artery](http://purl.obolibrary.org/obo/UBERON_8410034), [ureteric segment of renal artery](http://purl.obolibrary.org/obo/UBERON_0003468), [mesenteric artery](http://purl.obolibrary.org/obo/UBERON_0005616), [testicular artery](http://purl.obolibrary.org/obo/UBERON_0001187), [ovarian artery](http://purl.obolibrary.org/obo/UBERON_0001190), [deferent duct artery](http://purl.obolibrary.org/obo/UBERON_0005192), [vitelline artery](http://purl.obolibrary.org/obo/UBERON_0006002), [esophageal artery](http://purl.obolibrary.org/obo/UBERON_0035539), [rectal artery](http://purl.obolibrary.org/obo/UBERON_0035039) (45 total)
+
+classes: 
+  anatomical structure: "UBERON:0000061"
+  artery: "UBERON:0001637"
+
+
+relations: 
+  supplies: "RO:0002178"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.5111111111111111, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s artery"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.08888888888888889, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An artery that supplies the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "artery of %s"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "arteria %sis"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('artery' and ('supplies' some %s))"
+  vars:
+    - v0

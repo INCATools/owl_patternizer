@@ -1,0 +1,48 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: cranial suture connects X connects X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/cranial_suture_connects_X_connects_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [coronal suture](http://purl.obolibrary.org/obo/UBERON_0002489), [sphenofrontal suture](http://purl.obolibrary.org/obo/UBERON_0010156), [frontomaxillary suture](http://purl.obolibrary.org/obo/UBERON_0035879), [sphenoparietal suture](http://purl.obolibrary.org/obo/UBERON_0010157), [squamoparietal suture](http://purl.obolibrary.org/obo/UBERON_0003954), [sphenozygomatic suture](http://purl.obolibrary.org/obo/UBERON_0010158), [ethmoidomaxillary suture](http://purl.obolibrary.org/obo/UBERON_0035881), [lacrimomaxillary suture](http://purl.obolibrary.org/obo/UBERON_0035883), [nasomaxillary suture](http://purl.obolibrary.org/obo/UBERON_0011871), [zygomaticomaxillary suture](http://purl.obolibrary.org/obo/UBERON_0035880) (13 total)
+
+classes: 
+  anatomical structure: "UBERON:0000061"
+  cranial suture: "UBERON:0003685"
+
+
+relations: 
+  connects: "RO:0002176"
+
+
+vars:
+  v0: "'anatomical structure'"
+  v1: "'anatomical structure'"
+
+name:
+  # Could not induce name, using default
+  text: "cranial suture connects %s connects %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.15384615384615385, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A suture between the %s and the %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('cranial suture' and ('connects' some %s) and ('connects' some %s))"
+  vars:
+    - v0
+    - v1

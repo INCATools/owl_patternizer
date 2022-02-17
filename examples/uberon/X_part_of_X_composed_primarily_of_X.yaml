@@ -1,0 +1,60 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of X composed primarily of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_X_composed_primarily_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [incisor region of dentition](http://purl.obolibrary.org/obo/UBERON_0018645), [biliary tree](http://purl.obolibrary.org/obo/UBERON_0001173), [granulosa cell layer](http://purl.obolibrary.org/obo/UBERON_0005170), [theca cell layer](http://purl.obolibrary.org/obo/UBERON_0000155), [calcified structure of brain](http://purl.obolibrary.org/obo/UBERON_0017631), [nuchal plate series](http://purl.obolibrary.org/obo/UBERON_2002063), [lateral line scale series](http://purl.obolibrary.org/obo/UBERON_2002099), [branchiostegal ray series](http://purl.obolibrary.org/obo/UBERON_2002101), [gill raker row](http://purl.obolibrary.org/obo/UBERON_2001994), [photoreceptor array](http://purl.obolibrary.org/obo/UBERON_0005388) (17 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  part of: "BFO:0000050"
+  composed primarily of: "RO:0002473"
+
+
+vars:
+  v0: "'anatomical entity'"
+  v1: "'material entity' or 'anatomical entity'"
+  v2: "'material entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s part of %s composed primarily of %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Induced, frequency=0.11764705882352941, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s of the %s that consists of %ss."
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s of %s"
+    vars:
+      - v2
+      - v0
+      - v1
+
+
+equivalentTo:
+  text: "(%s and ('part of' some %s) and ('composed primarily of' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

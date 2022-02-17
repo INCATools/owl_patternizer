@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of heart left ventricle
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_heart_left_ventricle
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [endocardium of left ventricle](http://purl.obolibrary.org/obo/UBERON_0009713), [left ventricle myocardium](http://purl.obolibrary.org/obo/UBERON_0006566), [cardiac muscle of left ventricle](http://purl.obolibrary.org/obo/UBERON_0003382), [papillary muscle of left ventricle](http://purl.obolibrary.org/obo/UBERON_0004524), [trabecula carnea of left ventricle](http://purl.obolibrary.org/obo/UBERON_0006571), [cardiac muscle tissue of trabecula carnea of left ventricle](http://purl.obolibrary.org/obo/UBERON_0004526), [left ventricular trabecular myocardium](http://purl.obolibrary.org/obo/UBERON_0005064), [left ventricular compact myocardium](http://purl.obolibrary.org/obo/UBERON_0005063), [wall of left ventricle](http://purl.obolibrary.org/obo/UBERON_0036285), [outflow part of left ventricle](http://purl.obolibrary.org/obo/UBERON_0005956) (13 total)
+
+classes: 
+  heart left ventricle: "UBERON:0002084"
+  mesoderm-derived structure: "UBERON:0004120"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'mesoderm-derived structure' or 'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.3076923076923077, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of left ventricle"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.15384615384615385, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A portion of %s that is part of a left ventricle [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "left %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'heart left ventricle'))"
+  vars:
+    - v0

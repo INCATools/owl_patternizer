@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: vein drains X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/vein_drains_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [lymph node vein](http://purl.obolibrary.org/obo/UBERON_8410033), [superior vesical vein](http://purl.obolibrary.org/obo/UBERON_0006355), [mesenteric vein](http://purl.obolibrary.org/obo/UBERON_0005617), [testicular vein](http://purl.obolibrary.org/obo/UBERON_0001144), [dorsal metatarsal vein](http://purl.obolibrary.org/obo/UBERON_0001549), [ovarian vein](http://purl.obolibrary.org/obo/UBERON_0001145), [vulval vein](http://purl.obolibrary.org/obo/UBERON_0036267), [respiratory system venous blood vessel](http://purl.obolibrary.org/obo/UBERON_0003476), [vitelline vein](http://purl.obolibrary.org/obo/UBERON_0005487), [phrenic vein](http://purl.obolibrary.org/obo/UBERON_0012193) (43 total)
+
+classes: 
+  anatomical structure: "UBERON:0000061"
+  vein: "UBERON:0001638"
+
+
+relations: 
+  drains: "RO:0002179"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.5813953488372093, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s vein"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.11627906976744186, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A vein that drains the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s vein"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('vein' and ('drains' some %s))"
+  vars:
+    - v0

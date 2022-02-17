@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of large intestine
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_large_intestine
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [submucosa of large intestine](http://purl.obolibrary.org/obo/UBERON_0001208), [lamina propria of large intestine](http://purl.obolibrary.org/obo/UBERON_0011189), [serosa of large intestine](http://purl.obolibrary.org/obo/UBERON_0001209), [wall of large intestine](http://purl.obolibrary.org/obo/UBERON_0001169), [mucosa of large intestine](http://purl.obolibrary.org/obo/UBERON_0001207), [epithelium of large intestine](http://purl.obolibrary.org/obo/UBERON_0001278), [large intestine smooth muscle](http://purl.obolibrary.org/obo/UBERON_0004220), [large intestine Peyer's patch](http://purl.obolibrary.org/obo/UBERON_0003453), [crypt of Lieberkuhn of large intestine](http://purl.obolibrary.org/obo/UBERON_0001984), [muscle layer of large intestine](http://purl.obolibrary.org/obo/UBERON_0011198) (13 total)
+
+classes: 
+  large intestine: "UBERON:0000059"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.7692307692307693, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of large intestine"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.38461538461538464, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a large intestine."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "large intestine %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'large intestine'))"
+  vars:
+    - v0

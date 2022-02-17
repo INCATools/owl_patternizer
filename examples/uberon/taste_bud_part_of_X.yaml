@@ -1,0 +1,44 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: taste bud part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/taste_bud_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [esophageal taste bud](http://purl.obolibrary.org/obo/UBERON_0034724), [head taste bud](http://purl.obolibrary.org/obo/UBERON_0034720), [trunk taste bud](http://purl.obolibrary.org/obo/UBERON_0034726), [tongue taste bud](http://purl.obolibrary.org/obo/UBERON_0014451), [palatal taste bud](http://purl.obolibrary.org/obo/UBERON_0034670), [lip taste bud](http://purl.obolibrary.org/obo/UBERON_0034719), [integumental taste bud](http://purl.obolibrary.org/obo/UBERON_0034717), [pharyngeal taste bud](http://purl.obolibrary.org/obo/UBERON_0034721), [mouth roof taste bud](http://purl.obolibrary.org/obo/UBERON_0034722), [fin taste bud](http://purl.obolibrary.org/obo/UBERON_0034723) (11 total)
+
+classes: 
+  anatomical entity: "UBERON:0001062"
+  taste bud: "UBERON:0001727"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.5454545454545454, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s taste bud"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2727272727272727, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A taste bud that is located on a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('taste bud' and ('part of' some %s))"
+  vars:
+    - v0

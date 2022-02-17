@@ -1,0 +1,55 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of midbrain
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_midbrain
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [midbrain subarachnoid space](http://purl.obolibrary.org/obo/UBERON_0005217), [gray matter of midbrain](http://purl.obolibrary.org/obo/UBERON_0019267), [midbrain nucleus](http://purl.obolibrary.org/obo/UBERON_0009661), [medial longitudinal fasciculus of midbrain](http://purl.obolibrary.org/obo/UBERON_0002660), [white matter of midbrain](http://purl.obolibrary.org/obo/UBERON_0016554), [meninx of midbrain](http://purl.obolibrary.org/obo/UBERON_0003288), [midbrain pia mater](http://purl.obolibrary.org/obo/UBERON_0003551), [midbrain arachnoid mater](http://purl.obolibrary.org/obo/UBERON_0003557), [midbrain dura mater](http://purl.obolibrary.org/obo/UBERON_0003562), [central gray substance of midbrain](http://purl.obolibrary.org/obo/UBERON_0003040) (10 total)
+
+classes: 
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  anatomical entity: "UBERON:0001062"
+  midbrain: "UBERON:0001891"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of midbrain"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a midbrain [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "midbrain %s"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "mesencephalon %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'midbrain'))"
+  vars:
+    - v0

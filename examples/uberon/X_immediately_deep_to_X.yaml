@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X immediately_deep_to X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_immediately_deep_to_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [dentate gyrus granule cell layer](http://purl.obolibrary.org/obo/UBERON_0005381), [dentate gyrus polymorphic layer](http://purl.obolibrary.org/obo/UBERON_0002928), [inner epidermal layer of feather follicle](http://purl.obolibrary.org/obo/UBERON_0011809), [olfactory cortex layer 2](http://purl.obolibrary.org/obo/UBERON_0022318), [olfactory cortex layer 3](http://purl.obolibrary.org/obo/UBERON_0035044), [entorhinal cortex layer 5](http://purl.obolibrary.org/obo/UBERON_0022325), [entorhinal cortex layer 6](http://purl.obolibrary.org/obo/UBERON_0022329), [entorhinal cortex layer 4](http://purl.obolibrary.org/obo/UBERON_0022323), [entorhinal cortex layer 2](http://purl.obolibrary.org/obo/UBERON_0022337), [entorhinal cortex layer 3](http://purl.obolibrary.org/obo/UBERON_0022327) (10 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  immediately_deep_to: "http://purl.obolibrary.org/obo/BSPO_0001107"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity' or 'anatomical entity'"
+  v1: "'material entity' or 'anatomical entity' or 'anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s immediately_deep_to %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that immediately_deep_to a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('immediately_deep_to' some %s))"
+  vars:
+    - v0
+    - v1

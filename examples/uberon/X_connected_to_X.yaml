@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X connected to X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_connected_to_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [penis blood vessel](http://purl.obolibrary.org/obo/UBERON_0036269), [vitelline blood vessel](http://purl.obolibrary.org/obo/UBERON_0004365), [auricular blood vessel](http://purl.obolibrary.org/obo/UBERON_0020550), [vitelline vasculature](http://purl.obolibrary.org/obo/UBERON_0004374), [true rib](http://purl.obolibrary.org/obo/UBERON_0002237), [cervical rib](http://purl.obolibrary.org/obo/UBERON_0018144), [lumbar rib](http://purl.obolibrary.org/obo/UBERON_0018145), [ventral head of rib](http://purl.obolibrary.org/obo/UBERON_0011651), [dorsal head of rib](http://purl.obolibrary.org/obo/UBERON_0011652), [proximal phalanx](http://purl.obolibrary.org/obo/UBERON_0004302) (13 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  anatomical structure: "UBERON:0000061"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  connected to: "RO:0002170"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+  v1: "'anatomical entity' or 'anatomical structure'"
+
+name:
+  # Induced, frequency=0.15384615384615385, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
+  vars:
+    - v1
+    - v0
+
+def:
+  # Induced, frequency=0.23076923076923078, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s feather that is connected to the %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('connected to' some %s))"
+  vars:
+    - v0
+    - v1

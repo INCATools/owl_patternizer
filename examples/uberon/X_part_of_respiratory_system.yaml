@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of respiratory system
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_respiratory_system
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [respiratory system submucosa](http://purl.obolibrary.org/obo/UBERON_0004777), [respiratory system lamina propria](http://purl.obolibrary.org/obo/UBERON_0004779), [respiratory system mucosa](http://purl.obolibrary.org/obo/UBERON_0004785), [respiratory system basal lamina](http://purl.obolibrary.org/obo/UBERON_0004798), [respiratory system epithelium](http://purl.obolibrary.org/obo/UBERON_0004807), [respiratory system skeletal muscle](http://purl.obolibrary.org/obo/UBERON_0004830), [respiratory system smooth muscle](http://purl.obolibrary.org/obo/UBERON_0004225), [respiratory system lymphatic vessel](http://purl.obolibrary.org/obo/UBERON_0003456), [respiratory system muscle](http://purl.obolibrary.org/obo/UBERON_0003831), [respiratory system artery](http://purl.obolibrary.org/obo/UBERON_0003469) (26 total)
+
+classes: 
+  anatomical structure: "UBERON:0000061"
+  respiratory system: "UBERON:0001004"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.9615384615384616, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "respiratory system %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.4230769230769231, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a respiratory system [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of apparatus respiratorius"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'respiratory system'))"
+  vars:
+    - v0

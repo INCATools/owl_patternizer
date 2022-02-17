@@ -1,0 +1,44 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: organismal segment part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/organismal_segment_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [insect head segment](http://purl.obolibrary.org/obo/UBERON_6000006), [insect thoracic segment](http://purl.obolibrary.org/obo/UBERON_6000016), [insect abdominal segment](http://purl.obolibrary.org/obo/UBERON_6000021), [insect embryonic thoracic segment](http://purl.obolibrary.org/obo/UBERON_6000167), [insect embryonic abdominal segment](http://purl.obolibrary.org/obo/UBERON_6000172), [insect larval head segment](http://purl.obolibrary.org/obo/UBERON_6001732), [insect larval thoracic segment](http://purl.obolibrary.org/obo/UBERON_6001742), [insect larval abdominal segment](http://purl.obolibrary.org/obo/UBERON_6001747), [insect adult head segment](http://purl.obolibrary.org/obo/UBERON_6003009), [insect adult thoracic segment](http://purl.obolibrary.org/obo/UBERON_6003019) (10 total)
+
+classes: 
+  organism subdivision: "UBERON:0000475"
+  organismal segment: "UBERON:0000914"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'organism subdivision'"
+
+name:
+  # Induced, frequency=0.2, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s segment"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any segment (%s:6000003) that is part of some adult thorax (UBERON:6003018)."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('organismal segment' and ('part of' some %s))"
+  vars:
+    - v0

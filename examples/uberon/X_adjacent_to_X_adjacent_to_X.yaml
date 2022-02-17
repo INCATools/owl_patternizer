@@ -1,0 +1,52 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X adjacent to X adjacent to X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_adjacent_to_X_adjacent_to_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [embryonic-extraembryonic boundary](http://purl.obolibrary.org/obo/UBERON_0004015), [gingival groove](http://purl.obolibrary.org/obo/UBERON_0008805), [perivascular space](http://purl.obolibrary.org/obo/UBERON_0014930), [subarachnoid space](http://purl.obolibrary.org/obo/UBERON_0000315), [inner plexiform layer of retina](http://purl.obolibrary.org/obo/UBERON_0001795), [interatrial septum](http://purl.obolibrary.org/obo/UBERON_0002085), [atrioventricular septum](http://purl.obolibrary.org/obo/UBERON_0005989), [interventricular septum](http://purl.obolibrary.org/obo/UBERON_0002094), [aortico-pulmonary spiral septum](http://purl.obolibrary.org/obo/UBERON_0006207), [interdigital region between manual digits 1 and 2](http://purl.obolibrary.org/obo/UBERON_0006026) (32 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  adjacent to: "RO:0002220"
+
+
+vars:
+  v0: "'anatomical entity'"
+  v1: "'material entity' or 'anatomical entity'"
+  v2: "'material entity' or 'anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s adjacent to %s adjacent to %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Induced, frequency=0.40625, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An %s that adjacent_to a %s and adjacent_to a %s."
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('adjacent to' some %s) and ('adjacent to' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

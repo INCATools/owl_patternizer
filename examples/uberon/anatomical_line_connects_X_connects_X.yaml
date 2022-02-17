@@ -1,0 +1,48 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: anatomical line connects X connects X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/anatomical_line_connects_X_connects_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [hairline](http://purl.obolibrary.org/obo/UBERON_0004104), [spheno-petrosal fissure](http://purl.obolibrary.org/obo/UBERON_0013455), [line from helix of outer ear to intertragus incisure](http://purl.obolibrary.org/obo/UBERON_7500037), [anatomical line between outer ears](http://purl.obolibrary.org/obo/UBERON_0010231), [margin of tongue](http://purl.obolibrary.org/obo/UBERON_0011877), [line from the distal-most end of the longest phalax of the foot to the posterior-most part of the foot](http://purl.obolibrary.org/obo/UBERON_7500042), [anatomical line between pupils](http://purl.obolibrary.org/obo/UBERON_0010222), [line from tip of nose to the caudal-sacral region of the vertebral column](http://purl.obolibrary.org/obo/UBERON_7500043), [line from caundal-sacral region of the vertebral column to the last vertebra](http://purl.obolibrary.org/obo/UBERON_7500036), [line from tip of nose to the posterior-most part of the last caudal vertebra](http://purl.obolibrary.org/obo/UBERON_7500044) (15 total)
+
+classes: 
+  anatomical entity: "UBERON:0001062"
+  anatomical line: "UBERON:0006800"
+
+
+relations: 
+  connects: "RO:0002176"
+
+
+vars:
+  v0: "'anatomical entity'"
+  v1: "'anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "anatomical line connects %s connects %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any anatomical line that connects a %s and connects a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('anatomical line' and ('connects' some %s) and ('connects' some %s))"
+  vars:
+    - v0
+    - v1

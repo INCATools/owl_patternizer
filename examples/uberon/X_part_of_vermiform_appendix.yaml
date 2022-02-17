@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of vermiform appendix
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_vermiform_appendix
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [submucosa of appendix](http://purl.obolibrary.org/obo/UBERON_0004928), [serosa of appendix](http://purl.obolibrary.org/obo/UBERON_0012498), [wall of appendix](http://purl.obolibrary.org/obo/UBERON_0036337), [mucosa of appendix](http://purl.obolibrary.org/obo/UBERON_0004989), [epithelium of appendix](http://purl.obolibrary.org/obo/UBERON_0009697), [lymphatic vessel of appendix](http://purl.obolibrary.org/obo/UBERON_8410030), [artery of appendix](http://purl.obolibrary.org/obo/UBERON_8410045), [vein of appendix](http://purl.obolibrary.org/obo/UBERON_8410044), [appendix lymphoid tissue](http://purl.obolibrary.org/obo/UBERON_0013689), [venule of appendix](http://purl.obolibrary.org/obo/UBERON_8410020) (19 total)
+
+classes: 
+  vermiform appendix: "UBERON:0001154"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.8421052631578947, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of appendix"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.15789473684210525, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a vermiform appendix."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of vermiform appendix"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'vermiform appendix'))"
+  vars:
+    - v0

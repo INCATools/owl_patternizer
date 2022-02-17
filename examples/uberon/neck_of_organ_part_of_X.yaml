@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: neck of organ part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/neck_of_organ_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [neck of humerus](http://purl.obolibrary.org/obo/UBERON_4200172), [neck of femur](http://purl.obolibrary.org/obo/UBERON_0007119), [neck of tooth](http://purl.obolibrary.org/obo/UBERON_0015181), [neck of urinary bladder](http://purl.obolibrary.org/obo/UBERON_0001258), [neck of radius](http://purl.obolibrary.org/obo/UBERON_0000199), [neck of fibula](http://purl.obolibrary.org/obo/UBERON_0018673), [neck of bone element](http://purl.obolibrary.org/obo/UBERON_0018664), [neck of gallbladder](http://purl.obolibrary.org/obo/UBERON_0035267), [neck of rib](http://purl.obolibrary.org/obo/UBERON_0003253), [neck of talus](http://purl.obolibrary.org/obo/UBERON_0015180) (11 total)
+
+classes: 
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  organ: "UBERON:0000062"
+  neck of organ: "UBERON:0001560"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity' or 'organ'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "neck of %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any neck of organ that part of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s neck"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('neck of organ' and ('part of' some %s))"
+  vars:
+    - v0

@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of small intestine
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_small_intestine
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [submucosa of small intestine](http://purl.obolibrary.org/obo/UBERON_0001205), [lamina propria of small intestine](http://purl.obolibrary.org/obo/UBERON_0001238), [serosa of small intestine](http://purl.obolibrary.org/obo/UBERON_0001206), [wall of small intestine](http://purl.obolibrary.org/obo/UBERON_0001168), [mucosa of small intestine](http://purl.obolibrary.org/obo/UBERON_0001204), [epithelium of small intestine](http://purl.obolibrary.org/obo/UBERON_0001902), [small intestine smooth muscle](http://purl.obolibrary.org/obo/UBERON_0004239), [small intestine Peyer's patch](http://purl.obolibrary.org/obo/UBERON_0003454), [small intestine lymphatic vessel](http://purl.obolibrary.org/obo/UBERON_8410002), [crypt of Lieberkuhn of small intestine](http://purl.obolibrary.org/obo/UBERON_0001241) (17 total)
+
+classes: 
+  small intestine: "UBERON:0002108"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.7647058823529411, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of small intestine"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.11764705882352941, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a small intestine [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "small intestine %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'small intestine'))"
+  vars:
+    - v0

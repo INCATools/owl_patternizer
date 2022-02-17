@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: muscularis mucosa part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/muscularis_mucosa_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [muscularis mucosae of large intestine](http://purl.obolibrary.org/obo/UBERON_0001239), [muscularis mucosae of intestine](http://purl.obolibrary.org/obo/UBERON_0001240), [muscularis mucosae of colon](http://purl.obolibrary.org/obo/UBERON_0007178), [esophagus muscularis mucosa](http://purl.obolibrary.org/obo/UBERON_0004648), [muscularis mucosae of rectum](http://purl.obolibrary.org/obo/UBERON_0012497), [muscularis mucosae of appendix](http://purl.obolibrary.org/obo/UBERON_8410031), [muscularis mucosae of fundus of stomach](http://purl.obolibrary.org/obo/UBERON_0016501), [muscularis mucosae of stomach](http://purl.obolibrary.org/obo/UBERON_0001203), [urinary bladder muscularis mucosa](http://purl.obolibrary.org/obo/UBERON_0006912), [muscularis mucosae of small intestine](http://purl.obolibrary.org/obo/UBERON_0001210) (15 total)
+
+classes: 
+  anatomical structure: "UBERON:0000061"
+  muscularis mucosa: "UBERON:0006676"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.5333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "muscularis mucosae of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.7333333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A muscularis mucosa that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "lamina muscularis of %s mucous membrane"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('muscularis mucosa' and ('part of' some %s))"
+  vars:
+    - v0

@@ -1,0 +1,52 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X attached to X attached to X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_attached_to_X_attached_to_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [retractor penis magnus muscle](http://purl.obolibrary.org/obo/UBERON_0035100), [falciform ligament](http://purl.obolibrary.org/obo/UBERON_0001247), [annular ligament of stapes](http://purl.obolibrary.org/obo/UBERON_0018161), [brachiocephalic muscle](http://purl.obolibrary.org/obo/UBERON_0011368), [cleidooccipital muscle](http://purl.obolibrary.org/obo/UBERON_0010948), [cleidocephalicus muscle](http://purl.obolibrary.org/obo/UBERON_0011364), [levator scapulae muscle](http://purl.obolibrary.org/obo/UBERON_0005461), [omotransversarius muscle](http://purl.obolibrary.org/obo/UBERON_0011369), [masseter muscle](http://purl.obolibrary.org/obo/UBERON_0001597), [lateral pterygoid muscle](http://purl.obolibrary.org/obo/UBERON_0006719) (10 total)
+
+classes: 
+  organ: "UBERON:0000062"
+  material anatomical entity: "UBERON:0000465"
+
+
+relations: 
+  attached to: "RO:0002371"
+
+
+vars:
+  v0: "'organ'"
+  v1: "'material anatomical entity'"
+  v2: "'material anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s attached to %s attached to %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that attached to a %s and attached to a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('attached to' some %s) and ('attached to' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

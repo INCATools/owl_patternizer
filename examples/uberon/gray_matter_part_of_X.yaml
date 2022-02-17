@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: gray matter part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/gray_matter_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [brain gray matter](http://purl.obolibrary.org/obo/UBERON_0003528), [cerebral hemisphere gray matter](http://purl.obolibrary.org/obo/UBERON_0005401), [gray matter of forebrain](http://purl.obolibrary.org/obo/UBERON_0019264), [gray matter of midbrain](http://purl.obolibrary.org/obo/UBERON_0019267), [gray matter of telencephalon](http://purl.obolibrary.org/obo/UBERON_0011300), [gray matter of diencephalon](http://purl.obolibrary.org/obo/UBERON_0019269), [gray matter of hindbrain](http://purl.obolibrary.org/obo/UBERON_0019263), [gray matter of spinal cord](http://purl.obolibrary.org/obo/UBERON_0002315), [lumbar spinal cord gray matter](http://purl.obolibrary.org/obo/UBERON_0029636), [sacral spinal cord gray matter](http://purl.obolibrary.org/obo/UBERON_0029503) (10 total)
+
+classes: 
+  gray matter: "UBERON:0002020"
+  ectoderm-derived structure: "UBERON:0004121"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'ectoderm-derived structure' or 'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.6, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "gray matter of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A gray matter that is part of a %s [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s gray matter"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('gray matter' and ('part of' some %s))"
+  vars:
+    - v0

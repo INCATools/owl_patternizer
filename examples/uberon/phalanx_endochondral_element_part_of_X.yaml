@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: phalanx endochondral element part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/phalanx_endochondral_element_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [manual digit 1 phalanx endochondral element](http://purl.obolibrary.org/obo/UBERON_0015025), [pedal digit phalanx endochondral element](http://purl.obolibrary.org/obo/UBERON_0015030), [manual digit phalanx endochondral element](http://purl.obolibrary.org/obo/UBERON_0015024), [manual digit 2 phalanx endochondral element](http://purl.obolibrary.org/obo/UBERON_0015026), [manual digit 3 phalanx endochondral element](http://purl.obolibrary.org/obo/UBERON_0015027), [manual digit 4 phalanx endochondral element](http://purl.obolibrary.org/obo/UBERON_0015028), [manual digit 5 phalanx endochondral element](http://purl.obolibrary.org/obo/UBERON_0015029), [pedal digit 1 phalanx endochondral element](http://purl.obolibrary.org/obo/UBERON_0015031), [pedal digit 2 phalanx endochondral element](http://purl.obolibrary.org/obo/UBERON_0015032), [pedal digit 3 phalanx endochondral element](http://purl.obolibrary.org/obo/UBERON_0015033) (12 total)
+
+classes: 
+  digit: "UBERON:0002544"
+  phalanx endochondral element: "UBERON:0015023"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'digit'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s phalanx endochondral element"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s phalanx bone or its cartilage or pre-cartilage precursor."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s phalanx element"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('phalanx endochondral element' and ('part of' some %s))"
+  vars:
+    - v0

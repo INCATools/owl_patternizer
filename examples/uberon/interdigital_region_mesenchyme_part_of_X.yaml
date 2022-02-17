@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: interdigital region mesenchyme part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/interdigital_region_mesenchyme_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mesenchyme of interdigital region of pes](http://purl.obolibrary.org/obo/UBERON_0009601), [mesenchyme of interdigital region of manus](http://purl.obolibrary.org/obo/UBERON_0009600), [mesenchyme of interdigital region between digits 1 and 2](http://purl.obolibrary.org/obo/UBERON_0009596), [mesenchyme of interdigital region between digits 2 and 3](http://purl.obolibrary.org/obo/UBERON_0009597), [mesenchyme of interdigital region between digits 3 and 4](http://purl.obolibrary.org/obo/UBERON_0009598), [mesenchyme of interdigital region between digits 4 and 5](http://purl.obolibrary.org/obo/UBERON_0009599), [mesenchyme of interdigital region between manual digits 1 and 2](http://purl.obolibrary.org/obo/UBERON_0009586), [mesenchyme of interdigital region between manual digits 2 and 3](http://purl.obolibrary.org/obo/UBERON_0009587), [mesenchyme of interdigital region between manual digits 3 and 4](http://purl.obolibrary.org/obo/UBERON_0009588), [mesenchyme of interdigital region between manual digits 4 and 5](http://purl.obolibrary.org/obo/UBERON_0009589) (14 total)
+
+classes: 
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  interdigital region mesenchyme: "UBERON:0009585"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity' or 'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.8571428571428571, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "mesenchyme of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An interdigital region mesenchyme that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "mesenchyme of %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('interdigital region mesenchyme' and ('part of' some %s))"
+  vars:
+    - v0

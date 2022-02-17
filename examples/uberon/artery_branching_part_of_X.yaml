@@ -1,0 +1,45 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: artery branching part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/artery_branching_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [branch of external carotid artery](http://purl.obolibrary.org/obo/UBERON_0035398), [branch of brachial artery](http://purl.obolibrary.org/obo/UBERON_0035359), [branch of ulnar artery](http://purl.obolibrary.org/obo/UBERON_0035304), [abdominal aorta artery](http://purl.obolibrary.org/obo/UBERON_0012254), [branch of vertebral artery](http://purl.obolibrary.org/obo/UBERON_0035307), [branch of posterior tibial artery](http://purl.obolibrary.org/obo/UBERON_0035292), [branch of anterior cerebral artery](http://purl.obolibrary.org/obo/UBERON_0035380), [branch of left coronary artery](http://purl.obolibrary.org/obo/UBERON_0035395), [branch of middle cerebral artery](http://purl.obolibrary.org/obo/UBERON_0035350), [branch of basilar artery](http://purl.obolibrary.org/obo/UBERON_0035489) (11 total)
+
+classes: 
+  artery: "UBERON:0001637"
+  mesoderm-derived structure: "UBERON:0004120"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  branching part of: "RO:0002380"
+
+
+vars:
+  v0: "'mesoderm-derived structure' or 'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.9090909090909091, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "branch of %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any artery that branching part of a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('artery' and ('branching part of' some %s))"
+  vars:
+    - v0

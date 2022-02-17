@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: skeletal joint connects X connects X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/skeletal_joint_connects_X_connects_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [sternoclavicular joint](http://purl.obolibrary.org/obo/UBERON_0001469), [humeroradial joint](http://purl.obolibrary.org/obo/UBERON_0011111), [humeroulnar joint](http://purl.obolibrary.org/obo/UBERON_0011110), [glenohumeral joint](http://purl.obolibrary.org/obo/UBERON_0001470), [elbow joint](http://purl.obolibrary.org/obo/UBERON_0001490), [tibiotalar joint](http://purl.obolibrary.org/obo/UBERON_0012076), [hip joint](http://purl.obolibrary.org/obo/UBERON_0001486), [atlanto-axial joint](http://purl.obolibrary.org/obo/UBERON_0003694), [acromioclavicular joint](http://purl.obolibrary.org/obo/UBERON_0003692), [sacro-iliac joint](http://purl.obolibrary.org/obo/UBERON_0001365) (81 total)
+
+classes: 
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  anatomical structure: "UBERON:0000061"
+  skeletal joint: "UBERON:0000982"
+
+
+relations: 
+  connects: "RO:0002176"
+
+
+vars:
+  v0: "'anatomical entity' or 'anatomical structure'"
+  v1: "'anatomical entity' or 'anatomical structure'"
+
+name:
+  # Induced, frequency=0.2716049382716049, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s-%s joint"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.16049382716049382, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A skeletal joint that connects a %s and connects a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('skeletal joint' and ('connects' some %s) and ('connects' some %s))"
+  vars:
+    - v0
+    - v1

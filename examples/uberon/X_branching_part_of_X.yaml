@@ -1,0 +1,48 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X branching part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_branching_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [duct of epididymis](http://purl.obolibrary.org/obo/UBERON_0008824), [right internal carotid artery](http://purl.obolibrary.org/obo/UBERON_0007143), [left internal carotid artery](http://purl.obolibrary.org/obo/UBERON_0007142), [branch of external carotid artery](http://purl.obolibrary.org/obo/UBERON_0035398), [branch of brachial artery](http://purl.obolibrary.org/obo/UBERON_0035359), [branch of ulnar artery](http://purl.obolibrary.org/obo/UBERON_0035304), [abdominal aorta artery](http://purl.obolibrary.org/obo/UBERON_0012254), [branch of vertebral artery](http://purl.obolibrary.org/obo/UBERON_0035307), [branch of posterior tibial artery](http://purl.obolibrary.org/obo/UBERON_0035292), [branch of anterior cerebral artery](http://purl.obolibrary.org/obo/UBERON_0035380) (18 total)
+
+classes: 
+  mesoderm-derived structure: "UBERON:0004120"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  branching part of: "RO:0002380"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+  v1: "'mesoderm-derived structure' or 'multicellular anatomical structure'"
+
+name:
+  # Could not induce name, using default
+  text: "%s branching part of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.1111111111111111, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An %s artery that branching_part_of a %s plus branches."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('branching part of' some %s))"
+  vars:
+    - v0
+    - v1

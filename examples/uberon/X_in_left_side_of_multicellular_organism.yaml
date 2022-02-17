@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X in left side of multicellular organism
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_in_left_side_of_multicellular_organism
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [left ureter](http://purl.obolibrary.org/obo/UBERON_0001223), [left eye](http://purl.obolibrary.org/obo/UBERON_0004548), [left ovary](http://purl.obolibrary.org/obo/UBERON_0002119), [left subcostal vein](http://purl.obolibrary.org/obo/UBERON_0035252), [left side of back](http://purl.obolibrary.org/obo/UBERON_8000006), [left suprarenal vein](http://purl.obolibrary.org/obo/UBERON_0035483), [left common iliac artery](http://purl.obolibrary.org/obo/UBERON_0035529), [left pelvic girdle region](http://purl.obolibrary.org/obo/UBERON_0011093), [left subclavian artery](http://purl.obolibrary.org/obo/UBERON_0001584), [left external ear](http://purl.obolibrary.org/obo/UBERON_0006617) (28 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  multicellular organism: "UBERON:0000468"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  in left side of: "http://purl.obolibrary.org/obo/BSPO_0000120"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.8928571428571429, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "left %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.10714285714285714, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is in the left side of a multicellular organism."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "left %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('in left side of' some 'multicellular organism'))"
+  vars:
+    - v0

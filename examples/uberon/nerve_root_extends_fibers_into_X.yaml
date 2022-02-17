@@ -1,0 +1,54 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: nerve root extends_fibers_into X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/nerve_root_extends_fibers_into_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [root of optic nerve](http://purl.obolibrary.org/obo/UBERON_0009906), [root of olfactory nerve](http://purl.obolibrary.org/obo/UBERON_0019311), [trigeminal nerve root](http://purl.obolibrary.org/obo/UBERON_0004673), [facial nerve root](http://purl.obolibrary.org/obo/UBERON_0004674), [vestibulocochlear nerve root](http://purl.obolibrary.org/obo/UBERON_0002731), [glossopharyngeal nerve root](http://purl.obolibrary.org/obo/UBERON_0019310), [hypoglossal nerve root](http://purl.obolibrary.org/obo/UBERON_0004675), [root of vagus nerve](http://purl.obolibrary.org/obo/UBERON_0011213), [accessory nerve root](http://purl.obolibrary.org/obo/UBERON_0014615), [terminal nerve root](http://purl.obolibrary.org/obo/UBERON_0014641) (10 total)
+
+classes: 
+  neuron projection bundle: "UBERON:0000122"
+  nerve root: "UBERON:0002211"
+
+
+relations: 
+  extends_fibers_into: "http://purl.obolibrary.org/obo/uberon/core#extends_fibers_into"
+
+
+vars:
+  v0: "'neuron projection bundle'"
+
+name:
+  # Induced, frequency=0.7, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s root"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.4, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A nerve root that extends_fibers_into a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s root"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('nerve root' and ('extends_fibers_into' some %s))"
+  vars:
+    - v0

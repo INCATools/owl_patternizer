@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of tongue
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_tongue
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mucosa of tongue](http://purl.obolibrary.org/obo/UBERON_0005020), [epithelium of tongue](http://purl.obolibrary.org/obo/UBERON_0003357), [tongue taste bud](http://purl.obolibrary.org/obo/UBERON_0014451), [gland of tongue](http://purl.obolibrary.org/obo/UBERON_0003409), [gustatory epithelium of tongue](http://purl.obolibrary.org/obo/UBERON_0014452), [lingual septum](http://purl.obolibrary.org/obo/UBERON_0014790), [mesenchyme of tongue](http://purl.obolibrary.org/obo/UBERON_0003416), [tongue squamous epithelium](http://purl.obolibrary.org/obo/UBERON_0006919), [non-keratinized epithelium of tongue](http://purl.obolibrary.org/obo/UBERON_0006916), [tongue keratinized epithelium](http://purl.obolibrary.org/obo/UBERON_0004650) (12 total)
+
+classes: 
+  anatomical structure: "UBERON:0000061"
+  tongue: "UBERON:0001723"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.5833333333333334, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of tongue"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.4166666666666667, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a tongue."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "tongue %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'tongue'))"
+  vars:
+    - v0

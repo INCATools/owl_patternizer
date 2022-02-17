@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of lower jaw region
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_lower_jaw_region
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [epithelium of lower jaw](http://purl.obolibrary.org/obo/UBERON_0003236), [tooth of lower jaw](http://purl.obolibrary.org/obo/UBERON_0003268), [lower jaw incisor](http://purl.obolibrary.org/obo/UBERON_0003451), [bone of lower jaw](http://purl.obolibrary.org/obo/UBERON_0004768), [gingiva of lower jaw](http://purl.obolibrary.org/obo/UBERON_0011602), [lower lip](http://purl.obolibrary.org/obo/UBERON_0001835), [mesenchyme of lower jaw](http://purl.obolibrary.org/obo/UBERON_0003324), [lower jaw molar](http://purl.obolibrary.org/obo/UBERON_0003667), [lower canine tooth](http://purl.obolibrary.org/obo/UBERON_0018622), [primary lower tooth](http://purl.obolibrary.org/obo/UBERON_0018617) (25 total)
+
+classes: 
+  anatomical entity: "UBERON:0001062"
+  lower jaw region: "UBERON:0001710"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.56, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "lower %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.24, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a lower jaw region."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "lower %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'lower jaw region'))"
+  vars:
+    - v0

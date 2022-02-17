@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of lumbar spinal cord
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_lumbar_spinal_cord
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [lumbar spinal cord gray matter](http://purl.obolibrary.org/obo/UBERON_0029636), [lumbar spinal cord dorsal horn](http://purl.obolibrary.org/obo/UBERON_0014638), [lumbar spinal cord ventral horn](http://purl.obolibrary.org/obo/UBERON_0030276), [lumbar spinal cord white matter](http://purl.obolibrary.org/obo/UBERON_0026386), [lumbar spinal cord ventral commissure](http://purl.obolibrary.org/obo/UBERON_0007834), [lumbar spinal cord lateral horn](http://purl.obolibrary.org/obo/UBERON_0031906), [lumbar spinal cord lateral column](http://purl.obolibrary.org/obo/UBERON_0005850), [lumbar spinal cord dorsal column](http://purl.obolibrary.org/obo/UBERON_0005842), [lumbar spinal cord gray commissure](http://purl.obolibrary.org/obo/UBERON_0033483), [lumbar spinal cord ventral column](http://purl.obolibrary.org/obo/UBERON_0005855) (10 total)
+
+classes: 
+  lumbar spinal cord: "UBERON:0002792"
+  central nervous system cell part cluster: "UBERON:0011215"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'central nervous system cell part cluster'"
+
+name:
+  # Induced, frequency=0.4, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "lumbar %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a lumbar spinal cord."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "lumbar %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'lumbar spinal cord'))"
+  vars:
+    - v0

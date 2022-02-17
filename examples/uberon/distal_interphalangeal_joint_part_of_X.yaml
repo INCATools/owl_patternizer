@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: distal interphalangeal joint part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/distal_interphalangeal_joint_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [distal interphalangeal joint of manual digit 2](http://purl.obolibrary.org/obo/UBERON_0014668), [distal interphalangeal joint of manual digit 3](http://purl.obolibrary.org/obo/UBERON_0014508), [distal interphalangeal joint of manual digit 4](http://purl.obolibrary.org/obo/UBERON_0014670), [distal interphalangeal joint of manural digit 5](http://purl.obolibrary.org/obo/UBERON_0014671), [distal interphalangeal joint of pedal digit 2](http://purl.obolibrary.org/obo/UBERON_0014672), [distal interphalangeal joint of pedal digit 3](http://purl.obolibrary.org/obo/UBERON_0014507), [distal interphalangeal joint of pedal digit 4](http://purl.obolibrary.org/obo/UBERON_0014674), [distal interphalangeal joint of pedal digit 5](http://purl.obolibrary.org/obo/UBERON_0014675), [distal interphalangeal joint of digit 2](http://purl.obolibrary.org/obo/UBERON_0014677), [distal interphalangeal joint of digit 3](http://purl.obolibrary.org/obo/UBERON_0014506) (12 total)
+
+classes: 
+  digit: "UBERON:0002544"
+  distal interphalangeal joint: "UBERON:0009768"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'digit'"
+
+name:
+  # Induced, frequency=0.9166666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "distal interphalangeal joint of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A distal interphalangeal joint that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "distal interphalangeal joint of %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('distal interphalangeal joint' and ('part of' some %s))"
+  vars:
+    - v0

@@ -1,0 +1,54 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X subdivision of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_subdivision_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [subdivision of conjunctiva](http://purl.obolibrary.org/obo/UBERON_0010305), [subdivision of vertebral column](http://purl.obolibrary.org/obo/UBERON_0006077), [bony part of hard palate](http://purl.obolibrary.org/obo/UBERON_0012074), [subdivision of spinal cord central canal](http://purl.obolibrary.org/obo/UBERON_0014538), [thoracic region of vertebral column](http://purl.obolibrary.org/obo/UBERON_0006073), [cervical region of vertebral column](http://purl.obolibrary.org/obo/UBERON_0006072), [lumbar region of vertebral column](http://purl.obolibrary.org/obo/UBERON_0006074), [sacral region of vertebral column](http://purl.obolibrary.org/obo/UBERON_0006075), [caudal region of vertebral column](http://purl.obolibrary.org/obo/UBERON_0006076), [synarcual region of vertebral column](http://purl.obolibrary.org/obo/UBERON_4200128) (17 total)
+
+classes: 
+  anatomical entity: "UBERON:0001062"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  subdivision of: "http://purl.obolibrary.org/obo/uberon/core#subdivision_of"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+  v1: "'anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s subdivision of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that subdivision of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('subdivision of' some %s))"
+  vars:
+    - v0
+    - v1

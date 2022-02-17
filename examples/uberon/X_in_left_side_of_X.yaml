@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X in left side of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_in_left_side_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [left ureter](http://purl.obolibrary.org/obo/UBERON_0001223), [left testis](http://purl.obolibrary.org/obo/UBERON_0004533), [left eye](http://purl.obolibrary.org/obo/UBERON_0004548), [left ovary](http://purl.obolibrary.org/obo/UBERON_0002119), [left subcostal vein](http://purl.obolibrary.org/obo/UBERON_0035252), [left clavicle](http://purl.obolibrary.org/obo/UBERON_0008256), [left lobe of thyroid gland](http://purl.obolibrary.org/obo/UBERON_0001120), [left side of back](http://purl.obolibrary.org/obo/UBERON_8000006), [left suprarenal vein](http://purl.obolibrary.org/obo/UBERON_0035483), [left common iliac artery](http://purl.obolibrary.org/obo/UBERON_0035529) (54 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  material anatomical entity: "UBERON:0000465"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  in left side of: "http://purl.obolibrary.org/obo/BSPO_0000120"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+  v1: "'material anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s in left side of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is in_the_left_side_of a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('in left side of' some %s))"
+  vars:
+    - v0
+    - v1

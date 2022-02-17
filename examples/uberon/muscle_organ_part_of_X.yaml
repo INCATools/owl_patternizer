@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: muscle organ part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/muscle_organ_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [nasal muscle](http://purl.obolibrary.org/obo/UBERON_0008522), [eye muscle](http://purl.obolibrary.org/obo/UBERON_0004277), [cloacal muscle](http://purl.obolibrary.org/obo/UBERON_0014783), [respiratory system muscle](http://purl.obolibrary.org/obo/UBERON_0003831), [esophagus muscle](http://purl.obolibrary.org/obo/UBERON_0003832), [muscle of iris](http://purl.obolibrary.org/obo/UBERON_0001606), [perineal muscle](http://purl.obolibrary.org/obo/UBERON_0002379), [skin muscle](http://purl.obolibrary.org/obo/UBERON_0004253), [pharyngeal muscle](http://purl.obolibrary.org/obo/UBERON_0000933), [mantle muscle](http://purl.obolibrary.org/obo/UBERON_0006581) (14 total)
+
+classes: 
+  anatomical structure: "UBERON:0000061"
+  muscle organ: "UBERON:0001630"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.42857142857142855, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s muscle"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2857142857142857, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any muscle organ that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s muscle"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('muscle organ' and ('part of' some %s))"
+  vars:
+    - v0

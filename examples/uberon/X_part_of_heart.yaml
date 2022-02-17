@@ -1,0 +1,55 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of heart
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_heart
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [coronary vessel](http://purl.obolibrary.org/obo/UBERON_0005985), [wall of heart](http://purl.obolibrary.org/obo/UBERON_0037144), [heart blood vessel](http://purl.obolibrary.org/obo/UBERON_0003498), [coronary capillary](http://purl.obolibrary.org/obo/UBERON_0006966), [heart endothelium](http://purl.obolibrary.org/obo/UBERON_0008307), [heart vasculature](http://purl.obolibrary.org/obo/UBERON_0018674), [mesentery of heart](http://purl.obolibrary.org/obo/UBERON_0003282), [heart elastic tissue](http://purl.obolibrary.org/obo/UBERON_0003610), [cardiac septum](http://purl.obolibrary.org/obo/UBERON_0002099), [cardiac mesenchyme](http://purl.obolibrary.org/obo/UBERON_0009751) (12 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  heart: "UBERON:0000948"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "heart %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that part of a heart"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "heart %s"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "cardiac %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'heart'))"
+  vars:
+    - v0

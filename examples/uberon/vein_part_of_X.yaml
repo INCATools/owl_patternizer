@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: vein part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/vein_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ureteric vein](http://purl.obolibrary.org/obo/UBERON_0003475), [thoracic vein](http://purl.obolibrary.org/obo/UBERON_0005194), [vein of abdomen](http://purl.obolibrary.org/obo/UBERON_0013126), [vaginal vein](http://purl.obolibrary.org/obo/UBERON_0001319), [deferent duct vein](http://purl.obolibrary.org/obo/UBERON_0005195), [spinal vein](http://purl.obolibrary.org/obo/UBERON_0006686), [vein of appendix](http://purl.obolibrary.org/obo/UBERON_8410044), [spleen trabecular vein](http://purl.obolibrary.org/obo/UBERON_0010400), [conjunctival vein](http://purl.obolibrary.org/obo/UBERON_0010367), [vein of clitoris](http://purl.obolibrary.org/obo/UBERON_0003480) (16 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "UBERON:0001062"
+  vein: "UBERON:0001638"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.3125, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s vein"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3125, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A vein that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s vein"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('vein' and ('part of' some %s))"
+  vars:
+    - v0

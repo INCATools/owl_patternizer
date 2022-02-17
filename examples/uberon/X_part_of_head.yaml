@@ -1,0 +1,55 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of head
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_head
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [skin of head](http://purl.obolibrary.org/obo/UBERON_0001084), [lymph node of head](http://purl.obolibrary.org/obo/UBERON_0015870), [insect head segment](http://purl.obolibrary.org/obo/UBERON_6000006), [nerve of head region](http://purl.obolibrary.org/obo/UBERON_0011779), [hair of head](http://purl.obolibrary.org/obo/UBERON_0016446), [head bone](http://purl.obolibrary.org/obo/UBERON_0003457), [head blood vessel](http://purl.obolibrary.org/obo/UBERON_0003496), [vasculature of head](http://purl.obolibrary.org/obo/UBERON_0002200), [head connective tissue](http://purl.obolibrary.org/obo/UBERON_0003566), [head sensillum](http://purl.obolibrary.org/obo/UBERON_0000963) (19 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  head: "UBERON:0000033"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.3684210526315789, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "head %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3157894736842105, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a head."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of head"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "cranial %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'head'))"
+  vars:
+    - v0

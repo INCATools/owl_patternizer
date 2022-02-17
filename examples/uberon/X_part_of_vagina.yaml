@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of vagina
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_vagina
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [lamina propria of vagina](http://purl.obolibrary.org/obo/UBERON_0005205), [wall of vagina](http://purl.obolibrary.org/obo/UBERON_0036523), [vagina orifice](http://purl.obolibrary.org/obo/UBERON_0012317), [mucosa of vagina](http://purl.obolibrary.org/obo/UBERON_0004983), [epithelium of vagina](http://purl.obolibrary.org/obo/UBERON_0001344), [vagina smooth muscle](http://purl.obolibrary.org/obo/UBERON_0004223), [vaginal venous plexus](http://purl.obolibrary.org/obo/UBERON_0001472), [vaginal vein](http://purl.obolibrary.org/obo/UBERON_0001319), [vagina sebaceous gland](http://purl.obolibrary.org/obo/UBERON_0003485), [lumen of vagina](http://purl.obolibrary.org/obo/UBERON_0011894) (14 total)
+
+classes: 
+  vagina: "UBERON:0000996"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.42857142857142855, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of vagina"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.21428571428571427, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a vagina."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of vagina"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'vagina'))"
+  vars:
+    - v0

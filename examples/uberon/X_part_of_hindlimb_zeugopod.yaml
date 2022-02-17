@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of hindlimb zeugopod
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_hindlimb_zeugopod
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [lower leg skin](http://purl.obolibrary.org/obo/UBERON_0004264), [crural feather](http://purl.obolibrary.org/obo/UBERON_0018689), [lower leg epithelium](http://purl.obolibrary.org/obo/UBERON_0005229), [musculature of hindlimb zeugopod](http://purl.obolibrary.org/obo/UBERON_0006067), [lower leg nerve](http://purl.obolibrary.org/obo/UBERON_0004218), [hindlimb zeugopod bone](http://purl.obolibrary.org/obo/UBERON_0004251), [lower leg blood vessel](http://purl.obolibrary.org/obo/UBERON_0004261), [lower leg connective tissue](http://purl.obolibrary.org/obo/UBERON_0004270), [lower leg mesenchyme](http://purl.obolibrary.org/obo/UBERON_0005259), [hindlimb zeugopod muscle](http://purl.obolibrary.org/obo/UBERON_0004256) (10 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "UBERON:0001062"
+  hindlimb zeugopod: "UBERON:0003823"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.6, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "lower leg %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a lower leg [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "hind limb middle limb segment %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'hindlimb zeugopod'))"
+  vars:
+    - v0

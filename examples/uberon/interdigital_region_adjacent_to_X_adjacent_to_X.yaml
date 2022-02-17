@@ -1,0 +1,48 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: interdigital region adjacent to X adjacent to X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/interdigital_region_adjacent_to_X_adjacent_to_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [interdigital region between manual digits 1 and 2](http://purl.obolibrary.org/obo/UBERON_0006026), [interdigital region between manual digits 2 and 3](http://purl.obolibrary.org/obo/UBERON_0006029), [interdigital region between manual digits 3 and 4](http://purl.obolibrary.org/obo/UBERON_0006032), [interdigital region between manual digits 4 and 5](http://purl.obolibrary.org/obo/UBERON_0006035), [interdigital region between pedal digits 1 and 2](http://purl.obolibrary.org/obo/UBERON_0006038), [interdigital region between pedal digits 2 and 3](http://purl.obolibrary.org/obo/UBERON_0006041), [interdigital region between pedal digits 3 and 4](http://purl.obolibrary.org/obo/UBERON_0006044), [interdigital region between pedal digits 4 and 5](http://purl.obolibrary.org/obo/UBERON_0006047), [interdigital region between digits 1 and 2](http://purl.obolibrary.org/obo/UBERON_0006016), [interdigital region between digits 2 and 3](http://purl.obolibrary.org/obo/UBERON_0006019) (12 total)
+
+classes: 
+  digit: "UBERON:0002544"
+  interdigital region: "UBERON:0006012"
+
+
+relations: 
+  adjacent to: "RO:0002220"
+
+
+vars:
+  v0: "'digit'"
+  v1: "'digit'"
+
+name:
+  # Could not induce name, using default
+  text: "interdigital region adjacent to %s adjacent to %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An interdigital region that adjacent_to a %s and adjacent_to a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('interdigital region' and ('adjacent to' some %s) and ('adjacent to' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,56 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: nucleus of brain part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/nucleus_of_brain_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [midbrain nucleus](http://purl.obolibrary.org/obo/UBERON_0009661), [telencephalic nucleus](http://purl.obolibrary.org/obo/UBERON_0009663), [diencephalic nucleus](http://purl.obolibrary.org/obo/UBERON_0006569), [nucleus of thalamus](http://purl.obolibrary.org/obo/UBERON_0007692), [hypothalamic nucleus](http://purl.obolibrary.org/obo/UBERON_0006568), [nucleus of ventral thalamus](http://purl.obolibrary.org/obo/UBERON_0015234), [preoptic nucleus](http://purl.obolibrary.org/obo/UBERON_0007251), [pretectal nucleus](http://purl.obolibrary.org/obo/UBERON_0014450), [hindbrain nucleus](http://purl.obolibrary.org/obo/UBERON_0009662), [nucleus of solitary tract](http://purl.obolibrary.org/obo/UBERON_0009050) (21 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  anatomical entity: "UBERON:0001062"
+  nucleus of brain: "UBERON:0002308"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.2857142857142857, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s nucleus"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5238095238095238, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A nucleus of brain that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s nucleus"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('nucleus of brain' and ('part of' some %s))"
+  vars:
+    - v0

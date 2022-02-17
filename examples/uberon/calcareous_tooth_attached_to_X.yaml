@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: calcareous tooth attached to X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/calcareous_tooth_attached_to_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [tooth of palatine bone](http://purl.obolibrary.org/obo/UBERON_0012073), [premaxillary tooth](http://purl.obolibrary.org/obo/UBERON_2001626), [vomerine tooth](http://purl.obolibrary.org/obo/UBERON_0004767), [maxillary tooth](http://purl.obolibrary.org/obo/UBERON_0011593), [dentary tooth](http://purl.obolibrary.org/obo/UBERON_0011594), [coronoid tooth](http://purl.obolibrary.org/obo/UBERON_0011603), [ectopterygoid tooth](http://purl.obolibrary.org/obo/UBERON_2001632), [palatal tooth](http://purl.obolibrary.org/obo/UBERON_0012070), [entopterygoid tooth](http://purl.obolibrary.org/obo/UBERON_2001633), [ceratobranchial 5 tooth](http://purl.obolibrary.org/obo/UBERON_2000694) (12 total)
+
+classes: 
+  calcareous tooth: "UBERON:0001091"
+  bone element: "UBERON:0001474"
+  structure with developmental contribution from neural crest: "UBERON:0010314"
+
+
+relations: 
+  attached to: "RO:0002371"
+
+
+vars:
+  v0: "'bone element' or 'structure with developmental contribution from neural crest'"
+
+name:
+  # Induced, frequency=0.5833333333333334, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s tooth"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Tooth that is attached to the %s bone."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s teeth"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('calcareous tooth' and ('attached to' some %s))"
+  vars:
+    - v0

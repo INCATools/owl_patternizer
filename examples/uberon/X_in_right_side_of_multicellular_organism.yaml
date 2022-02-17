@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X in_right_side_of multicellular organism
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_in_right_side_of_multicellular_organism
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [right ureter](http://purl.obolibrary.org/obo/UBERON_0001222), [right eye](http://purl.obolibrary.org/obo/UBERON_0004549), [right ovary](http://purl.obolibrary.org/obo/UBERON_0002118), [right subcostal vein](http://purl.obolibrary.org/obo/UBERON_0035474), [right side of back](http://purl.obolibrary.org/obo/UBERON_8000007), [right suprarenal vein](http://purl.obolibrary.org/obo/UBERON_0035435), [right common iliac artery](http://purl.obolibrary.org/obo/UBERON_0035322), [right pelvic girdle region](http://purl.obolibrary.org/obo/UBERON_0011092), [right subclavian artery](http://purl.obolibrary.org/obo/UBERON_0001534), [right external ear](http://purl.obolibrary.org/obo/UBERON_0006616) (27 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  multicellular organism: "UBERON:0000468"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  in_right_side_of: "http://purl.obolibrary.org/obo/BSPO_0000121"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.8888888888888888, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "right %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.1111111111111111, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is in the right side of a multicellular organism."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "right %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('in_right_side_of' some 'multicellular organism'))"
+  vars:
+    - v0

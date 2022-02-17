@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of brain
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_brain
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [sulcus of brain](http://purl.obolibrary.org/obo/UBERON_0013118), [nucleus of brain](http://purl.obolibrary.org/obo/UBERON_0002308), [regional part of brain](http://purl.obolibrary.org/obo/UBERON_0002616), [tract of brain](http://purl.obolibrary.org/obo/UBERON_0007702), [fasciculus of brain](http://purl.obolibrary.org/obo/UBERON_0005838), [brain commissure](http://purl.obolibrary.org/obo/UBERON_0005970), [brain blood vessel](http://purl.obolibrary.org/obo/UBERON_0003499), [brain endothelium](http://purl.obolibrary.org/obo/UBERON_0013694), [brain gray matter](http://purl.obolibrary.org/obo/UBERON_0003528), [brain white matter](http://purl.obolibrary.org/obo/UBERON_0003544) (13 total)
+
+classes: 
+  brain: "UBERON:0000955"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.6153846153846154, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "brain %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.23076923076923078, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a brain [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of brain"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'brain'))"
+  vars:
+    - v0

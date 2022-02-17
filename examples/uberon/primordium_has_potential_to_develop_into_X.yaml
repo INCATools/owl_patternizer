@@ -1,0 +1,55 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: primordium has potential to develop into X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/primordium_has_potential_to_develop_into_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [eye primordium](http://purl.obolibrary.org/obo/UBERON_0003071), [tetrapod frontal bone primordium](http://purl.obolibrary.org/obo/UBERON_0006236), [tetrapod parietal bone primordium](http://purl.obolibrary.org/obo/UBERON_0006274), [stomach primordium](http://purl.obolibrary.org/obo/UBERON_0012172), [salivary gland primordium](http://purl.obolibrary.org/obo/UBERON_0017651), [clavicle bone primordium](http://purl.obolibrary.org/obo/UBERON_0010905), [pancreas primordium](http://purl.obolibrary.org/obo/UBERON_0003921), [ethmoid bone primordium](http://purl.obolibrary.org/obo/UBERON_0006227), [squamous part of temporal bone primordium](http://purl.obolibrary.org/obo/UBERON_0010751), [submandibular gland primordium](http://purl.obolibrary.org/obo/UBERON_0006298) (18 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  primordium: "UBERON:0001048"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  has potential to develop into: "RO:0002387"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.7777777777777778, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s primordium"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2222222222222222, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A primordium that has the potential to develop into a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s primordium"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s anlage"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('primordium' and ('has potential to develop into' some %s))"
+  vars:
+    - v0

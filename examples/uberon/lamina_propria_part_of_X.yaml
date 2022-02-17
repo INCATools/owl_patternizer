@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: lamina propria part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/lamina_propria_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [lamina propria of ureter](http://purl.obolibrary.org/obo/UBERON_0001253), [lamina propria of urethra](http://purl.obolibrary.org/obo/UBERON_0002326), [lamina propria of large intestine](http://purl.obolibrary.org/obo/UBERON_0011189), [lamina propria of mucosa of colon](http://purl.obolibrary.org/obo/UBERON_0007177), [lamina propria of vagina](http://purl.obolibrary.org/obo/UBERON_0005205), [respiratory system lamina propria](http://purl.obolibrary.org/obo/UBERON_0004779), [lamina propria of trachea](http://purl.obolibrary.org/obo/UBERON_0000031), [lamina propria of esophagus](http://purl.obolibrary.org/obo/UBERON_0001974), [lamina propria of urinary bladder](http://purl.obolibrary.org/obo/UBERON_0001261), [lamina propria of prostatic urethra](http://purl.obolibrary.org/obo/UBERON_0016516) (17 total)
+
+classes: 
+  lamina propria: "UBERON:0000030"
+  anatomical structure: "UBERON:0000061"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.5882352941176471, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "lamina propria of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.47058823529411764, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A lamina propria that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s lamina propria"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('lamina propria' and ('part of' some %s))"
+  vars:
+    - v0

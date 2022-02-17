@@ -1,0 +1,55 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X supplies X branching part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_supplies_X_branching_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [inferior branch of oculomotor nerve](http://purl.obolibrary.org/obo/UBERON_0015161), [superior branch of oculomotor nerve](http://purl.obolibrary.org/obo/UBERON_0015162), [musculo-phrenic artery](http://purl.obolibrary.org/obo/UBERON_0006632), [middle colic artery](http://purl.obolibrary.org/obo/UBERON_0001196), [facial artery](http://purl.obolibrary.org/obo/UBERON_0001612), [cavernous artery](http://purl.obolibrary.org/obo/UBERON_0000457), [jejunal artery](http://purl.obolibrary.org/obo/UBERON_0018255), [mental artery](http://purl.obolibrary.org/obo/UBERON_0001617), [afferent spiracular artery](http://purl.obolibrary.org/obo/UBERON_0017616), [afferent portion of pharyngeal arch artery](http://purl.obolibrary.org/obo/UBERON_2000716) (11 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  anatomical structure: "UBERON:0000061"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  supplies: "RO:0002178"
+  branching part of: "RO:0002380"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity' or 'anatomical entity'"
+  v1: "'anatomical entity' or 'anatomical structure'"
+  v2: "'material entity' or 'anatomical entity' or 'anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s supplies %s branching part of %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that supplies a %s and branching part of a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('supplies' some %s) and ('branching part of' some %s))"
+  vars:
+    - v0
+    - v1
+    - v2

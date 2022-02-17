@@ -1,0 +1,51 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of upper jaw region part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_upper_jaw_region_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [upper secondary incisor tooth](http://purl.obolibrary.org/obo/UBERON_0019253), [upper primary premolar tooth](http://purl.obolibrary.org/obo/UBERON_0017271), [cingulum of upper jaw molar](http://purl.obolibrary.org/obo/UBERON_0017613), [upper first secondary premolar tooth](http://purl.obolibrary.org/obo/UBERON_0018571), [upper first primary molar tooth](http://purl.obolibrary.org/obo/UBERON_0018588), [upper first secondary molar tooth](http://purl.obolibrary.org/obo/UBERON_0018575), [upper third secondary molar tooth](http://purl.obolibrary.org/obo/UBERON_0018577), [upper second primary molar tooth](http://purl.obolibrary.org/obo/UBERON_0018599), [upper second secondary molar tooth](http://purl.obolibrary.org/obo/UBERON_0018576), [upper second secondary premolar tooth](http://purl.obolibrary.org/obo/UBERON_0018572) (10 total)
+
+classes: 
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  material anatomical entity: "UBERON:0000465"
+  upper jaw region: "UBERON:0001709"
+  ectoderm-derived structure: "UBERON:0004121"
+  structure with developmental contribution from neural crest: "UBERON:0010314"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'ectoderm-derived structure' or 'structure with developmental contribution from neural crest'"
+  v1: "'anatomical entity' or 'material anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "%s part of upper jaw region part of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that part of a upper jaw region and part of a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'upper jaw region') and ('part of' some %s))"
+  vars:
+    - v0
+    - v1

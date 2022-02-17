@@ -1,0 +1,54 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of urethra
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_urethra
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [lamina propria of urethra](http://purl.obolibrary.org/obo/UBERON_0002326), [wall of urethra](http://purl.obolibrary.org/obo/UBERON_0036521), [mucosa of urethra](http://purl.obolibrary.org/obo/UBERON_0012299), [urethra urothelium](http://purl.obolibrary.org/obo/UBERON_0004787), [epithelium of urethra](http://purl.obolibrary.org/obo/UBERON_0002325), [urethra skeletal muscle tissue](http://purl.obolibrary.org/obo/UBERON_0004829), [urethra smooth muscle layer](http://purl.obolibrary.org/obo/UBERON_0004219), [urethral gland](http://purl.obolibrary.org/obo/UBERON_0001338), [urethra mesenchymal layer](http://purl.obolibrary.org/obo/UBERON_0015418), [urethral sphincter](http://purl.obolibrary.org/obo/UBERON_0004917) (11 total)
+
+classes: 
+  urethra: "UBERON:0000057"
+  anatomical structure: "UBERON:0000061"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.36363636363636365, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of urethra"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.18181818181818182, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a urethra."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of urethra"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "urethral %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'urethra'))"
+  vars:
+    - v0

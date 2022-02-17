@@ -1,0 +1,51 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: white matter part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/white_matter_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [brain white matter](http://purl.obolibrary.org/obo/UBERON_0003544), [white matter of pons](http://purl.obolibrary.org/obo/UBERON_0019292), [cerebral hemisphere white matter](http://purl.obolibrary.org/obo/UBERON_0002437), [white matter of forebrain](http://purl.obolibrary.org/obo/UBERON_0019261), [white matter of midbrain](http://purl.obolibrary.org/obo/UBERON_0016554), [white matter of telencephalon](http://purl.obolibrary.org/obo/UBERON_0011299), [diencephalic white matter](http://purl.obolibrary.org/obo/UBERON_0003931), [white matter of metencephalon](http://purl.obolibrary.org/obo/UBERON_0019291), [white matter of medulla oblongata](http://purl.obolibrary.org/obo/UBERON_0014649), [white matter of hindbrain](http://purl.obolibrary.org/obo/UBERON_0019258) (18 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  anatomical entity: "UBERON:0001062"
+  white matter: "UBERON:0002316"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.5555555555555556, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "white matter of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2222222222222222, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A white matter that is part of the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s white matter"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('white matter' and ('part of' some %s))"
+  vars:
+    - v0

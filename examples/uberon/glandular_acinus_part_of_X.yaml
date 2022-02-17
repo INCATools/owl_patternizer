@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: glandular acinus part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/glandular_acinus_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [pancreatic acinus](http://purl.obolibrary.org/obo/UBERON_0001263), [serous acinus](http://purl.obolibrary.org/obo/UBERON_0013232), [mucous acinus](http://purl.obolibrary.org/obo/UBERON_0014717), [acinus of salivary gland](http://purl.obolibrary.org/obo/UBERON_0011850), [acinus of lacrimal gland](http://purl.obolibrary.org/obo/UBERON_0011857), [tarsal gland acinus](http://purl.obolibrary.org/obo/UBERON_0004000), [acinus of sebaceous gland](http://purl.obolibrary.org/obo/UBERON_0011846), [acinus of parotid gland](http://purl.obolibrary.org/obo/UBERON_0011847), [acinus of lactiferous gland](http://purl.obolibrary.org/obo/UBERON_0011856), [acinus of olfactory gland](http://purl.obolibrary.org/obo/UBERON_0015785) (12 total)
+
+classes: 
+  exocrine gland: "UBERON:0002365"
+  glandular acinus: "UBERON:0009842"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'exocrine gland'"
+
+name:
+  # Induced, frequency=0.6666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "acinus of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.6666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An acinus that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s acinus"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('glandular acinus' and ('part of' some %s))"
+  vars:
+    - v0

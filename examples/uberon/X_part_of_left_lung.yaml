@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of left lung
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_left_lung
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [left lung lobe](http://purl.obolibrary.org/obo/UBERON_0008951), [epithelium of left lung](http://purl.obolibrary.org/obo/UBERON_0003365), [left lung endothelium](http://purl.obolibrary.org/obo/UBERON_0005673), [left lung alveolar duct](http://purl.obolibrary.org/obo/UBERON_0003537), [lobar bronchus of left lung](http://purl.obolibrary.org/obo/UBERON_0003405), [left lung bronchiole](http://purl.obolibrary.org/obo/UBERON_0003539), [left lung terminal bronchiole](http://purl.obolibrary.org/obo/UBERON_0003541), [left lung respiratory bronchiole](http://purl.obolibrary.org/obo/UBERON_0003543), [left lung associated mesenchyme](http://purl.obolibrary.org/obo/UBERON_0009602), [left lung alveolus](http://purl.obolibrary.org/obo/UBERON_0004862) (14 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "UBERON:0001062"
+  left lung: "UBERON:0002168"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.42857142857142855, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "left lung %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2857142857142857, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a left lung [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of left lung"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'left lung'))"
+  vars:
+    - v0

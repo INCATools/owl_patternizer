@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: sphincter muscle part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/sphincter_muscle_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [urethral sphincter](http://purl.obolibrary.org/obo/UBERON_0004917), [cloacal sphincter](http://purl.obolibrary.org/obo/UBERON_0013501), [vaginal sphincter](http://purl.obolibrary.org/obo/UBERON_0012487), [esophageal sphincter](http://purl.obolibrary.org/obo/UBERON_0007652), [gastroesophageal sphincter](http://purl.obolibrary.org/obo/UBERON_0004550), [pyloric sphincter](http://purl.obolibrary.org/obo/UBERON_0001202), [anal sphincter](http://purl.obolibrary.org/obo/UBERON_0004916), [sphincter pupillae](http://purl.obolibrary.org/obo/UBERON_0001607), [sphincter of hepatopancreatic ampulla](http://purl.obolibrary.org/obo/UBERON_0004915), [gastrointestinal sphincter](http://purl.obolibrary.org/obo/UBERON_0011185) (11 total)
+
+classes: 
+  anatomical structure: "UBERON:0000061"
+  sphincter muscle: "UBERON:0004590"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.5454545454545454, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s sphincter"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.2727272727272727, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A sphincter muscle that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "sphincter of %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('sphincter muscle' and ('part of' some %s))"
+  vars:
+    - v0

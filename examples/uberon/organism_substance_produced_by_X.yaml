@@ -1,0 +1,54 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: organism substance produced by X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/organism_substance_produced_by_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [skin secretion](http://purl.obolibrary.org/obo/UBERON_0006535), [respiratory system fluid/secretion](http://purl.obolibrary.org/obo/UBERON_0006538), [mammary gland fluid/secretion](http://purl.obolibrary.org/obo/UBERON_0006539), [secretion of exocrine gland](http://purl.obolibrary.org/obo/UBERON_0000456), [pericardial fluid](http://purl.obolibrary.org/obo/UBERON_0002409), [reproductive gland secretion](http://purl.obolibrary.org/obo/UBERON_0022293), [female reproductive gland secretion](http://purl.obolibrary.org/obo/UBERON_0006537), [male reproductive gland secretion](http://purl.obolibrary.org/obo/UBERON_0006536), [secretion of crop](http://purl.obolibrary.org/obo/UBERON_0012422), [ruminal fluid](http://purl.obolibrary.org/obo/UBERON_0010228) (10 total)
+
+classes: 
+  anatomical structure: "UBERON:0000061"
+  organism substance: "UBERON:0000463"
+
+
+relations: 
+  produced by: "RO:0003001"
+
+
+vars:
+  v0: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.4, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s secretion"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A portion of organism substance that is secreted by a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s fluid/secretion"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s fluid"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('organism substance' and ('produced by' some %s))"
+  vars:
+    - v0

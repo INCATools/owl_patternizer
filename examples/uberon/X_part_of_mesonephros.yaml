@@ -1,0 +1,44 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of mesonephros
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_mesonephros
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [mesonephric glomerulus](http://purl.obolibrary.org/obo/UBERON_0005325), [mesonephric epithelium](http://purl.obolibrary.org/obo/UBERON_0005103), [mesonephric smooth muscle tissue](http://purl.obolibrary.org/obo/UBERON_0005321), [mesonephric collecting duct](http://purl.obolibrary.org/obo/UBERON_0005319), [mesonephric nephron](http://purl.obolibrary.org/obo/UBERON_0005322), [mesonephric capsule](http://purl.obolibrary.org/obo/UBERON_0006170), [mesonephric juxtaglomerular apparatus](http://purl.obolibrary.org/obo/UBERON_0005320), [mesonephric glomerular mesangium](http://purl.obolibrary.org/obo/UBERON_0006182), [mesonephric macula densa](http://purl.obolibrary.org/obo/UBERON_0005324), [mesonephric mesenchyme](http://purl.obolibrary.org/obo/UBERON_0005323) (24 total)
+
+classes: 
+  mesonephros: "UBERON:0000080"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.8333333333333334, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "mesonephric %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.08333333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a mesonephros."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'mesonephros'))"
+  vars:
+    - v0

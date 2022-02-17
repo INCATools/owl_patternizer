@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of urinary bladder
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_urinary_bladder
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [submucosa of urinary bladder](http://purl.obolibrary.org/obo/UBERON_0004943), [lamina propria of urinary bladder](http://purl.obolibrary.org/obo/UBERON_0001261), [serosa of urinary bladder](http://purl.obolibrary.org/obo/UBERON_0001260), [wall of urinary bladder](http://purl.obolibrary.org/obo/UBERON_0001256), [mucosa of urinary bladder](http://purl.obolibrary.org/obo/UBERON_0001259), [urinary bladder urothelium](http://purl.obolibrary.org/obo/UBERON_0004645), [urinary bladder smooth muscle](http://purl.obolibrary.org/obo/UBERON_0004228), [neck of urinary bladder](http://purl.obolibrary.org/obo/UBERON_0001258), [urinary bladder vasculature](http://purl.obolibrary.org/obo/UBERON_0012239), [muscle layer of urinary bladder](http://purl.obolibrary.org/obo/UBERON_0012378) (11 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "UBERON:0001062"
+  urinary bladder: "UBERON:0001255"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.45454545454545453, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of urinary bladder"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.18181818181818182, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a urinary bladder [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of urinary bladder"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'urinary bladder'))"
+  vars:
+    - v0

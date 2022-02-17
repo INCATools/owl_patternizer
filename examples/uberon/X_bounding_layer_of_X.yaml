@@ -1,0 +1,55 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X bounding layer of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_bounding_layer_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [cuticle of hair](http://purl.obolibrary.org/obo/UBERON_0002076), [acellular membrane](http://purl.obolibrary.org/obo/UBERON_0005764), [capsule of lens](http://purl.obolibrary.org/obo/UBERON_0001804), [corneal epithelium](http://purl.obolibrary.org/obo/UBERON_0001772), [pectoral appendage bud ectoderm](http://purl.obolibrary.org/obo/UBERON_0003372), [pelvic appendage bud ectoderm](http://purl.obolibrary.org/obo/UBERON_0003371), [dentate gyrus molecular layer](http://purl.obolibrary.org/obo/UBERON_0004679), [capsule of lymph node](http://purl.obolibrary.org/obo/UBERON_0002194), [capsule of ovary](http://purl.obolibrary.org/obo/UBERON_0001307), [capsule of parathyroid gland](http://purl.obolibrary.org/obo/UBERON_0001748) (25 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical structure: "UBERON:0000061"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  bounding layer of: "RO:0002007"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+  v1: "'anatomical structure'"
+
+name:
+  # Induced, frequency=0.24, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.08, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An %s that surrounds a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('bounding layer of' some %s))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: calcareous tooth part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/calcareous_tooth_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [tooth of upper jaw](http://purl.obolibrary.org/obo/UBERON_0003267), [tooth of lower jaw](http://purl.obolibrary.org/obo/UBERON_0003268), [deciduous tooth](http://purl.obolibrary.org/obo/UBERON_0007115), [secondary tooth](http://purl.obolibrary.org/obo/UBERON_0007775), [mandibular symphyseal tooth](http://purl.obolibrary.org/obo/UBERON_0018299), [basihyal tooth](http://purl.obolibrary.org/obo/UBERON_2001649), [pharyngobranchial 2 tooth](http://purl.obolibrary.org/obo/UBERON_2001651), [pharyngobranchial 3 tooth](http://purl.obolibrary.org/obo/UBERON_2001653), [upper pharyngeal 4 tooth](http://purl.obolibrary.org/obo/UBERON_2001655), [upper pharyngeal 5 tooth](http://purl.obolibrary.org/obo/UBERON_2001657) (14 total)
+
+classes: 
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  material anatomical entity: "UBERON:0000465"
+  calcareous tooth: "UBERON:0001091"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity' or 'material anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "calcareous tooth part of %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Tooth that is attached to the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('calcareous tooth' and ('part of' some %s))"
+  vars:
+    - v0

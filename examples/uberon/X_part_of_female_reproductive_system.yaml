@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of female reproductive system
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_female_reproductive_system
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ovary](http://purl.obolibrary.org/obo/UBERON_0000992), [female inguinal canal](http://purl.obolibrary.org/obo/UBERON_0004353), [female reproductive gland](http://purl.obolibrary.org/obo/UBERON_0005398), [internal female genitalia](http://purl.obolibrary.org/obo/UBERON_0003975), [external female genitalia](http://purl.obolibrary.org/obo/UBERON_0005056), [gubernaculum (female)](http://purl.obolibrary.org/obo/UBERON_0008844), [female external urethral sphincter](http://purl.obolibrary.org/obo/UBERON_0011380), [female inguinal ring](http://purl.obolibrary.org/obo/UBERON_0018529), [female bulbospongiosus muscle](http://purl.obolibrary.org/obo/UBERON_0014458), [female labial swelling](http://purl.obolibrary.org/obo/UBERON_0011755) (13 total)
+
+classes: 
+  material anatomical entity: "UBERON:0000465"
+  female reproductive system: "UBERON:0000474"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material anatomical entity'"
+
+name:
+  # Induced, frequency=0.38461538461538464, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "female %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5384615384615384, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a female reproductive system."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "female %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'female reproductive system'))"
+  vars:
+    - v0

@@ -1,0 +1,55 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: nerve part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/nerve_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [parasympathetic nerve](http://purl.obolibrary.org/obo/UBERON_0004293), [sympathetic nerve](http://purl.obolibrary.org/obo/UBERON_0034729), [nerve of head region](http://purl.obolibrary.org/obo/UBERON_0011779), [upper leg nerve](http://purl.obolibrary.org/obo/UBERON_0004214), [nerve of thoracic segment](http://purl.obolibrary.org/obo/UBERON_0003824), [abdomen nerve](http://purl.obolibrary.org/obo/UBERON_0003429), [neck nerve](http://purl.obolibrary.org/obo/UBERON_0003430), [leg nerve](http://purl.obolibrary.org/obo/UBERON_0003431), [back nerve](http://purl.obolibrary.org/obo/UBERON_0004215), [chest nerve](http://purl.obolibrary.org/obo/UBERON_0003432) (28 total)
+
+classes: 
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  nerve: "UBERON:0001021"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity' or 'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.7142857142857143, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s nerve"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.7142857142857143, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A nerve that is part of a %s [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "nerve of %s"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "%s nerve"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('nerve' and ('part of' some %s))"
+  vars:
+    - v0

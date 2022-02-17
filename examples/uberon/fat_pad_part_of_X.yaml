@@ -1,0 +1,55 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: fat pad part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/fat_pad_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [femoral fat pad](http://purl.obolibrary.org/obo/UBERON_0012283), [abdominal fat pad](http://purl.obolibrary.org/obo/UBERON_0003427), [gonadal fat pad](http://purl.obolibrary.org/obo/UBERON_0003428), [uterine fat pad](http://purl.obolibrary.org/obo/UBERON_0014394), [falciform fat](http://purl.obolibrary.org/obo/UBERON_0015142), [pancreatic fat pad](http://purl.obolibrary.org/obo/UBERON_0015454), [epididymal fat pad](http://purl.obolibrary.org/obo/UBERON_0010412), [infrapatellar fat pad](http://purl.obolibrary.org/obo/UBERON_0016400), [buccal fat pad](http://purl.obolibrary.org/obo/UBERON_0012167), [mammary fat pad](http://purl.obolibrary.org/obo/UBERON_0012282) (18 total)
+
+classes: 
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  fat pad: "UBERON:0003916"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity' or 'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.5555555555555556, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s fat pad"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3333333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Encapsulated adipose tissue associated with the %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s fat depot"
+    vars:
+      - v0
+  - annotationProperty: related_synonym
+    # Induced p=related_synonym 
+    text: "peri%s fat pad"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('fat pad' and ('part of' some %s))"
+  vars:
+    - v0

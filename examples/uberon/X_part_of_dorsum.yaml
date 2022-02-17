@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of dorsum
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_dorsum
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [skin of back](http://purl.obolibrary.org/obo/UBERON_0001068), [dorsal feather](http://purl.obolibrary.org/obo/UBERON_0018539), [dorsal region element](http://purl.obolibrary.org/obo/UBERON_0005174), [dorsal body wall](http://purl.obolibrary.org/obo/UBERON_0017649), [musculature of back](http://purl.obolibrary.org/obo/UBERON_0004469), [back nerve](http://purl.obolibrary.org/obo/UBERON_0004215), [dorsal hair](http://purl.obolibrary.org/obo/UBERON_0015150), [bone of dorsum](http://purl.obolibrary.org/obo/UBERON_0004247), [back blood vessel](http://purl.obolibrary.org/obo/UBERON_0004258), [back connective tissue](http://purl.obolibrary.org/obo/UBERON_0004267) (12 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "UBERON:0001062"
+  dorsum: "UBERON:0001137"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "dorsal %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3333333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a back [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of back"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'dorsum'))"
+  vars:
+    - v0

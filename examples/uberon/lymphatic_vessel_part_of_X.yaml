@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: lymphatic vessel part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/lymphatic_vessel_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [respiratory system lymphatic vessel](http://purl.obolibrary.org/obo/UBERON_0003456), [lymphatic vessel of appendix](http://purl.obolibrary.org/obo/UBERON_8410030), [lymphatic vessel of colon](http://purl.obolibrary.org/obo/UBERON_8410051), [pectoral lymphatic vessel](http://purl.obolibrary.org/obo/UBERON_0001425), [facial lymphatic vessel](http://purl.obolibrary.org/obo/UBERON_0001422), [pulmonary lymphatic vessel](http://purl.obolibrary.org/obo/UBERON_0018227), [small intestine lymphatic vessel](http://purl.obolibrary.org/obo/UBERON_8410002), [appendage lymph vessel](http://purl.obolibrary.org/obo/UBERON_0007384), [pelvic appendage lymph vessel](http://purl.obolibrary.org/obo/UBERON_0007386), [pectoral appendage lymph vessel](http://purl.obolibrary.org/obo/UBERON_0007385) (12 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "UBERON:0001062"
+  lymphatic vessel: "UBERON:0001473"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.3333333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s lymphatic vessel"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3333333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A lymphatic vessel that is part of a %s."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "lymphatic vessel of %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('lymphatic vessel' and ('part of' some %s))"
+  vars:
+    - v0

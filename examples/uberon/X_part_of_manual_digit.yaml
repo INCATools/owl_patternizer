@@ -1,0 +1,50 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of manual digit
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_manual_digit
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [manual digit skin](http://purl.obolibrary.org/obo/UBERON_0003533), [manual digit epithelium](http://purl.obolibrary.org/obo/UBERON_0005227), [digit nerve of manus](http://purl.obolibrary.org/obo/UBERON_0003447), [manual digit bone](http://purl.obolibrary.org/obo/UBERON_0004249), [nail of manual digit](http://purl.obolibrary.org/obo/UBERON_0009565), [manual digit blood vessel](http://purl.obolibrary.org/obo/UBERON_0003522), [manual digit connective tissue](http://purl.obolibrary.org/obo/UBERON_0003597), [manual digit mesenchyme](http://purl.obolibrary.org/obo/UBERON_0005257), [phalanx of manus](http://purl.obolibrary.org/obo/UBERON_0001436), [distal phalanx of manus](http://purl.obolibrary.org/obo/UBERON_0003865) (18 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "UBERON:0001062"
+  manual digit: "UBERON:0002389"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.3888888888888889, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "manual digit %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.3888888888888889, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a finger [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "finger %s"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'manual digit'))"
+  vars:
+    - v0

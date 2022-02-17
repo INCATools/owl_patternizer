@@ -1,0 +1,48 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has part part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_has_part_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [nucleus of midbrain tegmentum](http://purl.obolibrary.org/obo/UBERON_0007414), [shoulder bone](http://purl.obolibrary.org/obo/UBERON_0003461), [umbilical blood vessel](http://purl.obolibrary.org/obo/UBERON_0010260), [ventral nerve root of cervical spinal cord](http://purl.obolibrary.org/obo/UBERON_0014634), [dorsal nerve root of cervical spinal cord](http://purl.obolibrary.org/obo/UBERON_0014635), [olfactory tract linking bulb to ipsilateral dorsal telencephalon](http://purl.obolibrary.org/obo/UBERON_0034730), [olfactory tract linking bulb to ipsilateral ventral telencephalon](http://purl.obolibrary.org/obo/UBERON_2000238), [lateral olfactory stria](http://purl.obolibrary.org/obo/UBERON_0001888), [olfactory tract](http://purl.obolibrary.org/obo/UBERON_0002265), [plane of autotomy bisecting joint](http://purl.obolibrary.org/obo/UBERON_0035089) (13 total)
+
+classes: 
+  material anatomical entity: "UBERON:0000465"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  has part: "BFO:0000051"
+
+
+vars:
+  v0: "'anatomical entity'"
+  v1: "'material anatomical entity'"
+
+name:
+  # Induced, frequency=0.15384615384615385, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s bisecting %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.15384615384615385, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s of spinal cord that overlaps a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has part' some ('part of' some %s)))"
+  vars:
+    - v0
+    - v1

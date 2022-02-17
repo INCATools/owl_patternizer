@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of manual digit 2
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_manual_digit_2
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [manual digit 2 epithelium](http://purl.obolibrary.org/obo/UBERON_0005645), [nail of manual digit 2](http://purl.obolibrary.org/obo/UBERON_0011274), [manual digit 2 mesenchyme](http://purl.obolibrary.org/obo/UBERON_0005692), [manual digit 2 phalanx](http://purl.obolibrary.org/obo/UBERON_0003636), [distal phalanx of manual digit 2](http://purl.obolibrary.org/obo/UBERON_0004311), [middle phalanx of manual digit 2](http://purl.obolibrary.org/obo/UBERON_0004320), [proximal phalanx of manual digit 2](http://purl.obolibrary.org/obo/UBERON_0004328), [interphalangeal joint of manual digit 2](http://purl.obolibrary.org/obo/UBERON_0007729), [distal interphalangeal joint of manual digit 2](http://purl.obolibrary.org/obo/UBERON_0014668), [manual digit 2 phalanx endochondral element](http://purl.obolibrary.org/obo/UBERON_0015026) (10 total)
+
+classes: 
+  manual digit 2: "UBERON:0003622"
+  multicellular anatomical structure: "UBERON:0010000"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'multicellular anatomical structure'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of manual digit 2"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.4, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a hand digit 2 [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s of index finger"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'manual digit 2'))"
+  vars:
+    - v0

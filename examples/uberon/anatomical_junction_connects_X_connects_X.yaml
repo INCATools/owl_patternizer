@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: anatomical junction connects X connects X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/anatomical_junction_connects_X_connects_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ureteropelvic junction](http://purl.obolibrary.org/obo/UBERON_0009972), [ureterovesical junction](http://purl.obolibrary.org/obo/UBERON_0009973), [ileocecal junction](http://purl.obolibrary.org/obo/UBERON_0001073), [pectinate line](http://purl.obolibrary.org/obo/UBERON_0006574), [gastroduodenal junction](http://purl.obolibrary.org/obo/UBERON_0012650), [corneo-scleral junction](http://purl.obolibrary.org/obo/UBERON_0006761), [foregut-midgut junction](http://purl.obolibrary.org/obo/UBERON_0006235), [rectosigmoid junction](http://purl.obolibrary.org/obo/UBERON_0036214), [descending sigmoid junction](http://purl.obolibrary.org/obo/UBERON_8410016), [duodeno-jejunal junction](http://purl.obolibrary.org/obo/UBERON_8410000) (12 total)
+
+classes: 
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  material anatomical entity: "UBERON:0000465"
+  anatomical junction: "UBERON:0007651"
+
+
+relations: 
+  connects: "RO:0002176"
+
+
+vars:
+  v0: "'anatomical entity' or 'material anatomical entity'"
+  v1: "'anatomical entity' or 'material anatomical entity'"
+
+name:
+  # Could not induce name, using default
+  text: "anatomical junction connects %s connects %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.16666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "The anatomical junction between the %s and the %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('anatomical junction' and ('connects' some %s) and ('connects' some %s))"
+  vars:
+    - v0
+    - v1

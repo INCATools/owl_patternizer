@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: mesenchyme part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/mesenchyme_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [eye mesenchyme](http://purl.obolibrary.org/obo/UBERON_0003314), [head mesenchyme](http://purl.obolibrary.org/obo/UBERON_0005253), [urethra mesenchymal layer](http://purl.obolibrary.org/obo/UBERON_0015418), [mesonephric mesenchyme](http://purl.obolibrary.org/obo/UBERON_0005323), [mesenchyme pectoral fin](http://purl.obolibrary.org/obo/UBERON_0003934), [mesenchyme pelvic fin](http://purl.obolibrary.org/obo/UBERON_0003935), [amniotic mesoderm](http://purl.obolibrary.org/obo/UBERON_0003262), [upper leg mesenchyme](http://purl.obolibrary.org/obo/UBERON_0005254), [mesenchyme of testis](http://purl.obolibrary.org/obo/UBERON_0003312), [cardiac mesenchyme](http://purl.obolibrary.org/obo/UBERON_0009751) (102 total)
+
+classes: 
+  anatomical entity: "UBERON:0001062"
+  mesenchyme: "UBERON:0003104"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.5392156862745098, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s mesenchyme"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.28431372549019607, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Mesenchyme that is part of a developing %s [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s mesenchyme"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('mesenchyme' and ('part of' some %s))"
+  vars:
+    - v0

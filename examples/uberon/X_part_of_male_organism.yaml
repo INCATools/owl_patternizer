@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of male organism
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_male_organism
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [male urethra](http://purl.obolibrary.org/obo/UBERON_0001333), [male breast](http://purl.obolibrary.org/obo/UBERON_0016410), [male preputial gland](http://purl.obolibrary.org/obo/UBERON_0005301), [male reproductive system](http://purl.obolibrary.org/obo/UBERON_0000079), [male mammary gland duct](http://purl.obolibrary.org/obo/UBERON_0022360), [male reproductive organ](http://purl.obolibrary.org/obo/UBERON_0003135), [male pubococcygeus muscle](http://purl.obolibrary.org/obo/UBERON_0011531), [male urethral meatus](http://purl.obolibrary.org/obo/UBERON_0012241), [male urethral crest](http://purl.obolibrary.org/obo/UBERON_0012297), [male anatomical structure](http://purl.obolibrary.org/obo/UBERON_0014403) (11 total)
+
+classes: 
+  material anatomical entity: "UBERON:0000465"
+  male organism: "UBERON:0003101"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'material anatomical entity'"
+
+name:
+  # Induced, frequency=0.8181818181818182, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "male %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.18181818181818182, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a male organism."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s (male)"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'male organism'))"
+  vars:
+    - v0

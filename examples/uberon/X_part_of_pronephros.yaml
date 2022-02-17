@@ -1,0 +1,45 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of pronephros
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_pronephros
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [pronephric glomerulus](http://purl.obolibrary.org/obo/UBERON_0004739), [pronephric nephron](http://purl.obolibrary.org/obo/UBERON_0005309), [pronephric proximal convoluted tubule](http://purl.obolibrary.org/obo/UBERON_0007298), [pronephric proximal straight tubule](http://purl.obolibrary.org/obo/UBERON_0009622), [pronephric proximal tubule](http://purl.obolibrary.org/obo/UBERON_0006173), [pronephric distal tubule](http://purl.obolibrary.org/obo/UBERON_0006175), [pronephric glomerular capillary](http://purl.obolibrary.org/obo/UBERON_0007306), [pronephric glomerular basement membrane](http://purl.obolibrary.org/obo/UBERON_0007307), [pronephric sinus](http://purl.obolibrary.org/obo/UBERON_0006174), [pronephric distal early tubule](http://purl.obolibrary.org/obo/UBERON_0007308) (10 total)
+
+classes: 
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  anatomical entity: "UBERON:0001062"
+  pronephros: "UBERON:0002120"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'anatomical entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.9, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "pronephric %s"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a pronephros."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('part of' some 'pronephros'))"
+  vars:
+    - v0

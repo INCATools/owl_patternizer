@@ -1,0 +1,55 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X extends_fibers_into X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_extends_fibers_into_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [thoracic dorsal root ganglion](http://purl.obolibrary.org/obo/UBERON_0002835), [lumbar dorsal root ganglion](http://purl.obolibrary.org/obo/UBERON_0002836), [cervical dorsal root ganglion](http://purl.obolibrary.org/obo/UBERON_0002834), [sacral dorsal root ganglion](http://purl.obolibrary.org/obo/UBERON_0002837), [sensory ganglion](http://purl.obolibrary.org/obo/UBERON_0001800), [submandibular ganglion](http://purl.obolibrary.org/obo/UBERON_0002059), [vagus X ganglion](http://purl.obolibrary.org/obo/UBERON_0005362), [sublingual ganglion](http://purl.obolibrary.org/obo/UBERON_0005407), [cranial ganglion](http://purl.obolibrary.org/obo/UBERON_0001714), [nucleus of pudendal nerve](http://purl.obolibrary.org/obo/UBERON_0022278) (50 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  anatomical entity: "http://purl.obolibrary.org/obo/CARO_0000000"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  extends_fibers_into: "http://purl.obolibrary.org/obo/uberon/core#extends_fibers_into"
+
+
+vars:
+  v0: "'material entity' or 'anatomical entity' or 'anatomical entity'"
+  v1: "'material entity' or 'anatomical entity' or 'anatomical entity'"
+
+name:
+  # Induced, frequency=0.04, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s of %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that is part of a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s %s"
+    vars:
+      - v1
+      - v0
+
+
+equivalentTo:
+  text: "(%s and ('extends_fibers_into' some %s))"
+  vars:
+    - v0
+    - v1

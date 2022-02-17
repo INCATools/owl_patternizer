@@ -1,0 +1,49 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: phalanx part of X
+pattern_iri: http://purl.obolibrary.org/obo/uberon/phalanx_part_of_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [manual digit 1 phalanx](http://purl.obolibrary.org/obo/UBERON_0003620), [phalanx of pes](http://purl.obolibrary.org/obo/UBERON_0001449), [phalanx of manus](http://purl.obolibrary.org/obo/UBERON_0001436), [manual digit 2 phalanx](http://purl.obolibrary.org/obo/UBERON_0003636), [manual digit 3 phalanx](http://purl.obolibrary.org/obo/UBERON_0003637), [manual digit 4 phalanx](http://purl.obolibrary.org/obo/UBERON_0003638), [manual digit 5 phalanx](http://purl.obolibrary.org/obo/UBERON_0003639), [pedal digit 1 phalanx](http://purl.obolibrary.org/obo/UBERON_0003640), [pedal digit 2 phalanx](http://purl.obolibrary.org/obo/UBERON_0003641), [pedal digit 3 phalanx](http://purl.obolibrary.org/obo/UBERON_0003642) (14 total)
+
+classes: 
+  organism subdivision: "UBERON:0000475"
+  phalanx: "UBERON:0003221"
+
+
+relations: 
+  part of: "BFO:0000050"
+
+
+vars:
+  v0: "'organism subdivision'"
+
+name:
+  # Induced, frequency=0.7857142857142857, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s phalanx"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.7142857142857143, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A phalanx that is part of a %s [Automatically generated definition]."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+annotations:
+  - annotationProperty: exact_synonym
+    # Induced p=exact_synonym 
+    text: "%s phalanx"
+    vars:
+      - v0
+
+
+equivalentTo:
+  text: "('phalanx' and ('part of' some %s))"
+  vars:
+    - v0

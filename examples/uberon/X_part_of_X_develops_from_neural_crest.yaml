@@ -1,0 +1,51 @@
+# options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X part of X develops from neural crest
+pattern_iri: http://purl.obolibrary.org/obo/uberon/X_part_of_X_develops_from_neural_crest
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [2nd arch mesenchyme from neural crest](http://purl.obolibrary.org/obo/UBERON_0010254), [3rd arch mesenchyme from neural crest](http://purl.obolibrary.org/obo/UBERON_0010255), [4th arch mesenchyme from neural crest](http://purl.obolibrary.org/obo/UBERON_0010256), [mandibular process mesenchyme from neural crest](http://purl.obolibrary.org/obo/UBERON_0010336), [maxillary process mesenchyme from neural crest](http://purl.obolibrary.org/obo/UBERON_0010334), [1st arch mandibular mesenchyme from neural crest](http://purl.obolibrary.org/obo/UBERON_0010252), [6th arch mesenchyme from neural crest](http://purl.obolibrary.org/obo/UBERON_0010257), [1st arch mesenchyme from neural crest](http://purl.obolibrary.org/obo/UBERON_0010259), [1st arch maxillary mesenchyme from neural crest](http://purl.obolibrary.org/obo/UBERON_0010253), [pharyngeal arch mesenchyme from neural crest](http://purl.obolibrary.org/obo/UBERON_0010359) (10 total)
+
+classes: 
+  neural crest: "UBERON:0002342"
+  mesenchyme: "UBERON:0003104"
+  embryonic tissue: "UBERON:0005291"
+  structure with developmental contribution from neural crest: "UBERON:0010314"
+
+
+relations: 
+  part of: "BFO:0000050"
+  develops from: "RO:0002202"
+
+
+vars:
+  v0: "'mesenchyme'"
+  v1: "'mesenchyme' or 'embryonic tissue' or 'structure with developmental contribution from neural crest'"
+
+name:
+  # Could not induce name, using default
+  text: "%s part of %s develops from neural crest"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "%s that develops_from a neural crest and is part of a %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('part of' some %s) and ('develops from' some 'neural crest'))"
+  vars:
+    - v0
+    - v1
