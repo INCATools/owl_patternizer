@@ -1,5 +1,5 @@
 # options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
-pattern_name: X in_right_side_of multicellular organism
+pattern_name: X in right side of multicellular organism
 pattern_iri: http://purl.obolibrary.org/obo/uberon/X_in_right_side_of_multicellular_organism
 
 description: >-
@@ -14,7 +14,7 @@ classes:
 
 
 relations: 
-  in_right_side_of: "http://purl.obolibrary.org/obo/BSPO_0000121"
+  in right side of: "http://purl.obolibrary.org/obo/BSPO_0000121"
 
 
 vars:
@@ -45,6 +45,6 @@ annotations:
 
 
 equivalentTo:
-  text: "(%s and ('in_right_side_of' some 'multicellular organism'))"
+  text: "(%s and ('in right side of' some 'multicellular organism'))"
   vars:
     - v0

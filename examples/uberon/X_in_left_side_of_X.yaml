@@ -1,5 +1,5 @@
 # options: [min(10),dir('examples/uberon'),trim(true),base('http://purl.obolibrary.org/obo/uberon'),load_import_closure(true),generalize_properties(false),max_and_cardinality(3),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
-pattern_name: X in left side of X
+pattern_name: X in_left_side_of X
 pattern_iri: http://purl.obolibrary.org/obo/uberon/X_in_left_side_of_X
 
 description: >-
@@ -14,7 +14,7 @@ classes:
 
 
 relations: 
-  in left side of: "http://purl.obolibrary.org/obo/BSPO_0000120"
+  in_left_side_of: "http://purl.obolibrary.org/obo/BSPO_0000120"
 
 
 vars:
@@ -23,7 +23,7 @@ vars:
 
 name:
   # Could not induce name, using default
-  text: "%s in left side of %s"
+  text: "%s in_left_side_of %s"
   vars:
     - v0
     - v1
@@ -43,7 +43,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "(%s and ('in left side of' some %s))"
+  text: "(%s and ('in_left_side_of' some %s))"
   vars:
     - v0
     - v1
