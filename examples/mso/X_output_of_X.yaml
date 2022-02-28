@@ -1,11 +1,11 @@
-# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X output of X
 pattern_iri: http://purl.obolibrary.org/obo/mso/X_output_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [engineered transposable element](http://purl.obolibrary.org/obo/MSO_0000798), [engineered plasmid](http://purl.obolibrary.org/obo/MSO_0000637), [mobile element deletion](http://purl.obolibrary.org/obo/MSO_0002066) (18 total)
+  Examples: [engineered transposable element](http://purl.obolibrary.org/obo/MSO_0000798), [engineered plasmid](http://purl.obolibrary.org/obo/MSO_0000637), [mobile element deletion](http://purl.obolibrary.org/obo/MSO_0002066), [recoded mRNA](http://purl.obolibrary.org/obo/MSO_1001261), [mRNA recoded by codon redefinition](http://purl.obolibrary.org/obo/MSO_1001265), [mRNA recoded by translational bypass](http://purl.obolibrary.org/obo/MSO_1001264), [engineered fusion gene](http://purl.obolibrary.org/obo/MSO_0000288), [engineered oligonucleotide sequence tag](http://purl.obolibrary.org/obo/MSO_0000807), [recoded codon](http://purl.obolibrary.org/obo/MSO_0000145), [engineered rescue region](http://purl.obolibrary.org/obo/MSO_0000794) (18 total)
 
 classes: 
   transposable element: "MSO:0000101"

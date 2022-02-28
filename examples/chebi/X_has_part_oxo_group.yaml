@@ -1,15 +1,15 @@
-# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has part oxo group
 pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_part_oxo_group
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [oxo carboxylic acid](http://purl.obolibrary.org/obo/CHEBI_25754), [oxo steroid](http://purl.obolibrary.org/obo/CHEBI_35789), [oxo fatty acid](http://purl.obolibrary.org/obo/CHEBI_59644) (5 total)
+  Examples: [oxo monocarboxylic acid](http://purl.obolibrary.org/obo/CHEBI_35871), [oxo carboxylic acid](http://purl.obolibrary.org/obo/CHEBI_25754), [oxo steroid](http://purl.obolibrary.org/obo/CHEBI_35789), [oxo dicarboxylic acid](http://purl.obolibrary.org/obo/CHEBI_36145), [organic oxo compound](http://purl.obolibrary.org/obo/CHEBI_36587) (5 total)
 
 classes: 
-  oxo group: "http://purl.obolibrary.org/obo/CHEBI_46629"
-  organic molecule: "http://purl.obolibrary.org/obo/CHEBI_72695"
+  oxo group: "CHEBI:46629"
+  organic molecule: "CHEBI:72695"
 
 
 relations: 

@@ -1,11 +1,11 @@
-# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has role X
 pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_role_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [reagent](http://purl.obolibrary.org/obo/OBI_0001879), [specimen](http://purl.obolibrary.org/obo/OBI_0100051), [cloning vector](http://purl.obolibrary.org/obo/OBI_0000737) (18 total)
+  Examples: [reagent](http://purl.obolibrary.org/obo/OBI_0001879), [specimen](http://purl.obolibrary.org/obo/OBI_0100051), [cloning vector](http://purl.obolibrary.org/obo/OBI_0000737), [material sample](http://purl.obolibrary.org/obo/OBI_0000747), [molecular label](http://purl.obolibrary.org/obo/OBI_0002744), [specimen collector](http://purl.obolibrary.org/obo/OBI_0001895), [regulatory agency](http://purl.obolibrary.org/obo/OBI_0000450), [molecular analysis facility organization](http://purl.obolibrary.org/obo/OBI_0002198), [sequencing facility organization](http://purl.obolibrary.org/obo/OBI_0001891), [specimen repository organization](http://purl.obolibrary.org/obo/OBI_0001885) (19 total)
 
 classes: 
   role: "BFO:0000023"
@@ -42,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has role' some %s)"
+  text: "(%s and ('has role' some %s))"
   vars:
     - v0
     - v1

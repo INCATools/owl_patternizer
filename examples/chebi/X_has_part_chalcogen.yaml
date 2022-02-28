@@ -1,15 +1,15 @@
-# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has part chalcogen
 pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_part_chalcogen
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [chalcogen molecular entity](http://purl.obolibrary.org/obo/CHEBI_33304), [chalcogen oxoacid](http://purl.obolibrary.org/obo/CHEBI_33484), [chalcogen hydride](http://purl.obolibrary.org/obo/CHEBI_36902) (4 total)
+  Examples: [chalcogen oxoacid](http://purl.obolibrary.org/obo/CHEBI_33484), [chalcogen molecular entity](http://purl.obolibrary.org/obo/CHEBI_33304), [chalcogen hydride](http://purl.obolibrary.org/obo/CHEBI_36902), [chalcogen oxoanion](http://purl.obolibrary.org/obo/CHEBI_33485) (4 total)
 
 classes: 
-  molecular entity: "http://purl.obolibrary.org/obo/CHEBI_23367"
-  chalcogen: "http://purl.obolibrary.org/obo/CHEBI_33303"
+  chalcogen: "CHEBI:33303"
+  main group molecular entity: "CHEBI:33579"
 
 
 relations: 
@@ -17,17 +17,17 @@ relations:
 
 
 vars:
-  v0: "'molecular entity'"
+  v0: "'main group molecular entity'"
 
 name:
-  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "chalcogen %s"
   vars:
     - v0
 
 def:
   # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "Any p-block %s containing a chalcogen."
+  text: "Any %s containing a chalcogen."
   vars:
     - v0
 

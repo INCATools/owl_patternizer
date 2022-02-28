@@ -1,11 +1,11 @@
-# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has part X
 pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_part_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [ELISA measuring epitope specific interleukin-27 production by T cells](http://purl.obolibrary.org/obo/OBI_0001814), [detection of specific nucleic acids with complementary probes assay measuring epitope specific interleukin-27 production by T cells](http://purl.obolibrary.org/obo/OBI_0001382), [intracellular cytokine staining assay measuring epitope specific interleukin-27 production by T cells](http://purl.obolibrary.org/obo/OBI_0001806) (299 total)
+  Examples: [polymerase chain reaction assay](http://purl.obolibrary.org/obo/OBI_0002692), [ELISA measuring epitope specific granzyme B release by T cells](http://purl.obolibrary.org/obo/OBI_0001461), [detection of specific nucleic acids with complementary probes assay measuring epitope specific granzyme B release by T cells](http://purl.obolibrary.org/obo/OBI_0002066), [intracellular material detection measuring epitope specific granzyme B release by T cells](http://purl.obolibrary.org/obo/OBI_0001423), [cytometric bead array assay measuring epitope specific granzyme B release by T cells](http://purl.obolibrary.org/obo/OBI_0002065), [ELISPOT assay measuring epitope specific granzyme B release by T cells](http://purl.obolibrary.org/obo/OBI_0001322), [in vivo assay measuring T cell epitope specific protection from challenge](http://purl.obolibrary.org/obo/OBI_0002073), [in vivo assay measuring T cell epitope specific disease exacerbation](http://purl.obolibrary.org/obo/OBI_0001467), [in vivo assay measuring T cell epitope specific treatment of disease](http://purl.obolibrary.org/obo/OBI_0001507), [ELISA measuring epitope specific perforin release by T cells](http://purl.obolibrary.org/obo/OBI_0002672) (50 total)
 
 classes: 
   entity: "BFO:0000001"
@@ -20,15 +20,15 @@ vars:
   v1: "'entity'"
 
 name:
-  # Induced, frequency=0.020066889632107024, p=http://www.w3.org/2000/01/rdf-schema#label 
-  text: "%s measuring epitope specific %s by T cells"
+  # Induced, frequency=0.04, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s %s"
   vars:
     - v1
     - v0
 
 def:
-  # Induced, frequency=0.026755852842809364, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "A B cell epitope %s to antibody assay that uses an %s."
+  # Could not induce def, using default
+  text: "Any %s that has part a %s"
   vars:
     - v0
     - v1
@@ -41,7 +41,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has part' some %s)"
+  text: "(%s and ('has part' some %s))"
   vars:
     - v0
     - v1

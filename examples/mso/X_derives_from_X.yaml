@@ -1,11 +1,11 @@
-# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X derives from X
 pattern_iri: http://purl.obolibrary.org/obo/mso/X_derives_from_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [immunoglobulin pseudogene](http://purl.obolibrary.org/obo/MSO_0002098), [macronuclear chromosomal nucleic acid](http://purl.obolibrary.org/obo/MSO_0000824), [micronuclear chromosomal nucleic acid](http://purl.obolibrary.org/obo/MSO_0000825) (17 total)
+  Examples: [immunoglobulin pseudogene](http://purl.obolibrary.org/obo/MSO_0002098), [macronuclear chromosomal nucleic acid](http://purl.obolibrary.org/obo/MSO_0000824), [micronuclear chromosomal nucleic acid](http://purl.obolibrary.org/obo/MSO_0000825), [mitochondrial chromosomal nucleic acid](http://purl.obolibrary.org/obo/MSO_0000819), [nuclear chromosomal nucleic acid](http://purl.obolibrary.org/obo/MSO_0000828), [nucleomorphic chromosomal nucleic acid](http://purl.obolibrary.org/obo/MSO_0000829), [apicoplast chromosomal nucleic acid](http://purl.obolibrary.org/obo/MSO_0001259), [chromoplast chromosomal nucleic acid](http://purl.obolibrary.org/obo/MSO_0000821), [chloroplast chromosomal nucleic acid](http://purl.obolibrary.org/obo/MSO_0000820), [cyanelle chromosomal nucleic acid](http://purl.obolibrary.org/obo/MSO_0000822) (17 total)
 
 classes: 
   macronuclear sequence extent: "MSO:0000083"

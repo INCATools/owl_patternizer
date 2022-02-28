@@ -1,11 +1,11 @@
-# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: cDNA clone bearer of X
 pattern_iri: http://purl.obolibrary.org/obo/mso/cDNA_clone_bearer_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [chimeric cDNA clone](http://purl.obolibrary.org/obo/MSO_0000810), [genomically contaminated cDNA clone](http://purl.obolibrary.org/obo/MSO_0000811), [poly(A)-primed cDNA clone](http://purl.obolibrary.org/obo/MSO_0000812) (6 total)
+  Examples: [chimeric cDNA clone](http://purl.obolibrary.org/obo/MSO_0000810), [genomically contaminated cDNA clone](http://purl.obolibrary.org/obo/MSO_0000811), [poly(A)-primed cDNA clone](http://purl.obolibrary.org/obo/MSO_0000812), [partially processed cDNA clone](http://purl.obolibrary.org/obo/MSO_0000813), [validated cDNA clone](http://purl.obolibrary.org/obo/MSO_0000808), [invalidated cDNA clone](http://purl.obolibrary.org/obo/MSO_0000809) (6 total)
 
 classes: 
   cDNA clone: "MSO:0000317"

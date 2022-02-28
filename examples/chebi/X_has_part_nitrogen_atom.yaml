@@ -1,15 +1,15 @@
-# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has part nitrogen atom
 pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_part_nitrogen_atom
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [nitrogen molecular entity](http://purl.obolibrary.org/obo/CHEBI_51143), [nitrogen oxoacid](http://purl.obolibrary.org/obo/CHEBI_33455), [organic nitrogen anion](http://purl.obolibrary.org/obo/CHEBI_50335) (7 total)
+  Examples: [nitrogen molecular entity](http://purl.obolibrary.org/obo/CHEBI_51143), [nitrogen oxoacid](http://purl.obolibrary.org/obo/CHEBI_33455), [organic nitrogen anion](http://purl.obolibrary.org/obo/CHEBI_50335), [nitrogen oxide](http://purl.obolibrary.org/obo/CHEBI_35196), [nitrogen hydride](http://purl.obolibrary.org/obo/CHEBI_35106), [nitrogen oxoanion](http://purl.obolibrary.org/obo/CHEBI_33458) (6 total)
 
 classes: 
-  molecular entity: "http://purl.obolibrary.org/obo/CHEBI_23367"
-  nitrogen atom: "http://purl.obolibrary.org/obo/CHEBI_25555"
+  molecular entity: "CHEBI:23367"
+  nitrogen atom: "CHEBI:25555"
 
 
 relations: 
@@ -20,7 +20,7 @@ vars:
   v0: "'molecular entity'"
 
 name:
-  # Induced, frequency=0.5714285714285714, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.6666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "nitrogen %s"
   vars:
     - v0

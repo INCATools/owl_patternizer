@@ -1,18 +1,18 @@
-# options: [min(25),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: has participant X microbial population phenotype in host X located in lower digestive tract part of Homo sapiens has disease X
 pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_microbial_population_phenotype_in_host_X_located_in_lower_digestive_tract_part_of_Homo_sapiens_has_disease_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [depletion of Coprobacillus in PsA human gut](http://purl.obolibrary.org/obo/OHMI_0000158), [expansion of Beggiatoa in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000290), [expansion of Collinsella in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000300) (280 total)
+  Examples: [depletion of Coprobacillus in PsA human gut](http://purl.obolibrary.org/obo/OHMI_0000158), [expansion of Beggiatoa in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000290), [expansion of Collinsella in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000300), [expansion of S. moorei in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000283), [expansion of Badula fragilis in ERA human gut](http://purl.obolibrary.org/obo/OHMI_0000263), [depletion of Anaerovorax in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000312), [expansion of Parasporobacterium in gout human gut](http://purl.obolibrary.org/obo/OHMI_0000133), [depletion of Coprococcus catus in gout human gut](http://purl.obolibrary.org/obo/OHMI_0000142), [expansion of Solobacterium sp. S4-A19 in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000426), [expansion of Proteobacteria in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000410) (279 total)
 
 classes: 
   quality: "BFO:0000019"
   organism or virus or viroid: "http://purl.obolibrary.org/obo/CARO_0001010"
-  disease of anatomical entity: "http://purl.obolibrary.org/obo/DOID_7"
+  disease of anatomical entity: "DOID:7"
   Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-  organism: "http://purl.obolibrary.org/obo/OBI_0100026"
+  organism: "OBI:0100026"
   lower digestive tract: "UBERON:0004907"
 
 

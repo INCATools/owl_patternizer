@@ -1,11 +1,11 @@
-# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X-or-X
 pattern_iri: http://purl.obolibrary.org/obo/mso/X_or_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [gene product](http://purl.obolibrary.org/obo/MSO_3000205), [frameness](http://purl.obolibrary.org/obo/MSO_3000340), [macromolecular motif](http://purl.obolibrary.org/obo/MSO_3000056) (8 total)
+  Examples: [gene product](http://purl.obolibrary.org/obo/MSO_3000205), [frameness](http://purl.obolibrary.org/obo/MSO_3000340), [macromolecular motif](http://purl.obolibrary.org/obo/MSO_3000056), [senseness](http://purl.obolibrary.org/obo/MSO_3000281), [antisenseness](http://purl.obolibrary.org/obo/MSO_3000286), [ribonucleic acid](http://purl.obolibrary.org/obo/MSO_3100250), [deoxyribonucleic acid](http://purl.obolibrary.org/obo/MSO_3100249), [nucleic acid](http://purl.obolibrary.org/obo/MSO_3100248) (8 total)
 
 classes: 
   transcript: "MSO:0000673"

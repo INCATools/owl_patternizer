@@ -26,6 +26,22 @@
     a void:Dataset ;
     void:dataDump <zp.owl> ;
     lib:source <http://purl.obolibrary.org/obo/zp.owl> .
+<maxo>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/maxo.owl> .
+<vo>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/vo.owl> .
+<ovae>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/ovae.owl> .
+<ohmi>
+    a lib:Ontology ;
+    a lib:Virtual ;
+    owl:imports <http://purl.obolibrary.org/obo/ohmi.owl> .
 <mso>
     a void:Dataset ;
     void:dataDump <../tests/data/MSO_unreasoned.owl> ;

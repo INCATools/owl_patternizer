@@ -1,19 +1,19 @@
-# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X process is result of MHC:epitope complex binding to TCR
 pattern_iri: http://purl.obolibrary.org/obo/obi/X_process_is_result_of_MHC_epitope_complex_binding_to_TCR
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [epitope specific type IV hypersensitivity by T cells](http://purl.obolibrary.org/obo/OBI_0001212), [epitope specific cytokine production by T cells](http://purl.obolibrary.org/obo/OBI_0001193), [epitope specific killing by T cells](http://purl.obolibrary.org/obo/OBI_1110204) (60 total)
+  Examples: [epitope specific type IV hypersensitivity by T cells](http://purl.obolibrary.org/obo/OBI_0001212), [epitope specific cytokine production by T cells](http://purl.obolibrary.org/obo/OBI_0001193), [epitope specific killing by T cells](http://purl.obolibrary.org/obo/OBI_1110204), [epitope specific tolerance induction by T cells](http://purl.obolibrary.org/obo/OBI_0001201), [epitope specific T cell tolerance induction](http://purl.obolibrary.org/obo/OBI_0001249), [epitope specific vascular endothelial growth factor production by T cells](http://purl.obolibrary.org/obo/OBI_0001612), [epitope specific GM-CSF release by T cells](http://purl.obolibrary.org/obo/OBI_1110184), [epitope specific interferon-beta production by T cells](http://purl.obolibrary.org/obo/OBI_0001421), [epitope specific IFN-g release by T cells](http://purl.obolibrary.org/obo/OBI_1110185), [epitope specific interleukin-1 alpha production by T cells](http://purl.obolibrary.org/obo/OBI_0001257) (60 total)
 
 classes: 
   biological_process: "GO:0008150"
-  MHC:epitope complex binding to TCR: "http://purl.obolibrary.org/obo/OBI_1110057"
+  MHC:epitope complex binding to TCR: "OBI:1110057"
 
 
 relations: 
-  process is result of: "http://purl.obolibrary.org/obo/OBI_1110060"
+  process is result of: "OBI:1110060"
 
 
 vars:
@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('process is result of' some 'MHC:epitope complex binding to TCR')"
+  text: "(%s and ('process is result of' some 'MHC:epitope complex binding to TCR'))"
   vars:
     - v0

@@ -1,20 +1,20 @@
-# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X process is result of X
 pattern_iri: http://purl.obolibrary.org/obo/obi/X_process_is_result_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [B cell epitope specific antibody-dependent cellular cytotoxicity](http://purl.obolibrary.org/obo/OBI_0001717), [epitope specific type IV hypersensitivity by T cells](http://purl.obolibrary.org/obo/OBI_0001212), [epitope specific cytokine production by T cells](http://purl.obolibrary.org/obo/OBI_0001193) (66 total)
+  Examples: [B cell epitope specific antibody-dependent cellular cytotoxicity](http://purl.obolibrary.org/obo/OBI_0001717), [epitope specific type IV hypersensitivity by T cells](http://purl.obolibrary.org/obo/OBI_0001212), [epitope specific cytokine production by T cells](http://purl.obolibrary.org/obo/OBI_0001193), [epitope specific killing by T cells](http://purl.obolibrary.org/obo/OBI_1110204), [epitope specific tolerance induction by T cells](http://purl.obolibrary.org/obo/OBI_0001201), [epitope specific T cell tolerance induction](http://purl.obolibrary.org/obo/OBI_0001249), [B cell epitope specific hypersensitivity](http://purl.obolibrary.org/obo/OBI_0001722), [B cell epitope specific opsonization](http://purl.obolibrary.org/obo/OBI_0001713), [epitope specific vascular endothelial growth factor production by T cells](http://purl.obolibrary.org/obo/OBI_0001612), [epitope specific GM-CSF release by T cells](http://purl.obolibrary.org/obo/OBI_1110184) (66 total)
 
 classes: 
   biological_process: "GO:0008150"
-  binding: "http://purl.obolibrary.org/obo/OBI_0001588"
-  epitope binding by adaptive immune receptor: "http://purl.obolibrary.org/obo/OBI_1110014"
+  binding: "OBI:0001588"
+  epitope binding by adaptive immune receptor: "OBI:1110014"
 
 
 relations: 
-  process is result of: "http://purl.obolibrary.org/obo/OBI_1110060"
+  process is result of: "OBI:1110060"
 
 
 vars:
@@ -43,7 +43,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('process is result of' some %s)"
+  text: "(%s and ('process is result of' some %s))"
   vars:
     - v0
     - v1

@@ -1,17 +1,17 @@
-# options: [min(25),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: has participant X microbial population phenotype in host increased organism quantity compared with healthy control located in oral cavity part of Homo sapiens has disease X
 pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_microbial_population_phenotype_in_host_increased_organism_quantity_compared_with_healthy_control_located_in_oral_cavity_part_of_Homo_sapiens_has_disease_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [expansion of Leptotrichia sp. in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000179), [expansion of Treponema in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000244), [expansion of Treponema denticola in AS human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000223) (25 total)
+  Examples: [expansion of Leptotrichia sp. in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000179), [expansion of Treponema in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000244), [expansion of Treponema denticola in AS human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000223), [expansion of Lactobacillus salivarius in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000069), [expansion of Actinomyces in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000177), [depletion of Rothia aeria in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000089), [expansion of Atopobium sp. in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000231), [depletion of Neisseria sp. in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000174), [expansion of Tannerella forsythia in AS human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000109), [expansion of Tannerella forsythia in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000180) (25 total)
 
 classes: 
-  rheumatic disease: "http://purl.obolibrary.org/obo/DOID_1575"
+  rheumatic disease: "DOID:1575"
   Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-  increased organism quantity compared with healthy control: "http://purl.obolibrary.org/obo/OHMI_0000032"
-  microbe: "http://purl.obolibrary.org/obo/OHMI_0000460"
+  increased organism quantity compared with healthy control: "OHMI:0000032"
+  microbe: "OHMI:0000460"
   oral cavity: "UBERON:0000167"
 
 

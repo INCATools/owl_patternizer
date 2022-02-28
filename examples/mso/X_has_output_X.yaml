@@ -1,11 +1,11 @@
-# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has output X
 pattern_iri: http://purl.obolibrary.org/obo/mso/X_has_output_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [epigenetic modification process](http://purl.obolibrary.org/obo/MSO_3000270), [sequence deletion process](http://purl.obolibrary.org/obo/MSO_0000045), [sequence translocation process](http://purl.obolibrary.org/obo/MSO_0000049) (12 total)
+  Examples: [epigenetic modification process](http://purl.obolibrary.org/obo/MSO_3000270), [sequence deletion process](http://purl.obolibrary.org/obo/MSO_0000045), [sequence translocation process](http://purl.obolibrary.org/obo/MSO_0000049), [sequence transposition process](http://purl.obolibrary.org/obo/MSO_3000269), [sequence insertion process](http://purl.obolibrary.org/obo/MSO_0000046), [sequence truncation process](http://purl.obolibrary.org/obo/MSO_3000335), [sequence elongation process](http://purl.obolibrary.org/obo/MSO_3000336), [sequence substitution process](http://purl.obolibrary.org/obo/MSO_0000048), [sequence duplication process](http://purl.obolibrary.org/obo/MSO_3000267), [sequence inversion process](http://purl.obolibrary.org/obo/MSO_0000047) (12 total)
 
 classes: 
   process: "BFO:0000015"

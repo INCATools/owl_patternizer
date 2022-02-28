@@ -1,11 +1,11 @@
-# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X bearer of sequence circularity
 pattern_iri: http://purl.obolibrary.org/obo/mso/X_bearer_of_sequence_circularity
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [ring chromosomal sequence](http://purl.obolibrary.org/obo/MSO_1000045), [circular double-stranded chromosomal DNA](http://purl.obolibrary.org/obo/MSO_0000958), [circular single-stranded chromosomal DNA](http://purl.obolibrary.org/obo/MSO_0000960) (5 total)
+  Examples: [ring chromosomal sequence](http://purl.obolibrary.org/obo/MSO_1000045), [circular double-stranded chromosomal DNA](http://purl.obolibrary.org/obo/MSO_0000958), [circular single-stranded chromosomal DNA](http://purl.obolibrary.org/obo/MSO_0000960), [circular single-stranded chromosomal RNA](http://purl.obolibrary.org/obo/MSO_0000966), [circular double-stranded chromosomal RNA](http://purl.obolibrary.org/obo/MSO_0000967) (5 total)
 
 classes: 
   chromosomal nucleic acid: "MSO:0000340"

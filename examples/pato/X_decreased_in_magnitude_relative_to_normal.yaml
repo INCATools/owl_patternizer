@@ -1,11 +1,11 @@
-# options: [min(5),dir('examples/pato'),trim(true),base('http://purl.obolibrary.org/obo/pato'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
-pattern_name: X decreased_in_magnitude_relative_to normal
+# options: [min(5),dir('examples/pato'),trim(true),base('http://purl.obolibrary.org/obo/pato'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X decreased in magnitude relative to normal
 pattern_iri: http://purl.obolibrary.org/obo/pato/X_decreased_in_magnitude_relative_to_normal
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [decreased quality](http://purl.obolibrary.org/obo/PATO_0002301), [decreased speed](http://purl.obolibrary.org/obo/PATO_0000304), [decreased age](http://purl.obolibrary.org/obo/PATO_0001765) (104 total)
+  Examples: [decreased quality](http://purl.obolibrary.org/obo/PATO_0002301), [decreased speed](http://purl.obolibrary.org/obo/PATO_0000304), [decreased age](http://purl.obolibrary.org/obo/PATO_0001765), [decreased distance](http://purl.obolibrary.org/obo/PATO_0000375), [decreased frequency](http://purl.obolibrary.org/obo/PATO_0000381), [soft](http://purl.obolibrary.org/obo/PATO_0000387), [decreased intensity](http://purl.obolibrary.org/obo/PATO_0001783), [decreased life span](http://purl.obolibrary.org/obo/PATO_0001604), [decreased occurrence](http://purl.obolibrary.org/obo/PATO_0002052), [decreased amount](http://purl.obolibrary.org/obo/PATO_0001997) (109 total)
 
 classes: 
   quality: "PATO:0000001"
@@ -13,20 +13,20 @@ classes:
 
 
 relations: 
-  decreased_in_magnitude_relative_to: "http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to"
+  decreased in magnitude relative to: "RO:0015008"
 
 
 vars:
   v0: "'quality'"
 
 name:
-  # Induced, frequency=0.5673076923076923, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.5688073394495413, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "decreased %s"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.23853211009174313, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "A %s which is relatively low."
   vars:
     - v0
@@ -44,6 +44,6 @@ annotations:
 
 
 equivalentTo:
-  text: "(%s and ('decreased_in_magnitude_relative_to' some 'normal'))"
+  text: "(%s and ('decreased in magnitude relative to' some 'normal'))"
   vars:
     - v0

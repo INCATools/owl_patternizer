@@ -1,15 +1,15 @@
-# options: [min(8),dir('examples/so'),trim(true),base('http://purl.obolibrary.org/obo/so'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/so'),trim(true),base('http://purl.obolibrary.org/obo/so'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: chromosome has_origin X
 pattern_iri: http://purl.obolibrary.org/obo/so/chromosome_has_origin_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [macronuclear_chromosome](http://purl.obolibrary.org/obo/SO_0000824), [micronuclear_chromosome](http://purl.obolibrary.org/obo/SO_0000825), [mitochondrial_chromosome](http://purl.obolibrary.org/obo/SO_0000819) (10 total)
+  Examples: [macronuclear_chromosome](http://purl.obolibrary.org/obo/SO_0000824), [micronuclear_chromosome](http://purl.obolibrary.org/obo/SO_0000825), [mitochondrial_chromosome](http://purl.obolibrary.org/obo/SO_0000819), [nuclear_chromosome](http://purl.obolibrary.org/obo/SO_0000828), [nucleomorphic_chromosome](http://purl.obolibrary.org/obo/SO_0000829), [apicoplast_chromosome](http://purl.obolibrary.org/obo/SO_0001259), [chromoplast_chromosome](http://purl.obolibrary.org/obo/SO_0000821), [chloroplast_chromosome](http://purl.obolibrary.org/obo/SO_0000820), [cyanelle_chromosome](http://purl.obolibrary.org/obo/SO_0000822), [leucoplast_chromosome](http://purl.obolibrary.org/obo/SO_0000823) (10 total)
 
 classes: 
   chromosome: "SO:0000340"
-  organelle_sequence: "SO:0000736"
+  sequence_location: "SO:0000735"
 
 
 relations: 
@@ -17,7 +17,7 @@ relations:
 
 
 vars:
-  v0: "'organelle_sequence'"
+  v0: "'sequence_location'"
 
 name:
   # Could not induce name, using default

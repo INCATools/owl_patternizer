@@ -1,11 +1,11 @@
-# options: [min(5),dir('examples/pato'),trim(true),base('http://purl.obolibrary.org/obo/pato'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
-pattern_name: X has_relative_magnitude normal
+# options: [min(5),dir('examples/pato'),trim(true),base('http://purl.obolibrary.org/obo/pato'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has relative magnitude normal
 pattern_iri: http://purl.obolibrary.org/obo/pato/X_has_relative_magnitude_normal
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [normal speed](http://purl.obolibrary.org/obo/PATO_0045063), [normal age](http://purl.obolibrary.org/obo/PATO_0045005), [normal distance](http://purl.obolibrary.org/obo/PATO_0045014) (90 total)
+  Examples: [normal mobility](http://purl.obolibrary.org/obo/PATO_0045032), [normal speed](http://purl.obolibrary.org/obo/PATO_0045063), [normal age](http://purl.obolibrary.org/obo/PATO_0045005), [normal fluorescence](http://purl.obolibrary.org/obo/PATO_0045023), [normal distance](http://purl.obolibrary.org/obo/PATO_0045014), [normal frequency](http://purl.obolibrary.org/obo/PATO_0045087), [normal life span](http://purl.obolibrary.org/obo/PATO_0045026), [normal occurrence](http://purl.obolibrary.org/obo/PATO_0045086), [normal distribution](http://purl.obolibrary.org/obo/PATO_0045042), [normal sensitivity toward](http://purl.obolibrary.org/obo/PATO_0045049) (113 total)
 
 classes: 
   quality: "PATO:0000001"
@@ -13,20 +13,20 @@ classes:
 
 
 relations: 
-  has_relative_magnitude: "http://purl.obolibrary.org/obo/pato#has_relative_magnitude"
+  has relative magnitude: "RO:0015010"
 
 
 vars:
   v0: "'quality'"
 
 name:
-  # Induced, frequency=0.5666666666666667, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.6548672566371682, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "normal %s"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.26666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.26548672566371684, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "A %s which is relatively normal or average"
   vars:
     - v0
@@ -39,6 +39,6 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "(%s and ('has_relative_magnitude' some 'normal'))"
+  text: "(%s and ('has relative magnitude' some 'normal'))"
   vars:
     - v0

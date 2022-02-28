@@ -1,17 +1,17 @@
-# options: [min(25),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: has participant X microbial population phenotype in host decreased organism quantity compared with healthy controls located in X part of Homo sapiens has disease X
 pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_microbial_population_phenotype_in_host_decreased_organism_quantity_compared_with_healthy_controls_located_in_X_part_of_Homo_sapiens_has_disease_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [depletion of Coprobacillus in PsA human gut](http://purl.obolibrary.org/obo/OHMI_0000158), [depletion of Capnocytophaga gingivalis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000237), [depletion of Anaerovorax in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000312) (113 total)
+  Examples: [depletion of Coprobacillus in PsA human gut](http://purl.obolibrary.org/obo/OHMI_0000158), [depletion of Capnocytophaga gingivalis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000237), [depletion of Anaerovorax in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000312), [depletion of Coprococcus catus in gout human gut](http://purl.obolibrary.org/obo/OHMI_0000142), [depletion of Propionibacterium acnes 17B in PsA human skin](http://purl.obolibrary.org/obo/OHMI_0000151), [depletion of Proteobacteria in PsA human skin](http://purl.obolibrary.org/obo/OHMI_0000162), [depletion of Firmicutes in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000112), [depletion of Firmicutes in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000356), [depletion of Ruminococcus in PsA human gut](http://purl.obolibrary.org/obo/OHMI_0000154), [depletion of Ruminococcus in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000392) (113 total)
 
 classes: 
-  disease of anatomical entity: "http://purl.obolibrary.org/obo/DOID_7"
+  disease of anatomical entity: "DOID:7"
   Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-  decreased organism quantity compared with healthy controls: "http://purl.obolibrary.org/obo/OHMI_0000035"
-  microbe: "http://purl.obolibrary.org/obo/OHMI_0000460"
+  decreased organism quantity compared with healthy controls: "OHMI:0000035"
+  microbe: "OHMI:0000460"
   anatomical entity: "UBERON:0001062"
 
 

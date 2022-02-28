@@ -1,14 +1,14 @@
-# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X-or-X
 pattern_iri: http://purl.obolibrary.org/obo/obi/X_or_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [material separation objective](http://purl.obolibrary.org/obo/OBI_0000639), [specimen with known storage state](http://purl.obolibrary.org/obo/OBI_0001472), [genetically modified material](http://purl.obolibrary.org/obo/OBI_0001151) (12 total)
+  Examples: [material separation objective](http://purl.obolibrary.org/obo/OBI_0000639), [specimen with known storage state](http://purl.obolibrary.org/obo/OBI_0001472), [genetically modified material](http://purl.obolibrary.org/obo/OBI_0001151), [class prediction data transformation](http://purl.obolibrary.org/obo/OBI_0000663), [normalization data transformation](http://purl.obolibrary.org/obo/OBI_0200169), [class discovery data transformation](http://purl.obolibrary.org/obo/OBI_0200175), [descriptive statistical calculation data transformation](http://purl.obolibrary.org/obo/OBI_0200184), [curve fitting data transformation](http://purl.obolibrary.org/obo/OBI_0200072), [background correction data transformation](http://purl.obolibrary.org/obo/OBI_0000666), [center calculation data transformation](http://purl.obolibrary.org/obo/OBI_0200181) (12 total)
 
 classes: 
-  material separation objective: "http://purl.obolibrary.org/obo/OBI_0000639"
+  material separation objective: "OBI:0000639"
 
 
 relations: []

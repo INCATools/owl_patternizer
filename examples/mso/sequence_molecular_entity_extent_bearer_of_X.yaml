@@ -1,11 +1,11 @@
-# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: sequence molecular entity extent bearer of X
 pattern_iri: http://purl.obolibrary.org/obo/mso/sequence_molecular_entity_extent_bearer_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [rescue sequence extent](http://purl.obolibrary.org/obo/MSO_0000411), [wild-type sequence extent](http://purl.obolibrary.org/obo/MSO_3000318), [conserved extent](http://purl.obolibrary.org/obo/MSO_0000330) (8 total)
+  Examples: [rescue sequence extent](http://purl.obolibrary.org/obo/MSO_0000411), [wild-type sequence extent](http://purl.obolibrary.org/obo/MSO_3000318), [conserved extent](http://purl.obolibrary.org/obo/MSO_0000330), [homologous extent](http://purl.obolibrary.org/obo/MSO_0000853), [orthologous sequence extent](http://purl.obolibrary.org/obo/MSO_0000855), [paralogous sequence extent](http://purl.obolibrary.org/obo/MSO_0000854), [consensus extent](http://purl.obolibrary.org/obo/MSO_0000994), [secondary structural element](http://purl.obolibrary.org/obo/MSO_0000002) (8 total)
 
 classes: 
   specifically dependent continuant: "BFO:0000020"

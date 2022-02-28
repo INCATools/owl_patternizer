@@ -1,15 +1,15 @@
-# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has functional parent phosphoric acid
 pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_functional_parent_phosphoric_acid
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [ceramide 1-phosphate](http://purl.obolibrary.org/obo/CHEBI_13956), [dialkyl phosphate anion](http://purl.obolibrary.org/obo/CHEBI_58944), [cyclitol phosphate](http://purl.obolibrary.org/obo/CHEBI_23450) (16 total)
+  Examples: [nucleoside 3',5'-cyclic phosphate anion](http://purl.obolibrary.org/obo/CHEBI_58464), [inorganic phosphate](http://purl.obolibrary.org/obo/CHEBI_24838), [myo-inositol phosphate(2-)](http://purl.obolibrary.org/obo/CHEBI_84139), [gluconic acid phosphate](http://purl.obolibrary.org/obo/CHEBI_35184), [phosphoric acid derivative](http://purl.obolibrary.org/obo/CHEBI_26079), [XTP](http://purl.obolibrary.org/obo/CHEBI_10049), [organic phosphate](http://purl.obolibrary.org/obo/CHEBI_25703) (7 total)
 
 classes: 
-  molecular entity: "http://purl.obolibrary.org/obo/CHEBI_23367"
-  phosphoric acid: "http://purl.obolibrary.org/obo/CHEBI_26078"
+  molecular entity: "CHEBI:23367"
+  phosphoric acid: "CHEBI:26078"
 
 
 relations: 
@@ -20,14 +20,14 @@ vars:
   v0: "'molecular entity'"
 
 name:
-  # Induced, frequency=0.25, p=http://www.w3.org/2000/01/rdf-schema#label 
-  text: "%s phosphate"
+  # Induced, frequency=0.14285714285714285, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "D-hexose phosphate -2 %s"
   vars:
     - v0
 
 def:
-  # Could not induce def, using default
-  text: "Any %s that has functional parent a phosphoric acid"
+  # Induced, frequency=0.14285714285714285, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A dian%sic form of glycerone phosphate arising from deprotonation of the phosphate OH groups; major species at pH 7.3."
   vars:
     - v0
 
@@ -35,12 +35,7 @@ annotationProperties:
   exact_synonym: "oio:hasExactSynonym"
   related_synonym: "oio:hasRelatedSynonym"
 
-annotations:
-  - annotationProperty: related_synonym
-    # Induced p=related_synonym 
-    text: "%s phosphates"
-    vars:
-      - v0
+# could not infer annotations
 
 
 equivalentTo:

@@ -1,19 +1,19 @@
-# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has_specified_output X
 pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_specified_output_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [3D structure determination assay](http://purl.obolibrary.org/obo/OBI_0600045), [assay detecting IFN-gamma production](http://purl.obolibrary.org/obo/OBI_1110207), [single-nucleotide-resolution nucleic acid structure mapping assay](http://purl.obolibrary.org/obo/OBI_0000870) (89 total)
+  Examples: [3D structure determination assay](http://purl.obolibrary.org/obo/OBI_0600045), [assay detecting IFN-gamma production](http://purl.obolibrary.org/obo/OBI_1110207), [rac-lactic acid assay](http://purl.obolibrary.org/obo/OBI_2100042), [fibrinogen assay](http://purl.obolibrary.org/obo/OBI_0003010), [ferritin assay](http://purl.obolibrary.org/obo/OBI_0003009), [single-nucleotide-resolution nucleic acid structure mapping assay](http://purl.obolibrary.org/obo/OBI_0000870), [osmolality assay](http://purl.obolibrary.org/obo/OBI_2100039), [cytosolic creatine kinase complex, MB-type assay](http://purl.obolibrary.org/obo/OBI_2100041), [lactate dehydrogenase complex assay](http://purl.obolibrary.org/obo/OBI_2100028), [assay measuring epitope specific cytokine production by T cells](http://purl.obolibrary.org/obo/OBI_1110129) (321 total)
 
 classes: 
   continuant: "BFO:0000002"
-  planned process: "http://purl.obolibrary.org/obo/OBI_0000011"
+  planned process: "OBI:0000011"
 
 
 relations: 
-  has_specified_output: "http://purl.obolibrary.org/obo/OBI_0000299"
+  has_specified_output: "OBI:0000299"
 
 
 vars:
@@ -28,8 +28,8 @@ name:
     - v1
 
 def:
-  # Induced, frequency=0.0449438202247191, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "A MHC %s determination assay measuring %s."
+  # Could not induce def, using default
+  text: "Any %s that has_specified_output a %s"
   vars:
     - v0
     - v1
@@ -42,7 +42,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has_specified_output' some %s)"
+  text: "(%s and ('has_specified_output' some %s))"
   vars:
     - v0
     - v1

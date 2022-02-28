@@ -1,15 +1,15 @@
-# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: molecular entity has part X
 pattern_iri: http://purl.obolibrary.org/obo/chebi/molecular_entity_has_part_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [iron molecular entity](http://purl.obolibrary.org/obo/CHEBI_24873), [manganese molecular entity](http://purl.obolibrary.org/obo/CHEBI_25154), [alkaline earth molecular entity](http://purl.obolibrary.org/obo/CHEBI_33299) (58 total)
+  Examples: [iron molecular entity](http://purl.obolibrary.org/obo/CHEBI_24873), [nitrogen molecular entity](http://purl.obolibrary.org/obo/CHEBI_51143), [oxygen molecular entity](http://purl.obolibrary.org/obo/CHEBI_25806), [sulfur molecular entity](http://purl.obolibrary.org/obo/CHEBI_26835), [transition element molecular entity](http://purl.obolibrary.org/obo/CHEBI_33497), [phosphorus molecular entity](http://purl.obolibrary.org/obo/CHEBI_26082), [pnictogen molecular entity](http://purl.obolibrary.org/obo/CHEBI_33302), [carbon group molecular entity](http://purl.obolibrary.org/obo/CHEBI_33582), [main group molecular entity](http://purl.obolibrary.org/obo/CHEBI_33579), [iron group molecular entity](http://purl.obolibrary.org/obo/CHEBI_33744) (14 total)
 
 classes: 
-  molecular entity: "http://purl.obolibrary.org/obo/CHEBI_23367"
-  atom: "http://purl.obolibrary.org/obo/CHEBI_33250"
+  molecular entity: "CHEBI:23367"
+  atom: "CHEBI:33250"
 
 
 relations: 
@@ -20,7 +20,7 @@ vars:
   v0: "'atom'"
 
 name:
-  # Induced, frequency=0.7413793103448276, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s molecular entity"
   vars:
     - v0

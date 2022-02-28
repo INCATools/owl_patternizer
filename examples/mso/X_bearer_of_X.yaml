@@ -1,11 +1,11 @@
-# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X bearer of X
 pattern_iri: http://purl.obolibrary.org/obo/mso/X_bearer_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [syntenic region](http://purl.obolibrary.org/obo/MSO_0005858), [transcribable processed pseudogene](http://purl.obolibrary.org/obo/MSO_0002109), [translatable processed pseudogene](http://purl.obolibrary.org/obo/MSO_0002105) (91 total)
+  Examples: [syntenic region](http://purl.obolibrary.org/obo/MSO_0005858), [transcribable processed pseudogene](http://purl.obolibrary.org/obo/MSO_0002109), [translatable processed pseudogene](http://purl.obolibrary.org/obo/MSO_0002105), [natural transposable element](http://purl.obolibrary.org/obo/MSO_0000797), [foreign transposable element](http://purl.obolibrary.org/obo/MSO_0000720), [mRNA with minus 1 frameshift](http://purl.obolibrary.org/obo/MSO_0000282), [mRNA with minus 2 frameshift](http://purl.obolibrary.org/obo/MSO_0000335), [mRNA with plus 1 frameshift](http://purl.obolibrary.org/obo/MSO_0000321), [mRNA with plus 2 frameshift](http://purl.obolibrary.org/obo/MSO_0000329), [forward primer](http://purl.obolibrary.org/obo/MSO_0000121) (91 total)
 
 classes: 
   owl:Thing: "owl:Thing"

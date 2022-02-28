@@ -1,15 +1,15 @@
-# options: [min(25),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: has participant X microbial population phenotype in host X located in lower digestive tract part of Homo sapiens has disease gout
 pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_microbial_population_phenotype_in_host_X_located_in_lower_digestive_tract_part_of_Homo_sapiens_has_disease_gout
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [expansion of Parasporobacterium in gout human gut](http://purl.obolibrary.org/obo/OHMI_0000133), [depletion of Coprococcus catus in gout human gut](http://purl.obolibrary.org/obo/OHMI_0000142), [expansion of Erysipelatoclostridium in gout human gut](http://purl.obolibrary.org/obo/OHMI_0000129) (41 total)
+  Examples: [expansion of Parasporobacterium in gout human gut](http://purl.obolibrary.org/obo/OHMI_0000133), [depletion of Coprococcus catus in gout human gut](http://purl.obolibrary.org/obo/OHMI_0000142), [expansion of Erysipelatoclostridium in gout human gut](http://purl.obolibrary.org/obo/OHMI_0000129), [expansion of Bacteroidales in gout human gut](http://purl.obolibrary.org/obo/OHMI_0000117), [expansion of Porphyromonadaceae in gout human gut](http://purl.obolibrary.org/obo/OHMI_0000118), [expansion of Rhodococcus in gout human gut](http://purl.obolibrary.org/obo/OHMI_0000251), [depletion of Lachnospiraceae in gout human gut](http://purl.obolibrary.org/obo/OHMI_0000127), [expansion of Chloroflexi in gout human gut](http://purl.obolibrary.org/obo/OHMI_0000245), [depletion of Alistipes in gout human gut](http://purl.obolibrary.org/obo/OHMI_0000150), [expansion of Anaerotruncus in gout human gut](http://purl.obolibrary.org/obo/OHMI_0000135) (41 total)
 
 classes: 
   quality: "BFO:0000019"
-  gout: "http://purl.obolibrary.org/obo/DOID_13189"
+  gout: "DOID:13189"
   Bacteria: "http://purl.obolibrary.org/obo/NCBITaxon_2"
   Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
   lower digestive tract: "UBERON:0004907"

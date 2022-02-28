@@ -1,17 +1,17 @@
-# options: [min(25),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: has participant X microbial population phenotype in host increased organism quantity compared with healthy control located in X part of Homo sapiens has disease rheumatoid arthritis
 pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_microbial_population_phenotype_in_host_increased_organism_quantity_compared_with_healthy_control_located_in_X_part_of_Homo_sapiens_has_disease_rheumatoid_arthritis
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [expansion of Leptotrichia sp. in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000179), [expansion of Micrococcus in RA human respiratory airway](http://purl.obolibrary.org/obo/OHMI_0000219), [expansion of Clostridium perfringens in RA human gut](http://purl.obolibrary.org/obo/OHMI_0000071) (35 total)
+  Examples: [expansion of Leptotrichia sp. in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000179), [expansion of Micrococcus in RA human respiratory airway](http://purl.obolibrary.org/obo/OHMI_0000219), [expansion of Clostridium perfringens in RA human gut](http://purl.obolibrary.org/obo/OHMI_0000071), [expansion of Lactobacillus sp in RA human gut](http://purl.obolibrary.org/obo/OHMI_0000049), [expansion of Lactobacillus salivarius in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000069), [expansion of Prevotella copri in RA human gut](http://purl.obolibrary.org/obo/OHMI_0000091), [expansion of Actinomyces in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000177), [expansion of Bifidobacterium dentium in RA human gut](http://purl.obolibrary.org/obo/OHMI_0000048), [expansion of Prevotellaceae in RA human gut](http://purl.obolibrary.org/obo/OHMI_0000038), [depletion of Rothia aeria in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000089) (35 total)
 
 classes: 
-  rheumatoid arthritis: "http://purl.obolibrary.org/obo/DOID_7148"
+  rheumatoid arthritis: "DOID:7148"
   Bacteria: "http://purl.obolibrary.org/obo/NCBITaxon_2"
   Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-  increased organism quantity compared with healthy control: "http://purl.obolibrary.org/obo/OHMI_0000032"
+  increased organism quantity compared with healthy control: "OHMI:0000032"
   anatomical entity: "UBERON:0001062"
 
 

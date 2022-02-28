@@ -1,15 +1,15 @@
-# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has part sulfur atom
 pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_part_sulfur_atom
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [sulfur molecular entity](http://purl.obolibrary.org/obo/CHEBI_26835), [sulfur oxoacid](http://purl.obolibrary.org/obo/CHEBI_33402), [sulfur oxide](http://purl.obolibrary.org/obo/CHEBI_48154) (6 total)
+  Examples: [sulfur molecular entity](http://purl.obolibrary.org/obo/CHEBI_26835), [sulfur oxoacid](http://purl.obolibrary.org/obo/CHEBI_33402), [sulfur oxide](http://purl.obolibrary.org/obo/CHEBI_48154), [sulfur oxoacid derivative](http://purl.obolibrary.org/obo/CHEBI_33424), [sulfur hydride](http://purl.obolibrary.org/obo/CHEBI_33535), [sulfur oxoanion](http://purl.obolibrary.org/obo/CHEBI_33482) (6 total)
 
 classes: 
-  molecular entity: "http://purl.obolibrary.org/obo/CHEBI_23367"
-  sulfur atom: "http://purl.obolibrary.org/obo/CHEBI_26833"
+  molecular entity: "CHEBI:23367"
+  sulfur atom: "CHEBI:26833"
 
 
 relations: 

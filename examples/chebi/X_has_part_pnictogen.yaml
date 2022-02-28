@@ -1,15 +1,15 @@
-# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has part pnictogen
 pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_part_pnictogen
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [pnictogen molecular entity](http://purl.obolibrary.org/obo/CHEBI_33302), [pnictogen oxoacid](http://purl.obolibrary.org/obo/CHEBI_33408), [pnictogen hydride](http://purl.obolibrary.org/obo/CHEBI_35881) (4 total)
+  Examples: [pnictogen molecular entity](http://purl.obolibrary.org/obo/CHEBI_33302), [pnictogen oxoacid](http://purl.obolibrary.org/obo/CHEBI_33408), [pnictogen hydride](http://purl.obolibrary.org/obo/CHEBI_35881), [pnictogen oxoanion](http://purl.obolibrary.org/obo/CHEBI_33459) (4 total)
 
 classes: 
-  molecular entity: "http://purl.obolibrary.org/obo/CHEBI_23367"
-  pnictogen: "http://purl.obolibrary.org/obo/CHEBI_33300"
+  molecular entity: "CHEBI:23367"
+  pnictogen: "CHEBI:33300"
 
 
 relations: 

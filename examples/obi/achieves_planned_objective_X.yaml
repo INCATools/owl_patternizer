@@ -1,18 +1,18 @@
-# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: achieves_planned_objective X
 pattern_iri: http://purl.obolibrary.org/obo/obi/achieves_planned_objective_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [adding a material entity into a target](http://purl.obolibrary.org/obo/OBI_0000274), [assay](http://purl.obolibrary.org/obo/OBI_0000070), [material processing](http://purl.obolibrary.org/obo/OBI_0000094) (21 total)
+  Examples: [adding a material entity into a target](http://purl.obolibrary.org/obo/OBI_0000274), [assay](http://purl.obolibrary.org/obo/OBI_0000070), [material processing](http://purl.obolibrary.org/obo/OBI_0000094), [manufacturing](http://purl.obolibrary.org/obo/OBI_0000457), [material component separation](http://purl.obolibrary.org/obo/OBI_0600014), [statistical hypothesis test](http://purl.obolibrary.org/obo/OBI_0000673), [material combination](http://purl.obolibrary.org/obo/OBI_0000652), [decision tree building data transformation](http://purl.obolibrary.org/obo/OBI_0000707), [multiple testing correction method](http://purl.obolibrary.org/obo/OBI_0200089), [purification](http://purl.obolibrary.org/obo/OBI_0001505) (22 total)
 
 classes: 
   objective specification: "http://purl.obolibrary.org/obo/IAO_0000005"
 
 
 relations: 
-  achieves_planned_objective: "http://purl.obolibrary.org/obo/OBI_0000417"
+  achieves_planned_objective: "OBI:0000417"
 
 
 vars:

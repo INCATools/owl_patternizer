@@ -1,11 +1,11 @@
-# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has part X
 pattern_iri: http://purl.obolibrary.org/obo/mso/X_has_part_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [protein-coding transcript with retained intron](http://purl.obolibrary.org/obo/MSO_0002112), [coding exon](http://purl.obolibrary.org/obo/MSO_0000195), [capped primary transcript](http://purl.obolibrary.org/obo/MSO_0000861) (19 total)
+  Examples: [protein-coding transcript with retained intron](http://purl.obolibrary.org/obo/MSO_0002112), [coding exon](http://purl.obolibrary.org/obo/MSO_0000195), [capped primary transcript](http://purl.obolibrary.org/obo/MSO_0000861), [capped mRNA](http://purl.obolibrary.org/obo/MSO_0000862), [polyadenylated mRNA](http://purl.obolibrary.org/obo/MSO_0000871), [pseudogenic transcript with retained intron](http://purl.obolibrary.org/obo/MSO_0002115), [gene with noncanonical start codon](http://purl.obolibrary.org/obo/MSO_0001739), [gene with readthrough stop codon](http://purl.obolibrary.org/obo/MSO_0000697), [gene with stop codon redefined as pyrrolysine](http://purl.obolibrary.org/obo/MSO_0000698), [gene with stop codon redefined as selenocysteine](http://purl.obolibrary.org/obo/MSO_0000710) (19 total)
 
 classes: 
   protein-coding primary transcript: "MSO:0000120"

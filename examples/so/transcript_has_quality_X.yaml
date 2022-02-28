@@ -1,11 +1,11 @@
-# options: [min(8),dir('examples/so'),trim(true),base('http://purl.obolibrary.org/obo/so'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/so'),trim(true),base('http://purl.obolibrary.org/obo/so'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: transcript has_quality X
 pattern_iri: http://purl.obolibrary.org/obo/so/transcript_has_quality_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [edited_transcript](http://purl.obolibrary.org/obo/SO_0000873), [trans_spliced_transcript](http://purl.obolibrary.org/obo/SO_0000479), [transcript_bound_by_protein](http://purl.obolibrary.org/obo/SO_0000279) (10 total)
+  Examples: [edited_transcript](http://purl.obolibrary.org/obo/SO_0000873), [trans_spliced_transcript](http://purl.obolibrary.org/obo/SO_0000479), [transcript_bound_by_protein](http://purl.obolibrary.org/obo/SO_0000279), [transcript_bound_by_nucleic_acid](http://purl.obolibrary.org/obo/SO_0000278), [alternatively_spliced_transcript](http://purl.obolibrary.org/obo/SO_1001187), [monocistronic_transcript](http://purl.obolibrary.org/obo/SO_0000665), [dicistronic_transcript](http://purl.obolibrary.org/obo/SO_0000079), [polycistronic_transcript](http://purl.obolibrary.org/obo/SO_0000078), [transcript_with_translational_frameshift](http://purl.obolibrary.org/obo/SO_0000118) (9 total)
 
 classes: 
   transcript: "SO:0000673"
@@ -20,13 +20,13 @@ vars:
   v0: "'feature_attribute'"
 
 name:
-  # Induced, frequency=0.6, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.6666666666666666, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "%s_transcript"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.6, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  # Induced, frequency=0.6666666666666666, p=http://purl.obolibrary.org/obo/IAO_0000115 
   text: "A transcript that is %s."
   vars:
     - v0

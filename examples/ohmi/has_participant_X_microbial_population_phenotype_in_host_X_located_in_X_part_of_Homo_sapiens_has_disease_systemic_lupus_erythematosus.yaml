@@ -1,15 +1,15 @@
-# options: [min(25),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: has participant X microbial population phenotype in host X located in X part of Homo sapiens has disease systemic lupus erythematosus
 pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_microbial_population_phenotype_in_host_X_located_in_X_part_of_Homo_sapiens_has_disease_systemic_lupus_erythematosus
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [depletion of Capnocytophaga gingivalis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000237), [depletion of Firmicutes in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000112), [depletion of Streptococcus sanguinis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000238) (27 total)
+  Examples: [depletion of Capnocytophaga gingivalis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000237), [depletion of Firmicutes in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000112), [depletion of Streptococcus sanguinis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000238), [expansion of Treponema in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000244), [expansion of Bacteroidales in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000211), [expansion of Eubacterium in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000228), [expansion of Rhodococcus in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000230), [depletion of Clostridia in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000212), [depletion of Clostridiales in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000097), [depletion of Clostridiales in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000213) (27 total)
 
 classes: 
   quality: "BFO:0000019"
-  systemic lupus erythematosus: "http://purl.obolibrary.org/obo/DOID_9074"
+  systemic lupus erythematosus: "DOID:9074"
   Bacteria: "http://purl.obolibrary.org/obo/NCBITaxon_2"
   Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
   anatomical entity: "UBERON:0001062"

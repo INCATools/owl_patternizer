@@ -1,15 +1,15 @@
-# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has part hydroxy group
 pattern_iri: http://purl.obolibrary.org/obo/chebi/X_has_part_hydroxy_group
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [inorganic hydroxy compound](http://purl.obolibrary.org/obo/CHEBI_52625), [hydroxy monocarboxylic acid](http://purl.obolibrary.org/obo/CHEBI_35868), [hydroxy polyunsaturated fatty acid](http://purl.obolibrary.org/obo/CHEBI_140345) (8 total)
+  Examples: [inorganic hydroxy compound](http://purl.obolibrary.org/obo/CHEBI_52625), [hydroxy carboxylic acid](http://purl.obolibrary.org/obo/CHEBI_24669), [hydroxy steroid](http://purl.obolibrary.org/obo/CHEBI_35350), [organic hydroxy compound](http://purl.obolibrary.org/obo/CHEBI_33822), [hydroxy monocarboxylic acid](http://purl.obolibrary.org/obo/CHEBI_35868) (5 total)
 
 classes: 
-  molecular entity: "http://purl.obolibrary.org/obo/CHEBI_23367"
-  hydroxy group: "http://purl.obolibrary.org/obo/CHEBI_43176"
+  molecular entity: "CHEBI:23367"
+  hydroxy group: "CHEBI:43176"
 
 
 relations: 
@@ -20,14 +20,14 @@ vars:
   v0: "'molecular entity'"
 
 name:
-  # Induced, frequency=0.75, p=http://www.w3.org/2000/01/rdf-schema#label 
+  # Induced, frequency=0.4, p=http://www.w3.org/2000/01/rdf-schema#label 
   text: "hydroxy %s"
   vars:
     - v0
 
 def:
-  # Induced, frequency=0.25, p=http://purl.obolibrary.org/obo/IAO_0000115 
-  text: "Any %s carrying one or more hydroxy substituents."
+  # Induced, frequency=0.2, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "Any %s with at least one hydroxy group."
   vars:
     - v0
 

@@ -1,11 +1,11 @@
-# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: sequence molecular entity region part of X
 pattern_iri: http://purl.obolibrary.org/obo/mso/sequence_molecular_entity_region_part_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [exon region](http://purl.obolibrary.org/obo/MSO_0000852), [primary transcript region](http://purl.obolibrary.org/obo/MSO_0000835), [intron region](http://purl.obolibrary.org/obo/MSO_0001014) (24 total)
+  Examples: [exon region](http://purl.obolibrary.org/obo/MSO_0000852), [primary transcript region](http://purl.obolibrary.org/obo/MSO_0000835), [intron region](http://purl.obolibrary.org/obo/MSO_0001014), [UTR region](http://purl.obolibrary.org/obo/MSO_0000837), [rRNA primary transcript region](http://purl.obolibrary.org/obo/MSO_0000838), [mature transcript region](http://purl.obolibrary.org/obo/MSO_0000834), [mRNA region](http://purl.obolibrary.org/obo/MSO_0000836), [tRNA region](http://purl.obolibrary.org/obo/MSO_0001172), [LTR region](http://purl.obolibrary.org/obo/MSO_0000848), [chromosomal region](http://purl.obolibrary.org/obo/MSO_0000830) (24 total)
 
 classes: 
   sequence molecular entity region: "MSO:0000001"

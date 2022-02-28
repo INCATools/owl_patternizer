@@ -1,18 +1,18 @@
-# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: is_specified_output_of X
 pattern_iri: http://purl.obolibrary.org/obo/obi/is_specified_output_of_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [classified data set](http://purl.obolibrary.org/obo/OBI_0000023), [background corrected data set](http://purl.obolibrary.org/obo/OBI_0000660), [error corrected data set](http://purl.obolibrary.org/obo/OBI_0000662) (18 total)
+  Examples: [classified data set](http://purl.obolibrary.org/obo/OBI_0000023), [background corrected data set](http://purl.obolibrary.org/obo/OBI_0000660), [error corrected data set](http://purl.obolibrary.org/obo/OBI_0000662), [swab specimen](http://purl.obolibrary.org/obo/OBI_0002599), [mean-centered data](http://purl.obolibrary.org/obo/OBI_0302868), [data set of predicted values according to fitted curve](http://purl.obolibrary.org/obo/OBI_0000656), [normalized data set](http://purl.obolibrary.org/obo/OBI_0000451), [average value](http://purl.obolibrary.org/obo/OBI_0000679), [clustered data set](http://purl.obolibrary.org/obo/OBI_0000648), [center value](http://purl.obolibrary.org/obo/OBI_0000674) (18 total)
 
 classes: 
-  planned process: "http://purl.obolibrary.org/obo/OBI_0000011"
+  planned process: "OBI:0000011"
 
 
 relations: 
-  is_specified_output_of: "http://purl.obolibrary.org/obo/OBI_0000312"
+  is_specified_output_of: "OBI:0000312"
 
 
 vars:

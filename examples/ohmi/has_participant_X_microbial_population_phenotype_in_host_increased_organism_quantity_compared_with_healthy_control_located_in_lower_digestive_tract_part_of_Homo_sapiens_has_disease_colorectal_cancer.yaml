@@ -1,18 +1,18 @@
-# options: [min(25),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: has participant X microbial population phenotype in host increased organism quantity compared with healthy control located in lower digestive tract part of Homo sapiens has disease colorectal cancer
 pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_microbial_population_phenotype_in_host_increased_organism_quantity_compared_with_healthy_control_located_in_lower_digestive_tract_part_of_Homo_sapiens_has_disease_colorectal_cancer
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [expansion of Beggiatoa in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000290), [expansion of Collinsella in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000300), [expansion of S. moorei in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000283) (103 total)
+  Examples: [expansion of Beggiatoa in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000290), [expansion of Collinsella in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000300), [expansion of S. moorei in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000283), [expansion of Solobacterium sp. S4-A19 in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000426), [expansion of Proteobacteria in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000410), [expansion of Solobacterium in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000295), [expansion of Peptostreptococcusi in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000288), [expansion of P. anaerobius in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000417), [expansion of Erysipelotrichaceae in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000374), [expansion of Acidovorax in colorectal cancer human gut](http://purl.obolibrary.org/obo/OHMI_0000450) (103 total)
 
 classes: 
   organism or virus or viroid: "http://purl.obolibrary.org/obo/CARO_0001010"
-  colorectal cancer: "http://purl.obolibrary.org/obo/DOID_9256"
+  colorectal cancer: "DOID:9256"
   Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-  organism: "http://purl.obolibrary.org/obo/OBI_0100026"
-  increased organism quantity compared with healthy control: "http://purl.obolibrary.org/obo/OHMI_0000032"
+  organism: "OBI:0100026"
+  increased organism quantity compared with healthy control: "OHMI:0000032"
   lower digestive tract: "UBERON:0004907"
 
 

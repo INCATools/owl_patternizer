@@ -1,20 +1,20 @@
-# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: has_specified_output X-or-achieves_planned_objective X
 pattern_iri: http://purl.obolibrary.org/obo/obi/has_specified_output_X_or_achieves_planned_objective_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [class prediction data transformation](http://purl.obolibrary.org/obo/OBI_0000663), [normalization data transformation](http://purl.obolibrary.org/obo/OBI_0200169), [class discovery data transformation](http://purl.obolibrary.org/obo/OBI_0200175) (9 total)
+  Examples: [class prediction data transformation](http://purl.obolibrary.org/obo/OBI_0000663), [normalization data transformation](http://purl.obolibrary.org/obo/OBI_0200169), [class discovery data transformation](http://purl.obolibrary.org/obo/OBI_0200175), [descriptive statistical calculation data transformation](http://purl.obolibrary.org/obo/OBI_0200184), [curve fitting data transformation](http://purl.obolibrary.org/obo/OBI_0200072), [background correction data transformation](http://purl.obolibrary.org/obo/OBI_0000666), [center calculation data transformation](http://purl.obolibrary.org/obo/OBI_0200181), [data vector reduction data transformation](http://purl.obolibrary.org/obo/OBI_0200182), [averaging data transformation](http://purl.obolibrary.org/obo/OBI_0200170) (9 total)
 
 classes: 
   data item: "http://purl.obolibrary.org/obo/IAO_0000027"
-  data transformation objective: "http://purl.obolibrary.org/obo/OBI_0200166"
+  data transformation objective: "OBI:0200166"
 
 
 relations: 
-  has_specified_output: "http://purl.obolibrary.org/obo/OBI_0000299"
-  achieves_planned_objective: "http://purl.obolibrary.org/obo/OBI_0000417"
+  has_specified_output: "OBI:0000299"
+  achieves_planned_objective: "OBI:0000417"
 
 
 vars:

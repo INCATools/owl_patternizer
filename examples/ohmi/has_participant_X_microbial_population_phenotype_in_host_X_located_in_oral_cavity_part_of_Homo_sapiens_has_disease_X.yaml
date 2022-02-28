@@ -1,17 +1,17 @@
-# options: [min(25),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: has participant X microbial population phenotype in host X located in oral cavity part of Homo sapiens has disease X
 pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_microbial_population_phenotype_in_host_X_located_in_oral_cavity_part_of_Homo_sapiens_has_disease_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [depletion of Capnocytophaga gingivalis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000237), [expansion of Leptotrichia sp. in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000179), [depletion of Streptococcus sanguinis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000238) (37 total)
+  Examples: [depletion of Capnocytophaga gingivalis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000237), [expansion of Leptotrichia sp. in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000179), [depletion of Streptococcus sanguinis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000238), [expansion of Treponema in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000244), [expansion of Treponema denticola in AS human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000223), [expansion of Lactobacillus salivarius in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000069), [expansion of Actinomyces in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000177), [depletion of Rothia aeria in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000089), [depletion of Clostridiales in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000097), [expansion of Atopobium sp. in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000231) (37 total)
 
 classes: 
   quality: "BFO:0000019"
-  rheumatic disease: "http://purl.obolibrary.org/obo/DOID_1575"
+  rheumatic disease: "DOID:1575"
   Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-  microbe: "http://purl.obolibrary.org/obo/OHMI_0000460"
+  microbe: "OHMI:0000460"
   oral cavity: "UBERON:0000167"
 
 

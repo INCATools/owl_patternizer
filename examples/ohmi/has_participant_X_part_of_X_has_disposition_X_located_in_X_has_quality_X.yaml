@@ -1,15 +1,15 @@
-# options: [min(25),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: has participant X part of X has disposition X located in X has quality X
 pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_part_of_X_has_disposition_X_located_in_X_has_quality_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [expansion of Propionibacterium acnes 17B in arthritis  rat gut](http://purl.obolibrary.org/obo/OHMI_0000185), [expansion of Streptococcaceae in SLE  mouse gut](http://purl.obolibrary.org/obo/OHMI_0000201), [expansion of Streptococcus pyogenes in arthritis  rat gut](http://purl.obolibrary.org/obo/OHMI_0000202) (29 total)
+  Examples: [expansion of Propionibacterium acnes 17B in arthritis  rat gut](http://purl.obolibrary.org/obo/OHMI_0000185), [expansion of Streptococcaceae in SLE  mouse gut](http://purl.obolibrary.org/obo/OHMI_0000201), [expansion of Streptococcus pyogenes in arthritis  rat gut](http://purl.obolibrary.org/obo/OHMI_0000202), [depletion of Lactobacillus in SLE  mouse gut](http://purl.obolibrary.org/obo/OHMI_0000172), [expansion of Lactobacillus in arthritis rat gut](http://purl.obolibrary.org/obo/OHMI_0000191), [expansion of Lactobacillus acidophilus in arthritis rat gut](http://purl.obolibrary.org/obo/OHMI_0000189), [expansion of Lactobacillus casei in arthritis rat gut](http://purl.obolibrary.org/obo/OHMI_0000186), [expansion of Lactobacillus fermentum in arthritis rat gut](http://purl.obolibrary.org/obo/OHMI_0000187), [expansion of Lactobacillus murinus in arthritis  rat gut](http://purl.obolibrary.org/obo/OHMI_0000188), [expansion of Prevotella copri in arthritis mouse gut](http://purl.obolibrary.org/obo/OHMI_0000204) (29 total)
 
 classes: 
   quality: "BFO:0000019"
-  rheumatic disease: "http://purl.obolibrary.org/obo/DOID_1575"
+  rheumatic disease: "DOID:1575"
   Bacteria: "http://purl.obolibrary.org/obo/NCBITaxon_2"
   Murinae: "http://purl.obolibrary.org/obo/NCBITaxon_39107"
   lower digestive tract: "UBERON:0004907"

@@ -1,11 +1,11 @@
-# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(5),dir('examples/mso'),trim(true),base('http://purl.obolibrary.org/obo/mso'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(6),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X bearer of biological foreignness output of engineering process
 pattern_iri: http://purl.obolibrary.org/obo/mso/X_bearer_of_biological_foreignness_output_of_engineering_process
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [engineered foreign transposable element](http://purl.obolibrary.org/obo/MSO_0000799), [engineered foreign transposable element gene](http://purl.obolibrary.org/obo/MSO_0000283), [engineered foreign repeat](http://purl.obolibrary.org/obo/MSO_0000293) (5 total)
+  Examples: [engineered foreign transposable element](http://purl.obolibrary.org/obo/MSO_0000799), [engineered foreign transposable element gene](http://purl.obolibrary.org/obo/MSO_0000283), [engineered foreign repeat](http://purl.obolibrary.org/obo/MSO_0000293), [engineered foreign gene](http://purl.obolibrary.org/obo/MSO_0000281), [engineered foreign extent](http://purl.obolibrary.org/obo/MSO_0000805) (5 total)
 
 classes: 
   transposable element: "MSO:0000101"

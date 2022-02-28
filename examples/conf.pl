@@ -32,6 +32,9 @@
 :- rdf_register_prefix('RO','http://purl.obolibrary.org/obo/RO_').
 :- rdf_register_prefix('BFO','http://purl.obolibrary.org/obo/BFO_').
 :- rdf_register_prefix('CL','http://purl.obolibrary.org/obo/CL_').
+%:- rdf_register_prefix('CLO','http://purl.obolibrary.org/obo/CLO_').
+:- rdf_register_prefix('DOID','http://purl.obolibrary.org/obo/DOID_').
+:- rdf_register_prefix('ECO','http://purl.obolibrary.org/obo/ECO_').
 :- rdf_register_prefix('PATO','http://purl.obolibrary.org/obo/PATO_').
 :- rdf_register_prefix('GO','http://purl.obolibrary.org/obo/GO_').
 :- rdf_register_prefix('SO','http://purl.obolibrary.org/obo/SO_').
@@ -40,8 +43,14 @@
 :- rdf_register_prefix('FOODON','http://purl.obolibrary.org/obo/FOODON_').
 :- rdf_register_prefix('ECOCORE','http://purl.obolibrary.org/obo/ECOCORE_').
 :- rdf_register_prefix('EFO','http://www.ebi.ac.uk/efo/EFO_').
-:- rdf_register_prefix('CHEBI','http://www.ebi.ac.uk/efo/CHEBI_').
-:- rdf_register_prefix('NBO','http://www.ebi.ac.uk/efo/NBO_').
+:- rdf_register_prefix('OBI','http://purl.obolibrary.org/obo/OBI_').
+:- rdf_register_prefix('VO','http://purl.obolibrary.org/obo/VO_').
+:- rdf_register_prefix('OVAE','http://purl.obolibrary.org/obo/OVAE_').
+:- rdf_register_prefix('OHMI','http://purl.obolibrary.org/obo/OHMI_').
+:- rdf_register_prefix('CHEBI','http://purl.obolibrary.org/obo/CHEBI_').
+:- rdf_register_prefix('NBO','http://purl.obolibrary.org/obo/NBO_').
+:- rdf_register_prefix('MAXO','http://purl.obolibrary.org/obo/MAXO_').
+:- rdf_register_prefix('MONDO','http://purl.obolibrary.org/obo/MONDO_').
 :- rdf_register_prefix('pizza','http://www.co-ode.org/ontologies/pizza/pizza.owl#').
 :- rdf_register_prefix('NCIT','http://purl.obolibrary.org/obo/NCIT_').
 :- rdf_register_prefix('NIFEXT','http://uri.neuinfo.org/nif/nifstd/nifext_').
@@ -61,7 +70,7 @@
 
 
 ontology_config(pizza,    [min(2), base('http://purl.obolibrary.org/obo/pizza/')]).
-ontology_config(pato,     [infer_axioms(true), min(5), generalize_properties(false), ontology_prefix(pato)]).
+ontology_config(pato,     [infer_axioms(true), min(5), generalize_properties(false), ontology_prefix('PATO')]).
 
 ontology_config(wine,     [min(2)]).
 ontology_config(cco,      [infer_axioms(true), min(3), load_import_closure(false), generalize_properties(false)]).
@@ -72,13 +81,14 @@ ontology_config(mso,      [min(5), max_class_signature(6), generalize_properties
 ontology_config(chebi,    [min(4), remove_chemical_synonyms(true), mutate_chebi(true), infer_axioms(true), generalize_properties(false)]).
 ontology_config(uberon,   [min(10), generalize_properties(false), max_and_cardinality(3), ontology_prefix('UBERON')]).
 ontology_config(cl,       [min(10), ontology_prefix('CL')]).
-ontology_config(nif_cell, [min(10), imports([uberon]), infer_axioms(true), base('http://ontology.neuinfo.org/NIF/ttl/NIF-Cell.ttl'), ontology_prefix(nifext)]).
-ontology_config(nif,      [min(20), base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),  ontology_prefix(nifext)]).
-ontology_config(clo,      [min(20), ontology_prefix(clo)]).
-ontology_config(eco,      [min(10), ontology_prefix(eco)]).
+%ontology_config(nif_cell, [min(10), imports([uberon]), infer_axioms(true), base('http://ontology.neuinfo.org/NIF/ttl/NIF-Cell.ttl')
+%ontology_config(nif,      [min(20), base('http://ontology.neuinfo.org/NIF/ttl/nif.ttl'),  ontology_prefix(nifext)]).
+ontology_config(clo,      [min(20), ontology_prefix('CLO')]).
+ontology_config(eco,      [min(10), ontology_prefix('ECO')]).
+ontology_config(maxo,     [min(5), ontology_prefix('MAXO')]).
 ontology_config(fbbt,     [min(50), generalize_properties(false)]).
 ontology_config(fbcv,     [infer_axioms(true), min(5), generalize_properties(false)]).
-ontology_config(mondo,    [infer_axioms(true), min(4), generalize_properties(false), remove_inexact_synonyms(true)]).
+ontology_config(mondo,    [infer_axioms(true), min(4), generalize_properties(false), remove_inexact_synonyms(true), ontology_prefix('MONDO')]).
 ontology_config(geo,      []).
 ontology_config(fao,      [infer_axioms(true), min(5), generalize_properties(false)]).
 ontology_config(ma,       [infer_axioms(true), min(12), generalize_properties(false)]).
@@ -92,7 +102,10 @@ ontology_config(wbbt,     [infer_axioms(true), min(12), generalize_properties(fa
 ontology_config(fao,      [infer_axioms(true), min(12), generalize_properties(false)]).
 ontology_config(sweet,    [autolabels(true), infer_axioms(true), min(2), generalize_properties(false)]).
 ontology_config(svl,      [autolabels(true), infer_axioms(true), min(2), generalize_properties(false)]).
-ontology_config(obi,      [min(8), generalize_properties(false)]).
+ontology_config(obi,      [min(8), generalize_properties(false), ontology_prefix('OBI')]).
+ontology_config(vo,      [min(8), generalize_properties(false), ontology_prefix('VO')]).
+ontology_config(ovae,      [min(8), generalize_properties(false), ontology_prefix('OVAE')]).
+ontology_config(ohmi,      [min(8), generalize_properties(false), ontology_prefix('OHMI')]).
 ontology_config(ero,      [min(8), generalize_properties(false)]).
 ontology_config(vo,       [min(4), generalize_properties(false)]).
 ontology_config(sctid,    [max_class_signature(4), generalize_properties(false)]).
@@ -101,7 +114,7 @@ ontology_config(envo,     [infer_axioms(true), min(4), generalize_properties(fal
 ontology_config(ecocore,  [infer_axioms(true), min(4), generalize_properties(false), ontology_prefix('ECOCORE'), exclude_prefixes(['ENVO'])]).
 ontology_config(agro,     [min(10), infer_axioms(true), generalize_properties(false)]).
 ontology_config(efo,      [min(10)]).
-ontology_config(doid,     [min(25)]).
+ontology_config(doid,     [min(20), ontology_prefix('DOID')]).
 ontology_config(idomal,   [min(5), infer_axioms(true)]).
 ontology_config(mp,       [min(50), max_class_signature(4), generalize_properties(false)]).
 ontology_config(hp,       [min(50), max_class_signature(4), generalize_properties(false)]).
@@ -119,8 +132,8 @@ ontology_config(mmo,      [min(8), infer_links(true), infer_axioms(true), max_cl
 ontology_config(mop,      [min(8), infer_links(true), infer_axioms(true), max_class_signature(4), generalize_properties(false)]).
 ontology_config(micro,    [min(20), generalize_properties(false)]).
 ontology_config(ncit,     [min(50), infer_axioms(true), generalize_properties(false), max_and_cardinality(3)]).
-ontology_config(foodon,   [min(10), infer_axioms(true)]).
-ontology_config(go,       [min(25)]).
+ontology_config(foodon,   [min(10), ontology_prefix('FOODON')]).
+ontology_config(go,       [min(25), ontology_prefix('GO')]).
 ontology_config(peco,     [min(8), generalize_properties(false)]).
 ontology_config(ohmi,     [min(25), generalize_properties(false)]).
 ontology_config(vo,       [min(8), generalize_properties(false)]).

@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/cco/designates_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [Designative Information Content Entity](http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeInformationContentEntity), [Spatial Region Identifier](http://www.ontologyrepository.com/CommonCoreOntologies/SpatialRegionIdentifier), [Temporal Region Identifier](http://www.ontologyrepository.com/CommonCoreOntologies/TemporalRegionIdentifier) (43 total)
+  Examples: [Designative Information Content Entity](http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeInformationContentEntity), [Spatial Region Identifier](http://www.ontologyrepository.com/CommonCoreOntologies/SpatialRegionIdentifier), [Temporal Region Identifier](http://www.ontologyrepository.com/CommonCoreOntologies/TemporalRegionIdentifier), [Site Identifier](http://www.ontologyrepository.com/CommonCoreOntologies/SiteIdentifier), [Temporal Interval Identifier](http://www.ontologyrepository.com/CommonCoreOntologies/TemporalIntervalIdentifier), [Temporal Instant Identifier](http://www.ontologyrepository.com/CommonCoreOntologies/TemporalInstantIdentifier), [Artifact Identifier](http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactIdentifier), [Artifact Model Name](http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactModelName), [Bounding Box Point Identifier](http://www.ontologyrepository.com/CommonCoreOntologies/BoundingBoxPointIdentifier), [City Identifier](http://www.ontologyrepository.com/CommonCoreOntologies/CityIdentifier) (43 total)
 
 classes: 
   owl:Thing: "owl:Thing"

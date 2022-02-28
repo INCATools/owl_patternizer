@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/cco/RO_0000087_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [Allied Person](http://www.ontologyrepository.com/CommonCoreOntologies/AlliedPerson), [Citizen](http://www.ontologyrepository.com/CommonCoreOntologies/Citizen), [Enemy](http://www.ontologyrepository.com/CommonCoreOntologies/Enemy) (5 total)
+  Examples: [Allied Person](http://www.ontologyrepository.com/CommonCoreOntologies/AlliedPerson), [Citizen](http://www.ontologyrepository.com/CommonCoreOntologies/Citizen), [Enemy](http://www.ontologyrepository.com/CommonCoreOntologies/Enemy), [Neutral](http://www.ontologyrepository.com/CommonCoreOntologies/UnalliedPerson), [Organization Member](http://www.ontologyrepository.com/CommonCoreOntologies/OrganizationMember) (5 total)
 
 classes: 
   BFO_0000023: "BFO:0000023"

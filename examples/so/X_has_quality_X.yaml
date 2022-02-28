@@ -1,11 +1,11 @@
-# options: [min(8),dir('examples/so'),trim(true),base('http://purl.obolibrary.org/obo/so'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/so'),trim(true),base('http://purl.obolibrary.org/obo/so'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has_quality X
 pattern_iri: http://purl.obolibrary.org/obo/so/X_has_quality_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [engineered_region](http://purl.obolibrary.org/obo/SO_0000804), [consensus_region](http://purl.obolibrary.org/obo/SO_0000994), [low_complexity_region](http://purl.obolibrary.org/obo/SO_0001005) (145 total)
+  Examples: [engineered_region](http://purl.obolibrary.org/obo/SO_0000804), [consensus_region](http://purl.obolibrary.org/obo/SO_0000994), [low_complexity_region](http://purl.obolibrary.org/obo/SO_0001005), [mobile_genetic_element](http://purl.obolibrary.org/obo/SO_0001037), [natural_transposable_element](http://purl.obolibrary.org/obo/SO_0000797), [engineered_transposable_element](http://purl.obolibrary.org/obo/SO_0000798), [foreign_transposable_element](http://purl.obolibrary.org/obo/SO_0000720), [mRNA_with_minus_1_frameshift](http://purl.obolibrary.org/obo/SO_0000282), [mRNA_with_minus_2_frameshift](http://purl.obolibrary.org/obo/SO_0000335), [mRNA_with_plus_1_frameshift](http://purl.obolibrary.org/obo/SO_0000321) (145 total)
 
 classes: 
   owl:Thing: "owl:Thing"

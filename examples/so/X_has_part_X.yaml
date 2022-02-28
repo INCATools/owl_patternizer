@@ -1,21 +1,19 @@
-# options: [min(8),dir('examples/so'),trim(true),base('http://purl.obolibrary.org/obo/so'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/so'),trim(true),base('http://purl.obolibrary.org/obo/so'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has_part X
 pattern_iri: http://purl.obolibrary.org/obo/so/X_has_part_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [gene_with_stop_codon_read_through](http://purl.obolibrary.org/obo/SO_0000697), [gene_with_stop_codon_redefined_as_pyrrolysine](http://purl.obolibrary.org/obo/SO_0000698), [gene_with_stop_codon_redefined_as_selenocysteine](http://purl.obolibrary.org/obo/SO_0000710) (12 total)
+  Examples: [gene_with_stop_codon_read_through](http://purl.obolibrary.org/obo/SO_0000697), [gene_with_stop_codon_redefined_as_pyrrolysine](http://purl.obolibrary.org/obo/SO_0000698), [gene_with_stop_codon_redefined_as_selenocysteine](http://purl.obolibrary.org/obo/SO_0000710), [contig_collection](http://purl.obolibrary.org/obo/SO_0001462), [peptide_collection](http://purl.obolibrary.org/obo/SO_0001501), [variant_collection](http://purl.obolibrary.org/obo/SO_0001507), [genome](http://purl.obolibrary.org/obo/SO_0001026), [chromosomal_deletion](http://purl.obolibrary.org/obo/SO_1000029), [intrachromosomal_duplication](http://purl.obolibrary.org/obo/SO_1000038), [chromosomal_inversion](http://purl.obolibrary.org/obo/SO_1000030) (11 total)
 
 classes: 
   polypeptide: "SO:0000104"
   contig: "SO:0000149"
   deletion: "SO:0000159"
-  TF_binding_site: "SO:0000235"
   gene_with_stop_codon_read_through: "SO:0000697"
   stop_codon_redefined_as_pyrrolysine: "SO:0000884"
   stop_codon_redefined_as_selenocysteine: "SO:0000885"
-  transcriptional_cis_regulatory_region: "SO:0001055"
   sequence_conflict: "SO:0001085"
   replicon: "SO:0001235"
   direct: "SO:0001514"
@@ -29,8 +27,8 @@ relations:
 
 
 vars:
-  v0: "'gene_with_stop_codon_read_through' or 'transcriptional_cis_regulatory_region' or 'sequence_conflict' or 'intrachromosomal_transposition'"
-  v1: "'polypeptide' or 'contig' or 'deletion' or 'TF_binding_site' or 'stop_codon_redefined_as_pyrrolysine' or 'stop_codon_redefined_as_selenocysteine' or 'replicon' or 'direct' or 'duplication' or 'inversion'"
+  v0: "'gene_with_stop_codon_read_through' or 'sequence_conflict' or 'intrachromosomal_transposition'"
+  v1: "'polypeptide' or 'contig' or 'deletion' or 'stop_codon_redefined_as_pyrrolysine' or 'stop_codon_redefined_as_selenocysteine' or 'replicon' or 'direct' or 'duplication' or 'inversion'"
 
 name:
   # Could not induce name, using default

@@ -5,7 +5,7 @@ pattern_iri: http://purl.obolibrary.org/obo/cco/BFO_0000050_X
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [City Part](http://www.ontologyrepository.com/CommonCoreOntologies/CityPart), [Country Part](http://www.ontologyrepository.com/CommonCoreOntologies/CountryPart), [Geopolitical Entity Part](http://www.ontologyrepository.com/CommonCoreOntologies/GeopoliticalEntityPart) (5 total)
+  Examples: [City Part](http://www.ontologyrepository.com/CommonCoreOntologies/CityPart), [Country Part](http://www.ontologyrepository.com/CommonCoreOntologies/CountryPart), [Geopolitical Entity Part](http://www.ontologyrepository.com/CommonCoreOntologies/GeopoliticalEntityPart), [Province Part](http://www.ontologyrepository.com/CommonCoreOntologies/ProvincePart), [State Part](http://www.ontologyrepository.com/CommonCoreOntologies/StatePart) (5 total)
 
 classes: 
   Geopolitical Entity: "http://www.ontologyrepository.com/CommonCoreOntologies/GeopoliticalEntity"

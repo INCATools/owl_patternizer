@@ -1,11 +1,11 @@
-# options: [min(8),dir('examples/so'),trim(true),base('http://purl.obolibrary.org/obo/so'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/so'),trim(true),base('http://purl.obolibrary.org/obo/so'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: gene has_quality X
 pattern_iri: http://purl.obolibrary.org/obo/so/gene_has_quality_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [protein_coding_gene](http://purl.obolibrary.org/obo/SO_0001217), [post_translationally_regulated_gene](http://purl.obolibrary.org/obo/SO_0000890), [translationally_regulated_gene](http://purl.obolibrary.org/obo/SO_0000896) (20 total)
+  Examples: [protein_coding_gene](http://purl.obolibrary.org/obo/SO_0001217), [post_translationally_regulated_gene](http://purl.obolibrary.org/obo/SO_0000890), [translationally_regulated_gene](http://purl.obolibrary.org/obo/SO_0000896), [epigenetically_modified_gene](http://purl.obolibrary.org/obo/SO_0000898), [maternally_imprinted_gene](http://purl.obolibrary.org/obo/SO_0000888), [paternally_imprinted_gene](http://purl.obolibrary.org/obo/SO_0000889), [negatively_autoregulated_gene](http://purl.obolibrary.org/obo/SO_0000891), [positively_autoregulated_gene](http://purl.obolibrary.org/obo/SO_0000892), [retrogene](http://purl.obolibrary.org/obo/SO_0001219), [predicted_gene](http://purl.obolibrary.org/obo/SO_0000996) (20 total)
 
 classes: 
   gene: "SO:0000704"

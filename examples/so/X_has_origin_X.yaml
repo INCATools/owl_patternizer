@@ -1,11 +1,11 @@
-# options: [min(8),dir('examples/so'),trim(true),base('http://purl.obolibrary.org/obo/so'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/so'),trim(true),base('http://purl.obolibrary.org/obo/so'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has_origin X
 pattern_iri: http://purl.obolibrary.org/obo/so/X_has_origin_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [kinetoplast_gene](http://purl.obolibrary.org/obo/SO_0000089), [apicoplast_gene](http://purl.obolibrary.org/obo/SO_0000091), [chromoplast_gene](http://purl.obolibrary.org/obo/SO_0000093) (29 total)
+  Examples: [kinetoplast_gene](http://purl.obolibrary.org/obo/SO_0000089), [apicoplast_gene](http://purl.obolibrary.org/obo/SO_0000091), [chromoplast_gene](http://purl.obolibrary.org/obo/SO_0000093), [ct_gene](http://purl.obolibrary.org/obo/SO_0000092), [cyanelle_gene](http://purl.obolibrary.org/obo/SO_0000094), [leucoplast_gene](http://purl.obolibrary.org/obo/SO_0000095), [proplastid_gene](http://purl.obolibrary.org/obo/SO_0000096), [endogenous_retroviral_gene](http://purl.obolibrary.org/obo/SO_0000100), [BAC_read_contig](http://purl.obolibrary.org/obo/SO_0001866), [mitochondrial_contig](http://purl.obolibrary.org/obo/SO_0001921) (29 total)
 
 classes: 
   region: "SO:0000001"

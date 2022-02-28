@@ -1,15 +1,15 @@
-# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(4),dir('examples/chebi'),trim(true),base('http://purl.obolibrary.org/obo/chebi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: oxoanion has part X
 pattern_iri: http://purl.obolibrary.org/obo/chebi/oxoanion_has_part_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [chlorine oxoanion](http://purl.obolibrary.org/obo/CHEBI_33437), [halogen oxoanion](http://purl.obolibrary.org/obo/CHEBI_33443), [nitrogen oxoanion](http://purl.obolibrary.org/obo/CHEBI_33458) (19 total)
+  Examples: [nitrogen oxoanion](http://purl.obolibrary.org/obo/CHEBI_33458), [sulfur oxoanion](http://purl.obolibrary.org/obo/CHEBI_33482), [transition element oxoanion](http://purl.obolibrary.org/obo/CHEBI_35405), [carbon oxoanion](http://purl.obolibrary.org/obo/CHEBI_35604), [phosphorus oxoanion](http://purl.obolibrary.org/obo/CHEBI_33461), [pnictogen oxoanion](http://purl.obolibrary.org/obo/CHEBI_33459), [chalcogen oxoanion](http://purl.obolibrary.org/obo/CHEBI_33485) (7 total)
 
 classes: 
-  atom: "http://purl.obolibrary.org/obo/CHEBI_33250"
-  oxoanion: "http://purl.obolibrary.org/obo/CHEBI_35406"
+  atom: "CHEBI:33250"
+  oxoanion: "CHEBI:35406"
 
 
 relations: 
@@ -26,8 +26,8 @@ name:
     - v0
 
 def:
-  # Could not induce def, using default
-  text: "Any oxoanion that has part a %s"
+  # Induced, frequency=0.14285714285714285, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A negative ion %sonsisting solely of carbon and oxygen  atoms, and therefore having the general formula CxOy(n-) for some integers x, y and n."
   vars:
     - v0
 

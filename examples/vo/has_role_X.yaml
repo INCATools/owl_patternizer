@@ -1,26 +1,26 @@
-# options: [min(4),dir('examples/vo'),trim(true),base('http://purl.obolibrary.org/obo/vo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/vo'),trim(true),base('http://purl.obolibrary.org/obo/vo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: has role X
 pattern_iri: http://purl.obolibrary.org/obo/vo/has_role_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [antigen](http://purl.obolibrary.org/obo/OBI_1110034), [USA licensed human vaccine](http://purl.obolibrary.org/obo/VO_0000362), [licensed human vaccine](http://purl.obolibrary.org/obo/VO_0000635) (14 total)
+  Examples: [USA licensed human vaccine](http://purl.obolibrary.org/obo/VO_0000362), [licensed human vaccine](http://purl.obolibrary.org/obo/VO_0000635), [Canada licensed human vaccine](http://purl.obolibrary.org/obo/VO_0000714), [DNA vaccine](http://purl.obolibrary.org/obo/VO_0000032), [subunit vaccine](http://purl.obolibrary.org/obo/VO_0000534), [conjugate vaccine](http://purl.obolibrary.org/obo/VO_0000195), [licensed vaccine](http://purl.obolibrary.org/obo/VO_0000363), [recombinant vector vaccine](http://purl.obolibrary.org/obo/VO_0000484), [RNA vaccine](http://purl.obolibrary.org/obo/VO_0000186), [toxoid vaccine](http://purl.obolibrary.org/obo/VO_0000561) (14 total)
 
 classes: 
-  assay antigen role: "http://purl.obolibrary.org/obo/OBI_1110120"
-  USA licensed human vaccine role: "http://purl.obolibrary.org/obo/VO_0000194"
-  licensed human vaccine role: "http://purl.obolibrary.org/obo/VO_0000489"
-  Canada licensed human vaccine role: "http://purl.obolibrary.org/obo/VO_0000605"
-  DNA vaccine role: "http://purl.obolibrary.org/obo/VO_0000623"
-  subunit vaccine role: "http://purl.obolibrary.org/obo/VO_0000624"
-  conjugate vaccine role: "http://purl.obolibrary.org/obo/VO_0000625"
-  recombinant vector vaccine role: "http://purl.obolibrary.org/obo/VO_0000636"
-  RNA vaccine role: "http://purl.obolibrary.org/obo/VO_0000728"
-  toxoid vaccine role: "http://purl.obolibrary.org/obo/VO_0000807"
-  USA licensed vaccine role: "http://purl.obolibrary.org/obo/VO_0000812"
-  vaccine strain role: "http://purl.obolibrary.org/obo/VO_0001182"
-  virmugen role: "http://purl.obolibrary.org/obo/VO_0001361"
+  USA licensed human vaccine role: "VO:0000194"
+  licensed human vaccine role: "VO:0000489"
+  Canada licensed human vaccine role: "VO:0000605"
+  DNA vaccine role: "VO:0000623"
+  subunit vaccine role: "VO:0000624"
+  conjugate vaccine role: "VO:0000625"
+  recombinant vector vaccine role: "VO:0000636"
+  RNA vaccine role: "VO:0000728"
+  toxoid vaccine role: "VO:0000807"
+  USA licensed vaccine role: "VO:0000812"
+  vaccine strain role: "VO:0001182"
+  virmugen role: "VO:0001361"
+  virus-like particle vaccine role: "VO:0004913"
 
 
 relations: 
@@ -28,7 +28,7 @@ relations:
 
 
 vars:
-  v0: "'assay antigen role' or 'USA licensed human vaccine role' or 'licensed human vaccine role' or 'Canada licensed human vaccine role' or 'DNA vaccine role' or 'subunit vaccine role' or 'conjugate vaccine role' or 'recombinant vector vaccine role' or 'RNA vaccine role' or 'toxoid vaccine role' or 'USA licensed vaccine role' or 'vaccine strain role' or 'virmugen role'"
+  v0: "'USA licensed human vaccine role' or 'licensed human vaccine role' or 'Canada licensed human vaccine role' or 'DNA vaccine role' or 'subunit vaccine role' or 'conjugate vaccine role' or 'recombinant vector vaccine role' or 'RNA vaccine role' or 'toxoid vaccine role' or 'USA licensed vaccine role' or 'vaccine strain role' or 'virmugen role' or 'virus-like particle vaccine role'"
 
 name:
   # Could not induce name, using default

@@ -1,11 +1,11 @@
-# options: [min(8),dir('examples/so'),trim(true),base('http://purl.obolibrary.org/obo/so'),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/so'),trim(true),base('http://purl.obolibrary.org/obo/so'),load_import_closure(true),generalize_properties(true),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: mRNA has_quality X
 pattern_iri: http://purl.obolibrary.org/obo/so/mRNA_has_quality_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [edited_mRNA](http://purl.obolibrary.org/obo/SO_0000929), [exemplar_mRNA](http://purl.obolibrary.org/obo/SO_0000734), [mRNA_with_frameshift](http://purl.obolibrary.org/obo/SO_0000108) (10 total)
+  Examples: [edited_mRNA](http://purl.obolibrary.org/obo/SO_0000929), [exemplar_mRNA](http://purl.obolibrary.org/obo/SO_0000734), [mRNA_with_frameshift](http://purl.obolibrary.org/obo/SO_0000108), [monocistronic_mRNA](http://purl.obolibrary.org/obo/SO_0000633), [dicistronic_mRNA](http://purl.obolibrary.org/obo/SO_0000716), [polycistronic_mRNA](http://purl.obolibrary.org/obo/SO_0000634), [recoded_mRNA](http://purl.obolibrary.org/obo/SO_1001261), [mRNA_recoded_by_codon_redefinition](http://purl.obolibrary.org/obo/SO_1001265), [mRNA_recoded_by_translational_bypass](http://purl.obolibrary.org/obo/SO_1001264), [consensus_mRNA](http://purl.obolibrary.org/obo/SO_0000995) (10 total)
 
 classes: 
   mRNA: "SO:0000234"

@@ -1,19 +1,19 @@
-# options: [min(4),dir('examples/vo'),trim(true),base('http://purl.obolibrary.org/obo/vo'),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+# options: [min(8),dir('examples/vo'),trim(true),base('http://purl.obolibrary.org/obo/vo'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
 pattern_name: X has role X
 pattern_iri: http://purl.obolibrary.org/obo/vo/X_has_role_X
 
 description: >-
   This is auto-generated. Add your description here
 
-  Examples: [antigen](http://purl.obolibrary.org/obo/OBI_1110034), [regulatory agency](http://purl.obolibrary.org/obo/OBI_0000450), [vaccine organism](http://purl.obolibrary.org/obo/VO_0000506) (15 total)
+  Examples: [vaccine organism](http://purl.obolibrary.org/obo/VO_0000506), [protective antigen](http://purl.obolibrary.org/obo/VO_0001232), [E. coli DNA vaccine](http://purl.obolibrary.org/obo/VO_0001169), [vaccine antigen](http://purl.obolibrary.org/obo/VO_0000919), [recombinant vaccine vector](http://purl.obolibrary.org/obo/VO_0000599), [vaccine adjuvant](http://purl.obolibrary.org/obo/VO_0000580), [vaccine additive](http://purl.obolibrary.org/obo/VO_0000850), [vaccine preservative](http://purl.obolibrary.org/obo/VO_0000851), [vaccine emulsifier](http://purl.obolibrary.org/obo/VO_0000310), [vaccine stabilizer](http://purl.obolibrary.org/obo/VO_0000853) (13 total)
 
 classes: 
-  organization: "http://purl.obolibrary.org/obo/OBI_0000245"
-  organism: "http://purl.obolibrary.org/obo/OBI_0100026"
-  antigen: "http://purl.obolibrary.org/obo/OBI_1110034"
-  Escherichia coli vaccine: "http://purl.obolibrary.org/obo/VO_0000041"
-  Influenza virus vaccine: "http://purl.obolibrary.org/obo/VO_0000642"
-  vaccine antigen: "http://purl.obolibrary.org/obo/VO_0000919"
+  role: "BFO:0000023"
+  organism: "OBI:0100026"
+  antigen: "OBI:1110034"
+  Escherichia coli vaccine: "VO:0000041"
+  Influenza virus vaccine: "VO:0000642"
+  vaccine antigen: "VO:0000919"
 
 
 relations: 
@@ -21,7 +21,7 @@ relations:
 
 
 vars:
-  v0: "'organization' or 'organism' or 'antigen' or 'Escherichia coli vaccine' or 'Influenza virus vaccine' or 'vaccine antigen'"
+  v0: "'organism' or 'antigen' or 'Escherichia coli vaccine' or 'Influenza virus vaccine' or 'vaccine antigen'"
   v1: "'role'"
 
 name:
@@ -46,7 +46,7 @@ annotationProperties:
 
 
 equivalentTo:
-  text: "%s and ('has role' some %s)"
+  text: "(%s and ('has role' some %s))"
   vars:
     - v0
     - v1
