@@ -1,0 +1,59 @@
+# options: [min(8),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has participant X part of X has disposition arthritis located in X has quality X
+pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_part_of_X_has_disposition_arthritis_located_in_X_has_quality_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [expansion of Propionibacterium acnes 17B in arthritis  rat gut](http://purl.obolibrary.org/obo/OHMI_0000185), [expansion of Streptococcus pyogenes in arthritis  rat gut](http://purl.obolibrary.org/obo/OHMI_0000202), [expansion of Lactobacillus in arthritis rat gut](http://purl.obolibrary.org/obo/OHMI_0000191), [expansion of Lactobacillus acidophilus in arthritis rat gut](http://purl.obolibrary.org/obo/OHMI_0000189), [expansion of Lactobacillus casei in arthritis rat gut](http://purl.obolibrary.org/obo/OHMI_0000186), [expansion of Lactobacillus fermentum in arthritis rat gut](http://purl.obolibrary.org/obo/OHMI_0000187), [expansion of Lactobacillus murinus in arthritis  rat gut](http://purl.obolibrary.org/obo/OHMI_0000188), [expansion of Prevotella copri in arthritis mouse gut](http://purl.obolibrary.org/obo/OHMI_0000204), [expansion of Bifidobacterium in arthritis  rat gut](http://purl.obolibrary.org/obo/OHMI_0000184), [Actinobacteria<class> depletion in arthritis mouse gut](http://purl.obolibrary.org/obo/OHMI_0000205) (16 total)
+
+classes: 
+  quality: "BFO:0000019"
+  arthritis: "DOID:848"
+  Bacteria: "http://purl.obolibrary.org/obo/NCBITaxon_2"
+  Murinae: "http://purl.obolibrary.org/obo/NCBITaxon_39107"
+  lower digestive tract: "UBERON:0004907"
+
+
+relations: 
+  has participant: "RO:0000057"
+
+
+vars:
+  v0: "'Bacteria'"
+  v1: "'Murinae'"
+  v2: "'lower digestive tract'"
+  v3: "'quality'"
+
+name:
+  # Could not induce name, using default
+  text: "has participant %s part of %s has disposition arthritis located in %s has quality %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+def:
+  # Could not induce def, using default
+  text: "has participant a Any %s that Any part of a Any %s that has disposition a arthritis that located in a %s and has quality a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has participant' some (%s and (('part of' some (%s and ('has disposition' some 'arthritis'))) and ('located in' some %s)) and ('has quality' some %s)))"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3

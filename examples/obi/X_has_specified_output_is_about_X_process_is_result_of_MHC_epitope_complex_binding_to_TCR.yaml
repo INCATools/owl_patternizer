@@ -1,0 +1,49 @@
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has_specified_output is about X process is result of MHC:epitope complex binding to TCR
+pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_specified_output_is_about_X_process_is_result_of_MHC_epitope_complex_binding_to_TCR
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [assay measuring epitope specific cytokine production by T cells](http://purl.obolibrary.org/obo/OBI_1110129), [assay measuring epitope specific vascular endothelial growth factor production by T cells](http://purl.obolibrary.org/obo/OBI_0001570), [assay measuring epitope specific granulocyte macrophage colony stimulating factor production by T cells](http://purl.obolibrary.org/obo/OBI_0001233), [assay measuring epitope specific interferon-alpha production by T cells](http://purl.obolibrary.org/obo/OBI_0002452), [assay measuring epitope specific interferon-beta production by T cells](http://purl.obolibrary.org/obo/OBI_0001390), [assay measuring epitope specific interferon-gamma production by T cells](http://purl.obolibrary.org/obo/OBI_0001414), [assay measuring epitope specific interleukin-1 alpha production by T cells](http://purl.obolibrary.org/obo/OBI_0001388), [assay measuring epitope specific interleukin-1 beta production by T cells](http://purl.obolibrary.org/obo/OBI_0001449), [assay measuring epitope specific interleukin-10 production by T cells](http://purl.obolibrary.org/obo/OBI_0001209), [assay measuring epitope specific interleukin-12 production by T cells](http://purl.obolibrary.org/obo/OBI_0001391) (278 total)
+
+classes: 
+  cytokine production: "GO:0001816"
+  assay: "OBI:0000070"
+  MHC:epitope complex binding to TCR: "OBI:1110057"
+
+
+relations: 
+  has_specified_output: "OBI:0000299"
+
+
+vars:
+  v0: "'assay'"
+  v1: "'cytokine production'"
+
+name:
+  # Induced, frequency=0.4460431654676259, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s measuring epitope specific %s by T cells"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.3273381294964029, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that detects %s by T cells."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has_specified_output' some ('is about' some (%s and ('process is result of' some 'MHC:epitope complex binding to TCR')))))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,59 @@
+# options: [min(8),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has participant X part of Mus musculus has disposition X located in X has quality X
+pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_part_of_Mus_musculus_has_disposition_X_located_in_X_has_quality_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [expansion of Streptococcaceae in SLE  mouse gut](http://purl.obolibrary.org/obo/OHMI_0000201), [depletion of Lactobacillus in SLE  mouse gut](http://purl.obolibrary.org/obo/OHMI_0000172), [expansion of Prevotella copri in arthritis mouse gut](http://purl.obolibrary.org/obo/OHMI_0000204), [Actinobacteria<class> depletion in arthritis mouse gut](http://purl.obolibrary.org/obo/OHMI_0000205), [expansion of Clostridiales in SLE  mouse gut](http://purl.obolibrary.org/obo/OHMI_0000200), [expansion of Lachnospiraceae in SLE  mouse gut](http://purl.obolibrary.org/obo/OHMI_0000198), [expansion of Alistipes in SLE  mouse gut](http://purl.obolibrary.org/obo/OHMI_0000208), [expansion of Ruminococcaceae in SLE  mouse gut](http://purl.obolibrary.org/obo/OHMI_0000199), [Bacteroides depletion in arthritis mouse gut](http://purl.obolibrary.org/obo/OHMI_0000206) (9 total)
+
+classes: 
+  quality: "BFO:0000019"
+  rheumatic disease: "DOID:1575"
+  Mus musculus: "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+  Bacteria: "http://purl.obolibrary.org/obo/NCBITaxon_2"
+  lower digestive tract: "UBERON:0004907"
+
+
+relations: 
+  has participant: "RO:0000057"
+
+
+vars:
+  v0: "'Bacteria'"
+  v1: "'rheumatic disease'"
+  v2: "'lower digestive tract'"
+  v3: "'quality'"
+
+name:
+  # Could not induce name, using default
+  text: "has participant %s part of Mus musculus has disposition %s located in %s has quality %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+def:
+  # Could not induce def, using default
+  text: "has participant a Any %s that Any part of a Any Mus musculus that has disposition a %s that located in a %s and has quality a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has participant' some (%s and (('part of' some ('Mus musculus' and ('has disposition' some %s))) and ('located in' some %s)) and ('has quality' some %s)))"
+  vars:
+    - v0
+    - v1
+    - v2
+    - v3

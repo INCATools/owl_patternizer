@@ -1,0 +1,51 @@
+# options: [min(8),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has participant X microbial population phenotype in host X located in zone of skin part of Homo sapiens has disease psoriatic arthritis
+pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_microbial_population_phenotype_in_host_X_located_in_zone_of_skin_part_of_Homo_sapiens_has_disease_psoriatic_arthritis
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [depletion of Propionibacterium acnes 17B in PsA human skin](http://purl.obolibrary.org/obo/OHMI_0000151), [depletion of Proteobacteria in PsA human skin](http://purl.obolibrary.org/obo/OHMI_0000162), [expansion of Firmicutes in PsA human skin](http://purl.obolibrary.org/obo/OHMI_0000163), [expansion of Streptococcus in PsA human skin](http://purl.obolibrary.org/obo/OHMI_0000159), [depletion of Propionibacterium in PsA human skin](http://purl.obolibrary.org/obo/OHMI_0000160), [depletion of Actinobacteria <phylum> in PsA human skin](http://purl.obolibrary.org/obo/OHMI_0000161), [expansion of Malassezia furfur in PsA human skin](http://purl.obolibrary.org/obo/OHMI_0000278), [depletion of Malassezia restricta in PsA human skin](http://purl.obolibrary.org/obo/OHMI_0000168), [depletion of Malassezia sympodialis in PsA human skin](http://purl.obolibrary.org/obo/OHMI_0000169), [depletion of Malassezia pachydermatis in PsA human skin](http://purl.obolibrary.org/obo/OHMI_0000170) (11 total)
+
+classes: 
+  quality: "BFO:0000019"
+  psoriatic arthritis: "DOID:9008"
+  Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+  microbe: "OHMI:0000460"
+  zone of skin: "UBERON:0000014"
+
+
+relations: 
+  has participant: "RO:0000057"
+
+
+vars:
+  v0: "'microbe'"
+  v1: "'quality'"
+
+name:
+  # Could not induce name, using default
+  text: "has participant %s microbial population phenotype in host %s located in zone of skin part of Homo sapiens has disease psoriatic arthritis"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "has participant a Any %s that microbial population phenotype in host a %s and located in a Any zone of skin that part of a Any Homo sapiens that has disease a psoriatic arthritis"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has participant' some (%s and ('microbial population phenotype in host' some %s) and ('located in' some ('zone of skin' and ('part of' some ('Homo sapiens' and ('has disease' some 'psoriatic arthritis')))))))"
+  vars:
+    - v0
+    - v1

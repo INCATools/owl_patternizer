@@ -1,0 +1,47 @@
+# options: [min(8),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has participant X microbial population phenotype in host decreased organism quantity compared with healthy controls located in lower digestive tract part of Homo sapiens has disease rheumatoid arthritis
+pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_microbial_population_phenotype_in_host_decreased_organism_quantity_compared_with_healthy_controls_located_in_lower_digestive_tract_part_of_Homo_sapiens_has_disease_rheumatoid_arthritis
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [depletion of Megamonas hypermegale in RA human gut](http://purl.obolibrary.org/obo/OHMI_0000042), [depletion of Bifidobacterium bifidum in RA human gut](http://purl.obolibrary.org/obo/OHMI_0000039), [depletion of Faecalibacterium in RA human gut](http://purl.obolibrary.org/obo/OHMI_0000098), [depletion of Veillonella in RA human gut](http://purl.obolibrary.org/obo/OHMI_0000040), [depletion of Sutterella wadsworthensis in RA human gut](http://purl.obolibrary.org/obo/OHMI_0000041), [depletion of Klebsiella pneumoniae in RA human gut](http://purl.obolibrary.org/obo/OHMI_0000034), [depletion of Haemophilus spp. in RA human gut](http://purl.obolibrary.org/obo/OHMI_0000452), [depletion of Bacteroides in RA human gut](http://purl.obolibrary.org/obo/OHMI_0000074), [expansion of Bacteroides fragilis in RA human gut](http://purl.obolibrary.org/obo/OHMI_0000330) (9 total)
+
+classes: 
+  rheumatoid arthritis: "DOID:7148"
+  Bacteria: "http://purl.obolibrary.org/obo/NCBITaxon_2"
+  Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+  decreased organism quantity compared with healthy controls: "OHMI:0000035"
+  lower digestive tract: "UBERON:0004907"
+
+
+relations: 
+  has participant: "RO:0000057"
+
+
+vars:
+  v0: "'Bacteria'"
+
+name:
+  # Induced, frequency=0.7777777777777778, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "depletion of %s in RA human gut"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.4444444444444444, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "a RA human-gut microbiome interaction that shows an decrease of %s in patients with RA compared with healthy controls."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has participant' some (%s and ('microbial population phenotype in host' some 'decreased organism quantity compared with healthy controls') and ('located in' some ('lower digestive tract' and ('part of' some ('Homo sapiens' and ('has disease' some 'rheumatoid arthritis')))))))"
+  vars:
+    - v0

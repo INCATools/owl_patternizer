@@ -1,0 +1,49 @@
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has_specified_output categorical binding datum has_specified_output is about X
+pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_specified_output_categorical_binding_datum_has_specified_output_is_about_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [assay measuring qualitative binding of a MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0002072), [assay measuring qualitative binding of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001703), [assay measuring qualitative binding of a T cell epitope:MHC:TCR complex](http://purl.obolibrary.org/obo/OBI_1110124), [mass spectrometry assay measuring binding of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001654), [ELISA measuring binding of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001657), [viral hemagglutination inhibition assay measuring binding of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001724), [RIA measuring binding of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001649), [flow cytometry assay measuring binding of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001659), [flow cytometry assay measuring cell-cell binding of a T cell epitope:MHC:TCR complex](http://purl.obolibrary.org/obo/OBI_0001317), [plasmon resonance assay measuring binding of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001651) (26 total)
+
+classes: 
+  assay: "OBI:0000070"
+  binding: "OBI:0001588"
+  categorical binding datum: "OBI:0003141"
+
+
+relations: 
+  has_specified_output: "OBI:0000299"
+
+
+vars:
+  v0: "'assay'"
+  v1: "'binding'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has_specified_output categorical binding datum has_specified_output is about %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has_specified_output a categorical binding datum and has_specified_output a is about a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has_specified_output' some 'categorical binding datum') and ('has_specified_output' some ('is about' some %s)))"
+  vars:
+    - v0
+    - v1

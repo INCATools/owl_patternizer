@@ -1,0 +1,44 @@
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: assay has_specified_output is about X
+pattern_iri: http://purl.obolibrary.org/obo/obi/assay_has_specified_output_is_about_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [rac-lactic acid assay](http://purl.obolibrary.org/obo/OBI_2100042), [fibrinogen assay](http://purl.obolibrary.org/obo/OBI_0003010), [ferritin assay](http://purl.obolibrary.org/obo/OBI_0003009), [single-nucleotide-resolution nucleic acid structure mapping assay](http://purl.obolibrary.org/obo/OBI_0000870), [osmolality assay](http://purl.obolibrary.org/obo/OBI_2100039), [cytosolic creatine kinase complex, MB-type assay](http://purl.obolibrary.org/obo/OBI_2100041), [lactate dehydrogenase complex assay](http://purl.obolibrary.org/obo/OBI_2100028), [assay measuring epitope specific cytokine production by T cells](http://purl.obolibrary.org/obo/OBI_1110129), [assay measuring epitope specific vascular endothelial growth factor production by T cells](http://purl.obolibrary.org/obo/OBI_0001570), [assay measuring epitope specific granulocyte macrophage colony stimulating factor production by T cells](http://purl.obolibrary.org/obo/OBI_0001233) (66 total)
+
+classes: 
+  continuant: "BFO:0000002"
+  assay: "OBI:0000070"
+
+
+relations: 
+  has_specified_output: "OBI:0000299"
+
+
+vars:
+  v0: "'continuant'"
+
+name:
+  # Induced, frequency=0.06060606060606061, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s assay"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.06060606060606061, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An assay that measures %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('assay' and ('has_specified_output' some ('is about' some %s)))"
+  vars:
+    - v0

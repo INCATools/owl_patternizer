@@ -1,0 +1,45 @@
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has_specified_output equilibrium dissociation constant (KD) has_specified_output is about immunoglobulin binding to epitope
+pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_specified_output_equilibrium_dissociation_constant__KD__has_specified_output_is_about_immunoglobulin_binding_to_epitope
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [assay measuring the dissociation constant [KD] of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001708), [ELISA measuring the dissociation constant [KD] of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001728), [RIA measuring the dissociation constant [KD] of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001727), [surface plasmon resonance assay measuring the dissociation constant [KD] of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001731), [chromatography assay measuring the dissociation constant [KD] of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001996), [calorimetry assay measuring the dissociation constant [KD] of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001734), [quenching assay measuring the dissociation constant [KD] of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001729), [bio-layer interferometry assay measuring the dissociation constant [KD] of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0002105) (8 total)
+
+classes: 
+  assay: "OBI:0000070"
+  equilibrium dissociation constant (KD): "OBI:0001536"
+  immunoglobulin binding to epitope: "OBI:0001702"
+
+
+relations: 
+  has_specified_output: "OBI:0000299"
+
+
+vars:
+  v0: "'assay'"
+
+name:
+  # Induced, frequency=0.375, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s measuring the dissociation constant [KD] of a B cell epitope:antibody complex"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.375, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that measures the dissociation constant [KD] of an antigen binding with an antibody."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has_specified_output' some 'equilibrium dissociation constant (KD)') and ('has_specified_output' some ('is about' some 'immunoglobulin binding to epitope')))"
+  vars:
+    - v0

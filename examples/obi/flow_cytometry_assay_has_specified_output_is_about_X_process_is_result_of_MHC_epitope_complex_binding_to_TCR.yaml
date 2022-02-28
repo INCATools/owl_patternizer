@@ -1,0 +1,45 @@
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: flow cytometry assay has_specified_output is about X process is result of MHC:epitope complex binding to TCR
+pattern_iri: http://purl.obolibrary.org/obo/obi/flow_cytometry_assay_has_specified_output_is_about_X_process_is_result_of_MHC_epitope_complex_binding_to_TCR
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [intracellular cytokine staining assay measuring epitope specific vascular endothelial growth factor production by T cells](http://purl.obolibrary.org/obo/OBI_0001770), [intracellular cytokine staining assay measuring epitope specific granulocyte macrophage colony-stimulating factor production by T cells](http://purl.obolibrary.org/obo/OBI_0001303), [intracellular cytokine staining assay measuring epitope specific interferon-beta production by T cells](http://purl.obolibrary.org/obo/OBI_0001749), [intracellular cytokine staining assay measuring epitope specific interferon-gamma production by T cells](http://purl.obolibrary.org/obo/OBI_1110172), [intracellular cytokine staining assay measuring epitope specific interleukin-1 alpha production by T cells](http://purl.obolibrary.org/obo/OBI_0001744), [intracellular cytokine staining assay measuring epitope specific interleukin-1 beta production by T cells](http://purl.obolibrary.org/obo/OBI_0001841), [intracellular cytokine staining assay measuring epitope specific interleukin-10 production by T cells](http://purl.obolibrary.org/obo/OBI_1110177), [intracellular cytokine staining assay measuring epitope specific interleukin-12 production by T cells](http://purl.obolibrary.org/obo/OBI_0001466), [intracellular cytokine staining assay measuring epitope specific interleukin-13 production by T cells](http://purl.obolibrary.org/obo/OBI_0001309), [intracellular cytokine staining assay measuring epitope specific interleukin-15 production by T cells](http://purl.obolibrary.org/obo/OBI_0001845) (41 total)
+
+classes: 
+  cytokine production: "GO:0001816"
+  flow cytometry assay: "OBI:0000916"
+  MHC:epitope complex binding to TCR: "OBI:1110057"
+
+
+relations: 
+  has_specified_output: "OBI:0000299"
+
+
+vars:
+  v0: "'cytokine production'"
+
+name:
+  # Induced, frequency=0.926829268292683, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "intracellular cytokine staining assay measuring epitope specific %s by T cells"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.9024390243902439, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A flow cytometry assay that detects %s by T cells."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('flow cytometry assay' and ('has_specified_output' some ('is about' some (%s and ('process is result of' some 'MHC:epitope complex binding to TCR')))))"
+  vars:
+    - v0

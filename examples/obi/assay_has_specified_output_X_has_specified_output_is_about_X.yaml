@@ -1,0 +1,49 @@
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: assay has_specified_output X has_specified_output is about X
+pattern_iri: http://purl.obolibrary.org/obo/obi/assay_has_specified_output_X_has_specified_output_is_about_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [assay measuring a binding constant of a MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001553), [assay measuring a binding constant of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001709), [assay measuring a binding constant of a T cell epitope:MHC:TCR complex](http://purl.obolibrary.org/obo/OBI_0002059), [3D molecular structure determination assay of an antigen:antibody complex](http://purl.obolibrary.org/obo/OBI_0001721), [3D molecular structure determination assay of a T cell epitope:MHC:TCR complex](http://purl.obolibrary.org/obo/OBI_0001999), [3D molecular structure determination assay of a MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0002050), [assay measuring binding of a MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_1110126), [assay measuring binding of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_1110127), [assay measuring binding of a T cell epitope:MHC:TCR complex](http://purl.obolibrary.org/obo/OBI_1110037), [assay measuring the dissociation constant [KD] of a MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001988) (30 total)
+
+classes: 
+  entity: "BFO:0000001"
+  data item: "http://purl.obolibrary.org/obo/IAO_0000027"
+  assay: "OBI:0000070"
+
+
+relations: 
+  has_specified_output: "OBI:0000299"
+
+
+vars:
+  v0: "'data item'"
+  v1: "'entity'"
+
+name:
+  # Could not induce name, using default
+  text: "assay has_specified_output %s has_specified_output is about %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any assay that has_specified_output a %s and has_specified_output a is about a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('assay' and ('has_specified_output' some %s) and ('has_specified_output' some ('is about' some %s)))"
+  vars:
+    - v0
+    - v1

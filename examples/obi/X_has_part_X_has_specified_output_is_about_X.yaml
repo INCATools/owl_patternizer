@@ -1,0 +1,53 @@
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has part X has_specified_output is about X
+pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_part_X_has_specified_output_is_about_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [in vivo assay measuring T cell epitope specific tolerance induction](http://purl.obolibrary.org/obo/OBI_0001324), [in vivo assay measuring B cell epitope specific induction of hypersensitivity](http://purl.obolibrary.org/obo/OBI_0001694), [in vivo assay measuring B cell epitope specific tolerance induction](http://purl.obolibrary.org/obo/OBI_0001693), [cell-cell binding detection by flow cytometry assay](http://purl.obolibrary.org/obo/OBI_0000975), [biological activity assay measuring epitope specific T cell killing](http://purl.obolibrary.org/obo/OBI_1110130), [biological activity assay measuring epitope specific proliferation of T cells](http://purl.obolibrary.org/obo/OBI_1110131), [in vivo assay measuring epitope specific T cell killing resulting from the adoptive transfer of epitope specific T cells](http://purl.obolibrary.org/obo/OBI_0002671), [in vivo assay measuring epitope specific proliferation of T cells resulting from the adoptive transfer of epitope specific T cells](http://purl.obolibrary.org/obo/OBI_0002668) (8 total)
+
+classes: 
+  biological_process: "GO:0008150"
+  assay: "OBI:0000070"
+
+
+relations: 
+  has part: "BFO:0000051"
+  has_specified_output: "OBI:0000299"
+
+
+vars:
+  v0: "'assay'"
+  v1: "'assay'"
+  v2: "'biological_process'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has part %s has_specified_output is about %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has part a %s and has_specified_output a is about a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has part' some %s) and ('has_specified_output' some ('is about' some %s)))"
+  vars:
+    - v0
+    - v1
+    - v2

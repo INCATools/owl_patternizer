@@ -1,0 +1,56 @@
+# options: [min(8),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has participant X part of Rattus has disposition X located in lower digestive tract has quality X
+pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_part_of_Rattus_has_disposition_X_located_in_lower_digestive_tract_has_quality_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [expansion of Propionibacterium acnes 17B in arthritis  rat gut](http://purl.obolibrary.org/obo/OHMI_0000185), [expansion of Streptococcus pyogenes in arthritis  rat gut](http://purl.obolibrary.org/obo/OHMI_0000202), [expansion of Lactobacillus in arthritis rat gut](http://purl.obolibrary.org/obo/OHMI_0000191), [expansion of Lactobacillus acidophilus in arthritis rat gut](http://purl.obolibrary.org/obo/OHMI_0000189), [expansion of Lactobacillus casei in arthritis rat gut](http://purl.obolibrary.org/obo/OHMI_0000186), [expansion of Lactobacillus fermentum in arthritis rat gut](http://purl.obolibrary.org/obo/OHMI_0000187), [expansion of Lactobacillus murinus in arthritis  rat gut](http://purl.obolibrary.org/obo/OHMI_0000188), [expansion of Bifidobacterium in arthritis  rat gut](http://purl.obolibrary.org/obo/OHMI_0000184), [Rikenellaceae depletion in AS rat gut](http://purl.obolibrary.org/obo/OHMI_0000226), [Lachnospiraceae depletion in arthritis rat gut](http://purl.obolibrary.org/obo/OHMI_0000193) (20 total)
+
+classes: 
+  quality: "BFO:0000019"
+  rheumatic disease: "DOID:1575"
+  bone inflammation disease: "DOID:3342"
+  Rattus: "http://purl.obolibrary.org/obo/NCBITaxon_10114"
+  Bacteria: "http://purl.obolibrary.org/obo/NCBITaxon_2"
+  lower digestive tract: "UBERON:0004907"
+
+
+relations: 
+  has participant: "RO:0000057"
+
+
+vars:
+  v0: "'Bacteria'"
+  v1: "'rheumatic disease' or 'bone inflammation disease'"
+  v2: "'quality'"
+
+name:
+  # Could not induce name, using default
+  text: "has participant %s part of Rattus has disposition %s located in lower digestive tract has quality %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "has participant a Any %s that Any part of a Any Rattus that has disposition a %s that located in a lower digestive tract and has quality a %s"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has participant' some (%s and (('part of' some ('Rattus' and ('has disposition' some %s))) and ('located in' some 'lower digestive tract')) and ('has quality' some %s)))"
+  vars:
+    - v0
+    - v1
+    - v2

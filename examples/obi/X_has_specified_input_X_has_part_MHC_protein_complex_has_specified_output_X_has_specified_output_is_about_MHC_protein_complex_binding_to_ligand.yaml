@@ -1,0 +1,56 @@
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has_specified_input X has part MHC protein complex has_specified_output X has_specified_output is about MHC protein complex binding to ligand
+pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_specified_input_X_has_part_MHC_protein_complex_has_specified_output_X_has_specified_output_is_about_MHC_protein_complex_binding_to_ligand
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [assay measuring binding of a cell-bound-MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001550), [assay measuring binding of a purified-MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001555), [assay measuring binding of a cell-lysate-MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001579), [radioactivity detection assay measuring half life to determine direct binding of a cell-bound-MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001558), [radioactivity detection assay measuring half life to determine direct binding of a purified-MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001586), [radioactivity detection assay measuring half life to determine direct binding of a cell-lysate-MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001565), [radioactivity detection assay measuring binding off rate [koff] to determine direct binding of a cell-lysate-MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001567), [radioactivity detection assay measuring direct binding of a cell-lysate-MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001556), [radioactivity detection assay measuring half maximal effective concentration [EC50] to determine direct binding of a cell-lysate-MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001516), [phage display binding assay measuring binding of a purified-MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001584) (22 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  MHC protein complex: "GO:0042611"
+  assay: "OBI:0000070"
+  binding datum: "OBI:0001181"
+  MHC protein complex binding to ligand: "OBI:0001503"
+
+
+relations: 
+  has_specified_input: "OBI:0000293"
+  has_specified_output: "OBI:0000299"
+
+
+vars:
+  v0: "'assay'"
+  v1: "'material entity'"
+  v2: "'binding datum'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has_specified_input %s has part MHC protein complex has_specified_output %s has_specified_output is about MHC protein complex binding to ligand"
+  vars:
+    - v0
+    - v1
+    - v2
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has_specified_input a Any %s that has part a MHC protein complex and has_specified_output a %s and has_specified_output a is about a MHC protein complex binding to ligand"
+  vars:
+    - v0
+    - v1
+    - v2
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has_specified_input' some (%s and ('has part' some 'MHC protein complex'))) and ('has_specified_output' some %s) and ('has_specified_output' some ('is about' some 'MHC protein complex binding to ligand')))"
+  vars:
+    - v0
+    - v1
+    - v2

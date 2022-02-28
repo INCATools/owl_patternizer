@@ -1,0 +1,49 @@
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has_specified_output X has_specified_output is about MHC:epitope complex binding to TCR
+pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_specified_output_X_has_specified_output_is_about_MHC_epitope_complex_binding_to_TCR
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [assay measuring a binding constant of a T cell epitope:MHC:TCR complex](http://purl.obolibrary.org/obo/OBI_0002059), [assay measuring binding of a T cell epitope:MHC:TCR complex](http://purl.obolibrary.org/obo/OBI_1110037), [assay measuring the dissociation constant [KD] of a T cell epitope:MHC:TCR complex](http://purl.obolibrary.org/obo/OBI_0002097), [assay measuring the association constant [KA] of a T cell epitope:MHC:TCR complex](http://purl.obolibrary.org/obo/OBI_0002100), [assay measuring the off rate [koff] of a T cell epitope:MHC:TCR complex](http://purl.obolibrary.org/obo/OBI_0002099), [assay measuring the on rate [kon] of a T cell epitope:MHC:TCR complex](http://purl.obolibrary.org/obo/OBI_0002098), [assay measuring qualitative binding of a T cell epitope:MHC:TCR complex](http://purl.obolibrary.org/obo/OBI_1110124), [assay measuring quantitative binding of an epitope:MHC:TCR complex](http://purl.obolibrary.org/obo/OBI_0003147), [flow cytometry assay measuring cell-cell binding of a T cell epitope:MHC:TCR complex](http://purl.obolibrary.org/obo/OBI_0001317), [plasmon resonance assay measuring the dissociation constant [KD] of a T cell epitope:MHC:TCR complex](http://purl.obolibrary.org/obo/OBI_0001229) (10 total)
+
+classes: 
+  assay: "OBI:0000070"
+  binding datum: "OBI:0001181"
+  MHC:epitope complex binding to TCR: "OBI:1110057"
+
+
+relations: 
+  has_specified_output: "OBI:0000299"
+
+
+vars:
+  v0: "'assay'"
+  v1: "'binding datum'"
+
+name:
+  # Induced, frequency=0.1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s measuring a %s of a T cell epitope:MHC:TCR complex"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A T cell epitope recognition %s that quantitavely characterizes the binding of a TCR with a ligand by determining a %s. "
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has_specified_output' some %s) and ('has_specified_output' some ('is about' some 'MHC:epitope complex binding to TCR')))"
+  vars:
+    - v0
+    - v1

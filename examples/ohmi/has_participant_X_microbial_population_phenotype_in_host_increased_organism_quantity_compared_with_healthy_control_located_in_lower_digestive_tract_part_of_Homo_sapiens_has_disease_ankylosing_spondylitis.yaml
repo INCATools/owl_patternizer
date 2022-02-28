@@ -1,0 +1,47 @@
+# options: [min(8),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has participant X microbial population phenotype in host increased organism quantity compared with healthy control located in lower digestive tract part of Homo sapiens has disease ankylosing spondylitis
+pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_microbial_population_phenotype_in_host_increased_organism_quantity_compared_with_healthy_control_located_in_lower_digestive_tract_part_of_Homo_sapiens_has_disease_ankylosing_spondylitis
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [expansion of Rikenellaceae in AS human gut](http://purl.obolibrary.org/obo/OHMI_0000224), [expansion of Prevotellaceae in AS human gut](http://purl.obolibrary.org/obo/OHMI_0000103), [expansion of Lachnospiraceae in AS human gut](http://purl.obolibrary.org/obo/OHMI_0000101), [expansion of Campylobacter in AS human gut](http://purl.obolibrary.org/obo/OHMI_0000227), [expansion of Veillonellaceae in AS human gut](http://purl.obolibrary.org/obo/OHMI_0000104), [expansion of Dialister in AS human gut](http://purl.obolibrary.org/obo/OHMI_0000207), [expansion of Ruminococcaceae in AS human gut](http://purl.obolibrary.org/obo/OHMI_0000100), [expansion of Klebsiella pneumoniae in AS human gut](http://purl.obolibrary.org/obo/OHMI_0000105), [expansion of Bacteroidaceae in AS human gut](http://purl.obolibrary.org/obo/OHMI_0000102) (9 total)
+
+classes: 
+  ankylosing spondylitis: "DOID:7147"
+  Bacteria: "http://purl.obolibrary.org/obo/NCBITaxon_2"
+  Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+  increased organism quantity compared with healthy control: "OHMI:0000032"
+  lower digestive tract: "UBERON:0004907"
+
+
+relations: 
+  has participant: "RO:0000057"
+
+
+vars:
+  v0: "'Bacteria'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "expansion of %s in AS human gut"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.8888888888888888, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "an AS human-gut microbiome interaction that shows an expansion of %s in patients with AS compared with healthy controls."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has participant' some (%s and ('microbial population phenotype in host' some 'increased organism quantity compared with healthy control') and ('located in' some ('lower digestive tract' and ('part of' some ('Homo sapiens' and ('has disease' some 'ankylosing spondylitis')))))))"
+  vars:
+    - v0

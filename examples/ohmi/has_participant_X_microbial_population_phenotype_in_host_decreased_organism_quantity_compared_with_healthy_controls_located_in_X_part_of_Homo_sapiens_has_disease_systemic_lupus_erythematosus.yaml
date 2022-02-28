@@ -1,0 +1,51 @@
+# options: [min(8),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has participant X microbial population phenotype in host decreased organism quantity compared with healthy controls located in X part of Homo sapiens has disease systemic lupus erythematosus
+pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_microbial_population_phenotype_in_host_decreased_organism_quantity_compared_with_healthy_controls_located_in_X_part_of_Homo_sapiens_has_disease_systemic_lupus_erythematosus
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [depletion of Capnocytophaga gingivalis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000237), [depletion of Firmicutes in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000112), [depletion of Streptococcus sanguinis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000238), [depletion of Clostridia in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000212), [depletion of Clostridiales in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000097), [depletion of Clostridiales in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000213), [depletion of Pseudomonas sp. in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000235), [depletion of Prevotella pleuritidis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000234), [depletion of Treponema maltophilum in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000236) (9 total)
+
+classes: 
+  systemic lupus erythematosus: "DOID:9074"
+  Bacteria: "http://purl.obolibrary.org/obo/NCBITaxon_2"
+  Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+  decreased organism quantity compared with healthy controls: "OHMI:0000035"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  has participant: "RO:0000057"
+
+
+vars:
+  v0: "'Bacteria'"
+  v1: "'anatomical entity'"
+
+name:
+  # Induced, frequency=1, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "depletion of %s in SLE human %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.5555555555555556, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "a SLE human %s microbiome interaction that shows an decrease of %s in patients with SLE compared with healthy controls."
+  vars:
+    - v1
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has participant' some (%s and ('microbial population phenotype in host' some 'decreased organism quantity compared with healthy controls') and ('located in' some (%s and ('part of' some ('Homo sapiens' and ('has disease' some 'systemic lupus erythematosus')))))))"
+  vars:
+    - v0
+    - v1

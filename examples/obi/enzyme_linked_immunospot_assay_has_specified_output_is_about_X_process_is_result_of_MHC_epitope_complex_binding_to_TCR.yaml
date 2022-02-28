@@ -1,0 +1,45 @@
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: enzyme-linked immunospot assay has_specified_output is about X process is result of MHC:epitope complex binding to TCR
+pattern_iri: http://purl.obolibrary.org/obo/obi/enzyme_linked_immunospot_assay_has_specified_output_is_about_X_process_is_result_of_MHC_epitope_complex_binding_to_TCR
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [ELISPOT assay measuring epitope specific vascular endothelial growth factor production by T cells](http://purl.obolibrary.org/obo/OBI_0001771), [ELISPOT assay measuring epitope specific granulocyte macrophage colony-stimulating factor production by T cells](http://purl.obolibrary.org/obo/OBI_0001206), [ELISPOT assay measuring epitope specific interferon-beta production by T cells](http://purl.obolibrary.org/obo/OBI_0001748), [ELISPOT assay measuring epitope specific interferon-gamma production by T cells](http://purl.obolibrary.org/obo/OBI_1110059), [ELISPOT assay measuring epitope specific interleukin-1 alpha production by T cells](http://purl.obolibrary.org/obo/OBI_0001745), [ELISPOT assay measuring epitope specific interleukin-1 beta production by T cells](http://purl.obolibrary.org/obo/OBI_0001842), [ELISPOT assay measuring epitope specific interleukin-10 production by T cells](http://purl.obolibrary.org/obo/OBI_1110170), [ELISPOT assay measuring epitope specific interleukin-12 production by T cells](http://purl.obolibrary.org/obo/OBI_0001844), [ELISPOT assay measuring epitope specific interleukin-13 production by T cells](http://purl.obolibrary.org/obo/OBI_1110171), [ELISPOT assay measuring epitope specific interleukin-15 production by T cells](http://purl.obolibrary.org/obo/OBI_0001846) (40 total)
+
+classes: 
+  cytokine production: "GO:0001816"
+  enzyme-linked immunospot assay: "OBI:0600031"
+  MHC:epitope complex binding to TCR: "OBI:1110057"
+
+
+relations: 
+  has_specified_output: "OBI:0000299"
+
+
+vars:
+  v0: "'cytokine production'"
+
+name:
+  # Induced, frequency=0.925, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "ELISPOT assay measuring epitope specific %s by T cells"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.85, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An enzyme-linked immunospot assay that detects %s by T cells."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('enzyme-linked immunospot assay' and ('has_specified_output' some ('is about' some (%s and ('process is result of' some 'MHC:epitope complex binding to TCR')))))"
+  vars:
+    - v0

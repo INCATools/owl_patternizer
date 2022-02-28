@@ -1,0 +1,48 @@
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has function X
+pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_function_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [reverse transcriptase](http://purl.obolibrary.org/obo/OBI_0000419), [physical store](http://purl.obolibrary.org/obo/OBI_0002089), [specimen container](http://purl.obolibrary.org/obo/OBI_0002088), [light emission device](http://purl.obolibrary.org/obo/OBI_0001032), [container](http://purl.obolibrary.org/obo/OBI_0000967), [material separation device](http://purl.obolibrary.org/obo/OBI_0000932), [perturbation device](http://purl.obolibrary.org/obo/OBI_0001033), [image creation device](http://purl.obolibrary.org/obo/OBI_0000398), [measurement device](http://purl.obolibrary.org/obo/OBI_0000832), [environmental control device](http://purl.obolibrary.org/obo/OBI_0001034) (10 total)
+
+classes: 
+  function: "BFO:0000034"
+  device: "OBI:0000968"
+
+
+relations: 
+  has function: "RO:0000085"
+
+
+vars:
+  v0: "'device'"
+  v1: "'function'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has function %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.1, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s in which a %s inheres."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has function' some %s))"
+  vars:
+    - v0
+    - v1

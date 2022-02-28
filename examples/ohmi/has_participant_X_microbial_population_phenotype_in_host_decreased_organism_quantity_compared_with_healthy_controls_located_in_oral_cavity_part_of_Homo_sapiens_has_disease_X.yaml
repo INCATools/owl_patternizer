@@ -1,0 +1,51 @@
+# options: [min(8),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has participant X microbial population phenotype in host decreased organism quantity compared with healthy controls located in oral cavity part of Homo sapiens has disease X
+pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_microbial_population_phenotype_in_host_decreased_organism_quantity_compared_with_healthy_controls_located_in_oral_cavity_part_of_Homo_sapiens_has_disease_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [depletion of Capnocytophaga gingivalis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000237), [depletion of Streptococcus sanguinis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000238), [depletion of Clostridiales in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000097), [depletion of Cardiobacterium in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000086), [depletion of Pseudomonas sp. in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000235), [depletion of Prevotella pleuritidis in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000234), [depletion of Aggregatibacter in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000173), [depletion of Treponema maltophilum in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000236), [depletion of Eikenella in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000087), [depletion of Haemophilus in RA human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000084) (12 total)
+
+classes: 
+  rheumatic disease: "DOID:1575"
+  Bacteria: "http://purl.obolibrary.org/obo/NCBITaxon_2"
+  Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+  decreased organism quantity compared with healthy controls: "OHMI:0000035"
+  oral cavity: "UBERON:0000167"
+
+
+relations: 
+  has participant: "RO:0000057"
+
+
+vars:
+  v0: "'Bacteria'"
+  v1: "'rheumatic disease'"
+
+name:
+  # Could not induce name, using default
+  text: "has participant %s microbial population phenotype in host decreased organism quantity compared with healthy controls located in oral cavity part of Homo sapiens has disease %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "has participant a Any %s that microbial population phenotype in host a decreased organism quantity compared with healthy controls and located in a Any oral cavity that part of a Any Homo sapiens that has disease a %s"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has participant' some (%s and ('microbial population phenotype in host' some 'decreased organism quantity compared with healthy controls') and ('located in' some ('oral cavity' and ('part of' some ('Homo sapiens' and ('has disease' some %s)))))))"
+  vars:
+    - v0
+    - v1

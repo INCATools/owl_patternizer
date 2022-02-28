@@ -1,0 +1,52 @@
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: fluorescence detection assay has_specified_input X has part MHC protein complex has_specified_output X has_specified_output is about MHC protein complex binding to ligand
+pattern_iri: http://purl.obolibrary.org/obo/obi/fluorescence_detection_assay_has_specified_input_X_has_part_MHC_protein_complex_has_specified_output_X_has_specified_output_is_about_MHC_protein_complex_binding_to_ligand
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [fluorescence detection assay measuring equilibrium association constant [KA] to determine direct binding of a cell-bound-MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001524), [fluorescence detection assay measuring half life to determine direct binding of a cell-bound-MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001559), [fluorescence detection assay measuring binding off rate [koff] to determine direct binding of a cell-bound-MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001665), [fluorescence detection assay measuring binding on rate [kon] to determine direct binding of a cell-bound-MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001666), [fluorescence detection assay measuring half maximal effective concentration [EC50] to determine direct binding of a cell-bound-MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001561), [fluorescence detection assay measuring 50% dissociation of binding temperature [Tm] of a purified-MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001604), [fluorescence detection assay measuring equilibrium dissociation constant [KD] to determine direct binding of a purified-MHC:ligand complex approximated by EC50](http://purl.obolibrary.org/obo/OBI_0001543), [fluorescence detection assay measuring half life to determine direct binding of a purified-MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001531), [fluorescence detection assay measuring binding off rate [koff] to determine direct binding of a purified-MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001569), [fluorescence detection assay measuring binding on rate [kon] to determine direct binding of a purified-MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001541) (12 total)
+
+classes: 
+  material entity: "BFO:0000040"
+  MHC protein complex: "GO:0042611"
+  binding datum: "OBI:0001181"
+  fluorescence detection assay: "OBI:0001501"
+  MHC protein complex binding to ligand: "OBI:0001503"
+
+
+relations: 
+  has_specified_input: "OBI:0000293"
+  has_specified_output: "OBI:0000299"
+
+
+vars:
+  v0: "'material entity'"
+  v1: "'binding datum'"
+
+name:
+  # Could not induce name, using default
+  text: "fluorescence detection assay has_specified_input %s has part MHC protein complex has_specified_output %s has_specified_output is about MHC protein complex binding to ligand"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any fluorescence detection assay that has_specified_input a Any %s that has part a MHC protein complex and has_specified_output a %s and has_specified_output a is about a MHC protein complex binding to ligand"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('fluorescence detection assay' and ('has_specified_input' some (%s and ('has part' some 'MHC protein complex'))) and ('has_specified_output' some %s) and ('has_specified_output' some ('is about' some 'MHC protein complex binding to ligand')))"
+  vars:
+    - v0
+    - v1

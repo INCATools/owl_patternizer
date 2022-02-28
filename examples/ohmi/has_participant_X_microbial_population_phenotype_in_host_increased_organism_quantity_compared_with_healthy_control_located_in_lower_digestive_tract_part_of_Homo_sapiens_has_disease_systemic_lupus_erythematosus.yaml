@@ -1,0 +1,47 @@
+# options: [min(8),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has participant X microbial population phenotype in host increased organism quantity compared with healthy control located in lower digestive tract part of Homo sapiens has disease systemic lupus erythematosus
+pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_microbial_population_phenotype_in_host_increased_organism_quantity_compared_with_healthy_control_located_in_lower_digestive_tract_part_of_Homo_sapiens_has_disease_systemic_lupus_erythematosus
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [expansion of Bacteroidales in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000211), [expansion of Eubacterium in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000228), [expansion of Rhodococcus in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000230), [expansion of Bacteroidia in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000210), [depletion of Dialister in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000073), [depletion of Pseudobutyrivibrio in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000081), [expansion of Klebsiella in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000068), [expansion of Prevotella in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000072), [expansion of Eggerthella in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000233), [expansion of Flavonifractor in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000229) (11 total)
+
+classes: 
+  systemic lupus erythematosus: "DOID:9074"
+  Bacteria: "http://purl.obolibrary.org/obo/NCBITaxon_2"
+  Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+  increased organism quantity compared with healthy control: "OHMI:0000032"
+  lower digestive tract: "UBERON:0004907"
+
+
+relations: 
+  has participant: "RO:0000057"
+
+
+vars:
+  v0: "'Bacteria'"
+
+name:
+  # Induced, frequency=0.8181818181818182, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "expansion of %s in SLE human gut"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.8181818181818182, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "a SLE human-gut microbiome interaction that shows an expansion of %s in patients with SLE compared with healthy controls."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has participant' some (%s and ('microbial population phenotype in host' some 'increased organism quantity compared with healthy control') and ('located in' some ('lower digestive tract' and ('part of' some ('Homo sapiens' and ('has disease' some 'systemic lupus erythematosus')))))))"
+  vars:
+    - v0

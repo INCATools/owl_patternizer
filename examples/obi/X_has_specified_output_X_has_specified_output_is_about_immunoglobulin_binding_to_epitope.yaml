@@ -1,0 +1,49 @@
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has_specified_output X has_specified_output is about immunoglobulin binding to epitope
+pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_specified_output_X_has_specified_output_is_about_immunoglobulin_binding_to_epitope
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [assay measuring a binding constant of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001709), [assay measuring binding of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_1110127), [assay measuring the dissociation constant [KD] of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001708), [assay measuring the association constant [KA] of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001719), [assay measuring the off rate [koff] of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001723), [assay measuring the on rate [kon] of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001718), [assay measuring qualitative binding of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001703), [assay measuring quantitative binding of an antigen:antibody complex](http://purl.obolibrary.org/obo/OBI_0003146), [mass spectrometry assay measuring binding of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001654), [ELISA measuring the dissociation constant [KD] of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001728) (49 total)
+
+classes: 
+  assay: "OBI:0000070"
+  binding datum: "OBI:0001181"
+  immunoglobulin binding to epitope: "OBI:0001702"
+
+
+relations: 
+  has_specified_output: "OBI:0000299"
+
+
+vars:
+  v0: "'assay'"
+  v1: "'binding datum'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has_specified_output %s has_specified_output is about immunoglobulin binding to epitope"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Could not induce def, using default
+  text: "Any %s that has_specified_output a %s and has_specified_output a is about a immunoglobulin binding to epitope"
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has_specified_output' some %s) and ('has_specified_output' some ('is about' some 'immunoglobulin binding to epitope')))"
+  vars:
+    - v0
+    - v1

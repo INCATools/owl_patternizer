@@ -1,0 +1,45 @@
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: assay has_specified_output X has_specified_output is about immunoglobulin binding to epitope
+pattern_iri: http://purl.obolibrary.org/obo/obi/assay_has_specified_output_X_has_specified_output_is_about_immunoglobulin_binding_to_epitope
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [assay measuring a binding constant of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001709), [assay measuring binding of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_1110127), [assay measuring the dissociation constant [KD] of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001708), [assay measuring the association constant [KA] of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001719), [assay measuring the off rate [koff] of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001723), [assay measuring the on rate [kon] of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001718), [assay measuring qualitative binding of a B cell epitope:antibody complex](http://purl.obolibrary.org/obo/OBI_0001703), [assay measuring quantitative binding of an antigen:antibody complex](http://purl.obolibrary.org/obo/OBI_0003146) (8 total)
+
+classes: 
+  assay: "OBI:0000070"
+  binding datum: "OBI:0001181"
+  immunoglobulin binding to epitope: "OBI:0001702"
+
+
+relations: 
+  has_specified_output: "OBI:0000299"
+
+
+vars:
+  v0: "'binding datum'"
+
+name:
+  # Induced, frequency=0.125, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "assay measuring a %s of a B cell epitope:antibody complex"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.125, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A B cell epitope recognition assay that quantitavely characterizes the binding of an antibody / BCR with a ligand by determining a %s. "
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('assay' and ('has_specified_output' some %s) and ('has_specified_output' some ('is about' some 'immunoglobulin binding to epitope')))"
+  vars:
+    - v0

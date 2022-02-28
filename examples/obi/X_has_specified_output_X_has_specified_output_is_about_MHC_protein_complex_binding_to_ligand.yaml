@@ -1,0 +1,49 @@
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has_specified_output X has_specified_output is about MHC protein complex binding to ligand
+pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_specified_output_X_has_specified_output_is_about_MHC_protein_complex_binding_to_ligand
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [assay measuring a binding constant of a MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001553), [assay measuring binding of a MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_1110126), [assay measuring the dissociation constant [KD] of a MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001988), [assay measuring the association constant [KA] of a MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001987), [assay measuring the half life of a MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001990), [assay measuring the off rate measurement [koff] of a MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001993), [assay measuring the MHC ligand binding on rate [kon] of a MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001994), [assay measuring qualitative binding of a MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0002072), [assay measuring quantitative binding of a MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0003145), [assay measuring the half maximal effective concentration [EC50] of a MHC:ligand complex](http://purl.obolibrary.org/obo/OBI_0001991) (11 total)
+
+classes: 
+  assay: "OBI:0000070"
+  binding datum: "OBI:0001181"
+  MHC protein complex binding to ligand: "OBI:0001503"
+
+
+relations: 
+  has_specified_output: "OBI:0000299"
+
+
+vars:
+  v0: "'assay'"
+  v1: "'binding datum'"
+
+name:
+  # Could not induce name, using default
+  text: "%s has_specified_output %s has_specified_output is about MHC protein complex binding to ligand"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.18181818181818182, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A MHC binding constant determination %s measuring %s."
+  vars:
+    - v0
+    - v1
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has_specified_output' some %s) and ('has_specified_output' some ('is about' some 'MHC protein complex binding to ligand')))"
+  vars:
+    - v0
+    - v1

@@ -1,0 +1,44 @@
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: assay has_specified_output X
+pattern_iri: http://purl.obolibrary.org/obo/obi/assay_has_specified_output_X
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [3D structure determination assay](http://purl.obolibrary.org/obo/OBI_0600045), [assay detecting IFN-gamma production](http://purl.obolibrary.org/obo/OBI_1110207), [rac-lactic acid assay](http://purl.obolibrary.org/obo/OBI_2100042), [fibrinogen assay](http://purl.obolibrary.org/obo/OBI_0003010), [ferritin assay](http://purl.obolibrary.org/obo/OBI_0003009), [single-nucleotide-resolution nucleic acid structure mapping assay](http://purl.obolibrary.org/obo/OBI_0000870), [osmolality assay](http://purl.obolibrary.org/obo/OBI_2100039), [cytosolic creatine kinase complex, MB-type assay](http://purl.obolibrary.org/obo/OBI_2100041), [lactate dehydrogenase complex assay](http://purl.obolibrary.org/obo/OBI_2100028), [assay measuring epitope specific cytokine production by T cells](http://purl.obolibrary.org/obo/OBI_1110129) (68 total)
+
+classes: 
+  assay: "OBI:0000070"
+  3D structural organization datum: "OBI:0001155"
+
+
+relations: 
+  has_specified_output: "OBI:0000299"
+
+
+vars:
+  v0: "'3D structural organization datum'"
+
+name:
+  # Could not induce name, using default
+  text: "assay has_specified_output %s"
+  vars:
+    - v0
+
+def:
+  # Could not induce def, using default
+  text: "Any assay that has_specified_output a %s"
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('assay' and ('has_specified_output' some %s))"
+  vars:
+    - v0

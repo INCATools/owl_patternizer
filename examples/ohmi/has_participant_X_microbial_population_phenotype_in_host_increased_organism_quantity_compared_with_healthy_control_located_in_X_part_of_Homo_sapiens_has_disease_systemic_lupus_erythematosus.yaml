@@ -1,0 +1,51 @@
+# options: [min(8),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has participant X microbial population phenotype in host increased organism quantity compared with healthy control located in X part of Homo sapiens has disease systemic lupus erythematosus
+pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_microbial_population_phenotype_in_host_increased_organism_quantity_compared_with_healthy_control_located_in_X_part_of_Homo_sapiens_has_disease_systemic_lupus_erythematosus
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [expansion of Treponema in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000244), [expansion of Bacteroidales in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000211), [expansion of Eubacterium in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000228), [expansion of Rhodococcus in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000230), [expansion of Bacteroidia in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000210), [expansion of Prevotella oulorum in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000240), [depletion of Dialister in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000073), [depletion of Pseudobutyrivibrio in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000081), [expansion of Klebsiella in SLE human gut](http://purl.obolibrary.org/obo/OHMI_0000068), [expansion of Fretibacterium fastidiosum in SLE human oral cavity](http://purl.obolibrary.org/obo/OHMI_0000241) (18 total)
+
+classes: 
+  systemic lupus erythematosus: "DOID:9074"
+  Bacteria: "http://purl.obolibrary.org/obo/NCBITaxon_2"
+  Homo sapiens: "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+  increased organism quantity compared with healthy control: "OHMI:0000032"
+  anatomical entity: "UBERON:0001062"
+
+
+relations: 
+  has participant: "RO:0000057"
+
+
+vars:
+  v0: "'Bacteria'"
+  v1: "'anatomical entity'"
+
+name:
+  # Induced, frequency=0.7777777777777778, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "expansion of %s in SLE human %s"
+  vars:
+    - v0
+    - v1
+
+def:
+  # Induced, frequency=0.5, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "a SLE human-%s microbiome interaction that shows an expansion of %s in patients with SLE compared with healthy controls."
+  vars:
+    - v1
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has participant' some (%s and ('microbial population phenotype in host' some 'increased organism quantity compared with healthy control') and ('located in' some (%s and ('part of' some ('Homo sapiens' and ('has disease' some 'systemic lupus erythematosus')))))))"
+  vars:
+    - v0
+    - v1

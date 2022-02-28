@@ -1,0 +1,55 @@
+# options: [min(8),dir('examples/ohmi'),trim(true),base('http://purl.obolibrary.org/obo/ohmi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: has participant X part of X has disposition X located in lower digestive tract has quality increased organism quantity compared with healthy control
+pattern_iri: http://purl.obolibrary.org/obo/ohmi/has_participant_X_part_of_X_has_disposition_X_located_in_lower_digestive_tract_has_quality_increased_organism_quantity_compared_with_healthy_control
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [expansion of Propionibacterium acnes 17B in arthritis  rat gut](http://purl.obolibrary.org/obo/OHMI_0000185), [expansion of Streptococcaceae in SLE  mouse gut](http://purl.obolibrary.org/obo/OHMI_0000201), [expansion of Streptococcus pyogenes in arthritis  rat gut](http://purl.obolibrary.org/obo/OHMI_0000202), [depletion of Lactobacillus in SLE  mouse gut](http://purl.obolibrary.org/obo/OHMI_0000172), [expansion of Lactobacillus in arthritis rat gut](http://purl.obolibrary.org/obo/OHMI_0000191), [expansion of Lactobacillus acidophilus in arthritis rat gut](http://purl.obolibrary.org/obo/OHMI_0000189), [expansion of Lactobacillus casei in arthritis rat gut](http://purl.obolibrary.org/obo/OHMI_0000186), [expansion of Lactobacillus fermentum in arthritis rat gut](http://purl.obolibrary.org/obo/OHMI_0000187), [expansion of Lactobacillus murinus in arthritis  rat gut](http://purl.obolibrary.org/obo/OHMI_0000188), [expansion of Prevotella copri in arthritis mouse gut](http://purl.obolibrary.org/obo/OHMI_0000204) (24 total)
+
+classes: 
+  rheumatic disease: "DOID:1575"
+  Bacteria: "http://purl.obolibrary.org/obo/NCBITaxon_2"
+  Murinae: "http://purl.obolibrary.org/obo/NCBITaxon_39107"
+  increased organism quantity compared with healthy control: "OHMI:0000032"
+  lower digestive tract: "UBERON:0004907"
+
+
+relations: 
+  has participant: "RO:0000057"
+
+
+vars:
+  v0: "'Bacteria'"
+  v1: "'Murinae'"
+  v2: "'rheumatic disease'"
+
+name:
+  # Induced, frequency=0.4583333333333333, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "expansion of %s in %s %s gut"
+  vars:
+    - v0
+    - v2
+    - v1
+
+def:
+  # Induced, frequency=0.4583333333333333, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "An association of %s gut microbiota with %s that shows an expansion of %s in rattus with arthritis  compared with healthy controls."
+  vars:
+    - v1
+    - v2
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "('has participant' some (%s and (('part of' some (%s and ('has disposition' some %s))) and ('located in' some 'lower digestive tract')) and ('has quality' some 'increased organism quantity compared with healthy control')))"
+  vars:
+    - v0
+    - v1
+    - v2

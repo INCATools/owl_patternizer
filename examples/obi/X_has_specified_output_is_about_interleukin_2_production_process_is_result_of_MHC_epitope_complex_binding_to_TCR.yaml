@@ -1,0 +1,45 @@
+# options: [min(8),dir('examples/obi'),trim(true),base('http://purl.obolibrary.org/obo/obi'),load_import_closure(true),generalize_properties(false),max_and_cardinality(4),max_class_signature(5),annotations([ann(exact_synonym,oio:hasExactSynonym,0.05),ann(related_synonym,oio:hasRelatedSynonym,0.05)])]
+pattern_name: X has_specified_output is about interleukin-2 production process is result of MHC:epitope complex binding to TCR
+pattern_iri: http://purl.obolibrary.org/obo/obi/X_has_specified_output_is_about_interleukin_2_production_process_is_result_of_MHC_epitope_complex_binding_to_TCR
+
+description: >-
+  This is auto-generated. Add your description here
+
+  Examples: [assay measuring epitope specific interleukin-2 production by T cells](http://purl.obolibrary.org/obo/OBI_0001445), [ELISA measuring epitope specific interleukin-2 production by T cells](http://purl.obolibrary.org/obo/OBI_1110152), [detection of specific nucleic acids with complementary probes assay measuring epitope specific interleukin-2 production by T cells](http://purl.obolibrary.org/obo/OBI_0001277), [cell culture analyte detection bioassay measuring epitope specific interleukin-2 production by T cells](http://purl.obolibrary.org/obo/OBI_0001216), [promoter activity detection by reporter gene assay measuring epitope specific interleukin-2 production by T cells](http://purl.obolibrary.org/obo/OBI_0001402), [intracellular cytokine staining assay measuring epitope specific interleukin-2 production by T cells](http://purl.obolibrary.org/obo/OBI_1110173), [cytometric bead array assay measuring epitope specific interleukin-2 production by T cells](http://purl.obolibrary.org/obo/OBI_0001300), [ELISPOT assay measuring epitope specific interleukin-2 production by T cells](http://purl.obolibrary.org/obo/OBI_1110013) (8 total)
+
+classes: 
+  interleukin-2 production: "GO:0032623"
+  assay: "OBI:0000070"
+  MHC:epitope complex binding to TCR: "OBI:1110057"
+
+
+relations: 
+  has_specified_output: "OBI:0000299"
+
+
+vars:
+  v0: "'assay'"
+
+name:
+  # Induced, frequency=0.5, p=http://www.w3.org/2000/01/rdf-schema#label 
+  text: "%s measuring epitope specific interleukin-2 production by T cells"
+  vars:
+    - v0
+
+def:
+  # Induced, frequency=0.5, p=http://purl.obolibrary.org/obo/IAO_0000115 
+  text: "A %s that detects interleukin-2 production by T cells."
+  vars:
+    - v0
+
+annotationProperties:
+  exact_synonym: "oio:hasExactSynonym"
+  related_synonym: "oio:hasRelatedSynonym"
+
+# could not infer annotations
+
+
+equivalentTo:
+  text: "(%s and ('has_specified_output' some ('is about' some ('interleukin-2 production' and ('process is result of' some 'MHC:epitope complex binding to TCR')))))"
+  vars:
+    - v0
